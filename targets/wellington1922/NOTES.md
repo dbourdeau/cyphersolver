@@ -223,7 +223,9 @@ Fidencio E. López, who signs as Wellington here and, on the f3.13 reading, as F
   - "Cortez": the signs give COR?ES, either CORTES with its fourth sign dropped or CORES with a skip in the key cycle.
 
   So it supplies words that the cipher does not settle, and the upstream target keeps all three as holes. It is
-  reported to that target separately (a "Fuller reading" note) and is not used here.
+  reported to that target separately (a "Fuller reading" note) and is not used here. Applied there on 24 Nov 2026
+  (issue #942, owner's decision): W08 YULAS now counts read because the signs give it exactly; the slip is not used
+  as a gloss, and W06 and W10 stay holes with Baja and Cortés offered from it.
 - Image 0002: a handwritten form "Junta de Puebla" with the headings Pres., Sec., Pro[sec.], Tes., Vocales, left blank.
   It matches the officers named on folio 3.
 

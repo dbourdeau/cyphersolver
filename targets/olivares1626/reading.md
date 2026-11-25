@@ -24,7 +24,7 @@ mundo va ‹?› {engrandecida} en ella / clemencia de {S.M.} y piadosa su {gran
 
 ## Count
 
-1001 words: 875 certain, 78 probable, 13 restored, 35 unresolved; read without restorations (certain + probable) 953/1001 = 95.2% -> read (Daniel's rule).
+1001 words: 875 certain, 78 probable, 13 restored, 35 unresolved; sure words only (certain) 875/1001 = 87.4% -> read in part (README read bar; certain + probable would be 953/1001 = 95.2%, the count used before 24 Nov 2026).
 About 54 line ends lost in the gutter (ff. 13v, 14v) are not counted.
 
 The three "hol" of the held-out part H (f14v.21, f15r.02, f15r.07) are read {S.M.} by the value established outside H (blind proof-reading O13, f14r.25 and f14v.09, with the reference form f14v.19 in the buffer): a reading decision made after the measurement, counted as probable, not a change of the measured key.

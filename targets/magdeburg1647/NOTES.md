@@ -550,7 +550,8 @@ read. No image or derivative is filed (LASA licence).
   in clear (n for f, e for d, l for t). 9 words read that way, all {probable}.
 - **Extension.** The sheet C rule applied mechanically to the rest of the view, not checked by eye, reads 29 more
   {probable} words.
-- **View 244 words read:** 188 -> 198 -> 208 -> 217 -> **246 of 432 (56.9%)**; 206 (47.7%) without any {probable}.
+- **View 244 words read:** **206 of 432 sure (47.7%)**, the count under the sure-words rule (integration, 24 Nov 2026). With
+  the {probable} words, including the 29 of the unchecked extension: 188 -> 198 -> 208 -> 217 -> 246 of 432 (56.9%).
   S letters 1961 -> 2024 of 2438.
 - **Controls.** Sheet A: 2 valid controls, both passed (C2 was boxed on the wrong sign). Sheet B: 2 valid, both passed.
   Sheet C: 3/3 passed. Recorded as `outcome.sign_check`.

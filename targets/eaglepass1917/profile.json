@@ -10,7 +10,7 @@
    "date": "17 Apr 1917",
    "year": 1917,
    "country": "Mexico",
-   "route": "Washington -> Eagle Pass, Texas",
+   "route": "Washington -> Eagle Pass, Texas", "places": {"from": "Washington", "to": "Eagle Pass"},
    "places": {
     "from": "Washington, D.C.",
     "to": "Eagle Pass, Texas"
@@ -162,9 +162,10 @@
    ],
    "what": "Telegraphic Spanish read end to end: 26 of 37 words clean; 11 words with holes: nine shown to be sender's slips (five are e/t exchanges), one probable slip (241, F/P) and one overtyped letter (40), all read from the sense.",
    "result": "partial"
-  }
+  },
+  {"date": "2026-11-24", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 246 tokens, 21 types, es-modern order 4: reading -2.752 per letter; random keys -7.254 (z 6.2); key annealed onto shuffled ciphertext best -3.784 (mean -4.018, z 9.1); annealer on the real text -3.234. Verdict: pass.", "result": "worked"}
  ],
- "outcome": {
+ "outcome": {"validation": {"date": "2026-11-24", "model": "es-modern", "file": "validation.tsv", "tokens": 246, "types": 21, "tokens_per_type": 11.71, "score": -2.752, "nulls": {"random keys": {"n": 200, "mean": -7.254, "sd": 0.729, "max": -5.622, "z": 6.2, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -4.018, "sd": 0.14, "max": -3.784, "z": 9.1, "p": 0.1429}}, "power": -3.234, "verdict": "pass", "notes": "claimed per-occurrence score -2.054; polyphony 0.053; 0 unread tokens left out; annealer on the real text from random keys reached -3.234"}, 
   "class": "read in part",
   "key": "recovered",
   "method": "key recovered from ciphertext-only",
@@ -177,11 +178,7 @@
   "fraction_read_method": "measured",
   "fraction_read_source": "26/37 words come out of the key uncorrected with the readings in transcription.txt (159/246 letters); 25/37 if position 121 is N; 11 holes, every one completed from the sense.",
   "first_break": true,
-  "verification": [
-   "matched control",
-   "independent verification",
-   "historical consistency"
-  ],
+  "verification": ["matched control", "independent verification", "historical consistency", "statistical test"],
   "gaps": [
    {
     "item": "position 40, 'por' (overtyped letter)",
@@ -230,6 +227,8 @@
     "translation": "translation.md",
     "language": "es",
     "state": "read in part",
+    "read_share": 0.703,
+    "floor_used": false,
     "cipher_words": 37,
     "holes": 11,
     "reading_review": {"grade": "B", "by": "integration review of PR #944 (AI agent, for the maintainers); not a person", "date": "2026-11-24", "note": "Read decryption.txt against reading.md: telegraphic Spanish running end to end; 26 of 37 words come out of the key uncorrected, 11 carry a one-letter slip read from the sense (listed by position). Key rebuilt from the TIRANO fold rule equals key.tsv; decryption reproduced group for group. Short-text floor: 11 holes, read in part."},

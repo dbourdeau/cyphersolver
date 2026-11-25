@@ -2,6 +2,8 @@
 
 Status: in progress. Not yet written up: no site page or README row. Read in part, with escalation steps still open (see Remaining gaps and Escalation). The status below is the contributor's.
 
+Next step (write-up check 24 Nov 2026): transcribe and decode fol. 491v-492v (MDZ scans 1200-1202, glossed, online) with the frozen key; no page until then.
+
 Not in the catalogue. Found in WAINUT's sweep for cipher documents with a contemporary decipherment; Halm's
 manuscript catalogue (1874) names the cipher and Camerarius's solution. Contributed by WAINUT, 3 Nov 2026.
 

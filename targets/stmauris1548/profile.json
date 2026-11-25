@@ -251,6 +251,12 @@
    "kind": "verification",
    "what": "Decrypt audit (research/decrypt_audit): the script flagged 61 of 401 compared words (10 Jan 26 of 232, 2 Aug 35 of 169), nearly all a letter n absent from its decrypt. Cause: an artefact of the script, which skips the key row of the sign '#' (value n, 31 places in 10 Jan and 36 in 2 Aug) as a comment line; it also does not strip the doubt suffix '?' of 9 transcription tokens and compared 2 Aug with key.tsv, not the frozen table its reading is marked against. An own letter-by-letter walk of both readings against transcription + key (key.tsv for 10 Jan, key_frozen.tsv with the parent classes for 2 Aug) found 0 unmarked departures (1,286 and 830 letters), and the three decryption files equal transcription + key. No key value was added. outcome.key_file now lists key_frozen.tsv as well as key.tsv; one comment line added to key.tsv. The script's figures are unchanged (61 of 401) because the '#' row is still skipped; with that row read they are 1 of 234 and 5 of 170, all six at tokens with a doubt suffix.",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "verification",
+   "what": "Write-up review: share recounted from NOTES (340 of 435 words verbatim, 78.2%). Two sibling letters in the same Estense file (cc. 1r-2r with glosses, cc. 5r-8v) are online and untranscribed, so the gaps are workable from online material and the target does not meet the read-in-part stopping rule. No page written; ## Escalation added to NOTES and status set to in progress with the next step.",
+   "result": "partial"
   }
  ],
  "outcome": {

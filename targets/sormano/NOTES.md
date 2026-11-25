@@ -161,7 +161,7 @@ Point to recheck: on f. 123r the crossbarred long-s behaves as a null three time
 not changed until the sign is compared on the two leaves.
 
 ## Remaining gaps
-- no. 63 f. 115r from line 28 to f. 116v, 25 unresolved groups (e.g. the reason of the duke of Calabria's claim, il marchese di Mantoa, mantener gli [?] oficio) and look-alike letters chosen by sense - blocker: illegible; the hand leaves T/b, pi/e, Y/y open (dudout/DOUTES.md)
+- no. 63 f. 115r from line 28 to f. 116v, 25 unresolved groups (e.g. the reason of the duke of Calabria's claim, il marchese di Mantoa, mantener gli [?] oficio) and look-alike letters chosen by sense - blocker: illegible; the hand leaves T/b, pi/e, Y/y open (dudout/DOUTES.md). After the blind sheets of 24-25 Nov 2026: 752 of 841 cipher words sure (89.4%), under the 95% bar (sure words only); 95.24% sure or probable
 - the looped b-sign: z in no. 63 and once in no. 65, rr in no. 66 and twice in no. 65 - blocker: no-key-material; either two signs merged or two values, not settled
 - code signs R and I of no. 63 (probably Fiorentini and Imperatore) read from sense alone, not added to the key - blocker: open-codes
 - no. 63 f. 115r lines 1-27 read only in part (no63_reading.md) - blocker: not-attempted; the 12 Nov re-read began at line 28

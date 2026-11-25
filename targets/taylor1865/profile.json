@@ -1295,7 +1295,8 @@
       "what": "Integration check of PR #676 (r20). RALLYTOTHEFRONT applied with a separate decoder to the filed letters and to each of the four blind transcriptions of the 11 April lower telegram: against the plaintext given, 1 letter differs on the filed letters (20), 6 on B1, 9 on B2, 12 on helper A, 11 on helper B; 15 places in all, of which five have no reader's first choice (20, 34, 64, 76, 77). NARA frame 0046 fetched again (sha256 d458c966..., as recorded): the six F the key needs lack the tick of the clerk's E; letter 20 is T; letter 77 is not settled; pencil 15s are visible. Own control with the shared English quadgram model: the fixed key on the two later blind transcriptions scores -3.66 and -3.71 per letter, the filed letters -2.25, against -4.10 for the best of 40 shuffles each hill-climbed over all 15-letter keys (median -4.44); an own short hill-climb recovers ...YTOTHEFRONT on B2 and ...TOTHEFRON. on B1. The contributor's frozen word test stays a miss (11 of 22 against 15). Levy telegram decrypted again with COMPLETE VICTORY: same words. The contributor's run_verify.py was not re-run (it needs /usr/share/dict/words, absent here); its printed plaintexts equal ours. Web and Internet Archive search for the phrase as a key: nothing found.",
       "result": "worked"
     },
-    {"date": "2026-11-24", "kind": "verification", "technique": ["manual reconstruction"], "what": "Three blind sign sheets (dudout/sign_check_2411/), Brice Dudout reader, built and scored by AI agents (Claude): 39 glyphs of vol. 196 fr. 0018, 0065, 0071, 0064 and 0056 where the glyph read in the aided alignment differs from the letter COME RETRIBUTION predicts; rules hashed before the thumbnails; controls 9/9. 29 glyphs re-read as the key predicts, 8 divergences confirmed as the clerk's own, 2 unresolved. Words no longer marked uncertain: fr. 0018 22 -> 28 of 44; 0065 11 -> 15 of 18; 0071 9 -> 12 of 14; 0064 8 -> 9 of 13; 0056 (D. W. Adams) 19 -> 22 of 27 (read_measure and reading files). Key and alignments unchanged; states left to the maintainer.", "result": "partial"}
+    {"date": "2026-11-24", "kind": "verification", "technique": ["manual reconstruction"], "what": "Three blind sign sheets (dudout/sign_check_2411/), Brice Dudout reader, built and scored by AI agents (Claude): 39 glyphs of vol. 196 fr. 0018, 0065, 0071, 0064 and 0056 where the glyph read in the aided alignment differs from the letter COME RETRIBUTION predicts; rules hashed before the thumbnails; controls 9/9. 29 glyphs re-read as the key predicts, 8 divergences confirmed as the clerk's own, 2 unresolved. Words no longer marked uncertain: fr. 0018 22 -> 28 of 44; 0065 11 -> 15 of 18; 0071 9 -> 12 of 14; 0064 8 -> 9 of 13; 0056 (D. W. Adams) 19 -> 22 of 27 (read_measure and reading files). Key and alignments unchanged; states left to the maintainer.", "result": "partial"},
+    {"date": "2026-11-24", "kind": "verification", "what": "Integration (maintainers, AI agent), owner's decision: fr. 0071 set to read by the short-text floor (14 cipher words, 2 holes, SELMA and MONTGOMERY; floor_used recorded). The other sheets' documents stay read in part, so the target class stays read in part.", "result": "worked"}
   ],
   "outcome": {
     "class": "read in part",
@@ -1817,10 +1818,13 @@
         "decryption": "v196-0071-surget_decryption.txt",
         "reading": "v196-0071-surget_reading.md",
         "language": "en",
-        "state": "read in part",
+        "state": "read",
         "read_share": 0.8571,
+        "floor_used": true,
+        "cipher_words": 14,
+        "holes": 2,
         "summary": "Provisional attributed Orleans report concerning Mobile, Selma and Montgomery.",
-        "note": "Cipher-only lexical measure in v196-0071-surget_read_measure.txt: 2/14 uncertain words after the blind sign sheet of 24 Nov 2026 (was 5/14; dudout/sign_check_2411/). Separate from glyph agreement. Known-key aided reconstruction; source and limitations in v196-0071-surget_reading_notes.md. Global target remains in progress.",
+        "note": "Cipher-only lexical measure in v196-0071-surget_read_measure.txt: 2/14 uncertain words after the blind sign sheet of 24 Nov 2026 (was 5/14; dudout/sign_check_2411/). 12 of 14 is 0.857, under 0.95: read by the short-text floor (fewer than 40 cipher words, at most 2 holes; README Conventions, 19 Nov 2026), owner's decision of 24 Nov 2026; the 2 holes are SELMA and MONTGOMERY. Separate from glyph agreement. Known-key aided reconstruction; source and limitations in v196-0071-surget_reading_notes.md. Global target remains in progress.",
         "reading_review": {
           "grade": "B",
           "by": "OpenAI Codex, model review; not independent handwriting or human review",

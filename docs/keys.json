@@ -1,6 +1,30 @@
 {
  "keys": [
   {
+   "id": "k-humphreys1799",
+   "label": "David Humphreys's code, 1791-1801 (Boyd's Code No. 8?): one-part code of about 1,600 numbers, table rebuilt by Andrew Beling",
+   "kind": "rebuilt here",
+   "by": "Andrew Beling, with AI agents",
+   "year": 1799,
+   "note": "686 groups rebuilt from 3,368 pairs: the State Department clerks' decipherments of Humphreys's despatches (1791, 1800-01) and printed decoded texts; frozen and tested on No. 262 (129 of 135 groups). 994 the, 240 of, 1436 full stop. targets/humphreys1799/key/table_frozen_v1.tsv."
+  },
+  {
+   "id": "k-lopezmendez1819",
+   "label": "López Méndez to Bolívar, 1819: letters with digits above, partial table fitted to context (WAINUT)",
+   "kind": "rebuilt here",
+   "by": "WAINUT, with AI agents",
+   "year": 1819,
+   "note": "20 values from 70 signs, e.g. e1 b, e2 f, e3 l, e4 r, e5 t, e6 v, e7 y, l a, a n, m1 c, t3 s. Fitted to words suggested by the clear text (3 Nov 2026); consistency only, not a recovered key."
+  },
+  {
+   "id": "k-eaglepass1917",
+   "label": "Mexican embassy to the consuls, April 1917: reciprocal alphabet, the keyword TIRANO folded (recovered by Andrew Beling with AI agents)",
+   "kind": "rebuilt here",
+   "by": "Andrew Beling, with AI agents",
+   "year": 1917,
+   "note": "A-X, B-U, C-S, D-Q, E-P, F-M, G-L, I-Z, N-W, O-V, R-Y, T alone; TIRANOBCDEFGHJKLMPQSUVWXYZ folded through T. Recovered from the 246 cipher letters by simulated annealing (23 Nov 2026); the TIRANO construction found afterwards."
+  },
+  {
    "id": "k-vittoria1686",
    "label": "Vittoria Gonzaga's letters, 1686-1691: alphabet numbered in fives with neighbouring pairs swapped (rebuilt by WAINUT and Matthew Kennedy)",
    "kind": "rebuilt here",
@@ -4905,6 +4929,14 @@
    "note": "A typed key sheet in the Francisco Leon de la Barra papers, tested both ways on the 1912 and 1913 telegrams of the same fonds: no Spanish. Date not established."
   },
   {
+   "id": "k-gondi1649",
+   "label": "Gondi's Tuscan letter cipher of 1649 (rebuilt here): digit vowels, consonants as a digit plus 0, barred signs and 2xx codes",
+   "kind": "rebuilt here",
+   "by": "WAINUT (AI agents)",
+   "year": 1649,
+   "note": "Read off the contemporary interlinear decipherment of lines L00-L06 of c. 1r, frozen, and tested on L07-L13 (139 of 148 units). Several signs stand for two letters; 5 8 unread, 273 from context. targets/gondi1649/key.tsv."
+  },
+  {
    "id": "k-riva-k3",
    "label": "The Riva table K3, 1721-1727 (rebuilt by Malcolm McBratney): syllabic numbers 1-95 with a nomenclator",
    "kind": "rebuilt here",
@@ -5100,6 +5132,14 @@
    "by": "WAINUT",
    "year": 1646,
    "note": "Two-figure groups in alphabetical runs plus a second run, two code groups (67 Archiduque, 72 Principe de Darmstadt); built from 32 glossed words of 25067, frozen, 9 of 10 held-out words of 25069 right; groups 34 and 56 not attested by a gloss (key partial in those two)."
+  },
+  {
+   "id": "k-claudiamedici1646",
+   "label": "Claudia de' Medici's letter cipher to Piccolomini, 1646, key rebuilt from the glosses of inv. 24784 and 24796",
+   "kind": "rebuilt here",
+   "by": "WAINUT",
+   "year": 1646,
+   "note": "Simple substitution, 21 letter signs (two for i) and five code groups (18 Duca di Lorena, 34 S.A., 37 Re, 57 S.M.ta Catt., iio V.E.); 42 glossed words, frozen, 13 of 13 held-out words of 24786 agree in sense; agrees with Vlnas 2017 table 5 (from inv. 24790). targets/claudiamedici1646/key_frozen.tsv."
   },
   {
    "id": "k-juel1647",
@@ -5312,6 +5352,14 @@
    "note": "A numeric table given to Trémais with his instruction of 3 February 1759; the table itself is not found. Rebuilt from his letter of 22 September 1759 and its contemporary decipherment, where he wrote both homophones of most units, and extended from the letter of 6 November (targets/tremais1759/key.tsv)."
   },
   {
+   "id": "k-edmondes1594",
+   "label": "Edmondes 1594 letter cipher: the alphabet shifted 7 places, with extra equivalents from shifts 8 and 10",
+   "kind": "rebuilt here",
+   "by": "Andrew Beling, with AI agents, from the printed cipher alone",
+   "year": 1594,
+   "note": "24-letter alphabet; base shift 7 (cipher a = plain h, m = t, x = e), extra equivalents for common letters from shifts 8 and 10, occasionally 11 and 20. Shifts (7, 8, 10) chosen on half the letters, frozen and tested on the other half (targets/edmondes1594/keys/frozen_key.json, key_table.tsv)."
+  },
+  {
    "id": "k-gabbrielli-120",
    "label": "Gabbrielli's key no. 120: Roberto Acciaioli's cipher, 1512-14",
    "kind": "scholar's key",
@@ -5342,9 +5390,55 @@
    "by": "C. W. F. Dumas",
    "year": 1776,
    "note": "Each number, 1 to 682, is the place of a character in the 13 lines; set out by Dumas with the line totals and the counting rule in his letter of 30 April 1776. The key text was re-established from the Committee's enciphering table by Satoshi Tomokiyo (Cryptiana, 2008-09). targets/dumas1777/key/key_positions.json."
+  },
+  {
+   "id": "k-neufville1779",
+   "label": "De Neufville-Baudouin numeric code, 1779-80 (rebuilt from de Neufville's drafts and glosses)",
+   "kind": "rebuilt here",
+   "by": "Andrew Beling, with AI agents, from de Neufville's drafts and glosses",
+   "year": 1779,
+   "note": "Numbers 1 to about 550 for letters, syllables, words and names, with homophones; the table does not survive. Rebuilt by majority vote over number-syllable pairs from the drafts pp.599-609 and the glosses pp.516-548 and 579 of NARA M332 roll 4; held-out tests 139/146, 64/65, 64/66 (targets/neufville1779/key/key_full_r4.json, key_entries.tsv)."
+  },
+  {
+   "id": "k-entick1776",
+   "label": "Entick's New Spelling Dictionary, London 1776, as the Lees' code book (page, column, Nth headword)",
+   "kind": "contemporary key",
+   "by": "John Entick (dictionary); used by Arthur, William and Richard Henry Lee",
+   "year": 1779,
+   "note": "A printed dictionary used as a book code; the book was identified by Burnett (1917) and Tomokiyo, the London 1776 printing (Dilly) and the rule of counting headword entries fixed in targets/lee1779 (court = 108a9 fits 1776, not 1773). Internet Archive scan bim_eighteenth-century_the-new-spelling-diction_entick-john_1776."
   }
  ],
  "links": [
+  {
+   "key": "k-humphreys1799",
+   "target": "humphreys1799",
+   "how": "rebuilt from",
+   "note": "frozen table read Nos. 188 and 214 and the April 1799 sentence in part; 224 of 281 cipher words sure"
+  },
+  {
+   "key": "k-neufville1779",
+   "target": "neufville1779",
+   "how": "rebuilt from",
+   "note": "rebuilt from de Neufville's plain drafts with the numbers written over them and his glosses on Baudouin's letters; applied to the bare passages pp.491-492 and 573: 25 of 38 coded words"
+  },
+  {
+   "key": "k-entick1776",
+   "target": "lee1779",
+   "how": "read unchanged",
+   "note": "every group looked up in the 1776 printing under the counting rule: 148 of 166 firm, 14 doubtful, 4 unread; the 1766, 1772, 1773 and 1781 printings do not fit"
+  },
+  {
+   "key": "k-lopezmendez1819",
+   "target": "lopezmendez1819",
+   "how": "rebuilt from",
+   "note": "fitted to the clear context of the letter's own 15 cipher words; 14 read, [?Maracaibo] a guess"
+  },
+  {
+   "key": "k-eaglepass1917",
+   "target": "eaglepass1917",
+   "how": "rebuilt from",
+   "note": "recovered from the telegram's own 246 letters; 26 of 37 words come out uncorrected, the rest carry sender's slips"
+  },
   {
    "key": "k-vittoria1686",
    "target": "vittoria1686",
@@ -8163,7 +8257,7 @@
    "key": "k-vaudreuil1757",
    "target": "vaudreuil1760",
    "how": "adapted",
-   "note": "Same volume as the key lead; 700 cells transcribed from the images and 33 corrected from the letter and the alphabetical sheet; reads 96.0% of the groups."
+   "note": "Same volume as the key lead; 700 cells transcribed from the images and 33 corrected from the letters and the alphabetical sheet; reads the four letters of the target (cat. 1388-1391, the three of April 1759 merged in on 25 Nov 2026): 7,499 of 7,632 groups, 96.0% of the 1760 letter's."
   },
   {
    "key": "k-tomokiyo-este",
@@ -8364,6 +8458,12 @@
    "note": "the table K2 was read off these glosses, then K3 corrected from context"
   },
   {
+   "key": "k-gondi1649",
+   "target": "gondi1649",
+   "how": "rebuilt from",
+   "note": "values read off the interlinear decipherment of L00-L06, frozen, tested on L07-L13; 99 of 101 sign-bearing words"
+  },
+  {
    "key": "k-riva-k3",
    "target": "riva1722",
    "how": "rebuilt from",
@@ -8490,6 +8590,12 @@
    "note": "rebuilt from the glossed sibling letter 25067, frozen, tested on 25069 and applied to the bare 25071"
   },
   {
+   "key": "k-claudiamedici1646",
+   "target": "claudiamedici1646",
+   "how": "rebuilt from",
+   "note": "rebuilt from the glossed sibling letters 24784 and 24796, frozen, tested on 24786 and applied unchanged to the bare 24793 and 24800"
+  },
+  {
    "key": "k-juel1647",
    "target": "juel1647",
    "how": "rebuilt from",
@@ -8561,7 +8667,7 @@
    "how": "read unchanged",
    "note": "applied unchanged, restarting at every word; the letter names the key in clear"
   },
-  {
+    {
    "key": "k-clave-extra3",
    "target": "murguia1914",
    "how": "rebuilt from",
@@ -8646,6 +8752,12 @@
    "note": "Values from the September pair give 84% of the November groups a value; about 60 more added or corrected from November."
   },
   {
+   "key": "k-edmondes1594",
+   "target": "edmondes1594",
+   "how": "rebuilt from",
+   "note": "recovered from the 651 printed cipher letters of HMC Salisbury IV pp. 559-560 alone; no decipherment or clear copy known"
+  },
+  {
    "key": "k-gabbrielli-120",
    "target": "acciaiuoli1513",
    "how": "adapted",
@@ -8691,6 +8803,26 @@
   }
  ],
  "source_links": [
+  {
+   "source": "s-cyphersolver",
+   "key": "k-humphreys1799"
+  },
+  {
+   "source": "s-cyphersolver",
+   "key": "k-neufville1779"
+  },
+  {
+   "source": "s-cyphersolver",
+   "key": "k-lopezmendez1819"
+  },
+  {
+   "source": "s-cyphersolver",
+   "key": "k-gondi1649"
+  },
+  {
+   "source": "s-cyphersolver",
+   "key": "k-eaglepass1917"
+  },
   {
    "source": "s-cyphersolver",
    "key": "k-vittoria1686"
@@ -10017,6 +10149,10 @@
   },
   {
    "source": "s-cyphersolver",
+   "key": "k-claudiamedici1646"
+  },
+  {
+   "source": "s-cyphersolver",
    "key": "k-juel1647"
   },
   {
@@ -10094,6 +10230,10 @@
   {
    "source": "s-cyphersolver",
    "key": "k-tremais1759"
+  },
+  {
+   "source": "s-cyphersolver",
+   "key": "k-edmondes1594"
   },
   {
    "source": "s-tomokiyo",
@@ -11535,6 +11675,11 @@
    "key": "k-bazeries-1691",
    "target": "chateauneuf1691",
    "note": "compared by number, 24 Nov 2026: 91 Mon and 333 Di there; 91 le and 333 que here"
+  },
+  {
+   "key": "k-stowe166",
+   "target": "edmondes1594",
+   "note": "Edmondes's own sign alphabet in Stowe MS 166: a different cipher, compared and ruled out (keys/keys_tested.md)"
   },
   {
    "key": "k-vaudreuil1757-272",

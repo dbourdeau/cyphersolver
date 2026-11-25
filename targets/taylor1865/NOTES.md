@@ -760,3 +760,6 @@ rules were hashed before the thumbnails, and the controls passed 9/9. The key an
 - **Words no longer marked [?]** (read_measure and reading files): fr. 0018 22 -> 28 of 44; 0065 11 -> 15 of 18;
   0071 9 -> 12 of 14; 0064 8 -> 9 of 13; 0056 (D. W. Adams) 19 -> 22 of 27. read_share is updated in `profile.json`.
 - States are left to the maintainer. No image is committed.
+- **States set at integration (owner's decision, 24 Nov 2026):** fr. 0071 is read by the short-text floor (14 cipher words,
+  2 holes: SELMA, MONTGOMERY; `floor_used` in `profile.json`). The other four stay read in part. The target class stays read in
+  part, as 12 documents are still read in part.

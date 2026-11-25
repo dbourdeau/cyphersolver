@@ -1,6 +1,6 @@
 # Vaudreuil to the minister (Berryer), cipher letter, Montréal, 8 Apr 1759
 
-Status: in progress
+Merged on 24 Nov 2026 into `targets/vaudreuil1760/` (one key, one target: maintainers' decision of 24 Nov 2026). This file is the former NOTES.md of the retired folder, kept as it was; the current notes, class and measures are in `../NOTES.md` and `../profile.json`.
 
 Class: read (external key matched), 99.4% of 3633 groups; read as sentences against the images on 5 Nov 2026 (a model reading, no outside reader).
 

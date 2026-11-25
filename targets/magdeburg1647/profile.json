@@ -863,6 +863,15 @@
    ],
    "what": "Integration check of PR #688 (blind sibling decodes of 16 Nov 2026), by an AI agent; no person has checked the transcriptions or the readings. The frozen key equals key.tsv of 89e25ef and of main (sha256 c734821e...); the five BLIND.tsv hashes match their FREEZE_blind.txt; decode_once.py rerun on copies gives the five decodes byte for byte, and a decoder written here from key.tsv gives 0 differing rows of 1,354; the judge marks recount to 5233/6765, 388/442, 134/189, 41/62, 57/106; shuffle.py rerun gives shuffle_out.txt figure for figure (0 of 5,000 in all ten runs). Images (LASA viewer, max jpg): frame 281, all 60 cipher words, and frame 245 left lines 1-5, 49 rows (44 cipher words, 4 drawn signs, one struck word), agree with the blind transcriptions word for word (g/q and c/e not separable at that size). The image hashes of blind16/IMAGES_SHA256.txt cannot be rechecked: the viewer re-encodes each request. Order of events (key frozen, transcription, hash, decode) is by the contributor's record: one commit, no outside stamp. By cipher words with every letter S and nothing supplied (README, holes are counted by words): No. 29 531/1,212 rows = 0.438, frame 281 35/60 = 0.583, frame 203 10/33, frame 186 4/11; all four stay 'decoded, not read', frame 252 stays a failed result. docs/_check_reading.py on the filed readings gives 0.092, 0.346, 0.400 and 0.444 (NOTES table of the addition has 0.094, 0.391, 0.455, 0.533). 'Hold': the 'Not added (held)' line of PR #578 says what Andrew Beling left out of his own addition; it is not a reservation (catalogue 1639 has no reserved field, research/SWEEP.md).",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "verification",
+   "technique": [
+    "manual reconstruction"
+   ],
+   "what": "Three blind sign-shape sheets on No. 29, view 244 (dudout/no29_fr244_sign_check/, PR #947), Brice Dudout reader, sheets built and scored by AI agents (Claude); rules hashed before the thumbnails; valid controls 2/2, 2/2, 3/3 after the defective ones (sheet A has no valid control on the g form). Sheet A g/q: 10 words read (188 -> 198 of 432). Sheet B g/q, g/y: 10 more (198 -> 208), two of them probable. Sheet C t/l, d/e/c, final f/n: the 8 decided targets confirm the transcription; 9 words read as letters left in clear, all probable (217). The same rule applied mechanically to view 244, not checked by eye, gives 29 more probable (246 of 432 with probable words; 206 of 432 sure). A side pass in dudout/, not a figure of record: No. 29's figure of record (77.4% of letters, views 244-245) and the class are unchanged. Integration review of PR #947 reproduced the schema, hashes and controls; no image (LASA licence).",
+   "result": "partial"
   }
  ],
  "outcome": {

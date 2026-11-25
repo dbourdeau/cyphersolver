@@ -1,6 +1,7 @@
 # bresegno1548: Bernardo Bresegno to Ferrante Gonzaga, Rome, 5 Oct 1548 (catalogue 1563, first letter)
 
 Status: in progress. Not yet written up: no site page or README row. Read in part, with escalation steps still open (see Remaining gaps and Escalation). The status below is the contributor's.
+Next step (integration review, 24 Nov 2026; no page written): the gaps are workable from the online Estense IIIF scan of c. 15r. Make a second blind sign copy of L07-L24, check every superscript digit for the decipherer's lighter ink, re-run `scripts/reading.py check` against c. 22r, then add `## Escalation` and `## Transcription doubts` and re-count the verbatim share before any write-up.
 
 Biblioteca Estense Universitaria, Modena, Autografoteca Campori, Lettera B, Brezeno (abate), cc. 15-16, 22. Cipher on
 c. 15r (24 lines), contemporary decipherment bound in as c. 22r ("il decifrato del n. 8").

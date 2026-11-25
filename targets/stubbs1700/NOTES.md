@@ -46,7 +46,7 @@ An Oxford student (« my most dearly beloved alma mater ») writes to Stubbs fro
 ## Remaining gaps
 - P1 key not validated (held-out 0.848 < 0.85) - blocker: no-key-material; no fresh held-out portion of the p. 1 cipher remains for a second measure (the portion is burnt, and the rest of the page served as training)
 - P3 glyphs (γ-like 7 merged with 7; h/k not separated in the margin rows) - blocker: illegible; separating them needs a new look at the original or a higher-resolution image
-- Whether the images may be analysed with an AI assistant - blocker: not-attempted; not asked of the Society of Antiquaries (see Conditions of use of the images)
+- Doubtful signs of pp. 1 and 2 (62 and 87 probable words, most of them one look-alike sign; the p. 1 margin rotation artefact) - blocker: not-attempted; open and workable: a blind sign check of those places against the catalogue images has not been done
 
 ## Escalation
 - [n/a] siblings: one letter; the three pages are in three different alphabets

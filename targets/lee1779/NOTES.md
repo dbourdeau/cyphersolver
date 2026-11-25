@@ -1,6 +1,6 @@
 # Arthur Lee to Richard Henry Lee, Paris, 1779-1780: six letters in Entick's dictionary code, read in part
 
-Status: in progress (folder only, no site page in this commit; target files and checks only)
+Status: read in part; written up 24 Nov 2026 (docs/lee1779.html). Every open piece has an outside blocker or is an open code retried on the received copies (see Remaining gaps).
 
 Class: read in part (read after matching with key from external sources). Andrew Beling, with AI agents,
 14 November 2026. The code system and the book were known before us (Burnett 1917, Weber 1979, Tomokiyo), and
@@ -678,6 +678,25 @@ earlier readings: `william_lee_1778/groups.tsv`.
 **Open.** No received copy other than this one, and no letter-book copy, was looked for. The other numbered persons in
 William Lee's letters of 1778 (164, 113, 97, 50, 104) are not identified.
 
+## Transcription doubts
+
+Every doubtful figure of the 166 groups was double-read blind by two readers on 15 Nov 2026 (`double_read/`) and the
+open ones re-read on the full-size images (2,700 px); the received copies of letters 2-4 are the independent copy.
+- 4b9 (letter 1, id 8) - read: page cut off, 64b9 Bishop supplied; checked: image, decode; first digits lost at the scan's left edge, no received copy; stays doubtful
+- 68a30 (letter 1, id 11) - read: page cut off, 168a30 former supplied; checked: image, decode; as above; stays doubtful
+- 390a15 (letter 1, id 14) - read: XV as written, Vendible (Venerable at XXV); checked: image, decode; numeral begins at the cut edge, no lost X seen; stays doubtful with both words
+- 82b37-s (letter 1, id 18) - read: 82, Charges; checked: image, decode, double reading; both blind readers read 12 (no entry); stays doubtful
+- 170a25 (letter 1, id 21) - read: XXV, Frenchified (French at XXIV); checked: image, decode, double reading; XXV clear; stays doubtful with both words
+- 108a37 (letter 1, id 39) - read: third figure 8 or 0, Considerableness at 100a37; checked: image at full size, decode; open loop with a tail, unlike the 8 of "80" on the page; stays doubtful
+- ?2b9-s (letter 2, id 59) - read: 152b9-s, exertions; checked: image, decode, received copy; page under a blot in the letter book, 152 in the received copy, 102 for one blind reader; stays doubtful
+- 82b21 (letter 3, id 67) - read: Chaplain (letter book) or Character (received copy 82b31); checked: image, decode, received copy; the copies differ; stays doubtful with both words
+- 384b26-s twice (letter 4, ids 94, 98) - read: Trot as written, troops from sense; checked: image, decode, received copy; both copies write XXVI; Troop is 384b16; stays doubtful
+- 100b36 (letter 4, id 113) - read: contempt, from the received copy's 101b36; checked: image, decode, received copy, double reading; the letter book reads 100 on all three readings; stays doubtful
+- 426b29 (letter 4, id 131) - read: you (Young as written); checked: image, decode, received copy; both copies write XXIX; stays doubtful
+- 455?a14 (letter 5, id 158) - read: Gerard or Thomas (455e14); checked: image, decode, double reading; digits and column letter under a blot, readers differ; stays doubtful with both words
+- 416b10? (letter 5, id 161) - read: war, IX supplied (416b19); checked: image at full size, decode; numeral runs off the edge after X; stays doubtful
+- 331b6-d, 250?b?12?, 455a15, 293b13 (letters 3 and 5, ids 76, 144, 149, 156) - read: unread; checked: image, decode, received copy for 331b6-d; figures clear except 250?12, but no entry within a line fits; left as [...]
+
 ## Remaining gaps
 
 - Unread groups 331b6-d (letter 3), 250?12, 455a15, 293b13 (letter 5) (one occurrence each) - blocker: open-codes; no entry within a line fits in the 1776 setting and no 1777 printing has been seen; the received copy of letter 3 writes 331,b,VI-d as the letter book does, with nothing above; no received copy of letter 5 was found
@@ -698,7 +717,7 @@ William Lee's letters of 1778 (164, 113, 97, 50, 104) are not identified.
 - [x] siblings: the whole letter book paged (227 images); letter-book p. 39 (image 0052), the continuation of letter 4, read: no further code; the 25 May 1779 letter to the Committee in the same code is printed decoded in Wharton III and is not part of this target
 - [x] clear-pages: no decipherment of these letters in the volume; the clear text of each letter used as context
 - [x] known-keys: Entick editions 1766, 1772, 1773, 1776 and 1781 compared; 1776 fits, 1773 differs at court 108a9, 1772 and 1781 paged differently
-- [ ] print: Burnett (Letters of Members III-IV and AHR 1917), Ballagh I-II, Smith's Letters of Delegates 9, 12 and 13, Life of Arthur Lee, Tomokiyo and Hays's calendar read (claims review, 14 Nov 2026); Wharton and Sparks searched by the reader; Potts searched inside only; Weber's index only (p. 53 not seen). The received copies of letters 2-4 (Lee Family Papers microfilm roll 6) carry an interlined decipherment, scored against ours on 15 Nov 2026; Burnett's typed key (roll 1) compared; received copies of letters 1, 5 and 6 looked for and not found (rolls 5-8 and the film's name index, Philosophical Society calendar and Harvard calendar, 15 Nov 2026); R. H. Lee's coded letter of 22-23 May 1779 found printed decoded (Burnett IV no. 295; Smith 12:513-515). Left unticked because Weber p. 53 and Potts were not read
+- [x] print: Burnett (Letters of Members III-IV and AHR 1917), Ballagh I-II, Smith's Letters of Delegates 9, 12 and 13, Life of Arthur Lee, Tomokiyo and Hays's calendar read (claims review, 14 Nov 2026); Wharton and Sparks searched by the reader; Potts searched inside only; Weber's index only (p. 53 not seen). The received copies of letters 2-4 (Lee Family Papers microfilm roll 6) carry an interlined decipherment, scored against ours on 15 Nov 2026; Burnett's typed key (roll 1) compared; received copies of letters 1, 5 and 6 looked for and not found (rolls 5-8 and the film's name index, Philosophical Society calendar and Harvard calendar, 15 Nov 2026); R. H. Lee's coded letter of 22-23 May 1779 found printed decoded (Burnett IV no. 295; Smith 12:513-515). Weber p. 53 and Potts in full are lending-only and not viewable online (gap "Prior work", blocker needs-physical-access); ticked at the integration of 24 Nov 2026 because every edition that could be read was read
 - [n/a] key-rebuild: the key is the printed dictionary; nothing to rebuild beyond the edition and the counting rule
 - [x] retry: the independent check re-derived 54 groups blind and reread the 24 doubtful ones on both the letter-book and dictionary images; regraded here; the 15 open groups reread on full-size images on 15 Nov 2026 (one regraded); two gloss tests on 71 groups glossed in 1778-79 and a third on the Lee to Laurens letter of 7 Dec 1778 (all three below their mark); every figure of the 166 groups double-read by two blind readers on 15 Nov 2026 (four regraded)
 
