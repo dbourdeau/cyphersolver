@@ -424,3 +424,7 @@ ONB (leads 2832-2837), retry 15 Nov: api.onb.ac.at manifests 504 and the new vie
 ## YEK massive sweep (25 Nov 2026, `sweep_2026-11-25_yek_massive`), partial
 - **Swept:** Türkiye Yazma Eserler Kurumu portal, all records with istinsah year 200-904 AH (10,906); note-field and title searches for şifre, rumûz, remz, ramz, muammâ, mütercem, hall, hurûf, cifr, ebced, gizli, sırlı. No image screened.
 - **Still unswept:** Arabic-script term list, classes 652.8/133/135/410 etc. (counts only), mecmua/münşeât types 905-1110 AH, Ottoman şifre defteri terms, esrâr slice [200,999]. Route and resume code in that folder's README and `harvest.js`.
+
+## Thorough Geniza sweep (25 Nov 2026, `sweep_2026-11-25_geniza_thorough`)
+- **Swept:** all 36,564 documents and 25,617 footnotes of the Princeton Geniza Project bulk dump (`pgp-metadata`, Zenodo 10.5281/zenodo.15839055) by about 25 term groups incl. Hebrew and Arabic terms; every tag with cipher/secret/glyph/cryptic/alphanumeral/geomancy words; about 70 candidate documents image-checked; Bodleian Hebrew catalogue (hebrew.bodleian.ox.ac.uk, via Chrome), Penn catalogue. 5 candidate rows (K24.37, Or.1080 6.12, Ar.39.472, Or.1080 14.13/14.25, K12.60); K24.37 and Or.1080 6.12 carry vetting blocks.
+- **Blocked / unswept:** CUDL search (AWS WAF), FGP (registration), NLI (Cloudflare), Manchester Luna (reCAPTCHA), Heidelberg (bot check); `pgp-text` transcriptions not grepped; AIU XII.41/XII.68/VI.B.174/VI.B.157 and BL OR 10656.25 have no image URL.
