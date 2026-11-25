@@ -188,3 +188,6 @@ were hashed before the thumbnails, and the controls passed 3/3 on each sheet. Ke
 - **"resistir" (R7 l24)** has the long barred f (c): flagged, not decided.
 - **"medio" (R3 l9, ʋ)** is proposed; it gives 0.827 if adopted.
 - **Counts unchanged:** R9866 0.823, R9868 0.825, R9869 0.764. Status unchanged.
+- **Level.** Sheet 2411 counts 6 signs and sheet 2411b 7 (separate rules, not added): under the schema minimum of 8 for
+  `sign_check`, so both are recorded as a solution step (verification) and here, not in `outcome.sign_check`. Files and
+  hashes unchanged.
