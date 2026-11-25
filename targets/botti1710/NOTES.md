@@ -84,7 +84,7 @@ The 191 digit files in `transcription/` are reconciled two-pass AI transcription
 - Code 17 before code 10 (`17.10.`): 74 places in the rows of the letters with dots where both signs are sure, 26 more where a sign is doubtful, and 1 (`R8695 T003 C13`) with a sign marked `[?]` after 10 (101 in all) - blocker: open-codes; at the 72 sure places on pages decoded here, the decode gives `raesto` (8), `raale` (5), `raesta` (4) and `rael` (3), which read *questo*, *quale*, *questa* and *quel* with 17 = q and 10 = u; some groups read with r (*fratello*, *tragedia*, *ringrazio*); the key keeps 17 as r and 10 as a, and every `[q]`/`[u]` restoration in `readings/` is counted as a hole.
 - 90 rare codes with no value (191 tokens in the letters with dots) - blocker: no-key-material; the Gualterio cipher tables (BL Add MS 20244) are offline and not opened.
 - One page not shown (`R8662 T003`, right margin clipped) and `R8468 T003`/`T007` - blocker: illegible; clipped margins and five unsure sign labels on T007.
-- `R8618 T002` (one code between spaces, unknown word breaks) - blocker: no-key-material; several tries on 16 to 18 November did not settle its key.
+- `R8618 T002` (one code between spaces, unknown word breaks) - blocker: unknown; several tries on 16 to 18 November did not settle its key.
 - 45 pages under 100 digits or with no cipher digit - blocker: too-short.
 - 44 remaining records (29 carrying contemporary clerk decipherments, 5 undotted letters, and 10 sparser blind letters) have no sentence-level reading yet - blocker: not-attempted; working readings have so far been prepared only for the 7 pure-blind dotted letters in `readings/`.
 
