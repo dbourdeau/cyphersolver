@@ -39,9 +39,9 @@ The address of each image, the time it was fetched and the SHA-256 of the file a
 - **DLI.5.909.1, DLI.5.910.1, DLI.5.920.1 and DLI.5.921.1:** writing below the signature, seen "at thumbnail size, too small to read"; none of it was enlarged.
 - **DLI.5.907.1:** "a block of sentences below the signature on page 2", seen at the same size; none of it was enlarged, and of page 2 only the part down to the signature was.
 - **DLI.4.771.1:** on the strip that is page 2, below the signature, "a date in another hand ("Julio 18") and the top of one written line, cut by the strip's edge, of which no word was made out". The date was read on a crop of the strip at about three quarters of full size.
-- **DLI.2.397.1, DLI.5.924.1, DLI.5.933.1 and DLI.5.950.1:** the note records nothing below the signature.
+- **DLI.2.397.1, DLI.5.924.1, DLI.5.933.1 and DLI.5.950.1:** unknown. The note records nothing below the signature, but its crops ended at the signature, and these leaves were seen whole only at reduced size.
 
-From 19 Nov whatever stands below a target's signature has been kept closed, so this list is the note's account, not a new look at the leaves. The note itself is in `timestamps/first_reading/`, with its receipts. By the maintainer's review of 21 Nov, the archive's listing calls the writing below the signature on DLI.5.909.1 and DLI.5.921.1 Reyes's drafts of replies; that listing is closed here too and was not opened.
+From 19 Nov whatever stands below a target's signature has been kept closed, so this list is the note's account, not a new look at the leaves. The note itself is in `timestamps/first_reading/`, with its receipts. The maintainer's review of 21 Nov names the pencil lines below the signature on DLI.5.909.1 and DLI.5.921.1.
 
 **They stay in the test.** By Jacob Houtrouw's ruling of 21 Nov 2026 the telegrams with writing below the signature stay in the scored test, as the plan was sealed, since nothing of that writing was read. In the step after the scored runs, in which unknown words are completed from context, every completion on DLI.4.771.1, DLI.5.907.1, DLI.5.909.1, DLI.5.910.1, DLI.5.920.1 and DLI.5.921.1 will be marked as made by a reader who knew that writing stands below the signature, though not what it says. DLI.5.950.1 is out of the scored test for another reason (section 5).
 
