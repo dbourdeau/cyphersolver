@@ -77,7 +77,7 @@
 <h2 id="what-it-is"><span class="num">01</span> What this project is</h2>
 <p>Cyphersolver is an open ledger of historical ciphers. The ciphers are worked on with AI models. The ledger is also an informal benchmark of what those models can do with them.</p>
 <p>People run the AI models: the project&rsquo;s maintainers and outside contributors.</p>
-<p>The ledger holds 910 target records. 494 are the project&rsquo;s own work, 346 were contributed from outside, and 70 are mixed.</p>
+<p>The ledger holds 913 target records. 494 are the project&rsquo;s own work, 349 were contributed from outside, and 70 are mixed.</p>
 <p>The ledger is not a critical edition. Its results have not been peer-reviewed in the academic sense.</p>
 <p>Words used on this page:</p>
 <ul>
@@ -105,21 +105,21 @@
 <p>Every image on the site is to be credited to its source: holder, shelfmark, folio, and the route to it (Gallica, DECODE, an archive&rsquo;s viewer, IIIF, an edition). That is the README&rsquo;s rule. It is not checked page by page.</p>
 <p>Images remain under their holders&rsquo; terms. Text is under CC BY 4.0, code under MIT.</p>
 <p>Since 28 October 2026, a document enters the <a href="catalogue.html">catalogue</a> only when its record shows two things. The ciphertext was seen on an image. The usual places for an earlier decipherment were searched: DECODE, Satoshi Tomokiyo&rsquo;s lists, the printed calendar or edition, and the literature. Older entries did not go through this list.</p>
-<p>A record can say whether a reading existed before the project&rsquo;s. 854 of 910 records answer. 499 record an earlier reading, complete or partial. In 78 of these it came to light only after the project&rsquo;s reading.</p>
-<p>The write-up checker asks that an earlier reading in print, online, unpublished or partial be credited in the record. 267 of the 307 records concerned do so. An earlier solution that was never published is shown in full only with its author&rsquo;s agreement.</p>
+<p>A record can say whether a reading existed before the project&rsquo;s. 857 of 913 records answer. 500 record an earlier reading, complete or partial. In 78 of these it came to light only after the project&rsquo;s reading.</p>
+<p>The write-up checker asks that an earlier reading in print, online, unpublished or partial be credited in the record. 268 of the 308 records concerned do so. An earlier solution that was never published is shown in full only with its author&rsquo;s agreement.</p>
 
 <h2 id="transcription"><span class="num">04</span> Transcription</h2>
 <p>Copying the cipher from the manuscript is a source of error in itself. The records say who transcribed each document.</p>
 <table>
 <thead><tr><th>Transcribed by</th><th>Documents</th></tr></thead>
 <tbody>
-<tr><td>an AI model, from the images</td><td>1,922</td></tr>
+<tr><td>an AI model, from the images</td><td>1,926</td></tr>
 <tr><td>several sources combined</td><td>241</td></tr>
 <tr><td>DECODE</td><td>154</td></tr>
 <tr><td>a printed edition</td><td>113</td></tr>
 <tr><td>a person working for the project</td><td>11</td></tr>
 <tr><td>other, or not stated</td><td>71</td></tr>
-<tr><td><b>All documents</b></td><td><b>2,512</b></td></tr>
+<tr><td><b>All documents</b></td><td><b>2,516</b></td></tr>
 </tbody>
 </table>
 <p>There is no systematic double blind transcription. The notes of some targets compare two transcriptions; the project publishes no overall rate of agreement.</p>
@@ -131,11 +131,11 @@
 <table>
 <thead><tr><th>How the key was obtained</th><th>Records</th></tr></thead>
 <tbody>
-<tr><td>key recovered here by cryptanalysis: from the ciphertext alone, from a plaintext found elsewhere, or from a plaintext next to the cipher</td><td>365</td></tr>
-<tr><td>a key or decipherment that already existed, applied here</td><td>354</td></tr>
+<tr><td>key recovered here by cryptanalysis: from the ciphertext alone, from a plaintext found elsewhere, or from a plaintext next to the cipher</td><td>367</td></tr>
+<tr><td>a key or decipherment that already existed, applied here</td><td>355</td></tr>
 <tr><td>neither key nor text obtained (<code translate="no">not solved</code>)</td><td>138</td></tr>
 <tr><td>not a cipher, or the document could not be reached</td><td>53</td></tr>
-<tr><td><b>All records</b></td><td><b>910</b></td></tr>
+<tr><td><b>All records</b></td><td><b>913</b></td></tr>
 </tbody>
 </table>
 <p>A negative result is to come with a <b>matched control</b>: a synthetic text of the same length, alphabet and cipher design that the same solver does recover. That is the README&rsquo;s rule. It is not checked: 21 of the 138 <code translate="no">not solved</code> records list a matched control.</p>
@@ -148,10 +148,10 @@
 <thead><tr><th>State</th><th>What it means</th><th>Documents</th></tr></thead>
 <tbody>
 <tr><td><code translate="no">read</code></td><td>coherent sentences, an English translation, and at least 95% of words read</td><td>1,048</td></tr>
-<tr><td><code translate="no">read in part</code></td><td>coherent sentences and a translation, but under 95% of words read</td><td>720</td></tr>
+<tr><td><code translate="no">read in part</code></td><td>coherent sentences and a translation, but under 95% of words read</td><td>724</td></tr>
 <tr><td><code translate="no">decoded, not read</code></td><td>a decode that does not build sentences: shown, but not counted as a reading</td><td>526</td></tr>
 <tr><td><code translate="no">not prose</code></td><td>a key sheet, a code list, figures or names</td><td>61</td></tr>
-<tr><td><b>All entries</b></td><td></td><td><b>2,355</b></td></tr>
+<tr><td><b>All entries</b></td><td></td><td><b>2,359</b></td></tr>
 </tbody>
 </table>
 <p><b>The share of words read</b> (<code translate="no">read_share</code>) counts cipher words only. In a letter that mixes clear text and cipher, it is measured over the words written in cipher; the clear words around them are neither read nor unread and stay out of both numerator and denominator.</p>
@@ -179,11 +179,11 @@
 <tr><td><code translate="no">underdetermined</code></td><td>the search does better than the reading on the real ciphertext: the test cannot decide</td><td>29</td></tr>
 <tr><td><code translate="no">too short</code></td><td>under 40 symbols read, or under 80 letters</td><td>13</td></tr>
 <tr><td><code translate="no">fail</code></td><td>a key fitted to the shuffled text does as well</td><td>4</td></tr>
-<tr><td><code translate="no">not applicable</code></td><td>a transposition, a non-alphabetic plaintext, or symbols with several values (over 10%)</td><td>100</td></tr>
-<tr><td><b>All verdicts</b></td><td></td><td><b>342</b></td></tr>
+<tr><td><code translate="no">not applicable</code></td><td>a transposition, a non-alphabetic plaintext, or symbols with several values (over 10%)</td><td>101</td></tr>
+<tr><td><b>All verdicts</b></td><td></td><td><b>343</b></td></tr>
 </tbody>
 </table>
-<p>The automated checks do not require the test. Of the 328 records whose key was recovered here and whose text was obtained in full or in part, 66 carry no verdict: 65 are results contributed from outside (43 George Lasry, 17 WAINUT, 3 Andrew Aymeloglu, 1 SeldomPhooey and 1 Malcolm McBratney) and 1 is mixed.</p>
+<p>The automated checks do not require the test. Of the 330 records whose key was recovered here and whose text was obtained in full or in part, 68 carry no verdict: 67 are results contributed from outside (43 George Lasry, 17 WAINUT, 3 Andrew Aymeloglu, 2 Malcolm McBratney, 1 SeldomPhooey and 1 Andrew Beling) and 1 is mixed.</p>
 <p>What the test does not show:</p>
 <ul>
 <li>it scores letters, so it checks neither the sense nor a code value proposed from context;</li>
@@ -204,11 +204,11 @@
 <table>
 <thead><tr><th>Who signed the grade</th><th>Entries</th></tr></thead>
 <tbody>
-<tr><td>an AI model</td><td>1,466 (94%)</td></tr>
+<tr><td>an AI model</td><td>1,470 (94%)</td></tr>
 <tr><td>a person assisted by an AI model</td><td>53</td></tr>
 <tr><td>a person, no AI model named</td><td>7</td></tr>
 <tr><td>cannot tell</td><td>36 (2 of them name a published edition, not a reviewer)</td></tr>
-<tr><td><b>All graded entries</b></td><td><b>1,562, in 561 records</b></td></tr>
+<tr><td><b>All graded entries</b></td><td><b>1,566, in 564 records</b></td></tr>
 </tbody>
 </table>
 <p>In at least 77 entries the record itself says the reader was not independent of the work (for example, the same session). At least 136 more are signed by an agent working for the author of the reading. These entries do not meet, or do not clearly meet, the rule of CONTRIBUTING.</p>
@@ -216,7 +216,7 @@
 <p><b>The second review of a reading is therefore an AI model reader together with the automated checks. It is not a human review.</b></p>
 <p>The <b>human check</b> (<code translate="no">human_check</code>) is something else. A person compares a passage with the image, without AI help, and records the result: confirmed, corrected or disagreed. It is declared in the record. It covers 4 records (4 confirmed).</p>
 <p>When a character or an alphabet is doubtful, a contributor can make <b>targeted blind re-readings</b>. A person sees only the doubtful sign, cut out of the image, next to two or three candidate shapes. They do not see the expected reading, the gloss or the context. They choose the shape they see. This confirms or refutes one value, one reading or a whole alphabet without the bias of knowing the answer. It is a check of sign shapes, not a re-reading of the text, and it is recorded as such.</p>
-<p>101 records also declare an &ldquo;independent verification&rdquo;: someone outside the project checked the reading against the images or with their own key. The field does not say whether that person used an AI model.</p>
+<p>102 records also declare an &ldquo;independent verification&rdquo;: someone outside the project checked the reading against the images or with their own key. The field does not say whether that person used an AI model.</p>
 <p>232 readings whose key was recovered or matched here are <a href="contributors.html#verify">waiting for an independent check</a>.</p>
 <p class="cmuted"><b>How these figures are counted.</b> One graded entry is one item of <code translate="no">outcome.texts</code> in a target&rsquo;s <code translate="no">profile.json</code> that carries a <code translate="no">reading_review</code>, whatever its state. Only the <code translate="no">targets/&lt;folder&gt;/profile.json</code> files are counted. The signer is classed from the <code translate="no">by</code> field: <i>model</i> when it names an AI model, an agent or an AI session and no person comes first; <i>person assisted by an AI model</i> when a person comes first and says an AI model assisted; <i>person</i> when no model is named; <i>cannot tell</i> when it names neither (&ldquo;project verification pass&rdquo;). &ldquo;Not independent&rdquo; and &ldquo;an agent working for the author&rdquo; are found by a word search in <code translate="no">by</code> and <code translate="no">note</code>, so they are lower bounds. Counting per document or per target gives other totals. The rule is in <a href="https://github.com/dbourdeau/cyphersolver/blob/main/docs/_method_page.py" rel="noopener"><code translate="no">docs/_method_page.py</code></a>.</p>
 
@@ -242,7 +242,7 @@
 </tbody>
 </table>
 <p>The other rules (the statistical test, the credit for earlier readings, the human check, the catalogue vetting list) are checked by scripts run by hand. They do not block a merge.</p>
-<p>Today 2 of the 672 targets that present a reading would not pass the Reading check if a pull request changed them.</p>
+<p>Today 2 of the 675 targets that present a reading would not pass the Reading check if a pull request changed them.</p>
 <p><b>Merging.</b> A change to a result enters the repository through a pull request approved by a maintainer who is not its author (CONTRIBUTING, &ldquo;Review and merging&rdquo;). A ruleset on <code translate="no">main</code> enforces part of this: it requires a pull request and a code owner&rsquo;s review (<a href="https://github.com/dbourdeau/cyphersolver/blob/main/.github/CODEOWNERS" rel="noopener"><code translate="no">CODEOWNERS</code></a>), but not that the two checks pass, which CONTRIBUTING also asks. The repository&rsquo;s administrator and the site&rsquo;s rebuild job (through a deploy key) can push to <code translate="no">main</code> without a pull request, and the owner has pushed directly, so the rule does not bind every change.</p>
 
 <h2 id="ai"><span class="num">10</span> The part played by AI</h2>
