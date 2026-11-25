@@ -9,3 +9,10 @@
 - Attacks and controls: see NOTES.md table. Null result.
 - Viewed K24.19 (Bohak family), NS J479 and J277 images for comparison. Zimam chart URLs from the Cambridge blog returned the site home page: chart not obtained.
 - Not done: sign-level transcription, K24.23 and the PGP related document, Elbaum's J479 table, Bohak 2010 PDF.
+
+## Second attempt (24 Nov 2026, later session): sign-level transcription
+- Merged the first attempt, fetched both CUDL images again (only two images exist for the leaf), deskewed 1.15 degrees, flattened.
+- Viewed every line at 2x in windows of 5-8 signs, wrote segments_a.json line by line (seg.py), class sheets (sheet.py), finalize.py -> transcription.txt, signs.tsv, cipher_tokens.txt.
+- 228 signs, 42 classes, IC 0.0442; H(next|prev) z -4.1 (first attempt -0.4). Direction right to left from the aligned right line ends.
+- Annealing with he-tanakh, ja-from-arabic, ar-mamluk (corpora via CYPHER_CORPUS_ROOTS pointing at the first attempt's worktree; PYTHONUTF8=1): no signal, controls z 4-5.
+- Second reading not independent (same reader); lines 1 and 7 re-checked with cuts drawn.
