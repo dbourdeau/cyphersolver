@@ -110,7 +110,7 @@ this country ..."; P4 "... of this govern-ment [901] the ..."; P6 "... re-[12]-p
 - 1315, three times in the 14 June 1814 letter where "a" is wanted - blocker: open-codes; WE025 has "hu" and
   1215 = a; 1315 is clear on frame 0100 all three times, so it is not a misreading of 1215; not explained
 - 210 in Brice Dudout's 1811 line ("in-form-ed") - blocker: needs-physical-access; WE025 has "cur" at 210 and "form"
-  at 216; his photograph of the HSP leaf is not published, so the digit cannot be checked here
+  at 216; the HSP staff's study photograph of the leaf is not published, so the digit cannot be checked here
 - that the table used is the one Weber prints as WE025, row for row - blocker: needs-physical-access; neither the book
   nor the contributor's full transcription is in the repository (341 of 1,592 rows are, 10 marked as checked on the page
   image); the page numbers given for the table conflict (see the integration check)
