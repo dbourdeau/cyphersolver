@@ -1,8 +1,8 @@
 # baselanv9: Clavicula Salomonis and Septem sigilla planetarum in a secret alphabet, Basel UB, UBH AN V 9 (17th century)
 
-Status: in progress. Contributed by pull request, not yet written up (pass 2 with the volume's key leaf added 25 Nov 2026 in `keyleaf/`, scored by a separate judge the same day; see "Pass 2" below; the first pass stays the figure of record), and a new target: the volume is in neither `catalogue.json` nor `research/leads.json`. The key was recovered from cipher ff. 4r-4v aligned with the volume's own clear copy, frozen, and used for one decode of three held-out passages. A separate strict judge finds 747 of 1,138 decoded letters in words that read as sense (65.6%: H1 62.4%, below the contributor's own 65% line; H2 67.0%; H3 69.6%), and the decode reproduces 988 of 1,231 letters of the clear copy (80.3%). Counted in words, 113 of 225 read as sense (0.502) and no sentence is clean, so each passage is "decoded, not read" and the target is filed not read: key recovered from adjacent plaintext, text not read. The volume's own key leaf, viewed only after the decode, agrees on 46 of the 52 values it covers. The page, ledgers, DECODE queue entry and any catalogue or lead entry are left to the maintainers.
+Status: in progress. Contributed by pull request, not yet written up (pass 2 with the volume's key leaf added 25 Nov 2026 in `keyleaf/`, scored by a separate judge the same day; see "Pass 2" below; pass 3 added the same day in `pass3/`: H1 re-read, not held out, 399/405 = 98.5% judged, a fresh held-out passage H4 389/415 = 93.7% judged, 11 second-series rims 486/521 = 93.3% judged with one rim under the 65% line, see "Pass 3" below; the first pass stays the figure of record), and a new target: the volume is in neither `catalogue.json` nor `research/leads.json`. The key was recovered from cipher ff. 4r-4v aligned with the volume's own clear copy, frozen, and used for one decode of three held-out passages. A separate strict judge finds 747 of 1,138 decoded letters in words that read as sense (65.6%: H1 62.4%, below the contributor's own 65% line; H2 67.0%; H3 69.6%), and the decode reproduces 988 of 1,231 letters of the clear copy (80.3%). Counted in words, 113 of 225 read as sense (0.502) and no sentence is clean, so each passage is "decoded, not read" and the target is filed not read: key recovered from adjacent plaintext, text not read. The volume's own key leaf, viewed only after the decode, agrees on 46 of the 52 values it covers. The page, ledgers, DECODE queue entry and any catalogue or lead entry are left to the maintainers.
 
-Contributed by Malcolm McBratney (Brisbane), working with Claude (Anthropic): Claude Opus 5.5 the solver session, the separate strict judge and the assembly of this folder.
+Contributed by Malcolm McBratney (Brisbane), working with Claude (Anthropic): Claude Opus 5.5 the solver session, the separate strict judge and the assembly of this folder; pass 3 (`pass3/`) transcribed, decoded and assembled by Claude Fable 5.2, its judge's model not recorded.
 
 Provenance tags: [measured] = counted or hashed from the files in this folder; [derived] = worked out from them; [sourced] = from a named source; [stated] = given by the contributor's working sessions, not checked here; [unverified] = a reading of the text not checked by anyone else.
 
@@ -308,12 +308,117 @@ Per pentacle (decode as produced; no emendation; letters a-z; z and shuffle coun
 
 Sum check: the 62 rows add to 2,520 letters and 1,597 lexicon letters [measured]. What the rims say, from the decode and unchecked [unverified]: protection and power formulas ("hoc signum portat ...", "contra maleficia ...", "cum hoc signo non peribis ..."), Ps 91:13 on no. 102 ("super aspidem et basiliscum ambulabis et conculcabis leonem et draconem"), Salomon sealing the demon in a well (no. 44), Adam and Aaron bearing the sign on the forehead (nos. 18, 97).
 
+## Pass 3: H1 re-read, a fresh held-out passage H4 and 11 second-series rims (a separate result, read with known key)
+
+A third pass of 25 Nov 2026, in `pass3/`. **The first pass above stays the figure of record** (65.6% pooled; H1 62.4%) and none of its files, and none of pass 2's, changed. Pass 3 does not replace either earlier figure: it is reported apart, with its own freeze, decode, judge and controls. **No person has checked any part of pass 3.** Times are UTC from `pass3/RUN_RECORD.tsv` and `pass3/RUN_RECORD_FOLLOWUP.tsv`.
+
+**The figures, stated plainly** (letters, S/(S+E+N), separate judge's central call, `pass3/JUDGE_P3_RESULT.md`) [measured]:
+
+- **H4, f. 25r lines 1-12, held out: 389/415 = 93.7% judged** (judge's range on its own doubtful calls 386/415 = 93.0% to 398/415 = 95.9%; the solver's own stricter count 379/415 = 91.3%). No word of H4 uses rule C4 or C5, so the figure is the same without them.
+- **H1, f. 15r lines 1-12, re-read: 399/405 = 98.5% judged. H1 is NOT held out** in pass 3: it was decoded twice before, and the reader had seen its clear copy f. 109v before re-reading. With C4 and C5 switched off: 378/398 = 95.0% (364/398 = 91.5% if every changed word is counted N).
+- **Second-series rims, 11 (ff. 52r-53r): 486/521 = 93.3% judged.** Ten rims are over the 65% line; **S2-05 is 4/17 = 23.5%, under: failed** (two names, caraton and mathoi, that the judge could not verify).
+- Controls: 0/5000 at seeds 20261112 and 7 for H1r, H4, the rims as a section and each of the 11 rims (`pass3/CONTROL_P3.txt`).
+- No pooled figure across the three units is given or used.
+
+What was done, in order [measured: the two run records]:
+
+1. Split written before the new page was fetched or viewed (07:44, `pass3/SPLIT_P3.md`): H1r = f. 15r lines 1-12 re-read, declared not held out and not blind; H4 = f. 25r lines 1-12 (the recto ten leaves after H1), never transcribed or decoded in passes 1 or 2, its clear counterpart not to be looked for before the decode.
+2. Key v3 (`pass3/KEY_V3.tsv`, `pass3/RULES_V3.md`): the 73 token values, 5 pairs and 2 word forms of pass 2's `keyleaf/KEY_LEAF.tsv`, re-checked against the leaf image f. 99r; **no value changed** (73 of 73 token values the same, `pass3/checks/VERIFY_OUT.txt`). `KEY_V3.tsv` gives the evidence per value: the leaf's own entry, whether the leaf's drawing and the label's shape agree (69 exact, 4 probable: Cs, As, Lr, Ab) and a note. The decoder's rules changed in five declared places, C1 to C5 (below and `pass3/EMENDATIONS.md`).
+3. Transcription (to 07:55): H1 re-read from the full-size image (`pass3/tx/f015r_p3.txt`), H4 from the full-size image of f. 25r fetched by plain GET (`pass3/tx/f025r_H4.txt`), and the rims of second-series pentacles nos. 2-12, ff. 52r-53r, from own polar unwraps (`pass3/tx/PENT_S2.txt`). One reader (Claude Fable 5.2, as the file headers state), who knows the key leaf, so no transcription here is shape-blind. Doubts written before the freeze: `pass3/DOUBTS_P3.md`.
+4. Freeze (07:55:17, `pass3/FREEZE_P3.txt`): md5 and sha256 of the key, the rules, the decoder, the three transcriptions, the doubts, the split and the f. 25r image. **Unlike pass 2, this freeze was not time-stamped or pushed before the decode.** That the freeze came first rests on the run record and the hashes in the freeze file; the outside time-stamp (step 9) is later than the decode and the judging.
+5. One decode (07:55:25, `pass3/scripts/run_decode.py`, which asserts the frozen hashes): `pass3/DECODE_P3.txt`. No emendation (`pass3/EMENDATIONS.md`).
+6. Solver's own strict count and a clear-copy match for H1 (08:02, `pass3/SCORE_P3.tsv`); shuffle control (08:02, `pass3/scripts/control_p3.py`): the 73 token values permuted, 5,000 keys at each seed, own Latin letter 4-gram model on `la-latlib-letters.txt` (sha256 asserted), statistic log10 probability per character, per section and per rim.
+7. Prior-art look for the rim formulas (08:03, `pass3/PRIOR_ART_P3.md`): two web searches found no page with the Basel wording; a genre parallel only (BL Stowe MS 16, pseudo-Solomonic amulet seals with "Hoc signum" captions). The printed Key of Solomon legends were not compared.
+8. Separate judge (file time 08:05, `pass3/JUDGE_P3_RESULT.md`): given only `pass3/judge/BRIEF.txt` and `pass3/judge/decode.txt` (the same bytes as `DECODE_P3.txt`). It was launched by the calling session, not by the solver. **The judge's brief was written at 08:03, after the decode** (pass 2's was frozen before its decode). The judge's model and session are not recorded in its file [stated by the caller: an independent judge]; its separation from the solver is stated, not shown.
+9. Variant without C4 and C5, declared at 08:07:22 and then run (`pass3/variant/`), and the time-stamp of the whole working folder (08:08:04, `pass3/stamps/`: RFC 3161 Sectigo and FreeTSA both granted on the first try, OpenTimestamps submitted and pending; 37 files in the manifest, 36 committed here and matching, the 37th a `__pycache__` file; the manifest's `./pr_prep/variant/` is `pass3/variant/` here).
+
+### Per-unit figures (pass 3)
+
+Judge's central call beside the solver's own count. Where they differ the solver's is the stricter. Lines of H1r and H4 were controlled as sections only.
+
+| unit | decode (no emendation) | judge S/E/N | judge S/(S+E+N) | solver's own S/E/N | solver's own share | controls, seeds 20261112 / 7 |
+|---|---|---|---|---|---|---|
+| H1r L01 | et per omnia documenta quae~ in fide christiana sunt | 43/0/0 | 43/43 = 100.0% | 43/0/0 | 43/43 = 100.0% | section only |
+| H1r L02 | instituta et per sactorum agmina quae~ agni imma= | 39/1/0 | 39/40 = 97.5% | 39/1/0 | 39/40 = 97.5% | section only |
+| H1r L03 | culati sequuntur uestigia et per omnes sanctos | 40/0/0 | 40/40 = 100.0% | 40/0/0 | 40/40 = 100.0% | section only |
+| H1r L04 | quos deus elegit ante mundi iacta fundamenta | 38/0/0 | 38/38 = 100.0% | 38/0/0 | 38/38 = 100.0% | section only |
+| H1r L05 | et pmer eorum merita qui~ in gaudio et gratia | 35/1/0 | 35/36 = 97.2% | 35/1/0 | 35/36 = 97.2% | section only |
+| H1r L06 | sunt apud deum | 12/0/0 | 12/12 = 100.0% | 12/0/0 | 12/12 = 100.0% | section only |
+| H1r L07 | alia coniuratio | 14/0/0 | 14/14 = 100.0% | 14/0/0 | 14/14 = 100.0% | section only |
+| H1r L08 | adiuro uos dimones in quacunque parte mundi | 36/1/0 | 36/37 = 97.3% | 36/1/0 | 36/37 = 97.3% | section only |
+| H1r L09 | situs per annunciationem ch~ri per aduentum | 36/1/0 | 36/37 = 97.3% | 36/1/0 | 36/37 = 97.3% | section only |
+| H1r L10 | ch~ri per natiuitatem ch~ri per circumci= | 33/0/0 | 33/33 = 100.0% | 33/0/0 | 33/33 = 100.0% | section only |
+| H1r L11 | sionem et baptisum ch~ri per ieiunium et trans | 37/1/0 | 37/38 = 97.4% | 37/1/0 | 37/38 = 97.4% | section only |
+| H1r L12 | figurationem ch~ri in monte tabor per atundi= | 36/1/0 | 36/37 = 97.3% | 31/0/6 | 31/37 = 83.8% | section only |
+| **H1r, all** | | **399/6/0** | **399/405 = 98.5%** | 394/5/6 | 394/405 = 97.3% | 0/5000, 0/5000 (z 11.7 / 11.7) |
+| H4 L01 | post hac sugit et aperit brachia sua ac si | 33/1/0 | 33/34 = 97.1% | 33/1/0 | 33/34 = 97.1% | section only |
+| H4 L02 | uellet amplexari aere dicendo [?] | 25/1/0 | 25/26 = 96.2% | 26/0/0 | 26/26 = 100.0% | section only |
+| H4 L03 | per nooen iestius libri et per omnes eius uirtu= | 37/2/0 | 37/39 = 94.9% | 31/1/7 | 31/39 = 79.5% | section only |
+| H4 L04 | tes [?] tortuosi ne[?] deformes sed in oni man= | 31/1/0 | 31/32 = 96.9% | 29/1/2 | 29/32 = 90.6% | section only |
+| H4 L05 | sueta forma ad nos ueniatis et per nomen et in | 37/0/0 | 37/37 = 100.0% | 37/0/0 | 37/37 = 100.0% | section only |
+| H4 L06 | nomine adonai sabaoth emloo eloi sadai | 28/0/5 | 28/33 = 84.8% | 28/0/5 | 28/33 = 84.8% | section only |
+| H4 L07 | iod he uau aleph tetragrammaton ineffabale | 36/1/0 | 36/37 = 97.3% | 36/1/0 | 36/37 = 97.3% | section only |
+| H4 L08 | eius uidelichet qui est deus uirtut~um deus | 35/1/0 | 35/36 = 97.2% | 35/1/0 | 35/36 = 97.2% | section only |
+| H4 L09 | exel[?]us deus ueus ter imsrael qui super t[?]= | 27/2/4 | 27/33 = 81.8% | 24/2/7 | 24/33 = 72.7% | section only |
+| H4 L10 | rar gerum habitat et in coelo sedes eius | 25/0/8 | 25/33 = 75.8% | 25/0/8 | 25/33 = 75.8% | section only |
+| H4 L11 | per nomen eius qui dixit et facta sunt et stare | 38/0/0 | 38/38 = 100.0% | 38/0/0 | 38/38 = 100.0% | section only |
+| H4 L12 | fecit omnia et ipse super omnia dominatur et | 37/0/0 | 37/37 = 100.0% | 37/0/0 | 37/37 = 100.0% | section only |
+| **H4, all** | | **389/9/17** | **389/415 = 93.7%** | 379/7/29 | 379/415 = 91.3% | 0/5000, 0/5000 (z 9.8 / 9.8) |
+| S2 S2-02 | hoc signum triumphatoris dni~ nostri iesu ch~ri mesteriosum | 49/1/0 | 49/50 = 98.0% | 49/1/0 | 49/50 = 98.0% | 0/5000, 0/5000 (z 5.9 / 5.9) |
+| S2 S2-03 | cum hoc signo erus gratus omnibus et fortunatus | 39/1/0 | 39/40 = 97.5% | 39/1/0 | 39/40 = 97.5% | 0/5000, 0/5000 (z 7.3 / 7.2) |
+| S2 S2-04 | iesus autem trasiens per medium ipsorum abiit | 38/1/0 | 38/39 = 97.4% | 38/1/0 | 38/39 = 97.4% | 0/5000, 0/5000 (z 6.0 / 6.1) |
+| S2 S2-05 | caraton amen mathoi | 4/0/13 | 4/17 = 23.5% **under** | 4/0/13 | 4/17 = 23.5% | 0/5000, 0/5000 (z 4.6 / 4.5) |
+| S2 S2-06 | deposuit potentes de sede et exaltauit humiles | 40/0/0 | 40/40 = 100.0% | 40/0/0 | 40/40 = 100.0% | 0/5000, 0/5000 (z 6.5 / 6.4) |
+| S2 S2-07 | hoc signum reddit hominem uirtuosum et a periculo defendit | 50/0/0 | 50/50 = 100.0% | 50/0/0 | 50/50 = 100.0% | 0/5000, 0/5000 (z 8.5 / 8.5) |
+| S2 S2-08 | hoc est ineffabale nomen dei quo aron usus est in periculus | 47/2/0 | 47/49 = 95.9% | 47/2/0 | 47/49 = 95.9% | 0/5000, 0/5000 (z 6.2 / 6.3) |
+| S2 S2-09 | ad amorem ingribe hos caracteres in crusta panis et praebe ad commedendum | 54/1/7 | 54/62 = 87.1% | 54/1/7 | 54/62 = 87.1% | 0/5000, 0/5000 (z 7.4 / 7.5) |
+| S2 S2-10 | hoc signum in sinu aut uestibus portatum auget hominem gratia mirabala | 59/1/0 | 59/60 = 98.3% | 52/0/8 | 52/60 = 86.7% | 0/5000, 0/5000 (z 8.6 / 8.6) |
+| S2 S2-11 | gribe hoc cum manu sinistra sanguine digiti tui die iouus in aurgento | 51/2/5 | 51/58 = 87.9% | 51/2/5 | 51/58 = 87.9% | 0/5000, 0/5000 (z 6.6 / 6.6) |
+| S2 S2-12 | contra ligaturam positum in uestibus ligati statim liberabiutur | 55/1/0 | 55/56 = 98.2% | 44/0/12 | 44/56 = 78.6% | 0/5000, 0/5000 (z 8.1 / 8.0) |
+| **S2, all** | | **486/10/25** | **486/521 = 93.3%** | 468/8/45 | 468/521 = 89.8% | 0/5000, 0/5000 (z 12.6 / 12.6) |
+
+Sum checks [measured: `pass3/checks/mk_tables.py` asserts them]: the 12 lines of H1r add to 399/6/0 (405 letters), the 12 lines of H4 to 389/9/17 (415), the 11 rims to 486/10/25 (521); the solver's own rows add to 394/5/6, 379/7/29 and 468/8/45. Signs with no value: H1r 0, H4 5, rims 0.
+
+Judge's range per unit, every doubtful call taken against and then for the decode: H1r 394/405 = 97.3% to 400/405 = 98.8%; H4 386/415 = 93.0% to 398/415 = 95.9%; rims 479/521 = 91.9% to 500/521 = 96.0% (S2-05 4/17 to 17/17, on whether the two names are accepted). The judge's note of "7 instances" of ch~ri is 6 in the decode (5 in H1r, 1 in S2-02); all are scored S either way, so no figure moves [measured: `pass3/checks/VERIFY_OUT.txt`].
+
+H1r against the clear copy f. 109v, which does not depend on anyone's judgement: the decode matches 399 of 425 clear letters = 93.9% (pass 1: 80.3% over all three passages); without C4 and C5, 386 of 425 = 90.8% [measured: `pass3/SCORE_P3.tsv`, `pass3/checks/VERIFY_OUT.txt`]. H4 has not been compared with its clear copy.
+
+### The C4 and C5 caveat
+
+Two of the decoder's rules are **not on the key leaf**: C4 (`Cl Tq` = rte, by analogy with the leaf's rt and te) and C5 (the x is ch in the chi-rho-iota abbreviation, from Latin usage; the leaf says only that other abbreviations follow Latin custom). The judge could give no figure without them from its packet. The variant was therefore declared and run afterwards on the same frozen key and transcriptions, with the decoder changed in those two places only (`pass3/variant/VARIANT_DECLARED.md`, `make_variant.py`). It is not a first pass. Words the variant leaves alone keep the judge's central call; the changed words were called by the assembling session with the judge's brief, not by the judge, and a strict figure counts every changed word N [measured: `pass3/variant/SCORE_VARIANT.tsv`]:
+
+| unit | judged, C4 and C5 on | no C4 | no C5 | no C4, no C5 | no C4, no C5, strict |
+|---|---|---|---|---|---|
+| H1r (re-read, not held out) | 399/405 = 98.5% | 398/404 = 98.5% | 379/399 = 95.0% | **378/398 = 95.0%** | 364/398 = 91.5% |
+| H4 (held out) | 389/415 = 93.7% | 389/415 = 93.7% | 389/415 = 93.7% | **389/415 = 93.7%** | 389/415 = 93.7% |
+| S2 rims | 486/521 = 93.3% | 486/521 = 93.3% | 484/520 = 93.1% | 484/520 = 93.1% | 482/520 = 92.7% |
+
+Changed words: christiana becomes iristiana (N, two slips), parte becomes pa[?]te (S under the brief's rule for a word holding [?]; N in the strict column), ch~ri becomes i~ri five times in H1r and once in S2-02 (E, as pass 2's judge scored i~ri; N in the strict column). H4 is letter for letter the judged decode in all three variants. Lowest H1r line without C4 and C5: L01 33/42 = 78.6%. Every unit stays on the same side of the 65% line.
+
+### Why H1 failed in passes 1 and 2
+
+Transcription, not the key [derived: the key table is unchanged and 30 of the 80 word groups of H1 differ between pass 2's `keyleaf/tx2/f015r.txt` and `pass3/tx/f015r_p3.txt`]. At full size the lambda (a) is a thin leg with a thick hook; passes 1 and 2 often wrote it as `1` (b) or as `Lm 1` (a + b), which gave sabctorem, bgnia, gbudi, qubcuque. Nasal dots were put on the wrong sign, and the leaf's ligatures ia, io, tio, tia, ur, pt and te were not used. The decoder's rule changes C1 and C2 also bear on H1 (rum, -ent). Since the re-read was made by a reader who had seen the clear copy, H1's pass 3 figure shows that the key leaf reads the passage once it is transcribed well; it does not test the transcriber. H4 is the unit that does.
+
+### What pass 3 leaves unread
+
+- H4 lines 9-10, "deus ueus ter imsrael qui super t[?]=rar gerum habitat": the judge's one stretch that does not read (L09 27/33 = 81.8%, L10 25/33 = 75.8%); 5 signs of H4 have no value; emloo (L06).
+- S2-05, caraton amen mathoi, 4/17.
+- The two-ring figures on f. 54r (three by pass 3's count, four by pass 2's note; not reconciled), the two figures on f. 97r-v and the texts written inside the circles: not transcribed.
+- Second-series no. 1 (f. 52r) is in ordinary script and was not transcribed.
+
+What the rims say, from the decode and unchecked [unverified]: use-captions ("hoc signum reddit hominem uirtuosum et a periculo defendit"), instructions (to be written on a bread crust and given to eat, for love; written with the left hand in the blood of one's finger on a Thursday, in silver; against a binding spell, placed in the bound person's clothes), and two Gospel verses, S2-04 Luke 4:30 and S2-06 Luke 1:52 [derived: recognised from the decode, not checked against an edition]. With pass 2's 62, 73 cipher rims are now decoded.
+
+Class and outcome: unchanged. `docs/_check_reading.py` and the other repo checkers were not run on pass 3 (the contributor's sessions do not run repo scripts), so no "read" or "read in part" wording is claimed for any pass 3 unit, and `profile.json`'s outcome block is as pass 2 left it. Whether pass 3 changes the target's class is left to the maintainers.
+
 ## Remaining gaps
 
-- Holes in the three decoded passages of the first pass, 112 of 225 words (H1 42 of 77, H2 63 of 133, H3 7 of 15) - blocker: not-attempted; key faults the judge's errors show (the sign 1 where the sense wants a; r or rr for te or i; irr for Xri; c for h; final t as n). Pass 2 (`keyleaf/`) applies the key leaf to the same transcriptions; the transcription faults behind several of these (1 for a) are not re-read.
-- Pass 2 units under the 65% line: H1 (62.04%), H3 pentacle 3 (52.8%), rims S1-025, S1-039, S1-070, S1-071, S1-096 - blocker: not-attempted; swapped letter pairs and the first pass's transcription faults (not re-read) carry most of the N; a re-read of these lines on the images would be a third pass with its own figure. Every pass-2 section is under `_check_reading.py`'s 0.45 clean-sentence bar, so none is read. No person has checked pass 2.
+- Holes in the three decoded passages of the first pass, 112 of 225 words (H1 42 of 77, H2 63 of 133, H3 7 of 15) - blocker: not-attempted; key faults the judge's errors show (the sign 1 where the sense wants a; r or rr for te or i; irr for Xri; c for h; final t as n). Pass 2 (`keyleaf/`) applies the key leaf to the same transcriptions; the transcription faults behind several of these (1 for a) are not re-read. Pass 3 (`pass3/`) re-read H1 only (399/405 = 98.5% judged, not held out); H2 and H3 are not re-read.
+- Pass 2 units under the 65% line: H1 (62.04%), H3 pentacle 3 (52.8%), rims S1-025, S1-039, S1-070, S1-071, S1-096 - blocker: not-attempted; swapped letter pairs and the first pass's transcription faults (not re-read) carry most of the N; a re-read of these lines on the images would be a third pass with its own figure: pass 3 did this for H1 only (see "Pass 3"); H3 pentacle 3 and the five rims are not re-read. Every pass-2 section is under `_check_reading.py`'s 0.45 clean-sentence bar, so none is read. No person has checked pass 2.
 - 1 of the 8 first-pass `?` signs is still not identified (f. 4r l. 17, a small reversed-e loop joined to a looped delta; not on the key leaf) - blocker: no-key-material; the leaf has no such sign.
-- Pentacles with no clear counterpart still not transcribed: the second series ff. 52r-54r (nos. 1-12 and the four figures on f. 54r, several with two rings and numerals), the two magic-mirror figures f. 97r-v, and signs written inside circles of the first series (e.g. nos. 62, 101) - blocker: not-attempted; images fetched (`keyleaf/IMAGE_FETCH.tsv`), not transcribed in this pass.
+- Pentacles with no clear counterpart still not transcribed: the two-ring figures on f. 54r (four by pass 2's note, three by pass 3's count; several with numerals), the two magic-mirror figures f. 97r-v, and the texts written inside the circles of both series (e.g. first-series nos. 62, 101) - blocker: not-attempted; images fetched (`keyleaf/IMAGE_FETCH.tsv`), not transcribed in passes 2 or 3. The rims of second-series nos. 2-12 (ff. 52r-53r) were transcribed and decoded in pass 3; no. 1 is in ordinary script.
+- Pass 3 unit under the 65% line: second-series rim S2-05, caraton amen mathoi, 4/17 = 23.5% - blocker: no-key-material; two names with no clear counterpart and no source found to check them against.
+- Pass 3, H4 (f. 25r) lines 9-10, "deus ueus ter imsrael qui super t[?]=rar gerum habitat", and 5 signs of H4 with no value (L02, L04 twice, L09 twice) - blocker: not-attempted; the lines were not re-read on the image after the decode (freeze rule), and H4 has not been compared with its clear copy.
+- Decoder rules C4 and C5 of pass 3 are not on the key leaf - blocker: no-key-material; the leaf has no rte entry and no chi-rho entry; figures with and without them are in "Pass 3".
 - The rest of the volume's cipher text, ff. 3r-96v and ff. 158r-162r, apart from the passages transcribed here - blocker: not-attempted; the clear copy ff. 101r-155r and 166r-170r gives the same text per the catalogue.
 - Inner dots (`*`) were not recorded on the first-pass leaves, so the two-dot sign there runs on the declared fallback of the pass-2 decoder - blocker: not-attempted; a re-transcription of those leaves with the dots would remove the fallback.
 - Prior art in print: Skinner and Rankine 2008, Mathers 1889, Boudet's census - blocker: needs-physical-access; not opened; web searches found no mention of a Basel cipher copy.
@@ -338,7 +443,7 @@ The 8 signs transcribed `?` on the first pass, looked at on the full-size images
 - [x] known-keys: the volume's own key leaf, transcribed into `keyleaf/KEY_LEAF.tsv` and applied in pass 2
 - [x] print: no edition or study of this cipher found (`PRIOR_ART.md`); Skinner and Rankine, Mathers and Boudet's census not opened
 - [x] key-rebuild: done as pass 2 with the key leaf (`keyleaf/`), frozen and stamped before one decode; reported apart from the first pass of record
-- [ ] retry: in part. The 8 `?` signs were looked at (7 now labelled); the 62 inscribed first-series pentacle rims were transcribed and decoded; pass 2 was scored by a separate judge (25 Nov 2026); the second-series pentacles, f. 97r-v and a re-transcription of the first-pass leaves with inner dots remain
+- [ ] retry: in part. The 8 `?` signs were looked at (7 now labelled); the 62 inscribed first-series pentacle rims were transcribed and decoded; pass 2 was scored by a separate judge (25 Nov 2026); pass 3 (25 Nov 2026) re-read H1 with inner dots recorded, decoded a fresh held-out passage (H4, f. 25r) and the 11 inscribed rims of second-series nos. 2-12, and was scored by a separate judge; the figures on f. 54r, f. 97r-v, the texts inside the circles, and a re-transcription of ff. 4r, 4v, 159r and 34r with inner dots remain
 
 ## Files
 
@@ -370,6 +475,8 @@ Copied unchanged from the contributor's working folder (sha256, first 16 hex) [m
 | `scripts/` (14 files) | `common.py`, `solve.py`, `decode_once.py`, `score_clear.py`, `shuffle.py`, `lexcheck.py`, `worddiff.py`, `train_fit.py`, `fetch.sh`, `grid.py`, `sheet.py`, `strips.py`, `unwrap.py`, `zoom.sh` | solve.py 31616ce3bb4491a2, common.py 454414ae8114fa44, decode_once.py 4c23afc8bc916be5 |
 | `stamps/` (6 files) | manifest of the working folder and its time-stamps | MANIFEST.sha256 6f8f7ff0975153f5 |
 
+Pass 3 (`pass3/`, 47 files, added 25 Nov 2026; sha256, first 16 hex) [measured]: `KEY_V3.tsv` 0c7768e67ff56f77, `RULES_V3.md` 72905d3249d72048, `scripts/decode_p3.py` 11bf6e1b02b6ec5c, `tx/f015r_p3.txt` 33e5de612bb11a48, `tx/f025r_H4.txt` c0f2a584154fe686, `tx/PENT_S2.txt` 8746be67ae7081cc, `DOUBTS_P3.md` a72f05ebd36e40f0, `SPLIT_P3.md` 81a07fba0e4c39a1 (the eight text files of `FREEZE_P3.txt`, 5a16f2a8734892bd; its ninth entry is the f. 25r image, not committed); `DECODE_P3.txt` and `judge/decode.txt` 76f334c53450a421; `judge/BRIEF.txt` a1fd9095fa59183e; `JUDGE_P3_RESULT.md` 70f48c45442e4ed3; `SCORE_P3.tsv` fa0b2f47b7e576e6 (the solver's own count); `CONTROL_P3.txt` 5d18be0f43a39991; `RUN_RECORD.tsv` e882edaf10d084b6 and `RUN_RECORD_FOLLOWUP.tsv` (judge, variant, stamp, checks); `RESULT.md` 02206d3320ee8aef (the solver's own report, written before the judge ran: where it says no separate judge has scored pass 3, this file governs); `EMENDATIONS.md` (none made); `PRIOR_ART_P3.md`, `BLOCKED.tsv` (nothing blocked); `scripts/` (6 files; they carry the working folder's absolute paths, left unchanged so the hashes hold); `variant/` (12 files: the declared decode without C4 and C5 and its score); `checks/` (3 files); `stamps/` (6 files; `MANIFEST.sha256` 4836e7313b019c80, 36 of its 37 entries committed and matching).
+
 Not committed: the page images, crops and contact sheets; the downloaded IIIF manifests, METS record, Steinmann PDF and catalogue HTML; `__pycache__`. They are in the stamp manifest where it lists them.
 
 Made here (25 Nov 2026): `transcription.txt` (the five files of `tx/` that `FREEZE_TX.txt` lists, put together unchanged), `reading.md`, `translation.md`, `validation.tsv` (input for `docs/_validate.py`), `profile.json`, this file. No images.
@@ -382,4 +489,5 @@ Name: the folder is `baselanv9`, in lower case as the site's page slugs and chec
 - One transcription, one reader, one pass. The training leaves were transcribed with the clear copy beside them, and the held-out leaves by a reader who knew most of the system; the held-out passages test the key, not the transcriber.
 - The judge was a model session scoring sense by its own lights; its separation from the solver is stated, not shown.
 - The reading and the translation were made after the clear copy had been seen, and are unchecked.
+- Pass 3: H1 is not held out and its re-read was not blind; H4 is held out in that its text was never transcribed or decoded before the freeze and its clear copy was not looked for, but its reader knew the key leaf; the pass 3 freeze was not time-stamped before the decode, and the judge's brief was written after it; the judge's model is not recorded; C4 and C5 are not on the key leaf.
 - Three passages on parts of three pages, out of about 100 leaves of cipher (ff. 3r-97v and 158r-162r, by the catalogue's foliation): the figures say nothing yet about the rest.

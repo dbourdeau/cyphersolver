@@ -90,12 +90,19 @@
    "scripts/shuffle.py: 5,000 shuffled keys at two seeds, scored with the la-letters model from lang/ and by clear-copy match",
    "scripts/lexcheck.py: share of decoded letters in words of the shared Latin lexicon (lang/lexicons/la.json.gz)",
    "scripts/unwrap.py: polar unwrap of the pentacle rims for transcription",
-   "docs/_validate.py with validation.tsv (model la)"
+   "docs/_validate.py with validation.tsv (model la)",
+   "pass3/scripts/decode_p3.py and run_decode.py: the pass 3 decoder (rules C1-C5) and its one run with the frozen hashes asserted",
+   "pass3/scripts/control_p3.py: 5,000 shuffled keys at two seeds, own Latin letter 4-gram model",
+   "pass3/scripts/score_p3.py: the solver's own strict count and the clear-copy match for H1",
+   "pass3/variant/make_variant.py, run_variant.py, score_variant.py: the declared decode without C4 and C5 and its score"
   ],
   "models": [
    "Claude Opus 5.5 (Anthropic): the solver session (prior art, transcription, key recovery, decode, controls) [stated by the contributor]",
    "Claude Opus 5.5 (Anthropic): the strict judge, a separate session given only judge/BRIEF.txt and judge/decode.txt [stated by the contributor]",
-   "Claude Opus 5.5 (Anthropic): the session that assembled this folder, reading.md, translation.md and validation.tsv"
+   "Claude Opus 5.5 (Anthropic): the session that assembled this folder, reading.md, translation.md and validation.tsv",
+   "Claude Fable 5.2 (Anthropic, claude-fable-5-2): pass 3 solver (key re-check, transcription, decode, own count, controls) [stated in the pass 3 file headers]",
+   "Pass 3 separate judge: model not recorded in pass3/JUDGE_P3_RESULT.md [stated by the contributor: an independent judge]",
+   "Claude Fable 5.2 (Anthropic, claude-fable-5-2): the pass 3 variant without C4 and C5, the time-stamp and the assembly of pass3/"
   ],
   "first_date": "2026-11-24",
   "last_date": "2026-11-25"
@@ -282,6 +289,96 @@
    ],
    "what": "Separate judge for pass 2 (keyleaf/judge/): model claude-opus-5-5, effort not exposed, session https://claude.ai/code/session_01P5UF3myhVjFtgU9vTMj1qn (an agent with its own context launched by the caller; same session as the solver, so separation stated, not shown), utc 2026-11-25T03:43:24Z; given only BRIEF.txt (sha256 af20815f) and decode.txt (41b28e8b). Strict letters S/(S+E+N), recomputed here from JUDGE_OUT.tsv: training f4r 600/703 = 85.35%, f4v 732/853 = 85.81% (training, not a test); H1 237/382 = 62.04% (under 65%, failed); H2 510/717 = 71.13%; H3 51/69 = 73.91% (pentacle 3 19/36 = 52.8% under 65%, failed; pentacle 4 32/33 = 97.0%); 62 pentacle rims 2221/2520 = 88.13%, 57 at or over 65%, under: S1-025 42.3%, S1-039 61.4%, S1-070 59.5%, S1-071 62.2%, S1-096 57.5%; all 4351/5244 = 82.97% (pool, not used). Swapped letter pairs scored N; line-end breaks without '=' not joined (joined 4377/5244 = 83.47%, no unit changes side). docs/_check_reading.py: every pass-2 section under the 0.45 clean-sentence bar (rims 23/62 = 0.371, H1 0/7, H2 0/11, H3 0/1 and 0/1), so 'read in part' wording is not allowed; each stays 'decoded, not read'. Proposed method for pass 2: read with known key for H2, H3 pentacle 4 and the 57 rims at or over 65%; the rest shown as failed. Not held out; no person has checked pass 2; first pass unchanged as figure of record.",
    "result": "partial"
+  },
+  {
+   "date": "2026-11-25",
+   "kind": "access",
+   "what": "Pass 3 (pass3/): f. 25r (canvas 53, page id 5353272) fetched at full size by plain GET from the e-manuscripta IIIF endpoint, HTTP 200 (pass3/BLOCKED.tsv: nothing blocked); the other images (ff. 15r, 52r-53r, key leaf f. 99r) were those fetched in pass 2. Split written before the fetch (pass3/SPLIT_P3.md, 07:44 UTC): H1r = f. 15r lines 1-12 re-read, declared not held out and not blind; H4 = f. 25r lines 1-12, never transcribed or decoded before, clear copy not to be looked for before the decode.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-25",
+   "kind": "key from source",
+   "technique": [
+    "manual reconstruction",
+    "key-structure hypothesis"
+   ],
+   "what": "Key v3 (pass3/KEY_V3.tsv, pass3/RULES_V3.md): the 73 token values, 5 pairs and 2 word forms of keyleaf/KEY_LEAF.tsv re-checked against the leaf image f. 99r, no value changed (73 of 73 the same, pass3/checks/VERIFY_OUT.txt; 69 shapes exact, 4 probable). Decoder rules changed in five declared places before the freeze: C1 mark order (Tk^@ = rum, a pass-2 fault); C2 a nasal dot on a vowel + consonant group sign goes after the vowel (leaf wording and training leaf f. 4r); C3 two-dot fallback widened; C4 Cl Tq = rte and C5 x = ch in the chi-rho-iota abbreviation, both NOT on the key leaf.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-25",
+   "kind": "transcription",
+   "technique": [
+    "manual reconstruction"
+   ],
+   "what": "Pass 3 transcriptions by Claude Fable 5.2 from full-size images, the reader knowing the key leaf (not shape-blind): H1 re-read (pass3/tx/f015r_p3.txt; 30 of 80 word groups differ from pass 2's keyleaf/tx2/f015r.txt; the reader had seen the clear copy f. 109v, so not blind), H4 f. 25r lines 1-12 (pass3/tx/f025r_H4.txt, 5 signs left ?), rims of second-series pentacles nos. 2-12, ff. 52r-53r, from own polar unwraps (pass3/tx/PENT_S2.txt). Doubts written before the freeze (pass3/DOUBTS_P3.md). Not transcribed: the figures on f. 54r, f. 97r-v, the texts inside the circles.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-25",
+   "kind": "verification",
+   "what": "Freeze pass3/FREEZE_P3.txt 07:55:17 UTC: md5 and sha256 of the key, rules, decoder, three transcriptions, doubts, split and the f. 25r image. Unlike pass 2, this freeze was NOT time-stamped or pushed before the decode; its order rests on the run record and the hashes. The nine hashes were re-checked at 08:07 UTC and match.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-25",
+   "kind": "reading",
+   "technique": [
+    "key matching"
+   ],
+   "what": "One decode with key v3 (pass3/scripts/run_decode.py, 07:55:25 UTC; pass3/DECODE_P3.txt), no emendation (pass3/EMENDATIONS.md): H1r 405 letters, 0 signs with no value; H4 415 letters, 5 signs with no value; 11 rims 521 letters, 0 signs with no value. Not read under README Conventions: docs/_check_reading.py was not run on pass 3.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-25",
+   "kind": "verification",
+   "technique": [
+    "plaintext matching",
+    "contextual inference"
+   ],
+   "what": "Solver's own strict count, not a separate judge (pass3/SCORE_P3.tsv): H1r 394/405 = 97.28%, H4 379/415 = 91.33%, rims 468/521 = 89.83% (S2-05 4/17 = 23.5%, under). H1r against the clear copy f. 109v: 399 of 425 clear letters matched = 93.9%. H4 not compared with its clear copy.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-25",
+   "kind": "control",
+   "technique": [
+    "statistical test",
+    "language-model scoring"
+   ],
+   "what": "Shuffle control for pass 3 (pass3/scripts/control_p3.py, pass3/CONTROL_P3.txt): the 73 token values permuted, 5,000 keys at seeds 20261112 and 7, own Latin letter 4-gram model on la-latlib-letters.txt, log10 probability per character: H1r, H4, the rims as a section and each of the 11 rims 0/5000 at both seeds; z 11.7 / 11.7 (H1r), 9.8 / 9.8 (H4), 12.6 / 12.6 (rims), lowest single rim S2-05 z 4.6 / 4.5.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-25",
+   "kind": "literature search",
+   "what": "Prior-art look for the rim formulas (pass3/PRIOR_ART_P3.md): two web searches found no page with the Basel wording and no mention of a Basel cipher copy; genre parallel only (BL Stowe MS 16 ff. 151r-152r, amulet seals with Hoc signum captions, from Drieshen's BL blog post of 18 Jul 2019 read in a reprint). Not compared with the printed Key of Solomon legends (Mathers 1889; Skinner and Rankine 2008).",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-25",
+   "kind": "verification",
+   "technique": [
+    "contextual inference"
+   ],
+   "what": "Separate judge for pass 3 (pass3/JUDGE_P3_RESULT.md, file time 08:05 UTC), launched by the calling session and given only pass3/judge/BRIEF.txt and pass3/judge/decode.txt; model and session not recorded in its file; the brief was written at 08:03 UTC, after the decode; separation stated, not shown. Strict letters S/(S+E+N), central call: H1r (re-read, NOT held out) 399/405 = 98.5% (range 97.3% to 98.8%); H4 (held out) 389/415 = 93.7% (range 93.0% to 95.9%); 11 second-series rims 486/521 = 93.3% (range 91.9% to 96.0%), 10 rims over 65%, S2-05 4/17 = 23.5% under, failed. The stretch H4 L09-L10 does not read. No pooled figure. The first pass stays the figure of record; no person has checked pass 3.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-25",
+   "kind": "verification",
+   "technique": [
+    "key-structure hypothesis"
+   ],
+   "what": "Variant without decoder rules C4 and C5 (neither is on the key leaf), declared at 08:07:22 UTC after the decode and the judging, then run on the same frozen key and transcriptions (pass3/variant/): H1r christiana -> iristiana, parte -> pa[?]te, ch~ri -> i~ri five times; S2-02 ch~ri -> i~ri; H4 unchanged letter for letter. Unchanged words keep the judge's central call; changed words called by the assembling session, not the judge: H1r 378/398 = 95.0% (every changed word N: 364/398 = 91.5%); H4 389/415 = 93.7%; rims 484/520 = 93.1% (strict 482/520 = 92.7%). H1r against the clear copy without C4 and C5: 386/425 = 90.8%. No unit changes side of the 65% line.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-25",
+   "kind": "verification",
+   "what": "Time-stamp of the pass 3 working folder (pass3/stamps/, label basel-p3-25Nov): manifest of 37 files, sha256 4836e731..., RFC 3161 Sectigo and FreeTSA both granted 08:08:04 UTC on the first try, OpenTimestamps submitted and pending. The stamp is later than the decode and the judging.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -370,7 +467,7 @@
    {
     "item": "Pentacle inscriptions with no clear counterpart (about 112, a count stated by the contributor's session and not made here)",
     "blocker": "not-attempted",
-    "detail": "pass 2 (keyleaf/, 25 Nov 2026) transcribed and decoded the 62 inscribed rims of the first series ff. 35r-51r with the volume's key leaf; still not transcribed: the second series ff. 52r-54r (nos. 1-12 and the four figures on f. 54r), the two magic-mirror figures f. 97r-v, and signs inside circles of the first series"
+    "detail": "pass 2 (keyleaf/, 25 Nov 2026) transcribed and decoded the 62 inscribed rims of the first series ff. 35r-51r with the volume's key leaf; pass 3 (pass3/, 25 Nov 2026) the 11 inscribed rims of second-series nos. 2-12, ff. 52r-53r (no. 1 is in ordinary script); still not transcribed: the two-ring figures on f. 54r (four by pass 2's note, three by pass 3's count), the two magic-mirror figures f. 97r-v, and the texts inside the circles of both series"
    },
    {
     "item": "Prior art in print: Skinner and Rankine, The Veritable Key of Solomon (2008); Mathers (1889); Boudet's census of Clavicula manuscripts",
@@ -380,7 +477,22 @@
    {
     "item": "Pass 2 units under the 65% line: H1 (62.04%), H3 pentacle 3 (52.8%), pentacle rims S1-025, S1-039, S1-070, S1-071, S1-096",
     "blocker": "not-attempted",
-    "detail": "swapped letter pairs and first-pass transcription faults (not re-read) carry most of the N; a re-read on the images would be a third pass with its own figure; no person has checked pass 2"
+    "detail": "swapped letter pairs and first-pass transcription faults carry most of the N; pass 3 (pass3/) re-read H1 only: 399/405 = 98.5% by a separate judge, not held out and not blind; H3 pentacle 3 and the five rims are not re-read; no person has checked pass 2 or pass 3"
+   },
+   {
+    "item": "Pass 3 unit under the 65% line: second-series rim S2-05 (caraton amen mathoi), 4/17 = 23.5%",
+    "blocker": "no-key-material",
+    "detail": "two names with no clear counterpart and no source found to check them against; failed, not carried by any pooled figure"
+   },
+   {
+    "item": "Pass 3, H4 (f. 25r) lines 9-10 (deus ueus ter imsrael qui super t[?]=rar gerum habitat) and 5 signs of H4 with no value",
+    "blocker": "not-attempted",
+    "detail": "not re-read on the image after the decode (freeze rule); H4 has not been compared with its clear copy"
+   },
+   {
+    "item": "Pass 3 decoder rules C4 (Cl Tq = rte) and C5 (x = ch in the chi-rho-iota abbreviation)",
+    "blocker": "no-key-material",
+    "detail": "neither is on the key leaf f. 99r; figures with and without them are in NOTES.md, Pass 3, and pass3/variant/SCORE_VARIANT.tsv"
    }
   ],
   "texts": [

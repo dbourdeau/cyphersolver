@@ -1,0 +1,4 @@
+Separate strict judge, baselanv9 pass 3. Read only this brief and judge/decode.txt. Latin, 17th-century magic text (conjurations; seal captions).
+For every decoded word give S (reads as a Latin word or name that fits), E (one slip: one wrong, missing or added letter), N (anything else). Letters: a word tagged S counts all its letters S; E counts one letter E and the rest S; N counts all letters N. Two swapped letters = N.
+"=" joins a word broken at a line end to the next line. [?] is a sign with no value: a word holding one is S only if it is recognisable with at most one further slip, else N. "~" is an abbreviation bar: not a letter; ch~ri and dni~ are abbreviations, judge them as such and say how.
+Report per line: S, E, N, and S/(S+E+N); then totals per section H1r, H4, S2, and for S2 per rim. Show the arithmetic. No pooled figure across sections.
