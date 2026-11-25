@@ -1,6 +1,6 @@
 # baselanv9: Clavicula Salomonis and Septem sigilla planetarum in a secret alphabet, Basel UB, UBH AN V 9 (17th century)
 
-Status: in progress. Contributed by pull request, not yet written up, and a new target: the volume is in neither `catalogue.json` nor `research/leads.json`. The key was recovered from cipher ff. 4r-4v aligned with the volume's own clear copy, frozen, and used for one decode of three held-out passages. A separate strict judge finds 747 of 1,138 decoded letters in words that read as sense (65.6%: H1 62.4%, below the contributor's own 65% line; H2 67.0%; H3 69.6%), and the decode reproduces 988 of 1,231 letters of the clear copy (80.3%). Counted in words, 113 of 225 read as sense (0.502) and no sentence is clean, so each passage is "decoded, not read" and the target is filed not read: key recovered from adjacent plaintext, text not read. The volume's own key leaf, viewed only after the decode, agrees on 46 of the 52 values it covers. The page, ledgers, DECODE queue entry and any catalogue or lead entry are left to the maintainers.
+Status: in progress. Contributed by pull request, not yet written up (pass 2 with the volume's key leaf added 25 Nov 2026 in `keyleaf/`, its judge's scores still to come), and a new target: the volume is in neither `catalogue.json` nor `research/leads.json`. The key was recovered from cipher ff. 4r-4v aligned with the volume's own clear copy, frozen, and used for one decode of three held-out passages. A separate strict judge finds 747 of 1,138 decoded letters in words that read as sense (65.6%: H1 62.4%, below the contributor's own 65% line; H2 67.0%; H3 69.6%), and the decode reproduces 988 of 1,231 letters of the clear copy (80.3%). Counted in words, 113 of 225 read as sense (0.502) and no sentence is clean, so each passage is "decoded, not read" and the target is filed not read: key recovered from adjacent plaintext, text not read. The volume's own key leaf, viewed only after the decode, agrees on 46 of the 52 values it covers. The page, ledgers, DECODE queue entry and any catalogue or lead entry are left to the maintainers.
 
 Contributed by Malcolm McBratney (Brisbane), working with Claude (Anthropic): Claude Opus 5.5 the solver session, the separate strict judge and the assembly of this folder.
 
@@ -179,36 +179,140 @@ Not checked: Skinner and Rankine, The Veritable Key of Solomon (2008), and Mathe
 - A new target: no entry in `catalogue.json` or `research/leads.json` names this volume (PRIOR_ART.md; checked again on upstream main of 24 Nov 2026, db86b487e: `AN V 9`, `Clavicula`, `5353221`, `185551`, `Septem sigilla` 0 hits; the `e-manuscripta` and `Basel` hits are other items). `catalogue.json` is not edited in this pull request.
 - If it is entered as a lead or catalogue item, the vetting rule's `vetting.key_in_volume` applies: the key is in the volume (f. 99r, German translation f. 98r) and was tested here, after the decode, against the recovered key. Under the 3 Nov 2026 rule a key in the volume does not block a lead with no known decipherment; the clear copy in the same volume should be recorded beside it.
 
+## Pass 2: the volume's key leaf (a separate result, read with known key)
+
+Asked for by Dan Bourdeau on PR #957 (25 Nov 2026). Everything is in `keyleaf/`; the first pass above stays the figure of record and none of its files changed. **No person has checked any part of pass 2: not the key-leaf transcription, not the sign readings, not the pentacle transcription, not the decode.** Times are UTC from `keyleaf/RUN_RECORD.tsv`.
+
+What was done, in order [measured: `keyleaf/RUN_RECORD.tsv`]:
+
+1. The key leaf f. 99r and its German translation f. 98r, the 22 pentacle pages ff. 33r-54r, f. 97r-v and the clear pentacle pages f. 123r-v were fetched at full size by plain GET from the IIIF endpoint (`keyleaf/IMAGE_FETCH.tsv`: URL, UTC, HTTP status, md5; 37 images, all HTTP 200; no images committed).
+2. `keyleaf/KEY_LEAF.tsv` was built from the leaf only (03:17): 73 sign values, 5 two-sign pairs (re, ri, ti, tr, rt), 2 whole-word forms (enim, autem) and 6 rules, with the leaf's Danish and the German quoted for each rule. New shapes on the leaf got labels in `keyleaf/SIGNS_KEYLEAF.md`, written before any pentacle was transcribed; a new mark `*` records the dot inside a sign. The leaf's two-dot rule reads "bemercker den bogstaff som staar nest for med en prick mitt udi" (it marks the letter standing next before with a dot in its middle; German f. 98r: "welcher nächst vorher stehet wo mitten darinnen sich ein Pünktchen befindet"), example ambulare; ".:" marks "den samme bogstab, naar dett mere er repetirit", example judicabitur [our reading of the hands, unverified].
+3. The 8 first-pass `?` signs were looked at on the full-size images (03:20; see Transcription doubts; `keyleaf/SIGNS8.md`, crops not committed). The changes go only into the copies in `keyleaf/tx2/`, listed in `keyleaf/tx2/CHANGES.tsv` (6 lines changed). In pass 2 the placeholder `?` has no value.
+4. The pentacle rims ff. 35r-51r (first series nos. 11-110) were unwrapped from the full-size images (`keyleaf/scripts/circles.py` finds the red rings, `keyleaf/scripts/unwrap2.py` unwraps them) and transcribed sign by sign into `keyleaf/tx/PENTACLES.txt`: **62 rims carry a cipher inscription**; 36 are blank or carry crosses only, 1 (no. 88) is in ordinary Latin capitals and 1 (no. 104) has ordinary script inside, so 100 = 62 + 38 [measured: 62 data lines and 38 comment lines for nos. 11-110]. Nos. 1-10 are out of scope: their clear text is on f. 123r-v.
+5. Freeze before decoding: `keyleaf/FREEZE_PENT.txt` (03:33:21) hashes the key, the sign files, the transcriptions, the decoder and the judge brief; stamped at once by RFC 3161 (Sectigo 03:33:25, FreeTSA 03:33:26; `keyleaf/stamps/`), committed and pushed as b8cce3928 before the decode ran.
+6. One decode (03:34) with `keyleaf/scripts/decode_keyleaf.py`: `keyleaf/DECODE_KEYLEAF.txt`, no emendation. **Declared fallback** (in the frozen decoder): the transcriptions record an inner dot only where it was seen, and the first-pass files never do, so where no earlier sign in the word carries `*` the two-dot sign takes the letter of the nearest preceding lambda, box or x (the three signs `SIGNS.md` notes as often dotted); ".:" repeats the letter the last ".." of the word took.
+7. Shuffle control (03:37-03:40, `keyleaf/scripts/shuffle_keyleaf.py`): the leaf's 73 sign values permuted among its 73 signs, 5,000 keys at each of seeds 20261112 and 7, la-letters model (corpus sha256 asserted), per section and per pentacle.
+8. Separate judge: **not run.** This session could not start a separate judge (the headless CLI returned an authentication error, `keyleaf/RUN_RECORD.tsv` step 4). The packet is ready: `keyleaf/judge/BRIEF.txt` (frozen) and `keyleaf/judge/decode.txt` (a copy of the decode). Until a separate judge has scored it, **no S/E/N figure, no read share and no class is claimed for pass 2**; the method is "read with known key".
+
+Exposure, stated plainly: the transcriber of the pentacles knew the key leaf and the first-pass key, so the shapes were recognised as letters while transcribing; in places the expected Latin will have steered the choice between similar shapes (named in the pentacle transcription only where a doubt was noticed). None of the pass-2 figures is a held-out figure.
+
+Decoded letters [measured: `keyleaf/work/decode_keyleaf_counts.txt`]: training leaves ff. 4r-4v 703 + 853 = 1,556 (28 signs with no value); H1 382 (5); H2 717 (7); H3 69 (1); pentacles 2,520 (26). The pass-2 decode of H1-H3 still carries the first pass's transcription faults (the sign `1` where the sense wants a, for instance), because only the 8 `?` signs were re-read.
+
+Shuffle control [measured: `keyleaf/work/shuffle_keyleaf_out.txt`], per-character log-probability, real key against 5,000 shuffled keys:
+
+| section | real | shuffles, mean (sd), seed 20261112 | best shuffle | z (seed 20261112 / 7) | shuffles >= real (both seeds) |
+|---|---|---|---|---|---|
+| training ff. 4r-4v | -2.340 | -5.902 (0.377) | -4.813 | 9.5 / 9.3 | 0/5000, 0/5000 |
+| H1 | -3.075 | -5.877 (0.430) | -4.427 | 6.5 / 6.4 | 0/5000, 0/5000 |
+| H2 | -2.860 | -6.010 (0.420) | -4.802 | 7.5 / 7.4 | 0/5000, 0/5000 |
+| H3 | -3.029 | -5.936 (0.469) | -4.094 | 6.2 / 6.0 | 0/5000, 0/5000 |
+| pentacles, 62 rims | -2.063 | -5.996 (0.373) | -4.788 | 10.5 / 10.3 | 0/5000, 0/5000 |
+
+Every one of the 62 pentacles is 0/5000 at both seeds; the lowest z is 4.1 (S1-025) at both. This shows the leaf's key is far better than chance on each rim; it does not show that a rim reads.
+
+Mechanical lexicon pointer (not the judge; `keyleaf/work/lexcheck_keyleaf.tsv`): letters in words of the shared Latin lexicon, pentacles 1,597 of 2,520 (63.4%), training 892/1,556 (57.3%), H1 164/382 (42.9%), H2 340/717 (47.4%), H3 28/69 (40.6%); 30 of the 62 pentacles are under 65% on this pointer. The lexicon lacks many inflected and magical forms, so this is a floor, not a read share.
+
+Per pentacle (decode as produced; no emendation; letters a-z; z and shuffle counts from `keyleaf/work/shuffle_keyleaf_out.txt`; the judge's S/E/N column is to be added when a separate judge has scored `keyleaf/judge/decode.txt`):
+
+| pentacle | folio (canvas) | decode (pass 2, no emendation) | letters | in lexicon (pointer) | z, seed 20261112 / 7 | shuffles >= real, both seeds |
+|---|---|---|---|---|---|---|
+| S1-011 | f. 35r (c073) | portanti nullum uulnus lethale fieri potest | 38 | 23 (60.5%) | 6.8 / 6.8 | 0/5000, 0/5000 |
+| S1-012 | f. 35r (c073) | dat bonam fortunam et morbotus pericula tollit | 40 | 32 (80.0%) | 6.7 / 6.8 | 0/5000, 0/5000 |
+| S1-013 | f. 35r (c073) | huic omns furiae obedietn atque potentiae ifernales | 45 | 18 (40.0%) | 5.1 / 5.0 | 0/5000, 0/5000 |
+| S1-014 | f. 35r (c073) | neine praetet creatore [?] deum timebit | 31 | 12 (38.7%) | 5.5 / 5.5 | 0/5000, 0/5000 |
+| S1-015 | f. 36r (c075) | huic obedietn omnes spiritus et potentiae infernales | 46 | 28 (60.9%) | 7.0 / 6.7 | 0/5000, 0/5000 |
+| S1-016 | f. 36r (c075) | obedietn tibit omnes creatuae et potentiae infernales | 47 | 16 (34.0%) | 6.8 / 6.6 | 0/5000, 0/5000 |
+| S1-017 | f. 36r (c075) | contra inimicos serpentes et ua[?]mones tutissimum | 42 | 25 (59.5%) | 6.7 / 6.7 | 0/5000, 0/5000 |
+| S1-018 | f. 36r (c075) | hoc signum portauit adam in fronte contra pericula | 43 | 43 (100.0%) | 7.8 / 7.9 | 0/5000, 0/5000 |
+| S1-019 | f. 36r (c075) | ad sanguuinus fluxum respringendum optimum remedium | 46 | 23 (50.0%) | 6.2 / 6.0 | 0/5000, 0/5000 |
+| S1-020 | f. 36r (c075) | furta reuelat conspirationes et secreta consilia hominum | 50 | 29 (58.0%) | 8.0 / 7.9 | 0/5000, 0/5000 |
+| S1-021 | f. 37r (c077) | canitar~ confert et singularem fortunae gratiam | 41 | 34 (82.9%) | 8.3 / 8.5 | 0/5000, 0/5000 |
+| S1-022 | f. 37r (c077) | deuu mihi adiutor quem tinebo et uiuam | 32 | 22 (68.8%) | 5.8 / 5.8 | 0/5000, 0/5000 |
+| S1-025 | f. 37r (c077) | p[?]m[?] cou odium et magii[?]ines uerit | 26 | 8 (30.8%) | 4.1 / 4.1 | 0/5000, 0/5000 |
+| S1-027 | f. 38r (c079) | hoc signum tecum sit et n~ timebus aduersarios | 38 | 30 (78.9%) | 7.2 / 7.0 | 0/5000, 0/5000 |
+| S1-028 | f. 38r (c079) | quo die hoc signum uiderus liber erus ab [?]ipediment | 42 | 22 (52.4%) | 6.0 / 5.9 | 0/5000, 0/5000 |
+| S1-030 | f. 38r (c079) | per hoc nomen treumnt omnes potestates infernales [?] | 43 | 16 (37.2%) | 6.4 / 6.3 | 0/5000, 0/5000 |
+| S1-031 | f. 38r (c079) | hoc signum faciet omnes erga te mites et ben[?]uolos | 41 | 36 (87.8%) | 7.2 / 7.0 | 0/5000, 0/5000 |
+| S1-032 | f. 38r (c079) | huic signo se subi[?]unt omnes creatuae uanimuque uiren | 45 | 20 (44.4%) | 5.5 / 5.5 | 0/5000, 0/5000 |
+| S1-033 | f. 39r (c081) | nec a gladio nec a subitania morte tinebius | 36 | 19 (52.8%) | 5.7 / 5.6 | 0/5000, 0/5000 |
+| S1-037 | f. 39r (c081) | cum hoc signo n~ peribis ferro nec igne | 31 | 23 (74.2%) | 5.3 / 5.1 | 0/5000, 0/5000 |
+| S1-038 | f. 39r (c081) | omne timoris occasione auerti et conuerti | 36 | 30 (83.3%) | 6.6 / 6.5 | 0/5000, 0/5000 |
+| S1-039 | f. 40r (c083) | contra maleficia et quemacunque praestigiau terla | 44 | 17 (38.6%) | 6.6 / 6.6 | 0/5000, 0/5000 |
+| S1-041 | f. 40r (c083) | hoc signum facit contra s[?]tena uim et potestat[?] | 38 | 26 (68.4%) | 6.8 / 6.9 | 0/5000, 0/5000 |
+| S1-044 | f. 40r (c083) | hoc signo sigilauit salomon da[?]mone in puteo | 37 | 14 (37.8%) | 5.7 / 5.7 | 0/5000, 0/5000 |
+| S1-045 | f. 41r (c085) | contra metum et tiiore hoc signum habet efficaciam | 43 | 37 (86.0%) | 6.8 / 6.7 | 0/5000, 0/5000 |
+| S1-049 | f. 41r (c085) | quicunque hoc signum portat diliget ab omnibus | 40 | 33 (82.5%) | 7.5 / 7.3 | 0/5000, 0/5000 |
+| S1-051 | f. 42r (c087) | amabile facit tanquam ipsum deum et odium diurumpit | 44 | 28 (63.6%) | 6.3 / 6.4 | 0/5000, 0/5000 |
+| S1-052 | f. 42r (c087) | pro imoris onfficina adirabale est hoc signum | 39 | 15 (38.5%) | 5.6 / 5.6 | 0/5000, 0/5000 |
+| S1-055 | f. 42r (c087) | pro auxilio impetrando hoc signum bonum est | 37 | 27 (73.0%) | 7.2 / 7.2 | 0/5000, 0/5000 |
+| S1-057 | f. 43r (c089) | a periculis liberabiit qui hoc signum gestat | 38 | 28 (73.7%) | 7.6 / 7.6 | 0/5000, 0/5000 |
+| S1-063 | f. 44r (c091) | uulnera qque dei sunt medicina mei amen | 33 | 29 (87.9%) | 4.6 / 4.6 | 0/5000, 0/5000 |
+| S1-064 | f. 44r (c091) | timor deus et totius mundi sancta mabiestus | 37 | 28 (75.7%) | 5.3 / 5.2 | 0/5000, 0/5000 |
+| S1-065 | f. 44r (c091) | contra area et hostes i bello signum optimum | 37 | 37 (100.0%) | 6.4 / 6.4 | 0/5000, 0/5000 |
+| S1-069 | f. 45r (c093) | hoc signum bonum est ftra dolore matricos | 35 | 23 (65.7%) | 6.3 / 6.3 | 0/5000, 0/5000 |
+| S1-070 | f. 45r (c093) | contra uen[?]num est et mobtus incidenidia remedium | 42 | 25 (59.5%) | 5.3 / 5.2 | 0/5000, 0/5000 |
+| S1-071 | f. 45r (c093) | portatum facit ftra inimicos et insidiator | 37 | 15 (40.5%) | 6.0 / 6.0 | 0/5000, 0/5000 |
+| S1-072 | f. 45r (c093) | cum hoc signo in carcere detineri n~ potes | 34 | 25 (73.5%) | 6.2 / 6.0 | 0/5000, 0/5000 |
+| S1-073 | f. 45r (c093) | contra mortus repentinae periculum optimum est | 41 | 35 (85.4%) | 7.8 / 7.6 | 0/5000, 0/5000 |
+| S1-074 | f. 45r (c093) | hoc signum animum et animam confortat aduersus peric[?] | 45 | 31 (68.9%) | 7.8 / 7.7 | 0/5000, 0/5000 |
+| S1-078 | f. 46r (c095) | mulier cum hoc signo n~ peribit in partu | 32 | 24 (75.0%) | 6.0 / 6.0 | 0/5000, 0/5000 |
+| S1-079 | f. 46r (c095) | porta tecum hoc signum et inimici tus er[?] imore cedetn | 44 | 31 (70.5%) | 5.6 / 5.5 | 0/5000, 0/5000 |
+| S1-080 | f. 46r (c095) | qui hoc signum habet a nemine laedi potest amen | 39 | 34 (87.2%) | 7.3 / 7.0 | 0/5000, 0/5000 |
+| S1-081 | f. 47r (c097) | hoc sinum est contra omnia phantasmata re[?]ia homine graitsum | 51 | 28 (54.9%) | 6.7 / 6.6 | 0/5000, 0/5000 |
+| S1-082 | f. 47r (c097) | incdo cit amore et ben[?]uolentiam apud omnes | 36 | 22 (61.1%) | 6.5 / 6.5 | 0/5000, 0/5000 |
+| S1-084 | f. 47r (c097) | portante ab aquae et mabrius periclo soluit | 37 | 22 (59.5%) | 5.7 / 5.6 | 0/5000, 0/5000 |
+| S1-085 | f. 47r (c097) | ecc[?] figua agni dominantus super omnes potestates | 42 | 14 (33.3%) | 7.1 / 7.0 | 0/5000, 0/5000 |
+| S1-087 | f. 48r (c099) | cum hoc signo n~ timebius inimicos nec maleficia nec da[?]mones | 50 | 34 (68.0%) | 6.5 / 6.3 | 0/5000, 0/5000 |
+| S1-090 | f. 48r (c099) | in bello securus erus cum hoc signo | 29 | 25 (86.2%) | 5.7 / 5.8 | 0/5000, 0/5000 |
+| S1-091 | f. 48r (c099) | ab inimicos nos tutos reddit et inuincibiles | 38 | 26 (68.4%) | 5.2 / 5.2 | 0/5000, 0/5000 |
+| S1-092 | f. 48r (c099) | in quocunque die hoc signum portau[?] a periculo liber | 43 | 37 (86.0%) | 7.0 / 7.1 | 0/5000, 0/5000 |
+| S1-095 | f. 49r (c101) | screptum in ca[?]te n~ nata et portatum manu leua indicit mirabalia | 53 | 21 (39.6%) | 6.6 / 6.6 | 0/5000, 0/5000 |
+| S1-096 | f. 49r (c101) | ad honc signum uenietn spiritu et obedietn tibi | 40 | 21 (52.5%) | 5.0 / 4.9 | 0/5000, 0/5000 |
+| S1-097 | f. 49r (c101) | hoc signum portabit aron in fronte et liberat ab igne | 44 | 25 (56.8%) | 6.7 / 6.6 | 0/5000, 0/5000 |
+| S1-098 | f. 49r (c101) | contra morte subitaneam hoc signum est accommodatum | 45 | 35 (77.8%) | 8.1 / 8.1 | 0/5000, 0/5000 |
+| S1-099 | f. 50r (c103) | cum hoc signo mo[?]te subitanea n~ peribius | 33 | 13 (39.4%) | 4.8 / 4.7 | 0/5000, 0/5000 |
+| S1-102 | f. 50r (c103) | super aspidde et basiliscum ambulabis et conculcabis leone et dracone | 60 | 16 (26.7%) | 6.6 / 6.6 | 0/5000, 0/5000 |
+| S1-103 | f. 50r (c103) | sacto columbo sacrum est hoc signum et confect uictoria | 47 | 35 (74.5%) | 7.0 / 7.0 | 0/5000, 0/5000 |
+| S1-105 | f. 51r (c105) | ecc[?] figua et facies per quod omnia facta sunt cui omnes obedi[?] | 50 | 37 (74.0%) | 7.5 / 7.5 | 0/5000, 0/5000 |
+| S1-106 | f. 51r (c105) | cum hoc signo nec uinculus nec compedibus teri potes | 44 | 22 (50.0%) | 6.6 / 6.5 | 0/5000, 0/5000 |
+| S1-107 | f. 51r (c105) | signum sacti gregorii contra uen[?]num et maleficia | 42 | 29 (69.0%) | 6.8 / 6.9 | 0/5000, 0/5000 |
+| S1-109 | f. 51r (c105) | hoc signo sanguine perd[?]e nemo potest tutum est | 39 | 39 (100.0%) | 6.2 / 6.1 | 0/5000, 0/5000 |
+| S1-110 | f. 51r (c105) | qui hoc signum portauerit nulla pericula timebit | 42 | 25 (59.5%) | 7.6 / 7.5 | 0/5000, 0/5000 |
+| all 62 | ff. 35r-51r | | 2520 | 1597 (63.4%) | 10.5 / 10.3 (section) | 0/5000, 0/5000 |
+
+Sum check: the 62 rows add to 2,520 letters and 1,597 lexicon letters [measured]. What the rims say, from the decode and unchecked [unverified]: protection and power formulas ("hoc signum portat ...", "contra maleficia ...", "cum hoc signo non peribis ..."), Ps 91:13 on no. 102 ("super aspidem et basiliscum ambulabis et conculcabis leonem et draconem"), Salomon sealing the demon in a well (no. 44), Adam and Aaron bearing the sign on the forehead (nos. 18, 97).
+
 ## Remaining gaps
 
-- Holes in the three decoded passages, 112 of 225 words (H1 42 of 77, H2 63 of 133, H3 7 of 15) - blocker: not-attempted; key faults the judge's errors show (the sign 1 where the sense wants a; r or rr for te or i; irr for Xri; c for h; final t as n) and the placeholder value of ?; an amended key (the key leaf, more training) and a second decode would close many, reported apart from the first pass of record.
-- 10 held-out tokens with no key value (Oei~ 3, Bx@ 2, Pe~, 5b~, Yy, Sz, Ec) - blocker: not-attempted; none occurs in the training leaves; the key leaf gives some (quae), not applied here.
-- 8 signs transcribed ? (not identified), 1 in training and 7 held out - blocker: not-attempted; not re-read on the image after the decode (freeze rule); see "Transcription doubts".
-- The rest of the volume's cipher, ff. 3r-96v (conjurations, pentacles on ff. 33r-55v and 97r-v) and ff. 158r-162r (Septem sigilla), apart from the passages transcribed here - blocker: not-attempted; not transcribed or decoded; the clear copy ff. 101r-155r and 166r-170r gives the same text per the catalogue.
-- Pentacle inscriptions with no clear counterpart, about 112 by the contributor's session's count (not counted here) - blocker: not-attempted; new text, not transcribed or decoded yet; the two rims decoded here do have a counterpart on f. 123r.
+- Holes in the three decoded passages of the first pass, 112 of 225 words (H1 42 of 77, H2 63 of 133, H3 7 of 15) - blocker: not-attempted; key faults the judge's errors show (the sign 1 where the sense wants a; r or rr for te or i; irr for Xri; c for h; final t as n). Pass 2 (`keyleaf/`) applies the key leaf to the same transcriptions; the transcription faults behind several of these (1 for a) are not re-read.
+- Pass 2 has no separate judge's scores yet - blocker: not-attempted; the packet `keyleaf/judge/BRIEF.txt` + `keyleaf/judge/decode.txt` is frozen and ready; this session could not start a separate judge. No read share or class is claimed for pass 2 until it is scored.
+- 1 of the 8 first-pass `?` signs is still not identified (f. 4r l. 17, a small reversed-e loop joined to a looped delta; not on the key leaf) - blocker: no-key-material; the leaf has no such sign.
+- Pentacles with no clear counterpart still not transcribed: the second series ff. 52r-54r (nos. 1-12 and the four figures on f. 54r, several with two rings and numerals), the two magic-mirror figures f. 97r-v, and signs written inside circles of the first series (e.g. nos. 62, 101) - blocker: not-attempted; images fetched (`keyleaf/IMAGE_FETCH.tsv`), not transcribed in this pass.
+- The rest of the volume's cipher text, ff. 3r-96v and ff. 158r-162r, apart from the passages transcribed here - blocker: not-attempted; the clear copy ff. 101r-155r and 166r-170r gives the same text per the catalogue.
+- Inner dots (`*`) were not recorded on the first-pass leaves, so the two-dot sign there runs on the declared fallback of the pass-2 decoder - blocker: not-attempted; a re-transcription of those leaves with the dots would remove the fallback.
 - Prior art in print: Skinner and Rankine 2008, Mathers 1889, Boudet's census - blocker: needs-physical-access; not opened; web searches found no mention of a Basel cipher copy.
 
 ## Transcription doubts
 
-Doubts were not settled against the image after the decode: under the freeze rule no sign was changed, and none was re-read. Each is listed with what the frozen key gives.
+The 8 signs transcribed `?` on the first pass, looked at on the full-size images on 25 Nov 2026, after the first decode, the clear copy and the key leaf had been seen (so not blind). The frozen first-pass files are unchanged and the first pass stays the figure of record; the readings below go only into the second-pass copies `keyleaf/tx2/` (`keyleaf/tx2/CHANGES.tsv`), decoded once with the key leaf in pass 2 with its own figures. No person has checked these readings. [Looked at by Claude Opus 5.5; `keyleaf/SIGNS8.md`]
 
-- ? (f. 4r l. 17, training, last word "6 ? Dl@") - read: not identified; checked: decode (the training alignment gives i, the source of the key's placeholder value ? = i); image not re-read.
-- ? (f. 15r l. 5, third word "? Bx Tk^@") - read: not identified; checked: decode; gives iorum, a one-letter slip for eorum; image not re-read.
-- ? and ? (f. 15r l. 9, third word "Lm ? Dl_ 8 X Ea ?") - read: not identified; checked: decode; gives aiunciai (no sense; the clear copy has annuntiationem); image not re-read.
-- ? (f. 159r l. 3, third word "3_ ? Bx 6s X Ds Ea^") - read: not identified; checked: decode; gives dniositam (no sense; clear dispositam); image not re-read.
-- ? (f. 159r l. 7, second word "X_ ? D2 8 D3 6_") - read: not identified; checked: decode; gives iniicoen (no sense; clear inspiciens); image not re-read.
-- ? (f. 159r l. 22, last sign of the fourth word "Am 6s 6 Oe Dl 6 ?") - read: not identified; checked: decode; gives consequei, a slip for consequetur; image not re-read.
-- ? (f. 34r pentacle 4, fifth word) - read: a bold barred 4-like sign, possibly a planet sign (`SIGNS.md`); checked: decode; gives i (no sense; the clear copy has non); image not re-read.
-- Marks not recorded (`SIGNS.md`): an inner dot in Bx, a dot inside Lm, a dot in the crossing of X - read: not recorded; checked: decode (the key gives o, a, i whatever the dot); whether the dots carry a value is open; image not re-read.
+- ? (f. 4r l. 17, training, last word "6 ? Dl@") - read: a small closed loop open to the left, like a reversed e, joined to the following looped delta, with no tail; not drawn on the key leaf; checked: full-size image (canvas 11); stays `?`, no value in pass 2.
+- ? (f. 15r l. 5, third word "? Bx Tk^@") - read: a six-shape (e) written joined to the following box; the first pass took the joined pair for an unknown sign; checked: full-size image (canvas 33); pass 2 `6`; the word decodes eorem with the leaf (eorum in the clear copy; the leaf's Tk@ with a dot above is rum, the first pass's split dot gives rem).
+- ? and ? (f. 15r l. 9, third word "Lm ? Dl_ 8 X Ea ?") - read: the first is a four-shape with two dots above (diaeresis, nn); the second is the crossed x joined to a six-like loop with a dot below (the leaf's tio, + n), followed by a blotted six-shape with a dot above that the first pass did not record; the same look shows the first pass's "X Ea" to be one sign, an x with a ʒ-like tail (the leaf's ia); checked: full-size image (canvas 33); pass 2 `Lm 4" Dl_ 8 Xz Xco_ 6^`, which decodes annunciationem (clear copy annuntiationem).
+- ? (f. 159r l. 3, third word "3_ ? Bx 6s X Ds Ea^") - read: a small x written raised, then a hook-sign with a cross stroke through its descender (the leaf's sp); checked: full-size image (canvas 325); pass 2 `X Hkf`; the word decodes dnispositam (clear dispositam; the first pass's dot below the d gives the n).
+- ? (f. 159r l. 7, second word "X_ ? D2 8 D3 6_") - read: the same crossed hook-sign (sp); checked: full-size image (canvas 325); pass 2 `Hkf`; decodes inspicien (clear inspiciens).
+- ? (f. 159r l. 22, last sign of the fourth word "Am 6s 6 Oe Dl 6 ?") - read: a hooked bowl joined to a delta, crossed by a stroke running out to the right: the leaf's tur sign; checked: full-size image (canvas 325); pass 2 `Ab`; decodes consequetur (clear consequetur).
+- ? (f. 34r pentacle 4, fifth word) - read: a four-shape with a bar above (a barred n; the leaf gives non only as the barred box, and says other abbreviations follow Latin usage); checked: full-size unwrap (canvas 71); pass 2 `4~`; decodes n~ where the clear copy has non.
+- Marks not recorded on the first pass (`SIGNS.md`): an inner dot in Bx, a dot inside Lm, a dot in the crossing of X - read: the key leaf shows that this dot carries meaning (the two-dot sign refers back to the letter with a dot in its middle; example ambulare, with the dot drawn inside the lambda); checked: key leaf f. 99r at full size; on the first-pass leaves the dots are still not recorded, and the pass-2 decoder uses a declared fallback there.
 
 ## Escalation
 
-- [x] siblings: the volume itself: its clear copy (used for the key) and its key leaf f. 99r with the German translation f. 98r (viewed after the decode; 46 of 52 values agree); no other manuscript of this secret alphabet found (`PRIOR_ART.md`)
-- [x] clear-pages: the clear copy ff. 101r-155r and 166r-170r is the plain text of the cipher (catalogue); used for training (ff. 101r-102r) and, after the decode, for scoring (ff. 109v, 167r, 123r)
-- [x] known-keys: the volume's own key leaf, compared after the decode (`work/keyleaf_vs_key.tsv`); no other key known
+- [x] siblings: the volume itself: its clear copy (used for the key) and its key leaf f. 99r with the German translation f. 98r; no other manuscript of this secret alphabet found (`PRIOR_ART.md`)
+- [x] clear-pages: the clear copy ff. 101r-155r and 166r-170r is the plain text of the cipher (catalogue); used for training (ff. 101r-102r) and, after the decode, for scoring (ff. 109v, 167r, 123r); its pentacle pages f. 123r-v carry only nos. 1-10 (looked at 25 Nov 2026, canvases 253-254)
+- [x] known-keys: the volume's own key leaf, transcribed into `keyleaf/KEY_LEAF.tsv` and applied in pass 2
 - [x] print: no edition or study of this cipher found (`PRIOR_ART.md`); Skinner and Rankine, Mathers and Boudet's census not opened
-- [ ] key-rebuild: not done. The key leaf gives values the training leaves never met and differs on 4 values (Lmt at, Dl@ us, Oe~ quem, D3 a positional rule); its os, a box with a big loop, may be the unvalued Bx@ of H1 (sanct[?], u[?]: sanctos, uos in the clear copy) [derived, not checked on the image]. Applying the leaf is a second decode, to be reported apart from the first pass of record
-- [ ] retry: not done. The 8 unidentified signs and the slips are not re-read on the image (freeze rule); a second transcription pass, and a decode of the remaining cipher pages with the frozen key, are the next steps
+- [x] key-rebuild: done as pass 2 with the key leaf (`keyleaf/`), frozen and stamped before one decode; reported apart from the first pass of record
+- [ ] retry: in part. The 8 `?` signs were looked at (7 now labelled); the 62 inscribed first-series pentacle rims were transcribed and decoded; the judge's scoring of pass 2, the second-series pentacles, f. 97r-v and a re-transcription of the first-pass leaves with inner dots remain
 
 ## Files
 

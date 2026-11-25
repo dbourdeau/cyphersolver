@@ -200,9 +200,112 @@
    "what": "reading.md and translation.md made by the assembling session from DECODE.txt and the judge's word tags, nothing emended: words read as sense H1 35/77 (0.455), H2 70/133 (0.526), H3 8/15 (0.533), all 113/225 (0.502); docs/_check_reading.py finds no clean sentence (H1 0/7, H2 0/11, H3 0/2). All three passages filed 'decoded, not read', the target 'not read'. A decoder written here from KEY.tsv and the transcriptions reproduces DECODE.txt on 37 of 37 lines (validation.tsv).",
    "result": "partial"
   },
-  {"date": "2026-11-25", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 1024 tokens, 49 types, la order 4: reading -2.639 per letter; random keys -4.459 (z 5.0); key annealed onto shuffled ciphertext best -2.782 (mean -2.817, z 6.5); annealer on the real text -2.553. Verdict: pass.", "result": "worked"}
+  {
+   "date": "2026-11-25",
+   "kind": "verification",
+   "technique": [
+    "statistical test",
+    "language-model scoring"
+   ],
+   "what": "Statistical validation (docs/_validate.py): 1024 tokens, 49 types, la order 4: reading -2.639 per letter; random keys -4.459 (z 5.0); key annealed onto shuffled ciphertext best -2.782 (mean -2.817, z 6.5); annealer on the real text -2.553. Verdict: pass.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-25",
+   "kind": "access",
+   "what": "Pass 2 (keyleaf/): key leaf ff. 98r-99r, pentacle pages ff. 33r-54r, f. 97r-v and clear f. 123r-v fetched at full size by plain IIIF GET, 37 images, all HTTP 200 (keyleaf/IMAGE_FETCH.tsv).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-25",
+   "kind": "key from source",
+   "technique": [
+    "manual reconstruction"
+   ],
+   "what": "keyleaf/KEY_LEAF.tsv transcribed from the volume's own key leaf f. 99r (Danish; German f. 98r) only: 73 sign values, 5 pairs, 2 whole-word forms, 6 rules; the two-dot rule refers back to the letter drawn with a dot in its middle.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-25",
+   "kind": "transcription",
+   "technique": [
+    "manual reconstruction"
+   ],
+   "what": "The 8 first-pass ? signs looked at on the full-size images after the first decode (not blind): 7 labelled (6; 4\" and Xco_ with an unrecorded 6^, X Ea read as Xz; X Hkf; Hkf; Ab; 4~), 1 still unidentified (f. 4r l. 17). Changes only in keyleaf/tx2/ (CHANGES.tsv); first pass unchanged.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-25",
+   "kind": "transcription",
+   "technique": [
+    "manual reconstruction"
+   ],
+   "what": "First-series pentacle rims nos. 11-110 (ff. 35r-51r) unwrapped from full-size images and transcribed by shape: 62 rims with a cipher inscription, 38 blank, crosses only or in ordinary script (keyleaf/tx/PENTACLES.txt). Not blind: the transcriber knew the key leaf. Second series ff. 52r-54r and f. 97r-v not transcribed.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-25",
+   "kind": "verification",
+   "what": "Freeze keyleaf/FREEZE_PENT.txt 03:33:21 UTC, RFC 3161 stamps Sectigo and FreeTSA, committed and pushed (b8cce3928) before any decode of the new text.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-25",
+   "kind": "reading",
+   "technique": [
+    "key matching"
+   ],
+   "what": "One decode with the key leaf (keyleaf/scripts/decode_keyleaf.py; declared fallback for the two-dot sign where no inner dot was recorded): training 1,556 letters, H1 382, H2 717, H3 69, pentacles 2,520 (keyleaf/DECODE_KEYLEAF.txt). No emendation.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-25",
+   "kind": "control",
+   "technique": [
+    "statistical test",
+    "language-model scoring"
+   ],
+   "what": "Shuffle control, key-leaf values permuted among 73 signs, 5,000 keys at seeds 20261112 and 7, la-letters: every section and all 62 pentacles 0/5000 at both seeds; pentacles z 10.5 / 10.3, lowest single rim z 4.1 (keyleaf/work/shuffle_keyleaf_out.txt).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-25",
+   "kind": "verification",
+   "what": "Separate judge for pass 2 could not be started from this session (headless CLI authentication error); packet keyleaf/judge/BRIEF.txt + decode.txt frozen and ready. No read share or class claimed for pass 2 until it is scored.",
+   "result": "failed"
+  }
  ],
- "outcome": {"validation": {"date": "2026-11-25", "model": "la", "file": "validation.tsv", "tokens": 1024, "types": 49, "tokens_per_type": 20.9, "score": -2.639, "nulls": {"random keys": {"n": 200, "mean": -4.459, "sd": 0.366, "max": -3.726, "z": 5.0, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -2.817, "sd": 0.028, "max": -2.782, "z": 6.5, "p": 0.1429}}, "power": -2.553, "verdict": "pass", "notes": "claimed per-occurrence score -2.639; polyphony 0.016; 10 unread tokens left out; annealer on the real text from random keys reached -2.553"}, 
+ "outcome": {
+  "validation": {
+   "date": "2026-11-25",
+   "model": "la",
+   "file": "validation.tsv",
+   "tokens": 1024,
+   "types": 49,
+   "tokens_per_type": 20.9,
+   "score": -2.639,
+   "nulls": {
+    "random keys": {
+     "n": 200,
+     "mean": -4.459,
+     "sd": 0.366,
+     "max": -3.726,
+     "z": 5.0,
+     "p": 0.005
+    },
+    "shuffled refit": {
+     "n": 6,
+     "mean": -2.817,
+     "sd": 0.028,
+     "max": -2.782,
+     "z": 6.5,
+     "p": 0.1429
+    }
+   },
+   "power": -2.553,
+   "verdict": "pass",
+   "notes": "claimed per-occurrence score -2.639; polyphony 0.016; 10 unread tokens left out; annealer on the real text from random keys reached -2.553"
+  },
   "class": "not read",
   "key": "partial",
   "method": "key recovered based on adjacent plaintext",
@@ -214,7 +317,11 @@
   "fraction_read": 0.502,
   "fraction_read_method": "measured",
   "fraction_read_source": "reading.md, counted with research/reading_audit/v10_relabel.measure_text over the three held-out passages: 113 of 225 decoded words read as sense (H1 35/77 = 0.455, H2 70/133 = 0.526, H3 8/15 = 0.533); one-letter slips (word(?)), no-sense words ([?word]) and signs with no key value ([?]) are holes. Strict judge by letters: 747/1,138 = 0.656 (judge/judge.tsv). The rest of the volume's cipher is not transcribed.",
-  "verification": ["independent clear copy", "key confirms", "statistical test"],
+  "verification": [
+   "independent clear copy",
+   "key confirms",
+   "statistical test"
+  ],
   "provenance": "contributed",
   "credits": [
    {
