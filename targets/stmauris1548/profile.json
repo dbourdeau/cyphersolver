@@ -257,6 +257,61 @@
    "kind": "verification",
    "what": "Write-up review: share recounted from NOTES (340 of 435 words verbatim, 78.2%). Two sibling letters in the same Estense file (cc. 1r-2r with glosses, cc. 5r-8v) are online and untranscribed, so the gaps are workable from online material and the target does not meet the read-in-part stopping rule. No page written; ## Escalation added to NOTES and status set to in progress with the next step.",
    "result": "partial"
+  },
+  {
+   "date": "2026-11-23",
+   "kind": "verification",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "Held-out test O2 (Brice Dudout with Claude, files in dudout/o2-2311): 1547 letter, c. 1r. Preregistered and frozen by SHA-256 before transcription (PREREG-O2.md e85e333c...). One blind pass from the Estense images (27 rows), decoded once with key.tsv (b9e69238...e034, not key_frozen.tsv); lexical coverage M against 200 permuted controls. M 0.718 < 0.85; best control 0.438, margin 0.280 < 0.30.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-25",
+   "kind": "verification",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "Held-out test O3 (dudout/o3-2511): 1547 letter, cc. 1v-2r. PREREG-O3.md fd80c823... frozen before transcription; two blind passes A/B from crops (agreement 0.961), 31 disputes arbitrated blind on shapes, merged transcription frozen before decoding; one decode with key.tsv (b9e69238...e034, not key_frozen.tsv). 750 letters, M 0.784 < 0.85; best of 200 controls 0.391, margin 0.393.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-25",
+   "kind": "verification",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "Held-out test O4 (dudout/o4-2511): 12 Mar 1548, cc. 5r-6r. PREREG-O4.md f95a74e4... frozen before transcription; passes A/B (agreement 0.926), 104 disputes arbitrated blind, merge frozen; one decode with key.tsv (b9e69238...e034, not key_frozen.tsv). 1,409 letters, M 0.780 < 0.85; best control 0.415, margin 0.365, z 8.43. Fails on the absolute 0.85 bar only.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-25",
+   "kind": "verification",
+   "technique": [
+    "plaintext matching"
+   ],
+   "what": "After O4 was closed: the clear note in the left margin of c. 5r, masked from the transcribers, read as a period decipherment of 5r L01-L03 ('Comme l'on en avoit icy faict grand cas en vous imputant le tort'). The O4 decode of those lines matches it word for word apart from spelling, a ct/e and one unresolved sign: an outside check of the key on about 40 letters (dudout/o4-2511/NOTE-MARGE-5r.md).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-25",
+   "kind": "verification",
+   "technique": [
+    "statistical test",
+    "contextual inference"
+   ],
+   "what": "Held-out test O5 (dudout/o5-2511): 12 Mar 1548, cc. 6v-8r (8v has no cipher). PREREG-O5.md ebd2429b... frozen before transcription; passes A/B (agreement 0.830), 250 disputes arbitrated blind, merge frozen; one decode with key.tsv (b9e69238...e034, not key_frozen.tsv) (1,526 letters); two independent readers who saw only the decode read it by sense. Read 0.850 and 0.826 < 0.95; restored 0.092 and 0.074 > 0.05; M 0.659, margin over the best control 0.251 < 0.30. Both readers read the same continuous French (Scotland, Piedmont, d'Andelot, Guyenne); most holes come from one barless two-ring shape (95 tokens) that no key name covered.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-25",
+   "kind": "transcription",
+   "technique": [
+    "other"
+   ],
+   "what": "Two blind shape sheets answered by Brice Dudout (dudout/planche-2511, planche-2511b), each with its selection rule hashed before any thumbnail (91feba56..., 1fe966ee...) and hidden controls. Sheet 2511: K1 (w) missed because its twin shape was among the options, waived as a construction fault; K2, K3 passed. Sheet 2511b, built without twin options: all 3 controls passed. Result: the barless two-ring shape is w (95 tokens, o), the 'ox' shape is vt (45 tokens, s, unchanged), the looped small sign is N4 (22 tokens, m). Key unchanged. Applied to copies of the O5 readings, unknown letters 215 to 98, sure words 193 to 266 and 201 to 271, restored 3.4% and 2.6%, share read 0.850 and 0.824: a reading, not a new measurement; O5 stays failed. Shape-list additions for a future preregistration: dudout/SIGNS-ajout-2511.md.",
+   "result": "worked"
   }
  ],
  "outcome": {
