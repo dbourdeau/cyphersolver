@@ -10,4 +10,4 @@ l[u]singare dalle promesse del Signor Antonio R[u]ffo né dalle parole pi[ù] di
 
 ### Page T004
 
-[...] [u]en[u]ta del [...] che a molti pare in[u]erisimile che lasci minis[t]ero così impor[t]an[t]e e segreto per [u]enir ad assistere ad [u]n dottorato. [...] patrone [...] Farset[t]i che mi ha p[ro]messo [...]
+[...] [u]en[u]ta del [...] che a molti pare in[u]erisimile che lasci minis[t]ero così impor[t]an[t]e e segreto per [u]enir ad assistere ad [u]n dottorato. [...] patrone [...] Farset[t]i che mi ha p[ro]messo cent[o] [u]olte di ac[co]modarmi se fosse rimasto [...] ma ho pa[u]ra che non si lasci [im]brogliare e per ciò andarà il [...] Merendi [...]

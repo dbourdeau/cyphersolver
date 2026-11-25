@@ -174,7 +174,7 @@
   },
   {
    "id": "R8660",
-   "read": "read in part",
+   "read": "not read",
    "shelfmark": "British Library, Add MS 20443 (DECODE R8660)",
    "date": "1710",
    "year": 1710,
@@ -202,7 +202,7 @@
   },
   {
    "id": "R8661",
-   "read": "read in part",
+   "read": "not read",
    "shelfmark": "British Library, Add MS 20443 (DECODE R8661)",
    "date": "1710",
    "year": 1710,
@@ -286,7 +286,7 @@
   },
   {
    "id": "R8664",
-   "read": "read in part",
+   "read": "not read",
    "shelfmark": "British Library, Add MS 20443 (DECODE R8664)",
    "date": "1710",
    "year": 1710,
@@ -314,7 +314,7 @@
   },
   {
    "id": "R8665",
-   "read": "read in part",
+   "read": "not read",
    "shelfmark": "British Library, Add MS 20443 (DECODE R8665)",
    "date": "1710",
    "year": 1710,
@@ -398,7 +398,7 @@
   },
   {
    "id": "R8668",
-   "read": "read in part",
+   "read": "not read",
    "shelfmark": "British Library, Add MS 20443 (DECODE R8668)",
    "date": "1710",
    "year": 1710,
@@ -538,7 +538,7 @@
   },
   {
    "id": "R8673",
-   "read": "read in part",
+   "read": "not read",
    "shelfmark": "British Library, Add MS 20443 (DECODE R8673)",
    "date": "1710",
    "year": 1710,
@@ -1406,7 +1406,7 @@
   },
   {
    "id": "R8718",
-   "read": "read in part",
+   "read": "not read",
    "shelfmark": "British Library, Add MS 20443 (DECODE R8718)",
    "date": "1713",
    "year": 1713,
@@ -1620,12 +1620,12 @@
   {
    "date": "2026-11-23",
    "kind": "reading",
-   "what": "Added strictly aligned word-divided Italian readings (readings/rXXXX_reading.md) and English translations (readings/rXXXX_en.md) for 7 pure-blind dotted letters carrying no clerk decipherment (R8660, R8661, R8664, R8665, R8668, R8673, R8718), verified mechanically by scripts/verify_readings.py with zero unmarked departures from the unedited decodes (508/781 sure cipher words = 0.650; R8718 57/72 = 0.792, R8673 77/103 = 0.748).",
+   "what": "Added strictly aligned word-divided Italian readings (readings/rXXXX_reading.md) and English translations (readings/rXXXX_en.md) for 7 pure-blind dotted letters carrying no clerk decipherment (R8660, R8661, R8664, R8665, R8668, R8673, R8718), verified mechanically by scripts/verify_readings.py with zero unmarked departures from the unedited decodes (524/804 sure cipher words = 0.652; R8718 57/72 = 0.792, R8673 77/103 = 0.748).",
    "result": "partial"
   }
  ],
  "outcome": {
-  "class": "read in part",
+  "class": "not read",
   "key": "partial",
   "method": "key recovered from ciphertext-only",
   "parts": [
@@ -1633,8 +1633,8 @@
     "label": "The key of the letters, from the ciphertext alone of the 46 letters with dots; the decode of the records with a page shown",
     "records": "R8468 to R8470, R8617, R8618 and R8659 to R8718",
     "method": "key recovered from ciphertext-only",
-    "extent": "partial",
-    "basis": "21-letter key fixed 16 Nov 2026 from ciphertext alone before opening any clerk row; 7 pure-blind dotted letters (R8660, R8661, R8664, R8665, R8668, R8673, R8718) read in part as coherent Italian sentences (508/781 sure cipher words = 0.650, scripts/verify_readings.py); remaining 44 records stay decoded, not read."
+    "extent": "none",
+    "basis": "Key fixed 16 Nov 2026 before any clear row was opened; 75.3% of the blind decode's shown letters match the clerk on 29 letters. All 51 documents remain filed as decoded, not read pending maintainer review; working readings for 7 pure-blind dotted letters (R8660, R8661, R8664, R8665, R8668, R8673, R8718; 524/804 sure cipher words = 0.652 by scripts/verify_readings.py) are linked in readings/."
    },
    {
     "label": "14 code values from the clerk's decipherment on the pages",
@@ -1784,23 +1784,15 @@
      "transcription/R8660_T006_digits.txt"
     ],
     "decryption": "r8660.md",
-    "state": "read in part",
+    "state": "decoded, not read",
     "language": "it",
     "summary": "Disillusionment with the local government, and a sword-drawn street clash in Ravenna between Rasponi and Pietro Conti at the palace gate over a contraband bushel of grain, ending with refuge at the Archbishop's house and Conti's house arrest.",
-    "note": "Pure-blind dotted letter (no clerk decipherment). Strictly aligned reading in readings/r8660_reading.md and translation in readings/r8660_en.md: 124 of 203 cipher words sure (0.611), 79 holes (scripts/verify_readings.py).",
+    "note": "Pure-blind dotted letter (no clerk decipherment). Working reading in readings/r8660_reading.md and translation in readings/r8660_en.md (awaiting maintainer reading review): 124 of 203 cipher words sure (0.611), 79 holes (scripts/verify_readings.py).",
     "reading": "readings/r8660_reading.md",
     "translation": "readings/r8660_en.md",
     "read_share": 0.611,
     "cipher_words": 203,
-    "holes": 79,
-    "reading_review": {
-     "grade": "B",
-     "reader_kind": "model",
-     "independent": false,
-     "by": "contributor's AI model (not independent; awaiting maintainer review)",
-     "date": "2026-11-23",
-     "note": "Coherent 18th-century Italian sentences from the pure-blind ciphertext-only key (no clerk decipherment on this record), strictly aligned to r8660.md by scripts/verify_readings.py (124/203 sure cipher words = 0.611, 79 holes, zero unmarked departures). Not checked by a person or an independent reader."
-    }
+    "holes": 79
    },
    {
     "doc": "R8661",
@@ -1812,23 +1804,15 @@
      "transcription/R8661_T004_digits.txt"
     ],
     "decryption": "r8661.md",
-    "state": "read in part",
+    "state": "decoded, not read",
     "language": "it",
-    "summary": "Seeking release or temporary leave to go to Ravenna, distrusting the flattering promises of Signor Antonio Ruffo, and marveling that anyone would leave an important secret post to attend a doctorate.",
-    "note": "Pure-blind dotted letter (no clerk decipherment). Strictly aligned reading in readings/r8661_reading.md and translation in readings/r8661_en.md: 69 of 101 cipher words sure (0.683), 32 holes (scripts/verify_readings.py).",
+    "summary": "Seeking release or temporary leave to go to Ravenna, distrusting the flattering promises of Signor Antonio Ruffo, marveling that anyone would leave an important secret post to attend a doctorate, and noting Farsetti's promises and fear of intrigue.",
+    "note": "Pure-blind dotted letter (no clerk decipherment). Working reading in readings/r8661_reading.md and translation in readings/r8661_en.md (awaiting maintainer reading review): 85 of 124 cipher words sure (0.685), 39 holes (scripts/verify_readings.py).",
     "reading": "readings/r8661_reading.md",
     "translation": "readings/r8661_en.md",
-    "read_share": 0.683,
-    "cipher_words": 101,
-    "holes": 32,
-    "reading_review": {
-     "grade": "B",
-     "reader_kind": "model",
-     "independent": false,
-     "by": "contributor's AI model (not independent; awaiting maintainer review)",
-     "date": "2026-11-23",
-     "note": "Coherent 18th-century Italian sentences from the pure-blind ciphertext-only key (no clerk decipherment on this record), strictly aligned to r8661.md by scripts/verify_readings.py (69/101 sure cipher words = 0.683, 32 holes, zero unmarked departures). Not checked by a person or an independent reader."
-    }
+    "read_share": 0.685,
+    "cipher_words": 124,
+    "holes": 39
    },
    {
     "doc": "R8662",
@@ -1870,23 +1854,15 @@
      "transcription/R8664_T003_digits.txt"
     ],
     "decryption": "r8664.md",
-    "state": "read in part",
+    "state": "decoded, not read",
     "language": "it",
     "summary": "A pasquinade from Ravenna and Forlì claiming Marabottini was beaten at night in disguise in Rome, and talk of his impending trip to Rome where some say he will have no access to the Palace, naming Taverna, secretary of the province.",
-    "note": "Pure-blind dotted letter (no clerk decipherment). Strictly aligned reading in readings/r8664_reading.md and translation in readings/r8664_en.md: 59 of 112 cipher words sure (0.527), 53 holes (scripts/verify_readings.py).",
+    "note": "Pure-blind dotted letter (no clerk decipherment). Working reading in readings/r8664_reading.md and translation in readings/r8664_en.md (awaiting maintainer reading review): 59 of 112 cipher words sure (0.527), 53 holes (scripts/verify_readings.py).",
     "reading": "readings/r8664_reading.md",
     "translation": "readings/r8664_en.md",
     "read_share": 0.527,
     "cipher_words": 112,
-    "holes": 53,
-    "reading_review": {
-     "grade": "B",
-     "reader_kind": "model",
-     "independent": false,
-     "by": "contributor's AI model (not independent; awaiting maintainer review)",
-     "date": "2026-11-23",
-     "note": "Coherent 18th-century Italian sentences from the pure-blind ciphertext-only key (no clerk decipherment on this record), strictly aligned to r8664.md by scripts/verify_readings.py (59/112 sure cipher words = 0.527, 53 holes, zero unmarked departures). Not checked by a person or an independent reader."
-    }
+    "holes": 53
    },
    {
     "doc": "R8665",
@@ -1896,23 +1872,15 @@
      "transcription/R8665_T003_digits.txt"
     ],
     "decryption": "r8665.md",
-    "state": "read in part",
+    "state": "decoded, not read",
     "language": "it",
     "summary": "The obstinacy of the lieutenant at the close of the legation prevented the intended outcome, while his government has been continually praised on everyone's lips for its gentleness.",
-    "note": "Pure-blind dotted letter (no clerk decipherment). Strictly aligned reading in readings/r8665_reading.md and translation in readings/r8665_en.md: 34 of 61 cipher words sure (0.557), 27 holes (scripts/verify_readings.py).",
+    "note": "Pure-blind dotted letter (no clerk decipherment). Working reading in readings/r8665_reading.md and translation in readings/r8665_en.md (awaiting maintainer reading review): 34 of 61 cipher words sure (0.557), 27 holes (scripts/verify_readings.py).",
     "reading": "readings/r8665_reading.md",
     "translation": "readings/r8665_en.md",
     "read_share": 0.557,
     "cipher_words": 61,
-    "holes": 27,
-    "reading_review": {
-     "grade": "B",
-     "reader_kind": "model",
-     "independent": false,
-     "by": "contributor's AI model (not independent; awaiting maintainer review)",
-     "date": "2026-11-23",
-     "note": "Coherent 18th-century Italian sentences from the pure-blind ciphertext-only key (no clerk decipherment on this record), strictly aligned to r8665.md by scripts/verify_readings.py (34/61 sure cipher words = 0.557, 27 holes, zero unmarked departures). Not checked by a person or an independent reader."
-    }
+    "holes": 27
    },
    {
     "doc": "R8666",
@@ -1953,23 +1921,15 @@
      "transcription/R8668_T006_digits.txt"
     ],
     "decryption": "r8668.md",
-    "state": "read in part",
+    "state": "decoded, not read",
     "language": "it",
     "summary": "Wishes for health and protection, the departure of Cavaliere Rasponi, an auditor's decree in favor of the Bolognese, and a clash where two constables put a pistol to a man's chest before he identified himself, reported by the Archbishop to Marabottini.",
-    "note": "Pure-blind dotted letter (no clerk decipherment). Strictly aligned reading in readings/r8668_reading.md and translation in readings/r8668_en.md: 88 of 129 cipher words sure (0.682), 41 holes (scripts/verify_readings.py).",
+    "note": "Pure-blind dotted letter (no clerk decipherment). Working reading in readings/r8668_reading.md and translation in readings/r8668_en.md (awaiting maintainer reading review): 88 of 129 cipher words sure (0.682), 41 holes (scripts/verify_readings.py).",
     "reading": "readings/r8668_reading.md",
     "translation": "readings/r8668_en.md",
     "read_share": 0.682,
     "cipher_words": 129,
-    "holes": 41,
-    "reading_review": {
-     "grade": "B",
-     "reader_kind": "model",
-     "independent": false,
-     "by": "contributor's AI model (not independent; awaiting maintainer review)",
-     "date": "2026-11-23",
-     "note": "Coherent 18th-century Italian sentences from the pure-blind ciphertext-only key (no clerk decipherment on this record), strictly aligned to r8668.md by scripts/verify_readings.py (88/129 sure cipher words = 0.682, 41 holes, zero unmarked departures). Not checked by a person or an independent reader."
-    }
+    "holes": 41
    },
    {
     "doc": "R8669",
@@ -2037,23 +1997,15 @@
      "transcription/R8673_T004_digits.txt"
     ],
     "decryption": "r8673.md",
-    "state": "read in part",
+    "state": "decoded, not read",
     "language": "it",
     "summary": "Good offices with his uncle in Rome and a prelature, settling business first, satirical poems circulating in the city, courtiers and nephew writing evil, calling it 'the land of idolatry', and thanking God he was driven out.",
-    "note": "Pure-blind dotted letter (no clerk decipherment). Strictly aligned reading in readings/r8673_reading.md and translation in readings/r8673_en.md: 77 of 103 cipher words sure (0.748), 26 holes (scripts/verify_readings.py).",
+    "note": "Pure-blind dotted letter (no clerk decipherment). Working reading in readings/r8673_reading.md and translation in readings/r8673_en.md (awaiting maintainer reading review): 77 of 103 cipher words sure (0.748), 26 holes (scripts/verify_readings.py).",
     "reading": "readings/r8673_reading.md",
     "translation": "readings/r8673_en.md",
     "read_share": 0.748,
     "cipher_words": 103,
-    "holes": 26,
-    "reading_review": {
-     "grade": "B",
-     "reader_kind": "model",
-     "independent": false,
-     "by": "contributor's AI model (not independent; awaiting maintainer review)",
-     "date": "2026-11-23",
-     "note": "Coherent 18th-century Italian sentences from the pure-blind ciphertext-only key (no clerk decipherment on this record), strictly aligned to r8673.md by scripts/verify_readings.py (77/103 sure cipher words = 0.748, 26 holes, zero unmarked departures). Not checked by a person or an independent reader."
-    }
+    "holes": 26
    },
    {
     "doc": "R8674",
@@ -2502,23 +2454,15 @@
      "transcription/R8718_T005_digits.txt"
     ],
     "decryption": "r8718.md",
-    "state": "read in part",
+    "state": "decoded, not read",
     "language": "it",
     "summary": "Travel arrangements in Livorno and Sarzana for a journey to France, and word that the Archbishop is preparing to come ad limina in spring hoping to be well received by Our Lord and placed in office.",
-    "note": "Pure-blind dotted letter (no clerk decipherment). Strictly aligned reading in readings/r8718_reading.md and translation in readings/r8718_en.md: 57 of 72 cipher words sure (0.792), 15 holes (scripts/verify_readings.py).",
+    "note": "Pure-blind dotted letter (no clerk decipherment). Working reading in readings/r8718_reading.md and translation in readings/r8718_en.md (awaiting maintainer reading review): 57 of 72 cipher words sure (0.792), 15 holes (scripts/verify_readings.py).",
     "reading": "readings/r8718_reading.md",
     "translation": "readings/r8718_en.md",
     "read_share": 0.792,
     "cipher_words": 72,
-    "holes": 15,
-    "reading_review": {
-     "grade": "B",
-     "reader_kind": "model",
-     "independent": false,
-     "by": "contributor's AI model (not independent; awaiting maintainer review)",
-     "date": "2026-11-23",
-     "note": "Coherent 18th-century Italian sentences from the pure-blind ciphertext-only key (no clerk decipherment on this record), strictly aligned to r8718.md by scripts/verify_readings.py (57/72 sure cipher words = 0.792, 15 holes, zero unmarked departures). Not checked by a person or an independent reader."
-    }
+    "holes": 15
    }
   ],
   "key_file": [
@@ -2533,9 +2477,9 @@
     "detail": "the clerk writes r 66 times and q 39 times at its places"
    },
    {
-    "item": "code 17 before code 10 (17.10.): 74 sure places plus 26 doubtful",
+    "item": "code 17 before code 10 (17.10.): 74 places with both signs sure, 26 more with a doubtful sign, and 1 (R8695 T003 C13) with a sign marked [?] after 10",
     "blocker": "open-codes",
-    "detail": "key keeps 17=r and 10=a; every [q]/[u] restoration in readings/ is counted as a hole"
+    "detail": "at the 72 sure places on pages decoded here, the decode gives raesto (8), raale (5), raesta (4) and rael (3), which read questo, quale, questa and quel with 17 = q and 10 = u; some groups read with r (fratello, tragedia, ringrazio); the key keeps 17 as r and 10 as a; every [q]/[u] restoration in readings/ is counted as a hole; NOTES.md"
    },
    {
     "item": "90 rare codes with no value (191 tokens in the letters with dots)",
@@ -2557,14 +2501,11 @@
     "blocker": "too-short"
    },
    {
-    "item": "44 remaining records stay decoded, not read",
-    "blocker": "open-codes",
-    "detail": "29 glossed letters, 5 undotted letters, and 10 sparser blind letters need human image checks or BL Add MS 20244 to clear remaining ? doubts and open codes"
+    "item": "44 remaining records have no sentence-level reading yet",
+    "blocker": "not-attempted",
+    "detail": "29 glossed letters, 5 undotted letters, and 10 sparser blind letters stay decoded, not read; working readings have so far been prepared only for the 7 pure-blind dotted letters"
    }
   ],
-  "notes": "Contributed by prabal-rje as a pull request. The status, the class and the reading review are for the maintainer. documents[].length.tokens: for the letters with dots, the code tokens on all their pages in the frozen decode (code groups); for the letters without dots, the digits of the rows (symbols), because their cut is not sure. Not measured with docs/_check_profile.py. No word count is given: no reading divides the decode into words (NOTES.md, \"Why no word count\"). The clerk's decipherments are not copied. The decode of the letters with dots shows the 14 values from the clerk as open; the decode of the letters without dots uses them (key-and-read/README.md). first_break is left out: the clerk wrote decipherments on 29 letters at the time, and a few words on R8618; print was not searched. The British Library's catalogue gives the volume to two writers, the Abbate Carlo Camillo Botti and his uncle the Abbate Lazaro Botti; which letters each wrote is not known.",
-  "fraction_read": 0.65,
-  "fraction_read_method": "measured",
-  "fraction_read_source": "scripts/verify_readings.py on readings/ for 7 pure-blind dotted letters (R8660, R8661, R8664, R8665, R8668, R8673, R8718): 508 of 781 cipher words sure (0.650); the remaining 44 records stay decoded, not read."
+  "notes": "Contributed by prabal-rje as a pull request. The status, the class and the reading review are for the maintainer. documents[].length.tokens: for the letters with dots, the code tokens on all their pages in the frozen decode (code groups); for the letters without dots, the digits of the rows (symbols), because their cut is not sure. Not measured with docs/_check_profile.py. No word count is given: no reading divides the decode into words (NOTES.md, \"Why no word count\"). The clerk's decipherments are not copied. The decode of the letters with dots shows the 14 values from the clerk as open; the decode of the letters without dots uses them (key-and-read/README.md). first_break is left out: the clerk wrote decipherments on 29 letters at the time, and a few words on R8618; print was not searched. The British Library's catalogue gives the volume to two writers, the Abbate Carlo Camillo Botti and his uncle the Abbate Lazaro Botti; which letters each wrote is not known."
  }
 }
