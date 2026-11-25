@@ -44,6 +44,7 @@ noch, bishero); one 398 on a slip is unresolved. An overbar doubles a letter.
 | `key.tsv` | key with the view reference |
 | `decode.py` | decoder: `python3 decode.py transcription/digits_arbitrated.txt` |
 | `decryption.txt` | its output, with the count of numbers in and off the key |
+| `blind_check/` | blind shape check of 17 Nov 2026: sheet (questions and boxes), answer key, answers as exported, SHA-256 values; why 19 places were prepared and 15 asked |
 | `reading.md` | reading (sure / {probable} / [restored] / ‹unresolved›), count, the 11 unresolved places, translation |
 
 ## Transcription

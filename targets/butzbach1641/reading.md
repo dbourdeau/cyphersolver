@@ -26,7 +26,7 @@ an overbar on a number doubles its letter (Vilgeehrter, herr). Line breaks insid
 16 {Ligt} {also} zum hochsten, den her-
 17 rn officiern und soldaten ufs
 18 beste zuzusprechen, das sie
-19 ihre dapffer[keit] und standhafftigkeit
+19 ihre dapffer- und standhafftigkeit
 20 ‹…› noch rhummlich wie bishero
 21 fortzusetzen und bis den neu-
 22 en Jharstag sich gedulden wol-
@@ -39,6 +39,10 @@ an overbar on a number doubles its letter (Vilgeehrter, herr). Line breaks insid
 S1 (oblique slip) {zwantzigsten} ‹…›
 S2 (oblique slip) meines ‹398› ‹sammigerku…›
 ```
+
+Line 19: the cipher has the seven numbers of "dapffer" and then "und standhafftigkeit"; the ending -keit is shared
+("dapffer- und standhafftigkeit"), so the word is written "dapffer-" and counted sure. An earlier version wrote
+"dapffer[keit]" with an editorial bracket.
 
 Line 25 reads "gebracht" (17 15 12 27 11 13 18 29); the text posted in issue #745 had "gebraucht", a slip.
 
@@ -57,9 +61,9 @@ here only as that, a count with probable words. "auc[h]" (line 27, one restored 
 
 ## Blind shape check (18 Nov 2026)
 
-Brice Dudout answered a blind sheet of 15 boxed numbers on view 13 (each option a crop of a sure number of the same hand, no letters or words shown; 3 controls on sure words, all answered as expected).
+Brice Dudout answered a blind sheet of 15 boxed numbers on view 13 (each option a crop of a sure number of the same hand, no letters or words shown; 3 controls on sure words, all answered as expected). The sheet, the answer key, the answers and their hashes are in `blind_check/` (README there explains why 19 places were first prepared and 15 asked).
 
-- Now sure: "gräfliche" (l. 26, first number 17 confirmed) and "dapffer" (l. 19, 11 and 25 confirmed; the cipher has the seven numbers of "dapffer", "[keit]" is an editorial completion).
+- Now sure: "gräfliche" (l. 26, first number 17 confirmed) and "dapffer" (l. 19, 11 and 25 confirmed; the cipher has the seven numbers of "dapffer", written "dapffer-" since the ending -keit is shared with "standhafftigkeit").
 - Against the reading: the last number of "entsetzung" (l. 1) was seen as 27 (r), not 17 (g): the word stays probable although its 29 was confirmed. The end of "gesch‹…›" (l. 24) was seen as 27 and 22 ("geschr…" … "m"), which gives no word: it stays unresolved.
 - Left open by his remarks: "tag" (11 confirmed, but with a mark or two dots above it), "mittwoch" (31 vs 34 not settled), "also" ("28?" instead of 21). "die" was confirmed as written 14 18 15 (dhe) and stays probable; the 11 written as two strokes in "Zabern" was confirmed (a place name, still probable).
 
