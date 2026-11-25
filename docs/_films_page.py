@@ -16,6 +16,14 @@ from pathlib import Path
 HERE = Path(__file__).resolve().parent
 
 FILMS = [
+    dict(id='siena1496', card='The Emperor’s cipher', title='The Emperor’s Cipher: Maximilian I to Siena, 1496',
+         src='siena1496.mp4?v=1', vtt='siena1496.vtt?v=1', poster='siena1496_poster.jpg', secs=190,
+         about='Maximilian I, camped at Pisa in November 1496, puts his terms to Siena in a cipher of sixty invented signs. The key was '
+               'recovered from the cipher alone twice, a month apart, by this project and by George Lasry with Claude; the film shows '
+               'both routes on one word, compares the two keys sign by sign, and reads the terms.',
+         links=[('siena18.html', 'The write-up')],
+         credit='Reading: George Lasry, with Claude. Manuscript: Archivio di Stato di Siena, via DECODE. Portrait: Dürer, public domain. '
+                'Synthetic narration (Kokoro); score synthesised.'),
     dict(id='codebooks1787', card='Jefferson’s lost codebooks', title='The Lost Codebooks: Jefferson’s Code No. 11 and No. 16',
          src='codebooks1787.mp4?v=1', vtt='codebooks1787.vtt?v=1', poster='codebooks1787_poster.jpg', secs=203,
          about='No codebook survives for two of Jefferson’s diplomatic codes. Starting from Thomas Barclay’s arrest at Bordeaux in '
