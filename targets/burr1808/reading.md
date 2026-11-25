@@ -9,7 +9,7 @@ added here; Burr writes none in the cipher. [?] marks a word read against one nu
 
 Below the black line is copy of my last, by the schooner Wolf, Capt. Jones, to sail about the eighteenth. You will
 hear again. Keep up your spirits. My plans are not changed. Yet at Baltimore incog., the tenth February. Business now
-detains me. We must submit, submit, submit to ten days more of suspense. The promise in[?] my last was rashly made.
+detains me. We must submit, submit to ten days more of suspense. The promise in[?] my last was rashly made.
 Affairs begin to look up. J'y travaille. What would Gamp not give to know that you are all well.
 
 ## 2. Copy of the letter of 31 January [1808] (img1, between and below the ruled lines)
@@ -31,4 +31,4 @@ hourly expectation of money for the long voyage, and nothing else detains[?] me.
 ---
 Notes: "Gamp" is Burr himself. "J'y travaille": French, "I am working at it". "Huzzey": as written, hussy (a pet
 name). "Mari": as written, French for husband (Joseph Alston). The Oaks: the Alston plantation on the Waccamaw, S.C.
-Measured: 973 cipher numbers, 969 read as sense (99.6%); the open group is rubbed on a fold.
+Measured: 967 cipher numbers, 963 read as sense (99.6%); the open group is rubbed on a fold.
