@@ -1,4 +1,4 @@
-Status: read in part (proposal by dudout, 25 Nov 2026: 125 of 154 words read from the signs, 81.2%, against 122, 79.2%, in the reading this target names). Nothing in the lccompany files is replaced by this folder.
+Status: read in part (proposal by dudout, 23-25 Nov 2026: 128 of 154 words read from the signs, 83.1%, against 122, 79.2%, in the reading this target names). Nothing in the lccompany files is replaced by this folder.
 
 # mendoza1549, c. 44r: shape splits of x and o' checked blind (proposal)
 
@@ -22,7 +22,7 @@ at the time.
   `of` may stand for t + vowel is noted, not adopted.
 - **x**: the looped x agrees with de at 5 of 5 places; the round x agrees with no at 2 of 4. Two no places (L13 s25,
   L14 s1) were seen as looped, against the alignment. So the split is only partly supported, and we do not propose
-  renaming x as a whole. Labels `xb` / `xr` are given only where the answer agrees, marked `!`. One place (L05 s22) is a
+  renaming x as a whole (the second sheet below settles this). Labels `xb` / `xr` are given only where the answer agrees, marked `!`. One place (L05 s22) is a
   third shape, an "elongated 8" with a closed left loop and a rising stroke that does not cross it. It is labelled
   `x8`, value de by the alignment; the word was already read.
 - Words that now read from the signs: L12 "no comunique" (round x = no), L16 "puerta" and "abierta" (flat o' = ta). No
@@ -31,13 +31,30 @@ at the time.
 Count (rule of #728, words read from the signs, 154 words): 122 -> 125 (79.2% -> 81.2%), repairs 28 -> 25, code words
 4. Still well under 95%: read in part.
 
-## Files
-- `transcription_44r_shapes.txt`: `transcription_44r.txt` with the labels above.
-- `reading_44r_marked_shapes.txt`: `reading_44r_marked.md` with the three words unmarked.
-- `sign_check_2311/`: rule, hash, answers, results.
+## Second sheet (25 Nov 2026): x split holds on the whole page
+A second blind sheet (7 questions: 4 targets, 3 controls, all 3 passed; rule hashed first, `sign_check_2511/`) asked
+the two "against" x places again with tight frames, and two odd-looking q' forms.
+- **x**: L13 s25 and L14 s1 are both **round** in tight frames (the wide frames had caught a neighbouring stroke). The
+  split now holds at every x of the page: looped `xb` = de 7 of 7, round `xr` = no 6 of 6 (with the control), `x8` = de
+  (1). The four example places of the two sheets (L03 two, L05 s4, L08 s4) are labelled too, without `!` (form seen by
+  eye, not answered blind). The values are the key's own (x: de 8, no 6), not the sense.
+  Check made afterwards, not pre-registered: the split learned on L01-L10 alone (xr = no 2/2, xb = de 5/5) gives the
+  right value at the 6 held-out x places of L11-L17, 6 of 6; unsplit x = de gives 2 of 6.
+- **q'**: the open-horned q' of L04 is the closed dotted q' (transcription confirmed, "{ha/a} voz" stays repaired). The
+  q' of L13 "diran" is a **g'** (key ra): the word reads di{-ga}ran, one mark instead of two (`o:`, ga in the key, is not
+  explained there), still repaired.
+- Words that now read from the signs: L03 "govierno", L08 "no", L13 "uno". "noso{mo/tro}s" (L14) loses its x mark but
+  keeps the lo = tro repair.
 
-Open: the two "against" x places should be asked again with tighter frames. At high zoom their frames show a round x
-next to a neighbouring stroke, but the reviewer's answer is the one that counts. A test of `of` = ti needs a fresh
-aligned page (c. 46v or 41r) and a hashed pre-registration first.
+Count (rule of #728, 154 words): read from the signs 125 -> 128 (81.2% -> 83.1%), code words 4, repairs 25 -> 22,
+probable (sense only) 0, holes 0. Still under 95%: read in part.
+
+## Files
+- `transcription_44r_shapes.txt`: `transcription_44r.txt` with the labels above (every x labelled; L13 `g'!`).
+- `reading_44r_marked_shapes.txt`: `reading_44r_marked.md` with six words unmarked and four marks updated (header).
+- `sign_check_2311/`, `sign_check_2511/`: rule, hash, answers, results for each sheet.
+
+Open: a test of `of` = ti (L11) needs a fresh aligned page (c. 46v or 41r) and a hashed pre-registration first. The
+remaining repairs are value questions (co/c, do/d, lo = mo/tro), not shape questions.
 
 Brice Dudout (with Claude)

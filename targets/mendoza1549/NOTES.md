@@ -210,5 +210,8 @@ check of the whole page, and the sign names are the contributor's own shape code
 Brice Dudout answered a blind sign sheet on the `x` and `o'` splits (13 targets, 2 controls passed, rule hashed first).
 The `o'` split holds 3 of 3: small round = ga, flat = ta. The `x` split holds only in part: looped = de 5 of 5, round = no
 2 of 4, and two no places were seen looped. Applied where the answers agree, "no comunique" (L12), "puerta" and "abierta"
-(L16) read from the signs: 122 -> 125 of 154 (81.2%). Record, labelled transcription and marked reading:
-`dudout/README.md`. The files above are unchanged; the owners decide whether to adopt the labels.
+(L16) read from the signs: 122 -> 125 of 154 (81.2%). A second sheet (25 Nov, 3 controls passed) saw the two
+"against" places as round in tight frames: the `x` split then holds at all 14 x (looped = de, round = no), and
+"govierno" (L03), "no" (L08) and "uno" (L13) read from the signs too: 128 of 154 (83.1%). Record, labelled
+transcription and marked reading: `dudout/README.md`. The files above are unchanged; the owners decide whether to
+adopt the labels.
