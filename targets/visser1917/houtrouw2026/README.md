@@ -103,7 +103,7 @@ The solving session saw it in four steps:
 The checking session kept what it had seen from the solving session from the first, and gave it only the hashes of what it held.
 
 ## Seen after the bars, and not evidence
-- **A re-reading of both frames against the strip,** stamped 21:25:37 UTC on 17 Nov. It was made with the strip's letters, Spanish and the setting in view, and so is not blind. It decides nothing. It exists in the contributor's record and is not filed here, as a not-blind reading of a target WAINUT holds.
+- **A re-reading of both frames against the strip,** stamped 21:25:37 UTC on 17 Nov. It was made with the strip's letters, Spanish and the setting in view, and so is not blind. It decides nothing. It exists in the contributor's record and is not filed here, as a not-blind reading of a target WAINUT holds, so the two agreements below cannot be checked from this folder.
 - **Its line 4 begins "abasteceran".** That is the word this target's `NOTES.md` gives as the one known word of the Bureau's 1917 reading, written by its writer with v for b.
 - **No form of that word was in the solving session's record** before the re-reading's stamp, by its session logs.
 - **Its line 8 agrees with "Horotwischka" at 9 of 13 signs.** The corrections say how much of that agreement was chosen.
