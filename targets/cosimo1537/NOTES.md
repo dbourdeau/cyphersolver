@@ -127,6 +127,18 @@ Added at integration (20 November 2026), from the maintainers' review:
 - R4037: the eight unread words `[...]` stand on the codes 1 1 (three times, after "del" or "dal") and 10 (five times, after "il" or "l") - blocker: not-attempted; the table has the barred word signs 1̅1̅ (Imꝑʳᵉ) and 1̅0̅ (Papa), and the rows of R4035 to R4038 mark no bar. Whether the images show a bar is not looked at.
 - R4034, image 1, C03: code 4̅7̅ has no value - blocker: not-attempted; the table as read has 4̅6̅ on two lines between 4̅5̅ and 4̅8̅ ("stato di firenze", "questo stato"). Whether the second is 4̅7̅ is not looked at on the table's image.
 
+## Working readings for three blind main-system letters (PR #927)
+
+- Added strictly aligned word-divided Italian readings (`readings/r4039_reading.md`, `readings/r4047_reading.md`, `readings/r4054_reading.md`), English translations (`readings/r4039_en.md`, `readings/r4047_en.md`, `readings/r4054_en.md`), and `scripts/verify_main_readings.py`.
+- Every bare unread span carries its exact decode symbol count `[... N]` (max 17 symbols in R4039, 38 in R4047, 35 in R4054). Size-adjusted counts (`max(1, round(N/5))` words per `[... N]` mark): R4039 `304/454` sure (`0.670`; raw 1-per-mark `304/440` = `0.691`), R4047 `61/147` sure (`0.415`; raw `61/125` = `0.488`), R4054 `106/231` sure (`0.459`; raw `106/203` = `0.522`). All three stay filed as `decoded, not read` in `profile.json` awaiting maintainer review.
+
+## Transcription doubts (main-system readings)
+
+The digit rows in `transcription/` are machine transcriptions of the DECODE images; no person has checked them against the scans. Every doubtful digit (`⟨x⟩`), open code (`·`), break (`[?]`), and non-digit sign (`#`) acts as a hard barrier in `scripts/verify_main_readings.py` so no unmarked sure word crosses it.
+
+- Open rare codes (e.g. `59` -> `s`, `58` -> `t`, `35` -> `z` across the blind main-system letters) - read: kept literal `·` in the mechanical decode and bracketed `[x]` as holes in `readings/`; checked: decode (not checked by a person against the scans).
+- Unread multi-symbol stretches (up to 17 symbols in R4039, 38 in R4047, 35 in R4054) - read: `[... N]` sized from the mechanical decode; checked: decode (not checked by a person against the scans).
+
 ## Escalation
 
 - [x] siblings: the earlier and the main system of the same file; the earlier blind read graded against the archive's table
@@ -147,6 +159,7 @@ Added at integration (20 November 2026), from the maintainers' review:
 | `r4034.md` to `r4054.md` | one page for each of the 19 letters |
 | `key/` | the keys and the frozen read |
 | `TRANSCRIPTION.md`, `transcription/` | the digit rows |
+| `readings/`, `scripts/verify_main_readings.py` | working aligned readings, English translations, and strict alignment verifier for R4039, R4047, and R4054 |
 
 The record pages, the keys and the frozen read come from my repository, https://github.com/prabal-rje/branicki-1757/tree/main/cosimo-1537. This folder adds the digit rows, the codes of the cut, the decode of each row, my reading of the archive's table and the counts.
 

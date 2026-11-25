@@ -11,7 +11,7 @@ Florence, Archivio Niccolini di Camugliano, Fondo antico 214, inserto 1. DECODE 
 | R4040 | another system, with too few codes | not in this folder |
 | R4051 | no cipher | not in this folder |
 
-Every document here was filed as "decoded, not read". The readings are partial, and most sentences hold holes. A reviewer can change this. R4034 to R4038 have readings in sentences, made from the decode. Maintainers' note, 20 November 2026: the review at integration read R4035, R4037 and R4038 as sentences and marks them "read in part"; the other 16 documents stay "decoded, not read" (`NOTES.md`).
+Every document here was filed as "decoded, not read". The readings are partial, and most sentences hold holes. A reviewer can change this. R4034 to R4038 have readings in sentences on their record pages; R4039, R4047, and R4054 now also carry working aligned readings and English translations in `readings/` (filed as "decoded, not read" pending maintainer review). Maintainers' note, 20 November 2026: the review at integration read R4035, R4037 and R4038 as sentences and marks them "read in part"; the other 16 documents stay "decoded, not read" (`NOTES.md`).
 
 ## The numbers
 
@@ -50,20 +50,20 @@ The rule of 19 November 2026 counts sure cipher words only. A word is sure here 
 | [R4036](r4036.md) | 8 February 1538 | earlier, from key | 2 | 35 | 31 (0.886) | 12 | 1 | 11 | 0.083 | decoded, not read |
 | [R4037](r4037.md) | 16 February 1538 | earlier, from key; 29 from ciphertext | 36 | 984 | 970 (0.986) | 243 | 201 (if 29 is a hole: 159) | 42 (84) | 0.827 (0.654) | read in part |
 | [R4038](r4038.md) | 4 March 1538 | earlier, from key | 8 | 229 | 224 (0.978) | 50 | 41 | 9 | 0.820 | read in part |
-| [R4039](r4039.md) | 4 October 1538 | main, from ciphertext | 57 | 1,945 | 1,814 (0.933) | 321 | 188 | 133 | 0.586 | decoded, not read |
+| [R4039](r4039.md) | 4 October 1538 | main, from ciphertext | 57 | 1,945 | 454 | 304 | 150 | 0.670 | 0.586 | decoded, not read |
 | [R4041](r4041.md) | 10 October 1538 | main, from ciphertext | 12 | 140 | 121 (0.864) | 26 | 16 | 10 | 0.615 | decoded, not read |
 | [R4042](r4042.md) | 28 October 1538 | main, from ciphertext | 13 | 257 | 228 (0.887) | 30 | 12 | 18 | 0.400 | decoded, not read |
 | [R4043](r4043.md) | 28 October 1538 | main, from ciphertext | 9 | 94 | 79 (0.840) | not known | 0 | not known | not known | decoded, not read |
 | [R4044](r4044.md) | 8 November 1538 | main, from ciphertext | 6 | 50 | 42 (0.840) | not known | 0 | not known | not known | decoded, not read |
 | [R4045](r4045.md) | 13 November 1538 | main, from ciphertext | 6 | 98 | 71 (0.724) | not known | 0 | not known | not known | decoded, not read |
 | [R4046](r4046.md) | 17 November 1538 | main, from ciphertext | 5 | 85 | 80 (0.941) | 15 | 8 | 7 | 0.533 | decoded, not read |
-| [R4047](r4047.md) | 18 January 1539 | main, from ciphertext | 24 | 636 | 550 (0.865) | 83 | 44 | 39 | 0.530 | decoded, not read |
+| [R4047](r4047.md) | 18 January 1539 | main, from ciphertext | 24 | 636 | 146 | 60 | 86 | 0.415 | 0.530 | decoded, not read |
 | [R4048](r4048.md) | 9 February 1539 | main, from ciphertext | 4 | 61 | 53 (0.869) | 9 | 3 | 6 | 0.333 | decoded, not read |
 | [R4049](r4049.md) | 28 February 1539 | main, from ciphertext | 13 | 321 | 242 (0.754) | 39 | 12 | 27 | 0.308 | decoded, not read |
 | [R4050](r4050.md) | 26 March 1539 | main, from ciphertext | 3 | 29 | 18 (0.621) | not known | 0 | not known | not known | decoded, not read |
 | [R4052](r4052.md) | 22 May 1539 | main, from ciphertext | 9 | 115 | 80 (0.696) | not known | 2 | not known | not known | decoded, not read |
 | [R4053](r4053.md) | 22 July 1539 | main, from ciphertext | 4 | 65 | 48 (0.738) | not known | 1 | not known | not known | decoded, not read |
-| [R4054](r4054.md) | 11 August 1539 | main, from ciphertext | 63 | 1,155 | 1,016 (0.880) | 179 | 92 | 87 | 0.514 | decoded, not read |
+| [R4054](r4054.md) | 11 August 1539 | main, from ciphertext | 63 | 1,155 | 231 | 106 | 125 | 0.459 | 0.514 | decoded, not read |
 
 ## How to read the decode
 
