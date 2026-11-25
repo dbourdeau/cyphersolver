@@ -24,9 +24,10 @@ Date: 1641 (file), 1633/34 suggested by Brice Dudout, not checked. The file is d
 it is a collection of ciphers (it also holds a "Union" alphabet of 1618-1620 and items of Ludwig V, d. 1626). The content
 (Philippsburg blockaded, Imperial and Spanish troops at Saverne, relief promised before New Year) would fit winter
 1633/34; the military events have not been checked. On the new scan, as reported by Brice Dudout (PR #781, not seen
-here), the end of line 29 and the two "slips" (lines 30-31 of the sheet) give the place and date: Hagenau, 22 December,
-with no year written; "decembris" probable (the cipher has "decemmris") and the sign after it unresolved. This is not
-in this folder's transcription.
+here), the end of line 29 and line 30 of the sheet (here slip S1 and line 28; `reading.md`, blind shape check on the new
+scan) give the place and date: Hagenau, 22 December, with no year written; "decembris" probable (the cipher has "decemmris") and the sign after it unresolved. This is not
+in this folder's transcription. Brice Dudout's comment on PR #781 words it as line 29 and the slips, lines 30-31; this
+folder follows `reading.md`. Slip S2 ("meines ‹398› ‹sammigerku…›") is not the date.
 
 ## The piece
 
@@ -68,8 +69,10 @@ In the blind check of 18 Nov 2026 (reading.md) Brice Dudout saw the last number 
 
 ## Transcription doubts
 
-The doubts are those the two passes flagged or disagreed on (`transcription/pass_differences.md`) and those put to the
-two blind shape checks (`blind_check/`). "transcription" below means the two passes by the same reader and, where named,
+Listed here: the doubts still open after arbitration, those put to the two blind shape checks (`blind_check/`), and the
+larger pass disagreements (a different word). The full list of pass disagreements, 14 lines and 51 number positions on
+the 15 lines pass 2 re-lists in full, is in `transcription/pass_differences.md`; the arbitrated text follows pass 2 on all
+of them except the l. 1 number under the blot. "transcription" below means the two passes by the same reader and, where named,
 Brice Dudout's blind answer on one boxed number; there is no independent transcriber.
 
 - l. 1 "entsetzung", the number under the blot - read: 28, word {probable} ("enstsetzung", one number too many); checked: image (at high zoom the word seems one number shorter), decode, transcription (pass 1 32, pass 2 [3]2?; blind check 18 Nov confirmed the 29); not settled
@@ -77,7 +80,13 @@ Brice Dudout's blind answer on one boxed number; there is no independent transcr
 - l. 1 "die" - read: 14 18 15 (dhe), {probable}; checked: image, decode, transcription (blind check 18 Nov: 18 confirmed as written)
 - l. 3 "tag", the 11 - read: 11, {probable}; checked: image, decode, transcription (blind check 18 Nov: 11 confirmed, with a remark on a mark or two dots above it)
 - l. 3 "Zabern", the 11 written as two strokes - read: 11, {probable} as a place name; checked: image, decode, transcription (blind check 18 Nov: confirmed)
-- l. 5 and l. 9 "keyserischen" / "keyserische", faded first half - read: {probable}; checked: image, decode, transcription (passes differ at 32 21 18 / 33 28); not put to a blind check (faded, not a choice of shapes)
+- l. 5 and l. 9 "keyserischen" / "keyserische", faded first half - read: {probable}; checked: image, decode, transcription (l. 5: pass 1 `32 21 18`, pass 2 `33 28`; l. 9: pass 1 `33 22 28`, pass 2 `33 28`); not put to a blind check (faded, not a choice of shapes)
+- l. 4 "bey" - read: 12 15 33, sure; checked: image (arbitration), decode (32 = x gives "bex"), transcription (pass 1 `12 15 32`, pass 2 `12 15 33`)
+- l. 6 "lang" - read: 21 11 23 17, sure; checked: image (arbitration), decode, transcription (pass 1 `?? 11 23 31`, "‹?›anw"; pass 2 `21 11 23 17`)
+- l. 11 "alhero" - read: 11 21 18 15 27 38, {probable} (for 38, below); checked: image (arbitration), decode (29 = t gives "athero"), transcription (pass 1 `11 29 18 15 27 38 18 19 22`, pass 2 `11 21 18 15 27 38 / 19 22`)
+- l. 13 "eygentlich" - read: 15 33 …, sure; checked: image (arbitration), decode (32 = x gives "exgentlich"), transcription (pass 1 `15 32`, pass 2 `15 33`)
+- l. 22 "Jharstag sich gedulden wollen" - read: `19 18 11 27 28 29 11 17 / 28 19 13 18 / 17 15 14 30 21 14 15 23 / 31 24 21`, sure; checked: image (arbitration), decode, transcription (pass 1 `19 18 11 27 27 / 28 29 30 19 17`, "iharr stuig", `28 18 13 18`, `17 15 14 30 21 19 15 23`, `31 12 24 21`; pass 2 as read)
+- l. 24 "welches" - read: 31 15 21 13 18 15 28, sure; checked: image (arbitration), decode, transcription (pass 1 `31 15 27 ‹..› 21 11 31 18 15 28`, pass 2 `31 15 21 13 18 15 28`)
 - l. 6, 11, 20 the number 38 (sollicitirt, alhero, noch, bishero) - read: 38 = o, deduced; checked: image (shape clear), decode (14 contexts with 39); the value, not the shape, is the doubt, so sollicitirt and alhero stay {probable}
 - l. 7-8 "pas‹…›" / "‹…›rt" - read: ‹unresolved›; checked: image (crossing-out and blot), decode (a verb in -irt), transcription (pass 1 `?? 20 ??`, pass 2 `28 20` + crossing-out; pass 1 `28 29 19 19 27 27 29` for l. 8); not settled
 - l. 12 "mittwoch", 5th number - read: 31 (w), sure; checked: image (microfilm cannot tell 31 from 34), decode (34 = z gives "mittzoch"), transcription (pass 1 34, pass 2 31; blind check 18 Nov left it open; blind check 25 Nov on the private colour scan: 31)
