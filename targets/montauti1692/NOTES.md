@@ -2,6 +2,8 @@
 
 Status: in progress (folder only, no page; contributed by Andrew Beling, with AI agents)
 
+Next step (write-up check 24 Nov 2026): decode the bare System B pages of Codex 534 ff. 1-113 (bare/bare_passages.md) with key v3; they are online and not attempted, so no page yet.
+
 Holder: University of Pennsylvania Libraries, Kislak Center for Special Collections. Ms. Codex 533 (36 autograph letters
 of Cosimo III, Grand Duke of Tuscany, to his envoy Anton Francesco Montauti, 80 leaves); Oversize Ms. Codex 534 (279
 despatches of the Florentine secretariat to Montauti, 1689-1699, signed "Il gran duca di Toscana"); Oversize Ms. Codex

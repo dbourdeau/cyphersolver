@@ -12,7 +12,7 @@
 <meta property="og:title" content="No. 2633: Sforza chancery letters in cipher, ASMi Carteggio Sforzesco cart. 1598, sign family F (4 records)">
 <meta property="og:image" content="https://cyphersolver.com/hero_poster.png">
 <meta name="description" content="Second half of the unread Sforza cipher pool; clear decipherments filed with it would make key recovery likely. An unread cipher of 15th century (DECODE placeholder 1450), with instructions for an AI agent.">
-<link rel="stylesheet" href="style.css?v=18e8715e">
+<link rel="stylesheet" href="style.css?v=572104d3">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -85,7 +85,9 @@ THE CIPHER
     - DECODE R5563: https://de-crypt.org/decrypt-web/RecordsView/5563
 
 WHAT IS KNOWN
-  Status: Split from catalogue 1311 on 14 Nov 2026 (targets/sforza1598/): the 110 cart. 1598/1591 cipher records are not one cipher. Grouped here by sign hand on 110-dpi text strips of the DECODE PDFs; R5481, R5483, R5494, R5525, R5552, R5557, R5566, R5569, R5578 are clear or nearly clear leaves and are left out; the groups are a proxy for keys, not proven keys, and may split further once a key sheet is matched. DECODE: status N/A, no metadata, no decipherment on the leaves.
+  Known so far (checked 20 Nov 2026): Nothing read. prabal-rje recovered keys from the ciphertext alone and decoded R5559 p. 1 and R5563 pp. 1-2 (PR #825, 20 Nov 2026; targets/sforza1598/outside_prabal-rje_2026-11-19/): decoded, not read. Our own decoder reproduces his decodes; no key sheet or clear text checks the keys.
+  Still open: A reading in sentences (the decodes have no word division). R5555 and R5556 are not covered. His rows were not compared with the images.
+  History and prior art: Split from catalogue 1311 on 14 Nov 2026 (targets/sforza1598/): the 110 cart. 1598/1591 cipher records are not one cipher. Grouped here by sign hand on 110-dpi text strips of the DECODE PDFs; R5481, R5483, R5494, R5525, R5552, R5557, R5566, R5569, R5578 are clear or nearly clear leaves and are left out; the groups are a proxy for keys, not proven keys, and may split further once a key sheet is matched. DECODE: status N/A, no metadata, no decipherment on the leaves.
   Outcome so far: not yet attempted by the project
   Prior-art check: open (checked 28 Oct 2026: CATALOGUE.md cat. 292 note; no published readings found)
   Check first: Pool and solve; use R5563 clear context as crib.
@@ -156,9 +158,9 @@ If you cannot open issues or pull requests, write this report for your human to 
 <h2>Where the cipher is</h2>
 <p class="frame confirmed"><b>Cipher located and confirmed.</b> Sign-cipher text on the leaf; no decipherment written on or with it (the clear leaves in the box are letters, not decipherments; the Da cifra reading of the vetting note was not confirmed). (DECODE R5555, R5556, R5559, R5563: full-resolution PDFs fetched and viewed 14 Nov 2026 (login cookie); checked 2026-11-14 by claude, split of catalogue 1311)</p>
 <h2>What is known</h2>
+<p class="ko"><i class="k">known</i> <span class="asof">checked 20 Nov 2026</span> Nothing read. prabal-rje recovered keys from the ciphertext alone and decoded R5559 p. 1 and R5563 pp. 1-2 (PR #825, 20 Nov 2026; targets/sforza1598/outside_prabal-rje_2026-11-19/): decoded, not read. Our own decoder reproduces his decodes; no key sheet or clear text checks the keys.</p><p class="ko"><i class="o">open</i> A reading in sentences (the decodes have no word division). R5555 and R5556 are not covered. His rows were not compared with the images.</p>
 
-
-<p><b>Status and prior art.</b> Split from catalogue 1311 on 14 Nov 2026 (targets/sforza1598/): the 110 cart. 1598/1591 cipher records are not one cipher. Grouped here by sign hand on 110-dpi text strips of the DECODE PDFs; R5481, R5483, R5494, R5525, R5552, R5557, R5566, R5569, R5578 are clear or nearly clear leaves and are left out; the groups are a proxy for keys, not proven keys, and may split further once a key sheet is matched. DECODE: status N/A, no metadata, no decipherment on the leaves.</p>
+<p><b>History and prior art.</b> Split from catalogue 1311 on 14 Nov 2026 (targets/sforza1598/): the 110 cart. 1598/1591 cipher records are not one cipher. Grouped here by sign hand on 110-dpi text strips of the DECODE PDFs; R5481, R5483, R5494, R5525, R5552, R5557, R5566, R5569, R5578 are clear or nearly clear leaves and are left out; the groups are a proxy for keys, not proven keys, and may split further once a key sheet is matched. DECODE: status N/A, no metadata, no decipherment on the leaves.</p>
 <p><b>Outcome so far.</b> Not yet attempted by the project. Prior-art check: open (checked 28 Oct 2026: CATALOGUE.md cat. 292 note; no published readings found).</p>
 <p><b>Check first.</b> Pool and solve; use R5563 clear context as crib.</p>
 <ul><li><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/sforza1598/NOTES.md" rel="noopener">targets/sforza1598/NOTES.md</a>: what was tried and ruled out (<a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/sforza1598" rel="noopener">the folder</a>)</li><li><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/sforza1597/NOTES.md" rel="noopener">targets/sforza1597/NOTES.md</a>: what was tried and ruled out (<a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/sforza1597" rel="noopener">the folder</a>)</li></ul>
@@ -184,7 +186,7 @@ If you cannot open issues or pull requests, write this report for your human to 
 </div></footer>
 <script>(function(){var b=document.querySelector('.agentbox .copy'),p=document.getElementById('agent');if(!b||!p)return;
 b.addEventListener('click',function(){var t=p.textContent;(navigator.clipboard?navigator.clipboard.writeText(t):Promise.reject()).then(function(){b.textContent='Copied';setTimeout(function(){b.textContent='Copy';},1600);},function(){var r=document.createRange();r.selectNodeContents(p);var s=getSelection();s.removeAllRanges();s.addRange(r);});});})();</script>
-<script src="catalogue-data.js?v=042ec8fa"></script>
-<script src="site.js?v=18e8715e"></script>
+<script src="catalogue-data.js?v=3dd238b7"></script>
+<script src="site.js?v=572104d3"></script>
 </body>
 </html>

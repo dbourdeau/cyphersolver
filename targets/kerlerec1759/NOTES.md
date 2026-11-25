@@ -2,6 +2,8 @@
 
 Status: in progress (no site page yet; target files and checks only)
 
+Next step (integration review, 24 Nov 2026): not written up yet, because the open pieces are still workable online. No. 206 stands at 278-279 of 295 cipher words (94.2-94.6%), under the 95% bar; codes 107 and 209, both in no. 206, would lift it over the bar. Transcribe the glossed despatches not yet done (nos. 117, 127, 138, 141, 143, 144, 146, 150, Aug 1758, 247, 256, 263, 277, 279, 284, 308, 332; C13A 39-43, plain-curl IIIF route below) and look for 107, 209 and the nine Pusch-only codes in the clerks' glosses; then re-measure and write up. Catalogue 829 and 830 (Huntington copies, not seen) stay open, narrowed; checked 24 Nov 2026: their notes agree with this folder (no. 135 transcribed, 105 299 = "toutes"; no. 127 first line only).
+
 Class: read in part (read with known key). The key is the Marine ministry clerks' own decipherments of twelve other
 Kerlérec despatches (two in the first round, ten more in the follow-up of 14 November 2026, below), cut into
 code-and-word pairs, and completed from Pusch's printed code book for the 9 codes (11 groups) the clerks' pages

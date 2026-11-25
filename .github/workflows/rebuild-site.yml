@@ -48,6 +48,7 @@ jobs:
           git config user.email '41898+github-actions[bot]@users.noreply.github.com'
           pip install -q pillow || true
           python tools/make_thumbs.py || true
+          (cd docs && python _build_stats.py > /tmp/stats.log 2>&1) || { tail -40 /tmp/stats.log; exit 1; }
           (cd docs && python _build_site.py > /tmp/build.log 2>&1) || { tail -40 /tmp/build.log; exit 1; }
           git add docs README.md
           if git diff --cached --quiet; then echo 'site already up to date'; exit 0; fi

@@ -1,0 +1,31 @@
+# eaglepass1917 key: cipher letter -> plain letter, recovered from the cipher text alone (simulated annealing on Spanish 4-grams, then the rare letters by the reciprocal pairing).
+# The table is reciprocal: each pair works both ways (A-X means cipher A = plain x and cipher X = plain a). T stands for itself.
+# occurrences = times the cipher letter occurs in transcription.txt (readings used); basis says what fixes the value.
+# The whole table is the keyword alphabet TIRANOBCDEFGHJKLMPQSUVWXYZ (26 letters) folded on itself: letter at place i pairs with the letter at place 26-i (T and J stand for themselves). This reproduces all 21 observed values (11 pairs and T standing for itself, 12 independent facts; D, M and N were set earlier by the pairing); it predicts the four cipher letters that never occur (A, H, I, J, K): see NOTES.md.
+cipher	plain	occurrences	basis
+A	x	0	reciprocal pair only (cipher X = a); also the TIRANO fold
+B	u	1	solve; pair with cipher U = b
+C	s	20	solve
+D	q	1	reciprocal pair only (cipher Q = d, 8 times); one occurrence, in "que"
+E	p	14	solve
+F	m	13	solve
+G	l	9	solve
+L	g	2	solve (T2) and pair with cipher G = l
+M	f	2	reciprocal pair only (cipher F = m); occurrences: position 121 (doubtful M/N) and position 141
+N	w	2	reciprocal pair only (cipher W = n, 22 times); occurrences: "Wilson" and the extra letter in "falsas"
+O	v	1	solve; pair with cipher V = o
+P	e	26	solve
+Q	d	8	solve
+R	y	3	solve
+S	c	14	solve
+T	t	11	solve; stands for itself
+U	b	6	solve
+V	o	28	solve
+W	n	22	solve
+X	a	26	solve
+Y	r	19	solve
+Z	i	18	solve
+H	k	0	not seen; predicted by the TIRANO fold only
+I	z	0	not seen; reciprocal pair (cipher Z = i, 18 times) and the TIRANO fold
+J	j	0	not seen; predicted by the TIRANO fold only (stands for itself)
+K	h	0	not seen; predicted by the TIRANO fold only

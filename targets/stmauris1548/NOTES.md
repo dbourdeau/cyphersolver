@@ -1,6 +1,6 @@
 # Jean de Saint-Mauris to Ferrante Gonzaga, 1547-1548: cipher letters (Biblioteca Estense, Autografoteca Campori)
 
-Status: in progress. Not yet written up: no site page or README row. Read in part, with escalation steps still open (see Remaining gaps and Escalation). The status below is the contributor's.
+Status: in progress (24 Nov 2026 review: no page yet. Next step: transcribe the letters of 1547 (cc. 1r-2r, with glosses) and 12 Mar 1548 (cc. 5r-8v, clear note on 5r) from the online Estense scans and read them with key_frozen.tsv, which also tests the post-test values; measured share 340/435 = 78.2% verbatim, below the bar.)
 
 Status, 3 Nov 2026: **read in part.** The table is a homophonic substitution: one sign for one letter, and a few signs
 for a doubled letter. Two letters are read in part; two are not transcribed. No contemporary decipherment of these
@@ -151,7 +151,7 @@ solve. Their values rest on the earlier solve, the gloss and the reading.
 **Historical notes not verified.** Dorsey, the Pignatelli identification, the La Rochelle to Scotland sailing and the
 defensive league are checked only in outline. They must be verified before anything is published.
 
-## Open
+## Remaining gaps
 
 - A second blind reading of 9r L17-L18 and all of 9v.
 - Holes: 14 in 10 Jan, 4 in 2 Aug. Signs with no value: `N19` (3 places), `L1` (1). The 2 Aug values set after the test
@@ -160,6 +160,15 @@ defensive league are checked only in outline. They must be verified before anyth
 - Letters of 1547 (cc. 1r-2r, glosses on 1r, 1v and 2r) and of 12 Mar 1548 (cipher blocks on 5r-8v, with a clear note
   in the margin of 5r): not transcribed. They are the natural next test of the table.
 - cc. 12-21 not checked at full size.
+
+## Escalation
+
+- [ ] siblings: the letters of 1547 (cc. 1r-2r) and 12 Mar 1548 (cc. 5r-8v) in the same file are online and not transcribed
+- [x] clear-pages: the reader's gloss over about six rows of c. 3r used as seeds (gloss_seeds.tsv)
+- [ ] known-keys: no other Saint-Mauris or Gonzaga table of 1547-1548 searched or tried
+- [x] print: prior art searched (see Prior art); none found
+- [x] key-rebuild: table built on 10 Jan, held-out test on 2 Aug with the frozen table
+- [ ] retry: second blind reading of 9r L17-L18 and 9v, and `x` against h on full-size images, not done
 
 ## Prior art (3 Nov 2026)
 

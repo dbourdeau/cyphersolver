@@ -1466,6 +1466,8 @@ if __name__ == '__main__':
         page_dates(f.stem, f.read_text(encoding='utf-8').lstrip('﻿'))
     (HERE / 'writeups.html').write_text(writeups_html(), encoding='utf-8')
     (HERE / 'glossary.html').write_text(glossary_html(), encoding='utf-8')
+    import _films_page as FI            # films.html and the home page's poster shelf (25 Nov 2026)
+    print('films:', FI.build_html(VERSION))
     import _corrections_page as CO      # corrections.html (16 Nov 2026)
     print('corrections:', CO.build_html(VERSION), 'entries')
     import _contributors_page as CP

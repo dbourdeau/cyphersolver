@@ -68,11 +68,11 @@ fraction_read 0.59 (estimated; R4938 and R4939 untranscribed).
 
 ## Remaining gaps
 
-- R4937, R4942 read 23 Oct 2026 (b15). R4936 decoded, not read (verify sweep 23 Oct 2026; state unchanged by the 24 Nov 2026 shape check below): 26 letters (1.3%) still on look-alike alternates after the check (12 doubtful g=t places, 5 q=u, 3 c=y, 3 g=g, a, h, n), four u written with the hook (g=u:hook), 94 g->q relabels made by an AI pass that count as probable until a blind reader checks them, eight [?words] and three [...] runs (reading lines 9, 16, 22) - blocker: illegible; the DECODE scan (1,704 px, no larger file) leaves 17 g-shaped places undecided at 3-4x, and no contemporary or printed text confirms the choices
+- R4937, R4942 read 23 Oct 2026 (b15). R4936 decoded, not read (verify sweep 23 Oct 2026; state unchanged by the 24 Nov 2026 shape check and sheets C and D below): 12 letters (0.6%) still on look-alike alternates after sheet D (4 g=t places, one of them the figure Q, 3 c=y, 3 g=g, a, n), 94 g->q relabels made by an AI pass that count as probable until a blind reader checks them, eight [?words] and three [...] runs (reading lines 9, 16, 22) - blocker: illegible; the DECODE scan (1,704 px, no larger file) leaves 17 g-shaped places undecided at 3-4x, and no contemporary or printed text confirms the choices
 - R4937 l. 3 run after 'megsegni' and the end of l. 13 - blocker: illegible; decode to letter strings that are not words, checked at 2.2x
 - R4938 (1647): three cipher spans (54 letters) decoded with the family key 23 Oct 2026; one word ('ailunkker') unread - blocker: too-short (occurs once). The clear letter around the spans is not transcribed (clear text, not a cipher gap).
 - R4939 (1648): read 23 Oct 2026 (r2h); lines 03-09 keep about 12 unread words - blocker: illegible (figures decode to non-words with every look-alike pair tried, 3x crops of the 1,704-px scan; no printed text).
-Of the records kept here: R4937, R4939, R4940, R4942 read; R4936 decoded, not read (look-alikes; after the 24 Nov 2026 shape check 234 of 341 cipher words are sure on the human-checked places, 302 if the AI-checked places are confirmed by a blind reader); R4938's spans decoded, one word too short. No gap is left not-attempted (23 Oct 2026). R4939 is a different cipher (own key and hand): under the one-key rule it should become its own target before any write-up.
+Of the records kept here: R4937, R4939, R4940, R4942 read; R4936 decoded, not read (look-alikes; after the 24 Nov 2026 shape check and sheets C and D, 244 of 341 cipher words are sure on the human-checked places, 318 if the AI-checked places are confirmed by a blind reader); R4938's spans decoded, one word too short. No gap is left not-attempted (23 Oct 2026). R4939 is a different cipher (own key and hand): under the one-key rule it should become its own target before any write-up.
 
 ## Escalation
 - [x] siblings: R4936, R4937, R4940, R4942 read with one family key (23 Oct 2026)
@@ -172,3 +172,33 @@ Of the records kept here: R4937, R4939, R4940, R4942 read; R4936 decoded, not re
   Conventions). It checks sign shapes only and changes neither the state of R4936 nor any count. The reading has eight
   [?words], not five as the gap line first said (corrected the same day).
 - Credit: Brice Dudout (human reviewer, 11 places on sheet T), AI-assisted shape check as stated above; DECODE for the images.
+
+## 24 Nov 2026 - R4936 blind sheet C: the places the AI pass left open
+
+- **What.** Brice Dudout read a second blind sheet (sign_check/sheet-C-*, README part 3): 22 questions, 19 targets and
+  3 controls. Rule hashed before any thumbnail (bb67d671...). Controls 3/3. Targets: the 4 conflicts (g read u that the
+  AI called a hook), the 10 doubtful g read t and the 5 doubtful g read u of the AI pass.
+- **Result.** The 4 conflicts (mutatnanak twice, instructioban, tule) are long loops: u confirmed, `g=u:hook` removed.
+  "Hook = t" still holds, but the AI's hook label was wrong on all 4 places it flagged, so its 94 relabels stay
+  {probable}. Of the 10 doubtful g read t, 8 are hooks (relabelled g->q, t supported), 1 (alt-) is a loop (t not
+  supported, stays {probable}), 1 (tartani, L24 s6) is a new figure, labelled `Q`: a long straight tail, no loop or
+  hook; Q has no key value, t by sense only, {probable}. The 5 doubtful g read u are loops. 9 labels changed
+  (R4936_corrections.tsv); key and reading unchanged.
+- **Count** (`python3 tools/R4936_count728.py`): sure 234 -> **239 of 341 (0.686 -> 0.701)** on the human places alone;
+  302 -> 312 (0.886 -> 0.915) if the AI relabels are confirmed. 25 words remain {probable} in that view; 12 more sure
+  words are needed for 95%. R4936 stays `decoded, not read`.
+- **Images.** None committed (DECODE R4936, access level 2, not republished; the crops stay private).
+- Credit: Brice Dudout (blind reader, sheet C); sheet built and scored by Claude (AI agent).
+
+## 24 Nov 2026 (late) - R4936 blind sheet D: the sense-only q=u and h=h places
+
+- **What.** Brice Dudout read a third blind sheet (sign_check/sheet-D-*, README part 4): 9 questions, 6 targets and 3
+  controls; rule hashed before anything was shown (final 0df64ad7...). Controls 3/3.
+- **Result.** The 5 `q=u` places (casu, ectum, suspectusok, szuksegunk, industriaia) are long loops: relabelled q->g,
+  u now supported by the shape. The `h=h` place (ha, L23) is a long r: relabelled h->r. 6 labels changed
+  (R4936_corrections.tsv); key and reading unchanged.
+- **Count** (`python3 tools/R4936_count728.py`): sure 239 -> **244 of 341 (0.701 -> 0.716)** on the human places alone;
+  312 -> 318 (0.915 -> 0.933) if the AI relabels are confirmed. {probable} 25 -> 19 in that view. This is the ceiling
+  of what shape can settle: 95% (324/341) is not reached and R4936 stays `decoded, not read`.
+- **Images.** None committed (DECODE R4936, access level 2, not republished; the crops stay private).
+- Credit: Brice Dudout (blind reader, sheet D); sheet built and scored by Claude (AI agent).

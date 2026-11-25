@@ -91,7 +91,7 @@ its key as "volume ... No. I". So the 1758 code was used by both ministries with
 - The volume: ANOM COL C11E 10 ff.285-290v, "Chiffre ou code de Montcalm et de Vaudreuil au cours des deux années 1757
   et 1758" (New France Archives record 15213), was pointed to as a key lead by the repository's own sweep
   (`research/canada_lac/README.md`, "Key leads"). Brice Dudout transcribed and validated the Vaudreuil table on sheet
-  e001295274 (pull request #268, files in `targets/vaudreuil1759a/dudout/`), as did the repository's `vaudreuil1760`.
+  e001295274 (pull request #268, files now in `targets/vaudreuil1760/cat1388/dudout/`, formerly `targets/vaudreuil1759a/dudout/`), as did the repository's `vaudreuil1760`.
 - Sheet 272 upstream, quoted exactly. `targets/vaudreuil1760/NOTES.md`: "The 10 images hold two tables for
   Vaudreuil/the Marine (1757, two sheets) and the Montcalm table (1758), each as an alphabetical list and a numerical
   list. The numerical sheet that decodes this letter is e001295274 (the second numerical sheet; the first, e001295272,

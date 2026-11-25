@@ -2,6 +2,8 @@
 
 Status: in progress. Not yet written up: no site page or README row. Read in part, with escalation steps still open (see Remaining gaps and Escalation). The status below is the contributor's.
 
+Next step (integration review, 24 Nov 2026; no page written): five gaps are still `not-attempted` and workable from the online images and files here. Build the corrected key (80 = c, 99 = b, 58 = m) and re-decode, compare word by word with the independent reading in `matsuba/` (issue #253) to settle the image 8 and image 18 holes and the doubtful words, test the null rule (10, 11, 12, 20, 21, 22) over every place, and search the HMC Dropmore volumes (Internet Archive / HathiTrust full text) and the India Office calendars for the letter; then recount the share and give each remaining gap an outside blocker.
+
 Status: read in part (3 Nov 2026). 1192 of 1379 words of the letter to Grenville read with no letter changed (86.4%).
 The letter to Tierney is in clear.
 

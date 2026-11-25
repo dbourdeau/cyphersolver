@@ -314,3 +314,18 @@ This folder edits neither `catalogue.json` nor `research/leads.json`.
 Both 1496 documents are marked decoded, not read, pending an independent reading review. No reading_review has been invented; the sure-word counts remain as reported.
 
 AI agents did this work; no person has checked it.
+
+## 23-24 Nov 2026 - two blind sign-shape sheets and the <W26> = 77 merge (Brice Dudout, with Claude), `dudout/sign_check_2026-11/`
+
+A reviewer's pass. Andrew Beling's files and figures above are unchanged, and Lasry's key is unchanged with no value
+added. No image is committed.
+
+- **Sheet 2311 (controls 3/3).** 5 words read: pero, posible; aqui, remedio, Proencia.
+- **Sheet 2411b (controls 3/3).** Three <W26> seen as the 77 form give comendador, con and lo.
+- **Counts.** 18 Dec 653 -> 658 of 933; 10 Nov 253 -> 256 of 388; both 906 -> 914 of 1,321.
+- **The <W26> -> 77 (o) merge.** The reviewer remarked that <W26> and 77 are one sign written two ways, and the six
+  places of sheet 2411b show a continuum of shapes. The merge was adopted as a variant:
+  - no read word breaks, and 42 words become read (18 Dec 685, 73.4%; 10 Nov 271, 69.8%; both 956 of 1,321);
+  - all 42 are **{probable}**, because the identification was made after the decodes had been seen, like the S;
+  - in 7 places the sense does not want o (A23, C09; L08, L09, L12, R04, R10), so they need a look first.
+- The new figures are left to the target's author and the reviewer to adopt.

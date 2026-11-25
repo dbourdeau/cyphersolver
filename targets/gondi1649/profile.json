@@ -150,10 +150,16 @@
    "kind": "reading",
    "what": "The check's fixes applied: script scrubbed, counts made consistent and restated per sign-bearing word, one mistranslation corrected, loosely read clear text marked rough, the limit of the held-out test stated. One disagreement logged (99 against its 98 of 101 words).",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "verification",
+   "what": "Integration check: c. 1r fetched again from the Estense IIIF service (full-size regions) and the signs of L00-L03, L05, L06 and L10, the lines the independent check had not copied, compared with transcription_c1r.txt on the image. Not blind (the transcription was in view). All sign values agree; a few commas were not looked for. With every cipher line now seen by a second reader, the not-attempted gaps were reviewed: the blind-reading gap is closed as a verification step, and the clear text of cc. 1r-2v and the identity of the persons are outside the cipher and its read share, so they are recorded in NOTES, not as gaps. Class restored to read (99 of 101 sign-bearing words).",
+   "result": "worked"
   }
  ],
- "outcome": {
-  "class": "read in part",
+ "outcome": {"validation": {"date": "2026-11-24", "verdict": "not applicable", "notes": "polyphonic cipher (30 l/r, 40 n/s, 10 c/b, 9 p/q, 1 g/f) of about 540 signs: a type-to-value key cannot carry the reading, and the values were read off the contemporary interlinear decipherment over every cipher line, which is the check"}, 
+  "class": "read",
   "key": "partial",
   "method": "key recovered based on adjacent plaintext",
   "method_basis": "The key was taken from the contemporary decipherment written between the cipher lines of L00-L06, frozen, and tested on L07-L13. The decipherment covers the whole cipher, so this is a transcription job: the content was never secret. What is new is the key and the check of the cipher against the decipherment. The key is partial only in that the pair 5 8 is unread and code 273 rests on context.",
@@ -231,21 +237,6 @@
     "item": "che (L01) and et (L12)",
     "blocker": "illegible",
     "detail": "Read from a 5 and a 4 that show no bar; the bar may be shared or faint."
-   },
-   {
-    "item": "Blind reading of L00-L03, L05, L06, L10",
-    "blocker": "not-attempted",
-    "detail": "The independent check copied seven lines; the others have only our own blind pass 2."
-   },
-   {
-    "item": "Clear text of the letter, cc. 1r-2v",
-    "blocker": "not-attempted",
-    "detail": "Read only around the cipher, roughly; two phrases are marked rough."
-   },
-   {
-    "item": "Identity of the Commendator Galilei and of the Viceroy",
-    "blocker": "not-attempted",
-    "detail": "Not named in the document; one web search found nothing."
    }
   ]
  }

@@ -1,6 +1,7 @@
 # Translation of DCXXI.3.323.1 (cipher runs in their sentences)
 
-Deciphered words in square brackets; `[?]` is a hole. `[?Baja]` is a suggestion, see NOTES.md.
+Deciphered words in square brackets; `[?x]` is a hole. `[?Baja]` and `[?Cortés]` are suggestions from a slip filed
+with the Wellington letter, not readings of the signs; see NOTES.md.
 
 1. "With sorrow I inform you of the death of our good friend General [Landeros], which took place these days in
    the District of Huejotzingo."
@@ -14,9 +15,9 @@ Deciphered words in square brackets; `[?]` is a hole. `[?Baja]` is a suggestion,
 5. "In one of my earlier letters I sent you a copy of a record I received from the [Mixteca], [?Baja], [of] [Oaxaca];
    on the 5th of this month I received a letter in which they ask me for your decision on the matter."
 6. "Our good friends [Miguel Gutiérrez Goitia], [Manuel Márquez], [Arturo Osorio], [Rodolfo Urdapilleta],
-   [Francisco Machorro] and [Lic.] [?] particularly ask me to greet you."
+   [Francisco Machorro] and [Lic.] [Yulas] particularly ask me to greet you."
 7. "In a letter I received from [Emilio], he tells me among other things to drop the 103 and use the 313, which
    you already know, he says. So from today I have used it."
-8. "[...] I beg you to honour me with your letters in this way: Sr. [Manuel] [?], [Plazuela] [Parral] # 1,
+8. "[...] I beg you to honour me with your letters in this way: Sr. [Manuel] [?Cortés], [Plazuela] [Parral] # 1,
    [Puebla]."
 9. "F. [Sánchez]."

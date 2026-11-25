@@ -75,3 +75,63 @@ answers checks them; the 8 human places stand.
 | AI places counted as sure | 302 | 35 | 1 | 3 | 0.886 |
 
 The 94 AI relabels fall in 78 words; 68 of them would become sure if a blind reader confirms the AI verdicts.
+
+## Part 3. Blind sheet C, answered by a human (Brice Dudout), 24 Nov 2026
+
+- `sheet-C-rule.md` (SHA-256 bb67d671...): the selection rule, in French, written before any thumbnail was cut. Targets:
+  the 19 places the AI pass left open: the 4 conflicts (g read u that the AI called a hook: L04 s18, L09 s27, L10 s20,
+  L41 s30), 10 doubtful g read t and 5 doubtful g read u (R4936-places.tsv, verdict doubtful). Options: short hook /
+  long loop, prototypes taken from places Brice settled on sheet T. 3 controls. Excluded as illegible: L31 s11-s12.
+- `sheet-C-key.json` (b1acc226...): question order (seeds 20261126 / 4937), which option is which form, the boxes.
+  Not loaded in the sheet; opened only after the answers were exported.
+- `sheet-C-answers.json` (0df053b9...): the exported answers, 22 questions, one remark ("Q" at q04).
+- `sheet-C-results.tsv`: answers decoded with the key, with the effect of each.
+
+| | hook | loop | other form |
+|---|---|---|---|
+| conflicts, g read u, AI hook (4) | 0 | 4 | 0 |
+| doubtful g read t (10) | 8 | 1 | 1 |
+| doubtful g read u (5) | 0 | 5 | 0 |
+
+- The 4 conflicts are loops: u confirmed, tags `g=u:hook` removed. The AI's hook label was wrong at all four places it
+  had flagged, so the 94 AI relabels of part 2 stay probable.
+- 8 hooks on g read t: relabelled g->q (t supported). 1 loop on a g read t (alt-, L25 s35): t not supported, tag kept.
+- 1 other form (tartani, L24 s6): a long straight tail with neither loop nor hook (the stroke at its foot may be the
+  flag of the 7 on the next line). Labelled `Q` in the transcription and the alignment: a figure with no value in the
+  key; t by sense only, tag `g=t` kept ({probable}). A possible second Q at L24 s9 is not checked.
+
+Counts after sheet C (`python3 tools/R4936_count728.py`):
+
+| | sure | {probable} | [restored] | <unresolved> | sure share |
+|---|---|---|---|---|---|
+| human places only (AI = probable) | **239** | 98 | 1 | 3 | **0.701** |
+| AI places counted as sure | 312 | 25 | 1 | 3 | 0.915 |
+
+## Part 4. Blind sheet D, answered by a human (Brice Dudout), 24 Nov 2026 (late)
+
+- `sheet-D-rule.md` (in French, byte for byte; first hash 9460a1d7..., amendment 1 written after the first contact sheet
+  and before anything was shown, final SHA-256 0df64ad7...). Targets: the 6 places where the sense wanted a value the
+  label did not carry: the 5 `q=u` places (casu L15 s3, ectum L17 s3, suspectusok L18 s16, szuksegunk L19 s17,
+  industriaia L31 s25) with options short hook / long loop, and the `h=h` place (ha, L23 s43) with options h / long r.
+  3 controls (a long r, a hook, a loop on read words).
+- `sheet-D-key.json`: question order, which option is which form, the boxes; opened only after the answers were exported.
+- `sheet-D-answers.json`: the exported answers, 9 questions, no remark.
+- `sheet-D-results.tsv`: answers decoded with the key, with the effect of each.
+
+Controls 3/3. Results:
+- The 5 `q=u` places are all **long loops**, not hooks: relabelled q -> g (u supported by the shape), tag `q=u` removed.
+  The hook "q" of the transcription was wrong at these 5 places.
+- The `h=h` place (ha) is a **long r**: relabelled h -> r (h in the key, supported by the shape), tag `h=h` removed.
+
+6 labels changed (R4936_corrections.tsv, transcription, alignment, mechanical decode); key and reading unchanged.
+
+Counts after sheet D (`python3 tools/R4936_count728.py`):
+
+| | sure | {probable} | [restored] | <unresolved> | sure share |
+|---|---|---|---|---|---|
+| human places only (AI = probable) | **244** | 93 | 1 | 3 | **0.716** |
+| AI places counted as sure | **318** | 19 | 1 | 3 | **0.933** |
+
+industriaia gains only in the second view: it keeps one AI g->q relabel (L31 s27). This is the ceiling of what shape can
+settle: 95% (324/341) is not reached. The 19 remaining {probable} words are cipher-maker slips (g=g x3, a=a, n=n),
+c=y x3, g=t x4 and the [?words]; hyszem needs a transcription fix (two figures "c e"), not done here.

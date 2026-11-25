@@ -1,0 +1,423 @@
+{
+ "schema_version": 1,
+ "target": "rosenkrantz1629",
+ "title": "Palle Rosenkrantz, London, to the Statholder Frands Rantzau, 2 and 15 February 1629, Rigsarkivet TKUA England A II 13 (unit 261258): code A key recovered from the ciphertext alone, read in part; his code B and his sign cipher to the king not broken (contributed by Malcolm McBratney with Claude)",
+ "documents": [
+  {
+   "id": "L2",
+   "read": "read in part",
+   "shelfmark": "Rigsarkivet (Copenhagen), Tyske Kancelli, Udenrigske Afdeling, England A II 13 (1620-34), folder 'Relation fra Palle Rosenkrantz 1628-1629'; Arkivalieronline unit 261258, images 266R-270L (main letter 266R, 267L, 268R, 269L, 269R, 270L; postscript leaf 267R-268L)",
+   "date": "2 February 1629, as dated in the letter ('Aff London d. 2 Febr. 1629', 270L)",
+   "year": 1629,
+   "country": "Denmark",
+   "route": "Palle Rosenkrantz, London -> Frands Rantzau, Statholder, Copenhagen",
+   "places": {"from": "London", "to": "Copenhagen"},
+   "language": "Danish",
+   "pages": 8,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": ["none"],
+    "source": "No interlinear or marginal decipherment on any sheet (pass1/WORKLOG.md; PRIOR_ART.md 2); no printed or archival decipherment found (PRIOR_ART.md 1-12). The 47th Deputy Keeper's Report (1886) calendars the folder as 'partly in cipher', with no decipherment."
+   },
+   "length": {
+    "tokens": 508,
+    "distinct": 111,
+    "unit": "mixed",
+    "measured": true,
+    "file": "transcription_L2.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Rigsarkivet Arkivalieronline, unit 261258, full-size openings of 4416-4435 x 3436 px (FETCH_LOG.txt); read from strips at 1.03-1.12x native",
+    "corrections": 0,
+    "image_quality": "good",
+    "notes": "Length: _check_profile.py --measure transcription_L2.txt --drop-first --digits gives 509 tokens with a digit = 508 cipher tokens + the writer's struck group [del:246]. The 508 are 412 in the main letter A1 and 96 on the postscript leaf A1P (pass2/FREEZE_TX_CODE_A.txt); 507 are read as numbers (111 distinct) and 1 has its first digit unread (?3). One model reader, one pass, doubtful digits marked ? (7 in this letter); frozen with the split before the key of record was built (pass2/FREEZE_TX_CODE_A.txt, 11:53:54Z), but after one exploratory solver run on all code A text (pass2/ATTEMPTS.tsv P2-002, disclosed). A second transcription by another session (bookcode/tx/NUM_FROZEN.tsv) agrees on 560 of the 571 code A tokens by value; every difference is listed under 'Transcription doubts' in NOTES.md with what the image shows. The clear Danish was transcribed loosely and not collated. No person has checked the transcription."
+   }
+  },
+  {
+   "id": "L5",
+   "read": "read in part",
+   "shelfmark": "Rigsarkivet (Copenhagen), Tyske Kancelli, Udenrigske Afdeling, England A II 13 (1620-34), folder 'Relation fra Palle Rosenkrantz 1628-1629'; Arkivalieronline unit 261258, images 274R-276L (cipher on 275R and 276L)",
+   "date": "15 February 1629, as dated in the letter (275L foot)",
+   "year": 1629,
+   "country": "Denmark",
+   "route": "Palle Rosenkrantz, London -> Frands Rantzau, Statholder, Copenhagen",
+   "places": {"from": "London", "to": "Copenhagen"},
+   "language": "Danish",
+   "pages": 4,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": ["none"],
+    "source": "No interlinear or marginal decipherment (pass1/WORKLOG.md; PRIOR_ART.md 2); none found in print or in the archive (PRIOR_ART.md 1-12)."
+   },
+   "length": {
+    "tokens": 63,
+    "distinct": 47,
+    "unit": "mixed",
+    "measured": true,
+    "file": "transcription_L5.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Rigsarkivet Arkivalieronline, unit 261258, full-size openings (FETCH_LOG.txt); strips at 1.03-1.12x native",
+    "corrections": 0,
+    "image_quality": "good",
+    "notes": "Length: _check_profile.py --measure transcription_L5.txt --drop-first --digits gives 66 tokens with a digit = 63 cipher tokens + the writer's struck group [del:87 33 85] (3 tokens); 47 distinct values. Same reader, freeze and second transcription as L2; the two readers agree on every value of this letter, and the second marks 136 and 63 as doubtful."
+   }
+  }
+ ],
+ "system": {
+  "types": ["homophonic", "nomenclator"],
+  "summary": "Code A: a number cipher in which the figures 3-199 stand for letters, several per letter, laid out on a 9-column grid (each letter's figures step by 9, and letters rise in alphabetical order along each row of figures with the same value mod 9), and figures from 200 up to about 1863 stand for words or names (a nomenclator; three high figures, 308, 317 and 1135, were read as h by the solver).",
+  "symbol_kind": "digits",
+  "digit_groups": {"width": "1-4", "separation": "dots"},
+  "distinct_symbols": 117,
+  "diacritics": {"used": false},
+  "homophones": {
+   "used": true,
+   "max_per_vowel": 5,
+   "max_per_consonant": 5,
+   "per_letter": {"a": 4, "b": 2, "c": 3, "d": 4, "e": 5, "f": 2, "g": 4, "h": 3, "i": 3, "k": 2, "l": 4, "m": 4, "n": 3, "o": 3, "p": 1, "r": 3, "s": 5, "t": 3, "u": 5, "y": 3}
+  },
+  "nomenclator": {
+   "present": true,
+   "entries": 48,
+   "unread_groups": 48
+  },
+  "nulls": {"present": "unknown"},
+  "key_order": "partly alphabetical",
+  "word_division": "none",
+  "doubled_letters": "written twice",
+  "sibling_key": "None found. The 'Chiffer' packet (Rigsarkivet unit 260610, images 123-200 and 305-309, including the bound key register of the 1640s on 151-200) and the Daisy key series were compared with code A: no key fits (pass1/REPORT.md, pass2/ATTEMPTS.tsv P2-001, P2-021). Zobel's index-switched cipher of 1629 (targets/zobel1629) is a different design.",
+  "notes": "distinct_symbols = 117 distinct figures read in the two letters (66 below 200, 51 from 200 up); the frozen key (pass2/codeA/KEY_A.tsv, from the training letter only) gives 66 letter values for 20 letters (a b c d e f g h i k l m n o p r s t u y; 63 figures below 200 plus 308, 317 and 1135 = h) and lists 33 word codes; the two letters use 48 distinct word codes (62 tokens), none solved. Three figures below 200 occur only in held-out text (63, 81, 136): by rule 2 of pass2/codeA/RULES_A.txt, written before the decode, 136 is read e from its grid neighbours and 63 and 81 have no value. Whether the cipher has nulls is not known. Doubled letters: 'restseddeler', 'imellom', 'fremmed' are spelled out with two figures. The writer separates figures with full stops (pass1/WORKLOG.md); the transcription uses spaces. The same folder holds two other systems by the same writer, not broken here: code B, a larger number code (word codes to 2431) in four letters of 13-24 March 1629 to the Statholder and the Chancellor (pass2/tx/CODE_B_FROZEN.tsv, 273 tokens), and a sign cipher of drawn signs and digits in seven letters to the king of 2 February to 9 April 1629 (pass1/TRANSCRIPTION.tsv, 408 tokens, 63 types)."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "None found for code A (PRIOR_ART.md): Cyphersolver issues, PRs, catalogue and leads (gate record and again for this PR: no hit for Rosenkrantz or unit 261258), DECODE public search (Rosenkrantz: 3 unrelated 18th-century records), Bricka and Fridericia's edition of Christian IV's letters vols 1-7 and Molbech 1848 (OCR searched), the 47th Deputy Keeper's Report (1886, the folder calendared as partly in cipher, no decipherment), Rigsarkivet's Daisy key series, web searches. Not checked: Temler's manuscript key to Christian IV's own sign cipher of 1625-27 (Royal Library, Kallske Saml. 4to 436), which bears on the sign cipher only; Danske Magazin; TNA SP 75; HathiTrust and Google Books full text.",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": ["images"],
+  "attack": "ciphertext-only",
+  "human_role": "Malcolm McBratney directed the work and set its rules (prior art first, transcription and key frozen before one decode, held-out letters, a separate strict judge, first pass as the figure of record, shuffle controls). Claude sessions did the survey, the transcriptions, the key recovery, the decode, the judging, the reading and the translation. The clear text served only to cut the cipher into runs, not as cribs. No reading by a person without AI.",
+  "tools": [
+   "pass2/tools/build_lm27.py: own Danish 5-gram character model (Witten-Bell, word-anchored) from 576,754 letters of Christian IV's own letters 1589-1635 in the Bricka/Fridericia OCR (corpus built by pass1/tools/build_lm.py; not committed)",
+   "pass2/tools/mkprob2.py and pass2/tools/gsolve2.c: homophonic simulated annealing with letters non-decreasing along each row of the 9-column grid and a cost for reading a figure of 200 or more as a letter",
+   "pass2/codeA/decode_A.py (one decode by pass2/codeA/RULES_A.txt)",
+   "pass2/codeA/shuffle_A.py: 5,000 shuffled keys at two seeds",
+   "pass2/judge/count_A.py (re-adds the judge's scores)",
+   "pass1/tools/solve.py and pass1/tools/synth.py: the sign-cipher solver and its planted-key control"
+  ],
+  "models": [
+   "Claude Fable 5.2 and Claude Opus 5.5 (Anthropic): the solver sessions (survey, transcriptions, key recovery, decode, controls); which session ran which model is not recorded in the working folder [stated by the contributor]",
+   "Claude Opus 5.5 (Anthropic): the strict judge, and the session that assembled this folder, checked the doubts on the images and made reading.md and translation.md"
+  ],
+  "first_date": "2026-11-24",
+  "last_date": "2026-11-25"
+ },
+ "solution": [
+  {
+   "date": "2026-11-24",
+   "kind": "literature search",
+   "what": "Prior art before transcription (PRIOR_ART.md 1-6): Cyphersolver issues, PRs, catalogue and leads and DECODE (gate record); Bricka and Fridericia vols 1-7 (archive.org OCR: no Rosenkrantz letter of 1629 printed); the 47th Deputy Keeper's Report; web searches; the repository. No key or reading of these letters found; one risk noted for the sign cipher (Temler's key, KB Kallske Saml. 4to 436).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "access",
+   "what": "Unit 261258 images 262-294 fetched at full size and the 15 letters surveyed (pass1/WORKLOG.md, FETCH_LOG.txt): two clear, six in number codes (to the Statholder and the Chancellor), seven in a sign cipher (to the king). Unit 260610 ('Chiffer' packet) images 123-200 and 305-309 fetched.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "sibling key",
+   "technique": ["key matching"],
+   "what": "Period keys of the Chiffer packet (unit 260610: the France key of 1629 on 127-128, the DSM sheets 133-134 and 137, 135, 123-126, 139, 145-147, 149-150, 305, 308, and the bound register 151-200 at sheet scale) compared with the sign cipher and the number codes before transcription: none fits (pass1/REPORT.md, pass1/WORKLOG.md).",
+   "result": "ruled out"
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "transcription",
+   "what": "Sign cipher of the seven letters to the king: 408 tokens, 63 types, 49 sign labels, frozen at 10:57:20Z with the split training N12, N13, N14, N20 (322 tokens) and held-out N21, N22, N23 (86) (pass1/FREEZE_TX.txt, pass1/SIGNS.md).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "solver",
+   "technique": ["simulated annealing", "language-model scoring", "key-structure hypothesis"],
+   "what": "Sign cipher, 24 runs on the training letters (pass1/SOLVE_LOG.md): homophonic annealing with a Danish 5-gram model, merge schemes M1a-M5, the pattern guess ENGELSK(E) for a recurring seven-sign word. Two schemes converged from two seeds (M3, M5) to decodes that are not Danish and contradict each other.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "control",
+   "technique": ["statistical test"],
+   "what": "Matched control for the sign-cipher failure (pass1/tools/synth.py, pass1/SOLVE_LOG.md): 304 letters of Christian IV's Danish cut to the same run lengths under a random homophonic key; the solver recovers the planted key in full at 21 and 28 sign classes and fails at 36. The real text has 53 types, 22-37 after merges.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "control",
+   "technique": ["statistical test", "language-model scoring"],
+   "what": "The best sign-cipher candidate (M5) frozen as a failed candidate (pass1/KEY.tsv, 11:30:50Z) and decoded once: on the held-out letters 1,360 and 1,407 of 5,000 shuffled keys score at or above it (seeds 20261112 and 7): no predictive value (pass1/shuffle_out.txt). The judge packet was prepared and not run.",
+   "result": "ruled out"
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "literature search",
+   "what": "Rigsarkivet Daisy searched for key series (Ziffer, Ciffer, Chiffre, Nøgler, nøgle til, Clemetsen and others; pass2/ATTEMPTS.tsv P2-001, pass2/SEARCH_LOG.tsv): no 1620s key series beyond unit 260610; Chiffernøgler 1539-1693 is not scanned.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "transcription",
+   "what": "Code A in the letters of 2 and 15 February 1629: 571 tokens (A1 412, A1P 96, A2 63), doubtful digits marked ?, frozen at 11:53:54Z with the split training A1 (the 2 February main letter) and held-out A1P (its postscript leaf) and A2 (the 15 February letter) (pass2/FREEZE_TX_CODE_A.txt). The draft used by the exploratory run of the next step (tx/CODE_A_v1.tsv, last written 11:49:58Z) is byte-identical to the frozen file.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "solver",
+   "technique": ["simulated annealing", "language-model scoring"],
+   "what": "EXPLORATORY run, disclosed as a protocol slip (P2-002): homophonic annealing on all code A text, before the transcription freeze and before any split; 3 of 6 restarts converged and the decode was Danish (med, resterer, betale, contribuere, sig bemegtige, osterseen). Its decode of every line, held-out lines included, was seen by both solver sessions. Not counted; output kept as pass2/tmp/A1_run1.txt.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "solver",
+   "technique": ["simulated annealing", "language-model scoring"],
+   "what": "Unconstrained homophonic annealing on the training letter A1 only (P2-003): best -879.527 reached in many restarts; decode partly Danish; about 10 rare figures break the grid order.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "hypothesis",
+   "technique": ["key-structure hypothesis", "repeat/pattern analysis"],
+   "what": "From the converged training key (P2-004): the figures sit on a 9-column grid; each letter's figures form steps of 9 (d 91, 100, 109; l 67, 76, 85; t 69, 78, 87; n 130, 139, 148; o 157, 166, 175; g 181, 190, 199) and letters rise alphabetically along each row (same value mod 9). Every frequent figure fits; violations only on rare ones.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "solver",
+   "technique": ["simulated annealing", "key-structure hypothesis"],
+   "what": "Monotone-row constrained annealing from random sorted starts (P2-005, hsolve_mono): stuck at -1116 to -1220, the constraint blocking moves.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "solver",
+   "technique": ["simulated annealing", "key-structure hypothesis"],
+   "what": "Monotone-row annealing with cascade moves (P2-006, gsolve): 3 of 4 seeds converge to -921.716; the decode improves (contribuere, fuldmact, sic uolunt sic iubent, Ostersseen).",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "hypothesis",
+   "technique": ["key-structure hypothesis", "simulated annealing"],
+   "what": "Shared-layout block model, one alphabet layout for rows 1-3, 4-5 and 6-8 (P2-007): best -1043.96, forcing values against clear decodes (33 = s against intet, sig, deris). Rejected.",
+   "result": "ruled out"
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "solver",
+   "technique": ["simulated annealing", "language-model scoring", "key-structure hypothesis"],
+   "what": "Nomenclator handling (P2-008, gsolve2 and mkprob2): a figure of 200 or more may be a letter or a word code, at a cost per figure read as a letter (0, 2, 3, 4 and 6 tried, 3-6 seeds each, 25 restarts x 800,000). 308 and 317 come out as h; the letters of every figure below 200 are the same in every converged run; cost 0 overfits.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "reading",
+   "what": "Key of record (P2-009): the cost-4 run, seed 1 (identical to seed 2), score -911.353, mechanical solver output from A1 only with no hand edit (pass2/runs/A1n_monoP4_s1.txt); 66 letter values; rules for figures not seen in training written before decoding (pass2/codeA/RULES_A.txt). Frozen at 12:24:05Z (pass2/codeA/FREEZE_KEY_A.txt); then one decode of all code A text at 12:24:08Z (P2-010; pass2/codeA/DECODE_A.txt). Disclosed in the freeze file: while checking the contexts of 308, the session looked at the figures of one held-out line (267R line 9).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "control",
+   "technique": ["statistical test", "language-model scoring"],
+   "what": "5,000 shuffled keys at seeds 20261112 and 7, letters permuted among the letter figures (P2-011, pass2/codeA/shuffle_A_out.txt): held-out 136 letters, real -346.1 against best shuffles -669.5 and -667.0 (means -802.6, -803.5), 0 of 5,000 at or above the real key at either seed; training 370 letters, 0 of 5,000.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "verification",
+   "technique": ["statistical test"],
+   "what": "Separate strict judge (Claude Opus 5.5), given only pass2/judge/BRIEF_A.txt and pass2/judge/decode_A.txt, scored each decoded letter S/E/N (pass2/judge/judge_A.tsv): training A1 305/370 = 82.4%; held-out 127/136 = 93.4% (postscript leaf 76/80, 15 February letter 51/56); all 432/506 = 85.4% (S 432, E 42, N 32). Our own line is 65% S on the held-out block. The judge noted that the held-out sample is small and easy.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "transcription",
+   "what": "Code B in four letters of 13-24 March 1629: 273 tokens (B1 53, B2 38, B3 146, B4 36), B1 and B2 the same ciphered sentences, frozen at 12:34:08Z after exploratory tests on the draft, disclosed in the freeze file (pass2/tx/FREEZE_TX_CODE_B.txt, P2-012).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "solver",
+   "technique": ["key matching", "statistical test", "simulated annealing", "exhaustive search"],
+   "what": "Code B (P2-013 to P2-017, P2-022): the code A key does not fit (code B uses other figures); step 28 and modulus 24 show excess structure (p = 0.007 for mod 24); alphabetical mod-24 layouts, substitution on residue classes mod 24, grid-constrained annealing at widths 28, 24 and 9, and register-type row layouts all fail to give Danish.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "sibling key",
+   "technique": ["key matching"],
+   "what": "Key sheet 137 and the DSM sheets 133-134 read at full size against the sign cipher (P2-018): seven shapes shared, the commonest signs absent; not its key. The bound register (151-200) compared with codes A and B grid by grid for three keys (P2-021): every key uses one 1640s template; no match.",
+   "result": "ruled out"
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "literature search",
+   "what": "Temler's key to Christian IV's sign cipher (KB Kallske Saml. 4to 436) and Molbech 1848 (P2-019): Molbech deciphered the king's letters 'efter den af Temler udfundne Nøgle'; no sign table in the OCR; the key is not online. Open, for the sign cipher.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "solver",
+   "technique": ["simulated annealing", "crib testing"],
+   "what": "Sign cipher with the ENGELSK hypothesis pinned, raw signs and merges M1a, three seeds (P2-020): pinned runs score worse than unpinned ones and nothing outside the pinned word reads.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "hypothesis",
+   "technique": ["exhaustive search", "statistical test"],
+   "what": "Book-code hypothesis for codes A and B (bookcode/ATTEMPTS.tsv BC-002 to BC-017): no page/line/word structure; Beale-type keys from seven printed books in nine texts (Vulgate, Luther 1545, the Danish Bibles of 1550 and 1607, the Jutland law 1590, Hemmingsen 1585, Calepinus 1561) at every offset, with a planted-key positive control and relabelled-cipher nulls: no fit. Code B's word codes cluster in runs of consecutive numbers (p = 0.00005), as in a nomenclator.",
+   "result": "ruled out"
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "verification",
+   "what": "Second transcription of codes A and B by another session (bookcode/tx/NUM_FROZEN.tsv, frozen 12:07:11Z) compared with the code A freeze (P2-023): 560 of 571 tokens agree by value (557 at the time, before a line-numbering shift was allowed for); the differences are listed in NOTES.md 'Transcription doubts'.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "literature search",
+   "what": "Contemporary sources searched for cribs for the sign cipher and code B (CSP Venice 21-22, Beller 1928, the 47th Deputy Keeper's Report, Acts of the Privy Council 44, Christian IV's memorial of 27 Oct 1628): eleven candidate cribs ranked, none applied (cribs/CRIBS.md in the working folder, not committed).",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-25",
+   "kind": "reading",
+   "what": "reading.md and translation.md made from pass2/codeA/DECODE_A.txt and the judge's word splits, no letter changed; cipher words marked ⟦ ⟧. Read share by words, cipher words only (research/reading_audit/v10_relabel.measure_text): 2 February letter 84/160 = 0.525, 15 February letter 11/19 = 0.579, both 95/179 = 0.531. Of the 84 holes, 62 are word codes, 11 no-sense words, 3 letters without a value and 8 one-letter slips.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-25",
+   "kind": "verification",
+   "technique": ["other"],
+   "what": "Checks by the assembling session (NOTES.md 'Checks made for this PR'): a decoder written afresh from KEY_A.tsv and RULES_A.txt reproduces DECODE_A.txt on 117 of 117 lines (571 tokens = 506 letters + 62 word codes + 3 without a value); the reading spells the decode exactly; the judge's figures re-add; every freeze record matches its file; 48 copied files match the stamped manifest; both RFC 3161 tokens and the OpenTimestamps file carry the manifest's digest; shuffle_A.py re-run in the working folder prints the same output. The 19 transcription doubts were looked at on enlarged strips by this model session: eight read as frozen (76, 85, 859, 595, 67, 81, 109, 63), five that bear on letters not settled (?3 under a blot, the group read as clear 'ey', 166 or 186, 100 or 106, 136 or 130), and six with no effect on the letters (five word codes, and 31 or 30, both a).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-25",
+   "kind": "verification",
+   "what": "docs/_validate.py not run to a result: the da-modern corpus (Danish Gutenberg texts, 1800-1920) is not cached in any checkout here and gutenberg.org answered HTTP 503 twice; validation.tsv is prepared (571 tokens, 506 read). lang/ has no period Danish model; the solver's own model of Christian IV's letters is outside it.",
+   "result": "failed"
+  }
+ ],
+ "outcome": {
+  "class": "read in part",
+  "key": "partial",
+  "method": "key recovered from ciphertext-only",
+  "method_basis": "The letter figures of code A (66 values for 20 letters, on a 9-column grid) were recovered from the 2 February main letter alone by homophonic annealing with a Danish 5-gram model, frozen, and then decoded the held-out postscript leaf and the letter of 15 February on the first pass (strict judge: 127 of 136 letters sense, 0 of 5,000 shuffled keys as good); no crib, key or outside plaintext was used. The 48 word codes are not solved, so the text is read in part, and an exploratory run on all the text before the freeze is disclosed.",
+  "contribution": ["transcription", "key recovered"],
+  "fraction_read": 0.531,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "reading.md, counted with research/reading_audit/v10_relabel.measure_text over the cipher words only (cipher_markup ⟦⟧): 95 of 179 cipher words read as sense (2 February letter 84/160 = 0.525, 15 February letter 11/19 = 0.579); the 84 holes are 62 word codes, 11 no-sense words, 3 letters without a value and 8 one-letter slips. Strict judge by letters: 432/506 = 0.854, held-out 127/136 = 0.934 (pass2/judge/judge_A.tsv).",
+  "codes_open": {"open": 48, "total": 48, "tokens_open": 62},
+  "verification": ["none"],
+  "first_break": true,
+  "provenance": "contributed",
+  "credits": [
+   {
+    "who": "mcbratney",
+    "role": "new cipher with solution",
+    "note": "Rosenkrantz's London relations (unit 261258), found from a Zobel lead; code A key recovered from the 2 February letter, frozen, one decode, strict judge and shuffle controls, with Claude (Anthropic: Fable 5.2 and Opus 5.5 solver sessions, Opus 5.5 judge and assembly)",
+    "date": "2026-11-24"
+   },
+   {
+    "who": "mcbratney",
+    "role": "transcription",
+    "note": "code A (571 tokens), code B (273) and the sign cipher (408) from the Rigsarkivet images, with Claude (Anthropic)",
+    "date": "2026-11-24"
+   }
+  ],
+  "gaps": [
+   {
+    "item": "Word codes used more than once: 568 (7 uses), 379 and 539 (3 each), 551, 673, 1444 and 1530 (2 each), 21 tokens",
+    "blocker": "no-key-material",
+    "detail": "no code A nomenclator was found (unit 260610 including the bound register, the Daisy key series); context suggests a field for some (568 is 'lent' in 'de laante [568]' and 'outstanding' in 'de [568] som resterer'), but a guess would stay a hole"
+   },
+   {
+    "item": "Word codes used once: 41 values, 41 tokens",
+    "blocker": "too-short",
+    "detail": "one use each gives no second context; 15 of them occur only in the held-out text"
+   },
+   {
+    "item": "Figures below 200 seen only in held-out text: 63 (no value; the sense wants s), 81 (no value), 136 (rule 2 gives e; the sense wants n)",
+    "blocker": "too-short",
+    "detail": "one use each, absent from the training letter; 136 may be 130 (n) misread and 63 is crossed by a descender (NOTES 'Transcription doubts')"
+   },
+   {
+    "item": "No-sense runs (judge N, 32 letters: eysteden, e, letan, feren, s, ster, e, o, re, ag, am) and one-letter slips (judge E, 8 words, 42 letters)",
+    "blocker": "too-short",
+    "detail": "rare key figures fitted on 370 training letters; two are tied to doubtful digits on the image (269L lines 3-4: the group read as clear 'ey' looks like 109, and 166 may be 186 = y, giving 'y deris'); none emended under the first-pass rule"
+   },
+   {
+    "item": "Doubtful digits not settled on the image: ?3 (268R line 14, under an ink blot), 166/186 (269L line 4, overwritten), 100/106 (269L line 7), 136/130 (275R line 3)",
+    "blocker": "illegible",
+    "detail": "full-size archive images read by a model; a person's reading, or the original, would settle them"
+   },
+   {
+    "item": "Code B: four letters of 13-24 March 1629 (273 tokens), not broken",
+    "blocker": "no-key-material",
+    "detail": "a larger nomenclator (word codes to 2431) that the writer calls 'the last cipher' sent home with Christen Clementsen (289L margin); no key in the Chiffer packet or the register; ciphertext-only attempts failed (P2-013 to P2-017, P2-022)"
+   },
+   {
+    "item": "Sign cipher: seven letters to the king, 2 February to 9 April 1629 (408 tokens), not broken",
+    "blocker": "needs-physical-access",
+    "detail": "Temler's key to Christian IV's own sign cipher of 1625-27 (Royal Library, Kallske Saml. 4to 436) is not online and may or may not be this alphabet; ciphertext-only attempts failed, with a matched control showing the solver's limit (pass1/SOLVE_LOG.md)"
+   },
+   {
+    "item": "Prior-art gaps: Temler's key; Molbech 1848 page images (a plate of signs?); Danske Magazin; TNA SP 75 (Rosenkrantz's memorials of 1628-29); HathiTrust and Google Books full text",
+    "blocker": "needs-physical-access",
+    "detail": "not online or not searchable from the sandbox"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "L2",
+    "label": "Letter of 2 February 1629 to the Statholder (main letter and postscript leaf)",
+    "transcription": ["transcription_L2.txt", "pass2/tx/CODE_A_FROZEN.tsv"],
+    "decryption": "pass2/codeA/DECODE_A.txt",
+    "reading": "reading.md",
+    "translation": "translation.md",
+    "language": "da",
+    "state": "read in part",
+    "read_share": 0.525,
+    "cipher_markup": "⟦⟧",
+    "reading_section": "2 February 1629",
+    "reading_review": {"grade": "B", "by": "integration review of PR #956 (AI agent, for the maintainers); not a person", "reader_kind": "model", "independent": true, "date": "2026-11-24", "note": "Own decoder from KEY_A.tsv and RULES_A.txt gives DECODE_A.txt on 117/117 lines; share recounted 95/179 = 0.531 (2 Feb 84/160, 15 Feb 11/19). Read as Danish: the clear text carries coherent sentences and the decoded words fit them; 62 of 84 holes are unsolved word codes. Read in part. Image 267 (267L, 267R l.1-5) agrees with the transcription. Held-out figure not blind (exploratory pre-freeze run, ATTEMPTS P2-002)."},
+    "summary": "Rosenkrantz reports from London on money matters: courteous refusals and notes of arrears instead of payment, the interest and principal of money lent accepted but paid slowly, a cloth delivered earlier and other money to be set off with jewels pledged against them, and his fear of obtaining nothing; he repeats a warning that [397] has nothing certain to rely on, reports talk of sending [1041] [304] into the Baltic, and notes that Parliament is busy with religion against the Papists and Arminians. The postscript leaf reports that 'they' would treat with him about a reduction of the outstanding [568] and then pay, and asks for word of what is needed. Who 'they' are and what the word codes stand for is not established [unverified: the contributor's reading]."
+   },
+   {
+    "doc": "L5",
+    "label": "Letter of 15 February 1629 to the Statholder",
+    "transcription": ["transcription_L5.txt", "pass2/tx/CODE_A_FROZEN.tsv"],
+    "decryption": "pass2/codeA/DECODE_A.txt",
+    "reading": "reading.md",
+    "translation": "translation.md",
+    "language": "da",
+    "state": "read in part",
+    "read_share": 0.579,
+    "cipher_markup": "⟦⟧",
+    "reading_section": "15 February 1629",
+    "reading_review": {"grade": "B", "by": "integration review of PR #956 (AI agent, for the maintainers); not a person", "reader_kind": "model", "independent": true, "date": "2026-11-24", "note": "Own decoder from KEY_A.tsv and RULES_A.txt gives DECODE_A.txt on 117/117 lines; share recounted 95/179 = 0.531 (2 Feb 84/160, 15 Feb 11/19). Read as Danish: the clear text carries coherent sentences and the decoded words fit them; 62 of 84 holes are unsolved word codes. Read in part. Image 267 (267L, 267R l.1-5) agrees with the transcription. Held-out figure not blind (exploratory pre-freeze run, ATTEMPTS P2-002)."},
+    "summary": "A great expense that Rosenkrantz fears is in vain, since things still go no better than [673] was [1091]; everything has become uncertain and slow [unverified: the contributor's reading]."
+   }
+  ],
+  "key_file": ["pass2/codeA/KEY_A.tsv", "pass2/codeA/RULES_A.txt"],
+  "notes": "Held-out design: the postscript leaf (A1P) and the letter of 15 February (A2), 136 of 506 decoded letters, were not used to build the key of record. They were seen as images, and one exploratory solver run on all code A text before the freeze (pass2/ATTEMPTS.tsv P2-002) let both solver sessions see a decode of them; the session that froze the key also looked at the figures of one held-out line (267R line 9). The key of record is mechanical solver output from the training letter (no hand edit); for the three figures that occur only in held-out text it does not carry the exploratory key's values (136 is n there and e by the frozen rule), but the choice of solver settings after the exploratory run cannot be shown blind. Verification is recorded as none: docs/_validate.py could not run to a result (the da-modern corpus is not cached and gutenberg.org answered HTTP 503 on 25 Nov 2026; validation.tsv is prepared), and lang/ has no period Danish model; the shuffle control and the strict judge (a model session) are in the solution steps. The sentence check (docs/_check_reading.py) finds few clean sentences (0.218 with the language detected, 0 to 0.015 with Danish fixed): it counts every word code as a hole and the 1629 spelling of the clear text as unknown words. Code B and the sign cipher are not broken (outcome.gaps). Temler's key bears on the sign cipher only, not on code A."
+ }
+}
