@@ -1,0 +1,28 @@
+SELECTION of the blind test letter (by the frozen rule in SELECTION_RULE.txt, md5 d4f7fd3a0fe33e3ccef0a9ad5d6d6043)
+
+Candidate pool found (date order):
+ 1. Batavia 25 Dec 1623 + resolution 2 Oct 1623 (inv. 1079, 1080; GM I p. 129-130 marks cipher)  -> EXCLUDED (training)
+ 2. Batavia 20 Feb 1634 (inv. 1108, 1111; not marked in GM I)                                   -> EXCLUDED (training)
+ 3. Batavia 9 Sep 1640, Governor-General and Council to the Heren XVII (GM II no. at p. 101, KA 1043 fol. 235-253, copy in 1043;
+    NA 1.04.02 inv. 1134). Not marked as cipher in GM II. Found by the HTR detector: inv. 1134 scan 583 (last page of one copy,
+    "Int V. Ed: Casteel Batavia desen #:en September 1640") and scan 617 (last page of a second copy, "... desen 9en septembr A o 1640").
+ 4. Batavia, letter dated January 1643 (inv. 1141 scans 881-893 and copy 897-908; HTR detector flags 886, 890, 901).
+ 5. Batavia 7 Mar 1643 (GM II no. XXII, p. 195-199, KA 1050 fol. 376-383; GM II p. 197 note 6: italic words are cipher with the
+    meaning written beside; probably inv. 1141 near scan 876).
+ No other cipher found: GM I and II full-text grep (1,676 pages downloaded: vol I 806 pages, vol II 870 pages) and the HTR detector over
+ inv. 1070-1145 (76 inventories; 199 flagged pages triaged from masked context; all others are bale numbers, dates, prices, soundings).
+
+CHOSEN TEST LETTER (first in date order after 25 Dec 1623 that is not excluded): No. 3, Batavia 9 September 1640, inv. 1134.
+Base copy: to be fixed by looking only at illegible thumbnails (260 px) of scans 583 and 617 for margin writing; an unglossed copy is the base.
+The printed GM II text of this letter (pp. 101-109) will NOT be opened before the score is fixed.
+Candidates 4 and 5 are reserves, to be tested afterwards in date order under the same freeze-then-decode-once rule, time permitting.
+
+Disclosures (what has been seen before this selection):
+ - No number values of any candidate cipher have been printed or viewed. Detector and triage output gave page ids, counts and
+   masked context only (<RUN n=k>, digits replaced by #).
+ - For candidate 4 (inv. 1141) the masked HTR context showed some HTR-read letter strings inside cipher passages
+   ('uledbbe', 'erfrd', 'kbd', 'mrkmrkcbd', 'thhuibd', 'lcobbr', 'urfcin'); not decoded.
+ - For candidate 5, GM II p. 197 footnotes 5-6 were seen in a grep snippet (Formosa, gold, an unruly chief; italic words = cipher).
+ - For candidate 3, the masked HTR of scans 560-640 was seen as clear-text lines containing place names and dates (Malacca blockade,
+   Ceylon forts Negombo, Trincomalee, Batticaloa, Coromandel, Surat), so the general subject of the letter is known.
+Wed Nov 25 20:38:00 UTC 2026
