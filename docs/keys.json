@@ -5224,6 +5224,15 @@
    "note": "Cipher = plain + 3, +1, +3, +3, +1, +3 ... over A-N, Ñ, O-Z, restarting at every word in the letter read here. Published by Narváez for the Wellington letter of the Félix Díaz fondo; named in clear in DCXXI.3.323.1 (\"haga uso de la 313\"). The key 103, which that letter says was dropped, was tried and gives no sense."
   },
   {
+   "id": "k-narvaez-argumedo",
+   "label": "Argumedo's two-digit letter table over the 27-letter Spanish alphabet, E=01 ... Z=23, A=34 ... D=37 (Narváez 2015)",
+   "kind": "scholar's key",
+   "by": "Roberto Narváez",
+   "year": 1921,
+   "found": 2015,
+   "note": "One two-digit number for each letter (E=01 ... N=10, Ñ=11, O=12 ... Z=23, A=34, B=35, C=36, D=37), used by Cristóbal Mateo Argumedo for names and key words inside letters in clear to Félix Díaz, Oct 1921 (CEHM-Carso DCXXI.3.244.1 and 3.250.2). Printed by Narváez, Documenta & Instrumenta 13 (2015), p. 122. Codes 24-33 do not occur in the two letters."
+  },
+  {
    "id": "k-clave-extra3",
    "label": "Clave Extra 3, two-figure groups of the Constitutionalist Army of the Northeast, 1914 (rebuilt from the pencil decipherment of LXVIII-1.14.1943.1)",
    "kind": "rebuilt here",
@@ -5302,6 +5311,14 @@
    "by": "Andrew Beling, with AI agents, from the decipherment of the time",
    "year": 1757,
    "note": "Numbers for letters, syllables, words and names, no alphabetical order. Indexed from the interlinear decipherment of the cipher passages of SHD GR A1 3457 pieces 179-180 (LAC copy, reel C-12578); conflicting values kept; two numbers with unsettled digits kept out; 52 further values from the 1756-1759 letters in the same code kept apart (key/W_sibling_values.tsv). Not the key sheet of the time."
+  },
+  {
+   "id": "k-butzbach1641",
+   "label": "Number key strip, Landgraf Philipp of Hesse-Butzbach's papers (HStAD D 4 Nr. 76/6)",
+   "kind": "archive key",
+   "by": "unknown hand, in the same file as the cipher sheet",
+   "year": null,
+   "note": "a=11 ... z=34 in alphabetical order (24 letters), on a small strip on view 11; 38 = o and 39 = u are not on it and were deduced from the sheet."
   },
   {
    "id": "k-charlesv1554",
@@ -8675,6 +8692,12 @@
    "how": "read unchanged",
    "note": "applied unchanged, restarting at every word; the letter names the key in clear"
   },
+  {
+   "key": "k-narvaez-argumedo",
+   "target": "argumedo1921",
+   "how": "read unchanged",
+   "note": "applied unchanged to the 25 runs Narváez did not print in 2015; on his 10 printed runs it gives 88 of 89 letters"
+  },
     {
    "key": "k-clave-extra3",
    "target": "murguia1914",
@@ -8722,6 +8745,12 @@
    "target": "montcalm1757w",
    "how": "rebuilt from",
    "note": "indexed from the decipherment written between the lines of the same pages; the reading is that decipherment, not a decoding with the index"
+  },
+  {
+   "key": "k-butzbach1641",
+   "target": "butzbach1641",
+   "how": "adapted",
+   "note": "strip applied to the whole sheet (667 of 682 numbers in 11-34); two extra values, 38 and 39, deduced from the sheet"
   },
   {
    "key": "k-weber-we025",
@@ -10359,6 +10388,11 @@
   "gordonmudir1884": "Not read: no key reads the note. The one key tried, the Durham table SAD.250/1/81 (both Arabic columns, as read), does not fit and is recorded under tried."
  },
  "tried": [
+  {
+   "key": "k-narvaez-argumedo",
+   "target": "duhart1921",
+   "note": "Narváez's Argumedo number table does not fit: the Duhart runs are letters, a swap of five letter pairs"
+  },
   {
    "key": "k-guiana1757",
    "target": "fiedmond1779",

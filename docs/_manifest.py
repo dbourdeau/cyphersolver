@@ -451,6 +451,11 @@ PAGES = [
          blurb='A cipher letter of the Spanish ambassador at Genoa about a marquis who was stalling on money for munitions. Brice Dudout rebuilt the numerical cipher on neighbouring letters that survive with a contemporary clear copy, tested it on a held-out pair (0.896 of characters), and read this letter, which has no clear copy.',
          quote='&ldquo;que el marqu&eacute;s de Legan&eacute;s &hellip;&rdquo; (code 250, read here as Pallavicino)',
          rights='Letter: Archivo General de Simancas, Estado leg. 3594 no. 156, via PARES; reading by Brice Dudout, Europe chiffr&eacute;e'),
+    dict(slug='butzbach1641', label='Philippsburg relief sheet 1641', year='1641', y=1641.5, place='Unknown &rarr; unknown (Philippsburg relief)', st='partial', stt='read in part',
+         title='A numeric cipher sheet on the relief of Philippsburg, 1641',
+         blurb='A loose sheet of two-digit numbers in the papers of Landgrave Philipp of Hesse-Butzbach at Darmstadt, filed with the 1641 almanac and other cipher items. The key, a=11 to z=34, is on a small strip of the same file; applied to the sheet it gives continuous German. The writer has been at Zabern pressing the Imperial and Spanish commanders to relieve Philippsburg and promises regiments and money. Read in part: 98 of 124 words are sure (79.0%); 15 are probable and 11 unresolved, most under a blot, a hole or a pasted slip. Neither writer nor addressee is named; a new scan, as the contributor reports, gives Hagenau, 22 December, with no year, and the year (1633/34 or 1641) is not settled.',
+         quote='&ldquo;die entsetzung Philippsburg zu befurdern bin ich selbsten etliche tag zu Zabern gewesen&rdquo;',
+         rights='Hessisches Staatsarchiv Darmstadt, D 4 Nr. 76/6, via Deutsche Digitale Bibliothek / Archivportal-D; transcription and reading for Brice Dudout, Europe chiffr&eacute;e'),
     dict(slug='hatzfeldt1641', label='Ferdinand III to Hatzfeldt 1641', year='1641', y=1641.7, place='Regensburg &rarr; Hatzfeldt', st='partial', stt='read in part',
          title='Ferdinand III to Hatzfeldt, Regensburg, August&ndash;September 1641',
          blurb='Five cipher pieces of the Emperor Ferdinand III to Field Marshal Hatzfeldt in 1641, among them the ciphered copy of a bond of the city of Aachen. Hermann St&uuml;tzel printed the key in 1963 and no text; Brice Dudout transcribed and read the pieces, 94.1% of 859 cipher words.',
@@ -2678,6 +2683,11 @@ PAGES = [
          blurb='Seventeen runs of typed capitals in a clear Spanish letter, written with a swap of five letter pairs read off one English sentence, give the names of the men of the 1921 felicista exile in New York (11 of 16 other runs exact, 252 of 260 letters). 50 of 57 cipher words read as typed; seven carry a typing slip. Read in part.',
          quote='&ldquo;If this man has anything to do with this matter I won&rsquo;t recommend to put a damn nickel&rdquo;',
          rights='Images: CEHM-Carso, Fondo DCXXI (Archivo de F&eacute;lix D&iacute;az), via visor.cehm.org.mx; transcription, key and reading by WAINUT'),
+    dict(slug='argumedo1921', label='Argumedo, Mexico City 1921', year='1921', y=1921.77, place='Mexico City &rarr; F&eacute;lix D&iacute;az', st='partial', stt='read in part',
+         title='Argumedo to F&eacute;lix D&iacute;az, 5 and 20 October 1921',
+         blurb='Two felicista letters in clear Spanish hide names and key words in two-digit pairs. Narv&aacute;ez published the table in 2015 with the clear of ten runs; the 25 runs he did not print are deciphered here with his table, unchanged: a Michoac&aacute;n landowner offers his hacienda and 80 to 100 armed men, and a nombramiento for Panind&iacute;cuaro is granted with the rank of colonel. 41 of 50 cipher words come out of the key as written; the other nine carry a writer&rsquo;s slip, an overstrike or a letter of uncertain sense. Read in part.',
+         quote='&ldquo;el cual se le concedi&oacute; con el grado de coronel&rdquo;',
+         rights='Text only: the CEHM-Carso images (Fondo DCXXI, Archivo de F&eacute;lix D&iacute;az, visor.cehm.org.mx) are linked, not reproduced; transcription and reading by Brice Dudout with AI agents'),
     dict(slug='sanchez1922', label='S&aacute;nchez, Puebla 1922', year='1922', y=1922.03, place='Puebla &rarr; New Orleans', st='partial', stt='read in part',
          title='F. S&aacute;nchez to &ldquo;Jos&eacute; Gonz&aacute;lez&rdquo;, 12 January 1922',
          blurb='Eleven runs of lower-case cipher words in a clear Spanish letter, read with the shift key 313 that the letter names and that Narv&aacute;ez published for another letter of the fondo: the death of a General Landeros, a newspaper &ldquo;El L&aacute;tigo&rdquo; to be printed in Tlaxcala, greetings from friends, a cover address in Puebla, the signature. 23 of 32 cipher words read as typed. Read in part.',
@@ -3801,6 +3811,7 @@ IMAGES['klingenberg1675'] = ('klingenberg1675_lead.jpg', 'Image 209R (p. 205), l
 IMAGES['duron1911'] = ('duron1911_lead.jpg', 'The cipher of the telegram as typed: five-letter groups, the first two signs a header; &ldquo;YELL Y&rdquo; is spaced so on the form', 'Centro de Estudios de Historia de M&eacute;xico (CEHM), Fundaci&oacute;n Carlos Slim, Archivo Federico Gonz&aacute;lez Garza, CMXV.18.1777.1-6, public image on the CEHM viewer (crop)')
 IMAGES['duhart1921'] = ('duhart1921_lead.jpg', 'Page 1 of the letter of 29 August 1921: the first four runs of typed capitals among the Spanish text', 'CEHM-Carso, Fondo DCXXI, DCXXI.3.231.1, image 0001, via visor.cehm.org.mx')
 IMAGES['sanchez1922'] = ('sanchez1922_lead.jpg', 'Page 2 of the letter of 12 January 1922: cipher words typed among the Spanish text, the greetings from friends', 'CEHM-Carso, Fondo DCXXI, DCXXI.3.323.1, image 0002, via visor.cehm.org.mx')
+IMAGES['argumedo1921'] = None
 IMAGES['murguia1914'] = ('murguia1914_lead.jpg', 'Page 4 of the typed copy: two-figure groups with the contemporary pencil decipherment above them', 'CEHM-Carso, Fondo LXVIII-1, LXVIII-1.14.1943.1, image 0004, via visor.cehm.org.mx')
 IMAGES['ewsum1535'] = ('ewsum1535_lead.jpg', 'Left page, top: the writer&rsquo;s key alphabet, his clear note on the null sign and the first lines of cipher', 'Groninger Archieven, 696 Familie van Ewsum, inv. nr. 595, scan 1, via archieven.nl')
 IMAGES['qaysarani1350'] = ('qaysarani1350_lead.jpg', 'F. 106v, the first two cipher lines, with red letters over the first five signs (at the right)', 'University of Pennsylvania, Kislak Center, LJS 51, f. 106v, via OPenn (image 0084_0217)')
@@ -3839,3 +3850,4 @@ IMAGES['lopezmendez1819'] = None
 
 IMAGES['edmondes1594'] = ('edmondes1594_lead.jpg', 'P. 559 of the 1892 calendar: the opening of the letter, with the printed cipher letters and the person signs 55, the m-sign and the ho-sign', 'Historical Manuscripts Commission, Calendar of the Manuscripts of the Marquis of Salisbury, part IV (1892), p. 559, via the Internet Archive (item 11576077bsb)')
 IMAGES['humphreys1799'] = ('humphreys1799_lead.jpg', 'No. 188, 19 March 1799: the 56 code groups after &ldquo;This Gentleman&rdquo;', 'National Archives (NARA), RG 59, Despatches from U.S. Ministers to Spain, vol. 4, microfilm M31 roll 5, frame 0294, via the National Archives Catalog')
+IMAGES['butzbach1641'] = None

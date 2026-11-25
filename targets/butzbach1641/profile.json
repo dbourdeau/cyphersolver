@@ -84,7 +84,7 @@
   "models": [
    "Claude Opus 5.5 (Anthropic), agents run by Brice Dudout"
   ],
-  "sessions": 1,
+  "sessions": 3,
   "first_date": "2026-11-16",
   "last_date": "2026-11-25"
  },
@@ -119,7 +119,7 @@
   {
    "date": "2026-11-17",
    "kind": "reading",
-   "what": "124 words: 97 sure, 16 probable or restored, 11 unresolved (reading.md; 95 sure before the blind shape check answered by Brice Dudout, 18 Nov 2026).",
+   "what": "124 words: 95 sure, 18 probable or restored, 11 unresolved (reading.md as of 17 Nov 2026).",
    "result": "partial"
   },
   {
@@ -129,10 +129,16 @@
    "result": "failed"
   },
   {
+   "date": "2026-11-18",
+   "kind": "verification",
+   "what": "Blind shape check of 15 boxed numbers on the microfilm (12 targets, 3 controls, 3 of 3 as expected), answered by Brice Dudout (blind_check/, sheet of 17 Nov 2026). gräfliche and dapffer made sure (97 sure, 16 probable or restored, 11 unresolved of 124); the last number of entsetzung seen as 27 (r), not 17 (g), so the word stays probable; the end of gesch... seen as 27 ... 22, no word; tag, mittwoch and also left open by the remarks. No selection rule hashed before the answers, so not outcome.sign_check.",
+   "result": "partial"
+  },
+  {
    "date": "2026-11-25",
    "kind": "verification",
-   "what": "Second blind shape check of 9 boxed numbers (3 controls as expected) answered by Brice Dudout on a new scan sent by HStA Darmstadt: mittwoch sure (98/124); geschossen and Hagenaw confirmed on the new scan; decembris written decemmris; the sign after it unresolved.",
-   "result": "worked"
+   "what": "Second blind shape check of 9 boxed numbers (6 targets, 3 hidden controls, 3 of 3 as expected), answered by Brice Dudout on a new colour scan sent by HStA Darmstadt for private study (not seen here). mittwoch made sure (98 sure, 15 probable or restored, 11 unresolved of 124). The answers support geschossen (l. 24) and the spelling Hagenaw on the new scan, as reported by Brice Dudout; not counted here, since neither word is in this folder's transcription. decembris written decemmris (stays probable); the sign after it unresolved, no year read. 6 target signs, under the outcome.sign_check minimum.",
+   "result": "partial"
   }
  ],
  "outcome": {
@@ -148,21 +154,21 @@
   "key": "recovered",
   "gaps": [
    {
-    "item": "11 unresolved places (reading.md)",
+    "item": "9 of the 11 unresolved places (reading.md)",
     "blocker": "illegible",
-    "detail": "blot, hole and pasted slip on lines 7-8, 20, 24, 26-28 and the two slips; 398 off the key"
+    "detail": "blot, hole, crossing-out and cut slip on lines 7-8, 20, 24, 26-28 and slip S1"
    },
    {
-    "item": "date",
-    "blocker": "not-attempted",
-    "detail": "1641 from the file; 1633/34 suggested by Brice Dudout from the content, not checked"
+    "item": "the number 398 and the group sammigerku... on slip S2",
+    "blocker": "no-key-material",
+    "detail": "legible; 398 is off the key (three digits, read the same in both passes) and the decode of sammigerku... gives no sense"
    }
   ],
   "verification": [
    "key confirms"
   ],
   "provenance": "contributed",
-  "notes": "Microfilm images only (black and white); a better image of view 13 could settle lines 1, 7-8, 20, 24 and 26-28.",
+  "notes": "Microfilm images (black and white) for the reading counted here. HStA Darmstadt sent a new colour scan of view 13 and its verso on 25 Nov 2026 for private study (not public, not included, not seen here); the re-reading on it, reported by Brice Dudout, comes in a separate pull request.",
   "texts": [
    {
     "doc": "view13",
@@ -183,9 +189,9 @@
     "read_share": 0.79,
     "reading_review": {
      "grade": "B",
-     "by": "Claude (Opus 5.5), contributor's own",
-     "date": "2026-11-17",
-     "note": "Known key; two passes by the same reader; not a second reader. 18 Nov 2026: blind shape check of 15 boxed numbers answered by Brice Dudout (3 controls as expected); 2 words made sure, see reading.md; sheet, key, answers and hashes in blind_check/. 25 Nov 2026: second blind sheet of 9 boxed numbers on a new scan from the archive (3 controls as expected); mittwoch made sure; geschossen, Hagenaw and the date confirmed on the new scan (to be counted with its transcription), see reading.md and blind_check/."
+     "by": "integration review of PR #781 (AI agent, for the maintainers); not a person",
+     "date": "2026-11-25",
+     "note": "Known key from the same file; decryption reproduced from digits_arbitrated.txt (682 numbers, 667 in 11-34). Count recounted from reading.md: 124 words, 98 sure, 15 probable or restored, 11 unresolved (0.79). Blind shape checks answered by Brice Dudout (contributor): 18 Nov, 15 questions, 3 of 3 controls; 25 Nov on a private colour scan, 9 questions, 3 of 3 controls. Neither meets the outcome.sign_check minimum (no pre-hashed rule; 6 signs). Not a second reading against the image: the doubtful places on the public microfilm could not be settled by the reviewer, and the private scan was not seen."
     }
    }
   ],

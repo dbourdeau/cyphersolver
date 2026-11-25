@@ -1,6 +1,6 @@
 # argumedo1921: Argumedo's letters to Félix Díaz, 5 and 20 October 1921 (catalogue 1445)
 
-Status: read in part (Brice Dudout, with AI agents, 25 Nov 2026; the 25 cipher runs Narváez did not print: 32 words, 25 read as the key gives them, 7 marked encipherer slips, none unread; no person has checked the reading yet).
+Status: read in part (Brice Dudout, with AI agents, 25 Nov 2026; the 25 cipher runs Narváez did not print: 32 words, 25 read as the key gives them, 7 marked encipherer slips, none unread; both letters together 41 of 50 cipher words, 0.82, under the 95% bar; the 20 October letter alone is read by the short-text floor; no person has checked the reading yet). Written up 25 Nov 2026: docs/argumedo1921.html.
 
 This target **completes Narváez's reading**; it is not a new break. Roberto Narváez broke the system and printed the
 table (Documenta & Instrumenta 13, 2015, p. 122), and printed the clear of 10 runs. He wrote that the table reads the
@@ -74,6 +74,8 @@ Obregón's government the "reigning horde" and its men the "Agua Prieta mob".
   clear of the 10 control runs. The 25 runs read here are not printed there.
 - Narváez's book *Criptografía diplomática, política y militar en México (1813-1926)* (Mexico, 2019), cited in #941
   for the Wellington letter, was not consulted for these two letters: it may print more of them.
+- DECODE: no record for these letters (known.py on the project's DECODE harvest dumps, write-up of 25 Nov 2026: no
+  hit for Argumedo or DCXXI).
 - This repository (25 Nov 2026): no target, PR or issue on Argumedo; catalogue 1445 cites the two letters as broken by
   Narváez, without a target. Family: duhart1921 (#511) and sanchez1922 (#512), both WAINUT; wellington1922 (#941,
   Andrew Beling, open at the time of writing).
@@ -90,22 +92,37 @@ Obregón's government the "reigning horde" and its men the "Agua Prieta mob".
 
 ## Remaining gaps
 
-- The seven marked words of the new runs (AGUA, BENÍTEZ twice, H., ALFREDO, DÍAZ, FÉLIX) - blocker: illegible; the
-  writer's signs are wrong by one code or overstruck, so the key does not give them as written; each is read by the
-  sense and listed above.
+- A04, A{?/G}UA PRIETA (3.244.1 f. 1) - blocker: illegible; the second pair is a 0 with 6 and 3 typed one over the
+  other; 03 gives Agua Prieta, 06 no word.
+- The six other marked words of the new runs (BENÍTEZ twice, H., ALFREDO, DÍAZ, FÉLIX) - blocker: illegible; the
+  writer's signs are wrong by one code (seen on the image) or, for H., of uncertain sense, so the key does not give
+  them as written; each is read by the sense and listed above. No second copy of either letter was found (siblings,
+  25 Nov 2026), so no other witness can give them.
 
 ## Limits of the check (not gaps in the reading)
 
-- No person has checked the transcription or the reading against the images; the reading review is the solving model's own.
-- Narváez's 2019 book was not consulted: it may print more of these two letters.
+- No person has checked the transcription or the reading against the images. The reading review in the profile is the
+  integration review of PR #962 (an AI agent for the maintainers, grade B), which compared the runs with the images at
+  A01-A26 and B05-B09; it replaced the solving model's own review.
+- Narváez's 2019 book could not be opened or searched (write-up, 25 Nov 2026): Google Books has the edition
+  (id 1CrBzgEACAAJ) with "Preview unavailable" and "Search inside unavailable"; the gdata feed finds no text for
+  Argumedo, Panindícuaro or Benítez/Heredia; books.google.* answered with a CAPTCHA and the SRE catalogue page with a
+  bot check. G. Martínez Carmona's review (Historia Mexicana 72.2, pp. 963-966, read via SciELO) says the chapters were
+  published before (2007-2015) and modified for the book, and does not name Argumedo. The book's Wellington section
+  (pp. 364-369) prints the same runs as the 2015 article (see ../wellington1922/NOTES.md), but whether its Argumedo
+  pages print more than 2015 is not known. If they print these runs, the method for them becomes "read from existing
+  decipherment". Andrew Beling, who worked from a loan copy for eaglepass1917 and wellington1922, could check it.
 
 ## Escalation
 
-- [x] siblings: catalogue 1445 (duhart1921, sanchez1922, wellington1922). Next candidate: Amaya, Havana, DCXXI.3.242.1,
-  "two-digit numbers with pencil letters", not tested with this table.
+- [x] siblings: catalogue 1445 (duhart1921, sanchez1922, wellington1922). Amaya, Havana, DCXXI.3.242.1 (to Félix Díaz,
+  27 Sep 1921) fetched from the CEHM-Carso viewer and looked at on 25 Nov 2026: its pairs run to 79, 86, 90, 96 and 97,
+  outside the 01-37 of this table, so it is another table, not a sibling. Mina (3.263.1, 3.278.1) uses groups of
+  numbers and letters. No second copy of either Argumedo letter found.
 - [x] clear-pages: the clear text around every run agrees with the reading; the second letter answers the first.
 - [x] known-keys: Narváez's table applied unchanged.
-- [x] print: Narváez 2015 read for these letters (the clear of 10 runs, none of the 25 read here); his 2019 book not consulted (see Limits).
+- [x] print: Narváez 2015 read for these letters (the clear of 10 runs, none of the 25 read here); his 2019 book
+  searched for on 25 Nov 2026 and not reachable (no preview, no search inside; see Limits): not known whether it prints them.
 - [x] retry: every marked word looked at again on the image and against the decode; the slips stand as listed.
 - [n/a] key-rebuild: the table is complete for these letters.
 

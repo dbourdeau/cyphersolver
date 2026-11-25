@@ -100,7 +100,7 @@
  "conditions": {
   "prior_solution": {
    "exists": "partial",
-   "where": "Narváez 2015 pp. 117-122: system, table, and the clear of 10 runs of these two letters; he says the table reads the rest and prints none of it (3.244.1 cut with '[...]'; the four f. 2 runs of 3.250.2 in cipher only). His 2019 book was not consulted.",
+   "where": "Narváez 2015 pp. 117-122: system, table, and the clear of 10 runs of these two letters; he says the table reads the rest and prints none of it (3.244.1 cut with '[...]'; the four f. 2 runs of 3.250.2 in cipher only). His 2019 book could not be opened or searched (25 Nov 2026): whether it prints more of these letters is not known.",
    "found": "before attempt",
    "used": true
   },
@@ -148,6 +148,18 @@
    "kind": "reading",
    "what": "The 25 runs Narváez did not print read in their clear sentences: 32 words, 25 as the key gives them, 7 marked one-code slips or overstrikes, none supplied or unread. check_marks.py passes.",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-25",
+   "kind": "literature search",
+   "what": "Write-up escalation (print): does Narváez's book Criptografía diplomática, política y militar en México (1813-1926) (SRE, 2019, 495 pp.) print these runs? Google Books (id 1CrBzgEACAAJ) shows 'Preview unavailable' and 'Search inside unavailable'; the gdata feed finds no text for Argumedo, Panindícuaro or Benítez/Heredia; books.google.* gave a CAPTCHA, and the SRE catalogue page a bot check. The Historia Mexicana review (G. Martínez Carmona, 72.2, pp. 963-966, via SciELO) says the chapters were published before (2007-2015) and modified for the book, and that pp. 370-371, 374-375, 378 and 382-383 were missing from the reviewer's printed copy; it does not name Argumedo. The book's Wellington section (pp. 364-369) prints the same runs as the 2015 article (wellington1922 NOTES). Whether the Argumedo pages of the book print more than 2015 could not be told.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-25",
+   "kind": "sibling key",
+   "what": "Write-up escalation (siblings): the Amaya letter of catalogue 1445 (DCXXI.3.242.1, Havana, 27 Sep 1921, to Félix Díaz), the one other felicista letter noted with two-digit numbers, fetched from the CEHM-Carso viewer (images 0001-0002) and looked at: its pairs run to 79, 86, 90, 96 and 97, outside the 01-37 of Argumedo's table, so it is another table. The Mina letters use groups of numbers and letters (catalogue 1445 note). No other letter in this table and no second copy of Argumedo's two letters was found.",
+   "result": "ruled out"
   }
  ],
  "outcome": {
@@ -159,7 +171,7 @@
   "class": "read in part",
   "key": "recovered",
   "method": "read with known key",
-  "method_basis": "Narváez's published table for these two letters (2015, p. 122), applied unchanged to the 25 runs he did not print; this completes his reading.",
+  "method_basis": "Narváez's published table for these two letters (2015, p. 122), applied unchanged to the 25 runs he did not print in 2015; this completes his reading. His 2019 book could not be searched; if it prints these runs, the method for them would become read from existing decipherment.",
   "contribution": [
    "transcription"
   ],
@@ -251,9 +263,14 @@
   ],
   "gaps": [
    {
-    "item": "the seven marked words of the new runs: A{?/G}UA, BEN{E/I}TEZ x2, {H}, {D/A}LFREDO, D{E/I}AZ, FELI{Z/X}",
+    "item": "A04, A{?/G}UA PRIETA (3.244.1 f. 1)",
     "blocker": "illegible",
-    "detail": "The writer's signs are one code off or overstruck, so the key does not give the word as written; each is read by the sense and listed in the reading."
+    "detail": "The second pair is a 0 with 6 and 3 typed one over the other; 03 gives Agua Prieta, 06 no word."
+   },
+   {
+    "item": "six marked words of the new runs: BEN{E/I}TEZ x2, {H} before HEREDIA, {D/A}LFREDO, D{E/I}AZ, FELI{Z/X}",
+    "blocker": "illegible",
+    "detail": "The writer's signs are one code off (seen on the image) or, for {H}, of uncertain sense, so the key does not give the word as written; each is read by the sense. No second copy of either letter was found (siblings step, 25 Nov 2026), so no other witness can give them."
    }
   ]
  }
