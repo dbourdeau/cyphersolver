@@ -660,6 +660,12 @@
    ],
    "what": "Integration review of PR #822 (AI agent, for the maintainers; not a person). A decoder written by the reviewer from key/key-table-R4033.tsv and the digit rows reproduces the 78 decode rows of R4034 to R4038 (1,791 code tokens: 1,667 with a value from the table, 70 on code 29, 17 on a code the key does not hold, 37 doubtful). An own alignment of the five readings with the decode finds no unmarked departure and recounts the cipher words as the contributor gives them. All 70 tokens of code 29 fall on an unchanged t of the readings; the contributor's public key file of 19 Nov 2026 14:05 UTC is byte-identical to key/key-earlier-blind.tsv and holds 29 = t. Read as sentences: R4035, R4037 and R4038 build coherent Italian (reading review grade B, read in part: 26 of 29, 201 of 243 and 41 of 50 cipher words sure); R4034 does so only in passages 4, 6 and 8 and R4036 does not, and both stay decoded, not read. The digit rows and the key table were not checked against the DECODE images.",
    "result": "partial"
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "reading",
+   "what": "Added strictly aligned working Italian readings (readings/r4039_reading.md, r4047_reading.md, r4054_reading.md) and English translations for three blind main-system letters, with every bare [... N] mark sized from the mechanical decode and verified by scripts/verify_main_readings.py (0 unmarked departures, 0 doubtful-digit crossings): R4039 304/454 size-adjusted (0.670; raw 304/440), R4047 61/147 (0.415; raw 61/125), R4054 106/231 (0.459; raw 106/203). All three remain filed as decoded, not read awaiting maintainer reading review.",
+   "result": "partial"
   }
  ],
  "outcome": {
@@ -873,8 +879,13 @@
     "decryption": "r4039.md",
     "state": "decoded, not read",
     "language": "it",
-    "summary": "Cosimo writes about a marriage alliance and \"the matter of the wife\". His intention in the matter of the wife has always been the same, from the start until now. He encloses a copy of a letter. Its aim is to cut off this negotiation entirely, because it is too contrary to his mind. He warns Niccolini about one man. That man is not to be trusted, and he fears to lose \"his penitentiary\" (an office). The same man acted against Duke Alessandro \"of good memory\", and against Cosimo at his arrival.",
-    "note": "Counts by the word rule (an estimate): 321 cipher words, 188 sure, 133 holes; read share 0.586. README.md."
+    "summary": "Cosimo writes to Niccolini about a marriage negotiation and 'the matter of the wife', declaring his resolve unchanged, instructing Niccolini to cut off an unwanted negotiation driven by a man's fear of losing his penitentiary office, recalling what the same man did to Duke Alessandro and to Cosimo himself, and refusing to let another's folly harm him.",
+    "note": "Working aligned reading in readings/r4039_reading.md and translation in readings/r4039_en.md (filed as decoded, not read pending maintainer review). scripts/verify_main_readings.py: 304 sure cipher words, size-adjusted estimate 454 cipher words (150 holes, share 0.670) with each [... N] sized from the decode (max 17 symbols; raw 1-per-mark 304/440 = 0.691). Zero unmarked departures.",
+    "reading": "readings/r4039_reading.md",
+    "translation": "readings/r4039_en.md",
+    "read_share": 0.67,
+    "cipher_words": 454,
+    "holes": 150
    },
    {
     "doc": "R4041",
@@ -943,8 +954,13 @@
     "decryption": "r4047.md",
     "state": "decoded, not read",
     "language": "it",
-    "summary": "Cosimo writes about a \"motu proprio\" (an act that the pope issues on his own initiative) and about how to use it. The matter \"would turn to our great advantage, more than theirs\". He hopes that they will do it, and he says that it is right to act \"at the right time and place\". He wants to make them feel \"a great suspicion\". When \"this fear\" is taken away, \"another suspicion\" stays \"in this cause\".",
-    "note": "Counts by the word rule (an estimate): 83 cipher words, 44 sure, 39 holes; read share 0.530. README.md."
+    "summary": "Cosimo writes about an inheritance and a 'motu proprio' of Leo, advising Niccolini to drop a remark at the right time and place to stir suspicion so that once fear of this matter is removed, the remaining cause stands clearer (closing clause has a gap before 'ci resta' that may hold a negation).",
+    "note": "Working aligned reading in readings/r4047_reading.md and translation in readings/r4047_en.md (filed as decoded, not read pending maintainer review). scripts/verify_main_readings.py: 61 sure cipher words, size-adjusted estimate 147 cipher words (86 holes, share 0.415) with each [... N] sized from the decode (max 38 symbols; raw 1-per-mark 61/125 = 0.488). Zero unmarked departures.",
+    "reading": "readings/r4047_reading.md",
+    "translation": "readings/r4047_en.md",
+    "read_share": 0.415,
+    "cipher_words": 147,
+    "holes": 86
    },
    {
     "doc": "R4048",
@@ -1003,8 +1019,13 @@
     "decryption": "r4054.md",
     "state": "decoded, not read",
     "language": "it",
-    "summary": "Cosimo writes about the arrest of one Biagio della Campana. The passage also names Giulio, the natural son of Duke Alessandro. Biagio della Campana had always kept company with \"the sons of Bartolomeo Valori\". He was taken two years before and examined. Many crimes were found in him, which deserved every punishment. A sentence of the Balìa condemned him, and he was sent to the fortress of Pisa. Later he was freed, with many other prisoners.",
-    "note": "Counts by the word rule (an estimate): 179 cipher words, 92 sure, 87 holes; read share 0.514. README.md."
+    "summary": "Cosimo writes about the arrest and examination of Biagio della Campana (formerly condemned by the Eight of the Balia and sent to the fortress of Pisa), his involvement with Giovan Francesco da Mantova and de' Marzi in an alleged plot to poison Giulio, natural son of Duke Alessandro, and his departure toward Rome and imprisonment. Touches the same affair printed in a sister letter in Ferrai (1882, p. 136 n. 1); check.md notes the letter match cannot tell whether it is the same letter.",
+    "note": "Working aligned reading in readings/r4054_reading.md and translation in readings/r4054_en.md (filed as decoded, not read pending maintainer review). scripts/verify_main_readings.py: 106 sure cipher words, size-adjusted estimate 231 cipher words (125 holes, share 0.459) with each [... N] sized from the decode (max 35 symbols; raw 1-per-mark 106/203 = 0.522). Zero unmarked departures.",
+    "reading": "readings/r4054_reading.md",
+    "translation": "readings/r4054_en.md",
+    "read_share": 0.459,
+    "cipher_words": 231,
+    "holes": 125
    }
   ],
   "key_file": [
