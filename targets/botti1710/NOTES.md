@@ -2,7 +2,7 @@
 
 British Library, Add MS 20443 (papers of Cardinal F. A. Gualterio). DECODE records R8468 to R8470, R8617, R8618 and R8659 to R8718: 51 records, 194 pages with cipher rows.
 
-Status: read in part. This folder is a contribution from outside (prabal-rje), sent as a pull request. Seven pure-blind dotted letters (R8660, R8661, R8664, R8665, R8668, R8673, R8718; none carries any contemporary clerk decipherment) now carry strictly aligned word-divided Italian readings and English translations (`readings/`, verified by `scripts/verify_readings.py`: 508 of 781 cipher words sure = 0.650). The other 44 letters stay decoded, not read. The maintainer sets the final status, class, and independent reading review.
+Status: in progress. This folder is a contribution from outside (prabal-rje), sent as a pull request. The maintainer sets the status, the class and the reading review.
 
 ## What the documents are
 
@@ -50,7 +50,7 @@ Status: read in part. This folder is a contribution from outside (prabal-rje), s
 
 - Each record page gives the decode row by row, and names the cipher row of each line.
 - 35,757 code tokens and decode units on 147 pages: 26,566 code tokens of the letters with dots (including 522 tokens across the four pages added on 22 November 2026) and 9,191 decode units of the letters without dots. 35,062 show a value.
-- Seven pure-blind dotted letters (`R8660`, `R8661`, `R8664`, `R8665`, `R8668`, `R8673`, `R8718`; none carries any contemporary clerk decipherment, and their mechanical decodes use only the 21-letter ciphertext-only key with all 14 clerk-derived values hidden as `·`) have strictly aligned word-divided Italian readings (`readings/rXXXX_reading.md`) and English translations (`readings/rXXXX_en.md`). `scripts/verify_readings.py` verifies zero unmarked departures from the unedited mechanical decodes: 508 of 781 cipher words sure (0.650; R8718 57/72 = 0.792, R8673 77/103 = 0.748, R8661 69/101 = 0.683, R8668 88/129 = 0.682, R8660 124/203 = 0.611, R8665 34/61 = 0.557, R8664 59/112 = 0.527). The remaining 44 letters stay "decoded, not read" in `profile.json`.
+- Seven pure-blind dotted letters (`R8660`, `R8661`, `R8664`, `R8665`, `R8668`, `R8673`, `R8718`; none carries any contemporary clerk decipherment, and their mechanical decodes use only the 21-letter ciphertext-only key with all 14 clerk-derived values hidden as `·`) have working word-divided Italian readings (`readings/rXXXX_reading.md`) and English translations (`readings/rXXXX_en.md`) linked from `profile.json` and awaiting maintainer reading review. `scripts/verify_readings.py` verifies zero unmarked departures from the unedited mechanical decodes: 524 of 804 cipher words sure (0.652; R8718 57/72 = 0.792, R8673 77/103 = 0.748, R8661 85/124 = 0.685, R8668 88/129 = 0.682, R8660 124/203 = 0.611, R8665 34/61 = 0.557, R8664 59/112 = 0.527). All 51 documents remain filed as "decoded, not read" in `profile.json` pending maintainer review.
 
 ## Word counts
 
@@ -74,28 +74,28 @@ So those 44 record pages count code tokens, open codes and items that are not co
 
 The 191 digit files in `transcription/` are reconciled two-pass AI transcriptions of the DECODE images; no person has checked them against the scans. Every doubtful sign (`?`) and every polyphonic or open code stays open and is counted as a hole in `scripts/verify_readings.py`.
 
-- Code `17` (`r`/`q`) and code `10` (`a`/`u`/`v`) across the 1710-1713 letters (e.g. `R8718 T004 C08 ruesta`, `R8661 T001 C05 raaenna`, `R8660 T005 C08 raesto`, `R8668 T005 C04 ruali`) - read: kept literal `r`/`a` in the unedited mechanical decodes, marked `[q]`/`[u]` in `readings/`; checked: image, decode; open between `r`/`q` and `a`/`u` without BL Add MS 20244, every instance counted as a hole.
-- Doubtful digit marks `?` and unread notes in the 7 read letters (`R8718` 14 items, `R8673` 11, `R8661` 21, `R8668` 47, `R8660` 58, `R8664` 31, `R8665` 25) - read: `[...]` or bracketed `[x]` in `readings/`; checked: image, decode; two-pass reconciliation left these signs doubtful on the DECODE images, and every affected word counts as a hole.
-- Clipped right margin on `R8662 T003` and clipped fragment `R8468 T003` - read: withheld / open; checked: image, decode; physical margin clipping prevents reliable decoding.
+- Code `17` (`r`/`q`) and code `10` (`a`/`u`/`v`) across the 1710-1713 letters (e.g. `R8718 T004 C08 ruesta`, `R8661 T001 C05 raaenna`, `R8660 T005 C08 raesto`, `R8668 T005 C04 ruali`) - read: kept literal `r`/`a` in the unedited mechanical decodes, marked `[q]`/`[u]` in `readings/`; checked: decode (not checked by a human against scans); open between `r`/`q` and `a`/`u` without BL Add MS 20244, every instance counted as a hole.
+- Doubtful digit marks `?` and unread notes in the 7 letters with readings (`R8718` 14 items, `R8673` 11, `R8661` 21, `R8668` 47, `R8660` 58, `R8664` 31, `R8665` 25) - read: `[...]` or bracketed `[x]` in `readings/`; checked: decode (not checked by a human against scans); two-pass AI reconciliation left these signs doubtful, and every affected word counts as a hole.
+- Clipped right margin on `R8662 T003` and clipped fragment `R8468 T003` - read: withheld / open; checked: decode; physical margin clipping prevents reliable decoding.
 
 ## Remaining gaps
 
 - Code 17 (255 tokens): r or q - blocker: open-codes; the clerk writes r 66 times and q 39 times at its places.
-- Code 17 before code 10 (`17.10.`): 74 places in the rows of the letters with dots where both signs are sure, and 26 more where a sign is doubtful (100 in all, by the leading reading of each doubtful sign) - blocker: open-codes; the key keeps 17 as r and 10 as a, and every `[q]`/`[u]` restoration in `readings/` is counted as a hole.
+- Code 17 before code 10 (`17.10.`): 74 places in the rows of the letters with dots where both signs are sure, 26 more where a sign is doubtful, and 1 (`R8695 T003 C13`) with a sign marked `[?]` after 10 (101 in all) - blocker: open-codes; at the 72 sure places on pages decoded here, the decode gives `raesto` (8), `raale` (5), `raesta` (4) and `rael` (3), which read *questo*, *quale*, *questa* and *quel* with 17 = q and 10 = u; some groups read with r (*fratello*, *tragedia*, *ringrazio*); the key keeps 17 as r and 10 as a, and every `[q]`/`[u]` restoration in `readings/` is counted as a hole.
 - 90 rare codes with no value (191 tokens in the letters with dots) - blocker: no-key-material; the Gualterio cipher tables (BL Add MS 20244) are offline and not opened.
 - One page not shown (`R8662 T003`, right margin clipped) and `R8468 T003`/`T007` - blocker: illegible; clipped margins and five unsure sign labels on T007.
 - `R8618 T002` (one code between spaces, unknown word breaks) - blocker: no-key-material; several tries on 16 to 18 November did not settle its key.
 - 45 pages under 100 digits or with no cipher digit - blocker: too-short.
-- 44 remaining records (29 carrying contemporary clerk decipherments, 5 undotted letters with noisier segmentation, and 10 sparser blind letters) remain decoded, not read - blocker: open-codes; dense `?` doubt marks and unvalued rare codes keep them under sentence-reading quality until BL Add MS 20244 or human image checks resolve the remaining codes.
+- 44 remaining records (29 carrying contemporary clerk decipherments, 5 undotted letters, and 10 sparser blind letters) have no sentence-level reading yet - blocker: not-attempted; working readings have so far been prepared only for the 7 pure-blind dotted letters in `readings/`.
 
 ## Escalation
 
 - [x] siblings: one key for all 51 records (the letters without dots read with the key of the letters with dots; `check.md`)
-- [x] clear-pages: the clerk's decipherments on 29 letters used as a grade and for 14 code values (`check.md`), kept hidden on all dotted decodes and absent from all 7 read blind letters
-- [x] known-keys: checked `targets/bay1706` (unrelated "Bottigor"/"Bottiger"); the Gualterio cipher tables (BL Add MS 20244) are not online and were not opened
+- [x] clear-pages: the clerk's decipherments on 29 letters used as a grade and for 14 code values (`check.md`), kept hidden on all dotted decodes and absent from all 7 blind letters with readings
+- [ ] known-keys: checked `targets/bay1706` (unrelated "Bottigor"/"Bottiger"); the Gualterio cipher tables (BL Add MS 20244) are offline and were not opened
 - [x] print: web search (23 Nov 2026) for Carlo Camillo Botti, Lazaro Botti, Gualterio, and BL Add MS 20443 found only the BL catalogue and DECODE entries, no published edition or decipherment
 - [x] key-rebuild: 21-letter key recovered from ciphertext alone (`key-and-read/`)
-- [x] retry: added strictly aligned Italian readings and English translations for 7 pure-blind letters (`readings/`, verified by `scripts/verify_readings.py`: 508/781 sure cipher words = 0.650)
+- [x] retry: added strictly aligned working Italian readings and English translations for 7 pure-blind letters (`readings/`, verified by `scripts/verify_readings.py`: 524/804 sure cipher words = 0.652)
 
 ## Files
 

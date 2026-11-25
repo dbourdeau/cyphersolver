@@ -2,7 +2,7 @@
 
 These are letters of the Abbate C. C. Botti, and perhaps of his uncle, the Abbate Lazaro Botti, to their patron, Cardinal Filippo Antonio Gualterio. DECODE's note and the British Library's catalogue name the correspondence. I take each letter to go to Gualterio; the volume also holds copies of his letters to Botti, so the direction of a letter is a doubt. The year numbers on the pages run from 1710 to 1713.
 
-This folder decodes the cipher of 51 DECODE records of British Library, Add MS 20443. The key of the letters is from ciphertext. Fourteen code values are from the clerk's decipherment on the pages. Seven pure-blind dotted letters (`R8660`, `R8661`, `R8664`, `R8665`, `R8668`, `R8673`, `R8718`; none carries any contemporary clerk decipherment) now carry strictly aligned word-divided Italian readings (`readings/`) and English translations verified by `scripts/verify_readings.py` (`508` of `781` cipher words sure = `0.650`). The other 44 letters stay **decoded, not read**.
+This folder decodes the cipher of 51 DECODE records of British Library, Add MS 20443. The key of the letters is from ciphertext. Fourteen code values are from the clerk's decipherment on the pages. All 51 records are filed as **decoded, not read** pending maintainer reading review; seven pure-blind dotted letters (`R8660`, `R8661`, `R8664`, `R8665`, `R8668`, `R8673`, `R8718`; none carries any contemporary clerk decipherment) carry working word-divided Italian readings (`readings/`) and English translations verified mechanically by `scripts/verify_readings.py` (`524` of `804` cipher words sure = `0.652`).
 
 ## Credit
 
@@ -21,7 +21,7 @@ DECODE's images are for research use only. They may not be redistributed or publ
 | Code 17 | decoded r; open between r and q |
 | 14 code values: 8 words and names, 1 word part, 5 letters | from the clerk's decipherment on the page |
 | 90 rare codes (191 tokens in the letters with dots) | open |
-| 7 pure-blind dotted letters (`R8660`, `R8661`, `R8664`, `R8665`, `R8668`, `R8673`, `R8718`) | read in part (`508/781` sure cipher words = `0.650`, `readings/`) |
+| 7 pure-blind dotted letters (`R8660`, `R8661`, `R8664`, `R8665`, `R8668`, `R8673`, `R8718`) | decoded, not read (working reading in `readings/`, `524/804` sure cipher words = `0.652`, awaiting maintainer review) |
 | Remaining 44 documents | decoded, not read |
 
 ## The numbers
@@ -47,7 +47,7 @@ The last figure is a share of letters. It is no read share by this ledger's rule
 - **1712 to 1713 (R8705 to R8718).** The communal dispute is settled. Help over a church benefice for a relative. Stronger foreign troops on the border despite peace rumours.
 - **Names in the decode:** Ravenna (R8660, R8661, R8664, R8717); Rasponi (R8660, R8668, R8670, R8689, R8691, R8717); Bosetti (R8668 to R8670). Code 62 ("Ruffo", a value from the clerk) has 31 tokens in the letters with dots; their decode shows it as `·`.
 
-These lines are guesses where the decode is broken. No document is read.
+These lines are guesses for the 44 records without sentence readings; the 7 pure-blind dotted letters linked in `readings/` remain filed as decoded, not read until maintainer reading review.
 
 ## The records
 
@@ -139,7 +139,8 @@ Each record page ends with the decode, row by row. It is the output of the key o
 
 - `NOTES.md`, `profile.json`: the notes and the profile of this target.
 - `check.md`: what was checked against what, with the numbers.
-- `r8468.md` to `r8718.md`: one page for each record: the state, the counts, a summary marked as a guess, and the decode row by row.
-- `scripts/decode_four_pages.py`: reproduces the unedited mechanical decode of R8666 T003, R8674 T001, R8677 T001, and R8710 T004 directly from `key-and-read/key.tsv`.
+- `r8468.md` to `r8718.md`: one page for each record: the state, the counts, a summary, and the decode row by row (the 7 pure-blind letters also link their working readings in `readings/`).
+- `readings/`: working word-divided Italian readings and English translations for 7 pure-blind dotted letters (`r8660`, `r8661`, `r8664`, `r8665`, `r8668`, `r8673`, `r8718`).
+- `scripts/decode_four_pages.py` and `scripts/verify_readings.py`: reproduce the unedited mechanical decode of R8666 T003, R8674 T001, R8677 T001, and R8710 T004 from `key-and-read/key.tsv` and verify strict alignment of `readings/`.
 - `key-and-read/`: the key with the source of each value, the sign labels of single pages, and the order of events of the frozen read.
 - `TRANSCRIPTION.md` and `transcription/`: my own transcription of the cipher rows, one file for each page with cipher digits.
