@@ -19,7 +19,7 @@ an overbar on a number doubles its letter (Vilgeehrter, herr). Line breaks insid
  9 cht, das etliche {keyserische} und
 10 spanische regimenter nunmehr
 11 {alhero} {im} anzug sein, und {gelieb-
-12 ts} gott gegen {mittwoch} und don-
+12 ts} gott gegen mittwoch und don-
 13 nerstag alhie eygentlich anlan-
 14 gen und alsdan diseits uff Phi-
 15 lippsburg zu marchiren werden.
@@ -51,11 +51,11 @@ Line 25 reads "gebracht" (17 15 12 27 11 13 18 29); the text posted in issue #74
 | | words |
 |---|---|
 | total (letter body and fragments, slips included) | 124 |
-| sure | 97 |
-| probable or restored | 16 |
+| sure | 98 |
+| probable or restored | 15 |
 | unresolved | 11 |
 
-Read share by the repository rule: 97 / 124 = 78.2 % (95 / 124 = 76.6 % before the blind check of 18 Nov 2026, below), **read in part**, with the key found in the same file (read with known key).
+Read share by the repository rule: 98 / 124 = 79.0 % (97 / 124 = 78.2 % after the blind check of 18 Nov 2026 and 95 / 124 = 76.6 % before it; see the two blind checks below), **read in part**, with the key found in the same file (read with known key).
 Our own count including probable words was 113 / 124 = 91 % (letter body, lines 1-25: 105 / 109 = 96 %); it is given
 here only as that, a count with probable words. "auc[h]" (line 27, one restored letter) is counted with the probable words.
 
@@ -66,6 +66,30 @@ Brice Dudout answered a blind sheet of 15 boxed numbers on view 13 (each option 
 - Now sure: "gräfliche" (l. 26, first number 17 confirmed) and "dapffer" (l. 19, 11 and 25 confirmed; the cipher has the seven numbers of "dapffer", written "dapffer-" since the ending -keit is shared with "standhafftigkeit").
 - Against the reading: the last number of "entsetzung" (l. 1) was seen as 27 (r), not 17 (g): the word stays probable although its 29 was confirmed. The end of "gesch‹…›" (l. 24) was seen as 27 and 22 ("geschr…" … "m"), which gives no word: it stays unresolved.
 - Left open by his remarks: "tag" (11 confirmed, but with a mark or two dots above it), "mittwoch" (31 vs 34 not settled), "also" ("28?" instead of 21). "die" was confirmed as written 14 18 15 (dhe) and stays probable; the 11 written as two strokes in "Zabern" was confirmed (a place name, still probable).
+
+## Blind shape check on the new scan (25 Nov 2026)
+
+HStA Darmstadt sent a new colour scan of the sheet on 25 Nov 2026 (private study, not public, not included). Brice Dudout
+answered a second blind sheet on it: 9 boxed numbers, 6 targets and 3 hidden controls. The selection rule, with what each
+answer would change, was written and hashed before any crop was made. The files are in `blind_check/` (`*_2026-11-25.json`,
+README there).
+
+- Controls: 3 of 3 as expected ("gott" 24, "en" 23, "wie" 31).
+- "mittwoch" (l. 12): the 5th number was seen as 31 (w), not 34. This settles the point left open on 18 Nov:
+  **mittwoch is now sure** (counted above).
+- "gesch…" (l. 24): the 6th number was seen as 24 (o) and the last as 23 (n). On the new scan the word reads
+  17 15 28 13 18 24 28̄ 15 23 = **geschossen** ("already advanced", of the money), which the rule makes sure. It is not
+  counted here yet, because the middle numbers come from the new-scan transcription, which is not in this folder;
+  it will come with it.
+- The end of l. 29 and l. 30 of the sheet (here slips S1 and l. 28, read on the new scan as "Hagenaw [den] zwey und
+  zwantzigsten decembris"): the last number of "Hagenaw" was seen as 31 (w), so Hagenaw is spelled out (sure on the new
+  scan). The middle number of "decembris" was seen as 22, not 12: the cipher has "decemmris"; the month stays probable,
+  by sense. The looped sign after "decembris" matched none of the shapes offered (15, 18, 39): it stays unresolved, and
+  no year is read from it.
+- A remark on the 31 of "Hagenaw" ("with a dot above the 1, like an i") describes the dot this hand puts on every 1; it
+  changes nothing.
+- On the new-scan reading (124 words as here, new words not added) the check gives 104 / 124 sure = 83.9 %; on the whole
+  sheet with the words only the new scan shows, 106 / 139 = 76.3 %. Still read in part.
 
 ## The 11 unresolved places
 
@@ -89,7 +113,7 @@ Brice Dudout answered a blind sheet of 15 boxed numbers on view 13 (each option 
 with one number too many (see NOTES.md, open point); "etliche" (l. 3) is underlined or struck; "tag" 29 11 17 (11 read
 as two strokes); "Zabern" 34 11 12 15 27 23, a place name (Saverne); "keyserischen" l. 5, first half faded; "keyserische"
 l. 9 likewise; "sollicitirt" and "alhero" rest on 38 = o; "im" stands alone after "alhero"; "geliebts" split over a
-line break; "mittwoch" 29 29 31 read 29 34 in one pass; "Ligt also" at a line start written over; "zwantzigsten" on a slip with a doubtful number.
+line break; "Ligt also" at a line start written over; "zwantzigsten" on a slip with a doubtful number.
 
 ## Translation (English)
 
