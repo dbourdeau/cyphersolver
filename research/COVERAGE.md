@@ -444,6 +444,7 @@ ONB (leads 2832-2837), retry 15 Nov: api.onb.ac.at manifests 504 and the new vie
 - **Swept:** NLI 577.1/63 imaged both sides (plain Arabic prayer, repeated divine name; not a cipher). NLI item pages, IIIF manifests and images work signed in (img-overlay recipe in the README).
 - **Blocked:** the Ktiv landing/search page raised a Cloudflare Turnstile checkbox; not clicked, sweep stopped on that host. AIU XII.41, XII.68, VI.B.157, VI.B.174 and the Ktiv term searches not done; BL Or 10656.25 not online.
 - **Still unswept:** the four AIU leaves (need Ktiv search by shelfmark), Ktiv cipher/code/symbol term searches in English, Hebrew, Arabic.
+
 ## Sweep of 25 Nov 2026 (Durham Abbas Hilmi II volumes closed; Badator terms; Latin American probes; folder `sweep_2026-11-25_ottoman_egypt_durham`)
 - **Durham HIL/202 (frames 47-314), HIL/203, HIL/49 and HIL/99** looked at in full (953 frames, contact sheets, tables opened at full size): 0 leads. HIL/64 and HIL/65 remain the only telegram volumes; the rest of the collection holds letters, memoranda, press, informants' reports, and key sheets (HIL/203/299-300) and a plaintext copy of an Oppenheim telegram of May 1915 (HIL/203/302). Durham is now closed for cipher text except the code books HIL/150, 152, 154.
 - **Badator:** criptograma, zifra, cifrista, cartilla de cifra 0 records; cifrar 8 (all known or clear); nomenclator 98 (census lists). The Badator term list is closed.
