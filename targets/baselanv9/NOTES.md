@@ -1,6 +1,6 @@
 # baselanv9: Clavicula Salomonis and Septem sigilla planetarum in a secret alphabet, Basel UB, UBH AN V 9 (17th century)
 
-Status: in progress. Contributed by pull request, not yet written up (pass 2 with the volume's key leaf added 25 Nov 2026 in `keyleaf/`, its judge's scores still to come), and a new target: the volume is in neither `catalogue.json` nor `research/leads.json`. The key was recovered from cipher ff. 4r-4v aligned with the volume's own clear copy, frozen, and used for one decode of three held-out passages. A separate strict judge finds 747 of 1,138 decoded letters in words that read as sense (65.6%: H1 62.4%, below the contributor's own 65% line; H2 67.0%; H3 69.6%), and the decode reproduces 988 of 1,231 letters of the clear copy (80.3%). Counted in words, 113 of 225 read as sense (0.502) and no sentence is clean, so each passage is "decoded, not read" and the target is filed not read: key recovered from adjacent plaintext, text not read. The volume's own key leaf, viewed only after the decode, agrees on 46 of the 52 values it covers. The page, ledgers, DECODE queue entry and any catalogue or lead entry are left to the maintainers.
+Status: in progress. Contributed by pull request, not yet written up (pass 2 with the volume's key leaf added 25 Nov 2026 in `keyleaf/`, scored by a separate judge the same day; see "Pass 2" below; the first pass stays the figure of record), and a new target: the volume is in neither `catalogue.json` nor `research/leads.json`. The key was recovered from cipher ff. 4r-4v aligned with the volume's own clear copy, frozen, and used for one decode of three held-out passages. A separate strict judge finds 747 of 1,138 decoded letters in words that read as sense (65.6%: H1 62.4%, below the contributor's own 65% line; H2 67.0%; H3 69.6%), and the decode reproduces 988 of 1,231 letters of the clear copy (80.3%). Counted in words, 113 of 225 read as sense (0.502) and no sentence is clean, so each passage is "decoded, not read" and the target is filed not read: key recovered from adjacent plaintext, text not read. The volume's own key leaf, viewed only after the decode, agrees on 46 of the 52 values it covers. The page, ledgers, DECODE queue entry and any catalogue or lead entry are left to the maintainers.
 
 Contributed by Malcolm McBratney (Brisbane), working with Claude (Anthropic): Claude Opus 5.5 the solver session, the separate strict judge and the assembly of this folder.
 
@@ -192,9 +192,35 @@ What was done, in order [measured: `keyleaf/RUN_RECORD.tsv`]:
 5. Freeze before decoding: `keyleaf/FREEZE_PENT.txt` (03:33:21) hashes the key, the sign files, the transcriptions, the decoder and the judge brief; stamped at once by RFC 3161 (Sectigo 03:33:25, FreeTSA 03:33:26; `keyleaf/stamps/`), committed and pushed as b8cce3928 before the decode ran.
 6. One decode (03:34) with `keyleaf/scripts/decode_keyleaf.py`: `keyleaf/DECODE_KEYLEAF.txt`, no emendation. **Declared fallback** (in the frozen decoder): the transcriptions record an inner dot only where it was seen, and the first-pass files never do, so where no earlier sign in the word carries `*` the two-dot sign takes the letter of the nearest preceding lambda, box or x (the three signs `SIGNS.md` notes as often dotted); ".:" repeats the letter the last ".." of the word took.
 7. Shuffle control (03:37-03:40, `keyleaf/scripts/shuffle_keyleaf.py`): the leaf's 73 sign values permuted among its 73 signs, 5,000 keys at each of seeds 20261112 and 7, la-letters model (corpus sha256 asserted), per section and per pentacle.
-8. Separate judge: **not run.** This session could not start a separate judge (the headless CLI returned an authentication error, `keyleaf/RUN_RECORD.tsv` step 4). The packet is ready: `keyleaf/judge/BRIEF.txt` (frozen) and `keyleaf/judge/decode.txt` (a copy of the decode). Until a separate judge has scored it, **no S/E/N figure, no read share and no class is claimed for pass 2**; the method is "read with known key".
+8. Separate judge (03:43:24): the solver session could not start one itself (the headless CLI returned an authentication error, `keyleaf/RUN_RECORD.tsv` step 4), so the caller launched it: Claude Opus 5.5 (`claude-opus-5-5`), effort not exposed by the surface, an agent with its own context inside session https://claude.ai/code/session_01P5UF3myhVjFtgU9vTMj1qn, given only `keyleaf/judge/BRIEF.txt` (frozen, sha256 af20815f...) and `keyleaf/judge/decode.txt` (sha256 41b28e8b..., the same as `DECODE_KEYLEAF.txt`). Output `keyleaf/judge/JUDGE_OUT.tsv` (per word S/E/N tags and per-line counts) and `keyleaf/judge/JUDGE_SUMMARY.md`. Its separation from the solver is stated, not shown: it ran in the same session as the solver.
 
-Exposure, stated plainly: the transcriber of the pentacles knew the key leaf and the first-pass key, so the shapes were recognised as letters while transcribing; in places the expected Latin will have steered the choice between similar shapes (named in the pentacle transcription only where a doubt was noticed). None of the pass-2 figures is a held-out figure.
+### Separate judge's scores (pass 2)
+
+Strict, letters, S/(S+E+N), from `keyleaf/judge/JUDGE_OUT.tsv`. The judge's totals were recomputed here by a script from its 144 per-line rows (full arithmetic below) and agree on every section [measured].
+
+| section | lines | S | E | N | [?] words | arithmetic | S share | 65% line |
+|---|---|---|---|---|---|---|---|---|
+| TRAIN f. 4r | 20 | 600 | 17 | 86 | 16 | 600/(600+17+86) = 600/703 | 85.35% | training, not a test |
+| TRAIN f. 4v | 25 | 732 | 19 | 102 | 12 | 732/(732+19+102) = 732/853 | 85.81% | training, not a test |
+| H1, f. 15r lines 1-12 | 12 | 237 | 15 | 130 | 5 | 237/(237+15+130) = 237/382 | 62.04% | **under: failed** |
+| H2, f. 159r | 23 | 510 | 25 | 182 | 7 | 510/(510+25+182) = 510/717 | 71.13% | over |
+| H3, f. 34r, pentacle 3 | 1 | 19 | 1 | 16 | 1 | 19/(19+1+16) = 19/36 | 52.8% | **under: failed** |
+| H3, f. 34r, pentacle 4 | 1 | 32 | 1 | 0 | 0 | 32/(32+1+0) = 32/33 | 97.0% | over |
+| H3 as one section | 2 | 51 | 2 | 16 | 1 | 51/(51+2+16) = 51/69 | 73.91% | not used: it hides pentacle 3 |
+| pentacle rims, first series (62) | 62 | 2221 | 48 | 251 | 26 | 2221/(2221+48+251) = 2221/2520 | 88.13% | 57 over, 5 under (below) |
+| all | 144 | 4351 | 126 | 767 | 67 | 4351/(4351+126+767) = 4351/5244 | 82.97% | pool, not used for any class |
+
+Sums: lines 20 + 25 + 12 + 23 + 2 + 62 = 144; S 600 + 732 + 237 + 510 + 51 + 2221 = 4351; E 17 + 19 + 15 + 25 + 2 + 48 = 126; N 86 + 102 + 130 + 182 + 16 + 251 = 767; letters 703 + 853 + 382 + 717 + 69 + 2520 = 5244 [measured].
+
+**Under the 65% line, stated plainly:** H1 (62.04%), H3 pentacle 3 (52.8%) and five pentacle rims: S1-025 11/26 = 42.3%, S1-039 27/44 = 61.4%, S1-070 25/42 = 59.5%, S1-071 23/37 = 62.2%, S1-096 23/40 = 57.5%. These are failed, and no pooled figure is used to carry them. The other 57 rims are at or over 65% (per rim in the table below).
+
+The judge's rules, as it states them (`keyleaf/judge/JUDGE_SUMMARY.md`) [stated]: two letters swapped in a word (surgesn, obedietn, uenietn, treumnt) count as two slips and so N, and this recurring pattern carries much of the N; a word broken at a line end without "=" was not joined, since the brief allows only "=" joins (cogno|scu, po|tui, omni|um, opu|sculo, scored N). Joined, those breaks give 4377/5244 = 83.47% overall (f. 4r 612/703 = 87.06%, f. 4v 746/853 = 87.46%); no section moves across the 65% line either way, and the strict figures above are the ones used.
+
+`docs/_check_reading.py` (upstream main 9600ed9ad, fetched 25 Nov 2026 03:48 UTC), run on each pass-2 section of `DECODE_KEYLEAF.txt` (one sentence per rim for the pentacles), finds clean sentences: pentacle rims 23 of 62 (clean share 0.371; 17 of 62 = 0.274 with Latin forced), H1 0 of 7, H2 0 of 11, H3 pentacle 3 0 of 1, pentacle 4 0 of 1, f. 4r 1 of 12, f. 4v 1 of 14; the whole file 6 of 113 (0.053) [measured]. Every section is under the checker's 0.45 MARGINAL bar (holes in most sentences), so the checker does **not** allow "read in part" wording for any part of pass 2: each section stays "decoded, not read".
+
+**Class proposal for pass 2** (for the maintainers to decide; the first pass stays the figure of record and is unchanged): method "read with known key" (the volume's own key leaf) for the units that clear 65% on their own: H2 (71.13%), H3 pentacle 4 (97.0%) and the 57 rims at or over 65%. Shown as failed, never pooled: H1, H3 pentacle 3 and rims S1-025, S1-039, S1-070, S1-071, S1-096. The training leaves ff. 4r-4v are not a test and get no class. There is no H4 section in pass 2. Under `_check_reading.py` every one of these units is "decoded, not read", so no "read" or "read in part" state is claimed.
+
+Exposure, stated plainly: the transcriber of the pentacles knew the key leaf and the first-pass key, so the shapes were recognised as letters while transcribing; in places the expected Latin will have steered the choice between similar shapes (named in the pentacle transcription only where a doubt was noticed). None of the pass-2 figures is a held-out figure, and nothing in pass 2 is called held-out: H1-H3 were decoded with the first-pass key before and their text was seen then, and the training leaves ff. 4r-4v were used to build the first-pass key and transcribed beside the clear copy, so their 85% is not a test. No person has checked any part of pass 2, judge included.
 
 Decoded letters [measured: `keyleaf/work/decode_keyleaf_counts.txt`]: training leaves ff. 4r-4v 703 + 853 = 1,556 (28 signs with no value); H1 382 (5); H2 717 (7); H3 69 (1); pentacles 2,520 (26). The pass-2 decode of H1-H3 still carries the first pass's transcription faults (the sign `1` where the sense wants a, for instance), because only the 8 `?` signs were re-read.
 
@@ -212,80 +238,80 @@ Every one of the 62 pentacles is 0/5000 at both seeds; the lowest z is 4.1 (S1-0
 
 Mechanical lexicon pointer (not the judge; `keyleaf/work/lexcheck_keyleaf.tsv`): letters in words of the shared Latin lexicon, pentacles 1,597 of 2,520 (63.4%), training 892/1,556 (57.3%), H1 164/382 (42.9%), H2 340/717 (47.4%), H3 28/69 (40.6%); 30 of the 62 pentacles are under 65% on this pointer. The lexicon lacks many inflected and magical forms, so this is a floor, not a read share.
 
-Per pentacle (decode as produced; no emendation; letters a-z; z and shuffle counts from `keyleaf/work/shuffle_keyleaf_out.txt`; the judge's S/E/N column is to be added when a separate judge has scored `keyleaf/judge/decode.txt`):
+Per pentacle (decode as produced; no emendation; letters a-z; z and shuffle counts from `keyleaf/work/shuffle_keyleaf_out.txt`; the last two columns are the separate judge's strict scores from `keyleaf/judge/JUDGE_OUT.tsv`, and each rim's S+E+N equals its letters column [measured]):
 
-| pentacle | folio (canvas) | decode (pass 2, no emendation) | letters | in lexicon (pointer) | z, seed 20261112 / 7 | shuffles >= real, both seeds |
-|---|---|---|---|---|---|---|
-| S1-011 | f. 35r (c073) | portanti nullum uulnus lethale fieri potest | 38 | 23 (60.5%) | 6.8 / 6.8 | 0/5000, 0/5000 |
-| S1-012 | f. 35r (c073) | dat bonam fortunam et morbotus pericula tollit | 40 | 32 (80.0%) | 6.7 / 6.8 | 0/5000, 0/5000 |
-| S1-013 | f. 35r (c073) | huic omns furiae obedietn atque potentiae ifernales | 45 | 18 (40.0%) | 5.1 / 5.0 | 0/5000, 0/5000 |
-| S1-014 | f. 35r (c073) | neine praetet creatore [?] deum timebit | 31 | 12 (38.7%) | 5.5 / 5.5 | 0/5000, 0/5000 |
-| S1-015 | f. 36r (c075) | huic obedietn omnes spiritus et potentiae infernales | 46 | 28 (60.9%) | 7.0 / 6.7 | 0/5000, 0/5000 |
-| S1-016 | f. 36r (c075) | obedietn tibit omnes creatuae et potentiae infernales | 47 | 16 (34.0%) | 6.8 / 6.6 | 0/5000, 0/5000 |
-| S1-017 | f. 36r (c075) | contra inimicos serpentes et ua[?]mones tutissimum | 42 | 25 (59.5%) | 6.7 / 6.7 | 0/5000, 0/5000 |
-| S1-018 | f. 36r (c075) | hoc signum portauit adam in fronte contra pericula | 43 | 43 (100.0%) | 7.8 / 7.9 | 0/5000, 0/5000 |
-| S1-019 | f. 36r (c075) | ad sanguuinus fluxum respringendum optimum remedium | 46 | 23 (50.0%) | 6.2 / 6.0 | 0/5000, 0/5000 |
-| S1-020 | f. 36r (c075) | furta reuelat conspirationes et secreta consilia hominum | 50 | 29 (58.0%) | 8.0 / 7.9 | 0/5000, 0/5000 |
-| S1-021 | f. 37r (c077) | canitar~ confert et singularem fortunae gratiam | 41 | 34 (82.9%) | 8.3 / 8.5 | 0/5000, 0/5000 |
-| S1-022 | f. 37r (c077) | deuu mihi adiutor quem tinebo et uiuam | 32 | 22 (68.8%) | 5.8 / 5.8 | 0/5000, 0/5000 |
-| S1-025 | f. 37r (c077) | p[?]m[?] cou odium et magii[?]ines uerit | 26 | 8 (30.8%) | 4.1 / 4.1 | 0/5000, 0/5000 |
-| S1-027 | f. 38r (c079) | hoc signum tecum sit et n~ timebus aduersarios | 38 | 30 (78.9%) | 7.2 / 7.0 | 0/5000, 0/5000 |
-| S1-028 | f. 38r (c079) | quo die hoc signum uiderus liber erus ab [?]ipediment | 42 | 22 (52.4%) | 6.0 / 5.9 | 0/5000, 0/5000 |
-| S1-030 | f. 38r (c079) | per hoc nomen treumnt omnes potestates infernales [?] | 43 | 16 (37.2%) | 6.4 / 6.3 | 0/5000, 0/5000 |
-| S1-031 | f. 38r (c079) | hoc signum faciet omnes erga te mites et ben[?]uolos | 41 | 36 (87.8%) | 7.2 / 7.0 | 0/5000, 0/5000 |
-| S1-032 | f. 38r (c079) | huic signo se subi[?]unt omnes creatuae uanimuque uiren | 45 | 20 (44.4%) | 5.5 / 5.5 | 0/5000, 0/5000 |
-| S1-033 | f. 39r (c081) | nec a gladio nec a subitania morte tinebius | 36 | 19 (52.8%) | 5.7 / 5.6 | 0/5000, 0/5000 |
-| S1-037 | f. 39r (c081) | cum hoc signo n~ peribis ferro nec igne | 31 | 23 (74.2%) | 5.3 / 5.1 | 0/5000, 0/5000 |
-| S1-038 | f. 39r (c081) | omne timoris occasione auerti et conuerti | 36 | 30 (83.3%) | 6.6 / 6.5 | 0/5000, 0/5000 |
-| S1-039 | f. 40r (c083) | contra maleficia et quemacunque praestigiau terla | 44 | 17 (38.6%) | 6.6 / 6.6 | 0/5000, 0/5000 |
-| S1-041 | f. 40r (c083) | hoc signum facit contra s[?]tena uim et potestat[?] | 38 | 26 (68.4%) | 6.8 / 6.9 | 0/5000, 0/5000 |
-| S1-044 | f. 40r (c083) | hoc signo sigilauit salomon da[?]mone in puteo | 37 | 14 (37.8%) | 5.7 / 5.7 | 0/5000, 0/5000 |
-| S1-045 | f. 41r (c085) | contra metum et tiiore hoc signum habet efficaciam | 43 | 37 (86.0%) | 6.8 / 6.7 | 0/5000, 0/5000 |
-| S1-049 | f. 41r (c085) | quicunque hoc signum portat diliget ab omnibus | 40 | 33 (82.5%) | 7.5 / 7.3 | 0/5000, 0/5000 |
-| S1-051 | f. 42r (c087) | amabile facit tanquam ipsum deum et odium diurumpit | 44 | 28 (63.6%) | 6.3 / 6.4 | 0/5000, 0/5000 |
-| S1-052 | f. 42r (c087) | pro imoris onfficina adirabale est hoc signum | 39 | 15 (38.5%) | 5.6 / 5.6 | 0/5000, 0/5000 |
-| S1-055 | f. 42r (c087) | pro auxilio impetrando hoc signum bonum est | 37 | 27 (73.0%) | 7.2 / 7.2 | 0/5000, 0/5000 |
-| S1-057 | f. 43r (c089) | a periculis liberabiit qui hoc signum gestat | 38 | 28 (73.7%) | 7.6 / 7.6 | 0/5000, 0/5000 |
-| S1-063 | f. 44r (c091) | uulnera qque dei sunt medicina mei amen | 33 | 29 (87.9%) | 4.6 / 4.6 | 0/5000, 0/5000 |
-| S1-064 | f. 44r (c091) | timor deus et totius mundi sancta mabiestus | 37 | 28 (75.7%) | 5.3 / 5.2 | 0/5000, 0/5000 |
-| S1-065 | f. 44r (c091) | contra area et hostes i bello signum optimum | 37 | 37 (100.0%) | 6.4 / 6.4 | 0/5000, 0/5000 |
-| S1-069 | f. 45r (c093) | hoc signum bonum est ftra dolore matricos | 35 | 23 (65.7%) | 6.3 / 6.3 | 0/5000, 0/5000 |
-| S1-070 | f. 45r (c093) | contra uen[?]num est et mobtus incidenidia remedium | 42 | 25 (59.5%) | 5.3 / 5.2 | 0/5000, 0/5000 |
-| S1-071 | f. 45r (c093) | portatum facit ftra inimicos et insidiator | 37 | 15 (40.5%) | 6.0 / 6.0 | 0/5000, 0/5000 |
-| S1-072 | f. 45r (c093) | cum hoc signo in carcere detineri n~ potes | 34 | 25 (73.5%) | 6.2 / 6.0 | 0/5000, 0/5000 |
-| S1-073 | f. 45r (c093) | contra mortus repentinae periculum optimum est | 41 | 35 (85.4%) | 7.8 / 7.6 | 0/5000, 0/5000 |
-| S1-074 | f. 45r (c093) | hoc signum animum et animam confortat aduersus peric[?] | 45 | 31 (68.9%) | 7.8 / 7.7 | 0/5000, 0/5000 |
-| S1-078 | f. 46r (c095) | mulier cum hoc signo n~ peribit in partu | 32 | 24 (75.0%) | 6.0 / 6.0 | 0/5000, 0/5000 |
-| S1-079 | f. 46r (c095) | porta tecum hoc signum et inimici tus er[?] imore cedetn | 44 | 31 (70.5%) | 5.6 / 5.5 | 0/5000, 0/5000 |
-| S1-080 | f. 46r (c095) | qui hoc signum habet a nemine laedi potest amen | 39 | 34 (87.2%) | 7.3 / 7.0 | 0/5000, 0/5000 |
-| S1-081 | f. 47r (c097) | hoc sinum est contra omnia phantasmata re[?]ia homine graitsum | 51 | 28 (54.9%) | 6.7 / 6.6 | 0/5000, 0/5000 |
-| S1-082 | f. 47r (c097) | incdo cit amore et ben[?]uolentiam apud omnes | 36 | 22 (61.1%) | 6.5 / 6.5 | 0/5000, 0/5000 |
-| S1-084 | f. 47r (c097) | portante ab aquae et mabrius periclo soluit | 37 | 22 (59.5%) | 5.7 / 5.6 | 0/5000, 0/5000 |
-| S1-085 | f. 47r (c097) | ecc[?] figua agni dominantus super omnes potestates | 42 | 14 (33.3%) | 7.1 / 7.0 | 0/5000, 0/5000 |
-| S1-087 | f. 48r (c099) | cum hoc signo n~ timebius inimicos nec maleficia nec da[?]mones | 50 | 34 (68.0%) | 6.5 / 6.3 | 0/5000, 0/5000 |
-| S1-090 | f. 48r (c099) | in bello securus erus cum hoc signo | 29 | 25 (86.2%) | 5.7 / 5.8 | 0/5000, 0/5000 |
-| S1-091 | f. 48r (c099) | ab inimicos nos tutos reddit et inuincibiles | 38 | 26 (68.4%) | 5.2 / 5.2 | 0/5000, 0/5000 |
-| S1-092 | f. 48r (c099) | in quocunque die hoc signum portau[?] a periculo liber | 43 | 37 (86.0%) | 7.0 / 7.1 | 0/5000, 0/5000 |
-| S1-095 | f. 49r (c101) | screptum in ca[?]te n~ nata et portatum manu leua indicit mirabalia | 53 | 21 (39.6%) | 6.6 / 6.6 | 0/5000, 0/5000 |
-| S1-096 | f. 49r (c101) | ad honc signum uenietn spiritu et obedietn tibi | 40 | 21 (52.5%) | 5.0 / 4.9 | 0/5000, 0/5000 |
-| S1-097 | f. 49r (c101) | hoc signum portabit aron in fronte et liberat ab igne | 44 | 25 (56.8%) | 6.7 / 6.6 | 0/5000, 0/5000 |
-| S1-098 | f. 49r (c101) | contra morte subitaneam hoc signum est accommodatum | 45 | 35 (77.8%) | 8.1 / 8.1 | 0/5000, 0/5000 |
-| S1-099 | f. 50r (c103) | cum hoc signo mo[?]te subitanea n~ peribius | 33 | 13 (39.4%) | 4.8 / 4.7 | 0/5000, 0/5000 |
-| S1-102 | f. 50r (c103) | super aspidde et basiliscum ambulabis et conculcabis leone et dracone | 60 | 16 (26.7%) | 6.6 / 6.6 | 0/5000, 0/5000 |
-| S1-103 | f. 50r (c103) | sacto columbo sacrum est hoc signum et confect uictoria | 47 | 35 (74.5%) | 7.0 / 7.0 | 0/5000, 0/5000 |
-| S1-105 | f. 51r (c105) | ecc[?] figua et facies per quod omnia facta sunt cui omnes obedi[?] | 50 | 37 (74.0%) | 7.5 / 7.5 | 0/5000, 0/5000 |
-| S1-106 | f. 51r (c105) | cum hoc signo nec uinculus nec compedibus teri potes | 44 | 22 (50.0%) | 6.6 / 6.5 | 0/5000, 0/5000 |
-| S1-107 | f. 51r (c105) | signum sacti gregorii contra uen[?]num et maleficia | 42 | 29 (69.0%) | 6.8 / 6.9 | 0/5000, 0/5000 |
-| S1-109 | f. 51r (c105) | hoc signo sanguine perd[?]e nemo potest tutum est | 39 | 39 (100.0%) | 6.2 / 6.1 | 0/5000, 0/5000 |
-| S1-110 | f. 51r (c105) | qui hoc signum portauerit nulla pericula timebit | 42 | 25 (59.5%) | 7.6 / 7.5 | 0/5000, 0/5000 |
-| all 62 | ff. 35r-51r | | 2520 | 1597 (63.4%) | 10.5 / 10.3 (section) | 0/5000, 0/5000 |
+| pentacle | folio (canvas) | decode (pass 2, no emendation) | letters | in lexicon (pointer) | z, seed 20261112 / 7 | shuffles >= real, both seeds | judge S/E/N | judge S/(S+E+N) |
+|---|---|---|---|---|---|---|---|---|
+| S1-011 | f. 35r (c073) | portanti nullum uulnus lethale fieri potest | 38 | 23 (60.5%) | 6.8 / 6.8 | 0/5000, 0/5000 | 38/0/0 | 38/38 = 100.0% |
+| S1-012 | f. 35r (c073) | dat bonam fortunam et morbotus pericula tollit | 40 | 32 (80.0%) | 6.7 / 6.8 | 0/5000, 0/5000 | 32/0/8 | 32/40 = 80.0% |
+| S1-013 | f. 35r (c073) | huic omns furiae obedietn atque potentiae ifernales | 45 | 18 (40.0%) | 5.1 / 5.0 | 0/5000, 0/5000 | 35/2/8 | 35/45 = 77.8% |
+| S1-014 | f. 35r (c073) | neine praetet creatore [?] deum timebit | 31 | 12 (38.7%) | 5.5 / 5.5 | 0/5000, 0/5000 | 25/1/5 | 25/31 = 80.6% |
+| S1-015 | f. 36r (c075) | huic obedietn omnes spiritus et potentiae infernales | 46 | 28 (60.9%) | 7.0 / 6.7 | 0/5000, 0/5000 | 38/0/8 | 38/46 = 82.6% |
+| S1-016 | f. 36r (c075) | obedietn tibit omnes creatuae et potentiae infernales | 47 | 16 (34.0%) | 6.8 / 6.6 | 0/5000, 0/5000 | 37/2/8 | 37/47 = 78.7% |
+| S1-017 | f. 36r (c075) | contra inimicos serpentes et ua[?]mones tutissimum | 42 | 25 (59.5%) | 6.7 / 6.7 | 0/5000, 0/5000 | 42/0/0 | 42/42 = 100.0% |
+| S1-018 | f. 36r (c075) | hoc signum portauit adam in fronte contra pericula | 43 | 43 (100.0%) | 7.8 / 7.9 | 0/5000, 0/5000 | 43/0/0 | 43/43 = 100.0% |
+| S1-019 | f. 36r (c075) | ad sanguuinus fluxum respringendum optimum remedium | 46 | 23 (50.0%) | 6.2 / 6.0 | 0/5000, 0/5000 | 35/1/10 | 35/46 = 76.1% |
+| S1-020 | f. 36r (c075) | furta reuelat conspirationes et secreta consilia hominum | 50 | 29 (58.0%) | 8.0 / 7.9 | 0/5000, 0/5000 | 50/0/0 | 50/50 = 100.0% |
+| S1-021 | f. 37r (c077) | canitar~ confert et singularem fortunae gratiam | 41 | 34 (82.9%) | 8.3 / 8.5 | 0/5000, 0/5000 | 34/0/7 | 34/41 = 82.9% |
+| S1-022 | f. 37r (c077) | deuu mihi adiutor quem tinebo et uiuam | 32 | 22 (68.8%) | 5.8 / 5.8 | 0/5000, 0/5000 | 30/2/0 | 30/32 = 93.8% |
+| S1-025 | f. 37r (c077) | p[?]m[?] cou odium et magii[?]ines uerit | 26 | 8 (30.8%) | 4.1 / 4.1 | 0/5000, 0/5000 | 11/1/14 | 11/26 = 42.3% **under 65%** |
+| S1-027 | f. 38r (c079) | hoc signum tecum sit et n~ timebus aduersarios | 38 | 30 (78.9%) | 7.2 / 7.0 | 0/5000, 0/5000 | 37/1/0 | 37/38 = 97.4% |
+| S1-028 | f. 38r (c079) | quo die hoc signum uiderus liber erus ab [?]ipediment | 42 | 22 (52.4%) | 6.0 / 5.9 | 0/5000, 0/5000 | 40/2/0 | 40/42 = 95.2% |
+| S1-030 | f. 38r (c079) | per hoc nomen treumnt omnes potestates infernales [?] | 43 | 16 (37.2%) | 6.4 / 6.3 | 0/5000, 0/5000 | 36/0/7 | 36/43 = 83.7% |
+| S1-031 | f. 38r (c079) | hoc signum faciet omnes erga te mites et ben[?]uolos | 41 | 36 (87.8%) | 7.2 / 7.0 | 0/5000, 0/5000 | 41/0/0 | 41/41 = 100.0% |
+| S1-032 | f. 38r (c079) | huic signo se subi[?]unt omnes creatuae uanimuque uiren | 45 | 20 (44.4%) | 5.5 / 5.5 | 0/5000, 0/5000 | 30/1/14 | 30/45 = 66.7% |
+| S1-033 | f. 39r (c081) | nec a gladio nec a subitania morte tinebius | 36 | 19 (52.8%) | 5.7 / 5.6 | 0/5000, 0/5000 | 27/1/8 | 27/36 = 75.0% |
+| S1-037 | f. 39r (c081) | cum hoc signo n~ peribis ferro nec igne | 31 | 23 (74.2%) | 5.3 / 5.1 | 0/5000, 0/5000 | 31/0/0 | 31/31 = 100.0% |
+| S1-038 | f. 39r (c081) | omne timoris occasione auerti et conuerti | 36 | 30 (83.3%) | 6.6 / 6.5 | 0/5000, 0/5000 | 34/2/0 | 34/36 = 94.4% |
+| S1-039 | f. 40r (c083) | contra maleficia et quemacunque praestigiau terla | 44 | 17 (38.6%) | 6.6 / 6.6 | 0/5000, 0/5000 | 27/1/16 | 27/44 = 61.4% **under 65%** |
+| S1-041 | f. 40r (c083) | hoc signum facit contra s[?]tena uim et potestat[?] | 38 | 26 (68.4%) | 6.8 / 6.9 | 0/5000, 0/5000 | 38/0/0 | 38/38 = 100.0% |
+| S1-044 | f. 40r (c083) | hoc signo sigilauit salomon da[?]mone in puteo | 37 | 14 (37.8%) | 5.7 / 5.7 | 0/5000, 0/5000 | 37/0/0 | 37/37 = 100.0% |
+| S1-045 | f. 41r (c085) | contra metum et tiiore hoc signum habet efficaciam | 43 | 37 (86.0%) | 6.8 / 6.7 | 0/5000, 0/5000 | 37/0/6 | 37/43 = 86.0% |
+| S1-049 | f. 41r (c085) | quicunque hoc signum portat diliget ab omnibus | 40 | 33 (82.5%) | 7.5 / 7.3 | 0/5000, 0/5000 | 33/0/7 | 33/40 = 82.5% |
+| S1-051 | f. 42r (c087) | amabile facit tanquam ipsum deum et odium diurumpit | 44 | 28 (63.6%) | 6.3 / 6.4 | 0/5000, 0/5000 | 43/1/0 | 43/44 = 97.7% |
+| S1-052 | f. 42r (c087) | pro imoris onfficina adirabale est hoc signum | 39 | 15 (38.5%) | 5.6 / 5.6 | 0/5000, 0/5000 | 28/2/9 | 28/39 = 71.8% |
+| S1-055 | f. 42r (c087) | pro auxilio impetrando hoc signum bonum est | 37 | 27 (73.0%) | 7.2 / 7.2 | 0/5000, 0/5000 | 37/0/0 | 37/37 = 100.0% |
+| S1-057 | f. 43r (c089) | a periculis liberabiit qui hoc signum gestat | 38 | 28 (73.7%) | 7.6 / 7.6 | 0/5000, 0/5000 | 37/1/0 | 37/38 = 97.4% |
+| S1-063 | f. 44r (c091) | uulnera qque dei sunt medicina mei amen | 33 | 29 (87.9%) | 4.6 / 4.6 | 0/5000, 0/5000 | 29/0/4 | 29/33 = 87.9% |
+| S1-064 | f. 44r (c091) | timor deus et totius mundi sancta mabiestus | 37 | 28 (75.7%) | 5.3 / 5.2 | 0/5000, 0/5000 | 28/0/9 | 28/37 = 75.7% |
+| S1-065 | f. 44r (c091) | contra area et hostes i bello signum optimum | 37 | 37 (100.0%) | 6.4 / 6.4 | 0/5000, 0/5000 | 32/1/4 | 32/37 = 86.5% |
+| S1-069 | f. 45r (c093) | hoc signum bonum est ftra dolore matricos | 35 | 23 (65.7%) | 6.3 / 6.3 | 0/5000, 0/5000 | 30/1/4 | 30/35 = 85.7% |
+| S1-070 | f. 45r (c093) | contra uen[?]num est et mobtus incidenidia remedium | 42 | 25 (59.5%) | 5.3 / 5.2 | 0/5000, 0/5000 | 25/0/17 | 25/42 = 59.5% **under 65%** |
+| S1-071 | f. 45r (c093) | portatum facit ftra inimicos et insidiator | 37 | 15 (40.5%) | 6.0 / 6.0 | 0/5000, 0/5000 | 23/0/14 | 23/37 = 62.2% **under 65%** |
+| S1-072 | f. 45r (c093) | cum hoc signo in carcere detineri n~ potes | 34 | 25 (73.5%) | 6.2 / 6.0 | 0/5000, 0/5000 | 34/0/0 | 34/34 = 100.0% |
+| S1-073 | f. 45r (c093) | contra mortus repentinae periculum optimum est | 41 | 35 (85.4%) | 7.8 / 7.6 | 0/5000, 0/5000 | 40/1/0 | 40/41 = 97.6% |
+| S1-074 | f. 45r (c093) | hoc signum animum et animam confortat aduersus peric[?] | 45 | 31 (68.9%) | 7.8 / 7.7 | 0/5000, 0/5000 | 45/0/0 | 45/45 = 100.0% |
+| S1-078 | f. 46r (c095) | mulier cum hoc signo n~ peribit in partu | 32 | 24 (75.0%) | 6.0 / 6.0 | 0/5000, 0/5000 | 32/0/0 | 32/32 = 100.0% |
+| S1-079 | f. 46r (c095) | porta tecum hoc signum et inimici tus er[?] imore cedetn | 44 | 31 (70.5%) | 5.6 / 5.5 | 0/5000, 0/5000 | 32/1/11 | 32/44 = 72.7% |
+| S1-080 | f. 46r (c095) | qui hoc signum habet a nemine laedi potest amen | 39 | 34 (87.2%) | 7.3 / 7.0 | 0/5000, 0/5000 | 39/0/0 | 39/39 = 100.0% |
+| S1-081 | f. 47r (c097) | hoc sinum est contra omnia phantasmata re[?]ia homine graitsum | 51 | 28 (54.9%) | 6.7 / 6.6 | 0/5000, 0/5000 | 37/2/12 | 37/51 = 72.5% |
+| S1-082 | f. 47r (c097) | incdo cit amore et ben[?]uolentiam apud omnes | 36 | 22 (61.1%) | 6.5 / 6.5 | 0/5000, 0/5000 | 27/1/8 | 27/36 = 75.0% |
+| S1-084 | f. 47r (c097) | portante ab aquae et mabrius periclo soluit | 37 | 22 (59.5%) | 5.7 / 5.6 | 0/5000, 0/5000 | 29/1/7 | 29/37 = 78.4% |
+| S1-085 | f. 47r (c097) | ecc[?] figua agni dominantus super omnes potestates | 42 | 14 (33.3%) | 7.1 / 7.0 | 0/5000, 0/5000 | 40/2/0 | 40/42 = 95.2% |
+| S1-087 | f. 48r (c099) | cum hoc signo n~ timebius inimicos nec maleficia nec da[?]mones | 50 | 34 (68.0%) | 6.5 / 6.3 | 0/5000, 0/5000 | 49/1/0 | 49/50 = 98.0% |
+| S1-090 | f. 48r (c099) | in bello securus erus cum hoc signo | 29 | 25 (86.2%) | 5.7 / 5.8 | 0/5000, 0/5000 | 28/1/0 | 28/29 = 96.6% |
+| S1-091 | f. 48r (c099) | ab inimicos nos tutos reddit et inuincibiles | 38 | 26 (68.4%) | 5.2 / 5.2 | 0/5000, 0/5000 | 37/1/0 | 37/38 = 97.4% |
+| S1-092 | f. 48r (c099) | in quocunque die hoc signum portau[?] a periculo liber | 43 | 37 (86.0%) | 7.0 / 7.1 | 0/5000, 0/5000 | 43/0/0 | 43/43 = 100.0% |
+| S1-095 | f. 49r (c101) | screptum in ca[?]te n~ nata et portatum manu leua indicit mirabalia | 53 | 21 (39.6%) | 6.6 / 6.6 | 0/5000, 0/5000 | 51/2/0 | 51/53 = 96.2% |
+| S1-096 | f. 49r (c101) | ad honc signum uenietn spiritu et obedietn tibi | 40 | 21 (52.5%) | 5.0 / 4.9 | 0/5000, 0/5000 | 23/2/15 | 23/40 = 57.5% **under 65%** |
+| S1-097 | f. 49r (c101) | hoc signum portabit aron in fronte et liberat ab igne | 44 | 25 (56.8%) | 6.7 / 6.6 | 0/5000, 0/5000 | 43/1/0 | 43/44 = 97.7% |
+| S1-098 | f. 49r (c101) | contra morte subitaneam hoc signum est accommodatum | 45 | 35 (77.8%) | 8.1 / 8.1 | 0/5000, 0/5000 | 44/1/0 | 44/45 = 97.8% |
+| S1-099 | f. 50r (c103) | cum hoc signo mo[?]te subitanea n~ peribius | 33 | 13 (39.4%) | 4.8 / 4.7 | 0/5000, 0/5000 | 32/1/0 | 32/33 = 97.0% |
+| S1-102 | f. 50r (c103) | super aspidde et basiliscum ambulabis et conculcabis leone et dracone | 60 | 16 (26.7%) | 6.6 / 6.6 | 0/5000, 0/5000 | 58/2/0 | 58/60 = 96.7% |
+| S1-103 | f. 50r (c103) | sacto columbo sacrum est hoc signum et confect uictoria | 47 | 35 (74.5%) | 7.0 / 7.0 | 0/5000, 0/5000 | 38/2/7 | 38/47 = 80.9% |
+| S1-105 | f. 51r (c105) | ecc[?] figua et facies per quod omnia facta sunt cui omnes obedi[?] | 50 | 37 (74.0%) | 7.5 / 7.5 | 0/5000, 0/5000 | 49/1/0 | 49/50 = 98.0% |
+| S1-106 | f. 51r (c105) | cum hoc signo nec uinculus nec compedibus teri potes | 44 | 22 (50.0%) | 6.6 / 6.5 | 0/5000, 0/5000 | 39/1/4 | 39/44 = 88.6% |
+| S1-107 | f. 51r (c105) | signum sacti gregorii contra uen[?]num et maleficia | 42 | 29 (69.0%) | 6.8 / 6.9 | 0/5000, 0/5000 | 41/1/0 | 41/42 = 97.6% |
+| S1-109 | f. 51r (c105) | hoc signo sanguine perd[?]e nemo potest tutum est | 39 | 39 (100.0%) | 6.2 / 6.1 | 0/5000, 0/5000 | 39/0/0 | 39/39 = 100.0% |
+| S1-110 | f. 51r (c105) | qui hoc signum portauerit nulla pericula timebit | 42 | 25 (59.5%) | 7.6 / 7.5 | 0/5000, 0/5000 | 42/0/0 | 42/42 = 100.0% |
+| all 62 | ff. 35r-51r | | 2520 | 1597 (63.4%) | 10.5 / 10.3 (section) | 0/5000, 0/5000 | 2221/48/251 | 2221/2520 = 88.13% (57 of 62 rims at or over 65%) |
 
 Sum check: the 62 rows add to 2,520 letters and 1,597 lexicon letters [measured]. What the rims say, from the decode and unchecked [unverified]: protection and power formulas ("hoc signum portat ...", "contra maleficia ...", "cum hoc signo non peribis ..."), Ps 91:13 on no. 102 ("super aspidem et basiliscum ambulabis et conculcabis leonem et draconem"), Salomon sealing the demon in a well (no. 44), Adam and Aaron bearing the sign on the forehead (nos. 18, 97).
 
 ## Remaining gaps
 
 - Holes in the three decoded passages of the first pass, 112 of 225 words (H1 42 of 77, H2 63 of 133, H3 7 of 15) - blocker: not-attempted; key faults the judge's errors show (the sign 1 where the sense wants a; r or rr for te or i; irr for Xri; c for h; final t as n). Pass 2 (`keyleaf/`) applies the key leaf to the same transcriptions; the transcription faults behind several of these (1 for a) are not re-read.
-- Pass 2 has no separate judge's scores yet - blocker: not-attempted; the packet `keyleaf/judge/BRIEF.txt` + `keyleaf/judge/decode.txt` is frozen and ready; this session could not start a separate judge. No read share or class is claimed for pass 2 until it is scored.
+- Pass 2 units under the 65% line: H1 (62.04%), H3 pentacle 3 (52.8%), rims S1-025, S1-039, S1-070, S1-071, S1-096 - blocker: not-attempted; swapped letter pairs and the first pass's transcription faults (not re-read) carry most of the N; a re-read of these lines on the images would be a third pass with its own figure. Every pass-2 section is under `_check_reading.py`'s 0.45 clean-sentence bar, so none is read. No person has checked pass 2.
 - 1 of the 8 first-pass `?` signs is still not identified (f. 4r l. 17, a small reversed-e loop joined to a looped delta; not on the key leaf) - blocker: no-key-material; the leaf has no such sign.
 - Pentacles with no clear counterpart still not transcribed: the second series ff. 52r-54r (nos. 1-12 and the four figures on f. 54r, several with two rings and numerals), the two magic-mirror figures f. 97r-v, and signs written inside circles of the first series (e.g. nos. 62, 101) - blocker: not-attempted; images fetched (`keyleaf/IMAGE_FETCH.tsv`), not transcribed in this pass.
 - The rest of the volume's cipher text, ff. 3r-96v and ff. 158r-162r, apart from the passages transcribed here - blocker: not-attempted; the clear copy ff. 101r-155r and 166r-170r gives the same text per the catalogue.
@@ -312,7 +338,7 @@ The 8 signs transcribed `?` on the first pass, looked at on the full-size images
 - [x] known-keys: the volume's own key leaf, transcribed into `keyleaf/KEY_LEAF.tsv` and applied in pass 2
 - [x] print: no edition or study of this cipher found (`PRIOR_ART.md`); Skinner and Rankine, Mathers and Boudet's census not opened
 - [x] key-rebuild: done as pass 2 with the key leaf (`keyleaf/`), frozen and stamped before one decode; reported apart from the first pass of record
-- [ ] retry: in part. The 8 `?` signs were looked at (7 now labelled); the 62 inscribed first-series pentacle rims were transcribed and decoded; the judge's scoring of pass 2, the second-series pentacles, f. 97r-v and a re-transcription of the first-pass leaves with inner dots remain
+- [ ] retry: in part. The 8 `?` signs were looked at (7 now labelled); the 62 inscribed first-series pentacle rims were transcribed and decoded; pass 2 was scored by a separate judge (25 Nov 2026); the second-series pentacles, f. 97r-v and a re-transcription of the first-pass leaves with inner dots remain
 
 ## Files
 
