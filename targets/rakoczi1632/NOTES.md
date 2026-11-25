@@ -2,6 +2,8 @@
 
 Status: in progress. Not yet written up: no site page or README row. Read in part, with escalation steps still open (see Remaining gaps and Escalation). The status below is the contributor's.
 
+Next step (write-up check 24 Nov 2026): transcribe and decode fol. 491v-492v (MDZ scans 1200-1202, glossed, online) with the frozen key; no page until then.
+
 Not in the catalogue. Found in WAINUT's sweep for cipher documents with a contemporary decipherment; Halm's
 manuscript catalogue (1874) names the cipher and Camerarius's solution. Contributed by WAINUT, 3 Nov 2026.
 
@@ -81,6 +83,34 @@ the Prince to join the common cause, they must swear not to abandon him in good 
 person if needed, to make no peace without his knowledge and consent, and, should he die, to take over the care and
 defence of his heirs. Context: George I Rákóczi's approaches to Gustavus Adolphus in 1631-32 (the mission of the
 Swedish envoy Paul Strassburg to Transylvania, 1631-33).
+
+## Decrypt audit, 16 Nov 2026
+
+`research/decrypt_audit/` re-applied `key.tsv` to `transcription_f491r.txt` and compared the letters with
+`reading_f491r.md`: 49 of 93 words depart (53%), key cover 83%.
+
+Causes, checked with a read-only snippet that repeats the rules of `scripts/check_marks.py` without writing:
+
+- Clear Latin of the manuscript. The page has 78 clear words between the cipher words and the transcription carries
+  them; the audit's tokeniser dropped them and then found them "only in the reading". Example: "in pace ex Dei
+  providentia" (line 4). The 78 clear words of the transcription and the non-bold words of the reading are the same,
+  in the same order.
+- Audit artefacts. (a) 28 and 76 have two values in `key.tsv` (d/i, d/o); the audit took the first, so *perveniens*
+  came out "peruendenr" and *requisiverint* "reqisiuerdnt". (b) The 11 gloss readings are marked `<word>` in the
+  reading; the audit counts only square brackets as marks. Example: `<coniungamus>`, key *constrgamus*.
+  (c) The 17% of tokens "not covered" are the clear words and the three code groups, which the key file holds as
+  whole entries (217.11.99, 218.88, 307.38).
+- Stated convention: u after q is not written (System). *quo*, *requisiverint*, *substantiasque* have a u that no
+  group gives.
+
+Result of the check: of the 69 cipher words, the 54 printed plain are given by `key.tsv` (either value allowed for 28
+and 76); 11 are marked `<...>` and the key does not give them; 3 are marked `[?...]`; 1 is `[...]`. The bold words of
+`reading_f491r.md` are the `reading` column of `words_f491r.tsv` in order (case and the join `[?de]fensionem`
+apart). No unmarked emendation was found.
+
+Changed: nothing. The key file holds every value the reading uses. Figures after: the same, 49 of 93.
+
+Not checked: the transcription and the glosses against the images.
 
 ## Remaining gaps (fol. 491r)
 
@@ -168,3 +198,9 @@ Changes made after it (the counts above are after them):
 - Prior art: Szilágyi 1873 searched (above); nothing found.
 - Line 4 group 28/25 in *perveniens* (verifier weakly 25) left as 28: both give i, the word is a gloss reading anyway.
 - Not changed: the key. The gloss of word 44 came after the freeze and was not added.
+
+## 14 Nov 2026 full-texts audit
+
+Fol. 491v-492v had no entry in `outcome.texts`. The folder holds only the 12 held-out words of fol. 491v (`heldout_f491v.tsv`: cipher groups and Camerarius's gloss). They are now listed as that document's texts, with `decryption_f491v_heldout.tsv` (new: `key.tsv` applied to the groups, one value per group, beside the gloss), state `not prose` because it is a word list and not a text. The decode shows the known disagreements of the held-out test (44 = b, {s} = c, 45 = h).
+
+Not done: the transcription of the three pages (scans 1200-1202). It is the transcription job already listed under Remaining gaps; the blocker is unchanged (not-attempted: number groups and letter-like signs under an interlinear gloss on microfilm, which on fol. 491r needed full-size crops and a second reader). `fraction_read` unchanged.

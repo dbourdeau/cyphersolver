@@ -275,6 +275,12 @@
    ],
    "what": "Every Medici key sheet of 1472-1494 in MAP LXXII 178-189 bis and CXIX 115-127 (plus LXXII 172, 209-210, CXXIV 184) compared with the rebuilt key for the code list: none is this cipher (keysheets.md). The same check found a third letter in this cipher, MAP CXXXVII 63 (catalogue 2321), not read here.",
    "result": "failed"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "verification",
+   "what": "Read share recorded over cipher words only (README Conventions, 16 Nov 2026), from measure.py, which counts only the cipher (kind C) words of the transcriptions: 2320 (MAP CXXXVII 252) 72/121 = 0.595, 2307 (MAP LXXXIX 142) 166/209 = 0.794 (doubtful words count as read there, so both are upper bounds). Both entries had carried state read with no read_share; both are now read in part under the read bar as it stood before 16 Nov. Class already read in part, fraction_read 0.761 (signs) unchanged.",
+   "result": "partial"
   }
  ],
  "outcome": {
@@ -359,14 +365,16 @@
     "decryption": "draft252.txt",
     "reading": "reading.md",
     "translation": "reading.md",
-    "state": "read",
+    "state": "read in part",
     "summary": "An unsigned writer in Rome, three days before Mazzinghi's letter: the Pope has sent a brief, a letter was presented to [10], and the king is so enraged that the writer fears Antonio del Palagio, Pagolo Rucellai and Lionardo di Giunta, Florentines in Rome, will be seized and put in Castel Sant'Angelo; written in haste during the Pazzi War.",
     "reading_review": {
      "grade": "B",
      "by": "Claude Opus 5.5 (session)",
      "date": "2026-11-06",
      "note": "Sentences form in most lines; lines 2-3 and 6 have several unread words in a row; 64% of signs read."
-    }
+    },
+    "read_share": 0.595,
+    "note": "16 Nov 2026: read share over cipher words only 0.595, from measure.py: 72 of the 121 cipher words of t252.tsv read (kind C rows; the clear words are not counted). Words read with doubt (?) count as read there, so this is an upper bound. The entry carried state read with no read_share although its own measure was far under the bar. The change to read in part comes from the read bar as it stood before 16 Nov 2026, not from the cipher-words rule."
    },
    {
     "doc": "2307",
@@ -375,14 +383,16 @@
     "decryption": "draft142.txt",
     "reading": "reading.md",
     "translation": "reading.md",
-    "state": "read",
+    "state": "read in part",
     "summary": "Giovanni Mazzinghi warns the Medici from Rome: a bull under lead has been published in the Chancery revoking the privileges the Church had granted, a very cruel process is being made against them, and Iacopo de' Rossi of Pistoia and another Pistoiese, Cola, are involved in a plot ('quello ordino la morte di [30]', 'ogni cosa fanno per la vostra fine'). Nine months after the Pazzi conspiracy, during the war and the interdict.",
     "reading_review": {
      "grade": "B",
      "by": "Claude Opus 5.5 (session)",
      "date": "2026-11-06",
      "note": "Lines 1-18 build sentences with scattered holes; lines 18-37 mix clear abbreviations and cipher and read in stretches; 83% of signs read."
-    }
+    },
+    "read_share": 0.794,
+    "note": "16 Nov 2026: read share over cipher words only 0.794, from measure.py: 166 of the 209 cipher words of t142.tsv read (kind C rows; clear words not counted; words read with doubt count as read, an upper bound). Carried state read with no read_share. The change to read in part comes from the existing read bar, not from the cipher-words rule."
    }
   ],
   "key_file": "key_refined.tsv",

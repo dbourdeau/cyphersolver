@@ -58,3 +58,38 @@ sense in about 12 letters of B and C, over 3% of those passages. Stays **decoded
   lacks them; Soria's 1523 letters give no values).
 - C1 *peb yic ƀ7∂ zog par yof m+r9c4m+ ƀ7cm+7c∞r* - blocker: no-key-material (signs read, sense not reached).
 - Last cipher lines at the foot of f. 31r - blocker: illegible (torn and faded).
+
+## 14 Nov 2026: second pass (Claude, session of 14 Nov 2026; audit sections I and J)
+
+No image in this pass: DECODE's public API answers for R9487 but marks the ciphertext private (images need a login,
+none in this session). The work is on `R9487_cipher_signs.txt` as transcribed on 23 Oct, the Claro (`claro.md`) and
+key B (`../soria1523/keyB.md`).
+
+1. **The Claro's last sentence aligned with the last two cipher lines of C** (f. 33r lines 4-5), group by group:
+   `yoc yal pu c m+ y zof par si tef saf c zio y +o r sub ƀ r y xoc ∂ sub ꝑi y y ∞ τ 7 E ∞ c zof pef ∂ pil yed L r ∂`
+   against "el Emper[ado]r(?) seran con V. Ma[gesta]d por no recebir daño, pues son gentes que saben navegar con todos
+   vientos". This gives *par* = V. Magestad, *saf* = recebi-, *zio* = da- (da-n-y-o), *ꝑi* = sabe- (sabe-n), *pef* =
+   todo, *pil* = vi- (vi-en-t-o-s). The 23 Oct pass had left all six open. Each lies where key B's code order puts it
+   (p-groups Se-Y: V. Magestad, todo, vi-; s-groups Pa-R: recebi-; z-groups A-De: da-).
+2. **Carried back.** *par* occurs four times and fits each: *[?servidores] de V. Magestad*; *a ser contra V. Magestad y
+   hazer matrimonio con Francia*; *seran con V. Magestad*; in B *[yod] [ync]s. V. Magestad lo [?provea] como conbiene a
+   su servicio* (the Claro has "como conviene a su servi[cio]"). *zed* = bien (z-groups A-De): *con-bien-e* in B and *y
+   bien se [sab] creer que* in C. Key B's own values not used on 23 Oct: *yof* = esto; *yic* = -do (so *pil +ud yed y
+   ic* is probably vi-[+ud]-en-do with *yic* split by the transcription; left as vi[+ud]endo); n+ = p (the group
+   written *nf* on 23 Oct): p-r-i-n-c-i-p-e in full, and p-o-v-e-a, [?provea].
+3. **Words now carried by the figures**: *los dos venian* (`xip ∂ g r ∂` = lo-s d-o-s, with g = d as in *soltado*);
+   *usar desacatamiento* (`zog` = de + s-a-c-a-t-a-m-i-e-n-t-o); *estavan* at B line 7 (the same `ynf pug` that the Claro
+   gives as *estavan* at line 1); *el marques* (`tob`, the Claro's word).
+4. **By sense and code order only, kept `[?word]`**: *yal* = [?exercito] (three places; key B 1523 has ella; the Claro's
+   word at the third was read "Emper(?)" in September); *xad* + de = [?gran]de; a + *pur* = a[?ya]; *sab* = [?puede];
+   [?podria] and [?pero] (a-o-d-r-i-a, a-e-r-a-o with p for the transcribed a); [?servidores]; [?de Orange].
+5. **Still open**: *soc* (rey in key B; does not fit *en [soc] de los*), *zu*, *pib*, *yod*, *ync*, *tal*, *+ud*, *pur*
+   at B line 7 with the two signs after it. Blocker: no-key-material for the groups; the image (login) for the signs.
+
+Score (`research/reading_audit/b17_score.py`, LANG_=es): plain 0.583 (14/24), explicit holes **0.833** (20/24), before
+0.50 and 0.682. Words of the reading body: 291; holes 31 (27 bracketed words and the four doubtful Claro words of A,
+*obrado otros hazer* and the gap in *de los y*): 260 of 291 read as sense = 0.893.
+
+Reader's judgement: A, the closing paragraph and the end of C read; B and the start of C now build sentences that can
+be translated, with holes (4 of 24 sentences keep more than one hole in ten words). Under 95%: **read in part**. The
+[?word]s of point 4 and every sign of B and C still need the image.

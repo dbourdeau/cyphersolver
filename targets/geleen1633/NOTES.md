@@ -46,6 +46,48 @@ Files: `transcription.txt`, `decryption.txt` (K, mechanical), `reading.md` (Germ
 
 Method: (1) protocol written and hashed (SHA-256) before transcription, with five lines of fol. 185r (186 cipher letters, up to the clear word “Bedanken”) held out; (2) numbers transcribed without any key value, then frozen; three known keys of the period (Camerarius 1621, Rákóczi 1632, Kurz 1639) tested by a frozen criterion: none applies; (3) key built on the rest of the letter (simulated annealing with a model of 17th-century German, then three corrections from the clear context: “vom Feind”, “Kniphausen”, “Geltmittel”), then frozen; (4) a single measurement on the held-out lines: 0.656 of the cipher letters covered by German words of five letters or more, against at best 0.113 for 200 shuffled keys (threshold fixed in advance: 0.60), and a language-model score clearly above all controls (−2.51 against −4.18): key validated; (5) reading of the whole letter by Daniel’s rule. The held-out passage reads: “zum besten nichts erwinden lassen und euch hingegen vor gewiss versichern…”.
 
+## Decrypt audit, 16 Nov 2026
+
+The decrypt audit (`research/decrypt_audit/`) re-applied `key.tsv` to `transcription.txt` and compared the letters with
+`reading.md`: 64 of 201 compared words depart from the mechanical decrypt (32%). Checked here word by word against
+`decryption.txt`, which is the key applied to the transcription with nothing edited (re-derived: 0 of 46 lines differ).
+
+- Clear text (50 of the 64 flagged words). `reading.md` interleaves the letter's clear German in « » (for example
+  «zu verhüten, und wir den»); the audit drops the bracketed clear text of the transcription and so takes these words
+  for departures. Nothing is wrong there. The clear text of the reading is not letter for letter that of the
+  transcription ("bß." in the transcription is «betreffend» in the reading); both files call it approximate.
+- Probable and restored words. The 35 words in { } and the 8 in [ ] differ from the decrypt by design (decrypt
+  "ufalle", reading "{auf} {allen}") and are marked; the audit counts them as marked.
+- Words printed as certain, with no mark, whose letters are not the ones the key gives: 17. Eleven change or supply a
+  letter: feindlichem (decrypt feinduichem), allem twice (aulem), algemeinen (augemeinen), sollen (soulen), beclagen
+  (becuagen), solche (uolche), tausent (hausent), mit (sit), starck (starct), desto (the transcription has an illegible
+  pair, "de·to"). Six only change the spelling: Hildesheim (hildesheiim), dieselbe (deselbe), Statt (stat), Gewaldt
+  (gewald), bisher (bishero), begriffenen (begrieffenen). Thirteen of the 17 are among the audit's 64; Hildesheim,
+  bisher, begriffenen and sollen were found by hand. Six of the letter changes read l where the transcription has 15
+  (u/v); "Unresolved words and limits" says 15 and 18 are alike in this hand and that such words are counted probable,
+  but these are printed as certain. The transcription was frozen and was not changed, so the reading and the
+  transcription disagree at these places and the reading does not show it. Three of the 17 (solche, mit, sollen) are
+  in the held-out lines P3.1-P3.5, where six more words are marked probable ({lassen}, {hingegen}, {gewiss}, {eure},
+  {catholischen}, {würcklichem}). The sentence quoted in "System and key" and in "Method" as what the held-out lines
+  read is this normalised reading; the key gives ZUMBESTENNICHTSERWINDENLASNENUNDEUCHDINGEGEN /
+  UORGEWISUERSICHERNDASUOLCHEEWEREMERITAUND / GETREWEDINSTENUONUNSUNDDENSAMBTLICHEN /
+  UNIRTENCATHOLBUNDSSTANDENSITWURCKLICH / DANCKREMUNERIRTWERDENSOULEN (`validation.txt`).
+- Key file: nothing missing. Every value used is in `key.tsv`; no other key material is in the folder.
+
+Changed: nothing in the key, the transcription, the decryption or the reading. The audit figure is the same after
+(64 of 201). Open: whether the 17 words should be marked { } or the count of 151 certain words lowered is not decided
+here; the wording of the reading was left as it is.
+
+Marked on 16 Nov 2026. In `reading.md` eleven words are now in { } (probable), the file's own mark: allem (twice),
+feindlichem, tausent, desto, algemeinen, solche, mit, sollen, starck, beclagen. No letter of the text was changed. The
+six spelling-only words (Hildesheim, dieselbe, Statt, Gewaldt, bisher, begriffenen) are not marked one by one: a header
+line now states the spelling convention and gives the key's forms. A second header line lists the eleven and says that
+the count table (151 certain, 35 probable) is the count of 4 Nov 2026 and does not include them; the table, the Status
+line, `read_share` and the figures on the page were not recomputed (with the eleven counted probable the split would
+be 140 certain and 46 probable, certain + probable unchanged at 186 of 221). On the page the sentence "The held-out
+lines read: ..." now says that the sentence is the reading with the spelling normalised and gives the key's forms.
+The same sentence in "System and key" and "Method" above is to be read with this section.
+
 ## Remaining gaps
 
 - 19 words cut or lost where the line ends of fol. 184v vanish into the gutter - blocker: needs-physical-access; the volume was microfilmed bound, only the original or a new photograph shows them (caps the reading at 91.4%)

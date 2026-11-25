@@ -1,0 +1,46 @@
+{
+ "folder": "cattanei1430",
+ "marked": [
+  {
+   "file": "targets/cattanei1430/texts/R1854-P4_reading.md",
+   "places": 5
+  },
+  {
+   "file": "targets/cattanei1430/texts/R1854-P5_reading.md",
+   "places": 0
+  }
+ ],
+ "left_unmarked": {
+  "count": 1,
+  "why": "'sex ciues' (key: secx): a dropped letter cannot be bracketed without adding a letter; stated in the P4 header instead. The 4 expansions (nostrum, domini, dominorum, producxerunt) are stated as a header convention, not marked, per brief point 4."
+ },
+ "headers_changed": [
+  "texts/R1854-P4_reading.md: 'Latin spelling as the key gives it.' -> 'Latin spelling as the key gives it, except: letters in [ ] are not given by the key; the abbreviations nrum and dni are written out, nostrum and domini, without a mark; \"sex ciues\" is secx ciues in the key's output (the c is left out, no mark).'",
+  "texts/R1854-P4_reading.md: '\"Aeragono(=Aragonum)\" Aragonum.' -> '\"Aeragono(=Aragonum)\" Aragon[um] (the key gives aeragono).'",
+  "texts/R1854-P5_reading.md: 'spelling as the key gives it; \"producxerū(n)t\" (macron) written producxerunt.' -> 'spelling as the key gives it, except two abbreviations written out without a mark: \"producxerū(n)t\" (macron) as producxerunt, and dnorum as dominorum.'"
+ ],
+ "page_changes": [
+  "docs/cattanei1430.html line 91: '<em>sollicitabo bullam</em>' -> '<em>solicitabo bullam</em>' (annealer output, run_p4la.txt). The two false header statements quoted in round 1 sit inside the generated texts:start/end block and were not touched; they follow the reading files on the next rebuild."
+ ],
+ "page_counts_now_stale": [
+  "the letter of 13 February (image 4) builds coherent sentences but reads at 90.6%, under the 95% bar",
+  "under the read bar of 95% of words read as sense (91% here)"
+ ],
+ "hole_rate": [
+  {
+   "file": "texts/R1854-P4_reading.md",
+   "before": 0.095,
+   "after": 0.11,
+   "state_in_profile": "read in part"
+  },
+  {
+   "file": "texts/R1854-P5_reading.md",
+   "before": 0.024,
+   "after": 0.024,
+   "state_in_profile": "read"
+  }
+ ],
+ "falls_below_read_bar": false,
+ "wording_changed": false,
+ "notes": "P4 was already read in part (read_share 0.906); the marks take the v2_score hole rate to 0.110, so read_share and the page's 90.6%/91% need recomputing centrally. P5 stays read. Round-1 changes were already committed by another session (HEAD has the indent=1 profile), so the new step was appended with the same dump and no reflow. NOTES 'Method' line still quotes 'sollicitabo bullam' as the anneal's output; noted in the audit section, not edited."
+}

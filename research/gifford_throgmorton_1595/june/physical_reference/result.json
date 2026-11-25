@@ -1,0 +1,219 @@
+{
+  "reference_sha256": "bef5546f533cf2b6ee1449dee5fcb24fd884b38a4bcddbf413e1f4c718e1f175",
+  "consensus": [
+    {
+      "group": "A",
+      "a": "WRPH2",
+      "b": "WRDH2",
+      "marker": "2",
+      "stem": "WR?H",
+      "reason": ""
+    },
+    {
+      "group": "B",
+      "a": "WH2?H",
+      "b": "WHQ?H",
+      "marker": null,
+      "stem": "",
+      "reason": "no agreed final selector"
+    },
+    {
+      "group": "C",
+      "a": "RYHV2",
+      "b": "RYHV2",
+      "marker": "2",
+      "stem": "RYHV",
+      "reason": ""
+    },
+    {
+      "group": "D",
+      "a": "NMOO2",
+      "b": "NMOO2",
+      "marker": "2",
+      "stem": "NMOO",
+      "reason": ""
+    },
+    {
+      "group": "E",
+      "a": "DV?BYHG2",
+      "b": "DVV?YHG2",
+      "marker": "2",
+      "stem": "DV??YHG",
+      "reason": ""
+    },
+    {
+      "group": "F",
+      "a": "GIR2",
+      "b": "GR2",
+      "marker": null,
+      "stem": "",
+      "reason": "unequal stem lengths"
+    },
+    {
+      "group": "G",
+      "a": "MYX2",
+      "b": "MXX2",
+      "marker": "2",
+      "stem": "M?X",
+      "reason": "fewer than three agreed letters"
+    },
+    {
+      "group": "H",
+      "a": "EFXYWEGY?",
+      "b": "EFXYWEGY??",
+      "marker": null,
+      "stem": "",
+      "reason": "no agreed final selector"
+    },
+    {
+      "group": "I",
+      "a": "WJHEZ6",
+      "b": "W??EZ6",
+      "marker": "6",
+      "stem": "W??EZ",
+      "reason": ""
+    },
+    {
+      "group": "J",
+      "a": "ZVMXH2",
+      "b": "ZVMXH2",
+      "marker": "2",
+      "stem": "ZVMXH",
+      "reason": ""
+    },
+    {
+      "group": "K",
+      "a": "VYPQHG2",
+      "b": "VY?QHG2",
+      "marker": "2",
+      "stem": "VY?QHG",
+      "reason": ""
+    },
+    {
+      "group": "L",
+      "a": "WSDZ2",
+      "b": "WSDZ2",
+      "marker": "2",
+      "stem": "WSDZ",
+      "reason": ""
+    }
+  ],
+  "reference_words": 306,
+  "legible_reference": 289,
+  "eligible_groups": 8,
+  "eligible_letters": 33,
+  "status": "scored",
+  "directions": {
+    "row_to_top": {
+      "streams": {
+        "A": "SO?E",
+        "C": "OVER",
+        "D": "KILL",
+        "E": "AR??VED",
+        "I": "B??KE",
+        "J": "WRITE",
+        "K": "RV?NED",
+        "L": "SPAW"
+      },
+      "score": 16,
+      "matches": [
+        {
+          "group": "C",
+          "reference_word": 12,
+          "reference": "OVER",
+          "stream": "OVER",
+          "fragment": "OVER",
+          "length": 4,
+          "cipher_span": [
+            0,
+            4
+          ],
+          "reference_span": [
+            0,
+            4
+          ],
+          "whole": true,
+          "line": "128r-02",
+          "literal": "over"
+        },
+        {
+          "group": "D",
+          "reference_word": 42,
+          "reference": "WILL",
+          "stream": "KILL",
+          "fragment": "ILL",
+          "length": 3,
+          "cipher_span": [
+            1,
+            4
+          ],
+          "reference_span": [
+            1,
+            4
+          ],
+          "whole": false,
+          "line": "128r-04",
+          "literal": "will"
+        },
+        {
+          "group": "J",
+          "reference_word": 92,
+          "reference": "WRITE",
+          "stream": "WRITE",
+          "fragment": "WRITE",
+          "length": 5,
+          "cipher_span": [
+            0,
+            5
+          ],
+          "reference_span": [
+            0,
+            5
+          ],
+          "whole": true,
+          "line": "128v-02",
+          "literal": "write"
+        },
+        {
+          "group": "L",
+          "reference_word": 131,
+          "reference": "SPAW",
+          "stream": "SPAW",
+          "fragment": "SPAW",
+          "length": 4,
+          "cipher_span": [
+            0,
+            4
+          ],
+          "reference_span": [
+            0,
+            4
+          ],
+          "whole": true,
+          "line": "128v-05",
+          "literal": "Spaw"
+        }
+      ]
+    },
+    "top_to_row": {
+      "streams": {
+        "A": "ZV?L",
+        "C": "VBLY",
+        "D": "QPRR",
+        "E": "GY??BLK",
+        "I": "Q??ZT",
+        "J": "CYPAL",
+        "K": "YB?TLK",
+        "L": "ZWGC"
+      },
+      "score": 0,
+      "matches": []
+    }
+  },
+  "best": "row_to_top",
+  "score": 16,
+  "passed": true,
+  "control_max": 9,
+  "tied": 0,
+  "higher": 0
+}

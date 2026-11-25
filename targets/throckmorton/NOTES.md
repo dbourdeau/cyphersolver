@@ -119,3 +119,14 @@ against Forbes and the Calendar, flag omissions and mismatches, and handle the
 additional Smith/Somer/Randolph portions under their own keys. Keep the catalogue
 entry open while that full audit remains unfinished. No new cryptanalytic break
 or previously unknown historical content is claimed.
+
+## 14 Nov 2026: full-texts audit, the missing transcription
+
+Eighteen records were listed without a transcription (R9221-R9229, R9231-R9234, R9242-R9245,
+R9255). In order: (1) the folder has token files only for one extract each of R9220 and R9230
+(`control_tokens.txt`, `control_9230_tokens.txt`); (2) each DECODE record (public API and record page, fetched
+today one at a time) carries images only, no transcription or document; cryptiana `elizabeth.htm` gives the key
+reconstructions as images, no transcription; (3) the images could not be fetched: DECODE serves the images of this record only to a signed-in session (an anonymous request to `decrypt-custom/filesrv` returned the `forbidden.png` placeholder, 17,947 bytes; the 200 px thumbnails are public and useless for signs). No DECODE session is available in this checkout and the images an earlier session fetched were git-ignored and are gone. So `transcription_missing` is
+recorded on the 18 entries. What unblocks it: the images through a DECODE account, then a transcription against a
+sign inventory for Throckmorton's ciphers (DECODE R9260 and R9262), checked by decoding against Forbes's text.
+Nothing else changed.

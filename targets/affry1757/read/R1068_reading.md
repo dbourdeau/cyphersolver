@@ -1,5 +1,8 @@
 # R1068 - d'Affry, The Hague, 26 April 1757 (no. 172): reading
 
+What this file is: the clerk's clear copy of the letter in the Fagel register, a decipherment of the time. It is not the
+output of this folder's key; the keyed decode is `read/R1068.md`.
+
 Rests on: the contemporary clear copy of this despatch in the Fagel register, Nationaal Archief 1.10.29 inv. 5186 scan
 181L (margin "No. 172. Dat: 26. Avril 1757. A: à R:"), transcribed by WAINUT (21 Oct 2026,
 `wainut/register_clear.txt`), checked against the scan (21 Oct 2026). The register is the deciphered text of the same

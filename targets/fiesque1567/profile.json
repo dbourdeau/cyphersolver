@@ -929,7 +929,19 @@
    "what": "Integration check of PR #559 (14 Nov 2026): own decoder from key.tsv over the 45 pages reproduces the contributed decodes (32,352 letters; every difference an unvalued sign: Dz 49, arrow 9, w 8, K 7, ? 6, pa 1, or the apostrophe of l'empereur shifting five lines). The 'missing' sign w is not missing: key.tsv already has =rr = rr, described as the W of the double-letters row, and the transcriptions write it =rr at 45 places; w at 8 places is a second label for the same sign (Gallica view 70 right c04 a plain W; view 43 right c05, labelled =rr, the same shape). Value rr stands, no key row added, readings unchanged. v10_relabel.share re-run: 11,615 words, 561 holes, 10,628 words in letters that read, 0.873.",
    "result": "worked"
   },
-  {"date": "2026-11-14", "kind": "verification", "what": "Read shares recounted by words (owner decision of 14 Nov 2026: holes are counted by words, a sized mark is n unread words). Five letters have a hole mark whose extent the re-reading logs show (read/<doc>_reread_log.md, 'Holes counted by words'): 2 Dec 1568 0.953 -> 0.943 (one mark = six decode fragments), now read in part; 11 Oct 1567 0.954 -> 0.953; 2 Mar 1569 0.958 -> 0.951; 20 Oct 1569 0.944 -> 0.926; 4 Sep 1568 (Queen) 0.943 -> 0.942. One mark of 11 Oct 1567 ('que [...] bien qu'il') has no recorded extent and keeps one hole. Sizes are counts of decode fragments, so estimates. The readings now hold 11,615 words and 574 holes (was 561); fraction_read 0.873 -> 0.872.", "result": "partial"}
+  {"date": "2026-11-14", "kind": "verification", "what": "Read shares recounted by words (owner decision of 14 Nov 2026: holes are counted by words, a sized mark is n unread words). Five letters have a hole mark whose extent the re-reading logs show (read/<doc>_reread_log.md, 'Holes counted by words'): 2 Dec 1568 0.953 -> 0.943 (one mark = six decode fragments), now read in part; 11 Oct 1567 0.954 -> 0.953; 2 Mar 1569 0.958 -> 0.951; 20 Oct 1569 0.944 -> 0.926; 4 Sep 1568 (Queen) 0.943 -> 0.942. One mark of 11 Oct 1567 ('que [...] bien qu'il') has no recorded extent and keeps one hole. Sizes are counts of decode fragments, so estimates. The readings now hold 11,615 words and 574 holes (was 561); fraction_read 0.873 -> 0.872.", "result": "partial"},
+  {
+   "date": "2026-11-16",
+   "kind": "verification",
+   "what": "11 Oct 1567 (1567-10): read share recounted over cipher words only (README Conventions, 16 Nov 2026). The reading body was counted without the header comment, without the opening clear text in ⟨ ⟩, and without the five view markers [v00nx], which v2_score scores as two holes each. Result: 886 words, 40 holes, 0.957 (recorded 0.953). The R23 scan had listed it at 0.947 with the markers counted. Stays read; class unchanged (read in part).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "verification",
+   "what": "2 Mar 1569 recounted over cipher words only (README Conventions, 16 Nov 2026): the reading is wholly cipher up to the ⟨…⟩ clear continuation (clear_markup ⟨⟩ declared); the header comment that the 14 Nov count included is not the reading. 186 words read, 10 holes by words: 0.951 -> 0.949, read -> read in part. Reproduced by v10_relabel.py with the declaration. Letters read 15 -> 14, read in part 7 -> 8; class read in part and fraction_read unchanged.",
+   "result": "partial"
+  }
  ],
  "outcome": {
   "method": "read with known key",
@@ -1018,7 +1030,7 @@
    {
     "doc": "1567-10",
     "label": "11 Oct 1567 (docket \"11 octob. 1567\"), to the Queen Mother (v006r, transcribed here 23 Oct 2026; v007l, v007r, v008l, v008r)",
-    "note": "Re-read 22 Oct 2026 (batch b02): read/1567-10_reading.md, read/1567-10_en.md, log read/1567-10_reread_log.md. docs/_check_reading.py clean share before 0.0, after 0.72 (header comment counted; old spellings outside the word list count as holes). Round 2, 23 Oct 2026: view 6 right (the first cipher page, 23 lines, 816 signs) transcribed from the Gallica image and read (read/r2/transcription_v006r.txt, read/r2/v006r_reread_log.md); v007l c01 closed (\"et aveugles a leur interest\"). Body score 0.61 plain, 0.92 explicit holes only; look-alike alternates on view 6 right 3.3% (31/940 letters), at the limit, not confirmed by any other text. Recount by words, 14 Nov 2026 (owner decision: the read share counts holes by words; a mark with a number is that many unread words): 'et que [... 2] bagues' is two unread groups by the log; 54 holes against 1,100 words, 0.954 -> 0.953; the mark in 'que [...] bien qu'il' has no recorded extent (one hole). Still read.",
+    "note": "Re-read 22 Oct 2026 (batch b02): read/1567-10_reading.md, read/1567-10_en.md, log read/1567-10_reread_log.md. docs/_check_reading.py clean share before 0.0, after 0.72 (header comment counted; old spellings outside the word list count as holes). Round 2, 23 Oct 2026: view 6 right (the first cipher page, 23 lines, 816 signs) transcribed from the Gallica image and read (read/r2/transcription_v006r.txt, read/r2/v006r_reread_log.md); v007l c01 closed (\"et aveugles a leur interest\"). Body score 0.61 plain, 0.92 explicit holes only; look-alike alternates on view 6 right 3.3% (31/940 letters), at the limit, not confirmed by any other text. Recount by words, 14 Nov 2026 (owner decision: the read share counts holes by words; a mark with a number is that many unread words): 'et que [... 2] bagues' is two unread groups by the log; 54 holes against 1,100 words, 0.954 -> 0.953; the mark in 'que [...] bien qu'il' has no recorded extent (one hole). Still read. 16 Nov 2026, cipher words only: 0.957 (40 holes beside 886 words read). The opening clear text in ⟨ ⟩ is left out, and so is the header comment, which the 0.953 figure had counted as reading text. The view markers [v006r] ... [v008r], which v2_score had scored as two holes each, are not counted. Bracketed letters such as [con], [e] and [a] still count as holes. Still read.",
     "language": "fr",
     "state": "read",
     "transcription": [
@@ -1043,7 +1055,7 @@
     },
     "translation": "read/1567-10_en.md",
     "reading": "read/1567-10_reading.md",
-    "read_share": 0.953
+    "read_share": 0.957
    },
    {
     "doc": "1567-11-15",
@@ -1431,9 +1443,9 @@
    {
     "doc": "1569-03-02",
     "label": "2 Mar 1569, to the Queen Mother (v146r)",
-    "note": "Re-read 22 Oct 2026 (batch b02): read/1569-03-02_reading.md, read/1569-03-02_en.md, log read/1569-03-02_reread_log.md. docs/_check_reading.py clean share before 0.0, after 0.72 (header comment counted; old spellings outside the word list count as holes). Recount by words, 14 Nov 2026 (owner decision: the read share counts holes by words; a mark with a number is that many unread words): 'de [... 3] qui craignent' is three decode fragments by the log (an estimate); 15 holes against 294 words, 0.958 -> 0.951. Still read, by one word.",
+    "note": "Re-read 22 Oct 2026 (batch b02): read/1569-03-02_reading.md, read/1569-03-02_en.md, log read/1569-03-02_reread_log.md. docs/_check_reading.py clean share before 0.0, after 0.72 (header comment counted; old spellings outside the word list count as holes). Recount by words, 14 Nov 2026 (owner decision: the read share counts holes by words; a mark with a number is that many unread words): 'de [... 3] qui craignent' is three decode fragments by the log (an estimate); 15 holes against 294 words, 0.958 -> 0.951. Still read, by one word. 16 Nov 2026, read share over cipher words only (README Conventions): the reading is all cipher up to 'de trois'; the clear continuation is marked ⟨…⟩ (clear_markup ⟨⟩ declared) and the header comment, counted before, is not the reading. 186 words read and 10 holes ([il], [con]me twice, [a] twice, [… 3] as three words, an estimate, [?pourrons], [?vous]); [∞ L'Empereur] is a code sign given with its value and the view marker is not a hole. 0.951 -> 0.949 (186 of 196), under 95%: read in part. The reading resolves the contributed transcription's known look-alike pairs (y-shape s/p, oe = ss, a/o = e), counted as read, as for the other letters.",
     "language": "fr",
-    "state": "read",
+    "state": "read in part",
     "transcription": [
      "contributed/data/transcription_v146r.txt"
     ],
@@ -1449,7 +1461,8 @@
     },
     "translation": "read/1569-03-02_en.md",
     "reading": "read/1569-03-02_reading.md",
-    "read_share": 0.951
+    "read_share": 0.949,
+    "clear_markup": "⟨⟩"
    },
    {
     "doc": "1569-09-10",

@@ -286,3 +286,7 @@ recipient is not identified here. Closed as no cipher and removed from the catal
 - [x] print: L&P IV calendars Tuke's decipherments
 - [n/a] key-rebuild: the key is known
 - [x] retry: 23 Oct 2026 (b29): R8533 ff. 109r, 109v, 110r re-read at full resolution, running text written (R8533_reread_log.md)
+
+## 14 Nov 2026, full-texts audit: no transcription of the cipher (R8566)
+
+The audit asks for the cipher as written beside each decryption. Looked in order: (1) no transcription in the folder under another name (R8566: The sign cipher of the four runs was spot-checked against the interlinear decipherment in September 2026, never transcribed; plaintext.txt holds only the decipherment.); (2) the DECODE record page and public API carry no transcription or attachment; (3) the image is not reachable from this session: without a login DECODE serves 200-px thumbnails only (a full-size request returns the placeholder "Insufficient permissions to see the full image"), and the British Library digitised-manuscripts page shows no online copy of Vespasian C IV. So `outcome.texts` carries `transcription_missing` with that reason. A logged-in fetch of the DECODE images unblocks it. No change to class, method, states or fraction_read.

@@ -254,6 +254,12 @@
    "kind": "literature search",
    "what": "Veress, Documente I (1929), opened: no letter of 15 Oct; Nos. 135 and 137 print excerpts of the 18 and 22 Oct letters.",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "transcription",
+   "what": "Full-texts audit: the machine labels of the 13 Oct letter already in pass_A_machine.txt (foot of f. 9r, f. 9v, f. 10r; 57 lines) copied to transcription_13oct_ff9r-10r_machine.txt and decoded with key.tsv (decryption_13oct_ff9r-10r.txt); listed with the marginal gloss as decoded, not read. The letters of 18 and 22 Oct (ff. 37r-42v, 43r-48v) and ff. 10v-15v have no transcription in the folder and none was made in this pass.",
+   "result": "partial"
   }
  ],
  "outcome": {
@@ -314,6 +320,17 @@
      "date": "2026-11-03",
      "note": "Read as sentences 3 Nov 2026. The cipher section reads as eight complete, grammatical Latin sentences with a clear argument: a wished-for feint towards Lippa to draw the Turks off Eger, money and cloth for the soldiers, and an order to hold soldiers and subjects to their duty until winter drives the enemy off. The decryption matches the reading letter for letter apart from four marked slips or missing letters (habemes, singslari, rationibu, diutiu), and the English follows the Latin faithfully. The real holes are few: code word Q7 is filled from context only (shown as ?Themeswar), the second Lippa rests on a doubtful numeral, a handful of single letters stand on blotted or faint signs, and the code values (Lippa, exercitus, Hamet, Transylvania) come from the sister letters' glosses rather than from a decipherment of this letter."
     }
+   },
+   {
+    "doc": "oct13",
+    "label": "13 Oct 1552, ff. 9r-15v: the cipher of ff. 9r foot, 9v and 10r only (machine labels)",
+    "transcription": "transcription_13oct_ff9r-10r_machine.txt",
+    "decryption": "decryption_13oct_ff9r-10r.txt",
+    "contemporary": "marginal_gloss_9r_9v.txt",
+    "language": "la",
+    "state": "decoded, not read",
+    "summary": "By the marginal decipherment of the time (ff. 9r-10r): Ferdinand is troubled by how badly things go in Transylvania, by the insolence of two companies of German foot and the disobedience of the inhabitants, and praises Castaldo's diligence in raising twenty thousand florins to pay the heavy cavalry; he has arranged a further sum of money and cloth.",
+    "note": "57 of the letter's cipher lines (foot of f. 9r, f. 9v, f. 10r), as uncorrected machine shape labels copied from pass_A_machine.txt; the decode with key.tsv gives Latin with scattered wrong letters (quamadhibuistiin..., reequitumsolutioneuigin...) and follows the marginal gloss. These pages are where the key was built (9r-9v) and tested (10r), so this is the key's own material, not a new reading. ff. 10v-15v are not transcribed: graphic signs, each page needs the segment-cluster-label pass and an eye check. Not counted in fraction_read."
    }
   ],
   "key_file": "key.tsv",

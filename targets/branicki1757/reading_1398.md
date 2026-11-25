@@ -2,6 +2,8 @@
 
 The whole letter is in cipher. Code groups are read where `numbers.md` gives a value. `[795]` is a code group that stays open, `[?word]` is a doubtful reading, and a letter in square brackets is supplied. The writer often puts the other sign of a pair, such as u for p or s for d, and the reading corrects these single slips. Numbers that act as punctuation or nulls are left out, and the decryption keeps them.
 
+This is the contributor's reading, not the output of the key: where the decryption has a slip it prints the word meant, and it words the number groups, mostly without a mark. The output of the key is `decryption_1398.txt`; `reading_1398_marked.md` is this text with every letter the key does not give in square brackets (added by the project, 16 Nov 2026).
+
 ## Page 1
 
 De chaque endroit j'ai l'honneur de vous faire mon profond respect [795]. Et je crois que mes lettres écrites de Vilna sont devenues à vos mains. [775]

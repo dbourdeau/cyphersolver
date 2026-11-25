@@ -204,6 +204,24 @@
       ],
       "what": "Statistical validation (docs/_validate.py): 583 tokens, 27 types, it-cinquecento order 4: reading -2.179 per letter; random keys -4.981 (z 5.6); key annealed onto shuffled ciphertext best -2.979 (mean -3.005, z 32.5); annealer on the real text -2.179. Verdict: pass.",
       "result": "worked"
+    },
+    {
+      "date": "2026-11-16",
+      "kind": "verification",
+      "technique": [
+        "manual reconstruction"
+      ],
+      "what": "Read share recounted over cipher words only (README Conventions, 16 Nov 2026): the cipher words are the braced words of the T lines of decryption.txt (111, SCR-/TURA one word), each scored on its R line. 29 holes: codes I. x5, PP., 25.; the & sign x6 (per from context is not a key value); ?E at the gutter; RECO (doubtful sense); 14 words with a letter supplied, emended or restored at the torn edge (the key is recovered here, so no slip rule). The clear text, its doubtful words and the codes .50. written in it are left out. Result: 0.849 (whole letter, clear included) -> 0.739 (82/111); class read in part unchanged.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-11-16",
+      "kind": "verification",
+      "technique": [
+        "manual reconstruction"
+      ],
+      "what": "Follow-up to the recount (16 Nov 2026): the two codes .50., set in the clear lines of the transcription, are code groups with no value and so cipher words and holes. Result: read_share and fraction_read 0.739 -> 0.726 (82/113); class read in part unchanged.",
+      "result": "worked"
     }
   ],
   "outcome": {
@@ -246,8 +264,8 @@
       "key recovered"
     ],
     "fraction_read_method": "measured",
-    "fraction_read_source": "reading.md, README word rule: 314 words read and 56 holes (370 in all), 0.849; clear text and cipher counted together, doubtful clear words, codes and every word with a supplied or emended letter are holes; recounted at integration: 355 words, 53 hole groups, 0.851. By cipher units, the reviewer's strict rule on the transcription frozen on 11 Nov 2026: 537 of 587 = 91.5% (the contributor's count 538); with the 8 rounded-u units also emended 530 (90.3%); the blind transcription 517 (88.1%). The issue's 94.0% is withdrawn.",
-    "fraction_read": 0.849,
+    "fraction_read_source": "Cipher words only (README Conventions, 16 Nov 2026): the 111 cipher words of decryption.txt (the braced words of the T lines; SCR-/TURA across L17-18 one word), 82 read and 31 holes, with the two codes .50. counted in: 82/113 = 0.726. Holes: the codes I. (5), PP., 25. and .50. (2), the & sign (6, read per from context at four places), the gutter sign of L10 (?e), RECO (doubtful sense), and every cipher word with a letter supplied, emended or restored at the torn edge (14, A.V. included). The codes .50. stand in the clear lines of the transcription, but they are code groups with no value (the README row lists them among the codes), so they are cipher and holes (without them 82/111 = 0.739). Whole letter, clear included, not the measure: reading.md, README word rule: 314 words read and 56 holes (370 in all), 0.849; clear text and cipher counted together, doubtful clear words, codes and every word with a supplied or emended letter are holes; recounted at integration: 355 words, 53 hole groups, 0.851. By cipher units, the reviewer's strict rule on the transcription frozen on 11 Nov 2026: 537 of 587 = 91.5% (the contributor's count 538); with the 8 rounded-u units also emended 530 (90.3%); the blind transcription 517 (88.1%). The issue's 94.0% is withdrawn.",
+    "fraction_read": 0.726,
     "verification": [
       "key confirms",
       "statistical test"
@@ -325,7 +343,7 @@
         "translation": "translation.md",
         "language": "it",
         "state": "read in part",
-        "read_share": 0.849,
+        "read_share": 0.726,
         "summary": "Part of a report to a correspondent addressed as 'Sig.r mio', on a negotiation over fiefs; Rochetta is named. A person hidden as 50 said nothing and referred the matter to the Provost, and it was settled through a person hidden as I. The writer doubts this: the other side wanted something else and lost their nerve. The ministers pressed harder than I. for the fiefs not to be excluded from the 'compromesso', and the Grand Chancellor and the Provost were agreed. By cunning the writer's side has got a letter of the Provost saying that a certain addition can only mean the total exclusion of the fiefs. I. was very low and tried in vain to visit PP. The reader is to keep informed, not show his hand without need, and take care in writing to the Provost. Postscript: the Governor of Milan has offered to write to the King and has written to the Spanish ambassador.",
         "reading_review": {
           "grade": "B",
@@ -333,7 +351,7 @@
           "date": "2026-11-12",
           "note": "Read as sentences against the translation. The body runs as connected Italian and its argument can be followed. Holes: four unidentified codes for persons in most sentences, an abbreviation sign read 'per' from context or not at all, one unread cipher sign, eleven words with a supplied or emended letter, and about a dozen doubtful clear words. The end of the postscript is read only in part and is set apart."
         },
-        "note": "read_share 0.849 is our count of the README word rule on reading.md (314 words read and 56 holes, 370 in all): codes, doubtful words and every word with a supplied or emended letter count as holes, and the clear text is counted with the cipher. By cipher units the reviewer's figure is 91.5%. transcription_blind.txt is the blind second transcription in its own sign names."
+        "note": "Read share over cipher words only (16 Nov 2026): 82 of 113 cipher words read, 0.726 (the 111 braced words of decryption.txt and the two codes .50.); codes, the & sign, the gutter sign, RECO and every cipher word with a supplied, emended or restored letter are holes. Whole letter, clear included, not the measure: 0.849 (README word rule on reading.md, 314 words read and 56 holes, 370 in all). By cipher units the reviewer's figure is 91.5%. transcription_blind.txt is the blind second transcription in its own sign names."
       }
     ],
     "key_file": [
@@ -341,6 +359,6 @@
       "aliases.tsv",
       "overrides.tsv"
     ],
-    "notes": "Filed as read in part: 0.849 of the page by the README word rule (clear text and cipher together), under the 95% bar; by cipher units the reviewer's strict 537 of 587 = 91.5%. The 94.0% of issue 427 is withdrawn: it left 4 clear-script letters out of the total and kept 10 units of two emended words as read. The decode rests on 25 key values, two renamed labels, one split of a blind label made after decoding (8 units) and 13 overrides by coordinate, all in the key files. Order of events (key frozen on 11 Nov, blind transcription before the key was opened) is by the contributor's record; the RFC 3161 imprints and stamped files agree with it. Statistical test (docs/_validate.py): pass. The repository's checker scripts were not run by the contributor."
+    "notes": "Filed as read in part: 82 of 113 cipher words read (0.726, cipher words only, recounted 16 Nov 2026, the codes .50. included), under the 95% bar; the whole letter with the clear text, 0.849 by the README word rule, is not the measure; by cipher units the reviewer's strict 537 of 587 = 91.5%. The 94.0% of issue 427 is withdrawn: it left 4 clear-script letters out of the total and kept 10 units of two emended words as read. The decode rests on 25 key values, two renamed labels, one split of a blind label made after decoding (8 units) and 13 overrides by coordinate, all in the key files. Order of events (key frozen on 11 Nov, blind transcription before the key was opened) is by the contributor's record; the RFC 3161 imprints and stamped files agree with it. Statistical test (docs/_validate.py): pass. The repository's checker scripts were not run by the contributor."
   }
 }

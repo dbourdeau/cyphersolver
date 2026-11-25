@@ -194,6 +194,12 @@
    "what": "Verification 5 (plain-bar rows): R25 and R195 readings had no '## Reading' heading, so the sweep scored header and notes; heading added, bodies re-scored: R25 plain 0.526 -> 0.87, R195 0.448 -> 0.818 (explicit 1.0, 0.818); both keep read. R196 had no reading file (the sweep scored Lasry's raw decode, plain 0.355): its clear decipherment DOC_R196_D1449 (f. 97r) transcribed and compared with the decode, reading texts/R196_reading.md and _en.md written, plain 1.0 (7/7); keeps read, grade A.",
    "result": "worked",
    "technique": ["plaintext matching"]
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "verification",
+   "what": "Read shares recounted for the cipher-words-only rule (README Conventions, 16 Nov 2026), by hand, on every reading: each of the eight records is a wholly enciphered despatch (the Secretariat's clear decipherment and the key decode give every word of the body; the 'lettera in piano' they mention is a separate document), so there is no clear text to leave out and every body word counts. R25 288 words, 1 hole [?Vilasso] (0.997); R195 139 words, 7 holes ([?solamente], [?assicurato] and the five words of [?della gente di quei paesi]) (0.952); R196 84/0 (1.0); R197-R199 (1.0); R200 343 words, 1 hole [?Spagna] in the body (0.997, was 0.995: its second [?Spagna] is in the Notes, commentary, not text); R201 231/0 (1.0). No state or class changes; no declaration needed (the whole body is cipher).",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -343,7 +349,7 @@
      "date": "2026-10-22",
      "note": "Read from the Secretariat of State's own clear decipherment, attached to the DECODE record as a png and transcribed here (texts/R200_decipherment.txt), aligned word by word with the key decode (texts/R200_align.tsv; code values consistent across the four letters); _check_reading.py on the body 1.0 (31 of 31 sentences); checked against the second fair copy and the draft; 2803 = Segretario (draft); the ambassador code 2339 left blank by the decipherer read 'Ambasciatore di [?Spagna]' from the draft."
     },
-    "read_share": 0.995
+    "read_share": 0.997
    },
    {
     "doc": "p117",

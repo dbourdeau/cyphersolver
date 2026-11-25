@@ -22,8 +22,7 @@ YEAR_NOW = datetime.date.today().year
 import sys; sys.path.insert(0, str(HERE))
 import _methods as M
 SECTIONS = [(M.KEY[m], M.SECTION[m]) for m in M.METHODS] + [('active', '### In progress')]
-# Rows whose date carries no year but can be bracketed: counted at the latest possible year, so the
-# years-of-silence sum is never overstated. Egmond: to the grand maître (Montmorency, from 1526); Charles died June 1538.
+# Rows whose date carries no year but can be bracketed: placed at the latest possible year. Egmond: to the grand maître (Montmorency, from 1526); Charles died June 1538.
 YEAR_BRACKET = {'Charles of Egmond': 1537}
 OFF_TIMELINE = ('Kaliningrad bottle post',)  # counted in the ledger, not drawn on the timeline (BC/BCE rows are left off by parse_year)
 OVERRIDE = {}  # README row text -> category, for rows filed in a table that does not match their outcome
@@ -54,6 +53,20 @@ _PROFILES = CR.load_all()
 def outside(folders):
     """True when an outside contributor produced the row's result (profile outcome.provenance contributed or mixed)."""
     return any(CR.provenance_of(_PROFILES.get(f.lower())) in ('contributed', 'mixed') for f in folders)
+
+def checked(folders):
+    """True when a person is on record as having checked a passage of the row's reading: outcome.human_check (a passage
+    read against the image without AI help), or a reading_review whose reader is only a person's name (docs/_reader_kind.py;
+    the record does not always say whether a model helped). The checks cover single signs, digits or lines, not whole readings.
+    'independent verification' in outcome.verification is not counted: the records use it loosely (16 Nov 2026)."""
+    import _reader_kind as RK
+    for f in folders:
+        o = (_PROFILES.get(f.lower()) or {}).get('outcome') or {}
+        if o.get('human_check'):
+            return True
+        if any(isinstance(t.get('reading_review'), dict) and RK.kind_of(t['reading_review']) == 'person' for t in o.get('texts') or []):
+            return True
+    return False
 
 def strip_md(s):
     s = re.sub(r'\[([^\]]*)\]\([^)]*\)', r'\1', s)
@@ -211,10 +224,8 @@ def build(items):
     got = [it for it in items if it['cat'] in ('ct', 'extpt', 'adjpt', 'extkey', 'known', 'deciph')]
     keyonly = lambda cats: sum(1 for it in got if it['cat'] in cats and it['ext'].startswith('none'))  # key, text not read (Lasry, 24 Oct 2026)
     ko_b, ko_a = keyonly(('ct', 'extpt', 'adjpt')), keyonly(('extkey', 'known', 'deciph'))
-    part = sum(1 for it in got if it['ext'].startswith('partial'))
     attacked = total - n['na'] - n['active']
     read = [it for it in got if it['ext'].startswith('complete') and it['year']]
-    silence = sum(YEAR_NOW - it['year'] for it in read)
     oldest = min(read, key=lambda d: d['year'])
     span = [it['year'] for it in items if it['year'] and not it['name'].startswith(OFF_TIMELINE)]
     order = ['ct', 'extpt', 'adjpt', 'extkey', 'known', 'deciph', 'notsolved', 'active', 'na']     # three families, then the rest
@@ -229,7 +240,7 @@ def build(items):
     lines.append('<!-- stats:start -->')
     lines.append('<section class="scoreboard" id="scoreboard" aria-labelledby="sb-h">')
     lines.append('<h2 id="sb-h">Results so far</h2>')
-    # the timeline leads; the bar and its categories are its legend; the four counts follow, smaller (the hero's strip has the headline ones)
+    # the timeline leads; the bar and its categories are its legend; the three counts follow, smaller (the hero's strip has the headline ones)
     lines.append(f'<p class="sb-note lg-only">Every entry by date, {min(span)}&ndash;{max(span)}. Hover or tap a dot for the story; click a category under the bar to isolate it.</p>')
     lines.append(f'<p class="sb-note sm-only">Entries by century, {min(span)}&ndash;{max(span)}. Tap a century for its write-ups.</p>')
     lines.append(timeline_svg(items))
@@ -242,7 +253,6 @@ def build(items):
     lines.append(f'<div class="sb-big fam-key"><b>{broke}</b><em>{pc(broke, attacked)} of attempts</em><span>keys recovered by cryptanalysis</span><details><summary>breakdown</summary><span>{n["ct"]} from the ciphertext alone, {n["adjpt"]} from plaintext beside the ciphertext, {n["extpt"]} from plaintext found elsewhere.{who}' + (f' In {ko_b} of them the key was recovered but the text does not yet read.' if ko_b else '') + '</span></details></div>')
     lines.append(f'<div class="sb-big fam-ext"><b>{applied}</b><em>{pc(applied, attacked)} of attempts</em><span>obtained with a key or decipherment that already existed</span><details><summary>breakdown</summary><span>{n["known"]} with a known key, {n["extkey"]} with a key matched here from another document, {n["deciph"]} from a complete existing decipherment.' + (f' In {ko_a} of them the key was applied but the text does not yet read.' if ko_a else '') + '</span></details></div>')
     lines.append(f'<div class="sb-big fam-no"><b>{n["notsolved"]}</b><em>{pc(n["notsolved"], attacked)} of attempts</em><span>closed without recovering the text; each write-up says why</span></div>')
-    lines.append(f'<div class="sb-big"><b>{silence:,}</b><em>years of silence ended</em><span>summed over the {len(read)} dated texts obtained in full<i class="lg-only"> ({part} more partial), each counted from its date to {YEAR_NOW}. The oldest is {oldest["name"].split(",")[0].split(" (")[0]} ({oldest["date"]})</i>.</span></div>')
     lines.append('</div>')
     lines.append(f'<p class="sb-lede">{total} entries<span class="lg-only">, one per row of the results tables</span>, each classed by <a href="glossary.html">how its text was obtained</a>. <span class="lg-only">{n["na"]} turned out not to be ciphers or could not be reached and {n["active"]} are in progress, which leaves {attacked} attempted; every percentage here is of those {attacked}.</span><span class="sm-only">Percentages are of the {attacked} attempted.</span></p>')
     lines.append(f'<p class="sb-foot">Counted from the results tables in the <a href="https://github.com/dbourdeau/cyphersolver#results">repository README</a> by <code>_build_stats.py</code>; regenerated {datetime.date.today():%d %B %Y}. Rows are documents, not correspondents.</p>')

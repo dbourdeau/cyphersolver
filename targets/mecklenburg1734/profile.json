@@ -223,7 +223,8 @@
    "kind": "literature search",
    "what": "WAINUT review fix: one web search for Georg Christian von Knorr: Niedersächsische Bibliographie person record (1691-1762; Wolfenbüttel Hofrat 1725, ennobled 1728, Wirklicher Reichshofrat in Vienna from 1730) and a Francke-Halle entry (Wolfenbüttel envoy in Vienna). 'RhsRaht von Knörre' (1734) is probably he.",
    "result": "worked"
-  }
+  },
+  {"date": "2026-11-16", "kind": "verification", "what": "Read share measured over cipher words only (README Conventions, 16 Nov 2026), holes by words with the v2_score rules. 964 f. 6: the ⟨ ⟩ clause, 21 words, no holes: 1.0 (none recorded before). 964 ff. 8r-8v: the ⟨ ⟩ decipherment (60 words, 4 holes) plus the five barred stretches (one hole each), clear text and its holes left out: 56 of 65, 0.862 (none recorded before; whole piece 0.896); 0.933 if the barred stretches are nulls. States unchanged (f. 6 read, ff. 8r-8v read in part); class unchanged.", "result": "worked"}
  ],
  "outcome": {
   "method": "not solved",
@@ -263,7 +264,9 @@
     "state": "read",
     "language": "de",
     "contemporary": "texts/964_f6.txt",
-    "reading": "texts/964_f6_reading.md"
+    "reading": "texts/964_f6_reading.md",
+    "read_share": 1.0,
+    "note": "16 Nov 2026: read share over cipher words only 1.0: the clause in ⟨ ⟩ in texts/964_f6_reading.md (the contemporary interlinear decipherment of the four cipher lines), 21 words, no holes. The clear text of the rescript around it is left out. Read from the decipherment of the time; no group-by-group check (no key in the repository)."
    },
    {
     "doc": "964-f8",
@@ -275,7 +278,8 @@
     "language": "de",
     "state": "read in part",
     "summary": "Hanover's envoy in Vienna reports that the Aulic Councillor von Knörre will help, and will put to Vice-Chancellor Count Metsch and Bartenstein that Mecklenburg should pay the Emperor a sum of money instead of raising its contingent for the Reich army (War of the Polish Succession). The names and the money proposal are in cipher, deciphered between the lines at the time; five barred stretches of figures carry no decipherment.",
-    "note": "Contributed by WAINUT (27 Oct 2026). Read from the contemporary interlinear decipherment; no key exists, so not checked group by group. In progress, not closed: several uncertain words are workable on another pass. The barred stretches (BAR1, BAR2, BAR3 and the tails of C5 and C12, about 72 of 461 figures) are not deciphered on the page and are probably nulls (NOTES, 'Barred stretches'); they stay marked as holes."
+    "note": "Contributed by WAINUT (27 Oct 2026). Read from the contemporary interlinear decipherment; no key exists, so not checked group by group. In progress, not closed: several uncertain words are workable on another pass. The barred stretches (BAR1, BAR2, BAR3 and the tails of C5 and C12, about 72 of 461 figures) are not deciphered on the page and are probably nulls (NOTES, 'Barred stretches'); they stay marked as holes. 16 Nov 2026: read share over cipher words only 0.862: 56 of 65. The cipher words are the interlinear decipherment in ⟨ ⟩ in wainut/964_f8_reading.md (60 words, 4 of them holes: [?bewürket], [...], [?dienstlich], [?befürchtet]) plus the five barred stretches outside the ⟨ ⟩, which have no decipherment and count one word each (their size in words is not known). The clear-text holes ([?jetzt], [?hereinkommenden], the [...] before C2, [?hätten], [?begreiflich], [?Verporten]) are not counted. If the barred stretches are nulls, as the NOTES think likely, 56 of 60 (0.933). Whole piece, clear included, not the measure: 0.896.",
+    "read_share": 0.862
    }
   ],
   "gaps": [

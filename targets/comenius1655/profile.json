@@ -288,6 +288,12 @@
    "kind": "reading",
    "what": "Review: reading of the 4 Aug sentence re-read as Latin and graded A; documents[B].language set to 'unknown' and the 'la' dropped from its text entry (no plaintext language established).",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "verification",
+   "what": "Document A recounted over cipher words only (README Conventions, 16 Nov 2026), sure words only: the cipher words are the five of the sentence (Poloniam periisse papatum in illa) and the cipher word (iyy) in the second sentence; the clear words around them (Nihil certius quam, et, Mire angitur ... remoris) are left out, as is the clear et inside the cipher. 5 of 6 read, (iyy) is the hole: read_share 0.95 (whole letter, 19 of 20) -> 0.833, read -> read in part. The reading file now marks the cipher words in bold (cipher_markup **). Document B is not read. fraction_read (cipher letters, 29 of 88) and the class are unchanged.",
+   "result": "partial"
   }
  ],
  "outcome": {
@@ -300,7 +306,7 @@
     "label": "4 Aug 1655, the sentence after the signature (Patera CLIV)",
     "records": "A",
     "method": "read from existing decipherment",
-    "extent": "complete",
+    "extent": "partial",
     "basis": "Szilágyi 1890 p. 393 and Patera 1892 p. 182; checked with the rebuilt key, identical to the printed MHH XXIII p. 740 table, one letter in conflict"
    },
    {
@@ -407,9 +413,10 @@
     "decryption": "plain_1655-08-04.txt",
     "reading": "reading_1655-08-04.txt",
     "translation": "translation_1655-08-04.txt",
-    "state": "read",
+    "state": "read in part",
     "language": "la",
-    "read_share": 0.95,
+    "read_share": 0.833,
+    "cipher_markup": "**",
     "summary": "Comenius, writing from Leszno during the Swedish invasion of Poland, ends his report to Rákóczi's councillor Klobusiczky with one ciphered sentence: 'Nothing is more certain than that Poland has perished, and the papacy in it.' The letter around it reports the Swedish advance from Poznań on Warsaw and the flight of the Catholic clergy. Comenius was then pressing George II Rákóczi of Transylvania to side with Sweden (background, not taken from this letter).",
     "reading_review": {
      "grade": "A",
@@ -417,7 +424,7 @@
      "date": "2026-10-27",
      "note": "Read as Latin: 'Nihil certius quam Poloniam periisse, et papatum in illa' is a complete, grammatical sentence (accusative and infinitive after 'certius quam') and fits the letter's report of the Swedish conquest of Great Poland and the flight of the Catholic clergy. It rests on the printed decipherment (Szilágyi 1890, Patera 1892); the decoder gives 'papmtum' at one letter. The second sentence is clear Latin with one unread word, (iyy). 19 of 20 words read."
     },
-    "note": "Decipherment from Szilágyi 1890 p. 393 and Patera 1892 p. 182 note *, checked letter by letter with the key rebuilt from it (python check.py), which is the table printed in MHH XXIII p. 740."
+    "note": "Decipherment from Szilágyi 1890 p. 393 and Patera 1892 p. 182 note *, checked letter by letter with the key rebuilt from it (python check.py), which is the table printed in MHH XXIII p. 740. 16 Nov 2026, read share over cipher words only (README Conventions): the six words written in cipher are Cyhyqbma cgzbbttg CmCasda 69 655m (Poloniam periisse papatum in illa) and the word (iyy); 5 of 6 read, (iyy) is the hole, so 0.833, read in part (cipher_markup ** in reading_1655-08-04.txt). If papatum, where the key gives papmtum at one letter, is also counted as not sure, 4 of 6 (0.667). Whole letter, clear included, not the measure: 19 of 20 words (0.95), the figure recorded until 16 Nov 2026."
    },
    {
     "doc": "B",

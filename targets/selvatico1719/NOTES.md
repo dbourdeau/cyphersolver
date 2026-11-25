@@ -1,6 +1,6 @@
 # Selvatico Estense -> Giuseppe Riva, two cipher letters from Paris, October 1719 (new target, not in the catalogue)
 
-Status: in progress. Not yet written up: no site page or README row. Read in part, with escalation steps still open (see Remaining gaps and Escalation). The status below is the contributor's.
+Status: in progress (24 Nov 2026 review: no page yet. Next step: settle the pass disagreements in work/diff_1719.txt on crops of the online Estense scans and rebuild the open code numbers from the held-out gloss of 5v-6v and from the K3/K21 nomenclators in targets/riva1722 and targets/starhemberg1721; measured share 159/249 = 64% for 2 Oct, below the bar.)
 
 Status: read in part (3 Nov 2026), for the two 1719 letters: the 2 Oct letter is read in part, the 27 Oct letter is
 decoded with the frozen key but not read (fragmentary). Lead 1568 (the 1722 letters) and the two undated letters are
@@ -163,3 +163,7 @@ Estense IIIF manifests https://edl-jarvis.cultura.gov.it/meta/iiif/<uuid>/manife
 b398032c-89f0-4267-8ace-e5aa4d76a8e9 (cc. 25-26), 3cf6cbb0-da58-4f26-ae4f-c6a3e250b065 (cc. 35-36),
 d65064be-e2e4-4e16-9289-367b8ec682ad (cc. 23-24), 179df476-88bd-4f95-b4bd-574569bf8b6d (cc. 2-3),
 761ee342-8fd0-49dd-8e4f-1872bb3d19d9 (cc. 14-15). CC BY-NC-SA; fetched as tiles, not committed.
+
+## 14 Nov 2026 full-texts audit
+
+The six letters this target does not read (10 Jun, 29 Jul, 8 Aug and 12 Aug 1722; "2 gennaio"; "10 dicembre") had no entry in `outcome.texts`. They now have one entry: this folder's two transcription passes (`work/pass_a_1722.txt`, `work/pass_b_1722.txt`) and `decryption_1722_1719key.txt`, the frozen 1719 key applied unchanged to pass A by `scripts/decode_1722_1719key.py` (new). The decode is shown for checking and is not a reading: 533 of 1,623 groups take a letter (33%, the same figure as `scripts/test_1722.py`) and no word comes out. State `decoded, not read`. These letters are in the Riva table and are read in part in `targets/riva1722` (update of 12 Nov above); nothing of that reading is copied here. `fraction_read` and the 1719 counts are unchanged.

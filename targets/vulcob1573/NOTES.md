@@ -76,3 +76,21 @@ Lasry sent his report on this item as a PDF (`lasry/report/23_francais-3318.pdf`
 full Readable text by folio). The page now shows it at the top. Measured: whole text 0.957 (v10_relabel.measure),
 deciphered passages 0.974. His status: Transcribed; Deciphered. Outcome: read. He translates the excerpt only
 (`lasry/report/translation_excerpt.md`).
+
+## Read share over cipher words only (16 Nov 2026)
+
+README Conventions now count the read share over the words written in cipher. Lasry's Readable text (`lasry/report/readable.md`) marks the deciphered passages in bold and leaves the letter's clear text in plain type, so the bold words are the cipher words and the entry declares `cipher_markup: **`. Counted by hand over the bold text, with `v10_relabel.py` (dry run) as a cross-check of the holes: **181 cipher words (177 bold words plus the 4 bare `[?]` marks), 13 holes** (the four bare `[?]` marks after "longueur", "qui", "ont" and "estre", pro[?]z, and the words with bracketed or doubtful letters parei[l], l[e?], uou[d?], q[u]alite, Emp[ereur], ceu[x], escriue[z], sui[s]); each hole is one word, the bare marks being of unknown extent. Share 168/181 = **0.928**, under 0.95. (The tool's 189 is a count of letter-run tokens, which splits the nine bracketed words into pieces and each elision such as d'auoir in two, and gives 1 - 13/(189 + 13) = 0.936; the word count by the README rules is the one kept.): **read -> read in part**. Before: 0.957 over the whole text (clear included, not the measure) and 0.974 over the deciphered passages with only the 5 unread groups counted (the bracketed letters were not counted). Emp[ereur] is counted as a hole because the files do not show whether it expands a written abbreviation. The result is George Lasry's; nothing was re-deciphered here, and the class change rests on his own marks.
+
+## Remaining gaps
+
+- the four bare `[?]` marks and pro[?]z in Lasry's readable text and the eight words with bracketed or doubtful letters (parei[l], l[e?], uou[d?], q[u]alite, Emp[ereur], ceu[x], escriue[z], sui[s]) - blocker: not-attempted; this is Lasry's decipherment, not re-deciphered here, and the holes have not been tried against the Gallica image or the interlinear plaintext
+
+## Escalation
+
+- [n/a] siblings: not worked here; the result is Lasry's and the project did not re-decipher it
+- [n/a] clear-pages: the letter's own clear text is the plain type of the readable text; no separate clear copy is recorded
+- [n/a] known-keys: Lasry notes a comparison key in Colbert 398 sharing 14 letter forms; not tried here
+- [n/a] print: not searched in this recount
+- [n/a] key-rebuild: the key is Lasry's (43 identified symbols); not rebuilt here
+- [n/a] retry: the holes were not retried here
+

@@ -252,7 +252,7 @@ def build(recs, adds):
         if p['type'] != 'skip': units[p['line']].append(emit(p) or '·')
     pages = collections.OrderedDict()
     for ln, ws in lines.items(): pages.setdefault(ln[:2], []).append((ln, ws))
-    head = ('Decryption of DL 46150 under key.json, line by line against transcription/p{n}.txt. signs = the '
+    head = ('Decryption of DL 46150 under key.json and the extended values of key_supplement.md (qA = i/t, y = 200,000), line by line against transcription/p{n}.txt. signs = the '
             'transcription; decrypt = what each unit gives (· null, {{...}} code sign, _ lost sign, # no value; '
             'a polyphonic sign shows the value of its set that fits); Latin = the words whose first sign stands on '
             'the line. [?word] = rests on a suspect or unvalued sign (the word the context and the minute call '
@@ -265,7 +265,7 @@ def build(recs, adds):
                   '', 'Latin: ' + tidy(' '.join(ws)), '']
         (H / f'reading/p{n}.md').write_text('\n'.join(L), encoding='utf-8')
     L = ['# DL 46150: the Latin reading', '',
-         'Maffeo da Treviglio to Tamás Bakócz, Milan, 30 November 1490. The cipher text under key.json, with word '
+         'Maffeo da Treviglio to Tamás Bakócz, Milan, 30 November 1490. The cipher text under key.json and the extended values of key_supplement.md (qA = i/t, y = 200,000), with word '
          'division and punctuation (taken from the minute where the cipher has the same words). [?word] = rests on a '
          'suspect or unvalued sign; [...] = not read; ⟨word⟩ = lost to damage, filled from the clear minute. Spelling '
          'and wording are the cipher\'s where they differ from the minute (afinitatem, suma, uigesimam). Line '

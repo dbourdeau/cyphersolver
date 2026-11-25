@@ -1,6 +1,6 @@
 # Giuliano Caprile to Ferrara, 1520–1521: the 1520–21 sign cipher (catalogue 157) — NOTES
 
-Status: in progress (written up in docs/caprile1520.html; V1921 read 97.0 %; R1139 and R1136 decoded, not read: re-read 22-23 Oct 2026 (b18), partial readings 0.18 and 0.0 clean, blockers no-key-material and illegible)
+Status: in progress (written up in docs/caprile1520.html; V1921 161/166 signs (97.0 %), read in part by cipher words (37/43, 16 Nov 2026); R1139 and R1136 decoded, not read: re-read 22-23 Oct 2026 (b18), partial readings 0.18 and 0.0 clean, blockers no-key-material and illegible)
 
 22 Oct 2026, reading audit (George Lasry's test: can sentences be built and translated?): **read in part**.
 V1921 reads (six runs inside clear sentences, translated), and so do Somogyi's R1138 and V1920. **R1139 and R1136 are
@@ -158,6 +158,20 @@ episcopa[to]", "l'altro in titolo, et a questo modo excluderà …"). Details in
   beam, regrade, look-alike, shape and V1921 files. `fraction_read` now measured over this key's letters only:
   992/1236 (80.3 %; R1139 453/505 and R1136 378/565 decoded letters inside phrases, V1921 161/166 signs).
 
+## Read share over cipher words only (16 Nov 2026)
+
+README Conventions (16 Nov 2026): the read share counts the words written in cipher only. V1921 is the only entry
+affected. `read_v1921.md` sets the six cipher runs in **bold** inside the quoted clear sentences; the count is taken
+over the bold words only, the clear Italian and the notes and tables of the file left out.
+
+- V1921: 0.975 -> **0.860** (37 of 43 cipher words). Unread: *dicixe* and *revelta* (grade M, doubtful words; the
+  translation marks them [?]), the two minims `[..]` after *persuaso*, the sign `[.]` before *Agria* (one word each,
+  extent unknown), *e[t]* (letter supplied) and *reg[no?]* at the torn edge. The editorial gloss `[= disse?]` is not
+  a word. With *dicixe* and *revelta* counted as read: 39/43 (0.907). The 0.975 had been measured on the whole file
+  (no `## Reading` heading: notes and tables included). The sign figure, 161 of 166 (97.0%), is unchanged.
+- V1921 class: read -> **read in part**. R1138/V1920 (Somogyi's decipherment, 1.0) unchanged; R1139 and R1136 stay
+  decoded, not read. The target was already read in part; its class and fraction_read (0.117) do not change.
+
 ## Remaining gaps
 
 - R1136 L01-L03 left third under the stain (about 6 signs, "# #" in the transcription) and R1139 L10 end - blocker: illegible; the stain covers the signs on the only image (re-checked on contrast-stretched strips 22-23 Oct 2026)
@@ -174,3 +188,18 @@ episcopa[to]", "l'altro in titolo, et a questo modo excluderà …"). Details in
 - [x] print: ASMo inventory and Somogyi 2025 found; R1138 already read
 - [x] key-rebuild: EM key from Somogyi cribs (89.6%); V1921 values (lone o = h/u, oo = b, z+/x+/xp = q, EL = f, K = et); pass 4 values (o+ = s, Z+/Zp = q, D = b/x, plain c = o)
 - [x] retry: 22-23 Oct 2026 (b18) - R1139 and R1136 re-read on 2-2.2x strips of the native images, R1139 five labels corrected, partial readings and translations written (0.18 and 0.0 clean), blockers named; done 2 Oct 2026 - V1921 re-transcribed and read 97.0 %; R1139 and R1136 re-decoded with the new values (`beam21.py`), phrases checked on the crops and regraded (`pass3_r1136_r1139.md`, `regrade21.py`: R1139 83.8 %, R1136 59.4 %); pass 4 (2 Oct, later): R1136 re-transcribed and regraded 66.9 %, R1139 second pass 88.7 %; pass 5 (3 Oct) R1139 89.7 %. Still open as work, not as escalation: a full second transcription of R1136
+
+## 24 Nov 2026 - R1139 / R1136: blind sign-shape sheet on 4, p+, q+ (Brice Dudout, with Claude), `dudout/sign_check_2411/`
+Brice Dudout looked at 9 signs blind on DECODE R1139 and R1136, plus 3 controls (all 3 passed). The rule was hashed first.
+- The 4 / q+ / crossed-y family is three signs:
+  - 4 is confirmed three times.
+  - The "4" of R1139 L01 "com[4]" is a crossed y, so "come" needs no value for 4.
+  - q+ (L04) and q? (L06) are a crossed q, a form of their own. One more crossed q is at R1136 L05.
+  - L07 end q+ is unresolved.
+- p+ is a crossed p, so p = n. The s given there by sense is not supported.
+- "1 1" at L07 end is u, so U = g. No word results.
+- {probable}, by sense only: q+ = a at L04 and L06, the same value as q.
+- Effect on the word-level count: R1139 goes from 118 to 119 sure out of 140; R1136 is unchanged. Both stay decoded, not read.
+
+key21, the transcriptions and the readings are unchanged. The relabels are only proposed, in `dudout/sign_check_2411/proposed-alphabet/`.
+Open: the 4 at R1139 L02 end ("[4] credo") needs the same question (crossed y or 4?).

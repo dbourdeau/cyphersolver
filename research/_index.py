@@ -50,6 +50,7 @@ OVERRIDE = {
     'catalogue_review_20261020': 'vetting', 'frame_check_2026-10': 'vetting', 'latam_vetting': 'vetting',
     'verify_2026-10': 'vetting',
     'dudout_2026-10-29': 'contributed', 'dudout_sarmiento_ms2093': 'contributed', 'dudout_dorffler1773': 'contributed',
+    'laurens_bourdieu_1782': 'contributed',
     'catalogue_harvest': 'survey', 'cryptoole': 'survey', 'oldest': 'survey', 'top50': 'survey', 'mtc3': 'survey',
     'siena2308': 'survey',
     'families': 'analysis', 'keyedit': 'analysis', 'patterns': 'analysis', 'qa': 'analysis',

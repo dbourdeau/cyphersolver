@@ -310,7 +310,8 @@
    "what": "Brice Dudout (Claude Opus 5.5): independent decoder (verify_dudout_20261114.py) reading only RING and TABLES['C'] of decode.py and the transcription pages, with dash-group rules and no language model: A 2742/2742, B 1539/1539, C 850/850 letters equal to decryption_A/B/C.txt; the same 31 + 4 indicator settings, and Nos. 2 and 3 open on the previous sheet's last setting without the START table. README read bar (v10_relabel.measure): A 0.988, B 0.990, C 0.970 (recorded 1.0, 0.994, 1.0); all stay read. Image p. 725 (NARA image 570): over 15 in L09 the interlinear has an f (15 = the f of 'of'), and the word over the numeral 18, read 'fifteen', is faint and partly struck through, ending '-teen'; the cipher's 18 stands.",
    "result": "worked"
   },
-  {"date": "2026-11-14", "kind": "verification", "what": "Project check of PR #572 (Brice Dudout): his decoder re-run (A 2742/2742, B 1539/1539, C 850/850 letters, 31 + 4 indicator settings); v10_relabel.measure reproduced (A 0.988, B 0.990, C 0.970) and recorded as read_share in place of 1.0, 0.994, 1.0, which were letter shares; all stay read. p. 725 L09 looked at on NARA image 570: the mark over 15 looks like an f, the struck word over 18 is too faint to decide between fifteen and eighteen; the cipher's 18 stands. No key correction.", "result": "worked"}
+  {"date": "2026-11-14", "kind": "verification", "what": "Project check of PR #572 (Brice Dudout): his decoder re-run (A 2742/2742, B 1539/1539, C 850/850 letters, 31 + 4 indicator settings); v10_relabel.measure reproduced (A 0.988, B 0.990, C 0.970) and recorded as read_share in place of 1.0, 0.994, 1.0, which were letter shares; all stay read. p. 725 L09 looked at on NARA image 570: the mark over 15 looks like an f, the struck word over 18 is too faint to decide between fifteen and eighteen; the cipher's 18 stands. No key correction.", "result": "worked"},
+  {"date": "2026-11-16", "kind": "verification", "what": "Read share recounted over cipher words only (README Conventions, 16 Nov 2026), holes by words with the v2_score rules: A and B are all cipher, counted on the reading body without the Notes paragraph (A 0.988 -> 0.992, 604/609; B 0.990 -> 0.989, 358/362); C's reading holds the cipher runs only, the clear text of the C lines not in it (0.970 -> 0.964, 186/193). All three stay read; class unchanged.", "result": "worked"}
  ],
  "outcome": {
   "validation": {
@@ -410,7 +411,7 @@
     ],
     "decryption": "decryption_A.txt",
     "reading": "reading_A.md",
-    "read_share": 0.988,
+    "read_share": 0.992,
     "summary": "Charleston news for Cornwallis after he left: the Chatham convoy with Governor Bull and Sir Egerton Leigh, the raid of Marion and Lee on Monk's Corner, Craig's seizure of Wilmington, Georgetown attacked, a fleet from Ireland, Arnold's express from the Chesapeake, Captain Barclay refusing to sail against the French, and Sumter beaten off at the Congarees and pursued by Rawdon and Watson.",
     "language": "en",
     "contemporary": "decoded.txt",
@@ -419,7 +420,8 @@
      "by": "Claude Opus 5.5",
      "date": "2026-10-27",
      "note": "Read through in full against decryption_A.txt: continuous military news in plain sentences, every proper name historically placed (Bull, Egerton Leigh, Monk's Corner, Fenwick, Wilmington 28 Jan, Barclay's ships, Sumter at the Congarees 19 Feb). The shape score (0.655) is pulled down by the long semicolon-joined sentences of the original and the [?] at two word gaps, not by unread text. Not checked by a human against the images."
-    }
+    },
+    "note": "16 Nov 2026: read share over cipher words only 0.992: 604 of 609 words (the reading body to 'Notes.'; the letter is all cipher). Holes: [with], Sumpter's [?], [...], [Hightown?], [Pedee?]. The 0.988 recorded on 14 Nov counted the Notes paragraph too, whose quoted marks counted again."
    },
    {
     "doc": "B",
@@ -432,7 +434,7 @@
     ],
     "decryption": "decryption_B.txt",
     "reading": "reading_B.md",
-    "read_share": 0.99,
+    "read_share": 0.989,
     "summary": "Arnold's plan to raid the Albemarle Sound and Newbern; Balfour has sent Arnold the cipher by Evans; Savannah short of provisions, the frontier under pressure; what to do with the troops from England and the Wilmington post; Rodney's capture of St Eustatius and a Dutch war certain.",
     "language": "en",
     "contemporary": "decoded.txt",
@@ -441,7 +443,8 @@
      "by": "Claude Opus 5.5",
      "date": "2026-10-27",
      "note": "Read through in full: Arnold's paragraph, the cipher sent by Evans, Savannah, Wilmington, Rodney at St Eustatius; one place of a phrase ('By the bearer') uncertain. Not checked by a human against the images."
-    }
+    },
+    "note": "16 Nov 2026: read share over cipher words only 0.989: 358 of 362 words (the reading body to 'Notes.'; the letter is all cipher). Holes: Feb[ruary], By the bearer [?], [Savannah?], [and]. The 0.990 recorded on 14 Nov counted the Notes paragraph too."
    },
    {
     "doc": "C",
@@ -454,7 +457,7 @@
     ],
     "decryption": "decryption_C.txt",
     "reading": "reading_C.md",
-    "read_share": 0.97,
+    "read_share": 0.964,
     "summary": "Arrangements for an escort and supplies to Stewart's army: no dragoons at Charleston, the depot near Monk's Corner put in defence, Caldwell not to act with the cavalry, and a request to cover the escort at Manigault's or Murray's ferries with a move towards Nelson's.",
     "language": "en",
     "contemporary": "decoded.txt",
@@ -463,7 +466,8 @@
      "by": "Claude Opus 5.5",
      "date": "2026-10-27",
      "note": "Cipher runs only, each read as sense; the clear text between them is not edited here, so the runs are fragments of sentences; 'Tuesday', 'rent' and 'the next' grade C. Not checked by a human against the images."
-    }
+    },
+    "note": "16 Nov 2026: read share over cipher words only 0.964: 186 of 193 words. reading_C.md gives the cipher runs only, separated by '...' where the clear text of the C lines stands; the clear text is not counted. Holes: Tuesday[?], [?] after 'wait', rent[?], [the next?] (two words), [it], [?] after 'garrison' (possessive 's not counted as words). The 0.970 recorded on 14 Nov counted the header lines."
    }
   ]
  }

@@ -218,6 +218,31 @@
             "note": {"type": "string"}
           }
         },
+        "sign_check": {
+          "type": "array",
+          "description": "Verification level 'AI decipherment, human-checked on a sample of signs' (method page, 18 Nov 2026). A person picked, blind, the shape they see for signs chosen by a rule written before the sheet: one boxed sign per question, options cut from the same document plus 'none / other shape', 'illegible' and 'not a sign', no gloss, reading, value or place shown, and known-answer controls mixed in. The signs are chosen because they are doubtful: a diagnostic, not a random sample. It checks sign shapes, not the key or the reading, and it never changes class, state or read_share. Not a human_check: a model may have built or scored the sheet, and model_roles says so. Minimum for the level: controls >= 2, all passed (an answer 'none / other' on a control is a failure); signs_checked >= 8 after removing answers a faulty thumbnail touched; the rule in NOTES dated before the answers.",
+          "items": {
+            "type": "object",
+            "required": ["date", "checker", "checker_kind", "model_roles", "signs_checked", "controls", "controls_passed", "rule"],
+            "properties": {
+              "date": {"type": "string", "description": "Date the answers were given."},
+              "checker": {"type": "string", "description": "The person who answered."},
+              "checker_kind": {"type": "string", "enum": ["project", "external"], "description": "project = a maintainer or a contributor of the reading; external = someone outside the project."},
+              "model_roles": {"type": "array", "items": {"type": "string", "enum": ["rule", "thumbnails", "sheet", "scoring", "remarks"]}, "description": "What a model did: wrote the selection rule, cut the thumbnails, built the sheet, scored the answers, interpreted free-text remarks. Empty when a person did all of it."},
+              "signs_checked": {"type": "integer", "minimum": 0, "description": "Target signs counted, controls not included, after removing answers a faulty thumbnail touched."},
+              "controls": {"type": "integer", "minimum": 0},
+              "controls_passed": {"type": "integer", "minimum": 0},
+              "as_transcribed": {"type": "integer", "minimum": 0, "description": "Signs the checker saw as transcribed."},
+              "corrected": {"type": "integer", "minimum": 0, "description": "Signs the answer corrected; the transcription or reading is recoded or marked."},
+              "unresolved": {"type": "integer", "minimum": 0, "description": "Answers 'none / other', 'illegible' or 'not a sign' that leave the sign open."},
+              "not_counted": {"type": "integer", "minimum": 0, "description": "Answers removed because a thumbnail was wrong."},
+              "rule": {"type": "string", "description": "Where the selection rule is written (NOTES section), with its date."},
+              "rule_hash": {"type": "string", "description": "SHA-256 of the rule, the targets and the controls, committed before the answers."},
+              "sheet_faults": {"type": "string", "description": "Every thumbnail or sheet error found afterwards."},
+              "note": {"type": "string"}
+            }
+          }
+        },
         "validation": {"type": "object", "required": ["date", "verdict"],
      "description": "Result of docs/_validate.py: the reading's n-gram score against two nulls, random keys of the same structure and the same key refitted to a shuffled ciphertext (the overfitting test).",
      "properties": {
@@ -241,8 +266,8 @@
       "doc": {"description": "documents[].id this entry covers, a list of ids, or 'all'.", "anyOf": [{"type": "string"}, {"type": "array", "items": {"type": "string"}}]},
       "label": {"type": "string", "description": "Heading for this entry when a profile document holds several letters (e.g. 'R1072, 6 Jan 1757'); else the document's id, shelfmark and date are used."},
       "transcription": {"anyOf": [{"type": "string"}, {"type": "array", "items": {"type": "string"}}]},
-      "decryption": {"description": "The deciphered text (plaintext reading), with unread groups marked.", "anyOf": [{"type": "string"}, {"type": "array", "items": {"type": "string"}}]},
-      "reading": {"description": "The reading as sentences: the decryption normalised (word division, spelling, punctuation, codes resolved), holes marked [...] . Optional when the decryption file already reads as sentences.", "anyOf": [{"type": "string"}, {"type": "array", "items": {"type": "string"}}]},
+      "decryption": {"description": "The unedited output of the key: the key file applied to the transcription sign by sign, nothing corrected, unread groups marked (README Conventions, 16 Nov 2026). Not a contemporary decipherment, a clear copy or an edition: those go under contemporary.", "anyOf": [{"type": "string"}, {"type": "array", "items": {"type": "string"}}]},
+      "reading": {"description": "The reading as sentences: the decryption normalised (word division, spelling, punctuation, codes resolved), holes marked [...], and every letter or word the key does not give marked in the file's stated convention (README Conventions, 16 Nov 2026). Optional when the decryption file already reads as sentences.", "anyOf": [{"type": "string"}, {"type": "array", "items": {"type": "string"}}]},
       "contemporary": {"description": "The decipherment of the time, transcribed (shown as 'Decipherment of the time', never under transcription).", "anyOf": [{"type": "string"}, {"type": "array", "items": {"type": "string"}}]},
       "transcription_missing": {"description": "Why the cipher itself was never transcribed; replaces transcription. The transcription slot holds only the cipher as written, never a clear copy or a reading (24 Oct 2026).", "type": "string"},
       "translation": {"description": "An English translation of the reading, with the same holes marked (George Lasry, 22 Oct 2026). Required for every entry whose state is 'read' unless its language is 'en'.", "anyOf": [{"type": "string"}, {"type": "array", "items": {"type": "string"}}]},
@@ -250,9 +275,24 @@
       "language": {"type": "string", "description": "Language of the plaintext, ISO 639-1 (fr, it, es, la, de, nl, hu, en ...). 'en' needs no translation."},
       "reading_review": {"type": "object", "additionalProperties": false, "required": ["grade", "by", "date"],
        "description": "Required for every entry whose state is 'read' (George Lasry, 22 Oct 2026): a reader (a person, or a model named as such) read the decryption as sentences and records it. grade A = coherent sentences with scattered holes; B = coherent but raw (unspaced, capitals, decoder lines) and normalised in the reading or translation. A text with holes in most sentences gets no review: it is state 'decoded, not read'. docs/_check_reading.py's sentence score is a pointer for the reader.",
-       "properties": {"grade": {"enum": ["A", "B"]}, "by": {"type": "string"}, "date": {"type": "string"}, "note": {"type": "string"}}},
+       "properties": {
+       "reader_kind": {
+        "enum": ["model", "person assisted by model", "person"],
+        "description": "Who read it (16 Nov 2026). Filled by rule from `by` (docs/_reader_kind.py) and corrected by hand where the rule is wrong; absent when the record does not say. A printed edition is not a reader."
+       },
+       "independent": {
+        "type": "boolean",
+        "description": "false when the reader was not independent of the work (same session, the model that made the reading); true when the record says independent or blind; absent when not stated (16 Nov 2026, docs/_reader_kind.py)."
+       },"grade": {"enum": ["A", "B"]}, "by": {"type": "string"}, "date": {"type": "string"}, "note": {"type": "string"}}},
       "summary": {"type": "string", "description": "What the document says, in one to three sentences, with its historical context."},
-      "read_share": {"type": "number", "minimum": 0, "maximum": 1, "description": "Share of the reading's words read as sense: 1 - hole rate on research/reading_audit/v2_score.py (every [?word], supplied [word], unread sign and unvalued code a hole). 0.95 or more for state 'read'."},
+      "read_share": {"type": "number", "minimum": 0, "maximum": 1, "description": "Share of the reading's cipher words read as sense: 1 - hole rate on research/reading_audit/v2_score.py (every [?word], supplied [word], unread sign and unvalued code a hole), counted over the cipher words only where the entry declares cipher_markup or clear_markup (16 Nov 2026). 0.95 or more for state 'read'."},
+      "floor_used": {"type": "boolean", "description": "true when this entry is 'read' only by the short-text floor (README Conventions, 19 Nov 2026): fewer than 40 cipher words, at most 5% or 2 holes. Needs cipher_words and holes; the checker refuses a floor that does not hold. Say so in the entry's note as well."},
+      "cipher_words": {"type": "integer", "minimum": 1, "description": "The number of cipher words the read share is measured over (needed with floor_used)."},
+      "holes": {"type": "integer", "minimum": 0, "description": "The number of holes among those cipher words (every probable, inferred, supplied, grade-M word, unvalued code and supplied letter; needed with floor_used)."},
+      "cipher_markup": {"enum": ["⟦⟧", "⟨⟩", "«»", "‹›", "<>", "{}", "**", "*", "CAPS", ">"], "description": "How the reading file marks the words written in cipher, when it holds clear text too (16 Nov 2026, README Conventions: the read share counts cipher words only). research/reading_audit/v10_relabel.py then counts only the words inside the mark, and the hole marks that touch them. '**' bold, '*' italics (also _x_ and ***x***), 'CAPS' runs of capitals, '>' the blockquoted lines. Use this or clear_markup, not both; a <!-- measure: cipher_markup=X --> line in the reading file overrides it. Undeclared, the whole body is measured and reported as 'not split'."},
+      "clear_markup": {"enum": ["⟦⟧", "⟨⟩", "«»", "‹›", "<>", "{}", "**", "*", "CAPS", ">"], "description": "How the reading file marks its clear words, when it marks those instead of the cipher (e.g. ⟨ ⟩ or {braces} for clear): the marked words, and any hole or doubt inside them, are left out of the read share. '{}' never takes {?}, {+x} or {-x}."},
+      "bracket_expansions": {"type": "boolean", "description": "true when square-bracketed letters inside a word in the reading file are abbreviations of the source expanded (Ip[sis], R[everendi]ssimam), not letters supplied where the cipher has nothing: they are then not holes. Leave it out when any in-word bracket supplies a letter (actu[al]), which stays a hole."},
+      "reading_section": {"type": "string", "description": "When the reading file holds several letters, the start of the heading of this entry's section (e.g. 'f. 233'): only that section is measured."},
       "note": {"type": "string"}}}},
     "texts_withheld": {"type": "string", "description": "Why the full texts are not shown (the owner asked that they not be republished). Exempts the target from the texts check."},
     "key_file": {"description": "The key used, as a file in the target folder, required when outcome.contribution has 'key recovered' or 'key extended or corrected'.", "anyOf": [{"type": "string"}, {"type": "array", "items": {"type": "string"}}]},

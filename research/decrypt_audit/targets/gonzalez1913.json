@@ -1,0 +1,21 @@
+{
+ "folder": "gonzalez1913",
+ "causes": {
+  "F": "All 12. The reading file has no '## Reading' heading, so the audit takes the whole file and reads the run labels M01..M16 of its 'Coded runs' section as a letter m before each run. Key value 59=m is present and used.",
+  "D": "The reading interleaves clear typed text with the coded runs (capitals) and repeats the runs in a 'Coded runs' list; the two marked exceptions {eln/[?]} and l{o/a}s are bracketed with braces."
+ },
+ "before": "12 of 65 words depart (texts compared: 1)",
+ "after": "audit unchanged at 12 of 65 (labels are in the reading file, which may not be edited); with the labels removed from a scratch copy: 0 of 54 words depart",
+ "files_changed": [
+  "targets/gonzalez1913/NOTES.md",
+  "targets/gonzalez1913/profile.json"
+ ],
+ "key_values_added": [],
+ "unmarked_emendations": {
+  "count": 0,
+  "examples": []
+ },
+ "page_statements_false": [],
+ "remaining": "Nothing unexplained. Own decoder from key.tsv reproduces all 16 lines of the decryption file and of the reading's coded runs (accents folded) except the two marked cases. Minor: key.tsv source column says 'fit' for 57 ll and 77 v while NOTES says they were set by reading (not changed). Scan not consulted; docs page checked only for key/percentage statements (23 numbers, 59 of 61, 96.7%: consistent).",
+ "confidence": "high"
+}

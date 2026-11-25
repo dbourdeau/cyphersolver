@@ -121,6 +121,18 @@
    "kind": "control",
    "what": "Project check: an own script applied key.tsv to the 108 cipher words that are runs of letter signs and got the contributor's literal decodes in all 108; a word-list test gives 55.1% of letters in listed words against a mean of 9.4% and a best of 27.7% for 200 shuffled keys (VERIFICATION.md). No image compared.",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "verification",
+   "what": "Decrypt audit (research/decrypt_audit): the script found 93 of 201 compared words of reading.md departing from key.tsv applied to transcription.txt. Checked by hand and with an own read-only snippet: key.tsv gives the literal decode of all 113 cipher items of decryption.txt; the departing words are the clear hand between the cipher runs (italics in reading.md, brackets in the transcription), audit artefacts (the key line for the sign # read as a comment, tokens split on +, digits of code numbers read as the letter signs 3 and 6) and the declared round-bracket expansions; one letter is supplied without a mark (L24 'El legato' from elegato); the clear hand differs between transcription.txt and reading.md in 16 of 36 lines. No key value was missing; no file but NOTES.md and this profile changed. No image compared.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "verification",
+   "what": "Decrypt audit, marking: in reading.md the one unmarked supplied letter is now in round brackets, the file's convention (L24 'El (l)egato'); no letter changed; decryption.txt and translation.md left as given. Hole rate (v2_score.py) 0.173 before and after.",
+   "result": "worked"
   }
  ],
  "outcome": {

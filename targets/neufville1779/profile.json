@@ -11,6 +11,7 @@
    "year": 1780,
    "country": "France",
    "route": "Baudouin, secretary to Sartine (signing 'Dunoyer') -> Jean de Neufville (cover 'Van Temmel')",
+   "places": {"from": "Paris", "to": "Amsterdam"},
    "places": {
     "from": "Paris",
     "to": "Amsterdam"
@@ -44,6 +45,7 @@
    "year": 1780,
    "country": "France",
    "route": "Baudouin, secretary to Sartine (signing 'Dunoyer') -> Jean de Neufville (cover 'Van Temmel')",
+   "places": {"from": "Paris", "to": "Amsterdam"},
    "places": {
     "from": "Paris",
     "to": "Amsterdam"
@@ -77,6 +79,7 @@
    "year": 1780,
    "country": "France",
    "route": "Baudouin, secretary to Sartine (signing 'Dunoyer') -> Jean de Neufville (cover 'Van Temmel')",
+   "places": {"from": "Paris", "to": "Amsterdam"},
    "places": {
     "from": "Paris",
     "to": "Amsterdam"
@@ -110,6 +113,7 @@
    "year": 1779,
    "country": "France",
    "route": "Baudouin, secretary to Sartine (signing 'Dunoyer') -> Jean de Neufville (cover 'Van Temmel')",
+   "places": {"from": "Paris", "to": "Amsterdam"},
    "places": {
     "from": "Paris",
     "to": "Amsterdam"
@@ -324,6 +328,12 @@
    ],
    "what": "T5: the frozen key_full_r4 (sha256 checked) scored on the five p.579 glossed groups never used to build it: 4 of 5 (miss 226, glossed 'Hollande' here and 'même' on p.606); 200 shuffled keys mean 0.04, at most 1. Correction of 15 Nov 2026: two of the five (68, 428) were already in the key through key_additions_round2.tsv (round 2), so the held-out set was wrong; of the three pairs new to the key (499, 202, 226) it predicts 2 (shuffles mean 0.03, at most 1); three pairs are too few to carry weight. Rebuilt key key_full_r5 was identical to key_full_r4 on 14 Nov (it counted 68 and 428 twice; rebuilt on 15 Nov after the p.529 correction it differs only in 6 = 3 and no value for 3); retry of the bare passages settles no open number (B573 13/18, B491 10/16, B492 2/4).",
    "result": "partial"
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "verification",
+   "what": "Integration review for the write-up: escalation checklist and gaps reviewed (every open number retried on all glossed pages; the remaining routes are the Archives nationales Marine B4/B7 and Dutch archives, not online); the \"Dunoyer is Baudouin\" gap given its blocker (needs-physical-access) and mirrored into outcome.gaps; Transcription doubts listed in NOTES; a crop of p.573 cut from the National Archives Catalog frame for the page.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -443,6 +453,11 @@
     "item": "A glossed or deciphered copy of the bare groups (pp.491-492, 573)",
     "blocker": "needs-physical-access",
     "detail": "None in this file: all 808 images paged; pp.487-515 and 549-590 surveyed page by page (14 Nov 2026), the neighbours of the bare pages read, p.579 transcribed in full. Baudouin's office copies or de Neufville's sent letters may survive in the Archives nationales, Marine B4/B7, not seen."
+   },
+   {
+    "item": "That \"Dunoyer\" is Baudouin is not confirmed outside the file",
+    "blocker": "needs-physical-access",
+    "detail": "Rests on the volume's index, the signatures \"Baudouin\" on pp.497 and 499, the announced change of name and the same hand; a comparison with Baudouin's signed notes (American Philosophical Society) or his office papers (Archives nationales, Marine B4, B7) is needed."
    }
   ],
   "notes": "Most coded text in the file was read at the time: de Neufville's drafts carry his plain French, and he glossed many of Baudouin's letters. The volume's own 19th-century index identifies Du Noyer as Baudouin. What is new is the reconstruction of the code from the drafts, the leaf evidence for that identification, and the reading of the bare passages. PBF 28:354 n.9 cites one Baudouin letter of the file."

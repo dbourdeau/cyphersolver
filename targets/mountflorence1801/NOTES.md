@@ -1,5 +1,7 @@
 # Mountflorence → Madison, Paris, 18 March 1801 (catalogue 480)
 
+Status: read in part (16 Nov 2026, recounted over cipher words: 12 of 16 words, 75.0%; was read, counted over code groups)
+
 ## Result: key recovered from the ciphertext alone; all 39 code groups decoded (26 Oct 2026, one session)
 
 > I have it from very good Authority, DUPONT, that Spain has ceded to France, not Florida, but[?] the[?]
@@ -84,9 +86,21 @@ in compensation for Tuscany. His attribution to "secret articles at Lunéville" 
 - Web search 26 Oct 2026 (correspondents, date, Founders, Tomokiyo's American list): no decipherment found. First
   decipherment, so far as known.
 
+## Read share over cipher words only (16 Nov 2026)
+
+README Conventions now count the read share over the words written in cipher, holes by words, sure words only. The
+coded part of the letter is two sentences standing among clear words (the clear words of the same sentences, and then
+the news on prizes and Malaga, which `reading.txt` does not hold). Separated by hand from `decryption.txt`, which lists
+the coded words group by group: 16 cipher words (DUPONT, LUNEVILLE, TUSCANY and PARMA spelled letter by letter; Spain,
+to France, Florida, but, the, Mississippi, secret, at, by France to: 12 words read from their alphabetical slots). The
+four marked [?] in the reading (but, the, Mississippi, at) are holes: **1.0 -> 0.750 (12 of 16 words)**. The old 1.0
+was 39 of 39 code groups given a value, a count of tokens. Class **read -> read in part**; the key stays recovered.
+The measure cannot be declared: the reading file sets the coded words inside clear words without a mark, so
+`v10_relabel.py` reports the whole file (0.918, not split).
+
 ## Remaining gaps
 
-None blocking. All 39 groups have values; the 4 weaker word values (521, 249, 228, 688) are graded I and marked [?].
+- 521 (Mississippi), 249 (but), 228 (at), 688 (the) - blocker: too-short; each occurs once in a 39-group message in a one-part code of some 600 numbers, only the alphabetical slot and the sense fix them, and no second message in this code has been found
 
 ## Escalation
 
@@ -97,4 +111,4 @@ None blocking. All 39 groups have values; the 4 weaker word values (521, 249, 22
   State key is ruled out by his 1801 letter
 - [x] print: Madison Papers SS 1 and Founders: undecoded; nothing else found
 - [x] key-rebuild: whole key rebuilt from the four spelled names and the alphabetical order
-- [n/a] retry: nothing left unread to retry; all groups decoded
+- [n/a] retry: nothing to retry the four weak word values against, since each occurs once and no second message in this code exists; all 39 groups have a value

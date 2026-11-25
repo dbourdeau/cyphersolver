@@ -1,0 +1,161 @@
+{
+ "schema_version": 1,
+ "target": "luppi1510",
+ "title": "'Luppius tuus' (Florentine chancery) to Niccolo Machiavelli at the French court, letter in cipher, [14 August] 1510 (catalogue 1549)",
+ "documents": [
+  {
+   "id": "I-3",
+   "shelfmark": "BNCF, Carte Machiavelli I/3, 2 ff.",
+   "date": "14 [Aug] 1510 (day and year in the manuscript; the month is the editors')",
+   "year": 1510,
+   "country": "Italy",
+   "route": "Florence -> French court (Machiavelli)",
+   "language": "Italian",
+   "cleartext_in_document": "none",
+   "plaintext": {
+    "location": [
+     "printed edition"
+    ],
+    "source": "Fachard (ed.), Legazioni. Commissarie. Scritti di governo, VI (Rome 2011), doc. 269, pp. 490-492"
+   },
+   "length": {
+    "tokens": "unknown",
+    "distinct": "unknown",
+    "unit": "symbols",
+    "measured": false
+   },
+   "transcription": {
+    "by": "unknown",
+    "source": "none",
+    "image_quality": "fair",
+    "notes": "Not transcribed. BNCF images (Internet Culturale, about 900 px) seen: about 26 lines of cipher on c. 1r, 6 on c. 1v."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "unknown"
+  ],
+  "summary": "Symbol substitution, written without word division, in the repertoire of the 1510 Dieci letters; not analysed here.",
+  "symbol_kind": "unknown",
+  "distinct_symbols": "unknown",
+  "diacritics": {
+   "used": "unknown"
+  },
+  "homophones": {
+   "used": "unknown"
+  },
+  "nomenclator": {
+   "present": "unknown"
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "unknown",
+  "word_division": "none",
+  "doubled_letters": "unknown",
+  "sibling_key": "unknown",
+  "notes": "Glossed siblings of 1510 in the same collection (IV/111, V/61, V/67, V/123, I/81); key sheets VI/82 viewed, not applied."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "in print",
+   "where": "Fachard (2011), VI, doc. 269, pp. 490-492 (Italian text with the editors' marks for deciphered passages)",
+   "found": "before attempt",
+   "used": false
+  },
+  "inputs": [
+   "published reading"
+  ],
+  "attack": "none",
+  "human_role": "Andrew Aymeloglu identified the chancery connection (issue #590). AI agents located Fachard's printed text (PR #804) and checked Simonetta's published attribution for Andrew Beling (PR #842). The maintainers' review of PR #842 (21 Nov 2026, an AI agent) read the printed pages, Fachard VI pp. 490-493 and Lettere (2022) II pp. 815, 834-836, 848, and found them as cited. No person has checked this comparison.",
+  "tools": [
+   "web search",
+   "Internet Culturale image viewer"
+  ],
+  "models": [
+   "unknown"
+  ],
+  "sessions": "unknown",
+  "first_date": "2026-10-29",
+  "last_date": "2026-11-20"
+ },
+ "solution": [
+  {
+   "kind": "literature search",
+   "what": "Vetting 29 Oct 2026: known.py, web searches for a decipherment or edition; Tommasini and the Machiavelli editions not opened.",
+   "result": "failed"
+  },
+  {
+   "kind": "access",
+   "what": "BNCF images of I/3 c. 1r-1v viewed (Internet Culturale MagExport), 2 Nov 2026: whole letter in cipher, no gloss or clear copy on the leaves.",
+   "result": "worked"
+  },
+  {
+   "kind": "literature search",
+   "what": "Tommasini II (1911) pp. 1352-1353 read on archive.org (14 Nov 2026, issue #590): sender is a chancery clerk, not the Dieci; letter 'tutta in cifra, senza decifrato'.",
+   "result": "partial"
+  },
+  {
+   "kind": "literature search",
+   "what": "Fachard (2011), VI, doc. 269, pp. 490-492 named by PR #804 (19 Nov 2026): prints the letter deciphered, month August editorial; accepted from the PR's citation; the printed pages were read in the review of PR #842 (21 Nov 2026) and agree.",
+   "result": "worked"
+  },
+  {
+   "kind": "literature search",
+   "what": "Compared Fachard VI, doc. 269, with Simonetta in Lettere (2022), II, pp. 834–836, 848. Simonetta identifies Giovanni da Poppi as the writer of the 17 August letter and proposes that I/3 is the letter he sent three days earlier.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "method": "not solved",
+  "method_basis": "No reading was made here; the letter is already printed deciphered (Fachard 2011), so the entry was closed from the evidence without a transcription or key of ours.",
+  "contribution": [
+   "sender or date identified",
+   "catalogue correction"
+  ],
+  "class": "not read",
+  "key": "none",
+  "fraction_read": 0,
+  "fraction_read_method": "estimated",
+  "fraction_read_source": "No sign was given a value here.",
+  "verification": [
+   "none"
+  ],
+  "grades": "unknown",
+  "gaps": [
+   {
+    "item": "alignment of the print with the signs of I/3",
+    "blocker": "no-key-material",
+    "detail": "not attempted; the print is the only plaintext and no key was rebuilt"
+   }
+  ],
+  "credits": [
+   {
+    "who": "aymeloglu",
+    "role": "identification",
+    "note": "Identified the sender as a chancery clerk and found Tommasini's excerpts (issue #590).",
+    "date": "2026-11-14",
+    "source": "issue #590",
+    "published": true
+   },
+   {
+    "who": "ajbeling",
+    "role": "identification",
+    "note": "Identified the printed reading: Fachard (2011), VI, doc. 269 (PR #804, with AI agents; not checked by a person).",
+    "date": "2026-11-19",
+    "source": "PR #804",
+    "published": true
+   },
+   {
+    "who": "ajbeling",
+    "role": "identification",
+    "note": "Pointed to Simonetta's attribution of I/3 to ser Giovanni di Salvatore da Poppi (Lettere 2022, II no. 203 n. 1) and to the 2022 readings of the Buonaccorsi letters (PR #842, with AI agents; not checked by a person).",
+    "date": "2026-11-20",
+    "source": "PR #842",
+    "published": true
+   }
+  ],
+  "notes": "Fachard prints the decipherment. August is editorial. Simonetta attributes I/3 to Giovanni da Poppi and suggests that the cipher signature was written in error."
+ }
+}

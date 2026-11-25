@@ -400,7 +400,8 @@
    "technique": ["language-model scoring"]
   },
   {"date": "2026-10-24", "kind": "verification", "what": "Read bar applied per document (v10): 1 of 1 documents marked read measure under 95% of words read as sense (v2_score explicit holes) and are now read in part; read_share recorded for each.", "result": "partial"},
-  {"date": "2026-11-14", "kind": "sibling key", "technique": ["key matching", "plaintext matching"], "what": "Issue #554 (aaymeloglu): f. 10 identified as Digby-cabinet key no. 129 (f. 25r index; surviving page f. 77, R8701, names 559-580) from 562 Davenant / 572 Mylord in f. 10 and the word values of Charles I's 1646 letters to Nicholas printed with their decipherment (Evelyn iv. 178-179). Checked here: the Evelyn values against the archive.org text; contributor's f. 10 transcription vs this folder's (685 of ~720 groups agree); own script aaymeloglu_f10/apply_key129.py: 190 of 715 groups take a value, fragments only.", "result": "partial"}
+  {"date": "2026-11-14", "kind": "sibling key", "technique": ["key matching", "plaintext matching"], "what": "Issue #554 (aaymeloglu): f. 10 identified as Digby-cabinet key no. 129 (f. 25r index; surviving page f. 77, R8701, names 559-580) from 562 Davenant / 572 Mylord in f. 10 and the word values of Charles I's 1646 letters to Nicholas printed with their decipherment (Evelyn iv. 178-179). Checked here: the Evelyn values against the archive.org text; contributor's f. 10 transcription vs this folder's (685 of ~720 groups agree); own script aaymeloglu_f10/apply_key129.py: 190 of 715 groups take a value, fragments only.", "result": "partial"},
+  {"date": "2026-11-14", "kind": "sibling key", "what": "Full-texts pass: four entries (Maurice 1645, f. 9, f. 10, R8433) had no decryption file. f. 10: wrote f10_decryption.txt by putting the fixed values of key no. 129 (aaymeloglu_f10/key129.txt) over the folder's own f10_transcription.txt (trials.py): 189 of 715 whole groups take a value (26.4%), fragments only, not read. Maurice, f. 9 and R8433 have no key: their decryption field now points at a record of two failed trials replayed from the tables held in the folder (key 118 letters, nulls and word bands from keys.py; key 125 letters from test_letters.py), which give no English (maurice1645_trials.txt, f9_trials.txt, trevor1645_trials.txt). States unchanged (decoded, not read).", "result": "failed"}
  ],
  "outcome": {
   "method": "read with known key",
@@ -512,39 +513,43 @@
    },
    {
     "doc": "maurice1645",
-    "note": "Not deciphered: the file is the ciphertext (numeric groups from Warburton iii. 133). No key fits: the 73 keys of Add MS 72438 (9 Oct) and, on 22 Oct 2026 (reading audit b10), George Lasry's five reconstructed SP 106 keys of the King/Queen 1645-46 siblings (SP 106, SP106-2, -3, -5, -8) give gibberish. Blocker: no-key-material (Rupert's cipher to his brother is not known).",
+    "note": "Not deciphered: the file is the ciphertext (numeric groups from Warburton iii. 133). No key fits: the 73 keys of Add MS 72438 (9 Oct) and, on 22 Oct 2026 (reading audit b10), George Lasry's five reconstructed SP 106 keys of the King/Queen 1645-46 siblings (SP 106, SP106-2, -3, -5, -8) give gibberish. Blocker: no-key-material (Rupert's cipher to his brother is not known). The decryption file is not a decryption: it records two of the failed trials (the key 118 and key 125 letter tables held in the folder, trials.py, 14 Nov 2026).",
     "label": "Maurice to Rupert, Worcester, 7 July 1645 (Warburton iii. 133)",
     "transcription": "maurice1645_groups.txt",
     "summary": "Prince Maurice explains why he cannot bring his regiments to Rupert at Bristol, with the Scots army four miles from Worcester ('By your cipher, you may observe ...'). Not deciphered: no key in Add MS 72438 or in print fits the 93 groups.",
     "language": "en",
-    "state": "decoded, not read"
+    "state": "decoded, not read",
+    "decryption": "maurice1645_trials.txt"
    },
    {
     "doc": "addms72438-f9",
-    "note": "Not deciphered: the file is the ciphertext (number groups with a few clear words). No key fits: the 73 keys of Add MS 72438 (9 Oct) and, on 22 Oct 2026 (reading audit b10), George Lasry's five SP 106 keys (SP 106, SP106-2, -3, -5, -8) give gibberish; 108 letter groups are too few for a rebuild. Blocker: no-key-material.",
+    "note": "Not deciphered: the file is the ciphertext (number groups with a few clear words). No key fits: the 73 keys of Add MS 72438 (9 Oct) and, on 22 Oct 2026 (reading audit b10), George Lasry's five SP 106 keys (SP 106, SP106-2, -3, -5, -8) give gibberish; 108 letter groups are too few for a rebuild. Blocker: no-key-material. The decryption file is not a decryption: it records two of the failed trials (the key 118 and key 125 letter tables held in the folder, trials.py, 14 Nov 2026).",
     "label": "BL Add MS 72438 f. 9r (DECODE R8623), 21 May 1646",
     "transcription": "f9_transcription.txt",
     "summary": "Intercepted royalist letter to 'My Lord', largely in a numerical cipher; not deciphered (no key of the volume fits).",
     "language": "en",
-    "state": "decoded, not read"
+    "state": "decoded, not read",
+    "decryption": "f9_trials.txt"
    },
    {
     "doc": "addms72438-f10",
-    "note": "Not deciphered: the file is the ciphertext (number groups with a few clear words). No key fits: the 73 keys of Add MS 72438 (9 Oct) and, on 22 Oct 2026 (reading audit b10), George Lasry's five SP 106 keys (SP 106, SP106-2, -3, -5, -8) give gibberish. Blocker: no-key-material (a May 1646 key not captured with the Digby coach keys).",
+    "note": "Not read. 14 Nov 2026 (issue #554, Andrew Aymeloglu): the key is identified as Digby-cabinet key no. 129, of which only f. 77 (names 559-580) survives; about 45 values are fixed from the King's 1646 letters to Nicholas (Evelyn iv. 178-179). f10_decryption.txt puts those values over this folder's transcription (trials.py): 189 of 715 whole groups take a value (26.4%) and the result is fragments ('to send ... to your Majesty ... for which', 'having not 596 d a w or d'), no sentence. Earlier trials: the other keys of Add MS 72438 (9 Oct) and George Lasry's five SP 106 keys (22 Oct) give gibberish. Blocker: no-key-material (the rest of key 129 or the decipherment of the time is not available).",
     "label": "BL Add MS 72438 f. 10r-v (DECODE R8624), 13 May 1646",
     "transcription": "f10_transcription.txt",
-    "summary": "Intercepted letter to King Charles I, endorsed 'Quadrupl.' (fourth copy), in a numerical cipher; not deciphered.",
+    "summary": "Intercepted letter to King Charles I, endorsed 'Quadrupl.' (fourth copy), in a numerical cipher identified on 14 Nov 2026 as Digby-cabinet key no. 129; about a quarter of the groups take a value and the letter is not read.",
     "language": "en",
-    "state": "decoded, not read"
+    "state": "decoded, not read",
+    "decryption": "f10_decryption.txt"
    },
    {
     "doc": "r8433-trevor1645",
-    "note": "Not deciphered: the file is the ciphertext (clear English with undeciphered number groups). No key fits: the box keys and Tomokiyo's royalist keys (9 Oct) and, on 22 Oct 2026 (reading audit b10), George Lasry's five SP 106 keys (SP 106, SP106-2, -3, -5, -8) give gibberish; annealing with cribs on 54 letter groups does not converge. Blocker: too-short.",
+    "note": "Not deciphered: the file is the ciphertext (clear English with undeciphered number groups). No key fits: the box keys and Tomokiyo's royalist keys (9 Oct) and, on 22 Oct 2026 (reading audit b10), George Lasry's five SP 106 keys (SP 106, SP106-2, -3, -5, -8) give gibberish; annealing with cribs on 54 letter groups does not converge. Blocker: too-short. The decryption file is not a decryption: it records two of the failed trials (the key 118 and key 125 letter tables held in the folder, trials.py, 14 Nov 2026).",
     "label": "BL Add MS 18982 ff. 51-52 (DECODE R8433), [28] Apr 1645",
     "transcription": "trevor1645_transcription.txt",
     "summary": "Arthur Trevor to Prince Rupert from Bristol, mostly clear (Sir Vivian Molineux, Sir Bryan O'Neile, the Prince of Wales's journey westward) with short numerical cipher passages; not deciphered.",
     "language": "en",
-    "state": "decoded, not read"
+    "state": "decoded, not read",
+    "decryption": "trevor1645_trials.txt"
    },
    {
     "doc": "addms72438-f104",

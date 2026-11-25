@@ -1,0 +1,33 @@
+{
+ "folder": "potocka1714",
+ "causes": {
+  "B": "1 word: R7530 ⟦u venir⟧ where the key gives uenir (5 figures, 6 letters printed), no mark",
+  "C": "word division added; u printed as v (vos) in ⟦ ⟧",
+  "D": "all 17 flagged words of R7536 are clear French anchors around the ⟦ ⟧ insertions; 249 clear words in the eight French readings, all from the context column of potocka-segments.tsv; unvalued person codes appended to the cipher files",
+  "F": "the audit has no way to know that text outside ⟦ ⟧ is clear text"
+ },
+ "before": "17 of 31 words depart (texts compared: 1)",
+ "after": "17 of 31 words depart (texts compared: 1); unchanged, all clear anchors",
+ "files_changed": [
+  "targets/potocka1714/NOTES.md",
+  "targets/potocka1714/profile.json"
+ ],
+ "key_values_added": [],
+ "unmarked_emendations": {
+  "count": 1,
+  "examples": [
+   {
+    "text": "R7530",
+    "decrypt": "uenir",
+    "reading": "u venir",
+    "where": "targets/potocka1714/R7530_reading.md:15 (source: potocka-segments.tsv:40 reading_note; reading.md:594-596 keeps Literal uenir / Interpretation u venir apart)"
+   }
+  ]
+ },
+ "page_statements_false": [
+  "\"spelling as the figures give it\" (header of the R7530 reading shown on the page, with ⟦u venir⟧ at line 499): the figures give uenir",
+  "\"Keinisberk a Kinnik: Konigsberg to Kinnig? verify name\" (line 254) and \"Keinisberk a Kinnik, tegn and tombap\" (line 272): already stale; the surplus 25 was removed on 5 Oct 2026 and NOTES and the reading have Kinisberk"
+ ],
+ "remaining": "Clear anchors not checked against the images. Only 5 of the 23 standalone code occurrences appear in the reading files (the others have no anchor in potocka-segments.tsv).",
+ "confidence": "high"
+}

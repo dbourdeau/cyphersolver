@@ -188,8 +188,16 @@ Integration check (14 Nov 2026):
   18 Sept 2026.
 - Outcome: key recovered from ciphertext-only, by the contributor (provenance contributed). Credit: aaymeloglu, solution.
 
+## 14 Nov 2026: reading review (audit section J)
+
+`aaymeloglu/reading.md` read against `reading.txt` and a `reading_review` recorded in `profile.json`, grade A. The
+postscript is two sentences. The first holds entire but for the person sign. The second holds as far as *Gif the [Q2]
+cummis haom thair* and then has four holes in eleven words. State stays read in part (27 of 35 words). DECODE's public
+API was tried for R8345: the record answers and the ciphertext is marked private, so the five glyph splits are still
+unchecked (login needed).
+
 ## Remaining gaps
-- The five glyph splits (U/M, x/P, F/s, the z3 shapes, e/c): - blocker: not-attempted; check them on the DECODE R8345 image (login), which is workable.
+- The z shapes at L1.25 (Z5), L2.37 (Z3), L4.5 (Z2): - blocker: too-short; a blind sheet of 24 Nov 2026 found one form of its own at the three places (z-bis), nowhere else in the piece. The other four splits (U/M, x/P, F/s, e/c) are confirmed on the image (section "24 Nov 2026" below).
 - The seven-sign last word (L4) and the hapax glyphs Zz, t, x3, Xs: - blocker: too-short; each occurs once or twice in 134 glyphs.
 - The person-signs 4b and Eb ([Q], [Q2]): - blocker: no-key-material; read as the Queen by sense only, no key sheet for this cipher.
 
@@ -199,5 +207,24 @@ Integration check (14 Nov 2026):
 - [ ] known-keys: the Donibristle "Quein's Cipher" (HMC 6th Report) has a different symbol set (section above).
 - [x] print: Bain ii, HMC; no clear text in print.
 - [x] key-rebuild: done by the contributor (annealing with word segmentation), reproduced mechanically here.
-- [ ] retry: check the splits and the last word on the R8345 image with a DECODE login.
+- [x] retry: 24 Nov 2026, blind sign-shape sheet on R8345 (splits and last word; section below).
 
+
+## 24 Nov 2026 - blind sign-shape sheet on the glyph splits (Brice Dudout, with Claude), `dudout/sign_check_2411/`
+Brice Dudout looked at 12 signs blind on DECODE R8345, plus 3 controls (all 3 passed). The rule was hashed first.
+
+Confirmed as aaymeloglu transcribed:
+- U/M: L2.27 U, L3.19 U, L2.32 M (two signs behind Tomokiyo's "19");
+- P at L2.21 is the looped P, not x;
+- F at L1.32 and L3.36 (the merge of Tomokiyo's s and f holds);
+- c at L1.27, not e.
+
+Not confirmed: the three z places L1.25 (Z5), L2.37 (Z3) and L4.5 (Z2) were each answered "another form of z". It is the same
+form at the three places (z-bis: a flat z with a long oblique stroke down to the left). A look through the 13 z shapes of the
+piece found it nowhere else. L4.4 (Xs) is "another form", the mirror of X. L4.2 (x3) is the same form as xd (n).
+
+{probable}, by sense only: z-bis = y at L1.25 "Carl[y]le" and L2.37 "ha[y]m thair" (as "sending haym" earlier). Xs = u.
+
+The key and the reading are unchanged. The strict count stays at 27 of 35 (0.771); it would be 26 if L2.37 were no longer counted as
+Z3. A relabelled copy (proposal only) is in `dudout/sign_check_2411/proposed-alphabet/`. Testing z-bis = y needs another
+Moray-Wood letter in the same cipher.

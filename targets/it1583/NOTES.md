@@ -2,6 +2,18 @@
 
 Status: in progress. f. 68 read; f. 70 decoded, not read (reading audit, 22 Oct 2026).
 
+**20 Nov 2026: CTTS sign-level re-transcription, to test whether the ciphertext-only key holds** (section below;
+project `research/ctts/projects/it1583/`, git-ignored; README row in `research/ctts/README.md`; report
+`research/ctts/it1583_ctts_report.pdf`). A blind Fable 5.2 first pass, corrected by Claude (Opus 5.5) on enlarged
+crops, then compared with Lasry's CTTS project box by box. **The key does not change**: no class value moves; every
+place where the new transcription would give another letter was settled for Lasry's reading by the image and the
+sense, or stays open with neither reading making words. **One reading gain**: f. 68 line 10 has a sign written above
+the line with a caret, between *octo* and *dece*, that Lasry's project has no box for; it is the o-sign (#13), so
+the line reads *octo o dece* ("eight or ten"; the edition had supplied "or" in translation only). Two transcription
+proposals for the open classes (not adopted into `lasry2026/`, whose checksums `verify.py` guards): #40 + (11) on
+f. 68 line 9 are one continuous flourish, not two signs, and without them the line reads *li confidenti respondemo
+che*; the #35 at the end of f. 68 line 1 is a line-end stroke, not the R of the two line openings.
+
 **6 Nov 2026: catalogue 1309 (ff. 148, 151, 152, Venice 7 Dec 1446) is `../contucio1446/`.** Only f. 148 (R7911,
 Contucio) has cipher; it reads with the Vincentius key, ASMi cart. 1597 no. 14 (R5314), 225 of 226 signs. ff. 151-152
 (R7912, R7913) are clear. The R7900/R7901 pair was checked there for the key's code word *stat*.
@@ -62,10 +74,83 @@ block of 24 tokens, the untranslated "se mono", "do", "da" and the extra "o o").
 Statistical validation (`docs/_validate.py`, it-cinquecento order 4): reading -2.070 per letter; random keys -3.761
 (z 5.7); shuffled-refit best -2.544; annealer power -2.415; verdict **pass**.
 
+## CTTS re-transcription (20 Nov 2026)
+
+Done by Claude Opus 5.5 at the request of the session coordinating the CTTS gold-standard work (George Lasry's advice
+of 20 Nov 2026); the user watched and made no readings. Pipeline: `research/ctts/README.md`.
+
+- **Images**: DECODE R7898 (f. 68) and R7899 image P1 (f. 70), both binarized scans, 3702 px wide, fetched with the
+  project's DECODE cookie (git-ignored). The lines are about 37 px apart and touch, so a new script,
+  `research/ctts/segment_dense.py`, upscales 2x, finds the lines as peaks of the ink profile, assigns each blob to
+  the nearest line and cuts touching strokes at the column with least ink: 4 bands and 650 candidate boxes on f. 68,
+  3 bands and 479 on f. 70.
+- **Blind first pass**: two Fable 5.2 agents, one per letter, saw only the bands, the box overlays and a shape
+  notation (`NOTATION.md`); not `f68_signs.txt`, `f70_signs.txt`, the key, the decryption or Lasry's files.
+  f. 68: about 418 signs in 57 codes, 48 doubts, 10 split and 82 part boxes; f. 70: about 398 signs in 49 codes, 66
+  doubts, 3 split and 111 part boxes, 6 missed signs. About 12 minutes each, in parallel.
+- **Correction** (about 17 min): the first pass's own part and clear-text runs merged by script (102 merges, 817
+  boxes, 128 types); the two agents' codes for the same shape unified (f. 70 `+r`=T, `Fr`=F, `J`=f, `t`=c', `r`=y,
+  `Z`=J; 97 signs); every doubtful, split, part and missed sign (125) checked on an enlarged crop with no overlay and
+  decided (97 label decisions, `decisions.tsv`); splits, merged parts and missed signs fixed (74 box operations,
+  `geomfix.log`). Computer use of the CTTS window was requested and came back denied; at the user's choice the box
+  fixes were written to CTTS's own files and the project was opened in CTTS, which restored it cleanly (834 boxes,
+  83 types, all assigned).
+- **Outside comparison** (about 14 min), only after that: Lasry's CTTS boxes fitted onto the same DECODE images
+  (scale 1.00, median offset 2 px) and matched box by box; then fixes where the image and the decoded text side with
+  Lasry (`fix5c.log`, 68 changes): the dot groups `::` and `.:.` are cipher signs (Lasry #10 = z, #15 = a; "zorzo",
+  "facta"), 31 of them, which the first pass and the CTTS pass had dropped as separators because the notation sheet
+  said so; b joined to a cross is one sign (per, 7); C with ÷ on its bar (#25) and 9 with a barred m (#36) are one
+  sign each (the parts never occur apart, and f. 70 writes #25 as a barred E without dots); the tall h joined to a
+  loop (se) is not the barred loop (et); 18 single signs retyped (s for 8, h for b, B2 for B, T for +, p for Q2 ...).
+  Final project: f. 68 425 signs, f. 70 400 signs, 89 types.
+- **Sign error rates** (alignment, (S+D+I)/N, notations mapped by alignment; `score.py`, `scores.json`):
+
+  | | f. 68 | f. 70 |
+  | --- | ---: | ---: |
+  | first pass, raw box labels, vs final | 24.2% | 24.8% |
+  | first pass with its own notes vs final | 12.7% (7.5% without the dot groups) | 9.2% (7.7%) |
+  | CTTS pass before the outside comparison vs final | 10.8% (5.5%) | 6.8% (5.1%) |
+  | final vs Lasry's CTTS tokens | 1.9% | 5.2% |
+  | final vs the September draft (`f68_signs.txt`, `f70_signs.txt`) | 14.1% | 14.6% |
+  | Lasry vs the September draft | 14.4% | 15.1% |
+
+- **Does the key change? No.** 27 boxes where the new transcription's class would give another letter than Lasry's:
+  21 settled for Lasry by the image and the sense ("hai resposto per parte", "per rispecti de li oblighi", "in campo",
+  "advisata", "tamen per fare", "mediolani die qvarto mai" ...), 3 were naming differences only, 3 stay open
+  (f. 68 line 10 B or B2 in "?intita"; f. 70 line 1 last sign, a yogh with a stem rather than the #30 shape; f. 70
+  line 6 "altra v[a]ia", where the #15 is a dot group crossed by a descender, and a separator would give "via").
+  Lasry's merges of shapes are mostly one sign in two hands (z/2 #6, >/>2 (2), C÷/E #25, V2/Bo #38, a/j #27); his
+  splits that the CTTS pass had merged (se/et, the crosses #14/#18/#37, h/b, s/5/8, (6)/8') are all borne out.
+  (20) holds two shapes in f. 70 (Y 11, 8' 3), both read N: a possible split, no change of value.
+- **The open classes**: #25 and #36 are compound signs, as Lasry boxed them; #40 + (11) are one flourish (proposal
+  above); the line-end #35 of f. 68 line 1 is not the R shape; (16) "in" (written above f. 68 line 6) has two loops
+  side by side and is not the (6) shape; (24) "n" is the same gamma-like sign both times. f. 70 lines 1-5: the open
+  signs (25), (19), (26), (4), #25 are confirmed as distinct shapes, nothing new. f. 70 signature: the new
+  transcription differs in four or five signs under and beside the stamp (one sign Lasry reads #12 has no box; a9 for
+  e + #30; p for c), and neither gives a name.
+- **Decryption re-run** with Lasry's key on his tokens plus the inserted sign: only f. 68 line 10 changes,
+  "? n o octo dece per che" -> "? n o octo o dece per che".
+
+## Transcription doubts
+Checked 20 Nov 2026 on enlarged crops without overlay (`research/ctts/projects/it1583/check/`), against the decoded text, and against Lasry's CTTS transcription (an independent transcriber).
+- inserted sign above the line (f. 68 line 10, between octo and dece, caret below) - read: o-sign (#13), "octo o dece"; checked: image, decode, transcription; Lasry's project has no box for it; the shape is the tick-curve-bar sign
+- B or B2 (f. 68 line 10, "?intita le parte") - read: open, B (one bar) on the image, Lasry B2 (t); checked: image, decode, transcription; neither "insitale" nor "intitale" is a known word
+- flourish (f. 68 line 9, after "li confidenti") - read: one stroke, probably not a cipher sign; checked: image, decode, transcription; Lasry boxes two signs #40 and (11), both unresolved; without them "li confidenti respondemo che"
+- line-end sign (f. 68 line 1, after "maino o") - read: stroke with a hook drawn out into a line, unresolved; checked: image, decode, transcription; Lasry #35, but the two line-opening #35 are an R
+- inserted sign above the line (f. 68 line 6, "savere [in] qvesto") - read: two loops side by side with a tail, Lasry (16) provisional in; checked: image, decode, transcription; not the (6) shape, so (16) is not merged with (6)
+- last sign of f. 70 line 1 ("contra cremona [?]") - read: open, a barred yogh with a stem (the v-sign) on the image, Lasry #30 null; checked: image, decode, transcription; v makes no word before "credendo"
+- dot group crossed by a descender (f. 70 line 6, "altra v[a]ia") - read: .:. (a), open; checked: image, decode, transcription; a separator here would give "via"
+- 8 or s (f. 70 line 3, under the clear word) - read: s (top loop open), "che e fato"; checked: image, decode, transcription; the first pass had read 8 with this doubt
+- B or B2 (f. 70 line 7, "tamen") - read: B2 (two bars); checked: image, decode, transcription; "tamen" needs t
+- small open phi or p (f. 70 line 8, "mediolani die") - read: p; checked: image, decode, transcription; "die"
+- cross with a blob on the left (f. 70 line 8, "qvarto mai") - read: T (turnstile); checked: image, decode, transcription; "mai"
+- b-like signs (f. 70 lines 4, 5, 7) - read: h twice (crossed by tails), b2 twice (round bowl); checked: image, decode, transcription; "piv", "in campo"
+- stain and stamp area (f. 70 lines 6 and 8) - read: the signs after clear "pontt" (F, c', c) and the strokes beside the stamp stay doubtful; checked: image, decode, transcription; a colour BnF scan would decide them
+
 ## Remaining gaps
-- 47 unresolved cipher occurrences in 14 sign classes (#30 x8 adopted as a null 23 Oct 2026, leaving 39 in 13; #25 x10, (4) x6, (6) x5, #36 x4, #35 x3, (22) x3, (25) x2, six classes once): mostly at line and paragraph openings (#35 (6) (4) opens f. 68 lines 1 and 9) - blocker: no-key-material; probably nulls, titles or abbreviations, but a language-model pass over both letters could not fix any of them, and only the sibling 1446 letters could add occurrences
+- 47 unresolved cipher occurrences in 14 sign classes (#30 x8 adopted as a null 23 Oct 2026, leaving 39 in 13; #25 x10, (4) x6, (6) x5, #36 x4, #35 x3, (22) x3, (25) x2, six classes once): mostly at line and paragraph openings (#35 (6) (4) opens f. 68 lines 1 and 9) - blocker: no-key-material; probably nulls, titles or abbreviations, but a language-model pass over both letters could not fix any of them, and only the sibling 1446 letters could add occurrences; 20 Nov 2026 CTTS re-transcription: #25 and #36 confirmed as compound signs, #40 + (11) (f. 68 line 9) look like one flourish rather than two signs (proposal, not adopted), the line-end #35 of f. 68 line 1 is not the R shape
 - f. 70 signature block after "mediolani die qvarto mai" (24 tokens: p ? v a r qva c e et e ? s m n ? s t a ? ? m r) - blocker: no-key-material; assigned letters do not form the name; Mazzatinti's attribution to Vincenzo Amidani is not confirmed by the cipher
-- provisional values (8)=l, (24)=n, (16)=in (4 occurrences) and doubtful words (f. 68 "?intita"; f. 70 "se mono", "do", "vaia", "raconmando", extra "o o") - blocker: no-key-material; each rests on one or two occurrences
+- provisional values (8)=l, (24)=n, (16)=in (4 occurrences) and doubtful words (f. 68 "?intita"; f. 70 "se mono", "do", "vaia" (the #15 there is a dot group crossed by a descender; as a separator it would give "via"), "raconmando", extra "o o") - blocker: no-key-material; each rests on one or two occurrences
 - clear-text supplies: f. 68 line 5 end "[aya? ...]"; f. 70 "[fornendo?]", "[ques?]te" (written in clear over damaged or crowded strokes) - blocker: illegible; only a binarized scan of f. 68 and a DECODE photograph of f. 70; a colour BnF scan would decide them
 - f. 70 lines 1-5: decoded, not read - blocker: no-key-material; re-read 23 Oct 2026 (b29): labels confirmed on the image, #30 = null adopted, the clause of lines 4-5 rests on (25), (19), (26), #25, (4) with no key value; none of the sibling 1446 records R7900-R7915 uses this alphabet; sense hypotheses (25)=Duca, (19)=ordine, (26)=gente flagged for review
 
@@ -75,7 +160,7 @@ Statistical validation (`docs/_validate.py`, it-cinquecento order 4): reading -2
 - [x] known-keys: September 2026, all 208 Sforza key records on DECODE (ASMi cart. 1591, 1597, 1598); 1597 no. 14 is the same family but a different alphabet, no. 17 (1447) different; none is this key
 - [x] print: Mazzatinti 1883 gives the headings only; no edition or decipherment found (September search)
 - [x] key-rebuild: `extend_open.py` tried every letter, the word values and null for each of the 14 open classes and the 3 provisional ones, scoring both letters with it-cinquecento: no letter value wins by a margin that would justify it (e.g. (6): o vs e, margin 0.8 nats); the scorer prefers null for most, which is consistent with nulls but biased toward them, so nothing adopted
-- [x] retry: 23 Oct 2026 (b29): f. 70 re-read sign by sign on R7899 P1, texts/f70_reread_log.md. Earlier: the provisional l / n / in rechecked in the same pass ((24): t vs n, margin 0.7; (16): null vs in, 1.7): left provisional
+- [x] retry: 20 Nov 2026: CTTS sign-level re-transcription from the DECODE images (blind Fable 5.2 first pass, correction on enlarged crops, box-by-box comparison with Lasry's project): the key does not change; one inserted o-sign added (f. 68 line 10, "octo o dece"); see the CTTS section. 23 Oct 2026 (b29): f. 70 re-read sign by sign on R7899 P1, texts/f70_reread_log.md. Earlier: the provisional l / n / in rechecked in the same pass ((24): t vs n, margin 0.7; (16): null vs in, 1.7): left provisional
 
 ## History: the 21 Sept 2026 attempt (failed)
 

@@ -1,0 +1,11 @@
+# Code values settled after key_merged.tsv was built and until 16 Nov 2026 held only in the re-read log, the per-letter notes or a source column
+# (decrypt audit, 16 Nov 2026). Nothing here is new: each row copies a value the source column names.
+# Not merged into key_merged.tsv (that file is written by decode_merged.py --build).
+code	plain	confidence	source
+zm	como	probable	R9667-R9869_reread_log.md l.43 (22 Oct 2026): R9867 l21 "hare lo que suelo, como V. Mt. me lo a mandado"; R9866 R14 "tan provechosa como tengo escrito"; two of its four contexts
+ʃeg	tengo	probable	R9667-R9869_reread_log.md l.45 (22 Oct 2026): R9866 R14 "como tengo escrito"; R9869 R7 "no tengo por"
+zub	alla	probable	R9667-R9869_reread_log.md l.46 (22 Oct 2026), there given as a 1522 key value: R9866 R5 "la costa de alla", R9867 l23 "de lo que alla se me deve"; R9866 R14 not read
+yun	fran- (franceses)	confirmed	key_merged.tsv row ɣun (R9846 c08, c25, written yun there); decode_merged.py load_key reads y for ɣ, and r9867_cipher.txt l14 writes yun
+m̶	c (letter; second value of the barred m, beside f)	probable	R9667-R9869_reread_log.md l.35 (22 Oct 2026): "an cobrado", "la costa", "provechosa"; read_r9866.md l.164; R9866_corrections.tsv rows R3 l9, R4 l13. key_merged.tsv keeps m̶ = f; which value holds is decided word by word
+m̶ʒ	ch (digraph: barred m + ʒ)	probable	R9667-R9869_reread_log.md l.35: "fecho", "aprovecha"; R9866_corrections.tsv rows R5 l16, R11 l11
+tef	paz (second value beside nec-)	probable	key_retry.tsv rows ʃom and ti: R9866 R3 l10 "de tef ti ʃom" = de paz ni tregua; key_merged.tsv row tef, conflicts column "1522: paz [confirmed]". key_merged.tsv keeps tef = nec-

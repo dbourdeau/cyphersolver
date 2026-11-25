@@ -241,15 +241,19 @@ syllable groups hyphenated (plain 0.333). The reading is now written out with wo
 
 ## Remaining gaps
 
+- PS 30 Aug 1808, qualifi[ed]: group 1048 sits between 1046 *fi* and 1050 *fi*, so the code gives *fi* and the ending is supplied; its one other use, ver-i-fi(ed) in the 27 Dec 1807 despatch, needs the same supplied ending, and no pencil covers it - blocker: too-short; one hole in the read share (16 Nov 2026).
+- PS 30 Aug 1808, *Russel* (1273 el), *ought* (250), *consul* (148), *American* (130), *birth* (720 bir), *above* (1202), *fitness* (1052), *Warden* (384 Ward): values from the alphabetical slot and the sense only (grade M in `pairs.txt` for 148, 130, 1202, 1052; grade I for the others), with no pencil decode, known plaintext or other transcribed occurrence - blocker: too-short; each group occurs only here in the transcribed despatches. Eight holes in the read share (16 Nov 2026).
+- PS 30 Aug 1808, Irish[?man]: the manuscript writes 555 (*re*), read as 1555 (*man*) with a dropped digit (see "The one doubt") - blocker: no-key-material; the table is rebuilt here, not a surviving code sheet of the period, so the one-digit-slip rule of 14 Nov 2026 does not apply and the word stays a hole.
 - 22 Feb 1808, still open after the frame collation of 4 Oct 2026 (section below), each group seen once and confirmed on frame 0034: 1354 968 1494 1244 1387 (the man "of Hamburg" in the antechamber; *cou-rier* for 1244 1387 is a candidate only), 406 1216 1440 418 ("for ever the [?]-an-[?]-ose-s of Europe"; 418 *ose* is really written), 337 in "driven her [out] of her old and wise course" (the MS writes 337; a slip for 537 *out* is not supported) - blocker: too-short.
 - 15 Feb 1808: the MS writes 484 and 1 where the sense needs 1484 *it* (+1116 s = *its* aggressions) and 4 *commerce*; read as Armstrong's or the copyist's slips (dropped leading 1, as 555 for 1555 in the PS), grade I - blocker: too-short.
-- 15 Feb 1808: 962 inside de-x-[ter]-it-y and 1177 purp in im-pu-d-ence, both written so on frame 0024 (with 1005 *de* added above the line) - writer's slips, meanings certain.
 - 5 Mar 1808: 1338 = *name* ("there are people name-d who", slot 1337 na < 1338 < 1340 native; Lafayette has named Cretet, Fouché, Champagny, Talleyrand) and 1369 = *our* ("to put our ships in requisition", adjacent homophone of 1367 or a 7/9 slip), both grade I, proposed 4 Oct 2026 - blocker: too-short.
-- 26 Mar 1808: the 720/750 digit. Blocker: illegible.
-- 1804-07 despatches: printed decoded in the Secretary of State Series. The group lists are on roll 13 (inventory) but
-  were not transcribed in this session; they would confirm, not extend, readings for the groups above only if those
-  groups occur there. Left open.
-- Nothing needs physical access.
+- 26 Mar 1808: the 720/750 digit - blocker: illegible.
+
+Not gaps (moved out of the list above on 16 Nov 2026): 15 Feb 1808, 962 inside de-x-[ter]-it-y and
+1177 purp in im-pu-d-ence are both written so on frame 0024 (with 1005 *de* added above the line), writer's slips,
+meanings certain. The 1804-07 despatches are printed decoded in the Secretary of State Series; their group lists are
+on roll 13 (inventory) but were not transcribed in this session; they would confirm, not extend, readings for the
+groups above only if those groups occur there. Left open. Nothing needs physical access.
 
 ## Frame collation of 15 and 22 Feb 1808 (4 Oct 2026, contributed by Feyseel Nur, PR #21)
 
@@ -278,12 +282,38 @@ against 42.1 expected, 95% bound 47).
 
 ## Escalation
 
-- Siblings: every coded despatch of Sept 1807 - Feb 1809 in Founders, the 15 Nov 1807 triplicate, and the three 1810
+Checklist form added 16 Nov 2026, when the postscript moved to read in part; the steps are the ones recorded here before.
+
+- [x] siblings: every coded despatch of Sept 1807 - Feb 1809 in Founders, the 15 Nov 1807 triplicate, and the three 1810
   despatches to Robert Smith were decoded.
-- Clear pages / pencil: the clerk's interlinear pencil was read at full resolution on roll 13 frames 0377, 0390, 0391
+- [x] clear-pages: the clerk's interlinear pencil was read at full resolution on roll 13 frames 0377, 0390, 0391
   and roll 14 frames 0024-25, 0039-40, 0053, 0083, 0086, 0120, 0132, 0476, 0494, 0495 (`pencil.tsv`).
-- Copies: frame 0643-44 (copy of 5 Mar) and the originals were collated against Founders.
-- Known keys: decode972.py table; Tomokiyo's partial table.
-- Key rebuild: `additions972.tsv` (context values) now carries only what the pencil does not cover.
-- Retry: the five conflicts were retried against third occurrences (above). Not yet done: transcribe the 1804-07 group
+- [x] print: Founders Online (the postscript printed undeciphered); frame 0643-44 (copy of 5 Mar) and the originals were
+  collated against Founders.
+- [x] known-keys: decode972.py table; Tomokiyo's partial table.
+- [x] key-rebuild: `additions972.tsv` (context values) now carries only what the pencil does not cover.
+- [x] retry: the five conflicts were retried against third occurrences (above). Not yet done: transcribe the 1804-07 group
   lists from roll 13 against their printed decodes.
+
+## Read share over cipher words only (16 Nov 2026)
+
+README Conventions, 16 Nov 2026: the read share counts the words written in code; the clear words are left out.
+
+| document | before | after | state |
+|---|---|---|---|
+| PS 30 Aug 1808 (`texts/ps30aug1808_reading.md`) | 0.957 (44 of 46 words, clear included) | 0.688 (22 of 32 code words) | read -> read in part |
+
+- How the clear was separated: the transcription (`texts/ps30aug1808_transcription.txt`) gives the clear words between
+  `|` marks: *and*, *much better*, *In a word*, *in general. Next to*, *but*; *P.S.* is not in the code either. These
+  are left out. The rest of the reading, 32 words, is in code.
+- Holes: qualifi[ed] and Irish[?man], one word each (Remaining gaps), and the four words on groups graded M in
+  `pairs.txt` and shown `?` (uncertain) by `decode972.py ps`: *consul* (148), *American* (130), *above* (1202),
+  *fitness* (1052). Each value comes from the alphabetical slot and the sense of the postscript only; no pencil decode,
+  known plaintext or other transcribed occurrence carries it. Sure words only (the coordinator's decision of 16 Nov 2026,
+  as wave 1 did for grade-M words), so they are holes; the first count of the day, 0.938, had them as read. The values
+  graded I (`*` in the decode) are not sure words either (the coordinator's second decision, 16 Nov 2026): *Russel*
+  (1273 el), *ought* (250), *birth* (720 bir) and *Warden* (384 Ward) are holes too; 992 qua and 1483 ish fall in
+  *qualified* and *Irishman*, which are holes already. 1394 *ru* stays read: it reads ru in three independent places
+  (NOTES, "Grades of the 49 groups"). Second count: 0.813 (26 of 32); this one, 0.688 (22 of 32).
+- Class: the postscript is the profile's only text entry, so the target moves from read to read in part.
+- The group figures (48 of 49 groups, `fraction_read`, `fraction_coherent`) and the despatch table above are unchanged.

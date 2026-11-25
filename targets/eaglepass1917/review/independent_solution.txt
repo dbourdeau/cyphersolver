@@ -1,0 +1,34 @@
+# Reviewer's own solution, recorded 2026-11-23 00:29 EST, BEFORE opening the other agent's key or plaintext.
+# Method: scripts/my_solve.py (python3 -I), general simple substitution by simulated annealing, 20 restarts,
+# Spanish quadgrams from 8 Spanish Wikipedia articles (work/dl/*.json, 628,383 letters, accents folded; SHA256SUMS there),
+# on my preferred-letter transcription (work/ct_pref.txt). Seeds 1 and 7 give the same score (-1122.6) and the same
+# mapping for every cipher letter that occurs except the never-tested ones. Then finished by hand.
+#
+# Machine output (seed 1), cipher -> plain:  A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+#                                            X U S H P M L Q W J K G Z F V E D Y C T B O N A R I
+# Hand-corrected key (pairs, every one reciprocal):  A-X  B-U  C-S  D-Q  E-P  F-M  G-L  I-Z  N-W  O-V  R-Y ; T stays T.
+#   The machine gave cipher D=H, M=Z, N=F (each 1-3 occurrences); by hand: N=W (WILSON; the W-N pair, cipher W=n 22 times),
+#   M=F (pair with cipher F=m; occurs once, MNX = F?A of FALSAS), D=Q (pair with cipher Q=d, 8 times; occurs once, in DV/P).
+#   Cipher letters A H I J K never occur; plain H J K X Z (and W except WILSON) never needed.
+#
+# My reading (telegraphic, spaces and punctuation mine):
+# PARA PRESENTARLOS A COMITE CENSURA NOMBRADO POR PRESIDENTE WILSON NECESITO MANDEME MAYOR BREVEDAD POSIBLE
+# NOMBRES PERIODISTAS Y AGENTES INFORMACION Q[U]E PROPALAN FALSAS NOTICIAS Y AGITAN OPINION PRINCIPALMENTE
+# CON NOTICIAS COMPLOTS ALEMANES. DEBEMOS PODER COMPROBARLO CASO NECESARIO.
+#
+# Places where the typed cipher letter does not give the word (my count; 'reading' = my photo doubt could explain it):
+#  1 presenTarlos   cipher F (=m) for t          F clear in both photos -> sender slip
+#  2 pOr            cipher Y (=r) for o (V)      last letter of XQVEY heavily inked, maybe struck over -> slip or overtype
+#  3 preSidente     cipher S (=c) for s (C)      'precidente' - spelling or slip
+#  4 presidenTe     cipher P (=e) for t          P/T swap
+#  5 nEcesito       cipher T for e (P)           P/T swap
+#  6 necEsito       cipher T for e (P)           P/T swap
+#  7 mandeme mayor  FP[F/P]XR: with F the text is clean (MANDEME MAYOR); with P it gives MANDEMEEAYOR  -> reading doubt, F preferred
+#  8 periodisTas    cipher P (=e) for t          P/T swap
+#  9 inForMacion    TPCZW[N/M]: with M clean; with N one slip -> reading doubt
+# 10 Q?E            DV/P = q o e: 'QUE' needs D B P; V for B -> slip (if the letter after the slash is F, worse)
+# 11 [M]NX falsas   one extra cipher letter N between F and A -> sender slip (or extra letter)
+# 12 notiCIas (1st) VTZSC: C (=s) where Z (=i) needed -> slip (4th letter S also blurred)
+# 13 alEmanes       cipher T for e (P)           P/T swap
+# 14 coMprobarlo    cipher S (=c) for m (F)      slip
+# 15 nEcesario      cipher F for e (P)           F/P look-alike -> could be reading

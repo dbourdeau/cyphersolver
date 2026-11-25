@@ -1,0 +1,121 @@
+{
+ "folder": "kauderbach1754",
+ "marked": [
+  {
+   "file": "read/R2078_reading.md",
+   "places": 41
+  },
+  {
+   "file": "read/R1958_reading.md",
+   "places": 14
+  },
+  {
+   "file": "read/R2079_reading.md",
+   "places": 10
+  },
+  {
+   "file": "read/R2080_reading.md",
+   "places": 43
+  },
+  {
+   "file": "read/R1959_reading.md",
+   "places": 5
+  },
+  {
+   "file": "read/R2081_reading.md",
+   "places": 25
+  },
+  {
+   "file": "read/R2082_reading.md",
+   "places": 8
+  },
+  {
+   "file": "read/R1044_reading.md",
+   "places": 23
+  },
+  {
+   "file": "read/R1043_reading.md",
+   "places": 42
+  }
+ ],
+ "left_unmarked": {
+  "count": 37,
+  "why": "read/R1954_partial_reading.md: 37 words differ from trans/R1954_b29.txt decoded with key.json, but the folder has no machine decryption file for that transcription, so they were not marked. Also not marked: the older hand readings read/R*.txt (same wording, listed as decryptions in the profile); 378 letters of the machine decryptions that the readings drop (unmarkable without adding letters; listed in emendations.tsv); and by stated convention 59 letters (doubled consonant, m for n before p/b/m, s for z). The exact alignment gives 202 marked words in the nine letters, replacing the earlier estimate of about 240."
+ },
+ "headers_changed": [
+  "read/R*_reading.md (nine files): one comment line added after the first: \"Marks added 16 Nov 2026 (mark_emendations.py): letters in [ ] inside or round a word, without a question mark, are letters that key.json applied to the transcription does not give (the output of the key is read/machine_<rec>.txt); they are the reader's corrections of the decoded string, not checked against the images. Not marked: u/v and i/j, accents, word division, a doubled consonant, m for the n of the key before p, b or m, and s for the z of the key. Letters of the decoded string that the reading leaves out are listed in emendations.tsv.\""
+ ],
+ "page_changes": [
+  "\"Word division, accents and the bracketed sigla are editorial; spelling is Kauderbach's.\" -> \"Word division, accents and the bracketed sigla are editorial. The spelling is normalised in three ways (a consonant doubled, im for the in of the key before p, b or m, s for the z of the key), and where the decoded string was not a French word the reader printed the word meant: in the reading files those letters stand in square brackets (202 of 2,044 words in the nine letters); the extracts below do not show the brackets.\"",
+  "\"49 sa\" -> \"49 sa (per in the readings)\" (key strip)",
+  "\"the decryption files list those found.\" -> \"the decryption files list some of those found.\"",
+  "\"qu'il a la parole du duc de Newcastle que\" -> \"qu'il a [la] parole du duc de Ne[w]castle que\" (R2079 extract)"
+ ],
+ "page_counts_now_stale": [
+  "\"nine read as sentences (seven at 95% or more of their words; R2078 at 93.6% and R1043 at 90.4% build coherent sentences under the 95% bar)\"",
+  "\"R2078 ... reads at 93.6% of its words, under the 95% bar\" / \"(94% here)\"",
+  "\"R1043 ... reads at 90.4% of its words\" / \"(90% here)\"",
+  "\"Extent: partial (81% of the cipher)\"",
+  "the per-letter \"(about 90%)\", \"(about 97%)\" ... estimates in section 04",
+  "the generated texts block still shows the readings without the new brackets until the site is rebuilt"
+ ],
+ "hole_rate": [
+  {
+   "file": "read/R2078_reading.md",
+   "before": 0.065,
+   "after": 0.165,
+   "state_in_profile": "read in part"
+  },
+  {
+   "file": "read/R1958_reading.md",
+   "before": 0.041,
+   "after": 0.107,
+   "state_in_profile": "read"
+  },
+  {
+   "file": "read/R2079_reading.md",
+   "before": 0.02,
+   "after": 0.07,
+   "state_in_profile": "read"
+  },
+  {
+   "file": "read/R2080_reading.md",
+   "before": 0.017,
+   "after": 0.126,
+   "state_in_profile": "read (no state key; default)"
+  },
+  {
+   "file": "read/R1959_reading.md",
+   "before": 0.015,
+   "after": 0.052,
+   "state_in_profile": "read (default)"
+  },
+  {
+   "file": "read/R2081_reading.md",
+   "before": 0.029,
+   "after": 0.111,
+   "state_in_profile": "read (default)"
+  },
+  {
+   "file": "read/R2082_reading.md",
+   "before": 0.028,
+   "after": 0.077,
+   "state_in_profile": "read (default)"
+  },
+  {
+   "file": "read/R1044_reading.md",
+   "before": 0.035,
+   "after": 0.132,
+   "state_in_profile": "read (default)"
+  },
+  {
+   "file": "read/R1043_reading.md",
+   "before": 0.096,
+   "after": 0.2,
+   "state_in_profile": "read in part"
+  }
+ ],
+ "falls_below_read_bar": true,
+ "wording_changed": false,
+ "notes": "All seven letters with state read now have a hole rate over 0.05 (R1959 only just, 0.052); states, read_share and class not changed. Other extracts in section 04 of the page still print corrected words without brackets (only the Newcastle one I had quoted was changed). Still to decide from round 1: 49 = per in key.json (many of the marked words would then be given by the key: es[per]ance, [per]missent ...), 13 = y/re, the R1954 entry of outcome.texts. The profile was re-dumped with indent=1 in round 1 (content identical). Verified: for all nine files the text with brackets removed is identical to HEAD apart from the added header line. New files: mark_emendations.py (skips files already marked), emendations.tsv."
+}

@@ -3,7 +3,7 @@
 Catalogue entry: "Unknown sender (Roma) to unknown recipient", 4 pp., numerical, DECODE status "Non-decrypted",
 no transcription on the record.
 
-**Result: read.** The cipher is broken and the key rebuilt from a sibling's contemporary decipherment; 99.1% of
+**Result: read in part (cipher-word count, 16 Nov 2026: 497 of 545 cipher words, 91.2%; read before).** The cipher is broken and the key rebuilt from a sibling's contemporary decipherment; 99.1% of
 the 1,280 code groups have a value, and the letter reads continuously on all four pages except one line. Measured
 share reading as sense: **0.95** line by line against a period Italian model with neighbour context (`measure.py`),
 0.92 by a stricter 25-character window (`measure_tok.py`), 0.96 by a hand audit token by token. Twelve tokens of
@@ -113,10 +113,76 @@ commesso con cotesto Eccelso Conseglio, et di cavar anche qualche intimo partico
 volte nelle capele [papali] e avendomi ricercato con [più] instanza se Palma sarà ben fortificata, quanto presidio
 aveva, se il passo della Pontebba si era ben assicurato …"
 
+## Read share over cipher words only (16 Nov 2026)
+
+README Conventions (16 Nov 2026): the read share counts the words written in cipher only. `tx/R1862_reading.md` puts
+the passages written in clear between ⟨ ⟩ (the opening, the foot of p. 2 and top of p. 3, three passages on p. 4) and
+leaves the cipher unmarked; the clear passages were removed and the rest of the `## Reading` section counted.
+
+- R1862: 0.953 -> **0.912** (497 of 545 cipher words). Unread, 48: the twelve word-band codes with no value (ten
+  standing alone, two inside words: vo[51708]lari, [5370]i); eighteen `[?word]` readings; four words with a letter the
+  cipher does not have (co[n], [a]lcun, cardina[le], [g]loria: the clerk left it out, so the letter is supplied); the
+  eight words carrying the clerk's one-digit code slips (below, "The clerk's own slips": esprimersi, confidenza,
+  altrove, cosi, Mantova, considerati, piu, preparati), which the Conventions' one-digit-slip rule does not cover
+  because the key is rebuilt here, not the surviving period key; and the line P2 L22, 14 groups, sized at about 6 words from the letter's 2.4 groups per word (1,283 groups, about 545
+  words). The size of P2 L22 is an estimate: counted as one bare mark the share is 0.920 (497/540). Sp[agnuo]li (twice),
+  Sp[agna] and Spa[gna] expand the clerk's own abbreviation *sp* in the cipher and count as read; the final ellipsis
+  is where the despatch's cipher ends (P4 L31), not a gap. The 0.953 was measured over the whole reading with the
+  clear passages.
+- Class: read -> **read in part**. The group figure (99.1% of 1,280 groups valued) and the line measure (0.95) are
+  unchanged. Remaining gaps already covered the codes and P2 L22 and gains a line for the rest. The eighteen doubtful readings are
+  decoded letters whose word division or reading is unsure, and the four supplied letters and eight slipped groups are
+  written so on the image; there is no other copy of this despatch to check them against (Escalation, siblings).
+
+## Decrypt audit, 16 Nov 2026
+
+The audit script (`research/decrypt_audit/`) applied `texts/key.tsv` to `tx/groups.txt` and compared the letters with
+`tx/R1862_reading.md`: 58 of 494 words depart (12%), key coverage 79%. The sampled departures were syllables present
+only in the reading (pa, si, di, li, pe, pi, pu), as if the key lacked them. Checked by hand:
+
+- **The key file is complete.** `texts/key.tsv` (487 groups) is identical to the key `decode.py` builds
+  (`../r1874/key2.json` filtered, overridden by `key_over.json`, minus `_open`). Applied to `tx/groups.txt` with the
+  transcription's doubt marks removed and the eight `_slips` of `key_over.json` read through, it reproduces
+  `tx/plain.txt` exactly, all 125 rows. Only the 12 word-band tokens listed in Remaining gaps have no value.
+- **Audit artefact (most of the 58 words).** 49 of the 1,280 groups carry a doubt mark in the transcription (`622?`,
+  `6479^`, `612?8`). `decode.py` strips `?` and `^`; the audit script does not, so those groups got no value there
+  (example: `622?` in P1 L02, "di [pa]rlargli"). The script also counted the row labels ("P1", "L02:") as tokens,
+  hence 79%. P2 L22, printed `[…]` in the reading, and the passages in clear account for a few more.
+- **Clerk's slips read through, not marked in the reading: 8 groups.** The transcription keeps the digits he wrote,
+  `key_over.json` `_slips` gives the group he meant, and `plain.txt` and the reading print the corrected value with
+  no mark (example: P2 L17 written 6220 "mi", read 6223 "pri" in "esprimersi"). They are listed in "The clerk's own
+  slips" above; the reading's header does not mention them.
+- **Letters changed between `plain.txt` and the reading with no mark: 11 places** (9 words with a letter or syllable
+  added, 1 letter dropped, 1 letter moved into a clear passage). The reading's header says "Letters as the
+  decipherment gives them ... only word division, capitals and punctuation added", which these contradict:
+  P1 L04 ecelso > "eccelso"; P1 L10-11 "ponlebasi rabenasicurato" > "si era ben"; P1 L12 "ocasione dirgli" >
+  "ocasione di dirgli"; P1 L15 "spla" > "Spa[gna]" (the l dropped); P1 L16 sprezo > "sprezzo"; P1 L20 "sel
+  instanze" > "se le instanze"; P2 L03 segreteza > "segretezza"; P2 L08 "unit o massime" > "uniti, o massime";
+  P2 L28 the final cipher "e" printed as the first letter of the clear passage "⟨E perche"; P3 L13 "quest" >
+  "queste considerate"; P3 L18 "qual" > "quale"; P4 L22 "quest" > "questa oportunita". Several of the added
+  endings follow word codes that are stems (5388 quest, 5384 qual). The reading file was not changed; whether these
+  are bracketed is decided centrally.
+
+Nothing was changed in the key, the transcription or the reading, so the audit figure is unchanged (58 of 494). Not
+checked: the transcription against the images, and the English translation.
+
+**Marked on 16 Nov 2026.** In `tx/R1862_reading.md` 18 places were marked with `[ ]` and one clear-passage mark was
+moved; no letter of the text was changed. Ten are supplied letters (ec[c]elso, si [e]ra, [di] dirgli, sprez[z]o,
+se l[e], segretez[z]a, unit[i], quest[e], qual[e], quest[a]); eight are the clerk's slips, where the bracket holds
+the value of the group he meant ([con]fidenza, conside[ra]ti, pi[u], pre[pa]rati, es[pri]mersi, altro[ve], [co]si,
+Manto[va]). The cipher "e" that had been printed inside the clear passage now stands before it ("E ⟨perche").
+Left unmarked: 1 place, "Spa[gna]", where the reading leaves out an l that the key gives ("spla"); a bracket cannot
+show a missing letter, so the header says it. The header sentence "Letters as the decipherment gives them ... only
+word division, capitals and punctuation added" now lists these exceptions. Hole rate by
+`research/reading_audit/v2_score.py` (it): 0.051 before, 0.070 after, on 868 words; `read_share` (0.953), state and
+class in the profile were not changed, and 0.930 is under the 95% read bar. The write-up page shows the reading and
+its old header inside a generated block, which a rebuild refreshes.
+
 ## Remaining gaps
 
 - 12 code-group tokens (0.9%) of the word/name band: 6443 x2, 6279 x2, 6478 x2, 5349, 5370, 51708, 5378, 5379, 6241 - blocker: no-key-material; R1874's decipherment does not cover that band, no other letter in this cipher survives on DECODE, and the ASVe key registers that do (Codice Amadi reg. 1269, Busta 4 regs. 8/16/18) are a century older. Alphabetical brackets: 5370 is a "par-" word, 5349 "papal(i)" (I, 30 Sept 2026); 5378/5379 fall between "piu" and "qual"; 6279 between "molto" and "non"; 6443 after "suo"; 6478 between "poc" and "tio".
 - one line, P2 L22 (14 groups), image-true after four independent readings - blocker: no-key-material; every group in it is a structural grid value, so the fault is a clerk's slip or a word outside the corpus; exhaustive single- and double-substitution searches over the key's own value set returned nothing.
+- words counted unread in the cipher-word share (16 Nov 2026): eighteen [?word] readings, four letters the clerk left out (co[n], [a]lcun, cardina[le], [g]loria) and eight words with his one-digit code slips - blocker: no-key-material; written so on the image; the slips are read through with a key rebuilt here, which the one-digit-slip rule does not cover; settling them needs the chancery's own key or another copy of the despatch, neither of which survives
 - the ambassador's name - blocker: no-key-material; he does not name himself, and CSP Venice vol. 21 calendars no Rome despatch of 29 Apr 1628.
 
 ## The clerk's own slips

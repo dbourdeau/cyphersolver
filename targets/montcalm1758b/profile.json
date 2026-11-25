@@ -1,0 +1,277 @@
+{
+  "schema_version": 1,
+  "target": "montcalm1758b",
+  "title": "Montcalm to Bougainville, 21 November 1758, in Bougainville's code B (AN 155AP/2, piece 25), decoded with code B rebuilt from Casgrain's printed letters",
+  "documents": [
+    {
+      "id": "AN155AP2-25",
+      "read": "not read",
+      "shelfmark": "Archives nationales, 155AP/2 (fonds Bougainville), dossier 1756-1758, piece 25 (images FRAN_0093_0816_L to 0818_L)",
+      "date": "21 November 1758",
+      "year": 1758,
+      "country": "France",
+      "route": "Louis-Joseph, marquis de Montcalm -> Louis-Antoine de Bougainville, on his mission to France",
+      "places": {
+        "from": "Montreal",
+        "to": "Paris"
+      },
+      "language": "French",
+      "pages": 3,
+      "cleartext_in_document": "interspersed",
+      "plaintext": {
+        "location": [
+          "none"
+        ],
+        "source": "No decipherment on or with the piece (three images seen) and none found in print (NOTES.md, Prior work)."
+      },
+      "length": {
+        "tokens": 112,
+        "distinct": 73,
+        "unit": "code groups",
+        "measured": true,
+        "file": "transcriptions/figures_reconciled.txt"
+      },
+      "transcription": {
+        "by": "llm from images",
+        "source": "Archives nationales image FRAN_0093_0816_L (1699 x 2000 px): first reading 12 Nov 2026 with the code in view; second, blind reading 17 Nov 2026 from the image alone (111 of 112 groups agree)",
+        "image_quality": "good"
+      }
+    }
+  ],
+  "system": {
+    "types": [
+      "code",
+      "syllabic",
+      "nomenclator"
+    ],
+    "summary": "One-part numerical code of about 700 groups: letters with homophones, then names and set phrases, then syllables and words in alphabetical order; a '+' after a number marks a second entry.",
+    "symbol_kind": "digits and symbols",
+    "digit_groups": {
+      "width": "1-3",
+      "separation": "dots"
+    },
+    "distinct_symbols": "unknown",
+    "diacritics": {
+      "used": false
+    },
+    "homophones": {
+      "used": true
+    },
+    "nomenclator": {
+      "present": true,
+      "kinds": [
+        "syllables",
+        "common words",
+        "names",
+        "places",
+        "titles",
+        "phrases"
+      ]
+    },
+    "nulls": {
+      "present": "unknown"
+    },
+    "key_order": "partly alphabetical",
+    "word_division": "none"
+  },
+  "conditions": {
+    "prior_solution": {
+      "exists": "no",
+      "where": "None found for this letter. Kerallain 1896 (p. 116 n. 1) cites it for the clear postscript of 29 Nov on its second page, not for the cipher. Casgrain III (1890) prints two other letters in the same code with their clear text; those are the key material, not this letter.",
+      "found": "not found",
+      "used": false
+    },
+    "inputs": [
+      "images",
+      "known plaintext",
+      "published reading"
+    ],
+    "attack": "known plaintext",
+    "human_role": "Andrew Beling directed the research and set the contribution scope; the work was done with AI agents. No person has checked it.",
+    "models": [
+      "unknown",
+      "Claude Opus 5.5"
+    ],
+    "tools": [
+      "Python alignment and decode scripts (standard library)",
+      "image crops"
+    ],
+    "first_date": "2026-11-11",
+    "last_date": "2026-11-17"
+  },
+  "solution": [
+    {
+      "date": "2026-11-11",
+      "kind": "transcription",
+      "what": "Transcribed the figure lines and clear lines of Bougainville's two code B letters printed by Casgrain (III, nos. XLVI and XLVII, pp. 103-108 and 112-114) against the archive.org page images: 804 and 307 groups (letters/B1.tr, B2.tr).",
+      "result": "worked"
+    },
+    {
+      "date": "2026-11-11",
+      "kind": "solver",
+      "technique": [
+        "simulated annealing",
+        "beam/DP decoding",
+        "plaintext matching"
+      ],
+      "what": "Aligned each printed group with a stretch of Casgrain's clear text (annealed Gibbs sampling per paragraph, forward-filtering/backward-sampling, final Viterbi pass; 4 seeds, 600 sweeps; solver/solve.py). Code B: 330 code groups (1-699) plus 3 large numerals; 60 conflicts and 146 groups seen once in the reference run (key/code_B_solver_table.tsv).",
+      "result": "partial"
+    },
+    {
+      "date": "2026-11-11",
+      "kind": "statistics",
+      "what": "Number order of the table: one-part code (letters with homophones in alphabetical order at 1-45, names and phrases about 47-200, syllables and words alphabetically about 200-699); '+'/'*' marks a second entry under the same number.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-11-11",
+      "kind": "verification",
+      "technique": [
+        "plaintext matching",
+        "statistical test"
+      ],
+      "what": "Hold-out test, rule written before the runs (tests/holdout_result.txt): table built from one letter, the other decoded; share of the printed clear-text characters (letters and digits, accents removed) matched by difflib. B1 decoded with a table from B2: 32.0% against 11.1% for the same table with its values shuffled (mean of 20); B2 from B1: 49.2% against 17.1%. It tests the alignment method on the printed letters, not the values used only in the 1758 letter. Re-run 17 Nov 2026 from the copied scripts: identical under Python 3.9.6; 32.7%/11.5% and 51.6%/17.4% under Python 3.12.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-11-11",
+      "kind": "access",
+      "what": "Archives nationales image FRAN_0093_0816_L of 155AP/2 piece 25 (with 0806-0818) downloaded from the SIV media server; public, no login.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-11-11",
+      "kind": "sibling key",
+      "technique": [
+        "key matching"
+      ],
+      "what": "First transcription of the eight figure lines and decode with code B: the numbers fit (110 Quebec, 73 M. de Vaudreuil, 97 la Louisiane, 74 M. Bigot); Montcalm's '+' is Casgrain's '*'.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-11-12",
+      "kind": "transcription",
+      "what": "Figures re-read on 2x-4x crops with the code in view (one change: 674, not 634) and hashed (transcriptions/first_reading_2026-11-12/SHA256SUMS).",
+      "result": "worked"
+    },
+    {
+      "date": "2026-11-12",
+      "kind": "hypothesis",
+      "technique": [
+        "key-structure hypothesis",
+        "contextual inference"
+      ],
+      "what": "Values for the groups the printed letters do not show, from the code's alphabetical order and from sense: 674 janvier, 591 su, 340 eau, 286 cependant, 293 cher, 349 ence, 461 moyens, 505 ordres, 535 possible, 44 et, 101 la Caroline (not in the letters), 4 b, 448 me, 524 peu (printed, but not with this value). 16 of the 112 tokens. Not tested.",
+      "result": "partial"
+    },
+    {
+      "date": "2026-11-12",
+      "kind": "reading",
+      "what": "French and English reading of both cipher paragraphs; the sense checked against Montcalm to Bourlamaque, 27 Nov 1758 (Casgrain V p. 280), Montcalm's journal (Casgrain VII pp. 491-492) and Casgrain VI p. 97 ('ma commere'). Audit the same day: 524 'peu' downgraded to inferred (its one printed use is inside 'depense'); 5 words need an emendation of what Montcalm wrote.",
+      "result": "partial"
+    },
+    {
+      "date": "2026-11-12",
+      "kind": "literature search",
+      "what": "Kerallain 1896 (two scans), RAPQ 1920-21 to 1941-42 (archive.org series), Casgrain's Levis collection I-XII, Chapais 1911, Doughty and Parmelee IV, Collection de manuscrits ... Nouvelle-France I-IV searched for the letter's phrases; Lamontagne's 2003 edition of Bougainville's Ecrits sur le Canada searched only through the publisher's within-book search. No print of the letter found.",
+      "result": "failed"
+    },
+    {
+      "date": "2026-11-13",
+      "kind": "sibling key",
+      "technique": [
+        "key matching"
+      ],
+      "what": "The Marine's 1758 code I table (sheet e001295272, targets/montcalm1758i) applied to the 112 groups: 0 exact agreements (200 shuffles mean 0.08). Code B is not code I; nor code W (0 of 238 shared numbers) nor the Vaudreuil table (0 of 329).",
+      "result": "ruled out"
+    },
+    {
+      "date": "2026-11-17",
+      "kind": "verification",
+      "what": "Test M (plan hashed before the reader started, tests/PLAN_FREEZE.txt): a second reader transcribed the figures from the page image alone, seeing no transcription, code or reading. 111 of 112 groups agree exactly (rule: at least 106): PASS. The one difference, P1L1 group 7, 34 (r) against 35 (s), is kept open; 674 and 666 confirmed as first choices.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-11-17",
+      "kind": "literature search",
+      "what": "Searched again for a print of the letter: Kerallain 1896 cites it once (p. 116 n. 1) for the clear postscript of 29 Nov on its second page; RAPQ 1924-25 to 1926-27, Casgrain's Montcalm et Levis (1891), Waddington's Guerre de Sept Ans III, Doughty and Parmelee I-III, V, VI, the Archives nationales description of 155AP/2, two Gallica searches: no print of the cipher or of its sense beyond Montcalm's own letter to Bourlamaque. Google Books refused the requests (429) and was not used.",
+      "result": "failed"
+    },
+    {
+      "date": "2026-11-17",
+      "kind": "reading",
+      "what": "Read share of the cipher passages, the repository's way (measure_read_share.py, research/reading_audit/v10_relabel.share): 0.686 (48 of 70 words) with every word resting on an inferred value, emended or supplied counted as unread; 0.914 if the 14 inferred values are accepted; 0.986 if the 5 emendations are accepted too. With the strict marks no sentence is clean (docs/_check_reading.py), so the letter stays 'decoded, not read'.",
+      "result": "partial"
+    },
+    {"date": "2026-11-17", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 95 tokens, 58 types, fr-1750-nospace order 4: reading -2.125 per letter; random keys -3.057 (z 5.8); key annealed onto shuffled ciphertext best -1.945 (mean -2.002, z -3.1); annealer on the real text -1.904. Verdict: underdetermined.", "result": "partial"}
+   ],
+  "outcome": {
+    "class": "not read",
+    "key": "partial",
+    "method": "key recovered based on plaintext from external sources",
+    "method_basis": "Code B was rebuilt by aligning the figures of Bougainville's two cipher letters with the clear text Casgrain printed under them (1890), and applied to Montcalm's letter, which has no decipherment; 96 of its 112 groups take a value the printed letters show, 16 take a value inferred from the code's order.",
+    "contribution": [
+      "transcription",
+      "key recovered"
+    ],
+    "fraction_read": 0.686,
+    "fraction_read_method": "measured",
+    "fraction_read_source": "results/read_share.json: 48 of 70 sure cipher words (0.686 strict); 0.914 with inferred values accepted. Separately, results/decode_line_by_line.txt records 96 of 112 cipher tokens with attested values (16 inferred). Token coverage 0.857 is not the cipher-word read share.",
+    "codes_open": {
+      "open": 14,
+      "total": 72,
+      "tokens_open": 16
+    },
+    "verification": ["historical consistency"],
+    "provenance": "contributed",
+    "credits": [
+      {
+        "who": "ajbeling",
+        "role": "solution",
+        "date": "2026-11-17",
+        "note": "Andrew Beling, with AI agents: code B rebuilt from Casgrain's printed letters with a hold-out test; the 1758 letter transcribed twice (the second time blind) and decoded; 14 values inferred from the code's order and not tested. No person has checked the work."
+      },
+      {
+        "who": "hrcasgrain",
+        "role": "key or decipherment used",
+        "date": "1890",
+        "source": "Collection des manuscrits du marechal de Levis III, nos. XLVI-XLVII, pp. 103-108, 112-114",
+        "note": "Printed Bougainville's two code B letters in figures with their clear text, the material code B is rebuilt from; his note on p. 108 records nine groups he could not make sense of."
+      }
+    ],
+    "gaps": [
+      {
+        "item": "Groups 674, 591, 340, 286, 293, 349, 461, 505, 535, 44 and 101 (not in the printed letters) and 4, 448, 524 (printed, but not with the value needed): 16 tokens, 16 words of the reading",
+        "blocker": "open-codes",
+        "detail": "Values from the code's order and from sense, not tested. The period key ('Pieces militaires No V' in the Levis papers) was not located and no further code B text was found."
+      },
+      {
+        "item": "P1L1 group 7, 34 (first reading) or 35 (blind reading)",
+        "blocker": "illegible",
+        "detail": "The two readers disagree on the Archives nationales image (1699 x 2000 px); either way the word (suspecte) also rests on the inferred 591."
+      },
+      {
+        "item": "Five words read by emending what Montcalm wrote: 666 vos for vous, 668 vous for votre, 435+ lin for l'en and for in, 325 der for des",
+        "blocker": "open-codes",
+        "detail": "All groups attested in Bougainville's letters with the values written; whether Montcalm's copy of the code differed or he slipped cannot be told without the key or another of his code B letters."
+      }
+    ],
+    "validation": {"date": "2026-11-17", "model": "fr-1750-nospace", "file": "validation.tsv", "tokens": 95, "types": 58, "tokens_per_type": 1.64, "score": -2.125, "nulls": {"random keys": {"n": 200, "mean": -3.057, "sd": 0.161, "max": -2.665, "z": 5.8, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -2.002, "sd": 0.04, "max": -1.945, "z": -3.1, "p": 1.0}}, "power": -1.904, "verdict": "underdetermined", "notes": "claimed per-occurrence score -2.125; polyphony 0.0; 17 unread tokens left out; annealer on the real text from random keys reached -1.904"},
+    "key_file": "key/code_B_table.tsv",
+    "texts": [
+      {
+        "doc": "AN155AP2-25",
+        "label": "Montcalm to Bougainville, Montreal, 21 November 1758 (the two cipher paragraphs)",
+        "transcription": "transcriptions/figures_reconciled.txt",
+        "decryption": "results/decode_line_by_line.txt",
+        "reading": "reading_fr.txt",
+        "translation": "translation_en.txt",
+        "state": "decoded, not read",
+        "language": "fr",
+        "summary": "Montcalm writes to Bougainville, who is leaving for France to plead for Canada. In cipher: Bigot will have been suspicious of him; Montcalm will be in Quebec on 1 January and will console his 'commere' (Mme Pean) for Bougainville's going, though Mme de Beaubassin keeps first place. Then the mission: the Carolina project is good and cheap, and the court should order Vaudreuil to prepare in advance a retreat to Louisiana in extremis. Many of these words rest on inferred values (marked).",
+        "read_share": 0.686,
+        "note": "Read share of the cipher words, holes counted the repository's way: 0.686 strict (words resting on an inferred value, emended or supplied counted as unread); 0.914 if the 14 inferred values are accepted (results/read_share.json). Diplomatic text: reading_fr_diplomatic.txt. The translation was made by an AI agent; no person has checked it."
+      }
+    ]
+  }
+}

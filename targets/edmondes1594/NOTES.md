@@ -1,6 +1,6 @@
 # Thomas Edmondes to an unnamed lord, camp before Laon, 9 July 1594: the cipher printed undeciphered in HMC Salisbury IV, pp. 559-560
 
-Status: in progress (folder only, no page). Read in part: the cipher is read from the 1892 print, with the manuscript
+Status: read in part, written up 24 Nov 2026 (docs/edmondes1594.html): the cipher is read from the 1892 print, with the manuscript
 unseen. 636 of the 651 printed cipher letters are read (97.7%). Sure words only, by README Conventions: 57 of 147
 (38.8%, the figure in profile.json; `reading/sure_words.tsv`), a word being sure when every letter comes from the tested
 key (7, 8, 10) with no value chosen by sense. Our earlier figure, counting every word read: 130 of 147, the 12
@@ -267,7 +267,7 @@ maintainers did this; no person has checked the reading.
   because the manuscript is unseen and most words are not sure by the rule above.
 - **Language model.** `scripts/lm.py` is local to this target, against the repository's rule to use `lang/`; it stays
   because the test was frozen with it. A re-run on a `lang/` model of English of the period is an open item.
-- The folder stays `Status: in progress` with no page: the gaps are blocked from outside (the manuscript), so a
+- (Superseded: written up 24 Nov 2026, see the top of this file.) The folder stays `Status: in progress` with no page: the gaps are blocked from outside (the manuscript), so a
   page is the owner's decision.
 
 ## 9. Limits, and what would finish it
@@ -282,6 +282,58 @@ maintainers did this; no person has checked the reading.
 - What would finish it: **only the Hatfield manuscript can check the reading**: the **Cecil Papers images** (ProQuest's
   Cecil Papers collection, or a copy ordered from Hatfield House) for the reading as a whole, the homophone marks and
   the 15 unread letters.
+
+## Decrypt audit, 16 Nov 2026
+
+The audit of `research/decrypt_audit/` applies the key file to the transcription and compares the letters with
+`reading/reading.md`. Its figure for this target: 280 of 727 compared words depart (39%), 130 unmarked gaps, the
+commonest "e where the reading has a" (23 times). The cause was looked for in the files; nothing was run but
+read-only recounts, and no file but this one and `profile.json` was changed.
+
+All of it is an artefact of the script, and no cipher letter was compared:
+
+- The script took two columns of `keys/key_table.tsv`, `base_value(shift7)` and `values_in_reading`, for a key. That
+  pairing maps 18 letters to themselves (h to h, i to i ...), a, b, d and q to e, and x and z to a, because its
+  first column is the base plain value, not the printed letter; j and v are not in it and were dropped.
+- It applied that map to `transcription/calendar_entry.txt`, which is the whole printed entry: about nine tenths of
+  it is the calendar's clear English. So "hitherto assist him" came out "hitherto essist him" and was compared with
+  the same clear words in `reading/reading.md`. The 280 words are clear-text words with an a, b or d in them.
+- A key with two or three values per printed letter cannot be applied by a table in any case; the reading chooses.
+
+The check that fits this cipher, done on 16 Nov 2026:
+
+- The 16 cipher runs of `calendar_entry.txt` hold 651 letters, the same letters as `transcription/cipher_letters.txt`.
+- `reading/reading_hand.tsv` and `reading/decryption.txt` give one plain letter for each printed letter, the same in
+  both files: 636 read, 15 "?".
+- The 52 pairs (printed letter, plain letter) and their counts are exactly those of `keys/key_table.tsv`. That table
+  is written from the reading (`scripts/make_reading.py`), so this shows the files agree with each other, not that the
+  reading is right.
+- Against the key that was frozen before the held-out test (`keys/frozen_key.json`, shifts 7, 8, 10; printed u as n,
+  v as u, and u as itself once in "comandinge"): 578 of the 636 read letters are allowed and 58 are not, the figure
+  section 4 gives.
+- The bold text of `reading/reading.md` has those 651 letters and three more, all marked: "e w" for the printed
+  roman "to" (he will†) and the supplied "(v)" of (v)ehement. **Unmarked letter changes: none.** The reading marks
+  its uncertain words with ° and † and its unread letters with ?, not with square brackets.
+
+Nothing was repaired because no record is defective: the key files hold every value the reading uses. Figures
+after: unchanged for the script (280 of 727, an artefact); by the check above, 0 of 636 read letters depart from
+`key_table.tsv`, and 58 lie outside the frozen key, as already stated.
+
+Not checked: the printed letters against the page images, and the choice among the values of a printed letter
+(67 words marked °), which no key file can check.
+
+## Transcription doubts
+
+The transcription is of the 1892 print, not the manuscript. Two independent transcriptions (`transcription/pass1.txt`,
+`transcription/verifier_blind.txt`) agree on all 651 printed letters, and the integration review of 15 Nov 2026 compared
+them with the Internet Archive page images (section Reading review). The doubts are about the print, not the type:
+
+- roman "to" (p. 559, between A10.0 and A10.1) - read: cipher e w ("he will"), weak; checked: image, decode, transcription; set in roman like an English word, kept out of the 651; the sentence wants "that he will declare"
+- second figure on p. 559 - read: 300; checked: image, decode, transcription; the same type form as the first 300; an earlier draft and the Internet Archive OCR had 800
+- printed g in "by" (A9.0) - read: misprint for q (= y), weak; checked: image, decode, transcription; the type is a clear g; the value rests on sense only
+- printed q in "gouuernor" (A9.0) - read: misprint for g (= o), weak; checked: image, decode, transcription; the type is a clear q
+- printed u (all places but one) - read: cipher n; checked: image, decode, transcription; the type is u; a secretary-hand n misread by the editor, inferred from the decode, not seen on the manuscript
+- A11.0 "ehement" - read: (v)ehement, weak; checked: image, decode, transcription; the second agent offered "adhement" from the same letters; unresolved, keeps its mark
 
 ## Remaining gaps
 

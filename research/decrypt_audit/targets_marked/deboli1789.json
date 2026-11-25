@@ -1,0 +1,32 @@
+{
+ "folder": "deboli1789",
+ "marked": [
+  {
+   "file": "targets/deboli1789/reading/c024_1789-03-25.txt",
+   "places": 18
+  }
+ ],
+ "left_unmarked": {
+  "count": 2,
+  "why": "'Hetman' (key hetmana) and 'że się' (groups ze-s-sie) are letters left out; a mark would add a letter, so the header names them"
+ },
+ "headers_changed": [
+  "reading/c024_1789-03-25.txt: added a sentence defining [x] and naming the two unmarked places",
+  "clear/*.txt (12 files): added a second line 'What this file is: the archive's clear copy of the despatch, transcribed. It is not the output of the key rebuilt here (key_pass.tsv). ...' naming align_<cipher>.txt (p039: not aligned)"
+ ],
+ "page_changes": [
+  "'Old spelling is kept as the code gives it; {group} is unread, [?] a doubtful value.' -> same, plus 'In the worded reading of 25 March, letters in [ ] are supplied from the sense or are a word ending the main value of the key does not give.'"
+ ],
+ "page_counts_now_stale": [],
+ "hole_rate": [
+  {
+   "file": "targets/deboli1789/reading/c024_1789-03-25.txt",
+   "before": 0.063,
+   "after": 0.159,
+   "state_in_profile": "read in part"
+  }
+ ],
+ "falls_below_read_bar": false,
+ "wording_changed": false,
+ "notes": "The '24 cases' of the message are 20 words in the c024 reading (14 endings, 5 other places of which one is two words): 18 marked, 2 named in the header. read_share 0.955 for c024 is counted by cipher groups (read.py), not by words; the word-level hole rate after marking is 0.159, so by v2_score this text is under the 95% bar, as its state 'read in part' already says. c042/c104 decodes untouched (no unmarked departure). The clear copies of the page are in the generated block and will show the new header line at the next build."
+}

@@ -1,0 +1,401 @@
+{
+ "schema_version": 1,
+ "target": "juanmanuel1496",
+ "title": "Juan Manuel to the Catholic Monarchs, Genoa, 10 November and 18 December 1496: the cipher passages, deciphered in part with George Lasry's key for BnF Espagnol 318 no. 95 (BNE MSS/20212/61/1 and /2; catalogue 1270)",
+ "documents": [
+  {
+   "id": "10nov1496",
+   "shelfmark": "Madrid, Biblioteca Nacional de España, MSS/20212/61/1 (Gayangos), ff. 2v-3r; BNE Digital bdh0000186690, letter 1",
+   "date": "10 Nov 1496",
+   "year": 1496,
+   "country": "Italy",
+   "route": "Juan Manuel, Spanish envoy (Genoa) -> Ferdinand and Isabella",
+   "language": "Spanish",
+   "pages": 2,
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No decipherment on the leaves and none found in print or online (library record, Galende Díaz 1994, the 2025 Claver book, Internet Archive full text, DECODE); Suárez Fernández, Política internacional de Isabel la Católica IV-V, and Galende Díaz, Criptografía (1995), not seen."
+   },
+   "length": {
+    "tokens": 1527,
+    "distinct": 63,
+    "unit": "symbols",
+    "measured": true,
+    "file": "transcription_10nov1496.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "The library's own PDF of the letter (page spread 2029 x 1475 px, the largest size it serves); blind AI readers with a value-free sign sheet cut from the 1496 letters, reconciled by script; open stretches re-read by fresh blind readers (two, then a third where they differed). 91.2% agreement between the two teams; 97.8% of positions closed; the independent check's blind readers give the same letter at 96.5% of its agreed positions.",
+    "image_quality": "fair",
+    "notes": "Lasry's sign names, one line per manuscript line (L01-L25 f. 2v, R01-R21 f. 3r); 39 hole positions; signs with no counterpart in Lasry's key keep their sheet row name (<W26> barred u/v, <W27>, <W48>); S is a sign matched to Lasry's S only after decodes had been seen (no value in counts). Counted with docs/_check_profile.py --measure --drop-first: 1,527 tokens; its distinct count (63) includes the hole mark, code groups and the clear-hand mark."
+   },
+   "read": "not read"
+  },
+  {
+   "id": "18dec1496",
+   "shelfmark": "Madrid, Biblioteca Nacional de España, MSS/20212/61/2 (Gayangos), ff. 6r-7r; BNE Digital bdh0000186690, letter 2",
+   "date": "18 Dec 1496",
+   "year": 1496,
+   "country": "Italy",
+   "route": "Juan Manuel, Spanish envoy (Genoa) -> Ferdinand and Isabella",
+   "language": "Spanish",
+   "pages": 3,
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No decipherment on the leaves and none found in print or online (as for the letter of 10 Nov 1496); Suárez Fernández IV-V and Galende Díaz 1995 not seen."
+   },
+   "length": {
+    "tokens": 3674,
+    "distinct": 62,
+    "unit": "symbols",
+    "measured": true,
+    "file": "transcription_18dec1496.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "The library's own PDF of the letter (page spreads 2048 x 1488 px); two independent teams of blind AI readers on every line (76.0% agreement); show-through on ff. 6r-6v reduced by subtracting the registered, mirrored reverse (originals kept beside it); ff. 6r-6v re-read by two fresh readers per page and a third on their disagreements, f. 7r open stretches likewise. The independent check's blind readers give the same letter at 94.9% of its agreed positions (f. 6r 93.4%, f. 6v 93.3%, f. 7r 97.6%).",
+    "image_quality": "poor",
+    "notes": "Lasry's sign names, one line per manuscript line (A01-A34 f. 6r, B01-B36 f. 6v, C01-C25 f. 7r); 248 hole positions, including 43 places restored as holes where a sign had been deleted on a blank answer and 8 where readers disagreed whether a sign is there. Counted with docs/_check_profile.py --measure --drop-first: 3,674 tokens. ff. 6r-6v are usable with errors; f. 7r reliable."
+   },
+   "read": "not read"
+  }
+ ],
+ "system": {
+  "types": [
+   "homophonic",
+   "nomenclator"
+  ],
+  "summary": "George Lasry's key for BnF Espagnol 318 no. 95, applied unchanged: a homophonic alphabet of 44 invented signs for 21 letters, three special signs and code groups written in Latin letters, with no word division.",
+  "symbol_kind": "letters and symbols",
+  "distinct_symbols": "unknown",
+  "diacritics": {
+   "used": true,
+   "note": "Dotted variants are separate signs in Lasry's table (his O signs pi and pi:, his R sign T:)."
+  },
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": true,
+   "entries": "unknown",
+   "kinds": [
+    "names",
+    "titles"
+   ]
+  },
+  "nulls": {
+   "present": true
+  },
+  "key_order": "unknown",
+  "word_division": "none",
+  "doubled_letters": "unknown",
+  "sibling_key": "BnF Espagnol 318 no. 95 (8 Jan 1497), George Lasry's key (targets/esp318no95/lasry2021/ctts/key.txt): the key used, unchanged; also the key of Juan Manuel's letter of 14 Apr 1497 (targets/juanmanuel1497).",
+  "notes": "The letters use 25 distinct Latin-letter code groups (62 occurrences), most not in Lasry's list of 11; none is given a value. Lasry's null D opens passages, as in no. 95. Signs not in his table: a barred u/v (91 places), an eight, a 6 or G shape, a # shape; distinct_symbols is unknown because the full sign inventory of the 1496 hand is not settled."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "None found: the library's record carries no edition or bibliography; Galende Díaz 1994 prints Juan Manuel's two private ciphers (BRAH 9/15), not this system; the 2025 Claver book never cites MSS/20212/61; six Internet Archive full-text searches found nothing; not on DECODE; nothing in this repository. Not seen: Suárez Fernández, Política internacional de Isabel la Católica IV-V; Galende Díaz, Criptografía (1995).",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "images",
+   "published key",
+   "cleartext context"
+  ],
+  "attack": "published key",
+  "human_role": "Andrew Beling asked for the work and set its rules (plans hashed before readers start; misses reported as misses; nothing posted without his say-so); AI agents did the transcriptions, the tests, the independent check and the reading. No person checked any of it.",
+  "models": [
+   "claude-opus-5-5"
+  ],
+  "sessions": 1,
+  "first_date": "2026-11-17",
+  "last_date": "2026-11-17"
+ },
+ "solution": [
+  {
+   "date": "2026-11-17",
+   "kind": "hypothesis",
+   "what": "While the 14 Apr 1497 letter (catalogue 2857) was being read in Lasry's no. 95 key, Juan Manuel's letter of 10 Nov 1496 (BNE MSS/20212/61/1) was found to use the same signs and the same Latin-letter code groups; a blind reader's transcription of eight lines decoded under the key unchanged as running Spanish.",
+   "technique": [
+    "key matching"
+   ],
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-17",
+   "kind": "literature search",
+   "what": "Prior print and duplicates: the library's record (no edition), Galende Díaz 1994 (other ciphers of Juan Manuel), the 2025 Claver book (never cites MSS/20212/61), six Internet Archive full-text searches, DECODE and this repository: no decipherment found. Suárez Fernández IV-V and Galende Díaz 1995 not seen; Google Books returned no data.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-17",
+   "kind": "access",
+   "what": "Letters 2-7 of the volume viewed in the library's viewer: letter 2 (Genoa, 18 Dec 1496) has about three pages of cipher in the same system; letters 5 and 7 are in two other systems; letters 3, 4 and 6 show no cipher on the pages seen. Letter 2 downloaded through the library's own PDF link.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-17",
+   "kind": "transcription",
+   "what": "Letter of 10 Nov 1496: two blind readers with a value-free sheet cut from Lasry's key image (58 tiles), 46 lines; 1,257 of 1,541 aligned positions agree (81.6%).",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-17",
+   "kind": "verification",
+   "what": "Planned tests of Lasry's key on that text (plan hashed before the readers started): letter trigrams -1.130 log10 per letter, above all 1,000 permuted tables (best -1.354) but at the 3.3rd percentile of Zurita samples (mark: 5th, -1.126): MISS; share of letters in words 0.304 against a mark of 0.348 set on Lasry's letter at the same hole share (permuted at most 0.149): MISS. Cause: both readers took Lasry's S sign 7o for his P tile and his P sign np for his Y tile, as his key image draws them; a decode with these fixed passes both, not planned and not counted.",
+   "technique": [
+    "statistical test",
+    "language-model scoring"
+   ],
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-17",
+   "kind": "verification",
+   "what": "Proposed additions tested on the same text: barred u/v sign = o, no result (no agreed occurrence); dal = King Ferdinand, no result; dif = King of France, MISS by the plan's rule; bnm, no result (absent).",
+   "technique": [
+    "statistical test",
+    "contextual inference"
+   ],
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-17",
+   "kind": "transcription",
+   "what": "New value-free sign sheet cut from the 1496 hand (38 rows), each row mapped to Lasry's sign names by shape against his own glyphs; plan and mapping hashed before any reader started and before any decode of letter 2 (plan sha256 c0416ad6...b17b). Two independent teams of blind readers (four agents each) transcribed every line of both letters: letter 2 agreement 76.0% (f. 7r 93%, ff. 6r-6v 70-72%, show-through), letter 1 91.2%.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-17",
+   "kind": "verification",
+   "what": "Test on unseen text, letter 2 (nobody had decoded it), Lasry's key unchanged on the agreed positions (2,897 letters, hole share 0.253): letter trigrams -1.043 log10 per letter against the best of 1,000 permuted tables -1.336 and the Zurita 5th percentile -1.122: PASS; share of letters in words 0.338 against a mark of 0.255 set by rule on Lasry's own letter at the same hole share, permuted 99th percentile 0.104: PASS. Weak point: the test script was not hashed; nothing shows a mark changed.",
+   "technique": [
+    "key matching",
+    "statistical test",
+    "language-model scoring"
+   ],
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-17",
+   "kind": "verification",
+   "what": "Proposed additions tested on letter 2 only: barred u/v sign = o MISS (makes words at 22 of 33 places, breaks 11); dal = King Ferdinand no result (contexts read as the addressee; 'sea [dal] cierta' is feminine); dif = King of France no result (one occurrence); dcf = King of the Romans no result (no agreed dcf; both teams write def); bnm no result (absent).",
+   "technique": [
+    "statistical test",
+    "contextual inference"
+   ],
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-17",
+   "kind": "transcription",
+   "what": "Show-through on ff. 6r-6v reduced by subtracting the registered, mirrored reverse (originals kept); eleven sheet rows added for signs the first readers met without a row (mapping not blind: made after decodes of f. 7r had been seen); ff. 6r-6v re-read by two fresh readers per page (86.9% and 78.6% agreement) and a third on their disagreements; open stretches of f. 7r and letter 1 re-read the same way.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-17",
+   "kind": "control",
+   "what": "Consistency check (not a test) with the unseen-text test's measures on the re-read texts: letter 2 no warning; letter 1 word share 0.639 just below its recalibrated mark 0.648: a warning.",
+   "technique": [
+    "statistical test"
+   ],
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-17",
+   "kind": "verification",
+   "what": "Independent check under its own plan hashed before any earlier file was opened (sha256 43047291...dcd4): its own value-free sheet cut from Lasry's leaf, its own two blind readers, 24 random lines of letter 2 and 12 of letter 1 from the unprocessed images. Letter 2: trigrams -3.232 bits per letter (permuted max -4.784; Spanish 1st percentile -4.047), word share 0.615 against mark 0.561: all three marks PASS. Letter 1: -3.308 (permuted max -4.877; Spanish 1st percentile -4.114), word share 0.873 against 0.863: all PASS. At its 1,105 agreed positions the transcription gives the same letter at 95.5%. It found 36 places on ff. 6r-6v where a sign had been deleted on a blank third answer (2 of 5 sampled wrong), one read word that rests on sense, and that the S-shaped stroke is probably Lasry's own S.",
+   "technique": [
+    "statistical test",
+    "language-model scoring"
+   ],
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-17",
+   "kind": "transcription",
+   "what": "All 43 places where a sign had been deleted on a blank answer restored as holes; two fresh blind readers looked at them and at 10 places where the independent check's readers saw a sign the text lacked; a sign was to be added only where both agreed: none was, and 8 places got one hole each. No position deleted.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-17",
+   "kind": "hypothesis",
+   "what": "The S-shaped stroke matched to Lasry's own S (value d) by placing his position frames on his scan and comparing glyphs; made after decodes had been seen, so not a test and not counted: it completes six words (podemos, del, dar, mandarme, necesidad, funda).",
+   "technique": [
+    "key matching"
+   ],
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-17",
+   "kind": "reading",
+   "what": "Final count by the word rule (cipher words only; every sign valued and the decode the word itself; code groups unread): letter 2 653 of 933 (70.0%; f. 6r 70.7%, f. 6v 65.8%, f. 7r 75.1%), letter 1 253 of 388 (65.2%). Letter 1's words with a plain 7 (d) or b++ (z) where s or r is wanted counted unread. Diplomatic and punctuated readings; English translation by an AI agent.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-17",
+   "kind": "control",
+   "what": "Consistency check (not a test) on the final texts: letter 2 trigrams -0.995, word share 0.633 against 0.559: no warning; letter 1 word share 0.629 against 0.637: the warning stays (plain 7 for s: open).",
+   "technique": [
+    "statistical test"
+   ],
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-17",
+   "kind": "literature search",
+   "what": "Five statements of the readings compared with Sanuto, Diarii I, and Zurita (1580): Maximilian towards Chiavenna with the legate (Dec 1496), the king at Girona, the Cardinal of San Pietro in Vincoli and Battistino Fregoso against Genoa and Savona, the Roussillon truce, badly fitted Biscayan ships: all consistent; none a test.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "verification",
+   "technique": [
+    "manual reconstruction"
+   ],
+   "what": "Two blind sign-shape sheets (23 and 24 Nov 2026; dudout/sign_check_2026-11/, PR #948), Brice Dudout reader, sheets built and scored by AI agents (Claude); rules hashed before the thumbnails; controls 3/3 on each; Lasry's key unchanged. Sheet 2311: five words become read (18 Dec 653 -> 655 of 933, 10 Nov 253 -> 256 of 388). Sheet 2411b: three <W26> seen as 77 (o), 18 Dec 655 -> 658. Sheets only: 914 of 1,321 cipher words (69.2%). The reviewer's remark that <W26> and 77 are one sign led to a merge chosen after the decodes were seen (7 places where o does not fit): 42 more words, all probable, 956 of 1,321 with the merge. Integration review of PR #948 reproduced the counts from words_*_v3.tsv, the schema, hashes and controls; the BNE images were not compared. Class unchanged; adoption of 914 into the text figures is the owner's call.",
+   "result": "partial"
+  }
+ ],
+ "outcome": {
+  "class": "not read",
+  "key": "partial",
+  "method": "read after matching with key from external sources",
+  "method_basis": "George Lasry's key for BnF Espagnol 318 no. 95, made for another letter, was found to fit these letters and was applied unchanged; it passed planned tests on letter 2 before anyone had decoded it, and an independent check with its own readers passed on both letters.",
+  "contribution": [
+   "transcription",
+   "decipherment with ambiguous key",
+   "catalogue correction"
+  ],
+  "verification": [
+   "matched control",
+   "historical consistency"
+  ],
+  "fraction_read": 0.686,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "words_18dec1496.tsv and words_10nov1496.tsv: 906 of 1,321 cipher words read (653 of 933 and 253 of 388; each code group one word and unread; a word over a line end counted once; the late S mapping not used).",
+  "codes_open": {
+   "open": 25,
+   "total": 25,
+   "tokens_open": 62
+  },
+  "gaps": [
+   {
+    "item": "code groups in Latin letters, 62 occurrences of 25 groups",
+    "blocker": "open-codes",
+    "detail": "no sure value; the proposed values (dal, dif, dcf, bnm) gave no result on unseen text; contexts in code_groups_contexts.tsv"
+   },
+   {
+    "item": "barred u/v sign <W26>, 50 places in letter 2 and 41 in letter 1",
+    "blocker": "no-key-material",
+    "detail": "not in Lasry's table; o missed its planned test on letter 2; three different shapes; no further unseen text in this cipher is known"
+   },
+   {
+    "item": "the S-shaped stroke, 10 places",
+    "blocker": "no-key-material",
+    "detail": "matched to Lasry's S only after decodes had been seen; not counted"
+   },
+   {
+    "item": "Lasry's 9, <W27>, <W48>, <W49> (13 places)",
+    "blocker": "no-key-material",
+    "detail": "no value in Lasry's table"
+   },
+   {
+    "item": "holes, 248 positions in letter 2 and 39 in letter 1",
+    "blocker": "illegible",
+    "detail": "show-through on ff. 6r-6v, strokes from neighbouring lines, damage in B31-B34"
+   },
+   {
+    "item": "letter 1's d-for-s and z-for-r words and C17 sodtener",
+    "blocker": "needs-physical-access",
+    "detail": "only the original or a sharper image can show whether the bar or o of the s-form is there"
+   },
+   {
+    "item": "words read only by sense or with a doubtful sign (77 letter changed by sense, 126 not understood)",
+    "blocker": "illegible",
+    "detail": "each turns on a sign the library's largest image does not settle"
+   },
+   {
+    "item": "two shapes with no sheet row (joined o's; a 3 with a loop)",
+    "blocker": "no-key-material",
+    "detail": "not in Lasry's table"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "18dec1496",
+    "label": "Juan Manuel to the Catholic Monarchs, Genoa, 18 December 1496 (BNE MSS/20212/61/2, ff. 6r-7r), cipher passage",
+    "transcription": "transcription_18dec1496.txt",
+    "decryption": [
+     "decode_18dec1496.txt",
+     "diplomatic_18dec1496.txt"
+    ],
+    "reading": "reading_18dec1496.md",
+    "translation": "translation_en_18dec1496.md",
+    "language": "es",
+    "state": "decoded, not read",
+    "read_share": 0.7,
+    "summary": "Juan Manuel, the Spanish envoy at Genoa, complains that the courtesies shown to France are misnamed in Genoa although [dal] spends heavily to defend the city, which would otherwise already belong to the [dif]; he fears a French attack, reports on the Venetians and the League, and writes that the legate reports the [def] leaving for Chiavenna, next to Germany (Maximilian's withdrawal from Italy, December 1496); letters from Rome and Naples have been seized.",
+    "note": "read_share 653 of 933 cipher words (words_18dec1496.tsv): ff. 6r 70.7%, 6v 65.8%, 7r 75.1%. ff. 6r-6v usable with errors (show-through); f. 7r reliable. Translation an AI agent's."
+   },
+   {
+    "doc": "10nov1496",
+    "label": "Juan Manuel to the Catholic Monarchs, Genoa, 10 November 1496 (BNE MSS/20212/61/1, ff. 2v-3r), cipher passage",
+    "transcription": "transcription_10nov1496.txt",
+    "decryption": [
+     "decode_10nov1496.txt",
+     "diplomatic_10nov1496.txt"
+    ],
+    "reading": "reading_10nov1496.md",
+    "translation": "translation_en_10nov1496.md",
+    "language": "es",
+    "state": "decoded, not read",
+    "read_share": 0.652,
+    "summary": "Juan Manuel reports the French threat to Genoa: the [dif] has sent the cardinal of San Pietro in Vincoli towards Savona, with six thousand paid Germans and fifteen thousand ducats to win friends in the city; Gian Luigi Fieschi is suspected; French ships have come to Provence; the [def] is displeased with the English marriage; the departure of [dal] from Girona was made without consulting the confederates.",
+    "note": "read_share 253 of 388 cipher words (words_10nov1496.tsv): f. 2v 67.9%, f. 3r 61.0%. Words with a plain 7 (d) where s is wanted are counted unread; whether the clerk wrote it so is open. Translation an AI agent's."
+   }
+  ],
+  "sign_check": [
+   {"date": "2026-11-23", "checker": "Brice Dudout", "checker_kind": "project", "model_roles": ["rule", "thumbnails", "sheet", "scoring", "remarks"], "signs_checked": 8, "controls": 3, "controls_passed": 3, "as_transcribed": 2, "corrected": 5, "unresolved": 1, "not_counted": 1, "rule": "dudout/sign_check_2026-11/sheet-2311-rule.md (23 Nov 2026, before the thumbnails and the answers)", "rule_hash": "1427552df6f154d15914d09731593f95f25dcd2ceb37b68d577fe852d07f7a3b", "sheet_faults": "q03 (J2): example thumbnails of form 1 show two different characters (reviewer remark); not integrated", "note": "Lasry's key unchanged. Five words become read: C07 pero, C17 posible (18 Dec 653 -> 655 of 933); L09 aqui, L15 remedio, L23 Proencia (10 Nov 253 -> 256 of 388). Two <W26> confirmed, one 'neither'. No image committed. Not a human_check: AI agents built and scored the sheet."},
+   {"date": "2026-11-24", "checker": "Brice Dudout", "checker_kind": "project", "model_roles": ["rule", "thumbnails", "sheet", "scoring", "remarks"], "signs_checked": 8, "controls": 3, "controls_passed": 3, "as_transcribed": 3, "corrected": 4, "unresolved": 1, "not_counted": 0, "rule": "dudout/sign_check_2026-11/sheet-2411b-rule.md (24 Nov 2026, before the thumbnails and the answers)", "rule_hash": "2aa741e707d6e9476b118cf46f4c41105abc60e7bd75c5e15d780bd71f358568", "sheet_faults": "none found", "note": "Lasry's key unchanged. Three <W26> seen as 77 (o): C10 comendador, C15 con, C16 lo read (18 Dec 655 -> 658 of 933); three <W26> confirmed; J2 77 chosen with a doubt (enbio {probable}, not counted); J6 unresolved. Reviewer's remark that <W26> and 77 are one sign: merge tested and adopted as {probable} (dudout/sign_check_2026-11/README.md): 0 read word broken, +42 words, 956 of 1,321 with the merge (914 without). No image committed. Not a human_check: AI agents built and scored the sheet."}
+  ],
+  "provenance": "contributed",
+  "credits": [
+   {
+    "who": "lasry",
+    "role": "key or decipherment used",
+    "note": "his CTTS key for BnF Espagnol 318 no. 95 (targets/esp318no95), applied unchanged",
+    "date": "2026-10",
+    "source": "https://github.com/dbourdeau/cyphersolver/pull/75; https://github.com/dbourdeau/cyphersolver/pull/85",
+    "published": true
+   },
+   {
+    "who": "ajbeling",
+    "role": "solution",
+    "note": "Andrew Beling, with AI agents: matched these letters to Lasry's no. 95 key, tested it on unseen text and read them in part (653 of 933 and 253 of 388 cipher words); records in records/",
+    "date": "2026-11-17"
+   },
+   {
+    "who": "ajbeling",
+    "role": "transcription",
+    "note": "Andrew Beling, with AI agents: blind transcriptions of both letters in Lasry's sign names",
+    "date": "2026-11-17"
+   },
+   {
+    "who": "dudout",
+    "role": "verification",
+    "note": "two blind sign-shape sheets (23 and 24 Nov 2026; Brice Dudout reader, sheets built and scored by AI agents) and the <W26> = 77 merge as a {probable} variant, dudout/sign_check_2026-11/: 906 -> 914 of 1,321 cipher words read (956 with the merge, 42 {probable})",
+    "date": "2026-11-24"
+   }
+  ],
+  "notes": "Planned tests on letter 1 missed narrowly on a first transcription (sign-sheet confusion); the test on unseen text (letter 2) passed both marks; an independent check with its own readers passed every mark on both letters. Every proposed addition missed or gave no result. No reading_review yet: the reviewer's to give. Key state partial: the code groups, the barred u/v sign and four other signs have no value in Lasry's table."
+ }
+}

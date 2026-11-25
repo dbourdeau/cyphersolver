@@ -204,7 +204,8 @@
    "kind": "verification",
    "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): the four clear texts printed by Forbes (1741) copied verbatim from the archive.org OCR (targets/smith1562/forbes2.txt, git-ignored) to texts/R92xx_decryption.txt; no transcription of the cipher exists (project work).",
    "result": "partial"
-  }
+  },
+  {"date": "2026-11-14", "kind": "access", "what": "Full-texts audit, R9237-R9240: looked for a transcription of the cipher signs in the folder (none: texts/ holds only Forbes's clear text, its reading and translation), on the four DECODE records (public API and record pages: images only, no transcription or document) and on cryptiana elizabeth.htm (no transcription). Tried to fetch the images to transcribe them: DECODE answers an anonymous request with its 'forbidden' placeholder, and no session is available here. transcription_missing recorded on the four entries.", "result": "failed"}
  ],
  "outcome": {
   "method": "read from existing decipherment",
@@ -241,6 +242,7 @@
     "doc": "R9237",
     "label": "Camp at Meur, 2 Jan 1563",
     "decryption": "texts/R9237_decryption.txt",
+    "transcription_missing": "Never transcribed: Forbes's copy of the ciphered passages (BL Add MS 4136) is in graphic signs and the reading here is the clear text printed by Forbes. The DECODE images of this record need a signed-in session: on 14 Nov 2026 an anonymous request for them to decrypt-custom/filesrv returned DECODE's 'forbidden' placeholder, only 200 px thumbnails are public, and the record (public API and record page) carries no transcription. No DECODE session is available in this checkout and the images fetched earlier were git-ignored and are no longer here. Unblocks it: the record's images through a DECODE account (or from the British Library), then a transcription against a sign inventory built from the Condé key (DECODE R335).",
     "summary": "Gaspard de Coligny, Admiral of France and leader of the Huguenot army after the battle of Dreux (19 Dec 1562) and the capture of Condé, tells Elizabeth I that the infantry was lost but the cavalry is intact, and asks for foot soldiers and money to pay the reiters. Deciphered at the time (CSP Foreign vi no. 7); clear text printed by Forbes, Full View ii (1741) pp. 247-249.",
     "note": "No transcription of the graphic-sign cipher (key DECODE R335, the Condé cipher) in the repository (project work).",
     "reading": "texts/R9237_reading.md",
@@ -252,6 +254,7 @@
     "doc": "R9238",
     "label": "Camp at Villefranche, 12 Jan 1563",
     "decryption": "texts/R9238_decryption.txt",
+    "transcription_missing": "Never transcribed: Forbes's copy of the ciphered passages (BL Add MS 4136) is in graphic signs and the reading here is the clear text printed by Forbes. The DECODE images of this record need a signed-in session: on 14 Nov 2026 an anonymous request for them to decrypt-custom/filesrv returned DECODE's 'forbidden' placeholder, only 200 px thumbnails are public, and the record (public API and record page) carries no transcription. No DECODE session is available in this checkout and the images fetched earlier were git-ignored and are no longer here. Unblocks it: the record's images through a DECODE account (or from the British Library), then a transcription against a sign inventory built from the Condé key (DECODE R335).",
     "summary": "Coligny to Elizabeth I after Dreux: the author of the troubles, rallying his own to uproot the gospel from the kingdom, and a renewed plea for her help. Deciphered at the time (CSP Foreign vi no. 76); clear text in Forbes ii pp. 272-274.",
     "note": "No transcription of the cipher in the repository (project work).",
     "reading": "texts/R9238_reading.md",
@@ -263,6 +266,7 @@
     "doc": "R9239",
     "label": "Orléans, 24 Jan 1563",
     "decryption": "texts/R9239_decryption.txt",
+    "transcription_missing": "Never transcribed: Forbes's copy of the ciphered passages (BL Add MS 4136) is in graphic signs and the reading here is the clear text printed by Forbes. The DECODE images of this record need a signed-in session: on 14 Nov 2026 an anonymous request for them to decrypt-custom/filesrv returned DECODE's 'forbidden' placeholder, only 200 px thumbnails are public, and the record (public API and record page) carries no transcription. No DECODE session is available in this checkout and the images fetched earlier were git-ignored and are no longer here. Unblocks it: the record's images through a DECODE account (or from the British Library), then a transcription against a sign inventory built from the Condé key (DECODE R335).",
     "summary": "Coligny to Elizabeth I: his fourth dispatch since the capture of the Prince of Condé, on the state of affairs and his request for aid. Deciphered at the time (CSP Foreign vi no. 145); clear text in Forbes ii pp. 300-303.",
     "note": "No transcription of the cipher in the repository (project work).",
     "reading": "texts/R9239_reading.md",
@@ -274,6 +278,7 @@
     "doc": "R9240",
     "label": "Orléans, 29 Jan 1563",
     "decryption": "texts/R9240_decryption.txt",
+    "transcription_missing": "Never transcribed: Forbes's copy of the ciphered passages (BL Add MS 4136) is in graphic signs and the reading here is the clear text printed by Forbes. The DECODE images of this record need a signed-in session: on 14 Nov 2026 an anonymous request for them to decrypt-custom/filesrv returned DECODE's 'forbidden' placeholder, only 200 px thumbnails are public, and the record (public API and record page) carries no transcription. No DECODE session is available in this checkout and the images fetched earlier were git-ignored and are no longer here. Unblocks it: the record's images through a DECODE account (or from the British Library), then a transcription against a sign inventory built from the Condé key (DECODE R335).",
     "summary": "Coligny to Elizabeth I: the resolution taken that day with the reiters to march into Normandy, their pay resting on her promised aid; the reiters leaving their baggage at Orléans; the failed attempt to surprise Lyon by escalade; the bearers (the Vidame, Briquemault, La Haye) will say the rest. Deciphered at the time (CSP Foreign vi, entry before no. 186); clear text in Forbes ii pp. 319-321.",
     "note": "No transcription of the cipher in the repository (project work).",
     "reading": "texts/R9240_reading.md",

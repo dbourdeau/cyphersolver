@@ -193,6 +193,26 @@ L01 reads "die [Frankreich, prob.] ins gesamt"; the clear img 169 has "alliance,
 maximen". These were read at reduced size only. A pass of the three clears against L01, L18 and L25, sign by sign, would move several
 values from probable to attested and correct a few; it is the next step for the signs.
 
+## Read share over cipher words only (16 Nov 2026)
+
+Checked, no figure changed. The per-letter `read_share` values are the strict count of 12 Nov (`strict_count.py`), which is already
+over cipher words only and sure words only: the words in guillemets are the clear words of the letter and are left out
+of the "Cipher words" header counts; probable `{x}`, restored `[x]`, unresolved and open `‹x›` words, and nomenclator values
+given by the sense (`[x, prob.]`), are holes; nomenclator signs with a value from a gloss or a clear of the time are read.
+Recounted independently on 16 Nov from `letters/L01-L27_reading.md` (clear spans removed, then plain words, `{}`, `[]`, `‹›` counted
+separately): plain, probable, restored, symbol and open counts equal the header counts and `strict_count.py` for all 27 letters
+(one stray lower-case `q` in L05, "der q man", is neither counted nor marked; counted as a hole it would move L05 from 0.901 to 0.896).
+Whole-letter figures with the clear included are not given. Classes unchanged: 12 letters read in part (L01, L02, L04, L05,
+L06, L08, L09, L10, L12, L14, L20, L23), 15 read; target read in part, fraction_read 0.953 (6,268 of 6,574 tokens).
+
+Two cautions. (1) The unit is the token: a nomenclator sign is one cipher unit even where its value is two words
+(*Kays. Mt.*). Counted by the words of the values instead (a sense-valued sign as many holes as words, an attested sign as many
+read words) the shares would be L03 0.951 (was 0.957), L14 0.945 (0.937), L25 0.949 (0.960), L09 0.930 (0.918), and L25 would fall under the bar;
+the tokens are kept because the sign, not its expansion, is what the cipher spells. (2) `v10_relabel.py` cannot reproduce the figures:
+it counts an attested `[Value]` as a supplied word (a hole) and the `[x, prob.]` and `{x}` forms differently from `strict_count.py`,
+so a dry run gives L08 0.912, L09 0.845, L25 0.937 and L26 0.896 (the last two are read here at 0.960 and 0.979); an `--apply`
+on this target would wrongly demote L25 and L26. No `clear_markup` was declared, for that reason.
+
 ## Remaining gaps
 - 152 nomenclator tokens whose value rests on the sense or one attestation (about 25 symbols) and 44 tokens of open symbols (b, H, bb, cc, Γ, EE, O, R, M, N, Q, F, J, ∂, ww, yy ...) - blocker: no-key-material; no nomenclator table in the unit, on DECODE or in print, and the glosses and clears of the time give only 13 values
 - "Christoffer Sehested keys 1650-70" (Rigsarkivet, Daisy heid 1449582), possibly the nomenclator table, not tested - blocker: needs-physical-access; listed by the archive, not scanned on Arkivalieronline

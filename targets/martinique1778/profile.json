@@ -627,6 +627,18 @@
    ],
    "what": "Statistical validation (docs/_validate.py): 1748 tokens, 322 types, fr-modern order 4: reading -1.987 per letter; random keys -3.129 (z 10.6); key annealed onto shuffled ciphertext best -2.222 (mean -2.245, z 12.6); annealer on the real text -2.164. Verdict: pass.",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "verification",
+   "what": "Decrypt audit: key_bouille.tsv re-applied to the five transcriptions and compared with the published texts: 140 of 1,150 words depart. By hand against read/*_decryption.txt: the 12 departures of f. 88 and f. 101 are line labels of the decryption files taken for letters; in f. 19, f. 70 and f. 114 (123 of 896 words) about two thirds are the normalisation of the reading files (plural and agreement letters, -oi- printed -ai-, deffen/défen) and about 35 places print letters or words the key does not give without brackets (unvalued groups filled: rassemblaient, Amphion, aucun, officier; syllables replaced: mettre for 'it er', fournissent, Expériment, longue, devient; words supplied or dropped). 208 = j'ai and six other context values of NOTES are in no key file and were not added. outcome.key_file now also lists tentative.tsv, which make_decryptions.py reads; no key value, reading or decryption file changed; audit figures unchanged.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "verification",
+   "what": "Marked the departures from the key in the three reading files, brackets only, no letter changed: read/f19_reading.md 2 places, read/f70_reading.md 8, read/f114_reading.md 43, found by reading every line of the decryption files against the readings. A header line in each file states the modern spelling, the meaning of [ ] and the decryption file. Syllables the key gives and the sentence leaves out cannot be marked and are listed in NOTES. Audit after: 79 of 1,119 words depart, normalised endings and spellings. Hole rate (v2_score) f. 19 0.083 to 0.104, f. 70 0.055 to 0.117, f. 114 0.043 to 0.104; read_share not changed. Two sentences of the page reworded.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -802,7 +814,8 @@
    }
   ],
   "key_file": [
-   "key_bouille.tsv"
+   "key_bouille.tsv",
+   "tentative.tsv"
   ],
   "credits": [
    {

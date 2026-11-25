@@ -226,6 +226,64 @@ All re-run for this folder with `python3 -I` (standard library):
 - The repository's checker scripts were not run by us (we treat downloaded repositories as data). The checks they make
   were verified by hand against the schema and CONTRIBUTING; see the pull request text.
 
+## Decrypt audit, 16 Nov 2026
+
+The decrypt audit (`research/decrypt_audit/`) re-applied the key files named in `profile.json` to the transcriptions and
+compared the letters with the readings. It could compare four of the twelve texts: the memorial 404 of 1,145 words
+departing, 12/22 Feb 1676 22 of 388, 6/16 Oct 1676 98 of 245, 13/23 Oct 1676 99 of 260; together 623 of 2,038 (31%).
+The other eight were not compared (the single table it applies covers under 70% of their tokens). Checked here with
+snippets that read the files only; no script of this folder was run.
+
+- Clear text (the main cause). Every reading prints the clear words of the page between the cipher runs, which stand
+  between asterisks. Of the flagged words these lie outside the asterisks: memorial 347 of 404, Feb 1676 11 of 22,
+  6 Oct 1676 89 of 98, 13 Oct 1676 94 of 99. In the 6 Oct 1676 reading 76 of the 89 are the marker word "clear" itself:
+  the transcriptions of that despatch write "clear" where the clear words were not transcribed (115 times in the
+  reading), and `despatches/scripts/build.py` copies the marker into the reading. Nothing is wrong there.
+- Key files not listed in the profile. `outcome.key_file` named v3 (`key.tsv`), v2, v9 (`despatch1677/key.tsv`) and
+  two side files, but the despatches were decoded with v4 to v8 and v10 (`despatches/manifest.tsv`, column keyfile).
+  In the Feb 1676 reading the 11 flagged cipher words are v10 values: 144 = b (begå, begiärat, besked, begiärte),
+  443 = pommern (three times), 431 = ordre (twice). Repaired: the six files are now listed (below).
+- How the audit applies a key. It uses one table for a whole text; 6/16 Oct 1676 changes key state by page (v7, then
+  v8) and 13/23 Oct 1676 three times (v4, v5, v6). With all states listed it picks v7 for the memorial, because v7 has
+  66 = y and 89 = l, which the French wants; the memorial was decoded with v3 only. Its figures for this target are
+  therefore not a measure of anything.
+- The ten despatches, checked exactly instead. A decoder written here from each page's key file in the manifest gives
+  the `decoded` column of `despatches/units.tsv` on 63 of 63 first-pass pages. In the ten readings the 1,809 cipher
+  words that stand outside brackets are, in order and letter for letter, the 1,809 units of class S; every other unit
+  is printed in brackets ([?word], [decoded] or [...]). No unmarked change. The 1677 despatch (`despatch1677/`,
+  written by hand): its three supplied letters are bracketed (i[l]la, instäl[l]a, Pae[z]).
+- The memorial, nine held-out pages (reading written by hand). The cipher runs of the reading were aligned with the
+  `decoded` column of `units.tsv` (3,489 decode letters; accents, capitals, u/v and i/j folded, which the reading's
+  header declares editorial). 264 letters are in brackets. Five words hold one letter outside brackets that key v3 does
+  not give, all in units of class E, so no count changes: f.306r unit 47 "malemLgne" printed "[d'A]lema[g]ne" (the weak
+  L read as a, and the g that the key gives is in brackets); f.306v unit 96 "prep[~]rä" printed "prep[a]re" (169 = ä
+  read as e); f.307v unit 5 "emp[~]oåer" printed "emp[lo]yer" and unit 68 "nu[~]åer" printed "env[o]yer" (66 = å read
+  as y; elsewhere the reading brackets it, "ro[y]"); f.308r unit 67 "in<99>Lnces" printed "in[st]ances" (weak L read
+  as a).
+- The memorial, image 324 (f.308v-309r). The header of the reading and correction 7 above say that this passage is
+  the b99 reading made with key v2 and context and that its supplied letters are not bracketed. Measured: of its 145
+  cipher words, 65 hold a letter that the v2 decode does not give (96 letters) and 31 a letter that the v3 in-sample
+  decode does not give (39 letters: numerals cut at the gutter, numbers with no value, and "Gothenbourg", "maistre",
+  "qui", "eux" where v3 gives another letter). Two letters are bracketed in the whole passage. Declared, but not marked
+  word by word.
+
+Changed: `profile.json` `outcome.key_file` now also lists `despatch1677/gloss/key_history/KEY_v4.tsv` to `KEY_v8.tsv`
+and `despatches/keys/KEY_v10.tsv`, the frozen key states the manifest names. No key value was added or altered and no
+key, transcription, decryption or reading file was touched. The audit after: memorial 399 of 1,157, Feb 1676 21 of
+399, 6 Oct 1676 99 of 245, 13 Oct 1676 99 of 260; together 618 of 2,061. It barely moves because the clear text is
+the cause. Not checked: the eight texts the audit could not compare were checked only by the two exact tests above
+(decode and S units), not word by word against their clear text; the clear text itself was not compared with any image.
+
+Marked on 16 Nov 2026. In `readings/memorial_1676-10-06.md` five letters were put in brackets, the file's own mark for
+a supplied letter, with no letter changed: [d'A]lem[a][g]ne, prep[a]r[e], emp[lo][y]er, d'env[o][y]er, in[st][a]nces.
+All five units were already class E in `units.tsv`, so no count moves. Two brackets that were there before hold a
+letter the key does give (the g of "malemLgne", the o of "emp[~]oåer"); they were left. Left unmarked: the image-324
+passage (31 words against the v3 decode, 65 against the v2 decode it was read with), because the header of the reading
+and the passage's own label already say that its supplied letters are not bracketed, and it carries no count; marking
+it needs a word-by-word pass against `segmentation/units_f308v-309r_324_heldout_v2.tsv`. No header line changed. The
+ten despatch readings and the 1677 despatch needed no mark. The page was not changed (nothing false found; its copy of
+the reading is a generated block and follows at the next build).
+
 ## Remaining gaps
 
 - Word codes 240, 245, 267, 324, 463 (one unit each) and 314 (two units) - blocker: open-codes; senses from context only (267 alliance, 324 discours, 463 reputation?)

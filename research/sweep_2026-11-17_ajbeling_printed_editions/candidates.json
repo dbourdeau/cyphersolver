@@ -1,0 +1,573 @@
+[
+ {
+  "year": 1703,
+  "date": "21 and 28 Jan 1703",
+  "title": "Louis, duc de Bourgogne → his brother Philip V of Spain, two letters partly in a number cipher whose key the editors could not find (353 numbers printed)",
+  "correspondents": "Louis, duc de Bourgogne → Philip V, king of Spain",
+  "place": "Versailles",
+  "language": "French",
+  "region": "France",
+  "period": "1701-1800",
+  "shelfmark": "Autograph originals formerly in the archive at Alcalá de Henares (Baudrillart cites the duke's letters as 'Arch. d'Alcala, l. 2514'); now Archivo Histórico Nacional, Madrid, Estado (inference, not checked); printed Baudrillart and Lecestre, Lettres du duc de Bourgogne au roi d'Espagne Philippe V et à la reine, vol. 1 (Société de l'histoire de France, 1912), letters X and XI, pp. 21-22 and 26-27",
+  "folio_note": "Letter X (21 Jan): 213 numbers in three runs (126, 64, 23) with short clear phrases between; letter XI (28 Jan): 140 numbers in two runs (109, 31). 353 numbers, 126 distinct values, range 1-406. Transcribed from the page images in bourgogne1703_ciphertext.txt in this folder (two independent readings, no difference).",
+  "cls": "C",
+  "status": "Printed undeciphered. Editors, vol. 1 p. 19 note 1: 'Ce chiffre n'a pu être retrouvé ni aux archives du ministère des Affaires étrangères, ni à celles d'Alcala; heureusement le duc de Bourgogne ne s'en est servi que deux fois, le 21 et le 28 janvier 1703.' p. 21 note 1: 'on ne peut donner la traduction en clair de cette lettre chiffrée.' p. 26 note 2 refers back. The duke sent Philip the key himself with his letter of 7 Jan 1703 ('Je vous envoie ce que je vous ai promis ... Vous y trouverez de toutes sortes de choses'). Volume 2 (1916) and Baudrillart, Philippe V et la cour de France vol. 1 (1890) searched for 'chiffr' and 'clef': no key, no decipherment. Tests run, all FAILED (details in the README): four French keys of 1690-1703 (Louis XIV's code of 1690/93 as far as published, the petit chiffre of Pignerol 1690-91, the Grand Chiffre of 1691, the Bonac-Groffey key R639) applied unchanged miss, while each passes its own control; the counts fit a syllable-and-word nomenclator of about 300 entries rather than a letter cipher, and a ciphertext-only attack calibrated on synthetic text of the same length failed 0 of 5, so none was run on the real text. Not on DECODE as far as known.py shows.",
+  "why": "The only cipher in the private correspondence of Louis XIV's grandson with the new king of Spain at the start of the War of the Spanish Succession, in a key the duke made himself for things 'qu'il ne seroit pas prudent d'écrire en clair'.",
+  "importance": 4,
+  "solvability": 2,
+  "difficulty": 4,
+  "score_note": "Scored from the printed pages, read on the page images, during the printed-editions sweep of 16-17 Nov 2026 (research/sweep_2026-11-17_ajbeling_printed_editions/); the autographs not seen",
+  "verify": "Ask the Archivo Histórico Nacional (Estado; Alcalá legajo 2514 in Baudrillart's citations) for the letters of 21 and 28 Jan 1703 (an interlinear decipherment by Philip V or a secretary?) and for the key sent with the letter of 7 Jan 1703 (also legajo 2460, Louis XIV's letters to Philip).",
+  "links": [
+   {
+    "label": "HathiTrust vol. 1, p. 21 (letter X)",
+    "href": "https://babel.hathitrust.org/cgi/pt?id=mdp.39015033660823&seq=31"
+   },
+   {
+    "label": "HathiTrust vol. 1, p. 26 (letter XI)",
+    "href": "https://babel.hathitrust.org/cgi/pt?id=mdp.39015033660823&seq=36"
+   },
+   {
+    "label": "HathiTrust vol. 1, p. 19 (editors' note on the cipher)",
+    "href": "https://babel.hathitrust.org/cgi/pt?id=mdp.39015033660823&seq=29"
+   },
+   {
+    "label": "Internet Archive vol. 1 (University of Toronto copy)",
+    "href": "https://archive.org/details/lettresduducdebo01loui"
+   }
+  ],
+  "seen": "print",
+  "source": "HathiTrust full-text sweep of printed editions, 16-17 Nov 2026 (Andrew Beling)",
+  "prior_art": "open as far as checked (17 Nov 2026): known.py on origin/main da9b4c93c, 17 Nov 2026 on 'duc de Bourgogne', 'Baudrillart', 'Lecestre', 'Philippe V', 'legajo 2514': no hit; Tomokiyo, Cryptiana (code/louisxiv.htm, louisxiv2.htm, unsolved.htm, live pages): no entry for these letters; web searches for Lasry and HistoCrypt and six general searches: nothing; edition vol. 2 and Baudrillart's Philippe V vol. 1: nothing. DECODE not searched online.",
+  "needs_archive_scan": "no",
+  "access_note": "The ciphertext is printed: HathiTrust full view and Internet Archive (public domain). The autographs in Madrid are not known to be online (PARES answered 429 on 17 Nov 2026)."
+ },
+ {
+  "year": 1650,
+  "date": "29 Dec 1649 - 27 Feb 1650 (letters 937, 944, 950; the bare passage is in 950, 27 Feb 1650)",
+  "title": "Count Willem Frederik of Nassau-Dietz → Prince William II of Orange, number cipher in three letters; the passage of 27 Feb 1650 printed bare and called 'non déchiffré' by the editor",
+  "correspondents": "Willem Frederik, count of Nassau-Dietz, stadholder of Friesland → William II, prince of Orange",
+  "place": "Leeuwarden",
+  "language": "French",
+  "region": "Low Countries",
+  "period": "1611-1650",
+  "shelfmark": "Koninklijk Huisarchief, The Hague (inference: Groen's source, not stated on the pages read); printed Groen van Prinsterer, Archives ou correspondance inédite de la maison d'Orange-Nassau, 2e série, t. IV (1859), letters DCCCCXXXVII, DCCCCXLIV and DCCCCL, pp. 336-337, 344-346, 353-354",
+  "folio_note": "133 numbers in the three letters: 102 in a low range (1-83, and 200), apparently letters, 30 code numbers 91-143 and one '1050'; letter groups 'AO. BE.' and 'F. K. M. [L.]' in 950. Letters 937 and 944 are printed with readings set above the numbers (a partial decipherment, several readings plainly wrong); 950, about 29 cipher words in 8 runs, has none.",
+  "cls": "B",
+  "status": "Introduction p. xlvii: 'Dans la Lettre 950 un passage non déchiffré' (probably on the same subject as 937 and 944: Amsterdam). The editor glosses only 115 (de l'argent) and 118 (V. A.) in 950, carried over from the readings of 937 and 944. A partial key can be built from those readings (about 18 letter values and 9 code words); a held-out test of such a key on letter 937 FAILED (40% against a 70% mark, and its own control failed too), so no reading is offered. Related but different documents: catalogue 1982 (KHA letters to the counts of Nassau-Dietz, including Joachim Andreae's, 1645-53), lead 2715 (Hendrik Casimir I, 1640). Upstream's printed-series sweep downloaded the Groen volumes but records nothing for these letters.",
+  "why": "Willem Frederik's secret correspondence with William II in the weeks before the Prince's attempt on Amsterdam (July 1650), the crisis of the first stadholderless period.",
+  "importance": 3,
+  "solvability": 2,
+  "difficulty": 3,
+  "score_note": "Scored from the printed edition during the printed-editions sweep of 16-17 Nov 2026 (research/sweep_2026-11-17_ajbeling_printed_editions/); the printed numbers read on the page images; manuscript not seen",
+  "verify": "Find the originals (Koninklijk Huisarchief, Willem Frederik's or William II's archive; Tresoar, Leeuwarden, family archive Nassau-Dietz) and look for the key William II sent with letter 937 ('ce cifre et papier'); more text in the same cipher would allow a confirmed key.",
+  "links": [
+   {
+    "label": "HathiTrust 2e série t. IV, p. 354 (letter 950)",
+    "href": "https://babel.hathitrust.org/cgi/pt?id=uva.x030529109&seq=506"
+   },
+   {
+    "label": "HathiTrust 2e série t. IV, p. 337 (letter 937)",
+    "href": "https://babel.hathitrust.org/cgi/pt?id=uva.x030529109&seq=489"
+   },
+   {
+    "label": "Internet Archive 2e série t. IV (University of Ottawa copy)",
+    "href": "https://archive.org/details/archivesoucorres04groe"
+   }
+  ],
+  "seen": "print",
+  "source": "HathiTrust full-text sweep of printed editions, 16-17 Nov 2026 (Andrew Beling)",
+  "prior_art": "open as far as checked (16-17 Nov 2026): known.py on origin/main da9b4c93c, 17 Nov 2026 and on the 16 Nov export on 'Willem Frederik', 'Nassau-Dietz', 'Groen', 'Leeuwarden', 'Guillaume II': no entry for these letters (the catalogue's Willem Frederik entries are the Hereditary Prince of 1795-96 and W. F. Roell 1809); Tomokiyo, Cryptiana (Dutch ciphers page, unsolved list): nothing; web searches on the letters, Bicker and Oetgens: nothing. DECODE not searched online; Kernkamp, Poelhekke and Groenveld not read.",
+  "needs_archive_scan": "no",
+  "access_note": "The ciphertext is printed: HathiTrust full view and Internet Archive (public domain). The originals are not known to be online."
+ },
+ {
+  "year": 1781,
+  "date": "[Jul-Aug 1781] (between Holker No. 11, 28 Jul, and Luzerne No. 68, 13 Aug, in the calendar)",
+  "title": "John Holker, French consul general at Philadelphia → Castries, despatch No. 12 in cipher, only parts deciphered, with a whole enclosure in cipher not deciphered ('Project for obtaining money ... for the army of the King in Rhode Island')",
+  "correspondents": "John Holker → the marquis de Castries, secretary of state for the Marine",
+  "place": "Philadelphia",
+  "language": "French",
+  "region": "Americas",
+  "period": "1701-1800",
+  "shelfmark": "Archives nationales, Affaires étrangères B I 945 (consulate of Philadelphia), ff. 116-126 (letter ff. 116-119, enclosure ff. 120-126); calendared Nasatir and Monell, French consuls in the United States: a calendar of their correspondence in the Archives nationales (Library of Congress, 1967), p. 144",
+  "folio_note": "Calendar: ff. 116-119 '[Date and letter are in cipher; only parts are deciphered.]'; enclosure ff. 120-121, 122-126 '[Document in cipher; not deciphered.]'. Extent in lines not given.",
+  "cls": "C",
+  "status": "Calendar entry read on the page (p. 144). Holker No. 11 (28 Jul 1781, ff. 114-115) says he is 'Using cipher of d'Annemours, the Consul-General at Baltimore', so No. 12 is probably in d'Annemours's consular cipher. Related, not the same: catalogue 772 (Shelburne papers, intercepted French diplomatic letters 1780-83) and 782 (Rochambeau to La Luzerne 1780-81).",
+  "why": "The French consul general's own cipher report on financing Rochambeau's army in the summer of the Yorktown campaign, with a whole cipher project left unread by the calendar.",
+  "importance": 3,
+  "solvability": 2,
+  "difficulty": 3,
+  "score_note": "Scored from the printed edition during the printed-editions sweep of 16-17 Nov 2026 (research/sweep_2026-11-17_ajbeling_printed_editions/); manuscript not seen",
+  "verify": "Order AN AE B I 945 ff. 114-126 (all sides) or find its reel in the Library of Congress copying set; look for a decipherment filed with the letter and for the d'Annemours cipher; compare with the Luzerne and Marbois codes of 1780-82.",
+  "links": [
+   {
+    "label": "HathiTrust, calendar p. 144",
+    "href": "https://babel.hathitrust.org/cgi/pt?id=mdp.39015027035362&seq=164"
+   }
+  ],
+  "seen": "print",
+  "source": "HathiTrust full-text sweep of printed editions, 16-17 Nov 2026 (Andrew Beling)",
+  "prior_art": "open as far as checked (17 Nov 2026): known.py on origin/main da9b4c93c, 17 Nov 2026 on 'Holker', 'Marbois', 'Annemours', 'B I 945', 'B I 209', 'Letombe', 'Létombe', 'Nasatir': no entry for these letters (Holker only as a name in targets/lee1779; Létombe only as addressee of catalogue 649, 1797; Nasatir and Monell cited only as unread in targets/delacroix1797); Tomokiyo's unsolved list (unsolved.htm in the repository) names Holker only for a clear D'Estaing letter of 1779, and mentions a decoded but unidentified Luzerne code on a blog post. DECODE not searched online.",
+  "needs_archive_scan": "yes",
+  "access_note": "Calendar only (HathiTrust full view). The Archives nationales series is not known to be online; another research note (not re-checked by us) reports a Library of Congress copying set of nine reels for these consular volumes, reel numbers not identified, and that the Archives nationales takes remote reproduction orders."
+ },
+ {
+  "year": 1781,
+  "date": "3 Oct 1781",
+  "title": "Oster, French vice-consul at Philadelphia → [La Luzerne], letter in cipher, not deciphered",
+  "correspondents": "Oster, vice-consul → [the chevalier de La Luzerne, French minister] (addressee in brackets in the calendar)",
+  "place": "Philadelphia",
+  "language": "French",
+  "region": "Americas",
+  "period": "1701-1800",
+  "shelfmark": "Archives nationales, Affaires étrangères B I 945 (consulate of Philadelphia), ff. 132-133; calendared Nasatir and Monell, French consuls in the United States: a calendar of their correspondence in the Archives nationales (Library of Congress, 1967), p. 145",
+  "folio_note": "Calendar: '[In cipher; not deciphered.]' Two folios.",
+  "cls": "C",
+  "status": "Calendar entry seen as an in-volume search snippet (p. 145), not on the full page. Same volume and months as Holker No. 12 (previous row); Holker had just delivered Oster his brevet as vice-consul (No. 11).",
+  "why": "A whole consular letter in cipher from Philadelphia in the weeks before Yorktown.",
+  "importance": 2,
+  "solvability": 1,
+  "difficulty": 3,
+  "score_note": "Scored from the printed edition during the printed-editions sweep of 16-17 Nov 2026 (research/sweep_2026-11-17_ajbeling_printed_editions/); manuscript not seen",
+  "verify": "As for Holker No. 12: order AN AE B I 945 ff. 132-133 or find its Library of Congress reel; read p. 145 of the calendar in full.",
+  "links": [
+   {
+    "label": "HathiTrust, calendar p. 145",
+    "href": "https://babel.hathitrust.org/cgi/pt?id=mdp.39015027035362&seq=165"
+   }
+  ],
+  "seen": "print",
+  "source": "HathiTrust full-text sweep of printed editions, 16-17 Nov 2026 (Andrew Beling)",
+  "prior_art": "open as far as checked (17 Nov 2026): known.py on origin/main da9b4c93c, 17 Nov 2026 on 'Holker', 'Marbois', 'Annemours', 'B I 945', 'B I 209', 'Letombe', 'Létombe', 'Nasatir': no entry for these letters (Holker only as a name in targets/lee1779; Létombe only as addressee of catalogue 649, 1797; Nasatir and Monell cited only as unread in targets/delacroix1797); Tomokiyo's unsolved list (unsolved.htm in the repository) names Holker only for a clear D'Estaing letter of 1779, and mentions a decoded but unidentified Luzerne code on a blog post. DECODE not searched online.",
+  "needs_archive_scan": "yes",
+  "access_note": "Calendar only (HathiTrust full view). The Archives nationales series is not known to be online; another research note (not re-checked by us) reports a Library of Congress copying set of nine reels for these consular volumes, reel numbers not identified, and that the Archives nationales takes remote reproduction orders."
+ },
+ {
+  "year": 1781,
+  "date": "10 Nov 1781",
+  "title": "François Barbé-Marbois, secretary of the French legation → Castries, despatch No. 20, 'a major portion' in cipher and not deciphered",
+  "correspondents": "François Barbé-Marbois → the marquis de Castries",
+  "place": "Philadelphia",
+  "language": "French",
+  "region": "Americas",
+  "period": "1701-1800",
+  "shelfmark": "Archives nationales, Affaires étrangères B I 945 (consulate of Philadelphia), ff. 150-159; calendared Nasatir and Monell, French consuls in the United States: a calendar of their correspondence in the Archives nationales (Library of Congress, 1967), p. 146",
+  "folio_note": "Calendar: '[A major portion of this letter is in cipher and is not deciphered.]' Ten folios.",
+  "cls": "C",
+  "status": "Calendar entry seen as an in-volume search snippet (p. 146), not on the full page. Three weeks after Yorktown.",
+  "why": "Marbois's long despatch to the Marine minister just after Yorktown, mostly in cipher; the legation's ciphers of these years are partly known.",
+  "importance": 3,
+  "solvability": 2,
+  "difficulty": 3,
+  "score_note": "Scored from the printed edition during the printed-editions sweep of 16-17 Nov 2026 (research/sweep_2026-11-17_ajbeling_printed_editions/); manuscript not seen",
+  "verify": "Order AN AE B I 945 ff. 150-159; compare with the Marbois and Luzerne codes of 1780-82 (Tomokiyo; catalogue 772).",
+  "links": [
+   {
+    "label": "HathiTrust, calendar p. 146",
+    "href": "https://babel.hathitrust.org/cgi/pt?id=mdp.39015027035362&seq=166"
+   }
+  ],
+  "seen": "print",
+  "source": "HathiTrust full-text sweep of printed editions, 16-17 Nov 2026 (Andrew Beling)",
+  "prior_art": "open as far as checked (17 Nov 2026): known.py on origin/main da9b4c93c, 17 Nov 2026 on 'Holker', 'Marbois', 'Annemours', 'B I 945', 'B I 209', 'Letombe', 'Létombe', 'Nasatir': no entry for these letters (Holker only as a name in targets/lee1779; Létombe only as addressee of catalogue 649, 1797; Nasatir and Monell cited only as unread in targets/delacroix1797); Tomokiyo's unsolved list (unsolved.htm in the repository) names Holker only for a clear D'Estaing letter of 1779, and mentions a decoded but unidentified Luzerne code on a blog post. DECODE not searched online.",
+  "needs_archive_scan": "yes",
+  "access_note": "Calendar only (HathiTrust full view). The Archives nationales series is not known to be online; another research note (not re-checked by us) reports a Library of Congress copying set of nine reels for these consular volumes, reel numbers not identified, and that the Archives nationales takes remote reproduction orders."
+ },
+ {
+  "year": 1782,
+  "date": "20 Feb 1782 (No. 41) and a following letter between 20 Feb and 23 May 1782",
+  "title": "Philippe de Létombe, French consul general at Boston → Castries, two letters partly in cipher, not deciphered",
+  "correspondents": "Philippe de Létombe → the marquis de Castries",
+  "place": "Boston",
+  "language": "French",
+  "region": "Americas",
+  "period": "1701-1800",
+  "shelfmark": "Archives nationales, Affaires étrangères B I 209 (consulate of Boston), ff. 149-150 and about ff. 153-154; calendared Nasatir and Monell, French consuls in the United States: a calendar of their correspondence in the Archives nationales (Library of Congress, 1967), pp. 18-19",
+  "folio_note": "Calendar p. 18 (read): No. 41, 20 Feb 1782, ff. 149-150, '[Parts of the letter are in cipher and not deciphered.]'; p. 19 (search snippet): the next letter, '[Partly in cipher and not deciphered.]'.",
+  "cls": "C",
+  "status": "No. 41 deals with bills drawn for the freight of Holker and Russell and lost shipments. Another research note (not re-checked by us) gives ff. 149-156 for the two letters and says the date and bounds of the second letter still need confirming.",
+  "why": "Cipher passages in the Boston consul general's reports of 1782; Létombe's later cipher (catalogue 649, Delacroix to Létombe 1797) is open too.",
+  "importance": 2,
+  "solvability": 1,
+  "difficulty": 3,
+  "score_note": "Scored from the printed edition during the printed-editions sweep of 16-17 Nov 2026 (research/sweep_2026-11-17_ajbeling_printed_editions/); manuscript not seen",
+  "verify": "Order AN AE B I 209 ff. 149-156; read p. 19 of the calendar in full for the second letter.",
+  "links": [
+   {
+    "label": "HathiTrust, calendar p. 18",
+    "href": "https://babel.hathitrust.org/cgi/pt?id=mdp.39015027035362&seq=38"
+   },
+   {
+    "label": "HathiTrust, calendar p. 19",
+    "href": "https://babel.hathitrust.org/cgi/pt?id=mdp.39015027035362&seq=39"
+   }
+  ],
+  "seen": "print",
+  "source": "HathiTrust full-text sweep of printed editions, 16-17 Nov 2026 (Andrew Beling)",
+  "prior_art": "open as far as checked (17 Nov 2026): known.py on origin/main da9b4c93c, 17 Nov 2026 on 'Holker', 'Marbois', 'Annemours', 'B I 945', 'B I 209', 'Letombe', 'Létombe', 'Nasatir': no entry for these letters (Holker only as a name in targets/lee1779; Létombe only as addressee of catalogue 649, 1797; Nasatir and Monell cited only as unread in targets/delacroix1797); Tomokiyo's unsolved list (unsolved.htm in the repository) names Holker only for a clear D'Estaing letter of 1779, and mentions a decoded but unidentified Luzerne code on a blog post. DECODE not searched online.",
+  "needs_archive_scan": "yes",
+  "access_note": "Calendar only (HathiTrust full view). The Archives nationales series is not known to be online; another research note (not re-checked by us) reports a Library of Congress copying set of nine reels for these consular volumes, reel numbers not identified, and that the Archives nationales takes remote reproduction orders."
+ },
+ {
+  "year": 1688,
+  "date": "13 Aug 1688",
+  "title": "Johann Philipp Hoffmann, imperial resident in London → Emperor Leopold I, despatch with a cipher passage 'for which the key is missing'",
+  "correspondents": "Johann Philipp Hoffmann → Leopold I",
+  "place": "London",
+  "language": "German",
+  "region": "Central Europe",
+  "period": "1651-1700",
+  "shelfmark": "Haus-, Hof- und Staatsarchiv, Vienna (the edition: 'Archives impériales et royales de Vienne'); another research note gives the unit as AT-OeStA/HHStA StAbt England DiplKorr 23, Berichte (Kaunitz, Hoffmann) 1686-1689, folios not established (reported, not re-checked by us); printed Campana de Cavelli, Les derniers Stuarts à Saint-Germain en Laye, vol. 2 (1871), doc. DCXVIII, pp. 245-246",
+  "folio_note": "Edition p. 246: '(es folgen Chiffern, zu denen der Schlüssel fehlt)' after a passage on the 'unerhörte impostur eines supposititii' (the warming-pan story of the Prince of Wales). Length of the cipher not given.",
+  "cls": "C",
+  "status": "Editor's statement read on the page (p. 245) and the search snippet (p. 246); an in-volume search for 'Schlüssel fehlt' finds only this passage. Another research note (not re-checked by us) reports that Klopp, Der Fall des Hauses Stuart IV p. 79 cites this despatch but quotes only its clear final paragraph. Caution: upstream's HHStA archive-catalogue sweep (research/sweep_2026-11_hhsta_ais) dropped England DiplKorr records described as 'chiffriert und dechiffriert'; whether the unit for 1688 carries such a note was not checked.",
+  "why": "The emperor's resident reporting from London in August 1688, three months before William of Orange landed, in cipher on what he would not write in clear.",
+  "importance": 4,
+  "solvability": 1,
+  "difficulty": 3,
+  "score_note": "Scored from the printed edition during the printed-editions sweep of 16-17 Nov 2026 (research/sweep_2026-11-17_ajbeling_printed_editions/); manuscript not seen",
+  "verify": "Look up HHStA StAbt England DiplKorr 23 in the archive's catalogue for a 'dechiffriert' note; ask for the despatch of 13 Aug 1688 with its versos and any decipherment filed with it; look for other Hoffmann despatches of 1688 with glossed cipher (same key).",
+  "links": [
+   {
+    "label": "HathiTrust vol. 2, p. 245 (doc. DCXVIII)",
+    "href": "https://babel.hathitrust.org/cgi/pt?id=nyp.33433103225797&seq=287"
+   },
+   {
+    "label": "HathiTrust vol. 2, p. 246",
+    "href": "https://babel.hathitrust.org/cgi/pt?id=nyp.33433103225797&seq=288"
+   }
+  ],
+  "seen": "print",
+  "source": "HathiTrust full-text sweep of printed editions, 16-17 Nov 2026 (Andrew Beling)",
+  "prior_art": "open as far as checked (17 Nov 2026): known.py on origin/main da9b4c93c, 17 Nov 2026 on 'derniers Stuarts', 'Campana', 'DiplKorr' (only the hhsta_ais note above) and on the 16 Nov export on 'Hoffmann': no entry for this despatch (the catalogue's 1688 items are the Dundas accounts and Lobkowitz in Paris); Tomokiyo's unsolved list: no Hoffmann. DECODE not searched online; Lasry not searched.",
+  "needs_archive_scan": "yes",
+  "access_note": "Edition only (HathiTrust full view). The HHStA despatch is not known to be digitised."
+ },
+ {
+  "year": 1538,
+  "date": "30 Sep 1538",
+  "title": "Miniato Ricci → Monsignor Parisani, papal treasurer, from Corfu three days after Prevesa: closing lines in cipher 'senza chiave, e niun deciframento nell'archivio'",
+  "correspondents": "Miniato Ricci, a volunteer with the papal fleet → Monsignor Parisani, treasurer, Rome",
+  "place": "Corfu",
+  "language": "Italian",
+  "region": "Papacy",
+  "period": "1497-1559",
+  "shelfmark": "Archivio Ricci (in Rome in 1893), volume 'Cardinal Ricci, istrumenti, ordini, bilanci e lettere', t. X, p. 138 (Guglielmotti's note 81; another research note reads the volume number as X or IX in a poor scan, and reports from the national archival catalogue that the Ricci Parracciani archive is now in private custody in Piedmont: reported, not re-checked by us); printed Guglielmotti, Storia della marina pontificia, vol. 4 (1893), pp. 70-76",
+  "folio_note": "Edition p. 76: '(Seguono alcune righe in cifra, senza chiave, e niun deciframento nell'archivio)'; note 98: 'continua in scrittura arcana, non mai più intesa da altri'. 'Some lines' at the end of the letter; not printed.",
+  "cls": "C",
+  "status": "Editor's statement read on the page. All six hits for 'cifra' in the volume read: three are this letter and three mean 'figure'; the volume has no key and no other statement on the cipher. Guglielmotti introduces the writer as a young volunteer who knew a secret he would trust 'neither to writing nor to cipher'.",
+  "why": "A cipher report from the papal fleet three days after the defeat at Prevesa (27 Sep 1538), whose plain part gives the news of the day.",
+  "importance": 4,
+  "solvability": 1,
+  "difficulty": 3,
+  "score_note": "Scored from the printed edition during the printed-editions sweep of 16-17 Nov 2026 (research/sweep_2026-11-17_ajbeling_printed_editions/); manuscript not seen",
+  "verify": "Ask the archival authority for Piedmont and Valle d'Aosta (which holds the inventory of the Ricci Parracciani archive) for the present reference of the volume and a reproduction of p. 138; check whether other Ricci letters of 1537-38 carry the same cipher with a decipherment.",
+  "links": [
+   {
+    "label": "HathiTrust vol. 4, p. 76",
+    "href": "https://babel.hathitrust.org/cgi/pt?id=hvd.hnxjip&seq=92"
+   },
+   {
+    "label": "HathiTrust vol. 4, p. 70 (note 81, the source)",
+    "href": "https://babel.hathitrust.org/cgi/pt?id=hvd.hnxjip&seq=86"
+   }
+  ],
+  "seen": "print",
+  "source": "HathiTrust full-text sweep of printed editions, 16-17 Nov 2026 (Andrew Beling)",
+  "prior_art": "open as far as checked (17 Nov 2026): known.py on origin/main da9b4c93c, 17 Nov 2026 on 'Miniato', 'Parisani', 'Guglielmotti', 'Prevesa', 'Preveza', 'Parracciani': no hits; Tomokiyo's unsolved list: nothing. DECODE not searched online; Lasry not searched.",
+  "needs_archive_scan": "yes",
+  "access_note": "Edition only (HathiTrust full view). The letter is in a private family archive; no images known."
+ },
+ {
+  "year": 1540,
+  "date": "autumn 1540 and 1541",
+  "title": "Papal nuncio at King Ferdinand's court → Rome, two reports with passages marked in the edition as unsolved cipher ('unaufgelöste Chiffern'), not printed",
+  "correspondents": "the papal nuncio at the court of King Ferdinand (Giovanni Morone: inference) → Rome (Cardinal Alessandro Farnese: inference)",
+  "place": "King Ferdinand's court (Worms colloquy, 1540; siege of Buda, 1541)",
+  "language": "Italian",
+  "region": "Papacy",
+  "period": "1497-1559",
+  "shelfmark": "Archivio di Stato di Napoli, Carte Farnesiane 738 (contemporary copy, as the edition cites it: 'Neapel Arch. di Stato Carte Farnes. 738 F gleichz. Abschr.'; survival after 1943 not checked); originals presumably in the Vatican (inference); printed Nuntiaturberichte aus Deutschland, 1. Abteilung, vol. 6, pp. 20 and 179",
+  "folio_note": "Edition vol. 6 p. 20: '[Wieder unaufgelöste Chiffern.]' (report on the King and the colloquy, autumn 1540); p. 179: 'a) Hier unaufgelöste Chiffern.' (report of 1541: siege of Buda, Tata and Pest taken). Length not given; not printed.",
+  "cls": "B",
+  "status": "Seen as in-volume search snippets only. The same volume deciphered other letters itself: Sforza to Cervini, 15 May 1540, 'ganz in Chiffern, Auflösung wie S. XXIX Anm. 2 mit Hilfe des von Pieper, Zur Entstehungsgeschichte der ständigen Nuntiaturen, S. 176 mitgeteilten Schlüssels'. So a nuncio key of these years is printed (L. Pieper, Freiburg 1894, p. 176) and is the first thing to try; many other letters in the volume have contemporary decipherments enclosed. The two unsolved passages stand in the Naples copy only.",
+  "why": "The nuncio's cipher reports on the religious colloquy of 1540 and the siege of Buda in 1541.",
+  "importance": 3,
+  "solvability": 2,
+  "difficulty": 2,
+  "score_note": "Scored from the printed edition during the printed-editions sweep of 16-17 Nov 2026 (research/sweep_2026-11-17_ajbeling_printed_editions/); manuscript not seen",
+  "verify": "Read the introduction note XXIX/2 and Pieper 1894 p. 176 (the key); find whether Carte Farnesiane 738 survived 1943 and is digitised, or the Vatican originals (Nunziatura di Germania); apply the key to the two passages.",
+  "links": [
+   {
+    "label": "HathiTrust vols. 5-6 bound together, vol. 6 p. 20",
+    "href": "https://babel.hathitrust.org/cgi/pt?id=iau.31858016696399&seq=596"
+   },
+   {
+    "label": "HathiTrust vols. 5-6, vol. 6 p. 179",
+    "href": "https://babel.hathitrust.org/cgi/pt?id=iau.31858016696399&seq=755"
+   }
+  ],
+  "seen": "print",
+  "source": "HathiTrust full-text sweep of printed editions, 16-17 Nov 2026 (Andrew Beling)",
+  "prior_art": "open as far as checked (17 Nov 2026): known.py on origin/main da9b4c93c, 17 Nov 2026 on 'Carte Farnes' (only fascio 187, Mendoza and Tassis items), 'Nuntiaturberichte' (only Biglia 1565-66, II. Abt.), 'Pieper', 'Morone': no entry for these reports; Tomokiyo's unsolved list: nothing. DECODE not searched online; Lasry not searched.",
+  "needs_archive_scan": "yes",
+  "access_note": "Edition only (HathiTrust full view). The Naples copy and the Vatican originals are not known to be online."
+ },
+ {
+  "year": 1832,
+  "date": "14 Jul 1832",
+  "title": "Simon Deutz → Massa, for the Duchess of Berry: cipher figures in invisible ink on the back of an innocent English cover letter; the author 'could not find the key'",
+  "correspondents": "Simon Deutz → Massa (for the Duchess of Berry)",
+  "place": "Lisbon",
+  "language": "French (inference)",
+  "region": "France",
+  "period": "1801-1900",
+  "shelfmark": "Autograph held by the author of Le dernier effort de la Vendée (1832), d'après des documents inédits ('nous avons sous les yeux une lettre autographe'); present whereabouts unknown; book pp. 301-302 (author and date of the book not read)",
+  "folio_note": "Book p. 301: 'C'est une lettre chiffrée, à l'encre sympathique, dont malheureusement nous n'avons pu trouver la clef.' Note 2: the recto carries a harmless English letter dated 'Lisboa, 14th july 1832'; 'Au verso de cette lettre sont écrits des chiffres à l'encre sympathique.' Not printed; length not given. The text dates it 1831, the cover letter 1832.",
+  "cls": "C",
+  "status": "Author's statement read on the page. Related, not the same: lead 1215, a different Berry cipher letter of 1832 (AD Gard 74 J 38, 'lettre chiffrée de la duchesse de Berry (1832)').",
+  "why": "A cipher letter from the agent who betrayed the Duchess of Berry to the government in November 1832, written while he was gaining her party's trust.",
+  "importance": 3,
+  "solvability": 1,
+  "difficulty": 3,
+  "score_note": "Scored from the printed edition during the printed-editions sweep of 16-17 Nov 2026 (research/sweep_2026-11-17_ajbeling_printed_editions/); manuscript not seen",
+  "verify": "Identify the book's author and his document source (a family archive or the Archives nationales); look for the letter and for the Berry party's ciphers of 1832.",
+  "links": [
+   {
+    "label": "HathiTrust, p. 301",
+    "href": "https://babel.hathitrust.org/cgi/pt?id=mdp.39015058479547&seq=315"
+   },
+   {
+    "label": "HathiTrust, p. 302",
+    "href": "https://babel.hathitrust.org/cgi/pt?id=mdp.39015058479547&seq=316"
+   }
+  ],
+  "seen": "print",
+  "source": "HathiTrust full-text sweep of printed editions, 16-17 Nov 2026 (Andrew Beling)",
+  "prior_art": "open as far as checked (17 Nov 2026): known.py on origin/main da9b4c93c, 17 Nov 2026 on 'Deutz' (unrelated place-name hits only) and 'dernier effort de la Vend': no entry; Tomokiyo's unsolved list: nothing. DECODE not searched online; Lasry not searched.",
+  "needs_archive_scan": "yes",
+  "access_note": "Book only (HathiTrust full view); the letter has not been located."
+ },
+ {
+  "year": 1546,
+  "date": "about 18 Oct 1546",
+  "title": "Report to the city of Ulm from the Schmalkaldic war (Geislingen), two passages '[folgen Chiffern]'",
+  "correspondents": "Hans Ehinger, Pfleger at Geislingen (Nr. 22), or the writer of the next document (heading not read) → the council of Ulm",
+  "place": "Geislingen (inference from Nr. 22)",
+  "language": "German",
+  "region": "Germany",
+  "period": "1497-1559",
+  "shelfmark": "Stadtarchiv Ulm (inference from the documents); printed Archivalische Beiträge zur Geschichte des Schmalkaldischen Krieges (1896), p. 24 (in or after Nr. 22, Ehinger to Ulm, Geislingen 18 Oct 1546)",
+  "folio_note": "Edition p. 24: '... Man hat viel gesprochen [folgen Chiffern]. ... der Kurfürst lässt auch seinen Sohn reiten. [Folgen Chiffern.]' Two passages, not printed, not glossed.",
+  "cls": "C",
+  "status": "Seen on p. 23 (Nr. 22 heading) and as a search snippet on p. 24; the heading of the document carrying the cipher was not read. The passages concern the Elector of Saxony's dealings in the field, October 1546.",
+  "why": "Cipher news sent to a leading Protestant city at the turn of the Schmalkaldic campaign on the Danube.",
+  "importance": 2,
+  "solvability": 1,
+  "difficulty": 3,
+  "score_note": "Scored from the printed edition during the printed-editions sweep of 16-17 Nov 2026 (research/sweep_2026-11-17_ajbeling_printed_editions/); manuscript not seen",
+  "verify": "Read p. 24 in full and the volume's preface on its sources and on the cipher; then the Stadtarchiv Ulm file.",
+  "links": [
+   {
+    "label": "HathiTrust, p. 24",
+    "href": "https://babel.hathitrust.org/cgi/pt?id=hvd.hnz7ew&seq=32"
+   },
+   {
+    "label": "HathiTrust, p. 23 (Nr. 22)",
+    "href": "https://babel.hathitrust.org/cgi/pt?id=hvd.hnz7ew&seq=31"
+   }
+  ],
+  "seen": "print",
+  "source": "HathiTrust full-text sweep of printed editions, 16-17 Nov 2026 (Andrew Beling)",
+  "prior_art": "open as far as checked (17 Nov 2026): known.py on origin/main da9b4c93c, 17 Nov 2026 on 'Ehinger' (no hits) and 'Schmalkaldischen' (Bremen 1547 and the League's Stuttgart key copies only): no entry for this report. DECODE not searched online; Tomokiyo and Lasry not searched.",
+  "needs_archive_scan": "yes",
+  "access_note": "Edition only (HathiTrust full view)."
+ },
+ {
+  "year": 1630,
+  "date": "1630 (Casale)",
+  "title": "Letter on the Casale settlement of 1630 with four lines 'di cifra non decifrata' (Giulio Mazarini to Cardinal Francesco Barberini: inference)",
+  "correspondents": "Giulio Mazarini (inference) → Cardinal Francesco Barberini (inference)",
+  "place": "Casale or the French court (not read)",
+  "language": "Italian",
+  "region": "Papacy",
+  "period": "1611-1650",
+  "shelfmark": "Manuscript not named on the page read (Vatican Library, Barberini, or the Secretariat of State, Nunziature: inference); printed A. Bazzoni, Un nunzio straordinario alla corte di Francia nel secolo XVII (Firenze 1880), p. 18 (also in Rivista europea 1880, p. 415)",
+  "folio_note": "Edition p. 18: '(....seguono quattro righe di cifra non decifrata....)' inside a letter on the execution of the Casale agreement. Four lines; not printed.",
+  "cls": "C",
+  "status": "Editor's statement read on the page. The book prints other Mazarin ciphers of the period with their decipherments ('in una cifra de' 26 dicembre 1635 diretta al cardinale Francesco Barberini il Mazarini narra'), so the Barberini decipherment registers are the place to look.",
+  "why": "Mazarin's first diplomatic success (the Casale agreement of October 1630) reported to Rome with a passage in cipher.",
+  "importance": 3,
+  "solvability": 1,
+  "difficulty": 3,
+  "score_note": "Scored from the printed edition during the printed-editions sweep of 16-17 Nov 2026 (research/sweep_2026-11-17_ajbeling_printed_editions/); manuscript not seen",
+  "verify": "Read the letter's heading and Bazzoni's source note; find the original in BAV Barb. lat. or ASV Nunziatura di Francia/Savoia and look for a decipherment.",
+  "links": [
+   {
+    "label": "HathiTrust, p. 18",
+    "href": "https://babel.hathitrust.org/cgi/pt?id=hvd.32044087866265&seq=24"
+   }
+  ],
+  "seen": "print",
+  "source": "HathiTrust full-text sweep of printed editions, 16-17 Nov 2026 (Andrew Beling)",
+  "prior_art": "open as far as checked (16-17 Nov 2026): known.py on origin/main da9b4c93c, 17 Nov 2026 on 'Bazzoni': no hits; upstream DECODE material has Barberini-Ceva 1632-34 only; Tomokiyo's unsolved list has Mazarin items of 1649-54 only. DECODE not searched online; Lasry not searched.",
+  "needs_archive_scan": "yes",
+  "access_note": "Edition only (HathiTrust full view)."
+ },
+ {
+  "year": 1650,
+  "date": "1650 (undated on the page; the preceding letter is of 18 March)",
+  "title": "Sir Edward Hyde → Sir Toby Mathew, letter whose remainder is in cipher, not printed",
+  "correspondents": "Sir Edward Hyde → Sir Toby Mathew",
+  "place": "Madrid (inference: Hyde was envoy there in 1650)",
+  "language": "English",
+  "region": "England",
+  "period": "1611-1650",
+  "shelfmark": "Bodleian Library, Clarendon MSS (inference: the edition prints from Clarendon's papers); printed State Papers collected by Edward, Earl of Clarendon, vol. 2 (Oxford, 1767-86 series), p. 525",
+  "folio_note": "Edition p. 525: after a few clear lines on 'the Favourite here', footnote '+ The Remainder is in Cipher.' The cipher is not printed.",
+  "cls": "B",
+  "status": "Editor's note read on the page. Hyde's royalist ciphers of the 1650s are partly known (Tomokiyo; upstream items on Hyde 1659-60).",
+  "why": "Hyde's cipher to the Catholic courtier Toby Mathew during the royalist embassy to Spain.",
+  "importance": 2,
+  "solvability": 1,
+  "difficulty": 3,
+  "score_note": "Scored from the printed edition during the printed-editions sweep of 16-17 Nov 2026 (research/sweep_2026-11-17_ajbeling_printed_editions/); manuscript not seen",
+  "verify": "Check the Calendar of the Clarendon State Papers vol. 2 for this letter (it may give a decipherment) and find the manuscript in the Clarendon MSS.",
+  "links": [
+   {
+    "label": "HathiTrust vol. 2, p. 525",
+    "href": "https://babel.hathitrust.org/cgi/pt?id=njp.32101078304332&seq=551"
+   }
+  ],
+  "seen": "print",
+  "source": "HathiTrust full-text sweep of printed editions, 16-17 Nov 2026 (Andrew Beling)",
+  "prior_art": "open as far as checked (16-17 Nov 2026): known.py on origin/main da9b4c93c, 17 Nov 2026 on 'Toby Mathew': no hits; 'Clarendon State Papers' gives only other letters; Tomokiyo's unsolved list has other Hyde items (1659-60). DECODE not searched online; the Clarendon calendar not checked for this letter.",
+  "needs_archive_scan": "yes",
+  "access_note": "Edition only (HathiTrust full view)."
+ },
+ {
+  "year": 1807,
+  "date": "1807 (during Fraser's expedition to Egypt)",
+  "title": "French consul in Egypt → Paris, despatch with three lines in cipher (Bernardino Drovetti: inference)",
+  "correspondents": "the French consul in Egypt (Bernardino Drovetti: inference) → the French minister (inference)",
+  "place": "Egypt (Alexandria or Cairo, not read)",
+  "language": "French",
+  "region": "Other",
+  "period": "1801-1900",
+  "shelfmark": "French foreign-ministry consular correspondence, Egypt (inference; the edition's source note not read); printed Mohamed Aly, pacha du Caire (1805-1807): correspondance des consuls de France en Égypte (Cairo 1926), p. 181",
+  "folio_note": "Edition p. 181 (chapter on the negotiations between Fraser and Mohamed Aly): '(suivent trois lignes en chiffres)'. Three lines; not printed. Two more hits for 'lignes en chiffres' in the volume not read.",
+  "cls": "C",
+  "status": "Seen as an in-volume search snippet only.",
+  "why": "The French consul's cipher report on Muhammad Ali and the British landing of 1807.",
+  "importance": 2,
+  "solvability": 1,
+  "difficulty": 3,
+  "score_note": "Scored from the printed edition during the printed-editions sweep of 16-17 Nov 2026 (research/sweep_2026-11-17_ajbeling_printed_editions/); manuscript not seen",
+  "verify": "Read p. 181 and the two other hits in full with the edition's source notes; then the consular series (Archives des Affaires étrangères or Archives nationales AE B I).",
+  "links": [
+   {
+    "label": "HathiTrust, p. 181",
+    "href": "https://babel.hathitrust.org/cgi/pt?id=mdp.39015026623804&seq=225"
+   }
+  ],
+  "seen": "print",
+  "source": "HathiTrust full-text sweep of printed editions, 16-17 Nov 2026 (Andrew Beling)",
+  "prior_art": "open as far as checked (16-17 Nov 2026): known.py on origin/main da9b4c93c, 17 Nov 2026 on 'Mohamed Aly': no hits; 'Drovetti': only upstream's north-east Africa literature README, which lists the Drovetti files as not searched. DECODE not searched online; Tomokiyo and Lasry not searched.",
+  "needs_archive_scan": "yes",
+  "access_note": "Edition only (HathiTrust full view)."
+ },
+ {
+  "year": 1594,
+  "date": "10 Oct 1594 (Halphen's heading)",
+  "title": "Henri IV → Pomponne de Bellièvre, letter with two lines in cipher, not printed",
+  "correspondents": "Henri IV → Pomponne de Bellièvre",
+  "place": "unknown",
+  "language": "French",
+  "region": "France",
+  "period": "1589-1598",
+  "shelfmark": "Bibliothèque nationale de France, fr. 15910 (Halphen: 'Orig. B. I. 15910'), folio not given; printed E. Halphen, Lettres inédites du roi Henri IV au chancelier de Bellièvre (Paris 1872), pp. 111-112",
+  "folio_note": "Edition pp. 111-112 (heading p. 111), p. 112: '... de luy faire fournir xIII (1).' with note '(1) Deux lignes en chiffres.' Two lines; not printed.",
+  "cls": "C",
+  "status": "Editor's note read on the page; the letter is headed '1594. — 10 OCTOBRE. Orig. B. I. 15910' (p. 111). Upstream's Bellièvre sweeps paged BnF fr. 15890-15911 where Gallica has them and found no open cipher, but fr. 15896 (letters of the king) and 15907-15910 have no Gallica images (research/sweep_2026-11_bellievre_gallica/README.md), so this letter was probably not seen there.",
+  "why": "Two cipher lines in the king's own letter to one of his principal councillors during the war with Savoy in 1594.",
+  "importance": 2,
+  "solvability": 1,
+  "difficulty": 3,
+  "score_note": "Scored from the printed edition during the printed-editions sweep of 16-17 Nov 2026 (research/sweep_2026-11-17_ajbeling_printed_editions/); manuscript not seen",
+  "verify": "Find the original in BnF fr. 15910 (Bellièvre papers; no Gallica images, by upstream's Bellièvre sweep) and check for a decipherment.",
+  "links": [
+   {
+    "label": "HathiTrust, p. 112",
+    "href": "https://babel.hathitrust.org/cgi/pt?id=hvd.hnxiqd&seq=126"
+   }
+  ],
+  "seen": "print",
+  "source": "HathiTrust full-text sweep of printed editions, 16-17 Nov 2026 (Andrew Beling)",
+  "prior_art": "open as far as checked (17 Nov 2026): known.py on origin/main da9b4c93c, 17 Nov 2026 on 'Halphen' (only his Béthune volumes of 1889 and 1894) and 'Bricherasio': no entry for this letter. DECODE not searched online; Tomokiyo's Henri IV page not searched for it.",
+  "needs_archive_scan": "yes",
+  "access_note": "Edition only (HathiTrust full view)."
+ },
+ {
+  "year": 1644,
+  "date": "spring, between 1643 and 1646 (inference; year not read)",
+  "title": "Godefroi d'Estrades → the French court, original letter with one line in cipher, not deciphered",
+  "correspondents": "Godefroi d'Estrades, French envoy in the Dutch Republic → Mazarin (inference: 'Conformément à la lettre de Mazarin du 10 mars')",
+  "place": "The Hague",
+  "language": "French",
+  "region": "Low Countries",
+  "period": "1611-1650",
+  "shelfmark": "Archives des Affaires étrangères, Correspondance politique, Hollande 33, pièce 104, fol. 216 (duplicates in d'Estrades's hand for Chavigny and Brienne, pièces 210 and 213); printed Correspondance authentique de Godefroi comte d'Estrades de 1637 à 1660, vol. 1, p. 248",
+  "folio_note": "Edition p. 248: '(Aff. étr., Correspondance politique, Hollande 33, pièce 104, fol. 216, original avec une ligne chiffrée, non déchiffrée; pièces 210 et 213, duplicata de la main de d'Estrades pour Chavigny et Brienne.)' One line.",
+  "cls": "B",
+  "status": "Seen as an in-volume search snippet. The two duplicates for Chavigny and Brienne may carry the same line, in the same or a sister cipher. Tomokiyo has reconstructed keys from d'Estrades's correspondence of 1647 (BnF Clairambault 577), and upstream holds d'Estrades keys of 1651 and later (targets/bordeaux).",
+  "why": "A short cipher test case in d'Estrades's Dutch embassy with two duplicates in the same volume.",
+  "importance": 1,
+  "solvability": 2,
+  "difficulty": 2,
+  "score_note": "Scored from the printed edition during the printed-editions sweep of 16-17 Nov 2026 (research/sweep_2026-11-17_ajbeling_printed_editions/); manuscript not seen",
+  "verify": "Read p. 248 for the year; view Hollande 33 ff. 216 and the duplicates (pièces 210, 213); try the 1647 keys reconstructed by Tomokiyo.",
+  "links": [
+   {
+    "label": "HathiTrust vol. 1, p. 248",
+    "href": "https://babel.hathitrust.org/cgi/pt?id=mdp.39015033634182&seq=306"
+   }
+  ],
+  "seen": "print",
+  "source": "HathiTrust full-text sweep of printed editions, 16-17 Nov 2026 (Andrew Beling)",
+  "prior_art": "open as far as checked (17 Nov 2026): known.py on origin/main da9b4c93c, 17 Nov 2026 on 'Estrades' (his keys of 1651 and later, Colbert-era keys) and 'Hollande 33': no entry for this letter; Tomokiyo's unsolved list: a solved letter to d'Estrades of 1647 (BnF Clair. 577), not this one. DECODE not searched online.",
+  "needs_archive_scan": "yes",
+  "access_note": "Edition only (HathiTrust full view). The La Courneuve volume is not known to be online."
+ },
+ {
+  "year": 1627,
+  "date": "1627 (Vincenzo II Gonzaga reigned Dec 1626 - Dec 1627)",
+  "title": "Monsignor Zucconi → Don Cesare Gonzaga of Guastalla, intercepted letter ending in 'molte righe in cifra', decipherment incomplete",
+  "correspondents": "Monsignor Zuccone (Zucconi) → Don Cesare Gonzaga, lord of Guastalla",
+  "place": "unknown",
+  "language": "Italian",
+  "region": "Italy",
+  "period": "1611-1650",
+  "shelfmark": "Intercepted letter sent by Duke Vincenzo II to the Empress Eleonora and to be returned (whereabouts unknown); the duke's covering letter in the Archivio Gonzaga, Mantua; printed R. Quazza, Mantova e Monferrato nella politica europea alla vigilia della guerra per la successione (1922), doc. 82, p. 300",
+  "folio_note": "Duke's covering letter: 'Ella vedrà nel fine della lettera molte righe in cifra et il foglio decifrato che non ha potuto essere compiutamente fatto da chi me l'ha inviato.' Many lines; the partial decipherment went with it.",
+  "cls": "A",
+  "status": "Covering letter read on the page. Weak lead: the letter itself is not located, and a partial decipherment was made at the time ('conosciuto il senso').",
+  "why": "An intercepted cipher letter in the Guastalla-Mantua intrigues on the eve of the Mantuan succession war.",
+  "importance": 2,
+  "solvability": 1,
+  "difficulty": 3,
+  "score_note": "Scored from the printed edition during the printed-editions sweep of 16-17 Nov 2026 (research/sweep_2026-11-17_ajbeling_printed_editions/); manuscript not seen",
+  "verify": "Look in the Archivio Gonzaga inventory (Mantua; also the Guastalla papers) for the Zucconi letter or its copy and the partial decipherment.",
+  "links": [
+   {
+    "label": "HathiTrust, p. 300",
+    "href": "https://babel.hathitrust.org/cgi/pt?id=njp.32101073823146&seq=308"
+   }
+  ],
+  "seen": "print",
+  "source": "HathiTrust full-text sweep of printed editions, 16-17 Nov 2026 (Andrew Beling)",
+  "prior_art": "open as far as checked (17 Nov 2026): known.py on origin/main da9b4c93c, 17 Nov 2026 on 'Zuccon', 'Quazza': no hits. DECODE not searched online; Tomokiyo and Lasry not searched.",
+  "needs_archive_scan": "yes",
+  "access_note": "Edition only (HathiTrust full view); the letter has not been located."
+ }
+]

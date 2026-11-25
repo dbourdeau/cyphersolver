@@ -187,6 +187,12 @@
    ],
    "what": "Integration check of PR #559 (14 Nov 2026): own lookup of the code groups of n194/transcription_n194.txt (64 numbers with a point; the date figures 24, 1622 and the numerals 2. and 3. are not codes, leaving 60) in key.tsv: same 60 groups in the same order as decryption_n194.txt, 56 as decrypted, 4 the marked places (1513 and 858 not in the key, 1682 and 43 doubt). v10_relabel.share on reading_n194.md: 858 words, 87 holes; without the 13 paragraph references 858 words, 74 holes, 0.921, as stated.",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "verification",
+   "what": "Full-texts pass: the document 'series' (n.129-210 other than n.194) had no outcome.texts entry. No text of those letters is in the folder; listed as 'not prose' with transcription_missing, pointing at series_survey.md, which sets out what NOTES.md and key.tsv record about the series. No letter was transcribed.",
+   "result": "partial"
   }
  ],
  "outcome": {
@@ -252,6 +258,16 @@
      "date": "2026-11-03",
      "note": "Mostly coherent sense. Weak places: l.3-4 '[?de] [?Morz]'; l.22-23 '[?seiner] [?Bleib] ... [?resignat]' does not parse; l.28 1513 unread; l.36 '[?...] in hoc p[unct]o'; l.72 'violentia zuerhalten', with 1682 disputed (Denmark or Bohemia); l.78-81 under the pasted slip, and 'Oberpfalz mit verlang[en]' unsure; l.83 'Herr Grosshofmeister wie auch von Dohna hinaus' has no verb and 43 is doubtful. Translation also graded B: it filled holes by interpretation ('to keep off violence', '[i.e. Solms himself]', '[go] out', '[?Imperial governor]'); these are now marked as conjectures. Decryption graded B: mechanical output, rebuilt byte-identical by check_marks.py."
     }
+   },
+   {
+    "doc": "series",
+    "label": "Clm 10397 n.129-210 other than n.194 (not transcribed)",
+    "transcription_missing": "None of the other letters of the series (about 75 pieces, about 4,500 code groups by an approximate machine count) has been transcribed; each carries a decipherment of the time over its code groups. The MDZ microfilm images (bsb00116446 scans 581-906) are public, so nothing outside blocks it: it is a transcription job of about 75 letters that was not undertaken, in this pass or before.",
+    "decryption": "series_survey.md",
+    "language": "de",
+    "state": "not prose",
+    "summary": "The rest of the Camerarius-Solms series of 1621-22 in the same code: surveyed for letters without a decipherment of the time (none found among those checked), not transcribed.",
+    "note": "series_survey.md is the record of the survey (scans checked by eye for glosses, the approximate count, the key rows that come from other letters of the series), not a text of any letter."
    }
   ],
   "key_file": "key.tsv",

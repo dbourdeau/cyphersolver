@@ -21,16 +21,17 @@
     "partial": false
    },
    "length": {
-    "tokens": 110,
+    "tokens": 115,
     "unit": "code groups",
-    "measured": false
+    "measured": true,
+    "file": "texts/R1944_transcription.txt"
    },
    "transcription": {
     "by": "llm from images",
-    "source": "Authenticated DECODE scans of R1944 and R1946.",
+    "source": "Authenticated DECODE scans of R1944 and R1946 (clear copy, Sept 2026); Nationaal Archief public scans NL-HaNA_2.01.08_257_0432 and _0433 (code groups, 14 Nov 2026).",
     "corrections": 2,
     "image_quality": "fair",
-    "notes": "Only the clear copy was transcribed; group count (about 110) estimated by eye from the two cipher images, not measured. Corrections: 'vertrek' -> 'renvoy', 'positiver' -> 'positiever' on second reading."
+    "notes": "The clear copy was transcribed in Sept 2026. The code groups were transcribed on 14 Nov 2026 from the Nationaal Archief scans, with their superposed marks: 115 groups measured (the earlier figure of about 110 was an estimate by eye); a single AI transcription, not checked by a person, 5 groups marked doubtful. Corrections: 'vertrek' -> 'renvoy', 'positiver' -> 'positiever' on second reading."
    }
   }
  ],
@@ -121,6 +122,18 @@
    "kind": "verification",
    "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): the contemporary clear copy and its translation, copied from NOTES.md to texts/; the ~110 code groups were never transcribed (project work)",
    "result": "partial"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "access",
+   "what": "Looked for a transcription of the code groups: none in the folder, none on DECODE R1944 (the public record page lists two images only, and DECODE full-size images need a login). Found the Nationaal Archief's own public scans of inv. 257 (601 scans); the letter is scans 432 (fol. 294r) and 433 (fol. 294v), the clear copy scan 434.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "transcription",
+   "what": "Transcribed the code groups line by line from the full-size Nationaal Archief scans, with the mark over each group (texts/R1944_transcription.txt): 115 groups in 11 lines, 5 marked doubtful. No key, so no decoding check; the pair 237: 927+ recurs where the clear copy has 'zyn Cyffer' twice, and 927+ again near the end where it has 'nieuw Cyffer'. By Claude (session of 14 Nov 2026), not checked by a person.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -138,7 +151,7 @@
     {"who": "contemporary", "role": "key or decipherment used", "note": "ministry's clear copy (fol. 295, N. 16), misfiled as image 3 of DECODE R1946"}
   ],
   "texts": [
-   {"doc": "R1944", "label": "R1944, Etienne Bourdeaux, Berlin, 31 Jan 1801 (clear copy, no. 16)", "decryption": "texts/R1944_decryption.md", "translation": "texts/R1944_translation.md", "summary": "The Dutch chargé d'affaires in Berlin reports that Rosenkrantz does not know why he was dismissed and supposes his cipher was taken and copied by a servant; Lusi says more definitely that the desk holding his cipher was forced open, which is why Schuer was to be sent to Petersburg with a new cipher. So the letter, itself in cipher, reports a compromised codebook.", "read_share": 1.0}
+   {"doc": "R1944", "label": "R1944, Etienne Bourdeaux, Berlin, 31 Jan 1801 (clear copy, no. 16)", "transcription": "texts/R1944_transcription.txt", "decryption": "texts/R1944_decryption.md", "translation": "texts/R1944_translation.md", "summary": "The Dutch chargé d'affaires in Berlin reports that Rosenkrantz does not know why he was dismissed and supposes his cipher was taken and copied by a servant; Lusi says more definitely that the desk holding his cipher was forced open, which is why Schuer was to be sent to Petersburg with a new cipher. So the letter, itself in cipher, reports a compromised codebook.", "read_share": 1.0}
   ]
  }
 }

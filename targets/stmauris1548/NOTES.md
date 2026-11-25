@@ -1,6 +1,6 @@
 # Jean de Saint-Mauris to Ferrante Gonzaga, 1547-1548: cipher letters (Biblioteca Estense, Autografoteca Campori)
 
-Status: in progress. Not yet written up: no site page or README row. Read in part, with escalation steps still open (see Remaining gaps and Escalation). The status below is the contributor's.
+Status: in progress (24 Nov 2026 review: no page yet. Next step: transcribe the letters of 1547 (cc. 1r-2r, with glosses) and 12 Mar 1548 (cc. 5r-8v, clear note on 5r) from the online Estense scans and read them with key_frozen.tsv, which also tests the post-test values; measured share 340/435 = 78.2% verbatim, below the bar.)
 
 Status, 3 Nov 2026: **read in part.** The table is a homophonic substitution: one sign for one letter, and a few signs
 for a doubled letter. Two letters are read in part; two are not transcribed. No contemporary decipherment of these
@@ -151,7 +151,7 @@ solve. Their values rest on the earlier solve, the gloss and the reading.
 **Historical notes not verified.** Dorsey, the Pignatelli identification, the La Rochelle to Scotland sailing and the
 defensive league are checked only in outline. They must be verified before anything is published.
 
-## Open
+## Remaining gaps
 
 - A second blind reading of 9r L17-L18 and all of 9v.
 - Holes: 14 in 10 Jan, 4 in 2 Aug. Signs with no value: `N19` (3 places), `L1` (1). The 2 Aug values set after the test
@@ -160,6 +160,15 @@ defensive league are checked only in outline. They must be verified before anyth
 - Letters of 1547 (cc. 1r-2r, glosses on 1r, 1v and 2r) and of 12 Mar 1548 (cipher blocks on 5r-8v, with a clear note
   in the margin of 5r): not transcribed. They are the natural next test of the table.
 - cc. 12-21 not checked at full size.
+
+## Escalation
+
+- [ ] siblings: the letters of 1547 (cc. 1r-2r) and 12 Mar 1548 (cc. 5r-8v) in the same file are online and not transcribed
+- [x] clear-pages: the reader's gloss over about six rows of c. 3r used as seeds (gloss_seeds.tsv)
+- [ ] known-keys: no other Saint-Mauris or Gonzaga table of 1547-1548 searched or tried
+- [x] print: prior art searched (see Prior art); none found
+- [x] key-rebuild: table built on 10 Jan, held-out test on 2 Aug with the frozen table
+- [ ] retry: second blind reading of 9r L17-L18 and 9v, and `x` against h on full-size images, not done
 
 ## Prior art (3 Nov 2026)
 
@@ -179,3 +188,46 @@ text; not opened.
 (`fetch.py`, `bands.py`, `lines.py`, `ruler.py`, `compare.py`, `merge.py`, `ngram.py`, `solve.py`, `read.py`,
 `show.py`, `heldout.py`, `check_marks.py`). `model/quad.npy` is rebuilt by `ngram.py` and is not in git. No images are
 included.
+
+## 14 Nov 2026 full-texts audit
+
+The full-texts check reports the letters of 1547 (cc. 1r-2r) and of 12 Mar 1548 (cc. 5r-8v) as documents without texts. That is true and stays so after this pass: neither has a sign transcription, so there is nothing to decode with `key.tsv`. The Estense manifest of cc. 1-2 was requested once and answers (HTTP 200), so the images are reachable with `scripts/fetch.py`; the blocker is the work, not access. The cipher is graphic signs (about 50 shape classes, `SIGNS.md`); the two letters that are read each took two blind passes and a merge (`merge_log.tsv`), and a single unchecked pass over 11 more pages would not be a faithful transcription. No entry was added to `outcome.texts` for them, so that the list does not point at files that do not exist. What closes it: two passes of cc. 1r-2r and of the cipher blocks of cc. 5r-8v with the names of `SIGNS.md`, then `scripts/read.py` with the frozen table; the glosses on 1r, 1v and 2r typed as the contemporary decipherment.
+
+## Decrypt audit, 16 Nov 2026
+
+`research/decrypt_audit/audit.py` re-applies the key file named in the profile to each transcription and compares the
+letters with the reading. It flagged this target: 26 of 232 compared words depart in 10 Jan and 35 of 169 in 2 Aug
+(61 of 401). Nearly every departure was a letter n in the reading that its decrypt did not give (12 of 15 unmarked
+gaps in 10 Jan, 10 of 13 in 2 Aug).
+
+Causes, checked on the files:
+
+- **Audit artefact, the sign `#`.** The key files hold the row `#<TAB>n` (the double-barred cross of `SIGNS.md`). The
+  audit script drops every line that begins with `#` as a comment, so it had no value for that sign: 31 places in
+  10 Jan and 36 in 2 Aug. Example: the signs give "tun pure represaille" (3r L04), the script's decrypt gave "tu pure".
+  The scripts of this folder skip only lines that begin with `# ` (hash and a space) and do read the row; so do
+  `decryption_l2.txt`, `decryption_l4.txt` and `decryption_l4_current_key.txt`, which hold the n.
+- **Audit artefact, the doubt suffix.** 9 tokens of the transcriptions carry a `?` (`N15?`, `eo?`, `Le?` twice, `L1?`,
+  `N4?`, `3o?`, `N20?`, `x3?`). The loader of this folder strips it; the audit script does not, and finds no value.
+  Example: `N4?` (9r L09) is m in "Piedmont".
+- **Audit artefact, the key of 2 Aug.** The profile named only `key.tsv`. The reading of 2 Aug is marked against
+  `key_frozen.tsv`, with `Lo` and `L1` taking the frozen value of `Le` and `N20` that of `R` (a rule that is in
+  `scripts/check_marks.py` and in "Fixes after the independent check" above, not in a key file).
+- **No unmarked emendation was found.** An own snippet (not a script of this folder) rebuilt the three decryptions
+  from the transcriptions and the key files: all three equal the files. It then walked the `## French` section of each
+  reading letter by letter: 10 Jan against `key.tsv`, 1,286 letters, 0 unmarked departures (12 `{r/s}`, 7 `{+r}`,
+  15 `{-s}`, 4 proposed words, 14 holes); 2 Aug against `key_frozen.tsv` with the parent classes, 830 letters,
+  0 unmarked departures (47 `{r/s}`, 3 `{+r}`, 3 `{-s}`, 2 proposed, 4 holes).
+
+Changed: `profile.json` `outcome.key_file` now lists `key.tsv` and `key_frozen.tsv` (both already in the folder; the
+second is the key of the 2 Aug reading); one comment line added to `key.tsv` saying that the row `#` is a sign, not a
+comment. No key value was added or changed, and no reading, decryption or transcription was touched.
+`key_frozen.tsv` is unchanged.
+
+After: the audit script still prints 26 of 232 and 35 of 169, because it still skips the `#` row; that needs a change
+in the script, which is outside this folder. With the row read and nothing else changed, the same comparison gives
+1 of 234 words (10 Jan: "quelque", 4r L10, token `eo?`) and 5 of 170 (2 Aug, `key.tsv`: tokens `L1?`, `N4?`, `3o?`,
+`N20?`, `x3?`), all from the doubt suffix.
+
+Not checked: the signs against the images, and whether any marked repair is right. The parent-class rule for the
+frozen values of `Lo`, `L1` and `N20` is still not recorded in a key file.

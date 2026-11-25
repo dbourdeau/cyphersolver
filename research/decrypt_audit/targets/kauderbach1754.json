@@ -1,0 +1,74 @@
+{
+ "folder": "kauderbach1754",
+ "causes": {
+  "A": "Not a stale key file: key.json applied to cipher/R*.txt reproduces read/machine_R*.txt exactly in all ten letters. But two values the readings use are not in it and are stated in no key: code 49 (key 'sa') is printed 'per' at 5 of its 10 uses and fits 'per' at 2 more; code 13 (key 'y') is also read 're' twice (stated in the notes of read/R1043.txt and read/R1044.txt).",
+  "B": "Letters changed in the hand readings without a mark: about 240 of 2,044 words in the nine letters that read (garbled groups and look-alike figures of the transcription, e.g. 41 for 71, 09 for 69, 14 for 44, put right in the reading only; words supplied). The 'Slips:' lines of read/R*.txt name only a few.",
+  "C": "About 50 words of normalised spelling: doubled consonants (aparences > apparences), in > im before p/m (code 27, 5 times), final z > s (code 77, 5 times), endings added (diminue > diminuent).",
+  "E": "R1954: cipher/R1954.txt and machine_R1954.txt are the September transcription; read/R1954_partial_reading.md follows trans/R1954_b29.txt (23 Oct), which has no cipher/ file. 121 of 533 words differ against the September state, 37 against b29 decoded with key.json.",
+  "F": "R1954: the profile lists two transcriptions and three published files (old reading, machine output, partial reading); the audit joins them, so its 106 of 442 is not a measure of anything."
+ },
+ "before": "346 of 2,469 words depart (texts compared: 10; R2078 42/352, R1958 17/165, R2079 19/174, R2080 47/365, R1959 10/118, R2081 29/260, R2082 13/124, R1044 17/184, R1954 106/442, R1043 46/285)",
+ "after": "unchanged, 346 of 2,469 (no key, transcription or profile pointer changed). Own count for the nine letters that read: 291 of 2,044 words differ from the machine decryption.",
+ "files_changed": [
+  "targets/kauderbach1754/NOTES.md",
+  "targets/kauderbach1754/profile.json (one solution step; the file was re-dumped with indent=1, which reflows its formerly compact lines, content otherwise identical)"
+ ],
+ "key_values_added": [],
+ "unmarked_emendations": {
+  "count": 240,
+  "count_note": "approximate, nine letters, from an own letter alignment classified by rule (doubling, n>m, z>s and added endings counted as normalisation, the rest as emendation); R1954 not included",
+  "examples": [
+   {
+    "text": "R2079",
+    "decrypt": "dessaance (… 49 …)",
+    "reading": "d'esperance",
+    "where": "read/machine_R2079.txt / read/R2079_reading.md:9"
+   },
+   {
+    "text": "R2079",
+    "decrypt": "neracastle",
+    "reading": "Newcastle",
+    "where": "read/machine_R2079.txt / read/R2079_reading.md:7"
+   },
+   {
+    "text": "R1958",
+    "decrypt": "tcerande",
+    "reading": "grande",
+    "where": "read/machine_R1958.txt / read/R1958_reading.md"
+   },
+   {
+    "text": "R1958",
+    "decrypt": "etre sasuade (49 = per gives persuade)",
+    "reading": "etre assuré",
+    "where": "read/machine_R1958.txt / read/R1958_reading.md"
+   },
+   {
+    "text": "R2080",
+    "decrypt": "necessila (41 for 71)",
+    "reading": "necessité",
+    "where": "read/machine_R2080.txt / read/R2080_reading.md"
+   },
+   {
+    "text": "R2082",
+    "decrypt": "dairpurer",
+    "reading": "pour",
+    "where": "read/machine_R2082.txt / read/R2082_reading.md"
+   },
+   {
+    "text": "R1043",
+    "decrypt": "neutralila despaisbas",
+    "reading": "neutralité des Pais Bas",
+    "where": "read/machine_R1043.txt / read/R1043_reading.md"
+   }
+  ]
+ },
+ "page_statements_false": [
+  "\"Word division, accents and the bracketed sigla are editorial; spelling is Kauderbach's.\" — false: the readings double consonants, print im for in and s for z, and replace or supply letters in about 290 of 2,044 words.",
+  "\"49 sa\" (key table on the page) — the readings themselves print 'per' for 49 (permissent, esperance, permettant, desespere, desesperoit); 'sa' gives a word at none of its ten uses.",
+  "\"the holes are marked in the reading\" — unread groups are marked, corrected words are not.",
+  "\"The DECODE transcriptions and the new ones both drop or double figures; the decryption files list those found.\" — only a few are listed in the Slips lines of read/R*.txt.",
+  "\"R2079, 6 July 1755 (about 97%) Mr Haslang mande au resident de Baviere qu'il a la parole du duc de Newcastle\" — the figures give 'neracastle' and omit 'la'; printed as read."
+ ],
+ "remaining": "Decision needed: (1) set 49 = per in key.json (not done: no file of the folder states it; validation.tsv and the page were computed with 49 = sa; two readings would then change, 'etre assuré' > 'etre persuadé' in R1958 and 'persistant' in R2078); (2) how to record 13 = y / re; (3) split or re-point the R1954 entry of outcome.texts (b29 transcription with the partial reading). The ~240 corrected words were not judged one by one, and nothing was checked against the images.",
+ "confidence": "medium"
+}

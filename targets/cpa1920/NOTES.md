@@ -176,3 +176,10 @@ typing slip. Not settled.
   is underdetermined: 3 tokens per cell on names and addresses are too few for the letter model to tell the grid
   from a key fitted to shuffled text. The leave-one-run-out test in `decryption.txt` is the stronger check.
 - `reading.md`, `reading_a0706.md`: the coded words inside their clear sentences
+
+## 14 Nov 2026: reading review recorded
+
+`reading.md` and `reading_a0706.md` were read as sentences against `decryption.txt` (Claude, session of 14 Nov 2026). Both
+are clear typed English with single coded words; the sentences are coherent. `reading_review` grade A recorded on both
+entries in `profile.json`; states unchanged (A0706 read in part: the cells 5/29, 5/12 and 5/13 have no value). Pages not
+re-opened.

@@ -1,5 +1,8 @@
 # R1064 - d'Affry, The Hague, 1 February 1757 (no. 136, to Rouillé): reading
 
+What this file is: the clerk's clear copy of the letter in the Fagel register, a decipherment of the time except at the places listed under "Figures over the register", where the figures are followed. It is not the
+output of this folder's key; the keyed decode is `read/R1064.md`.
+
 Rests on: the contemporary clear copy of this despatch in the Fagel register, Nationaal Archief 1.10.29 inv. 5186
 scans 62R-63R (margin "No 136. Dat: 1. Fevrier 1757. A: à R:"), transcribed by WAINUT (21 Oct 2026,
 `wainut/register_clear.txt`) and checked line by line against the NA IIIF scans 23 Oct 2026 (r2q). The register is the

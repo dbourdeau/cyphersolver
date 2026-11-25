@@ -6,6 +6,7 @@ Read: 1408 of 1477 cipher glyphs read as sense (95.3%, measured by script over t
 are at or above the read bar: fr. 3096 f.91 667/699 = 95.4%; fr. 3045 f.28 741/778 = 95.2% after the push pass of
 22 Sept 2026. The margin is thin: without two judgement calls on fr. 3045 ("lorro" = loro, +2; "lui" with the
 unique dotted p taken as U from sense only, +3) that letter is 736/778 = 94.6% and the target would be read in part.
+16 Nov 2026: counted over cipher words, both letters are read in part (fr. 3045 f. 28 88.3%, fr. 3096 f. 91 89.7%; see the two sections before Remaining gaps); the glyph figures above are shares of signs.
 Key: partial (the letters are recovered; the numbered nomenclator is not). Written up 22 Sept 2026 as
 https://dbourdeau.github.io/cyphersolver/visconti1529.html (upgraded from read in part the same day).
 
@@ -126,10 +127,43 @@ push-pass readings of `fr3045_f28_final.md` (**`fr3045_f28_v2_reading.md`**) sco
 Urbino*), the *quanto ci è* clause and ll. 14-15 (*Designati ... as[?]sedio*) do not build; the rest does. `reading`
 points at the new file.
 
+## Read share over cipher words only (16 Nov 2026): fr. 3096 f. 91
+
+README Conventions now count the read share over the words written in cipher, holes by words, sure words only. The
+recorded 0.964 had been measured on the first-pass reading `fr3096_f91_reading.md`, which the second pass
+(`fr3096_f91_final.md`, every line redone) supersedes; the fixed tool, cutting that file's notes, gave 0.948.
+Recounted by hand on the "Italian text" section of `fr3096_f91_final.md`, whose clear parts are in italics ("Syre:
+Sapendo" and the close) and are left out, as is the editorial line "(The clear close is kept ...)" under it:
+
+- f. 91: 0.964 -> **0.897** (156 of 174 cipher words). **Read -> read in part.**
+- Holes (18): the codes [rr] twice and [48] twice (no key survives; 48 is probably Saint-Pol, not proved); the
+  supplied [cum]; s[e]in; né[Λ?] and se[Λ?], each a word with an unread sign; [......](?) and [cherì](?) in L12;
+  s[ρ]forcire; the overbarred [..] before "quale"; com[e](?); [se terrò](?) as two words; and the doubtful
+  satisfati(?), fu(?) and ne(?).
+- The glyph count, 667 of 699 signs (95.4%), is a share of signs and stays as it was; fraction_read (signs, 0.953)
+  is unchanged, and so is the class: both letters are now read in part.
+- Measure declaration: `reading: fr3096_f91_final.md`, `reading_section: Italian text`, `clear_markup: *`. The tool
+  gives 0.886 with them: it counts the editorial line under the text as 19 read words and scores a doubt mark after a
+  bracket, [x](?), as two holes. The hand count is the figure of record.
+
+## Read share over cipher words only (16 Nov 2026): fr. 3045 f. 28
+
+After the claims review: the letter to Bolano had kept its 24 Oct figure (0.889), measured over the whole reading.
+`fr3045_f28_v2_reading.md` now marks its clear words in ⟨ ⟩ (markup only, no word changed): "Bolano." at the head
+and the close from "sarà la fine" on, the clear 21st line of `fr3045_f28_reading.md`. Recounted over the cipher words:
+
+- f. 28: 0.889 -> **0.883** (158 of 179 cipher words); read in part already.
+- Holes (21): the codes [42], [rr] three times, [qq] twice and [ep]; sep[a]r[at]ione (supplied letters, one word);
+  [?al], [?a] twice, [?quanto] [?ci] [?è], [?qua], as[?]sedio, the bare [?] twice, [?havese], [?]convengano; and
+  "lui", whose dotted p is taken as U from sense alone (a judgement call, so not a sure word). The doubled-R "loro"
+  is a spelling and counts as read.
+- Measure declaration: `clear_markup: ⟨⟩`. The tool also gives 0.883, by another route: it counts sep[a]r[at]ione as
+  two holes and "lui" as read.
+
 ## Remaining gaps
 - fr. 3045 l.18 place name "[ιn]npiano" (7 glyphs) - blocker: too-short; one-off place name; enhanced crop reads "ι n f o ψ L y n"; Serravalle, Novi, Gavi, Ovada, Acqui, Castelpiano and the Scrivia plain checked, none fits
 - fr. 3045 l.15 "as[.]sedio ... havese" stretch (about 9 glyphs) - blocker: too-short; values known, the start does not parse, occurs only here; accented á seen on enhancement, "assedio" would need a transposition
-- fr. 3045 scattered single signs: l.4 "sep[a]r", l.5 the u of "fo[u]ra", l.8 "pur al", l.9 "lo a", l.16 stray ∂, l.17 "a penso" - blocker: too-short; each a one-off value or sense in a secure context
+- fr. 3045 scattered single signs: l.2 the dotted p of "lui" (U from sense only), l.4 "sep[a]r", l.5 the u of "fo[u]ra", l.8 "pur al", l.9 "lo a", l.16 stray ∂, l.17 "a penso" - blocker: too-short; each a one-off value or sense in a secure context
 - fr. 3096 L12 "[.]sante ... cherì" and L18 "se terrò" stretches - blocker: too-short; values known, the phrases do not resolve and occur only here
 - codes [48], [rr], [qq], [42], [ep] - blocker: no-key-material; numbered nomenclator, no key list survives in Lasry, Tomokiyo or the siblings
 

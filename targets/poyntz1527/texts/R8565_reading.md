@@ -13,7 +13,7 @@ unread. Spelling as written; *p̃*, *ye*, *yt* expanded to *the*, *that*.
 ## Reading
 
 Yet [?bere] the frenchemen, and that possible had not ben for them to have brought hym to shewe any demaundes, but
-wolde have stikkyd upon the treatie of Madrill; but evermore, aswell in thair presence as oute, for the kinges highnes
+wolde have stikkyd upon the treatie of Madrill; but evermore, ⟨aswell in thair presence as oute⟩, for the kinges highnes
 he wolde doo all thinges.
 
 That the kinges highnes [and] your grace be as hoole his as ever you have ben. [?Wher] he [?fearith] lest the frensh king
@@ -21,7 +21,7 @@ wil not be brought to raison, wherfore it shall be as well meritorious as honora
 and amite, wherof yf the kinges highnes and your grace do not, we thinke it wolde be long or it be doone.
 
 What suretie shal we have that he shal not rendre the duchy unto the frenche kinges handes? We can not doubt but that he
-wol. And therfor it is better that the Emperour bestowe it upon some of his frendes, that knowes non so great as the
+wol. ⟨And therfor it is better that the Emperour bestowe it upon some⟩ of his frendes, that knowes non so great as the
 kinges grace, and therfore [?yf] [?he] [?wolde] [?geve] the doughter of Portugalo for the duke of Richmont, and the duchy
 of Millayn with her, how say yow, [?how] doth this like yow? That thinges were better to gyve to oon of his frendes than to
 this man that is nothing mete for it.

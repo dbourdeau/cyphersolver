@@ -31,7 +31,7 @@
     "image_quality": "good",
     "notes": "Measured with --digits: letter-written word-signs (pi, na, etc.) excluded; NOTES give 220 tokens including them."
    },
-   "read": "read"
+   "read": "read in part"
   },
   {
    "id": "f239",
@@ -60,7 +60,7 @@
     "image_quality": "good",
     "notes": "--digits count; NOTES give 70 tokens including letter-written signs."
    },
-   "read": "read"
+   "read": "read in part"
   },
   {
    "id": "f288v",
@@ -89,7 +89,7 @@
     "image_quality": "good",
     "notes": "--digits count; NOTES give 196 tokens including letter-written signs."
    },
-   "read": "read"
+   "read": "read in part"
   }
  ],
  "system": {
@@ -276,6 +276,15 @@
    "technique": [
     "statistical test"
    ]
+   },
+   {
+    "date": "2026-11-16",
+    "kind": "verification",
+   "technique": [
+    "manual reconstruction"
+   ],
+   "what": "Read share recounted over cipher words only (README Conventions, 16 Nov 2026), each letter separately from the bold runs of its own section of reading.md (clear French, the English translation and f. 366 left out). Holes: unidentified word-signs in braces, words marked [?], letters supplied in [ ], and the unread stretches marked with an ellipsis inside a cipher run. f. 233 68 words 9 unread; f. 239 24 words 7 unread (pieces, with its slipped 66, among them: the one-digit-slip rule needs the surviving period key); f. 288v 74 words 17 unread. The recorded 0.984 for each letter was one whole-file figure. Result: read share 0.984 -> f233 0.868, f239 0.708, f288v 0.770 (133/166 over the three); all three letters and the target move from read to read in part; fraction_read by tokens (466/482, glossed word-signs counted) unchanged.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -317,7 +326,8 @@
    "key extended or corrected",
    "sender or date identified"
   ],
-  "class": "read",
+  "class": "read in part",
+  "key": "recovered",
   "fraction_read": 0.967,
   "grades": "unknown",
   "verification": [
@@ -326,7 +336,7 @@
    "historical consistency",
    "statistical test"
   ],
-  "notes": "ff. 233, 239, 288v read in substance; word-signs and numbers 180, 215?, 900 open. f. 366 (probably this key) left open and outside the documents; f. 333 (Tomokiyo's f. 321 key) is navarre1586; f. 143 (1583, another key) is segur1583.",
+  "notes": "ff. 233, 239, 288v deciphered with key A, recovered ciphertext-only; read in part by the read bar over cipher words (16 Nov 2026): f. 233 59/68 (86.8%), f. 239 17/24 (70.8%), f. 288v 57/74 (77.0%), 133/166 in all. Open: the word-signs and numbers 180, 215?, 900, and words resting on doubtful or slipped figures. f. 366 (probably this key) left open and outside the documents; f. 333 (Tomokiyo's f. 321 key) is navarre1586; f. 143 (1583, another key) is segur1583.",
   "first_break": "unpublished prior",
   "credits": [
    {
@@ -353,12 +363,17 @@
     "item": "f. 366 (24 tokens, probably this key), lines 1-2",
     "blocker": "too-short",
     "detail": "line 3 reads escri; lines 1-2 decode to non-French, probably names in the king's spelling"
+   },
+   {
+    "item": "words resting on doubtful or slipped figures: avec, contracte, Eglises, the year 1579 and the pair 87 52 in f. 233; pieces and vou[s] in f. 239; peine, escrire, son[t] and the closing name or place (Valen[ce?]) in f. 288v",
+    "blocker": "no-key-material",
+    "detail": "the digits were re-read at 2x and 3x on the Gallica images and stand; whether 20 (avec, contracte, Valen-h) and the adjacent-value figures (pieces in f. 239 among them) are the encipherer's slips or values of the key can only be settled by the key sheet, which is not in the volume; vou[s] and son[t] lack a letter in the cipher itself. Counted as holes in the cipher-word read share (16 Nov 2026)"
    }
   ],
   "texts": [
-   {"doc": "f233", "label": "f. 233, Henry of Navarre to Ségur, October 1585", "transcription": "ct_233.txt", "decryption": ["reading.md", "decode_v4.txt"], "summary": "Navarre, a month after the bull of excommunication, tells Ségur in Germany to conclude promptly, if possible with Duke [John] Casimir or with his consent, to raise the largest levy he can and march it at once; Clervant is to raise the two thousand reiters he is bound to furnish under the contract with the Churches.", "language": "fr", "translation": "f233_en.md", "read_share": 0.984},
-   {"doc": "f239", "label": "f. 239, Henry of Navarre to Ségur, Montauban, February 1586", "transcription": "ct_239.txt", "decryption": ["reading.md", "decode_v4.txt"], "summary": "From Montauban: spare no means, succour us in all diligence, set every piece in motion. The postscript in another hand adds Drake's 'very great prize' (the sack of Santo Domingo, January 1586).", "language": "fr", "translation": "f239_en.md", "read_share": 0.984},
-   {"doc": "f288v", "label": "f. 288v (slip), Henry of Navarre to Ségur, 1 April 1586", "transcription": "ct_288.txt", "decryption": ["reading.md", "decode_v4.txt"], "summary": "Navarre is in extreme anxiety at having no news and asks Ségur to make, if he can, the greatest levy ever made; the two thousand reiters Clervant is bound to furnish are very necessary. The levy marched in 1587 to the disaster of Auneau.", "language": "fr", "state": "read", "reading_review": {"grade": "B", "by": "Claude (reading audit)", "date": "2026-10-22", "note": "Overturns the per-document C. reading.md's notes resolve most word signs from context ({gne} = Je, {na} = nouvelles/affaires, {Ra} = faictes, {qu} = vous), and with them the slip reads: \"Je suis en extreme peine de n'avoir eu de vos nouvelles ...; je ne sçay [par où vous] escrire, ne à qui, ne en quel estat sont nos affaires ... faictes s'il vous est possible la plus grande levée qui ayt esté faite\". Open: the date sign {e}, the name signs {H} {L}, {pe} {pu} and {qua}."}, "translation": "f288v_en.md", "read_share": 0.984}
+   {"doc": "f233", "label": "f. 233, Henry of Navarre to Ségur, October 1585", "transcription": "ct_233.txt", "decryption": ["reading.md", "decode_v4.txt"], "summary": "Navarre, a month after the bull of excommunication, tells Ségur in Germany to conclude promptly, if possible with Duke [John] Casimir or with his consent, to raise the largest levy he can and march it at once; Clervant is to raise the two thousand reiters he is bound to furnish under the contract with the Churches.", "language": "fr", "translation": "f233_en.md", "read_share": 0.868, "state": "read in part", "note": "Read share over cipher words only (16 Nov 2026): the bold runs of reading.md's f. 233 section, 68 cipher words, 9 unread ({X}, {gla}, {180}, the unread pair before et, and the doubtful avec[?], contracte[?], Eglises[?], et[?], 1579[?]): 59/68. The earlier 0.984 was one figure for the whole file (translation and f. 366 included) copied to all three letters."},
+   {"doc": "f239", "label": "f. 239, Henry of Navarre to Ségur, Montauban, February 1586", "transcription": "ct_239.txt", "decryption": ["reading.md", "decode_v4.txt"], "summary": "From Montauban: spare no means, succour us in all diligence, set every piece in motion. The postscript in another hand adds Drake's 'very great prize' (the sack of Santo Domingo, January 1586).", "language": "fr", "translation": "f239_en.md", "read_share": 0.708, "state": "read in part", "note": "Read share over cipher words only (16 Nov 2026): the bold runs of reading.md's f. 239 section (postscript included), 24 cipher words, 7 unread ({900}, {gne}, {gna}, pieces (pi-e-bi-es, 66 for 60/61: a one-figure slip in a key recovered here, so the slip rule does not apply), {e}, vou[s], {na}): 17/24; 18/24 with the context gloss {na} = nouvelles counted. The earlier 0.984 was the whole-file figure copied to all three letters."},
+   {"doc": "f288v", "label": "f. 288v (slip), Henry of Navarre to Ségur, 1 April 1586", "transcription": "ct_288.txt", "decryption": ["reading.md", "decode_v4.txt"], "summary": "Navarre is in extreme anxiety at having no news and asks Ségur to make, if he can, the greatest levy ever made; the two thousand reiters Clervant is bound to furnish are very necessary. The levy marched in 1587 to the disaster of Auneau.", "language": "fr", "state": "read in part", "reading_review": {"grade": "B", "by": "Claude (reading audit)", "date": "2026-10-22", "note": "Overturns the per-document C. reading.md's notes resolve most word signs from context ({gne} = Je, {na} = nouvelles/affaires, {Ra} = faictes, {qu} = vous), and with them the slip reads: \"Je suis en extreme peine de n'avoir eu de vos nouvelles ...; je ne sçay [par où vous] escrire, ne à qui, ne en quel estat sont nos affaires ... faictes s'il vous est possible la plus grande levée qui ayt esté faite\". Open: the date sign {e}, the name signs {H} {L}, {pe} {pu} and {qua}."}, "translation": "f288v_en.md", "read_share": 0.77, "note": "Read share over cipher words only (16 Nov 2026): the bold runs of reading.md's f. 288v section, 74 cipher words, 17 unread (word-signs {gne}, {na} x2, {e}, {pe}, {pu}, {Ra}, {qu}, {H}, {L}, {qua}, {Ne}; peine[?], e[s]crire, son[t]; the unread stretch and Valen[ce?] at the end): 57/74; 62/74 (0.838) with the context glosses of the 22 Oct reading audit ({gne} = Je, {na}, {Ra} = faictes, {qu} = vous) counted. The earlier 0.984 was the whole-file figure."}
   ],
   "key_file": "key_v4.json"
  }

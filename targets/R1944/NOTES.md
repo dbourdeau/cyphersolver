@@ -46,7 +46,8 @@ So the letter reports a codebook compromised through a servant or a forced desk,
 
 ## Open
 
-- The ~110 groups have not been transcribed with their marks or aligned to the clear text. The key (a Croiset
+- The code groups were transcribed with their marks on 14 Nov 2026 (115 groups, see below); they are not aligned
+  to the clear text group by group. The key (a Croiset
   numerical nomenclator, per DECODE) is not identified among the DECODE key records.
 - Dispatch no. 13, which mentions Schuer, has not been located.
 
@@ -55,3 +56,24 @@ So the letter reports a codebook compromised through a servant or a forced desk,
 - Page scans, crops and the draft `solution.md` are in the shared checkout's git-ignored `r1944/` folder.
   They are DECODE images and are not committed.
 - `docs/r1944_lead.jpg` and `docs/r1944_cipher.jpg` are the site crops.
+
+## 14 Nov 2026: the code groups transcribed (audit section I, "no transcription file")
+
+- No transcription was in the folder, and DECODE R1944 carries none: its public record page lists two images only,
+  and DECODE serves the full-size images only to a logged-in user ("Insufficient permissions").
+- The Nationaal Archief publishes its own scans of inv. 257 (601 scans,
+  https://www.nationaalarchief.nl/onderzoeken/archief/2.01.08/invnr/257/file ; no login). The originals are bound
+  latest first. Scan 420 is no. 19 (7 Feb 1801, DECODE R1946); **scan 432, right page = fol. 294r** (stamp 294), headed
+  "N. 16 ... Berlyn den 31 January 1801", seven lines of groups; **scan 433, left page = fol. 294v**, four more lines,
+  then "Heil en respect / Bourdeaux"; scan 434, right page, is the clear copy of no. 16.
+- Transcribed line by line from the full-size scans (5000 px wide), each group with the mark above it:
+  `texts/R1944_transcription.txt`. **115 groups in 11 lines** (measured with `_check_profile.py --measure --digits
+  --drop-first`; the "about 110" above was an estimate by eye). Groups are of two or three figures (31, 62, 69, 72, 79,
+  97, 21, 29, 58, 61, 91 have two). Marks: double bar, single bar, tick, wavy stroke, two dots, cross, one dot; 17
+  groups carry none. Five groups are marked doubtful (`?`). Two short upright strokes stand alone between groups in
+  lines 10 and 11.
+- A single AI transcription, not checked by a person. There is no key, so it cannot be checked by decoding. What can
+  be said: the pair `237: 927+` stands twice (lines 3 and 7) and `927+` a third time at the head of line 11; the clear
+  copy has "zyn Cyffer" twice and "een nieuw Cyffer" near the end, at matching places in the text (about a quarter,
+  about three fifths, near the end). That makes `927+` = Cyffer and `237:` = zyn likely; no other value is proposed.
+- The closing formula on fol. 294v reads "Heil en respect" on the archive's scan.

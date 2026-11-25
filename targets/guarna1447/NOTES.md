@@ -94,3 +94,14 @@ If an edition prints this letter, we will credit it.
 ## Files
 
 `transcription.txt`, `decryption.txt`, `key.tsv` (CC BY 4.0), `validation.txt`, `reading.md`, `translation.md`, `profile.json`.
+
+## Sign sheet on f. 153r, 23 Nov 2026 (Brice Dudout, with Claude)
+
+A blind sign sheet (rule written and hashed first; `sign_check_2311/`) asked Brice Dudout to separate the look-alike
+signs of this hand: sigma `ot` (t) against `oe` (e), and the right hook `hk` (r) against `4` (i). Both controls passed.
+H05 sign 13, transcribed `oe ot`, is a single `ot`. With the spurious e gone, `pi b hs ot hk q` reads "vostra" whole by K3,
+so {vostra} becomes certain: 584 certain, 32 probable, 616 certain or probable (72.3%, unchanged). H05 sign 1 (`oe`) and
+the three hook signs of H04-H05 confirm the transcription; the reviewer sees the two hook forms as distinct. H04 {parere}
+[?3] stays open. K3 is unchanged and nothing was re-measured; the held-out hash of 5 Nov was taken on the old H05
+("oe ot").
+

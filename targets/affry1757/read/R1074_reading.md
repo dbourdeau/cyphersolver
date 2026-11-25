@@ -1,5 +1,8 @@
 # R1074 - d'Affry to Rouillé ("B"), The Hague, 17 January 1758: the Astier extract and d'Affry's news: reading
 
+What this file is: the clerk's clear copy of the letter in the Fagel register, a decipherment of the time. It is not the
+output of this folder's key; the keyed decode is `read/R1074.md`.
+
 Rests on: the contemporary clear copy in the Fagel register, Nationaal Archief 1.10.29 inv. 5187, scans 15L-15R
 ("Extrait de la Lettre de Mr. Astier", margin "Du 11. Janvier 1758", then d'Affry's own paragraphs), transcribed by
 WAINUT (21 Oct 2026, `wainut/register_clear.txt`) and checked line by line against the scans. The register is the

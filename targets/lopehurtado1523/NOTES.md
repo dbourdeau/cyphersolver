@@ -1,6 +1,6 @@
 # Lope Hurtado de Mendoza (Rome) to Charles V, 1523–24 — catalogue no. 148
 
-Status: in progress (read in part: R9846, R9866, R9868, R9869 read; R9867 and the 1523 letters open)
+Status: in progress (read in part: R9846 read from its clear; R9866, R9868, R9869 read in part over their cipher words, 16 Nov 2026; R9867 and the 1523 letters open)
 
 
 **22 Oct 2026, re-read (REREAD_BRIEF, batch b07; `R9667-R9869_reread_log.md`):**
@@ -84,13 +84,80 @@ Readings in `read_r*.md`. Where it stops: about 30 code groups (`xun`, `xor`, `z
 and look-alike signs (∂ vs barred ∂, two- vs three-bar crosses, barred m = f or c) needing better images than DECODE's.
 The unimaged f. 133v (rest of R9846's clear) would give more; RAH Biblioteca Digital, Salazar A-30.
 
+## Read share over cipher words only (16 Nov 2026)
+
+README Conventions (16 Nov 2026): the read share counts the words written in cipher only. Each `R98xx_reading.md` sets
+the cipher in *italics* and the clear Spanish in roman; the count is taken over the italic words of the `## Reading`
+section. Holes: `[?word]` (partly carried by the figures), `[word]` supplied, bare `[…]` and `[?]` (one word each, extent
+unknown: the reread logs do not size them).
+
+| Letter | before | cipher words | unread | after | class |
+|---|---|---|---|---|---|
+| R9868 (20 Mar 1524) | 0.955 | 114 | 20 (11 [?word], 9 […]) | **0.825** | read -> **read in part** |
+| R9866 (28 Feb 1524) | 0.914 | 220 | 39 | **0.823** | read in part |
+| R9869 (28 Mar 1524) | 0.927 | 123 | 29 | **0.764** | read in part |
+
+The recorded figures were measured over each whole letter, clear text included. R9846 (read from its bound clear, 1.0)
+and the letters decoded, not read, are unchanged; the target stays read in part.
+
+## Decrypt audit, 16 Nov 2026
+
+The audit script (`research/decrypt_audit/`) could compare one text, R9867: 20 of 159 words of `R9867_reading.md`
+depart from `key_merged.tsv` applied to `r9867_cipher.txt` (13%). The other texts were not compared by the script
+(clear text mixed with cipher, or transcription and reading too far apart). R9867 was then checked by hand, word by
+word, against a mechanical decode made with the rules of `decode_merged.py` (read-only copy, the script itself was
+not run). Causes:
+
+- **Audit artefact.** Seven annotations in the plain column held a comma or a slash inside the brackets, which the
+  audit parser read as part of the value: "c (letter, standing alone)" gave "cletter" (also for z and y), and
+  "a (letter; word a/ha)", "dinero (+r/c = dineros)", "Magestad (su xun = su Mt, the Emperor, ...)", "mu (syllable;
+  mui, mudado)". The values were right; the annotations are reworded (see below).
+- **Normalisation.** `rab` = "vuestra magestad" is printed "V. Mt." (six times in R9867); `yun` + e-s ("fran-" + es)
+  is printed "franceses"; "Mussiur" (twice) and "necessidad" are printed with ss where the figures give one s.
+- **Transcription older than the reading.** `r9867_cipher.txt` was not updated after the 22 Oct re-read on the
+  image; the changes are in `R9867_corrections.tsv` (8 rows) and the reading follows them without a mark: l07
+  `ʇʇ` re-read ß, "si se les [r > ha] de hazer"; l17 `ʇʇʇ ß` re-read ɣ̶, "alar[b > g]ar".
+- **Letters changed with no mark and no row in the corrections table: 9 words in R9867.** l02 "le r dicho" > "le
+  ha dicho"; l10 m-o-s-t-a-r > "mostrar"; l15-16 "de r-e-u-r-e" > "de Beure" (the note in the cipher file covers l01
+  and l13 only); l16 "r V. Mt." > "a V. Mt."; l17 "aqui es-cusado" > "aqui es escusado" (es printed twice); l19
+  `ye` "dizi-" + r > "dezir"; l20 "aqui r delante" > "aqui adelante"; l21 "me lo r mandado" > "me lo a mandado";
+  l24 "a l-uatro" > "a quatro" (the sign conflict is noted in the cipher file, not in the reading). Five of the
+  nine are the r/a look-alike (`ʇʇ` for the ß-like a) that the re-read log describes in general. The reading
+  file was not changed; whether these are bracketed is decided centrally.
+- **Values in use but in no key file.** `zm` = como, `ʃeg` = tengo, `zub` = alla (re-read log, probable; bracketed
+  `[?…]` in the readings), `m̶` = c beside f and `m̶ʒ` = ch (re-read log and corrections tables), `tef` = paz beside
+  nec- (source column of `key_retry.tsv`, row `ʃom`), and `yun` as the spelling of `ɣun` (handled in
+  `decode_merged.py`, not in the key).
+
+Changed: (1) the seven annotations reworded in `key_1524.tsv`, `key_retry.tsv` and `key_merged.tsv` (comma or slash
+inside the brackets replaced by ";", "or", "and"; no value changed, and `decode_merged.py` reads them as before);
+(2) new `key_reread_2026-10-22.tsv` with the seven values above, each with its source, listed in `profile.json`
+`outcome.key_file`. It is not merged into `key_merged.tsv`, which `decode_merged.py --build` writes.
+
+After: R9867 17 of 171 words depart (10%; the decrypt found in the reading rose from 85% to 94%). The script can now
+also compare R9866: 74 of 187 words depart (40%). R9866 was not checked word by word. Its sampled departures are
+clear text between the cipher runs, the look-alike re-reads of `R9866_corrections.tsv` (the transcription was not
+updated), `m̶` read c and `tef` read paz where the key file gives f and nec-, and at least one unmarked letter change
+with no row in the corrections table (R9 l6 p-e-n-c-i-d-o-s printed "vencidos"). R9868, R9869, R9683 and R9667
+were not checked. The fuller repair would be to write the 22 Oct re-reads into the transcription files.
+
+**Marked on 16 Nov 2026.** In `R9867_reading.md` the 9 words listed above were marked with `[ ]` round the letters the
+transcribed signs do not give ([ha] dicho, most[r]ar, [B]eure, [a] V. Mt., [es]cusado, d[e]zir, [a]delante, [a]
+mandado, [q]uatro); no letter was changed. Left unmarked: "les ha de hazer" and "alargar", which follow rows of
+`R9867_corrections.tsv`. The header gained a paragraph stating the marks and the conventions (V. Mt., franceses,
+ss in Mussiur and necessidad). Hole rate by `research/reading_audit/v2_score.py` (es): 0.170 before, 0.214 after,
+on 206 words; the state stays "decoded, not read". The other readings were not marked: R9866 has at least one
+unmarked change with no corrections row ("vencidos") and was not verified word by word, nor were R9868, R9869,
+R9683 and R9667. On the page, the sentence that the corrections are in the `<record>_corrections.tsv` tables now
+adds that the tables do not list every change.
+
 ## Remaining gaps
 
 - R9667 (5 May 1523), cipher runs decoded, not read - blocker: no-key-material (1523 sign set, no crib); needs-physical-access for the contemporary decipherment CSP 548 used (RAH Salazar A-28)
 - R9683 (June 1523), cipher passage decoded, not read - blocker: no-key-material (1523 sign set, no crib)
 - R9695 (8 July 1523), decoded, not read - blocker: no-key-material; not attempted further on 22 Oct (struck autograph draft)
 - R9867 (4 Jan 1524), decoded, not read (0.389) - blocker: no-key-material (rub, ʃug, tol, xer, xal, xir, ʃal, co, ℮, ʃφ)
-- R9866, R9868, R9869: read 22 Oct 2026 (b07); scattered holes on open codes - blocker: no-key-material
+- R9866, R9868, R9869: read 22 Oct 2026 (b07), read in part over their cipher words since 16 Nov 2026 (0.823, 0.825, 0.764); holes on open codes and doubtful words - blocker: no-key-material
 - R9846 ff. 130v-132v beyond the crib third - blocker: needs-physical-access; f. 133v, the rest of the clerk's clear, is not imaged on DECODE; RAH Biblioteca Digital (bot check), Salazar A-30
 - About 20 code groups (rub, ʃug, zid, tol, tid, zib, xer, xir, xal, ʃal, yab, tas, toc, yic, co ...) - blocker: no-key-material; no crib
 - Look-alike signs - mostly resolved word by word on 22 Oct (`<doc>_corrections.tsv`); the rest blocker: illegible at DECODE resolution
@@ -107,3 +174,20 @@ The unimaged f. 133v (rest of R9846's clear) would give more; RAH Biblioteca Dig
 ## Dudout corrections, 29 Oct 2026
 - Pacheco y de Leyva, La politica espanola en Italia, vol. I (1919), no. 120 prints the Abbot of Najera's letter of 2 May 1523 (RAH Salazar A-28 ff. 1-2, 'claro y cifra') deciphered: this is the 'Claro' leaf noted beside R9667. The same edition prints about 33 letters of 1522 from BNE Sigt. mod. 18.678 (nos. 49-105); catalogue 1274 is closed as read.
 (Brice Dudout, research/dudout_2026-10-29/; his findings, not re-checked here.)
+
+## 24 Nov 2026 - R9866 / R9868 / R9869: two blind sign-shape sheets (Brice Dudout, with Claude), `sign_check/`
+These sheets test the look-alike families listed above, on the DECODE images (private, not republished). The rules
+were hashed before the thumbnails, and the controls passed 3/3 on each sheet. Key and readings unchanged; no value added.
+
+- **Barred m.** m̶ = f only. The c places carry the long barred f (blind at reputacion; an AI look at every m̶ found
+  20 long barred f in R9866 and 1 barred m). The rows are in `R9866_corrections.tsv`.
+- **Three-bar cross = b** at four places. R9866 R13 l14 and R6 l21 are relabelled ʇʇ -> ʇʇʇ.
+- **Two forms of their own:**
+  - a looped H with a long bar (`ʇʇH`), a by sense only {probable}, at avrian and sacarlo;
+  - a looped delta (`∂b`) at R9866 R14 l18, with no value.
+- **"resistir" (R7 l24)** has the long barred f (c): flagged, not decided.
+- **"medio" (R3 l9, ʋ)** is proposed; it gives 0.827 if adopted.
+- **Counts unchanged:** R9866 0.823, R9868 0.825, R9869 0.764. Status unchanged.
+- **Level.** Sheet 2411 counts 6 signs and sheet 2411b 7 (separate rules, not added): under the schema minimum of 8 for
+  `sign_check`, so both are recorded as a solution step (verification) and here, not in `outcome.sign_check`. Files and
+  hashes unchanged.

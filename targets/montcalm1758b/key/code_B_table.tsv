@@ -1,0 +1,352 @@
+# Code B (Bougainville's code, Casgrain's "Pieces militaires No V"). One row per group. Built by build_key_table.py.
+# status: attested = the value is aligned with Casgrain's printed clear text at the places listed;
+#         inferred = the value is NOT shown by the printed letters; it comes from the code's number order and from sense.
+# value: the value used to decode the 1758 letter (attested values trimmed where the solver merged a neighbour, see note).
+# attestations: letter, page, paragraph and group number (letters/B1_aligned.tsv, B2_aligned.tsv) and the clear text aligned there.
+# n_printed: how often the group is printed in B1 and B2; n_same_value: how many of those the solver aligned with its
+#   value (solver_value). The difference is the conflicts (solver_other_values).
+group	value	status	inferred	n_printed	n_same_value	attestations	solver_value	solver_other_values	solver_runs_agreeing	used_in_1758_letter	note
+1	a	attested		4	3	B1 p.104 para 1 group 5 'a' ; B1 p.105 para 9 group 11 'uiav' ; B1 p.107 para 9 group 232 'a' ; B2 p.113 para 4 group 8 'a'	a	uiav(1)	4/4	4	conflict
+2	2	attested		1	1	B2 p.112 para 0 group 28 '2'	2		4/4	0	single attestation
+3	a	attested		15	15	B1 p.104 para 2 group 17 'a' ; B1 p.105 para 5 group 34 'a' ; B1 p.105 para 6 group 5 'a' ; B1 p.105 para 6 group 24 'a' ; B1 p.105 para 7 group 6 'a' ; B1 p.105 para 8 group 18 'a' ; B1 p.106 para 9 group 55 'a' ; B1 p.106 para 9 group 72 'a' ; B1 p.106 para 9 group 112 'a' ; B1 p.106 para 9 group 129 'a' ; B1 p.106 para 9 group 174 'a' ; B1 p.107 para 9 group 286 'a' ; B1 p.107 para 9 group 351 'a' ; B1 p.107 para 9 group 355 'a' ; B1 p.108 para 10 group 32 'a'	a		4/4	4	
+4	b	inferred	printed, but not with this value	2	2	B2 p.112 para 0 group 11 '4' ; B2 p.112 para 0 group 54 '4'	4		4/4	1	printed twice in B2 p.112 as the numeral 4; b from the letter block (a 1,3,5; c 6,8) and la B-eau-bassin
+5	a	attested		21	18	B1 p.103 para 0 group 23 'a' ; B1 p.104 para 2 group 21 'a' ; B1 p.104 para 4 group 53 'a' ; B1 p.105 para 5 group 40 '(null)' ; B1 p.105 para 8 group 24 'a' ; B1 p.105 para 8 group 29 'a' ; B1 p.106 para 9 group 34 'a' ; B1 p.106 para 9 group 117 'a' ; B1 p.106 para 9 group 139 'a' ; B1 p.107 para 9 group 218 'a' ; B1 p.107 para 9 group 224 'a' ; B1 p.107 para 9 group 243 'sa' ; B1 p.107 para 9 group 298 'a' ; B1 p.107 para 10 group 2 'a' ; B1 p.108 para 10 group 27 'a' ; B1 p.108 para 10 group 86 'a' ; B1 p.108 para 11 group 18 'a' ; B2 p.112 para 0 group 85 'a' ; B2 p.112 para 0 group 93 'a' ; B2 p.113 para 3 group 6 'a' ; B2 p.113 para 5 group 42 'sa'	a	sa(2) (null)(1)	4/4	0	conflict
+6	c	attested		5	5	B1 p.104 para 4 group 11 'c' ; B1 p.105 para 6 group 9 'c' ; B2 p.112 para 0 group 66 'c' ; B2 p.113 para 2 group 30 'c' ; B2 p.113 para 5 group 34 'c'	c		4/4	2	
+7	d	attested		4	4	B1 p.104 para 3 group 14 'd' ; B1 p.105 para 7 group 8 'd' ; B1 p.106 para 9 group 132 'd' ; B2 p.112 para 0 group 92 'd'	d		3/4	0	
+8	c	attested		2	2	B1 p.108 para 10 group 56 'c' ; B1 p.108 para 10 group 70 'c'	c		3/4	0	
+9	d	attested		4	3	B1 p.106 para 9 group 50 'dcr' ; B1 p.106 para 9 group 125 'd' ; B1 p.106 para 9 group 169 'd' ; B1 p.107 para 9 group 357 'd'	d	dcr(1)	4/4	0	conflict
+10	e	attested		21	21	B1 p.103 para 0 group 12 'e' ; B1 p.103 para 0 group 16 'e' ; B1 p.103 para 0 group 28 'e' ; B1 p.104 para 2 group 5 'e' ; B1 p.104 para 2 group 16 'e' ; B1 p.104 para 3 group 7 'e' ; B1 p.105 para 5 group 27 'e' ; B1 p.105 para 8 group 11 'e' ; B1 p.105 para 9 group 18 'e' ; B1 p.107 para 9 group 333 'e' ; B2 p.112 para 0 group 10 'e' ; B2 p.112 para 0 group 63 'e' ; B2 p.112 para 0 group 71 'e' ; B2 p.112 para 2 group 11 'e' ; B2 p.113 para 2 group 19 'e' ; B2 p.113 para 3 group 17 'e' ; B2 p.113 para 4 group 28 'e' ; B2 p.113 para 5 group 6 'e' ; B2 p.113 para 5 group 24 'e' ; B2 p.113 para 5 group 48 'e' ; B2 p.113 para 5 group 70 'e'	e		4/4	0	
+11	f	attested		3	3	B1 p.105 para 9 group 23 'f' ; B1 p.106 para 9 group 57 'f' ; B2 p.112 para 0 group 55 'f'	f		4/4	1	
+12	e	attested		11	11	B1 p.103 para 0 group 17 'e' ; B1 p.103 para 0 group 34 'e' ; B1 p.104 para 2 group 30 'e' ; B1 p.104 para 4 group 4 'e' ; B1 p.104 para 4 group 48 'e' ; B1 p.104 para 4 group 52 'e' ; B1 p.105 para 9 group 5 'e' ; B1 p.106 para 9 group 36 'e' ; B1 p.106 para 9 group 65 'e' ; B1 p.106 para 9 group 182 'e' ; B1 p.108 para 11 group 9 'e'	e		4/4	0	
+13	f	attested		1	1	B1 p.106 para 9 group 86 'f'	f		4/4	0	single attestation
+14	e	attested		5	5	B1 p.103 para 0 group 22 'e' ; B1 p.104 para 4 group 20 'e' ; B1 p.106 para 9 group 170 'e' ; B1 p.107 para 9 group 294 'e' ; B1 p.108 para 10 group 76 'e'	e		4/4	0	
+15	g	attested		1	1	B1 p.104 para 2 group 19 'g'	g		2/4	0	single attestation
+16	16	attested		2	1	B2 p.112 para 0 group 39 '16' ; B2 p.113 para 5 group 35 'h'	16	h(1)	4/4	0	conflict
+18	i	attested		8	7	B1 p.105 para 7 group 25 'i' ; B1 p.105 para 8 group 9 'i' ; B1 p.106 para 9 group 41 'i' ; B2 p.112 para 0 group 15 'i' ; B2 p.112 para 0 group 53 'i' ; B2 p.112 para 0 group 79 'i' ; B2 p.114 para 5 group 113 'j' ; B2 p.114 para 5 group 114 'i'	i	j(1)	4/4	1	conflict
+20	i	attested		3	2	B1 p.106 para 9 group 184 'i' ; B2 p.112 para 0 group 20 'i' ; B2 p.112 para 0 group 41 '20'	i	20(1)	4/4	1	conflict
+21	l	attested		7	5	B1 p.103 para 0 group 1 'l' ; B1 p.105 para 6 group 29 'l' ; B1 p.106 para 9 group 29 'i' ; B1 p.106 para 9 group 122 'l' ; B1 p.107 para 9 group 297 'l' ; B1 p.108 para 10 group 74 'l' ; B2 p.113 para 5 group 17 'i'	l	i(2)	4/4	0	conflict
+23	l	attested		5	4	B1 p.106 para 9 group 47 'l' ; B1 p.106 para 9 group 158 'l' ; B1 p.108 para 10 group 44 'l' ; B1 p.108 para 10 group 65 'affair' ; B1 p.108 para 10 group 75 'l'	l	affair(1)	4/4	0	conflict
+24	m	attested		2	1	B1 p.105 para 5 group 31 'm' ; B2 p.112 para 0 group 13 '24'	m	24(1)	4/4	0	conflict
+25	n	attested		7	7	B1 p.105 para 5 group 37 'n' ; B1 p.105 para 6 group 8 'n' ; B1 p.106 para 9 group 49 'n' ; B1 p.106 para 9 group 59 'n' ; B1 p.106 para 9 group 168 'n' ; B1 p.108 para 11 group 17 'n' ; B2 p.113 para 5 group 46 'n'	n		4/4	2	
+26	smontfor	attested		1	1	B1 p.108 para 10 group 20 'smontfor'	smontfor		4/4	0	single attestation
+27	n	attested		2	1	B1 p.106 para 9 group 100 'n' ; B1 p.107 para 9 group 348 'nce'	n	nce(1)	4/4	0	conflict
+28	o	attested		1	1	B2 p.113 para 5 group 7 'o'	o		4/4	0	single attestation
+29	p	attested		3	3	B1 p.103 para 0 group 32 'p' ; B1 p.107 para 9 group 303 'p' ; B2 p.113 para 5 group 37 'p'	p		4/4	0	
+34	r	attested		8	8	B1 p.104 para 2 group 26 'r' ; B1 p.106 para 9 group 68 'r' ; B1 p.106 para 9 group 79 'r' ; B1 p.106 para 9 group 91 'r' ; B2 p.112 para 0 group 48 'r' ; B2 p.112 para 2 group 7 'r' ; B2 p.113 para 5 group 31 'r' ; B2 p.113 para 5 group 61 'r'	r		4/4	4	
+35	s	attested		23	20	B1 p.104 para 1 group 4 's' ; B1 p.104 para 2 group 28 's' ; B1 p.104 para 4 group 6 's' ; B1 p.104 para 4 group 16 's' ; B1 p.104 para 4 group 27 's' ; B1 p.105 para 6 group 17 's' ; B1 p.105 para 6 group 23 'z' ; B1 p.105 para 7 group 10 's' ; B1 p.106 para 9 group 70 's' ; B1 p.107 para 9 group 315 's' ; B1 p.108 para 11 group 7 's' ; B2 p.112 para 0 group 32 's' ; B2 p.112 para 0 group 45 's' ; B2 p.112 para 0 group 75 's' ; B2 p.112 para 0 group 81 's' ; B2 p.112 para 0 group 84 's' ; B2 p.112 para 0 group 91 'es' ; B2 p.112 para 1 group 1 '(null)' ; B2 p.113 para 2 group 31 's' ; B2 p.113 para 3 group 11 's' ; B2 p.113 para 5 group 40 's' ; B2 p.113 para 5 group 56 's' ; B2 p.113 para 5 group 73 's'	s	z(1) es(1) (null)(1)	4/4	3	conflict
+36	r	attested		6	6	B1 p.103 para 0 group 4 'r' ; B1 p.106 para 9 group 121 'r' ; B1 p.106 para 9 group 186 'r' ; B1 p.107 para 9 group 268 'r' ; B1 p.107 para 9 group 356 'r' ; B2 p.112 para 0 group 77 'r'	r		4/4	2	
+37	t	attested		16	16	B1 p.103 para 0 group 13 't' ; B1 p.103 para 0 group 19 't' ; B1 p.104 para 2 group 2 't' ; B1 p.105 para 7 group 18 't' ; B1 p.105 para 9 group 15 't' ; B1 p.106 para 9 group 26 't' ; B1 p.106 para 9 group 53 't' ; B1 p.107 para 9 group 262 't' ; B1 p.107 para 9 group 334 't' ; B1 p.107 para 9 group 342 't' ; B2 p.112 para 0 group 64 't' ; B2 p.113 para 2 group 20 't' ; B2 p.113 para 5 group 25 't' ; B2 p.113 para 5 group 49 't' ; B2 p.113 para 5 group 71 't' ; B2 p.114 para 5 group 98 't'	t		4/4	2	
+38	s	attested		15	13	B1 p.106 para 9 group 32 's' ; B1 p.106 para 9 group 89 's' ; B1 p.106 para 9 group 102 's' ; B1 p.107 para 9 group 248 's' ; B1 p.107 para 9 group 250 's' ; B1 p.107 para 9 group 305 's' ; B1 p.108 para 10 group 14 's' ; B1 p.108 para 11 group 5 'z' ; B2 p.112 para 0 group 59 's' ; B2 p.112 para 0 group 88 's' ; B2 p.112 para 0 group 96 '(null)' ; B2 p.113 para 2 group 28 's' ; B2 p.113 para 3 group 9 's' ; B2 p.113 para 5 group 22 's' ; B2 p.113 para 5 group 52 's'	s	z(1) (null)(1)	4/4	2	conflict
+39	u	attested		10	10	B1 p.104 para 2 group 18 'u' ; B1 p.105 para 7 group 4 'u' ; B1 p.105 para 8 group 30 'u' ; B1 p.106 para 9 group 73 'u' ; B1 p.106 para 9 group 113 'u' ; B1 p.107 para 9 group 233 'u' ; B1 p.107 para 9 group 293 'u' ; B1 p.107 para 10 group 6 'u' ; B1 p.108 para 10 group 58 'u' ; B1 p.108 para 11 group 28 'u'	u		4/4	2	
+40	t	attested		5	5	B1 p.106 para 9 group 135 't' ; B1 p.107 para 9 group 272 't' ; B1 p.108 para 10 group 62 't' ; B1 p.108 para 11 group 10 't' ; B2 p.113 para 5 group 65 't'	t		4/4	0	
+41	x	attested		4	4	B1 p.104 para 2 group 39 'x' ; B1 p.106 para 9 group 131 'x' ; B1 p.108 para 11 group 29 'x' ; B2 p.113 para 4 group 12 'x'	x		1/4	0	
+42	y	attested		3	3	B2 p.112 para 0 group 35 'y' ; B2 p.113 para 5 group 29 'y' ; B2 p.113 para 5 group 57 'y'	y		4/4	2	
+43	u	attested		3	2	B1 p.106 para 9 group 110 'u' ; B1 p.107 para 9 group 260 'houetteco' ; B1 p.107 para 9 group 352 'u'	u	houetteco(1)	4/4	0	conflict
+44	et	inferred	not in the printed letters	0	0					1	end of the letter block (x 41, y 42, u 43, z 45); 'et' from sense only
+45	z	attested		4	3	B1 p.105 para 7 group 35 'z' ; B1 p.107 para 9 group 354 's' ; B1 p.108 para 11 group 14 'z' ; B1 p.108 para 11 group 20 'z'	z	s(1)	4/4	0	conflict
+47	leroi	attested		1	1	B1 p.105 para 9 group 1 'leroi'	leroi		3/4	0	single attestation
+48	mlemarquisdepaulm	attested		1	1	B1 p.107 para 9 group 282 'mlemarquisdepaulm'	mlemarquisdepaulm		3/4	0	single attestation; long value: possibly several groups merged by the aligner
+49	y	attested		1	1	B1 p.107 para 9 group 283 'y'	y		4/4	0	single attestation
+50	s	attested		1	1	B1 p.107 para 9 group 288 's'	s		3/4	0	single attestation
+59	mleprincedeconti	attested		1	1	B1 p.107 para 9 group 277 'mleprincedeconti'	mleprincedeconti		3/4	0	single attestation; long value: possibly several groups merged by the aligner
+60	uimleprincedesoubise	attested		1	1	B1 p.107 para 9 group 231 'uimleprincedesoubise'	uimleprincedesoubise		3/4	0	single attestation; long value: possibly several groups merged by the aligner
+61	smlemarechaldebellei	attested		1	1	B1 p.106 para 9 group 190 'smlemarechaldebellei'	smlemarechaldebellei		4/4	0	single attestation; long value: possibly several groups merged by the aligner
+62	mlema	attested		1	1	B1 p.107 para 9 group 220 'mlema'	mlema		4/4	0	single attestation
+63	madamelamarquise	attested		2	2	B1 p.105 para 9 group 3 'madamelamarquise' ; B1 p.108 para 10 group 83 'madamelamarquise'	madamelamarquise		3/4	0	long value: possibly several groups merged by the aligner
+64	ssemmole	attested		1	1	B1 p.108 para 10 group 26 'ssemmole'	ssemmole		4/4	0	single attestation
+65	mdecremille	attested		1	1	B1 p.107 para 9 group 204 'mdecremille'	mdecremille		3/4	0	single attestation; long value: possibly several groups merged by the aligner
+66	maccarontre	attested		1	1	B1 p.106 para 9 group 148 'maccarontre'	maccarontre		2/4	0	single attestation; long value: possibly several groups merged by the aligner
+67	mdechevert	attested		1	1	B1 p.107 para 9 group 295 'mdechevert'	mdechevert		4/4	0	single attestation; long value: possibly several groups merged by the aligner
+69	mlecomtedemontcalm	attested		1	1	B1 p.108 para 10 group 49 'mlecomtedemontcalm'	mlecomtedemontcalm		4/4	0	single attestation; long value: possibly several groups merged by the aligner
+71	r	attested		1	1	B1 p.104 para 1 group 10 'r'	r		3/4	0	single attestation
+72	mdaligre	attested		1	1	B1 p.106 para 9 group 198 'mdaligre'	mdaligre		4/4	0	single attestation
+73	M. de Vaudreuil	attested		1	1	B1 p.104 para 5 group 1 'mdevaudreuil'	mdevaudreuil		4/4	1	
+74	M. Bigot	attested		1	1	B1 p.104 para 4 group 54 'mbigotmpea'	mbigotmpea		3/4	1	solver 'mbigotmpea' = M. Bigot + M. Pean, B1 p.104 'lettre forte a M. Bigot ; M. Pean'
+75	mlechevalierdelevis	attested		3	2	B1 p.104 para 2 group 8 'mlechevalierdelevis' ; B1 p.104 para 2 group 24 'mbigot' ; B1 p.105 para 6 group 38 'mlechevalierdelevis'	mlechevalierdelevis	mbigot(1)	1/4	0	conflict; long value: possibly several groups merged by the aligner
+76	mdebourlamaque	attested		2	1	B1 p.104 para 2 group 10 'mdebourlamaque' ; B1 p.105 para 7 group 28 'q'	mdebourlamaque	q(1)	3/4	0	conflict; long value: possibly several groups merged by the aligner
+77	n	attested		1	1	B1 p.104 para 4 group 55 'n'	n		3/4	0	single attestation
+78	mletourneur	attested		1	1	B1 p.107 para 9 group 216 'mletourneur'	mletourneur		4/4	0	single attestation; long value: possibly several groups merged by the aligner
+83	lafrance	attested		2	2	B1 p.104 para 2 group 41 'lafrance' ; B1 p.105 para 7 group 42 'lafrance'	lafrance		4/4	0	
+93	canada	attested		3	3	B1 p.106 para 9 group 178 'canada' ; B2 p.113 para 4 group 7 'canada' ; B2 p.114 para 5 group 112 'canada'	canada		4/4	0	
+97	la Louisiane	attested		1	1	B1 p.103 para 0 group 24 'lalouisiannea'	lalouisiannea		4/4	1	solver 'lalouisiannea' takes the a of 'acceptee', B1 p.103
+101	la Caroline	inferred	not in the printed letters	0	0					1	place-name block after 97 la Louisiane; weak: Bougainville spells 'la Caroline' letter by letter in B1 p.104
+110	Quebec	attested		3	3	B2 p.113 para 2 group 18 'quebec' ; B2 p.113 para 3 group 1 'quebec' ; B2 p.113 para 5 group 53 'quebec'	quebec		4/4	1	
+129	canadiens	attested		1	1	B1 p.104 para 4 group 17 'canadiens'	canadiens		4/4	0	single attestation; long value: possibly several groups merged by the aligner
+130	sauvages	attested		1	1	B1 p.104 para 4 group 7 'sauvages'	sauvages		4/4	0	single attestation
+137	s	attested		1	1	B1 p.107 para 9 group 300 's'	s		3/4	0	single attestation
+139	lacour	attested		4	3	B1 p.104 para 4 group 39 'lacour' ; B1 p.107 para 9 group 299 'dealacourlesjesuite' ; B1 p.107 para 10 group 3 'lacour' ; B2 p.113 para 3 group 13 'lacour'	lacour	dealacourlesjesuite(1)	4/4	0	conflict
+163	leduc	attested		1	1	B1 p.106 para 9 group 42 'leduc'	leduc		3/4	0	single attestation
+165	lecomte	attested		1	1	B1 p.108 para 10 group 77 'lecomte'	lecomte		4/4	0	single attestation
+169	general	attested		1	1	B1 p.105 para 6 group 42 'general'	general		3/4	0	single attestation
+171	brigadier	attested		1	1	B1 p.105 para 7 group 19 'brigadier'	brigadier		4/4	0	single attestation; long value: possibly several groups merged by the aligner
+175	capitaine	attested		1	1	B2 p.112 para 0 group 74 'capitaine'	capitaine		4/4	0	single attestation; long value: possibly several groups merged by the aligner
+177	ministre	attested		3	3	B1 p.105 para 9 group 8 'ministre' ; B1 p.106 para 9 group 96 'ministre' ; B2 p.114 para 5 group 95 'ministre'	ministre		4/4	0	
+183	grandecroixdesaintlo	attested		1	1	B1 p.105 para 5 group 23 'grandecroixdesaintlo'	grandecroixdesaintlo		4/4	0	single attestation; long value: possibly several groups merged by the aligner
+185	songouvernement	attested		1	1	B1 p.107 para 9 group 226 'songouvernement'	songouvernement		2/4	0	single attestation; long value: possibly several groups merged by the aligner
+193	jepense	attested		3	3	B1 p.105 para 8 group 23 'jepense' ; B1 p.106 para 9 group 105 'jepense' ; B2 p.113 para 5 group 2 'jepense'	jepense		4/4	0	
+200	sanscredit	attested		4	4	B1 p.104 para 1 group 11 'sanscredit' ; B1 p.107 para 9 group 205 'sanscredit' ; B1 p.107 para 9 group 278 'sanscredit' ; B1 p.108 para 10 group 89 'sanscredit'	sanscredit		3/4	0	long value: possibly several groups merged by the aligner
+204	ac	attested		3	3	B1 p.103 para 0 group 30 'ac' ; B1 p.106 para 9 group 118 'ac' ; B1 p.106 para 9 group 159 'ac'	ac		4/4	0	
+205	action	attested		1	1	B1 p.106 para 9 group 124 'action'	action		3/4	0	single attestation
+207	d	attested		1	1	B1 p.103 para 0 group 25 'd'	d		4/4	0	single attestation
+209	e	attested		1	1	B1 p.108 para 10 group 66 'e'	e		4/4	0	single attestation
+214	ainsi	attested		1	1	B2 p.113 para 5 group 1 'ainsi'	ainsi		4/4	0	single attestation
+215	a	attested		1	1	B2 p.113 para 5 group 85 'a'	a		2/4	0	single attestation
+216	am	attested		2	2	B1 p.107 para 9 group 209 'am' ; B2 p.113 para 5 group 36 'am'	am		4/4	0	
+218	an	attested		3	3	B1 p.104 para 4 group 19 'an' ; B1 p.107 para 9 group 325 'an' ; B2 p.113 para 5 group 64 'an'	an		4/4	1	
+222	s	attested		1	1	B1 p.105 para 8 group 7 's'	s		4/4	0	single attestation
+223	e	attested		2	1	B1 p.103 para 0 group 11 'e' ; B1 p.104 para 3 group 8 'approuve'	e	approuve(1)	4/4	0	conflict
+224	arrive	attested		1	1	B1 p.105 para 8 group 4 'arrive'	arrive		3/4	0	single attestation
+225	argent	attested		2	2	B1 p.104 para 3 group 15 'argent' ; B1 p.106 para 9 group 133 'argent'	argent		3/4	0	
+229	attaque	attested		1	1	B2 p.113 para 3 group 4 'attaque'	attaque		4/4	0	single attestation
+230	aux	attested		3	3	B1 p.104 para 2 group 37 'aux' ; B2 p.112 para 0 group 50 'aux' ; B2 p.113 para 5 group 14 'aux'	aux		4/4	0	
+232	aucun	attested		2	2	B1 p.108 para 11 group 25 'aucun' ; B2 p.113 para 3 group 16 'aucun'	aucun		4/4	0	
+233	avec	attested		3	3	B1 p.106 para 9 group 85 'avec' ; B1 p.108 para 10 group 82 'avec' ; B2 p.112 para 0 group 51 'avec'	avec		4/4	0	
+235	aussi	attested		1	1	B2 p.113 para 3 group 12 'aussi'	aussi		4/4	0	single attestation
+238	a	attested		1	1	B1 p.107 para 9 group 316 'a'	a		4/4	0	single attestation
+240	ba	attested		5	5	B1 p.105 para 6 group 1 'ba' ; B1 p.106 para 9 group 194 'ba' ; B1 p.108 para 10 group 79 'ba' ; B2 p.112 para 0 group 34 'ba' ; B2 p.113 para 5 group 72 'ba'	ba		4/4	1	
+241	be	attested		3	3	B1 p.106 para 9 group 67 'be' ; B1 p.106 para 9 group 78 'be' ; B2 p.113 para 5 group 88 'be'	be		4/4	0	
+243	bo	attested		2	2	B1 p.107 para 9 group 292 'bo' ; B2 p.112 para 0 group 47 'bo'	bo		4/4	0	
+244	bur	attested		1	1	B1 p.105 para 8 group 27 'bur'	bur		4/4	0	single attestation
+246	bre	attested		1	1	B2 p.112 para 0 group 61 'bre'	bre		4/4	0	single attestation
+246*	brevet	attested		1	1	B1 p.105 para 7 group 44 'brevet'	brevet		4/4	0	single attestation
+249	batiments	attested		1	1	B2 p.112 para 2 group 10 'batiments'	batiments		4/4	0	single attestation; long value: possibly several groups merged by the aligner
+251	beaucoup	attested		2	2	B1 p.105 para 7 group 7 'beaucoup' ; B1 p.108 para 10 group 39 'beaucoup'	beaucoup		4/4	0	
+252	bien	attested		3	3	B1 p.104 para 4 group 33 'bien' ; B1 p.108 para 10 group 54 'bien' ; B1 p.108 para 10 group 81 'bien'	bien		4/4	0	
+255	bon	attested		4	3	B1 p.106 para 9 group 37 'bon' ; B1 p.106 para 9 group 92 'bon' ; B1 p.106 para 9 group 191 'slebon' ; B1 p.108 para 10 group 41 'bon'	bon	slebon(1)	4/4	1	conflict
+262	ca	attested		3	3	B1 p.104 para 4 group 9 'ca' ; B1 p.106 para 9 group 88 'ca' ; B1 p.108 para 10 group 23 'ca'	ca		4/4	1	
+263	ci	attested		3	3	B1 p.105 para 7 group 31 'ci' ; B1 p.106 para 9 group 75 'ci' ; B1 p.106 para 9 group 172 'ci'	ci		4/4	0	
+264	co	attested		2	2	B1 p.103 para 0 group 3 'co' ; B2 p.112 para 0 group 76 'co'	co		4/4	1	
+266	ce	attested		9	9	B1 p.103 para 0 group 31 'ce' ; B1 p.105 para 5 group 32 'ce' ; B1 p.106 para 9 group 143 'ce' ; B1 p.107 para 9 group 326 'ce' ; B2 p.113 para 4 group 14 'ce' ; B2 p.113 para 4 group 18 'ce' ; B2 p.113 para 5 group 84 'ce' ; B2 p.113 para 5 group 91 'ce' ; B2 p.114 para 5 group 117 'ce'	ce		4/4	0	
+267	cla	attested		1	1	B1 p.106 para 9 group 183 'cla'	cla		4/4	0	single attestation
+271	cra	attested		1	1	B1 p.107 para 9 group 270 'cra'	cra		4/4	0	single attestation
+272	e	attested		2	1	B1 p.106 para 9 group 51 'e' ; B1 p.107 para 9 group 340 'cre'	e	cre(1)	4/4	0	conflict
+273	cri	attested		1	1	B1 p.107 para 9 group 306 'cri'	cri		4/4	0	single attestation
+274	cru	attested		1	1	B2 p.112 para 0 group 9 'cru'	cru		4/4	0	single attestation
+277	canonn	attested		1	1	B2 p.112 para 0 group 14 'canonn'	canonn		4/4	0	single attestation
+278	capitulation	attested		1	1	B2 p.113 para 3 group 18 'capitulation'	capitulation		4/4	0	single attestation; long value: possibly several groups merged by the aligner
+279	car	attested		2	2	B1 p.104 para 3 group 4 'car' ; B1 p.108 para 11 group 33 'car'	car		4/4	0	
+282	cela	attested		1	1	B2 p.114 para 5 group 122 'cela'	cela		4/4	1	single attestation
+284	celui	attested		1	1	B1 p.104 para 4 group 14 'celui'	celui		4/4	1	single attestation
+286	cependant	inferred	not in the printed letters	0	0					1	between celui 284 and cer 287
+287	cer	attested		1	1	B1 p.104 para 4 group 58 'cer'	cer		4/4	0	single attestation
+289	s	attested		1	1	B1 p.107 para 9 group 349 's'	s		4/4	0	single attestation
+293	cher	inferred	not in the printed letters	0	0					1	C block, before choi 295; gives je cher-c-he-ra-y
+294	schi	attested		1	1	B1 p.108 para 10 group 80 'schi'	schi		4/4	0	single attestation
+295	choi	attested		1	1	B1 p.106 para 9 group 44 'choi'	choi		3/4	0	single attestation
+300	command	attested		3	2	B1 p.103 para 0 group 15 'command' ; B2 p.112 para 0 group 5 '300' ; B2 p.112 para 0 group 70 'command'	command	300(1)	4/4	0	conflict
+301	con	attested		14	12	B1 p.104 para 4 group 57 'con' ; B1 p.104 para 5 group 2 'con' ; B1 p.106 para 9 group 138 'con' ; B1 p.106 para 9 group 199 'con' ; B1 p.107 para 9 group 234 'con' ; B1 p.107 para 9 group 240 'con' ; B1 p.107 para 9 group 253 'con' ; B1 p.107 para 9 group 263 'r' ; B1 p.107 para 9 group 322 'con' ; B1 p.107 para 9 group 330 'con' ; B1 p.108 para 10 group 29 'con' ; B1 p.108 para 10 group 51 'con' ; B2 p.113 para 3 group 22 't' ; B2 p.113 para 4 group 31 'con'	con	r(1) t(1)	4/4	1	conflict
+302	e	attested		1	1	B1 p.104 para 3 group 2 'e'	e		4/4	0	single attestation
+306	cou	attested		2	2	B1 p.107 para 9 group 284 'cou' ; B2 p.113 para 4 group 21 'cou'	cou		4/4	0	
+308	crainte	attested		1	1	B1 p.107 para 9 group 228 'crainte'	crainte		4/4	0	single attestation
+310*	croixdesaintlouisv	attested		1	1	B1 p.105 para 8 group 21 'croixdesaintlouisv'	croixdesaintlouisv		3/4	0	single attestation; long value: possibly several groups merged by the aligner
+311	da	attested		5	5	B1 p.106 para 9 group 74 'da' ; B1 p.107 para 9 group 289 'da' ; B1 p.107 para 9 group 327 'da' ; B1 p.107 para 9 group 343 'da' ; B2 p.112 para 0 group 26 'da'	da		4/4	0	
+312	de	attested		52	48	B1 p.103 para 0 group 8 'de' ; B1 p.104 para 1 group 8 '(null)' ; B1 p.104 para 2 group 23 'de' ; B1 p.104 para 2 group 27 'de' ; B1 p.104 para 2 group 40 'de' ; B1 p.104 para 4 group 5 'de' ; B1 p.104 para 4 group 15 'de' ; B1 p.104 para 4 group 34 'de' ; B1 p.104 para 4 group 44 'de' ; B1 p.104 para 4 group 46 'de' ; B1 p.104 para 4 group 56 'de' ; B1 p.105 para 5 group 43 'de' ; B1 p.105 para 6 group 16 '(null)' ; B1 p.105 para 6 group 22 'de' ; B1 p.105 para 7 group 22 'de' ; B1 p.105 para 7 group 30 'de' ; B1 p.105 para 7 group 32 'de' ; B1 p.106 para 9 group 25 'de' ; B1 p.106 para 9 group 43 'de' ; B1 p.106 para 9 group 60 'd' ; B1 p.106 para 9 group 98 'de' ; B1 p.106 para 9 group 101 'de' ; B1 p.106 para 9 group 136 'de' ; B1 p.106 para 9 group 157 'de' ; B1 p.106 para 9 group 165 'de' ; B1 p.107 para 9 group 201 'de' ; B1 p.107 para 9 group 229 'de' ; B1 p.107 para 9 group 242 'de' ; B1 p.107 para 9 group 247 'de' ; B1 p.107 para 9 group 255 'de' ; B1 p.107 para 10 group 11 'de' ; B1 p.108 para 10 group 34 'de' ; B1 p.108 para 10 group 40 'de' ; B1 p.108 para 10 group 67 'de' ; B1 p.108 para 10 group 69 'de' ; B1 p.108 para 10 group 78 'de' ; B1 p.108 para 11 group 4 'de' ; B2 p.112 para 0 group 7 'sde' ; B2 p.112 para 0 group 23 'de' ; B2 p.112 para 0 group 33 'de' ; B2 p.112 para 0 group 46 'de' ; B2 p.112 para 0 group 49 'de' ; B2 p.112 para 0 group 60 'de' ; B2 p.112 para 2 group 5 'de' ; B2 p.113 para 2 group 27 'de' ; B2 p.113 para 3 group 19 'de' ; B2 p.113 para 4 group 20 'de' ; B2 p.113 para 5 group 12 'de' ; B2 p.113 para 5 group 21 'de' ; B2 p.113 para 5 group 27 'de' ; B2 p.113 para 5 group 44 'de' ; B2 p.113 para 5 group 79 'de'	de	(null)(2) d(1) sde(1)	4/4	4	conflict
+313	di	attested		5	5	B1 p.105 para 9 group 14 'di' ; B1 p.106 para 9 group 52 'di' ; B1 p.107 para 9 group 269 'di' ; B1 p.107 para 9 group 341 'di' ; B2 p.114 para 5 group 97 'di'	di		4/4	0	
+314	do	attested		2	2	B1 p.104 para 5 group 20 'do' ; B1 p.105 para 8 group 1 'do'	do		4/4	0	
+315	du	attested		9	7	B1 p.105 para 6 group 31 'du' ; B1 p.105 para 6 group 37 'sde' ; B1 p.106 para 9 group 66 '(null)' ; B1 p.106 para 9 group 90 'du' ; B1 p.106 para 9 group 147 'du' ; B1 p.106 para 9 group 153 'du' ; B1 p.108 para 10 group 52 'du' ; B2 p.114 para 5 group 92 'du' ; B2 p.114 para 5 group 111 'du'	du	sde(1) (null)(1)	4/4	0	conflict
+316	dra	attested		1	1	B1 p.106 para 9 group 108 'dra'	dra		4/4	0	single attestation
+321	defendre	attested		2	1	B2 p.113 para 2 group 17 'defendre' ; B2 p.113 para 5 group 63 'defend'	defendre	defend(1)	4/4	0	conflict
+322	demande	attested		2	1	B1 p.105 para 5 group 26 'demande' ; B1 p.105 para 6 group 40 'commandantlieutenan'	demande	commandantlieutenan(1)	4/4	0	conflict
+325	der	attested		2	2	B1 p.108 para 10 group 31 'der' ; B2 p.112 para 2 group 8 'der'	der		4/4	1	
+326	dernier	attested		1	1	B1 p.104 para 2 group 15 'dernier'	dernier		4/4	0	single attestation
+332	deux	attested		1	1	B1 p.107 para 9 group 207 'deux'	deux		4/4	0	single attestation
+333	difficulte	attested		1	1	B1 p.105 para 7 group 40 'difficulte'	difficulte		4/4	0	single attestation; long value: possibly several groups merged by the aligner
+336	donne	attested		1	1	B1 p.104 para 2 group 35 'donne'	donne		3/4	0	single attestation
+340	eau	inferred	not in the printed letters	0	0					1	between donne 336 and ecri 342; gives la B-eau-bassin
+342	ecri	attested		1	1	B1 p.106 para 9 group 134 'ecri'	ecri		4/4	0	single attestation
+344	d	attested		1	1	B2 p.113 para 4 group 5 'd'	d		3/4	0	single attestation
+347	systemel	attested		1	1	B1 p.106 para 9 group 64 'systemel'	systemel		4/4	0	single attestation
+348	en	attested		9	8	B1 p.105 para 5 group 28 'en' ; B1 p.105 para 7 group 41 'en' ; B1 p.106 para 9 group 107 'en' ; B1 p.106 para 9 group 177 'eren' ; B1 p.107 para 9 group 301 'en' ; B1 p.107 para 9 group 318 'en' ; B2 p.113 para 4 group 6 'en' ; B2 p.113 para 5 group 62 'en' ; B2 p.114 para 5 group 106 'en'	en	eren(1)	4/4	0	conflict
+349	ence	inferred	not in the printed letters	0	0					1	between en 348 and enfin 352; gives prefer-ence
+352	enfin	attested		1	1	B1 p.108 para 11 group 1 'enfin'	enfin		4/4	0	single attestation
+353	ennemi	attested		4	4	B1 p.105 para 7 group 9 'ennemi' ; B1 p.106 para 9 group 128 'ennemi' ; B1 p.106 para 9 group 164 'ennemi' ; B1 p.108 para 11 group 22 'ennemi'	ennemi		4/4	0	
+356	sriviereslentre	attested		1	1	B2 p.113 para 5 group 18 'sriviereslentre'	sriviereslentre		4/4	0	single attestation; long value: possibly several groups merged by the aligner
+357	envoy	attested		2	2	B1 p.104 para 2 group 29 'envoy' ; B1 p.106 para 9 group 176 'envoy'	envoy		4/4	0	
+358	er	attested		5	4	B1 p.105 para 7 group 36 'er' ; B1 p.106 para 9 group 81 'er' ; B2 p.112 para 0 group 16 'er' ; B2 p.112 para 0 group 21 'ers' ; B2 p.113 para 4 group 2 'er'	er	ers(1)	4/4	0	conflict
+359	es	attested		10	8	B1 p.104 para 2 group 31 'es' ; B1 p.104 para 2 group 36 'es' ; B1 p.104 para 4 group 22 'es' ; B1 p.104 para 4 group 38 'es' ; B1 p.105 para 6 group 28 'es' ; B1 p.105 para 9 group 20 'ez' ; B1 p.106 para 9 group 104 'es' ; B2 p.112 para 0 group 72 'es' ; B2 p.113 para 5 group 82 'es' ; B2 p.114 para 5 group 105 'ez'	es	ez(2)	4/4	0	conflict
+361	est	attested		4	3	B1 p.105 para 6 group 27 'et' ; B1 p.105 para 8 group 14 'est' ; B1 p.106 para 9 group 146 'est' ; B2 p.113 para 5 group 11 'est'	est	et(1)	4/4	0	conflict
+362	etre	attested		2	2	B1 p.104 para 2 group 34 'etre' ; B2 p.113 para 5 group 39 'etre'	etre		3/4	0	
+363	ete	attested		2	1	B1 p.106 para 9 group 173 'ete' ; B1 p.107 para 9 group 317 'i'	ete	i(1)	2/4	0	conflict
+364	eu	attested		3	3	B1 p.104 para 4 group 42 'eu' ; B1 p.105 para 7 group 21 'eu' ; B1 p.105 para 8 group 19 'eu'	eu		4/4	0	
+367	eux	attested		2	1	B1 p.106 para 9 group 76 'eux' ; B1 p.107 para 9 group 281 'euxmlecomtedargenson'	eux	euxmlecomtedargenson(1)	4/4	0	conflict
+368	ex	attested		2	2	B1 p.105 para 6 group 6 'ex' ; B2 p.114 para 5 group 102 'ex'	ex		4/4	1	
+370	fa	attested		2	2	B1 p.106 para 9 group 137 'fa' ; B1 p.107 para 9 group 336 'fa'	fa		4/4	0	
+371	fi	attested		2	2	B1 p.107 para 9 group 346 'fi' ; B2 p.113 para 5 group 90 'fi'	fi		4/4	0	
+372	for	attested		1	1	B2 p.112 para 0 group 68 'for'	for		3/4	0	single attestation
+373	fu	attested		3	3	B1 p.104 para 4 group 40 'fu' ; B1 p.105 para 7 group 17 'fu' ; B1 p.107 para 9 group 279 'fu'	fu		4/4	0	
+374	fe	attested		3	3	B1 p.107 para 9 group 211 'fe' ; B2 p.113 para 5 group 45 'fe' ; B2 p.114 para 5 group 119 'fe'	fe		4/4	1	
+380	fairerendr	attested		1	1	B1 p.106 para 9 group 141 'fairerendr'	fairerendr		2/4	0	single attestation; long value: possibly several groups merged by the aligner
+381	fait	attested		3	3	B1 p.105 para 5 group 35 'fait' ; B1 p.105 para 8 group 13 'fait' ; B1 p.106 para 9 group 175 'fait'	fait		2/4	0	
+382	fau	attested		1	1	B1 p.104 para 3 group 12 'fau'	fau		4/4	0	single attestation
+384	n	attested		1	1	B1 p.108 para 11 group 31 'n'	n		3/4	0	single attestation
+386	fondmdemora	attested		1	1	B1 p.107 para 9 group 287 'fondmdemora'	fondmdemora		3/4	0	single attestation; long value: possibly several groups merged by the aligner
+387	forces	attested		1	1	B2 p.113 para 5 group 55 'forces'	forces		4/4	0	single attestation
+388	fort	attested		3	3	B1 p.104 para 4 group 51 'fort' ; B1 p.106 para 9 group 163 'fort' ; B1 p.108 para 10 group 84 'fort'	fort		4/4	0	
+391	frontiere	attested		2	2	B2 p.113 para 3 group 10 'frontiere' ; B2 p.113 para 5 group 51 'frontiere'	frontiere		4/4	0	long value: possibly several groups merged by the aligner
+392	ga	attested		2	1	B2 p.112 para 0 group 57 'ga' ; B2 p.112 para 2 group 6 'pouvoirga'	ga	pouvoirga(1)	4/4	0	conflict
+393	ge	attested		2	2	B1 p.107 para 10 group 9 'ge' ; B2 p.113 para 4 group 23 'ge'	ge		4/4	1	
+394	gi	attested		1	1	B1 p.104 para 4 group 3 'gi'	gi		4/4	0	single attestation
+398	general	attested		3	2	B1 p.106 para 9 group 127 'general' ; B1 p.107 para 9 group 266 'general' ; B1 p.107 para 9 group 319 'teteengeneral'	general	teteengeneral(1)	3/4	0	conflict
+400	g	attested		1	1	B2 p.113 para 2 group 14 'g'	g		1/4	0	single attestation
+408	gno	attested		1	1	B2 p.114 para 5 group 115 'gno'	gno		4/4	0	single attestation
+409	gra	attested		3	3	B1 p.106 para 9 group 48 'gra' ; B1 p.106 para 9 group 99 'gra' ; B1 p.106 para 9 group 167 'gra'	gra		4/4	0	
+410	gre	attested		2	2	B1 p.106 para 9 group 84 'gre' ; B1 p.106 para 9 group 152 'gre'	gre		4/4	0	
+414	gues	attested		2	1	B1 p.105 para 7 group 37 'gues' ; B1 p.107 para 9 group 223 'h'	gues	h(1)	4/4	0	conflict
+416	guerre	attested		2	2	B2 p.112 para 0 group 24 'guerre' ; B2 p.113 para 5 group 28 'guerre'	guerre		2/4	0	
+417	ha	attested		6	6	B1 p.104 para 2 group 25 'ha' ; B1 p.107 para 9 group 267 'ha' ; B1 p.107 para 9 group 353 'ha' ; B1 p.108 para 10 group 57 'ha' ; B1 p.108 para 10 group 71 'ha' ; B2 p.113 para 5 group 68 'ha'	ha		3/4	0	
+418	he	attested		3	2	B1 p.106 para 9 group 119 'he' ; B1 p.107 para 9 group 261 'n' ; B2 p.112 para 0 group 67 'he'	he	n(1)	4/4	1	conflict
+420	ho	attested		1	1	B1 p.105 para 5 group 36 'ho'	ho		4/4	0	single attestation
+423	homme	attested		5	5	B1 p.105 para 6 group 30 'homme' ; B1 p.106 para 9 group 71 'homme' ; B1 p.106 para 9 group 180 'homme' ; B1 p.106 para 9 group 192 'homme' ; B2 p.112 para 0 group 6 'homme'	homme		4/4	0	
+425*	in	attested		7	7	B1 p.103 para 0 group 2 'in' ; B1 p.104 para 3 group 6 'in' ; B1 p.104 para 4 group 28 'in' ; B1 p.106 para 9 group 82 'in' ; B1 p.106 para 9 group 123 'in' ; B1 p.106 para 9 group 150 'in' ; B1 p.107 para 9 group 271 'in'	in		4/4	0	
+426	ja	attested		2	2	B1 p.104 para 4 group 23 'ja' ; B1 p.108 para 11 group 26 'ja'	ja		2/4	0	
+427	je	attested		2	1	B1 p.104 para 4 group 26 'usie' ; B1 p.108 para 11 group 30 'jefi'	usie	jefi(1)	1/4	2	B1 p.108 aligned 'jefi' in 'je finis'; B1 p.104 aligned 'usie' inside 'jalousies' (a conflict); 'je' also fits the code's order (j block 426-432)
+428*	jour	attested		1	1	B1 p.105 para 6 group 32 'jour'	jour		4/4	0	single attestation
+430*	is	attested		4	4	B1 p.106 para 9 group 195 'is' ; B1 p.107 para 9 group 210 'is' ; B1 p.108 para 11 group 32 'is' ; B2 p.114 para 5 group 103 'is'	is		4/4	0	
+431	jai	attested		4	4	B1 p.105 para 5 group 25 'jai' ; B1 p.105 para 7 group 20 'jai' ; B1 p.106 para 9 group 24 'jai' ; B1 p.107 para 10 group 4 'jai'	jai		4/4	0	
+431*	it	attested		7	7	B1 p.103 para 0 group 21 'it' ; B1 p.104 para 2 group 4 'it' ; B1 p.104 para 5 group 21 'it' ; B1 p.105 para 9 group 13 'it' ; B1 p.108 para 10 group 53 'it' ; B2 p.113 para 4 group 25 'it' ; B2 p.113 para 4 group 30 'it'	it		4/4	0	
+432	ujamais	attested		1	1	B1 p.107 para 9 group 313 'ujamais'	ujamais		4/4	0	single attestation
+432*	jusqu	attested		1	1	B1 p.105 para 6 group 4 'jusqu'	jusqu		4/4	0	single attestation
+433*	la	attested		22	22	B1 p.103 para 0 group 9 'la' ; B1 p.104 para 1 group 6 'la' ; B1 p.104 para 2 group 14 'la' ; B1 p.104 para 3 group 3 'la' ; B1 p.104 para 4 group 1 'la' ; B1 p.104 para 4 group 45 'la' ; B1 p.104 para 5 group 15 'la' ; B1 p.105 para 5 group 22 'la' ; B1 p.105 para 7 group 23 'la' ; B1 p.105 para 8 group 20 'la' ; B1 p.106 para 9 group 166 'la' ; B1 p.107 para 9 group 244 'la' ; B1 p.107 para 9 group 274 'la' ; B1 p.107 para 9 group 291 'la' ; B1 p.107 para 9 group 302 'la' ; B1 p.107 para 9 group 335 'la' ; B1 p.108 para 10 group 28 'la' ; B2 p.113 para 2 group 23 'la' ; B2 p.113 para 2 group 29 'la' ; B2 p.113 para 5 group 4 'la' ; B2 p.113 para 5 group 43 'la' ; B2 p.113 para 5 group 66 'la'	la		4/4	3	
+434	il	attested		9	4	B1 p.105 para 8 group 3 'il' ; B1 p.106 para 9 group 28 'l' ; B1 p.106 para 9 group 61 'o' ; B1 p.107 para 9 group 222 'c' ; B1 p.107 para 9 group 236 'il' ; B1 p.107 para 9 group 314 'il' ; B1 p.107 para 9 group 332 'il' ; B2 p.113 para 4 group 27 'l' ; B2 p.114 para 5 group 108 'o'	il	l(2) o(2) c(1)	4/4	0	conflict
+434*	le	attested		13	12	B1 p.104 para 4 group 49 'nselet' ; B1 p.104 para 5 group 7 'le' ; B1 p.105 para 6 group 39 'le' ; B1 p.105 para 8 group 16 'le' ; B1 p.106 para 9 group 155 'le' ; B1 p.107 para 9 group 321 'le' ; B1 p.107 para 9 group 329 'le' ; B1 p.108 para 11 group 34 'le' ; B2 p.112 para 0 group 38 'le' ; B2 p.112 para 2 group 1 'le' ; B2 p.113 para 5 group 33 'le' ; B2 p.113 para 5 group 87 'le' ; B2 p.114 para 5 group 94 'le'	le	nselet(1)	4/4	3	conflict
+435	m	attested		1	1	B1 p.106 para 9 group 30 'm'	m		4/4	0	single attestation
+435*	lin	attested		1	1	B1 p.108 para 10 group 60 'lin'	lin		4/4	2	single attestation
+436	l	attested		4	2	B1 p.104 para 4 group 24 'l' ; B1 p.104 para 4 group 36 'lop' ; B1 p.107 para 9 group 259 'l' ; B1 p.108 para 11 group 27 'lo'	l	lop(1) lo(1)	1/4	0	conflict
+437	lu	attested		2	2	B1 p.105 para 7 group 15 'lu' ; B1 p.107 para 9 group 304 'lu'	lu		4/4	0	
+439	les	attested		8	8	B1 p.104 para 4 group 18 'les' ; B1 p.105 para 6 group 33 'les' ; B1 p.106 para 9 group 187 'les' ; B1 p.107 para 9 group 285 'les' ; B1 p.107 para 9 group 345 'les' ; B1 p.107 para 10 group 8 'les' ; B2 p.113 para 3 group 5 'les' ; B2 p.113 para 5 group 50 'les'	les		4/4	1	
+440	leur	attested		4	4	B1 p.104 para 2 group 33 'leur' ; B1 p.104 para 4 group 8 'leur' ; B1 p.106 para 9 group 189 'leur' ; B1 p.107 para 9 group 265 'leur'	leur		4/4	0	
+445	lors	attested		1	1	B2 p.113 para 5 group 86 'lors'	lors		2/4	0	single attestation
+446	l	attested		4	3	B1 p.105 para 7 group 29 'uemdebourlemaquele' ; B1 p.105 para 9 group 10 'l' ; B1 p.107 para 9 group 230 'l' ; B1 p.108 para 10 group 64 'l'	l	uemdebourlemaquele(1)	3/4	0	conflict
+446*	meilleursecourse	attested		1	1	B2 p.112 para 2 group 2 'meilleursecourse'	meilleursecourse		4/4	0	single attestation; long value: possibly several groups merged by the aligner
+447	ma	attested		7	7	B1 p.104 para 4 group 2 'ma' ; B1 p.104 para 5 group 16 'ma' ; B1 p.105 para 7 group 3 'ma' ; B1 p.107 para 9 group 296 'ma' ; B2 p.113 para 2 group 24 'ma' ; B2 p.113 para 5 group 76 'ma' ; B2 p.114 para 5 group 96 'ma'	ma		4/4	1	
+447*	ment	attested		2	2	B1 p.104 para 2 group 6 'ment' ; B1 p.104 para 2 group 20 'ment'	ment		2/4	0	
+448	me	inferred	printed, but not with this value	2	1	B1 p.108 para 10 group 72 'nne' ; B1 p.108 para 11 group 36 'memanqu'	nne	memanqu(1)	4/4	1	solver 'nne' (B1 p.108, in a name) and 'memanqu' ('me manque', B1 p.108); me from ma 447, mi 449
+449	mi	attested		5	5	B1 p.103 para 0 group 26 'mi' ; B1 p.104 para 1 group 3 'mi' ; B1 p.106 para 9 group 56 'mi' ; B1 p.106 para 9 group 93 'mi' ; B1 p.108 para 10 group 87 'mi'	mi		4/4	1	
+449*	meme	attested		3	3	B1 p.105 para 8 group 17 'meme' ; B1 p.108 para 11 group 24 'meme' ; B2 p.113 para 5 group 54 'meme'	meme		4/4	0	
+450	mo	attested		4	4	B1 p.105 para 5 group 42 'mo' ; B1 p.105 para 8 group 8 'mo' ; B1 p.106 para 9 group 40 'mo' ; B2 p.112 para 0 group 52 'mo'	mo		4/4	0	
+450*	mettre	attested		1	1	B2 p.113 para 5 group 13 'mettre'	mettre		4/4	0	single attestation
+452	mais	attested		2	2	B1 p.105 para 6 group 11 'mais' ; B1 p.108 para 10 group 88 'mais'	mais		3/4	0	
+453	e	attested		1	1	B1 p.108 para 11 group 37 'e'	e		4/4	0	single attestation
+453*	miliceapprouve	attested		1	1	B1 p.103 para 0 group 10 'miliceapprouve'	miliceapprouve		4/4	0	single attestation; long value: possibly several groups merged by the aligner
+455	s	attested		1	1	B1 p.106 para 9 group 95 's'	s		4/4	0	single attestation
+455*	moisapre	attested		1	1	B1 p.105 para 8 group 6 'moisapre'	moisapre		3/4	0	single attestation
+456	mon	attested		2	2	B1 p.108 para 10 group 37 'mon' ; B2 p.113 para 2 group 21 'mon'	mon		1/4	0	
+457	monsieur	attested		2	2	B1 p.106 para 9 group 77 'monsieur' ; B1 p.108 para 10 group 55 'monsieur'	monsieur		4/4	0	
+458*	mademoiselle	attested		1	1	B1 p.108 para 10 group 68 'mademoiselle'	mademoiselle		3/4	0	single attestation; long value: possibly several groups merged by the aligner
+461	moyens	inferred	not in the printed letters	0	0					1	between monsieur 457 and munitions 465; other words fit the range
+464	t	attested		1	1	B2 p.113 para 4 group 16 't'	t		4/4	0	single attestation
+465	munitions	attested		2	2	B2 p.112 para 0 group 22 'munitions' ; B2 p.113 para 5 group 26 'munitions'	munitions		2/4	0	long value: possibly several groups merged by the aligner
+466	na	attested		3	3	B1 p.105 para 7 group 12 'na' ; B1 p.107 para 9 group 275 'na' ; B1 p.107 para 9 group 347 'na'	na		4/4	0	
+467	ne	attested		12	12	B1 p.104 para 5 group 18 'ne' ; B1 p.105 para 5 group 38 'ne' ; B1 p.105 para 6 group 14 'ne' ; B1 p.105 para 7 group 26 'ne' ; B1 p.105 para 7 group 34 'ne' ; B1 p.108 para 10 group 42 'ne' ; B1 p.108 para 11 group 2 'ne' ; B2 p.112 para 0 group 37 'ne' ; B2 p.113 para 2 group 26 'ne' ; B2 p.113 para 3 group 14 'ne' ; B2 p.113 para 5 group 78 'ne' ; B2 p.113 para 5 group 89 'ne'	ne		4/4	0	
+468	ni	attested		3	3	B1 p.106 para 9 group 69 'ni' ; B1 p.108 para 11 group 21 'ni' ; B1 p.108 para 11 group 23 'ni'	ni		4/4	0	
+469	no	attested		1	1	B1 p.105 para 5 group 30 'no'	no		4/4	0	single attestation
+470	nu	attested		3	3	B1 p.104 para 5 group 3 'nu' ; B1 p.104 para 5 group 13 'nu' ; B2 p.113 para 4 group 32 'nu'	nu		4/4	0	
+476	non	attested		2	2	B1 p.103 para 0 group 29 'non' ; B1 p.104 para 3 group 9 'non'	non		4/4	0	
+478	nosmauvai	attested		1	1	B1 p.106 para 9 group 94 'nosmauvai'	nosmauvai		4/4	0	single attestation; long value: possibly several groups merged by the aligner
+480	tedenousmdevallie	attested		1	1	B1 p.104 para 1 group 9 'tedenousmdevallie'	tedenousmdevallie		3/4	0	single attestation; long value: possibly several groups merged by the aligner
+482	ns	attested		12	9	B1 p.104 para 5 group 5 'ns' ; B1 p.104 para 5 group 8 'nt' ; B1 p.105 para 6 group 36 'nt' ; B1 p.105 para 7 group 39 'ns' ; B1 p.107 para 9 group 238 'ns' ; B1 p.107 para 9 group 252 'ns' ; B1 p.107 para 9 group 290 'ns' ; B1 p.107 para 9 group 328 'ns' ; B1 p.107 para 9 group 344 'ns' ; B1 p.107 para 10 group 10 'ns' ; B1 p.108 para 10 group 19 'nt' ; B2 p.112 para 0 group 27 'ns'	ns	nt(3)	4/4	0	conflict
+483	nt	attested		1	1	B1 p.106 para 9 group 156 'nt'	nt		4/4	0	single attestation
+484	nul	attested		6	6	B1 p.105 para 7 group 43 'nul' ; B1 p.105 para 9 group 2 'nul' ; B1 p.107 para 9 group 320 'nul' ; B1 p.107 para 9 group 339 'nul' ; B2 p.112 para 1 group 2 'nul' ; B2 p.113 para 5 group 41 'nul'	nul		4/4	0	
+495	eofficiers	attested		1	1	B2 p.113 para 2 group 15 'eofficiers'	eofficiers		1/4	0	single attestation; long value: possibly several groups merged by the aligner
+499	t	attested		1	1	B2 p.114 para 5 group 110 't'	t		4/4	0	single attestation
+500	ol	attested		1	1	B1 p.104 para 3 group 5 'ol'	ol		4/4	0	single attestation
+502	on	attested		4	4	B1 p.105 para 7 group 11 'on' ; B1 p.105 para 9 group 9 'on' ; B1 p.108 para 10 group 45 'on' ; B2 p.112 para 0 group 36 'on'	on		4/4	0	
+503	t	attested		2	2	B1 p.105 para 6 group 41 't' ; B1 p.108 para 10 group 21 't'	t		4/4	0	
+505	ordres	inferred	not in the printed letters	0	0					1	between on 502 and ou 508; other words fit the range
+508	o	attested		3	2	B1 p.107 para 9 group 312 'o' ; B2 p.112 para 0 group 17 's' ; B2 p.112 para 0 group 18 'o'	o	s(1)	4/4	0	conflict
+509	autres	attested		1	1	B2 p.112 para 0 group 42 'autres'	autres		4/4	0	single attestation
+510	pa	attested		5	5	B1 p.105 para 6 group 34 'pa' ; B1 p.108 para 10 group 12 'pa' ; B1 p.108 para 10 group 17 'pa' ; B1 p.108 para 11 group 6 'pa' ; B2 p.113 para 2 group 13 'pa'	pa		4/4	1	
+511	pe	attested		6	6	B1 p.104 para 4 group 37 'pe' ; B1 p.105 para 7 group 24 'pe' ; B1 p.106 para 9 group 109 'pe' ; B1 p.107 para 10 group 5 'pe' ; B2 p.113 para 5 group 8 'pe' ; B2 p.113 para 5 group 83 'pe'	pe		4/4	1	
+512	pie	attested		1	1	B2 p.113 para 4 group 4 'pie'	pie		3/4	0	single attestation
+513	po	attested		3	3	B1 p.103 para 0 group 5 'po' ; B1 p.107 para 9 group 309 'po' ; B2 p.113 para 5 group 19 'po'	po		4/4	0	
+519	par	attested		9	9	B1 p.104 para 5 group 14 'par' ; B1 p.107 para 9 group 227 'par' ; B1 p.107 para 9 group 273 'par' ; B2 p.112 para 0 group 30 'par' ; B2 p.112 para 0 group 43 'par' ; B2 p.112 para 0 group 73 'par' ; B2 p.112 para 0 group 89 'par' ; B2 p.113 para 3 group 21 'par' ; B2 p.113 para 5 group 74 'par'	par		4/4	1	
+521	(null)	attested		1	1	B1 p.105 para 6 group 18 '(null)'	(null)		4/4	0	single attestation
+523	perdezpa	attested		1	1	B1 p.105 para 6 group 15 'perdezpa'	perdezpa		4/4	0	single attestation
+524	peu	inferred	printed, but not with this value	1	1	B1 p.104 para 4 group 47 'p'	p		4/4	1	solver 'p' inside 'depense' (B1 p.104); peu from perdez 523 < x < place 526 and 'a peu de frais'
+526	place	attested		2	2	B1 p.108 para 10 group 36 'place' ; B2 p.113 para 5 group 30 'place'	place		4/4	0	
+532	point	attested		4	4	B1 p.105 para 7 group 13 'point' ; B1 p.106 para 9 group 97 'point' ; B1 p.106 para 9 group 197 'point' ; B2 p.113 para 4 group 19 'point'	point		4/4	0	
+533	per	attested		2	1	B1 p.108 para 11 group 3 'per' ; B2 p.112 para 0 group 97 'part'	per	part(1)	4/4	0	conflict
+535	possible	inferred	not in the printed letters	0	0					1	between point 532 and pour 537; poste, port also fit
+537	pour	attested		10	10	B1 p.104 para 2 group 32 'pour' ; B1 p.105 para 7 group 27 'pour' ; B1 p.106 para 9 group 39 'pour' ; B1 p.106 para 9 group 181 'pour' ; B1 p.107 para 9 group 214 'pour' ; B1 p.108 para 10 group 47 'pour' ; B1 p.108 para 10 group 63 'pour' ; B2 p.112 para 0 group 1 'pour' ; B2 p.113 para 2 group 16 'pour' ; B2 p.114 para 5 group 121 'pour'	pour		4/4	1	
+538	t	attested		1	1	B2 p.112 para 2 group 4 't'	t		4/4	0	single attestation
+540	pre	attested		2	2	B1 p.105 para 6 group 20 'pre' ; B1 p.106 para 9 group 31 'pre'	pre		4/4	2	
+541	pri	attested		3	3	B1 p.104 para 2 group 38 'pri' ; B1 p.106 para 9 group 130 'pri' ; B2 p.113 para 4 group 11 'pri'	pri		1/4	0	
+544	premier	attested		2	2	B1 p.105 para 9 group 7 'premier' ; B2 p.113 para 5 group 5 'premier'	premier		4/4	1	
+550	projet	attested		1	1	B1 p.104 para 3 group 1 'projetcontr'	projetcontr		4/4	1	solver 'projetcontr' = projet + contre (302), B1 p.104 'Projet contre la Caroline'
+553	puissante	attested		1	1	B1 p.105 para 9 group 6 'puissante'	puissante		4/4	0	single attestation; long value: possibly several groups merged by the aligner
+561	que	attested		9	6	B1 p.105 para 5 group 24 'uisque' ; B1 p.105 para 7 group 2 'que' ; B1 p.105 para 9 group 16 'que' ; B1 p.107 para 9 group 308 'que' ; B2 p.112 para 0 group 83 'e' ; B2 p.113 para 4 group 10 'e' ; B2 p.113 para 4 group 13 'que' ; B2 p.113 para 5 group 3 'que' ; B2 p.114 para 5 group 99 'que'	que	e(2) uisque(1)	4/4	0	conflict
+562	quelqu	attested		2	2	B2 p.112 para 0 group 82 'quelqu' ; B2 p.113 para 4 group 9 'quelqu'	quelqu		3/4	0	
+563	qui	attested		3	2	B1 p.105 para 5 group 33 'quivous' ; B1 p.106 para 9 group 144 'qui' ; B2 p.113 para 2 group 12 'qui'	qui	quivous(1)	4/4	0	conflict
+564	quil	attested		2	2	B1 p.105 para 7 group 16 'quil' ; B2 p.114 para 5 group 118 'quil'	quil		4/4	1	
+568	ra	attested		13	13	B1 p.103 para 0 group 6 'ra' ; B1 p.103 para 0 group 20 'ra' ; B1 p.104 para 2 group 3 'ra' ; B1 p.104 para 4 group 10 'ra' ; B1 p.104 para 5 group 10 'ra' ; B1 p.105 para 5 group 44 'ra' ; B1 p.106 para 9 group 87 'ra' ; B1 p.107 para 9 group 202 'ra' ; B1 p.107 para 9 group 256 'ra' ; B2 p.113 para 3 group 3 'ra' ; B2 p.113 para 4 group 22 'ra' ; B2 p.113 para 5 group 9 'ra' ; B2 p.114 para 5 group 120 'ra'	ra		4/4	6	
+568*	re	attested		23	23	B1 p.103 para 0 group 14 're' ; B1 p.103 para 0 group 18 're' ; B1 p.103 para 0 group 27 're' ; B1 p.104 para 1 group 2 're' ; B1 p.104 para 4 group 13 're' ; B1 p.104 para 4 group 30 're' ; B1 p.105 para 6 group 35 're' ; B1 p.105 para 7 group 5 're' ; B1 p.105 para 8 group 2 're' ; B1 p.106 para 9 group 185 're' ; B1 p.107 para 9 group 221 're' ; B1 p.108 para 10 group 18 're' ; B1 p.108 para 10 group 24 're' ; B1 p.108 para 11 group 13 're' ; B2 p.112 para 0 group 8 're' ; B2 p.112 para 0 group 56 're' ; B2 p.112 para 0 group 80 're' ; B2 p.112 para 0 group 87 're' ; B2 p.112 para 0 group 95 're' ; B2 p.113 para 3 group 8 're' ; B2 p.113 para 5 group 58 're' ; B2 p.113 para 5 group 60 're' ; B2 p.114 para 5 group 116 're'	re		4/4	2	
+569	ri	attested		9	8	B1 p.104 para 4 group 21 'ri' ; B1 p.104 para 4 group 41 'ri' ; B1 p.104 para 5 group 17 'ri' ; B1 p.106 para 9 group 80 'ry' ; B1 p.106 para 9 group 115 'ri' ; B1 p.107 para 9 group 280 'ri' ; B1 p.108 para 10 group 13 'ri' ; B2 p.113 para 2 group 25 'ri' ; B2 p.113 para 5 group 77 'ri'	ri	ry(1)	4/4	1	conflict
+570	ro	attested		4	4	B1 p.105 para 7 group 1 'ro' ; B1 p.106 para 9 group 58 'ro' ; B2 p.112 para 0 group 65 'ro' ; B2 p.113 para 4 group 24 'ro'	ro		4/4	0	
+571	ruit	attested		1	1	B1 p.106 para 9 group 27 'ruit'	ruit		4/4	0	single attestation
+576	e	attested		1	1	B1 p.106 para 9 group 142 'e'	e		2/4	0	single attestation
+577	i	attested		1	1	B2 p.114 para 5 group 109 'i'	i		4/4	0	single attestation
+583	ro	attested		2	1	B2 p.113 para 5 group 16 'ro' ; B2 p.113 para 5 group 67 'riviere'	ro	riviere(1)	1/4	0	conflict
+584	ront	attested		1	1	B1 p.107 para 9 group 212 'ront'	ront		4/4	0	single attestation
+586	t	attested		1	1	B2 p.112 para 0 group 69 't'	t		3/4	0	single attestation
+587	sa	attested		6	6	B1 p.104 para 5 group 4 'sa' ; B1 p.105 para 7 group 38 'sa' ; B1 p.107 para 9 group 237 'sa' ; B1 p.107 para 9 group 251 'sa' ; B1 p.108 para 10 group 35 'sa' ; B2 p.112 para 0 group 78 'sa'	sa		4/4	0	
+588	se	attested		14	12	B1 p.104 para 4 group 43 'se' ; B1 p.104 para 5 group 9 'se' ; B1 p.105 para 7 group 33 'se' ; B1 p.106 para 9 group 45 'se' ; B1 p.106 para 9 group 116 'se' ; B1 p.106 para 9 group 196 'se' ; B1 p.107 para 9 group 235 'se' ; B1 p.107 para 9 group 331 'se' ; B1 p.108 para 10 group 22 '(null)' ; B1 p.108 para 10 group 25 '(null)' ; B1 p.108 para 10 group 50 'se' ; B1 p.108 para 11 group 12 'se' ; B2 p.113 para 3 group 2 'se' ; B2 p.113 para 5 group 47 'se'	se	(null)(2)	4/4	2	conflict
+589	si	attested		10	9	B1 p.105 para 6 group 12 'si' ; B1 p.106 para 9 group 62 'i' ; B1 p.106 para 9 group 200 'si' ; B1 p.107 para 9 group 254 'si' ; B1 p.107 para 9 group 258 'si' ; B1 p.107 para 9 group 310 'si' ; B1 p.107 para 9 group 323 'si' ; B1 p.108 para 10 group 30 'si' ; B2 p.113 para 4 group 26 'si' ; B2 p.114 para 5 group 100 'si'	si	i(1)	4/4	2	conflict
+590	so	attested		1	1	B1 p.106 para 9 group 171 'so'	so		4/4	2	single attestation
+591	su	inferred	not in the printed letters	0	0					3	S block sa 587, se 588, si 589, so 590; the letter uses 591 three times (su-r, su-re, su-r-pecte)
+594	s	attested		1	1	B2 p.112 para 2 group 3 's'	s		4/4	0	single attestation
+597	conserv	attested		1	1	B2 p.113 para 4 group 1 'conserv'	conserv		4/4	0	single attestation
+600	sur	attested		2	2	B2 p.113 para 4 group 17 'sur' ; B2 p.113 para 5 group 32 'sur'	sur		4/4	0	
+602	sion	attested		1	1	B1 p.106 para 9 group 33 'sion'	sion		4/4	0	single attestation
+605	soitmo	attested		1	1	B2 p.113 para 4 group 15 'soitmo'	soitmo		4/4	0	single attestation
+607	lderichelieureleguea	attested		1	1	B1 p.107 para 9 group 225 'lderichelieureleguea'	lderichelieureleguea		2/4	0	single attestation; long value: possibly several groups merged by the aligner
+608	sou	attested		1	1	B1 p.104 para 5 group 11 'sou'	sou		4/4	0	single attestation
+611	t	attested		5	3	B1 p.104 para 4 group 31 't' ; B1 p.106 para 9 group 63 't' ; B1 p.107 para 9 group 324 'st' ; B2 p.112 para 0 group 62 'st' ; B2 p.113 para 5 group 20 't'	t	st(2)	4/4	0	conflict
+615	sui	attested		3	3	B1 p.104 para 1 group 7 'sui' ; B1 p.104 para 3 group 10 'sui' ; B1 p.108 para 10 group 61 'sui'	sui		4/4	0	
+616	t	attested		1	1	B1 p.104 para 2 group 13 't'	t		3/4	0	single attestation
+617	ta	attested		3	3	B1 p.104 para 5 group 6 'ta' ; B1 p.106 para 9 group 154 'ta' ; B1 p.107 para 9 group 241 'ta'	ta		4/4	0	
+618	te	attested		15	15	B1 p.103 para 0 group 33 'te' ; B1 p.104 para 3 group 13 'te' ; B1 p.104 para 4 group 12 'te' ; B1 p.104 para 4 group 29 'te' ; B1 p.104 para 4 group 59 'te' ; B1 p.104 para 5 group 12 'te' ; B1 p.106 para 9 group 38 'te' ; B1 p.106 para 9 group 83 'te' ; B1 p.106 para 9 group 120 'te' ; B1 p.106 para 9 group 151 'te' ; B1 p.106 para 9 group 162 'te' ; B1 p.107 para 9 group 246 'te' ; B1 p.108 para 10 group 46 'te' ; B2 p.112 para 0 group 58 'te' ; B2 p.113 para 5 group 81 'te'	te		4/4	2	
+619	ti	attested		10	10	B1 p.105 para 6 group 7 'ti' ; B1 p.105 para 9 group 19 'ti' ; B1 p.106 para 9 group 106 'ti' ; B1 p.106 para 9 group 160 'ti' ; B1 p.107 para 9 group 307 'ti' ; B2 p.112 para 0 group 31 'ti' ; B2 p.112 para 0 group 44 'ti' ; B2 p.112 para 0 group 90 'ti' ; B2 p.113 para 5 group 59 'ti' ; B2 p.114 para 5 group 104 'ti'	ti		4/4	0	
+620	to	attested		2	2	B1 p.106 para 9 group 114 'to' ; B2 p.113 para 4 group 29 'to'	to		4/4	0	
+622	tant	attested		1	1	B1 p.105 para 8 group 12 'tant'	tant		2/4	0	single attestation
+624	ten	attested		1	1	B1 p.105 para 6 group 21 'ten'	ten		4/4	0	single attestation
+625	temps	attested		2	2	B1 p.108 para 11 group 35 'temps' ; B2 p.114 para 5 group 93 'temps'	temps		4/4	0	
+626	ter	attested		1	1	B2 p.113 para 2 group 22 'ter'	ter		1/4	0	single attestation
+627	te	attested		3	2	B1 p.105 para 6 group 2 'ttez' ; B1 p.107 para 9 group 245 'te' ; B2 p.112 para 0 group 3 'te'	te	ttez(1)	3/4	0	conflict
+628	tion	attested		10	10	B1 p.103 para 0 group 7 'tion' ; B1 p.104 para 2 group 22 'tion' ; B1 p.105 para 5 group 45 'tion' ; B1 p.105 para 6 group 10 'tion' ; B1 p.107 para 9 group 203 'tion' ; B1 p.107 para 9 group 257 'tion' ; B1 p.107 para 9 group 276 'tion' ; B1 p.107 para 9 group 311 'tion' ; B1 p.108 para 10 group 33 'tion' ; B2 p.113 para 5 group 10 'tion'	tion		4/4	0	
+632	toujours	attested		2	2	B1 p.105 para 8 group 15 'toujours' ; B1 p.107 para 10 group 1 'toujours'	toujours		4/4	0	
+633	tout	attested		10	10	B1 p.105 para 6 group 19 'tout' ; B1 p.105 para 6 group 25 'tout' ; B1 p.105 para 8 group 10 'tout' ; B1 p.105 para 9 group 4 'tout' ; B1 p.106 para 9 group 35 'tout' ; B1 p.107 para 9 group 213 'tout' ; B1 p.107 para 9 group 217 'tout' ; B1 p.107 para 9 group 350 'tout' ; B1 p.108 para 11 group 8 'tout' ; B1 p.108 para 11 group 15 'tout'	tout		4/4	0	
+634	tou	attested		2	2	B2 p.112 para 0 group 2 'tou' ; B2 p.113 para 5 group 80 'tou'	tou		4/4	0	
+635	tous	attested		4	4	B1 p.107 para 9 group 206 'tous' ; B1 p.108 para 10 group 15 'tous' ; B2 p.112 para 2 group 9 'tous' ; B2 p.113 para 5 group 38 'tous'	tous		4/4	0	
+637	tre	attested		4	2	B1 p.104 para 4 group 50 'tre' ; B1 p.106 para 9 group 149 's' ; B1 p.106 para 9 group 193 'ne' ; B1 p.108 para 10 group 38 'tre'	tre	s(1) ne(1)	1/4	1	conflict
+640	trop	attested		1	1	B1 p.105 para 9 group 21 'trop'	trop		4/4	0	single attestation
+641	t	attested		1	1	B2 p.113 para 5 group 15 't'	t		1/4	0	single attestation
+643	troupesuivan	attested		2	1	B1 p.104 para 2 group 12 'troupesuivan' ; B2 p.112 para 0 group 4 'stroupes'	troupesuivan	stroupes(1)	3/4	0	conflict; long value: possibly several groups merged by the aligner
+646	a	attested		1	1	B1 p.105 para 8 group 22 'a'	a		3/4	0	single attestation
+646*	ve	attested		4	4	B1 p.104 para 4 group 35 've' ; B1 p.107 para 9 group 337 've' ; B1 p.108 para 10 group 59 've' ; B1 p.108 para 11 group 19 've'	ve		4/4	0	
+647	vi	attested		5	4	B1 p.104 para 3 group 11 'vi' ; B1 p.105 para 9 group 22 'vi' ; B1 p.106 para 9 group 46 'u' ; B1 p.106 para 9 group 161 'vi' ; B1 p.108 para 10 group 73 'vi'	vi	u(1)	4/4	0	conflict
+648	vo	attested		3	2	B1 p.105 para 9 group 12 'a' ; B1 p.106 para 9 group 188 'vo' ; B1 p.108 para 10 group 43 'vo'	vo	a(1)	4/4	0	conflict
+649	vu	attested		2	2	B1 p.106 para 9 group 103 'vu' ; B1 p.107 para 10 group 7 'vu'	vu		4/4	0	
+653	vaisseaudeguerre	attested		1	1	B2 p.112 para 1 group 3 'vaisseaudeguerre'	vaisseaudeguerre		4/4	0	single attestation; long value: possibly several groups merged by the aligner
+654	vaisseauxmarchands	attested		1	1	B2 p.112 para 0 group 29 'vaisseauxmarchands'	vaisseauxmarchands		4/4	0	single attestation; long value: possibly several groups merged by the aligner
+657	veut	attested		1	1	B2 p.113 para 3 group 15 'veut'	veut		4/4	1	single attestation
+658*	e	attested		1	1	B1 p.105 para 8 group 28 'e'	e		4/4	0	single attestation
+660	vivres	attested		2	2	B2 p.112 para 0 group 25 'vivres' ; B2 p.113 para 5 group 23 'vivres'	vivres		4/4	0	
+661	un	attested		5	5	B1 p.105 para 8 group 5 'un' ; B1 p.105 para 8 group 26 'un' ; B1 p.106 para 9 group 126 'un' ; B1 p.106 para 9 group 179 'un' ; B2 p.113 para 4 group 3 'un'	un		4/4	0	
+662	une	attested		1	1	B2 p.113 para 5 group 75 'une'	une		4/4	0	single attestation
+664	voir	attested		1	1	B1 p.105 para 8 group 25 'voir'	voir		4/4	0	single attestation
+666	vos	attested		2	2	B1 p.107 para 9 group 208 'vos' ; B1 p.108 para 10 group 16 'vos'	vos		4/4	1	
+667	votre	attested		6	5	B1 p.104 para 2 group 1 'votre' ; B1 p.105 para 5 group 29 'votre' ; B1 p.105 para 5 group 41 '(null)' ; B1 p.106 para 9 group 54 'votre' ; B1 p.108 para 10 group 85 'votre' ; B2 p.113 para 3 group 20 'votre'	votre	(null)(1)	4/4	0	conflict
+668	vous	attested		15	14	B1 p.104 para 5 group 19 'vous' ; B1 p.105 para 6 group 3 'vous' ; B1 p.105 para 6 group 13 'vous' ; B1 p.105 para 6 group 26 'vous' ; B1 p.105 para 7 group 14 'vou' ; B1 p.105 para 9 group 17 'vous' ; B1 p.106 para 9 group 111 'vous' ; B1 p.106 para 9 group 140 'vous' ; B1 p.106 para 9 group 145 'vous' ; B1 p.107 para 9 group 215 'vous' ; B1 p.107 para 9 group 219 'vous' ; B1 p.108 para 10 group 48 'vous' ; B1 p.108 para 11 group 11 'vous' ; B1 p.108 para 11 group 16 'vous' ; B2 p.114 para 5 group 101 'vous'	vous	vou(1)	4/4	1	conflict
+669	ur	attested		3	2	B1 p.105 para 5 group 39 'ur' ; B1 p.107 para 9 group 338 'ur' ; B2 p.112 para 0 group 19 'uouvr'	ur	uouvr(1)	3/4	0	conflict
+670	o	attested		2	2	B1 p.104 para 4 group 25 'o' ; B1 p.107 para 9 group 264 'o'	o		1/4	0	
+671	ut	attested		4	4	B2 p.112 para 0 group 86 'ut' ; B2 p.112 para 0 group 94 'ut' ; B2 p.113 para 3 group 7 'ut' ; B2 p.113 para 5 group 69 'ut'	ut		4/4	0	
+674	janvier	inferred	not in the printed letters	0	0					1	months at the end of the table: 675 fevrier (B2 p.112) and 681 aout (B2 p.114) attested
+675	fevrier	attested		1	1	B2 p.112 para 0 group 40 'fevrier'	fevrier		4/4	0	single attestation
+681	aoutilrepond	attested		1	1	B2 p.114 para 5 group 107 'aoutilrepond'	aoutilrepond		3/4	0	single attestation; long value: possibly several groups merged by the aligner
+686	armee	attested		2	2	B1 p.107 para 9 group 239 'armee' ; B1 p.107 para 9 group 249 'armee'	armee		4/4	0	
+690	ingenieurs	attested		1	1	B2 p.112 para 0 group 12 'ingenieurs'	ingenieurs		4/4	0	single attestation; long value: possibly several groups merged by the aligner
+691	officierdartillerie	attested		1	1	B1 p.104 para 1 group 1 'officierdartillerie'	officierdartillerie		4/4	0	single attestation; long value: possibly several groups merged by the aligner
+699	sfriponneries	attested		1	1	B1 p.104 para 4 group 32 'sfriponneries'	sfriponneries		4/4	0	single attestation; long value: possibly several groups merged by the aligner
+18000	18000	attested		1	1	B1 p.104 para 2 group 11 '18000'	18000		4/4	0	single attestation
+24000	24000	attested		1	1	B1 p.104 para 2 group 9 '24000'	24000		3/4	0	single attestation
+42000	42000	attested		1	1	B1 p.104 para 2 group 7 '42000'	42000		2/4	0	single attestation

@@ -21,15 +21,17 @@
     "partial": true
    },
    "length": {
-    "tokens": "unknown",
+    "tokens": 521,
     "unit": "symbols",
-    "measured": false
+    "measured": true,
+    "file": "R9487_cipher_signs.txt",
+    "distinct": 174
    },
    "transcription": {
-    "by": "unknown",
-    "source": "not transcribed sign by sign; DECODE images viewed, decipherment transcribed (claro.md)",
+    "by": "llm from images",
+    "source": "DECODE R9487 images: the cipher blocks of f. 31v (section B, 8 lines) and f. 33r (section C, 5 lines) transcribed sign by sign on 23 Oct 2026 (R9487_cipher_signs.txt); the decipherment of the time transcribed in claro.md",
     "image_quality": "fair",
-    "notes": "About 25 cipher lines on ff. 31r-33r, torn at the right edges."
+    "notes": "About 25 cipher lines on ff. 31r-33r, torn at the right edges; 13 are transcribed (521 tokens: signs and three-letter code groups). The cipher of section A and of the closing paragraph (foot of ff. 31r and 33r, torn and faded) is not transcribed."
    }
   }
  ],
@@ -109,40 +111,47 @@
   {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): linked the transcribed contemporary Claro; no transcription of the ciphertext", "result": "partial"},
   {"date": "2026-10-22", "kind": "verification", "what": "Reading audit, per-document pass (George Lasry's sentence test): claro.md read: A and the closing paragraph build sentences, B and the start of C are torn half-lines. R9487 relabelled decoded, not read; class already solved kept (contemporary decipherment); fraction_read estimated 0.5; the f. 31v cipher with key B noted as a workable gap.", "result": "partial", "technique": ["language-model scoring", "statistical test"]},
   {"date": "2026-10-23", "kind": "transcription", "what": "Re-read b35: DECODE R9487 re-fetched (4 images, no attachment); the f. 31v cipher block (B, 8 lines) and the f. 33r block (C, 5 lines) transcribed sign by sign from the images (R9487_cipher_signs.txt).", "result": "worked", "technique": ["manual reconstruction"]},
-  {"date": "2026-10-23", "kind": "reading", "what": "Decoded both blocks with key B and set them against the Claro: B confirmed where the Claro survives (Narni, maravillar, qualquiera desconcierto, sin obediencia, algunas diuisiones, como conviene a su servicio, del Vasto) and filled in part where it is torn; signs read d = s, q-cross = v/i, +o = y, g = d noted. R9487_reading.md with English; 0.50 plain, 0.682 explicit holes; B and C1 keep unvalued code groups. Kept decoded, not read.", "result": "partial", "technique": ["key matching", "plaintext matching", "contextual inference", "manual reconstruction"]}
+  {"date": "2026-10-23", "kind": "reading", "what": "Decoded both blocks with key B and set them against the Claro: B confirmed where the Claro survives (Narni, maravillar, qualquiera desconcierto, sin obediencia, algunas diuisiones, como conviene a su servicio, del Vasto) and filled in part where it is torn; signs read d = s, q-cross = v/i, +o = y, g = d noted. R9487_reading.md with English; 0.50 plain, 0.682 explicit holes; B and C1 keep unvalued code groups. Kept decoded, not read.", "result": "partial", "technique": ["key matching", "plaintext matching", "contextual inference", "manual reconstruction"]},
+  {"date": "2026-11-14", "kind": "reading", "what": "Second re-read without the image (DECODE R9487 private, no login): the Claro's last sentence aligned group by group with the last two cipher lines of C, giving par = V. Magestad, saf = recebi-, zio = da-, sabe-, pef = todo, pil = vi- (all open on 23 Oct); carried back through B and C with key B's yof = esto, yic = -do and n+ = p, and zed = bien. R9487_reading.md and R9487_en.md rewritten: explicit holes 0.833 (20/24), plain 0.583 (before 0.682, 0.50); 260 of 291 words read as sense. yal read [?exercito] by sense and code order only. Entry and class set to read in part.", "result": "partial", "technique": ["plaintext matching", "key matching", "contextual inference"]}
  ],
  "outcome": {
   "method": "read from existing decipherment",
-  "method_basis": "The court's decipherment ('Claro', sections A-C) is bound as f. 34r of the same letter; spot checks with Soria's 1523 key B from the sibling target soria1523 confirmed it matches the cipher.",
+  "method_basis": "The court's decipherment ('Claro', sections A-C) is bound as f. 34r of the same letter and carries A, the closing paragraph and half-lines of B and C; it is torn in B and C. The torn parts were filled from the intact cipher of f. 31v and f. 33r with Soria's 1523 key B from the sibling target soria1523 (23 Oct 2026), and six more code groups were valued on 14 Nov 2026 by aligning the Claro's last sentence with the cipher. The text in hand reads in part.",
   "contribution": ["sender or date identified"],
-  "class": "already solved",
+  "class": "read in part",
   "verification": [
    "contemporary decipherment"
   ],
-  "notes": "Read at the time; decipherment f. 34r (torn in B/C). DECODE date 1517 corrected to 1527. Catalogue entry 142 removed; no write-up. 22 Oct 2026, reading audit: the Claro reads for section A and the closing paragraph only; decoded, not read. Class already solved kept (read at the time).",
+  "notes": "Read at the time; decipherment f. 34r (torn in B/C). DECODE date 1517 corrected to 1527. Catalogue entry 142 removed; no write-up. 22 Oct 2026, reading audit: the Claro reads for section A and the closing paragraph only; decoded, not read. Class already solved kept (read at the time). 14 Nov 2026: second re-read from the Claro and the 23 Oct sign transcription; the entry reads in part (0.893 of the words), class read in part (was already solved: the court's decipherment is torn, and what is in hand reads in part).",
   "credits": [
     {"who": "contemporary", "role": "key or decipherment used", "note": "court decipherment \"Claro\" bound as f. 34r"}
   ],
   "texts": [
-   {"doc": "R9487", "label": "R9487, 13 Dec 1527: the Claro, f. 34r", "decryption": ["claro.md", "R9487_reading.md"], "summary": "Lope de Soria at Mirandola to Charles V, 13 December 1527: the three thousand ducats paid to the lord of Monaco, Bourbon's jewels pawned at Genoa, the hostages at Rome freed and fled to Narni, and the dukes' talk of a marriage with France.", "note": "Re-read 23 Oct 2026 (b35, R9487_reread_log.md): the intact cipher of B (f. 31v, 8 lines) and C (f. 33r, 5 lines) transcribed sign by sign and decoded with key B; it confirms the Claro's half-lines and fills part of the tear (que si es cierto seria [xad] de inconviniente; algunas diuisiones; alla era arrivado el [?principe] [?de Orange]; no [?devan] de usar de [?sacatamiento] ... contra [par] y hazer matrimonio). R9487_reading.md 0.50 plain, 0.682 explicit holes; B and the start of C still carry several unvalued code groups and polyphonic choices, so kept decoded, not read; blocker no-key-material.", "language": "es", "state": "decoded, not read", "transcription": "R9487_cipher_signs.txt", "translation": "R9487_en.md"}
+   {"doc": "R9487", "label": "R9487, 13 Dec 1527: the cipher passages A, B, C and the closing paragraph", "decryption": ["claro.md", "R9487_reading.md"], "summary": "Lope de Soria at Mirandola to Charles V, 13 December 1527: the three thousand ducats paid to the lord of Monaco, Bourbon's jewels pawned at Genoa, the hostages at Rome freed and fled to Narni, and the dukes' talk of a marriage with France.", "note": "Second re-read 14 Nov 2026 (R9487_reread_log.md): the Claro's last sentence aligned group by group with the last two cipher lines of C gives par = V. Magestad, saf = recebi-, zio = da-, sabe-, pef = todo, pil = vi-; carried back with key B's yof = esto and n+ = p, B and C now build sentences (contra V. Magestad y hazer matrimonio con Francia; V. Magestad lo [?provea] como conbiene a su servicio; el principe [?de Orange]; los dos venian con el [?exercito]; no dexan de usar desacatamiento). Explicit-hole score 0.833 (20/24), plain 0.583; 260 of 291 words read as sense. A and the closing paragraph are the Claro's text (their cipher is torn and not transcribed). No image in this pass (DECODE login): the 23 Oct sign transcription is taken as it stands. Open: groups soc, zu, pib, yod, ync, tal, +ud, one pur; yal is [?exercito] by sense only.", "language": "es", "state": "read in part", "transcription": "R9487_cipher_signs.txt", "translation": "R9487_en.md", "reading_review": {"grade": "A", "by": "Claude (session of 14 Nov 2026)", "date": "2026-11-14", "note": "Read the Spanish and the English as sentences against claro.md and R9487_cipher_signs.txt. A, the end of C and the closing paragraph read through (the Claro's text; three doubtful words of the Claro's hand in A, two in the closing paragraph). B and the start of C build sentences that translate, with holes: 27 bracketed words in 291, and 4 of 24 sentences keep more than one hole in ten words. Rests on the decipherment of the time and on the 23 Oct sign transcription decoded with key B of soria1523; no sign was rechecked on the image in this pass."}, "contemporary": "claro.md", "reading": "R9487_reading.md", "read_share": 0.893}
   ],
-  "fraction_read": 0.5,
-  "fraction_read_method": "estimated",
-  "fraction_read_source": "Reading audit, 22 Oct 2026, estimated from claro.md: section A and the closing paragraph read (about half the lines of the Claro). Re-read b35 (23 Oct 2026): B and C's cipher decoded, the document still decoded, not read; the 0.5 stays an estimate by lines.",
+  "fraction_read": 0.893,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "R9487_reading.md, reading body, counted 14 Nov 2026: 291 words, 31 holes (27 bracketed words; the Claro's doubtful 'obrado otros hazer' and the gap in 'de los y' in A) = 260 of 291 read as sense. By words of the reading, not by cipher tokens: the cipher of A and of the closing paragraph is not transcribed.",
   "gaps": [
    {
-    "item": "code groups of B and C with no value (xad, soc, pur, pib, yod, ync, par, yal, tal, sab, saf, pil, pef)",
+    "item": "code groups of B and C with no value (soc, zu, pib, yod, ync, tal, +ud, pur at B line 7)",
     "blocker": "no-key-material",
-    "detail": "key B (soria1523) lacks them; the decode of f. 31v and f. 33r is in R9487_cipher_signs.txt"
+    "detail": "key B (soria1523) lacks them or gives a value that does not fit (soc = rey); the Claro is torn there"
    },
    {
-    "item": "the first line of C (f. 33r): signs read, sense not reached",
-    "blocker": "no-key-material"
+    "item": "words read by sense or with a sign other than the one transcribed ([?exercito] for yal, [?gran]de, a[?ya], [?puede], [?provea], [?de Orange], [?servidores], [?podria], [?pero])",
+    "blocker": "no-key-material",
+    "detail": "no text gives the groups; the signs need the DECODE R9487 images (login), not available on 14 Nov 2026"
    },
    {
-    "item": "last cipher lines of f. 31r",
+    "item": "doubtful words of the Claro's hand: 'obrado otros hazer mil' and 'de los y de las joyas' in A, 'ronuezino e sprann' in the closing paragraph",
     "blocker": "illegible",
-    "detail": "torn and faded"
+    "detail": "read once from the DECODE image of f. 34r on 21 Sept 2026"
+   },
+   {
+    "item": "last cipher lines of f. 31r and f. 33r (the cipher of A and of the closing paragraph)",
+    "blocker": "illegible",
+    "detail": "torn and faded; read from the Claro only"
    }
   ]
  }

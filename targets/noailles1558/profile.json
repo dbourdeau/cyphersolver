@@ -188,6 +188,18 @@
    ],
    "what": "Statistical validation (docs/_validate.py): 256 tokens, 61 types, fr-1600-letters order 4: reading -2.171 per letter; random keys -4.597 (z 7.0); key annealed onto shuffled ciphertext best -2.356 (mean -2.447, z 4.0); annealer on the real text -2.424. Verdict: pass.",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "verification",
+   "what": "Decrypt audit (research/decrypt_audit): brackx/key_r5.tsv re-applied to brackx/transcription_f60r_f60v.txt and compared line by line with reading.md and brackx/decode_tvd_r5.txt. Audit figure 25 of 71 words departing, 4 of its 5 gaps artefacts (the key row of the sign '#' = i skipped as a comment; the line labels A2 and B2 taken for text). Real: 2 words of the reading differ from the decode without a mark, C5 'ritailles' (decode ritailes) and C3 'viennent' (decode vuiennent); C4 'ny' twice for decoded 'ni'. Elsewhere the reading is the decode letter for letter. No key value missing; no file changed but NOTES and this step.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "verification",
+   "what": "Decrypt audit, repair: reading.md is Brackx's reading and was not marked; its header now says that it is not the unedited output of the key, names brackx/decode_tvd_r5.txt as that output and lists the departures (C3 viennent for decoded vuiennent, C5 ritailles for ritailes, C4 ny for ni). The page sentence quoting block C now gives the key's forms. v2_score hole rate 0.268, unchanged.",
+   "result": "worked"
   }
  ],
  "outcome": {

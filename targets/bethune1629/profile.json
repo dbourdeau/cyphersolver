@@ -103,7 +103,8 @@
     },
     {"date": "2026-10-24", "kind": "verification", "what": "Read bar applied per document (v10): 1 of 1 documents marked read measure under 95% of words read as sense (v2_score explicit holes) and are now read in part; read_share recorded for each.", "result": "partial"},
     {"date": "2026-10-24", "kind": "literature search", "what": "George Lasry's permission of 24 Oct 2026 covers his decryptions on DECODE. Searched the full DECODE record list (10,606 records, fetched 24 Oct 2026 with the project cookie) for this shelfmark (Français 3675 — Louis XIII à Béthune, 30 juin 1629): no record, so DECODE holds no decryption of it; his full text exists only in his BnF cipher research report files. The excerpt state is kept.", "result": "failed"},
-    {"date": "2026-10-24", "kind": "reading", "what": "George Lasry's report PDF (24 Oct 2026) received and extracted to lasry/report/ (summary, key image, excerpt and translation, full Readable text by folio); outcome.texts now points at his full text. Read share 0.954 (whole), 1.0 (deciphered passages); state read in part.", "result": "partial"}
+    {"date": "2026-10-24", "kind": "reading", "what": "George Lasry's report PDF (24 Oct 2026) received and extracted to lasry/report/ (summary, key image, excerpt and translation, full Readable text by folio); outcome.texts now points at his full text. Read share 0.954 (whole), 1.0 (deciphered passages); state read in part.", "result": "partial"},
+    {"date": "2026-11-14", "kind": "verification", "what": "outcome.texts: George Lasry's Readable text by folio from his report PDF of 24 Oct 2026 (lasry/report/readable.md, extracted unedited; attribution in lasry/report/ATTRIBUTION.md) is now listed as the entry's decryption as well as its reading; it was listed only as the reading, so the full-texts check reported no decryption file. No text changed, nothing re-deciphered. His report status: 1/2 pages transcribed; 1 more in part; Partly deciphered. The transcription of the cipher is not in the PDF or the folder (requested from him, research/reading_audit/TRANSCRIPTIONS_WANTED.md); that message stays open.", "result": "partial"}
   ],
   "outcome": {
     "class": "read in part",
@@ -143,6 +144,7 @@
         "doc": "bethune1629",
         "summary": "Louis XIII nominates the Archbishop of Lyon for a cardinal’s hat, citing the services of his brother Richelieu.",
         "note": "George Lasry's report PDF (24 Oct 2026), extracted to lasry/report/ (lasry_pdf_extract.py): his full Readable text by folio is the reading; he gives a translation of the excerpt only (lasry/report/translation_excerpt.md), no full translation. Report status: 1/2 pages transcribed; 1 more in part; Partly deciphered. Measured 24 Oct 2026: whole text 0.954 (v10_relabel.measure, 437 words); deciphered passages alone 1.0 (55 words, 0 unread groups, 0 doubtful words; a bare ? counted as unread). The whole text reaches 0.954, but the report itself calls the letter partly deciphered (11 of 70 sign types unidentified, f53v transcribed in part), and the bar also needs every letter read, so read in part. State: read in part.",
+        "decryption": "lasry/report/readable.md",
         "reading": "lasry/report/readable.md",
         "translation": "lasry/report/translation_excerpt.md",
         "language": "fr",

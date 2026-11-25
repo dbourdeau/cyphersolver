@@ -1,6 +1,8 @@
 # Lanssac to Charles IX, Warsaw, 26 April 1573 — BnF fr. 4735 no. 51, f. 124 — NOTES
 
-**Verdict: read. Every cipher letter of Lanssac's in fr. 4735 is over the read bar, measured per letter (session 3, section 9): f. 124 96 %, to Anjou 24 Apr (ff. 154r-v) 97.5 %, to Catherine 24 Apr (ff. 156r-v) 95.8 %, f. 160 100 %, f. 164 98.1 %, f. 174 100 %; the 65 open tokens are gutter-cut, single signs or one unkeyed word sign. Key: recovered (key.tsv), one word sign open. The 9 May letters ff. 182-189 are in clear.** Both cipher passages of the letter are recovered, 96 of the 100 signs. The key is a homophonic
+**Verdict (16 Nov 2026): read in part.** Counted by cipher words, sure words only (section "Read share over cipher words only"), f. 124 is 22 of 24 (0.917), the letter to Anjou 162 of 171 (0.947), the letter to Catherine 220 of 249 (0.884), and only the May letters ff. 160-174 meet the bar (106 of 108, 0.981). The sign figures below are unchanged.
+
+**Verdict before 16 Nov 2026: read. Every cipher letter of Lanssac's in fr. 4735 is over the read bar, measured per letter in signs (session 3, section 9): f. 124 96 %, to Anjou 24 Apr (ff. 154r-v) 97.5 %, to Catherine 24 Apr (ff. 156r-v) 95.8 %, f. 160 100 %, f. 164 98.1 %, f. 174 100 %; the 65 open tokens are gutter-cut, single signs or one unkeyed word sign. Key: recovered (key.tsv), one word sign open. The 9 May letters ff. 182-189 are in clear.** Both cipher passages of the letter are recovered, 96 of the 100 signs. The key is a homophonic
 letter cipher with two or three signs per common letter, a dozen syllable and word signs (*et, nt, st, de, ou,
 car, Allemagne, pour, ns*), and the Court decipherer's marginal gloss, cut by the gutter on the microfilm, gives
 fragments of both passages. Lanssac writes that, after the dangers French travellers now meet in Germany, the
@@ -237,6 +239,29 @@ Controls: control3.py scores the raw first-value decode of each new letter (no h
 `fr-1600-letters` without spaces: −2.25 (f. 154r), −2.20 (154v), −1.93 (156r), −2.49 (156v, pass 3; −3.00 in pass 1)
 per char, against −4.4 to −4.7 for three shufflings of the same tokens. The hand readings score −1.50 to −1.61 per char with spaces, in the range of real French.
 
+## Read share over cipher words only (16 Nov 2026)
+
+README Conventions (16 Nov 2026): the read share counts the words written in cipher only, sure words only. The
+readings mark the clear: in `reading.txt` (f. 124) the cipher is the two passages in [brackets]; in `read_f154.md` and
+`read_f156.md` the cipher is the `>` blockquotes, with the clear in `[clear: ...]` (and, on f. 156v, in standalone
+brackets); in `read_f160_f174.md` the clear is in brackets. Holes: each unread group `{n signs}`, `{1}`, `{…}` is one
+word (the least the decode shows); a word with a `(?)` or `?`; every word inside braces (on f. 156v the braces hold
+words the gloss supplies over unread signs); a word with a supplied letter or a supplied word (`e[sc]us`, `[par]`,
+`le[s]`, `[so]nt` ...: README, supplied `[word]`s are holes). A stray sign (`{c}` on f. 164) is not a word.
+
+| entry | before (v10, whole letter) | cipher words | sure | share | class |
+|---|---|---|---|---|---|
+| f. 124 | 0.987 | 24 | 22 | **0.917** | read -> **read in part** |
+| ff. 154r-v (to Anjou) | 0.988 | 171 | 162 | **0.947** | read -> **read in part** |
+| ff. 156r-v (to Catherine) | 0.986 | 249 (77 + 172) | 220 (73 + 147) | **0.884** | read -> **read in part** |
+| ff. 160, 164, 174 | 1.0 | 108 (23 + 54 + 31) | 106 | **0.981** | read |
+
+Target: **read -> read in part**. Softer counts, for the record: with the gutter restorations the cut gloss attests
+(`e[sc]us`, `[par]`) as read, ff. 154r-v is 164/171 = 0.959; with the gloss-supplied words in braces as read, ff.
+156r-v is 233/249 = 0.936. The sign counts (2,094 of 2,159 cipher signs give sense, 97.0%) are unchanged; they are a
+token measure, not the read share. A gap line for the doubtful and supplied words is added under Remaining gaps; the
+Escalation steps already cover them (pass 3 re-read every open group at 2x; one microfilm only).
+
 ## Remaining gaps
 
 65 tokens are open over all the cipher pages (61 on ff. 154-174, 4 on f. 124); each was retried at 2x with the extended key and Tomokiyo's table.
@@ -248,6 +273,7 @@ per char, against −4.4 to −4.7 for three shufflings of the same tokens. The 
 - f. 156v (31 tokens in 12 groups: "[cepen]dant" written as d-a-nt only, "le" before roy, "de la[rge]", one sign before "des fortz", one after "ceulx", one after "de", the 6-sign group after "J'estime que", "[ble af]in", "à [Monseigneur]", "[le]urs", and the "de ceste nation [servi]teurs" run) - blocker: illegible; each sits at a gutter-cut line end or under the decipherer's overwriting, and the gloss paraphrases at these points; one microfilm digitisation only (Gallica SRU, 3 Oct 2026), no colour scan.
 - f. 164 l. 4 (1 token: the word sign Mc, subject of "a despendu trente mil escus") - blocker: no-key-material; a nomenclator word sign met once, not in Tomokiyo's table, and the inner-margin gloss beside it is cut by the gutter.
 - f. 164 ll. 1, 8 (3 tokens: a stray *c* between "pour" and "venir"; the two signs of "l[e]" in "il l[e] trouble", which give "li") - blocker: too-short; single signs, the sense is clear but no value fits them.
+- Doubtful and supplied words at the gutter (f. 124 despuis?; f. 154r qui(?), est(?); f. 154v e[sc]us, [par], le[s]; f. 156v querez(?), [so]nt, Ca[r], con[tr]e, l[e], veule[nt Monseigneur]) - blocker: illegible; letters lost in the microfilm gutter or under the decipherer's overwriting, supplied from the sense or the cut gloss; they count as holes since 16 Nov 2026 (not sure words), and with them three of the four entries fall under 95%.
 - f. 124 l. 3 (4 tokens: "ser{o r h e}", probably *service* with a misread sign; session 1) - blocker: illegible; the gloss at this line is cut by the gutter.
 
 ## Escalation

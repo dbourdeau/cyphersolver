@@ -158,6 +158,12 @@
    "kind": "verification",
    "what": "Integration check (13 Nov 2026): CEHM image LXVIII-1.23.3165.1.0001 fetched over plain http (no refusal); runs C01-C03, C06 and C07 compared at full resolution, about 100 groups: every legible group agrees, the open figures are as transcribed (C06 g14 looks like an open 99). Strict share confirmed: 52 of 61 coded words verbatim (85.2%), read in part.",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "verification",
+   "what": "Decrypt audit (research/decrypt_audit): the script flagged 7 of 60 compared words, each a letter c that its decrypt does not give. Cause: an artefact of the script. It skips the lines of the reading file that begin with '>' (the reading proper) and compares the section 'Coded runs', where it takes the run labels C02 to C08 for text: the 7 letters are those 7 labels. With the labels left out the same comparison gives 0 of 53 words. An own decoder from key_frozen.tsv (60 entries; c is 18 and 28) reproduces the eight lines of the decryption file; in the coded-run lines every letter equals the key's value or sits in one of the 10 marks; the capitals of the reading match those lines. No file other than NOTES.md and this profile was changed.",
+   "result": "worked"
   }
  ],
  "outcome": {

@@ -1,0 +1,30 @@
+# Casgrain, Collection des manuscrits du marechal de Levis III (1890), p. 108, footnote (*) to Bougainville's letter
+# of 18 March [1759] (B1). Casgrain says the printed text had nine groups there, "absolument incomprehensibles", and
+# that the editor put seven others in their place "pour avoir un sens raisonnable":
+#
+#   printed in the letter (original):  9  425*  449  38  661  306  618  3  43
+#   editor's substitute:               312 255  467  648  23  502  618   = de bon ne vo l on te ("de bonne volonte")
+#
+# Place in the text (clear lines of p. 108): "M. Mole a la consideration de sa place, montre beaucoup [de bonne
+# volonte] pour vous".
+#
+# The nine original groups, decoded with code B (key/code_B_table.tsv). None of them is the p. 108 slot itself: the
+# slot holds the editor's substitute in letters/B1.tr, so these counts are independent of it.
+#
+#   group  value  printed in B1/B2  aligned with this value  other values the solver aligned there
+#   9      d      4                 3                        dcr (1)
+#   425*   in     7                 7
+#   449    mi     5                 5
+#   38     s      15                13                       z (1), null (1)
+#   661    un     5                 5
+#   306    cou    2                 2
+#   618    te     15                15
+#   3      a      15                15
+#   43     u      3                 2                        houetteco (1)
+#
+# Decode: d in mi s | un cou te a u  ->  "...d inmis un couteau"
+#
+# This is a decode, not an emendation of Casgrain's text: "un couteau" comes out clean, "d inmis" does not form a word
+# (a slip for "d'amis" or "d'ennemis" can be imagined, but nothing shows it), and the sentence does not make sense
+# with these words in the slot. What the figures do show is that the nine groups are well-attested code B values, not
+# a misprint of the editor's seven, and that they do not give "de bonne volonte".

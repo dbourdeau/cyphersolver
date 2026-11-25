@@ -310,6 +310,38 @@
    }
   },
   {
+   "id": "ph1552oct",
+   "read": "not read",
+   "shelfmark": "Biblioteca Estense Universitaria, Modena, Autografoteca Campori, Lettera F, Felipe II, rey de España, sfasc. I, cc. 32-34",
+   "date": "6 Oct 1552",
+   "year": 1552,
+   "country": "Spain",
+   "route": "Monzón -> Milan",
+   "places": {
+    "from": "Monzón",
+    "to": "Milan"
+   },
+   "language": "Spanish",
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "separate folio"
+    ],
+    "source": "Spanish clear witness on c. 33r–v. Its final paragraph repeats the dated introduction on c. 32v and continues the ciphered passage.",
+    "partial": true
+   },
+   "length": {
+    "tokens": "unknown",
+    "unit": "symbols"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Biblioteca Estense Universitaria, digital IIIF images",
+    "image_quality": "good",
+    "notes": "Cipher not transcribed in full. Two independent readers transcribed c. 33r–v. Samples from the cipher on 32v and 34r have separate sign readings."
+   }
+  },
+  {
    "id": "ph1553",
    "read": "not read",
    "shelfmark": "Biblioteca Estense Universitaria, Modena, Autografoteca Campori, Lettera F, Felipe II, rey de España, sfasc. I, cc. 35-40",
@@ -326,9 +358,10 @@
    "cleartext_in_document": "separate passages",
    "plaintext": {
     "location": [
-     "none"
+     "separate folio"
     ],
-    "source": "A contemporary Italian summary of topics on c. 36, no decipherment."
+    "source": "Spanish companion on cc. 37r–38r corresponds in order to six cipher passages, starting with pay in Piedmont. Its status as draft, extract or decipherment is open. C. 36r carries a separate Italian list of topics.",
+    "partial": true
    },
    "length": {
     "tokens": 1445,
@@ -481,7 +514,7 @@
  "conditions": {
   "prior_solution": {
    "exists": "partial",
-   "where": "Contemporary: slip c.29 (13 May), c.77 (23 Dec), the clerk's margin notes on c.64v (20 Nov) and c.50r (30 Sep). No decipherment of the 14 Nov letter was found. Bertomeu Masia 2009 studies the Parma and Piacenza cipher correspondence and was not seen; it may print some of these letters. WAINUT's search (3 Nov 2026): Calendar of State Papers Spain IX and Venice V and the Treccani DBI do not print the 14 Nov letter; Corpus documental de Carlos V vol. III, Druffel and the Simancas minutes not opened.",
+   "where": "Contemporary: slip c.29 (13 May), c.77 (23 Dec), the clerk's margin notes on c.64v (20 Nov) and c.50r (30 Sep). No decipherment of the 14 Nov letter was found. Bertomeu Masia 2009 studies the Parma and Piacenza cipher correspondence and was not seen; it may print some of these letters. WAINUT's search (3 Nov 2026): Calendar of State Papers Spain IX and Venice V and the Treccani DBI do not print the 14 Nov letter; Corpus documental de Carlos V vol. III, Druffel and the Simancas minutes not opened. Philip's dispatches (Andrew Beling, PR #828, 19-20 Nov 2026): Spanish sheets beside the cipher on c. 33r-v (6 Oct 1552) and cc. 37r-38r (14 Mar 1553); whether each is a draft, a decipherment or a copy is open.",
    "found": "before attempt",
    "used": true
   },
@@ -504,11 +537,12 @@
   ],
   "models": [
    "claude-sonnet-5-5",
-   "claude-opus-5-5"
+   "claude-opus-5-5",
+   "OpenAI Codex (GPT-6, Beling review and replay; individual reader model IDs unrecorded)"
   ],
   "sessions": "unknown",
   "first_date": "2026-11-02",
-  "last_date": "2026-11-14"
+  "last_date": "2026-11-20"
  },
  "solution": [
   {
@@ -949,6 +983,54 @@
    "kind": "sibling key",
    "what": "Fold (owner's decision on issue #618): targets/ferrante1549 moved to targets/gonzaga1549/wainut/ as filed, its NOTES and profile kept as NOTES_ferrante1549.md and profile_ferrante1549.json. Prince Philip's letters (catalogue 1561) become documents of this entry. One key, one entry; vargas1552 stays separate.",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-18",
+   "kind": "verification",
+   "what": "Contributed (beling_nov1549/, PR #833): value-blind AI readers compared native crops of the disputed signs of 14 Nov 1549 with reference specimens. Eleven of the 23 differences between the two readings have a proposal: apuntar; de at A11.21; no at A13.13, A14.6, A15.19 and B27.21; pretiende; nonbre; dezis; segura; procurar. Twelve stay open. Proposals only: no reading file, key or count is changed.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-18",
+   "kind": "verification",
+   "what": "Three tests for the places left open, all missed (beling_nov1549/): the two crosses of Figueroa's 1547 letter against its clear copy, 0 anchored; 44 masked crosses in five Figueroa letters of 1553 against 509 words of clear text, no tt or ct word; a nearest-shape test of the first sign of c. 60v line 22 against 26 specimens (24 of 26 references right, best control 20, thresholds missed).",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-19",
+   "kind": "transcription",
+   "what": "Independent readings of both sides of the October 1552 Spanish sheet agreed on 295/308 positions. Its repeated 6 August introduction identifies a clear witness. Two readings of the March 1553 Spanish on cc. 37r–38r and six ordered matches connect it to the original.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-19",
+   "kind": "verification",
+   "what": "March opening sign test missed. The March fitted changes lowered held-out edits from 621 to 487 (489 with the second reader) over 865 letters, beating both controls. Transfer to two other dispatches missed, 356 to 380 edits. No new strict cipher words.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-19",
+   "kind": "verification",
+   "what": "October titles quod and dide agreed; saa remained tentative. External title control had zero eligible pairs, and the May test passed only two of three required literal types.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-20",
+   "kind": "verification",
+   "what": "October 32v line 1: 0/2, first reading began 53 seconds before the freeze record. Lines 2–3: 19/46 usable, score 14, nine higher and one tied. Last row of 34r: three of nine groups agreed with certainty, all thresholds missed.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-20",
+   "kind": "verification",
+   "what": "Larger 32v images: lines 2–3 scored 14 (10 higher, four tied), fourth line five (one higher, eight tied), lines 5–6 scored 13 (31 higher, 12 tied). Each missed against 1,000 controls.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-20",
+   "kind": "verification",
+   "what": "October 34r lines 2–3: 30/51 usable signs, 15 matching letters in two ordered fragments, highest score 10 in 1,000 controls. The witness supplies word boundaries. No new free-standing cipher word or key value.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -1004,7 +1086,7 @@
    {
     "item": "14 Nov 1549: 23 differences between sure words of the two readings stay open (Ottavio / Octauio and remittimos / remictimos, one sign tt or ct; de / no at five places; hallarse / hallarnos; procurar / de curar; apuntar / apontar, pretende / pretiende, dezes / dezis, seguro / segura), and the systematic table differences (R ra / gra outside gratificacion, N p / pl, f / ff)",
     "blocker": "not-attempted",
-    "detail": "each is one sign on the Estense images, which are open; comparison_14nov1549.tsv lists the places"
+    "detail": "each is one sign on the Estense images, which are open; comparison_14nov1549.tsv lists the places. Eleven of the 23 have a proposal from image comparisons in beling_nov1549/NOTES.md (Andrew Beling with AI agents, PR #833), not applied; hallarse / hallarnos and the eleven tt / ct places have none."
    },
    {
     "item": "14 Nov 1549: the project's reading has 129 tokens of sign values that do not form words (c.60v lines 7-8 and 23-27, c.61r L4-5 and L16-18, c.61v L18 and others); WAINUT's reading gives words at most of them (sure at 36 word places where the project's is not), not yet checked sign by sign against the project's sign files",
@@ -1032,12 +1114,12 @@
    {
     "item": "Philip 25 Jun 1546, 14 Mar 1553 and the letter catalogued 16 Jun 1563: decoded from one rough blind pass, not read",
     "blocker": "not-attempted",
-    "detail": "need a pass in a named sign set"
+    "detail": "need a pass in a named sign set; the 14 March 1553 Spanish sheet on cc. 37r–38r supplies six reference passages for a sign-by-sign check"
    },
    {
-    "item": "Philip, sfasc. I cc. 15-17 (cipher c. 15r, clear slip c. 17r) and cc. 32-34 (Monzon, 6 Oct 1552, cipher only): not transcribed",
+    "item": "Philip, sfasc. I cc. 15-17 (cipher c. 15r, clear slip c. 17r) and cc. 32-34 (Monzon, 6 Oct 1552): full cipher transcriptions open",
     "blocker": "not-attempted",
-    "detail": "pointed out by Brice Dudout (issue #615); the first is a third pair for the key or a second held-out test"
+    "detail": "pointed out by Brice Dudout (issue #615); the first is a third pair for the key or a second held-out test. The October clear sheet on c. 33 and sampled cipher signs are in beling_october1552."
    },
    {
     "item": "Prior art: Bertomeu Masia 2009, Corpus documental de Carlos V vol. III, Druffel, the Simancas minutes (Estado 1196)",
@@ -1060,7 +1142,8 @@
    "sign_table.tsv",
    "sign_values.tsv",
    "wainut/key.tsv",
-   "wainut/key_frozen_1547.tsv"
+   "wainut/key_frozen_1547.tsv",
+   "../figueroa1534/validation/K4.tsv"
   ],
   "credits": [
    {
@@ -1121,6 +1204,26 @@
     "date": "2026-11-14",
     "source": "https://github.com/dbourdeau/cyphersolver/issues/615",
     "published": true
+   },
+   {
+    "who": "ajbeling",
+    "role": "identification",
+    "note": "With AI agents, identified c. 33r–v as the clear witness for Philip’s 6 October 1552 dispatch by matching the reference to Figueroa’s letters of 6 August at the change to cipher on c. 32v. Also identified cc. 37r–38r as the Spanish companion to six passages in the 14 March 1553 dispatch. The AI tool used for this contribution is recorded under conditions.models.",
+    "date": "2026-11-19",
+    "source": "https://edl-jarvis.cultura.gov.it/meta/iiif/897e61b7-4957-4f07-b4d2-debae54659a1/manifest"
+   },
+   {
+    "who": "dudout",
+    "role": "key or decipherment used",
+    "note": "Composite key K4 (targets/figueroa1534/validation/K4.tsv) used for the sample decodes of Philip's dispatch of 6 Oct 1552 (beling_october1552)",
+    "date": "2026-11-20"
+   },
+   {
+    "who": "ajbeling",
+    "role": "verification",
+    "note": "With AI agents, compared the disputed signs of the 14 Nov 1549 letter on the Estense images and proposed a reading at eleven of the 23 places where the two readings differ (beling_nov1549/); proposals, not applied.",
+    "date": "2026-11-18",
+    "source": "https://github.com/dbourdeau/cyphersolver/pull/833"
    }
   ],
   "texts": [
@@ -1361,6 +1464,16 @@
     "language": "es",
     "state": "decoded, not read",
     "summary": "Transcription jobs, not breaks, and not yet editions. 30 Sep: a French plot on Nice. 20 Nov: after the news of Paul III's death, no move on Parma and no war on the Church."
+   },
+   {
+    "doc": "ph1552oct",
+    "label": "Philip to Ferrante Gonzaga, 6 October 1552, cc. 32–34: sample from c. 34r, lines 2–3",
+    "transcription": "beling_october1552/continuation34/34r/positions.tsv",
+    "decryption": "beling_october1552/34r_sample.txt",
+    "contemporary": "beling_october1552/consensus.txt",
+    "language": "es",
+    "state": "decoded, not read",
+    "summary": "Philip asks about Siena, the duke’s negotiations and the relief the prince could provide. The accompanying Spanish sheet survives on c. 33. The cipher sample covers only two lines on c. 34r. It is decoded with Brice Dudout’s composite key K4 (../figueroa1534/validation/K4.tsv) through beling_october1552/shape_index.tsv and the aliases of continuation34, not with the 1549 tables of this entry. The Spanish sheet is shown as the text of the time; whether it is a draft, a decipherment or a copy is open."
    }
   ],
   "parts": [

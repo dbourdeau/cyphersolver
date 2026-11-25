@@ -373,6 +373,12 @@
    "kind": "literature search",
    "what": "Doglio, the Reggio inventory, the 1843 Memorie and Raviola 2014 identified but not opened.",
    "result": "partial"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "verification",
+   "what": "Decrypt audit (research/decrypt_audit): 116 of 719 words flagged in six texts. Cause found in the audit script, not the records: the key row for p has the sign code '#', which the audit parser skips as a comment line; line labels were tokenised as signs on two texts; clear words inside cipher lines counted as reading-only. Own check: key.tsv with all 20 rows reproduces the eight decryption files letter for letter, and every letter of the eight readings that the signs do not give is inside square brackets (23 places). No file of the key, transcriptions or readings changed.",
+   "result": "worked"
   }
  ],
  "outcome": {

@@ -98,13 +98,23 @@
    "date": "2026-09-22"
   },
   {
-   "kind": "solver", "technique": ["simulated annealing", "frequency analysis", "language-model scoring"],
+   "kind": "solver",
+   "technique": [
+    "simulated annealing",
+    "frequency analysis",
+    "language-model scoring"
+   ],
    "what": "Many-to-one annealing on de-1500s without word spaces: letter-frequency noise only.",
    "result": "failed",
    "date": "2026-09-22"
   },
   {
-   "kind": "crib", "technique": ["crib testing", "EM alignment", "plaintext matching"],
+   "kind": "crib",
+   "technique": [
+    "crib testing",
+    "EM alignment",
+    "plaintext matching"
+   ],
    "what": "EM alignment of gloss 'das kann dieses orths selber observiren' to cipher line 3; inconsistent mappings.",
    "result": "failed",
    "date": "2026-09-22"
@@ -122,13 +132,20 @@
    "date": "2026-09-22"
   },
   {
-   "kind": "solver", "technique": ["simulated annealing"],
+   "kind": "solver",
+   "technique": [
+    "simulated annealing"
+   ],
    "what": "Annealing with word spaces, '12' as one unit, seeded und/under; produced 'entschuldigt', 'damit ich', 'underthenigst'.",
    "result": "worked",
    "date": "2026-09-22"
   },
   {
-   "kind": "hypothesis", "technique": ["plaintext matching", "contextual inference"],
+   "kind": "hypothesis",
+   "technique": [
+    "plaintext matching",
+    "contextual inference"
+   ],
    "what": "Fixed 5=a, q=m, D=l, 2=s, X=b by context; then M=w, 8=o from the gloss.",
    "result": "worked",
    "date": "2026-09-22"
@@ -157,42 +174,185 @@
    "result": "worked",
    "date": "2026-09-30"
   },
-  {"date": "2026-10-11", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 524 tokens, 21 types, de-1640s order 4: reading -2.212 per letter; random keys -5.481 (z 5.6); key annealed onto shuffled ciphertext best -3.479 (mean -3.55, z 31.6); annealer on the real text -2.179. Verdict: pass.", "result": "worked"},
-  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): cipher_tokens.txt and the sign-by-sign reading_tokens.txt; the normalised reading and the key table copied from NOTES.md to texts/R4500_decryption.md and texts/key.md.", "result": "worked"},
-  {"date": "2026-10-22", "kind": "verification", "what": "Reading audit (George Lasry's sentence test, 22 Oct 2026): reading_tokens.txt and the normalised reading read through. Lines 8-14 build one clean German sentence (kept read, reviewed B); lines 1-7 are garbled or conjecture in brackets and were split into a second entry, decoded, not read. Class read -> read in part; fraction_read 0.974 (signs with a value) -> 0.52.", "result": "failed", "technique": ["language-model scoring", "statistical test"]},
-  {"date": "2026-10-23", "kind": "verification", "technique": ["plaintext matching"], "what": "Lines 1-7: DECODE R4500 record and image re-opened (no attachment, no DOC text); the contemporary gloss of ll. 1-4 re-read at 2x on native crops and aligned with reading_tokens.txt: matches at 'dieses orts halber', 'dagegen denselben', 'etwas tentiert werden solte', 'zumahl nicht unbewandt'; not at 'insonderheit' (l. 2) or 'observiren' (l. 3). No label or key value changed.", "result": "partial"},
-  {"date": "2026-10-23", "kind": "reading", "technique": ["manual reconstruction"], "what": "Partial reading of cipher lines 1-7 written (texts/R4500_l01-07_reading.md, log R4500_l01-07_reread_log.md), aligned word by word with the decode; ll. 4-7 build a clause ('gebührender manutenirung der Keiserm. Mait. und des Reichs'), ll. 1-3 do not. b17_score.py (de): 0.00 (0/5), explicit holes 0.20 (1/5). Kept decoded, not read; blocker illegible.", "result": "failed"}
+  {
+   "date": "2026-10-11",
+   "kind": "verification",
+   "technique": [
+    "statistical test",
+    "language-model scoring"
+   ],
+   "what": "Statistical validation (docs/_validate.py): 524 tokens, 21 types, de-1640s order 4: reading -2.212 per letter; random keys -5.481 (z 5.6); key annealed onto shuffled ciphertext best -3.479 (mean -3.55, z 31.6); annealer on the real text -2.179. Verdict: pass.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): cipher_tokens.txt and the sign-by-sign reading_tokens.txt; the normalised reading and the key table copied from NOTES.md to texts/R4500_decryption.md and texts/key.md.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Reading audit (George Lasry's sentence test, 22 Oct 2026): reading_tokens.txt and the normalised reading read through. Lines 8-14 build one clean German sentence (kept read, reviewed B); lines 1-7 are garbled or conjecture in brackets and were split into a second entry, decoded, not read. Class read -> read in part; fraction_read 0.974 (signs with a value) -> 0.52.",
+   "result": "failed",
+   "technique": [
+    "language-model scoring",
+    "statistical test"
+   ]
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "verification",
+   "technique": [
+    "plaintext matching"
+   ],
+   "what": "Lines 1-7: DECODE R4500 record and image re-opened (no attachment, no DOC text); the contemporary gloss of ll. 1-4 re-read at 2x on native crops and aligned with reading_tokens.txt: matches at 'dieses orts halber', 'dagegen denselben', 'etwas tentiert werden solte', 'zumahl nicht unbewandt'; not at 'insonderheit' (l. 2) or 'observiren' (l. 3). No label or key value changed.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "reading",
+   "technique": [
+    "manual reconstruction"
+   ],
+   "what": "Partial reading of cipher lines 1-7 written (texts/R4500_l01-07_reading.md, log R4500_l01-07_reread_log.md), aligned word by word with the decode; ll. 4-7 build a clause ('gebührender manutenirung der Keiserm. Mait. und des Reichs'), ll. 1-3 do not. b17_score.py (de): 0.00 (0/5), explicit holes 0.20 (1/5). Kept decoded, not read; blocker illegible.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-20",
+   "kind": "transcription",
+   "technique": [
+    "other"
+   ],
+   "what": "CTTS pipeline: page image cut into 14 line bands by research/ctts/segment_lines.py (line centres given by hand: the interlinear gloss over ll. 1-4 defeated prep_pages.py, which found 2 lines, and segment_dense.py, which merged gloss and cipher lines); 633 candidate boxes from ink blobs.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-20",
+   "kind": "transcription",
+   "technique": [
+    "other"
+   ],
+   "what": "Blind first pass by a fresh Fable 5.2 agent from the bands, overlays and a notation sheet only (no cipher_tokens.txt, key, decode or gloss): 633 boxes labelled, 571 signs in boxes, 15 missed, 40 split, 41 part, 51 clear text, 14 junk, notes on every doubt.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-20",
+   "kind": "transcription",
+   "technique": [
+    "manual reconstruction"
+   ],
+   "what": "Correction in CTTS 3.7.0 by Claude Opus 5.5 through computer use (user watching): first-pass flags applied (apply_flags.py, 640 boxes), every line read on enlarged overlay-free strips and 17 doubtful places on 3x crops, then ~30 type moves, 3 renames, 7 deleted duplicate/punctuation boxes, 1 merge, 2 boxes redrawn; 582 signs. 17:17-17:49 in all. Two misses of the first correction pass (l. 6 q for an angular 4, a split box out of order in l. 4) were found by the comparison below and fixed in CTTS.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-20",
+   "kind": "verification",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "Scoring (sequence alignment): first pass raw 17.7% sign error against the final CTTS project, 5.7% with its own notes applied, 3.1% with ?x read as x; final CTTS against cipher_tokens.txt 3.0% (565/576 match, S11 I6; marks not counted). 17 differences, each checked on the image (texts/R4500_ctts_test.md).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-20",
+   "kind": "reading",
+   "technique": [
+    "manual reconstruction"
+   ],
+   "what": "Decode of the CTTS tokens with the target key: new from the signs 'werden' (l. 4), 'bei diesen conjuncturn gelegen' (l. 7, theta for crossed t), 'die' (l. 1), 'ihr' (l. 2), 'Baiern' (l. 10 burn hole), 'sein' (l. 12). Lines 4-7 build a clause; lines 1-3 still do not.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-20",
+   "kind": "statistics",
+   "technique": [
+    "language-model scoring"
+   ],
+   "what": "Key test on the CTTS tokens (de-1500s, order 5, no spaces), each value varied with the rest fixed: base values 9=u, T=c, F=s, q=m, M=w, j=d stay best; marked signs take new values: 9 with bow b/w (-2.377/-2.368 vs u -2.437), 0 with dots or bow z, triangle with bar ll, long s with two crosses ss; all five together -2.316. Lines 8-14 -2.130 -> -1.979, ll. 4-7 -2.382 -> -2.248, ll. 1-3 unchanged (-3.115).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-20",
+   "kind": "hypothesis",
+   "technique": [
+    "language-model scoring"
+   ],
+   "what": "Lines 1-3: the CTTS readings at the two theta/d-shaped-s places of l. 2 (T->?F after 6 0 0 8, F->T after 6 0 1) score worse than the old readings (-3.115 vs -2.691 for ll. 1-3; -2.861 with T restored at the first). No reading of ll. 1-3 found; both places stay doubtful.",
+   "result": "failed"
+  }
  ],
- "outcome": {"validation": {"date": "2026-10-11", "model": "de-1640s", "file": "validation.tsv", "tokens": 524, "types": 21, "tokens_per_type": 24.95, "score": -2.212, "nulls": {"random keys": {"n": 200, "mean": -5.481, "sd": 0.58, "max": -4.351, "z": 5.6, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -3.55, "sd": 0.042, "max": -3.479, "z": 31.6, "p": 0.1429}}, "power": -2.179, "verdict": "pass", "notes": "claimed per-occurrence score -2.204; polyphony 0.002; 14 unread tokens left out; annealer on the real text from random keys reached -2.179"}, 
+ "outcome": {
+  "validation": {
+   "date": "2026-10-11",
+   "model": "de-1640s",
+   "file": "validation.tsv",
+   "tokens": 524,
+   "types": 21,
+   "tokens_per_type": 24.95,
+   "score": -2.212,
+   "nulls": {
+    "random keys": {
+     "n": 200,
+     "mean": -5.481,
+     "sd": 0.58,
+     "max": -4.351,
+     "z": 5.6,
+     "p": 0.005
+    },
+    "shuffled refit": {
+     "n": 6,
+     "mean": -3.55,
+     "sd": 0.042,
+     "max": -3.479,
+     "z": 31.6,
+     "p": 0.1429
+    }
+   },
+   "power": -2.179,
+   "verdict": "pass",
+   "notes": "claimed per-occurrence score -2.204; polyphony 0.002; 14 unread tokens left out; annealer on the real text from random keys reached -2.179"
+  },
   "method": "key recovered from ciphertext-only",
   "method_basis": "The substitution was rebuilt by homophonic annealing against a 1500s German model, seeded with repeated 'und'/'under' patterns; the contemporary interlinear gloss on cipher lines 1-4 of R4500 served as the control and fixed two values (M = w, 8 = o).",
-  "contribution": ["transcription", "key recovered"],
+  "contribution": [
+   "transcription",
+   "key recovered"
+  ],
   "class": "read in part",
   "key": "recovered",
   "fraction_read": 0.52,
   "fraction_read_method": "measured",
   "fraction_read_source": "Reading audit 22 Oct 2026: signs in the cipher lines that read as sentences, ll. 8-14 = 280 of 538 (reading_tokens.txt); ll. 1-7 (258) are decoded, not read. Withdrawn as a reading figure: 0.974 = reading_tokens.txt: 538 cipher signs (12 joined = one), 14 marked ? unread.",
-  "verification": ["contemporary decipherment", "historical consistency", "statistical test"],
+  "verification": [
+   "contemporary decipherment",
+   "historical consistency",
+   "statistical test"
+  ],
   "gaps": [
    {
     "item": "end of cipher line 1 (~9 signs)",
     "blocker": "illegible",
-    "detail": "cramped under a faded gloss on the only scan"
-   },
-   {
-    "item": "single signs in line 7",
-    "blocker": "illegible",
-    "detail": "blotted"
+    "detail": "cramped under a faded gloss on the only scan; CTTS 20 Nov 2026 reads all nine signs (one doubtful) but the decode does not build"
    },
    {
     "item": "cipher lines 2-3 (decoded, not read)",
     "blocker": "illegible",
     "detail": "the contemporary gloss, the only control, is faded and cramped and does not align with the signs at insonderheit/observiren; re-read 23 Oct 2026"
+   },
+   {
+    "item": "two signs of cipher line 2 (theta vs d-shaped s)",
+    "blocker": "illegible",
+    "detail": "written alike in this hand; the CTTS re-transcription and cipher_tokens.txt disagree and the LM prefers the older readings (20 Nov 2026)"
    }
   ],
   "notes": "Report to Hesse-Kassel from a fortress: its needs ('die notturft dieser Vestung') set out to the Emperor and the Elector of Bavaria; writer asks to be held excused.",
   "credits": [
-    {"who": "contemporary", "role": "key or decipherment used", "note": "interlinear gloss on cipher lines 1-4 used as control; fixed two values"}
+   {
+    "who": "contemporary",
+    "role": "key or decipherment used",
+    "note": "interlinear gloss on cipher lines 1-4 used as control; fixed two values"
+   }
   ],
   "texts": [
    {
@@ -225,7 +385,7 @@
     ],
     "language": "de",
     "state": "decoded, not read",
-    "note": "Re-read 23 Oct 2026 (b30), still decoded, not read: the one DECODE image and the record re-opened (no attachment or decipherment), the volume's 126 records already searched for a key or clear copy (none); the interlinear gloss of ll. 1-4 re-read on native crops: it matches the signs at 'dieses orts halber', 'dagegen denselben', 'etwas tentiert werden solte', 'zumahl nicht unbewandt' but not at 'insonderheit' or 'observiren', and is faded and cramped. Partial reading texts/R4500_l01-07_reading.md (ll. 4-7 build a clause; ll. 1-3 do not): 0.00 clean sentences (0/5), explicit holes 0.20. Blocker: illegible (end of l. 1, l. 7 blots, the l. 2-3 gloss on the only scan)."
+    "note": "Re-read 23 Oct 2026 (b30), still decoded, not read: the one DECODE image and the record re-opened (no attachment or decipherment), the volume's 126 records already searched for a key or clear copy (none); the interlinear gloss of ll. 1-4 re-read on native crops: it matches the signs at 'dieses orts halber', 'dagegen denselben', 'etwas tentiert werden solte', 'zumahl nicht unbewandt' but not at 'insonderheit' or 'observiren', and is faded and cramped. Partial reading texts/R4500_l01-07_reading.md (ll. 4-7 build a clause; ll. 1-3 do not): 0.00 clean sentences (0/5), explicit holes 0.20. Blocker: illegible (end of l. 1, l. 7 blots, the l. 2-3 gloss on the only scan). Revised 20 Nov 2026 on the CTTS re-transcription (texts/R4500_ctts_tokens.txt, texts/R4500_ctts_test.md): ll. 4-7 build a clause with six supplied letters ('… etwas tentiert werden solte, zumahl nicht unbewandt … bei diesen conjuncturn gelegen'); ll. 1-3 still do not; reader review pending."
    }
   ],
   "key_file": "texts/key.md"

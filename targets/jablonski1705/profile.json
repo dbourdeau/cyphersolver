@@ -197,6 +197,18 @@
    ],
    "what": "Integration check (Daniel Bourdeau's session, PR #385): frozen/scripts/measure.py re-run on frozen/03_KEY.json, frozen/04_TRANSCRIPTION.txt and frozen/06_CLEAR.txt; SHA-256 of every frozen file recomputed against frozen/HASHES.txt. Confirmed: accuracy 0.9296 (958 decoded / 952 reference letters), best of 200 shuffled keys 0.2468, mean 0.1975, PASS; all seven hashes match.",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "verification",
+   "what": "Decrypt audit (research/decrypt_audit): key.tsv applied to transcription.txt and compared with reading.md, 30 of 172 compared words depart, none in brackets. Checked word by word against decryption.txt: 24 words are in italics by the file's stated convention (7 with a hole, 17 decode slips, the draft's Latin followed); 6 words carry letters the decode does not give with no mark: Caesaris, Caesar twice (225, which pairs.tsv has under Caesar in 5 of 13 places, key.tsv holds 'imperator' only), Dn. (no group), Gallos (232.46 decodes galliam) and quae (decode que). Comment lines added to key.tsv recording the second value of 225; no value changed (frozen key), figure after unchanged.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "verification",
+   "what": "Decrypt audit, repair: the 6 words that departed from the decode with no mark (Dn., Gallos, Caesaris, Caesar twice, quae) put in italics in reading.md, the file's own mark; closing lines corrected (30 italic words, not 24); no letter changed. docs/jablonski1705.html: the same words italicised in the quoted passage and the sentence counting the italic words corrected. v2_score (la): hole rate 0.035 before, 0.041 after.",
+   "result": "worked"
   }
  ],
  "outcome": {

@@ -312,6 +312,12 @@
    "kind": "verification",
    "what": "1792 (ZbPop 416 / 415), No 95 of 17 Feb: opening groups do not fit the 1790 values (951 at 'Z czytania', 1570 without WKMci).",
    "result": "failed"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "transcription",
+   "what": "Full-texts audit: outcome.texts added. transcription_sample.md held the sample cipher lines and the opening words of the decipherments together; split into sample_cipher.txt (code groups, copied unchanged) and sample_decipherments.md (the Polish openings, copied unchanged, with an English version added), listed as one not-prose entry covering the five volumes. No despatch is transcribed in full.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -342,6 +348,19 @@
     "date": "2025",
     "source": "D. Rolnik, Rocznik Filozoficzny Ignatianum 31/3 (2025)",
     "published": true
+   }
+  ],
+  "texts": [
+   {
+    "doc": ["ZbPop4", "ZbPop17", "ZbPop5", "ZbPop428", "ZbPop416"],
+    "label": "Pairing samples: opening cipher lines of seven despatches (1788-1792) and the opening words of the cabinet decipherments set against them",
+    "transcription": "sample_cipher.txt",
+    "decryption": "sample_decipherments.md",
+    "contemporary": "sample_decipherments.md",
+    "language": "pl",
+    "state": "not prose",
+    "summary": "Samples only. Openings of the decipherments: 2 Jan 1790, the Vice-Chancellor asks what Deboli knows of Berlin's proposal of alliance to Poland; 9 Feb 1790, on the King's regard for the Empress after a paper that appeared in Warsaw; 6 Jan 1789, Russia asks Spain to obtain Bulgakov's release from the Porte; 7 Jan 1791, no letters by yesterday's post.",
+    "note": "A pairing worksheet, not the texts of the despatches: three to six opening lines of code groups from one or two despatches per volume, and the first sentence or two of the Polish decipherment of the same date (ZbPop 417, 419, 420, 421, 415), typed to test that the Polish texts are the decipherments. Split on 14 Nov 2026 from transcription_sample.md, which held both; an English version of each opening is added. No despatch is transcribed in full, cipher or decipherment: the reading of these volumes is the cabinet's decipherment on the AGAD scans (pairs.tsv lists the 1790 pairs with image links). The 11 Jan 1788 (older code) and 1792 samples are not shown to match their Polish texts."
    }
   ]
  }

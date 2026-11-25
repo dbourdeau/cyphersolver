@@ -250,6 +250,26 @@ Comenius was found in the two editions.
 rebuilt from it and identified with the printed MHH XXIII p. 740 table, one letter in conflict. The 24 May passage:
 attempted, not deciphered. Written up as "read from existing decipherment", extent partial.
 
+## Read share over cipher words only (16 Nov 2026)
+
+README Conventions now count the read share over the words written in cipher only. Document A, 4 Aug 1655:
+
+- Old 0.95 -> new **0.833** (5 of 6 cipher words). **Read -> read in part** for document A. The recorded 0.95 was
+  19 of 20 words of the whole letter passage with the clear text around the cipher (whole letter, clear included, not
+  the measure).
+- Separation: the cipher is the sentence after the signature, where `ct_1655-08-04.txt` shows "Nihil certius quam" and
+  "et" in clear and the rest in cipher (Cyhyqbma cgzbbttg, CmCasda, 69, 655 m), plus the word (iyy) of the second
+  sentence. The five words of the first sentence are read (Poloniam periisse papatum in illa); (iyy) is the one hole.
+  The reading file now marks the cipher words in bold (`cipher_markup: **` in profile.json); this is a change of
+  markup only, not of the reading. If papatum is also counted as not sure (the key gives papmtum at one letter), the
+  figure is 4 of 6 (0.667).
+  Counting the clear-Latin word (iyy) as a cipher word is itself a judgement call: with it, 5 of 6 (0.833); without it,
+  the five words of the sentence are all read, 1.0 of five.
+- Part A's extent in profile.json goes from complete to partial (5 of 6 cipher words, under the bar). Document B (24 May) is not read. The class (already solved, partial), fraction_read (29 of 88 cipher letters, a
+  share of letters) and the page's statements are unchanged: the target was already partial.
+- `python research/reading_audit/v10_relabel.py` does not list document A now that its state is read in part; the same
+  measure on the entry (`v10_relabel.measure_detail`) gives 0.833 with the declaration.
+
 ## Remaining gaps
 
 - 24 May 1655 passage (B), 50 letters and the numbers 7, 865, 73 - blocker: no-key-material; not the printed Rákóczi table, not a simple substitution of Latin (annealing, matched control); the original (MNL OL E 190) is needed for the readings and any key

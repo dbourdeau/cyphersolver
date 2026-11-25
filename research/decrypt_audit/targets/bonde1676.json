@@ -1,0 +1,67 @@
+{
+ "folder": "bonde1676",
+ "causes": {
+  "A": "outcome.key_file did not list key states v4-v8 and v10, with which nine of the ten despatches' pages were decoded (despatches/manifest.tsv); 11 flagged cipher words of Feb 1676 are v10 values (144 = b x4, 443 = pommern x3, 431 = ordre x2, plus 2 neighbours). No value was missing from the key files themselves",
+  "B": "memorial, nine held-out pages: 5 words with one unbracketed letter key v3 does not give (all class-E units, no count affected). Memorial, image 324: 31 of 145 cipher words (39 letters) against the v3 decode, 65 words (96 letters) against the v2 decode it was read with, unbracketed; declared in the reading's header and in NOTES correction 7, not marked word by word. Ten despatch readings and the 1677 despatch: 0 (1,809 unbracketed cipher words = the 1,809 class-S units letter for letter)",
+  "C": "word division, accents, capitals and u/v in the memorial reading, declared editorial in its header",
+  "D": "541 of the 623 flagged words stand outside the asterisks: clear text printed between the cipher runs (memorial 347 of 404, Feb 1676 11 of 22, 6 Oct 1676 89 of 98, 13 Oct 1676 94 of 99); 76 of them are the marker word 'clear', which the 6 Oct 1676 transcriptions write for untranscribed clear words and build.py copies into the reading (115 times)",
+  "F": "the audit applies one table per text, while 6 Oct 1676 uses v7 then v8 and 13 Oct 1676 v4, v5, v6 by page; with all states listed it picks v7 for the memorial (decoded with v3 only); the remaining flagged cipher words touch clear passages"
+ },
+ "before": "623 of 2038 words depart (texts compared: 4 of 12)",
+ "after": "618 of 2061 words depart (texts compared: 4 of 12)",
+ "files_changed": [
+  "targets/bonde1676/NOTES.md",
+  "targets/bonde1676/profile.json"
+ ],
+ "key_values_added": [
+  {
+   "sign": "(files listed in outcome.key_file, no value added)",
+   "value": "despatch1677/gloss/key_history/KEY_v4.tsv, KEY_v5.tsv, KEY_v6.tsv, KEY_v7.tsv, KEY_v8.tsv; despatches/keys/KEY_v10.tsv",
+   "source": "despatches/manifest.tsv column keyfile; despatches/keys/LINEAGE.md"
+  }
+ ],
+ "unmarked_emendations": {
+  "count": 36,
+  "examples": [
+   {
+    "text": "memorial f.306r unit 47",
+    "decrypt": "malemLgne",
+    "reading": "[d'A]lema[g]ne",
+    "where": "readings/memorial_1676-10-06.md:11"
+   },
+   {
+    "text": "memorial f.306v unit 96",
+    "decrypt": "prep[~]rä",
+    "reading": "prep[a]re",
+    "where": "readings/memorial_1676-10-06.md:17"
+   },
+   {
+    "text": "memorial f.307v unit 5",
+    "decrypt": "emp[~]oåer",
+    "reading": "emp[lo]yer",
+    "where": "readings/memorial_1676-10-06.md:27"
+   },
+   {
+    "text": "memorial f.307v unit 68",
+    "decrypt": "nu[~]åer",
+    "reading": "d'env[o]yer",
+    "where": "readings/memorial_1676-10-06.md:31"
+   },
+   {
+    "text": "memorial f.308r unit 67",
+    "decrypt": "in<99>Lnces",
+    "reading": "in[st]ances",
+    "where": "readings/memorial_1676-10-06.md:35"
+   },
+   {
+    "text": "memorial image 324 (31 words, declared unbracketed)",
+    "decrypt": "v3 in-sample decode, e.g. portdego[~] / En<144>... ",
+    "reading": "port de Gothenbourg; dit, printemps, dix, former, agreable, maistre, reussir ...",
+    "where": "readings/memorial_1676-10-06.md:39"
+   }
+  ]
+ },
+ "page_statements_false": [],
+ "remaining": "docs/bonde1676.html: no false statement found on the key or the reading (it repeats that the image-324 letters are not bracketed); its convention line 'A letter in brackets inside a word = supplied' does not hold for the 5 words above. The eight texts the audit could not compare were checked by the decode and S-unit tests only. Clear text not compared with images. Decision needed: bracket the 5 words and the image-324 passage; and whether listing six more key files in outcome.key_file is wanted on the page (a rebuild may show them).",
+ "confidence": "high"
+}

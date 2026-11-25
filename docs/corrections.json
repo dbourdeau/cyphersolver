@@ -1,0 +1,245 @@
+{
+ "about": "Corrections to what this site has published: date, pages, what changed, who reported it, why. Newest first. Add an entry whenever a published claim, count or reading is corrected or withdrawn (docs/_corrections_page.py builds corrections.html).",
+ "corrections": [
+  {
+   "date": "2026-11-24",
+   "pages": [
+    "burr1808"
+   ],
+   "what": "The reading of 10 February 1808 had \"We must submit, submit, submit\" and the counts 969 of 973 cipher numbers. Line A.05 of the sheet has the group 26,19,10,19,1,16 (submit) twice, not three times: the reading is now \"We must submit, submit\", the counts 963 of 967 (99.6%), and the index of coincidence 0.0431 overall and 0.0611 at period 6 (was 0.0435 and 0.0618). The statistical validation was rerun and still passes.",
+   "reported_by": "found in the project, when the line was framed for the Burr film",
+   "why": "A transcription slip repeated the group; a six-letter word leaves the six-place key where it was, so the decryption could not show it."
+  },
+  {
+   "date": "2026-11-16",
+   "pages": [
+    "memoire1560"
+   ],
+   "what": "The page said every departure of the reading from the mechanical decrypt was bracketed and counted 108. A letter-by-letter comparison found 362 of 1,709 words. All ten pages were then checked again against the images: the first transcription had merged signs (one code for three delta signs, one for two crosses), 379 words of the transcription and 34 lines of the reading were corrected, and 229 of 1,703 words now carry a bracket. The read share is now 0.865 (the scorer's measure, every bracket a hole), where the page had 94.0%.",
+   "reported_by": "C. Pierrot and C. Desenclos, The Conversation, 10 November 2026 (lines 9-14 of f. 152v); the article is not in the repository, so its title and the authors' names are as given in the project's notes",
+   "why": "Emendations were made without a mark, and the transcription used one code for signs the manuscript keeps apart."
+  },
+  {
+   "date": "2026-11-16",
+   "pages": [
+    "kauderbach1754",
+    "branicki1757",
+    "santacruz1630",
+    "lopehurtado1520",
+    "martinique1778",
+    "hopken1740",
+    "montauti1692",
+    "r1862",
+    "deboli1789",
+    "joachim1530",
+    "ridolfi1646",
+    "exiles1736",
+    "geleen1633",
+    "swieten1759",
+    "jqa",
+    "riva1722",
+    "lopehurtado1523",
+    "jefferson1787",
+    "jablonski1705",
+    "cattanei1430",
+    "bonde1676",
+    "dole1636",
+    "portstemarie1729",
+    "baner1640",
+    "kaa4591b",
+    "genes1643",
+    "dahku1715",
+    "malen1615",
+    "toledo1479",
+    "potocka1714",
+    "batavia1800"
+   ],
+   "what": "In the audit's 31 marked targets, 858 places where a reading printed a letter or word that its key does not give are now marked; no wording was changed. The audit found words departing from the key without a mark in 35 of the 54 targets its script flagged. Largest: kauderbach1754 (202 of 2,044 words), branicki1757 (150 of 2,247), santacruz1630 (119 words), lopehurtado1520 (59). For three contributed readings (branicki1757, lopehurtado1520, santacruz1630) the marks are in a companion file and the contributor's text is left as given. Not marked: about 60 dropped letters, image 324 of bonde1676 (31 words, header line only) and R1954 of kauderbach1754 (no machine decrypt). Counting marks as holes, eight texts classed as read now measure more than 5% holes; they have not been reclassed.",
+   "reported_by": "the project's decrypt audit (research/decrypt_audit), made after the article above",
+   "why": "The readings had been corrected by hand against the sense without marking each correction."
+  },
+  {
+   "date": "2026-11-16",
+   "pages": [
+    "affry1757",
+    "hopken1740",
+    "duben1764",
+    "deboli1789",
+    "jefferson1787",
+    "noailles1558",
+    "longlee1590",
+    "stade1710"
+   ],
+   "what": "Published texts that are a clear copy of the time, a contemporary gloss, an editor's text or a contributor's reading are now labelled as such in their headers or NOTES, with the file that holds the output of the key named beside them.",
+   "reported_by": "the project's decrypt audit",
+   "why": "The files were listed as decryptions without saying that they were not the output of the key."
+  },
+  {
+   "date": "2026-11-16",
+   "pages": [
+    "kaa4591b"
+   ],
+   "what": "The file listed as the transcription of the letter R9403 was generated from the reading by a script. It is now labelled so; its agreement with the key is not evidence. An independent transcription has not been made.",
+   "reported_by": "the project's decrypt audit",
+   "why": "A file built from the reading had been filed as the transcription."
+  },
+  {
+   "date": "2026-11-16",
+   "pages": [
+    "potocka1714",
+    "ridolfi1646",
+    "noailles1558",
+    "affry1757",
+    "burr1804",
+    "jablonski1705",
+    "cattanei1430",
+    "geleen1633",
+    "batavia1800",
+    "swieten1759",
+    "lopehurtado1523",
+    "kaa4591b",
+    "baner1640",
+    "jefferson1787",
+    "riva1722",
+    "stade1710",
+    "hopken1740",
+    "portstemarie1729",
+    "deboli1789",
+    "martinique1778",
+    "kauderbach1754",
+    "branicki1757",
+    "lopehurtado1520",
+    "santacruz1630"
+   ],
+   "what": "Statements on 24 pages that the audit showed to be false were corrected: for example \"spelling of the letter kept\", \"every group read directly with the key\", a quotation that did not match the published reading, a count of cipher lines. The audit's reports record false statements in more targets than these 24 pages; the others are in the targets' NOTES.",
+   "reported_by": "the project's decrypt audit",
+   "why": "The pages were written from notes that claimed more than the files show."
+  },
+  {
+   "date": "2026-11-16",
+   "pages": [
+    "index"
+   ],
+   "what": "The home page no longer shows \"years of silence ended\", the ages of the texts added together. It first showed how many readings a person had checked without a model (14 of 544 on that day); that wording claimed more than the records show, and it now reads \"14 of 544 readings have a passage checked by a person\": 13 targets in 14 table rows, with checks of single signs, digits or lines, not of whole readings. It also gives how many reading reviews were made by a model.",
+   "reported_by": "C. Pierrot and C. Desenclos, The Conversation, 10 November 2026; Brice Dudout's audit of 16 November 2026",
+   "why": "The figure presented unchecked readings as finished results."
+  },
+  {
+   "date": "2026-11-14",
+   "pages": [
+    "lucca"
+   ],
+   "what": "Group 79 of the cipher had been read as 32 instead of 21, which created a figure 32 that the cipher does not have (the key has 23 figures, not 24). The plaintext is unchanged and its 56 words stand. The brackets of the reading were also wrong (two marked letters that are in the cipher, one supplied letter and three t unmarked) and were redone with a recount of the words read.",
+   "reported_by": "Brice Dudout, who read the cipher again on the images",
+   "why": "A misread group in the transcription, and brackets that did not match the cipher."
+  },
+  {
+   "date": "2026-11-12",
+   "pages": [
+    "augustoni1612"
+   ],
+   "what": "The first figure of 94.0% of words read was withdrawn; by the site's rule the share is 0.849.",
+   "reported_by": "the integration check of the contribution",
+   "why": "The first figure was not measured by the read rule."
+  },
+  {
+   "date": "2026-11-12",
+   "pages": [
+    "friedrichwilhelm1655"
+   ],
+   "what": "One number and one clear word were corrected on the images at integration.",
+   "reported_by": "the integration check",
+   "why": "Transcription slips."
+  },
+  {
+   "date": "2026-10-24",
+   "pages": [
+    "writeups"
+   ],
+   "what": "The read bar was applied to each document: one that builds coherent sentences but reads under 95% of its words is \"read in part\". Targets whose key was obtained while the text does not read were moved to \"key obtained, text not read\".",
+   "reported_by": "George Lasry",
+   "why": "A recovered key had been counted as a reading."
+  },
+  {
+   "date": "2026-10-22",
+   "pages": [
+    "matignon1586",
+    "writeups"
+   ],
+   "what": "Every published reading was read again as sentences. 28 targets were taken out of the tables of readings (listed at the head of SOLVED_CATALOGUE.md), and many others were reclassed as read in part. The Matignon decryptions were rebuilt sentence by sentence on the images.",
+   "reported_by": "George Lasry, who found the decryptions unusable",
+   "why": "Decryptions that scored as language had been published as readings without building sentences."
+  },
+  {
+   "date": "2026-10-12",
+   "pages": [
+    "michell1751"
+   ],
+   "what": "Two of the project's 19 September anchors for the code were corrected (3042 = sur, not dessein; and 169), accepted from the rebuilt key.",
+   "reported_by": "the project's review of WAINUT's rebuilt key (PR #29)",
+   "why": "Wrong anchor values."
+  },
+  {
+   "date": "2026-10-02",
+   "pages": [
+    "warsaw"
+   ],
+   "what": "Two transcription slips were corrected after a check against the manuscript image (DECODE R1408).",
+   "reported_by": "the project",
+   "why": "Transcription slips."
+  },
+  {
+   "date": "2026-09-22",
+   "pages": [
+    "toulon1803"
+   ],
+   "what": "Nine code values claimed earlier were withdrawn.",
+   "reported_by": "the project, on three decrypted letters in the same code",
+   "why": "The values did not hold against the decrypted letters."
+  },
+  {
+   "date": "2026-09-20",
+   "pages": [
+    "sanchez1522"
+   ],
+   "what": "The catalogue entry was wrong: the key had been reconstructed and published by Satoshi Tomokiyo (first posted 6 September 2025). The entry was corrected and the result reclassed as read from an existing decipherment; on 22 October 2026 the reading audit reclassed it again to decoded, not read. The date is the day the target was worked; the notes do not date the correction itself.",
+   "reported_by": "the project's prior-art check",
+   "why": "Prior work had been missed when the entry was scored."
+  },
+  {
+   "date": "2026-11-16",
+   "pages": [
+    "buda1490",
+    "andreae1616"
+   ],
+   "what": "In buda1490, a header line saying the cipher text was under key.json was corrected in five reading files (\"under key.json and the extended values of key_supplement.md\"); no letter of the text changed. In andreae1616, the two letter counts in the table of texts/R4502_decryption.md were corrected from 70 and 86 to 78 and 90; no word changed. The pages show their generated texts blocks from these files and take the corrected wording at the next site build.",
+   "reported_by": "the project's decrypt audit",
+   "why": "A header and a table did not match the files they described."
+  },
+  {
+   "date": "2026-11-15",
+   "pages": [],
+   "what": "Thirteen catalogue entries (ids 2585, 2599, 2600, 2612, 2614, 2615, 2617, 2626, 2627, 2652, 2670, 2677, 2819) were moved from the catalogue back to the leads, because the volume or sheet already held a decipherment of the same text, so there was nothing open to solve.",
+   "reported_by": "the project's vetting audit of the entries promoted from leads 2538-2831 (research/vetting_audit_2026-11-15)",
+   "why": "The vetting bar (no decipherment of this text on or with it) had not been applied to these entries."
+  },
+  {
+   "date": "2026-11-14",
+   "pages": [
+    "ronquillo1676",
+    "fiesque1567",
+    "jqa"
+   ],
+   "what": "Two counting rules were written into the README: unread words are counted by words, not by hole marks, and a hole marked with a size ([... 4]) counts as that many words; and a one-digit slip in a surviving period key counts as read when three conditions hold. Shares were recounted where the rules applied, for example ronquillo1676 R982 from 0.954 to 0.914 and fiesque1567 2 Dec 1568 from 0.953 to 0.943 (read to read in part). The list of every page affected is not kept in one place.",
+   "reported_by": "the project, in its own review of the read share",
+   "why": "Hole marks had been counted as one unread word each, whatever they covered."
+  },
+  {
+   "date": "2026-11-07",
+   "pages": [],
+   "what": "A claims review of all 559 write-up pages against their sources found most pages carrying at least one error (a figure, a date, a credit or a claim the sources do not carry). The pages were corrected in the following days, in batches; the review ledger of the repository records which pages were re-read.",
+   "reported_by": "the project's claims review (CLAUDE.md, \"Keeping write-ups true\")",
+   "why": "Pages had been written or left standing without being checked line by line against NOTES.md and the profile."
+  }
+ ]
+}

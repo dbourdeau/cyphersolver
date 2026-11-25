@@ -1,0 +1,52 @@
+{
+ "folder": "martinique1778",
+ "marked": [
+  {
+   "file": "targets/martinique1778/read/f19_reading.md",
+   "places": 2
+  },
+  {
+   "file": "targets/martinique1778/read/f70_reading.md",
+   "places": 8
+  },
+  {
+   "file": "targets/martinique1778/read/f114_reading.md",
+   "places": 43
+  }
+ ],
+ "left_unmarked": {
+  "count": 10,
+  "why": "about 10 stretches where the key gives syllables that the sentence leaves out (listed in NOTES): a bracket cannot mark an omission without adding letters. Normalised endings and spellings (79 words by the audit after marking) are covered by the new header line, not marked one by one. All places where the reading prints letters the key does not give were verified line by line against read/*_decryption.txt and marked (53; the earlier 'about 35' was an estimate)."
+ },
+ "headers_changed": [
+  "read/f19_reading.md, read/f70_reading.md, read/f114_reading.md: no header -> one '#' comment line: modern spelling and grammar supplied without a mark; [ ] = letters or words the key does not give; [...] = not read; names the decryption file; f19 adds that 'de novembre' is the margin heading; f114 adds that 'vingt de ce [mois]' stands where the key gives 'vi n g t de ce m bre'"
+ ],
+ "page_changes": [
+  "The key reads straight through it. -> The key reads most of it; the reading is in modern spelling, and the reading file brackets the 43 places where its words are not what the key gives.",
+  "filled by context where the sentence allows and bracketed where it does not. -> filled by context where the sentence allows and left as [...] where it does not; the reading files put the fills in brackets."
+ ],
+ "page_counts_now_stale": [],
+ "hole_rate": [
+  {
+   "file": "read/f19_reading.md",
+   "before": 0.083,
+   "after": 0.104,
+   "state_in_profile": "read in part"
+  },
+  {
+   "file": "read/f70_reading.md",
+   "before": 0.055,
+   "after": 0.117,
+   "state_in_profile": "read in part"
+  },
+  {
+   "file": "read/f114_reading.md",
+   "before": 0.043,
+   "after": 0.104,
+   "state_in_profile": "read in part"
+  }
+ ],
+ "falls_below_read_bar": false,
+ "wording_changed": false,
+ "notes": "All three texts were already 'read in part'; hole rates now 10-12%. Decision needed: the French blockquotes on docs/martinique1778.html still print 'existantes', 'mois', 'j'ai eu', 'réglées', 'devient' without the new brackets (not changed: not a statement I had quoted). The key's own words may be right at two places of f. 114: 'vingt décembre' (reading: 'vingt de ce [mois]') and 'devenant' (reading: 'dev[ie]nt'). The decrypt audit now gives 79 of 1,119 (was 140 of 1,150; f. 88/f. 101 now read 0, which is a change in the audit script by someone else, not mine). Translations (read/*_en.md) not compared."
+}

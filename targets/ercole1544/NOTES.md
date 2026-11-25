@@ -2,6 +2,8 @@
 
 Status: in progress. Not yet written up: no site page or README row. Read in part, or not read, with escalation steps still open (see its status below, Remaining gaps and Escalation). The status below is the contributor's.
 
+Triage, 24 Nov 2026 (integration round, AI agent): not written up. The words in clean sentences are 19-23% per letter, far under the read bar, and most gaps are `not-attempted` with the material online (Estense IIIF). Next step: a fresh pass of c. 175r and G02-G07 with the frozen key, then the siblings cc. 88-92 and 93-98 against the table, then Murphy, Furlotti and Solmi for the codes [L^22] and [L^30]. The reading review of 3 Nov 2026 is by an agent working for the contributor; a page needs a review by someone outside that work.
+
 Status, 3 Nov 2026: key confirmed on a contemporary decipherment; neither letter is read. cc. 78r-79r and cc. 174r, 174v, 175v are read in part. c. 175r is decoded, not read. Of the seven letters of catalogue 1554, letter 2 (c. 114r) is read in part (Brice Dudout, 12 Nov 2026, last section) and six are decoded, not read (section below). Prior art is open: see below. Nothing here is claimed as new.
 
 Contributed by WAINUT. The work was done with AI language-model agents. An independent agent made the blind check and the final check named below.
@@ -233,6 +235,38 @@ The server rejects outputs above about 2 megapixels. Use `/full/,1900/0/default.
 ## Files
 
 `transcription_*.txt` (`0104r` and `0107` are the clear decipherments of the time, abbreviations expanded), `decryption_*.txt`, `reading_*.md`, `translation_*.md`, `editorial_*.md`, `key.tsv`, `key_frozen.tsv`, `sign_changes.tsv`, `validation/`, `scripts/`. Catalogue 1554 has `transcription_*` and `decryption_*` for `0113r`, `0114r`, `0115r`, `0116r`, `0117_0118`, `0119r`, `0120`, and `validation/1554_pass1/`, `validation/1554_pass2/`, `validation/1554_settle_log.tsv`, `validation/blind_0119r*`. From this folder: `python scripts/decode.py transcription_0078_0079.txt`, `python scripts/check_repairs.py`, `python scripts/count_words.py`.
+
+## Decrypt audit, 16 Nov 2026
+
+`research/decrypt_audit/detail.py ercole1544` compared eleven texts and reported 425 of 2,725 words departing from
+the mechanical decrypt: 4% and 5% on the two readings (cc. 78r-79r; cc. 174r, 174v, 175v) and 40% to 51% on the nine
+texts where the published file is the decryption file (c. 175r, cc. 103r, 109, and 113r, 115r-120 of catalogue
+1554). The departures are not in the records. Causes:
+
+- Audit artefact (all nine decryption texts). Each line of a transcription and of a decryption starts with a label,
+  one capital letter and a number (`L01`, `R07`, `A12`, `D05`). The audit took the label for text on both sides. In
+  the decryption the label letter was read as a plain letter; in the transcription it was read as a cipher sign and
+  put through the table, or dropped where the capital is not a sign. So c. 103r shows `et` against `l` once per
+  line (label L, sign L = et), c. 109 `e` against `r` (label R), c. 113r `n` against `a`, c. 115r `p` against `c`,
+  c. 116r `q` against `d`, cc. 117-118 `r/s/t` against `e/f/g`, c. 119r `u` against `h`, cc. 120 nothing against
+  `i`, and the c. 175r entry shows d, e, f, g "only in the reading" 24 to 26 times each: the file has 25, 26, 26 and
+  26 lines labelled D, E, F, G. The digits of the labels were also read as codes (`06` gave `pu`, `08` gave `bb`).
+- Audit artefact (the two readings). The readings mark an editorial repair with a degree sign (`sono°`), listed in
+  `editorial_*.md`, and proposals as `[?word]`; the audit knows only square brackets, so the 3 and 15 repairs
+  counted as unmarked (example, B27: signs `lauisonouenuti`, reading `l'aviso sono° venuti`).
+- Markers. Unread stretches `[...]`, unidentified codes (`[L^30]`) and `[?word]` proposals stand where the decrypt
+  has signs, which gives the long gaps in the samples (A03-A05).
+
+Check made here with a separate read-only snippet: `key.tsv` applied by the rule of `scripts/decode.py` reproduces
+all eleven decryption files of the profile's main entries line for line (431 lines), with one difference: `decryption_0103r.txt` L11
+prints `[SUA MAESTA]` where the working key now gives `[?SUA MAESTA]` (code 44 was made doubtful after that file was
+written). The two readings were aligned with their decryptions segment by segment: no word outside `°` or brackets
+holds a letter the signs do not give. `dudout/decryption_0114r_dudout.txt` is in another format (no brackets, code
+44 as `disuasantita`, the frozen value) and was not compared; the audit did not flag c. 114r.
+
+Nothing was changed in the key, the transcriptions, the decryptions or the readings. The audit figures are the same
+after (425 of 2,725) and will stay so until the audit script skips the line labels and knows the degree mark. Not
+checked: the signs against the images, and whether each `[?word]` proposal is sound.
 
 ## Remaining gaps
 

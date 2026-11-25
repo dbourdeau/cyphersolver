@@ -139,7 +139,8 @@
    "what": "Final search for any image of the leaf, to decipher it independently: the old BL viewer URL for Cotton_MS_Vitellius_B_XIX redirects to a generic collections page; the BL searcharchives query returns only the Galba B VI manifest; Wikimedia Commons and the web have no image of Vitellius B XIX. An independent solve needs a BL imaging order (paid; for the user to place).",
    "result": "failed"
   },
-  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): linked the transcribed Büchi 1925 text and the cipher-passage list; no transcription of the ciphertext (manuscript not digitised)", "result": "partial"}
+  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): linked the transcribed Büchi 1925 text and the cipher-passage list; no transcription of the ciphertext (manuscript not digitised)", "result": "partial"},
+  {"date": "2026-11-14", "kind": "access", "what": "Looked for a transcription of the cipher stretches: none in the folder; Büchi and L&P print the deciphered words only; the Cotton volume is not digitised (NOTES, BL record checked 23 Sept 2026), so there is no image to transcribe. Recorded as transcription_missing. No new fetch on 14 Nov 2026.", "result": "failed"}
  ],
  "outcome": {
   "method": "read from existing decipherment",
@@ -176,7 +177,7 @@
     {"who": "schiess", "role": "key or decipherment used", "note": "co-decipherer with Büchi of no. 541", "date": "1925", "source": "A. Büchi, Korrespondenzen und Akten II (1925), no. 541"}
   ],
   "texts": [
-   {"doc": "schiner-henry-1516-06-14", "label": "Büchi 1925, no. 541", "decryption": ["buchi1925_no541.txt", "cipher_passages.txt"], "summary": "Cardinal Schiner at Trent to Henry VIII, 14 June 1516, while leading Maximilian's army in Italy on English money. The cipher holds the secret of the letter: Maximilian had offered Henry, through Schiner, the duchy of Milan and the succession to the Empire.", "note": "Decryption: Büchi and Schiess's 1925 printing (cipher in {braces}), transcribed in buchi1925_no541.txt; the 14 cipher stretches in cipher_passages.txt. No transcription: the manuscript (Cotton Vitellius B XIX) is not digitised.", "translation": "buchi1925_no541_en.md", "language": "la", "read_share": 0.968}
+   {"doc": "schiner-henry-1516-06-14", "label": "Büchi 1925, no. 541", "decryption": ["buchi1925_no541.txt", "cipher_passages.txt"], "summary": "Cardinal Schiner at Trent to Henry VIII, 14 June 1516, while leading Maximilian's army in Italy on English money. The cipher holds the secret of the letter: Maximilian had offered Henry, through Schiner, the duchy of Milan and the succession to the Empire.", "note": "Decryption: Büchi and Schiess's 1925 printing (cipher in {braces}), transcribed in buchi1925_no541.txt; the 14 cipher stretches in cipher_passages.txt. No transcription: the manuscript (Cotton Vitellius B XIX) is not digitised.", "translation": "buchi1925_no541_en.md", "language": "la", "read_share": 0.968, "transcription_missing": "The cipher was never seen: BL Cotton MS Vitellius B XIX (now f. 129, old f. 131) is not digitised (BL record 040-001102999, 'Digitised Content: No', checked 23 Sept 2026), and neither Büchi (1925) nor Letters and Papers prints the cipher signs, only the deciphered words. What would unblock it: a BL imaging order for the leaf."}
   ]
  }
 }

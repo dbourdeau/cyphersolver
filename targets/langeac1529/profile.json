@@ -18,16 +18,12 @@
     ],
     "source": "No decipherment on the leaf or in print found. Lasry decoded the text in 2023 but did not publish it (personal communication, 21 Sept 2026)."
    },
-   "length": {
-    "tokens": "unknown",
-    "unit": "symbols",
-    "measured": false
-   },
+   "length": {"tokens": 437, "unit": "symbols", "measured": true, "file": "texts/fr3083_no8_cipher_signs.txt"},
    "transcription": {
     "by": "llm from images",
     "source": "Gallica full-resolution scan, view 36",
     "image_quality": "good",
-    "notes": "11 cipher lines; read by eye from line strips against Lasry's table, no glyph-alias file kept, so the sign count is not measurable. The reading file has 442 plaintext letters in cipher."
+    "notes": "11 cipher lines. First read by eye from line strips against Lasry's table (no sign file kept); transcribed sign by sign on 14 Nov 2026 in texts/fr3083_no8_cipher_signs.txt, each sign named by the matching cell of Lasry's table: 437 signs counted by script (434 labelled, of which 6 not valued or doubtful, and three not identified in l. 7; one struck sign left out)."
    },
    "read": "read"
   }
@@ -131,6 +127,12 @@
    "kind": "verification",
    "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): langeac1529: reading fr3083_no8_langeac.md linked; key = Lasry's table image img/BnF_fr3083_f20.png and texts/key.md (refinements copied verbatim from the reading file). No ciphertext transcription exists in the folder.",
    "result": "partial"
+  },
+  {
+    "date": "2026-11-14",
+    "kind": "transcription",
+    "what": "Fetched Gallica image f36 (openapi.bnf.fr IIIF, full size) and transcribed the 11 cipher lines sign by sign, each sign named by the cell of Lasry's table it matches (texts/fr3083_no8_cipher_signs.txt). Decoding the labels gives the reading of fr3083_no8_langeac.md, with these differences on the page: RECHER SON (no second CHER), RVIN DES, a 7-shaped sign for the N of EMPRINSE(S) twice, no clear S sign in TOVS, an extra T after TROP; in consentement the N is the ordinary N sign.",
+    "result": "worked"
   }
  ],
  "outcome": {
@@ -141,9 +143,9 @@
    "key extended or corrected"
   ],
   "class": "read",
-  "fraction_read": 0.987,
+  "fraction_read": 0.979,
   "fraction_read_method": "measured",
-  "fraction_read_source": "Counted 14 Oct 2026 from fr3083_no8_langeac.md: 442 plaintext letters deciphered in the cipher block against about 6 unread signs (a group of 3-4 and one of 2). Plaintext letters, not cipher signs: no alias file was kept for the 11 lines.",
+  "fraction_read_source": "Counted 14 Nov 2026 by script from texts/fr3083_no8_cipher_signs.txt: 437 cipher signs, 428 read as letters; 9 not read (the two signs that open l. 1, one in VOLV l. 2, one faint after TOV l. 8, the two that open l. 9, three in l. 7). 428 / 437 = 0.979. Withdrawn: 0.987 (14 Oct 2026, plaintext letters of the reading file against about 6 unread signs).",
   "key": "recovered",
   "codes_open": {
    "open": 0
@@ -153,7 +155,7 @@
    "key confirms",
    "historical consistency"
   ],
-  "notes": "Read in full apart from two short groups (about 6 signs) in lines 7 and 9.",
+  "notes": "Read in full apart from 9 of 437 signs, in five places (lines 1, 2, 7, 8 and 9), counted 14 Nov 2026.",
   "credits": [
    {
     "who": "lasry",
@@ -177,7 +179,7 @@
    }
   ],
   "texts": [
-   {"doc": "langeac1529", "label": "BnF fr. 3083 no. 8, ff. 20-21, Venice, 14 Jan [1529]", "decryption": "fr3083_no8_langeac.md", "summary": "Langeac, bishop of Avranches and ambassador at Venice, reports that Saint-Pol, commanding the French army in Lombardy, asked leave of the Seigneurie, which refused and protested it would be the total ruin of the enterprises; Langeac sees no reason for him to go, given the Milan enterprise, the Spaniards coming with money and the approach of spring, and has written to dissuade him (January 1529, before Landriano).", "note": "No transcription of the 11 cipher lines was kept (read by eye from line strips against Lasry's table). Lasry's own 2023 decipherment is unpublished and not in the repository.", "reading": "fr3083_no8_langeac_reading.md", "translation": "fr3083_no8_langeac_en.md", "language": "fr", "read_share": 0.951}
+   {"doc": "langeac1529", "label": "BnF fr. 3083 no. 8, ff. 20-21, Venice, 14 Jan [1529]", "decryption": "fr3083_no8_langeac.md", "summary": "Langeac, bishop of Avranches and ambassador at Venice, reports that Saint-Pol, commanding the French army in Lombardy, asked leave of the Seigneurie, which refused and protested it would be the total ruin of the enterprises; Langeac sees no reason for him to go, given the Milan enterprise, the Spaniards coming with money and the approach of spring, and has written to dissuade him (January 1529, before Landriano).", "note": "Transcription added 14 Nov 2026: the 11 cipher lines sign by sign, each sign named by the cell of Lasry's table it matches (texts/fr3083_no8_cipher_signs.txt; a single AI transcription from Gallica image f36, not checked by a person; 437 signs, 428 of them read as letters). Decoded label by label it gives the text of fr3083_no8_langeac.md. Lasry's own 2023 decipherment is unpublished and not in the repository.", "reading": "fr3083_no8_langeac_reading.md", "translation": "fr3083_no8_langeac_en.md", "language": "fr", "read_share": 0.951, "transcription": "texts/fr3083_no8_cipher_signs.txt"}
   ],
   "key_file": ["img/BnF_fr3083_f20.png", "texts/key.md"]
  }

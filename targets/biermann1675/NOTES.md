@@ -121,9 +121,30 @@ gap), and a comparison of the twelve letters read on both sides. Catalogue 465 n
 
 ## Remaining gaps
 
-- Letters under the image-55 key to Gioë in England and Schröder - blocker: not-attempted; every Høeg and Meyercron letter of this family is read (eleven here, 26 more in `dudout/`), so these are what is left of it.
+- Letters under the image-55 key to Gioë in England (after 12 January) and Schröder - blocker: not-attempted; every Høeg and Meyercron letter of this family is read (eleven here, 26 more in `dudout/`), and the Gioë letter of 12 January is read in part (below), so these are what is left of it.
+- Gioë, 12 January 1675: codes 123 and 488, the open square, 31, and an r that is not written in *par* - blocker: open-codes; 44 of 49 words sure. `new_values.tsv` proposes values for three of them; the other Gioë letters to England are the place to confirm them.
 - Letters without a surviving key (Lilienkron, Gioë in Moscow, Reetz in Spain, Lindenow in Sweden, Klingenberg (since read in part with a rebuilt key: `targets/klingenberg1675/`), Lincker, Meyercron 2 Jan, Høeg 21 June, Lente 21 June) - blocker: not-attempted; the whole key volume was swept and nothing fits (keyhunt.md), so the next move is a key rebuild from the ciphertext (large volumes per family) plus the cribs listed above.
 - 23 March letter to Meyercron, p105.24: one open-square sign, most likely "l" - blocker: open-codes; one occurrence; Dudout's reading of the same letter (`dudout/texts/1675-03-23_meyercrone_reading.md`) and his 19 Paris letters are the retry material.
+
+## The letter to Gioë in England of 12 January 1675 (contributed by Tomáš Pavuk, issue #720)
+
+The first letter to Marcus Gioë in England, image 015 right page (p. 12), ending in clear on image 016. K55 reads it unchanged, which settles the survey's "image 55 family (untested)" for this correspondent: `python decode.py transcription_1675-01-12_gioe.txt` gives 132 cipher tokens, 127 resolved. Reading, measure and the five holes are in `reading_1675-01-12_gioe.md`, the translation in `reading_1675-01-12_gioe_en.md`: 44 of 49 words sure (0.898), read in part. Two one-digit slips of the copyist (579 for 576 in *pas*, 477 for 577 in *peine*) count as read under the rule of 14 Nov 2026. The passage hopes that the States General will satisfy [123] so that he does not provoke a new [488] that his Parliament would be slow to approve. Read from the scan by two OpenAI GPT readers (one without the key) and checked on the scan by Claude Fable 5.2, not blind; the project reran the decode with its own decoder and read all 132 groups on the image in the review of #720. No person has read the scan.
+
+## Transcription doubts
+
+For the letter to Gioë in England of 12 January 1675 (`transcription_1675-01-12_gioe.txt`); the earlier letters of this folder predate the rule. The image is Arkivalieronline image 015, right page, enlarged with no overlay; the independent transcription is the second reader's, made without the key.
+
+- 673 (p12.05 group 1) - read: 673; checked: image, decode, transcription; the middle digit is overwritten on the page; vo gives *voudra*; the reader without the key wrote 6?3 and settled on 673.
+- 579 (p12.05 group 5) - read: 579; checked: image, decode, transcription; a clean 579 on the page although the sense wants 576 (*pas*); both readers 579; kept as written and marked `{+pa}s` in the reading.
+- 576 (p12.06 group 4) - read: 576; checked: image, decode, transcription; the last digit is overwritten, 576 or 579; pa gives *pa une* and po *po une*, neither supplies the r of *par*; both readers 576; not settled, so *par* keeps its mark `[?par]`.
+- 412 (p12.01 group 2) - read: 412; checked: image, decode, transcription; the reader without the key had 432; 412 on the enlarged image; fa gives *faisants*.
+- 341 (p12.07 group 4) - read: 341; checked: image, decode, transcription; the reader without the key had 541; 341 on the enlarged image; ce gives *cette*.
+- 652 (p12.07 group 8) - read: 652; checked: image, decode, transcription; the reader without the key had 632; 652 on the enlarged image; tu gives *nature*.
+- sq (p12.08 group 9) - read: open square, no value; checked: image, decode, transcription; an empty square, without the cross of the box that stands for h on the sheet; both readers an empty square; the sense wants l (*qu'il*), kept as a hole `[?il]`.
+- 477 (p12.09 group 5) - read: 477; checked: image, decode, transcription; a clean 477 on the page, not on the sheet; both readers 477; one digit from 577 pe (*peine*), marked `{+pe}ine`.
+- 17 (p12.13 group 2) - read: 17; checked: image, decode, transcription; the first digit is an upright with a flag and no bowl, as the 1 of 17 at p12.02 group 1 and unlike the 5 of the 415 beside it; the key-aware reader had 17, the reader without the key 57; 57 is not a letter number on the sheet and i gives *affoibli-*.
+- III (p12.02 group 3) - read: III (set1 N); checked: image, decode, transcription; the sign is crossed by the flourish of the clear *Il* in the line above and is not a different sign; n gives *faisants*.
+- A (p12.03 group 4) - read: A (set2 R); checked: image, decode, transcription; written over, matched to the R sign of the sheet; r gives *pour*.
 
 ## Escalation
 
@@ -147,3 +168,26 @@ gap), and a comparison of the twelve letters read on both sides. Catalogue 465 n
 `dudout/` holds 26 further letters read with the image-55 key (frozen independently on 26 Oct 2026):
 Høeg 13 Feb - 5 June 1675 (7) and Meyercrone 16 Feb - 21 June 1675 (19, including 23 March, which can be compared
 with `reading_1675-03-23_meyercron.md`). See `dudout/README.md`.
+
+## 14 Nov 2026: reading audit, sections I (full texts) and J (readability)
+
+- The 26 letters contributed by Brice Dudout (`dudout/texts/`) were read as sentences one by one. Each French
+  reading (`*_reading.md`) is coherent from end to end; what is open in them is a handful of name codes left as ‹n›
+  (‹261›, ‹94›, ‹543›, ‹514›, ‹163›, ‹254›, ‹37›, ‹349›, ‹53›, ‹4989›, ‹280›, ‹32›, ‹35›, ‹145›, ‹256›, ‹59›, ‹29›,
+  ‹266›), several with the contributor's gloss in braces. None breaks a sentence. `python decode.py` in `dudout/`
+  was rerun on every transcription and reproduces every `*_decryption.txt` byte for byte. Each entry of
+  `outcome.texts` now carries `reading_review` (grade A) and `read_share` (the decoder's own count, tokens with a
+  value over cipher tokens; lowest 0.976, the 42-token letter to Høeg of 5 June).
+- The decryption files are raw decoder output (unspaced, sign 9 printed as `{r|t|a}`); the sentences are in the
+  reading files, which settle spacing, accents and the r/t/a choice from context. The contributor's English
+  translations are complete in sense but lightly condensed in places (for example the 13 April letter drops
+  "il y a deja quelque temps"); they were left as contributed.
+- Document A (23 March 1675, Meyercron) had no `outcome.texts` entry of its own. Added: `transcription_p104-105.txt`,
+  `reading_1675-03-23_meyercron.md` (line-by-line decipherment and reading) and a new English translation,
+  `reading_1675-03-23_meyercron_en.md`. `decode.py` rerun: 263 cipher tokens, 262 resolved (99.6%).
+- Profile corrected: `outcome.notes` said "only one letter of the copybook read so far" and the
+  `fraction_read_source` said the other letters were not transcribed; both were out of date.
+- Not done: the eleven Høeg letters of 2 Jan - 9 Feb read in this folder (`reading_1675-01-02_hoeg.md` ...
+  `reading_1675-02-09_hoeg.md`) are still not in `documents[]` or `outcome.texts`, and the 26 Dudout entries use doc
+  ids that `documents[]` does not list. Each of the eleven needs a `documents[]` record, a review and a separate
+  English translation file (each reading file carries an English paragraph).

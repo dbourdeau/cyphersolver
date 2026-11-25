@@ -234,17 +234,125 @@
    "what": "Split under the one-key rule (George Lasry, 14 Oct 2026): the four letters in Łaski's System B (R9322, R9323, R9417 from kaa4591; R9403 from kaa4591b) gathered into this entry; R9414 (system G) moved to wardein1537 and R9415 (system L) to sperantio1534, whose key it shares. Words re-counted per letter (measure_sysb.py; R9403 r9403/decoded.txt).",
    "result": "worked"
   },
-  {"date": "2026-10-15", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 862 tokens, 21 types, la order 4: reading -2.091 per letter; random keys -6.002 (z 7.4); key annealed onto shuffled ciphertext best -3.682 (mean -3.757, z 37.1); annealer on the real text -2.091. Verdict: pass.", "result": "worked"},
-  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): sign files and page tsv per letter, sysB/decoded.txt, sysB/R9323_decoded.txt, r9403/decoded.txt; key sysB/key_from_glosses.tsv.", "result": "worked"},
-  {"date": "2026-10-22", "kind": "verification", "what": "Reading audit (George Lasry's sentence test, 22 Oct 2026): the four decodes read through. R9322 and R9403 build Latin sentences (kept read, reviewed B); R9417 has systematic letter slips in most words of half the letter and R9323 a doubtful sign in nearly every line, both relabelled decoded, not read. fraction_read 0.953 -> 0.693.", "result": "failed", "technique": ["language-model scoring", "statistical test"]},
-  {"date": "2026-10-23", "kind": "access", "what": "Re-read (REREAD_BRIEF, b20): every file on DECODE R9417 (2 images) and R9323 (1 image) fetched with the shared cookie (b20_fetch.py; scratchpad only). No attachments or DOC_* texts; the only contemporary text is the faint interlinear gloss (R9417 P2 ll. 1-14 and P1 ll. 5-7, R9323 ll. 1-3 and 11).", "result": "worked"},
-  {"date": "2026-10-23", "kind": "transcription", "technique": ["plaintext matching"], "what": "R9417 P2 image has 29 cipher lines; the transcription held 21. Lines 15-29 and P1 read sign by sign on native crops (sysB/R9417_signs_b20.tsv). The decode's 'm for a, e for r' slips were coding slips: on ll. 15-21 the dotted/plain circles and plain/starred crosses had been coded the other way round from the glossed lines 12-14, where the gloss fixes dotted circle a, plain circle m, plain x r, starred x e (the R9403 exchange). R9323 re-read word by word (11 corrections, sysB/R9323_corrections.tsv): l. 3 begins with the Ferdinand word sign; Ƶ = q, I-sign = b, dagger = n.", "result": "worked"},
-  {"date": "2026-10-23", "kind": "reading", "technique": ["plaintext matching", "contextual inference"], "what": "Readings and translations written (sysB/R9417_reading.md, R9323_reading.md, _en.md; log sysB/R9417-R9323_reread_log.md); every word carried by its signs or the gloss, doubtful words [?]. b17_score.py la: R9417 0.250 full list / 0.893 explicit holes, R9323 0.111 / 0.889 (the checker's Latin list lacks common words, -cia spellings and names). Both set read, grade B. New content: Minkuics to meet the dukes' envoys at Coburg on 4 July; the Polish king's daughter sought through Sigismund Herberstein for Frederick the Count Palatine; the dukes to ask Charles V to hold back Ferdinand.", "result": "worked"},
-  {"date": "2026-10-23", "kind": "control", "technique": ["manual reconstruction"], "what": "v3 verification: R9322 scored on the raw decode sysB/decoded.txt (0.449, slips unmarked). Reading written with every emendation marked (sysB/R9322_reading.md): 0.605 explicit-hole, plain 0.105. Keeps read, marginal.", "result": "partial"},
-  {"date": "2026-10-23", "kind": "verification", "what": "Consistency pass (cl): the closed item (R9417 and R9323 decoded, not read) was still a bullet in NOTES Remaining gaps, which the checker reads as an open gap without a blocker; restated below the list as Closed. outcome.gaps unchanged (it already lists only the open pieces).", "result": "worked", "technique": ["statistical test"]},
-  {"date": "2026-10-24", "kind": "verification", "what": "Read bar applied per document (v10): 3 of 4 documents marked read measure under 95% of words read as sense (v2_score explicit holes) and are now read in part; read_share recorded for each.", "result": "partial"}
+  {
+   "date": "2026-10-15",
+   "kind": "verification",
+   "technique": [
+    "statistical test",
+    "language-model scoring"
+   ],
+   "what": "Statistical validation (docs/_validate.py): 862 tokens, 21 types, la order 4: reading -2.091 per letter; random keys -6.002 (z 7.4); key annealed onto shuffled ciphertext best -3.682 (mean -3.757, z 37.1); annealer on the real text -2.091. Verdict: pass.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): sign files and page tsv per letter, sysB/decoded.txt, sysB/R9323_decoded.txt, r9403/decoded.txt; key sysB/key_from_glosses.tsv.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Reading audit (George Lasry's sentence test, 22 Oct 2026): the four decodes read through. R9322 and R9403 build Latin sentences (kept read, reviewed B); R9417 has systematic letter slips in most words of half the letter and R9323 a doubtful sign in nearly every line, both relabelled decoded, not read. fraction_read 0.953 -> 0.693.",
+   "result": "failed",
+   "technique": [
+    "language-model scoring",
+    "statistical test"
+   ]
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "access",
+   "what": "Re-read (REREAD_BRIEF, b20): every file on DECODE R9417 (2 images) and R9323 (1 image) fetched with the shared cookie (b20_fetch.py; scratchpad only). No attachments or DOC_* texts; the only contemporary text is the faint interlinear gloss (R9417 P2 ll. 1-14 and P1 ll. 5-7, R9323 ll. 1-3 and 11).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "transcription",
+   "technique": [
+    "plaintext matching"
+   ],
+   "what": "R9417 P2 image has 29 cipher lines; the transcription held 21. Lines 15-29 and P1 read sign by sign on native crops (sysB/R9417_signs_b20.tsv). The decode's 'm for a, e for r' slips were coding slips: on ll. 15-21 the dotted/plain circles and plain/starred crosses had been coded the other way round from the glossed lines 12-14, where the gloss fixes dotted circle a, plain circle m, plain x r, starred x e (the R9403 exchange). R9323 re-read word by word (11 corrections, sysB/R9323_corrections.tsv): l. 3 begins with the Ferdinand word sign; Ƶ = q, I-sign = b, dagger = n.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "reading",
+   "technique": [
+    "plaintext matching",
+    "contextual inference"
+   ],
+   "what": "Readings and translations written (sysB/R9417_reading.md, R9323_reading.md, _en.md; log sysB/R9417-R9323_reread_log.md); every word carried by its signs or the gloss, doubtful words [?]. b17_score.py la: R9417 0.250 full list / 0.893 explicit holes, R9323 0.111 / 0.889 (the checker's Latin list lacks common words, -cia spellings and names). Both set read, grade B. New content: Minkuics to meet the dukes' envoys at Coburg on 4 July; the Polish king's daughter sought through Sigismund Herberstein for Frederick the Count Palatine; the dukes to ask Charles V to hold back Ferdinand.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "control",
+   "technique": [
+    "manual reconstruction"
+   ],
+   "what": "v3 verification: R9322 scored on the raw decode sysB/decoded.txt (0.449, slips unmarked). Reading written with every emendation marked (sysB/R9322_reading.md): 0.605 explicit-hole, plain 0.105. Keeps read, marginal.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "verification",
+   "what": "Consistency pass (cl): the closed item (R9417 and R9323 decoded, not read) was still a bullet in NOTES Remaining gaps, which the checker reads as an open gap without a blocker; restated below the list as Closed. outcome.gaps unchanged (it already lists only the open pieces).",
+   "result": "worked",
+   "technique": [
+    "statistical test"
+   ]
+  },
+  {
+   "date": "2026-10-24",
+   "kind": "verification",
+   "what": "Read bar applied per document (v10): 3 of 4 documents marked read measure under 95% of words read as sense (v2_score explicit holes) and are now read in part; read_share recorded for each.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "verification",
+   "what": "Decrypt audit (research/decrypt_audit): 208 of 741 compared words departed from sysB/key_from_glosses.tsv (R9322 6 of 383; R9403 202 of 358, all e against r). Cause for R9403: its table (AST = e, X = r) existed only as the KEY dictionary in r9403/build.py; written out as r9403/key_r9403.tsv (20 signs, values copied from build.py lines 6-7) and added to outcome.key_file. After: 6 of 799 (R9403 0 of 416). The R9403 zero is by construction, since r9403/transcription.tsv was generated from the reading with that table; it is not an independent check. R9322: 3 audit artefacts and 3 unmarked departures in sysB/R9322_reading.md (illustriss and illus completed to illustrissime; principis printed princeps), listed in NOTES, not changed. Open: the 23 Oct re-reading gives plain x = r, starred x = e for R9417 and R9323 too, so key_from_glosses.tsv (X = e) may hold only for R9322 as coded; not checked at the image.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "verification",
+   "what": "Decrypt audit, marking: three unmarked departures in sysB/R9322_reading.md marked in the file's own convention (illustriss[ime], illus[trissime], [?princeps]); no letter changed. r9403/transcription.tsv header now states it was generated from the reading by build.py and is not an independent transcription. Page: two sentences corrected (e/r exchange named in the lede; 'the reverse of the glossed letters' replaced). v2_score (la) on R9322_reading.md: hole rate 0.121 before, 0.129 after; explicit holes 0.605 before, 0.579 after. read_share and state unchanged.",
+   "result": "worked"
+  }
  ],
- "outcome": {"validation": {"date": "2026-10-15", "model": "la", "file": "validation.tsv", "tokens": 862, "types": 21, "tokens_per_type": 41.05, "score": -2.091, "nulls": {"random keys": {"n": 200, "mean": -6.002, "sd": 0.527, "max": -4.269, "z": 7.4, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -3.757, "sd": 0.045, "max": -3.682, "z": 37.1, "p": 0.1429}}, "power": -2.091, "verdict": "pass", "notes": "claimed per-occurrence score -2.002; polyphony 0.049; 3476 unread tokens left out; annealer on the real text from random keys reached -2.091"}, 
+ "outcome": {
+  "validation": {
+   "date": "2026-10-15",
+   "model": "la",
+   "file": "validation.tsv",
+   "tokens": 862,
+   "types": 21,
+   "tokens_per_type": 41.05,
+   "score": -2.091,
+   "nulls": {
+    "random keys": {
+     "n": 200,
+     "mean": -6.002,
+     "sd": 0.527,
+     "max": -4.269,
+     "z": 7.4,
+     "p": 0.005
+    },
+    "shuffled refit": {
+     "n": 6,
+     "mean": -3.757,
+     "sd": 0.045,
+     "max": -3.682,
+     "z": 37.1,
+     "p": 0.1429
+    }
+   },
+   "power": -2.091,
+   "verdict": "pass",
+   "notes": "claimed per-occurrence score -2.002; polyphony 0.049; 3476 unread tokens left out; annealer on the real text from random keys reached -2.091"
+  },
   "method": "key recovered based on adjacent plaintext",
   "method_basis": "The key was rebuilt from 153 word pairs of the contemporary interlinear glosses on R9322 and R9417 and decodes their unglossed lines; it then read R9323 and, with e and r exchanged, R9403.",
   "contribution": [
@@ -262,7 +370,11 @@
    "total": 3,
    "tokens_open": "unknown"
   },
-  "verification": ["contemporary decipherment", "historical consistency", "statistical test"],
+  "verification": [
+   "contemporary decipherment",
+   "historical consistency",
+   "statistical test"
+  ],
   "notes": "22 Oct 2026 audit: R9322 and R9403 read; R9417 and R9323 decoded, not read. 23 Oct 2026 (b20): R9417 read in full at the image (8 lines never transcribed; circle and cross codes corrected from the glosses) and R9323 re-read word by word; all four letters read. FLW (probably the king's title) and R9417's owl word sign are not settled.",
   "gaps": [
    {
@@ -396,6 +508,9 @@
     "read_share": 0.991
    }
   ],
-  "key_file": "sysB/key_from_glosses.tsv"
+  "key_file": [
+   "sysB/key_from_glosses.tsv",
+   "r9403/key_r9403.tsv"
+  ]
  }
 }

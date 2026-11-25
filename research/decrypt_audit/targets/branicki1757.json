@@ -1,0 +1,105 @@
+{
+ "folder": "branicki1757",
+ "causes": {
+  "A": "Number code absent from the key file: key.tsv held the 24 letters only, the three-digit groups (37 fixed values, 20 number words, punctuation 830-850, nulls 851+) were in numbers.md. Accounts for about 100 of the 282 words the audit flagged.",
+  "B": "Letters corrected in the readings without a mark, about 165 words (own count: 1398 about 130 of 561 words, 1399 about 19 of 863, 1400 about 8 of 469, 446 about 7 of 354). Only reading_1398.md declares it in its header ('the reading corrects these single slips'); only 15 of the 142 differing words of 1398 are a plain swap inside one pair.",
+  "C": "About 20 words of normalised spelling (diettines > diétines, tems > temps in 1400, gentilzhommes > gentilshommes, lieux > lieues, 824 printed 'mil', 805 printed 'premier').",
+  "D": "Clear French inside transcription_1399.txt (<<...>>) and two foot-line insertions in 446; nothing wrong in the records.",
+  "F": "The audit enciphers the clear passages of 1399 as if they were cipher, misplaces the foot-line insertions of 446, and does not merge two key files into one table (hence a combined file was needed)."
+ },
+ "before": "282 of 2,076 words depart (texts compared: 4; 446 26/352, 1398 146/540, 1399 70/715, 1400 40/469)",
+ "after": "183 of 2,093 words depart (texts compared: 4; 446 14/352, 1398 126/557, 1399 28/715, 1400 15/469)",
+ "files_changed": [
+  "targets/branicki1757/key_with_numbers.tsv (new)",
+  "targets/branicki1757/profile.json",
+  "targets/branicki1757/NOTES.md"
+ ],
+ "key_values_added": [
+  {
+   "sign": "215, 270, 273, 280, 281, 320, 330, 332, 333, 350, 365, 366, 380, 381, 385, 386, 475, 477, 490-493, 575-578, 580, 620, 622, 623, 625, 640, 645, 655, 660, 740, 741",
+   "value": "Castellan, Czesnik, Diète, événement, Excellence, France, général, Grand Général, Grand Maréchal (1399 only), Kiovie, Lithuanie, Palatin, Pétersbourg, Prince, Princesse, Prusse, République, Roi, Russie, russienne, Tribunal",
+   "source": "numbers.md, 'The French table: fixed values'"
+  },
+  {
+   "sign": "805-824",
+   "value": "un ... neuf, dix ... quatre-vingt-dix, cent, mille",
+   "source": "numbers.md, 'Number words' (11 of the 20 are used in the letters; the other 9 follow from the stated order)"
+  },
+  {
+   "sign": "830-838, 840-843, 845-850 (19 numbers that occur)",
+   "value": "- (punctuation, no letter)",
+   "source": "numbers.md, 'Not words'"
+  },
+  {
+   "sign": "859-999 (23 numbers that occur)",
+   "value": "- (null)",
+   "source": "numbers.md, 'Not words'"
+  },
+  {
+   "sign": "a-z (24 rows)",
+   "value": "copied unchanged",
+   "source": "key.tsv"
+  }
+ ],
+ "unmarked_emendations": {
+  "count": 165,
+  "count_note": "approximate, from an own letter alignment of key+number code against the readings; not each case judged by hand in 1398",
+  "examples": [
+   {
+    "text": "1398",
+    "decrypt": "stfraordisfire",
+    "reading": "extraordinaire",
+    "where": "decryption_1398.txt r010 / reading_1398.md:13"
+   },
+   {
+    "text": "1398",
+    "decrypt": "ormeepaseatlois",
+    "reading": "l'armée passa, trois",
+    "where": "decryption_1398.txt r012 / reading_1398.md:13"
+   },
+   {
+    "text": "1398",
+    "decrypt": "mlawxu",
+    "reading": "de",
+    "where": "decryption_1398.txt r048 / reading_1398.md:31"
+   },
+   {
+    "text": "1399",
+    "decrypt": "intelessante",
+    "reading": "intéressante",
+    "where": "decryption_1399.txt p1.14 / reading_1399.md:11"
+   },
+   {
+    "text": "1399",
+    "decrypt": "dans de telles",
+    "reading": "à de telles",
+    "where": "decryption_1399.txt p3.23 / reading_1399.md:31"
+   },
+   {
+    "text": "1400",
+    "decrypt": "casaures",
+    "reading": "cadavres",
+    "where": "decryption_1400.txt p1.05 / reading_1400.md:9"
+   },
+   {
+    "text": "446",
+    "decrypt": "fhire",
+    "reading": "faire",
+    "where": "decryption_446.txt p3.01 / reading_446.md:25"
+   },
+   {
+    "text": "446",
+    "decrypt": "dans lequel [640] va tomber",
+    "reading": "dans lequel la République va tomber ('la' supplied)",
+    "where": "decryption_446.txt p2.06 / reading_446.md:21"
+   }
+  ]
+ },
+ "page_statements_false": [
+  "\"The number codes 195, 296, 367, 385, 386, 480, 496, 580, 775, 795 and 841 are not read; others (720 Stolnik, 350 France, 270 and 273 Czesnik) are guesses, shown as doubtful.\" — already false: numbers.md fixes 385/386 (Grand Maréchal, in 1399), 580 (Pétersbourg), 350 (France), 270/273 (Czesnik) and the readings print them without a question mark. The same list is in NOTES 'Remaining gaps' and profile outcome.gaps.",
+  "\"Key: key.tsv\" — incomplete, not false: the number code is not in it (now key_with_numbers.tsv).",
+  "The page says nowhere that the readings correct letters of the decryption (about 165 words, mostly in 1398); '2,119 of 2,150 cipher words are deciphered, 98.6%' counts corrected words as read. \"the decryption follows from the transcription and the key\" is true (verified here for all four letters, not only 446)."
+ ],
+ "remaining": "The ~165 corrected words are not individually judged; whether each is a writer's slip, a transcription misreading or a wrong correction cannot be told without the scans (not reachable). Remaining-gaps list in NOTES/profile disagrees with numbers.md (left unchanged). VERIFICATION.md still describes key.tsv only (unchanged).",
+ "confidence": "high"
+}

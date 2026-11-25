@@ -117,6 +117,27 @@ ship at the port, "Marcellis le Davison").
   SP 70. Walsingham's own SP 70 letters of the same weeks (nos. 725, 728-729) are calendared without the cipher
   passages.
 
+## Read share over cipher words only (16 Nov 2026)
+
+README Conventions now measure the read bar over the words written in cipher only. The letter is clear text with
+cipher items in < > (`reading.txt`, `cipher_tokens.txt`), which were taken one by one. The boxed [9] after *Glascoe*
+(twice) and the 3 after *Glascoe* and *Hall* (three times) are markers after a cover-name written in clear. They carry
+no cipher (see The cipher) and are left out. That leaves eight cipher words:
+
+| item | count | counted as |
+|---|---|---|
+| 2 0 ‡ H 6 1 = VALERY (grade M) | 1 | read (as in fraction_read) |
+| [9] standing alone = Alençon (Folger/Read, grade I) | 3 | not read: inferred from the clear sense, not a sure word |
+| tt = Alençon (grade I) | 1 | not read, as above |
+| 3 alone (grade I at most) | 1 | not read |
+| nine-sign run | 1 | unread (extent unknown, one word) |
+| II | 1 | unread |
+
+Read share over cipher words: **1 of 8, 0.125** (5 of 8, 0.625, if the grade-I identifications were counted). The
+0.977 recorded before was the whole letter with the clear text, and it is not the measure. The letter goes from read to
+read in part. The target was already read in part (6 of 26 cipher tokens, 0.23, unchanged). Remaining gaps are
+unchanged.
+
 ## Remaining gaps
 - nine-sign run "^ 4 d H m 11 11 I J" (f. 419v l.2) - blocker: no-key-material; key SP 106/2 f. 141A (TNA) is not on DECODE or in print, the sent original (Cotton Vespasian F VI) is not digitised, and 9 signs with one known letter are too few
 - name codes 3 (alone, f. 419v l.1), II (f. 419v l.7), tt (f. 419r l.8) - blocker: no-key-material; single occurrences of Burghley's person codes, no key or gloss in any copy

@@ -1,0 +1,196 @@
+{
+ "schema_version": 1,
+ "target": "dani1217",
+ "title": "Two cipher lines on the title page of ad-Dani's at-Taisir (Berlin, Ms. or. oct. 3629), 1217",
+ "documents": [
+  {
+   "id": "f1a",
+   "shelfmark": "Staatsbibliothek zu Berlin, Orientabteilung, Ms. or. oct. 3629, f. 1a",
+   "date": "21 Rabi' II 615 AH / 17 Jul 1217 (date of the copy; Sellheim queries it for the cipher lines)",
+   "year": 1217,
+   "country": "unknown",
+   "route": "unknown (written on the title page of a manuscript; no addressee)",
+   "language": "unknown",
+   "cleartext_in_document": "none",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No reading exists; Sellheim 1976 reproduces the lines without one."
+   },
+   "length": {
+    "tokens": 40,
+    "distinct": 19,
+    "unit": "symbols",
+    "measured": true,
+    "file": "signs.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Sellheim, VOHD XVII A 1 (1976), Tafel 55 Abb. 69, SBB digital page image PPN1879946874-00000461",
+    "image_quality": "poor",
+    "notes": "Printed halftone, signs 25 to 40 px high. 40 signs seen against Sellheim's 43(?); six present but not classed; the 18 classes are shape groups and several are unsafe. The distinct count includes the unclassed mark."
+   },
+   "read": "not read"
+  }
+ ],
+ "system": {
+  "types": [
+   "undetermined"
+  ],
+  "summary": "Two lines of separate signs, many with dots or loops beneath, on an Arabic title page; system not identified.",
+  "symbol_kind": "symbols",
+  "distinct_symbols": 18,
+  "diacritics": {
+   "used": "unknown"
+  },
+  "homophones": {
+   "used": "unknown"
+  },
+  "nomenclator": {
+   "present": false
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "not applicable",
+  "word_division": "unknown",
+  "doubled_letters": "unknown",
+  "sibling_key": "unknown",
+  "notes": "Signs fit in part three families: Arabic digits with zero marks (the abjad numeral cipher of Sellheim Abb. 92), Coptic cursive numerals, Coptic letters. None gives a reading on the plate."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "Sellheim 1976 gives no reading; none found in DECODE, Tomokiyo, Lasry's key list or by web search (15 and 16 Nov 2026).",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "images"
+  ],
+  "attack": "ciphertext-only",
+  "human_role": "Set the goal \"solve this cipher\" with the catalogue page of no. 2886; no target-specific intervention.",
+  "tools": [
+   "PIL image crops",
+   "web search",
+   "Noto Sans Coptic chart",
+   "poppler"
+  ],
+  "models": [
+   "unknown"
+  ],
+  "sessions": 1,
+  "first_date": "2026-11-16",
+  "last_date": "2026-11-16"
+ },
+ "solution": [
+  {
+   "date": "2026-11-16",
+   "kind": "access",
+   "what": "Downloaded Sellheim's Tafel 55 (Abb. 69), Tafel 59 (Abb. 92) and pp. 23, 176-177 from SBB digital. The manuscript leaf was not reached: qalamos.net and orient-digital reset the connection, the Leipzig mirrors did not connect, the Wayback Machine has no copy.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "sibling key",
+   "technique": [
+    "plaintext matching"
+   ],
+   "what": "Read the cipher of Abb. 92 (Ms. or. oct. 3938, about 1800) against the clear note above it: abjad values written as Arabic digits with one loop beneath per zero, right to left.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "transcription",
+   "what": "Cropped, enlarged and descreened the two lines; classed 40 signs into 18 shape classes with six left unclassed (signs.txt).",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "statistics",
+   "technique": [
+    "frequency analysis",
+    "repeat/pattern analysis"
+   ],
+   "what": "Counts: the 9-shaped sign and the loop-with-stroke sign four times each; one adjacent doubled sign at the start of line 2; a bigram recurring eight signs apart in line 1.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "hypothesis",
+   "technique": [
+    "key-structure hypothesis",
+    "key matching"
+   ],
+   "what": "Arabic digits with zero marks and abjad values, as in Abb. 92: several digit shapes match and line 1 could open m-l-k, but the continuation and the opening of line 2 give no words, and the bare 9 would be ta' four times.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "hypothesis",
+   "technique": [
+    "key-structure hypothesis",
+    "key matching"
+   ],
+   "what": "Coptic cursive numerals with abjad values, compared with the Pihan, Mallon and Megally tables (WG2 N3843) and a Noto Sans Coptic chart: partial shape matches, a possible \"'Abd al-Latif\" across the line break that needs three signs read against their shape.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "hypothesis",
+   "technique": [
+    "key-structure hypothesis",
+    "contextual inference"
+   ],
+   "what": "Coptic letters, read left to right (Coptic, or Arabic in Coptic letters) and right to left with Greek-order numeral values; also mirrored and inverted views for disguised Arabic letters. Nothing reads.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "crib",
+   "technique": [
+    "crib testing",
+    "repeat/pattern analysis"
+   ],
+   "what": "Pattern cribs: the scribe's name, ibn ... ibn, bi-llah, wa-llah, 'Abd Allah, 'afa llahu 'anhu, ya kabikaj, wa-ma tawfiqi illa bi-llah, milk al-faqir. bi-llah and wa-llah fit the first five signs of line 2 but cannot be carried through.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "crib",
+   "technique": [
+    "crib testing",
+    "contextual inference"
+   ],
+   "what": "Scribe's name on the Abb. 92 system: line 1 laid out as milk Abu Sa'id [ibn] Humaid. Five sign values fit their shapes, about as many are forced (the 9-shape as ya', R as 'ayn), the spacing of the two ya'-dal pairs is two signs too long, and the continuation does not align with ash-Shafi'i al-Muqri'.",
+   "result": "failed"
+  }
+ ],
+ "outcome": {
+  "method": "not solved",
+  "method_basis": "No reading and no key: the system is not identified, and the sign classes cannot be made safe on the printed halftone.",
+  "contribution": [
+   "none"
+  ],
+  "class": "not read",
+  "fraction_read": 0,
+  "key": "none",
+  "verification": [
+   "none"
+  ],
+  "gaps": [
+   {
+    "item": "The whole text, 40 to 43 signs on f. 1a",
+    "blocker": "illegible",
+    "detail": "Only a printed halftone was available; zero dots, loops and sign boundaries cannot be told apart on it. Needs a scan of the leaf."
+   },
+   {
+    "item": "Seven signs repeated in the margin of f. 72b",
+    "blocker": "needs-physical-access",
+    "detail": "Not reproduced by Sellheim; Qalamos not reachable from this network."
+   }
+  ],
+  "notes": "In progress. The Abb. 92 system (Arabic digits with zero loops, abjad values) is recorded in NOTES.md and should be the first test on a scan of the leaf."
+ }
+}

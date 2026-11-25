@@ -1,0 +1,15 @@
+# shuffle_out.txt: shuffled-key control, model fr-1600-letters, 5000 shuffles per seed, seeds (20261112, 7); 125 spelled key rows permuted
+# key_v5.tsv sha256 1d0cf98298f269ef3b6079ef9a61f6c12dfa66d6021df63b3ade5e2e7549eeee; shuffle.py sha256 1be03ac9f38e166915786770ebfcf98a0b7a80b6056d72a5a3373430c9d9a327
+# doc	seed	spelled_tokens	scored_chars	real	count_ge_real	max_shuffle	mean_shuffle	verdict
+paulmyer_1664-04-18	20261112	57	94	-3.4411	0	-4.0497	-5.4079	pass
+paulmyer_1664-04-18	7	57	94	-3.4411	0	-4.0876	-5.3973	pass
+paulmyer_1664-04-18	overall							PASS (both seeds < 5/5000)
+paulmyer_1664-06-26	20261112	45	68	-3.2243	0	-4.0095	-5.6420	pass
+paulmyer_1664-06-26	7	45	68	-3.2243	0	-4.1741	-5.6310	pass
+paulmyer_1664-06-26	overall							PASS (both seeds < 5/5000)
+paulmyer_1665-04-14	20261112	72	120	-3.0540	0	-4.0675	-5.4667	pass
+paulmyer_1665-04-14	7	72	120	-3.0540	0	-4.2740	-5.4763	pass
+paulmyer_1665-04-14	overall							PASS (both seeds < 5/5000)
+paulmyer_1665-03-31	20261112	15	26	-2.1851	0	-3.2812	-5.6330	pass
+paulmyer_1665-03-31	7	15	26	-2.1851	0	-2.6398	-5.6642	pass
+paulmyer_1665-03-31	overall							PASS (both seeds < 5/5000)

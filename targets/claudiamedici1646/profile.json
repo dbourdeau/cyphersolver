@@ -179,9 +179,15 @@
    "kind": "reading",
    "what": "Fixes made: held-out 'doppo' corrected (10 of 13 letter for letter, not 11); the 'forze' sign marked doubtful; pairs.tsv and scripts/check_pairs.py added (42 glossed words, all 21 letter signs and 5 code groups, all decrypt to the gloss); margins stated. 24793 falls to 79 of 83 verbatim (95.2%), 75 of 79 without code groups (94.9%), and is marked read in part, not read.",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "verification",
+   "what": "Integration review for the write-up: reading_review of both letters re-done by a reader other than the solver (reading as sentences, hand decode of two lines each with the frozen key); gaps given blockers, retry step and Transcription doubts recorded in NOTES.md. Images not viewed.",
+   "result": "worked"
   }
  ],
- "outcome": {
+ "outcome": {"validation": {"date": "2026-11-24", "verdict": "not applicable", "notes": "key taken from the contemporary interlinear decipherment of the sibling letters 24784 and 24796 (42 glossed words decrypt to their gloss) and tested on the held-out glossed frame 24786; not recovered from these ciphertexts, so a chance test adds nothing"}, 
   "class": "read in part",
   "key": "recovered",
   "method": "key recovered based on adjacent plaintext",
@@ -241,10 +247,10 @@
     "summary": "Success in Flanders depends on acting in concert and quickly while the Catholic and enemy forces are even; the opportunity should be used also on the side of the Duke of Lorraine, unless he has hidden aims ruled by his passions or inconstancy; the King did well to keep Piccolomini in Flanders this year too, since the French will press their enterprises; may God give him complete victory. Written in the 1646 campaign, when Piccolomini commanded for Philip IV in the Spanish Netherlands.",
     "note": "Words 83: 79 verbatim from the signs (95.2%), 1 with a doubtful sign shape ('forze'), 3 with a marked one-sign repair, no guesses, no holes. Without the 4 code groups 75 of 79 (94.9%), under the 95% bar, so marked read in part.",
     "reading_review": {
-     "grade": "B",
-     "by": "AI language-model agent (for WAINUT; a model reading, not a person), recorded at packaging from the independent check in VERIFY.md",
-     "date": "2026-11-06",
-     "note": "The independent check confirmed the key, the sign copy and every marked repair it could see on the image, but gave no letter grade; grade B (coherent, normalised in the reading) was recorded when the folder was packaged. Coherent throughout; weak places are the doubtful z of 'forze' (L03) and the three one-sign repairs (L02 con, L04 de', L08 dall')."
+     "grade": "A",
+     "by": "integration review of 24 Nov 2026 (AI agent, for the maintainers); not a person",
+     "date": "2026-11-24",
+     "note": "Read reading_24793.md as Italian sentences and spot-decoded L03-L04 of transcription_24793.txt with key_frozen.tsv by hand (it matches decryption_24793.txt). The cipher text forms one coherent passage on the 1646 Flanders campaign, the Duke of Lorraine and Piccolomini's stay in Flanders, with no holes; the four marked places (doubtful z of 'forze', repairs in 'con', \"de'\", \"dall'\") each change one sign and the words they give are the only ones that fit. The plain-script context at the start and end is a rough reading and was not checked. Images not viewed in this review. Replaces the packaging record of 6 Nov 2026, which was made on the solver's side."
     }
    },
    {
@@ -260,10 +266,10 @@
     "summary": "The news from Flanders is not very good for the interests of the King; affairs there go badly, in great part through the disorders of the Duke of Lorraine's [?undisciplined troops], which, as Piccolomini wrote, could bring still greater ruin. Written a few weeks before Dunkirk fell to Enghien in October 1646.",
     "note": "Words 33: 28 verbatim from the signs (84.8%), 5 with marked repairs, of which 'indisciplinate genti' (2 words, two changed signs) is a conjecture flagged [?...]. Without the 2 code groups 26 of 31 (83.9%).",
     "reading_review": {
-     "grade": "B",
-     "by": "AI language-model agent (for WAINUT; a model reading, not a person), recorded at packaging from the independent check in VERIFY.md",
-     "date": "2026-11-06",
-     "note": "The independent check confirmed the status and every repair it could see on the image, but gave no letter grade; grade B was recorded when the folder was packaged. Coherent; the weak place is L05-L06 'indisciplinate genti', a conjecture."
+     "grade": "A",
+     "by": "integration review of 24 Nov 2026 (AI agent, for the maintainers); not a person",
+     "date": "2026-11-24",
+     "note": "Read reading_24800.md as Italian sentences and spot-decoded L03-L04 of transcription_24800.txt with key_frozen.tsv by hand ('d'udir che le cose della Fiandra vadino cosi male'). Coherent throughout; the weak place is L05-L06 'indisciplinate genti', two changed signs in one phrase, rightly flagged as a conjecture. Images not viewed in this review. Replaces the packaging record of 6 Nov 2026, which was made on the solver's side."
     }
    }
   ],
@@ -291,8 +297,8 @@
    },
    {
     "item": "Date of 24793",
-    "blocker": "not-attempted",
-    "detail": "Day and month are not on the frame; the letter may continue on a page not in the zip."
+    "blocker": "needs-physical-access",
+    "detail": "Day and month are not on the frame; the letter may continue on a page not in the online zip."
    }
   ]
  }

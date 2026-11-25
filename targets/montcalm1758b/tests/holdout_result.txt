@@ -1,0 +1,35 @@
+Hold-out test, Casgrain codes. Rule written here before the runs (2026-11-11); not changed afterwards.
+
+RULE
+ 1. For each letter L of a code, run solve.py on the OTHER letters of that code only
+    (seed 1, 600 sweeps, KMAX=20, all other settings as in the main runs).
+ 2. Table = for each group, its most frequent aligned value in that run (ties: the
+    longer value, then alphabetical). Nulls count as values ("").
+ 3. Decode L group by group with that table. Words printed in clear inside the figure
+    stream are copied as printed. A group absent from the table decodes to nothing
+    and is counted as unknown.
+ 4. Score = characters of the printed clear text (letters/digits only, accents removed)
+    matched by the decoded string, using difflib.SequenceMatcher (autojunk off),
+    divided by the length of the printed clear text.
+    Also reported: share of groups known to the table; and a chance baseline = the same
+    score after randomly permuting the table values among the table's groups (mean of
+    20 permutations, fixed seed 0).
+
+
+RESULTS (appended after the runs)
+B1: trained on B2; groups known 466/804 (58.0%); clear-text chars matched 32.0%; chance baseline 11.1%
+B2: trained on B1; groups known 231/307 (75.2%); clear-text chars matched 49.2%; chance baseline 17.1%
+I1: trained on I2,I3,I4; groups known 202/230 (87.8%); clear-text chars matched 72.5%; chance baseline 20.3%
+I2: trained on I1,I3,I4; groups known 44/47 (93.6%); clear-text chars matched 81.3%; chance baseline 23.8%
+I3: trained on I1,I2,I4; groups known 331/370 (89.5%); clear-text chars matched 80.0%; chance baseline 38.1%
+I4: trained on I1,I2,I3; groups known 529/660 (80.2%); clear-text chars matched 68.0%; chance baseline 15.4%
+
+Reading the numbers
+- Code B has only two letters, so each test trains on one letter: B2 alone (307 groups) knows 58% of B1's groups;
+  B1 alone knows 75% of B2's. The one-part order of code B is not used by the solver or the test.
+- Code I: each letter decoded with a table from the other three; 80-94% of groups known, 68-81% of the printed
+  clear text recovered, against 15-24% by chance (I3's chance baseline is 38% because the words printed in clear
+  inside LVI's figures are copied in both runs).
+- Lost characters come from unknown groups (no value) and from values seen once in training that the aligner set
+  wrongly. Decoded strings and printed text side by side: holdout/holdout_decode_*.txt; training runs:
+  holdout/holdout_train_without_*.json.

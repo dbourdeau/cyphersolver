@@ -15,7 +15,7 @@
    "cleartext_in_document": "separate passages",
    "plaintext": {"location": ["interlinear"], "source": "contemporary interlinear decipherment on the leaf", "partial": false},
    "length": {"tokens": "unknown", "unit": "symbols", "measured": false},
-   "transcription": {"by": "unknown", "source": "not transcribed; DECODE images viewed", "image_quality": "good", "notes": "Not transcribed: the decipherment is written over every cipher word."}
+   "transcription": {"by": "llm from images", "source": "Vestigia 1796, public image of p. 1 (1512_08_02_1R.JPG), 14 Nov 2026", "image_quality": "fair", "notes": "Partial: only the first four cipher lines of p. 1 (texts/R1123_transcription_partial.txt); the rest of p. 1 and the cipher of p. 2 are not transcribed."}
   },
   {
    "id": "R1124",
@@ -29,7 +29,7 @@
    "cleartext_in_document": "separate passages",
    "plaintext": {"location": ["interlinear"], "source": "contemporary interlinear decipherment on the leaf", "partial": false},
    "length": {"tokens": "unknown", "unit": "symbols", "measured": false},
-   "transcription": {"by": "unknown", "source": "not transcribed; DECODE images viewed", "image_quality": "good", "notes": "Not transcribed."}
+   "transcription": {"by": "llm from images", "source": "DECODE image IMG_R1124_I5696_P1, 22 Oct 2026 (the cipher-group column of texts/R1124_align.tsv, extracted to texts/R1124_transcription.txt on 14 Nov 2026)", "image_quality": "good", "notes": "The eight cipher lines in approximate look-alike labels, a different labelling from R1125_transcription.txt; not re-transcribed."}
   },
   {
    "id": "R1125",
@@ -43,7 +43,7 @@
    "cleartext_in_document": "separate passages",
    "plaintext": {"location": ["separate folio"], "source": "decipherment slip filed with the letter (DECODE image 5)", "partial": false},
    "length": {"tokens": "unknown", "unit": "symbols", "measured": false},
-   "transcription": {"by": "unknown", "source": "first four cipher lines read by eye against the slip", "image_quality": "good", "notes": "13 cipher lines on p. 3; not fully transcribed."}
+   "transcription": {"by": "llm from images", "source": "Vestigia 1804, public image of p. 3 (1396626634-3.jpg, 3072x4096), read in 2x-3x crops, 14 Nov 2026", "image_quality": "good", "notes": "All 12 cipher lines, sign by sign, in look-alike labels (texts/R1125_transcription.txt); one reading, checked by decoding it with texts/sign_values.tsv against the decipherment slip; doubtful signs marked ?. The writer's d and n share one label."}
   }
  ],
  "system": {
@@ -88,7 +88,8 @@
   {"date": "2026-10-22", "kind": "transcription", "what": "R1124: the interlinear decipherment over the eight cipher lines transcribed and aligned with the cipher groups (texts/R1124_align.tsv); two more glossed cipher words in the clear text (tazze grande); the clear text of pp. 1-2 transcribed, with holes at the torn right edge.", "result": "worked"},
   {"date": "2026-10-22", "kind": "transcription", "what": "R1123: the clear opening of p. 1, the first cipher block (ll. 5-9) and the start of the lower block transcribed from the glosses (texts/R1123_reading.md, partial); the gloss words checked against sign values from R1124/R1125 where legible (ducati, dona, del, fiorini, trecento, che). The rest of the lower block (an inventory of silver and sums, about eleven lines) and the cipher of p. 2 not finished: the brown gloss ink is faint at the scan's resolution, and the key was not rebuilt to decode the signs.", "result": "partial"},
   {"date": "2026-10-22", "kind": "reading", "technique": ["language-model scoring"], "what": "Clean-sentence share on the reading bodies: R1125 0.857, R1124 0.625 (inventory words outside the Italian lexicon), R1123 partial 0.632 on the part read. R1124 and R1125 set read; R1123 kept decoded, not read (most of its cipher unread).", "result": "partial"},
-  {"date": "2026-10-24", "kind": "verification", "what": "Read bar applied per document (v10): 1 of 2 documents marked read measure under 95% of words read as sense (v2_score explicit holes) and are now read in part; read_share recorded for each.", "result": "partial"}
+  {"date": "2026-10-24", "kind": "verification", "what": "Read bar applied per document (v10): 1 of 2 documents marked read measure under 95% of words read as sense (v2_score explicit holes) and are now read in part; read_share recorded for each.", "result": "partial"},
+  {"date": "2026-11-14", "kind": "transcription", "what": "Full-texts pass: no entry had a transcription or decryption file. DECODE full images are refused without the login, but the Vestigia images are public (3072x4096). R1125: all 12 cipher lines of p. 3 transcribed sign by sign from Vestigia 1804 image 7 (texts/R1125_transcription.txt), a sign table built from the slip's words (texts/sign_values.tsv, 36 signs, homophones for a, e, i, n, o, r, s, u, b, c, g, m, t; own signs for ll and ss; d and n share a label) and the block decoded with it (texts/decode_signs.py -> texts/R1125_decryption.txt): the decode gives the slip's text except a few words (scosso for posso, uno bronzino, la sua inclusa copia, li before 'parte'); the slip, seen again on Vestigia image 9, is in a later hand. The slip words were set out by line (texts/R1125_slip.txt). R1124: cipher lines and gloss extracted from the 22 Oct align file into texts/R1124_transcription.txt and texts/R1124_gloss.txt, not re-transcribed. R1123: only the first four cipher lines of p. 1 transcribed (texts/R1123_transcription_partial.txt); they decode to the words of the gloss; the rest was not transcribed.", "result": "partial", "technique": ["plaintext matching"]}
  ],
  "outcome": {
   "method": "read from existing decipherment",
@@ -105,11 +106,13 @@
     "doc": "R1123",
     "label": "Eger, 2 Aug 1512",
     "summary": "Giovanni Battista Bonzagni, Ippolito I d'Este's agent at Eger, writes to the cardinal; the political news (Bakócz, the Tatar khan, Poland, the Diet) is in clear, and the c. 14 cipher lines on p. 1 cover private and household business, the estate of a dead man's goods and jewels.",
-    "note": "Re-read 22 Oct 2026 (b14), partial: texts/R1123_reading.md and _en.md hold the clear opening of p. 1, the first cipher block (ll. 5-9, from the gloss: a thousand gold ducats gathered, the King of Hungary's order that the troops ride out by the August feast of Our Lady, 300 florins through Alberto Pratonerio's father) and the start of the lower block (madonna Beatrice's estate, sums in florins). Not read: the rest of the lower block of p. 1 (about eleven glossed lines, an inventory of silver and sums) and the glossed cipher of p. 2 (ll. 2-4, 7). Blockers: illegible (the brown gloss ink is faint at the resolution of the DECODE and Vestigia photographs) and not-attempted (a key rebuilt from the R1124/R1125 alignments would decode the signs and settle the faint glosses).",
+    "note": "Re-read 22 Oct 2026 (b14), partial: texts/R1123_reading.md and _en.md hold the clear opening of p. 1, the first cipher block (ll. 5-9, from the gloss: a thousand gold ducats gathered, the King of Hungary's order that the troops ride out by the August feast of Our Lady, 300 florins through Alberto Pratonerio's father) and the start of the lower block (madonna Beatrice's estate, sums in florins). Not read: the rest of the lower block of p. 1 (about eleven glossed lines, an inventory of silver and sums) and the glossed cipher of p. 2 (ll. 2-4, 7). Blockers: illegible (the brown gloss ink is faint at the resolution of the DECODE and Vestigia photographs) and not-attempted (a key rebuilt from the R1124/R1125 alignments would decode the signs and settle the faint glosses). 14 Nov 2026: the transcription file is partial: the first four cipher lines of p. 1 only, transcribed from the public Vestigia image; decoded with texts/sign_values.tsv they give the words of the gloss (mille ducati doro cum poco interesse ... la sopragiunta comissione ... a cavalcare questa nostra dona de augusto). The fifth line, the lower block (about thirteen lines) and the cipher of p. 2 are not transcribed: not done in this pass, the image is reachable and the signs are legible. The decryption file is the partial transcription of the gloss made on 22 Oct.",
     "state": "decoded, not read",
     "language": "it",
     "translation": "texts/R1123_en.md",
-    "reading": "texts/R1123_reading.md"
+    "reading": "texts/R1123_reading.md",
+    "decryption": "texts/R1123_reading.md",
+    "transcription": "texts/R1123_transcription_partial.txt"
    },
    {
     "doc": "R1124",
@@ -126,7 +129,10 @@
      "note": "Read 22 Oct 2026 (b14): the eight cipher lines from the contemporary interlinear decipherment, transcribed from the DECODE image and aligned group by group with the cipher (texts/R1124_align.tsv), with the clear text of pp. 1-2 transcribed around them; _check_reading.py on the body 0.625 (20/32; misses mostly inventory words the Italian lexicon lacks: coppa, tazette, anelle, coramo). Holes: the torn right edge of p. 1 (ll. 12-19) and the end of cipher l. 5."
     },
     "read_share": 0.946,
-    "note": "24 Oct 2026: 94.6% of the words of texts/R1124_reading.md read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part."
+    "note": "24 Oct 2026: 94.6% of the words of texts/R1124_reading.md read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part.",
+    "contemporary": "texts/R1124_gloss.txt",
+    "decryption": "texts/R1124_gloss.txt",
+    "transcription": ["texts/R1124_transcription.txt", "texts/R1124_align.tsv"]
    },
    {
     "doc": "R1125",
@@ -142,7 +148,11 @@
      "date": "2026-10-22",
      "note": "Read 22 Oct 2026 (b14): the 12-line cipher block of p. 3 from the decipherment slip filed with the letter (image 5), transcribed and aligned group by group with the cipher (texts/R1125_align.tsv); _check_reading.py on the body 0.857 (6/7). Open: the code word 'parte' (left blank by the slip) and the number .31.; the clear pp. 1-4 not transcribed here."
     },
-    "read_share": 0.979
+    "read_share": 0.979,
+    "note": "14 Nov 2026: the 12 cipher lines transcribed sign by sign from the public Vestigia image and decoded with a sign table built from the slip's words (texts/sign_values.tsv, texts/decode_signs.py). The decode gives the slip's text, with these differences, where the signs were followed in the decode but the reading and translation, built from the slip on 22 Oct, were not changed: l. 4 'uno bronzino' (slip 'una bronzina'); ll. 5-6 'non e anchora scosso uno fiorino' (slip as read on 22 Oct 'non ò ancora posso'); l. 7 'mandare li [parte] in canpo' and 'per la sua inclusa copia' (slip without 'li' and 'sua'); l. 11 'sua' (slip 'suo'); l. 12 'seria' (slip 'saria'). The slip is in a later hand, not of the time.",
+    "contemporary": "texts/R1125_slip.txt",
+    "decryption": "texts/R1125_decryption.txt",
+    "transcription": ["texts/R1125_transcription.txt", "texts/R1125_align.tsv"]
    }
   ],
   "gaps": [
@@ -152,9 +162,9 @@
     "detail": "the brown gloss ink is faint at the resolution of the DECODE and Vestigia photographs (both c. 3000 px for the whole sheet); partly legible words: coppe, dorate, tondi dodici, pesano, marche, oncie cinque, pesetti due"
    },
    {
-    "item": "R1123: key rebuild to decode the signs under the faint glosses",
+    "item": "R1123: sign transcription of the rest of p. 1 (fifth line of the upper block, the lower block of about thirteen lines) and of p. 2, to decode the signs under the faint glosses",
     "blocker": "not-attempted",
-    "detail": "a substitution of invented signs with homophones for vowels and a few Latin-looking code words; R1124 and R1125 (texts/*_align.tsv) give about 170 aligned words to rebuild it from; then decode R1123's lower block and p. 2 and check the glosses"
+    "detail": "the sign table was built on 14 Nov 2026 from R1125 (texts/sign_values.tsv) and reads the first four cipher lines of R1123 p. 1 as the gloss has them; the remaining lines were not transcribed in that pass (time), although the public Vestigia image is reachable and the signs are legible: transcribe them in the labels of R1125_transcription.txt, decode with texts/decode_signs.py and check the glosses"
    },
    {
     "item": "R1125: the code word 'parte' (cipher l. 7) and the number .31. (l. 10)",

@@ -1,6 +1,6 @@
 # Rinaldo d'Este, duke of Modena, to "Marchese Taddeo", 6 Jun 1697, cc. 73r-73v (Biblioteca Estense)
 
-Status: in progress. Not yet written up: no site page or README row. Read in part, with escalation steps still open (see Remaining gaps and Escalation). The status below is the contributor's.
+Status: in progress (24 Nov 2026 review: no page yet. Next step: transcribe the clear text and any cipher of cc. 74r-74v on the Estense scans, then work the open codes 196, 193, 191, 130, 175, 91, 57, 55 against the gloss and other Rinaldo letters in the Estense collection; measured share 45/68 = 66%, below the bar.)
 
 Not in the catalogue; found in a sweep of the Estense digital collections for letters with cipher. No catalogue number.
 
@@ -104,6 +104,34 @@ All checked on full-size crops of the images.
 - Scripts that called a private model helper (the blind sign pass and the gloss reading) are not in this folder. Their
   outputs are in `validation/`.
 
+## Decrypt audit, 16 Nov 2026
+
+The decrypt audit (`research/decrypt_audit/`) re-applied `key.tsv` to `transcription_c73.txt` and compared the letters
+with `reading_marked_c73.txt`: 18 of 60 words departed (30%), 6 unmarked gaps, 5 of them a letter u "only in the reading"
+(the first impression was that the decrypt lacks u).
+
+Cause: an artefact of the audit script, not a defect of the key or the reading. The key has 6 = u and the decrypt has
+every u of the reading (suo, sue, funzi-, listu, rinouati). The script strips line labels of the form `L01` but not
+`V01`-`V17`, and it folds v to u, so each label of the 73v lines in the reading file was counted as a letter u with no
+group under it. Example: decrypt `ranciapero[]compendobe`, reading `ranciapero[u]compendobe`, where the u is the label
+`V01`. The sixth gap is the marked `{+c}` of spi{+c}chi.
+
+Checked with a separate snippet, line by line: on all 27 lines the letters of `reading_marked_c73.txt` outside `[ ]` and
+`{+ }` are the key values of the two-digit letter groups of `transcription_c73.txt`, in order, and the code groups in
+brackets are the code groups of the transcription, in order. `decryption_c73.txt` agrees with both. Unmarked
+emendations: none found.
+
+Changed: nothing in the key, transcription, decryption or reading files. The figures of the script are therefore the
+same after as before (18 of 60). With the line labels removed from in-memory copies of the two files the script gives
+1 of 46 words departing; that one word was not identified from the script's output, and the line-by-line check above
+shows no difference.
+
+Seen in passing in `reading_c73.md` (the reading in context, not the file audited), not changed: on L07 "molto" is clear
+text in the transcription (`13 20 [TXT] 15 12 13 18? 12`) but stands inside the bold of "**pericoloso ne molto
+lon(g)o**"; on V09 "il" is in cipher (16 15) but stands outside the bold ("**che** il **defonto**"). That file marks
+supplied letters with ( ) where the marked reading uses {+ } and {? }. Not checked: the transcription against the
+images, and the gloss values of the codes.
+
 ## Remaining gaps
 
 - Open codes: 196 (twice), 193, 191, 130 (L06), 175, 91, 57, 55 (twice) and the V06 group. Proposed only: see above.
@@ -113,6 +141,15 @@ All checked on full-size crops of the images.
   (73r L02-L11 and all of 73v).
 - The clear text was read only around the cipher. 74r-74v were not examined.
 - Recipient: "Marchese Taddeo". Identifying him as Taddeo Rangoni is a suggestion and was not checked.
+
+## Escalation
+
+- [ ] siblings: other Rinaldo d'Este cipher letters in the Estense digital collections not searched for the open codes
+- [x] clear-pages: the interlinear decipherment used for the key and the code values read from the gloss
+- [ ] known-keys: no Modena nomenclator of the 1690s searched or tried
+- [ ] print: prior art searched (see Prior art); calendars of Rinaldo's correspondence not searched
+- [x] key-rebuild: letter key rebuilt from the gloss (reversed alphabet), held-out test on 73v
+- [ ] retry: cc. 74r-74v not examined; no pass by eye of the whole page
 
 ## Prior art
 

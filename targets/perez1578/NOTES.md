@@ -1,6 +1,6 @@
 # Pérez 1578: Antonio Pérez to Don John of Austria, Madrid, 19 August 1578 (RAH 2/Ms Caja 8 no. 4), four cipher passages
 
-Status: read (Brice Dudout, 29 Oct 2026; 69 of 70 words read in their sense, 60 certain, 9 probable, 0 restored, 1 unresolved; Daniel Bourdeau's 95% rule).
+Status: in progress, read in part (16 Nov 2026, retry on the RAH images not yet done; recounted over cipher words, sure words only: 60 of 70 = 85.7%; was read at 69 of 70 = 98.6%, which counted the 9 probable words as read; Brice Dudout, 29 Oct 2026).
 
 Contributed by Brice Dudout (Europe chiffrée), 29 Oct 2026. Write-up (to be published when the account is restored):
 https://bdudout.github.io/europe-chiffree/en/documents.html#perez-1578
@@ -40,6 +40,34 @@ validated on 1410,78-79: 87.3% words / 95.5% chars), plus four values learnt on 
 First published decipherment, to our knowledge: no edition found in Mignet (1845), in the CODOIN or in recent work on the San Román collection; Gregorio Marañón’s Antonio Pérez (1947), with its documentary appendices, could not be checked. Rule applied: Daniel Bourdeau’s, 95% of the words read from the sense. Cipher part: 70 words; certain 60 (85.7%), probable {x} 9 (12.9%), restored [x] 0, unresolved ‹…› 1 (1.4%); read from the sense: 69/70 = 98.6%.
 
 Files: `transcription.txt`, `decryption.txt`, `reading.md`, `translation.md`, `key.tsv`.
+
+## Read share over cipher words only (16 Nov 2026)
+
+README Conventions now count the read share over the words written in cipher, sure words only (probable and
+unresolved words are holes). Pérez's own plain Spanish around the cipher is marked `<...>` in `reading.md` and stays
+out of both numerator and denominator (it was not counted before either). The cipher passages hold 70 words
+(18 + 35 + 17, recounted by hand from `reading.md`, matching `decryption.txt`): 60 certain; 9 probable `{x}` (ir, esso,
+manera, pueda, estragar, estrecho, imposible, cunplira, dicho) and 1 unresolved `‹ningun›` are holes. **0.986 -> 0.857
+(60 of 70)**, under the bar: class **read -> read in part**. The 98.6% of 12 Nov counted the probable words as read.
+`research/reading_audit/v10_relabel.py` can be told which words are clear (`clear_markup: "<>"` in the entry) but does
+not see the `{x}` probable marks or the `‹x›` mark as holes, so it gives 1.0 (70 words, no holes); the 0.857 is the
+hand count above and is not reproduced by the tool.
+
+## Remaining gaps
+
+- {ir}, {esso}, {manera}, {pueda}, {estragar}: five probable words of passages A and b; {ir} sits on a blotted first sign, the others on signs read by the sense - blocker: not-attempted; the RAH images are online (Public Domain Mark) and could be re-opened and the signs retried; on 16 Nov 2026 curl got HTTP 403 (bot check) from bibliotecadigital.rah.es and the browser tool was not available, so no retry was made
+- {estrecho}, {dicho}: a barred 7 followed by a hook, read as *cho* both times; the sign is attested nowhere else - blocker: no-key-material; no second occurrence and no key value for it
+- {imposible}: sign 14 read as *i* where the Genoa table has *gu*, one occurrence; {cunplira}: an oblique stroke read as n - blocker: too-short; each occurs once in 153 symbols
+- ‹ningun›: the signs give *u-cin-gan*, which contradicts the expected word - blocker: not-attempted; not looked at again on the images (same 403 on 16 Nov 2026); settle only from the signs, not from the sense
+
+## Escalation
+
+- [x] siblings: other Genoa-embassy and Pérez ciphers in AGS Estado 1410 were used to rebuild and test the key (see Validation)
+- [n/a] clear-pages: no clear copy or contemporary decipherment of this letter is known; none came up in the searches listed under print
+- [x] known-keys: the 1577 Genoa embassy table, adapted to Pérez's variant (Pérez's cipher with Vargas Mexía and the general cipher of Don John were ruled out in Notes)
+- [x] print: Mignet (1845), the CODOIN, Cryptoole/Cryptiana and Ávila Seoane (2024) checked in October; a web search of 16 Nov 2026 for the letter's date and the phrase "no aver un real" found nothing (only general background on Pérez); Marañón 1947 (appendices) and Fernández Duro's 1890 *Antonio Pérez en Inglaterra y Francia* still not read here
+- [x] key-rebuild: the 1577 table rebuilt from cipher/descifrada pairs and extended with four values from Pérez's lines (9, 8, X, i-stroke) and 27 = x
+- [ ] retry: not done. The nine probable words and *ningun* were not retried on the RAH images: curl to bibliotecadigital.rah.es answered HTTP 403 on 16 Nov 2026 and Claude in Chrome was not available in this session. Next: open images 2-3 in a browser and retry from the signs
 
 ## Notes
 

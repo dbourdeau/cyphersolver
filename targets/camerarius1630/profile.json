@@ -271,6 +271,12 @@
    ],
    "what": "Integration check: own decoder from key.tsv and the two code lists on transcription_442.txt reproduces the spelled words and code values of decryption_442_v2.txt; 442R compared with the Riksarkivet image (full/max): about 110 cipher elements agree (7/3 as declared); glosses of 439R lines 1-18 agree with reading_442_v2.md; strict recount 402/420 = 0.957 (contributor 0.988); camerarius1621 code compared: 6 shared groups, all with different values (separate key); class set to read in part (bare letters 432, 460, 454 open), method to read from existing decipherment.",
    "result": "partial"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "verification",
+   "what": "Full-texts pass: img402-419, img498, img438-440 and img444 had no outcome.texts entry. The transcriptions of 438R, 439L, 439R, 440L and 444R were in the folder; decoded mechanically with a decoder written for the purpose (decode_glossed.py: letter table of key.tsv, glosses of codes_438-444.tsv by image) into decryption_438-440.txt and decryption_444R.txt; listed as 'decoded, not read' because no reading as sentences or translation was written. img402-419 and img498 are held only as the code list codes.tsv: listed together as 'not prose'.",
+   "result": "partial"
   }
  ],
  "outcome": {
@@ -357,6 +363,46 @@
      "by": "Claude Opus 5.5 agent for Brice Dudout",
      "date": "2026-11-13"
     }
+   },
+   {
+    "doc": "img438-440",
+    "label": "images 438R, 439L, 439R, 440L: letter and postscript to Gustav II Adolf, 20/30 Sept 1630 (glossed original)",
+    "transcription": [
+     "transcription_438R.txt",
+     "transcription_439L.txt",
+     "transcription_439R.txt",
+     "transcription_440L.txt"
+    ],
+    "decryption": "decryption_438-440.txt",
+    "contemporary": "codes_438-444.tsv",
+    "language": "la",
+    "state": "decoded, not read",
+    "summary": "Camerarius to Gustav II Adolf: the English envoy reports that Charles I consents to levies in England and Scotland by the Marquis of Hamilton and promises money; Camerarius doubts English constancy without a Parliament; then the postscript and close that the duplicate on 441-443 repeats (read from image 442).",
+    "note": "A mechanical decode, written on 14 Nov 2026 by decode_glossed.py from the transcription, the letter table (key.tsv) and the glosses of the time (codes_438-444.tsv): it builds Latin sentences with the glosses in braces but nothing is inflected or repaired, and no reading as sentences or English translation was written in this pass. Nothing outside blocks one: the glosses are on the page. The postscript and the end of the letter are the text read from the duplicate (entry img442, reading_442_v2.md); the first part of the letter on 438R has no reading yet. alignment_439-442.txt compares original and duplicate."
+   },
+   {
+    "doc": "img444",
+    "label": "image 444R: to the Swedish secretary L. Grubbe, 20/30 Sept 1630 (glossed)",
+    "transcription": "transcription_444R.txt",
+    "decryption": "decryption_444R.txt",
+    "contemporary": "codes_438-444.tsv",
+    "language": "la",
+    "state": "decoded, not read",
+    "summary": "Camerarius to Grubbe: he awaits letters, reports what is said of the King at Stralsund and of the troops sent towards Magdeburg, and refers to his letters to the Chancellor; the ciphered parts carry glosses of the time.",
+    "note": "A mechanical decode, written on 14 Nov 2026 by decode_glossed.py from the transcription, the letter table (key.tsv) and the glosses of the time (codes_438-444.tsv): it builds Latin sentences with the glosses in braces but nothing is inflected or repaired, and no reading as sentences or English translation was written in this pass. Nothing outside blocks one: the glosses are on the page."
+   },
+   {
+    "doc": [
+     "img402-419",
+     "img498"
+    ],
+    "label": "images 402-419 and 498: code groups with their glosses (key source)",
+    "transcription": "codes.tsv",
+    "decryption": "codes.tsv",
+    "language": "la",
+    "state": "not prose",
+    "summary": "The nomenclator groups of the glossed letters of Aug-Dec 1630 with the glosses of the time over them, from which the code list was learned.",
+    "note": "A code list (group, gloss, image), not a text: only the code groups and their glosses were transcribed from these letters, not their running text; the spelled passages used for the letter table are not in the folder as a transcription."
    }
   ],
   "key_file": "key.tsv",

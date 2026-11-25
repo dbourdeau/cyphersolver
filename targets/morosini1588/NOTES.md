@@ -104,8 +104,8 @@ Because the digits run on with no separators and homophones are 1, 2 or 3 digits
 a Viterbi/beam search over segmentations scored by the shared Italian 5-gram model (`lang/`, it-cinquecento,
 no spaces): `python decrypt.py` → `decrypt_raw.txt` (per page) and `plaintext_by_record.txt` (per item).
 
-Second key (F22b, R53/R54 only): now `targets/morosini1589/` (split 14 Oct 2026). R35 (22/14) is a Spanish copy of
-Philip II's letter to the Queen Mother in this key (Meister no. 40); the Italian model still segments it.
+Second key (F22b, R53/R54 only): now `targets/morosini1589/` (split 14 Oct 2026). R35 (22/14) is a Spanish copy of a
+memorandum the Spanish ambassador gave the Queen Mother (not a letter of Philip II) in this key (Meister no. 40); the Italian model still segments it.
 
 ## R17 (Francia 18/3, ff. 233r–235v), moved from bergamo1585
 

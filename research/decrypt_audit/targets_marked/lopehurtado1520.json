@@ -1,0 +1,37 @@
+{
+ "folder": "lopehurtado1520",
+ "marked": [
+  {
+   "file": "targets/lopehurtado1520/reading.md",
+   "places": 59,
+   "note": "59 words, 61 brackets, each checked by hand against the key output of its line"
+  }
+ ],
+ "left_unmarked": {
+  "count": 37,
+  "why": "places where transcribed signs are left out of the text: no letter to carry a mark. Also not marked: the line readings inside decryption.txt (header corrected instead); about 25 respelt words (stated in the header); words the alignment did not flag were not re-read"
+ },
+ "headers_changed": [
+  "reading.md: conventions line -> same line plus a paragraph: [x] also marks letters the key does not give (59 places), dropped signs not marked, spelling partly regularised",
+  "decryption.txt: '...[x] restored by sense; spelling kept)' -> '...[x] restored by sense). Not the unedited output of the key: in 59 words a letter differs ... marked [x] in reading.md ... h is added in a few words'"
+ ],
+ "page_changes": [
+  "'Brice Dudout’s text, spelling of the letter kept, punctuation and accents added.' -> '... spelling partly regularised (h added, Benavente for Venavente, aceptar for acetar), punctuation and accents added.'",
+  "'the certain words rest on the recovered key and the held-out check,' -> same plus 'except 59 words in which a letter differs from what the key gives for the sign as transcribed (marked [x] in reading.md on 16 November 2026, not in the text above),'"
+ ],
+ "page_counts_now_stale": [
+  "Of about 920 cipher words (each unresolved passage counted as two), 95.4% are certain, 2.3% are probable readings marked {x}, and 2.3% are unresolved.",
+  "NOTES/profile: about 97.7% read, 95.4% certain; fraction_read 0.977"
+ ],
+ "hole_rate": [
+  {
+   "file": "targets/lopehurtado1520/reading.md",
+   "before": 0.024,
+   "after": 0.084,
+   "state_in_profile": "read"
+  }
+ ],
+ "falls_below_read_bar": true,
+ "wording_changed": false,
+ "notes": "The text is a contributor's reading (Brice Dudout) made with the key; marks were added inside it on the coordinator's instruction, in its own [x] convention, which the header now widens. The hole rate after (0.084) counts every word holding a bracket, 54 of them single-letter corrections of near-identical signs, and the added English header paragraph inflates the word count; whether such one-letter marks should count against the read bar needs a decision. The Spanish text printed by hand on the page (not the generated block) does not show the new marks. Images not consulted."
+}

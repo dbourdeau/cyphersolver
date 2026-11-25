@@ -62,3 +62,12 @@ corrections, not text. The key is not rebuilt (outcome.key: none).
 - DECODE R1875, https://de-crypt.org/decrypt-web/RecordsView/1875
 - "Nomenclatori veneziani", http://www.crittologia.eu/critto/venezia_nomenclatori.html
 - Treccani DBI, "Foscarini, Sebastiano".
+
+## 14 Nov 2026: the cipher has no transcription, and why (audit section I, "no transcription file")
+
+- In the folder: `decipherment.txt` and `plain_ciphered.txt` are both plaintext (the chancery's decipherment and its
+  ciphered portion). No file holds the figures.
+- DECODE R1875, public record page: six images, no text attachment; full-size images need a login.
+- No other online copy of ASVe Busta 30 no. 178 is known here.
+- `outcome.texts[0].transcription_missing` records this. Unblocks it: the six images at full size. The chancery's ink
+  bars hide part of the figures (Cipher section above), so even then a group-exact transcription may stay incomplete.

@@ -158,3 +158,32 @@ not this one (Tomokiyo).
   at all on item A, the pointer can be dropped.
 - Item B has no entry of its own here: its ciphertext is not accessible (Mélanges de Colbert 11 is not on Gallica),
   and the solution is his.
+
+## CTTS gold-standard pilot, f. 88r (20 Nov 2026)
+
+Following Lasry's advice (20 Nov 2026), page 1 (f. 88r) was transcribed sign by sign in CTTS 3.7.0. Full record:
+`research/ctts/README.md` (project `bordeaux1653`) and `research/ctts/bordeaux1653_ctts_computer_use_report.pdf`.
+The project files (git-ignored) are in `research/ctts/projects/bordeaux1653/ctts/`.
+
+- Pipeline: 5 deskewed bands, 238 candidate boxes; blind Fable 5.2 first pass, 222 signs in 94 types, flags 13 split,
+  40 part, 16 junk, 8 missed. Claude Opus 5.5 then made the corrections in CTTS by computer use while the user watched:
+  about 5 min in the browser review tool, 43 min in CTTS (14:21-15:04), 13 min of validation fixes (final save 15:23).
+- Final: 224 signs, 83 types (`transcription/all.txt`). 172 boxes kept from the first pass (IoU ≥ 0.7); 52 redrawn,
+  split, merged or added.
+- Sign error rates against the final project: first pass box by box 28.1 %; first pass with its own notes applied 3.6 %
+  (218/224); first CTTS pass 4.0 % (217/224). The six last errors (q o → 90; 6 → 6¨; 5 → 5¨; 33 2 → 332; 44 → 344;
+  the sign under the stain at the head of band 3 → ?52') were all noted as doubtful by the first pass, and were
+  settled on enlarged views with no colour overlay.
+- Against `ct2.txt` (page 1): 219 of 223 tokens agree. Differences where the image supports CTTS: 96‾ with one bar
+  (ct2 96=, line 4); 63 without prime (ct2 63', line 6); `3 96‾`, the bar over the 96 only (ct2 396‾, line 11);
+  ?52' marked doubtful (ct2 52' from R8393, line 7). Candidate corrections to ct2, **not made**; the decipherment is
+  unchanged.
+- Band 4 (ct2 line 11): the clerk wrote a plain 4 (crossbar stops at the stem), while the sense wants 4- (s) in
+  "[..] separées(?)". Both transcriptions keep the 4; a decipherment point.
+- Caveat: every reading was made by a model and the final project was compared with ct2, so it is not independent of
+  it.
+- Human check (20 Nov 2026, reported by the user; the checker is not named): a person went over the final CTTS sign
+  table and found it correct except ?52' (the sign under the stain, head of band 3), which stays unconfirmed.
+  `outcome.human_check` is not filled: it is for a passage of the reading and needs the checker's name.
+- Page: section 07 "The page in CTTS" on `docs/bordeaux1653.html`, with the CTTS sign table
+  (`snapshots/key.png` → `docs/bordeaux1653_ctts_key.jpg`, BL Add MS 4200 f. 88r via DECODE R8390).

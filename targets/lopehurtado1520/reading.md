@@ -1,6 +1,9 @@
 # Lope Hurtado de Mendoza to Charles V, 10 December 1520: established text (Spanish)
 
+Marks of 16 Nov 2026 (decrypt audit): this file is the contributor's reading as he gave it. The same text with every word that departs from the key output bracketed is `reading_marked.md`.
+
 {x} probable; ‹…› unresolved; [x] restored by sense; ·x· code group.
+
 
 El ·fre· está ganoso de asiento con los de la Junta como quiera que fuese ; dize que lo haze por el mal aparejo que {ay} de sostener la gente que aquí está. Hizo a la reina que, delante del ·y· de muchos cavalleros, dixiese que mandava que toda la gente de la Junta se derramase, e mandólo tomar por testimonio para enviar a requerir con él a don Pedro Girón ·y· a las ciudades. El conde de Benavente, marqués de Astorga, conde de Miranda, comendador mayor no se hallaron allí ; sabido, entendió luego ·ym· en remediarlo. E así fueron al ·fre· y el testimonio se rasgó ‹…›, no por voto suyo : antes estava en medio. E aun estando así, dixo que a la reina tenía por cuerda, e no y ase cada día mill vezes, de que {temo} que algún día haga cosa sobre los conciertos que sea muy dañosa.
 

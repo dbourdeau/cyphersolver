@@ -1,0 +1,90 @@
+{
+ "folder": "jefferson1787",
+ "causes": {
+  "A": "key.tsv is a 348-value by-product, not the source of the reading: of 1,904 groups with a reading, 807 have the value key.tsv gives, 727 are numbers not in key.tsv (273 with a doubtful digit), 301 have another value there (group inside a longer word, homophone, slip, correction)",
+  "B": "19 groups graded H (16 words) print the editors' word where Jefferson's interlinear gives another, no bracket in the reading files; 13 more groups print Jefferson's own correction written under the group, unmarked",
+  "D": "the words come from adjacent plaintext laid along the groups per occurrence (transcription/*.tsv plain column: Jefferson's interlinear and clear sheets, the clerk's decoding in Short's copies) and, for 216 M and 16 I groups, from the editors' printed text",
+  "F": "about 20 key.tsv values are transcriber notes, marks or phrases ('[struck-through word]', '[above: 1349 ks]', 'because his de-') that the audit decrypts as letters; 44 groups meet a pure note or mark. Also a defect of key.tsv itself",
+  "C": "small: & to and, Novemb. to November, 1. to 1st.; reading files repeat fragments ('information formation', 'months s') from the way make_texts.py joins groups"
+ },
+ "before": "124 of 508 words depart (texts compared: 5)",
+ "after": "124 of 508 words depart (texts compared: 5); unchanged, no key or reading file altered",
+ "files_changed": [
+  "targets/jefferson1787/NOTES.md",
+  "targets/jefferson1787/profile.json"
+ ],
+ "key_values_added": [],
+ "unmarked_emendations": {
+  "count": 19,
+  "note": "counted in code groups; 16 words. Three carry a query (official?, nature?, how?). A further 13 groups follow Jefferson's own written corrections (1360 blo to is four times, 1190, 1538, 806, 378, 59, 1552, 1396, 1098, 772).",
+  "examples": [
+   {
+    "text": "Carmichael 8 May 1788",
+    "decrypt": "my (Jefferson's interlinear over 456)",
+    "reading": "mine (editors' [mine], bracket dropped)",
+    "where": "transcription/carmichael_17880508.tsv seq 43; texts/carmichael_17880508_reading.txt"
+   },
+   {
+    "text": "Carmichael 8 May 1788",
+    "decrypt": "ral fical ral owl (1509.950.1509.694)",
+    "reading": "official? nature?",
+    "where": "transcription/carmichael_17880508.tsv seq 53-56"
+   },
+   {
+    "text": "Carmichael 8 May 1788",
+    "decrypt": "constitu (684)",
+    "reading": "draw",
+    "where": "transcription/carmichael_17880508.tsv seq 174"
+   },
+   {
+    "text": "Carmichael 8 May 1788",
+    "decrypt": "that? (708)",
+    "reading": "their",
+    "where": "transcription/carmichael_17880508.tsv seq 165"
+   },
+   {
+    "text": "Barclay 10 Apr 1786",
+    "decrypt": "that (887)",
+    "reading": "what",
+    "where": "transcription/barclay_17860410.tsv seq 95"
+   },
+   {
+    "text": "Barclay 10 Apr 1786",
+    "decrypt": "fused (751) / do (1285)",
+    "reading": "refused / does",
+    "where": "transcription/barclay_17860410.tsv seq 37, 56"
+   },
+   {
+    "text": "Carmichael 29 May 1788",
+    "decrypt": "cor- (1209)",
+    "reading": "attention",
+    "where": "transcription/carmichael_17880529.tsv seq 3"
+   },
+   {
+    "text": "Carmichael 29 May 1788",
+    "decrypt": "sea w (1164.587)",
+    "reading": "L'Oiseau",
+    "where": "transcription/carmichael_17880529.tsv seq 158-159"
+   },
+   {
+    "text": "Carmichael 29 May 1788",
+    "decrypt": "des (1206) / President (146) / now (329)",
+    "reading": "adds / Sweden / how?",
+    "where": "transcription/carmichael_17880529.tsv seq 206, 219, 221"
+   },
+   {
+    "text": "Carmichael 5 Jun, 24 Jul 1788, 26 Jan 1789",
+    "decrypt": "the (1314) / dis (1252) / s (1017)",
+    "reading": "tho / Cadiz / Natchez",
+    "where": "carmichael_17880605.tsv seq 24; carmichael_17880724.tsv seq 26; carmichael_17890126.tsv seq 137"
+   }
+  ]
+ },
+ "page_statements_false": [
+  "\"Every group was transcribed from the images and its value taken only from those decodings: 348 values (key.tsv).\" — 216 groups (M) and 16 (I) take their reading from the editors' text, as the page says further down; the 348 values cover 807 of 1,904 read groups as they stand",
+  "\"The check is that every value in key.tsv is a contemporary decoding.\" — about 20 values are transcriber notes, marks or multi-group phrases (1252 '[struck-through word]', 1399 '[above: 1349 ks]', 371 '[below: c]', 1420 'because his de-', 1166 and 1390 both 'indispensibly')",
+  "\"1,519 are graded H (a contemporary decoding or clear sheet)\" — at least 19 of them print the editors' word against Jefferson's decoding, and 13 print his written correction rather than the decoding of the number sent"
+ ],
+ "remaining": "Not done: no second key file. A table derived from the plain column would be the reading in key form and would give whole phrases to single groups in the press-copy letters; key.tsv was not hand-edited because attested_key.py writes it and several values need the images. The 124 flagged words were not attributed one by one (group-level counts stand for them). No image re-read. Only interlinear-against-plain was compared; the clear-sheet letters (H by rule) and the M groups were not checked against Founders Online.",
+ "confidence": "medium"
+}

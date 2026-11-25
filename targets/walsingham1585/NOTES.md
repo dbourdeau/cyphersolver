@@ -113,9 +113,34 @@ with numbers glossed. R4838 and R4839 are left to CSP nos. 40 and 65, checked ag
 
 **23 Oct 2026, v6 spelling check (research/reading_audit/v6_spelling_files.txt; REREAD_BRIEF step 3-4: no modern spelling in a reading)**: reading_R4840.txt and reading_R4844_r2.txt said 'spelling modernised (in part)'. There is no diplomatic transcription, so the DECODE images were fetched again with the project cookie (research/reading_audit/v6_fetch.py; scratchpad only, BL images) and re-read in strips; the words whose letters are clear in the secretary hand are now as written (dothe, complayne, wrytten, frende, knowe, countenaunce, towardes, yf, woold, ioyne, wyll, realme, iudge, therof, alwayes, then for than, Coorte; hathe bread, lykinge, doe bothe allowe of yt, untill, ben unmindfull, commyssion, Jesuites ...). Words not certain on the scan keep the earlier form, which the headers say; no hole was filled and no word changed. The R4840 marginal postscript (f. 163v) was not re-read. Explicit holes R4840 0.614 -> 0.667, R4844_r2 0.705 -> 0.736 (new header lines; no '## Reading' heading). States unchanged: R4840 read, R4844 decoded, not read.
 
+## Read share over cipher words only (16 Nov 2026)
+
+README Conventions now count the read share over the words written in cipher, holes by words, sure words only (probable
+and grade-M words are holes; a word confirmed by an independent contemporary text is sure). The letters are clear
+English; the cipher words are the two-digit name codes written in the line, and in R4844 the sign words. Recounted by
+hand; the files do not mark them, so `v10_relabel.py` cannot reproduce these counts.
+
+- **R4840** (21 Aug): 20 code occurrences, **15 sure**: 39, 40, 10, 24 (twice each), 20 and 19 on the calendar's glosses
+  (grade H), and 27 (twice), 36 (twice) and 3 on the contemporary glosses of the deciphered pairs
+  (`dudout/name_codes.md`: "the Secret[ary]", "Eng.", "the Q."), which are independent of this reading; **5 holes**:
+  11 three times (grade C; its gloss in the pairs, "S. Fr.?", is uncertain), 28 and 29 (grade M, no gloss).
+  **15 of 20 = 0.75**, from 0.957 (a figure over the whole letter, clear included, taken from `clear_gaps_pass2.md`).
+  On the `texts/key.md` grades alone, without the pairs' glosses, it is 10 of 20 = 0.50. **State read -> read in part.**
+  The clear words and their `[..]` gaps are not cipher and are not counted.
+- **R4844 sign words** (Dudout; updated 20 Nov 2026 after sheets K and K2 and the review of #821, see Review of #821: 12 groups S, 4 P, 3 unresolved, **12 of 19 = 0.632**; sheet K alone 13 of 19, sheet K2 14 of 19). Count of 16 Nov 2026: 19 sign groups, **11 graded S (certain)**, 5 graded P (probable, one with a restored
+  letter; holes) and 3 unresolved: **11 of 19 = 0.579**, from 0.86, which counted the sign letters with the probable
+  and restored ones as read (certain letters about 69 of 116 = 0.59). Stays read in part. The reading file
+  `dudout/reading_R4844_signs.md` is Dudout's and still carries its own 86% line.
+- **R4844** (the whole letter) stays decoded, not read; **R4838, R4839** are in print as calendar abstracts and have no
+  entry here.
+- **Outcome fraction_read** 0.43 -> **0.36** (25 of 69 units: R4840 15, R4838/R4839 10 as before, R4844 none, as
+  before); the 0.43 counted R4840's 20 whole. The 10 units of R4838/R4839 were not recounted.
+- The class stays **read in part**; the part counts "34 of 46 name-code occurrences" and "12 of 18 numbers identified"
+  count identified numbers, not sure occurrences, and are not recounted here.
+
 ## Remaining gaps
 - R4844 as a whole decoded, not read (sign words or open codes in nearly every sentence; reading audit 22 Oct 2026) - blocker: too-short; see the sign-words and name-code lines below
-- R4844 sign words (~14 words, ~120 signs) - blocker: too-short; homophonic sign alphabet, no crib, no key, interlinear decipherment blotted out
+- R4844 sign words (19 groups, ~120 signs) - blocker: too-short; homophonic sign alphabet, interlinear decipherment blotted out. A partial sign key now exists (`dudout/sign_key.tsv`, learnt on the glossed sign words of R4689, R4835, R4836; 0.646 vs 0.213 on held-out R4845), and two blind sign sheets (K, K2) were run: 12 of 19 groups certain, 4 probable, 3 unresolved (20 Nov 2026). Open: groups 2, 4, 10; the fifth sign of group 14; MP and ψ in group 16
 - name codes 13, 14, 23, 30, 32, 37 - blocker: no-key-material; not glossed in CSP or Wotton drafts; context too thin
 - clear-text gaps [..] in reading_R4840/R4844 - blocker: illegible; second pass 14 Oct 2026 on the DECODE images (`clear_gaps_pass2.md`): of 46 places, 32 read H/C, 8 M, 6 illegible (blots, stains, struck interlinear words); merged for R4844 into `reading_R4844_r2.txt` on 22 Oct 2026 (R4840's nine corrections still to merge into reading_R4840.txt)
 
@@ -127,6 +152,7 @@ with numbers glossed. R4838 and R4839 are left to CSP nos. 40 and 65, checked ag
 - [n/a] key-rebuild: the name code is a list of names with no internal order to bracket, and its open numbers occur once or twice in thin context; the sign alphabet is ~120 homophonic signs with nulls and no crib, below what an anneal can fix (a crib from SP 52/38 copies would be needed first)
 - [x] retry: clear-text gaps re-read on the images 14 Oct 2026 (`clear_gaps_pass2.md`); name-code grades unchanged (the new words fix no open number)
 - [x] retry (22 Oct 2026): R4844 re-read under the reread brief; pass-2 readings merged (`reading_R4844_r2.txt`); images out of reach (DECODE login); sign words and open codes unchanged (`texts/R4844_reread_log.md`)
+- [x] retry (19-20 Nov 2026): blind sign sheets K (10 signs) and K2 (3 signs) on the R4844 sign words, controls 2 of 2 on each, `dudout/sign_key.tsv` unchanged; sure groups 11 -> 13 -> 14 of 19, then 12 of 19 = 0.632 after the review of #821 (K and K2 disagree on group 14; group 16 rests on MP and ψ, not settled); read in part
 
 ## 2026-09-30 (quotation list for George Lasry)
 
@@ -158,3 +184,120 @@ groups (plot, judgment, her selfe, violent course, absent, attempt, traine, Stir
 plot, secrecy), 3 unresolved (`dudout/reading_R4844_signs.md`). Name code from the pairs' glosses
 (`dudout/name_codes.md`): **3 = the Queen / England** (texts/key.md has "France", M), 14 = Earl of Leicester, 27 = the
 Secretary, 37 = Scotland.
+
+## 14 Nov 2026: full-texts pass, R4838-R4839 listed
+
+`outcome.texts` had no entry for R4838-R4839. The folder holds no text of either letter: they were viewed on the
+DECODE images on 21 Sept and compared with CSP Scotland viii nos. 40 and 65, and nothing was saved. Tried today:
+the DECODE full images (refused without the login: "Insufficient permissions to see the full image"), and the
+calendar (British History Online: premium content; HathiTrust: Cloudflare bot check; archive.org
+`calendarofstatep0008vari`: lending only, HTTP 401). None reachable, so neither a transcription nor the calendar
+abstracts could be added.
+
+Done: `texts/R4838-R4839.md` lists the name numbers recorded for the two letters (section 1 above) with their values
+from `texts/key.md` and `dudout/name_codes.md`; the entry is `not prose` with `transcription_missing`. Open: the
+text of the two letters (blocker: needs the DECODE login, or a reachable copy of CSP Scotland viii).
+
+Note on the count: `fraction_read_source` counts "R4838/R4839 10" name-code units as read, while section 1 lists
+nine numbers for the two letters (3 and 6), two of them (13, 30) open in the key and 37 open until 9 Nov. The
+count could not be re-made without the pages; it is left as it stands and flagged here.
+
+## Sign check K, 19 Nov 2026 (R4844 sign words)
+
+Level sought: "AI decipherment, human-checked on a sample of signs" (`outcome.sign_check`, held in `sign_check_pending.json`
+until PR #789 adds the field to the schema; files in `sign_check/`). It checks how signs are written, not the key or the
+reading, and it changes neither the class nor the state.
+
+**Who did what.** The checker is Brice Dudout, the contributor of the sign-word reading (a project member, not an independent
+reader). He answered blind: one boxed sign per question, shapes cut only from certain sign words of R4844 (same hand, same
+letter), with "none / other shape", "illegible" and "not a sign"; no gloss (the struck interlinear masked), reading, place or
+date was shown. An AI model (Claude Opus 5.5) wrote the rule, chose the signs by it, cut the thumbnails, built the sheet,
+scored the answers and read the free-text remarks. The answer key stays private; its content for each question is in
+`sign_check/sheet-K-results.tsv`. No image, crop or thumbnail is committed: the images are the DECODE study images of R4844,
+not reproduced.
+
+**Rule.** `sign_check/sheet-K-rule.md` (in French, as written), SHA-256
+7d53c787b1a113a2e0ca586a66863c442b7cae534a1deba845adc5784a933ab5, written and hashed on 19 Nov 2026 before any thumbnail was
+cut and before any answer. On the certain words, the dotted trait (DIV, read r or s) splits by the place of its dot: above =
+r, below = s; dot after it on the line (TD) = t. Targets: ten dotted traits or barred signs in probable or unresolved groups
+(4, 14, 12, 16, 2, 9), one sign per question, with the shape that makes the word named for each. Controls: the r of "course"
+(group 8) and the k of "violent" (group 7). The rule was applied as written, with no change. **Declared deviation:** the
+rule has no written integration clause. It was applied in the strictest way, as on the other sheets of this folder: a group
+becomes certain only when every target in it gets the shape that makes it; "none / other shape" leaves the group at its
+grade. That application was written after the answers; it adds nothing to the rule.
+
+**Answers.** `sign_check/sheet-K-answers.json`, exported 2026-11-19T22:30:25Z (SHA-256
+dc436bb4cecec6c6c18380315e5da10a233fd19c52ef53b9d3c7022e4a500c9f). Controls 2 of 2. Ten target signs: 2 corrected, 5 as
+transcribed, 3 "none / other shape", each with a remark.
+- Group 12 **traine**: the first trait has its dot after it (t): P -> **S**.
+- Group 16 **Scroupe**: the barred sign is "=" (p): P -> **S**. Whether it names Lord Scrope is a separate question.
+- Group 4 (candidate "supp...t"): the first sign has its dot below (s) and the fourth is "=" (p; remark: with a stroke
+  through the middle), but the second is another shape ("a dot, then a trait"): stays unresolved.
+- Group 14 suspition: the third and fourth signs have their dot below (s); the fifth is another shape ("an L with a stroke
+  below"): stays probable.
+- Group 9 [a]bsent: the sign after e is another shape ("a trait with a dot above and below"): stays probable.
+- Group 2: the fifth sign has its dot below (s); the group stays unresolved.
+
+The three new shapes are leads, not values: one case each, to be found elsewhere before any value is given.
+
+**Effect.** `dudout/reading_R4844_signs.md`: grades of groups 12 and 16, and a paragraph on the sheet. Sure groups 11 -> 13
+of 19 (0.579 -> **0.684**); 3 probable, 3 unresolved. A text under 40 words with 6 holes: still read in part. `fraction_read`
+is unchanged (its units do not include the sign groups).
+
+**Limits.** One checker, inside the project. Two controls show little on their own. The signs were chosen because they were
+doubtful: a diagnostic, not a sample of the text. No person has audited the model's part. This is not a `human_check`.
+
+## Sign check K2, 20 Nov 2026 (R4844 sign words)
+
+Follow-up of sheet K, for its three new shapes. Same level and roles (checker: Brice Dudout, the contributor; an AI model,
+Claude Opus 5.5, wrote the rule, chose the signs, cut the thumbnails, built and scored the sheet and read the remark). No
+image, crop or thumbnail is committed: the images are the DECODE study images of R4844, not reproduced.
+
+**Rule.** `sign_check/sheet-K2-rule.md` (in French, as written), SHA-256
+de905a2656743a872a68e3d154bdb0a6f0ae6c72cef47dffdc5962f9acc803e4, written and hashed on 20 Nov 2026 before any thumbnail
+and any answer. Unlike sheet K it has a written integration clause. The 19 sign groups were searched for other cases of the
+three shapes: "an L with a stroke below" had a second possible case (the "=" of "attempt", where an upright reaches the
+struck-out interlinear: perhaps the stem of a letter of the gloss); "dots above and below" a possible second case (group 2);
+"a dot then a trait" none, so it was not asked. Three targets, two controls (the dotted r of "Sterling", the # of "attempt").
+
+**Answers.** `sign_check/sheet-K2-answers.json`, exported 2026-11-19T23:31:13Z (SHA-256
+130e58077cc9c911417400142ba956182ea508e39b9708c73c0486afe8b7951d); results `sign_check/sheet-K2-results.tsv`. Controls 2 of 2.
+Group 14, fifth sign: "=", with the remark that the "L with a stroke below" he saw on sheet K was an error: the upright is a p
+of the line above. Group 4, fourth sign: "=". Group 2, fifth sign: dot below.
+
+**Effect.** By the clause, the fifth sign of group 14 is a p (as in "plot" and "attempt", certain words): it is relabelled EQ
+(it was transcribed ⊥) and **suspition** becomes certain. The lead "L with a stroke below" is withdrawn, and with it the idea
+of an "= with upright" variant (the upright in "attempt" is likewise outside the sign). Groups 2 and 4 stay unresolved.
+Sure groups: 13 of 19 = 0.684 -> **14 of 19 = 0.737** (R4844 sign words, `dudout/reading_R4844_signs.md`). The target's
+fraction_read (0.36) does not count R4844's units and is unchanged. Still read in part (fewer than 40 words, 5 holes).
+
+**Limits.** One checker inside the project; two controls; signs chosen because doubtful. Not a `human_check`.
+
+## Review of #821, 20 Nov 2026 (R4844 sign words)
+
+Two groups go back to probable after the review of PR #821 (Daniel Bourdeau, 20 Nov 2026); no sign label or key value is
+changed.
+- Group 14, {suspition}: sheets K and K2 gave opposite answers on its fifth sign. Sheet K said "other shape, an L with a
+  stroke below"; sheet K2, written knowing that answer, said "=". The group also has more s-signs than the word needs. It
+  stays probable unless another checker settles that sign.
+- Group 16, {Scroupe}: the sheet settled only ≡ = p. Sign by sign (`dudout/reading_R4844_signs.md`): DIV s/r, ψ (no row in
+  `sign_key.tsv`; c only by context in groups 17, 19), DIV r, L o, m u, ≡ p, MP **l** (as in "plot" and "lorde" in the same
+  postscript; "sometimes p" added after the measurement), d e. That is "s?rouple", perhaps "scrouple": eight signs for the
+  seven letters of "Scroupe". It stays probable until MP and ψ are settled.
+
+Sure groups: 14 of 19 -> **12 of 19 = 0.632** (12 S, 4 P, 3 unresolved). Still read in part. fraction_read (0.36) does not
+count R4844's units and is unchanged.
+
+## Integration of #821, 20 Nov 2026
+
+Done at the integration of PR #821 (maintainer session, an AI agent; nothing here was checked on the DECODE images).
+- `profile.json`: the `reading_review` of the sign-words entry is now the reviewer's (grade B), in place of the
+  contributor's own of 9 Nov 2026. `outcome.gaps`, the sign part of `outcome.parts` and `outcome.notes` now give the state
+  of the Remaining gaps section above: a partial sign key, sheets K and K2, 12 of 19 groups certain, 4 probable, 3
+  unresolved; open: groups 2, 4, 10, the fifth sign of group 14, MP and ψ in group 16.
+- The K2 relabel of the fifth sign of group 14 (⊥ -> EQ) stays in the sign column of `dudout/reading_R4844_signs.md`, but
+  it was not accepted on review as a settled correction: sheets K and K2 disagree on that sign. `sign_check_pending.json`
+  says so in its K2 entry, so the sign is not counted as corrected when the record moves to `outcome.sign_check` after #789.
+- Not decided: the sign part of `outcome.parts` still has method "not solved" and extent "none", which record the project's
+  own attempt of 21 Sept 2026 (section 4). Whether it is reclassed on the contributed sign key, with `outcome.provenance`
+  and the README row to match, is left to the owner.

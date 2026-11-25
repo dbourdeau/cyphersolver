@@ -1,6 +1,6 @@
 # Vincenzo Gonzaga (Mantua) to Louis de Gonzague, duc de Nevers, 17 Sept 1590 — BnF fr. 3979 ff. 92–93, DECODE R4176
 
-Status: read (878 of 923 cipher tokens, 95.1%, measured in reading.md; key complete from the archive)
+Status: read (95.9% of the cipher words, least-size estimate, counted 16 Nov 2026; 878 of 923 cipher tokens, 95.1%, measured in reading.md; key complete from the archive)
 
 Not to be confused with Paolo Rosson's `gonzaga-1590` folder (pangoleen/cipher-readings): that is Cardinal Scipione Gonzaga's cipher to Nevers in BnF fr. 4698, a different letter (Rosson's report that Nevers key no. 35 does not fit Scipione's cipher was not tested here; see `targets/scipion1585/`, issue #708, 16 Nov 2026). Only the name collides; nothing here changes.
 
@@ -61,6 +61,30 @@ di darne c[..] parte…" (digits 14 35 11 13 16 36 38 23 33 35, one stray 33, a 
 So on f. 93r "{box-sign}" = et ("a tempo et luogo conveniente", "corona et parimente"), "{bar-circle}" = per,
 "{circle-plus}" = S. M.tà ("si assicuri la S. M.tà per…", "con S. M.tà gli interessi"); on f. 92v "{●} ti il [60]" = "che
 il Legato ha scritto in Italia", "{T} Monsignor" = "Di Monsignor" (flag-Γ).
+
+## Read share over cipher words only (16 Nov 2026)
+
+README Conventions now measure the read bar over the words written in cipher only. In `reading.md` the cipher is the
+**bold** passages and the clear text is plain. On f. 93r the bold nests round *non hò mancato* and *sin hora*; the
+passage from *presso S. M.tà* to *effetti* was counted as one cipher passage. The signs {0Δ}, {4-sign} and {9} are
+nulls on the key and are not holes. The `[..]` after *di Monsignor* is in the clear, after the cipher "{T} Monsignor"
+(`ct_92v.txt`).
+
+Holes are counted by words. Each unread stretch is sized at the least number of words its decode allows (README,
+an estimate). A letter run counts at least one word per 13 letters (13 is the longest cipher word read in this letter,
+*conservatione*), and a code word counts as a word on its own:
+
+| stretch | letters | least words |
+|---|---|---|
+| f. 92r l5 tail | 10 | 1 |
+| f. 92r l8 middle | 24, then the code 26 *Inglesi*, then 2 | 4 |
+| f. 92v *la mondezza a me* | 6 | 1 |
+| f. 93r l8 code group | 1 code | 1 |
+
+The part-words *c[..]* and *per[?]* add one each. Result: 212 cipher words read and 9 unread, **0.959**, an
+estimate. The letter and the target stay read. The first count of the day sized the stretches at the read cipher's
+mean of 4.6 letters a word. That gave 0.946 (12 unread), but the README rule takes the least size, so it is not the
+measure. With bare marks it would be 0.968. The token count (878 of 923, 0.951) is unchanged.
 
 ## Remaining gaps
 

@@ -65,3 +65,19 @@ no key, so there is no sign-level check or replay. Bourrilly's key is not printe
   his key fits this letter. He is no longer credited on the 1529 entry (`dubellay`).
 - That his key and Bourrilly's recovered key are the same cipher is taken from the shared letter (28 Oct 1528); the
   two keys were not compared sign by sign.
+
+## 14 Nov 2026: full texts and translation (audit sections I and J)
+
+- `texts/28oct1528_bourrilly.md`: Bourrilly and de Vaissière's text of no. 156 (pp. 430-434), copied from the
+  archive.org text of the volume and corrected against the page images of pp. 430-434. The cipher passages are the
+  editors' italics, marked with asterisks; their two notes on the cipher (p. 432 n. 6, p. 433 n. 1) are quoted at the end.
+- `texts/28oct1528_en.md`: English translation of that printed text, sentence for sentence, the editors' `[paix]`,
+  `[e]`, `[n]` and `(?)` kept.
+- Ciphertext transcription: not made. Page 146 was opened (Gallica `btv1b90599292` f144 through `openapi.bnf.fr`,
+  a bitonal microfilm scan). The cipher is invented graphic signs set between clear words, about 22 lines carry
+  some (the "about fifteen lines" above was an estimate from the first viewing; not recounted sign by sign). No sign table is in the
+  repository (Bourrilly's key is not printed; Lasry's is an image on Cryptiana GL.htm), and the DECODE R4254 images
+  now answer "Insufficient permissions" without a login. Recorded in `profile.json` as `transcription_missing`.
+  To unblock: Lasry's sign table, then a line-by-line transcription of p. 146 checked on Bourrilly's italics.
+- Noted from the edition: Bourrilly's own reading of one cipher phrase is doubtful by his account (p. 433 n. 1: the
+  cipher has "je ne croy pas que ayez par leurs mais"; "[paix]" and "mai[n]s" are his), and two persons are marked "(?)".

@@ -1,0 +1,63 @@
+{
+ "folder": "cattanei1430",
+ "causes": {
+  "F": "Nearly all of the flag. The sign for t is named '=' (key line '==t'); audit.py splits a key line at the first '=' and also strips a leading '=' from sign names, so the sign is lost and 115 t's drop out of the audit's decrypt. key4_v2.txt is complete (every transcription token except the unresolved composite '?' has a line).",
+  "B": "6 words in texts/R1854-P4_reading.md: Sollicitabo (decrypt solicitabo), offerendum (offerenuum), dominus (domicus; NOTES 5 Oct records c for n, reading_p4.md keeps [domicus]), male[c]ontentus (n not covered by the bracket), sex (secx, c dropped), Aragonum (aeragono; named in the header comment only).",
+  "C": "4 words: abbreviations expanded without the parentheses reading_p4.md has: nostrum (nrum), domini (dni) in P4, dominorum (dnorum) in P5; producxerunt (producxerut, macron for n; named in the P5 header comment)."
+ },
+ "before": "103 of 272 words depart (texts compared: 2)",
+ "after": "audit unchanged at 103 of 272 (artefact cannot be removed from inside the target folder); with the key file parsed as targets/r1854/show.py parses it and the audit's comparison otherwise unchanged: 9 of 273 words depart (P4 7 of 241, P5 2 of 32)",
+ "files_changed": [
+  "targets/cattanei1430/NOTES.md",
+  "targets/cattanei1430/profile.json"
+ ],
+ "key_values_added": [],
+ "unmarked_emendations": {
+  "count": 6,
+  "examples": [
+   {
+    "text": "R1854-P4",
+    "decrypt": "solicitabo",
+    "reading": "Sollicitabo",
+    "where": "texts/R1854-P4_reading.md:10 (p4v2.txt L06)"
+   },
+   {
+    "text": "R1854-P4",
+    "decrypt": "aeragono",
+    "reading": "Aragonum",
+    "where": "texts/R1854-P4_reading.md:13 (L11; stated in header comment line 1)"
+   },
+   {
+    "text": "R1854-P4",
+    "decrypt": "offerenu|um",
+    "reading": "offerendum",
+    "where": "texts/R1854-P4_reading.md:14 (L12-L13)"
+   },
+   {
+    "text": "R1854-P4",
+    "decrypt": "maleotentus",
+    "reading": "male[c]ontentus",
+    "where": "texts/R1854-P4_reading.md:15 (L13; n unbracketed)"
+   },
+   {
+    "text": "R1854-P4",
+    "decrypt": "domicus",
+    "reading": "Dominus (noster restitu[i]t)",
+    "where": "texts/R1854-P4_reading.md (L22)"
+   },
+   {
+    "text": "R1854-P4",
+    "decrypt": "secx ciues",
+    "reading": "sex ciues",
+    "where": "texts/R1854-P4_reading.md:22 (L26)"
+   }
+  ]
+ },
+ "page_statements_false": [
+  "\"Latin spelling as the key gives it.\" (docs/cattanei1430.html line 202, header of the embedded P4 reading) — false for Sollicitabo, offerendum, dominus, sex, nostrum, domini, and the n of male[c]ontentus; Aragonum is excepted in the same comment",
+  "\"spelling as the key gives it; &quot;producxerū(n)t&quot; (macron) written producxerunt\" (line 302, embedded P5 reading) — dominorum is also expanded from dnorum",
+  "\"gave Latin at once (<em>post recessum</em>, <em>sollicitabo bullam</em>, <em>galeotam</em>)\" (line 91) — the second-pass transcription and key give solicitabo with one l"
+ ],
+ "remaining": "Images not consulted: whether solicitabo/offerenuum/maleotentus are the writer's or the transcription's is open (the '3' in maleotentus could be the con sign, not established). Abbreviation and macron expansions need a central decision on marking. Inside doubt marks, not counted: a[rchi]episcopus replaces decrypt 'amhi'; [?Meana] has an a the decrypt (demeanbecaris) does not give. outcome.texts[1].decryption points at reading_p4.md, which holds only lines 1-2 of image 5. The profile.json was re-dumped with indent=1 as the brief prescribes, which reflowed previously inline steps (content unchanged). audit.py needs to accept a sign named '='.",
+ "confidence": "high"
+}

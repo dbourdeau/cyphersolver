@@ -1,0 +1,51 @@
+.study-hero { display:grid; grid-template-columns: minmax(0,1.35fr) minmax(0,.8fr); align-items:center; gap:clamp(1rem,4vw,3.5rem); }
+.study-hero .sub { max-width:45ch; font-size:var(--fs-lg); }
+.study .btns { display:flex; flex-wrap:wrap; align-items:center; gap:.6rem 1.1rem; margin:.9rem 0; }
+.study-hero .btns .primary { border:1px solid var(--gold); border-radius:var(--radius); padding:.45rem .85rem; text-decoration:none; }
+.study-hero .manuscript { margin:0; }
+.manuscript > a { display:grid; place-items:center; padding:1.1rem; background:var(--panel); border:1px solid var(--rule); border-radius:var(--radius); }
+.manuscript img { width:auto; height:auto; max-height:310px; max-width:100%; border-radius:2px; }
+.attempts, .handouts { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:1.1rem; margin:1.25rem 0 1.8rem; }
+.attempts section { border-top:2px solid var(--gold); padding:.85rem .2rem 0; display:flex; flex-direction:column; }
+.attempts h3, .route-notes h3 { margin:0 0 .55rem; }
+.attempts p { margin:.15rem 0 .75rem; }
+.attempts .finding { border-top:1px solid var(--rule); padding-top:.6rem; margin-top:auto; color:var(--gold2); }
+.handouts a { display:grid; gap:.25rem; padding:.85rem 1rem; background:var(--panel); border:1px solid var(--rule); border-radius:var(--radius); text-decoration:none; }
+.handouts a:hover { border-color:var(--gold); }
+.handouts strong { color:var(--head); font-size:var(--fs-xl); }
+.handouts .sample { font:var(--fs-ui) var(--mono); letter-spacing:.035em; color:var(--muted); overflow:hidden; }
+.handouts a > span:last-child { font:var(--fs-ui) var(--ui); }
+.route-display, .elapsed { display:grid; gap:clamp(1rem,3vw,2rem); margin:1.35rem 0; padding:clamp(.85rem,2vw,1.65rem); background:var(--panel); border:1px solid var(--rule); border-radius:var(--radius); align-items:center; }
+.route-display { grid-template-columns:minmax(0,1.1fr) minmax(0,1fr); }
+.cipher-board { font:clamp(.75rem,1.4vw,.98rem)/1.35 var(--mono); }
+.cipher-row { display:grid; grid-template-columns:1.6fr repeat(17,1fr); text-align:center; }
+.cipher-row:nth-child(10), .cipher-row:nth-child(18) { border-bottom:2px solid var(--gold); margin-bottom:.28rem; padding-bottom:.28rem; }
+.row-number { color:var(--muted); text-align:left; }
+.cipher-cell { padding:.08em 0; }
+.cipher-cell.picked { background:var(--gold); color:var(--gold-ink); outline:1px solid var(--gold2); font-weight:bold; }
+.route-controls { display:grid; gap:.55rem; padding:.85rem; border:1px solid var(--rule); border-radius:.5rem; }
+.route-controls[hidden] { display:none; }
+.route-controls label, .route-controls output, .elapsed time { font:var(--fs-ui)/1.45 var(--ui); }
+.route-controls select { background:var(--bg2); color:var(--ink); padding:.3rem; margin-left:.5rem; }
+.route-controls input { width:100%; accent-color:var(--gold); }
+.route-controls output { color:var(--gold2); }
+.route-notes ul { padding-left:1.2em; }
+.elapsed { grid-template-columns: minmax(0,.8fr) minmax(0,1.8fr); }
+.elapsed > div > b { display:block; font:500 clamp(2.8rem,5vw,4.5rem)/1.15 var(--display); color:var(--gold2); }
+.elapsed > div > span { color:var(--muted); font-size:var(--fs-ui); }
+.elapsed ol { padding:0; margin:0; list-style:none; }
+.elapsed li { position:relative; display:grid; grid-template-columns:4.5rem 1fr; gap:.45rem; border-left:1px solid var(--rule); padding:0 0 1rem 1rem; }
+.elapsed li:last-child { padding-bottom:0; }
+.elapsed li::before { content:""; position:absolute; left:-4px; top:.55em; width:7px; height:7px; border-radius:50%; background:var(--gold); }
+.elapsed time { color:var(--gold2); font-family:var(--mono); }
+.elapsed li p { margin:.2rem 0 0; }
+@media(max-width:760px) {
+  .study-hero, .route-display, .elapsed { grid-template-columns:1fr; }
+  .manuscript img { max-height:260px; }
+  .attempts, .handouts { grid-template-columns:1fr; gap:.55rem; }
+  .attempts section { display:block; }
+  .handouts a { grid-template-columns:1fr auto; align-items:center; }
+  .handouts .sample { grid-column:1/-1; }
+  .cipher-board { width:100%; max-width:28rem; margin:auto; }
+}
+@media(max-width:390px) { .handouts a { grid-template-columns:1fr; } }

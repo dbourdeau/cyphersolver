@@ -7,7 +7,7 @@ gallica.bnf.fr / BnF, ark:/12148/btv1b90618802.
 ## Result in short
 
 - **Foot block (3 lines at the foot of the verso of the leaf foliated 34, view 40)**: aligned sign by sign with the slip,
-  lines 1-3 up to "le Roy d'Espaigne". 86 of 92 cipher signs line up with the slip text; 6 do not (listed below).
+  lines 1-3 up to "le Roy d'Espaigne". 85 of 92 cipher signs line up with the slip text, 1 of them doubtful; 7 do not (listed below; recounted 18 Nov).
 - **Block at the top of the leaf foliated 36 (catalogue "f. 37", view 41), 6 lines**: aligned in stretches only. The
   stretches that line up are in the slip's order and cover all six lines ("Chose que [le roy] leur ay", "& des
   protestans", "en donnent occasion par le secours", "donner a ceux de la religion pour les maintenir contre les edicts
@@ -108,9 +108,11 @@ Each row: the signs (table cell), the value from the table, the slip's letters, 
 | 3 | c (as s2) 9 (e2) □ (n3) /// (t2) ɦ (e3) 5̶ (n) φ (d1) r2 ɦ (e3) | s e n t e n d r e | s'en{tendre} | yes: the cipher has "sentendre"; the slip's word after "s'en" is struck and rewritten |
 | 3 | ⊥ (a2) + (u1 = v) ϖ (e1) ч (c1) Ɛ (code) | a u e c, le roy d'Espagne | avec le Roy d'Espaigne | yes |
 
-Foot block: 92 signs (separators not counted). 86 line up (about 15 of them only through signs not in the table or
-with a shape other than Tomokiyo's); 6 do not: the 3 signs before "les", the C after "principaux" and the 2 signs
-for "qu'il est".
+Foot block: 92 signs (separators not counted). 85 line up (about 15 of them only through signs not in the table or
+with a shape other than Tomokiyo's), and 1 of these is doubtful (the u of "ligue", which has a p2-like shape); 7 do not:
+the 3 signs before "les", the first sign of "principaux" (r1 shape where the slip needs p), the C after "principaux"
+and the 2 signs for "qu'il est". (Recounted 18 Nov 2026: the first version said 86 and 6, which left out the
+"principaux" row.)
 
 ## Top block (leaf foliated 36, view 41), sign by sign
 
@@ -152,7 +154,7 @@ them a possible "recherché"), 5 in line 4, 2 in line 5 and 4 in line 6.
 
 ## What this changes
 
-- The slip deciphers the foot block (lines 1-3 to "d'Espaigne"): the alignment holds sign by sign, with 5 signs out.
+- The slip deciphers the foot block (lines 1-3 to "d'Espaigne"): the alignment holds sign by sign, with 7 signs out (85 of 92 line up, 1 of them doubtful; recount of 18 Nov, PR #782).
 - The slip also follows the top block: its later words ("& des protestans", "en donner occasion par le secours",
   "veulent donner a ceux de la religion pour les maintenir contre les edits du Roy") are in the top block, in the same
   order, and the block ends with the "le roy" sign where the slip ends "du Roy". This supports the reading that the slip

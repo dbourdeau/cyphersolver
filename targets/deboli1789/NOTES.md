@@ -106,6 +106,62 @@ marked unread by hand on 27-28 Oct 2026.
 - Sibling sessions of 27 Oct 2026: deboli1790 (closed, deciphered at the time; 6 Jan 1789 pair checked) and deboli1791
   (written up; five pairs aligned, two codes). Neither read the three despatches without a clear text.
 
+## Decrypt audit, 16 Nov 2026
+
+`research/decrypt_audit/` applies `key_pass.tsv` to each transcription and compares the letters with the text the profile
+lists for it: 3,704 of 13,121 compared words depart over the fifteen texts (17% to 77% per text). Nothing was changed in the
+key, the transcriptions or the readings; the figures after are the same. What the figures mean differs by group of texts.
+
+Twelve paired despatches (c001, c041, c045, c046, c101-c103, c105-c109; 3,062 of 12,122 words, 18% to 31%):
+
+- The text compared is not a reading of this project. It is the archive's clear copy (`clear/*.txt`), the material the key was
+  rebuilt from. The figure measures how far `key_pass.tsv`, used alone, regenerates the clear copy.
+- `key_pass.tsv` is the aligner's table, not a clean codebook: one row per group seen (1,736), value = the commonest aligned
+  string, with the other strings in the `alternatives` column. 644 rows are seen once (1/1); 637 rows meet "twice and 60%"
+  (630 after the order check, the figure above). Counted here over the eleven `align_*.txt` files: of 22,171 groups, 81% are
+  aligned in place to exactly the key value, 9% to a longer or shorter string holding it (case endings and syllable breaks:
+  637 = list 19 times, listu 8, lis 12; 1578 = wkmc 35, wkmci 33; 1307 = rossya, rossyi), 9% to a different string, 1% to nothing.
+  Example (6 Jan): key "sekret" + "la" where the clear copy has "Sekretarza".
+- c046 (15 May) was never aligned: its clear letter is much longer than the cipher (Finding 1).
+- The script also drops every group written with "?" (unsure digit), because it does not strip the mark as `read_cipher` does.
+
+Two line-by-line decodes (c042 10 May, 425 of 550; c104 14 Dec, 190 of 291):
+
+- Audit artefact: each line of `reading/*.decoded.txt` starts with its folio label ("k.138r.01:", "k.138v.01:"); the script reads the
+  letters of the label as text ("kr", "ku", 119 of the sampled departures in c042). With the labels stripped in memory the script
+  gives 138 of 277 (c042) and 56 of 179 (c104); a "word" there is a whole manuscript line, since the files have no word division.
+- The rest is by design. Rebuilt here from `key_pass.tsv`, the `fix.tsv` files and the transcriptions with the rules of `read.py`
+  (not run; functions imported), both files come out identical, line for line, and so do the three `reading/*.tsv`. The lines that
+  still depart hold one of: a group marked unread by hand although the key has a row for it, printed {group} (c042 565 of 666 open
+  groups, c104 95 of 130); a group with "?" in the transcription, valued by `read.py`, dropped by the script (155 and 19 groups); a group
+  with a letter under it valued from its base group (31 and 11; the rule is in Finding 2); a context reading in [ ] from `fix.tsv` (5 and 16);
+  in c104 the 38 clear passages. The 53 and 44 lines with none of these equal the key output exactly.
+- No unmarked emendation in these two files.
+
+The worded reading of 25 March (`reading/c024_1789-03-25.txt`, 27 of 158):
+
+- Six departures are the note "(context)" printed after a context reading; the script takes it for text.
+- Word endings chosen without a mark where the key's main value is another form and the chosen form is in its `alternatives`
+  column: listu (key list), siebie (sie), Hetman (hetmana), WKMci seven times (wkmc), Rossyi twice (rossya), woyny (woyne),
+  życzy (zyc + y). 14 words.
+- Letters supplied or changed without a mark and without a row in the key: "na odprawie" (groups give na-pra-wi), "to iest"
+  (2407 = ie), "powiedzieć" (pow-dzie-c), "przyszło, że się" (przys-o-ze-s-sie), and a second "na" in "essencyonalna, na ktora"
+  (the groups give es-se-n-cy-o-na-l-na once). 5 places. The header of the file says "old spelling as the code gives it".
+  They are reported to the audit for a central decision; the file was not changed.
+
+Not checked: the digits of the transcriptions against the images, and the clear copies against the images.
+
+Marked on 16 Nov 2026. In `reading/c024_1789-03-25.txt` 18 words now carry [ ] round the letters the main value of the key
+does not give (19 bracket pairs): list[u], ie[st], sie[bie], WKMc[i] seven times, Rossy[i] twice, [od]prawi[e], pow[ie]dzieć,
+przys[zł]o, [na], woyn[y], życ[z]y. No letter of the text was changed. Left unmarked, 2 places, because the change is a letter
+left out and a mark would need to add it: "Hetman" (key value hetmana) and "że się" (the groups give ze-s-sie); the header
+names both. The first report counted these as 14 endings and 5 places; each was checked again against `reading/c024_1789-03-25.tsv`.
+Header: one sentence added on [x]. The twelve files in `clear/` each got a second header line saying that the file is the
+archive's clear copy, not the output of `key_pass.tsv`, and naming its `align_*.txt` (none for 15 May); nothing inside them
+was marked. The folder holds no stored key-only decode of the paired ciphers. Page: one sentence added after "Old spelling is
+kept as the code gives it". The audit script now gives 11 of 157 words for c024. `v2_score.py` hole rate for c024: 0.063
+before, 0.159 after (a word with a bracketed letter counts as a hole). `read_share` (0.955, counted by groups) was not changed.
+
 ## Remaining gaps
 
 - 10 May 1789 (no. 042): 666 of 4,393 groups unread - blocker: open-codes; groups with no value in the eleven pairs or

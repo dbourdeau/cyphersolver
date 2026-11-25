@@ -1,0 +1,5 @@
+# R4047: Cosimo I de' Medici to Agnolo Niccolini, 18 January 1539 (reading in Italian)
+
+*(Each `[... N]` marks the number of unread decode letters/symbols spanned in the mechanical decode of `r4047.md`.)*
+
+[... 6] l'eredit[à] [... 6] la [q]uale [... 1] è du[bi]o [... 14] el motu [p]roprio di Lione [... 1] che [... 12] [d]i farlo uiuo [... 2] ualid[o] [... 1] questo tornereb[b]e in grandi[ssimo] comodo nostro più che loro [... 20] stando nel[l]a lo[r]o [op]inione, è da cred[er]e che lo faran[n]o [... 38] in simili casi [... 1] questa [... 1] [l]oro uolunt[à] si[a] aiuto [... 13] per noi; [... 1] però s[a]reb[b]e bene che [... 17] u[e][s]cire d[i] boc[c]a [q]ua[l]che p[ro]posito a tempo [... 1] luogo che [... 7] trouer[a][nn]o que[l] motu proprio noi si[a]mo [s][c]ac[c]iati [... 2] lo trouando [... 1] sono [sc]ac[c]iat[i] lo[r]o [... 30] che fus[s]i fat[t]o che a[l]trimenti. Insom[m]a fare in modo che penetras[s]i lo[r]o un gran sospet[t]o [... 1] noi [... 7] di q[u]est[a] [c]osa, che leuataci l[a] paura di questo, [... 1] ci rest[a] altro [s]ospet[t]o in quest[a] causa.

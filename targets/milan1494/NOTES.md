@@ -96,6 +96,35 @@ He also reports that the ASF server answered a United States address directly on
 
 Bernardo Rucellai's letters of 1482 in the same fonds (MAP LXXII 196-211) are in another table: in Brice Dudout's key for them 6 is a, 7 is e and = is n, where the sheet LXXII 183 has 6 and 7 for i and ÷ for n and c. The two keys do not relate beyond the family of system (a sign alphabet with homophones, nulls and separate signs for doubled consonants, which both workers found independently for rr and tt).
 
+## 14 Nov 2026: reading review (audit section J)
+
+Both reading files were read as sentences and a `reading_review` recorded for each entry in `profile.json`.
+
+- Ridolfi (docs 112, 113, 115): grade A. Every sentence with cipher in it holds and translates; the holes are two unread
+  groups in doc. 113 and a few words marked (?), most of them in the clear hand.
+- Alamanni (doc. 96): grade A. The cipher passages are short runs inside clear sentences and fit them; the unread cipher
+  is in three runs (11 of 91 words). The clear hand has more gaps than the cipher. The contributor's English abridges
+  the clear text of c. 220r and parts of the rest, so the whole Italian letter was translated here, sentence for
+  sentence, with the same holes: `alamanni_en.md`.
+- The grade says the sentences are coherent. It does not make the words secure: the state stays read in part and the
+  read shares stay the strict tier (0.367 and 0.407). No image was looked at in this pass.
+
+## Niccolini's bare passages, catalogue 2380 (19 Nov 2026, Malcolm McBratney with Claude): attempted, not read
+
+As agreed on issue #589, the four bare cipher passages of Angelo Niccolini in MAP LXXIV (docs 42 c. 90r, 49 c. 104r, 81 c. 177r, 90 c. 200r; Aug 1492 - Jan 1493) were transcribed blind with neutral labels, frozen and decoded once with `aaymeloglu/key.json` unchanged. Files and method in `niccolini/README.md`. No person has checked the transcriptions. This blind pass supersedes our sighted working decode of 10 Nov 2026 (earlier record: Zenodo doi:10.5281/zenodo.24267269, unfiled), described on #589 as read: docs 42, 81 and 90 now score 61.5%, 50.0% and 33.3%, so those readings are withdrawn.
+
+- Strict judge (word units): doc 42 16/26 = 61.5%, doc 49 0/5, doc 81 4/8 = 50.0%, doc 90 2/6 = 33.3%. All below our 65% line: attempted, not read.
+- Shuffle control (5,000 at seeds 20261112 and 7): doc 42 0 and 0, doc 81 0 and 1; docs 49 and 90 fail (14/10, 158/139).
+- Doc 42 decodes in part ("el re di Francia ... dal governo [22] ... e apto ad governare lui per non"), which suggests the 1494 sheet is close to the 1492-93 key but differs in some signs. A key from Niccolini's glossed letters was not built.
+
+## Gabbrielli key no. 25 on Niccolini's glossed letters (14-20 Nov 2026, Brice Dudout with Claude): attempted, not read
+
+Brice Dudout tested key no. 25 of Gabbrielli's *Chiavi delle cifre ... Dieci di Balìa*, vol. 1 ("an. 1492, Alamannis (de) Petrus", filza 39; Ilardi microfilm reel 58, Yale Dataverse doi:10.60600/YU/XKVOWE). The key was transcribed twice, the second pass blind, and frozen as K_G25. It was then tested against the contemporary interlinear glosses of Niccolini's letters in MAP LXXIV, in four pre-registered stages. Files, hashes and scripts are in `niccolini/gabbrielli25/README.md`. All transcriptions are blind passes by AI agents with neutral labels F01-F39, and no person has checked them.
+
+- P02 (doc. 78, pos. 329-331), P03 (pos. 158, 159, 161, 167, 351, 254, 300, 299) and P04 (doc. 97, pos. 443-444): not measurable. Too few signs sit under a complete gloss (15, 86 and 0 F signs, against a floor of 300). Nothing was decoded.
+- P05 (plan B: partial glosses, local alignment, 39 runs, 778 gloss letters): 0.4987 against a bar of 0.85. Best key control 0.3123, best gloss control 0.3201 (200 each). Failed. K_G25 beats every control, so it is probably related to Niccolini's cipher, but it is not his key as it stands, or the 1272 px transcriptions are too noisy (19% T2/T3 disagreement), or both.
+- K_G25 was not applied to the bare passages, and no decoding of catalogue 2380 is presented. Malcolm McBratney's blind transcriptions in `niccolini/blind/` were not used.
+
 ## Remaining gaps
 
 - 32 + 17 words chosen by sense and 54 + 12 forced words still rest on ambiguous signs (signs not sorted with confidence; b, 6 and others at 1272 px) - blocker: none yet; the shape sorts of ÷ and d/l were one pass each by agents that had the labels, and nobody has re-sorted them blind; doc. 114 is used up as a test (failed, 0.838 against 0.85) and Ridolfi's glossed letters 101-110 have not been used
@@ -106,6 +135,8 @@ Bernardo Rucellai's letters of 1482 in the same fonds (MAP LXXII 196-211) are in
 - The transcription of doc. 114, the shape sorts and the contributor's gloss reading were not compared with the images here - blocker: none yet; the ASF server reset the connection on the evening of 14 Nov 2026 (it answered in the morning)
 - The clear text of the four letters was read from the same images and not collated - blocker: none yet
 - Higher-resolution images - blocker: needs-physical-access; the ASF server serves 1272 px at most
+- Niccolini 2380 (docs 42, 49, 81, 90) attempted, not read with the 1494 key (`niccolini/README.md`) - blocker: not-attempted: a key from Niccolini's own glossed letters of 1492-93 in this filza (docs 6, 21, 32, 35-37, 59, 62, 72, 78, 81 c. 176r, 97), then a declared second pass on docs 42 and 81; docs 49 and 90 are too short for the shuffle control.
+- Gabbrielli key no. 25 (K_G25, Alamanni 1492) on Niccolini's glossed letters: failed (P05 0.4987 against 0.85; `niccolini/gabbrielli25/README.md`); doc. 97 pos. 443-444 and pos. 158, 159, 161, 167, 254, 299, 300, 351 are used up - blocker: not-attempted: Dieci di Balìa, Responsive, filza 39 (not online) and higher-resolution images; K_G25 not compared sign by sign with `aaymeloglu/key.json`
 
 ## Escalation
 
@@ -128,3 +159,5 @@ Bernardo Rucellai's letters of 1482 in the same fonds (MAP LXXII 196-211) are in
 | `aaymeloglu/held-out-114/` | the contributor's held-out test on doc. 114 (protocol, frozen transcription, scorer, result: failed), his gloss reading, the shape sorts and `apply_shapes.py` (commit 26378c7, 14 Nov 2026) |
 | `aaymeloglu/README_aaymeloglu.md`, `aaymeloglu/AUDIT.md`, `aaymeloglu/audit/` | the contributor's account, the history of the work and the second model's review |
 | `aaymeloglu/own_decode.py` | the project's decoder and count |
+| `alamanni_en.md` | the project's full English of Alamanni's letter (14 Nov 2026) |
+| `niccolini/gabbrielli25/` | Gabbrielli key no. 25 frozen as K_G25, the blind transcriptions of the glossed letters, PREREGs P02-P05 with hashes and scripts, and the results (failed) |

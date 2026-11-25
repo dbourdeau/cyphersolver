@@ -49,6 +49,9 @@ L33: <De> Londres le <28e de Xbre>
 
 ## Running text (cipher passages joined with the clear script)
 
+In this running text `[x]` is a letter or word the signs do not give (supplied, or read in place of the sign's letter:
+`d'[H]ollande`, signs `diollande`); `[...]` is a hole. The `m` dropped in L14 (`{-m}aultres`) is not shown here.
+
 Frater. [...] Je vous mercie fort de bon nouvelles. Quant au fai[c]t de Juliers, j'ay opinion que le differend
 [ne] s'accommodera jamais si ce n'est par voye d'[ar]mes. [...] car de penser que 60 ou 59 se laisseront
 couronner de 68 pour le respect de leur confederation, c'est ung abus. Nous scavons qu'ils nous menacent par la
@@ -56,7 +59,7 @@ ruption de la trefve, quasi vero; et que pensent ils, que nous tremblons de leur
 commencent tant seulement, et ils verront si nous avons ung coeur au ventre; et ce que plus est, nostre camp
 n'attent aultre chose. Je pense qu'il n'aurat de la difficulte en la restitution de la ville de [Rees], et
 aultres. Tout ce que me dictes des ambassades du barron de [Anholt] ne sont des inventions et practiques des de ces
-messieurs d'Hollande. Et quant a ce qu'ils presupposent que les [sieges] sont faict au nom de la mageste 59, ils
+messieurs d'[H]ollande. Et quant a ce qu'ils presupposent que les [sieges] sont faict au nom de la mageste 59, ils
 ont raison. Je ne pense qu'ils leur donnera[i]en[t] quoy entendre, nonobstant la ligue que le marquis [...] de
 Brandebourg et aultres ont faict. J'ai desia faict ce que m'avez commande envers Monsieur l'ambassadeur
 d'Espaigne, et ma [...] bien humblement commande vous faire ses recommendations. Et touchant ce que me dites de la

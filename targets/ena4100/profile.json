@@ -76,7 +76,10 @@
    "image crops (PIL)",
    "Judaeo-Arabic word list from the Princeton Geniza Project text corpus (pgp-text, 4,443 files, 1.35 M words)",
    "rule tests with shuffled controls (scratch script)",
-   "second independent transcription by a subagent"
+   "second independent transcription by a subagent",
+   "Tatoeba sentence sets (Kabyle, mixed Berber, Tashelhit, Standard Moroccan Tamazight, Turkish, Italian, Spanish, Hungarian, Finnish, Indonesian, Hausa)",
+   "phonetic matcher with shuffled controls (scratch script)",
+   "image processing: red channel divided by a blur"
   ],
   "models": [
    "claude-fable-5-2"
@@ -185,11 +188,62 @@
    ],
    "what": "Lines 7b to 10 retried from enlarged crops with Berber in mind.",
    "result": "failed"
+  },
+  {
+   "date": "2026-11-17",
+   "kind": "transcription",
+   "what": "Third reading by a subagent from a stain-suppressed image (red channel divided by a 40-px blur), then adjudicated against readings A and B into a consensus (transcription_c.txt). It reads the first word of line 11 with a final gimel and the first word of line 12 with he, which removes two words of the Berber clause (azn, awi-tn).",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-17",
+   "kind": "control",
+   "technique": [
+    "statistical test",
+    "plaintext matching"
+   ],
+   "what": "The 20 words of three or more letters were matched phonetically (plene vowels as in medieval Berber spelling, one unwritten vowel allowed) against the 9,000 and 50,000 commonest word forms of four Berber varieties and seven unrelated languages, with 60 to 200 shuffled controls each. Berber scores no higher than Turkish or Indonesian (z between -1.2 and 1.6 for Berber, 1.8 to 2.1 for Turkish, 2.6 for Indonesian).",
+   "result": "ruled out"
+  },
+  {
+   "date": "2026-11-17",
+   "kind": "solver",
+   "technique": [
+    "exhaustive search",
+    "plaintext matching"
+   ],
+   "what": "Search of lines 7b to 10 for Berber word forms over all letter alternatives: only is (line 8) matches a common form.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-17",
+   "kind": "solver",
+   "technique": [
+    "exhaustive search",
+    "statistical test"
+   ],
+   "what": "Word-game and alphabet-shift rules rerun on the consensus text against the Judaeo-Arabic word list: no rule above its shuffled control once the number of rules tried is counted.",
+   "result": "ruled out"
+  },
+  {
+   "date": "2026-11-17",
+   "kind": "literature search",
+   "what": "Medieval Berber orthography (van den Boogert 2000, opened), Brugnatelli 2011 on medieval Eastern Berber (opened), Chetrit on Judaeo-Berber (opened), PGP searches for Berber, Qus, Abu Mansur and the neighbouring ENA 4100 leaves. Spelling of the proposed words fits the medieval rules; grammar objections and the absence of any Jewish Berber writing before the 19th century count against.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-17",
+   "kind": "reading",
+   "technique": [
+    "contextual inference"
+   ],
+   "what": "Clear lines and verso read by a subagent for context: the addressee is the mother (ולדתי), nobody else is addressed, no goods or messenger are mentioned; the secret stretch follows 'may God bring the reunion near, soon, God willing' and is followed by the complaint that no letter has reached Qus. The verso is a separate Arabic-script note to several people with no key.",
+   "result": "partial"
   }
  ],
  "outcome": {
   "method": "not solved",
-  "method_basis": "One session from the image alone: two transcriptions, scripted word-game and shift tests against a Judaeo-Arabic word list (negative), and a Berber hypothesis that gives a candidate reading of about a third of the words, not verified.",
+  "method_basis": "One day's work from the image alone: three transcriptions and a consensus, scripted word-game and shift tests against a Judaeo-Arabic word list (negative), and a Berber hypothesis that did not survive measurement against control languages.",
   "contribution": [
    "none"
   ],
@@ -199,6 +253,6 @@
   "verification": [
    "none"
   ],
-  "notes": "In progress. Candidate identification as Berber in Hebrew letters is a hypothesis, not a reading; see NOTES.md."
+  "notes": "In progress, not solved. The Berber identification is not supported: see NOTES.md, fourth pass."
  }
 }

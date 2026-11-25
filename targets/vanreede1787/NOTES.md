@@ -100,9 +100,26 @@ Write-up: [docs/vanreede1787.html](../../docs/vanreede1787.html).
   sit above the digits where the 1789-92 code underlines them. Not R1893's code. R1893's DECODE image is stored
   upside down; turned, it is headed "Wel Edele Gestrenge Heer", 24 Mar 1793.
 
+## Read share over cipher words only (16 Nov 2026)
+
+README Conventions (16 Nov 2026): the read share counts the words written in cipher only. The readings do not mark
+the clear, but the decodes do (`[clear: ...]` lines in `R1026_decode_b24.txt`, `R1027_decode_b24.txt`): in R1026 the
+head, the paragraph "Depuis que ceci a été chiffré ... diner à sa table" and the close are clear; in R1027 the head and
+the close. The cipher words are the remaining paragraphs of the readings.
+
+- R1026: 0.986 (whole letter) -> **0.990** (283 of 286 cipher words; holes [?soit], [?fournit], [?énonçoit]). The
+  four faint [?word]s are in the clear passage and drop out.
+- [?énonçoit] (group 163 *ois* where the sense wants 164 *oit*, a one-digit difference under the surviving Grand
+  Chiffre) is a candidate for the README one-digit-slip rule, pending an image check that the slip is the writer's;
+  until then it stays a hole (with it read, R1026 would be 284 of 286).
+- R1027: 0.994 (whole letter) -> **0.992** (122 of 123; hole [?decidement]).
+- Class unchanged: **read** (both documents). A code group read as several words (*Monsieur de Herzberg*) is counted
+  by its words; as one word the shares are the same to three places. Whole letter, clear included, not the measure:
+  0.986 and 0.994.
+
 ## Remaining gaps
 - R1026 [?soit], [?fournit], [?énonçoit] and R1027 [?decidement]: groups and bar marks spell a slip - blocker: no-key-material; the key has no instruction for the bar marks
-- R1026 clear passage, three faint words ('je [?vois] le plus [?estimé] d'[?ici]', 'le jour [?la]') - blocker: illegible; 1240-px DECODE image
+- R1026 clear passage, four faint words ('je [?vois] le plus [?estimé] d'[?ici]', 'le jour [?la]') - blocker: illegible; 1240-px DECODE image
 - closed 23 Oct 2026 (b24): R1026 and R1027 decoded, not read (read in full); the open codes 2637 (= cependant, key mis-numbered) and 1250, 331, 2800, 3160, 3660, 3153, 2751, 50 (nulls, 'Nonvaleurs'); the garbled passages (J+ = hooked 1, labels corrected on the images)
 
 ## Escalation

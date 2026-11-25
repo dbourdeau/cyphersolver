@@ -60,3 +60,12 @@ cipher, so nos. 13 and 16 are one entry with one key.
 - [x] print: none known.
 - [x] key-rebuild: key complete per the report.
 - [n/a] retry: nothing open in the cipher except two doubtful words already checked against the plaintext.
+
+## 14 Nov 2026: the cipher has no transcription, and why (audit section I, "no transcription file")
+
+- In the folder: the report's reading, translation and key figure; not the CTTS transcription (553 cipher symbols on
+  10 lines by the report).
+- DECODE R4801, public record page: one image, no text attachment; the full-size image needs a login. No other online
+  copy of Concistoro 2308 is known here.
+- `outcome.texts[0].transcription_missing` replaces the empty `transcription` list. Unblocks it: George Lasry's CTTS
+  transcription, or the image at full size to transcribe against `key_lasry.jpg` and the clear copy no. 16 (R4804).

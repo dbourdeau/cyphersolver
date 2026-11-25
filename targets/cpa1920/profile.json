@@ -604,7 +604,8 @@
    "what": "Only the catalogue's own prior-art check (repo lists, NARA READMEs). Draper (1957) and the other three parts of case 202600 on roll 940 were not checked.",
    "result": "partial"
   },
-  {"date": "2026-10-27", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 367 tokens, 122 types, en-modern order 4: reading -3.505 per letter; random keys -6.159 (z 7.5); key annealed onto shuffled ciphertext best -2.369 (mean -2.442, z -24.4); annealer on the real text -2.392. Verdict: underdetermined.", "result": "partial"}
+  {"date": "2026-10-27", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 367 tokens, 122 types, en-modern order 4: reading -3.505 per letter; random keys -6.159 (z 7.5); key annealed onto shuffled ciphertext best -2.369 (mean -2.442, z -24.4); annealer on the real text -2.392. Verdict: underdetermined.", "result": "partial"},
+  {"date": "2026-11-14", "kind": "verification", "what": "Reading review of the two prose entries: reading.md (A0493, A0527, A0939, B0494) and reading_a0706.md read as sentences against decryption.txt; clear typed English with coded words, coherent; grade A recorded on each. A0706 stays read in part (cells 5/29, 5/12, 5/13 without a value).", "result": "worked"}
  ],
  "outcome": {"validation": {"date": "2026-10-27", "model": "en-modern", "file": "validation.tsv", "tokens": 367, "types": 122, "tokens_per_type": 3.01, "score": -3.505, "nulls": {"random keys": {"n": 200, "mean": -6.159, "sd": 0.356, "max": -5.354, "z": 7.5, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -2.442, "sd": 0.044, "max": -2.369, "z": -24.4, "p": 1.0}}, "power": -2.392, "verdict": "underdetermined", "notes": "claimed per-occurrence score -3.505; polyphony 0.0; 98 unread tokens left out; annealer on the real text from random keys reached -2.392"}, 
   "class": "read in part",
@@ -738,7 +739,13 @@
     "state": "read",
     "read_share": 1.0,
     "summary": "A district knows nothing of an application 'for MINOR'; unity-convention delegates are to be elected by MAY 12 (1921); members of the I.W.[W.] distribute leaflets, and a route is proposed for the magazine Soviet Russia; S. Rubin is put forward as the new district organizer in the Milwaukee district.",
-    "note": "A0939's two runs carry the Bureau's own decode; they are counted here as read from the existing decipherment (checked against the grid), not as new readings. The new readings are A0493 (MINOR), A0527 (MAY 12) and B0494 (S. RUBIN). No reading_review grade is self-assigned: grading is left to a reviewer."
+    "note": "A0939's two runs carry the Bureau's own decode; they are counted here as read from the existing decipherment (checked against the grid), not as new readings. The new readings are A0493 (MINOR), A0527 (MAY 12) and B0494 (S. RUBIN). No reading_review grade is self-assigned: grading is left to a reviewer.",
+    "reading_review": {
+     "grade": "A",
+     "by": "Claude (session of 14 Nov 2026)",
+     "date": "2026-11-14",
+     "note": "Read reading.md against the runs of A0493, A0527, A0939 and B0494 in decryption.txt. The letters are typed in clear English and only single words are in code (MINOR, MAY 12, I W, SOV RUS, S RUBIN); each decodes whole from the grid and the sentences around them are coherent. Pages not re-opened in this pass."
+    }
    },
    {
     "doc": "a0706",
@@ -749,7 +756,13 @@
     "language": "en",
     "state": "read in part",
     "read_share": 0.647,
-    "summary": "A delegate of the 'P A C' (AT[?]OOD, likely Atwood) calls a joint meeting of the other party and the writer's district committee; a joint committee of two members of the writer's party (U[?]P) and three of the other ([?]P) is to issue a paper before a convention to be held within two months."
+    "summary": "A delegate of the 'P A C' (AT[?]OOD, likely Atwood) calls a joint meeting of the other party and the writer's district committee; a joint committee of two members of the writer's party (U[?]P) and three of the other ([?]P) is to issue a paper before a convention to be held within two months.",
+    "reading_review": {
+     "grade": "A",
+     "by": "Claude (session of 14 Nov 2026)",
+     "date": "2026-11-14",
+     "note": "Read reading_a0706.md against the A706 runs in decryption.txt. The report is typed in clear English and reads as coherent sentences; the coded words are a name and party initials, and four of them keep a hole for a cell with no value (AT[?]OOD, U[?]P, [?]P): the sense of each sentence holds, which party is which does not. read_share 0.647 on the coded words, so read in part. Page not re-opened in this pass."
+    }
    }
   ],
   "key_file": [

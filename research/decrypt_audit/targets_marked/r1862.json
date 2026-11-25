@@ -1,0 +1,33 @@
+{
+ "folder": "r1862",
+ "marked": [
+  {
+   "file": "targets/r1862/tx/R1862_reading.md",
+   "places": 18,
+   "detail": "10 supplied letters, 8 clerk's slips; plus the clear-passage mark moved past the cipher 'E'"
+  }
+ ],
+ "left_unmarked": {
+  "count": 1,
+  "why": "Spa[gna]: the reading leaves out an l the key gives (spla); a missing letter cannot be bracketed without adding it, stated in the header instead"
+ },
+ "headers_changed": [
+  "tx/R1862_reading.md: 'Letters as the decipherment gives them, ... ; only word division, capitals and punctuation added' -> same sentence 'with these exceptions, marked on 16 Nov 2026: letters in [ ] ...' (supplied letters, the eight slips, the l left out in Spa[gna], the cipher E before the clear passage)"
+ ],
+ "page_changes": [],
+ "page_counts_now_stale": [
+  "docs/r1862.html line 77: '0.95 of the text gives sense' (measure.py figure on plain.txt, not affected by the marks, but v2_score now gives 0.930 on the reading)",
+  "the reading and its old header embedded in the generated texts block (lines 167-498) are stale until a rebuild; not edited"
+ ],
+ "hole_rate": [
+  {
+   "file": "targets/r1862/tx/R1862_reading.md",
+   "before": 0.051,
+   "after": 0.07,
+   "state_in_profile": "read (read_share 0.953)"
+  }
+ ],
+ "falls_below_read_bar": true,
+ "wording_changed": false,
+ "notes": "By v2_score the reading goes from 0.949 to 0.930 read, under the 95% bar; the scorer appears to count each bracketed letter group as a hole, and 8 of the 18 are the clerk's documented slips. Decision needed: whether slip corrections and single supplied letters count against the read bar, i.e. whether r1862 stays 'read'. The false header quote on the page sits in a generated block and was left for the rebuild."
+}

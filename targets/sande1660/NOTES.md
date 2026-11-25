@@ -299,3 +299,7 @@ Contributed by Andrew Beling with AI agents. Details in `beling/README.md`; each
 - Reading graded by the reviewer: passages 1, 3-6 A; passage 2 (m0266.02-05) B. The grade covers only the ~45
   transcribed lines.
 - Not checked by anyone yet: Prestage (1928) and the printed Sande correspondence; first_break = true is provisional.
+
+## 14 Nov 2026 full-texts audit
+
+Document B (cipher B, Rome 1664) had no entry in `outcome.texts`. What exists was already in `beling/`: the cipher runs of m0063 and the glossed runs of m0062 (`beling/cipherB/m0063_runs.txt`, `m0062_runs.txt`) and the gloss table with its checks and decodes (`beling/results/cipherB_m0063.txt`). They are now listed, state `not prose`: short glossed words and phrases, no connected text. No file changed, no count changed; the untranscribed cipher B pages stay under Remaining gaps (not-attempted).

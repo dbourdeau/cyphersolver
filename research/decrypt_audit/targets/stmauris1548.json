@@ -1,0 +1,22 @@
+{
+ "folder": "stmauris1548",
+ "causes": {
+  "A": "profile named only key.tsv; the 2 Aug reading is marked against key_frozen.tsv (already in the folder). No sign value missing from either key file.",
+  "F": "the audit skips the key row '#<TAB>n' (sign '#', value n) as a comment: 31 places in 10 Jan, 36 in 2 Aug, 22 of the 28 unmarked gaps; it does not strip the doubt suffix '?' on 9 transcription tokens (6 words once the # row is read); the frozen-key rule Lo,L1->Le and N20->R lives only in scripts/check_marks.py and NOTES"
+ },
+ "before": "61 of 401 words depart (texts compared: 2; 10 Jan 26 of 232, 2 Aug 35 of 169)",
+ "after": "61 of 401 by detail.py, unchanged: the script still skips the '#' row. With that row read (own snippet around audit.py): 10 Jan 1 of 234, 2 Aug 5 of 170. Own strict walk of both readings against transcription + key: 0 unmarked departures (1,286 and 830 letters).",
+ "files_changed": [
+  "targets/stmauris1548/profile.json",
+  "targets/stmauris1548/key.tsv",
+  "targets/stmauris1548/NOTES.md"
+ ],
+ "key_values_added": [],
+ "unmarked_emendations": {
+  "count": 0,
+  "examples": []
+ },
+ "page_statements_false": [],
+ "remaining": "No docs/stmauris1548.html exists (Status: in progress). audit.py needs a fix outside the folder: treat a line '#<TAB>value' as a sign row, and strip a trailing '?' from tokens. The parent-class rule for frozen values of Lo, L1, N20 is not in a key file; key_frozen.tsv was left unchanged because NOTES says it is kept unchanged. Signs were not checked against images. Did not run the folder's scripts.",
+ "confidence": "high"
+}

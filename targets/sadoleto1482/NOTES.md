@@ -184,3 +184,21 @@ Reproduced: `dudout/protocol/mesure_r1101.py` gives 0.7638 / 0.6076, controls 0.
 criterion is stated as failed (not "validated"), the read share is the strict 86.8% (97.4% kept once, labelled the
 contributor's), and the collation is described as a reading supported by the contemporary clear copy 7a, not as a test of
 the key. Not checked: the sign-by-sign transcription against the Vestigia photographs (needs a human reader of the hand).
+
+## 14 Nov 2026: no sign-level transcription, and why (audit section I, "no transcription file")
+
+- Searched the folder: nothing holds the cipher as written. `r1101_final_parallel.md`, `r1101_queen_parallel.md`,
+  `alignment_r1101.md`, `r1102_working_edition.md`, `reading_r1102*.md`, `r1106_parallel_reading.md` and
+  `alignment_r1106.md` are readings and collations in plaintext; `dudout/protocol/TRANSCRIPTION-AVEUGLE-R1101-p1.md`
+  is a reading through the key ("chaque mot = lecture par la clé"), not the signs; `seg/r1102b_glyphs.json` is glyph
+  boxes with almost no labels.
+- DECODE R1101, R1102, R1103, R1106: two images each on the public record page, no text attachment; full-size images
+  need a login. The Vestigia photographs are public: 1284 photograph (103) was fetched and looked at at full size
+  (4096 x 3072). The first page of R1101 alone carries about 40 lines of joined cipher signs.
+- Not transcribed. The signs are graphic and joined, `key_working.md` warns that its shape labels conflate distinct
+  pen forms, and the 12 Nov trial in `dudout/` left 24 of 76 words not sure on seven lines read with the key. A sign
+  transcription made in one pass on that basis would not be faithful, so `transcription_missing` is set on each of the
+  four entries of `outcome.texts`, with the reason and what unblocks it. R1103 has the further blocker already
+  recorded (faded on the only exposure).
+- What would unblock it: fix a sign inventory on the known-plaintext passages (R1101 against the clear copy 7a,
+  Vestigia 1283), transcribe line by line from the public Vestigia photographs, and have a person check it.

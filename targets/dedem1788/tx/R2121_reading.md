@@ -4,7 +4,7 @@
 
 ## Reading
 
-Gedat 22e December 1788. Missive van den Heer van Dedem van de Gelder.
+*Gedat 22e December 1788. Missive van den Heer van Dedem van de Gelder.*
 
 Hoog Edele Gestrenge Heer! Bij eene volgende onderhandeling met den Reis Effendi, de Camaikan, de Kiehaya Bey Lt. des
 Grootviziers, van Staat heb ik hem te kennen gegeeven, eerstelijk, dat, hoezeer ik kon verzeekeren haar Ho: Mog:
@@ -45,4 +45,4 @@ verwerpelijk vind, geef ik in bedenking, of als dan dat point niet met hoop van 
 kunnen overgegeeven worden, als zijnde daartoe volmaakt geschikt; en alzo het altoos noodzaaklijk zou zijn hier &c.
 &c.
 
-Ik heb de Eer &c. Pera van Constantinopolen, den 22 December 1788. (: geteekend :) F. G. van Dedem van de Gelder.
+*Ik heb de Eer &c. Pera van Constantinopolen, den 22 December 1788. (: geteekend :) F. G. van Dedem van de Gelder.*

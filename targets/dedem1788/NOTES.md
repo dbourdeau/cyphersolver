@@ -106,6 +106,33 @@ Profile set to key recovered based on adjacent plaintext, read in part: the bloc
 from the sibling decipherments in the same file, and 123 of the 301 non-null groups of R2122 and R2131 (41%) carry a firm
 value (grades A, B, T in `alpha/decoded_targets_v2.txt`). The running reading is fragmentary; values, not sense.
 
+## Read share over cipher words only (16 Nov 2026)
+
+README Conventions now count the read share over the words written in cipher only. Holes by words, sure words only.
+
+| Document | Old | New | State |
+|---|---|---|---|
+| R2120 (tx/R2121_reading.md) | 0.991 | **0.990** (701 words, 7 holes) | read, unchanged |
+| R2122 (tx/R2122_reading.md) | 0.958 | **0.925** (267 cipher words, 247 read, 20 holes) | **read -> read in part** |
+| R2131 (tx/R2131_reading.md) | 0.872 | 0.872 (41 of 47), unchanged | read in part, unchanged |
+
+- Separation. R2120: the reading is the decipherment of the cipher pages, so every word is cipher except the
+  decipherer's heading ("Gedat 22e December 1788. Missive ...") and the sign-off line ("Ik heb de Eer &c. ... van de
+  Gelder"), which are left out. R2122: the letter is clear Dutch with two cipher blocks; the clear passages are those
+  `tx/R2122_decode.txt` gives between guillemets (salutation, the clause before and after the first block, "ignoreren",
+  the clause after the second, the English-ambassador sentence up to "getuygenis", and the close), now in italics in
+  `tx/R2122_reading.md` and `tx/R2121_reading.md` for the two sign-off lines (markup only; the readings are
+  unchanged; `clear_markup: *` is declared, so `v10_relabel.py` reproduces 0.990 and 0.925). R2131: the reading file
+  holds only the cipher paragraph (the rest of the letter is clear and not transcribed), so it is all cipher words.
+- R2122 holes (20): the six groups whose codebook value gives no sense (1230, 1330 twice, 80, 760 twice, 4414, and
+  1605 Maison with its doubt), [?troupes], [?de Middellandsche Zee] (3 words), [?de Keizer van Rusland] (4 words),
+  and the supplied [dat] three times and [heb]. Sized by the words the decode shows, an estimate. The earlier 0.958
+  counted the clear passages as read. The groups the page lists as giving no sense (1230, 1330 x2, 80, 760 x2, 3928,
+  1605, 1463, 2622, 4414) are all among these holes: 1+2+1+2+1+1+1 words, 3928 as 3 words, 1463 as 4 words, plus [dat] x3
+  and [heb] = 20.
+- fraction_read 1.0 (a share of groups in documents that build sentences) -> 0.97, the pooled cipher-word share,
+  989 of 1,022. Class read in part unchanged.
+
 ## Remaining gaps
 
 - R2122 and R2131: about 14 groups whose codebook value gives no sense where they stand (R2122: 1230, 1330 twice, 80, 760 twice, 3928, 1605, 1463, 2622; R2131: 319, 591) and 4414 (no such code) - blocker: too-short; each occurs once or twice, too few to establish another value (probably clerk slips: 319 for 314 "alle"; 760 the Nota's example number copied for a "g" character)

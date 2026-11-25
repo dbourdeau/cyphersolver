@@ -406,14 +406,26 @@
   {"date": "2026-10-23", "kind": "sibling key", "what": "Our key compared with Mírka's table sign by sign: structure identical (41-100 CV table, letter series sa..vu = a..r). Two values disagreed and were checked at every occurrence in the nine letters: k = to (was ti; all 17 uses: protectorium, electores, multorum, a proposito, bis dato, in puncto ...) and m = va (was a; negativam, riserva, avantagiosen, enervatis; after 29 = qu the v is not doubled: decode.py rule). Both adopted. 4 = x does not hold for the plain 4 (fails 3 times). 9v = vo (22 Oct, flagged for review) holds at all 48 uses and is Mírka's q.", "result": "worked", "technique": ["key matching", "contextual inference"]},
   {"date": "2026-10-23", "kind": "transcription", "what": "Look-alike signs split on full-resolution crops (r2c_line.py): in R3813 the crossed sign is two shapes, the tall crossed f = ta and a low curled p-form = vi (Mírka's p): 20 tokens relabelled pv, 3 plain p likewise; the looped k-form = to had been read d (8) or α (1): relabelled k; in R3811 three x are the k-form (protectorium, Stockholmb); in R3812 (5) and R3815 (1) the p after Sal- is the curled p-form; the x places of the plain 4 are a crossed 4 (Mírka's X, glossed x on R3811 p. 1), new label #4-cross = x (7); R3814: 'aber wir' (#sect), 'quod' and 'vor oder' (9v). Logged in read/<rec>_corrections.tsv. Tried without result: R3814 'auf terte freltung', 'zeit wetlohren', 'denomina-d-4-e'.", "result": "worked", "technique": ["manual reconstruction", "contextual inference"]},
   {"date": "2026-10-23", "kind": "reading", "what": "R3813 and R3814 readings updated (about 35 words now carried, aligned word by word with b06_align.py, 0 words not carried) and sibling readings brought in line with k = to, pv and #4-cross. Body scores with conjectures as holes (v2_score.py): R3813 plain 0.537 -> 0.563, explicit holes 0.910 -> 0.932; R3814 0.508 / 0.952 -> 0.968; both read as sentences: marked read (grade B). Every letter now reads: fraction_read 0.575 -> 1.0, class read.", "result": "worked", "technique": ["contextual inference", "language-model scoring"]},
-  {"date": "2026-10-24", "kind": "verification", "what": "Read bar applied per document (v10): 1 of 9 documents marked read measure under 95% of words read as sense (v2_score explicit holes) and are now read in part; read_share recorded for each.", "result": "partial"}
+  {"date": "2026-10-24", "kind": "verification", "what": "Read bar applied per document (v10): 1 of 9 documents marked read measure under 95% of words read as sense (v2_score explicit holes) and are now read in part; read_share recorded for each.", "result": "partial"},
+  {
+   "date": "2026-11-16",
+   "kind": "verification",
+   "what": "Read share recounted over cipher words only (README Conventions, 16 Nov 2026). Each reading was aligned character by character to read/<rec>.txt, where the clear text is in braces and the deciphered runs in brackets; every word and hole took the side of the stream it falls in (research/reading_audit/r23_kurtz_split.py; R4734 by its own ⟨ ⟩ marks). Cipher-only shares: R3811 0.965 -> 0.939, R3812 0.95 -> 0.901, R3813 0.966 -> 0.939, R3814 0.972 -> 0.943, R3815 0.967 -> 0.918, R4625 0.971 -> 0.922, R4645 0.95 -> 0.945, R4734 0.98 -> 0.958, R4736 0.94 -> 0.904. The figures recorded before were taken over each whole reading file, the Notes included; over the reading body with the clear text they are 0.937-0.965. Seven letters move from read to read in part; R4734 stays read; the class stays read in part.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "verification",
+   "what": "fraction_read set from the cipher-words-only recount, pooled over the nine letters: sure cipher words read / cipher words (read words + holes counted by words) = (369+1106+1731+463+270+475+309+113+347) / (393+1227+1844+491+294+515+327+118+384) = 5,183 / 5,593 = 0.927. It was 1.0 (tokens of letters that build sentences), which no longer agrees with eight of nine letters under the bar.",
+   "result": "worked"
+  }
  ],
  "outcome": {"validation": {"date": "2026-10-11", "model": "de-1640s", "file": "validation.tsv", "tokens": 22728, "types": 133, "tokens_per_type": 170.89, "score": -2.378, "nulls": {"random keys": {"n": 200, "mean": -4.857, "sd": 0.299, "max": -4.207, "z": 8.3, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -3.213, "sd": 0.006, "max": -3.206, "z": 131.9, "p": 0.1429}}, "power": -2.781, "verdict": "pass", "notes": "claimed per-occurrence score -2.403; polyphony 0.0; 22 unread tokens left out; annealer on the real text from random keys reached -2.781"}, 
   "method": "key recovered based on adjacent plaintext",
   "method_basis": "The key was rebuilt from the contemporary interlinear decipherment on p. 1 of the 17 Jan 1639 letter (R3811) and extended by homophonic solving with a German LM across all nine letters.",
   "contribution": ["transcription", "key recovered", "sender or date identified"],
   "class": "read in part",
-  "fraction_read": 1.0,
+  "fraction_read": 0.927,
   "verification": ["contemporary decipherment", "key confirms", "historical consistency", "statistical test"],
   "notes": "Key complete; all nine letters deciphered (second transcription pass 21 Sept 2026). Re-read 22 Oct 2026 (batch b06): five key values corrected for all letters after kwic checks (38 = d, Δ = nu, #dot = su, #s-long = ti, m = a) and two polyphonic readings entered as relabelled signs (9v = vo, pv = vi); about 330 label and clear-text fixes on full-resolution crops; readings and translations built for all eight letters, six of which now read (R3811, R3812, R3815, R4625, R4645, R4736; with R4734 seven of nine); R3813 and R3814 stay decoded, not read. Checks: the R3811 interlinear glosses agree with the key; R3811 matches Mírka's 2012 summary; clear text continues the deciphered sense.",
   "gaps": [
@@ -439,7 +451,7 @@
    }
   ],
   "fraction_read_method": "measured",
-  "fraction_read_source": "22 Oct 2026, re-read batch b06: cipher tokens (parse.load over the corrected tr/ files) of the letters that read as sentences / all: 13618 / 23669 (R3811, R3812, R3815, R4625, R4645, R4734, R4736). Before: 0.021 (R4734 only, reading audit). Withdrawn earlier: 0.999 (tokens with a value). 23 Oct 2026, re-read r2c: R3813 (7,997) and R3814 (2,054) read too, so 23,669 / 23,669 cipher tokens are in letters that read (parse.load over the corrected tr/ files).",
+  "fraction_read_source": "22 Oct 2026, re-read batch b06: cipher tokens (parse.load over the corrected tr/ files) of the letters that read as sentences / all: 13618 / 23669 (R3811, R3812, R3815, R4625, R4645, R4734, R4736). Before: 0.021 (R4734 only, reading audit). Withdrawn earlier: 0.999 (tokens with a value). 23 Oct 2026, re-read r2c: R3813 (7,997) and R3814 (2,054) read too, so 23,669 / 23,669 cipher tokens are in letters that read (parse.load over the corrected tr/ files). 16 Nov 2026: replaced by the cipher-word read share pooled over all nine letters: 5,183 sure cipher words read of 5,593 cipher words (read words plus holes counted by words), from the per-letter recount over cipher words only (research/reading_audit/r23_kurtz_split.py; R4734 by its ⟨ ⟩ runs) = 0.927. The earlier 1.0 counted the tokens of letters that build sentences.",
   "key": "recovered",
   "credits": [
    {
@@ -459,7 +471,7 @@
    {
     "doc": "R3812",
     "label": "R3812, Hamburg, 3 Feb 1639",
-    "state": "read",
+    "state": "read in part",
     "language": "de",
     "transcription": [
      "tr/IMG_R3812_I23106_P.txt",
@@ -489,12 +501,13 @@
      "date": "2026-10-22",
      "note": "Hamburg, 3 Feb 1639. Read and translated; clean share 0.616 (141 of 229). Holes: about 78 [...] and 37 [?], mostly runs that do not make words after the image check and blots on I23113, I23121, I23122; the clear postscript (I23119 left) and the clear leaf I23123 are not transcribed. Rests on the key decode (key.json as corrected 22 Oct 2026: 38 = d, Δ = nu, #dot = su, #s-long = ti, m = a) of the tr/ transcription after the label fixes in read/<rec>_corrections.tsv, made on full-resolution crops of the DECODE images; words separated and the reading aligned word by word with the decode (b06_align.py), supplied letters and words bracketed."
     },
-    "read_share": 0.95
+    "read_share": 0.901,
+    "note": "16 Nov 2026: read share over cipher words only 0.901 (121 holes beside 1106 words read; the reading aligned to read/R3812.txt, whose braces mark the clear text, research/reading_audit/r23_kurtz_split.py); under the 95% bar, so read in part. Whole letter, clear included, not the measure: 0.946 (reading body; the 0.95 recorded before was taken over the whole file, Notes included)."
    },
    {
     "doc": "R3811",
     "label": "R3811, Hamburg, 17 Jan 1639",
-    "state": "read",
+    "state": "read in part",
     "language": "de",
     "transcription": [
      "tr/IMG_R3811_I23099_P.txt",
@@ -517,12 +530,13 @@
      "date": "2026-10-22",
      "note": "Hamburg, 17 Jan 1639. Read and translated (read/R3811_reading.md, _en.md); clean-sentence share of the reading body 0.62 (49 of 79 sentences). The contemporary interlinear decipherment on p. 1 and the first eleven lines of I23100 left is transcribed in read/R3811_interlinear.md and carries ex, virium, ist and subsidia where the key does not. Holes: about five clear Kurrent words, [?protectorium] and [?Stockholmb] (x = to), [?Stecknitz], [?ettlis], and the postscript in Kurz's cursive. Rests on the key decode (key.json as corrected 22 Oct 2026: 38 = d, Δ = nu, #dot = su, #s-long = ti, m = a) of the tr/ transcription after the label fixes in read/<rec>_corrections.tsv, made on full-resolution crops of the DECODE images; words separated and the reading aligned word by word with the decode (b06_align.py), supplied letters and words bracketed."
     },
-    "read_share": 0.965
+    "read_share": 0.939,
+    "note": "16 Nov 2026: read share over cipher words only 0.939 (24 holes beside 369 words read; the reading aligned to read/R3811.txt, whose braces mark the clear text, research/reading_audit/r23_kurtz_split.py); under the 95% bar, so read in part. Whole letter, clear included, not the measure: 0.959 (reading body; the 0.965 recorded before was taken over the whole file, Notes included)."
    },
    {
     "doc": "R3813",
     "label": "R3813, Hamburg, 27 Jan 1639",
-    "state": "read",
+    "state": "read in part",
     "language": "de",
     "transcription": [
      "tr/IMG_R3813_I23124_P1.txt",
@@ -558,12 +572,13 @@
      "date": "2026-10-23",
      "note": "Hamburg, 27 Jan 1639. Re-read 23 Oct 2026 (r2c): reading body (header and Notes cut) 0.563 clean sentences on the word list, 0.932 on explicit holes with every [?word] and [word] counted as a hole (v2_score.py; 290 of 311 sentences), hole rate 0.036; German of 1639 with Latin, so the explicit-hole share is the bar, and the sentences hold through the twenty pages (Banér's crossing, Duke Georg's passivity, the defensive plan, quarters against money, Salvius, the Cologne congress, the protectorium). Rests on the key decode (key.json; k = to and m = va checked against Jakub Mírka's key table attached to DECODE R3813) after 110 label and clear-text fixes on full-resolution crops (read/R3813_corrections.tsv; 32 on 23 Oct: the curled p-form = vi and the looped k-form = to split from the crossed ta-sign and d, the crossed 4 = x); b06_align.py: every unbracketed word carried by the figures or the clear text. Open: about 20 [?] words and the clerk's slips listed in the reading's Notes."
     },
-    "read_share": 0.966
+    "read_share": 0.939,
+    "note": "16 Nov 2026: read share over cipher words only 0.939 (113 holes beside 1731 words read; the reading aligned to read/R3813.txt, whose braces mark the clear text, research/reading_audit/r23_kurtz_split.py); under the 95% bar, so read in part. Whole letter, clear included, not the measure: 0.965 (reading body; the 0.966 recorded before was taken over the whole file, Notes included)."
    },
    {
     "doc": "R3814",
     "label": "R3814, undated, 1639",
-    "state": "read",
+    "state": "read in part",
     "language": "de",
     "transcription": [
      "tr/IMG_R3814_I23145_P1.txt",
@@ -584,12 +599,13 @@
      "date": "2026-10-23",
      "note": "Undated, early 1639. Re-read 23 Oct 2026 (r2c): reading body 0.508 clean sentences on the word list (half the letter is Latin), 0.968 on explicit holes with conjectures as holes (v2_score.py; 61 of 63), hole rate 0.041; the sentences hold (the satisfactio coronae points, Salvius fooling Mithoff, the secret correspondence via Nuremberg and Wolfenbüttel). Rests on the key decode (key.json, checked against Mírka's key table on DECODE R3814) after 43 label fixes on the images (read/R3814_corrections.tsv; 23 Oct: 'aber wir' #sect, 'quod' and 'vor oder hinter Pomeren' 9v); b06_align.py 0 words not carried. Open: about 12 runs whose legible figures make no word, and the p. 4 postscript in Kurz's cursive (illegible at DECODE resolution, outside the body)."
     },
-    "read_share": 0.972
+    "read_share": 0.943,
+    "note": "16 Nov 2026: read share over cipher words only 0.943 (28 holes beside 463 words read; the reading aligned to read/R3814.txt, whose braces mark the clear text, research/reading_audit/r23_kurtz_split.py); under the 95% bar, so read in part. Whole letter, clear included, not the measure: 0.958 (reading body; the 0.972 recorded before was taken over the whole file, Notes included)."
    },
    {
     "doc": "R3815",
     "label": "R3815, Hamburg, 6 Feb 1639, to Ferdinand III",
-    "state": "read",
+    "state": "read in part",
     "language": "de",
     "transcription": [
      "tr/IMG_R3815_I27184_P1.txt",
@@ -610,12 +626,13 @@
      "note": "Hamburg, 6 Feb 1639, to Ferdinand III (pages run P1 right, P3, P2). Read and translated; clean share 0.681 (32 of 47); much of the share is the clear German framing the cipher. About fifteen single-occurrence runs stay unread (listed in the reading's Notes). Rests on the key decode (key.json as corrected 22 Oct 2026: 38 = d, Δ = nu, #dot = su, #s-long = ti, m = a) of the tr/ transcription after the label fixes in read/<rec>_corrections.tsv, made on full-resolution crops of the DECODE images; words separated and the reading aligned word by word with the decode (b06_align.py), supplied letters and words bracketed."
     },
     "translation": "read/R3815_en.md",
-    "read_share": 0.967
+    "read_share": 0.918,
+    "note": "16 Nov 2026: read share over cipher words only 0.918 (24 holes beside 270 words read; the reading aligned to read/R3815.txt, whose braces mark the clear text, research/reading_audit/r23_kurtz_split.py); under the 95% bar, so read in part. Whole letter, clear included, not the measure: 0.946 (reading body; the 0.967 recorded before was taken over the whole file, Notes included)."
    },
    {
     "doc": "R4625",
     "label": "R4625, Hamburg, 10 Feb 1639, to Trauttmansdorff",
-    "state": "read",
+    "state": "read in part",
     "language": "de",
     "transcription": [
      "tr/IMG_R4625_I27189_P1.txt",
@@ -639,12 +656,13 @@
      "date": "2026-10-22",
      "note": "Memorandum dated on p. 6 \"Hamburg den 10. Febr. Ao 1639\" (read 22 Oct 2026; the label said undated), with a clear covering letter on p. 7. Read and translated; clean share 0.603 (70 of 116). About 20 [...] and 15 [?] remain; the p. 5 Latin is the weakest part. Rests on the key decode (key.json as corrected 22 Oct 2026: 38 = d, Δ = nu, #dot = su, #s-long = ti, m = a) of the tr/ transcription after the label fixes in read/<rec>_corrections.tsv, made on full-resolution crops of the DECODE images; words separated and the reading aligned word by word with the decode (b06_align.py), supplied letters and words bracketed."
     },
-    "read_share": 0.971
+    "read_share": 0.922,
+    "note": "16 Nov 2026: read share over cipher words only 0.922 (40 holes beside 475 words read; the reading aligned to read/R4625.txt, whose braces mark the clear text, research/reading_audit/r23_kurtz_split.py); under the 95% bar, so read in part. Whole letter, clear included, not the measure: 0.965 (reading body; the 0.971 recorded before was taken over the whole file, Notes included)."
    },
    {
     "doc": "R4645",
     "label": "R4645, Hamburg, 13 Feb 1639",
-    "state": "read",
+    "state": "read in part",
     "language": "de",
     "transcription": [
      "tr/IMG_R4645_I27398_P1.txt",
@@ -670,7 +688,8 @@
      "date": "2026-10-22",
      "note": "Hamburg, 13 Feb 1639 (letter order P9, P1, P2, P6; the Banér copies are clear, read/R4645_clear.md). Read and translated; clean share 0.625 (20 of 32). A leaf between P2 and P6 is not among the DECODE images; the P6 close and postscript in Kurz's cursive and one Latin run on P9 are unread. Rests on the key decode (key.json as corrected 22 Oct 2026: 38 = d, Δ = nu, #dot = su, #s-long = ti, m = a) of the tr/ transcription after the label fixes in read/<rec>_corrections.tsv, made on full-resolution crops of the DECODE images; words separated and the reading aligned word by word with the decode (b06_align.py), supplied letters and words bracketed."
     },
-    "read_share": 0.95
+    "read_share": 0.945,
+    "note": "16 Nov 2026: read share over cipher words only 0.945 (18 holes beside 309 words read; the reading aligned to read/R4645.txt, whose braces mark the clear text, research/reading_audit/r23_kurtz_split.py); under the 95% bar, so read in part. Whole letter, clear included, not the measure: 0.937 (reading body; the 0.95 recorded before was taken over the whole file, Notes included)."
    },
    {
     "doc": "R4734",
@@ -696,7 +715,8 @@
     "summary": "The Danish mediation has expired and the King has his hands tied; the Lower Saxon Circle must contribute to war or to compensation; Stralsund or other lands might go to Brandenburg. Addressed to 'E. Excell.' (Schwarzenberg per DECODE).",
     "reading": "read/R4734_reading.md",
     "translation": "read/R4734_en.md",
-    "read_share": 0.98
+    "read_share": 0.958,
+    "note": "16 Nov 2026: read share over cipher words only 0.958 (5 holes beside 113 words read inside the reading's ⟨ ⟩ cipher runs); the 0.98 recorded before counted the clear words too. Stays read."
    },
    {
     "doc": "R4736",
@@ -720,8 +740,8 @@
      "date": "2026-10-22",
      "note": "Glückstadt, 14 Apr 1639. Read and translated; clean share 0.636 (28 of 44). Open: a few Latin and Italian runs (\"quid consilii [...] armorum\", \"alli altri [?scoppa]\", \"lentra i gnadi\"), the postscript and margin note in Kurz's cursive. Rests on the key decode (key.json as corrected 22 Oct 2026: 38 = d, Δ = nu, #dot = su, #s-long = ti, m = a) of the tr/ transcription after the label fixes in read/<rec>_corrections.tsv, made on full-resolution crops of the DECODE images; words separated and the reading aligned word by word with the decode (b06_align.py), supplied letters and words bracketed."
     },
-    "read_share": 0.94,
-    "note": "24 Oct 2026: 94.0% of the words of read/R4736_reading.md read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part."
+    "read_share": 0.904,
+    "note": "24 Oct 2026: 94.0% of the words of read/R4736_reading.md read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part. 16 Nov 2026: read share over cipher words only 0.904 (37 holes beside 347 words read; the reading aligned to read/R4736.txt, whose braces mark the clear text, research/reading_audit/r23_kurtz_split.py); under the 95% bar, so read in part. Whole letter, clear included, not the measure: 0.909 (reading body; the 0.94 recorded before was taken over the whole file, Notes included)."
    }
   ],
   "key_file": [

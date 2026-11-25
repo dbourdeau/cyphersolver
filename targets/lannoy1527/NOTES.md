@@ -1,6 +1,6 @@
 # Lope de Soria (Genoa) to Charles de Lannoy, viceroy of Naples, 7 March 1527 — Estense, Autografoteca Campori (catalogue 1562)
 
-**Outcome (6 Nov 2026): key recovered from ciphertext-only; read, 95.5% of cipher tokens measured.** Letter key recovered by
+**Outcome (6 Nov 2026): key recovered from ciphertext-only; 95.5% of cipher tokens measured; read in part by the cipher-word count of 16 Nov 2026 (732 of 783 cipher words, 93.5%).** Letter key recovered by
 joint annealing with no crib; code groups valued by context; 14 single code groups (names, rare words) open.
 
 Catalogue entry 1562. Worked from 6 Nov 2026 (Claude Opus 5.5, in Daniel Bourdeau's session).
@@ -96,10 +96,26 @@ bad elements talk of changing sides; that the King of France has sent money to f
 him, and orders Pedro Navarro with the galleys towards Naples; and that the King and the Venetians offered someone
 ([riz]) the kingdom of Naples, who wants Milan too. Bourbon's army, near Reggio, has "muy poco dinero".
 
+## Read share over cipher words only (16 Nov 2026)
+
+README Conventions (16 Nov 2026): the read share counts the words written in cipher only. `reading.md` sets the
+enciphered passages between ⟨ ⟩ inside the clear Spanish; the count is taken over the words between ⟨ ⟩ (text before
+`## Open`), the clear text and the `## Open` notes left out.
+
+- The letter: no read_share was recorded (the scan's whole-file 0.968 included the `## Open` notes) -> **0.935**
+  (732 of 783 cipher words). Unread, 51 words: the code groups with no value (`[lir]`, `[tmi]`, `[rez]`, `[lax pax]`
+  twice, `[zaz]`, `[giq]`, `[xup]`, `[fub]`, `[bel]`, `[lex]`, `[4]`, `[gas]s`, `[riz]`), the sign `{/}`, the bare `[?]`
+  marks, every word marked `word[?]`, the unmarked words inside two doubtful spots named under `## Open` (*es* in
+  "algd es", 9v L12-13; *comen* in the water-washed last line of 9v) and the ellipsis that ends that line (one word,
+  extent unknown). The valued code group `[zir = mas]` is read; the gloss `[= riberas]` after *rimeras* is not a word.
+- Class: read -> **read in part** (under 95%). The token measure (2332 of 2441 cipher tokens, 95.5%, `solve/measure.py`)
+  is unchanged: it counts signs, not words, and the code groups and doubtful words are short words in many signs'
+  company. Remaining gaps and Escalation already list every unread piece with its blocker.
+
 ## Remaining gaps
-- code groups lax pax, zaz, giq, xup, fub, gas, lex, tri, tmi, lir, rez, riz, bel, ten (14 types, 17 tokens; each once or twice: places, owners of galleys, rare words) - blocker: open-codes; each occurs once or twice, no repeat or sibling narrows them
+- code groups lax pax, zaz, giq, xup, fub, gas, lex, tri, tmi, lir, rez, riz, bel, ten (14 types, 17 tokens; each once or twice: places, owners of galleys, rare words) - blocker: too-short; each group occurs once or twice, so the letter holds too little text to fix a value by context or by frequency, and no repeat or sibling letter in the same code exists (2026-11-21 re-run of solve/kwic.py on all 14: the contexts give at most a candidate resting on one occurrence, e.g. tri = otr in "entre otros" as a syllable group, and a person, place or title for lir, riz and rez; none is adopted, so the reading and the counts are unchanged)
 - 9v L25 blotted sign under a superscript 3, and 9v L34 the water-washed last line - blocker: illegible; one image, the ink is gone
-- doubtful words 9v L02 (algun go), L08 (ca lo cosa), L12-13 ([mur]s, algd es), L15 (`/` and `.4s.`), 10r L12 (sunydas), L15 (por es), 10v L02 (a [?] y al s. [?] de Borbon), 11r L07-08 (con [?] ... debaxo de l [?] dauana) - blocker: open-codes; the signs are read, the sense needs a code value or a sign not attested elsewhere
+- doubtful words 9v L02 (algun go), L08 (ca lo cosa), L12-13 ([mur]s, algd es), L15 (`/` and `.4s.`), 10r L12 (sunydas), L15 (por es), 10v L02 (a [?] y al s. [?] de Borbon), 11r L07-08 (con [?] ... debaxo de l [?] dauana) - blocker: too-short; each doubtful word occurs once, the signs are read, and one occurrence gives no second context to test a reading or a sign value against
 
 ## Escalation
 - [x] siblings: no other Soria-Lannoy letter in the Estense record or on DECODE; the five other Soria records in the Estense (Lettera L cc. 1-8: to Ferrante Gonzaga 1534, 1539, 1541, to Giovanni Mahona 1541; Gonzaga's draft to Soria 1539) hold no cipher at all, only clear Italian and Spanish; Lannoy's replies of 13 and 25 Apr 1527 (CSP Spain III.2 nos. 49, 54) survive only as clear copies in RAH Salazar A-40

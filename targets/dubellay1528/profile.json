@@ -90,7 +90,7 @@
   ],
   "sessions": 3,
   "first_date": "2026-09-17",
-  "last_date": "2026-10-14"
+  "last_date": "2026-11-14"
  },
  "solution": [
   {
@@ -117,7 +117,9 @@
    "what": "Split from the former combined target dubellay (catalogue item 4) under the one-key rule (George Lasry, 14 Oct 2026): the 28 Oct 1528 letter is in du Bellay's first cipher; the 1529 letters are in Bayonne's cipher of 1529 and keep dubellay. DECODE images of R4254 and R2287 fetched; Bourrilly's note on the cipher read.",
    "result": "worked"
   },
-  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): decryption = Bourrilly and de Vaissière 1905 no. 156 linked on archive.org; no ciphertext transcription exists (project work).", "result": "partial"}
+  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): decryption = Bourrilly and de Vaissière 1905 no. 156 linked on archive.org; no ciphertext transcription exists (project work).", "result": "partial"},
+  {"date": "2026-11-14", "kind": "verification", "what": "Bourrilly and de Vaissière's printed text of no. 156 (pp. 430-434) copied into texts/28oct1528_bourrilly.md from the archive.org text, corrected against the page images, cipher passages marked from the editors' italics; English translation written (texts/28oct1528_en.md).", "result": "worked"},
+  {"date": "2026-11-14", "kind": "transcription", "what": "Opened p. 146 (Gallica f144, openapi.bnf.fr) to transcribe the cipher runs: invented graphic signs between clear words on a bitonal microfilm scan, no sign table in the repository; DECODE R4254 images need a login. Not transcribed; recorded as transcription_missing.", "result": "failed"}
  ],
  "outcome": {
   "method": "read from existing decipherment",
@@ -161,10 +163,12 @@
    {
     "doc": "28oct1528",
     "label": "28 Oct 1528, fr. 3077 no. 23 (Bourrilly and de Vaissière 1905, no. 156)",
-    "decryption": "https://archive.org/details/ambassadesenangl00dube/page/430/",
+    "decryption": ["texts/28oct1528_bourrilly.md", "https://archive.org/details/ambassadesenangl00dube/page/430/"],
     "summary": "Jean du Bellay to Montmorency from London, 28 Oct 1528, in his first cipher: the clear text covers money he cannot get, Montpezat's coming and Campeggio's reception by Henry VIII; the cipher runs say that, if the divorce and remarriage go ahead, the Queen has said the Emperor will never stop until he has ruined the King of England, and suggest working through the Duke of Gueldres or Margaret of Austria while not trusting the Pope.",
-    "note": "Decryption = Bourrilly and de Vaissière, Ambassades en Angleterre de Jean du Bellay (1905), no. 156, pp. 430-434 (cipher passages in italics), linked on archive.org; not yet copied into the folder. No transcription of the ciphertext (about fifteen lines on p. 146, DECODE R4254 images): project work.",
-    "language": "fr"
+    "note": "Decryption = Bourrilly and de Vaissière, Ambassades en Angleterre de Jean du Bellay (1905), no. 156, pp. 430-434, copied into texts/28oct1528_bourrilly.md on 14 Nov 2026 from the archive.org text and corrected against the page images; the cipher passages (the editors' italics) are between asterisks. The translation is of that printed text. No transcription of the ciphertext: see transcription_missing.",
+    "language": "fr",
+    "translation": "texts/28oct1528_en.md",
+    "transcription_missing": "The cipher runs on p. 146 are invented graphic signs set between clear words, with bracketed groups of null signs. The leaf was opened on 14 Nov 2026 (Gallica btv1b90599292 f144 through openapi.bnf.fr, a bitonal microfilm scan); the DECODE R4254 images answer 'Insufficient permissions' without a login. Neither key table is in the repository (Bourrilly's is not printed, Lasry's is an image on Cryptiana GL.htm), so a faithful transcription needs a sign inventory first, which was not built in this pass. To unblock: Lasry's sign table, then a line-by-line transcription of p. 146 against it, checked on Bourrilly's italic passages."
    }
   ]
  }

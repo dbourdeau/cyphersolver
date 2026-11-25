@@ -3,8 +3,8 @@
 | Page | Where in the story | Kind | Reading |
 |---|---|---|---|
 | p. 73 (Day IV) | under the Hermes Princeps fountain inscription, after *BIBITE FRATRES, ET VIVITE* | line of alchemical/numeral signs | a date; 1378 in the crcsite.org edition (footnote 12), graded C here |
-| p. 95 (Day V) | the copper door to Venus's vault | letter cipher, 70 letters | HIE LIGT BEGRABEN VENUS DIE SCHON[E] FRAW SO MANCHEN HOHEN MANN UMB GLUCK EHR SEGEN UND WOLFART GEBRACHT HATT |
-| p. 97 (Day V) | the tablet behind Venus's bed | letter cipher, 86 letters | WAN DIE FRUCHT MEINES BAUMS WIRT VOLLENDS VERSCHMELZEN WERDE ICH AUFWACHEN UND EIN MUTER SEIN EINES KONIGS |
+| p. 95 (Day V) | the copper door to Venus's vault | letter cipher, 78 letters | HIE LIGT BEGRABEN VENUS DIE SCHON[E] FRAW SO MANCHEN HOHEN MANN UMB GLUCK EHR SEGEN UND WOLFART GEBRACHT HATT |
+| p. 97 (Day V) | the tablet behind Venus's bed | letter cipher, 90 letters | WAN DIE FRUCHT MEINES BAUMS WIRT VOLLENDS VERSCHMELZEN WERDE ICH AUFWACHEN UND EIN MUTER SEIN EINES KONIGS |
 | p. 116 (Day VI) | after *Anno* on the urn inscription | line of signs | a date; 1459 in the crcsite.org edition (footnote 21), graded C here |
 
 On p. 95, *VENUS* and *HOHEN* are printed in Roman capitals above the cipher line and are not enciphered.

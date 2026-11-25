@@ -34,7 +34,7 @@
   },
   {
    "id": "f101",
-   "read": "read in part",
+   "read": "read",
    "shelfmark": "Landesarchiv Sachsen-Anhalt (Magdeburg), A 1 Erzstift Magdeburg, Auswärtige Angelegenheiten, Nr. 530 (Osnabrück envoys, 1646-47), frame 117 (f.101), 'ad Diarium No. 54'",
    "date": "Dec 1646 (ad Diarium No. 54)",
    "year": 1646,
@@ -179,7 +179,7 @@
   },
   {
    "id": "f6",
-   "read": "read in part",
+   "read": "not read",
    "shelfmark": "Landesarchiv Sachsen-Anhalt (Magdeburg), A 1 Erzstift Magdeburg, Auswärtige Angelegenheiten, Nr. 530 (Osnabrück envoys, 1646-47), frame 10 right (f.6), '1647 ad Diarium No. 32'",
    "date": "Aug 1647 (ad Diarium No. 32)",
    "year": 1647,
@@ -780,6 +780,27 @@
    "result": "worked"
   },
   {
+   "date": "2026-11-14",
+   "kind": "transcription",
+   "technique": ["plaintext matching"],
+   "what": "Audit sections I and J. f.5, f.6 recto and f.101 transcribed again from the LASA max jpg at 2x-3x (R5: one AI reader, not blind: key, earlier transcriptions and the Nr. 529 draft pairs known; letters not settled on the image keep the earlier reader's form and are marked ?). Decoded with the frame-168 table: transcriptions/*_R5.txt, decryptions/*_R5.txt. On f.6 the letter R1 wrote y in udydf is a double i (herren).",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "access",
+   "technique": ["plaintext matching"],
+   "what": "Nr. 529 frame 532 right (fol. 484r, 'ad Diarium No. 54') fetched from the LASA viewer and the clear draft of f.101 transcribed (in readings/f101_R5.md): it gives the whole passage and names the three signs (Schweden, H. Salvius, die Cathol.); the cipher has 'vernomen' where the draft has 'nachricht erlanget'.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "reading",
+   "technique": ["plaintext matching"],
+   "what": "Readings with English built for the four slips that have a clear draft in Nr. 529, each word either standing as decoded, or a repair confirmed by the draft (printed plain), or marked [?word], or left as decoded: f.101 read (33 of 34 words; read_share with signs 36/37); f.5 read in part (46/54 words); f.7 = f.6 verso read in part from the R3 transcription (70/82 words); f.6 recto 81/100 words but kept decoded, not read (reading body 0.46 clean sentences, 19 unvalued name signs). f.102, f.104, f.204 and the eight Beling annexes not touched: they stay decoded, not read. outcome.texts now lists f5 and f6; key_file listed; fraction_read re-measured as words of documents that read / all = 170/3,935.",
+   "result": "partial"
+  },
+  {
    "date": "2026-11-16",
    "kind": "access",
    "technique": [
@@ -842,10 +863,19 @@
    ],
    "what": "Integration check of PR #688 (blind sibling decodes of 16 Nov 2026), by an AI agent; no person has checked the transcriptions or the readings. The frozen key equals key.tsv of 89e25ef and of main (sha256 c734821e...); the five BLIND.tsv hashes match their FREEZE_blind.txt; decode_once.py rerun on copies gives the five decodes byte for byte, and a decoder written here from key.tsv gives 0 differing rows of 1,354; the judge marks recount to 5233/6765, 388/442, 134/189, 41/62, 57/106; shuffle.py rerun gives shuffle_out.txt figure for figure (0 of 5,000 in all ten runs). Images (LASA viewer, max jpg): frame 281, all 60 cipher words, and frame 245 left lines 1-5, 49 rows (44 cipher words, 4 drawn signs, one struck word), agree with the blind transcriptions word for word (g/q and c/e not separable at that size). The image hashes of blind16/IMAGES_SHA256.txt cannot be rechecked: the viewer re-encodes each request. Order of events (key frozen, transcription, hash, decode) is by the contributor's record: one commit, no outside stamp. By cipher words with every letter S and nothing supplied (README, holes are counted by words): No. 29 531/1,212 rows = 0.438, frame 281 35/60 = 0.583, frame 203 10/33, frame 186 4/11; all four stay 'decoded, not read', frame 252 stays a failed result. docs/_check_reading.py on the filed readings gives 0.092, 0.346, 0.400 and 0.444 (NOTES table of the addition has 0.094, 0.391, 0.455, 0.533). 'Hold': the 'Not added (held)' line of PR #578 says what Andrew Beling left out of his own addition; it is not a reservation (catalogue 1639 has no reserved field, research/SWEEP.md).",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "verification",
+   "technique": [
+    "manual reconstruction"
+   ],
+   "what": "Three blind sign-shape sheets on No. 29, view 244 (dudout/no29_fr244_sign_check/, PR #947), Brice Dudout reader, sheets built and scored by AI agents (Claude); rules hashed before the thumbnails; valid controls 2/2, 2/2, 3/3 after the defective ones (sheet A has no valid control on the g form). Sheet A g/q: 10 words read (188 -> 198 of 432). Sheet B g/q, g/y: 10 more (198 -> 208), two of them probable. Sheet C t/l, d/e/c, final f/n: the 8 decided targets confirm the transcription; 9 words read as letters left in clear, all probable (217). The same rule applied mechanically to view 244, not checked by eye, gives 29 more probable (246 of 432 with probable words; 206 of 432 sure). A side pass in dudout/, not a figure of record: No. 29's figure of record (77.4% of letters, views 244-245) and the class are unchanged. Integration review of PR #947 reproduced the schema, hashes and controls; no image (LASA licence).",
+   "result": "partial"
   }
  ],
  "outcome": {
-  "class": "not read",
+  "class": "read in part",
   "key": "recovered",
   "method": "read with known key",
   "method_basis": "Owner's decision (13 Nov 2026): 'read with known key', because the envoys' own key survives in the same volume (Nr. 530 frame 168, keyword AMPHICTYONES over zxwurqlkgfdb, all 12 pairs equal) and decodes the slips to the same letters (cipher m = x added). The facts behind it: KEY_v2 was found by simulated annealing on the ciphertext of f.5 and f.6 alone and frozen (13:47:27 UTC, 12 Nov 2026) before frame 168 was seen (14:00:36), by the contributor's record; the worksheet then confirmed it 12/12; the catalogue entry the work started from already said a key was in the file. The label is the conservative one chosen by the owner for the paper.",
@@ -854,8 +884,8 @@
    "key recovered"
   ],
   "fraction_read_method": "measured",
-  "fraction_read_source": "the five held-out slips at their figures of record, first pass with frozen KEY_v2, no selection: f.7 36/83 (R1), f.101 16/35 (R2), f.102 22/84, f.104 42/100, f.204 19/52 (blind fourth reader b198, blind4_b198/dec/*.ledger.tsv, words with a letter marked doubtful counted as holes) = 135/354 = 0.3814 (13 Nov 2026, R8; was 149/351 = 0.4245 with R1 on f.102, f.104, f.204). Unit = cipher word.",
-  "fraction_read": 0.3814,
+  "fraction_read_source": "Re-measured 14 Nov 2026 as cipher words of the documents that read / all cipher words filed: f.5 54 + f.7 (= f.6v, R3 division) 82 + f.101 34 = 170, over 3,935 (those, f.6 100, f.102 84, f.104 100, f.204 52 by b198, and the eight Beling annexes 3,429) = 0.0432. Within the three that read, 149 of the 170 words stand as decoded or are confirmed by the Nr. 529 clear drafts. Every other document is decoded, not read. The earlier figure, 135/354 = 0.3814, was the strict share of single words standing as decoded on the five held-out slips at first pass (f.7 36/83 R1, f.101 16/35 R2, f.102 22/84, f.104 42/100, f.204 19/52 by b198); those per-slip figures of record are unchanged and stay in NOTES. Unit = cipher word.",
+  "fraction_read": 0.0432,
   "verification": [
    "key confirms",
    "contemporary decipherment",
@@ -868,6 +898,11 @@
    "verdict": "not applicable",
    "notes": "Contributor's own shuffled-key control (not docs/_validate.py, which was not run): 5,000 shuffled keys at seeds 20261112 and 7, German 4-gram model: 0 of 5,000 reach the true score in all 18 runs (9 transcriptions x 2 seeds); outputs in controls/shuffle/."
   },
+  "sign_check": [
+   {"date": "2026-11-24", "checker": "Brice Dudout", "checker_kind": "project", "model_roles": ["rule", "thumbnails", "sheet", "scoring", "remarks"], "signs_checked": 12, "controls": 2, "controls_passed": 2, "as_transcribed": 2, "corrected": 10, "unresolved": 0, "not_counted": 0, "rule": "dudout/no29_fr244_sign_check/sheet-A-rule.md (24 Nov 2026, before the thumbnails)", "rule_hash": "a3df1adbcb053ca76756ef692aad1bd2683ebede5fda39e02184a806857b0023", "sheet_faults": "control C2 boxed on the p of 'pgil', not the g (answer 'other form, P' right for the boxed sign): counted as defective, not as a control; no valid control on the g form", "note": "No. 29, view 244, g/q: 7 g->q and 3 q->g re-entered with the frozen key, 10 words read (188 -> 198 of 432); new pass, not a figure of record. No image (LASA licence)."},
+   {"date": "2026-11-24", "checker": "Brice Dudout", "checker_kind": "project", "model_roles": ["rule", "thumbnails", "sheet", "scoring", "remarks"], "signs_checked": 11, "controls": 2, "controls_passed": 2, "as_transcribed": 1, "corrected": 10, "unresolved": 0, "not_counted": 2, "rule": "dudout/no29_fr244_sign_check/sheet-B-rule.md (24 Nov 2026, before the thumbnails)", "rule_hash": "d40494978ee6984c63eeac9df7e195e7cf6799a86d534bcddf3c068d77840cdb", "sheet_faults": "control q of 'zhqu' answered right but badly boxed (counted as defective); targets L18 xgguld 3rd and L26 urdsdhyif 7th badly boxed, not counted", "note": "No. 29, view 244, g/q and g/y: 10 words read (198 -> 208 of 432), two {probable}: cuius (a distinct capital form, G-maj, value c by sense only) and erclaret (period spelling). No image (LASA licence)."},
+   {"date": "2026-11-24", "checker": "Brice Dudout", "checker_kind": "project", "model_roles": ["rule", "thumbnails", "sheet", "scoring", "remarks"], "signs_checked": 9, "controls": 3, "controls_passed": 3, "as_transcribed": 8, "corrected": 0, "unresolved": 1, "not_counted": 0, "rule": "dudout/no29_fr244_sign_check/sheet-C-rule.md and sheet-C-rule-amendment.md (24 Nov 2026, before the answers)", "rule_hash": "84b3140bb36a87c7e8bdb0a8a130e031a26a409c4c02c116b2af4abd54431f2c", "sheet_faults": "example thumbnail of the d of 'edf' (L22) badly boxed", "note": "No. 29, view 244, t/l, d/e/c, final f/n: all 8 decided targets confirm the transcription (letters left in clear by the scribe); L2 'ci' c or e undecided. 9 words read as letters left in clear, all {probable} (208 -> 217 of 432); the same rule applied mechanically to view 244, not checked by eye, reads 29 more {probable} (246 of 432; 206 without any {probable}). No image (LASA licence)."}
+  ],
   "provenance": "contributed",
   "credits": [
    {
@@ -918,6 +953,12 @@
     "role": "pointer",
     "note": "first listed No. 29 (frames 244-245) and the cipher in the letters of frames 15-28, 186, 203, 252, 281, 283 as further texts in the same key (PR #578, 'Not added (held)'); his files for them are not in this folder and were not used for PR #688",
     "date": "2026-11-12"
+   },
+   {
+    "who": "dudout",
+    "role": "verification",
+    "note": "three blind sign-shape sheets on No. 29, view 244 (g/q, g/y, t/l, d/e/c, final f/n; Brice Dudout reader, sheets built and scored by AI agents), dudout/no29_fr244_sign_check/: a new pass, 188 -> 246 of 432 words on view 244 (206 without {probable}); figure of record unchanged",
+    "date": "2026-11-24"
    }
   ],
   "gaps": [
@@ -973,34 +1014,52 @@
     "label": "f.7 = fol. 6 verso, frame 11 left page (1647, second page of No. 32; content NOT FIRST, in clear in Nr. 529 frame 882)",
     "transcription": [
      "transcriptions/f7_frame11_R1.txt",
-     "transcriptions/f7_frame11_R2.txt"
+     "transcriptions/f7_frame11_R2.txt",
+     "transcriptions/f7_frame11_R3.txt"
     ],
     "decryption": [
      "decryptions/f7_R1.txt",
-     "decryptions/f7_R2.txt"
+     "decryptions/f7_R2.txt",
+     "decryptions/f7_R3.txt"
     ],
-    "reading": "readings/f7.md",
-    "translation": "translations/f7.md",
+    "reading": ["readings/f7_R3_reading.md", "readings/f7.md"],
+    "translation": ["translations/f7_R3_en.md", "translations/f7.md"],
     "language": "de",
-    "state": "decoded, not read",
-    "read_share": 0.4337,
-    "summary": "An envoys' report: the obstinacy of a legation, 'praesertim in pari autoritate constituti', 'humeur', qualities praised; mostly holes. English gist in translations/ is AI-made."
+    "state": "read in part",
+    "read_share": 0.7692,
+    "summary": "Second page of annex No. 32 (Aug 1647): the fault was not his; by the Portuguese example and his own it is not always good when two envoys of equal authority serve together, and he wishes one alone, or a third to temper the contrary humours; in private talk he praised the understanding and moderation of the man said to be replaced, and thought he would suit. The persons are name signs, not valued.",
+    "reading_review": {
+     "grade": "A",
+     "by": "Claude (session of 14 Nov 2026)",
+     "date": "2026-11-14",
+     "note": "Read as sentences in readings/f7_R3_reading.md against decryptions/f7_R3.txt and the draft pairs: one connected passage, holes scattered (aiau, longe uilte, hon, the name signs); it rests on the R3 transcription and on the contemporary clear draft for 20 repaired words."
+    },
+    "note": "Reading of 14 Nov 2026 from the third transcription R3 (b195, frozen before its decode and before the draft was opened) and the envoys' clear draft Nr. 529 frame 882 left as read in nr529/f7_R3_vs_frame882_pairs.tsv; no image opened for it. 82 cipher words: 50 stand as decoded, 20 repairs confirmed by the draft, 8 one-letter repairs the draft does not carry ([?word]), 4 not read. read_share = (50 + 20) / (82 words + 9 unvalued name signs) = 70/91; on cipher words alone 70/82 = 0.854. _check_reading clean share of the reading body 0.625. Content not first (in clear in Nr. 529). The R1 figure of record 36/83 (strict, first pass) is unchanged; readings/f7.md is that first-pass list."
    },
    {
     "doc": "f101",
     "label": "f.101, frame 117, ad Diarium No. 54 (Dec 1646; content NOT FIRST, in clear in Nr. 529 frame 532)",
     "transcription": [
-     "transcriptions/f101_frame117_R2.txt"
+     "transcriptions/f101_frame117_R2.txt",
+     "transcriptions/f101_frame117_R5.txt"
     ],
     "decryption": [
-     "decryptions/f101_R2.txt"
+     "decryptions/f101_R2.txt",
+     "decryptions/f101_R5.txt"
     ],
-    "reading": "readings/f101.md",
-    "translation": "translations/f101.md",
+    "reading": ["readings/f101_R5.md", "readings/f101.md"],
+    "translation": ["translations/f101_R5.md", "translations/f101.md"],
     "language": "de",
-    "state": "decoded, not read",
-    "read_share": 0.4571,
-    "summary": "Someone not content that Salvius stayed so long at Münster; 'als der Venetianische hierunter'; mostly holes. English gist in translations/ is AI-made."
+    "state": "read",
+    "read_share": 0.973,
+    "summary": "Annex to diary No. 54 (Dec 1646): told in confidence that in Sweden they were not altogether content that Salvius stayed so long at Münster, so that 'der Alte' began to grow quieter, the more so as intercepted letters had shown what designs and dangerous counsels the Catholics as a body and the Venetian had in the matter. Sweden, Salvius and the Catholics are name signs on the slip, named from the clear draft.",
+    "reading_review": {
+     "grade": "A",
+     "by": "Claude (session of 14 Nov 2026)",
+     "date": "2026-11-14",
+     "note": "Read as sentences in readings/f101_R5.md: two sentences, no hole; every repaired word is carried by the contemporary clear draft (Nr. 529 frame 532), read on the image by the same AI reader."
+    },
+    "note": "Reading of 14 Nov 2026: a new transcription R5 from the LASA image (one AI reader, not blind, not checked by a person) and the envoys' clear draft Nr. 529 frame 532 right (fol. 484r), opened and transcribed that day (in readings/f101_R5.md). 34 cipher words: 22 stand as decoded, 9 repairs and the three name signs confirmed by the draft, 'vernomen' stands where the draft has 'nachricht erlanget', the ending 'ci' after the third sign only loosely explained. read_share = (33 words + 3 signs named by the draft) / (34 + 3) = 36/37. Content not first. The R2 figure of record 16/35 (strict, first pass) is unchanged; readings/f101.md is that first-pass list."
    },
    {
     "doc": "f102",
@@ -1176,6 +1235,38 @@
     "read_share": 0.5694
    },
    {
+    "doc": "f5",
+    "label": "f.5, frame 8, 1647 ad Diarium No. 31 (key training text; content NOT FIRST, in clear in Nr. 529 frame 875)",
+    "transcription": ["transcriptions/f5_frame8_R1_v2_training.txt", "transcriptions/f5_frame8_R1_v1_training.txt", "transcriptions/f5_frame8_R5.txt"],
+    "decryption": ["decryptions/f5_R1_v2tx_KEY_v2_training.txt", "decryptions/f5_R1_v2tx_KEY_v1_training.txt", "decryptions/f5_R5.txt"],
+    "reading": "readings/f5_R5.md",
+    "translation": "translations/f5_R5.md",
+    "language": "de",
+    "state": "read in part",
+    "read_share": 0.7797,
+    "summary": "Annex to diary No. 31 (Aug 1647): the two letters lately sent over, and Father Mulman's to his confessor, were communicated in the original and said to have been intercepted near Eger; there was something against the preliminaries in them; other private letters too, one from Schröder almost worse. The persons are name signs, not valued.",
+    "note": "The key was annealed on this slip (KEY_v1, KEY_v2), so it is no test of the key. Reading of 14 Nov 2026: a new transcription R5 from the LASA image (one AI reader, not blind, not checked by a person; letters it could not settle keep R1's form and are marked) and the clear draft Nr. 529 frame 875 as read in nr529/f5_vs_frame875_pairs.tsv. 54 cipher words: 29 stand as decoded, 17 repairs confirmed by the draft, 6 repairs the draft does not carry ([?word]), 2 not read. read_share = 46 / (54 words + 5 unvalued name signs) = 46/59; on cipher words alone 46/54 = 0.852. _check_reading clean share of the reading body 0.714. The clear German of the slip between the cipher runs is only partly transcribed.",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude (session of 14 Nov 2026)",
+     "date": "2026-11-14",
+     "note": "Read as sentences in readings/f5_R5.md against decryptions/f5_R5.txt and the draft pairs: the cipher runs build sentences with the slip's clear text, but two clear stretches are not transcribed ({...}) and two cipher words are unread (nufdt, diefne); normalised in the reading."
+    }
+   },
+   {
+    "doc": "f6",
+    "label": "f.6 recto, frame 10 right, 1647 ad Diarium No. 32 (key training text for KEY_v2; content NOT FIRST, in clear in Nr. 529 frames 881-882)",
+    "transcription": ["transcriptions/f6_frame10_R1_training.txt", "transcriptions/f6_frame10_R5.txt"],
+    "decryption": ["decryptions/f6_R1_KEY_v2_training.txt", "decryptions/f6_KEY_v1_R1.txt", "decryptions/f6_R5.txt"],
+    "reading": "readings/f6_R5.md",
+    "translation": "translations/f6_R5.md",
+    "language": "de",
+    "state": "decoded, not read",
+    "read_share": 0.6807,
+    "summary": "Partial reading: good offices for exiles; a growing discord between two parties moves the speaker to wish his dismissal; one is too deeply engaged over the subsidy moneys; a report taken to heart and resented towards 'Herren Scheffern'; three times full powers to conclude with 'Herren Volmar'. The actors are name signs, not valued, so who did what is not known.",
+    "note": "KEY_v2 was annealed on this slip with f.5. Partial reading of 14 Nov 2026 (readings/f6_R5.md, English translations/f6_R5.md): a new transcription R5 from the LASA image (one AI reader, not blind, not checked by a person; letters it could not settle keep R1's form and are marked) and the clear draft Nr. 529 frames 881-882 as read in nr529/f6_vs_frame881_882_pairs.tsv. 100 cipher words: 58 stand as decoded, 23 repairs confirmed by the draft, 15 repairs the draft does not carry, 4 not read; read_share = 81 / (100 words + 19 unvalued name signs) = 81/119. Kept decoded, not read: the reading body scores 0.46 clean sentences on _check_reading (0.59 with the name signs taken as names), under the bar of about 0.60, because 19 unvalued name signs and 19 unconfirmed or unread words fall in nearly every sentence. Blockers: the name signs (Catalogus, frames 3 and 278, not valued) and a second reader's check of the R5 letters on the image; both workable."
+   },
+   {
     "doc": "no29_frame244-245_blind16",
     "label": "frames 244 right, 245 left and right, 'Annotationes ad No. 29' (blind sibling decode, 16 Nov 2026; held by Beling's addition, filed crediting that hold)",
     "transcription": [
@@ -1243,6 +1334,7 @@
     "summary": "Fragment: something that came up in a diary; a 'periodus post' set in both. Too short to say more. English in translations/ is AI-made, unchecked.",
     "note": "read_share = strict one-pass judge, letter units S/(S+E+N) = 41/62 (blind16/letter_fr186/judge.tsv; missing letters not penalised, [S] and blots N). Unit = cipher letter, not cipher word, so not comparable with fraction_read. State set by docs/_check_reading.py (not 'readable'). Shuffled keys: 0 of 5,000 at seeds 20261112 and 7 (blind16/shuffle_out.txt). Blind to other readings, not to the fact that the key exists; the reader never saw it."
    }
-  ]
+  ],
+  "key_file": ["key.tsv", "gloss/KEY_lasa_v2.txt", "gloss/worksheet_frame168.txt"]
  }
 }

@@ -194,6 +194,7 @@ def attach_methods():
             if len(out.get('parts') or []) > 1:           # a split entry: each part has its own method (README Conventions)
                 p['parts'] = [(x['label'], x['method'], x['extent']) for x in out['parts']]
             p['frac'] = out.get('fraction_coherent') if isinstance(out.get('fraction_coherent'), (int, float)) else                         out.get('fraction_read') if isinstance(out.get('fraction_read'), (int, float)) else None
+            p['frac_src'] = 'coherent' if isinstance(out.get('fraction_coherent'), (int, float)) else 'read'
         p['stt_hand'] = p['stt']
         p['st'] = M.status_class(p['method'], p['extent'])
         p['stt'] = M.badge(p['method'], p['extent'], cls)
@@ -208,7 +209,10 @@ def outcome_html(p):
         pct = 100 * p['frac']
         # a partial reading must not round up to the bar or to 100% (94.7% shown as 95%, 99.5% as 100%)
         shown = f'{pct:.1f}' if round(pct) != int(pct) and (round(pct) >= 95 > pct or round(pct) == 100 > pct) else str(round(pct))
-        ext += f' ({shown}% of the cipher)'
+        # the chip is a token, group or line measure (fraction_coherent / fraction_read), not the read share over
+        # cipher words that decides the class (README Conventions, 16 Nov 2026): say what it measures
+        ext += (f' ({shown}% of the cipher coherent by tokens or lines, not the word count)' if p.get('frac_src') == 'coherent'
+                else f' ({shown}% of cipher tokens valued, not the word count)')
     if M.key_only(m, p['extent']): ext = 'none (key obtained, text not read)'   # George Lasry, 24 Oct 2026
     if p.get('parts') and len({x[1] for x in p['parts']}) > 1:      # several targets, several methods
         bits = [f'{f}: <a href="glossary.html#{M.KEY[pm]}" title="{pm}">{M.LABEL[pm]}</a> ({pe})' for f, pm, pe in p['parts']]
@@ -402,7 +406,7 @@ def lasry_report_html(page):
         rt = (rd / 'readable.md').read_text(encoding='utf-8')
         body = ['<h3 id="lasry-readable">Readable text</h3>',
                 '<p class="muted">The full text, folio by folio, as in the report. Bold marks the passages deciphered from the '
-                'cipher; the rest is the clear text of the letter. Question marks are the report&rsquo;s: [?] or a bare ? for a sign or group left unread, a ? after a word for a doubtful reading.</p>', '<div class="lr-readable">']
+                'cipher; the rest is the clear text of the letter. Question marks are the report&rsquo;s: [?] or a bare ? for a sign or group left unread, a ? after a word for a doubtful reading; a letter in square brackets inside a word is one the report supplies where the sign is lost or unread.</p>', '<div class="lr-readable">']
         for blk in re.split(r'\n\s*\n', rt):
             blk = blk.strip()
             if not blk or blk.startswith('<!--'): continue
@@ -457,7 +461,9 @@ EXPLORE_GROUPS = [
                            ('keys', 'Key web', 'Which key opened which letter')]),
     ('Try and take part', [('secret', 'Write a secret letter', 'Seal a message in a real historical cipher'),
                            ('contribute', 'Contribute', 'Send a solution, a new cipher or a check of a reading')]),
-    ('Reference', [('glossary', 'Glossary', 'How each cipher was solved, and the terms used')])]
+    ('Reference', [('glossary', 'Glossary', 'How each cipher was solved, and the terms used'),
+                   ('corrections', 'Corrections', 'What was published and then corrected or withdrawn'),
+                   ('method', 'Method and review', 'How a reading is made, checked and graded, and by whom')])]
 EXPLORE = [e for _, items in EXPLORE_GROUPS for e in items]
 CHEVRON = ('<svg width="10" height="7" viewBox="0 0 10 7" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" '
            'stroke="currentColor" stroke-width="1.6"/></svg>')
@@ -662,13 +668,15 @@ def readme_glance():
     return len(counts)
 
 def writeups_html():
+    # data-q carries only what the row does not show (the menu label and the place): site.js searches the row's own
+    # text as well, so the title and blurb are not written twice (355 kB of the page before 14 Nov 2026)
     def q(*parts): return html.escape(plain(' '.join(parts)).lower(), quote=True)
     rows = []
     for p in sorted(PAGES, key=lambda p: p['y']):
         by = ' '.join(sorted({c['who'] for c in p.get('credits') or [] if c.get('who') in CONTRIB}))
         rows.append(f'<li data-kind="{kind_of(p)}" data-extent="{p.get("extent") or ""}" data-century="{century_of(p["y"])}" data-src="page" data-by="{by}" '
                     f'data-lang="{langs_of(p.get("folders") or [])}" '
-                    f'data-q="{q(p["label"], p["title"], p["place"], p["year"], p["blurb"], p["stt"])}">'
+                    f'data-q="{q(p["label"], p["place"])}">'
                     f'<a href="{p["slug"]}.html"><span class="st {p["st"]}">{p["stt"]}</span>'
                     f'<span class="t">{avatars_html(p["slug"])}{p["title"]}</span>{when_html(p, cls="dt")}<span class="yr">{p["year"]}</span>'
                     f'<span class="b">{p["blurb"]}</span></a></li>')
@@ -676,7 +684,7 @@ def writeups_html():
     nrows = []
     for n in sorted(notes, key=lambda n: n['y']):
         nrows.append(f'<li data-kind="{n["kind"]}" data-extent="{n["extent"]}" data-century="{century_of(n["y"])}" data-src="notes" data-lang="{n.get("lang", "")}" '
-                     f'data-q="{q(n["target"], n["result"], n["date"], n["stt"])}">'
+                     f'>'
                      f'<a href="{n["url"]}" rel="noopener"><span class="st {n["st"]}">{n["stt"]}</span>'
                      f'<span class="t">{n["target"]}</span><span class="dt">notes &#8599;</span><span class="yr">{n["date"]}</span>'
                      f'<span class="b">{n["result"]}</span></a></li>')
@@ -753,6 +761,7 @@ def glossary_html():
         '<h2 id="methods">Methods</h2>\n<p>The first three are cryptanalysis: the key was recovered here. The next three '
         'applied a key or decipherment that already existed; the work was transcription and decipherment. Whether someone had '
         'solved an item before, and when that was found, is stated on each write-up.</p>\n'
+        '<p><a href="experiments/blind-340/index.html">Try a blind ciphertext-only experiment</a> with three new 340-symbol grids and a verified decoder.</p>\n'
         f'<dl class="gloss">\n{meth}</dl>\n\n'
         '<h2 id="extent-complete-or-partial">Extent</h2>\n<p><b>Complete</b>: at least 95% of the cipher symbols give sense, '
         'every document is covered, and what stays open is scattered code groups or pieces blocked from outside. '
@@ -774,17 +783,18 @@ def footer_html(current):
             prev = order[i-1] if i > 0 else None; nxt = order[i+1] if i+1 < len(order) else None
     cur = next((p for p in PAGES if p['slug'] == current), None)
     rights = f' &middot; {cur["rights"]}' if cur and cur.get('rights') else ''
-    links = ['<a href="index.html">Overview</a>']
+    links = ['<a href="index.html">Overview</a>', '<a href="method.html">Method and review</a>']
     if prev: links.append(f'<a href="{prev["slug"]}.html" rel="prev">&larr; {prev["label"]} {prev["year"]}</a>')
     if nxt: links.append(f'<a href="{nxt["slug"]}.html" rel="next">{nxt["label"]} {nxt["year"]} &rarr;</a>')
     if cur and current not in SURVEYS:
         links.append(f'<a href="{html.escape(contest_url(current))}" rel="noopener">Contest or verify this reading &#8599;</a>')
+    links.append('<a href="corrections.html">Corrections</a>')
     links.append(f'<a href="{REPO}" rel="noopener">Code &#8599;</a>')
     links.append('<a href="contribute.html#email">Contact &#9993;</a>')
     links.append('<a href="feed.xml">Feed</a>')
     links.append('<a href="#top">Top &uarr;</a>')
     author = cur.get('author', 'Daniel Bourdeau') if cur else shared_author(current)
-    footer_date = cur.get('footer_date', 'September 2026') if cur else 'September 2026'
+    footer_date = cur.get('footer_date', 'September 2026') if cur else ('November 2026' if current in ('corrections',) else 'September 2026')
     return (f'<footer><div class="in">\n  <span>{author}, {footer_date} &middot; Text released under CC BY 4.0{rights}</span>\n'
             f'  <nav aria-label="Footer">{"".join(links)}</nav>\n</div></footer>')
 
@@ -846,14 +856,15 @@ def catintro_html():
     op = [e for e in es if C.is_open(e)]
     ys = [e['year'] for e in op if isinstance(e.get('year'), int)]
     seen = sum(1 for e in op if 'image' in str(e.get('seen')) or e.get('seen') == 'viewed')
-    return (f'<!-- catintro:start -->\n<p>{len(op):,} undeciphered letters and series from {min(ys)} to {max(ys)}. Each carries its shelfmark, the prior art '
-            f'checked, a difficulty class and the check that would confirm it is genuinely open; {seen} have been looked at on the image.</p>\n<!-- catintro:end -->')
+    return (f'<!-- catintro:start -->\n<p>{len(op):,} undeciphered letters, messages and series from {min(ys)} to {max(ys)}. '
+            f'Entries link to their sources and carry the available shelfmarks and checks. {seen} have been looked at on the image.</p>\n<!-- catintro:end -->')
 
 
 def cattop_html(n=6):
     """The highest-priority open entries of the Unsolved Catalogue, for the index."""
     import _catalogue_page as C
-    top = sorted([e for e in C.DATA['entries'] if e['counted'] and C.is_open(e)], key=lambda e: (-C.priority(e), e['id']))[:n]
+    top = sorted([e for e in C.DATA['entries'] if e['counted'] and C.is_open(e) and C.priority(e) >= 0],
+                 key=lambda e: (-C.priority(e), e['id']))[:n]
     li = ''.join(f'  <li><a href="solve/{e["id"]}.html">{C.people_html(e) or C.blank_html(e)}<span class="t">{C.esc(e["title"])}</span>'
                  f'<span class="pr"><small>priority</small> {C.priority(e):.1f}</span><span class="yr">{C.esc(e["date"])}</span></a></li>\n' for e in top)
     return f'<!-- cattop:start -->\n<h3 class="listhead">Top of the queue</h3>\n<ul class="list cattop">\n{li}</ul>\n<!-- cattop:end -->\n'
@@ -1071,6 +1082,13 @@ def cite_authors(page):
     names = [n for n in dict.fromkeys(plain(CONTRIB[w]['name']) for w in order) if n not in own]
     return names + [own] if page.get('provenance') == 'contributed' else [own] + names
 
+def _commit():
+    """Short hash of the commit the site is built from, for 'Cite this page' (a page changes under one URL)."""
+    import subprocess
+    try: return subprocess.run(['git', '-C', str(HERE), 'rev-parse', '--short=10', 'HEAD'], capture_output=True, text=True, timeout=10).stdout.strip()
+    except Exception: return ''
+COMMIT = _commit()
+
 def cite_html(page, rec):
     """Cite this page: the words, and a button each for the words and for BibTeX (site.js copies them)."""
     title, slug = plain(page['title']), page['slug']
@@ -1078,7 +1096,7 @@ def cite_html(page, rec):
     author = names[0] if len(names) == 1 else ', '.join(names[:-1]) + ' and ' + names[-1]
     url = f'{BASE_URL}{slug}.html'
     posted, updated = fmt_date(rec['first']), fmt_date(rec['updated'])
-    when = f'posted {posted}' + (f', updated {updated}' if updated != posted else '')
+    when = f'posted {posted}' + (f', updated {updated}' if updated != posted else '') + (f', repository commit {COMMIT}' if COMMIT else '')
     text = f'{author}, \u201c{title}\u201d, Cyphersolver, {when}, {url}.'
     year = rec['first'][:4]
     bib = (f'@misc{{cyphersolver-{slug},\n  author = {{{" and ".join("{" + n + "}" if "," in n else n for n in names)}}},\n  title = {{{title}}},\n  year = {{{year}}},\n'
@@ -1234,7 +1252,7 @@ def process(path):
     s = re.sub(r'<link rel="(?:icon|apple-touch-icon)"[^>]*>\n?', '', s)
     s = s.replace('</head>', ICONS + '</head>', 1)
     # page scripts carry a hash of their own content, so an edit reaches browsers without a VERSION bump
-    s = re.sub(r'<script src="(secret|cipher-reveal|atlas|archmap|catmap|herovid)\.js(?:\?[^"]*)?"',
+    s = re.sub(r'<script src="(secret|cipher-reveal|atlas|archmap|catmap|herovid|catalogue-data)\.js(?:\?[^"]*)?"',
                lambda m: f'<script src="{m.group(1)}.js?v={hashlib.sha1((HERE / (m.group(1) + ".js")).read_bytes().replace(b"\r\n", b"\n")).hexdigest()[:8]}"', s)
     s = re.sub(r'<script src="site.js[^"]*"></script>\s*', '', s)
     s = s.replace('</body>', f'<script src="site.js?v={VERSION}"></script>\n</body>', 1)
@@ -1436,6 +1454,9 @@ if __name__ == '__main__':
     print('further: %d partial readings' % F.build_html(PAGES))
     import _archives_page as AR                 # archives.html: requests for archives and libraries, from archive_requests.json
     print('archives: %d open requests' % AR.build_html(PAGES))
+    import _method_page as MP                   # method.html and method-fr.html: the review figures, counted from the profiles
+    mp = MP.build_html(PAGES, PROFILES)
+    print(f"method: {mp['rr']} graded entries, {mp['kinds']['model']} by a model")
     import _key_evolution_page as KE            # key-evolution.html: the profiles' cipher systems counted by half-century
     print('key evolution: %d systems' % KE.build_html())
     sys.path.insert(0, str(HERE.parent / 'tools')); import seed_archive_requests as SAR
@@ -1445,6 +1466,10 @@ if __name__ == '__main__':
         page_dates(f.stem, f.read_text(encoding='utf-8').lstrip('﻿'))
     (HERE / 'writeups.html').write_text(writeups_html(), encoding='utf-8')
     (HERE / 'glossary.html').write_text(glossary_html(), encoding='utf-8')
+    import _films_page as FI            # films.html and the home page's poster shelf (25 Nov 2026)
+    print('films:', FI.build_html(VERSION))
+    import _corrections_page as CO      # corrections.html (16 Nov 2026)
+    print('corrections:', CO.build_html(VERSION), 'entries')
     import _contributors_page as CP
     (HERE / 'contributors.html').write_text(CP.page(PAGES, PROFILES, CONTRIB, DATES['pages'], VERSION, TODAY), encoding='utf-8')
     done =[process(p) for p in sorted(HERE.glob('*.html'))]

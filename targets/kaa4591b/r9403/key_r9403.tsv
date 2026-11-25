@@ -1,0 +1,28 @@
+# Key of R9403 (ff. 226-228, 17 Sept 1531) as this letter's sign codes were written: the System B table with e and r exchanged.
+# Added 16 Nov 2026 (decrypt audit). Every value is copied from the KEY table hard-coded in r9403/build.py (lines 6-7), the script that
+# wrote r9403/transcription.tsv FROM the reading; NOTES.md, 'The key (System B)', states the exchange (e = starred x AST, r = plain x X).
+# Because the codes of r9403/transcription.tsv were generated from the reading with this table, decrypting them with it returns the
+# reading by construction: this file documents the table, it is not an independent check of the reading against the image.
+# U2 is u and v. The word sign DAG (King John, by context) and the '?' of two part-words are not letter values and are not listed.
+# The homophones of sysB/key_from_glosses.tsv (W for t, T for f) do not occur in r9403/transcription.tsv (not kept by build.py).
+sign	letter	same_as_key_from_glosses	source
+3	i	yes	r9403/build.py:6-7
+AST	e	no (r there)	r9403/build.py:6-7
+O+	s	yes	r9403/build.py:6-7
+U2	u	yes	r9403/build.py:6-7
+OD	a	yes	r9403/build.py:6-7
+N	n	yes	r9403/build.py:6-7
+O	m	yes	r9403/build.py:6-7
+M	o	yes	r9403/build.py:6-7
+X	r	no (e there)	r9403/build.py:6-7
+HH	t	yes	r9403/build.py:6-7
+W	c	yes	r9403/build.py:6-7
+D	d	yes	r9403/build.py:6-7
+EQ	p	yes	r9403/build.py:6-7
+9	l	yes	r9403/build.py:6-7
+B	b	yes	r9403/build.py:6-7
+Z	g	yes	r9403/build.py:6-7
+Q	q	yes	r9403/build.py:6-7
+EQs	f	yes	r9403/build.py:6-7
+H	h	yes	r9403/build.py:6-7
+XH	x	yes	r9403/build.py:6-7

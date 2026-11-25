@@ -428,7 +428,7 @@ All WAINUT's work; details in `wainut/NOTES_ferrante1549.md`.
 | 8 Mar 1549, c. 12r | covered by the decipherment on c. 14r; the table was built on it | | `transcription_1549_c12r.txt`, `clear_1549_c14r.txt` |
 | 23 May 1547, cc. 9r-9v | covered by c. 11; table extended on it, lines 11-16 of 9v held out | | `transcription_1547_c09.txt`, `clear_1547_c11.txt` |
 | 25 Jun 1546, 14 Mar 1553, the letter catalogued 16 Jun 1563 | decoded from one rough blind pass, not read | | `decryption_philip_1546_1553_x_blind.txt` |
-| cc. 15-17 (cipher and clear slip), cc. 32-34 (Monzón, 6 Oct 1552) | not transcribed (issue #615) | | |
+| cc. 15-17 (cipher and clear slip), cc. 32-34 (Monzón, 6 Oct 1552) | not transcribed in full (issue #615, Brice Dudout). For the October clear sheet and sampled signs see below. | | |
 
 WAINUT's catalogue corrections stand: marginal decipherments exist for c. 28r and c. 64v and for every passage of
 30 Sep and 20 Nov; c. 14r begins "De Su Mt."; the copy on c. 12r is not abridged; the letter catalogued 16 Jun 1563
@@ -465,20 +465,39 @@ Six code words of the frozen key (dide, quod, gien, em, gaces, mus) have the sam
 `vargas1552` stays a separate entry (the same cipher by Tomokiyo's identification and two code words; no sign of it is
 transcribed), cross-linked.
 
+## Two Spanish enclosures in Philip’s correspondence, 19 November 2026
+
+The cipher samples below (32v, 34r) are decoded with Brice Dudout's composite key K4 (`targets/figueroa1534/validation/K4.tsv`), not with the 1549 tables of this entry.
+
+In the dispatch from Monzón of 6 October 1552 the mention of Ambassador Figueroa’s letters of 6 August and the copies they enclosed appears twice. On 32v cipher follows that introduction. On 33r–v a separate sheet in ordinary Spanish continues it with news of Siena and a request for Ferrante’s judgment. Two independent AI readers agreed at 295 of 308 word positions on that sheet. Its relationship to the original can be seen at the change of script. Its origin as a draft, decipherment or other copy remains open. Three initial checks on the cipher missed. A later comparison on 34r lines 2–3 passed with 30/51 usable signs, two exact fragments totalling 15 letters and a maximum control score of 10. Three further comparisons on 32v missed. [Four comparisons, plans and replay](beling_october1552/continuation34/README.md) [Manuscript](https://edl-jarvis.cultura.gov.it/meta/iiif/897e61b7-4957-4f07-b4d2-debae54659a1/manifest) · [Clear text, English rendering and cipher checks](beling_october1552/NOTES.md)
+
+Six passages of the dispatch of 14 March 1553 also have a Spanish witness on 37r–38r. Two agents independently transcribed it. The cipher opening still lacks a verified reading. Two title spellings on October 34r have independent reader agreement. A later image check records the maintainer’s proposed readings in context. [March enclosure](beling_march1553/NOTES.md) · [October titles and May audit](beling_codewords/NOTES.md) · [Follow-up image check](beling_october1552/NOTES.md)
+
+## The November 1549 proposals (PR #833, merged 20 Nov 2026)
+
+[`beling_nov1549/`](beling_nov1549/NOTES.md) (Andrew Beling with AI agents) compares the disputed signs of the 14 Nov 1549 letter on the Estense images and proposes a reading at eleven of the 23 places where the two readings differ: apuntar; de at A11.21; no at A13.13, A14.6, A15.19 and B27.21; pretiende; nonbre; dezis; segura; procurar. Its three tests for the other places (the cross against Figueroa's letters, a lexical test, a nearest-shape test of c. 60v line 22) missed. **The proposals are not applied**: no reading, key or count here is changed by them. Who decides each kind:
+- pretiende and nonbre follow from the project's own sign file (pre, ti, e, n, de; no, n, b, re), which the rule above already counts: the maintainers can correct the project's reading.
+- The other nine rest on the image, a kind of evidence the rule above does not yet count: the owner decides whether an image settles a difference, and a change to the project's reading needs the second maintainer.
+- Five of them would change WAINUT's reading (apuntar and the four de / no at A11.21, A13.13, A14.6, A15.19): WAINUT is asked on issue #618; its files under `wainut/` stay as filed.
+- `vela` = Roma (seen at c. 32v of Philip's dispatch of 6 Oct 1552, PR #828) is likewise not carried into the 14 Nov reading: a decision for the two maintainers.
+
+`beling_nov1549/goselini_and_the_parma_letters.md` (commit 304fbabd53, merged with #833) was added after the review of #833. Its sources are not checked here (Goselini's *Vita del prencipe don Ferrando Gonzaga*, 1574; cc. 71-75 of the Modena file), with one exception: the Calendar of State Papers Spain IX, pp. 479-480 (british-history.ac.uk, one request, 20 Nov 2026) does print an extract of Gonzaga to the Emperor, Milan, 29 Nov 1549, Simancas E. 1196, with the Count of Lodron's two proposals from Ottavio (the Farnese party for the Emperor in the election; Siena asked for, Parma, Piacenza, Novara and the Naples holdings offered), Gonzaga declining to promise the exchange, and copies of his letters to Diego de Mendoza and the Cardinal of Mantua. The Calendar names the writer Fernando Gonzaga.
+
 ## Remaining gaps
-- 14 Nov 1549: 23 differences between sure words of the two readings (Ottavio / Octauio and remittimos / remictimos; de / no at five places; hallarse / hallarnos; procurar / de curar; four vowel marks) and the systematic table differences (R, N, f / ff) - blocker: not-attempted; each is one sign on the Estense images, which are open; `comparison_14nov1549.tsv` lists the places
+- 14 Nov 1549: 23 differences between sure words of the two readings (Ottavio / Octauio and remittimos / remictimos; de / no at five places; hallarse / hallarnos; procurar / de curar; four vowel marks) and the systematic table differences (R, N, f / ff) - blocker: not-attempted; each is one sign on the Estense images, which are open; `comparison_14nov1549.tsv` lists the places. Eleven of the 23 have a proposal from image comparisons in `beling_nov1549/NOTES.md` (Andrew Beling with AI agents, PR #833), not applied; hallarse / hallarnos and the eleven tt / ct places have none.
 - 14 Nov 1549, reading 1: 129 tokens of sign values that do not form words (c.60v lines 7-8 and 23-27, c.61r L4-5 and L16-18, c.61v L18 and others) - blocker: not-attempted; reading 2 gives words at most of them, not yet checked sign by sign against the sign files of reading 1
 - 14 Nov 1549, reading 2: 53 repairs, 38 proposals, 2 holes (A14 `lalgunte`, A16 `et ud y tu`); differences of WAINUT's blind pass on A08-D23 not all settled; A00-A07 one pass - blocker: not-attempted; reading 1 is sure at 25 of these places; a zoom reading of A00-D13
 - Hints from Brice Dudout (issue #618, 17 Nov 2026), from his study transcription of the Simancas sheet of 1866, **not checked** on the Estense images or on the sheet: `et` is listed among the nulls, beside the sheet's rule that signs with two dots below are nulls; `tu` = lea (doubtful, perhaps liga); `ud` is not on the sheet. Leads only. His own reading file differs from WAINUT's at three code places only (D08, D15, D17), all already carried in `14nov1549_reading_wainut_codes.md`.
 - Code words: vela/bela, et ud, tu, and the letters of nerp / nep - blocker: open-codes; not on the Simancas list of 1866 or not making sense with it
 - 20 Nov 1549, last two lines of c.64r; 30 Sep and 20 Nov not yet editions (reading 1 has the first of seven passages of 30 Sep; WAINUT's blind pass covers all, unrepaired) - blocker: not-attempted; the marginal decipherments give the text, a line-by-line sign pass is owed
 - Philip c. 10r, c. 26r, c. 28r: one primary pass each; the vicariate passage on c. 26r is unsafe - blocker: not-attempted
-- Philip 25 Jun 1546, 14 Mar 1553, the letter catalogued 16 Jun 1563: decoded, not read - blocker: not-attempted; need a pass in a named sign set
-- Philip, sfasc. I cc. 15-17 (cipher c. 15r, clear slip c. 17r) and cc. 32-34 (Monzón, 6 Oct 1552): not transcribed (issue #615) - blocker: not-attempted; the first is a third pair for the key or a second held-out test
+- Philip 25 Jun 1546, 14 Mar 1553, the letter catalogued 16 Jun 1563: decoded, not read - blocker: not-attempted; need a pass in a named sign set. For 14 March the Spanish sheet on 37r–38r supplies six reference passages for comparison with the original
+- Philip, sfasc. I cc. 15-17 (cipher c. 15r, clear slip c. 17r) and cc. 32-34 (Monzón, 6 Oct 1552): full cipher transcriptions open (issue #615) - blocker: not-attempted; the first is a third pair for the key or a second held-out test. The October sheet on 33r–v and the sampled cipher signs are documented in beling_october1552
 - Bertomeu Masia 2009, Corpus documental de Carlos V vol. III, Druffel, the Simancas minutes (Estado 1196) - blocker: needs-physical-access; not online; whether the 14 Nov letter or its minute is printed is unknown
 - 15 Jul 1549 and 11 Aug 1542 numeric, 1 Jul 1552, cc. 131-132 - blocker: no-key-material; other ciphers, not part of this entry (`gonzaga1542`, `renard1549`)
 
 ## Escalation
+- [x] clear-pages, 19–20 Nov 2026: October 1552 c. 33r–v repeats the introduction on 32v and continues through the last block on 34r. March 1553 cc. 37r–38r continue the sentence on 35r and correspond to six cipher passages. Both Spanish witnesses have independent transcriptions. See the two enclosure notes above.
 - [x] siblings: c.29, c.41, c.77 used; c.82-83 (1 Jul 1552) is another sign set; c.64v and c.50r margins used. WAINUT fetched all listed letters of catalogue 1560 and 1561 and built the table on Philip's letters with a decipherment
 - [ ] siblings, 14 Nov 2026 (issue #615, Brice Dudout): Philip sfasc. I cc. 15-17 and cc. 32-34 opened, neither transcribed; the other Felipe II records of the search (39 in all) and the other Karl V items (151) not opened one by one
 - [x] clear-pages: the slip c.29, c.77 and the margin notes are the decipherments; c.62r-62v clear text read for context; WAINUT found the marginal decipherments on c. 28r, c. 64v and on every passage of 30 Sep

@@ -146,6 +146,64 @@ Problems found:
 Standing: one clause of eight words that is lexically sound and fits the letter, a masculine-pronoun problem, and
 two thirds of the passage unread. Still a hypothesis.
 
+### Fourth pass, same day: the Berber hypothesis measured. It does not hold up.
+
+**Third transcription and consensus (`transcription_c.txt`).** Read from the red channel divided by a 40-px blur
+(the stains nearly vanish), then adjudicated against readings A and B. Changes that matter:
+
+- line 11, first word: the last letter is the gimel of אלגמע, not nun: **אזג**, not אזן. "azn, send" falls.
+- line 12, first word: the fourth letter is he (arc plus detached stroke), not tav: **אויהן**. "awi-tn" falls.
+- line 12, second word ends in a certain final kaf (ערך or טרך); fourth word ends in gimel or nun (אועלג / אועלן).
+- line 11, third word is אן or או; the long last group of line 11 is one word of about nine signs.
+- אר in lines 9 and 10 is confirmed (no ascender), with ד as an alternative to ר.
+- The hooked S-form is the clear lines' final alef; whether it is alef or gimel inside a word cannot be decided.
+
+**Measurement against control languages.** The 20 words of three or more letters were matched phonetically
+(full vowels written with א ו י as in medieval Berber spelling, one unwritten vowel allowed, ע or ג for gh) against
+the commonest word forms of four Berber varieties and seven unrelated languages (Tatoeba sentence sets), each with
+60 to 200 controls in which the letters after the initial alef are shuffled.
+
+| Word list | Language | Matched of 20 | Shuffled mean | z |
+|---|---|---|---|---|
+| 9,000 forms | Indonesian | 6 | 3.2 | 2.6 |
+| | Turkish | 8 | 5.8 | 1.8 |
+| | Tashelhit | 7 | 5.3 | 1.6 |
+| | Standard Moroccan Tamazight | 7 | 5.6 | 1.2 |
+| | Berber (mixed) | 6 | 4.9 | 1.0 |
+| | Italian | 5 | 4.3 | 0.7 |
+| | Kabyle | 6 | 5.2 | 0.6 |
+| | Hungarian, Hausa, Finnish, Spanish | 3 to 6 | | -0.9 to 0.5 |
+| 50,000 forms | Turkish | 10 | 7.0 | 2.1 |
+| | Kabyle | 8 | 9.1 | -0.7 |
+| | Berber (mixed) | 8 | 9.7 | -1.2 |
+
+Berber does not stand out from Turkish or Indonesian, which nobody proposes. The Berber forms that match are
+is, yawi, ghur-k, ughulgh / ughalgh and (large list only) uday; in lines 7b to 10 only is matches a common form.
+The word-game and shift rules, rerun on the consensus text against the Judaeo-Arabic list, again give nothing above
+their controls.
+
+**Spelling and grammar (van den Boogert 2000 and Brugnatelli 2011, both opened by a subagent).**
+
+- For: medieval Berber in Arabic script writes full vowels plene and initial a-, i-, u- as alif, alif-ya, alif-waw,
+  which is how אודאי, יאוי and the alef-initial words would be spelled. "al, until" is attested in medieval Eastern
+  Berber and in modern Central Atlas Tamazight.
+- Against: -k is masculine and the addressee is the mother (ולדתי, confirmed; nobody else is addressed); "an" before
+  y- is unattested (a or ay expected); the perfective after "until" is unexpected; "bring" needs the particle d;
+  gh would be written both ע and ג in one word; Berber prose should show many words beginning with ת and a free
+  נ "of", and this passage has almost none; the vocabulary is Moroccan while the Berber-area Jews known on the
+  India route are Nafusi; no Jewish writing in Berber is known before the 19th century (Chetrit).
+
+**Context (clear lines and verso, read by a subagent).** The secret stretch follows "may God bring the reunion
+near, soon, God willing" and is followed by "no letter has reached Qus since Abu Mansur travelled from you". The
+writer says "we" throughout. No goods, money, messenger or place of origin is mentioned. The verso is a separate
+Arabic-script note to several people ("since the day I left your town"), with no key. PGP: no document described as
+Berber; ENA 3907.9 (PGP 10025) is a letter of an Abu Mansur about leaving Qus; ENA 4100.7a (PGP 12433) is a small
+letter fragment whose hand was not compared.
+
+**Verdict.** The Berber reading is withdrawn as a working result. What survives is weaker: the passage is written
+plene and vowel-initial, in the manner of a spoken language set down by ear, and it ends inside an Arabic formula.
+Which language, or whether it is a word game after all, is open.
+
 ## Remaining gaps
 
 - The whole passage (about 31 words, 127 letters) is unread. Blocker for this session: no reliable transcription.
@@ -155,7 +213,10 @@ two thirds of the passage unread. Still a hypothesis.
 
 Next steps, in order:
 
-0. Test the Berber hypothesis: a Berberist (Tashelhit / Tamazight, ideally with medieval Berber, e.g. the Arabic-script
+0a. Use `transcription_c.txt` from now on. Still to try: Coptic, Nubian and Beja with the same matcher (no word list
+   was at hand; a subagent listed the test words: Coptic auo, an, ebol, je; Nubian -ka, -lo, an-en; Beja baruuk,
+   batuuk); compare the hand of ENA 4100.7a and of ENA 3907.9; ask PGP what Elbaum's 2020 edition contains.
+0. (Done in the fourth pass by measurement; a specialist's view is still worth having.) A Berberist (Tashelhit / Tamazight, ideally with medieval Berber, e.g. the Arabic-script
    Berber of the Almohad period) reads `transcription_b.txt` against the image; check each proposed word in a
    dictionary (Taifi, Destaing); look in PGP for other Berber or Sijilmasa / Dar'a family letters.
 

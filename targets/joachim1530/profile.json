@@ -129,19 +129,30 @@
   },
   {
    "date": "2026-09-22",
-   "kind": "statistics", "technique": ["frequency analysis", "repeat/pattern analysis"],
+   "kind": "statistics",
+   "technique": [
+    "frequency analysis",
+    "repeat/pattern analysis"
+   ],
    "what": "Measured 20 distinct proposed signs and index of coincidence 0.0819; checked repeats and periodic coincidence.",
    "result": "worked"
   },
   {
    "date": "2026-09-22",
-   "kind": "solver", "technique": ["hill climbing"],
+   "kind": "solver",
+   "technique": [
+    "hill climbing"
+   ],
    "what": "Tried one-to-one Italian permutation search, including a 40 by 80,000-step incremental search, period-specific u/v, French, Spanish, Latin, modern Italian, English, reversal and adjacent swaps.",
    "result": "failed"
   },
   {
    "date": "2026-09-22",
-   "kind": "solver", "technique": ["beam/DP decoding", "exhaustive search"],
+   "kind": "solver",
+   "technique": [
+    "beam/DP decoding",
+    "exhaustive search"
+   ],
    "what": "Tried frequent signs as spaces and as nulls, homophonic mappings, and Italian dictionary segmentation.",
    "result": "failed"
   },
@@ -153,7 +164,12 @@
   },
   {
    "date": "2026-09-22",
-   "kind": "hypothesis", "technique": ["key-structure hypothesis", "frequency analysis", "statistical test"],
+   "kind": "hypothesis",
+   "technique": [
+    "key-structure hypothesis",
+    "frequency analysis",
+    "statistical test"
+   ],
    "what": "A plain one-sign/one-letter substitution is inadequate for the copied account, or the provisional transcription has more systematic sign conflation than the controls' random errors.",
    "result": "partial"
   },
@@ -165,7 +181,13 @@
   },
   {
    "date": "2026-09-23",
-   "kind": "solver", "technique": ["simulated annealing", "frequency analysis", "repeat/pattern analysis", "language-model scoring"],
+   "kind": "solver",
+   "technique": [
+    "simulated annealing",
+    "frequency analysis",
+    "repeat/pattern analysis",
+    "language-model scoring"
+   ],
    "what": "Seeded JavaScript incremental homophonic annealing, shared it-cinquecento four-gram model, 100 restarts x 100000 iterations, frequency KL penalty. Dotted transcription yields connected Italian account entries, including in denari contanti, oro et argento, Winchester and St Albans. Unpenalized model degenerated to repeated i; retained as failed initial test.",
    "result": "partial"
   },
@@ -195,18 +217,86 @@
   },
   {
    "date": "2026-09-30",
-   "kind": "hypothesis", "technique": ["plaintext matching", "contextual inference"],
+   "kind": "hypothesis",
+   "technique": [
+    "plaintext matching",
+    "contextual inference"
+   ],
    "what": "Context readings for the quotation list: margin sums CL/L/LX/XX/CCL/CC/XX with a raised sign taken as thousands (foot total DCCL under M); [D] = [Cardinale] (four masculine-person places, 'al deto [D]' echoes the clear 'predetto Cardinale'); [Q] = [il Re] (receiver of the goods); [S2] left open. Grade I, bracketed, not key values; coverage unchanged.",
    "result": "partial"
   },
-  {"date": "2026-10-11", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 395 tokens, 25 types, it-cinquecento order 4: reading -2.338 per letter; random keys -4.658 (z 5.6); key annealed onto shuffled ciphertext best -2.884 (mean -2.95, z 11.7); annealer on the real text -2.641. Verdict: pass.", "result": "worked"},
-  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): ciphertext_rechecked.txt, READING.md with decode.py's reading_emended/literal.txt, key.json.", "result": "worked"},
-  {"date": "2026-10-24", "kind": "verification", "what": "Read bar applied per document (v10): 1 of 1 documents marked read measure under 95% of words read as sense (v2_score explicit holes) and are now read in part; read_share recorded for each.", "result": "partial"}
+  {
+   "date": "2026-10-11",
+   "kind": "verification",
+   "technique": [
+    "statistical test",
+    "language-model scoring"
+   ],
+   "what": "Statistical validation (docs/_validate.py): 395 tokens, 25 types, it-cinquecento order 4: reading -2.338 per letter; random keys -4.658 (z 5.6); key annealed onto shuffled ciphertext best -2.884 (mean -2.95, z 11.7); annealer on the real text -2.641. Verdict: pass.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): ciphertext_rechecked.txt, READING.md with decode.py's reading_emended/literal.txt, key.json.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-24",
+   "kind": "verification",
+   "what": "Read bar applied per document (v10): 1 of 1 documents marked read measure under 95% of words read as sense (v2_score explicit holes) and are now read in part; read_share recorded for each.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "verification",
+   "what": "Decrypt audit (research/decrypt_audit): the alphabet of key.json applied to ciphertext_rechecked.txt and compared with clair331_reading.md; 27 of 98 compared words depart. Cause one: the clear margin sums (DCCCᵐ scuti, CLᵐ scuti ...) are printed inside the reading. Cause two: the reading prints reading_emended.txt, that is the 13 position-specific emendations listed in key.json and reading_tokens.tsv, without brackets, plus 'partite' for 'parutite' (stated in the header only). Apart from those 14 letters the reading equals reading_emended.txt letter for letter. No key value missing; nothing changed; images not re-checked.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "verification",
+   "what": "Marked the 13 emended letters of key.json in clair331_reading.md, each in [ ] inside its word, and printed 'partite' as '[partite]'; no letter changed. Header line corrected: the letters are those of reading_emended.txt, not of the decode alone. Audit script: 16 of 97 words depart (the clear margin sums). v2_score hole rate 0.092 before, 0.208 after (a word with a bracketed letter counts as a hole); read_share not changed.",
+   "result": "worked"
+  }
  ],
- "outcome": {"validation": {"date": "2026-10-11", "model": "it-cinquecento", "file": "validation.tsv", "tokens": 395, "types": 25, "tokens_per_type": 15.8, "score": -2.338, "nulls": {"random keys": {"n": 200, "mean": -4.658, "sd": 0.413, "max": -3.861, "z": 5.6, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -2.95, "sd": 0.053, "max": -2.884, "z": 11.7, "p": 0.1429}}, "power": -2.641, "verdict": "pass", "notes": "claimed per-occurrence score -2.167; polyphony 0.028; 7 unread tokens left out; annealer on the real text from random keys reached -2.641"}, 
+ "outcome": {
+  "validation": {
+   "date": "2026-10-11",
+   "model": "it-cinquecento",
+   "file": "validation.tsv",
+   "tokens": 395,
+   "types": 25,
+   "tokens_per_type": 15.8,
+   "score": -2.338,
+   "nulls": {
+    "random keys": {
+     "n": 200,
+     "mean": -4.658,
+     "sd": 0.413,
+     "max": -3.861,
+     "z": 5.6,
+     "p": 0.005
+    },
+    "shuffled refit": {
+     "n": 6,
+     "mean": -2.95,
+     "sd": 0.053,
+     "max": -2.884,
+     "z": 11.7,
+     "p": 0.1429
+    }
+   },
+   "power": -2.641,
+   "verdict": "pass",
+   "notes": "claimed per-occurrence score -2.167; polyphony 0.028; 7 unread tokens left out; annealer on the real text from random keys reached -2.641"
+  },
   "method": "key recovered from ciphertext-only",
   "method_basis": "After a dotted re-transcription of f. 157r-v, a homophonic annealer with the it-cinquecento model gave connected Italian and the alphabet was extended by hand; no key, decipherment or parallel text was found (LP 6307 is a different letter).",
-  "contribution": ["transcription", "key recovered"],
+  "contribution": [
+   "transcription",
+   "key recovered"
+  ],
   "class": "read in part",
   "key": "partial",
   "fraction_read": 0.9825870646766169,
@@ -222,7 +312,10 @@
    "total": 3,
    "tokens_open": 7
   },
-  "verification": ["historical consistency", "statistical test"],
+  "verification": [
+   "historical consistency",
+   "statistical test"
+  ],
   "gaps": [
    {
     "item": "D x4, Q x2, S2 x1",

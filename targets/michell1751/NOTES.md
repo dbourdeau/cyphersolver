@@ -222,3 +222,11 @@ group *le roi de Sardaigne*.
 
 Outcome: R1957 stays read from existing decipherment (the print), complete; the cabinet key is a partial key recovered
 from external plaintext (WAINUT). R1955 (read in part, 26.4%) is now `targets/r1955/`.
+
+## 14 Nov 2026: the printed text copied and translated (audit section J)
+
+- `texts/R1957_pc5263.md`: PC 8 (1882) no. 5263, pp. 576-577, copied from the archive.org text of the volume and
+  corrected against the page images. Printed "Nach dem Concept".
+- `texts/R1957_en.md`: English translation of that printed text, sentence for sentence.
+- Nothing changes for the cipher: the project's decode of R1957 still does not build sentences; the reading and its
+  translation rest on the print, as recorded in `outcome.texts` and `fraction_read_source`.

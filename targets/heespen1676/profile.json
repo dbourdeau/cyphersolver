@@ -5,7 +5,7 @@
  "documents": [
   {
    "id": "heespen_1676-04-17_537L",
-   "read": "read in part",
+   "read": "not read",
    "shelfmark": "Copenhagen, Rigsarkivet, Department of Foreign Affairs, unit 262098 (relations of the Danish commissioners at Bremen, G. A. Baudissin and W. Heespen, 1675 - May 1676), image 537 (image id 49059236), left page",
    "date": "Bremen, 17 April 1676 (relation of W. Heespen)",
    "year": 1676,
@@ -210,10 +210,31 @@
    "kind": "verification",
    "what": "Integration check (PR #523, report R8_bremen): all scripts re-run with python3 -I (decodes, keys, held-out, counts, word-layer control byte-identical; shuffle seed 20261112 reproduced with a fresh Gutenberg 55171, md5 as asserted); own decoder from key.tsv gives the same 537L letters (106/158 v1, 122/158 v2); Rigsarkivet images 49059236 (537) and 49059110 (413) fetched: 145/145 tokens of the 12 main lines of 537L and all 18 glossed groups of 413 with their glosses agree; strictest held-out figure (unvalued as holes and mechanical) 342R 24/32 = 75.0%, 413 36/50 = 72.0%. Gap blocker corrected to not-attempted; target kept in progress (workable gaps).",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "access",
+   "technique": ["manual reconstruction"],
+   "what": "Audit section J, re-reading of 537L. Image 537 (id 49059236) fetched from the Rigsarkivet API. The writer divides the cipher himself (point inside a word, comma after a word): word division added to the frozen tokens in transcriptions/heespen_1676-04-17_537L_worddiv.txt (tokens asserted equal). The '#' before 265 and at the head of the marginal line is an insertion mark, not n. Clear text before and after the block read for context (partition of 'die beyde Hertzogthümer', the King's intended 'anpart', the Lüneburg portion).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "reading",
+   "technique": ["manual reconstruction"],
+   "what": "Key material widened without new gloss pages: the two held-out glossed pages (342R, 413) give T = s, 597 = nach, 9 = u, 402 = di, α = i; 22 values then proposed from the context of the page inside the writer's word boundaries (gloss/context_values_537L_2026-11-14.tsv), three against the gloss key (ϙ = f, λ = e, 19 = o; possibly sign-label differences, not checked on the gloss images). Decode decryptions/heespen_1676-04-17_537L_v2_context_NONBLIND.txt; partial reading and English in readings/heespen_1676-04-17_537L_reread.md: an exchange of counties (Diepholz named) to join a share with the Stift Münster. 13 of 45 words are holes or marked, the codes for the parties (37, 411, 265, 504, 116) have no value: below the bar, so the document stays decoded, not read. Non-blind; no count of record changed. Further glossed pages of unit 262098 were not transcribed.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "verification",
+   "technique": ["manual reconstruction"],
+   "what": "Class set to 'not read' (was 'read in part'): the only document is decoded, not read, so the entry is not a reading; fraction_read 0.15 to 0.0 under the rule 'tokens of documents that read / all' (the 9/60 strict figure stays as the entry's read_share). Method unchanged: the key was recovered from the glosses of the same unit.",
+   "result": "worked"
   }
  ],
  "outcome": {
-  "class": "read in part",
+  "class": "not read",
   "key": "partial",
   "method": "key recovered based on adjacent plaintext",
   "method_basis": "The key was rebuilt only from the Danish chancery's interlinear decipherments of other relations in the same archival unit (262098), frozen, tested on held-out glossed pages, and applied once, unchanged, to the one passage that carries no gloss.",
@@ -223,8 +244,8 @@
    "sender or date identified"
   ],
   "fraction_read_method": "measured",
-  "fraction_read_source": "units/heespen_1676-04-17_537L_v1_ledger.tsv and counts_raw.txt (scripts/count.py): 9 of 60 word units of 537L spelt entirely by frozen KEY_HB_v1 values. Unit = a word of the plaintext.",
-  "fraction_read": 0.15,
+  "fraction_read_source": "14 Nov 2026: the one document (537L, 158 tokens, 60 word units in the contributor's ledger) is decoded, not read, so no token belongs to a document that reads: 0 of 158. The contributor's strict figure of record is unchanged and stays in the entry's read_share and in NOTES: 9 of 60 word units spelt entirely by frozen KEY_HB_v1 values (units/heespen_1676-04-17_537L_v1_ledger.tsv, counts_raw.txt, scripts/count.py), all short function words.",
+  "fraction_read": 0.0,
   "verification": [
    "contemporary decipherment",
    "statistical test"
@@ -240,7 +261,7 @@
    {
     "who": "mcbratney",
     "role": "solution",
-    "note": "Heespen/Baudissin key rebuilt from the glosses (v1, v2) and tested on held-out glossed pages; the bare 17 Apr 1676 passage read in part (15.0%), with AI agents",
+    "note": "Heespen/Baudissin key rebuilt from the glosses (v1, v2) and tested on held-out glossed pages; the bare 17 Apr 1676 passage decoded with it (9 of 60 word units, 15.0%; not read), with AI agents",
     "date": "2026-11-12"
    },
    {
@@ -289,19 +310,21 @@
     "doc": "heespen_1676-04-17_537L",
     "label": "W. Heespen, relation to the Danish court, Bremen 17 Apr 1676, cipher block on image 537 left page",
     "transcription": [
-     "transcriptions/heespen_1676-04-17_537L.txt"
+     "transcriptions/heespen_1676-04-17_537L.txt",
+     "transcriptions/heespen_1676-04-17_537L_worddiv.txt"
     ],
     "decryption": [
      "decryptions/heespen_1676-04-17_537L_v1_once.txt",
-     "decryptions/heespen_1676-04-17_537L_v2_NONBLIND.txt"
+     "decryptions/heespen_1676-04-17_537L_v2_NONBLIND.txt",
+     "decryptions/heespen_1676-04-17_537L_v2_context_NONBLIND.txt"
     ],
-    "reading": "readings/heespen_1676-04-17_537L.md",
+    "reading": ["readings/heespen_1676-04-17_537L.md", "readings/heespen_1676-04-17_537L_reread.md"],
     "translation": "readings/heespen_1676-04-17_537L.md",
     "language": "de",
     "state": "decoded, not read",
     "read_share": 0.15,
-    "summary": "Fragments only: function words (der, an, den, als, mit, dem) and shapes suggesting Intention and perhaps Münster. No sense of the passage can be given. Context: Heespen and Baudissin were instructed in January 1676 to treat with the Münster ministers at Bremen (Danish council protocol, 28 Jan 1676).",
-    "note": "read_share is the strict share of word units read with key v1, the first and only blind decode: 9 of 60. The v2 decode (11/60 = 18.3%) is non-blind and not counted. The English version is AI-made. Text state is decoded, not read: only short function words are read; the entry class stays read in part (the key and its held-out tests)."
+    "summary": "Not read. A partial, context-assisted reading of 14 Nov 2026 gives the frame of the one sentence: in the intention and hope that 'they' may afterwards obtain by exchange (permutation) a county from [37] [411] and from the [504] [116] the county of Ho.. or Diepholz, or a part of it, and so join their share with the bishopric of Münster. The codes naming the parties and the first county have no value. Clear context on the page: the plan to partition 'die beyde Hertzogthümer', and the pieces next to the King's intended share and the Lüneburg portion.",
+    "note": "read_share is the strict share of word units read with key v1, the first and only blind decode: 9 of 60. The v2 decode (11/60 = 18.3%) is non-blind and not counted. Re-reading of 14 Nov 2026 (readings/heespen_1676-04-17_537L_reread.md; NON-BLIND, not a count): the held-out glosses of 342R and 413 used as key material, the writer's own word division read from the image (commas), and 22 values proposed from the context of the page (gloss/context_values_537L_2026-11-14.tsv), three of which contradict the gloss key. Result: one sentence of 45 words, 32 plain and 13 holes or marked words, against the bar of one hole in ten; the open codes (37, 411, 265, 504, 116, 529, 22, ‖) are the nouns that carry the news. It stays decoded, not read. Blocker: those codes have no value until more glossed pages of unit 262098 are transcribed (workable, not done here); the three contradictions need the sign forms compared on the gloss pages' images. The English in both reading files is AI-made."
    }
   ],
   "key_file": [

@@ -59,3 +59,12 @@ nothing so earnestly as your Lordship's pr[ocuring?] in that matter ..." The ful
   different cipher.
 
 **23 Oct 2026, v6 spelling check (research/reading_audit/v6_spelling_files.txt; REREAD_BRIEF step 3-4: no modern spelling in a reading)**: reading.md was listed because its header mentions modernised spelling. It is a false hit: the reading keeps the cipher's and the clear text's own spelling and modernises only a cipher word whose spelling cannot be read from the figures. Nothing changed.
+
+## 14 Nov 2026: full-texts audit, the missing transcription
+
+R8348 was listed without a transcription of the cipher passages. In order: (1) the folder holds only
+`reading.md` (the deciphered letter) and the few cipher words quoted above; (2) the DECODE record (public API and
+record page) carries four images and Tomokiyo's key image, no transcription; cryptiana `mary.htm` has the key image
+only; (3) the images could not be fetched: DECODE serves the images of this record only to a signed-in session (an anonymous request to `decrypt-custom/filesrv` returned the `forbidden.png` placeholder, 17,947 bytes; the 200 px thumbnails are public and useless for signs). No DECODE session is available in this checkout and the images an earlier session fetched were git-ignored and are gone. So `transcription_missing` is recorded. What unblocks it: the four
+images through a DECODE account; the cipher is Latin-looking letters with a few signs, so it can be transcribed
+and checked by decoding against `reading.md`. Nothing else changed.

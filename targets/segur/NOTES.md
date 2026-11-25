@@ -17,7 +17,7 @@ are the record of 16 Sept 2026 and still mention ff. 143 and 333 where they were
 Lasry, Oct 2026: his saved decryptions (15 Oct 2024) cover **ff. 143, 233, 239 and 288v**; the credit here is for ff. 233,
 239, 288v (f. 143 is credited on segur1583).
 
-**Status: the key is recovered and the three ciphered letters of 1585–86 are read in substance.** The alphabet, the
+**Status: the key is recovered and the three ciphered letters of 1585–86 are deciphered; read in part by the cipher-word count of 16 Nov 2026 (below).** The alphabet, the
 syllabary and the double-letter signs are fixed; a dozen word-signs written in letters (*pi*, *na*, *gne*, *H*, *L* …) and
 three nomenclature numbers (180, 215?, 900) are glossed from context or left open. The 1583 letter at f. 143 is in a different
 cipher and is not read. Tracker item #12; short-list candidate 4 of 2026-09-16.
@@ -366,8 +366,38 @@ Not checked: the f. 321 key against Tomokiyo's table token by token; the identit
 (Casimir, Clervant, the 1579 contract, Drake). User must verify: the sender attribution before it is reported to Tomokiyo,
 and the readings marked ? before they are quoted.
 
+## Read share over cipher words only (16 Nov 2026)
+
+README Conventions (16 Nov 2026): the read share counts the words written in cipher only. Each letter is counted
+separately, from the **bold** runs of its own section in `reading.md` (`## f. 233`, `## f. 239`, `## f. 288v`); the
+clear French in roman, the English translation and f. 366 are left out. A word counts as unread when it is an
+unidentified word-sign in braces (`{gne}`, `{180}` ...), a word marked `[?]`, a word with a letter supplied in `[ ]`
+(`vou[s]`, `e[s]crire`, `son[t]`), or an ellipsis inside a cipher run (an unread stretch, one word each, extent
+unknown: the pair `87 52` in f. 233, the stretch before *en Valen[ce?]* in f. 288v).
+
+| Letter | before | cipher words | unread | after |
+|---|---|---|---|---|
+| f. 233 | 0.984 | 68 | 9 ({X}, avec[?], {gla}, contracte[?], Eglises[?], …, et[?], 1579[?], {180}) | **0.868** |
+| f. 239 | 0.984 | 24 | 7 ({900}, {gne}, {gna}, *pieces*; postscript {e}, vou[s], {na}) | **0.708** |
+| f. 288v | 0.984 | 74 | 17 ({gne}, peine[?], {na} ×2, {e}, {pe}, {pu}, e[s]crire, {Ra}, {qu}, {H}, {L}, {qua}, son[t], {Ne}, …, Valen[ce?]) | **0.770** |
+
+The recorded 0.984 was one figure for the whole file (clear text, translation and f. 366 included) copied to all three
+letters. With the context glosses of the 22 Oct reading audit counted as read ({gne} = Je, {na} = nouvelles/affaires,
+{Ra} = faictes, {qu} = vous), f. 239 would be 18/24 and f. 288v 62/74 (0.838): still under 95%; the glosses are
+inferences from context, not values of the key, so they do not count. Over the three letters: 133 of 166 (80.1%).
+
+*pieces* (f. 239) is written pi-e-**66**-es, 66 (bi) for 60/61 (ce/ci), a one-figure slip; the reading gives the
+word unmarked, but the one-digit-slip rule (README Conventions) lets such a word count as read only with the surviving
+period key, and key A was recovered here, so it is counted unread. The marked slips of ff. 233 and 288v (avec,
+contracte, Eglises, peine, escrire) were already holes by their `[?]` or `[ ]` marks.
+
+Class: read -> **read in part** (all three letters under 95%). The token measure (466 of 482 non-null tokens with a
+value, glossed word-signs counted) is unchanged. Remaining gaps gains a line for the words that rest on doubtful or
+slipped figures, which the count now treats as holes; they were already flagged in `reading.md` and under "Not done / open".
+
 ## Remaining gaps
 - word-signs X, gla, gna, pe, pu, e, H, L, Ne, qua and the numbers 180, 215?, 900 (16 of 482 non-null tokens) - blocker: no-key-material; the whole volume was swept and holds no other letter in this key; the key sheet and 500 Colbert 402 are not available, and the LM ranking only narrows classes
+- words resting on doubtful or slipped figures (avec, contracte, Eglises, 1579 and the pair 87 52 in f. 233; pieces and vou[s] in f. 239; peine, escrire, son[t] and the closing Valen[ce?] in f. 288v) - blocker: no-key-material; the digits were re-read at 2x and 3x and stand; whether 20 and the adjacent-value figures are the encipherer's slips or values of the key needs the key sheet, not in the volume; vou[s] and son[t] lack a letter in the cipher itself
 - f. 366, lines 1-2 (probably this key; 24 tokens in all, line 3 reads escri) - blocker: too-short; the decoded strings are not French, probably names in the king's spelling, with no context to fix them
 
 ## Escalation

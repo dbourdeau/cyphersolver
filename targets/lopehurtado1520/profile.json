@@ -126,6 +126,18 @@
    ],
    "what": "Statistical validation (docs/_validate.py): 3432 tokens, 35 types, es-golden-age order 4: reading -2.139 per letter; random keys -5.439 (z 5.3); key annealed onto shuffled ciphertext best -3.118 (mean -3.141, z 43.3); annealer on the real text -2.091. Verdict: pass.",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "verification",
+   "what": "Decrypt audit: key_K4.tsv re-applied to transcription.txt and compared with the line readings of decryption.txt and with reading.md. Audit figure 174 of 851 words departing. Of 893 words of the line readings, 727 follow the key, 54 need a second or third value of a declared polyphonic sign (the audit takes the first only), 34 are marked, about 71 carry an unmarked letter no value of the key gives (about 59 silent corrections of near-identical signs, 4 words settled by the visual review with the transcription not updated, 6 words with the signs #, z, ı, ' that have no row in the key); reading.md respells about 25 words (h added, Benavente, aceptar) without saying so. Nothing changed in key, transcription or readings.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "verification",
+   "what": "Decrypt audit, repair: the unmarked departures were verified one by one against the key output and marked [x] in reading.md (59 words, 61 brackets), no letter changed; 37 places where transcribed signs are left out stay unmarked; headers of reading.md and decryption.txt corrected; two statements on the page corrected. v2_score hole rate of reading.md 0.024 before, 0.084 after.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -176,12 +188,6 @@
    "historical consistency",
    "statistical test"
   ],
-  "human_check": {
-   "date": "2026-10-28",
-   "by": "Brice Dudout",
-   "passage": "12 doubtful signs (r26, r38, v08, v09, v18, v27, v31, v38)",
-   "result": "corrected"
-  },
   "credits": [
    {
     "who": "dudout",
@@ -216,6 +222,50 @@
    }
   ],
   "key_file": "key_K4.tsv",
-  "provenance": "contributed"
+  "provenance": "contributed",
+  "sign_check": [
+   {
+    "date": "2026-10-28",
+    "checker": "Brice Dudout",
+    "checker_kind": "project",
+    "model_roles": [
+     "rule",
+     "thumbnails",
+     "sheet",
+     "scoring",
+     "remarks"
+    ],
+    "signs_checked": 12,
+    "controls": 0,
+    "controls_passed": 0,
+    "unresolved": 1,
+    "not_counted": 0,
+    "rule": "NOTES, Sign checks (sheet C06, 27-28 Oct 2026): the questions were chosen when the sheet was built; no rule was written or hashed apart",
+    "sheet_faults": "none found",
+    "note": "Sheet C06: 12 doubtful signs (r26, r38, v08, v09, v18, v27, v31, v38), answers exported 2026-10-27T22:55:06Z (sign_check/sheet-C06-answers.json; results sign_check/sheet-C06-results.tsv). It had no control, so it does not meet the level. Recorded until 19 Nov 2026 as outcome.human_check; moved here because an AI model built and scored the sheet. Key K4 (K3 less S = s) was derived from its q12 answer."
+   },
+   {
+    "date": "2026-11-18",
+    "checker": "Brice Dudout",
+    "checker_kind": "project",
+    "model_roles": [
+     "rule",
+     "thumbnails",
+     "sheet",
+     "scoring",
+     "remarks"
+    ],
+    "signs_checked": 12,
+    "controls": 2,
+    "controls_passed": 2,
+    "as_transcribed": 1,
+    "corrected": 8,
+    "unresolved": 3,
+    "not_counted": 0,
+    "rule": "NOTES, Sign checks (sheet L, 18 Nov 2026); the rule is written there, as fixed on 18 Nov 2026 before the answers; it was not hashed",
+    "sheet_faults": "none found",
+    "note": "Sheet L: the 4 signs the decrypt audit found with no value, and the clearest case of each pattern repeated in at least 2 unmarked words. The checker is the contributor of the reading. Answers: sign_check/sheet-L-answers.json (exported 2026-11-18T11:45:32Z); results: sign_check/sheet-L-results.tsv. Six free-text remarks interpreted by the model; one gives a new sign (provisional value x, not in key_K4.tsv). The committed transcription and reading are not yet recoded (NOTES)."
+   }
+  ]
  }
 }

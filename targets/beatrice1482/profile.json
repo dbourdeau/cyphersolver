@@ -299,6 +299,15 @@
    "kind": "verification",
    "what": "matthias1482 folded into this entry under the one-key rule (owner's decision, conditional on the same key): folder moved to matthias1482/ with its notes and profile kept beside it; the page docs/matthias1482.html replaced by a moved-page notice.",
    "result": "worked"
+  },
+  {
+    "date": "2026-11-16",
+    "kind": "verification",
+    "technique": [
+      "manual reconstruction"
+    ],
+    "what": "Read share recounted over cipher words only (README Conventions, 16 Nov 2026), read code signs counted as read: R1140 the 32 cipher runs with the print's words (vestigia/train_refs_R1140.txt), 194 words, no hole (the reading's one [?] is clear): 0.998 -> 1.0; R1141 the runs of vestigia/ref_R1141_MDE.txt plus Venetiani da sua offesa, 150 words, holes [?aiutare], [?emuli], [?balla]: 0.984 -> 0.980; R1156 the angle-bracket runs (58 words) and 10 read code signs, one unread [2 signs]: none -> 0.986. All three read; class already solved unchanged.",
+    "result": "worked"
   }
  ],
  "outcome": {
@@ -355,7 +364,7 @@
     "reading": "readings/R1140_reading.md",
     "translation": "readings/R1140_en.md",
     "language": "it",
-    "read_share": 0.998,
+    "read_share": 1.0, "state": "read", "note": "Read share over cipher words only (16 Nov 2026): the cipher runs of R1140 as listed with the print's words in vestigia/train_refs_R1140.txt (32 runs, 194 words, a code sign {G}/{W} one word), against the reading: no hole falls in them (the one [?] of the reading is in the clear, after Svizari, et). 194/194. Whole letter, clear included, not the measure: 0.998.",
     "transcription": "vestigia/R1140_V1957_transcription.txt"
    },
    {
@@ -366,7 +375,7 @@
     "reading": "readings/R1141_reading.md",
     "translation": "readings/R1141_en.md",
     "language": "it",
-    "read_share": 0.984,
+    "read_share": 0.98, "state": "read", "note": "Read share over cipher words only (16 Nov 2026): the cipher runs of R1141 with the print's words (vestigia/ref_R1141_MDE.txt, 146 words) plus the run the print leaves out, Venetiani da sua offesa (4): 150 words; holes the three marked in the reading inside runs, [?aiutare], [?emuli], [?balla] (the other four [?word]s, me scrive, Hor, spazare, are in the clear). 147/150. Whole letter, clear included, not the measure: 0.984.",
     "reading_review": {
      "grade": "A",
      "by": "integration review of PR #620 (AI agent)",
@@ -383,7 +392,7 @@
      "matthias1482/texts/R1156_fraknoi1895.txt"
     ],
     "summary": "King Matthias Corvinus to Duke Ercole I of Ferrara, his brother-in-law, in the first weeks of the War of Ferrara: he and Queen Beatrix had resolved to send 500 picked horse, among them 100 hussars, but found no safe road; his captain Balázs Magyar goes to Croatia towards the Venetian border to gather troops. Printed by Fraknói (1895, no. 131); re-read from the signs and against the clear copy of the time.",
-    "reading": "matthias1482/texts/R1156_reading.md",
+    "reading": "matthias1482/texts/R1156_reading.md", "read_share": 0.986, "state": "read", "note": "Read share over cipher words only (16 Nov 2026; none recorded before): the runs in angle brackets of R1156_reading.md (58 words) and the 10 read code signs [sign = ...] (one word each, read, not holes; the v2 score had counted them as holes), plus the one unread [2 signs] (one word, the least): 68/69.",
     "translation": "matthias1482/texts/R1156_en.md",
     "language": "la",
     "transcription": "matthias1482/vestigia/R1156_V2626_transcription.txt"

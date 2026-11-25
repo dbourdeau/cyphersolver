@@ -356,6 +356,18 @@
    ],
    "what": "Regrade of the read words (scripts/regrade.py -> reading/regrade.md), the doubtful-reading half of the retry step: each of the 561 read words decoded again with every value a key allows. B (key.json and the ciphertext-only key14 both give it) 466; K (key.json only) 16; X (extended qA = i/t) 7; C (code signs, meaning from the minute) 72; D (needs an emendation) 0. The crossed stretches P3L04-05 'habere uelit tantum' and P2L22 'neque ... a quibus' spell out under key values. No reading withdrawn; 466 of 624 words (74.7%) read independently of the minute.",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "verification",
+   "what": "Decrypt audit (research/decrypt_audit): the generic script reported 172 of 536 words of reading/latin.md departing from the key applied to transcription/p1-p4.txt. Checked by hand and with a read-only recount: the departures are artefacts of applying key.md token by token (the pair units oH, Ho, nq, ni, LL, Ga, Gp, ve, Om are not transcription tokens; a sign with several values was given its first; the 'code:' prefix of key.md was taken for letters; tokens with the doubt mark ? were not looked up; the damage fills in ⟨⟩ were not seen as marked). With the unit rules of scripts/ext/em_align.py and the values of key.json, the 3,199 tokens make the 3,122 units of the alignment, and every one of the 624 printed words that is not inside [ ] or ⟨ ⟩ is the word its signs give: 0 unmarked emendations. The key files were incomplete for 9 units in 11 read words: qA = i (4) and t (3) and y = ducenta milia / ducentorum milium (2) stood only in measure.py; they and the token-to-unit rules are now in key_supplement.md, listed in outcome.key_file, each row with its source. The audit script's figure is unchanged (172 of 536): it cannot apply context rules or choose among several values.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "verification",
+   "what": "Decrypt audit, repair round: no word needed a mark (0 unmarked departures). The header line of reading/latin.md and of reading/p1.md-p4.md said the text is 'under key.json'; 11 read words take qA = i/t or y = 200,000, which key.json does not hold, so the line now reads 'under key.json and the extended values of key_supplement.md (qA = i/t, y = 200,000)'. No letter of the text changed. measure.py still carries the old header strings and was not edited; docs/buda1490.html shows the headers in its generated texts block and was left for the rebuild.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -496,7 +508,8 @@
   ],
   "key_file": [
    "key.json",
-   "key.md"
+   "key.md",
+   "key_supplement.md"
   ]
  }
 }

@@ -3,11 +3,13 @@
 Re-read 23 Oct 2026 (Claude Opus 5.5, REREAD_BRIEF batch b36); log `R957_reread_log.md`. **The cipher passage rests on
 its contemporary decipherment**, a separate leaf in another hand filed with the letter (DECODE R957, fourth image,
 `IMG_R957_I4985_P4`; transcribed in `R957_decipherment.txt`), aligned group by group with the figures (`cipher/R957.txt`,
-decoded by `dec.py` with the rebuilt 1759 table). The figures and the decipherment agree word for word except at
-*supposition*, where the figures have a slip (Notes). Excerpt: the cipher passage in full; the letter's clear text
+decoded by `dec.py` with the rebuilt 1759 table). The text printed here is the decipherer's, not the output of the key (no
+file holds the mechanical decrypt; `validation.tsv` lists the value of each group). The figures and the decipherment agree
+word for word except in three words: *supposition*, where the figures have a slip (Notes), *les Revenus* (the figures give
+*le*, 292) and *beaucoups* (the figures give *beaucoup*, 423 180 = up de). Excerpt: the cipher passage in full; the letter's clear text
 (Lamberg, Frankfurt, Soubise, Hamburg, Crefeld, the postscript on the commission at Liège) is on the DECODE images.
 
-Conventions: plain = in the decipherment and carried by the figures; spelling as the decipherer wrote it.
+Conventions: plain = in the decipherment; carried by the figures except the three words named above; spelling as the decipherer wrote it.
 
 ## Reading
 

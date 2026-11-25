@@ -1,0 +1,51 @@
+{
+ "_note": "Pending: entries for outcome.sign_check once PR #789 adds that field to profile.schema.json. Not read by any checker yet. No image or derivative is committed.",
+ "sign_check": [
+  {
+   "date": "2026-11-19",
+   "checker": "Brice Dudout",
+   "checker_kind": "project",
+   "model_roles": [
+    "rule",
+    "thumbnails",
+    "sheet",
+    "scoring",
+    "remarks"
+   ],
+   "signs_checked": 10,
+   "controls": 2,
+   "controls_passed": 2,
+   "as_transcribed": 5,
+   "corrected": 2,
+   "unresolved": 3,
+   "not_counted": 0,
+   "rule": "NOTES, Sign check K, 19 Nov 2026; sign_check/sheet-K-rule.md, written 19 Nov 2026 before any thumbnail was cut and before the answers",
+   "rule_hash": "7d53c787b1a113a2e0ca586a66863c442b7cae534a1deba845adc5784a933ab5",
+   "sheet_faults": "none found",
+   "note": "Sheet K, R4844 sign words (DECODE R4844; no image or thumbnail committed). The checker is the contributor of the reading. Answers: sign_check/sheet-K-answers.json (exported 2026-11-19T22:30:25Z, SHA-256 dc436bb4cecec6c6c18380315e5da10a233fd19c52ef53b9d3c7022e4a500c9f); results: sign_check/sheet-K-results.tsv. The selection rule was applied as written, with no change. Declared deviation: the rule names, for each target, the shape that makes the word but has no written integration clause; the strict application (a group becomes certain only when every target in it gets that shape; 'none / other' leaves its grade) was written after the answers. Not a human_check: AI agents built and scored the sheet."
+  },
+  {
+   "date": "2026-11-20",
+   "checker": "Brice Dudout",
+   "checker_kind": "project",
+   "model_roles": [
+    "rule",
+    "thumbnails",
+    "sheet",
+    "scoring",
+    "remarks"
+   ],
+   "signs_checked": 3,
+   "controls": 2,
+   "controls_passed": 2,
+   "as_transcribed": 2,
+   "corrected": 1,
+   "unresolved": 0,
+   "not_counted": 0,
+   "rule": "NOTES, Sign check K2, 20 Nov 2026; sign_check/sheet-K2-rule.md, written 20 Nov 2026 before any thumbnail was cut and before the answers, with a written integration clause",
+   "rule_hash": "de905a2656743a872a68e3d154bdb0a6f0ae6c72cef47dffdc5962f9acc803e4",
+   "sheet_faults": "none found. On q02 the checker remarked that the 'L with a stroke below' he had seen on sheet K was his error (the upright is a p of the line above); applied by the rule",
+   "note": "Sheet K2, R4844 sign words (DECODE R4844; no image or thumbnail committed), after the three new shapes of sheet K. Answers: sign_check/sheet-K2-answers.json (exported 2026-11-19T23:31:13Z, SHA-256 130e58077cc9c911417400142ba956182ea508e39b9708c73c0486afe8b7951d); results: sign_check/sheet-K2-results.tsv. The integration clause was applied as written. Not a human_check: AI agents built and scored the sheet. Review of PR #821 (20 Nov 2026): the one sign counted above as corrected, the fifth sign of group 14 relabelled EQ (it was ⊥), was not accepted as a settled correction, because sheets K and K2 gave opposite answers on it and the K2 question was written knowing the K answer; group 14 stays probable. When this record moves to outcome.sign_check, that sign is not to be counted as corrected."
+  }
+ ]
+}

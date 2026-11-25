@@ -2,6 +2,8 @@
 
 Status: in progress (folder only, no page; contributed by Andrew Beling, with AI agents)
 
+Next step (write-up check 24 Nov 2026): decode the bare System B pages of Codex 534 ff. 1-113 (bare/bare_passages.md) with key v3; they are online and not attempted, so no page yet.
+
 Holder: University of Pennsylvania Libraries, Kislak Center for Special Collections. Ms. Codex 533 (36 autograph letters
 of Cosimo III, Grand Duke of Tuscany, to his envoy Anton Francesco Montauti, 80 leaves); Oversize Ms. Codex 534 (279
 despatches of the Florentine secretariat to Montauti, 1689-1699, signed "Il gran duca di Toscana"); Oversize Ms. Codex
@@ -259,6 +261,30 @@ maintainers did this; no person has checked the transcriptions or the readings.
 - All readers are AI agents. No person has checked a reading.
 - The clear text of Codex 533 is transcribed only around the cipher runs, and on 1r-1v; it needs a palaeographer.
 
+## Decrypt audit, 16 Nov 2026
+
+`research/decrypt_audit/detail.py montauti1692` could compare two of the 17 texts, the bare passages P1 and P2 (the others are under 100 letters): 23 of 63 and 28 of 50 compared words depart, 51 of 113 (45%). All 17 texts were then checked with an own read-only snippet: `key/key_entries.tsv` (26 groups, the two context-only values included) applied to each `*_groups.txt`, compared with `*_decode.txt`, and the decode compared with the CAPITALS of `*_it.txt`. The folder's scripts were not run.
+
+- **Key against the decode files.** Of 892 groups, 781 take the key's letter as printed (91 = u is printed v six times); 77 have no value and are printed `?` or `[n]`; 27 letters, all in Codex 533, rest on a digit read differently from the transcription (96 as 56 m, 92 as 52 h, 68 as 6w t, 06 as 66 s ...) and carry `*` in `readings/L*_decode.txt` and `readings/runs_533.tsv`. Those are readings of the signs, not key values, and were not added to the key. Two places do not follow: L19 19r a, group 55 is printed `?` (the key gives l); L35 35r a, "d e l l a" has five letters for the four groups 46 21 55 11 (also in `runs_533.tsv`).
+- **Cause D, clear text of the manuscript.** The phrases of P1 and P2 that the key does not produce ("che si supponeva fatta", "della sua di Lei", "non sono però a lungo andare", "le cose per la naturale") are the clerk's clear words around the cipher runs: in braces in `bare/P*_decode.txt`, in lower case in `bare/P*_it.txt`. No code number is given a value; all stay [n].
+- **Clear words printed as cipher.** In `bare/P1_it.txt` nine clear words stand in CAPITALS (IL before [110], LE INCUMBENZE, AL [22], DA [106], DI MED.O, A [106], AL VESCOVATO, IL [22]), in `P2_it.txt` two (DURANTE LA), in `P4_it.txt` the DE of DEL [10]; `P*_decode.txt` has each of them in braces as clear.
+- **Cause C, stated only as "normalized".** Consonants the cipher writes once are doubled without a bracket in 17 words: DELL'ABATE (twice), ALLA, L'ELETTOR (twice), NOZZE, DETTA, L'AUGUSTISSIMA, L'ELETTORALE, D'ACCASARE, DALL'ABATE, PROGETTI, TUTTI, S'OPPONGA, COLL'ABATE; PERMISSION[E] (L01), DUSSELDORF (L56).
+- **Cause B, letters changed, dropped or supplied with no bracket in the reading file** (14 places, hand count): P1 GRIMANI (the last three groups are unread, the I is supplied), D'ACCASARE (decoded i dropped), SÌ IN (one decoded i printed twice), POLONIA (one of two decoded o dropped), LIEGI twice (decode liege), LE S[UE] NOZZE (the code group [22] between "si" and "noze" is not printed), L'AUGUSTISSIMA CASA E (decode "augustisime ca casea e": e printed as a, "ca" and an e dropped); P2 CIRCOSPEZIONE (decode "circospezt one", the group marked doubtful in `P2_groups.txt`); P3 S'OPPONGA (decoded i dropped); L01 L'EL[E]TTORE (decode "l e l t t* o r r": the final E replaces r; `L01_decode.txt` brackets it, `L01_it.txt` does not); L25 COSTÀ (decode "costaa"); L35 DELLA (above) and D[O]N[N]A(?) (decoded c dropped, final A where the group has no value).
+- **Emended digits not marked in the reading files.** 23 words of `readings/L*_it.txt` hold a letter that rests on a re-read digit, marked `*` in the decode file but not in the reading: L01 L'EL[E]TTORE, MIA (twice), HAVEA, PERMISSION[E], MARITO; L21 MIL, SONO, DEL; L26 RELATION[E], HAVRÀ, CON; L28 FIGLIOLA, CORTE, TOSCANI; L35 DISGUSTAT[O], FAVORITA, MANDARAI(?); L56 MIA; L63 LI, QUALCHE, ULT[I]MO(?); L70 AGOSTO.
+- **Cause F.** The script cannot see the braces and capitals convention, and the `+` (shared sign) and `?` marks of the group files split or hide a few groups.
+
+Nothing was changed in the key, the group files or the readings; `key/key_entries.tsv` holds every value the folder establishes. After: 51 of 113, unchanged. Not checked: any group against an image, and `readings/letter_1r1v.md` and `readings/words_533_strict.tsv` against these counts.
+
+**Marked on 16 Nov 2026.** Marks only; a script check confirmed that the letters of each file are the same before and after.
+
+- Brackets, 9 places: `bare/P1_it.txt` GRIMAN[I], SÌ [I]N, LIEG[I] (twice), L'AUGUSTISSIM[A]; `bare/P2_it.txt` CIRCOSPEZ[I]ONE; `readings/L01_it.txt` L'EL[E]TT*OR[E]; `readings/L35_it.txt` DEL[L]A and D[O]N[N][A](?).
+- Stars, 27 letters in 23 words of `readings/L01, L21, L26, L28, L35, L56, L63, L70_it.txt`: `x*` after each letter that rests on a re-read digit, copied from the `*` of the decode file of the same name. The starred letters of the decode files that fall in an unread stretch (28v a) or under an existing bracket (22r a, D[I]) have no letter in the reading and got no star.
+- Re-cased, 12 clear words that stood in capitals: nine in `P1_it.txt` (il, le, al, da, di med.o, a, al, il), "durante la" in `P2_it.txt`, and the "de" of "deL [10]" in `P4_it.txt`.
+- Left without a mark in the text, 5 of the 14 places, because the departure is a decoded letter or group that is not printed and there is nothing to bracket: D'ACCASARE and S'OPPONGA (elided i), POLONIA (one of two o), LE S[UE] NOZZE (code group [22]), COSTÀ (second a); likewise the "ca" and e dropped before CASA E and the c dropped in D[O]N[N][A]. Each is stated in a header line of its file.
+- Header lines: a second comment line was added to `bare/P1-P4_it.txt` and `readings/L01, L21, L25, L26, L28, L35, L56, L63, L70_it.txt`, stating the marks, what "normalized" covers (consonants doubled without a mark, elided vowels) and, for the bare files, that the unedited output of the key is the `_decode.txt` file. No existing header line was changed.
+- `scripts/make_texts.py` and `scripts/make_bare_texts.py` write these files; a re-run would remove the marks and header lines unless the scripts are changed first. They were not run or changed.
+- `research/reading_audit/v2_score.py <file> it`, hole rate before and after: P1 0.287, 0.324; P2 0.069, 0.079; P4 0.038, 0.038; L01 0.215, 0.209; L21 0.333, 0.300; L26 0.333, 0.333; L28 0.182, 0.160; L35 0.353, 0.333; L56 0.273, 0.250; L63 0.333, 0.333; L70 0.400, 0.333. The falls in the L files are not real: the scorer splits a word at each `*` and so counts more words; it does not count a starred letter as a hole.
+
 ## Remaining gaps
 - Codex 533 runs 19r, 25r a, 25r b, 26r b, 36r - blocker: no-key-material; letters decode in part but form no word, and no interline or key covers Cosimo's hand
 - Code numbers 14 (533 3r, 35v), 13, 22, 27, 104, 106, 110, 116, 10, 90, 30, 39 (534/531) - blocker: open-codes; no interline gives them; Penn Ms. Coll. 180 Folder 114 not seen
@@ -266,6 +292,19 @@ maintainers did this; no person has checked the transcriptions or the readings.
 - Clear text of 1r lines 5-6 and 11-13, 1v lines 1 and 3 - blocker: illegible; needs a palaeographer
 - 35v line 0.635 signs 21-30 - blocker: illegible; the two passes and the image check leave both readings open
 - About 50 pages of bare System B in Codex 534 ff. 1-113 (listed in bare/bare_passages.md) - blocker: not-attempted; out of this package's scope, readable with key v3
+- Clear text around the runs of 25r, 26r, 28v, 56r-57r, 63r, 70v (transcribed 16 Nov 2026, most words doubtful) - blocker: illegible; needs a palaeographer before those entries can be read
+
+## Transcription doubts
+Clear words around the runs of 25r, 26r, 28v, 56r-57r, 63r and 70v (two AI passes of 16 Nov 2026, pass A not blind
+to pass B; `readings/clear_context_533.md`). Doubtful cipher signs are marked in `readings/runs_533.tsv` and are
+not repeated here. None of the doubts below is settled.
+- clear word before 25r a - read: dovuto(?) al by both passes, fondat[o](?) in runs_533.tsv; checked: image (two passes), decode not applicable (clear text); open
+- clear words before 28v a - read: Particolari(?): V.S. by both passes, Per Napoli(?) V.S. in runs_533.tsv; checked: image (two passes), decode not applicable (clear text); open, colon or full stop unsure
+- clear word before 56r a - read: del giardino(?) (pass A) or Pagiardine(?) (pass B), Del pardi[n]e(?) in runs_533.tsv; checked: image (two passes), decode not applicable (clear text); open
+- clear words before 63r a - read: Come nell'altro foglio(?) et by both passes, come voll[e] avviso(?) in runs_533.tsv; checked: image (two passes), decode not applicable (clear text); open
+- "a" before DUSSELDORF (57r) - read: a(?) by both passes, a single stroke that may be a cipher sign; checked: image (two passes), decode not applicable (outside the recorded run); open
+- "94" (26r line 7, between clear words) - read: 94 by both passes (pass B: "a 94 a[nni](?)"), written like cipher digits; `transcriptions/reconciled_533_v2.tsv` has no run on that line, so it may be an unrecorded run or a figure in the clear text; checked: image (two passes), decode (no run recorded, so nothing decoded); open
+- the other doubtful clear words - read: marked (?) in `readings/clear_context_533.md`, counted per entry in `readings/clear_context_533.tsv` (clear_doubtful: 19, 14, 15, 31, 5, 20); checked: image (two passes), decode not applicable (clear text); open, needs a palaeographer
 
 ## Escalation
 - [x] siblings: Codex 534 paged (ff. 120-586 surveyed; ff. 1-119 on contact sheets); Codex 531 and 536 sampled; the interlined 534 letters are the key source
@@ -300,3 +339,33 @@ is committed. The full images stay with Penn; folio numbers and manifests are in
 Andrew Beling, with AI agents (Claude): the key rebuilt from the Codex 534 interlines, the tests, the two transcriptions
 of Codex 533, the reading. The first letter was checked by a second AI agent of ours that read it blind from the images
 first. The recipient's interlinear decipherments in Codex 534 (Montauti or his secretary, 1690) supply the key.
+
+## Clear sentences around six runs (16 Nov 2026, Andrew Beling, with AI agents)
+
+The review of pull request #665 listed ff. 25r, 26r, 28v, 56r-57r, 63r and 70v as "decoded, not read" because the
+clear text around their runs was not transcribed. That text is now transcribed, sentence by sentence, in
+`readings/clear_context_533.md` (counts in `readings/clear_context_533.tsv`; the blind pass as written in
+`readings/verify/clear_passB_blind_2026-11-16.md`). No key value and no cipher word was changed.
+
+- **Two passes.** Pass B by a separate AI agent from image crops only, blind to every transcription and to the
+  decoded words. Pass A by the packaging agent, made after pass B and knowing the decoded words, so the agreement
+  figures are an upper bound. A clear word is counted sure only when both read it the same and neither marks it.
+- **Result: all six stay "decoded, not read".** Clear words read the same by both passes, and sure: 25r 37 and 20 of
+  39; 26r 25 and 17 of 31; 28v 13 and 4 of 19; 56r-57r 37 and 14 of 45; 63r 10 and 6 of 11; 70v 20 and 7 of 27.
+  Sure cipher words are as before (0 of 4, 4 of 18, 1 of 5, 3 of 3, 3 of 6, 0 of 1). No sentence containing a run
+  builds with only scattered holes.
+- **Two clauses read as clauses:** 26r "Vorrei che V.S. con una Curiosità(?) mi mandassi(?) un(?) RELATION[E] DEL
+  [... 8]" (I would like V.S. ... to send me a report of ...), and 57r "che V.S. haveva(?) scritto(?) per [...]
+  viaggio(?) a(?) DUSSELDORF" (that V.S. had written for [...] journey to Düsseldorf), whose sentence begins on 56v
+  in words neither pass could read. On 56r the clause around MIA FIGLIA does not read. So we do not dispute
+  "decoded, not read" for 56r-57r.
+- **Corrections to the clear words recorded in `readings/runs_533.tsv`** (left unchanged there): 63r a, both passes
+  read "Come nell'altro foglio(?) et", not "come voll[e] avviso(?)"; 28v a, "Particolari(?): V.S.", not "Per
+  Napoli(?) V.S."; 25r a, "dovuto(?) al", not "fondat[o](?)"; 56r a, "del giardino(?) a(?)" (pass A) or
+  "Pagiardine(?) a(?)" (pass B), not "Del pardi[n]e(?)". The "a" of "viaggio a Dusseldorf" (57r) is a single stroke
+  that may be a cipher sign.
+- **Not settled:** pass B sees two digit-like signs "94" between plain words on 26r line 7, where
+  `transcriptions/reconciled_533_v2.tsv` has no run; not checked further.
+- **Image used:** the lower 45% of f. 56v, fetched once from Penn's IIIF server at full size (16 Nov 2026, HTTP 200);
+  all other leaves from images already held. No image is committed.
+- All readers are AI agents; no person has checked. The clear text needs a palaeographer.

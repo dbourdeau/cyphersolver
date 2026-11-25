@@ -1,0 +1,36 @@
+{
+ "folder": "santacruz1630",
+ "marked": [
+  {
+   "file": "targets/santacruz1630/reading.md",
+   "places": 122,
+   "note": "122 brackets in 119 words, each checked against decryption.txt and both key files"
+  }
+ ],
+ "left_unmarked": {
+  "count": 6,
+  "why": "six verified places where decrypted letters are left out or reordered and no letter can carry a mark ('no se a ue r' > 'no haberse'; 'es' dropped before 'hagan'; 'z e' dropped after ‹fri›; 'uuestra' dropped after 'traído'; 'intentos' > 'intento'; 'se trata' > '[se] ha de tratar'). Deliberately unmarked: 16 words following fer=do / X=t (now in key_K6A_additions.tsv) and the 57+4 spelling-normalised words. Words the alignment did not flag were not re-read."
+ },
+ "headers_changed": [
+  "reading.md: Conventions line extended: [x] also marks letters or words the key files do not give (122 marks in 119 words); spelling changes not marked; the unedited output of the key is decryption.txt"
+ ],
+ "page_changes": [
+  "'1,112 are certain (every syllable or code has an attested value in the pairs), 28 probable' -> '1,112 were counted as certain by the contributor (every syllable or code having, by his account, an attested value in the pairs; the pairs are not in the repository, and since 16 November 2026 reading.md marks with [x] 119 words in which the key files do not give a letter or a code), 28 probable'"
+ ],
+ "page_counts_now_stale": [
+  "Of 1,171 enciphered words, 1,112 ... certain ..., 28 probable, 22 restored from the sense and 9 unresolved: 1,162 read, 99.2%.",
+  "Still open: Nine words (29, 28, lor, nat, dol twice, dul, mur, fri), 28 probable and 22 restored readings.",
+  "NOTES Status line and profile fraction_read 0.992"
+ ],
+ "hole_rate": [
+  {
+   "file": "targets/santacruz1630/reading.md",
+   "before": 0.023,
+   "after": 0.115,
+   "state_in_profile": "read"
+  }
+ ],
+ "falls_below_read_bar": true,
+ "wording_changed": false,
+ "notes": "Contributor's reading (Brice Dudout); marks added inside it in its own [x] convention on the coordinator's instruction. Most marks are not errors of reading: they are values the frozen key file does not hold (second homophone values, codes aligned once) and that the contributor says are attested in training pairs absent from the folder; bringing the full value table into the folder would let most marks be withdrawn. Three times the key gives 'e ma ne ra' where the text prints 'necesidad' (marked whole); 'de manera' may be the right reading. fri = di (held-out pair) would make 'se os ‹fri›' 'se os dize': reading not changed. Decision needed on whether single-letter marks count against the read bar (0.115 by v2_score)."
+}

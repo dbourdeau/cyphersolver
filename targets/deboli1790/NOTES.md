@@ -108,3 +108,9 @@ ZbPop 444/451/453/454 (keys) and ZbPop 320 (deciphered register 1774–77): no a
   IH PAN, 2017), Wstęp pp. 11–17. https://rcin.org.pl/dlibra/publication/275188/edition/238967
 - D. Rolnik, "„Przestrogi dla Polski” Augustyna Debolego, posła Rzeczypospolitej w Petersburgu ...", *Rocznik
   Filozoficzny Ignatianum* 31/3 (2025), notes 10–58.
+
+## 14 Nov 2026 full-texts audit
+
+The profile had no `outcome.texts`. The folder holds no full text of any despatch: only the pairing samples of `transcription_sample.md` (opening cipher lines of seven despatches and the opening words of the decipherments of the same dates). That file held cipher and plaintext together, so it is split, with nothing changed in either part: `sample_cipher.txt` (the code groups) and `sample_decipherments.md` (the Polish openings, with an English version of each added). `transcription_sample.md` is kept as it was. They are listed as one entry for the five volumes, state `not prose` (a pairing worksheet).
+
+What this does not give: the texts themselves. The target is closed as deciphered at the time; the decipherments are the cabinet's fair copies on the AGAD scans (ZbPop 417, 419, 420, 421), reachable through `pairs.tsv` for 1790, and none is typed here. Typing them, or the ciphers, was not attempted (109 despatches for 1790 alone).

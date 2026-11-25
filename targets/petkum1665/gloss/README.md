@@ -9,6 +9,7 @@ No key sheet survives for this code in what we saw. The Danish chancery decipher
 | `KEY_v2.tsv` | v1 + those additions. md5 20ddf240 | frozen 01:35:14, before pp.1 and 4 were transcribed |
 | `../key.tsv` | KEY_v3 = v2 with one correction: code 51 is 'le Roy de Danemark (V. M.)', not 'la France' (our misreading of the 401 gloss; 574 right reads 'V. M.'). md5 ddc02e4a. The key of every count in this folder except A1 | 01:37 (b94 LOG); first stamped 01:43:29 GMT |
 | `rowrule_check_574R.tsv` | 17 values predicted by the row rule before 574 right was read, then met under its glosses: 17 agree, 0 contradict | after v1 |
+| `KEY_v7_glosses_261294.tsv`, `KEY_v7_coverage_261294.tsv`, `KEY_v7_FETCH_LOG_261294.txt`, `KEY_v7_DIFF.md` | key v7 (`../key_v7.tsv`, md5 d1ee7e30): #646's key v6 + 151, 181 (doubtful), 248 (doubtful), 346, DB and 164 changed to amitie, from Sehested's glosses on 119 further images and 4 half-pages of unit 261294 and 574R re-read. Not used for any decode | 16 Nov 2026 |
 | `paulmyer_gloss_checks.tsv` | glosses on Paulmyer's own leaves (unit 261294) against KEY_v3: same code; nothing taken from them | 12:20 to 12:37 |
 
 Tiers in `key.tsv`: 84 rows A, 17 A2, 46 B, 8 C (155 rows). The decoder prints A2 values as `(x?)` (it tests `tier in 'AB'`), and the shuffled-key control neither scores nor shuffles them; the counter treats them like A. This display quirk is the contributor's and is kept so that the decryptions stay byte-identical to the ones stamped.

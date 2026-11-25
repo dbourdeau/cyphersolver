@@ -67,6 +67,34 @@ related); issue and PR search for Batavia, Smissaert, Prediger, 2.01.27.02, Azia
 letter or study of the cipher found (two web searches). The clear minute in the same file is the prior solution: the
 content has always been readable there.
 
+## Decrypt audit, 16 Nov 2026
+
+The decrypt audit (`research/decrypt_audit/`) re-applied `key.tsv` to `transcription.txt` and compared the letters with
+`reading.md`: 18 of 70 compared words depart from the mechanical decrypt (26%). Checked here word by word against
+`decryption.txt`.
+
+- Clear text: 17 of the 18. The reading prints the whole letter, the cipher passages in *italics* and the clear words
+  of the sent page between them ("maar evenwel, zoo wij hopen, eerlang", "is de Asiatische Raad", "en reeds bezig met",
+  "waardoor, indien deselve"); the transcription holds the cipher passages only, so the audit takes the clear words for
+  departures. Nothing is wrong there.
+- Cipher words: of the 60, 54 follow the key letter for letter and six carry a mark, the six declared in the count of
+  `reading.md`: {secretesse} (key: kecretekke), {gelieft} (54 = f from this word only), {andere} (key: anderea),
+  [s]oortgelyke, Eur[o]pa, ver[ste]rking. The eighteenth flagged word is ver[ste]rking: the key gives "verking"
+  (L11: 21 61 12 42 23 71 52), so the word lacks four letters (s, t, e, r), not three as `reading.md` and the page
+  say, and the brackets hold three; one supplied r stands outside them. The columns transcribed as x
+  (struck out or illegible: L02 "doorv?eele", L04 "?geweest", L05 "he?bbe?n") are left out of the reading without a
+  mark; the header of `transcription.txt` states what x is. The reading writes j where the key file has i
+  (geprojecteerde, Java); the key header says i and j share 23.
+- Key file: nothing missing; the only other key material in the folder is `frozen/KEY.tsv`, the same table without 54.
+
+Changed: nothing. The audit figure is the same after (18 of 70). Open: the bracket of ver[ste]rking and the
+"three letters" were not corrected here (the wording of a reading is not changed in this pass).
+
+Marked on 16 Nov 2026. In `reading.md` the bracket of the restored word was moved so that it holds the four supplied
+letters: ver[ster]king (was ver[ste]rking); no letter changed. Its count note now says four letters, not three. The
+same two corrections were made on the page (the quoted reading and "What remains uncertain"). The counts (54 certain,
+3 probable, 3 restored) are unchanged. Nothing left unmarked.
+
 ## Remaining gaps
 
 - The clear of the minute is transcribed here only where it pairs with the cipher and for the letter's opening; the

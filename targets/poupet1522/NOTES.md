@@ -5,6 +5,15 @@ Status: read (contemporary decipherment bound in; checked against the cipher)
 Catalogue entry: "Charles Poupet de Lachaulx to Charles I", BNE MSS/20212/39/1-2, DECODE R1187, rule-scored
 class B, "what the cipher hides is not known". Worked 21 Sept 2026.
 
+## Read share over cipher words only (16 Nov 2026)
+
+`reading.md` holds only the 1522 decipherment of passages A and b (no clear text of the letter), so all of it is cipher.
+Recounted by hand, sure words only: 370 words and 15 holes (the two passage letters A and b are not counted; `v10_relabel.py` counts them and gives 372 words, the same 0.961) (ten doubtful words in brackets, `alla[st]` with a supplied
+letter among them, and five bare `[...]`, one word each): **0.962 -> 0.961**. The old 0.962 also counted the file's
+introduction. A `## Reading` and a `## Notes` heading were added to the file so that `v10_relabel.py` measures only the two
+passages (markup only; it now gives 0.961). Passages C, D and E (images 10-11) are not transcribed here and are not in the
+figure. Class (already solved: read at the time) unchanged.
+
 ## What the record is
 
 - 11 DECODE images (double openings), fetched with the bordeaux cookie into `decode/img/` (git-ignored; BNE
@@ -46,3 +55,14 @@ transcription of ~1,500 signs from 1024-px scans, and the letter is read already
 
 Printed? Gachard, *Correspondance de Charles-Quint et d'Adrien VI* (1859), prints letters of this mission, but
 from Brussels/Vienna copies; not checked whether this letter is among them. Not found online.
+
+## 14 Nov 2026: the cipher has no transcription, and why (audit section I, "no transcription file")
+
+- In the folder: `reading.md` is the contemporary decipherment (39/2). The only cipher typed anywhere is the first line
+  of passage A in the Check section above, with look-alike signs typed alike; it is not a transcription.
+- DECODE R1187, public record page: eleven images, no text attachment; full-size images need a login.
+- BNE: a search of bdh.bne.es for MSS/20212/39 returned a Cloudflare bot-check page (HTTP 403). Not pursued further
+  (no browser in this session). `decode/img/` is git-ignored and not in this checkout.
+- `outcome.texts[0].transcription_missing` records this. Unblocks it: the DECODE images or the BNE scans through a
+  browser, then a sign inventory for this hand (graphic signs and figures, about 1,500 by the Sept estimate) and a
+  transcription checked against 39/2.

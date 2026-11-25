@@ -101,6 +101,17 @@ short and scattered, and nothing outside the text was found to settle them.
   cryptiana. The "French cipher unsolved by Wallis" on cryptiana is a different item: Louvois 1690, solved by
   Biermann 2020.
 
+## 14 Nov 2026: texts audit (sections I and J)
+
+- No. 52: `letter52_plain.txt` read as sentences. It runs as one coherent English letter; the 24 open groups (address
+  line, number codes, three names, dash groups) break no sentence. Reading review recorded in `profile.json`, grade A,
+  state read (456 of 480 groups, 0.95). `check52.py` re-run: same counts.
+- Nos. 50, 51 and 53 were documents B, C and D of `profile.json` with zero tokens. No ciphertext of them was ever in
+  hand (see "Nos. 50, 51, 53: where things stand"), so there is no transcription or decryption to list, and none can
+  be made from here: the Bodleian manuscripts are not digitised. They were removed from `documents[]`; the profile now
+  describes no. 52 only. They stay the open catalogue entry no. 470 and the first gap below. If images arrive, they
+  become their own targets (probably three different ciphers).
+
 ## Remaining gaps
 
 - Nos. 50, 51 and 53: needs physical access (Bodleian MS. e Mus. 203 pp. 218-226, Eng. misc. e. 475 pp. 234-247;

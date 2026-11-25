@@ -201,6 +201,12 @@
    "technique": [
     "plaintext matching"
    ]
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "transcription",
+   "what": "Full-texts audit: NARA images of the Livingston worksheet fetched (images 313-316, 133-135; public, HTTP 200). P. 171 (image 134) transcribed from full-size crops: 14 lines of number groups (transcription_livingston1781_p171.txt) and the English under them (worksheet_english_livingston1781_p171.txt); the groups quoted in NOTES for the Month's/years variant agree. The other five pages were not transcribed in this pass. Image 100 (Thomson, 19 May 1780) opened: the microfilm ink is blotted so that most digits of the 17 dictionary groups cannot be told apart; not transcribed. Committee 1780 and the 1781-82 resolves (19 pages) not attempted.",
+   "result": "partial"
   }
  ],
  "outcome": {
@@ -236,9 +242,9 @@
    {
     "doc": "livingston1781",
     "label": "Livingston to Franklin, 26 Nov 1781 (PCC 59 i pp. 325-328, 169-172)",
-    "decryption": "https://founders.archives.gov/documents/Franklin/01-36-02-0091",
+    "decryption": ["https://founders.archives.gov/documents/Franklin/01-36-02-0091", "worksheet_english_livingston1781_p171.txt"],
     "summary": "Lafayette carries the letter; France must not stop her hand now: public credit would drop, the contracts for the next campaign be given up, troops promised pay in specie grow discontented; total abolition of paper money and the arrears of debt leave Congress unable to exert itself without money; less than one month's (edition: year's) continuance of the war would cost France as much; ask whether Deane's intercepted letters were published in Europe.",
-    "note": "Decryption: the English on the worksheet and the Franklin edition (linked, not copied). Not transcribed.",
+    "note": "Decryption: the English on the worksheet and the Franklin edition (linked, not copied). Transcription: p. 171 only (image 134), 14 lines of number groups, a single AI transcription of 14 Nov 2026 from the NARA image, with the worksheet's English of that page beside it (worksheet_english_livingston1781_p171.txt). The other five pages of the worksheet (pp. 325-328, images 313-316; p. 172, image 135) are fetched and legible but not transcribed.",
     "language": "en",
     "state": "read",
     "reading_review": {
@@ -246,7 +252,8 @@
      "by": "Claude Opus 5.5",
      "date": "2026-10-27",
      "note": "The worksheet's English read as sentences on the images and checked against the edition; one variant noted."
-    }
+    },
+    "transcription": "transcription_livingston1781_p171.txt"
    }
   ]
  }

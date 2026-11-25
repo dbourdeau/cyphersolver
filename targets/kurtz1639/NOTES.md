@@ -1,6 +1,6 @@
 # Kurz von Senftenau (Hamburg) to Trauttmansdorff, 1638-39
 
-Status: in progress (all nine letters read as of 23 Oct 2026; key checked against Mírka's table; site page and ledgers still to be brought up to date)
+Status: in progress (all nine letters read as of 23 Oct 2026, eight of them read in part by the cipher-words-only count of 16 Nov 2026; key checked against Mírka's table; site page and ledgers still to be brought up to date)
 
 23 Oct 2026, re-read r2c (REREAD_BRIEF, Claude Opus 5.5): **R3813 and R3814 read**; every letter now reads.
 DECODE R3813 and R3814 carry Jakub Mírka's key reconstruction (an Excel sheet and a handwritten table, Nov 2022), listed
@@ -118,6 +118,35 @@ R4625 -3.191, R4645 -3.306, R4734 -2.902, R4736 -3.089 (every letter better than
 - 2026-09-19: records, images, literature fetched; transcription started.
 - 2026-09-19: all 73 images transcribed (tr/); structured solver; key rebuilt (KEY.md); all nine letters deciphered.
 - 2026-09-21: checked second transcription pass on all 73 images; comment-line bug fixed (56 lines restored); #f-cross = ta split from x in R3813; read/ regenerated; α = sa and #a-loop = m split; R4645 Banér copies and R4734 endorsement transcribed (addressee Schwarzenberg).
+
+## Read share over cipher words only (16 Nov 2026)
+
+README Conventions now measure the read bar over the words written in cipher only. These letters mix the two, and the
+readings run clear and deciphered text together unmarked. To split them, each reading body (title to `## Notes`) was
+aligned character by character to `read/<rec>.txt`, where the clear text is in braces and the deciphered runs are in
+brackets. Each word and each hole took the side of the stream it falls in
+(`research/reading_audit/r23_kurtz_split.py`). R4734 marks its cipher runs in ⟨ ⟩ and was counted by that mark.
+Holes were counted by words with the v2_score rules.
+
+| letter | recorded | cipher words only | holes / words read | whole letter, clear included (not the measure) | state |
+|---|---|---|---|---|---|
+| R3811 | 0.965 | 0.939 | 24 / 369 | 0.959 | read -> read in part |
+| R3812 | 0.95 | 0.901 | 121 / 1,106 | 0.946 | read -> read in part |
+| R3813 | 0.966 | 0.939 | 113 / 1,731 | 0.965 | read -> read in part |
+| R3814 | 0.972 | 0.943 | 28 / 463 | 0.958 | read -> read in part |
+| R3815 | 0.967 | 0.918 | 24 / 270 | 0.946 | read -> read in part |
+| R4625 | 0.971 | 0.922 | 40 / 475 | 0.965 | read -> read in part |
+| R4645 | 0.95 | 0.945 | 18 / 309 | 0.937 | read -> read in part |
+| R4734 | 0.98 | 0.958 | 5 / 113 | - | stays read |
+| R4736 | 0.94 | 0.904 | 37 / 347 | 0.909 | stays read in part |
+
+The recorded figures were taken over each whole reading file, which has no `## Reading` heading, so the Notes were
+counted too. Over the reading body alone, with the clear text, R3812, R3815 and R4645 were already under 95%. The
+target was already read in part (R4736) and stays so. One letter of nine (R4734) now meets the read bar. The holes are
+the ones listed under Remaining gaps, and nothing new is added there.
+
+Pooled over the nine letters, 5,183 of 5,593 cipher words read: **0.927**. This is now `fraction_read`, and the
+page reads partial (93% of the cipher). The earlier 1.0 counted the tokens of letters that build sentences.
 
 ## Remaining gaps
 - Residual [?] words and unread runs in the nine letters (R3813 about 20 [?] and the clerk's slips in its Notes; R3814 about 12 runs; the others in each read/<rec>_reading.md Notes) - blocker: no-key-material; checked 23 Oct 2026 against Mírka's full key table and on the images (look-alike signs split); the remaining figures are legible but spell no word under any value of either key, and no second copy of the letters exists
