@@ -155,6 +155,90 @@ confirmed, one as far as the image shows.
 Effect: the key is unchanged (22 signs); one letter of the reading changes (تسهر); two emendations fall away; one
 word of 21 goes from doubtful to unread. Elbaum calls the verses a "known poem"; his source was not stated.
 
+## Who was Ibn al-Qabāqibī? (open dating question, 24 Nov 2026)
+
+The two men of this nisba found so far both lived in the early 15th century: Shams al-Dīn Muḥammad b. Khalīl
+al-Ḥalabī Ibn al-Qabāqibī, a scholar of the Qur'an readings, born in Aleppo 777/778 (1375-76), died in Jerusalem
+20 Rajab 849 (22 Oct 1445) (TDV İslâm Ansiklopedisi; YEK authority record), and a Burhān al-Dīn Ibrāhīm al-Qabāqibī,
+d. c. 850 (web results only, not checked). The works listed for Shams al-Dīn are on the Qur'an readings, plus
+*takhmīs* poems and a *badīʿiyya*. None is a cipher or riddle work, and no source ties him to the compiler.
+If the sender is one of these two men, the text dates from about 1395-1445, not 1330-1370. That would not conflict
+with Penn's "14--" for the manuscript. The identification is not proven: it rests on the nisba alone. So the date
+on the page stays as it is until a source places the sender, or the compiler's circle, in a decade.
+
+Check of images 0067-0068, 24 Nov 2026 (name line cropped from master TIFF 0084_0067):
+- **What the text says.** Ḥasan Ibn al-Qalāya(?) al-Mawṣilī brought the compiler a cipher written without word
+  dividers, which he said had been enciphered by «ابن القبا[..]ي الحيسوب». The compiler solved it and mentioned it to
+  "al-makhdūm". The makhdūm said that this Ḥasan had sent him a cipher in the same metre and claimed to know how to
+  solve ciphers.
+- **The name** has the skeleton ا ل ق ق/ف ا ى: two qāf-type teeth, each with two dots above, then alif and final yā'.
+  That is shorter than القباقبي (ق ب ا ق ب ي), so it is either a defective spelling of the same name or a different
+  one. It cannot be settled at this resolution.
+- **The epithet** al-Ḥaysūb ("the great reckoner") is not given for Shams al-Dīn in TDV or YEK.
+- **The circle.** The man works in the compiler's circle alongside "al-makhdūm". The 15 Nov sweep took al-makhdūm to be
+  the volume's "al-maqarr al-makhdūmī al-ʿAlāʾī" and connected him with Ibn Faḍl Allāh, but neither identification has
+  been checked. If both are right, this is ʿAlāʾ al-Dīn Ibn Faḍl Allāh, head of the chancery (kātib al-sirr), who died
+  in 769/1368, before Shams al-Dīn (b. 1375) was born.
+
+Both checks, run the same day (master TIFFs 0084_0217 and 0084_0067; web images 0038, 0083 and 0152):
+- **The spellings differ.** f. 106v has ابن القبا…بي: final yā' with two dots below, a bā' dot before it, and a long
+  kashida in the middle that may hide the second qāf (Elbaum: القباقبي). 0067 has ابن القبا[ن] الحيسوب: after the
+  alif comes a bowl with one dot above, a nūn and not a yā'. So 0067 most likely names someone else (al-Qabbān?). It
+  cannot date the sender of f. 106v.
+- **The patron is an Ibn Faḍl Allāh, head of the chancery.**
+  - f. 17r (image 0038) praises him in verse: «على باب ابن فضل الله حطت ركاب كل سباق عليم … الكريم ابن الكريم ابن
+    الكريم» ("at the gate of Ibn Faḍl Allāh every learned racer has halted … the noble son of the noble son of the
+    noble"). Three generations in the post.
+  - f. 39v (image 0083): «فان ابن فضل الله صار بكفه مدار…».
+  - f. 74r (image 0152): the compiler calls himself al-mamlūk, asks for his appointment decree (tawqīʿ) to be renewed,
+    and sends ciphers to the qāḍī Nāṣir al-Dīn Ibn al-Shāṭ[?]ī, muwaqqiʿ al-dast al-sharīf. So the compiler is a clerk
+    of the chancery.
+  - "Noble son of the noble son of the noble" fits either ʿAlāʾ al-Dīn ʿAlī b. Yaḥyā (in office 1340s to 1368, d.
+    769/1368; father and grandfather both chancery heads) or his son Badr al-Dīn Muḥammad (in office from 1368, with a
+    break, d. 796/1394). The volume's "al-ʿAlāʾī" points to the first, but its folio was not found in this check.
+- **Consequence.** The compiler served an Ibn Faḍl Allāh, and the last of them in office died in 1394. Shams al-Dīn
+  Ibn al-Qabāqibī was born in 1375. He could have written to the compiler only as a teenager under Badr al-Dīn, and not
+  at all under ʿAlāʾ al-Dīn.
+
+**The patron is settled (page-through of images 0111-0222, 24 Nov 2026).** He is «المقر المخدومي العلائي» in at least
+ten places (0151, 0160, 0170, 0179, 0181, 0189, 0190, 0197, 0204, 0208). Two were checked on the image here:
+- 0197: «وكتب لي المقر المخدومي العلائي بسط الله ظلاله مترجما جواب الابيات المتقدمة», "the maqarr al-makhdūmī al-ʿAlāʾī,
+  may God extend his shade, wrote me the answer to the verses above, in cipher".
+- 0146: «امين الدين عبد الوهاب بن وهبان المزي الحنفي قاضي حماه اليوم», "Amīn al-Dīn ʿAbd al-Wahhāb Ibn Wahbān al-Mizzī,
+  the Ḥanafī, qadi of Hama today".
+
+No «بدر الدين» or «البدري» occurs. So the patron is ʿAlāʾ al-Dīn ʿAlī b. Yaḥyā Ibn Faḍl Allāh (d. 769/1368). Other
+people the volume names:
+- Zayn al-Dīn ʿUmar Ibn al-Wardī is mentioned as dead (رحمه الله, 0147). He died in 749/1349.
+- The Ilkhan Abū Saʿīd (d. 1335) appears in the same anecdote.
+- The vizier Ibn Zunbūr (0207).
+- Ibn Wahbān is qadi of Hama "today" (0146). From memory, not checked: he died in 768/1367, so the date needs a source.
+
+Taken together, the text was written about 1349-1367, in the lifetime of the patron. Shams al-Dīn Ibn al-Qabāqibī
+(b. 1375) is excluded.
+
+**First half (images 0001-0110) agrees.** «المقر المخدومي العلائي» appears about 25 more times (e.g. 0007, 0012,
+0013, 0028, 0063-0066, 0071). Badr al-Dīn here is only Shaykh Badr al-Dīn Ḥasan al-Jawlānī, a correspondent; no year
+is given. These hits come from an agent's page-through and were not checked on the image here.
+
+**Hypothesis tested and not supported (24 Nov 2026): the compiler is NOT Ibn al-Durayhim (ʿAlī b. Muḥammad, 712-762/1312-1360).**
+Read on images 0103-0104 here: the compiler quotes Ibn Dunaynīr and Ibn al-Durayhim as authorities («إذا عرض المرموز فالخل جوهرا من ابن دنينير وابن درهم») and builds a riddle on their names. He explains that «الدريهم» was the nickname
+of a remote ancestor, the diminutive of dirham. That is the story Arabic Wikipedia gives for Ibn al-Durayhim's laqab, so he knows
+the man's biography, which is how one writes of a third party. Also: f. 61v puts Ibn ʿAdlān, Ibn Dunaynīr and al-Kindī among the dead authorities; the compiler is a chancery clerk
+(mamlūk, asks for his tawqīʿ, f. 74r), while the biographies of Ibn al-Durayhim (TDV; ar.wikipedia) show a merchant-scholar, a müderris at the Umayyad Mosque, and an envoy who died
+at Qūs in 762/1360, with no vizierate of Syria in either source (the Alukah article, 403, and al-Ṣafadī's A'yān al-'aṣr vol. 3 pp. 521-528, were not read).
+The vizierate passage (0095-0097) and the verse rhymed on علي (0110) are about another man and stay unidentified. The clues first raised were:
+- 0095-0097: the compiler refused the vizierate of Syria and asked the patron to have him excused.
+- 0103-0104: a play on Ibn Dunaynīr and Ibn al-Durayhim that mentions "the great-grandfather's nickname al-Durayhim".
+- 0110: a solution matches "his noble name and the mamlūk's name" in a verse rhymed on علي, which suggests both men
+  were called ʿAlī.
+- 0209: the book «مفتاح الكنوز في حل المرموز» is named.
+
+Verdict (24 Nov 2026): the redating is not supported, and the page keeps "about 1330-1370". The sender is probably an
+earlier member of the family that bore the nisba. The internal evidence above narrows the page's "about 1330-1370" to
+about 1349-1367. Narrowing the page is optional and waits on a source for Ibn Wahbān's death date. Source: `research/sweep_2026-11-24_arabic_treatises/README.md` (YEK section), branch
+`worktree-agent-ad884b8b47d2b32f1`.
+
 ## Prior work
 
 First modern reading of the cipher lines, corrected in eight places by Alan Elbaum (above); the compiler's own solution, which his remark says he made, is lost with the leaf that followed. Not "never solved
