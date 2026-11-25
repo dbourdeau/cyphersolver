@@ -420,3 +420,7 @@ ONB (leads 2832-2837), retry 15 Nov: api.onb.ac.at manifests 504 and the new vie
 ## Habsburg Constantinople audit (16 Nov 2026, `research/audit_2026-11-16_habsburg_istanbul`)
 - Of 20 catalogue entries resting on HHStA Turkei I or Hungaricana regests (193 items, 1,099 regests read): 343, 2675, 2676 and 885 have the decipherment of the same letter filed and were moved back to the leads as read; 2237 narrowed to the despatch to Rudolf (fol. 137-144; the parallel Ernst letter is deciphered); 1226-1229 partly filed, each folio note now lists the items with nothing found; 342 stays open, 501 undecided, Ungarische Akten entries unchanged (142344 for 2459 and 142905 for 2457 and 2458 are deciphered letters worth adding as key material). Verdicts rest on regests only, no leaf seen; 343, 2675 and 2676 are inferred from identical dates, parties and lengths.
 
+
+## YEK massive sweep (25 Nov 2026, `sweep_2026-11-25_yek_massive`), partial
+- **Swept:** Türkiye Yazma Eserler Kurumu portal, all records with istinsah year 200-904 AH (10,906); note-field and title searches for şifre, rumûz, remz, ramz, muammâ, mütercem, hall, hurûf, cifr, ebced, gizli, sırlı. No image screened.
+- **Still unswept:** Arabic-script term list, classes 652.8/133/135/410 etc. (counts only), mecmua/münşeât types 905-1110 AH, Ottoman şifre defteri terms, esrâr slice [200,999]. Route and resume code in that folder's README and `harvest.js`.
