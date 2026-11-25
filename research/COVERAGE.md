@@ -434,3 +434,8 @@ ONB (leads 2832-2837), retry 15 Nov: api.onb.ac.at manifests 504 and the new vie
 - **Not found:** any Geniza/Judaeo-Arabic cipher paper in Cryptologia, HistoCrypt or by Lasry/Megyesi/Knight; Karaite, Samaritan (text) or Ibn Ezra/Halevi ciphertexts; surviving Fatimid/Ayyubid/Mamluk enciphered letters.
 - **Still unswept:** Goitein's *Mediterranean Society* and *India Book* volumes and Schaefer-Shaked's *Magische Texte* (books, not online), the Bohak PDF beyond pp. 15-16, the Friedberg catalogue, the MiDRASH full-text portal, PGP letters with Greek/Coptic numerals (India Book tag), `sweep_2026-11-23_genizah_tables` (named in the brief, absent from the checkout).
 
+
+## Geniza follow-up (26 Nov 2026, `sweep_2026-11-26_geniza_followup`)
+- **Swept:** `pgp-text` transcriptions (10,767 files, grep for cipher/code/sign/symbol markers in English, Hebrew, Arabic: no editor marker for a cipher); India Book / Halfon / Madmun letters (2,424 documents; the only numeral-code letter is T-S 13J18.19, first layer = gematria, shown); p. Heid. Hebr. 22 verso (plain Arabic, edited); cross-check images (ENA 4100.7b, T-S NS J479, J277, Bodl. f 102/28, K5.7, K24.23 verso, JRL B 5652); five more Bodleian Hebrew term searches. 2 candidate rows with vetting blocks (JRL B 5652 verso, T-S K5.7).
+- **Blocked:** NLI (hard Cloudflare block of the IP, not a CAPTCHA) so NLI 577.1/63 and all AIU Genizah leaves (AIU XII.41, XII.68, VI.B.157, VI.B.174) unseen; BL Or 10656.25 not online as far as found; Manchester Luna reCAPTCHA; CUDL search WAF.
+- **Still unswept:** NLI/AIU images, Friedberg, Goitein's books, documents added to PGP after 25 Nov.
