@@ -205,3 +205,10 @@ check of the whole page, and the sign names are the contributor's own shape code
   crops, the struck cipher passages on cc. 40v, 41r and 46v as a second test, the table of mendoza1548 applied to
   c. 44r, and Vazquez and Rose / Varo Zafra opened.
 
+## Shape splits checked blind (dudout, 23-25 Nov 2026), a proposal
+
+Brice Dudout answered a blind sign sheet on the `x` and `o'` splits (13 targets, 2 controls passed, rule hashed first).
+The `o'` split holds 3 of 3: small round = ga, flat = ta. The `x` split holds only in part: looped = de 5 of 5, round = no
+2 of 4, and two no places were seen looped. Applied where the answers agree, "no comunique" (L12), "puerta" and "abierta"
+(L16) read from the signs: 122 -> 125 of 154 (81.2%). Record, labelled transcription and marked reading:
+`dudout/README.md`. The files above are unchanged; the owners decide whether to adopt the labels.
