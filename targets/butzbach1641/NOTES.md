@@ -1,6 +1,6 @@
 # butzbach1641: numeric cipher sheet in HStAD D 4 Nr. 76/6 (Landgraf Philipp of Hesse-Butzbach, "Varia")
 
-Status: read in part, with the key found in the same file (read with known key). 97 of 124 words sure = 78.2 % (95 = 76.6 % before the blind check of 18 Nov 2026).
+Status: read in part, with the key found in the same file (read with known key). 98 of 124 words sure = 79.0 % (97 after the blind check of 18 Nov 2026, 95 before it; "mittwoch" made sure by the blind check of 25 Nov 2026).
 
 ## Source
 
@@ -44,7 +44,7 @@ noch, bishero); one 398 on a slip is unresolved. An overbar doubles a letter.
 | `key.tsv` | key with the view reference |
 | `decode.py` | decoder: `python3 decode.py transcription/digits_arbitrated.txt` |
 | `decryption.txt` | its output, with the count of numbers in and off the key |
-| `blind_check/` | blind shape check of 17 Nov 2026: sheet (questions and boxes), answer key, answers as exported, SHA-256 values; why 19 places were prepared and 15 asked |
+| `blind_check/` | blind shape checks of 17 Nov 2026 (microfilm) and 25 Nov 2026 (new scan): sheets (questions and boxes), answer keys, answers as exported, SHA-256 values; why 19 places were prepared and 15 asked in the first |
 | `reading.md` | reading (sure / {probable} / [restored] / ‹unresolved›), count, the 11 unresolved places, translation |
 
 ## Transcription
@@ -59,8 +59,8 @@ In the blind check of 18 Nov 2026 (reading.md) Brice Dudout saw the last number 
 
 ## Reading and count
 
-See `reading.md`. 124 words: 97 sure, 16 probable or restored, 11 unresolved (after the blind check of 18 Nov 2026). By the repository rule (sure words only)
-97 / 124 = 78.2 %, read in part. Our count with probable words was 113 / 124 = 91 % (letter body, lines 1-25: 96 %);
+See `reading.md`. 124 words: 98 sure, 15 probable or restored, 11 unresolved (after the blind checks of 18 and 25 Nov 2026). By the repository rule (sure words only)
+98 / 124 = 79.0 %, read in part. Our count with probable words was 113 / 124 = 91 % (letter body, lines 1-25: 96 %);
 it is that, a count with probable words. In the letter body the writer has been at Zabern pressing the Imperial and
 Spanish commanders for the relief of Philippsburg; regiments are on the march; the addressee is to encourage the
 officers and soldiers to hold until New Year; the money for them is ready. Sender and addressee are not named.
