@@ -1,4 +1,4 @@
-# lee1813: checker output, regenerated on integration of the follow-up (PR #413), 12 Nov 2026, on a worktree of dbourdeau/cyphersolver at origin/main 08f07fb7 plus PR #413. Replaces the run of 11 Nov 2026, which predated the F6-40 correction (it showed W 27/310 = 0.087, 8 look-alikes and 6 Feb 0.811).
+# lee1813: checker output, regenerated on 26 Nov 2026 after the planche lee1813-2511 (three 6 Feb numerals corrected, NOTES section 13), on a worktree of dbourdeau/cyphersolver at origin/main. Previous run: 12 Nov 2026, integration of the follow-up (PR #413).
 
 $ python3 docs/_check_profile.py lee1813
 lee1813: profile.json
@@ -10,7 +10,7 @@ not a reading  0.296  8/27 sentences  holes 0.582  en reading  tr=y  decryption_
 readable       0.935  157/168 sentences  holes 0.039  en reading  tr=y  reading_1813-02-01.md
 not a reading  0.288  51/177 sentences  holes 0.482  en reading  tr=y  decryption_1813-02-02.txt  [read in part]
 readable       0.846  66/78 sentences  holes 0.067  en reading  tr=y  reading_1813-02-02.md  [read in part]
-not a reading  0.326  84/258 sentences  holes 0.543  en reading  tr=y  decryption_1813-02-06.txt  [read in part]
+not a reading  0.309  84/272 sentences  holes 0.536  en reading  tr=y  decryption_1813-02-06.txt  [read in part]
 readable       0.813  100/123 sentences  holes 0.061  en reading  tr=y  reading_1813-02-06.md  [read in part]
 target: clean share 0.935, worst 1813-02-01 0.935, shapes {'reading': 1}, translated 1/1
 (exit 0)
@@ -18,7 +18,7 @@ target: clean share 0.935, worst 1813-02-01 0.935, shapes {'reading': 1}, transl
 $ research/reading_audit/v10_relabel.py share() on each reading (read_share = 1 - (holes + doubtful) / (words + holes))
 reading_1813-02-01.md: words 1552, holes 7, doubtful 3, read_share 0.994
 reading_1813-02-02.md: words 438, holes 51, doubtful 0, read_share 0.896
-reading_1813-02-06.md: words 799, holes 60, doubtful 1, read_share 0.929 (0.928 before the F6-40 correction: 798, 61, 1)
+reading_1813-02-06.md: words 802, holes 57, doubtful 1, read_share 0.932 (after the planche of 26 Nov 2026; 0.929 before: 799, 60, 1)
 
 $ cd targets/lee1813 && python3 decode.py
 1813-02-01: 8 stretches, 110 numerals
@@ -35,10 +35,10 @@ $ cd targets/lee1813 && python3 errors.py | head -20
    22  a figure off by one place
     9  a letter left out (key letter used up)
     8  a key letter skipped
-    7  look-alike figures (could be our misreading)
     6  a tens figure added or lost
     5  a key letter used twice
     5  two figures run together (no dot)
+    4  look-alike figures (could be our misreading)
     3  a larger key jump
     3  a figure with no letter in the reading
     3  a letter left out
@@ -46,7 +46,7 @@ $ cd targets/lee1813 && python3 errors.py | head -20
     2  one figure split by a stray dot
 
 ## Single wrong figures by key letter (wrong / figures enciphered with that key letter)
-  W:  26 /  310 = 0.084
+  W:  25 /  310 = 0.081
   I:   6 /  300 = 0.020
 (exit 0)
 
