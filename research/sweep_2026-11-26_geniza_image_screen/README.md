@@ -21,7 +21,8 @@ else of text length. One unclear table was added as a lead (no vetting block). T
    Cambridge documents that failed under the derived image name were recovered from their manifests
    (`scripts/harvest_manifest.py`, 50 of 85). Six have none: 33983, 1423, 3223, 19346, 22580, 23820.
 3. **Contact sheets.** 6 documents a sheet (tier 1) or 8 (tier 2), captioned with the PGP id and shelfmark
-   (`scripts/sheets.py`). 252 sheets in batch 1, then 139 more in batches 2-8.
+   (`scripts/sheets.py`). 545 sheets in all: 265 in batch 1 (13 of them, b1_t1_146 to 158, were skipped by the agent and
+   screened afterwards: `screen3/b1_3x.jsonl`, nothing found) and 280 in batches 2-8.
 4. **Screening.** Sub-agents viewed every sheet and flagged anything that was not ordinary Hebrew or Arabic text, numerals
    or accounts, with a calibration sheet of five known Geniza ciphers. Flags were then resolved against PGP's
    description and, for the doubtful ones, at full size (`scripts/fetch_full.py`).
