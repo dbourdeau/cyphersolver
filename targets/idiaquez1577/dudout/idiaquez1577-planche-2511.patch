@@ -1,0 +1,235 @@
+diff -ru avant/idiaquez1577/NOTES.md apres/idiaquez1577/NOTES.md
+--- avant/idiaquez1577/NOTES.md	2026-11-25 09:19:10
++++ apres/idiaquez1577/NOTES.md	2026-11-25 09:53:32
+@@ -34,18 +34,18 @@
+ ## Held-out test
+ 
+ The whole passage is held out: the key was built by another contributor on other letters. `scripts/heldout.py`
+-compares the mechanical decryption of each line with the read text: frozen key 97.0% of characters and 91.0% of the
+-122 words of three or more letters (111 of 122); 200 control keys (100 with consonant values permuted, 100 with vowels and vowel
+-marks permuted) at most 92.2% characters and 74.6% words, mean 8.0% words. The frozen key is above every control. The
++compares the mechanical decryption of each line with the read text: frozen key 98.0% of characters and 92.6% of the
++122 words of three or more letters (113 of 122; before the plate of 25 Nov 2026: 97.0% and 91.0%); 200 control keys (100 with consonant values permuted, 100 with vowels and vowel
++marks permuted) at most 93.3% characters and 75.4% words, mean 8.0% words. The frozen key is above every control. The
+ reference is our own reading, so this is not independent of the key; the stronger evidence is that a key made on
+-other letters gives coherent Spanish on 26 lines it never saw, with 173 of 187 words verbatim.
++other letters gives coherent Spanish on 26 lines it never saw, with 175 of 187 words verbatim.
+ 
+ ## Reading
+ 
+ `reading_1410_115.md` (running text in Spanish), `marked_1410_115.md` (line by line against the signs, every departure marked), `translation_1410_115.md`. Cipher of images 1-2 only (26 of about 130
+-cipher lines). Words: 187 cipher words; 173 verbatim from the signs (92.5%; 169/183 = 92.3% without the 4 code-group
+-occurrences, which are 3 distinct groups: V.Md. twice, Señoria and republica once each), 3 with a marked repair,
+-3 guesses, 8 holes; none from a gloss. `scripts/check_marks.py` rebuilds the decryption from
++cipher lines). Words: 187 cipher words; 175 verbatim from the signs (93.6%; 171/183 = 93.4% without the 4 code-group
++occurrences, which are 3 distinct groups: V.Md. twice, Señoria and republica once each), 2 with a marked repair,
++4 guesses, 6 holes (before the plate of 25 Nov 2026: 173, 3, 3, 8); none from a gloss. `scripts/check_marks.py` rebuilds the decryption from
+ the transcription and the frozen key and passes. Dan's `docs/_check_reading.py idiaquez1577` (run in a throwaway
+ worktree of origin/main): `reading_1410_115.md` readable, clean share 0.727 (16 of 22 sentences, hole rate 0.109, es);
+ the raw mechanical decryption scores 0.296 (unspaced, not a reading) and the line-broken marked file 0.548.
+@@ -56,24 +56,29 @@
+ ever be kept out, it is now, though Genoa is so changeable that nothing can be promised. On the conspiracy, they have
+ given the Signoria the King's letter on investigating it and punishing the guilty exemplarily.
+ 
+-State: **read in part** (coherent sentences, 92.5% verbatim, a few holes in some sentences; four fifths of the cipher
++State: **read in part** (coherent sentences, 93.6% verbatim, a few holes in some sentences; four fifths of the cipher
+ not yet transcribed). An independent blind review (13 Nov 2026) confirmed the state, grade B; see below.
+ 
+ ## Notes on the marked places
+ 
+ 
+-- L01, L16 `33+` with a small tilde: 33+ is *fra* in the key; the tilde is not in the key, so the sign is counted as a
+-  hole. Both places are *frances(es)* by sense.
+-- L02 *ordinario*: the mark over 18 is drawn as a caret (n) but the word is *ordinario*; caret and check (r) are close
+-  in this hand. Repair.
+-- L04 *Fiesco*: the signs give *fiesbo* (8 = b). Read by the contributor as the Fieschi family, whose exiles lived in
+-  France, from the sense; the cipher does not say which count is meant. 8 for 7 is a slip of the cipher clerk or a
+-  misreading. Guess.
++- L01, L16 `33+v`: the mark over 33+ was transcribed as a small tilde; a human reader (Brice Dudout, shape plate
++  idiaquez1577-2511, 25 Nov 2026, 3 of 3 controls passed) chose the check of `10v` over the caret in both places, so it
++  is now transcribed `v` (r in the key). The signs then give *frarnceses* / *frarnces*: the r is one letter too many
++  (a clerk's slip, or a check written for another mark). Both places are *frances(es)* by sense only {probable}:
++  guess, not verbatim.
++- L02 *ordinario*: the mark over 18 is a check (v = r), not a caret (same plate, same reader). The signs give *or*
++  and the word is verbatim.
++- L04 *Fiesco*: the numeral is 7 (c), not 8 (same plate: the reader chose this hand's 7 of `7e` over its 8 of `8@`).
++  The signs give *fiesco* verbatim. That it is the Fieschi family, whose exiles lived in France, is still read from
++  the sense; the cipher does not say which count is meant.
+ - L05 *por lo*: a dot after 22 gives *re*; the dot may be punctuation. Repair.
+ - L08: `7+` with a small 2 above it and the group *qui-la-man* are not clear; *acá llaman nuevos* ("those who are
+   called 'new' here", the *nobili nuovi*) is a guess from the sense.
+ - L10 *principales*: the frozen key gives 35e = *pro*. Here 35 + hook stands for *pri*. Marked as a repair.
+-- L12 *agora*, L15 *algun*, L21 *negocio*, L24 *averiguacion*: the sign before the vowel mark has one shape in all
++- L12 *agora*, L15 *algun*, L21 *negocio*, L24 *averiguacion* (and *alguno* L04, *castigo* L25): confirmed 1 (11) in
++  all six places by the human reader of plate idiaquez1577-2511 (25 Nov 2026), who chose this hand's 1 over its 4 each
++  time. Before that: the sign before the vowel mark has one shape in all
+   four words, an upright 1 followed by a stroke with a crossbar. It is transcribed 11 in all four (11e = *go*,
+   11| = *gu*, straight from the key). The first reconciliation had read it as 14 (the crossed 4 of this hand) in
+   *agora* and *negocio*, which needed a repair *guo* -> *go*; the blind reviewer saw the same shape in all four places
+@@ -147,12 +152,13 @@
+ 
+ - Images 3-6 (about 105 cipher lines) - blocker: not-attempted; not transcribed in this round. The same key should
+   apply.
+-- Unidentified marks - blocker: open-codes; tilde over 33; underline (3 times); small 2 over 7+ (L08) and over
++- Unidentified marks - blocker: open-codes; tilde over 33 (now read as a check, see L01); underline (3 times); small 2 over 7+ (L08) and over
+   6 + hook (L20); dot after vowel 2 (L13); code 30. underlined (L18). Proposals from sense only (underline r -> l).
+ - Guesses - blocker: not-attempted; *Fiesco* (signs: *fiesbo*), *acá llaman* (signs: *a? quilaman*; the blind
+   reviewer calls it the weakest guess), *inferiores* (signs: *jn?riores*), *mucho* (signs: *meco*). To be retried on
+   the image and against images 3-6.
+-- The shape "upright 1 + crossed stroke" (L12, L15, L21, L24) - blocker: not-attempted; read 11 in all four places
++- The shape "upright 1 + crossed stroke" (L12, L15, L21, L24) - settled 25 Nov 2026: a human reader chose 1 over 4
++  in all six places (also L04 *alguno*, L25 *castigo*), so 11 stands. Earlier note: read 11 in all four places
+   after the blind review; it is close to the crossed 4 of this hand. Read as 14, *agora* and *negocio* would need the
+   repair *guo* -> *go*, and *algun* and *averiguacion* a repair *guu* -> *gu*. Other words with this shape on
+   images 3-6 should settle it.
+@@ -223,3 +229,15 @@
+   decipherment 1410,111 are not in the folder, and PARES (records 3576845 and 3577649) answered HTTP 429 three times
+   in this session, so neither could be fetched or transcribed here. Blocker: the PARES images (rate limit on this
+   session), or the contributor's transcription files of 1410,77 and 1410,111.
++
++## Shape plate (25 Nov 2026)
++
++Brice Dudout (human reader) answered a shape plate of 10 places on images 1-2 plus 3 hidden controls of known
++answer (a bare 4, a caret over 4, an 8): 3 of 3 controls right. Each question showed one boxed sign beside two real
++examples of each candidate shape from this hand; no values, no words. Answers: the "1 + crossed stroke" shape is 1 in
++all six places (agora, algun, negocio, averiguacion, alguno, castigo: 11 confirmed); the mark over 18 in *ordinario*
++and over 33+ in *frances(es)* (twice) is the check of `10v`, not the caret of `4^`; the numeral of *fiesco* is the 7 of
++`7e`, not the 8 of `8@`. Transcription changed in four signs (img1 L1, L2, L4; img2 L12); key unchanged. Word count:
++ordinario repair -> verbatim, Fiesco guess -> verbatim, frances(es) twice hole -> guess (the signs now give *frar-*,
++one r too many; *fran-* by sense only); no other word changed. Remaining tilde question: none; the check over 33+ is
++unexplained.
+diff -ru avant/idiaquez1577/decryption_1410_115.txt apres/idiaquez1577/decryption_1410_115.txt
+--- avant/idiaquez1577/decryption_1410_115.txt	2026-11-25 09:19:10
++++ apres/idiaquez1577/decryption_1410_115.txt	2026-11-25 09:52:27
+@@ -1,7 +1,7 @@
+-L01: en lo del enbiar ?nceses enbaxador
+-L02: on dinario a esta[republica] por venturase
++L01: en lo del enbiar frarnceses enbaxador
++L02: or dinario a esta[republica] por venturase
+ L03: lo podra aver persuadido por medio
+-L04: del con dedefiesbo como dizen alguno
++L04: del con dedefiesco como dizen alguno
+ L05: delos que andan avsentados porelo
+ L06: dela conjura osus devdos peroque
+ L07: esta a yasido peticion general delos
+@@ -13,7 +13,7 @@
+ L13: pueden y valen y nolos jn?rio res de
+ L14: quien sepudiera dudar antes sien
+ L15: algun tienpo sepuede esperar que
+-L16: viniendo enbaxador ?nces seria
++L16: viniendo enbaxador frarnces seria
+ L17: ex?ydo es eldia deoy bien quelo de
+ L18: aquies tan mudable ? quenoay queprome
+ L19: ter y asies bien vivir con reca
+diff -ru avant/idiaquez1577/heldout_result.txt apres/idiaquez1577/heldout_result.txt
+--- avant/idiaquez1577/heldout_result.txt	2026-11-25 09:19:10
++++ apres/idiaquez1577/heldout_result.txt	2026-11-25 09:53:32
+@@ -1,2 +1,2 @@
+-frozen key: chars 0.970, words (3+ letters) 0.910 of 122 (26 lines)
+-controls (200 keys): chars max 0.922, words max 0.746, words mean 0.080
++frozen key: chars 0.980, words (3+ letters) 0.926 of 122 (26 lines)
++controls (200 keys): chars max 0.933, words max 0.754, words mean 0.080
+diff -ru avant/idiaquez1577/marked_1410_115.md apres/idiaquez1577/marked_1410_115.md
+--- avant/idiaquez1577/marked_1410_115.md	2026-11-25 09:19:10
++++ apres/idiaquez1577/marked_1410_115.md	2026-11-25 09:52:39
+@@ -11,10 +11,10 @@
+ is a sign with a mark the frozen key does not have (tilde over 33, underline, small 2 above, dot after vowel 2).
+ 
+ ```marked
+-L01: En lo del enbiar [?fra=?]nceses enbaxador
+-L02: {on/or}dinario a esta [republica], por ventura se
++L01: En lo del enbiar [?fra=frar]nceses enbaxador
++L02: ordinario a esta [republica], por ventura se
+ L03: lo podra aver persuadido por medio
+-L04: del conde de [?Fiesco=fiesbo], como dizen alguno
++L04: del conde de Fiesco, como dizen alguno
+ L05: de los que andan avsentados po{re/r} lo
+ L06: de la conjura o sus devdos; pero que
+ L07: esta a ya sido peticion general de los
+@@ -26,7 +26,7 @@
+ L13: pueden y valen, y no los [?inferiores=jn?riores], de
+ L14: quien se pudiera dudar; antes si en
+ L15: algun tienpo se puede esperar que,
+-L16: viniendo enbaxador [?fra=?]nces, seria
++L16: viniendo enbaxador [?fra=frar]nces, seria
+ L17: ex[?clu=?]ydo. Es el dia de oy, bien que lo de
+ L18: aqui es tan mudable [...] que no ay que prome-
+ L19: ter, y asi es bien vivir con reca-
+diff -ru avant/idiaquez1577/profile.json apres/idiaquez1577/profile.json
+--- avant/idiaquez1577/profile.json	2026-11-25 09:19:10
++++ apres/idiaquez1577/profile.json	2026-11-25 09:53:11
+@@ -328,7 +328,7 @@
+     "language": "es",
+     "state": "read in part",
+     "summary": "The ambassadors play down the report that the French will send an ordinary ambassador to Genoa: perhaps the Count of [Fiesco] and some exiles of the conspiracy or their relatives pressed for it, but it is no general request of the 'new' nobles, whose leading men now make one body with the 'old'; if a French ambassador could ever be kept out it is now, though Genoa is too changeable to promise anything. On the conspiracy, they gave the Signoria the King's letter on investigating it and punishing the guilty.",
+-    "note": "Images 1-2 only (26 of about 130 cipher lines). 187 cipher words: 173 verbatim from the signs (92.5%), 3 with a marked repair, 3 guesses (Fiesco, llaman, mucho), 8 holes (signs with marks the key does not give, among them acá and inferiores). Images 3-6 not transcribed.",
++    "note": "Images 1-2 only (26 of about 130 cipher lines). 187 cipher words: 175 verbatim from the signs (93.6%), 2 with a marked repair, 4 guesses (franceses, frances, llaman, mucho), 6 holes (signs with marks the key does not give, among them acá and inferiores); after the shape plate of 25 Nov 2026. Images 3-6 not transcribed.",
+     "reading_review": {
+      "grade": "B",
+      "by": "independent AI language-model agent (blind review)",
+@@ -374,7 +374,7 @@
+     "detail": "Proposals from sense only (underline r -> l)."
+    },
+    {
+-    "item": "Guesses: Fiesco (signs fiesbo), acá llaman (signs a? quilaman), inferiores (signs jn?riores), mucho (signs meco)",
++    "item": "Guesses: frances(es) (signs frarnces(es)), acá llaman (signs a? quilaman), inferiores (signs jn?riores), mucho (signs meco)",
+     "blocker": "not-attempted",
+     "detail": "To be retried on the image and against images 3-6; acá llaman is the weakest."
+    },
+diff -ru avant/idiaquez1577/reading_1410_115.md apres/idiaquez1577/reading_1410_115.md
+--- avant/idiaquez1577/reading_1410_115.md	2026-11-25 09:19:10
++++ apres/idiaquez1577/reading_1410_115.md	2026-11-25 09:52:39
+@@ -7,7 +7,7 @@
+ ## Running text (Spanish, spelling of the signs)
+ 
+ En lo del enbiar [fra]nceses enbaxador ordinario a esta República, por ventura se lo podrá aver persuadido por medio
+-del conde de [Fiesco], como dizen, alguno de los que andan ausentados por lo de la conjura, o sus deudos; pero que esta
++del conde de Fiesco, como dizen, alguno de los que andan ausentados por lo de la conjura, o sus deudos; pero que esta
+ aya sido petición general de los que [acá llaman] nuevos, V.Md. no lo crea, ni puede ser, porque lo granado de los
+ no está dese humor, y estos principales hazen un cuerpo con los viejos, y son los que en su compañía agora pueden y
+ valen, y no los [inferiores], de quien se pudiera dudar; antes, si en algún tiempo se puede esperar que, viniendo
+diff -ru avant/idiaquez1577/transcription_1410_115.txt apres/idiaquez1577/transcription_1410_115.txt
+--- avant/idiaquez1577/transcription_1410_115.txt	2026-11-25 09:19:10
++++ apres/idiaquez1577/transcription_1410_115.txt	2026-11-25 09:52:27
+@@ -1,14 +1,17 @@
+ # AGS Estado 1410,115 (PARES 3577720), Genoa 24 Nov 1577. Reconciled from pass 1 and pass 2; see RECONCILE.md
+ # After the blind review (13 Nov 2026): the shape "upright 1 + crossed stroke" is transcribed 11 in all four places
+ # (img2 L8, L11, L17, L20); RECONCILE.md had settled img2 L8 and L17 as 14. The shape is close to the crossed 4 of this hand.
++# Planche idiaquez1577-2511 (25 Nov 2026, Brice Dudout, human reader, 3/3 controls passed): the "1 + crossed stroke"
++# shape confirmed 1 (11) in all six places (img2 L8, L11, L17, L20, L21; img1 L4); the mark over 33 (img1 L1, img2 L12) and
++# over 18 (img1 L2) is a check (v), not a tilde/caret; the numeral of "fies?o" (img1 L4) is 7, not 8.
+ # img1 L1
+-4^ / 15e / 6. 15 / 4^ 8@ 10v / 33+% 17 7. 23. 23 / 4^ 8+ 27+ 6e 22 ~
++4^ / 15e / 6. 15 / 4^ 8@ 10v / 33+v 17 7. 23. 23 / 4^ 8+ 27+ 6e 22 ~
+ # img1 L2
+-18^ / 6@ 17+ 22@ 18 / 10 / 4_ 24+ 6e† / 20e 22 / 25. 17 24| 22+ 23.
++18v / 6@ 17+ 22@ 18 / 10 / 4_ 24+ 6e† / 20e 22 / 25. 17 24| 22+ 23.
+ # img1 L3
+ 15e / 20e 32+ / 10 25. 22 / 20. 22 23| 10 6@ 6e / 20e 22 / 16. 6@ 18
+ # img1 L4
+-6. 15 / 7e 17 / 6. 6. 26 4_ 8e / 7e 16e / 6@ 29. 17 / 10' 11| 17e ~
++6. 15 / 7e 17 / 6. 6. 26 4_ 7e / 7e 16e / 6@ 29. 17 / 10' 11| 17e ~
+ # img2 L1
+ 6. 15e 23 / 21. / 10^ 6+ 17 / 10 25 23. 17 24+ 6e_ / 20e 22. 15e ~
+ # img2 L2
+@@ -32,7 +35,7 @@
+ # img2 L11
+ 10' 11| 17 / 24@ 4^ 20e / 23. 20| 4 6. / 4_ 20. 22+ 22 ~ / 21.
+ # img2 L12
+-25@ 17@ 4^ 6e / 4^ 8+ 27+ 6e 22 ~ / 33+% 17 7. 23 / 23. 22@ 10
++25@ 17@ 4^ 6e / 4^ 8+ 27+ 6e 22 ~ / 33+v 17 7. 23 / 23. 22@ 10
+ # img2 L13
+ 4 27 31|= 28 6e / 4_ / 4' 6@ 10 / 6. 18 28 / , 8@ 4^ / 21. 15e / 6.
+ # img2 L14
+diff -ru avant/idiaquez1577/translation_1410_115.md apres/idiaquez1577/translation_1410_115.md
+--- avant/idiaquez1577/translation_1410_115.md	2026-11-25 09:19:10
++++ apres/idiaquez1577/translation_1410_115.md	2026-11-25 09:53:11
+@@ -4,7 +4,7 @@
+ The cipher continues on images 3-6 (not read yet).
+ 
+ As for the French sending an ordinary ambassador to this Republic, perhaps some one of those who are in exile over the
+-conspiracy, or their relatives, may have persuaded them to it through the Count of [Fiesco], as they say. But that this
++conspiracy, or their relatives, may have persuaded them to it through the Count of Fiesco, as they say. But that this
+ has been a general request of those who are [called here] the "new" [nobles], Your Majesty should not believe, nor can
+ it be, because the best of them are not of that mind; and these leading men make one body with the "old" [nobles], and
+ they are the ones who, in their company, now have power and weight, and not the [lesser] ones, of whom one might have

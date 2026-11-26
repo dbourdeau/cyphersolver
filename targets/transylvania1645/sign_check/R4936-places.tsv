@@ -1,0 +1,158 @@
+# R4936 g/q (and c/e) shape check, one row per place. s = rank of the figure in its line among the figures of
+# R4936_align.tsv (origin/main), counted from 0, "-" (no figure) skipped; pos_in_word = rank inside the word.
+# verdict: hook (the hand's t figure, label q) / loop (g, value u) / doubtful; c/e places: c or e.
+# by: human = Brice Dudout, blind sheet T; AI = Claude, protocol sign_check/ai-protocol-*.md. note_fr = AI note (French).
+line	s	word	pos_in_word	figures_before	label_before	label_after	reading	verdict	confidence	by	stage	effect	note_fr
+1	33	holtig	3	rdkgng	g	q	t	hook		human	sheet T q11 (T1)	relabelled g->q (t supported)	
+1	47	gyalazattyara	7	uevkvmvggevhv	g	q	t	hook		human	sheet T q06 (T2)	relabelled g->q (t supported)	
+1	48	gyalazattyara	8	uevkvmvggevhv	g	q	t	hook	3	AI	AI pass	relabelled g->q (t supported)	2e g de « vgge », queue courte en crochet
+2	7	succumbalna	1	xgppgzfvkiv	g	g	u	loop	3	AI	AI pass	u confirmed	queue longue, boucle inférieure à gauche (exemple d'alphabet de la planche)
+2	10	succumbalna	4	xgppgzfvkiv	g	g	u	loop	3	AI	AI pass	u confirmed	queue longue, boucle sous la ligne avant Z
+3	4	respublicanak	4	hyxcgfknpvivl	g	g	u	loop	3	AI	AI pass	u confirmed	boucle inférieure fermée (exemple d'alphabet de la planche)
+3	34	magokat,	6	zvudlvg	g	q	t	hook	3	AI	AI pass	relabelled g->q (t supported)	queue ~1 panse, crochet ouvert
+4	13	mellett	5	zykkygg	g	q	t	hook		human	sheet T q13 (T3)	relabelled g->q (t supported)	
+4	14	mellett	6	zykkygg	g	q	t	hook	3	AI	AI pass	relabelled g->q (t supported)	2e g de « gg » avant n, crochet court
+4	18	mutatnanak	1	zggvgivivl	g	g	u	hook	2	AI	AI pass	conflict: u read on a hook (tag g=u:hook)	1er g après Z (queue de Z dessous), crochet court sans remontée
+4	19	mutatnanak	2	zggvgivivl	g	q	t	hook	3	AI	AI pass	relabelled g->q (t supported)	2e g après Z, crochet court
+4	21	mutatnanak	4	zggvgivivl	g	q	t	hook	2	AI	AI calibration (blind)	relabelled g->q (t supported)	étalonnage aveugle (vignette 09)
+5	3	fegyvert	3	byucayhq	c	e	y	e		human	sheet T q02 (C1)	relabelled c->e (y supported)	
+5	14	eroesitenek	6	yhdyxngyiyl	g	q	t	hook		human	sheet T q07 (T4)	relabelled g->q (t supported)	
+5	30	frigyeket	8	bhnueylyg	g	q	t	hook	2	AI	AI pass	relabelled g->q (t supported)	crochet court ; trait vertical d'une ligne voisine à droite
+7	0	temnaltatnak	0	gyzivkgvgivl	g	q	t	hook	3	AI	AI pass	relabelled g->q (t supported)	g initial, crochet court
+7	6	temnaltatnak	6	gyzivkgvgivl	g	q	t	hook		human	sheet T q04 (T5)	relabelled g->q (t supported)	
+7	8	temnaltatnak	8	gyzivkgvgivl	g	q	t	hook	3	AI	AI pass	relabelled g->q (t supported)	crochet court
+7	21	magokat,	6	zvudlvg	g	q	t	hook	2	AI	AI pass	relabelled g->q (t supported)	queue ~1,3 panse, crochet ouvert
+7	27	koevetet	5	ldyaygyg	g	q	t	hook	2	AI	AI calibration (blind)	relabelled g->q (t supported)	étalonnage aveugle (vignette 07)
+7	29	koevetet	7	ldyaygyg	g	q	t	hook	2	AI	AI pass	relabelled g->q (t supported)	crochet ouvert
+8	2	hatatlan	2	rvgvgkvi	g	q	t	hook	2	AI	AI calibration (blind)	relabelled g->q (t supported)	étalonnage aveugle (vignette 01)
+8	4	hatatlan	4	rvgvgkvi	g	q	t	hook	3	AI	AI pass	relabelled g->q (t supported)	crochet court
+8	15	gyalazattyokra;	7	uevkvmvggedlhv	g	q	t	hook		human	sheet T q01 (T6)	relabelled g->q (t supported)	
+8	16	gyalazattyokra;	8	uevkvmvggedlhv	g	q	t	hook	3	AI	AI calibration (blind)	relabelled g->q (t supported)	étalonnage aveugle (vignette 16)
+8	23	it	1	ng	g	g	t	doubtful	-	AI	AI pass	no change	queue longue (~2 panses) en J avec goutte, sans boucle fermée (fin de mot « it »)
+9	8	beczuletek;	4	fypmqkygyl	q	g	u	loop		human	sheet T q03 (T9)	relabelled q->g (u supported)	
+9	11	beczuletek;	7	fypmqkygyl	g	q	t	hook	3	AI	AI pass	relabelled g->q (t supported)	crochet court
+9	27	mutatnanak,	1	zggvgivivl	g	g	u	hook	2	AI	AI calibration (blind)	conflict: u read on a hook (tag g=u:hook)	étalonnage aveugle (vignette 14) — conflit : lu u
+9	28	mutatnanak,	2	zggvgivivl	g	q	t	hook	2	AI	AI pass	relabelled g->q (t supported)	2e g après Z, queue moyenne en crochet
+9	30	mutatnanak,	4	zggvgivivl	g	q	t	hook	2	AI	AI pass	relabelled g->q (t supported)	crochet ouvert
+10	18	instructioban	3	nixghgpgndfvi	g	q	t	hook	3	AI	AI pass	relabelled g->q (t supported)	crochet court
+10	20	instructioban	5	nixghgpgndfvi	g	g	u	hook	2	AI	AI pass	conflict: u read on a hook (tag g=u:hook)	g après h, queue moyenne en crochet, sans remontée
+10	22	instructioban	7	nixghgpgndfvi	g	q	t	hook	2	AI	AI pass	relabelled g->q (t supported)	crochet ouvert
+10	34	motiv-	2	zdgna	g	q	t	hook	3	AI	AI pass	relabelled g->q (t supported)	crochet court
+11	11	fontos	3	bdigdx	g	q	t	hook	3	AI	AI pass	relabelled g->q (t supported)	crochet court
+11	16	ratiok.	2	hvgndl	g	q	t	hook	3	AI	AI pass	relabelled g->q (t supported)	crochet court
+12	17	mint	3	znig	g	q	t	hook	2	AI	AI pass	relabelled g->q (t supported)	queue moyenne en crochet
+12	29	ertette	2	yhgyggy	g	q	t	hook	3	AI	AI pass	relabelled g->q (t supported)	crochet court
+12	31	ertette	4	yhgyggy	g	q	t	hook		human	sheet T q05 (T7)	relabelled g->q (t supported)	
+12	32	ertette	5	yhgyggy	g	q	t	hook	3	AI	AI pass	relabelled g->q (t supported)	2e g de « gg », crochet court
+13	4	beczuleteket,	4	fypmgkygylyg	g	g	u	loop	3	AI	AI pass	u confirmed	queue longue, boucle inférieure nette
+13	7	beczuleteket,	7	fypmgkygylyg	g	q	t	hook		human	sheet T q08 (T8)	relabelled g->q (t supported)	
+13	11	beczuleteket,	11	fypmgkygylyg	g	q	t	hook	3	AI	AI pass	relabelled g->q (t supported)	crochet court
+13	29	hasznokot,	8	rvxmidldg	g	q	t	hook	2	AI	AI pass	relabelled g->q (t supported)	queue ~1,3 panse, crochet ouvert
+13	31	kyralyoknak	1	lchvkedlivl	c	c	y	c		human	sheet T q12 (C2)	no change (y not supported)	
+13	44	meltos-	3	zykgdx	g	q	t	hook	3	AI	AI pass	relabelled g->q (t supported)	crochet court
+14	3	agat,	3	vuvg	g	q	t	hook	2	AI	AI pass	relabelled g->q (t supported)	queue ~1,4 panse, crochet ouvert sans remontée
+14	12	hireket,	6	rnhylyg	g	q	t	hook	3	AI	AI pass	relabelled g->q (t supported)	crochet court
+14	19	neveket	6	iyaylyg	g	g	t	doubtful	-	AI	AI pass	no change	queue entre dans les hampes bouclées de la ligne suivante (chevauchement)
+14	45	tali	0	gvkn	g	q	t	hook	2	AI	AI pass	relabelled g->q (t supported)	crochet ouvert
+15	6	[?mint]	2	z-mg	g	q	t	hook	3	AI	AI pass	relabelled g->q (t supported)	g après « Zm », crochet court (relocalisé x≈615)
+15	29	instructi-	3	nixghgpgn	g	q	t	hook	2	AI	AI pass	relabelled g->q (t supported)	crochet ouvert
+15	31	instructi-	5	nixghgpgn	g	g	u	loop	3	AI	AI pass	u confirmed	queue longue, boucle à gauche (comme L13 s4, L02 s7)
+15	33	instructi-	7	nixghgpgn	g	q	t	hook	3	AI	AI pass	relabelled g->q (t supported)	crochet court
+16	7	errul.	3	yhhgk	g	g	u	loop	2	AI	AI pass	u confirmed	queue longue qui revient à gauche et remonte (boucle ouverte)
+17	33	orszagul	6	dhxmvugk	g	g	u	loop	2	AI	AI pass	u confirmed	queue longue, boucle vers la gauche (touche le texte clair de la ligne suivante)
+18	8	elsegeert	8	ykxyuyyhg	g	q	t	hook	3	AI	AI pass	relabelled g->q (t supported)	g après h, crochet court (relocalisé x≈672)
+18	10	suspectusok	1	xgxcypgqxdl	g	g	u	loop	2	AI	AI pass	u confirmed	queue longue qui revient à gauche et remonte (relocalisé x≈712)
+18	15	suspectusok	6	xgxcypgqxdl	g	g	t	doubtful	-	AI	AI pass	no change	« pg(q) » : queue longue en J recourbé, ni crochet court ni boucle nette (relocalisé x≈830)
+18	24	vagyunk,	4	avuegil	g	g	u	loop	2	AI	AI pass	u confirmed	queue longue, boucle ouverte à gauche
+18	27	tartana	0	gvhgviv	g	g	t	doubtful	-	AI	AI pass	no change	queue longue en J sans remontée nette
+18	30	tartana	3	gvhgviv	g	q	t	hook	3	AI	AI pass	relabelled g->q (t supported)	crochet court
+18	39	mellettunk.	5	zykkygggil	g	q	t	hook	3	AI	AI pass	relabelled g->q (t supported)	1er g de « ggg », crochet court (relocalisé x≈1330)
+18	40	mellettunk.	6	zykkygggil	g	q	t	hook	3	AI	AI pass	relabelled g->q (t supported)	2e g de « ggg », crochet court
+18	41	mellettunk.	7	zykkygggil	g	g	u	loop	3	AI	AI pass	u confirmed	3e g de « ggg », boucle longue nette
+19	22	szuksegunk	7	xmqlxyugil	g	g	u	loop	2	AI	AI pass	u confirmed	queue longue jusque dans la ligne suivante, boucle à gauche
+19	38	ket	2	lyg	g	q	t	hook	2	AI	AI pass	relabelled g->q (t supported)	crochet court (« lyg » avant « ymyh »)
+19	44	muskater-	1	zgxlvgyh	g	g	u	loop	2	AI	AI pass	u confirmed	g après Z, boucle inférieure (croise la queue de Z)
+19	48	muskater-	5	zgxlvgyh	g	q	t	hook	3	AI	AI pass	relabelled g->q (t supported)	crochet court
+20	11	koeltsegen	4	ldykgxyuyi	g	q	t	hook	3	AI	AI pass	relabelled g->q (t supported)	crochet court
+20	30	fizetesunkr-	4	bnmygyxgilh	g	q	t	hook	3	AI	AI pass	relabelled g->q (t supported)	crochet court
+20	33	fizetesunkr-	7	bnmygyxgilh	g	g	u	loop	2	AI	AI pass	u confirmed	queue longue, boucle à gauche au-dessus de la ligne suivante
+21	8	szakasztana,	7	xmvlvxmgviv	g	q	t	hook	2	AI	AI pass	relabelled g->q (t supported)	queue moyenne en crochet
+21	24	muskaterost,	1	zgxlvgyhdxg	g	g	u	doubtful	-	AI	AI pass	no change	g après Z : queue prise dans la queue de Z et la boucle d'un Z de la ligne suivante
+21	28	muskaterost,	5	zgxlvgyhdxg	g	q	t	hook	3	AI	AI pass	relabelled g->q (t supported)	crochet court
+21	33	muskaterost,	10	zgxlvgyhdxg	g	q	t	hook	2	AI	AI pass	relabelled g->q (t supported)	g final « hdxg », crochet court (relocalisé x≈1228)
+21	44	dragont,	6	ohvudig	g	q	t	hook	3	AI	AI pass	relabelled g->q (t supported)	crochet court (« dig »)
+22	18	alkalmatossagaval	7	vklvkzvgdxxvuvavk	g	q	t	hook	2	AI	AI pass	relabelled g->q (t supported)	crochet court, Z voisin
+23	1	gunknak	1	ugilivl	g	g	u	loop	2	AI	AI pass	u confirmed	queue longue revenant à gauche et remontant (boucle ouverte)
+23	15	bekeseget	8	fylyxyuyg	g	q	t	hook	3	AI	AI pass	relabelled g->q (t supported)	crochet court
+23	22	eroesithetnenk	6	yhdyxngryqiyil	g	q	t	hook	2	AI	AI pass	relabelled g->q (t supported)	g après n, crochet court
+23	37	extremum.	2	ysghyzgz	g	q	t	hook	3	AI	AI pass	relabelled g->q (t supported)	crochet court
+23	41	extremum.	6	ysghyzgz	g	g	u	doubtful	-	AI	AI pass	no change	g entre deux Z, queue barrée par le trait de Z avec tache
+24	6	tartani,	0	gvhgvin	g	g	t	doubtful	-	AI	AI pass	no change	fin de queue confondue avec le trait oblique d'un « 7 » de la ligne suivante
+24	9	tartani,	3	gvhgvin	g	q	t	hook	3	AI	AI pass	relabelled g->q (t supported)	crochet court (relocalisé x≈678)
+24	16	magunk	3	zvugil	g	g	u	doubtful	-	AI	AI pass	no change	queue longue mêlée aux hampes de la ligne suivante (relocalisé x≈819)
+24	23	fizetesere	4	bnmygyxyhy	g	q	t	hook	3	AI	AI pass	relabelled g->q (t supported)	crochet court
+24	34	boczatana	5	fdpmvgviv	g	q	t	hook	2	AI	AI pass	relabelled g->q (t supported)	crochet court
+24	42	azt	2	vmg	g	q	t	hook	2	AI	AI pass	relabelled g->q (t supported)	queue moyenne en crochet
+25	5	muskaterost	1	7gxlvgyhdxg	g	g	u	loop	3	AI	AI pass	u confirmed	g après 7, boucle inférieure fermée
+25	9	muskaterost	5	7gxlvgyhdxg	g	q	t	hook	3	AI	AI pass	relabelled g->q (t supported)	crochet court
+25	14	muskaterost	10	7gxlvgyhdxg	g	q	t	hook	2	AI	AI pass	relabelled g->q (t supported)	crochet ouvert
+25	25	dragont	6	ohvudig	g	q	t	hook	3	AI	AI pass	relabelled g->q (t supported)	crochet court
+25	35	alt-	2	vkg	g	g	t	doubtful	-	AI	AI pass	no change	fin de ligne : queue longue en J sans remontée
+26	18	sollicitalni	7	xdkknpngvkin	g	q	t	hook	3	AI	AI pass	relabelled g->q (t supported)	crochet court (p. 2)
+26	29	impetralni,	4	nzcyghvkin	g	q	t	hook	2	AI	AI pass	relabelled g->q (t supported)	crochet court (p. 2)
+27	15	boczatani	5	fdpmvgvin	g	q	t	hook	3	AI	AI pass	relabelled g->q (t supported)	crochet court
+27	24	directe,	5	onhypgy	g	q	t	hook	3	AI	AI pass	relabelled g->q (t supported)	crochet court
+27	44	ioakaratunknak	7	ndvlvhvggilivl	g	q	t	hook	2	AI	AI pass	relabelled g->q (t supported)	1er g de « gg », crochet court
+27	45	ioakaratunknak	8	ndvlvhvggilivl	g	g	u	loop	2	AI	AI pass	u confirmed	2e g de « gg », queue longue bouclée (touche un y de la ligne suivante)
+28	3	esitesere	3	yxngyxyhy	g	q	t	hook	3	AI	AI calibration (blind)	relabelled g->q (t supported)	étalonnage aveugle (vignette 03)
+28	36	czelekedeti	9	pmykylyoygn	g	q	t	hook	3	AI	AI pass	relabelled g->q (t supported)	crochet court
+29	2	extremum	2	ysghyzgz	g	q	t	hook	3	AI	AI pass	relabelled g->q (t supported)	crochet court
+29	6	extremum	6	ysghyzgz	g	g	u	loop	2	AI	AI pass	u confirmed	g entre deux Z, queue très longue bouclée
+29	16	ket	2	lyg	g	q	t	hook	3	AI	AI pass	relabelled g->q (t supported)	crochet court
+29	22	muskateros,	1	zgxlvgyhdx	g	g	u	loop	3	AI	AI pass	u confirmed	g après Z, boucle inférieure fermée
+29	26	muskateros,	5	zgxlvgyhdx	g	q	t	hook	3	AI	AI pass	relabelled g->q (t supported)	crochet court
+29	47	lehet	4	kyryg	g	q	t	hook	3	AI	AI pass	relabelled g->q (t supported)	crochet court
+31	11	elmelkedeset,	11	ykzyklyoyxyg	g	g	t	doubtful	-	AI	AI pass	no change	paire « gg » surchargée / encre empâtée, formes non séparables
+31	12	tehetseget,	0	gyrygxyuyg	g	g	t	doubtful	-	AI	AI pass	no change	paire « gg » surchargée / encre empâtée, formes non séparables
+31	16	tehetseget,	4	gyrygxyuyg	g	q	t	hook	3	AI	AI pass	relabelled g->q (t supported)	crochet court
+31	21	tehetseget,	9	gyrygxyuyg	g	q	t	hook	2	AI	AI pass	relabelled g->q (t supported)	crochet court
+31	27	industriaia	5	nioqxghnvnv	g	q	t	hook	3	AI	AI pass	relabelled g->q (t supported)	g après x, crochet court (le « q » voisin lu u est, lui, bouclé) (relocalisé x≈1275)
+32	0	tni,	0	gin	g	q	t	hook	2	AI	AI pass	relabelled g->q (t supported)	g initial, queue moyenne en crochet
+32	20	respublicahoz	4	hyxcgfknpvrdm	g	g	u	loop	3	AI	AI pass	u confirmed	g après c, boucle inférieure
+32	45	[?sinceritassa-	7	xcipyhngvxxv	g	q	t	hook	2	AI	AI pass	relabelled g->q (t supported)	crochet court
+33	5	vagyunk,	4	avuegil	g	g	u	loop	3	AI	AI pass	u confirmed	boucle inférieure nette
+33	13	erettek	3	yhyggyl	g	q	t	hook	3	AI	AI pass	relabelled g->q (t supported)	1er g de « gg », crochet court
+33	14	erettek	4	yhyggyl	g	q	t	hook	3	AI	AI pass	relabelled g->q (t supported)	2e g de « gg », crochet court
+33	22	essunk	3	yxxgil	g	g	u	loop	2	AI	AI pass	u confirmed	queue longue bouclée (touche le k de la ligne suivante)
+34	12	keresztyen	6	lyhyxmgeyi	g	g	t	doubtful	-	AI	AI calibration (blind)	no change	étalonnage aveugle (vignette 17) : boîte sur un y (segmentation)
+34	38	kelletnek	5	lykkygiyl	g	q	t	hook	3	AI	AI pass	relabelled g->q (t supported)	crochet court (relocalisé x≈1325)
+35	12	eltavoztass	2	ykgvadmgvxx	g	q	t	hook	2	AI	AI pass	relabelled g->q (t supported)	queue moyenne en crochet
+35	17	eltavoztass	7	ykgvadmgvxx	g	g	t	doubtful	-	AI	AI calibration (blind)	no change	étalonnage aveugle (vignette 08) : queue longue en J sans boucle
+35	26	kerullye	3	lyhgkkey	g	g	u	loop	2	AI	AI pass	u confirmed	queue longue, boucle inférieure (touche la ligne suivante)
+36	8	semmit	5	xyzzng	g	q	t	hook	2	AI	AI pass	relabelled g->q (t supported)	queue moyenne en crochet ouvert (relocalisé x≈665)
+36	24	ollyat,	5	dkkevg	g	q	t	hook	2	AI	AI pass	relabelled g->q (t supported)	crochet court (relocalisé x≈1034)
+36	42	[?calumnialkos-	3	pvkgzinvkldx	g	g	u	doubtful	-	AI	AI pass	no change	queue prise dans le grand Z suivant (relocalisé x≈1410)
+37	13	ellenunk.	5	ykkyigil	g	g	u	loop	3	AI	AI pass	u confirmed	boucle inférieure fermée (relocalisé x≈768)
+38	7	fogadhatnanak,	7	bduvorvgivivl	g	q	t	hook	3	AI	AI pass	relabelled g->q (t supported)	crochet court
+38	33	Munkaczra,	1	7gilvpmhv	g	g	u	loop	2	AI	AI pass	u confirmed	g après Z, boucle inférieure (croise Z)
+39	27	ket	2	lyg	g	q	t	hook	3	AI	AI pass	relabelled g->q (t supported)	crochet court
+40	7	talam	0	gvkvz	g	q	t	hook	2	AI	AI pass	relabelled g->q (t supported)	queue moyenne en crochet
+40	16	adhat	4	vorvg	g	q	t	hook	2	AI	AI pass	relabelled g->q (t supported)	queue moyenne en crochet
+40	19	ket	2	lyg	g	q	t	hook	2	AI	AI pass	relabelled g->q (t supported)	queue moyenne en crochet ; trait de la ligne suivante dessous (relocalisé x≈915)
+40	25	muskaterost.	1	7gxlvgyhdxg	g	g	u	loop	2	AI	AI pass	u confirmed	g après Z, queue bouclée fondue dans la queue de Z (relocalisé x≈1060)
+40	29	muskaterost.	5	7gxlvgyhdxg	g	q	t	hook	3	AI	AI pass	relabelled g->q (t supported)	crochet court (relocalisé x≈1150)
+40	34	muskaterost.	10	7gxlvgyhdxg	g	q	t	hook	2	AI	AI pass	relabelled g->q (t supported)	g final avant le point, crochet ouvert (relocalisé x≈1270)
+41	25	erthet	2	yhgryg	g	q	t	hook	2	AI	AI pass	relabelled g->q (t supported)	g après h, crochet court
+41	28	erthet	5	yhgryg	g	q	t	hook	3	AI	AI pass	relabelled g->q (t supported)	1er g de « ggg », crochet court (relocalisé x≈1190)
+41	29	tule	0	ggky	g	g	t	doubtful	-	AI	AI pass	no change	2e g de « ggg » : boucle sous la figure mais mêlée aux hampes de la ligne suivante
+41	30	tule	1	ggky	g	g	u	hook	2	AI	AI pass	conflict: u read on a hook (tag g=u:hook)	3e g de « ggg », crochet ouvert (conflit : lu u)
+42	18	tudosiczon	0	ggodxnpmdi	g	g	t	doubtful	-	AI	AI pass	no change	1er g de « gg » : queue longue (~2 panses) en J sans remontée
+42	19	tudosiczon	1	ggodxnpmdi	g	g	u	doubtful	-	AI	AI pass	no change	2e g de « gg » : queue longue, croisée par une queue de la ligne précédente
+43	5	assecuralnanak	5	vxxypghvkivivl	g	g	u	loop	3	AI	AI pass	u confirmed	g après p, boucle inférieure nette
+43	40	segitsegek	4	xyungxyuyl	g	q	t	hook	3	AI	AI pass	relabelled g->q (t supported)	crochet court (relocalisé x≈1195)
+43	53	kivantatnek,	7	lnaviqvgiyl	g	q	t	hook	2	AI	AI pass	relabelled g->q (t supported)	g après « qv », crochet ouvert (relocalisé x≈1460)
+44	11	fogyatkoznank	5	bduevgldmivil	g	q	t	hook	2	AI	AI pass	relabelled g->q (t supported)	crochet ouvert
+45	13	megmondhattya	9	zyuzdiorvggev	g	q	t	hook	2	AI	AI calibration (blind)	relabelled g->q (t supported)	étalonnage aveugle (vignette 05)
+45	14	megmondhattya	10	zyuzdiorvggev	g	q	t	hook	2	AI	AI pass	relabelled g->q (t supported)	2e g de « gg », crochet court
+45	37	minket	5	znilyg	g	q	t	hook	3	AI	AI pass	relabelled g->q (t supported)	crochet court
+46	18	lennunk	4	kyiigil	g	g	u	loop	3	AI	AI pass	u confirmed	boucle inférieure fermée

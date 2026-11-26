@@ -1,0 +1,5 @@
+# R5416: Sforza chancery cipher letter from Sarzana, April (reading in Italian)
+
+### Page 1
+
+Uoi mi dicesti che [u]oglando Meser L[u]douico contractare c[on] lo Segnore, i [F]irentini se n[e] contenterano. Ieronimo da [F]orlì per auiso uostro ha re[f]erto a Meser L[u]douico per parte de Diotesalue che uoglando metere la [A]ula et Risana in guardia de la s[u]a comunità [f]arà che serano aceptadi, e che [u]og[l]ando [a]lienare il resto li [f]arà [f]are bon partito de consentimento del Signore; sì che queste cose et altre speran[z]e [...] in Italia [f]ano stare lo amico in suspeso, e tanto più quanto che da Tomasino e da la madre è mo[l]to con[f]ortato ad aspectar tempo. El non uole intendere el periculo de Tomasino, el quale è po[u]ero, animoso e desideroso de seguit[a]re, cognoscendo poco l'auaricia, instabilità s[u]a e poca demostratione de amore; se con[f]ida nel [f]igliolo maior[e], sì male misura il tempo. Le pratiche [f]erarese al mio parere sono s[o]pite. Altro non ho al pr[ese]nte che scriuere se non che le [cose] non sta bene a questo modo. E[x] Sar[z]ana di[e] [...] Aprilis [...]

@@ -1,6 +1,6 @@
 # Thomas Edmondes to an unnamed lord, camp before Laon, 9 July 1594: the cipher printed undeciphered in HMC Salisbury IV, pp. 559-560
 
-Status: in progress (folder only, no page). Read in part: the cipher is read from the 1892 print, with the manuscript
+Status: read in part, written up 24 Nov 2026 (docs/edmondes1594.html): the cipher is read from the 1892 print, with the manuscript
 unseen. 636 of the 651 printed cipher letters are read (97.7%). Sure words only, by README Conventions: 57 of 147
 (38.8%, the figure in profile.json; `reading/sure_words.tsv`), a word being sure when every letter comes from the tested
 key (7, 8, 10) with no value chosen by sense. Our earlier figure, counting every word read: 130 of 147, the 12
@@ -267,7 +267,7 @@ maintainers did this; no person has checked the reading.
   because the manuscript is unseen and most words are not sure by the rule above.
 - **Language model.** `scripts/lm.py` is local to this target, against the repository's rule to use `lang/`; it stays
   because the test was frozen with it. A re-run on a `lang/` model of English of the period is an open item.
-- The folder stays `Status: in progress` with no page: the gaps are blocked from outside (the manuscript), so a
+- (Superseded: written up 24 Nov 2026, see the top of this file.) The folder stays `Status: in progress` with no page: the gaps are blocked from outside (the manuscript), so a
   page is the owner's decision.
 
 ## 9. Limits, and what would finish it
@@ -321,6 +321,19 @@ after: unchanged for the script (280 of 727, an artefact); by the check above, 0
 
 Not checked: the printed letters against the page images, and the choice among the values of a printed letter
 (67 words marked °), which no key file can check.
+
+## Transcription doubts
+
+The transcription is of the 1892 print, not the manuscript. Two independent transcriptions (`transcription/pass1.txt`,
+`transcription/verifier_blind.txt`) agree on all 651 printed letters, and the integration review of 15 Nov 2026 compared
+them with the Internet Archive page images (section Reading review). The doubts are about the print, not the type:
+
+- roman "to" (p. 559, between A10.0 and A10.1) - read: cipher e w ("he will"), weak; checked: image, decode, transcription; set in roman like an English word, kept out of the 651; the sentence wants "that he will declare"
+- second figure on p. 559 - read: 300; checked: image, decode, transcription; the same type form as the first 300; an earlier draft and the Internet Archive OCR had 800
+- printed g in "by" (A9.0) - read: misprint for q (= y), weak; checked: image, decode, transcription; the type is a clear g; the value rests on sense only
+- printed q in "gouuernor" (A9.0) - read: misprint for g (= o), weak; checked: image, decode, transcription; the type is a clear q
+- printed u (all places but one) - read: cipher n; checked: image, decode, transcription; the type is u; a secretary-hand n misread by the editor, inferred from the decode, not seen on the manuscript
+- A11.0 "ehement" - read: (v)ehement, weak; checked: image, decode, transcription; the second agent offered "adhement" from the same letters; unresolved, keeps its mark
 
 ## Remaining gaps
 

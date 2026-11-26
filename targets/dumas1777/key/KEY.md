@@ -18,7 +18,7 @@ printed line-end hyphens "révolte-|rez", "trem-|bler", "sou-|haiter").
 letters, apostrophes, hyphens (including line-end hyphens), commas, full stops, the question mark, "&" and the reference
 mark "*" (one character). Positions run 1 to 682 straight through the 13 lines; the line ends fall at 57, 114, 168, 223,
 278, 335, 394, 445, 499, 555, 612, 666 and 682, exactly Dumas's totals (`build_key.py` checks this). Accents are ignored
-in use. Every occurrence of a letter is an alternative number for it (e has about 90 numbers, s about 50). The text has
+in use. Every occurrence of a letter is an alternative number for it (e, with its accented forms, has 129 numbers and s has 60, counted in `key_positions.json`). The text has
 no k and no w; Dumas told the Committee to use c for k and v (or vv) for w, hence "Van Berchel". The hyphen (7, 223, 370,
 499 ...) is used as a dash or an abbreviation mark ("F=" for France).
 

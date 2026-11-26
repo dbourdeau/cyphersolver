@@ -113,9 +113,9 @@ enciphered passages between ⟨ ⟩ inside the clear Spanish; the count is taken
   company. Remaining gaps and Escalation already list every unread piece with its blocker.
 
 ## Remaining gaps
-- code groups lax pax, zaz, giq, xup, fub, gas, lex, tri, tmi, lir, rez, riz, bel, ten (14 types, 17 tokens; each once or twice: places, owners of galleys, rare words) - blocker: open-codes; each occurs once or twice, no repeat or sibling narrows them
+- code groups lax pax, zaz, giq, xup, fub, gas, lex, tri, tmi, lir, rez, riz, bel, ten (14 types, 17 tokens; each once or twice: places, owners of galleys, rare words) - blocker: too-short; each group occurs once or twice, so the letter holds too little text to fix a value by context or by frequency, and no repeat or sibling letter in the same code exists (2026-11-21 re-run of solve/kwic.py on all 14: the contexts give at most a candidate resting on one occurrence, e.g. tri = otr in "entre otros" as a syllable group, and a person, place or title for lir, riz and rez; none is adopted, so the reading and the counts are unchanged)
 - 9v L25 blotted sign under a superscript 3, and 9v L34 the water-washed last line - blocker: illegible; one image, the ink is gone
-- doubtful words 9v L02 (algun go), L08 (ca lo cosa), L12-13 ([mur]s, algd es), L15 (`/` and `.4s.`), 10r L12 (sunydas), L15 (por es), 10v L02 (a [?] y al s. [?] de Borbon), 11r L07-08 (con [?] ... debaxo de l [?] dauana) - blocker: open-codes; the signs are read, the sense needs a code value or a sign not attested elsewhere
+- doubtful words 9v L02 (algun go), L08 (ca lo cosa), L12-13 ([mur]s, algd es), L15 (`/` and `.4s.`), 10r L12 (sunydas), L15 (por es), 10v L02 (a [?] y al s. [?] de Borbon), 11r L07-08 (con [?] ... debaxo de l [?] dauana) - blocker: too-short; each doubtful word occurs once, the signs are read, and one occurrence gives no second context to test a reading or a sign value against
 
 ## Escalation
 - [x] siblings: no other Soria-Lannoy letter in the Estense record or on DECODE; the five other Soria records in the Estense (Lettera L cc. 1-8: to Ferrante Gonzaga 1534, 1539, 1541, to Giovanni Mahona 1541; Gonzaga's draft to Soria 1539) hold no cipher at all, only clear Italian and Spanish; Lannoy's replies of 13 and 25 Apr 1527 (CSP Spain III.2 nos. 49, 54) survive only as clear copies in RAH Salazar A-40

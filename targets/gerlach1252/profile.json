@@ -110,6 +110,42 @@
     "image_quality": "good",
     "notes": "Blind transcription by one Claude session from a label sheet with no letter values (blind/p138-150/PROMPT.txt, SHEET_v2.md), told not to decipher. 90 lines; 1,650 signs in the key, 32 doubt-marked, 0 '#', 0 labels not in the key (decode_once.py totals; docs/_check_profile.py --measure counts 2,401 tokens with the word dividers, so measured is false). BLIND.tsv frozen 03:57:39Z (md5 f9c60f62b69513ad2897705d65f0ca7a) before the decode. Not compared with the images after the decode."
    }
+  },
+  {
+   "id": "ms309-pp141-160",
+   "read": "not read",
+   "shelfmark": "London, Wellcome Collection, MS.309 (b19695561), Johann Gerlach, Occulta scripta chymica, handwritten pp.141-149, 151-155, 157, 148a-157a (a second page sequence on scans 0151-0160), 158-160 (scans 0134-0142, 0144-0148, 0150-0163): gold in aqua regis and the mercury of gold, the red precipitate, salt of tartar, mercurius solis in the oak ball, the gold calx",
+   "date": "1572-1576",
+   "year": 1572,
+   "country": "Germany",
+   "route": "Johann Gerlach -> notebook (recipes, no addressee)",
+   "places": {
+    "from": "Gottersdorff",
+    "to": "unknown"
+   },
+   "language": "German",
+   "pages": 28,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "separate folio"
+    ],
+    "source": "Kohn's key (1889) on pp.260-261 of the same volume; no decipherment of these pages known (upstream NOTES list pp.20-178 as unread; no upstream file or open PR covers these scans, checked 24 Nov 2026).",
+    "partial": false
+   },
+   "length": {
+    "tokens": 12051,
+    "distinct": "unknown",
+    "unit": "symbols",
+    "measured": false,
+    "file": "transcription_p141-160.tsv"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Wellcome IIIF images (iiif.wellcomecollection.org/presentation/b19695561, full/2000,), plain curl GET",
+    "image_quality": "good",
+    "notes": "Blind transcription in three batches by Claude Fable, one session per batch, from a label sheet with no letter values (blind/p141-160/{A,B,C}/PROMPT.txt, SHEET_v2.md), told not to decipher. 621 lines; 12,051 signs in the key, 191 doubt-marked, 7 '#', 0 labels not in the key (decode_once.py totals; docs/_check_profile.py --measure counts the whole tsv, so measured is false). BLIND.tsv frozen per batch before the decode. Page label of scan 0150 corrected from the reader's '157a' to p.157 after the blind pass (blind/p141-160/README.txt). Not compared with the images after the decode."
+   }
   }
  ],
  "system": {
@@ -358,6 +394,77 @@
    ],
    "what": "Project check of PR #686 (a model session; no person has checked): an own decoder from key.tsv and key_v2.tsv gives the contributor's letters on 306 of 306 lines (pp.124-137) and 90 of 90 (pp.138-150); key, blind files and label sheet match their FREEZE hashes (times by the contributor's record); judge counts re-added (5,667/6,097 = 92.9% and 1,573/1,652 = 95.2% of letters; by words, 1,094 of 1,485 unmarked = 73.7% on pp.124-137); both shuffle controls re-run with the same figures (0 of 5,000 at both seeds); p.124 lines 1-4 (79 signs) and p.138 lines 1-2 (40 signs) compared with the Wellcome images: they agree apart from the figure-4 and o+7 naming slips the contributor diagnosed. The label names 4L, 4R, 4U carry their letters, so the sheet is not wholly value-free.",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "access",
+   "technique": [
+    "other"
+   ],
+   "what": "Next blind batches prepared with the frozen key_v2 (sha256 b4706238...8555) and SHEET_v2, nothing decoded: 28 Wellcome IIIF scans (full/2000,, plain curl, md5 logged) of scans 0134-0142, 0144-0148, 0150-0163. Written page numbers checked on each scan: 0134-0142 = pp.141-149; 0144-0148 = pp.151-155, 0150 = p.157; then a second sequence with a suffix 'a' on scans 0151-0160 (148a on a pasted corner patch, 149a ... 157a), and the main sequence resumes at scan 0161 = p.158 (0163 = p.160, 0164 = p.161, 0173 = p.170, 0182 = p.177). So scan = page - 7 holds only to p.157; pp.161-170 are scans 0164-0173. Collision check: no upstream file (main 8b75e65ac) covers these scans; the 79 open pull requests (refs/pull/*/merge) are the same 79 listed earlier on 24 Nov, none touching gerlach1252. Blind transcription not yet done: no separate reader agent could be started from this session.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "control",
+   "technique": [
+    "other"
+   ],
+   "what": "Before any transcription of pp.141-160: three batches defined by scan (A 0134-0142 = pp.141-149; B 0144-0148, 0150-0153 = pp.151-155, 157, 148a, 149a, 150a; C 0154-0163 = pp.151a-157a, 158-160) and frozen 08:36:39Z per batch (blind/p141-160/{A,B,C}/FREEZE.txt): key_frozen.tsv = key_v2.tsv byte for byte (sha256 b47062382f6c...8555), SHEET_v2 (no letter values), decode_once.py, shuffle.py, the step scripts, PROMPT, the page images and MAPPING.tsv (page numbers as written, recorded from the scans). Rules fixed in advance: first pass is the figure of record, one decode, no emendation, 65% line, shuffle pass = fewer than 5 of 5,000 at or above the real decode.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "transcription",
+   "what": "Blind sign transcription of the three batches by Claude Fable, one separate session per batch, given only PROMPT.txt, SHEET_v2 and the scans, told not to decipher: BLIND.tsv frozen before the decode (A 08:50:36Z md5 aa3a8ac598130a8191856b123f6025ce; B 08:52:11Z md5 5b467534e7817000ee5fe4222ac18bb3; C 08:58:15Z md5 a27d578588008aef46b4481b10e458db). 621 lines; 12,051 signs in the key (4,085 + 3,960 + 4,006, decode_once totals), 191 doubt-marked (95 + 55 + 41), 7 '#' (B), 0 labels not in the key. The B reader wrote scan 0150 as p.'157a'; MAPPING.tsv has p.157 (label corrected after the blind pass, below).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "reading",
+   "technique": [
+    "key matching"
+   ],
+   "what": "One mechanical decode per batch (decode_once.py, key_v2) and one strict judging pass per batch by Claude in a separate session, given only the decoded letters and a brief (judge/BRIEF.txt), no emendation; figures re-added by script (judge/RECOUNT.txt). A pp.141-149: S 4,054, E 31, N 0 of 4,085 letters = 99.2%. B pp.151-155, 157, 148a-150a: S 3,875, E 83, N 15 of 3,973 = 97.5% (34 E are one sign decoded r for u/v, 12 f for long s). C pp.151a-157a, 158-160: S 3,965, E 41, N 1 of 4,007 = 98.95%, with the decode's consistent f for long s scored S; scored E: 3,935/4,007 = 98.20%. Together 11,894 of 12,065 = 98.58%. 65% line passed in all three.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "control",
+   "technique": [
+    "language-model scoring",
+    "statistical test"
+   ],
+   "what": "Shuffled-key control per batch (blind/p141-160/{A,B,C}/shuffle.py, the pp.138-150 script with only the docstring changed): key_v2 letter column permuted among the sign labels, 5,000 shuffles at each of seeds 20261112 and 7, lang model de-1500s order 5 letters only, mean log-prob per letter. Real decode A -2.2820 (4,085 letters), B -2.3560 (3,960), C -2.2295 (4,006), each matching decode_once.txt; shuffles >= real: 0 of 5,000 at both seeds in all three (max -6.1342/-5.8216, -6.0838/-5.9086, -5.9468/-5.9568). Pass (rule: fewer than 5).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "verification",
+   "technique": [
+    "language-model scoring"
+   ],
+   "what": "docs/_check_reading.py --file reading_p141-160.md: clean share 0.466 (124 of 266 sentences; hole rate 0.153): 'marginal' (checker thresholds: readable 0.70, marginal 0.45). The judges' line-by-line text with slip marks and run-on line ends is left as written; the text entry is recorded as 'decoded, not read', by the checker's state.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "verification",
+   "technique": [
+    "other"
+   ],
+   "what": "Page-label correction after the blind pass: scan 0150 was written '157a' by the batch B blind reader; MAPPING.tsv (recorded before transcription, hashed in FREEZE.txt) gives p.157 of the main sequence, and '157a' is scan 0160 (batch C). On the image the number reads '157' with an 'a' on a triangular corner piece beside it (patch or fold); not checked by a person on the volume. Label corrected to p.157 in transcription_/decryption_/reading_/translation_p141-160 only; no token, letter or mark changed; the frozen files in blind/p141-160/B keep '157a'. Content (recipe level, Claude's summary from the judges' gists, unchecked): gold in aqua regis to an oil, digestion and the precipitation of the mercury of gold (pp.141-149); the red precipitate multiplied and used on quicksilver (pp.151-155); salt of tartar, the 'arcanum philosophorum' (pp.157, 148a-150a); mercurius solis purified and digested in an oak ball, then a gold calx, 'Ingressus' (pp.151a-160). No person has checked the readings.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "verification",
+   "technique": [
+    "statistical test",
+    "other"
+   ],
+   "what": "Check by the project of pp.141-160 (PR #930), by a model session for the maintainers, not a person (NOTES, 'Check by the project (PR #930, 24 Nov 2026)'). A decoder written here from key_v2.tsv and the three BLIND.tsv gives the filed letters on 621 of 621 lines (12,051 signs, 191 doubt-marked, 7 #, 0 labels not in the key); all non-image hashes of the FREEZE and FREEZE_blind files match; the judge figures re-add from the marks (A 4,054/4,085, B 3,875/3,973, C 3,965/4,007; 11,894 of 12,065); the three shuffle controls re-run as sent give the filed figures (0 of 5,000 at both seeds each). Scan 0134 re-fetched has the packet's md5 and sha256; 348 signs on scans 0134, 0150, 0151 and 0161 agree with the BLIND labels and the page numbers are as MAPPING.tsv says. About 2,639 words by the judges' word breaks, 92.9% unmarked (88.1% with the words on doubt-marked signs held as probable); coherent recipe prose read as sentences on six pages; class left at decoded, not read (English a page summary, doubts not checked on the images). 21 of the 54 labels of SHEET_v2.md hint their letter (26.8% of signs). The order of events (one commit) rests on the contributor's record. Passed on, a model's reading not compared with Kohn's sheet: the 'Jupiter-like' sign, # six times in batch B and 4L at p.141 L03, wants x at all seven places. Not checked: the other 27 scans, the 191 doubts one by one, the freeze times.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -371,7 +478,7 @@
   ],
   "fraction_read": 0.904,
   "fraction_read_method": "measured",
-  "fraction_read_source": "reading.md, words of the 17 pages and parts: 1,260 of 1,394 read with no '?' and no bracketed supply or hole = 90.4% (holes: words with a doubtful letter, supplied or restored words, gaps; recounted at integration, 12 Nov 2026: 1,259 of 1,395, 90.3%; two words of p.7 settled on the image on 14 Nov 2026). The contributor's sign-level figures are firm 92.4% (p.8), 80.5% (p.9), 86.2% (p.10), 96.1% (p.13), 95.7% (p.19), 'probable' 97% to 99%; those are his rule, not the README's. pp.124-137 (16 Nov 2026, separate text entry): strict letter count of a blind decode, 5,667 of 6,097 = 92.9% (judge/JUDGE_NOTES.txt); not merged into the 90.4% word count above; docs/_check_reading.py gives the reading file a clean share of 0.239, so that text entry is 'decoded, not read'. pp.138, 139, 140, 150 (16 Nov 2026, separate text entry, blind decode with key_v2): strict letter count 1,573 of 1,652 = 95.2% (blind/p138-150/judge/JUDGE_NOTES.txt); not merged; _check_reading clean share 0.294, so 'decoded, not read'.",
+  "fraction_read_source": "reading.md, words of the 17 pages and parts: 1,260 of 1,394 read with no '?' and no bracketed supply or hole = 90.4% (holes: words with a doubtful letter, supplied or restored words, gaps; recounted at integration, 12 Nov 2026: 1,259 of 1,395, 90.3%; two words of p.7 settled on the image on 14 Nov 2026). The contributor's sign-level figures are firm 92.4% (p.8), 80.5% (p.9), 86.2% (p.10), 96.1% (p.13), 95.7% (p.19), 'probable' 97% to 99%; those are his rule, not the README's. pp.124-137 (16 Nov 2026, separate text entry): strict letter count of a blind decode, 5,667 of 6,097 = 92.9% (judge/JUDGE_NOTES.txt); not merged into the 90.4% word count above; docs/_check_reading.py gives the reading file a clean share of 0.239, so that text entry is 'decoded, not read'. pp.138, 139, 140, 150 (16 Nov 2026, separate text entry, blind decode with key_v2): strict letter count 1,573 of 1,652 = 95.2% (blind/p138-150/judge/JUDGE_NOTES.txt); not merged; _check_reading clean share 0.294, so 'decoded, not read'. pp.141-160 (24 Nov 2026, separate text entry, three blind batches with key_v2): strict letter counts 4,054/4,085 = 99.2%, 3,875/3,973 = 97.5%, 3,965/4,007 = 98.95% (98.20% with long-s f as E) (blind/p141-160/*/judge/RECOUNT.txt); not merged; _check_reading clean share 0.466, so 'decoded, not read'.",
   "codes_open": {
    "open": 0,
    "total": 0,
@@ -445,6 +552,11 @@
     "item": "pp.138-150: remaining slips in the decode ('de' for g 15 times, l/u 16, r for u/v/e 5) and 11 N letters",
     "blocker": "not-attempted",
     "detail": "first pass of record; a re-read of those signs on the images is the next step. The g/k (ARW/OAR) shape difference rests on 5 crops."
+   },
+   {
+    "item": "pp.141-160 (24 Nov 2026): slips of the first pass (A 31 E; B 83 E and 15 N, of them 34 r for u/v and 12 f for long s; C 41 E, 1 N); pp.161-170 (scans 0164-0173) not done; the page label of scan 0150 (p.157, written 157a by the blind reader)",
+    "blocker": "not-attempted",
+    "detail": "First pass of record. A re-read of the slipped signs on the images, a fourth batch for pp.161-170 and a check of scan 0150's number on the volume are the next steps."
    }
   ],
   "texts": [
@@ -487,6 +599,17 @@
     "language": "de",
     "state": "decoded, not read",
     "summary": "The aqua regis recipe continued from p.137: the phlegm drawn off in a water bath, sal armoniack added, the glass sealed and left to stand (pp.138-139); dissolving gold in aqua regis, and refining gold with lead on a cupel (pp.139-140); the end of a precipitate made with spirit of wine, called a noble medicine, and how to multiply it by grinding with mercurius solis (p.150). English is a recipe-level summary by an AI model, unchecked."
+   },
+   {
+    "doc": "ms309-pp141-160",
+    "label": "Gerlach, Occulta scripta chymica, pp.141-149, 151-155, 157, 148a-157a, 158-160 (gold in aqua regis, the mercury of gold and its precipitate, salt of tartar, mercurius solis in the oak ball, the gold calx) - decoded, not read by the reading check",
+    "transcription": "transcription_p141-160.tsv",
+    "decryption": "decryption_p141-160.txt",
+    "reading": "reading_p141-160.md",
+    "translation": "translation_p141-160.md",
+    "language": "de",
+    "state": "decoded, not read",
+    "summary": "Gold dissolved in aqua regis, crystallised and brought to an oil with spirit of wine and sal armoniack, digested in horse dung and precipitated as the 'mercury of the sun' (pp.141-149); the red precipitate multiplied with mercurius solis and used on common quicksilver (pp.151-155); salt of tartar made snow-white, called 'arcanum philosophorum' (pp.157, 148a-150a); mercurius solis purified with salt of tartar, sealed in a Venetian glass inside an oak ball and digested, then 'Ingressus', a gold calx (pp.151a-160). English is a recipe-level summary by an AI model, unchecked."
    }
   ],
   "key_file": [

@@ -1,0 +1,3 @@
+# R5576 (cart. 1598 no. 102), 7 June (English)
+
+I have not written to you about the arrival of Iohan Galeasmo in this place, because it was not concluded. But as I have heard, in order to live at less expense, messer Ludovico has had from Florence {arguments} for and against his being of the ducal Council. It seems to me that, if he could have it with profit and stay here, he would be content. A doctor, a relative of mine, who came from Florence yesterday, told me he had heard from a resident in that city for the duke of Modena that count Guido Rangone [is] to come here soon, sent by his said duke; I suspect some plot. Sarzana, 7 June, etc.

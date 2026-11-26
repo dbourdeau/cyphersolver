@@ -224,7 +224,6 @@ def build(items):
     got = [it for it in items if it['cat'] in ('ct', 'extpt', 'adjpt', 'extkey', 'known', 'deciph')]
     keyonly = lambda cats: sum(1 for it in got if it['cat'] in cats and it['ext'].startswith('none'))  # key, text not read (Lasry, 24 Oct 2026)
     ko_b, ko_a = keyonly(('ct', 'extpt', 'adjpt')), keyonly(('extkey', 'known', 'deciph'))
-    part = sum(1 for it in got if it['ext'].startswith('partial'))
     attacked = total - n['na'] - n['active']
     read = [it for it in got if it['ext'].startswith('complete') and it['year']]
     oldest = min(read, key=lambda d: d['year'])
@@ -241,7 +240,7 @@ def build(items):
     lines.append('<!-- stats:start -->')
     lines.append('<section class="scoreboard" id="scoreboard" aria-labelledby="sb-h">')
     lines.append('<h2 id="sb-h">Results so far</h2>')
-    # the timeline leads; the bar and its categories are its legend; the four counts follow, smaller (the hero's strip has the headline ones)
+    # the timeline leads; the bar and its categories are its legend; the three counts follow, smaller (the hero's strip has the headline ones)
     lines.append(f'<p class="sb-note lg-only">Every entry by date, {min(span)}&ndash;{max(span)}. Hover or tap a dot for the story; click a category under the bar to isolate it.</p>')
     lines.append(f'<p class="sb-note sm-only">Entries by century, {min(span)}&ndash;{max(span)}. Tap a century for its write-ups.</p>')
     lines.append(timeline_svg(items))
@@ -254,15 +253,6 @@ def build(items):
     lines.append(f'<div class="sb-big fam-key"><b>{broke}</b><em>{pc(broke, attacked)} of attempts</em><span>keys recovered by cryptanalysis</span><details><summary>breakdown</summary><span>{n["ct"]} from the ciphertext alone, {n["adjpt"]} from plaintext beside the ciphertext, {n["extpt"]} from plaintext found elsewhere.{who}' + (f' In {ko_b} of them the key was recovered but the text does not yet read.' if ko_b else '') + '</span></details></div>')
     lines.append(f'<div class="sb-big fam-ext"><b>{applied}</b><em>{pc(applied, attacked)} of attempts</em><span>obtained with a key or decipherment that already existed</span><details><summary>breakdown</summary><span>{n["known"]} with a known key, {n["extkey"]} with a key matched here from another document, {n["deciph"]} from a complete existing decipherment.' + (f' In {ko_a} of them the key was applied but the text does not yet read.' if ko_a else '') + '</span></details></div>')
     lines.append(f'<div class="sb-big fam-no"><b>{n["notsolved"]}</b><em>{pc(n["notsolved"], attacked)} of attempts</em><span>closed without recovering the text; each write-up says why</span></div>')
-    # 16 Nov 2026: this tile used to be "years of silence ended", the ages of the texts summed. It counted readings
-    # nobody had checked as finished facts (Pierrot and Desenclos, The Conversation, 10 Nov 2026). It now says how many
-    # texts are obtained and how many of those a person has checked.
-    texts = [it for it in got if it['ext'].startswith(('complete', 'partial'))]
-    n_checked = sum(1 for it in texts if checked(it['folders']))
-    import _reader_kind as RK
-    rk = RK.counts()
-    n_targets = len({f for it in texts if checked(it['folders']) for f in it['folders'] if checked([f])})
-    lines.append(f'<div class="sb-big"><b>{n_checked}</b><em>of {len(texts)} readings have a passage checked by a person</em><span>{len(texts) - part} texts are obtained in full and {part} in part. The {n_checked} rows are {n_targets} targets in which a person looked at one or more passages on the images or reviewed one text; the checks cover single signs, digits or lines, not whole readings<i class="lg-only">. Of {rk["reviews"]:,} reading reviews on record, {rk.get("model", 0):,} are by a model, {rk.get("person assisted by model", 0)} by a person with a model and {rk.get("person", 0)} carry only a person&rsquo;s name. The other rows have been checked only by models or by their author: <a href="contributors.html#verify">check one</a></i>.</span></div>')
     lines.append('</div>')
     lines.append(f'<p class="sb-lede">{total} entries<span class="lg-only">, one per row of the results tables</span>, each classed by <a href="glossary.html">how its text was obtained</a>. <span class="lg-only">{n["na"]} turned out not to be ciphers or could not be reached and {n["active"]} are in progress, which leaves {attacked} attempted; every percentage here is of those {attacked}.</span><span class="sm-only">Percentages are of the {attacked} attempted.</span></p>')
     lines.append(f'<p class="sb-foot">Counted from the results tables in the <a href="https://github.com/dbourdeau/cyphersolver#results">repository README</a> by <code>_build_stats.py</code>; regenerated {datetime.date.today():%d %B %Y}. Rows are documents, not correspondents.</p>')

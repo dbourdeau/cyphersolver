@@ -1,0 +1,25 @@
+kling72: blind packet, prepared 24 Nov 2026 (~19:05 Brisbane). Nothing transcribed or decoded.
+
+DECLARED BEFORE ANY READ: the P.S. is short (first reader: 122 cipher tokens, 51 word units; my count from the crops is
+about 120). Both the 65% judge line and the 5,000-shuffle control can fail on length alone; the 16 Nov 59R-60L sibling
+(41 units) failed the shuffle at 57/5,000. A failure is recorded as a failure.
+
+Files
+- packet/            72L_PS.jpg, 72R_PS.jpg (crops, CROPS.tsv), SHEET.md (neutral S01-S31), PROMPT.txt. Give the reader only this.
+- sheet_to_key.tsv   S-label -> key sign name. OUTSIDE the packet.
+- key_frozen/        our klingenberg1675 key, frozen copies (upstream 8b75e65ac).
+- decode_once.py     sibling decoder + S-label translation (dry run: reproduces the 16 Nov 41R decode column on all 43 rows).
+- shuffle.py         41R control + S-label translation (dry run: real -1.8354 on 41R, as 16 Nov).
+- tools/after_blind.py, tools/after_judge.py   copies of gerlach_next's, parameterised for the Klingenberg unit format
+                     (dry run on 41R: S 786 E 11 N 30 = 827, 95.0%, 0 unit-count mismatches, = 16 Nov JUDGE_NOTES).
+- build/make_sheet.py  how SHEET.md and sheet_to_key.tsv were made (seed 72).
+- FREEZE.txt         sha256 of every file above (not of itself).
+
+STEPS
+1. Spawn a blind reader agent with ONLY the text of packet/PROMPT.txt. It writes BLIND.tsv here.
+2. python3 -I /home/claude/next_round2/kling72/tools/after_blind.py
+3. Spawn a separate strict judge with ONLY judge/BRIEF.txt and judge/decode.txt; it writes judge/judge.tsv, JUDGE_NOTES.txt.
+4. python3 -I /home/claude/next_round2/kling72/tools/after_judge.py   (needs de-1640s, built in /home/claude/wt-gerlach-next/lang)
+5. Pass (>= 65% strict and < 5/5,000 at both seeds): write up into targets/klingenberg1675 (texts/260195-72L-PS_*, NOTES parked
+   list, profile.json step, evidence/blind/). Fail: record in NOTES and profile.json as failed, as for 253R.
+Source scan img72.jpg deleted after cropping (re-fetchable; md5 9dee715e11ab980cf11d9dc050fcaa3f in FETCH_LOG.txt).

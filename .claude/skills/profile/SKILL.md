@@ -72,7 +72,12 @@ reader could check against the folder. Rules:
    contributor produced the result and the project only checked it, `mixed` when one extended the other, omitted for
    the project's own work. `contributed` results are left out of the paper data. From 13 Oct 2026 a target whose
    method applied an existing key or decipherment must credit its owner (`_check_profile.py`). An outside check of
-   the reading adds a `verification` credit and "independent verification" to `outcome.verification`. Never credit
+   the reading adds a `verification` credit and "independent verification" to `outcome.verification`. A folder that
+   comes from someone's lead (its documents are in their lead row, shelfmark and folios, and the lead is older than
+   the folder) gets the finder's `new cipher` credit with the lead or entry number in `note`, added by whoever writes
+   the folder (one `new cipher with solution` credit if the finder also read it); none if those documents were
+   already in DECODE, the catalogue, a lead or a target, or deciphered in print or on Cryptiana, before the lead
+   (issue #969). Never credit
    the withheld fr. 3029 / fr. 3092 targets.
 
 Keep `system.summary` to one sentence. Put prose in the `notes` fields, and keep those short: NOTES.md stays

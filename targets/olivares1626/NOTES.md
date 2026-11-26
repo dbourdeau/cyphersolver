@@ -1,6 +1,6 @@
 # The Count-Duke of Olivares to the Duke of Alba, Madrid, 22 August 1626 (lead 1273)
 
-Status: read (Brice Dudout, 5 Nov 2026; Daniel's rule: 953 of 1,001 words read from the sense, 95.2%, without restorations; key partial by our protocol: one held-out measurement, M5 0.506 against 0.144 for the best control, under our 0.60 threshold, with a ceiling of about 0.64; about 54 line ends lost in the gutter not counted; DECODE R1190 lists the letter as "Decrypted", but no decipherment or key is attached there).
+Status: read in part (Brice Dudout, 5 Nov 2026; sure words only, owner's decision of 24 Nov 2026: 875 of 1,001 cipher words, 87.4%; with the 78 probable words, Daniel's earlier rule, 953 of 1,001, 95.2%, without restorations; key partial by our protocol: one held-out measurement, M5 0.506 against 0.144 for the best control, under our 0.60 threshold, with a ceiling of about 0.64; about 54 line ends lost in the gutter not counted; DECODE R1190 lists the letter as "Decrypted", but no decipherment or key is attached there).
 
 Contributed by Brice Dudout (Europe chiffrée), with Claude Opus 5.5 agents, for your lead 1273 (BNE/Hispana sweep).
 Not yet published on our site. Text only: the BNE Digital images were used for research and are not reproduced here.
@@ -51,12 +51,13 @@ changed afterwards.
 
 `transcription.txt` (tokens, one manuscript line per line, parts [A] [T] [H]), `decryption.txt` (mechanical, line for line),
 `reading.md` (Spanish, marked: {x} probable, [x] restored, ‹?› unresolved, … gutter), `translation.md` (English).
-**The reading was made after the measurement.** Counted by script on the marked reading, by your rule (certain + probable; restored
-words not counted as read):
+**The reading was made after the measurement.** Counted by script on the marked reading. By the sure-words rule (README Conventions,
+19 Nov 2026; applied here by the owner on 24 Nov 2026) only certain words count: 875 of 1,001 = 87.4%, read in part. The 95.2% below is
+the earlier count with the probable words (certain + probable; restored words not counted as read):
 
 | Piece | words | certain | probable | restored | unresolved | read without restorations | state |
 |---|---|---|---|---|---|---|---|
-| ff. 13r-15r | 1,001 | 906 | 47 | 13 | 35 | 95.2% | read |
+| ff. 13r-15r | 1,001 | 875 | 78 | 13 | 35 | 87.4% sure (95.2% with probable) | read in part |
 
 Before the reading was counted, Brice Dudout answered a blind proof-reading of 13 sign forms, all outside H. It was pre-registered
 and hashed, and the sheet was tested for leaks. It showed forms only, never values, and each answer had a consequence fixed in advance.
@@ -73,6 +74,18 @@ Without them the count is 950/1,001 = 94.9%.
 - Codes with no value (22‡, 197, bir, B_, dol, yil, 229, 102, Qar, per, hen, pes; bil, probably "V.E.", only in H) - blocker: open-codes; single occurrences, so a value from the sense would be a guess.
 - □ = "mi" in the key, "merced" by the sense (f14r.26 read probable, f14v.21 left unresolved) - blocker: open-codes.
 - The two forms of "t" (p, g), not separated at 120 dpi except where the proof-reading settled them - blocker: illegible.
+- The 78 probable and 35 unresolved words that keep the letter at 87.4% sure - blocker: illegible; the BNE images are 120 dpi,
+  and a retry from the signs needs a sharper image (the probable words rest on the sense, the blind proof-reading or the key-replay audit).
+
+## Escalation
+
+- [x] siblings: the covering letter in clear of the same day (f. 11r) read; it dates the letter but gives no cipher text
+- [n/a] clear-pages: no decipherment of the time on the leaves; DECODE R1190 holds none (checked at level 2, 5 Nov 2026)
+- [x] known-keys: Philip IV's cipher A (K6A, from the Santa Cruz pairs of 1630-32) and the four neighbouring keys measured on part A
+- [x] print: Elliott and de la Peña's edition (tables of contents only; full text not seen), Tomokiyo, the BDH record, a web search
+- [x] key-rebuild: K6A extended by 20 values on part A, frozen, measured once on part H (0.506 against 0.144)
+- [x] retry: 13 sign forms settled by Brice Dudout's blind proof-reading; the key-replay audit of 24 Nov 2026 re-checked every word
+  against the key; the probable words were not retried on a sharper image, as none is online
 
 ## Prior work
 

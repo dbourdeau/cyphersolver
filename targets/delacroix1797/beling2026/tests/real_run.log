@@ -1,0 +1,31 @@
+TEST 1 {"letters_per_group": 3.421133231240429, "groups_per_word": 1.3718487394957983, "pass": true}
+TEST 2a {"pairs": 18, "R": 0.8333333333333334, "control_max": 1.0, "control_mean": 0.6980555555555553, "control_shuffled_max": 1.0, "control_turner_max": 0.8888888888888888, "pass": false}
+   pair (8, 205, 4, 'parvenirle') [705, 806, 400, 405]
+   pair (14, 219, 3, 'citoyen') [474, 670, 1068]
+   pair (14, 535, 3, 'parvenir') [474, 670, 1068]
+   pair (86, 320, 4, 'ssontcon') [39, 1083, 489, 1052]
+   pair (116, 638, 4, 'quevousa') [1031, 782, 315, 39]
+   pair (152, 258, 4, 'lecitoyen') [705, 806, 711, 405]
+   pair (152, 271, 4, 'lecitoyen') [705, 806, 711, 405]
+   pair (152, 333, 4, None) [705, 806, 711, 405]
+   pair (152, 626, 6, 'equevousaurez') [705, 806, 711, 405, 81, 973]
+   pair (219, 535, 3, 'nslesc') [474, 670, 1068]
+   pair (234, 618, 3, 'quevous') [382, 3, 244]
+   pair (258, 271, 4, 'elecitoyen') [705, 806, 711, 405]
+   pair (258, 333, 4, None) [705, 806, 711, 405]
+   pair (258, 626, 4, 'urtoutcequi') [705, 806, 711, 405]
+   pair (271, 333, 4, None) [705, 806, 711, 405]
+   pair (271, 626, 4, 'urtoutcequi') [705, 806, 711, 405]
+   pair (326, 380, 3, 'esdepeches') [679, 72, 760]
+   pair (333, 626, 4, 'politique') [705, 806, 711, 405]
+   real conf 1 0.733
+   real conf 5 0.772
+   real conf 3 0.381
+   real conf 6 0.126
+   real conf 7 0.699
+   real conf 4 0.186
+   real conf 2 0.18
+   real conf 0 0.747
+TEST 2b {"S": 0.7715430861723447, "best_conf": 5, "per_conf": {"1": 0.7334669338677354, "5": 0.7715430861723447, "3": 0.3807615230460922, "6": 0.12625250501002003, "7": 0.6993987975951904, "4": 0.18637274549098196, "2": 0.18036072144288579, "0": 0.7474949899799599}, "control_max": 0.1683366733466934, "control_mean": 0.1228957915831664, "control_shuffled_max": 0.15831663326653306, "control_turner_max": 0.1683366733466934, "pass": true}
+VERDICT: PASS
+done

@@ -1,7 +1,7 @@
 {
  "schema_version": 1,
  "target": "qaysarani1350",
- "title": "Ibn al-Qaysarani to the compiler of a Mamluk book of cipher verses, about 1330-1370 (Penn LJS 51, f. 106v)",
+ "title": "Ibn al-Qabāqibī to the compiler of a Mamluk book of cipher verses, about 1330-1370 (Penn LJS 51, f. 106v)",
  "documents": [
   {
    "id": "f106v",
@@ -10,7 +10,7 @@
    "date": "text about 1330-1370 (this project's survey); Penn dates the manuscript \"14--\" and gives no date for the text",
    "year": 1350,
    "country": "Syria or Egypt",
-   "route": "Ibn al-Qaysarani -> the unnamed compiler",
+   "route": "Ibn al-Qabāqibī -> the unnamed compiler",
    "language": "Arabic",
    "pages": 1,
    "cleartext_in_document": "separate passages",
@@ -65,7 +65,7 @@
  "conditions": {
   "prior_solution": {
    "exists": "no",
-   "where": "First modern reading; the compiler's own solution is lost with the leaf that followed (his remark says he solved it). The text is placed by this project's survey at about 1330-1370; Penn dates the manuscript \"14--\" and gives no date for the text. Catalogue vetting of 15 Nov 2026 found no study or reading (Penn TEI, Digital Scriptorium, DECODE, Tomokiyo, Lasry's list, web); two exact-phrase web searches for the verses on 16 Nov 2026 found nothing. Not searched: al-Qalqashandi (Subh al-a'sha, vol. 9), Arabic Origins of Cryptology, a full edition of Ibn al-Qaysarani's diwan.",
+   "where": "No surviving or modern decipherment found; the compiler's own solution is lost with the leaf that followed (his remark says he solved it). The second of the two verses is a known verse: Ibn al-ʿAdīm, Bughyat al-ṭalab, under al-Agharr ibn Sinān al-Ḥalabī (found after the reading, not used). The text is placed by this project's survey at about 1330-1370; Penn dates the manuscript \"14--\" and gives no date for the text. Catalogue vetting of 15 Nov 2026 found no study or reading (Penn TEI, Digital Scriptorium, DECODE, Tomokiyo, Lasry's list, web); two exact-phrase web searches for the verses on 16 Nov 2026 found nothing. Not searched: al-Qalqashandi (Subh al-a'sha, vol. 9), Arabic Origins of Cryptology.",
    "found": "not found",
    "used": false
   },
@@ -291,6 +291,12 @@
    ],
    "what": "Independent review for the second maintainer (issue #714): transcription checked against the repository crop, all four hemistichs scanned, an exhaustive word-list search found 21,037 one-to-one keys keeping the red gloss and making all 21 words attested forms, and 12 of 22 signs are forced; seven signs rest on one word each. Statistical test judged inconclusive at 89 signs. Reading holds, grade B.",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-23",
+   "kind": "control",
+   "what": "Alan Elbaum (Princeton Geniza Project) sent eight corrections by email; each checked on the OPenn master TIFF at 2x-3x: sender's name ابن القباقبي; the compiler's remark with بحضوره; a supralinear alif before the lam-alif sign; extra letters in the damaged word of line 2; تسهر for تسهد (last sign of line 6 is R); red gloss و ت ا ع س; the ع of جعل and the last ح of صحاح are regular.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -333,20 +339,20 @@
    "key recovered"
   ],
   "first_break": true,
-  "fraction_read": 1.0,
+  "fraction_read": 0.966,
   "fraction_read_method": "measured",
-  "fraction_read_source": "transcription.txt decoded with key.json (decode.py): 89 of 89 cipher signs have a value; unit cipher signs",
+  "fraction_read_source": "transcription.txt decoded with key.json (decode.py): 86 of the 89 transcribed cipher signs are read; the three signs of the damaged word of line 2 are not read, and at least two more signs stand there untranscribed (Elbaum, 23 Nov 2026); unit cipher signs",
   "grades": {
    "H": 0,
-   "C": 5,
-   "M": 3,
-   "I": 4
+   "C": 4,
+   "M": 1,
+   "I": 2
   },
   "verification": [
    "key confirms",
    "historical consistency"
   ],
-  "notes": "Grades count doubtful signs only: C the five glossed signs, M the three damaged signs of line 2, I four signs read from the word (O, J, the D of ja'ala, the last sign of sihah). The other 77 signs are read from the recovered key and are not graded. Statistical validation with ar-mamluk (16 Nov 2026) gives verdict pass but is inconclusive at this length; it passes at the standard seed with narrow margins and is inconclusive at 89 signs (one weak run in four; the annealer cannot find the reading by itself), so it is not listed under verification; the reading rests on the metre, rhyme, grammar and the red gloss (Dudout, issue #714). Seven of the 22 signs rest on one word each.",
+  "notes": "Corrected 23 Nov 2026 after eight corrections from Alan Elbaum, each checked on the master TIFF (NOTES.md): sender Ibn al-Qabāqibī, not Ibn al-Qaysarani; red gloss و ت ا ع س (the second letter does not match the sign's value ن, which rests on the word); تسهر not تسهد; صحاح stands as written; a supralinear alif before the lam-alif sign; the first word of the second hemistich (read لها) is unread. Grades count doubtful signs only: C the four glossed signs whose gloss agrees with the key, M the damaged last sign of line 6, I two signs read from the word (O, J). The other signs are read from the recovered key and are not graded. Statistical validation with ar-mamluk (16 Nov 2026) gives verdict pass but is inconclusive at this length; it passes at the standard seed with narrow margins and is inconclusive at 89 signs (one weak run in four; the annealer cannot find the reading by itself), so it is not listed under verification; the reading rests on the metre, rhyme, grammar and the red gloss (Dudout, issue #714). Seven of the 22 signs rest on one word each.",
   "key_file": "key.json",
   "texts": [
    {
@@ -357,14 +363,21 @@
     "translation": "translation_en.md",
     "state": "read",
     "language": "ar",
-    "read_share": 1.0,
+    "read_share": 0.966,
     "reading_review": {
      "grade": "B",
      "by": "Claude Opus 5.5 (claude-opus-5-5), review for Brice Dudout (issue #714); a model's review, not a person's",
      "date": "2026-11-16",
      "note": "Read as sentences against translation_en.md: two complete tawil verses, all four hemistichs scanned foot by foot with no deviation beyond qabd, rhyme -rda in both; grammar and the sihah/marda antithesis hold. Transcription checked against docs/qaysarani1350_cipher.jpg (master TIFF not obtainable that day). Seven signs rest on one word each; sihah is written sihaj on the page and the first laha of line 2 is damaged, both marked in reading.md. Prior publication in al-Qalqashandi and Arabic Origins of Cryptology not checked. Replaces the grade A recorded by the authoring session, which is not an independent review."
     },
-    "summary": "Two love verses in the tawil metre sent in cipher by Ibn al-Qaysarani to the compiler of the volume: love has made the poet's heart the dwelling of a drowsy-eyed girl and his cheek the ground beneath her; he lies awake with sound eyelids while she sleeps with 'sick' ones. The compiler's own solution was on a leaf now lost."
+    "summary": "Two love verses in the tawil metre sent in cipher by Ibn al-Qabāqibī to the compiler of the volume: love has made the poet's heart the dwelling of a drowsy-eyed girl and his cheek the ground beneath her; he lies awake with sound eyelids while she sleeps with 'sick' ones. One damaged word of the first verse is not read. The second verse is quoted by Ibn al-ʿAdīm under an earlier poet. The compiler's own solution was on a leaf now lost."
+   }
+  ],
+  "credits": [
+   {
+    "who": "elbaum",
+    "role": "verification",
+    "note": "Eight corrections to the page by email, 23 Nov 2026: the sender's name, the compiler's remark, the red gloss, تسهر, and four points of transcription."
    }
   ]
  }

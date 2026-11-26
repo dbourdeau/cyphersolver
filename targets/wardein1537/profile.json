@@ -253,7 +253,7 @@
    {
     "item": "code signs Ψ, swash X, K and the barred ∂ (~15 words)",
     "blocker": "no-key-material",
-    "detail": "word signs with no key in the volume or on DECODE"
+    "detail": "word signs with no key in the volume or on DECODE; a blind sign-shape sheet of 24 Nov 2026 (dudout/sign_check_2411b/) confirmed the large \u03a8 at 7 places, K at P4.33 included (K and \u03a8 one sign), the swash X at P2.25 and P4.02, and one barred \u2202 form (one long bar) at P2.19, P4.21, P4.23; still no value"
    },
    {
     "item": "blotted or struck signs (~15 words)",
@@ -265,12 +265,16 @@
     "detail": "after four image passes, gapfill.py and a joint LM test of the barred ∂ the signs spell no German word under the recovered homophone alternatives; no further key source (the only gloss is over P1 l. 6-8); re-checked 23 Oct 2026 (b37)"
    }
   ],
+  "sign_check": [
+    {"date": "2026-11-24", "checker": "Brice Dudout", "checker_kind": "project", "model_roles": ["rule", "thumbnails", "sheet", "scoring", "remarks"], "signs_checked": 15, "controls": 3, "controls_passed": 3, "as_transcribed": 12, "corrected": 2, "unresolved": 1, "not_counted": 0, "rule": "dudout/sign_check_2411b/sheet-2411b-rule.md (24 Nov 2026, before the thumbnails and the answers, with an integration clause)", "rule_hash": "6dee2a93d22e5ecda8d7206581c5a73a187754d0cc84958223f4c79c464e7fd0", "sheet_faults": "an earlier sheet (2411) had a mis-framed omega example and a missed control; it was not integrated and none of its answers is used; 2411b was rebuilt with new controls, no fault found", "note": "DECODE R9414 (images private). Key and reading unchanged, no value added. Large Psi: 7 of 7 places answered the same form, K at P4.33 included (K and Psi one sign). Swash X: P2.25 and P4.02 confirmed; P4.21 'another form' (remark: a large stretched x). Barred d: P2.19, P4.21, P4.23 one form (one long bar), one sign outside the key; P3.39 a d crossed by a bar and an oblique stroke, its own form. Omega P2.15 s4 confirmed. fraction_read 0.648 (819 of 1,263 words) unchanged: these signs were already holes. Not a human_check: AI agents built and scored the sheet."}
+  ],
   "credits": [
    {
     "who": "contemporary",
     "role": "key or decipherment used",
     "note": "the interlinear gloss over P1 l.6-8 that seeded the key"
-   }
+   },
+    {"who": "dudout", "role": "verification", "note": "blind sign-shape sheet 2411b on the code signs of R9414 (DECODE, images private; Brice Dudout reader, sheet built and scored by AI agents; dudout/sign_check_2411b/): large Psi and K one sign, swash X confirmed at two places, one barred d form; key and reading unchanged", "date": "2026-11-24"}
   ],
   "texts": [
    {"doc": "R9414", "label": "R9414, KAA 4591 ff. 257-259, Wardein, 14 Mar 1537: the lines that read (P1.06-11, P1.33-P2.14, P2.20-37, P3.10-38, P4.02-20, P4.36-P5.04)", "transcription": ["r9414/transcription_p12.txt", "r9414/transcription_p34.txt"], "decryption": ["r9414/reading_v5.txt", "r9414/decrypt_v2.txt"], "summary": "An unnamed Bavarian servant at King John's court writes to Duke Ludwig of Bavaria from Wardein (Nagyvárad): his journey back into Hungary, envoys of the pashas of Belgrade and Bosnia, the Sultan arming 'hundert tausent man' to win Hungary and then turn on Austria, the Ferdinandists taking towns; he asks Ludwig to intercede with Duke Wilhelm, and mentions debts, mining and ore specimens.", "reading_review": {"grade": "B", "by": "Claude Opus 5.5", "date": "2026-10-23", "note": "Verified 23 Oct 2026 (r2c, VERIFY3_BRIEF): the v3 sweep's 0.419 scored the whole of r9414/reading_v5.txt, bands included (texts[1], decoded, not read). The lines of this entry, written out as r9414/R9414_reading.md (v5 wording unchanged; v5's <doubtful runs> and word? conjectures printed [?...], so they count as holes), score 0.464 plain and 0.71 on explicit holes (v2_score.py, 49 of 69 sentences), hole rate 0.115 (the same lines without paragraph labels: 0.735). Early New High German, so the word list cannot know the spelling and the explicit-hole share is the bar: above it. Read through: the envoys of the pashas of Belgrade and Bosnia, the Sultan's order to arm, his aim to win Hungary and then Austria, the plea to Duke Ludwig to speak to his brother, the closing and date build sentences with single holes. Keeps read. Rests on key r9414/keyb.txt + alternatives, seeded from the interlinear gloss over P1 l.6-8, and four image passes. English: r9414/R9414_en.md."}, "state": "read in part", "language": "de", "reading": "r9414/R9414_reading.md", "translation": "r9414/R9414_en.md", "read_share": 0.892, "note": "24 Oct 2026: 89.2% of the words of r9414/R9414_reading.md read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part."},

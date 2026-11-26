@@ -1,10 +1,13 @@
 # Dumas's key-text cipher, 1776-1781: every cipher passage in his letters to Congress, with the passages the editions leave out
 
-Status: in progress (folder only, no site page yet; target files and checks only)
+Status: read (read with known key; written up on 24 Nov 2026, docs/dumas1777.html). 928 of 948 cipher words in the 18
+readings, 20 holes; the three blotted numbers are illegible, the other holes are the writer's slips and omissions.
 
 Class: read (read with known key). This is not a break. The key and the system were set out by Dumas in 1776 and
 re-established from the Committee's enciphering table by Satoshi Tomokiyo; most passages carry the contemporary
-decipherer's letters. Andrew Beling, with AI agents, 14 November 2026.
+decipherer's letters. Andrew Beling, with AI agents, 14 November 2026 (pull request #667, merged 15 November 2026 as a
+folder with no site page). The page was written by the maintainers on 24 November 2026, after the recount, the key
+replay and the reading review set out under "Maintainers' checks" below.
 
 ## Who read it before us
 
@@ -16,7 +19,8 @@ decipherer's letters. Andrew Beling, with AI agents, 14 November 2026.
 - **Benjamin Franklin.** A member of the Committee of Secret Correspondence to which the 1776 despatches went; Dumas set
   out the key and the counting rule in his letter of 30 April 1776. Franklin used the cipher himself (to Dumas, 16 August
   1781) and recommended it, as Tomokiyo shows.
-- **The editors.** Jared Sparks, *Diplomatic Correspondence of the American Revolution*, vol. 9 (1829), and Francis
+- **The editors.** Jared Sparks, *Diplomatic Correspondence of the American Revolution*, vol. 9 (Boston, 1830, the date `sources.md` gives for the
+  copy searched; this line said 1829 until 24 Nov 2026), and Francis
   Wharton, *Revolutionary Diplomatic Correspondence*, vols. 2-4 (1889), printed translations that include the decoded
   content of many cipher passages and leave others out. Peter Force, *American Archives*, fifth series, vol. 2 (1851),
   cols. 99-103, printed despatch D of 1776 with the numbers, an interlined decipherment and a translation. The *Papers of
@@ -30,7 +34,7 @@ decipherer's letters. Andrew Beling, with AI agents, 14 November 2026.
 vol. 1 (National Archives microfilm M247, https://catalog.archives.gov/id/502964761) and the copies in the Miscellaneous
 Papers (M332 roll 2, https://catalog.archives.gov/id/464815090): 21 letters or enclosures, 4,503 number places in the
 principal copies and 2,401 in other copies, each transcribed twice. (2) A test of the printed key against the
-contemporary glosses. (3) The text of the cipher passages the printed editions leave out: ten passage groups, below. Most
+contemporary glosses. (3) The text of the cipher passages that are not in the editions checked: ten passage groups, below. Most
 of them carry the contemporary decipherer's letters, so they were read at the time and are **unpublished contemporary
 decipherments**. Fully bare, with no decipherment of the time on any copy: the sentence of 25 September 1777 (repeated
 bare on 14 October 1777) and the postscript of 2 September 1781. The English letter of [after 17 May] 1779 is bare, but
@@ -112,9 +116,28 @@ Frozen: `key/key_positions.json` sha256 `36276e0a73f3dd58d8940202b7c97033fb706bb
   document are in `transcriptions/reconciled/` (`*` marks a number kept as written but emended in the reading).
 - One reading file per letter in `readings/` (sources, reconciliation decisions, numbers, raw decode, normalized text,
   translation, share read, emendations, print check). The texts for the profile are in `letters/` (`_decode`, `_text`,
-  `_en`).
-- Share read (numbers giving the accepted letter, principal copies): 4,498 of 4,503; the five others are three blots,
+  `_en`). Since 24 Nov 2026 the `_text` files mark the cipher passages with ⟦ ⟧, a letter corrected or supplied by sense
+  with `[x]` (a hole), and a letter given by another cipher copy or by the decipherer's letter over the number with
+  `{+x}` (read); the `readings/*.md` files keep the contributor's first marks (square brackets for cipher, round ones
+  for emended letters).
+- Share read, the contributor's count of 14 Nov 2026 (numbers giving the accepted letter, principal copies, a number
+  counted as read when its letter was restored with certainty): 4,498 of 4,503; the five others are three blots,
   the conjectural 54 in "sont" (14 June 1778) and the guessed "&" (20 Sept 1779).
+- Share read, the project's measure (24 Nov 2026; README Conventions: cipher words only, holes by words, a word with a
+  letter corrected or supplied by sense is a hole): **928 of 948 cipher words, 20 holes**. Per reading, cipher words and
+  holes: 30 Apr 1776 305 / 2; despatch B 223 / 6; despatch C 32 / 1; despatch D 22 / 1; 12 Apr 1777 19 / 1; 2 Aug 1777
+  14 / 0; 14 Aug 1777 21 / 1; 25 Sept and 14 Oct 1777 16 / 0; 4 Nov 1777 30 / 0; 28 Nov 1777 87 / 2; 24 Feb 1778
+  64 / 1; 27 Apr 1778 21 / 1; 14 June 1778 26 / 1; July 1778 names 26 / 0; 17 Aug 1778 heading 8 / 0; 1779 Neufville
+  passages 24 / 1; 20 Sept 1779 6 / 2; 2 Sept 1781 4 / 0. Every reading is at 0.95 or more except 12 Apr 1777 (18 of
+  19) and 20 Sept 1779 (4 of 6), which are read by the short-text floor (fewer than 40 cipher words, at most 2 holes).
+  The extract of despatch C (1776) is at 31 of 32 only because four of its words take one letter from the decipherer's
+  letters over the numbers (Hortalez, d'Espagne, simplement, puissance), which count as plain text beside the cipher; by
+  the key alone it is at 27 of 32. The words are counted by the reading-audit tool, which splits at an apostrophe
+  (l'Angleterre is two words).
+- Key replay (`replay.py`, `replay.tsv`, `replay.json`; `python docs/_replay.py dumas1777`): of the 4,503 number places
+  of the principal copies, 4,479 give the reading's letter exactly and one more is c written for k ("cing of Prussia");
+  18 are marked emendations; 1 is unread (the guessed "&"); 4 have no key value (the three blots and 698, out of range,
+  in the letter of 30 Apr 1776). No unmarked difference.
 
 **Corrections after the independent check, applied in this folder:**
 1. 1776 despatch D, images 52-53, **are in print**: Force, *American Archives*, 5th ser., vol. 2, cols. 99-103, gives the
@@ -189,7 +212,7 @@ Passage by passage in `print_check.tsv` (status, reference, differences, and the
 | Item | Result |
 |---|---|
 | 30 Apr 1776 | Printed with the cipher read. Two corrections to the Franklin Papers: "ministre de **France**" for "fiance" (571 = r in both copies, glossed r); "**Les** alliés" for "Des alliés" (70 = l by the key in both copies, but the contemporary gloss over 70 on image 27 looks like d: the slip was the period decipherer's and the editors followed the interlined decoding). |
-| 14 May 1776 (B) | Printed with the cipher read; the Franklin Papers silently correct five slips of Dumas. |
+| 14 May 1776 (B) | Printed with the cipher read; the Franklin Papers silently correct six slips of Dumas (print_check.tsv). |
 | C 1776 | Printed with the cipher read; the cipher spells "Hortelez" (print Hortalez). |
 | D 1776 | Printed with the cipher read: 47 and 51 in Sparks and Wharton; 52-53 in Force. |
 | 12 Apr 1777 (E) | Printed with the cipher read. |
@@ -228,21 +251,76 @@ houses; the Emden enclosure shows him using a Prussian channel to press for a po
 editors left these passages out because they were cipher, rather than by judgement of importance, is not shown; Wharton
 says he omitted some letters "as without public importance".
 
-The May-June 1779 passages concern the same merchant house as the repository's `neufville1779` target, proposed in our
-pull request #587, which is open and not merged at the time of writing (14 November 2026).
+The May-June 1779 passages concern the same merchant house as the repository's `neufville1779` target (pull request
+#587, merged on 14 November 2026). That folder holds Jean de Neufville's own syllabic code with Baudouin: a different
+cipher, with its own folder. No other target in the repository uses Dumas's key text; `targets/pcc1780` and
+`targets/lovell1781` only mention the key sheets filed in PCC item 59.
 
 ## Images
 
-The images are federal records, free in the National Archives Catalog; references above are to its image numbers
-(`?objectPage=N` on the catalog pages). No crops are committed, as for the repository's other targets of this kind.
+The images are federal records, free in the National Archives Catalog (use restriction "Unrestricted" on the catalog
+record); references above are to its image numbers (`?objectPage=N` on the catalog pages). The contributor committed no
+crops. Three crops were cut for the site page on 24 Nov 2026 (`docs/dumas1777_lead.jpg` from image 81,
+`docs/dumas1777_bare.jpg` from image 108, `docs/dumas1777_dort.jpg` from image 493); the page images themselves are not
+committed.
+
+Image numbers: the folder's image N is the N-th object of the file unit in the order of the catalog's object ids. The
+object list the catalog's API returns (`https://catalog.archives.gov/proxy/records/search?naId=502964761`) has two
+objects out of that order (the 73rd and the 170th of the list), so images 73 to 216 stand one place later in the list
+(image 81 is the 82nd object, image 108 the 109th, image 160 the 161st); images 1-72 and 217-503 are in place. Found on
+24 Nov 2026 when images 41, 55, 81, 108, 160 and 493 were fetched for the checks below.
 
 ## Reading review
 
-Preliminary. `CONTRIBUTING.md` (14 Nov 2026): a reading merges only with a `reading_review` graded A or B,
-"recorded by the reviewer, not by the author of the reading". The grades in `profile.json` (18 entries) were
-written by Andrew Beling's own AI agents and are kept as preliminary grades: `by` is "Author's agents (Andrew
-Beling, with AI agents)" and each note begins "PRELIMINARY: author's self-check, not a reviewer's grade. For a
-maintainer to confirm or replace.", followed by the agents' own reading note. No grade letter was changed.
+The contributor's grades of 14 Nov 2026 (18 entries, all B) were recorded by Andrew Beling's own AI agents as
+preliminary, "for a maintainer to confirm or replace" (`CONTRIBUTING.md`: a reading merges only with a
+`reading_review` "recorded by the reviewer, not by the author of the reading"). On 24 Nov 2026 the maintainers'
+integration reviewer (an AI agent, not a person) read the 18 readings as sentences against their translations, with
+the key replay and six page images, and recorded its own grades in `profile.json` in their place: 16 A and 2 B (the
+extract of despatch C of 1776, where four words lean on the decipherer's letters, and 20 Sept 1779, where two of six
+cipher words are holes). Each note says what was and was not looked at. No person has checked a reading.
+
+## Transcription doubts
+
+Every cipher run was transcribed twice (forward and backward passes) and the doubtful figures were settled per letter:
+140 decisions are listed under "Reconciliation decisions" in the `readings/*.md` files, 91 of them with what an
+enlarged crop of the image shows; the others were settled by the second cipher copy of the same letter and the decoded
+word, and the "Remarks" of each file say which. The places below are those that stay doubtful or that a hole rests on.
+
+- # (1776-08-10, image 41 L18) - read: [g] of char[g]é, a hole; checked: image, decode, transcription; "23" and a hidden last figure under a blot, the decipherer's letter over it blotted too (looked at again 24 Nov 2026); pass A "#", pass B 236?; 238 = g
+- 4? (1776-08-10, image 41 L17, second number) - read: e (simpl{+e}ment), from the decipherer's letter; checked: image, decode, transcription; the second figure is under a blot (40 = y, 48 = e); both passes 40; the decipherer's e stands over it (24 Nov 2026)
+- # (1776-09-01, image 51 L03) - read: s (Prus{+s}i[a]), from the decipherer's letter; checked: image, decode, transcription; the number is under a blot, both passes "#", the letter over it is s
+- 25 (1776-09-01, image 51 L03) - read: [a] of Prus{+s}i[a], a hole; checked: image, decode, transcription; "?5" under a blot (pass A 25, pass B 5); neither 25 = r nor 5 = e gives a; the letter over it is not clear
+- 5# (1777-04-12, image 55 L19) - read: [b] of l'ab[b]é, a hole; checked: image, decode, transcription; a first figure 5 and an ink blot (both passes; seen again at 2x on 24 Nov 2026); the decipherer's letter over it has a looped ascender, b or l, with its foot lost in the blot (both passes read l?); b is at 500, 518 and 572
+- 59[0/8] (1776-05-14, image 35 L20) - read: [c] of Fran[c]e, a hole; checked: image, decode, transcription; last figure retouched, 0 or 8; 590 and 598 both = e, 591 = c
+- 88 (1777-11-28, image 124 L2) - read: b ({+b}as-Rhin), from the decipherer's letter; checked: image, decode, transcription; two blotted figures, kept as 88 = l; letter N of 2 Aug 1777 has 118 = b in the same word
+- 8? (1779-05, image 242 L17) - read: 89 = e (trompe); checked: image, decode, transcription; "8" and a blotted second figure on a 2x crop, both passes 84; the decipherer's letter is e
+- 14 (1777-08-02, image 81 L12, seventh number) - read: 14 = n (Bas-Rhin); checked: image, decode, transcription; first read 12; the second agent read 14 on the image, the decipherer's letter is n (seen again 24 Nov 2026)
+- 54 (1778-06-14, image 160 L24, last number) - read: 54 = n as written; "[s]ont" is a conjecture and a hole; checked: image, decode, transcription; a clear 54 on the image (24 Nov 2026) and in both M332 copies
+
+## Maintainers' checks
+
+- 15 Nov 2026, before merging pull request #667 (the review on the pull request): a position table built from
+  `key/keytext_1775.txt` was identical to `key_positions.json`; a separate decoder on all 29 reconciled files gave the
+  folder's letters except at the marked emendations; test 2 re-ran at 129 of 134; on the National Archives Catalog
+  images the numbers of three passages the editions omit (2 Aug 1777, 25 Sept 1777, 2 Sept 1781: 108 numbers) agreed
+  number for number. The review noted, for the write-up: the share by words for the short letters; the square brackets
+  of `letters/*_text.txt` clashing with the project's supplied-letter mark; and a count of 2,388 numbers in the copies
+  files against the 2,401 above.
+- 24 Nov 2026, integration review (an AI agent for the maintainers): the reading files re-marked and the share
+  recounted by words (above); the key replay added. The first replay run found five unmarked differences, corrected in
+  the readings: the cipher repeats the plain word written just before it in three more places than the enclosure of
+  28 Nov 1777 (2 Aug 1777 "le", 14 Aug 1777 "à", 24 Feb 1778 "des"); "Pensionaire" has one n in the numbers; and the
+  numbers stop at "mérit", now read "mérit[e]" (the plain "seul" after it is singular), not "mérit(ent)". The copies
+  files hold 2,401 number places by our count (18 of them lost at the scan edge or blotted, so 2,383 numbers).
+- 24 Nov 2026, images: 41, 55, 81, 108, 160 and 493 of item 93 vol. 1 looked at (see "Transcription doubts" and the profile
+  step). The 32 numbers of 25 Sept 1777, the 13 of 2 Sept 1781 and the 43 of run 2 of 2 Aug 1777 are as transcribed.
+- 24 Nov 2026, print: Cryptiana's page gives the key text and decodes none of the letters. The Internet Archive texts
+  of Sparks vol. 9 and Wharton vols. 2-3 were searched by date and keyword: Sparks prints 14 Oct 1777, 15 May 1779 and
+  the postscript of 2 Sept 1781 without their cipher sentences, and has no letter of 2 Aug, 25 Sept, 4 Nov or 28 Nov
+  1777, 24 Feb, 27 Apr or 14 June 1778, or 21 June 1779; Wharton 2-3 have no letter of those dates and none of the
+  passages' wording. Web searches for the passages, Founders Online included, found nothing. These are searches of OCR
+  text, not a page-by-page reading. Not checked: the Adams Papers volumes, and any letterbook copy kept by Dumas.
 
 ## Limits
 
@@ -252,18 +330,30 @@ maintainer to confirm or replace.", followed by the agents' own reading note. No
 - Item 93 vols. 2-4 were screened on contact sheets only.
 - The decipherer's hand is not identified.
 - Nothing was checked by a person. The two transcription passes and the reading agents are AI agents of ours; the
-  second agent is ours too, so its check is not an outside check.
+  second agent is ours too, so its check is not an outside check. The maintainers' checks of 15 and 24 Nov 2026 were
+  made by AI agents as well.
+- Catalogue entry 784 is left as it is: the Friedman item was not seen, and nothing here shows which passages it lists.
 
 ## Remaining gaps
 
-- Three blotted numbers (1776-08-10 image 41 L18; 1776-09-01 image 51 L03; 1777-04-12 image 55 L19) - blocker:
-  illegible; their letters (g, s, b) are supplied by sense and counted as unread.
-- Not gaps in the key but writer's slips, restored by conjecture and counted as unread: 54 in "sont" (1778-06-14, all
-  three copies) and 24 after "Jones" (1779-09-20, both copies); both numbers are clear on the image.
+Twenty holes in 948 cipher words (count of 24 Nov 2026, "Transcriptions and readings" above). None is a gap in the key,
+and none can be worked on from the material: three numbers are illegible, and in the other places the number is clear
+and gives another letter, or the letter is not written.
+
+- Three blotted numbers (1776-08-10 image 41 L18, char[g]é; 1776-09-01 image 51 L03, Prussi[a], with the next number
+  25 = r; 1777-04-12 image 55 L19, l'ab[b]é) - blocker: illegible; the letters are supplied by sense (the s of Prussia
+  also by the decipherer's letter) and the three words are holes.
+- "[s]ont" (1778-06-14, 54 = n in all three copies) and the "&" after "Jones" (1779-09-20, 24 = e in both copies):
+  no outside blocker; the numbers are clear and what the writer meant is a conjecture, so both are holes.
+  "C[o]mmodore" in the same letter of 1779 (12 = s) is certain by sense and is a hole under the strict rule.
+- Thirteen more words with one letter corrected or supplied by sense, each a hole under the strict rule though the
+  word is not in doubt: e[t], d[e] (30 Apr 1776); l[i]eu, parol[e], de[s], gu[e]rre, m[o]urir, Fran[c]e (14 May 1776);
+  l'[e]spouse (14 Aug 1777); vo[u]s, d[e] Stade (28 Nov 1777); souscriptio[n] (24 Feb 1778); mesure[s] (27 Apr 1778);
+  mérit[e] (May 1779). Nothing blocks them and nothing would close them: they are Dumas's slips and omissions.
 
 ## Files
 
 `inventory.tsv`, `inventory_pages.tsv`; `key/` (key text, position table, build script, `KEY.md`, `FREEZE.txt`, the second
 agent's key); `tests/test1/`, `tests/test2/`; `transcriptions/R*_A`, `R*_B` (both passes), `reconciled/`,
 `second_agent/`; `readings/*.md`; `letters/`; `print_check.tsv`; `validation.tsv`; `scripts/` (`decode.py`,
-`reconcile.py`, `alt.py`); `sources.md`; `profile.json`.
+`reconcile.py`, `alt.py`); `replay.py`, `replay.tsv`, `replay.json` (the key replay); `sources.md`; `profile.json`.

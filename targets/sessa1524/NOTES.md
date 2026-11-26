@@ -181,7 +181,6 @@ deciphered occurrence anywhere), and R9898's bleed-through pages, which do not r
 - clause *los m-re que r-ido los que no m-r-e-van* (f. 128) - blocker: no-key-material; one sign value still wrong, no sibling decipherment covers it
 - R9873 to R9905, the 30 records of `prabal/` (prabal-rje's rows): 3,407 cipher units with no value and 1,094 with a clerk value only - blocker: no-key-material; no clear text fixes them by the rules of `prabal/check.md`, section 4
 - R9873 to R9905, the 30 records of `prabal/` (prabal-rje's rows): the decode does not build sentences; all 30 are decoded, not read - blocker: open-codes; holes in most rows, 2,200 doubtful units
-- R9873 to R9905, the 30 records of `prabal/` (prabal-rje's rows): 4,910 `?` positions of the rows - blocker: not-attempted; these rows do not tell clear writing from signs that were not read
 
 ## Escalation
 - [x] siblings: R9899 (A-34 ff. 194-195) checked 23 Oct 2026, one marginal decipherment (`hog` querria); R9878 duplicate collated; R9881, R9883/4, R9890, R9893, R9834, R9897, R9898 read against their clears (passes 1-14); R9873 and R9898 transcribed in full (pass 16)
@@ -221,3 +220,18 @@ in `dudout/README.md`.
 - DECODE R9873 to R9881, R9883 to R9887, R9889 to R9901 and R9903 to R9905 (Real Academia de la Historia, Salazar A-31 and A-34): a transcription of the DECODE images, the decode of each record with KS4 and 63 added values, and the key table. Files and limits: `prabal/README.md`.
 - Every record is decoded, not read. They add nothing to the read figure of this target.
 - Credit: DECODE, the database of historical ciphers of the DECRYPT project (https://de-crypt.org/decrypt-web/RecordsView/9873 and the other record numbers); Héder and Megyesi (2022), HistoCrypt, https://doi.org/10.3384/ecp188397. No DECODE image is published.
+
+## Open in the contributed decode (`prabal/`), not part of the reading's extent
+
+The 30 records of `prabal/` are decoded, not read, so they are not counted in the extent of this target's reading
+(README Conventions, "A reading must read"). One open item of that decode stands here and not under "Remaining gaps",
+because it is work not yet done on the contributed rows, not a gap of the reading:
+
+- R9873 to R9905 (prabal-rje's rows): 4,910 `?` positions. The rows do not tell clear writing from signs that were
+  not read, so some of these positions may be cipher signs. They have not been checked against the images by anyone
+  here: the reviews of pull request #826 (20 Nov 2026) record no comparison of the rows with the DECODE images. The
+  item stands with the other open items of the decode in `prabal/NOTES.md` ("Remaining gaps"), and
+  `prabal/TRANSCRIPTION.md` explains the `?` mark.
+
+Moved here from "Remaining gaps" on 20 Nov 2026 (integration of PR #826). `outcome.gaps` in `profile.json` no longer
+lists it.

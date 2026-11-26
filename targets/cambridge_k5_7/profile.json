@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "target": "cambridge_k5_7",
+  "title": "Cambridge T-S K5.7 — Hebrew cipher border and unresolved interior",
+  "documents": [{
+    "id": "k57_recto",
+    "shelfmark": "Cambridge University Library, Taylor-Schechter Collection, T-S K5.7, recto (PGP 42030)",
+    "date": "undated",
+    "year": "unknown",
+    "country": "unknown",
+    "language": "unknown",
+    "read": "not read",
+    "cleartext_in_document": "unknown",
+    "plaintext": {"location": ["printed edition"], "partial": true, "source": "Bohak (2010), pp. 13–15, reads the Hebrew border."},
+    "length": {"tokens": "unknown", "unit": "symbols"},
+    "transcription": {"by": "mixed", "source": "Bohak's upper-letter transcription and a masked classification of lower marks from Cambridge's recto photograph.", "notes": "The register distinguishes 98 extant positions and seven losses. The tokenization of the lower signs remains open."}
+  }],
+  "system": {
+    "types": ["monoalphabetic", "undetermined"],
+    "summary": "Published Hebrew substitution values recover the vertical border. The interior rule is unknown.",
+    "symbol_kind": "symbols",
+    "distinct_symbols": "unknown",
+    "diacritics": {"used": "unknown", "note": "Small marks beneath the upper signs include dots, strokes and rings. Their function is uncertain."},
+    "homophones": {"used": "unknown"},
+    "nomenclator": {"present": "unknown"},
+    "nulls": {"present": "unknown"},
+    "key_order": "unknown",
+    "sibling_key": "Bohak's sign table for T-S K24.19, figure 3."
+  },
+  "conditions": {
+    "prior_solution": {"exists": "partial", "where": "Gideon Bohak, Cracking the Code and Finding the Gold (2010), pp. 13–15.", "found": "before attempt", "used": true},
+    "inputs": ["images", "transcription", "published key", "published reading"],
+    "attack": "published key",
+    "human_role": "Identified the target and supplied the photograph and published study.",
+    "models": ["Codex"]
+  },
+  "solution": [
+    {"kind": "transcription", "what": "Registered published upper readings and classified lower-mark crops with positions masked.", "result": "partial"},
+    {"kind": "hypothesis", "technique": ["exhaustive search"], "what": "Measured the minimum cell changes required for one alphabet per row, allowing every interior omission in row 2.", "result": "ruled out"},
+    {"kind": "crib", "technique": ["crib testing"], "what": "Tested the T-S Misc.22.218 sequence on grid routes and under secondary substitutions.", "result": "failed"}
+  ],
+  "outcome": {"method": "not solved", "class": "not read", "verification": ["none"], "notes": "The published border reading is prior work. No interior plaintext has been recovered."}
+}
