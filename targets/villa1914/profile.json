@@ -1,0 +1,184 @@
+{
+ "schema_version": 1,
+ "target": "villa1914",
+ "title": "Two Pancho Villa telegrams, March and June 1914",
+ "documents": [
+  {
+   "id": "march",
+   "read": "read in part",
+   "shelfmark": "CEHM-Carso, Fondo CMXV, CMXV.31.3092.3-6",
+   "date": "3 March 1914",
+   "year": 1914,
+   "country": "Mexico",
+   "route": "Francisco Villa to Federico González Garza",
+   "language": "Spanish",
+   "cleartext_in_document": "interspersed",
+   "length": {
+    "tokens": 86,
+    "unit": "code groups",
+    "measured": true,
+    "file": "march-transcription.tsv"
+   },
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "Plain words in the telegram give sentence context; no separate decipherment was used.",
+    "partial": false
+   },
+   "transcription": {
+    "by": "mixed",
+    "source": "Ashton Allen with OpenAI Codex and Python, from CEHM images as cited in NOTES.md."
+   }
+  },
+  {
+   "id": "june",
+   "read": "read in part",
+   "shelfmark": "CEHM-Carso, Fondo CMXV, CMXV.34.3344.1",
+   "date": "15 June 1914",
+   "year": 1914,
+   "country": "Mexico",
+   "route": "Fidel Ávila to Francisco Villa",
+   "language": "Spanish",
+   "cleartext_in_document": "interspersed",
+   "length": {
+    "tokens": 51,
+    "unit": "code groups",
+    "measured": true,
+    "file": "june-transcription.tsv"
+   },
+   "plaintext": {
+    "location": [
+     "separate folio"
+    ],
+    "source": "Partial pencil reading on the back of the June telegram.",
+    "partial": true
+   },
+   "transcription": {
+    "by": "mixed",
+    "source": "Ashton Allen with OpenAI Codex and Python, from CEHM images as cited in NOTES.md."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "homophonic"
+  ],
+  "summary": "Two-digit groups. Some assignments rely on matching grid rows or context.",
+  "symbol_kind": "digits",
+  "distinct_symbols": 43,
+  "diacritics": "unknown",
+  "homophones": "unknown",
+  "nomenclator": "unknown",
+  "nulls": "unknown",
+  "key_order": "unknown"
+ },
+ "outcome": {
+  "class": "read in part",
+  "method": "key recovered based on adjacent plaintext",
+  "key": "partial",
+  "validation": {
+   "verdict": "not applicable",
+   "notes": "The March text supplies part of the key used on itself. No formal independent validation is claimed.",
+   "date": "2026-11-22"
+  },
+  "notes": "March is a consistency check. June starts from adjacent pencil plaintext.",
+  "fraction_read": 0.8571428571428571,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "17/18 and 7/10 under the preferred readings; 16/18 and 6/10 under the stricter counts.",
+  "gaps": [
+   {
+    "item": "March group 69 (CH, contextual) and the first DA",
+    "blocker": "not-attempted",
+    "detail": "Untried 1914 sibling telegrams CEHM CMXV.35.3433.1-2 and 35.3492.2-3 are online."
+   },
+   {
+    "item": "June groups 33 and 37 unassigned; 99 is C or CH",
+    "blocker": "not-attempted",
+    "detail": "Same siblings; see NOTES.md Escalation."
+   }
+  ],
+  "key_file": "key.tsv",
+  "texts": [
+   {
+    "doc": "march",
+    "transcription": "march-transcription.tsv",
+    "decryption": "march-literal.tsv",
+    "reading": "march-reading.md",
+    "translation": "march-translation.md",
+    "language": "es",
+    "state": "read in part",
+    "read_share": 0.9444444444444444,
+    "summary": "Francisco Villa to Federico González Garza",
+    "reading_review": {
+     "grade": "B",
+     "by": "Codex for Daniel Bourdeau",
+     "date": "2026-11-22",
+     "note": "Previous review replayed the stored numeric groups and checked the CEHM front. 17/18 with contextual BAUCHE, 16/18 with 69=CH open."
+    }
+   },
+   {
+    "doc": "june",
+    "transcription": "june-transcription.tsv",
+    "decryption": "june-literal.tsv",
+    "reading": "june-reading.md",
+    "translation": "june-translation.md",
+    "language": "es",
+    "state": "read in part",
+    "read_share": 0.7,
+    "summary": "Fidel Ávila to Francisco Villa",
+    "reading_review": {
+     "grade": "B",
+     "by": "Codex for Daniel Bourdeau",
+     "date": "2026-11-22",
+     "note": "Previous review replayed the stored numeric groups and checked the CEHM front and reverse. 7/10 with 99=C, 6/10 across both values. The reverse independently supports dicho and the end of the word for campaign."
+    }
+   }
+  ],
+  "verification": [
+   "key confirms"
+  ],
+  "provenance": "contributed",
+  "credits": [
+   {
+    "who": "allen",
+    "role": "solution",
+    "note": "Recovered and applied the partial key and contributed both Spanish readings and translations.",
+    "date": "2026-11-21",
+    "source": "https://github.com/dbourdeau/cyphersolver/issues/845"
+   }
+  ]
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "partial",
+   "where": "Pencil reading of part of the June telegram on its reverse (CEHM CMXV.34.3344.1, 0002.jpg); none known for March.",
+   "found": "before attempt",
+   "used": true
+  },
+  "inputs": [
+   "images",
+   "cleartext context",
+   "known plaintext"
+  ],
+  "attack": "known plaintext",
+  "human_role": "Ashton Allen ran the work with OpenAI Codex and Python and filed it in issue #845; the maintainers reviewed it there.",
+  "models": [
+   "OpenAI Codex (contributor; exact model not recorded)"
+  ]
+ },
+ "solution": [
+  {
+   "date": "2026-11-21",
+   "kind": "verification",
+   "what": "Replayed 137 groups and checked the linked March front, June front and June reverse. March is a consistency check.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-26",
+   "kind": "access",
+   "what": "Integration review (AI agent, for the maintainers): fetched the CEHM visor fronts of the 1914 records listed with these in catalogue 1462. CMXV.35.3433.1-2 (27 Jul 1914) and CMXV.35.3492.2-3 (24 Aug 1914) are two-digit group telegrams with clear words between, untranscribed; CMXV.35.3464.1 (2 Aug 1914) is a plain-word code telegram. A glance at the first line of 3433.1-2 with the June values gave no Spanish; not a test. Next step: transcribe both and test the March and June keys on them.",
+   "result": "partial"
+  }
+ ]
+}

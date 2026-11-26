@@ -28,7 +28,7 @@ The plain text under every cipher is the international synoptic report (groups o
 - V2: the example of Moscow type 17040 (February 1940) is reproduced, 25 of 25; it settles a figure blurred on the photograph (33556).
 - V3: Audric's British example of the same system, 25 of 25 with his key.
 - No 200-control statistical test is given: we recovered no key ourselves and read no language; the keys are Japanese and were only transcribed and checked against the reports' own examples. No enciphered Soviet broadcast of 1940 was found online (the British files TNA HW 54/4 and HW 40/31 are not digitised), so there is no external test.
-- Targeted visual review by Brice Dudout (28 Oct 2026, shapes only): the 5th additive of 12 Nov 1938 is 34235 (first transcribed 34135); the subtractor cell for cipher figure 6 on 29 Apr 1940 is badly stamped, 8 probable, 6 possible; even-day October cells (00,111)=5 and (00,888)=8 confirmed; eight odd-day October cells read "5" all confirmed.
+- Targeted visual review by Brice Dudout (28 Oct 2026, shapes only, on a sheet that an AI agent built and scored; see "Sign checks" below): the 5th additive of 12 Nov 1938 is 34235 (first transcribed 34135); the subtractor cell for cipher figure 6 on 29 Apr 1940 is badly stamped, 8 probable, 6 possible; even-day October cells (00,111)=5 and (00,888)=8 confirmed; eight odd-day October cells read "5" all confirmed.
 
 ## Count by the 95% rule (in figures)
 
@@ -58,3 +58,7 @@ Searched 28 Oct 2026 (web in Japanese and English): nothing found on the Japanes
 ## Credits
 
 Brice Dudout (dossier, choice of the material, targeted visual review), with Claude (Anthropic) agents for transcription, checking and write-up. The British comparison rests on Brian Audric's paper.
+
+## Sign checks: moved from human_check (19 Nov 2026)
+
+Daniel Bourdeau's review of PR #789 (19 Nov 2026) asked who prepared the sheets behind `outcome.human_check`, which the schema defines as a check against the image without AI help. Here an AI agent prepared it: it chose the 12 cells, cut the reference shapes from the same pages of the JACAR files, built the HTML sheet (RC1, 28 Oct 2026), scored the answers and read the free-text remark; Brice Dudout, the contributor of the reading, only chose the shapes. The record therefore moves to `outcome.sign_check`: 12 signs, 10 as read, 1 corrected (the 5th additive of 12 Nov 1938, 34135 -> 34235), 1 answered by a remark only (the subtractor for cipher figure 6 on 29 Apr 1940: badly stamped, 8 probable, 6 possible). The sheet had no control and no selection rule was written apart, so it does not meet the level "AI decipherment, human-checked on a sample of signs".

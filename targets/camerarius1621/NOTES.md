@@ -1,6 +1,6 @@
 # camerarius1621: Ludwig Camerarius's code of 1621-22 (letters to Count Johann Albrecht of Solms, BSB Clm 10397)
 
-Status: in progress. Not yet written up: no site page or README row. Read in part, with escalation steps still open (see Remaining gaps and Escalation). The status below is the contributor's.
+Status: in progress. Not yet written up: no site page or README row. Read in part, with escalation steps still open (see Remaining gaps and Escalation). The status below is the contributor's. Next step (integration review, 24 Nov 2026; no outside blocker): transcribe the sibling letters n.193 and n.196 of the same series and key (MDZ bsb00116446 scans 795 and 805, glosses partly in key.tsv) and re-check 1513, 2472 and 1682 against them; the series n.129-210 is listed as transcription_missing with public images, so the target is not yet a "read in part" stopping point.
 
 Read share by the README rule, 14 Nov 2026 (Brice Dudout, PR #559; reproduced at the integration): 858 words, 74 holes,
 **0.921** (n194/reading_n194.md, the 13 paragraph references such as [01-07] left out); the contributor's 796 of 844 tokens

@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Method and review &mdash; how a reading is made, checked and graded</title>
+<meta name="description" content="How each reading on Cyphersolver is transcribed, deciphered, tested and graded, who does each step, and what the checks do not cover. The figures are counted from the records at each build.">
+<link rel="alternate" hreflang="en" href="https://cyphersolver.com/method.html">
+<link rel="alternate" hreflang="fr" href="https://cyphersolver.com/method-fr.html">
+<link rel="stylesheet" href="style.css?v=572104d3">
+<meta name="date" content="2026-11-24">
+<meta name="last-modified" content="2026-11-26">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<!-- social:start -->
+<link rel="canonical" href="https://cyphersolver.com/method.html">
+<link rel="alternate" type="application/atom+xml" title="Cyphersolver: new write-ups" href="https://cyphersolver.com/feed.xml">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Cyphersolver">
+<meta property="og:url" content="https://cyphersolver.com/method.html">
+<meta property="og:title" content="Method and review &mdash; how a reading is made, checked and graded">
+<meta property="og:description" content="How each reading on Cyphersolver is transcribed, deciphered, tested and graded, who does each step, and what the checks do not cover. The figures are counted from the records at each build.">
+<meta property="og:image" content="https://cyphersolver.com/hero_poster.png">
+<meta name="twitter:card" content="summary_large_image">
+<!-- social:end -->
+</head>
+<body id="top">
+<header class="nav"><a class="skip" href="#content">Skip to content</a><div class="in">
+  <a class="brand" href="index.html"><span class="glyph">972</span><span>Cyphersolver</span></a>
+  <button class="navtoggle" type="button" aria-expanded="false" aria-controls="sitemenu"><span></span><span></span><span></span><i>Menu</i></button>
+  <nav id="sitemenu" class="links" aria-label="Site">
+    <details class="menu"><summary>Write-ups <svg width="10" height="7" viewBox="0 0 10 7" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></summary>
+      <div class="panel wp"><div class="foot"><a class="all" href="writeups.html">All write-ups, with filters &rarr;</a><a href="findings.html">All findings, newest first</a><a href="writeups.html#src=notes">Results only in the notes</a></div></div></details>
+    <details class="menu"><summary class="active">Explore <svg width="10" height="7" viewBox="0 0 10 7" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></summary>
+      <div class="panel ex"><div class="grp"><h4>Start here</h4><ul><li><a href="highlights.html"><b>Highlights</b><span class="d">Twenty favourites: the funny, the historic, the ingenious, the hardest</span></a></li><li><a href="top25.html"><b>Top 25 unsolved ciphers</b><span class="d">Twenty-five ciphers with no accepted reading, ranked</span></a></li></ul></div><div class="grp"><h4>Maps and patterns</h4><ul><li><a href="atlas.html"><b>Atlas</b><span class="d">Every letter drawn on the map, five centuries of it</span></a></li><li><a href="key-evolution.html"><b>How keys changed</b><span class="d">Kinds of key, their signs and their size, 1400 to 1950</span></a></li><li><a href="keys.html"><b>Key web</b><span class="d">Which key opened which letter</span></a></li></ul></div><div class="grp"><h4>Try and take part</h4><ul><li><a href="secret.html"><b>Write a secret letter</b><span class="d">Seal a message in a real historical cipher</span></a></li><li><a href="contribute.html"><b>Contribute</b><span class="d">Send a solution, a new cipher or a check of a reading</span></a></li></ul></div><div class="grp"><h4>Reference</h4><ul><li><a href="glossary.html"><b>Glossary</b><span class="d">How each cipher was solved, and the terms used</span></a></li><li><a href="corrections.html"><b>Corrections</b><span class="d">What was published and then corrected or withdrawn</span></a></li><li><a href="method.html" aria-current="page"><b>Method and review</b><span class="d">How a reading is made, checked and graded, and by whom</span></a></li></ul></div><div class="foot"><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">The code and the working notes on GitHub &#8599;</a></div></div></details>
+    <span class="navlab">Help</span>
+    <a class="navcat" href="catalogue.html">Catalogue<span class="sticker" aria-hidden="true"><span><b>Help<br>Solve!</b></span></span></a>
+    <a class="navcat" href="further.html">Read further<span class="sticker alt" aria-hidden="true"><span><b>Finish<br>It!</b></span></span></a>
+    <a class="navcat" href="archives.html">To the archive<span class="sticker arc" aria-hidden="true"><span><b>Go<br>Look!</b></span></span></a>
+    <a href="contributors.html">Contributors</a>
+    <button class="searchbtn" type="button" aria-label="Search the site" aria-keyshortcuts="/ Control+K"><svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><circle cx="6.8" cy="6.8" r="5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M10.5 10.5L15 15" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg><span>Search</span><kbd>/</kbd></button>
+    <button class="theme" type="button" aria-label="Switch between dark and light" title="Dark / light"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.2" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M8 1.8a6.2 6.2 0 0 1 0 12.4z" fill="currentColor"/></svg></button>
+  </nav>
+</div><span id="content" tabindex="-1"></span></header>
+<div class="search" id="search" hidden>
+  <div class="sbox" role="dialog" aria-modal="true" aria-label="Search the site">
+    <form class="sform" role="search" onsubmit="return false">
+      <svg width="18" height="18" viewBox="0 0 16 16" aria-hidden="true"><circle cx="6.8" cy="6.8" r="5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M10.5 10.5L15 15" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+      <input type="search" id="sq" placeholder="Search names, places, shelfmarks, words of the cipher&hellip;" autocomplete="off" spellcheck="false" aria-label="Search" aria-controls="sres">
+      <button type="button" class="sclose" aria-label="Close search">Esc</button>
+    </form>
+    <div class="sres" id="sres" role="listbox" aria-label="Results"></div>
+    <div class="shint"><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> move</span><span><kbd>&crarr;</kbd> open</span><span><kbd>Esc</kbd> close</span><span class="sn" id="sn"></span></div>
+  </div>
+</div>
+
+<section class="hero">
+  <p class="kicker">Reference &middot; method &middot; review</p>
+  <h1>Method and review</h1>
+  <p class="sub">How a reading on this site is made, checked and graded. Who does each step. What the checks do not cover. Every count on this page is made again from the repository each time the site is built.</p>
+  <p class="meta">Daniel Bourdeau &middot; posted <time datetime="2026-11-24">24 November 2026</time> &middot; updated <time datetime="2026-11-26">26 November 2026</time></p>
+  <p class="langswitch"><a href="method-fr.html" hreflang="fr" lang="fr" translate="no">Version fran&ccedil;aise</a></p>
+</section>
+
+<main>
+<nav class="toc" aria-label="On this page"><span>On this page</span><a href="#what-it-is">What this project is</a><a href="#steps">The steps of a reading</a><a href="#sources">Sources and earlier work</a><a href="#transcription">Transcription</a><a href="#key">How the key is obtained</a><a href="#decoded-is-not-read">A decryption is not yet a reading</a><a href="#statistical-checks">The statistical test against false positives</a><a href="#review">The reading grade and the human check</a><a href="#checks">What the automated checks require</a><a href="#ai">The part played by AI</a><a href="#corrections">Corrections and challenges</a><a href="#researchers">For researchers, and how to cite</a></nav>
+<div class="callout glance"><p><b>At a glance</b></p>
+<ul>
+<li>The work is done mostly by AI models, run by people.</li>
+<li>The reading grade (A or B) is given by an AI model in 94% of entries. It is not a human review.</li>
+<li>A check of a passage against the image by a person, without AI, is declared in 4 records.</li>
+<li>The automated checks test the form of a reading. They do not test that it is right.</li>
+<li>Any reading can be challenged. Corrections stay in the repository&rsquo;s history.</li>
+</ul></div>
+
+<h2 id="what-it-is"><span class="num">01</span> What this project is</h2>
+<p>Cyphersolver is an open ledger of historical ciphers. The ciphers are worked on with AI models. The ledger is also an informal benchmark of what those models can do with them.</p>
+<p>People run the AI models: the project&rsquo;s maintainers and outside contributors.</p>
+<p>The ledger holds 924 target records. 495 are the project&rsquo;s own work, 358 were contributed from outside, and 71 are mixed.</p>
+<p>The ledger is not a critical edition. Its results have not been peer-reviewed in the academic sense.</p>
+<p>Words used on this page:</p>
+<ul>
+<li>A <b>target</b> is a folder of the repository: one cipher document or a group of them.</li>
+<li>Its <b>record</b> is the file <code translate="no">profile.json</code>, with fixed fields. The working notes are in <code translate="no">NOTES.md</code>.</li>
+<li>A <b>write-up</b> is the site&rsquo;s page on the target.</li>
+</ul>
+<p>The full rules are in the <a href="https://github.com/dbourdeau/cyphersolver/blob/main/README.md" rel="noopener"><code translate="no">README</code></a> (Conventions), <a href="https://github.com/dbourdeau/cyphersolver/blob/main/CONTRIBUTING.md" rel="noopener"><code translate="no">CONTRIBUTING.md</code></a> and <a href="https://github.com/dbourdeau/cyphersolver/blob/main/profile.schema.json" rel="noopener"><code translate="no">profile.schema.json</code></a>.</p>
+
+<h2 id="steps"><span class="num">02</span> The steps of a reading</h2>
+<table>
+<thead><tr><th>Step</th><th>Usually done by</th><th>What is checked</th></tr></thead>
+<tbody>
+<tr><td>1. Find the document and any earlier reading</td><td>an AI agent, run by a person</td><td>since 28 October 2026, a vetting list for the catalogue (&sect;&nbsp;03)</td></tr>
+<tr><td>2. Transcribe the cipher</td><td>an AI model, from the images</td><td>no systematic double transcription (&sect;&nbsp;04)</td></tr>
+<tr><td>3. Obtain the key</td><td>an AI model, or a key that already existed</td><td>the statistical test, where it applies (&sect;&nbsp;07)</td></tr>
+<tr><td>4. Build the text and translate it</td><td>an AI model (the method is in CONTRIBUTING)</td><td>the share of words read, <code translate="no">read_share</code> (&sect;&nbsp;06)</td></tr>
+<tr><td>5. Grade the reading A or B</td><td>an AI model, in 94% of entries</td><td>that a grade is there (&sect;&nbsp;08)</td></tr>
+<tr><td>6. Check a passage on the image without AI</td><td>a person, in 4 records</td><td>nothing automatic (&sect;&nbsp;08)</td></tr>
+<tr><td>7. Merge into the repository</td><td>a maintainer; for a pull request, one who is not its author</td><td>the approval, for pull requests (&sect;&nbsp;09)</td></tr>
+</tbody>
+</table>
+
+<h2 id="sources"><span class="num">03</span> Sources and earlier work</h2>
+<p>Every image on the site is to be credited to its source: holder, shelfmark, folio, and the route to it (Gallica, DECODE, an archive&rsquo;s viewer, IIIF, an edition). That is the README&rsquo;s rule. It is not checked page by page.</p>
+<p>Images remain under their holders&rsquo; terms. Text is under CC BY 4.0, code under MIT.</p>
+<p>Since 28 October 2026, a document enters the <a href="catalogue.html">catalogue</a> only when its record shows two things. The ciphertext was seen on an image. The usual places for an earlier decipherment were searched: DECODE, Satoshi Tomokiyo&rsquo;s lists, the printed calendar or edition, and the literature. Older entries did not go through this list.</p>
+<p>A record can say whether a reading existed before the project&rsquo;s. 862 of 924 records answer. 504 record an earlier reading, complete or partial. In 77 of these it came to light only after the project&rsquo;s reading.</p>
+<p>The write-up checker asks that an earlier reading in print, online, unpublished or partial be credited in the record. 268 of the 310 records concerned do so. An earlier solution that was never published is shown in full only with its author&rsquo;s agreement.</p>
+
+<h2 id="transcription"><span class="num">04</span> Transcription</h2>
+<p>Copying the cipher from the manuscript is a source of error in itself. The records say who transcribed each document.</p>
+<table>
+<thead><tr><th>Transcribed by</th><th>Documents</th></tr></thead>
+<tbody>
+<tr><td>an AI model, from the images</td><td>1,940</td></tr>
+<tr><td>several sources combined</td><td>254</td></tr>
+<tr><td>DECODE</td><td>154</td></tr>
+<tr><td>a printed edition</td><td>113</td></tr>
+<tr><td>a person working for the project</td><td>11</td></tr>
+<tr><td>other, or not stated</td><td>71</td></tr>
+<tr><td><b>All documents</b></td><td><b>2,543</b></td></tr>
+</tbody>
+</table>
+<p>There is no systematic double blind transcription. The notes of some targets compare two transcriptions; the project publishes no overall rate of agreement.</p>
+<p>A transcription is sometimes corrected after the key is found. The reading can then depend on the key it is meant to test. The write-ups do not flag this in a uniform way.</p>
+<p>In 14 targets, all contributed from outside, the work files were time-stamped: an RFC 3161 token and an OpenTimestamps proof over the SHA-256 of a list of files. This can prove that the listed files existed at that date.</p>
+
+<h2 id="key"><span class="num">05</span> How the key is obtained</h2>
+<p>Each record puts its method in one of the categories of the <a href="glossary.html">glossary</a>.</p>
+<table>
+<thead><tr><th>How the key was obtained</th><th>Records</th></tr></thead>
+<tbody>
+<tr><td>key recovered here by cryptanalysis: from the ciphertext alone, from a plaintext found elsewhere, or from a plaintext next to the cipher</td><td>376</td></tr>
+<tr><td>a key or decipherment that already existed, applied here</td><td>354</td></tr>
+<tr><td>neither key nor text obtained (<code translate="no">not solved</code>)</td><td>141</td></tr>
+<tr><td>not a cipher, or the document could not be reached</td><td>53</td></tr>
+<tr><td><b>All records</b></td><td><b>924</b></td></tr>
+</tbody>
+</table>
+<p>A negative result is to come with a <b>matched control</b>: a synthetic text of the same length, alphabet and cipher design that the same solver does recover. That is the README&rsquo;s rule. It is not checked: 21 of the 141 <code translate="no">not solved</code> records list a matched control.</p>
+<p>A <b>held-out test</b> means finding the key without looking at part of the text, then trying the key on that part. No rule of the project requires it. Some contributors do it and describe it in the target&rsquo;s notes.</p>
+<p>In the protocol some contributors follow, a key found by cryptanalysis is found <b>on part of the text only</b>. The rest is not analysed and serves as validation. The steps are: choose the held-out portion before any work on it; freeze the key with a SHA-256 hash; then decrypt the held-out portion once, with no change to the key. The test passes when the share of letters that make sense reaches 0.85 and beats the best of 200 shuffled keys by at least 0.30. The notes of these targets give the hash, the portion and the score, including when the test fails.</p>
+
+<h2 id="decoded-is-not-read"><span class="num">06</span> A decryption is not yet a reading</h2>
+<p>A key that turns the cipher into words does not yet give a text. Each document in a record carries one of four states.</p>
+<table>
+<thead><tr><th>State</th><th>What it means</th><th>Documents</th></tr></thead>
+<tbody>
+<tr><td><code translate="no">read</code></td><td>coherent sentences, an English translation, and at least 95% of words read</td><td>1,053</td></tr>
+<tr><td><code translate="no">read in part</code></td><td>coherent sentences and a translation, but under 95% of words read</td><td>745</td></tr>
+<tr><td><code translate="no">decoded, not read</code></td><td>a decode that does not build sentences: shown, but not counted as a reading</td><td>523</td></tr>
+<tr><td><code translate="no">not prose</code></td><td>a key sheet, a code list, figures or names</td><td>61</td></tr>
+<tr><td><b>All entries</b></td><td></td><td><b>2,382</b></td></tr>
+</tbody>
+</table>
+<p><b>The share of words read</b> (<code translate="no">read_share</code>) counts cipher words only. In a letter that mixes clear text and cipher, it is measured over the words written in cipher; the clear words around them are neither read nor unread and stay out of both numerator and denominator.</p>
+<p>Only sure words count as read: a word counts as read when the key gives it, or the plain text beside it does, with nothing supplied. A probable word (<code translate="no">&#123;x&#125;</code>), an inferred or supplied word, a grade-M word and an unvalued code are holes, and so is a letter supplied inside a word. <code translate="no">read_share</code> is 1 minus the share of holes among the cipher words. It is counted by a script where the reading declares its markup.</p>
+<p>The 95% bar applies to the cipher words of each document. <b>Floor for short texts:</b> a document of fewer than 40 cipher words is <code translate="no">read</code> when its holes are at most 5% of its cipher words or at most 2 words, whichever allows more. The floor never applies to a text of 40 words or more, and the page and the record state the number of holes and that the floor was used.</p>
+<p>This number counts the holes the reader marked. It does not say whether the words read are right.</p>
+<p><b>The decryption and the reading are two files.</b> The decryption is the key applied to the transcription, sign by sign, with nothing edited: a word the key gets wrong stays wrong in it. The reading is that text made into sentences, and every letter or word in it that the key does not give for the signs as transcribed is marked; marked letters are holes. A text that is a decipherment of the time, a clear copy or an edition is labelled as such. This rule dates from 16 November 2026 (README, Conventions). An audit of the 54 targets its script flagged found words departing from the key, without a mark, in 35 of them; marks were added in 31 targets (858 places). The script could not compare 757 of 938 texts with their keys, so readings made before that date may still carry unmarked changes. The audit is in <a href="https://github.com/dbourdeau/cyphersolver/tree/main/research/decrypt_audit" rel="noopener"><code translate="no">research/decrypt_audit</code></a>.</p>
+<p>207 documents in state <code translate="no">read</code> have no <code translate="no">read_share</code> recorded. For them, the 95% is not measured document by document.</p>
+<p>The 95% bar is the project&rsquo;s own. No standard of the field sets one.</p>
+<p>One special case. In a code read with its surviving period key, a group one digit away from the value the sense needs counts as read, on three conditions. The slip can be seen on the image. The other groups of the word come from the key. The corrected groups spell the whole word. The group is marked <code translate="no">{+...}</code> in the text.</p>
+
+<h2 id="statistical-checks"><span class="num">07</span> The statistical test against false positives</h2>
+<p>The risk: a key with enough free values can produce words even when it is wrong.</p>
+<p>The test is <a href="https://github.com/dbourdeau/cyphersolver/blob/main/docs/_validate.py" rel="noopener"><code translate="no">docs/_validate.py</code></a>. It scores the reading with a letter model of the period (sequences of 4 letters). It then compares that score with two baselines:</p>
+<ul>
+<li>random keys of the same structure;</li>
+<li>keys fitted by the same search to the ciphertext once shuffled (6 shuffles).</li>
+</ul>
+<p>A reading <b>passes</b> when its score is at least 5 standard deviations above the random keys, above every key fitted to shuffled text, and at least 3 standard deviations above their mean.</p>
+<table>
+<thead><tr><th>Verdict</th><th>Meaning</th><th>Records</th></tr></thead>
+<tbody>
+<tr><td><code translate="no">pass</code></td><td>the three conditions above</td><td>174</td></tr>
+<tr><td><code translate="no">weak</code></td><td>at least 1 standard deviation above the shuffled fits, short of a pass</td><td>24</td></tr>
+<tr><td><code translate="no">underdetermined</code></td><td>the search does better than the reading on the real ciphertext: the test cannot decide</td><td>29</td></tr>
+<tr><td><code translate="no">too short</code></td><td>under 40 symbols read, or under 80 letters</td><td>13</td></tr>
+<tr><td><code translate="no">fail</code></td><td>a key fitted to the shuffled text does as well</td><td>4</td></tr>
+<tr><td><code translate="no">not applicable</code></td><td>a transposition, a non-alphabetic plaintext, or symbols with several values (over 10%)</td><td>110</td></tr>
+<tr><td><b>All verdicts</b></td><td></td><td><b>354</b></td></tr>
+</tbody>
+</table>
+<p>The automated checks do not require the test. Of the 338 records whose key was recovered here and whose text was obtained in full or in part, 66 carry no verdict: 65 are results contributed from outside (43 George Lasry, 14 WAINUT, 3 Andrew Aymeloglu, 2 Prabal Gupta, 2 Malcolm McBratney and 1 SeldomPhooey) and 1 is mixed.</p>
+<p>What the test does not show:</p>
+<ul>
+<li>it scores letters, so it checks neither the sense nor a code value proposed from context;</li>
+<li>it makes no correction for the number of readings tested;</li>
+<li>on short texts and homophonic ciphers it often cannot decide;</li>
+<li>as far as we know, no outside statistician has reviewed it.</li>
+</ul>
+
+<h2 id="review"><span class="num">08</span> The reading grade and the human check</h2>
+<p>A <b>reading grade</b> (<code translate="no">reading_review</code>) is recorded in the record, document by document. A reader has read the decryption as sentences and gives it A or B:</p>
+<ul>
+<li>A: coherent sentences, with scattered holes;</li>
+<li>B: coherent but raw (unspaced, in capitals, in decoder lines), and put into normal form in the reading or the translation.</li>
+</ul>
+<p>A and B are not grades of accuracy. They say the text builds sentences. They do not say it was compared with the images.</p>
+<p>A grade is needed for <code translate="no">read</code> and <code translate="no">read in part</code> documents. The schema allows a person or an AI model named as such. CONTRIBUTING wants the grade recorded by the reviewer, not by the author. No automated check looks at who gave it.</p>
+<p><b>Most A and B grades are given by an AI model.</b></p>
+<table>
+<thead><tr><th>Who signed the grade</th><th>Entries</th></tr></thead>
+<tbody>
+<tr><td>an AI model</td><td>1,495 (94%)</td></tr>
+<tr><td>a person assisted by an AI model</td><td>53</td></tr>
+<tr><td>a person, no AI model named</td><td>7</td></tr>
+<tr><td>cannot tell</td><td>36 (2 of them name a published edition, not a reviewer)</td></tr>
+<tr><td><b>All graded entries</b></td><td><b>1,591, in 571 records</b></td></tr>
+</tbody>
+</table>
+<p>In at least 77 entries the record itself says the reader was not independent of the work (for example, the same session). At least 125 more are signed by an agent working for the author of the reading. These entries do not meet, or do not clearly meet, the rule of CONTRIBUTING.</p>
+<p>225 <code translate="no">read</code> or <code translate="no">read in part</code> documents have no grade of their own. For 215 of them, the check uses the grade of the reading audit of 22 October 2026, which an AI model gave. 1 have an audit grade that is neither A nor B, and 9 have no grade at all. They are not counted in the table.</p>
+<p><b>The second review of a reading is therefore an AI model reader together with the automated checks. It is not a human review.</b></p>
+<p>The <b>human check</b> (<code translate="no">human_check</code>) is something else. A person compares a passage with the image, without AI help, and records the result: confirmed, corrected or disagreed. It is declared in the record. It covers 4 records (4 confirmed).</p>
+<p>When a character or an alphabet is doubtful, a contributor can make <b>targeted blind re-readings</b>. A person sees only the doubtful sign, cut out of the image, next to two or three candidate shapes. They do not see the expected reading, the gloss or the context. They choose the shape they see. This confirms or refutes one value, one reading or a whole alphabet without the bias of knowing the answer. It is a check of sign shapes, not a re-reading of the text, and it is recorded as such.</p>
+<p>102 records also declare an &ldquo;independent verification&rdquo;: someone outside the project checked the reading against the images or with their own key. The field does not say whether that person used an AI model.</p>
+<p>238 readings whose key was recovered or matched here are <a href="contributors.html#verify">waiting for an independent check</a>.</p>
+<p class="cmuted"><b>How these figures are counted.</b> One graded entry is one item of <code translate="no">outcome.texts</code> in a target&rsquo;s <code translate="no">profile.json</code> that carries a <code translate="no">reading_review</code>, whatever its state. Only the <code translate="no">targets/&lt;folder&gt;/profile.json</code> files are counted. The signer is classed from the <code translate="no">by</code> field: <i>model</i> when it names an AI model, an agent or an AI session and no person comes first; <i>person assisted by an AI model</i> when a person comes first and says an AI model assisted; <i>person</i> when no model is named; <i>cannot tell</i> when it names neither (&ldquo;project verification pass&rdquo;). &ldquo;Not independent&rdquo; and &ldquo;an agent working for the author&rdquo; are found by a word search in <code translate="no">by</code> and <code translate="no">note</code>, so they are lower bounds. Counting per document or per target gives other totals. The rule is in <a href="https://github.com/dbourdeau/cyphersolver/blob/main/docs/_method_page.py" rel="noopener"><code translate="no">docs/_method_page.py</code></a>.</p>
+
+<h3 id="sign-check">A verification level: AI decipherment, human-checked on a sample of signs</h3>
+<p>Between no check and a full proofreading against the images, a reading can carry the level <b>AI decipherment, human-checked on a sample of signs</b>. An AI model transcribed and deciphered the text. A person then picked, blind, the shape they see for a set of signs on a review sheet:</p>
+<ul>
+<li>a rule written before the sheet is built, and dated before any answer, picks the signs: doubtful shapes, signs that several words depend on, code groups;</li>
+<li>each question boxes one sign on its line. The options are shapes cut from the same document, plus &ldquo;none / other shape&rdquo;, &ldquo;illegible&rdquo; and &ldquo;not a sign&rdquo;, which leave the word marked. No gloss, reading, value or place is shown;</li>
+<li>at least two controls with a known answer are mixed in, taken from places as hard as the targets. The answer key stays private until the answers are exported.</li>
+</ul>
+<p>The record (<code translate="no">sign_check</code> in <code translate="no">profile.json</code>) gives the date; who answered, and whether that person is inside or outside the project; what an AI model did (wrote the rule, cut the thumbnails, built the sheet, scored the answers, interpreted free-text remarks); how many signs were checked and how they were chosen (a section of the target&rsquo;s NOTES); how many controls passed; and the results: as transcribed, corrected, unresolved, not counted. A write-up shows it as one sentence, for example: &ldquo;9 doubtful signs checked blind by a project member, on a sheet an AI model built and scored; rule in NOTES; controls 2 of 2; 2 as transcribed, 7 corrected, 1 not counted (faulty thumbnail)&rdquo;.</p>
+<p>A sheet meets the level only with at least 2 controls, all passed, and at least 8 target signs once the answers touched by a faulty thumbnail are removed. An answer &ldquo;none / other&rdquo; on a control counts as a failure. Whatever an answer contradicts is recoded or marked in the reading first. These are the project&rsquo;s rules (README, Conventions; the owner&rsquo;s decision of 19 November 2026): the checker is named, and the label says nothing about the key. The dated rule and its SHA-256 identify the criteria recorded before the answers. On shared sheets, count the signs for each target separately.</p>
+<p><b>The level says how a reading was checked, not how much of the text counts as read.</b> It never changes the class or the state: a reading can carry it and keep the state <code translate="no">read in part</code>. The read share may move only where a blind human call on a glyph&rsquo;s shape removes a [?] mark, and then NOTES and the solution step give the counts before and after (owner&rsquo;s rule, 25 Nov 2026). It checks the shapes of signs, not the key, the value of a code or the reading as a whole. The signs are chosen because they are doubtful, so the check is a diagnostic, not a random sample, and it says nothing about the signs that were not shown. Two passed controls show little on their own: a checker who is right one time in two passes both one time in four. It is not a <code translate="no">human_check</code>, which the schema defines as a check without AI help.</p>
+<p>The first readings to carry it are those whose key was built on part of the material (the document or sister letters in the same cipher) and passed a test on a passage not used to build it, against a threshold written first; the write-up gives the history of attempts. On these first readings <b>the checker is the contributor</b> of the reading, a project member who answered the sheets of his own readings: the check is not independent, and the record and the write-up say so. 18 records carry a <code translate="no">sign_check</code> (35 sheets, 20 meeting the level, 0 answered by someone outside the project). The <code translate="no">ridolfi1646</code> sheet counts at the level and was not part of the first batch; the <code translate="no">lopehurtado1520</code> and <code translate="no">genes1638</code> sheets of the first batch are not at the level (their rules were not hashed).</p>
+
+<h2 id="checks"><span class="num">09</span> What the automated checks require</h2>
+<p>Two checks run on GitHub by themselves (continuous integration, CI).</p>
+<table>
+<thead><tr><th>Check</th><th>When it runs</th><th>What it checks</th><th>What it does not check</th></tr></thead>
+<tbody>
+<tr><td>Check write-ups</td><td>every push to <code translate="no">main</code> and every pull request</td><td>page heads, dead links and HTML markup; the unit tests of the scripts</td><td>nothing about the readings themselves</td></tr>
+<tr><td>Reading check</td><td>every pull request, on the targets it changes only</td><td>for each <code translate="no">read</code> or <code translate="no">read in part</code> document: a grade A or B (its own, or the audit&rsquo;s) and an English translation; <code translate="no">read_share</code> at 0.95 or more for a <code translate="no">read</code> document, when it is recorded; that the target&rsquo;s class matches its documents</td><td>who gave the grade; the statistical test; the matched control; any comparison with the images; the targets the pull request does not touch</td></tr>
+</tbody>
+</table>
+<p>The other rules (the statistical test, the credit for earlier readings, the human check, the catalogue vetting list) are checked by scripts run by hand. They do not block a merge.</p>
+<p>Today 3 of the 682 targets that present a reading would not pass the Reading check if a pull request changed them.</p>
+<p><b>Merging.</b> A change to a result enters the repository through a pull request approved by a maintainer who is not its author (CONTRIBUTING, &ldquo;Review and merging&rdquo;). A ruleset on <code translate="no">main</code> enforces part of this: it requires a pull request and a code owner&rsquo;s review (<a href="https://github.com/dbourdeau/cyphersolver/blob/main/.github/CODEOWNERS" rel="noopener"><code translate="no">CODEOWNERS</code></a>), but not that the two checks pass, which CONTRIBUTING also asks. The repository&rsquo;s administrator and the site&rsquo;s rebuild job (through a deploy key) can push to <code translate="no">main</code> without a pull request, and the owner has pushed directly, so the rule does not bind every change.</p>
+
+<h2 id="ai"><span class="num">10</span> The part played by AI</h2>
+<p>The records name the AI models that did the work (<code translate="no">conditions.models</code>). They say what the person did (<code translate="no">conditions.human_role</code>): supply images or logins, point to a source, correct a reading.</p>
+<p>Scripts, keys and transcriptions are kept under version control. The README gives the commands that reproduce two results.</p>
+<p>A step done by an AI model cannot be replayed exactly: transcribing an image, proposing a code value from context. The models are proprietary.</p>
+<p>The cost of each result (model use, money, human time) is not published.</p>
+
+<h2 id="corrections"><span class="num">11</span> Corrections and challenges</h2>
+<p>Any reading can be challenged or checked.</p>
+<p>On GitHub, the <a href="https://github.com/dbourdeau/cyphersolver/issues/new?template=verification.yml" rel="noopener">Verification form</a> asks for the passage and the images used, every place where your reading agrees with the page or differs from it, and the key values you would change.</p>
+<p>Without a GitHub account, write by <a href="contribute.html#email">email</a>.</p>
+<p>Every write-up has a &ldquo;Contest or verify this reading&rdquo; link at its foot. Say which passage and which images, and where your reading differs. No response time is promised.</p>
+<p>A correction is made on the page with its date, stays in the repository&rsquo;s history, and is entered in the <a href="corrections.html">corrections log</a>: the date, the pages, what changed, who reported it and why it was wrong. The log starts on 16 November 2026.</p>
+
+<h2 id="researchers"><span class="num">12</span> For researchers, and how to cite</h2>
+<p>Cryptologists, palaeographers, archivists and historians can:</p>
+<ul>
+<li>check a reading from the images (<a href="contributors.html#verify">the list waiting for a check</a>);</li>
+<li>take a partial reading further (<a href="further.html">Read further</a>);</li>
+<li>look at a document in its archive (<a href="archives.html">To the archive</a>).</li>
+</ul>
+<p>Contributions are credited in the record (<code translate="no">outcome.credits</code>) and on <a href="contributors.html">Contributors</a>.</p>
+<p>Each write-up has a &ldquo;Cite this page&rdquo; block with a BibTeX entry: the date the page was posted and last changed, and the repository commit the site was built from. A page can change at the same address, so cite the commit and the date you consulted it. There is no DOI.</p>
+
+</main>
+<footer><div class="in">
+  <span>Daniel Bourdeau, September 2026 &middot; Text released under CC BY 4.0</span>
+  <nav aria-label="Footer"><a href="index.html">Overview</a><a href="method.html">Method and review</a><a href="corrections.html">Corrections</a><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">Code &#8599;</a><a href="contribute.html#email">Contact &#9993;</a><a href="feed.xml">Feed</a><a href="#top">Top &uarr;</a></nav>
+</div></footer>
+<script src="site.js?v=572104d3"></script>
+</body>
+</html>

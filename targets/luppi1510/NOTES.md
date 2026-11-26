@@ -42,10 +42,10 @@ The sibling letters of 1510 (IV/111, V/61, V/67, V/123, I/81) are glossed in the
 - Alignment of Fachard's text with the signs of I/3 (and with the attached copy he cites): not attempted; the edition's
   asterisked passages show where the editors deciphered rather than read a gloss. Blocker: none outside the project's
   priorities; reuse terms of the BNCF images not checked.
-- Giovanni da Poppi is the published candidate for the writer of I/3. The proposed error in the signature remains conjectural.
+- Attribution of I/3 (blocker: none; a published conjecture, not a gap in the reading): Giovanni da Poppi is the published candidate for the writer, and the proposed error in the signature remains conjectural.
 
 ## Escalation
 Not run: the target is closed as printed; the escalation steps of the writeup skill (siblings, known keys, key
 rebuild) would only reproduce a reading that is in print.
 
-AI agents did this work; no person has checked it.
+The additions of 20 November 2026 (the sender paragraph and "Where to read I/3", Andrew Beling, PR #842) were made by AI agents; no person has checked them. The maintainers' review of PR #842 (21 Nov 2026, an AI agent) read Fachard VI pp. 490-493 and Lettere (2022) II pp. 815, 834-836, 848 and found them as cited.

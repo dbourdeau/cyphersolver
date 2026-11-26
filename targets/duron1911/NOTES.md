@@ -93,7 +93,7 @@ telegrams belong with `../hernandez1911/` and the Clave G.A. ones with `../mccar
   - CMXV.15.1430.3-3 (28 Mar): "Total cie{n}to sesenta hombres. Diga si viene re{f}uerzo y cañón." Read. A period
     pencil gloss at the head of the form ("Total 160 h - Diga si viene refuerzo y ...") gives the same text, so the
     telegram was deciphered at the time (it is not in 1795.1). It should leave the undeciphered list.
-  - CMXV.15.1420.5-6 (27 Mar, 9:35 am): "[?Sánchez] [?tiene] [?cien] ochenta hombres. Venga Villarreal [...] y tenga
+  - CMXV.15.1420.5-6 (27 Mar, 9:35 am): "[?Sánchez] [?tiene] [?cien] ochenta hom{b}res. Venga Villarreal [...] y tenga
     listo [...] [?cañón]. Salgo por él mañana [?a] [?mediodía]." Read in part: 10 sure of 19 words (53 %).
   - CMXV.15.1420.6-6 (27 Mar, 3:08 pm): words salgo, hoy, carta, Luque, arreglos (5 of at least 10). Decoded, not read.
   - CMXV.15.1432.3-4 (29 Mar): coded words total, Luque, entrevista (3 of 13). Decoded, not read.
@@ -103,8 +103,8 @@ telegrams belong with `../hernandez1911/` and the Clave G.A. ones with `../mccar
   "José Pineda"; the typed list 1795.1 has the whole telegram (scan 21, entry 113). What is added: the gloss covers all
   four coded groups, and the card gives the same ("José Pin{e}da", one slip). 1695.2-2 gives only fragments ("aton",
   "oucsenn?s"), where the period gloss also stops; in 1795.1 entry 114, right after it, is blank.
-- **Not read:** 1648.2-3 (Gabriel, probably Gabriel Madero, who signs "Gabriel" in 1795.1 entries 103 and 111; the form
-  carries the pencil note "No se entiende"); 34.3344.1 (Villa, 1914), where the two-digit syllabary card of 1557.1
+- **Not read:** 1648.2-3 (Gabriel, perhaps Gabriel Madero: in 1795.1 entry 103 is signed "Gabriel Madero" and entry 98
+  "Adrían Gabriel"; the form carries the pencil note "No se entiende"); 34.3344.1 (Villa, 1914), where the two-digit syllabary card of 1557.1
   scan 3 does not read it as is or with any additive digit offset. 16.1561.10-13 is not cipher: 1795.1 types it in clear
   (scan 12, entry 66).
 - **Typed list CMXV.18.1795.1 searched (20 Nov 2026):** all 45 scans fetched, OCR'd with tesseract (unreliable: it
@@ -122,3 +122,24 @@ telegrams belong with `../hernandez1911/` and the Clave G.A. ones with `../mccar
   gutenberg.org returned 503), the 1914 syllabary test still gives no reading (best -4.88 per char). A simple-substitution
   solver that recovers a 70-letter control exactly gets only -3.59 (gibberish) on Gabriel 1648.2-3: so Gabriel is not
   a simple substitution of Spanish, or is too corrupted to break (`siblings/solve.py`, `siblings/lm1914.py`).
+
+### Maintainers' note, 21 November 2026 (integration of PR #831)
+
+- **Filing (one key, one entry).** The files stay in `siblings/`, as the contributor's record, and the receiving
+  profiles point to their sections: CMXV.15.1430.3-3 is filed under `../hernandez1911/` (read from the pencil
+  decipherment of the time, which the card confirms), CMXV.17.1695.1-2 (read from the decipherment of the time: the
+  pencil gloss and 1795.1 entry 113) and 1695.2-2 (decoded, not read) under `../mccarty1911/`. The four other
+  Hernández-card telegrams (1420.5-6 read in part, 10 sure words of 19; 1420.6-6, 1432.3-4 and 1447.1-3 decoded, not
+  read) are not filed yet: in `../hernandez1911/`, classed read, they would make that target read in part, which is the
+  owner's decision. 1648.2-3, 34.3344.1 and 16.1561.10-13 (not cipher) stay here as notes. None of this changes the
+  Durón reading above.
+- **Corrections** (from the review, PR #831): `hom{b}res` in the reading line of 1420.5-6 (above and in
+  `siblings/reading.md`); the key gives "billareal", with one r (`siblings/reading.md`); the sender of 1648.2-3 is perhaps,
+  not probably, Gabriel Madero (above and in `siblings/reading.md`); on 1695.1-2 the pencil word over "Luis" is Lewis
+  (`siblings/transcription.txt`). Each file carries a dated note.
+- **Reviewed:** the PR #831 review (an AI agent, two rounds) reproduced the decryptions with its own decoder from the two
+  `key.tsv` files (416 letters with the Hernández card, both Clave G.A. lines) and checked on the CEHM images the
+  transcriptions of 1430.3-3, 1695.1-2, 1420.5-6 and 1447.1-3, the card on scan 16, and the typed list 1795.1 on scans
+  5, 6, 12, 17, 18, 19 and 21. Not checked: entry 111 and the second series of 1795.1, the images of 1420.6-6, 1432.3-4,
+  1695.2-2, 1561.10-13, 1648.2-3 and 34.3344.1, and the language-model figures. No person has compared these
+  transcriptions with the images.

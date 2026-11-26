@@ -57,7 +57,7 @@ car = 1.0. The rule was set before testing; we report it as written.
 
 76 cipher words: **71 certain, 5 probable, 0 restored, 0 unresolved**. Read share 71/76 = 0.934 with certain words only,
 76/76 with the probable ones. The five probable words each need one number corrected by sense: entendi{d}os (81 for 61),
-n{o} (15 for o), sába{d}o ("sabaos"), domi{n}go (doubtful 21|29), mar{c}he (21 for c). The contributor kept "read in part" because the
+n{o} (15 for o), sába{do} ("sabaos"), domi{n}go (doubtful 21|29), mar{c}he (21 for c). The contributor kept "read in part" because the
 key failed his own rule, not because words are open; at integration the extent was set to "read" by the read bar, key partial. `reading_review` B.
 
 Content:

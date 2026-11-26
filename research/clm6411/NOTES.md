@@ -1,4 +1,4 @@
-# Clm 6411, folio 1r · catalogue 3668
+# Clm 6411, folio 1r · catalogue 3905
 
 No continuous reading established. The ordinary-script note is repeated. Günter Glauche transcribes it as *alocus ceroficon domus dominicus dei cella*, flags the second word, and questions the relationship to the three lines above. On the clearer copy the medial letter in *ceroficon* also resembles a long s. Either spelling gives the same repeat pattern. [Glauche, p. 217](https://www.digitale-sammlungen.de/en/view/bsb00093399?page=244) · [Manuscript](https://www.digitale-sammlungen.de/en/view/bsb00012886?page=3)
 

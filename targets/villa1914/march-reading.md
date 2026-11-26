@@ -1,0 +1,1 @@
+Con relación al **asunto d[e] Bauche**, sírvase Ud. manifestar cuando los interroguen que **ese individuo fue** puesto en **libertad en** C. Juárez y que no se **sabe su paradero**. Conviene igualmente que conste **oficial**mente la pri**sión y libertad de** dicho **individuo por** lo que pudiera suceder. El Gral. Fco. Villa.

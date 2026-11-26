@@ -2,7 +2,7 @@
 
 Conventions: {x} probable; [x] restored from the sense. The cipher has no signs for the Polish diacritics except a crossed a (ą); they are not added.
 
-Te nas wiesci dochodza z Rygiy y z Hamburku, ze sie Szwedzi armuią y iusz to trzeci raz zapowiedzie[i]li modlitwy y post. Co nieomylnie iest znakiem, ze woyne meditantur, y ze {kogs} zagabną.
+Te nas wiesci dochodza z Rygi y z Hamburku, ze sie Szwedzi armuią y iusz to trzeci raz zapowiedzie[i]li modlitwy y post. Co nieomylnie iest znakiem, ze woyne meditantur, y ze {kogs} zagabną.
 
 Ia radze, zeby tey sciany ku morzu nie zostawowac ogoloconey, bo daleko z pod Lwowa bedzie do Gd. anska sie wracac.
 
