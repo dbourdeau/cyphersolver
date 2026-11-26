@@ -42,6 +42,9 @@ Homophonic substitution, two-digit figures, with a small nomenclature.
 
   Cleartext jargon also used: *Castor* = le Roi, *Lysandre* = la Reine mère (Avenel).
 
+  The full key, with its Nov 2026 extension (41 = *que* and nine more names from Avenel's notes on the sibling letters
+  of Feb-May 1629), is `texts/key.md`; that file, not this table, is the key of record.
+
 ## Cribs that broke it (in order)
 
 1. `14 19` before/after *de, pour, bien que* → **la**.
@@ -104,6 +107,39 @@ manuscript (his accents and punctuation kept).
 - `25` for `26` in *Vautier*; `16` for `26` in *Vantelet*; `14` for `24` in *de Rome*.
 - `22` for `23`, `11` for `13` in *Champagne*; `47` for `17` in *frontière*; missing `19` in *au bois*.
 None affects the recovered alphabet.
+
+## 19-20 Nov 2026: the nine sibling letters (BnF fr. 3828, 3825, 3835)
+
+Avenel t. III prints nine more letters of Feb-May 1629 to Rancé and the Queen Mother with their figures in place
+(nos. CXIX, CXXXV, CXLVI, CXLVII, CLIII, CLIV, CLV, CLVIII, CLXVII). Under a pre-registered held-out test the fr. 3829
+key reproduces his decipherment of CLIV + CLV (0.940 against a best shuffled control of 0.456): a verification of
+Avenel and of the key, "read from existing decipherment". Strict count 337/375 cipher words (values taken from his
+notes to these letters are holes, the base codes 54, 59, 60 included): two letters read, seven read in part. Method and count: `texts/fr3828_method.md`; reading
+`texts/fr3828_reading.md`; key `texts/key.md` (Extension). The manuscripts were not seen.
+
+## 20-23 Nov 2026: the seven other pieces in the same cipher (May 1629, March 1630)
+
+Avenel t. III prints seven more pieces with figures in the same cipher: two notes of May 1629 to Bouthillier
+(CLVI, CLXXIV; Béthune 9331) and five pieces of March 1630 from the Piedmont campaign (CCCXII, CCCXIV, CCCXVI,
+CCCXVII, CCCXXXII; AE Correspondance politique, Turin t. XI). The key, frozen before they were decoded (PREREG2,
+`avenel3_others_check/`), agrees with the printed glosses on 0.945 of 481 signs (best shuffled table 0.417); only 14
+signs lack a printed decipherment, under the 300-sign floor, so this is descriptive, not a test. They are "read from
+existing decipherment" (Avenel; Bouthillier's own interlinear decipherment for CCCXIV and CCCXVI). Strict count
+119/144 cipher words (0.826): CCCXVI read, CLXXIV and CCCXII read by the short-text floor, the other four read in
+part (`texts/avenel3_others_reading.md`, `avenel3_others_check/word_count.tsv`). The letter table holds in 1630;
+42 is also *le / les* there, as Avenel says (counted as holes; admitted, 126/144).
+
+What stays open:
+
+- **63** (CCCXII n. 6): not read; Avenel hesitates between Marillac and La Force. A hole.
+- **The CCCXVII run** (n. 4): `42 20 21 12 26 21 30 16 27 13 30 16 21 22` = l· d i g u i e r e p e r i n, letter values
+  that Avenel prints without a reading ("le reste à la sagacité du lecteur"). *le Diguière, Perin* (Lesdiguières;
+  Perin the leader) is a hypothesis only, not counted.
+- **59**: princesse Marie in the table, glossed "M. de Mantoue" in CLVIII and "duc de Mantoue" in CCCXIV n. 6 (*la
+  fille de 59* = Marie de Gonzague). It may stand for the house of Mantua more broadly; the table is not changed and
+  the context values are holes.
+- Whether 54, 59 or 60 are glossed elsewhere in the volume, and the manuscripts (Béthune 9331, AE Turin XI), were not
+  checked.
 
 ## What remains
 

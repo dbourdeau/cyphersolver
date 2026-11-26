@@ -1,0 +1,80 @@
+JUDGE NOTES: Gerlach, Occulta scripta chymica (Wellcome MS.309), pp.141-149, one decode, strict single pass
+Inputs read: BRIEF.txt and decode.txt only. Decode scored as written; nothing emended.
+
+UNIT RULES
+- Unit = one decoded letter (a-z). '?' marks dropped; the letter it follows is judged like any other.
+- '_' or '#' = 1 unit, N (none occur in this decode).
+- Clear-script text in { } excluded: p.146 L06 {B: A: M: D:}, p.147 L05 {B: A: M: D}, p.148 L07 {B A M D}.
+- Punctuation (; = . :) and spaces are not units. Line-end '=' breaks rejoined for sense (shown with '-' in judge.tsv).
+- S = letter in a word that reads as sense in 16th-c. ENHG (period spellings accepted: u for v, uir, golt, tzehen,
+  iha, ach = auch, hot, mol, lucker, riche, zurgehen, oleitet, gnugck, tagck), or Latin/chemical term
+  (aqua regis, balneo marie, spiritum uini, tartaro, putrefaction, precipitatio, mercurium solis, uiola).
+- E = the single wrong letter in an otherwise sensible word (substitution or one extra letter). Marked [x] in judge.tsv.
+- N = letter in no-sense material. None found.
+- Omissions (e.g. zeihen for zeichen, gra-es for graues, feu- for feur, ein mol oder neun with a number missing)
+  carry no wrong letter, so the letters present are scored S; noted here, not counted.
+- A word with two slips gets two E (p.147 L06 [m]reci[e]itatio for precipitatio).
+
+TOTALS (S / E / N, strict = S/(S+E+N))
+p.141  460 / 9 / 0   total 469   460/469 = 98.08%
+p.142  450 / 1 / 0   total 451   450/451 = 99.78%
+p.143  458 / 3 / 0   total 461   458/461 = 99.35%
+p.144  446 / 3 / 0   total 449   446/449 = 99.33%
+p.145  486 / 4 / 0   total 490   486/490 = 99.18%
+p.146  449 / 1 / 0   total 450   449/450 = 99.78%
+p.147  438 / 4 / 0   total 442   438/442 = 99.10%
+p.148  418 / 1 / 0   total 419   418/419 = 99.76%
+p.149  449 / 5 / 0   total 454   449/454 = 98.90%
+S = 460+450+458+446+486+449+438+418+449 = 4054
+E = 9+1+3+3+4+1+4+1+5 = 31
+N = 0
+Total = 4054+31+0 = 4085
+Strict = 4054/4085 = 99.24%
+(Counts computed by script from the annotated segmentation, which was checked letter-for-letter against decode.txt.)
+
+ALL 31 SLIPS (decoded -> expected)
+p.141: elempel->exempel (l/x); granalibtes->granalirtes (b/r); uot->lot (u/l); lolben->kolben (l/k); lalden->kalden (l/k);
+       arflosen->auflosen (r/u); golben->kolben (g/k); balnerm->balneum (r/u); goll->golt (l/t)
+p.142: tagcg->tagck (g/k)
+p.143: wem->wen (m/n); christallsn->christallen (s/e); is->in (s/n)
+p.144: salttz->saltz (extra t); auso->also (u/l); angezriget->angezeiget (r/e)
+p.145: seinn->sein (extra n); stuien->stuben (i/b); rost mistes->ros mistes (t/s); mebel->nebel (m/n)
+p.146: mint->mist (n/s)
+p.147: mreceitatio->precipitatio (m/p, e/p); gmmeldet->gemeldet (m/e); ascheen->aschen (extra e)
+p.148: kaun->kaum (n/m)
+p.149: uinden->linden (u/l); soland->solang (d/g); rok->rot (k/t); wirr->wird (r/d); dreisbgck->dreisigck (b/i)
+
+RECURRING SLIPS
+- l or g written for k in 'kolben' and 'kalden' (p.141, three times); u written for l in uot, auso, uinden (three times).
+- m/n swaps (wem, mebel, kaun) and r for u/e (arflosen, balnerm, angezriget).
+- Doubled letters (salttz, seinn, ascheen).
+- Slips cluster on p.141 (9 of 31); later pages run at 1 to 5 slips.
+
+GISTS (recipe level only)
+p.141: A recipe for dissolving gold in aqua regis in a glass vessel.
+       The solvent is then drawn off in a water bath.
+       The gold is left at the bottom as an oil.
+p.142: The aqua regis treatment of the gold oil is repeated.
+       The vessel is set in a cellar so yellow crystals form.
+       The crystals are treated again with fresh acid.
+p.143: The crystal-forming cycle is repeated, then the crystals are melted back to an oil.
+       The gold oil is moved to a vial with spirit of wine.
+       The vessel is closed so the spirit does not escape.
+p.144: Sal ammoniac is added to the gold oil and spirit of wine in the vial.
+       The vial is sealed and tested for a proper seal.
+       Cross-reference to an earlier described method.
+p.145: A caution on how full the vial may be and how much gold it may hold.
+       The vial is set to digest (putrefaction) in horse dung.
+       Signs to watch for in the matter during digestion.
+p.146: The signs that digestion is complete; several vials can be done at once.
+       Heading: sublimation.
+       The matter is taken out and distilled to drive off the spirit of wine.
+p.147: The fire is raised by degrees to obtain the 'mercury of the sun' (of gold).
+       Heading: precipitation of the mercury of gold.
+       The mercury is sealed in a glass and heated until it turns to a red powder.
+p.148: The heating continues until a red powder forms, said to take a long time.
+       Heading: another, quicker precipitation of the mercury of gold.
+       A recipe for an aqua fortis from vitriol, saltpetre and verdigris, applied to the mercury.
+p.149: The mercury is dissolved and the acid repeatedly distilled off until the precipitate turns crimson.
+       The precipitate is washed with distilled water, repeated several times.
+       Ends mid-instruction.

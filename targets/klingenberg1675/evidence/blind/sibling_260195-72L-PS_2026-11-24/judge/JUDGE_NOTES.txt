@@ -1,0 +1,37 @@
+JUDGE NOTES: kling72 postscript decode (strict, one pass, decode scored as written)
+Files read: BRIEF.txt and decode.txt only.
+
+UNIT RULES APPLIED
+- Units are the space-separated tokens in decode.txt. Not counted as units: <struck>, {...} drawn marks.
+- Every [n] code number with no value is N (5 in row 3, 2 in row 5).
+- Units were joined into words. A unit is S if its word reads as 17th-c. German (period spellings allowed:
+  bewuste, gesant, ereugenden, Leutenants, Capitains).
+- E = wrong unit that is plausibly a one-letter slip. N = no sense, or more than a one-letter error.
+- Calls that could go either way, made strictly:
+  row 1 "z" in matrose+z = E (z for n: Matrosen); row 1 trailing "l" = N (no word).
+  row 2 "h" in ge-s-c-h-ha-f-fe-t = E (one doubled letter: geschhaffet for geschaffet).
+  row 2 "wie l": "wie" S as a word, "l" N ("wiel" is not a word; "weil" would need two letters moved).
+  row 3 "re" in ca-re-ta-i-n-s = N (two letters wrong: re for pi, Capitains). Not a one-letter slip.
+  row 5 "z" in we-r-bu-z-g = E (z for n: Werbung); "go" in go-r-t = E (g for f: fort).
+
+TOTALS (per row: S/E/N)
+  row 1: 9/1/1  = 11
+  row 2: 48/1/1 = 50
+  row 3: 22/0/5 = 27
+  row 4: 2/0/0  = 2
+  row 5: 23/2/2 = 27
+  S = 9+48+22+2+23 = 104
+  E = 1+1+0+0+2 = 4
+  N = 1+1+5+0+2 = 9
+  S+E+N = 104+4+9 = 117
+  Strict share = 104/117 = 0.8889 = 88.9%
+
+RECURRING SLIPS
+- "z" turns up twice where "n" is needed (matrose-z, werbu-z-g): may be one wrongly valued key entry.
+- Single stray "l" units (row 1 end, row 2 "wie l") with no reading.
+- 7 code numbers with no value ([98], [243], [385], [211], [292], [255]); the gap at row 3 sits before Leutenants (a number or rank?).
+
+GIST (3 lines)
+The said sailors (Matrosen) are to be brought to hand, and sent over bit by bit as they are got, with the first chances that arise.
+Good captains and [?] lieutenants are to be taken on [?] with the [?].
+The recruiting (Werbung) [?] does not go forward [?] [those who?] can bring the men to hand.

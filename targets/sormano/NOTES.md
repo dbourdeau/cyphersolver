@@ -161,7 +161,7 @@ Point to recheck: on f. 123r the crossbarred long-s behaves as a null three time
 not changed until the sign is compared on the two leaves.
 
 ## Remaining gaps
-- no. 63 f. 115r from line 28 to f. 116v, 25 unresolved groups (e.g. the reason of the duke of Calabria's claim, il marchese di Mantoa, mantener gli [?] oficio) and look-alike letters chosen by sense - blocker: illegible; the hand leaves T/b, pi/e, Y/y open (dudout/DOUTES.md)
+- no. 63 f. 115r from line 28 to f. 116v, 25 unresolved groups (e.g. the reason of the duke of Calabria's claim, il marchese di Mantoa, mantener gli [?] oficio) and look-alike letters chosen by sense - blocker: illegible; the hand leaves T/b, pi/e, Y/y open (dudout/DOUTES.md). After the blind sheets of 24-25 Nov 2026: 752 of 841 cipher words sure (89.4%), under the 95% bar (sure words only); 95.24% sure or probable
 - the looped b-sign: z in no. 63 and once in no. 65, rr in no. 66 and twice in no. 65 - blocker: no-key-material; either two signs merged or two values, not settled
 - code signs R and I of no. 63 (probably Fiorentini and Imperatore) read from sense alone, not added to the key - blocker: open-codes
 - no. 63 f. 115r lines 1-27 read only in part (no63_reading.md) - blocker: not-attempted; the 12 Nov re-read began at line 28
@@ -202,3 +202,31 @@ on Gallica views 123-124 in `dudout/`, frozen before decoding, and measured once
 against 0.874 for `n65_transcription.md`, all 400 controls below (shuffled text max 0.901). `dudout/no65_reading_reread.md`
 has 99.3% of the cipher words sure or probable and no unresolved word. The looped b-sign reads rr twice (Ferrara,
 arrivò) and z once (contenteza) in these lines. No. 65 was already read (0.993); it stays read.
+
+## 24 Nov 2026 - no. 63, blind sign sheet (Brice Dudout, with Claude), `dudout/sign_check/`
+Seven doubtful signs of the re-read stretch (f. 115r l. 28 - f. 116v) were put to Brice Dudout as a blind sheet. The
+rule was hashed before the thumbnails, and the controls passed 3/3.
+
+- **Five words become sure:** meter, rendera, lega (not lesa), oficio and deposition.
+- **Italic n = e.** The reader remarked that the italic n and the n with inward tail are one form. That was adopted
+  (italic n = e; pi alone carries n), which reads "in compagna et per eser qui" (probable).
+- **Count.** Of 841 cipher words: sure 743 -> 748, probable 52 -> 48, unresolved 25 -> 24. Sure or probable
+  94.5% -> 94.6%, so still under the 95% bar and no. 63 ff. 115-116 stays read in part.
+- **Files.** `dudout/no63_signs_2411.txt` and `dudout/no63_reading_2411.md`; the frozen 12 Nov files are unchanged.
+  No image is committed (Gallica).
+
+## 24 Nov 2026 (late) - no. 63, blind sign sheet 2411-95 (Brice Dudout, with Claude), `dudout/sign_check/`
+Three unread groups that hinged on a single pi / italic-n sign were put to Brice Dudout as a second blind sheet (rule
+hashed before anything was shown; controls 3/3). All three are the italic n (e): *et*, *e* (sure) and *egli° era*
+(probable, word cut by sense). Of 841 cipher words: sure 748 -> 750, probable 48 -> 49, unresolved 24 -> 21; sure or
+probable 94.6% -> 95.01%. This is at the 95% line by 0.05 word only, it is 94.99% with a stricter tokenisation (839
+words) and 89.2% on sure words alone, so we do not claim it as exceeded and leave the state to the maintainer.
+Files: `dudout/no63_signs_2411_95.txt`, `dudout/no63_reading_2411_95.md`. No image is committed (Gallica).
+
+## 25 Nov 2026 - no. 63, blind sign sheet 2411-95b (Brice Dudout, with Claude), `dudout/sign_check/`
+Two single-sign doubts whose form can be seen on the image were put to Brice Dudout as a third blind sheet (rule hashed
+before the thumbnails; controls 3/3): the looped B (z) gives *diligenza* (was diligen[tia]) and the barred looped delta
+(o) gives *serviva o al tirar Papa in lega* (was unread), both sure. Of 841 cipher words: sure 750 -> 752, restored
+9 -> 8, unresolved 21 -> 20; sure or probable 95.01% -> 95.24% (801/841, margin 2.05 words), and 95.23% (799/839) with
+our stricter tokenisation, so the line is reached on both counts. Sure words alone: 89.4%. The state is left to the
+maintainer. Files: `dudout/no63_signs_2411_95b.txt`, `dudout/no63_reading_2411_95b.md`. No image is committed (Gallica).

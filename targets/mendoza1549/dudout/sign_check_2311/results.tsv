@@ -1,0 +1,18 @@
+q	item	place (line, sign index from 0)	alignment value	answer	outcome
+q02	K1 control	L08 s1 omega	w	omega	control passed
+q10	K2 control	L12 s3 mo	mo	mo	control passed
+q13	O1	L15 s3 o'	ga	small round	agrees: op = ga
+q04	O2	L15 s13 o'	ga	small round	agrees: op = ga
+q15	O3	L16 s12 o'	ta	flat	agrees: of = ta; abier{ga/ta} read from the signs
+q08	X2	L06 s16 x	de	looped	agrees
+q11	X3	L07 s16 x	de	looped	agrees
+q06	X4	L08 s16 x	de	looped	agrees
+q05	X6	L13 s8 x	de	looped	agrees
+q14	X10	L15 s17 x	de	looped	agrees
+q07	X5	L12 s9 x	no	round	agrees; {de/no} comunique read from the signs (no). Reviewer's remark: "Forme 2 pourrait etre 2 caracteres ? Un boucle de droite ouverte, un boucle de gauche ouverte" (form 2 could be 2 characters? an open right loop, an open left loop). Checked on the two form-2 examples: each is one continuous stroke (an open left curve joined to an open right loop), the rule's "round x, two curves joined"; answer kept
+q09	X9	L14 s14 x	no	round	agrees; ti{ra}{no} keeps its other repair {ga/ti}
+q01	X7	L13 s25 x	no	round	agrees (decoded "looped, against" on 23 Nov by mistake; the key gives form 2 = round); asked again on sheet 2511
+q12	X8	L14 s1 x	no	round	agrees (decoded "looped, against" on 23 Nov by mistake; the key gives form 2 = round); asked again on sheet 2511
+q03	X1	L05 s22 x	de	neither / other form	reviewer: an "elongated 8"; labelled x8, value de by the alignment, word already read
+# Sign indices: from 0 in transcription_44r.txt, the "." tokens counted. REGLE-SELECTION.md (hashed before the sheet, left as written) is off at X2 (s18, is s16), X3 (s19, is s16), X4 (s17, is s16), X7 (s26, is s25, the last sign of L13), X9 (s15, is s14), X10 (s20, is s17), and for the x examples of L03 (s13 and s14, are s14 and s15). Each place is still unambiguous: the only x, or the n-th x, of its line; the rows above give the right indices.
+# Option order: sheet-2311-key.json (which shape each "forme n" was, per question). Correction of 25 Nov: q01 and q12 were first written here as "looped, AGAINST the alignment"; decoded with the key, both answers are round and agree.

@@ -2,9 +2,13 @@
 
 # Rests on: our re-transcription of the cipher from the two DECODE images (R4936-transcription-b15.txt), decoded with
 # the family's reciprocal letter key (a-v b-f c-p d-o e-y g-u h-r i-n k-l m-z q-t s-x; shared-key-hypothesis.json),
-# aligned letter by letter (R4936_align.tsv, research/reading_audit/b15_align.py): 1,932 reading letters, 1,794 on the
-# figure's own value, 130 on the other member of a look-alike pair of the hand (g/q/u, c/e, h/r, i/n, a/v), 6 on
-# another figure inside [?words], 2 supplied ([s] in e[s], one figure doing for es + succumbalna). No contemporary or
+# aligned letter by letter (R4936_align.tsv, research/reading_audit/b15_align.py): 1,932 reading letters, 1,898 on the
+# figure's own value, 26 on the other member of a look-alike pair of the hand (g=t 12, q=u 5, c=y 3, g=g 3, a=a, h=h,
+# n=n), 6 on another figure inside [?words], 2 supplied ([s] in e[s], one figure doing for es + succumbalna).
+# 24 Nov 2026 shape check (sign_check/): 102 g-shaped figures with the short hook of the hand's t relabelled q (8 by a
+# human blind sheet, 94 by an AI pass that counts as probable until a blind reader checks it), 1 q->g, 1 c->e; before
+# it, 1,794 on the own value and 130 on look-alikes. Four figures labelled g are read u but written with the hook
+# (tag g=u:hook: mutatnanak twice, instructioban, tule). The reading itself is unchanged. No contemporary or
 # printed decipherment exists: the only one is a pencil gloss under the first line ("persvadealni kell..."), a later
 # reader's start. Clear text of the letter in italics. Scribe's spelling kept, accents not added (the cipher has none).
 # [?word] partly carried, [...] unread figures, [s] a supplied letter.

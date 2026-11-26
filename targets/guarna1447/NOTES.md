@@ -44,6 +44,8 @@ protocol, twice.** The end of the target cipher agrees word for word with the cl
 |---|---|---|---|---|---|
 | 852 | 583 | 33 | 0 | 236 | 616 = 72.3% |
 
+Sure words only (the house measure, `fraction_read` and `read_share` from 26 Nov 2026): 583 of 852 = **68.4%**.
+
 **Read in part** (`reading_review` grade B). The unresolved stretches are counted as length/5 words; the total is an estimate.
 By part: H 71%, rest of 153r 71%, 153v 73%, 154r 91% (from our working count).
 
@@ -60,13 +62,13 @@ and shows a "fervent wish" for Sforza's coming; Sforza should come quickly, with
 3. **The unresolved count is an estimate** (stretch length / 5), and our earlier note said 862 words and 72.6%; the recount
    by script on `reading.md` gives 852 and 72.3%.
 4. **Part of the content is not new**: f. 153v from about l. 46 to f. 154r agrees with the 15th-century clear of f. 156.
-5. **A blind shape sheet on the near-identical signs is still pending** (h-like 4 / hk, sigma / o with a hook, t / T / z,
-   hs / h): not answered, so not applied. The second decode with K3 changed no word.
+5. **A blind shape sheet** on two pairs of near-identical signs (sigma / o with a hook, h-like 4 / hk) was answered on
+   23 Nov 2026 (see below); t / T / z and hs / h are not yet asked. The second decode with K3 changed no word.
 6. **One reader** (an AI agent) on a microfilm; no palaeographer checked the signs.
 
 ## Remaining gaps
 
-- About 236 unresolved words (estimated), mostly on 153r and 153v ll. 4-19 - blocker: illegible; look-alike signs not separated on the microfilm; the pending shape sheet and a fine re-transcription are the next step.
+- About 236 unresolved words (estimated), mostly on 153r and 153v ll. 4-19 - blocker: illegible; look-alike signs not separated on the microfilm; a shape sheet on the pairs not yet asked (t / T / z, hs / h) and a fine re-transcription are the next step.
 - No fresh held-out block to validate K3 - blocker: no-key-material; H and H' are used; another Guarna leaf with a complete late copy (lead 1315) would serve.
 
 ## Escalation
@@ -94,3 +96,27 @@ If an edition prints this letter, we will credit it.
 ## Files
 
 `transcription.txt`, `decryption.txt`, `key.tsv` (CC BY 4.0), `validation.txt`, `reading.md`, `translation.md`, `profile.json`.
+
+## Sign sheet on f. 153r, 23 Nov 2026 (Brice Dudout, with Claude)
+
+A blind sign sheet (rule written and hashed first; `sign_check_2311/`) asked Brice Dudout to separate the look-alike
+signs of this hand: sigma `ot` (t) against `oe` (e), and the right hook `hk` (r) against `4` (i). Both controls passed.
+H05 sign 13, transcribed `oe ot`, is a single `ot`. With the spurious e gone, `pi b hs ot hk q` reads "vostra" whole by K3,
+so {vostra} becomes certain: 584 certain, 32 probable, 616 certain or probable (72.3%, unchanged). H05 sign 1 (`oe`) and
+the three hook signs of H04-H05 confirm the transcription; the reviewer sees the two hook forms as distinct. H04 {parere}
+[?3] stays open. K3 is unchanged and nothing was re-measured; the held-out hash of 5 Nov was taken on the old H05
+("oe ot").
+
+**Integration of PR #967 (26 Nov 2026).** The sheet asked only the shape of H05 token 13 (sigma against o with a hook;
+answer sigma). That `oe ot` is one sign and not two is a separate segmentation call, made on the image after the
+answers; the rule had foreseen a relabel to `ot ot`. The record does not say who made that call: the sheet was built
+and its rule applied by Claude, and no statement by Brice Dudout that he made it was found (none in the PR thread
+by 26 Nov). By the owner rule of 24-25 Nov an AI-settled look-alike place is probable, so `reading.md` marks
+**{vostra}** again: 583 certain, 33 probable, 616 certain or probable (584 / 32 under the PR, 583 / 33 before the
+sheet). The transcription keeps the single `ot`. `fraction_read` and `read_share` now count sure words only: 583 / 852
+= 0.684. If Brice states that he made the call on the image, vostra becomes certain (584 / 852 = 0.685).
+`transcription_frozen.txt` is the transcription as it stood before 25 Nov (from git, commit 1513418f52), with H05
+`... hs oe ot hk q x`: the held-out block H02-H19 as hashed on 5 Nov. The hash 95e803c0... was not reproduced from it,
+because the exact hashing form (lines, line ends) is not recorded. The sheet key (option order per question) is not
+committed; `sign_check_2311/results.tsv` is the only map from form numbers to shapes.
+

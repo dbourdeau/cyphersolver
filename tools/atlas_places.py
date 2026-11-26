@@ -15,6 +15,7 @@ ATLAS = ROOT / 'docs' / 'atlas.json'
 
 # places added with the 25 Oct 2026 backfill (lat, lon); names are what the atlas shows
 NEW_PLACES = {
+    'Eagle Pass': [28.709, -100.499],  # eaglepass1917: Mexican embassy, Washington, to the consul at Eagle Pass, Texas, 1917
     'Bombay': [18.975, 72.826], 'Calcutta': [22.573, 88.364],  # morier1808: Jones at Bombay to Minto, Governor General at Calcutta, 1808
     'Khartoum': [15.501, 32.560], 'Dongola': [19.165, 30.476],  # gordonmudir1884 (Gordon at Khartoum to the Mudir of Dongola, 1884)
     'Dublin': [53.349, -6.260],  # ormond1678: Ormond, Lord Lieutenant, at Dublin, 1678
@@ -56,7 +57,10 @@ NEW_PLACES = {
     'Regensburg': [49.013, 12.102], 'Wolfenbüttel': [52.162, 10.537], 'Antwerp': [51.219, 4.402], 'Darmstadt': [49.873, 8.651], 'Münster': [51.962, 7.626],
     'Leszno': [51.8457, 16.5753], 'Sárospatak': [48.3188, 21.5683], 'Tortosa': [40.812, 0.521], 'Almazán': [41.486, -2.531],
     'Nanjing': [32.060, 118.797], 'Lhasa': [29.652, 91.172],  # nanking1930: Nanking to the Dalai Lama at Lhasa, 1930
+    'Kaiserswerth': [51.301, 6.736],  # breant1673: Réveillon's French garrison at Kaiserswerth, 1673-74
     'Manila': [14.5995, 120.9842], 'Fort Leavenworth': [39.3558, -94.9170],  # mauborgne1915: Manila to the Army Signal School, 1915
+    'Amiens': [49.894, 2.296],  # acciaiuoli1513: the French court at Amiens, October 1513
+    'Utrecht': [52.091, 5.122],  # dumas1777: Dumas's first report to the Committee, dated from Utrecht, 30 April 1776
 }
 # words in a route that stand for a gazetteer place
 ALIASES = {

@@ -47,6 +47,31 @@ class Floor(unittest.TestCase):
     def test_counts_must_be_whole_numbers(self):
         self.assertEqual(len(hard(read_share=0.8, floor_used=True, cipher_words=9.0, holes=2)), 1)
 
+class ReadBarKnowsTheFloor(unittest.TestCase):
+    """docs/_check_writeup.read_bar accepts a short text under 95% when it meets the floor (24 Nov 2026)."""
+    def bar(self, **entry):
+        import json, _check_writeup as cw
+        prof = profile(**entry); prof['outcome']['fraction_read'] = 0.97
+        with tempfile.TemporaryDirectory() as d:
+            p = pathlib.Path(d) / 'x'; p.mkdir()
+            (p / 'profile.json').write_text(json.dumps(prof), encoding='utf-8')
+            old = cw.tdir; cw.tdir = lambda folder: p
+            try: return cw.read_bar('x')
+            finally: cw.tdir = old
+
+    def test_floor_text_does_not_fail_the_bar(self):
+        ok, why = self.bar(read_share=18 / 19, floor_used=True, cipher_words=19, holes=1)
+        self.assertTrue(ok, why)
+
+    def test_short_text_without_the_floor_still_fails(self):
+        ok, why = self.bar(read_share=18 / 19)
+        self.assertFalse(ok)
+        self.assertTrue(any('under 95%' in w for w in why))
+
+    def test_long_text_under_the_bar_still_fails(self):
+        ok, why = self.bar(read_share=0.9, floor_used=True, cipher_words=50, holes=5)
+        self.assertFalse(ok)
+
 
 if __name__ == '__main__':
     unittest.main()

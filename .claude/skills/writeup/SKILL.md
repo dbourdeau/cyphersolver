@@ -42,7 +42,12 @@ not from memory. The slug is the folder name unless a page already exists under 
   used, who pointed to a source, who solved it before, who sent a solution, correction or check. The build prints
   them on the page as the hero's credits line and adds them up on `contributors.html` and the front page's top
   contributors; nothing on the page is typed by hand. A result sent in by someone else gets `outcome.provenance`
-  `contributed` (or `mixed`) and a `solution` credit with the PR, issue or email as `source`.
+  `contributed` (or `mixed`) and a `solution` credit with the PR, issue or email as `source`. When the folder comes
+  from someone's lead (its documents are in their lead row, shelfmark and folios, and the lead is older than the
+  folder; citing the number or only the shelfmark makes no difference), the person writing the folder adds the
+  finder's `new cipher` credit with the lead or entry number in `note` (one `new cipher with solution` credit if the
+  finder also read it), unless those documents were already in DECODE, the catalogue, a lead or a target, or
+  deciphered in print or on Cryptiana, before the lead (issue #969).
 - **Full texts (George Lasry, 22 Oct 2026).** A reading (classed "read" or "read in part", or "already solved" with a
   reading method such as read from existing decipherment or read with known key) shows the complete
   transcription and the complete decryption of every document it covers, and the key when the project or a

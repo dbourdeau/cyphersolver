@@ -75,7 +75,7 @@
       "Claude Opus 5.5 (Anthropic), agents run by Brice Dudout (transcription, protocol and measure, key recovery, reading, write-up)"
     ],
     "first_date": "2026-11-12",
-    "last_date": "2026-11-12"
+    "last_date": "2026-11-21"
   },
   "solution": [
     {
@@ -140,6 +140,12 @@
       ],
       "what": "Integration check (round 4): own decoder from the key rule reproduces the 107 signs and the text group for group; own sweep of 166 (alphabet, shift) pairs over seven alphabet variants with a 4-gram Don Quijote model ranks the key first (-2.36 per character against -3.32 for the best other); the 24 typed cipher groups compared with the CEHM image fetched over plain http (24 of 24 agree; the image host fails TLS); the sister telegram CMXV.18.1777.2-6 decoded from its image against its pencil gloss: 28 signs, cipher = plain + 10, a different key; the header-difference rule holds in both (observed after the reading, two cases). The archive-key measure (measure_c06.py) is not in the pull request and was not reproduced.",
       "result": "worked"
+    },
+    {
+      "date": "2026-11-21",
+      "kind": "access",
+      "what": "Housekeeping: PR #831 (Daniel Jalkut) put ten other telegrams of catalogue 1462 in siblings/ (and WORKLOG.md), in other keys, because the catalogue brief named this folder; nothing in it changes CMXV.18.1777.1-6. At its integration the files stay here as the contributor's record and are referenced from the targets of their keys (one key, one entry): CMXV.15.1430.3-3 from hernandez1911, CMXV.17.1695.1-2 and 1695.2-2 from mccarty1911. The other four Hernández-card telegrams wait for the owner's decision on the class of hernandez1911; 1648.2-3, 34.3344.1 and 16.1561.10-13 (not cipher) stay here as notes.",
+      "result": "worked"
     }
   ],
   "outcome": {
@@ -196,7 +202,7 @@
         "detail": "all 24 typed groups were compared with the public image over plain http by the integration check (24 of 24 agree); no human palaeographer has checked it; the form types the addressee Ollifhant, so the telegraph's own slips are visible"
       }
     ],
-    "notes": "One telegram of 20 May 1911 (eve of the Treaty of Ciudad Juárez), read in part with a key recovered from the ciphertext. Key not validated (107 signs; declared in advance). Strict count 15 of 19 words = 78.9 %; with the 3 probable words 94.7 %. A different key from the Clave G.A. (mccarty1911), the turning grille (nuevaclave1911), the Hernández card (hernandez1911), the signer's card of mexico1911 and the Elisa shift (1777.2-6).",
+    "notes": "One telegram of 20 May 1911 (eve of the Treaty of Ciudad Juárez), read in part with a key recovered from the ciphertext. Key not validated (107 signs; declared in advance). Strict count 15 of 19 words = 78.9 %; with the 3 probable words 94.7 %. A different key from the Clave G.A. (mccarty1911), the turning grille (nuevaclave1911), the Hernández card (hernandez1911), the signer's card of mexico1911 and the Elisa shift (1777.2-6). The folder siblings/ holds Daniel Jalkut's files on ten other telegrams of catalogue 1462 (PR #831), referenced from hernandez1911 and mccarty1911; they are not part of this target.",
     "fraction_read": 0.789,
     "fraction_read_method": "measured",
     "fraction_read_source": "dudout/reading.md, by words (README rule), header excluded: 19 words, 15 sure = 78.9 %; 3 probable (Daniel, a, la) and 1 unresolved (dak) not counted as read. Counting the probable words: 18 of 19 = 94.7 %.",

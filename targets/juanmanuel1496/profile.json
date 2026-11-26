@@ -254,6 +254,15 @@
    "kind": "literature search",
    "what": "Five statements of the readings compared with Sanuto, Diarii I, and Zurita (1580): Maximilian towards Chiavenna with the legate (Dec 1496), the king at Girona, the Cardinal of San Pietro in Vincoli and Battistino Fregoso against Genoa and Savona, the Roussillon truce, badly fitted Biscayan ships: all consistent; none a test.",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "verification",
+   "technique": [
+    "manual reconstruction"
+   ],
+   "what": "Two blind sign-shape sheets (23 and 24 Nov 2026; dudout/sign_check_2026-11/, PR #948), Brice Dudout reader, sheets built and scored by AI agents (Claude); rules hashed before the thumbnails; controls 3/3 on each; Lasry's key unchanged. Sheet 2311: five words become read (18 Dec 653 -> 655 of 933, 10 Nov 253 -> 256 of 388). Sheet 2411b: three <W26> seen as 77 (o), 18 Dec 655 -> 658. Sheets only: 914 of 1,321 cipher words (69.2%). The reviewer's remark that <W26> and 77 are one sign led to a merge chosen after the decodes were seen (7 places where o does not fit): 42 more words, all probable, 956 of 1,321 with the merge. Integration review of PR #948 reproduced the counts from words_*_v3.tsv, the schema, hashes and controls; the BNE images were not compared. Class unchanged; adoption of 914 into the text figures is the owner's call.",
+   "result": "partial"
   }
  ],
  "outcome": {
@@ -354,6 +363,10 @@
     "note": "read_share 253 of 388 cipher words (words_10nov1496.tsv): f. 2v 67.9%, f. 3r 61.0%. Words with a plain 7 (d) where s is wanted are counted unread; whether the clerk wrote it so is open. Translation an AI agent's."
    }
   ],
+  "sign_check": [
+   {"date": "2026-11-23", "checker": "Brice Dudout", "checker_kind": "project", "model_roles": ["rule", "thumbnails", "sheet", "scoring", "remarks"], "signs_checked": 8, "controls": 3, "controls_passed": 3, "as_transcribed": 2, "corrected": 5, "unresolved": 1, "not_counted": 1, "rule": "dudout/sign_check_2026-11/sheet-2311-rule.md (23 Nov 2026, before the thumbnails and the answers)", "rule_hash": "1427552df6f154d15914d09731593f95f25dcd2ceb37b68d577fe852d07f7a3b", "sheet_faults": "q03 (J2): example thumbnails of form 1 show two different characters (reviewer remark); not integrated", "note": "Lasry's key unchanged. Five words become read: C07 pero, C17 posible (18 Dec 653 -> 655 of 933); L09 aqui, L15 remedio, L23 Proencia (10 Nov 253 -> 256 of 388). Two <W26> confirmed, one 'neither'. No image committed. Not a human_check: AI agents built and scored the sheet."},
+   {"date": "2026-11-24", "checker": "Brice Dudout", "checker_kind": "project", "model_roles": ["rule", "thumbnails", "sheet", "scoring", "remarks"], "signs_checked": 8, "controls": 3, "controls_passed": 3, "as_transcribed": 3, "corrected": 4, "unresolved": 1, "not_counted": 0, "rule": "dudout/sign_check_2026-11/sheet-2411b-rule.md (24 Nov 2026, before the thumbnails and the answers)", "rule_hash": "2aa741e707d6e9476b118cf46f4c41105abc60e7bd75c5e15d780bd71f358568", "sheet_faults": "none found", "note": "Lasry's key unchanged. Three <W26> seen as 77 (o): C10 comendador, C15 con, C16 lo read (18 Dec 655 -> 658 of 933); three <W26> confirmed; J2 77 chosen with a doubt (enbio {probable}, not counted); J6 unresolved. Reviewer's remark that <W26> and 77 are one sign: merge tested and adopted as {probable} (dudout/sign_check_2026-11/README.md): 0 read word broken, +42 words, 956 of 1,321 with the merge (914 without). No image committed. Not a human_check: AI agents built and scored the sheet."}
+  ],
   "provenance": "contributed",
   "credits": [
    {
@@ -375,6 +388,12 @@
     "role": "transcription",
     "note": "Andrew Beling, with AI agents: blind transcriptions of both letters in Lasry's sign names",
     "date": "2026-11-17"
+   },
+   {
+    "who": "dudout",
+    "role": "verification",
+    "note": "two blind sign-shape sheets (23 and 24 Nov 2026; Brice Dudout reader, sheets built and scored by AI agents) and the <W26> = 77 merge as a {probable} variant, dudout/sign_check_2026-11/: 906 -> 914 of 1,321 cipher words read (956 with the merge, 42 {probable})",
+    "date": "2026-11-24"
    }
   ],
   "notes": "Planned tests on letter 1 missed narrowly on a first transcription (sign-sheet confusion); the test on unseen text (letter 2) passed both marks; an independent check with its own readers passed every mark on both letters. Every proposed addition missed or gave no result. No reading_review yet: the reviewer's to give. Key state partial: the code groups, the barred u/v sign and four other signs have no value in Lasry's table."

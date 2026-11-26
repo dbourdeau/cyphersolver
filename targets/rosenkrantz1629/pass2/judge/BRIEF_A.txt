@@ -1,0 +1,17 @@
+JUDGE BRIEF, rosenkrantz1629 code A (number cipher, letters to the Statholder Frands Rantzau, 2 and 15 Feb 1629)
+Language: Danish of the 1620s, period spelling (haffuer, och/oc, att/at, ieg, bliffuer, dj = they, uille = ville,
+u for v, y for i). Latin phrases are possible.
+File: judge/decode_A.txt. One line per manuscript line. "/" marks clear text in the letter (left out). [number] is a
+word code the key does not solve (a name or word). "?" is a number the key cannot read. Word breaks inside a decoded
+run are NOT marked: the cipher has none; split the letters into words yourself where Danish allows. A word may
+run over a line end (e.g. "reste" + "rer"): join across lines where no "/" or [number] intervenes.
+Lines tagged [HELD-OUT] (letters A1P and A2) were decoded once with a key frozen beforehand from the untagged
+training letter (A1). Score every decoded letter of every line:
+  S = letter in a word that reads as Danish (or Latin) sense,
+  E = a one-letter slip in an otherwise readable word,
+  N = no sense.
+No emendation beyond the one-letter E rule. Do not count "/", [number] or "?". Report S, E, N counts for A1
+(training), A1P and A2 (held-out), the held-out total (A1P+A2) and the full total, with your word split of each
+held-out line. Our own bar: 65% S on the held-out block.
+Solver's own view, for the judge to test and not to trust: most held-out runs read as Danish (for example
+"af kortning af de ... som resterer", "tage half alene noget med", "til forgefuis", "alting", "uuist").

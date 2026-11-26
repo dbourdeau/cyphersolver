@@ -1,0 +1,70 @@
+# Pass A, Claude Opus sub-agent, 2026-11-25, blind
+# Method: shapes only, no decoding. Read each row from the _a/_b halves (overlap removed by matching the shared signs),
+#   checked against the full row / overview, temporary PIL zooms (passe-A/tmp/, deleted) on every doubtful sign.
+#   Later glosses in another (darker) ink above/between lines ignored. Margin blots outside the row ignored.
+# Conventions reused from CONVENTIONS-SHAPES (c. 1r): d, D/, u, w (incl. open "ew"/"eo" form), O, #, 8, fs, y, q, 12, "/", "(", N1-N8.
+# Conventions added on this page:
+#   vt  = the frequent "ox"-looking sign: small v/loop joined to a cross on its right (SIGNS "vt").
+#   a   = open alpha "ɑ"/"vc" (no crossing); kept distinct from vt.
+#   d vs u: a loop with a long tail coming in from upper left = d; a small v-shape with only a short left stroke = u.
+#           This split is the least certain of the page (some u may be short d).
+#   +o  = upright straight cross with a ring at its lower right on the line (1v L11, L18, L23); fs = f-stem whose top curves
+#         left, with loop at right (1v L01, L19, L26; 2r L03, L04). The two may be one sign.
+#   5o  = 5-like / long-s-like curve with raised ring (tall integral-like form in 1v L14, L15 merged with it).
+#   sq? = square whose sides extend into small legs or a crossing stroke ("ㅍ"-like), 1v L04, L13, L14, L26 x2; 2r L06, L08.
+#         Possibly a separate sign; the plain closed square is written sq.
+#   R?  = A-like sign with a closed loop at the top and a leg (1v L08, L14, L18; 2r L01, L02, L04, L07); taken as SIGNS "R".
+#   eee = chain of 2-3 small loops with a closing hook ("eeo"); the 2-loop open form "eo/ew" = w.
+#   "/" also used for short oblique page strokes; "(" for the closing stroke at 1v L04 end (vertical bar) and 2r L09 end.
+# N-shapes added (shape only):
+#   N9  = c/ς-like hook whose top carries a small ring at its upper right, with a long descending (slightly curved) stem
+#         (1v L09, L10, 2r L06). Close to q but the ring is open/hooked and the stem curves.
+#   N10 = epsilon / reversed 3 (1v L09).
+#   N11 = cursive chain like "ure"/"wie": two open u-strokes ending in a closed loop, small ring above the first stroke (1v L21).
+#   N12 = small loop at lower left with a curved stem rising from its right and a short hook at its upper left (horned,
+#         ȣ-like) (2r L02).
+#   N13 = loop at right with a long stem descending to lower left (as N7), crossed at its top-left by an arched/hooked
+#         stroke (looks like "fp" / "ɣ6") (1v L05, L06, L07, L11; 2r L05, L08 x2).
+# Uncertainties (main):
+#   - d / u split (see above); vt vs D/ is clear in most places.
+#   - 1v L09 first sign N1? (curly x with hooked ends); 1v L21 "b? n?" (b-like stem with top loop; arch with left leg);
+#     2r L03 b? same shape as 1v L21; 2r L02 "uo?" (u-like with raised ring).
+#   - 1v L10 "N6?" = ink blot (filled small ring) with a dot above. 1v L11 "O?" = O with a descending tail/smudge on the right.
+#   - Dots: included only when clearly on the line; 1v L17 ".?" mid-height dot between O and d; 1v L20 dot above a
+#     (not transcribed), 1v L22 dot above final N6, 2r L09 dot above xo (not transcribed).
+#   - 1v L15 "1o?" = 1 with blotted raised mark (2 or o). 2r L01 "a?" blotted alpha. 2r L06 two short strokes "/?".
+1v L01: a . W O d w 6o xo 4o vt 3o sq W eee a x: x3 3o x u w 6o sq x fs O
+1v L02: 3o d w a vt @ w 12 d vt / 8 12 O 12 w 5o vt x 6o O z N5 d mx2 x3 3o
+1v L03: a 8 12 O D/ O W 12 6o z 4o 12 d sq d x x: D/ dd 4o 3o d w a vt
+1v L04: sq W x xo O vt / 4o x: sq? a 4o D/ N6 w # 3o / O 6 N6 eee D/ a xo 3o (
+1v L05: N13 O / x3 w x: 4o vt 6 mx2 4s W O / w 12 4o / xo O 12 W N3 / 8 12
+1v L06: a N13 O vt w a O x: 3o W x N6 4o # fs / W w x: D/ O vt xo w
+1v L07: 5o & 4o d 3o / D/ w # 6 / a N13 N7 / w x: / 6 / mx2 D/ 12 O d 6 a vt / 2
+1v L08: eee N6 x R? O vt 3o O / 4o 3o a O N6 4o vt 12 a z / D/ w 12 8 3o
+1v L09: N1? / w 12 O / x3 w d # 4o W a N9 N10 O x: 6 a 12 w Le O 4o 6
+1v L10: W O vt a 4o 12 d D/ O N6? vt x x: 6 eee W / vt N9 a O x: 6 / @ x3
+1v L11: 6o / 5o 4o # 12 vt N13 x a d O 4o # 6 O? # +o d O / x 12 +o a x3 3o
+1v L12: vt a 4o 12 d dd w 6o / 8 12 4o / a W N7 w x: 3o u w 6o O x: vt D/ O .
+1v L13: x: 3o d O dd O x: 12 # O 12 a Le 4o D/ O sq? a O D/ u w x:
+1v L14: 6 O x: 12 w vt 3o d O R? w 12 5o O d # u x x: 3o / sq? w 12 d vt x3
+1v L15: x 1o? w a d vt a W / O 5o w & W D/ d w a 3o / O 6 xo O x3
+1v L16: 6o O vt 3o 12 d x 6o 4o vt 3o x x: 3o / @ eee d O 3o w 12 d x:
+1v L17: O .? d W O D/ a xo 3o . 12 O 6 a 12 w Le 4o N6 x a D/ . z a W z
+1v L18: 4o +o a x3 3o / 8 12 O / W O vt a O 12 d dd w 6o x D/ O vt R?
+1v L19: w 12 fs O d W x D/ a xo 3o O / sq d x x3 3o a 8 12 O / 4o 3o a W
+1v L20: u O W x / D/ O x: . a x . vt # @ eee / xo w x: vt 3o mx2 # u
+1v L21: x x: 3o / D/ O N6 w # vt 3o d mx2 / N11 # . 6 4o . vt 3o d O / b? n? vt
+1v L22: x3 N7 O / x3 w x: 6 d 4o 5o w 12 vt x . N6
+1v L23: a . N6 . 3o . sq W 12 vt +o O x3 4o . xo w y u . a W D/ O xo W x a d
+1v L24: mx2 8 12 4o xo w x: 3o d O d x a vt w x: 12 w 5o vt D/ O .
+1v L25: 6 O x: O vt xo O z & a O 12 W . N3 vt w 12 W D/ x d vt
+1v L26: sq? x fs mx2 x: vt sq x d u a Le mx2 x: sq? w 12 d 5o O x: a d x .
+2r L01: 3o N1 12 d @ x: O x: W O 12 d vt R? x d # a? vt w # z / 4o 6 W
+2r L02: O vt 4o # 12 w 6o N12 N7 / O R? eee W O d . 4o . uo? 4o dd O
+2r L03: N6 4o x: x fs eee x: 3o D/ 4o b? x a d O W 4o u O vt y 4o
+2r L04: vt x 12 N3 O vt sq x a R? x: w W N7 8 12 a sq x fs O x: 3o
+2r L05: sq eee d N13 dd mx3 x: xo O 3o x x: 6 / O vt 3o u w x: vt 4o .
+2r L06: a mx 12 d / 8 12 a W N7 / N9 # 3o /? W w 4o 12 W x /? 12 w 5o vt sq?
+2r L07: w 12 d W O 3o d w sq R? d x # D/ / vt O d 12 a xo 4o / W 4o
+2r L08: w 12 O N13 12 w 5o vt N13 x a x3 6 O mx2 W O u sq? O d
+2r L09: 4o 12 d xo 3o . 4s . (
