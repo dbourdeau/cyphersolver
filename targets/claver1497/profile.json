@@ -1,0 +1,132 @@
+{
+ "schema_version": 1,
+ "target": "claver1497",
+ "title": "Juan Claver’s cipher letter from Milan",
+ "documents": [
+  {
+   "id": "claver",
+   "shelfmark": "AHP Zaragoza, C_CRAR/000001/0040",
+   "year": 1497,
+   "country": "Spain",
+   "language": "Spanish",
+   "read": "read",
+   "cleartext_in_document": "mostly clear",
+   "plaintext": {
+    "location": [
+     "none"
+    ]
+   },
+   "length": {
+    "tokens": 437,
+    "unit": "symbols",
+    "measured": false,
+    "file": "transcription.tsv"
+   },
+   "transcription": {
+    "by": "mixed",
+    "source": "https://github.com/dbourdeau/cyphersolver/issues/839"
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "homophonic",
+   "nomenclator"
+  ],
+  "summary": "Alberto Garvía García matched the symbols with Parisi’s published table for the Ferdinand–Escrivà correspondence.",
+  "symbol_kind": "symbols",
+  "distinct_symbols": "unknown",
+  "diacritics": {
+   "used": "unknown"
+  },
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": true
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "unknown"
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "unknown"
+  },
+  "inputs": [
+   "images",
+   "transcription"
+  ],
+  "attack": "published key",
+  "human_role": "The contributors supplied their transcription, key and reading.",
+  "models": []
+ },
+ "solution": [
+  {
+   "kind": "reading",
+   "what": "Alberto Garvía García matched the symbols with Parisi’s published table for the Ferdinand–Escrivà correspondence.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-21",
+   "kind": "verification",
+   "what": "Filed the issue evidence and checked the line replay against the submitted transcription and key.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "class": "read",
+  "key": "partial",
+  "method": "read after matching with key from external sources",
+  "method_basis": "Alberto Garvía García matched the symbols with Parisi’s published table for the Ferdinand–Escrivà correspondence.",
+  "contribution": [
+   "transcription"
+  ],
+  "fraction_read": 0.9615384615384616,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "cipher-reading.md: prior review counts 100 of 104 cipher words; count is 99 if anomalous sopiendo is a hole.",
+  "verification": [
+   "key confirms"
+  ],
+  "provenance": "contributed",
+  "credits": [
+   {
+    "who": "garvia",
+    "role": "solution",
+    "source": "https://github.com/dbourdeau/cyphersolver/issues/839"
+   },
+   {
+    "who": "parisi",
+    "role": "key or decipherment used",
+    "source": "Parisi 2004, pp. 72–73"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "claver",
+    "transcription": "transcription.tsv",
+    "decryption": "literal.tsv",
+    "state": "read",
+    "summary": "Juan Claver’s cipher letter from Milan, claver.",
+    "reading": "cipher-reading.md",
+    "read_share": 0.9615384615384616,
+    "translation": "cipher-translation.md",
+    "language": "es",
+    "reading_review": {
+     "grade": "A",
+     "by": "Codex independent claims review, Claver and Latin",
+     "date": "2026-11-21",
+     "note": "The Spanish cipher block and English translation are coherent with scattered holes. The review reproduced all 11 aligned lines and counted 437 cipher signs. Earlier review sampled the manuscript; this review used the committed transcriptions and explicit sign-doubt record."
+    }
+   }
+  ],
+  "key_file": "key.tsv",
+  "gaps": [
+   {
+    "item": "three unresolved signs and lacuna at the tear",
+    "blocker": "illegible"
+   }
+  ]
+ }
+}
