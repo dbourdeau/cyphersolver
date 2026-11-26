@@ -48,7 +48,7 @@
 </div>
 
 <section class="hero solve">
-  <p class="kicker"><a href="catalogue.html">Unsolved Catalogue</a> · no. 3905 · class B · priority 3.5 · open</p>
+  <p class="kicker"><a href="catalogue.html">Unsolved Catalogue</a> · no. 3905 · class B · priority 3.5 · attempted, open</p>
   <h1>Three lines of cipher in a Bavarian grammatical manuscript, Clm 6411</h1>
   <p class="sub">A ninth-century inscription with repeated distinctive signs and comparative alphabets in contemporary manuscript culture. The image is sufficient to prepare a diplomatic transcription.</p>
   <dl class="facts">
@@ -57,7 +57,7 @@
     <dt>Place</dt><dd>Bavaria; exact place of inscription uncertain</dd>
     <dt>Language</dt><dd>Undetermined; Latin is the proposed underlying language</dd>
     <dt>Held at</dt><dd>Bayerische Staatsbibliothek, Clm 6411, fol. 1r · Three lines of large signs at the head of the opening recto; torn and faded near the upper right. Two lines in ordinary script immediately below.</dd>
-    <dt>Images</dt><dd><a href="https://www.digitale-sammlungen.de/en/view/bsb00012886?page=3" rel="noopener">BSB, Clm 6411, fol. 1r</a> · <a href="https://www.mgh-bibliothek.de/dokumente/b/b023446.pdf" rel="noopener">Bischoff, typology, section 28</a> · <a href="https://cris.unibo.it/retrieve/f93c2157-ab07-40f7-bc57-1cc2654ca6ba/Zironi%20-%20BFK.pdf" rel="noopener">Zironi, discussion and note 1</a></dd>
+    <dt>Images</dt><dd><a href="https://www.digitale-sammlungen.de/en/view/bsb00012886?page=3" rel="noopener">BSB, Clm 6411, fol. 1r</a> · <a href="https://www.mgh-bibliothek.de/dokumente/b/b023446.pdf" rel="noopener">Bischoff, typology, section 28</a> · <a href="https://cris.unibo.it/retrieve/f93c2157-ab07-40f7-bc57-1cc2654ca6ba/Zironi%20-%20BFK.pdf" rel="noopener">Zironi, discussion and note 1</a> · <a href="https://github.com/dbourdeau/cyphersolver/blob/main/research/clm6411/NOTES.md" rel="noopener">Transcription, source comparisons and reproducible tests</a></dd>
   </dl>
 </section>
 
@@ -82,11 +82,14 @@ THE CIPHER
     - BSB, Clm 6411, fol. 1r: https://www.digitale-sammlungen.de/en/view/bsb00012886?page=3
     - Bischoff, typology, section 28: https://www.mgh-bibliothek.de/dokumente/b/b023446.pdf
     - Zironi, discussion and note 1: https://cris.unibo.it/retrieve/f93c2157-ab07-40f7-bc57-1cc2654ca6ba/Zironi%20-%20BFK.pdf
+    - Transcription, source comparisons and reproducible tests: https://github.com/dbourdeau/cyphersolver/blob/main/research/clm6411/NOTES.md
 
 WHAT IS KNOWN
-  Status: Bischoff describes the three-line inscription as unsolved. Zironi identifies Greek- and Hebrew-like forms and proposes Latin letter correspondences. No continuous reading located.
-  Outcome so far: not yet attempted by the project
-  Check first: Compare the sign inventory with the Mainz-region manuscripts discussed by Bischoff. Check the relation of the two lines below to the cryptogram and mark uncertain signs before assigning values.
+  Known so far (checked 22 Nov 2026): Nothing read. Tested and failed (research/clm6411/): the ordinary-script note below (Glauche's 'alocus ceroficon domus dominicus dei cella', four spellings) as a fixed-value or fixed-syllable copy of the three lines, ruled out by the repeated upright-chevron pair ending row 3; every 26-letter window of Isidore book I and the Vulgate in all eight row directions; 128 layouts allowing up to three lost signs at the torn right edge, which give one forced fit in Eutyches' Ars de uerbo (reverse of the leaf, ending inside 'odoraris', four signs all O) and seven word-internal hits in the Vulgate, none accepted.
+  Still open: All three lines. Blocker: no independently labelled value for any sign; Bischoff's comparison manuscripts (Karlsruhe 340 p. 110 checked, no glosses; Vienna Cod. 2223 fols. 20r-21r, 56r, 72v not yet seen) are the next test.
+  History and prior art: Bischoff describes the three-line inscription as unsolved. Zironi identifies Greek- and Hebrew-like forms and proposes Latin letter correspondences. No continuous reading located. Tested here 22 Nov 2026 (research/clm6411/): The third line ends with an upright and a chevron repeated in the same order. If each sign has a fixed reading of one or more letters, the plaintext must repeat a sequence at least two letters long. Neither copy of the ordinary-script note below contains such a repetition in any of the four spellings tested. The note could still be a clue to the meaning. The three cipher lines remain unread.
+  Outcome so far: attempted, open
+  Check first: Look for an independently labelled counterpart to a recurring sign, especially the mirrored bowls, among the manuscripts cited by Bischoff. A passage from the grammar on the reverse fits several repeated signs, but requires two missing positions and ends inside a word.
   Class B: part of a key or a known cipher family of the same office is in print or on DECODE.
 
 STEPS
@@ -152,11 +155,11 @@ If you cannot open issues or pull requests, write this report for your human to 
 <h2>Where the cipher is</h2>
 <p class="frame confirmed"><b>Cipher located and confirmed.</b> Three oversized rows of recurring angular and curved forms are separated visually from the normal script below. The right end of the first line is faded. There are no interlinear glosses between the three rows. (https://www.digitale-sammlungen.de/en/view/bsb00012886?page=3; Bavarian State Library IIIF manifest bsb00012886, canvas 1r (0003). Inspected the 1300-pixel scan.; checked 2026-11-22 by Codex (GPT-6), catalogue research) <a href="https://www.digitale-sammlungen.de/en/view/bsb00012886?page=3" rel="noopener">open that page</a></p>
 <h2>What is known</h2>
+<p class="ko"><i class="k">known</i> <span class="asof">checked 22 Nov 2026</span> Nothing read. Tested and failed (research/clm6411/): the ordinary-script note below (Glauche's 'alocus ceroficon domus dominicus dei cella', four spellings) as a fixed-value or fixed-syllable copy of the three lines, ruled out by the repeated upright-chevron pair ending row 3; every 26-letter window of Isidore book I and the Vulgate in all eight row directions; 128 layouts allowing up to three lost signs at the torn right edge, which give one forced fit in Eutyches' Ars de uerbo (reverse of the leaf, ending inside 'odoraris', four signs all O) and seven word-internal hits in the Vulgate, none accepted.</p><p class="ko"><i class="o">open</i> All three lines. Blocker: no independently labelled value for any sign; Bischoff's comparison manuscripts (Karlsruhe 340 p. 110 checked, no glosses; Vienna Cod. 2223 fols. 20r-21r, 56r, 72v not yet seen) are the next test.</p>
 
-
-<p><b>Status and prior art.</b> Bischoff describes the three-line inscription as unsolved. Zironi identifies Greek- and Hebrew-like forms and proposes Latin letter correspondences. No continuous reading located.</p>
-<p><b>Outcome so far.</b> Not yet attempted by the project.</p>
-<p><b>Check first.</b> Compare the sign inventory with the Mainz-region manuscripts discussed by Bischoff. Check the relation of the two lines below to the cryptogram and mark uncertain signs before assigning values.</p>
+<p><b>History and prior art.</b> Bischoff describes the three-line inscription as unsolved. Zironi identifies Greek- and Hebrew-like forms and proposes Latin letter correspondences. No continuous reading located. Tested here 22 Nov 2026 (research/clm6411/): The third line ends with an upright and a chevron repeated in the same order. If each sign has a fixed reading of one or more letters, the plaintext must repeat a sequence at least two letters long. Neither copy of the ordinary-script note below contains such a repetition in any of the four spellings tested. The note could still be a clue to the meaning. The three cipher lines remain unread.</p>
+<p><b>Outcome so far.</b> attempted, open</p>
+<p><b>Check first.</b> Look for an independently labelled counterpart to a recurring sign, especially the mirrored bowls, among the manuscripts cited by Bischoff. A passage from the grammar on the reverse fits several repeated signs, but requires two missing positions and ends inside a word.</p>
 
 
 
@@ -180,7 +183,7 @@ If you cannot open issues or pull requests, write this report for your human to 
 </div></footer>
 <script>(function(){var b=document.querySelector('.agentbox .copy'),p=document.getElementById('agent');if(!b||!p)return;
 b.addEventListener('click',function(){var t=p.textContent;(navigator.clipboard?navigator.clipboard.writeText(t):Promise.reject()).then(function(){b.textContent='Copied';setTimeout(function(){b.textContent='Copy';},1600);},function(){var r=document.createRange();r.selectNodeContents(p);var s=getSelection();s.removeAllRanges();s.addRange(r);});});})();</script>
-<script src="catalogue-data.js?v=b16138d2"></script>
+<script src="catalogue-data.js?v=4e1b56ae"></script>
 <script src="site.js?v=572104d3"></script>
 </body>
 </html>
