@@ -1,0 +1,24 @@
+## python docs/_check_profile.py jolanka
+jolanka: profile.json
+  [gap ] documents[0].date = "unknown"
+  [gap ] documents[0].year = "unknown"
+  [gap ] documents[1].date = "unknown"
+  [gap ] documents[1].year = "unknown"
+  [gap ] documents[2].date = "unknown"
+  [gap ] documents[2].year = "unknown"
+  [gap ] documents[3].date = "unknown"
+  [gap ] documents[3].year = "unknown"
+  [gap ] documents[4].date = "unknown"
+  [gap ] documents[4].year = "unknown"
+  [gap ] documents[5].date = "unknown"
+  [gap ] documents[5].year = "unknown"
+  [gap ] documents[6].year = "unknown"
+  result: valid, 13 unknown field(s)
+exit 0
+## python docs/_check_terms.py jolanka
+jolanka: 0 hit(s)
+exit 0
+## Reading check (_texts.reading_problems, as in .github/workflows/reading-check.yml)
+== jolanka: ok
+   texts_problems: none (not a reading: class not read)
+exit 0

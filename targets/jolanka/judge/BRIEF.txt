@@ -1,0 +1,18 @@
+JUDGE BRIEF: jolanka postcards (DECODE, owner Tobias Schrodel). Language expected: Hungarian, about 1912-14, private cards.
+
+judge/decode.txt holds the one decode made with the frozen key on the frozen transcription. Each line: T or H (training or
+held-out card), card number, line number, then the decoded letters. The writer does not divide words and does not mark most
+accents; "cs" can come from one sign. "_" = one illegible sign, "..." = illegible run, "#" = a sign with no key value,
+{ } = plain writing on the card (do not score).
+
+Score every decoded letter:
+  S = letter in a word that reads as sense in Hungarian (period spelling, missing accents and dialect spelling allowed)
+  E = a one-letter slip in an otherwise readable word
+  N = no sense
+Do not emend. Do not score "_", "...", "#", punctuation or text in { }.
+Report: S, E, N counts and S% per card (76, 77, 79, 80, 81, 84, 96), for the six training cards together, for the held-out
+card 96 alone, and for all cards. The held-out figure is the figure of record. Our line is 65% S.
+
+Known fault to keep in mind but not to correct: one transcription label (decoded "d") was used for three different written
+signs, so many h and p come out as d (dogy for hogy, megkadtam for megkaptam). Score those letters E where the word is
+otherwise readable, N where it is not.
