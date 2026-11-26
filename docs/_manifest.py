@@ -99,9 +99,9 @@ PAGES = [
          quote='&ldquo;tunc michi scripsit literas lusorias et ridicolas&rdquo;',
          rights='&Ouml;sterreichisches Staatsarchiv, HHStA StAbt T&uuml;rkei I 7-2-18; no image reproduced'),
     dict(slug='dresdenj345', label='Dresden cipher recipes', year='1596–1700 (manuscript catalogue)', y=1650, place='Dresden manuscript', st='partial', stt='read in part',
-         title='Dresden cipher recipes', blurb='Two recipes use a cipher alphabet copied on the facing leaf.', quote='', rights='Archive images linked in Sources'),
+         title='Dresden cipher recipes', blurb='Two German recipes, a cure for leprosy and a way of writing in the sun, in a symbol alphabet that the manuscript copies on the facing leaf.', quote='', rights='Archive images linked in Sources', footer_date='November 2026'),
     dict(slug='philadelphia10a132', label='Latin conjuration in MS 10a 132', year='c. 1550', y=1550, place='Philadelphia manuscript', st='partial', stt='read in part',
-         title='Latin conjuration in MS 10a 132', blurb='A one-letter shift reveals a Latin love-binding conjuration and a cancelled opening.', quote='', rights='Archive images linked in Sources'),
+         title='Latin conjuration in MS 10a 132', blurb='A one-letter shift reveals a Latin love-binding conjuration and a cancelled opening.', quote='', rights='Image of f. 76r from the Internet Archive copy of the manuscript; other photographs linked in Sources', footer_date='November 2026'),
     dict(slug='charlesv1554', footer_date='November 2026', label='Charles V to his ambassadors in England 1554', year='1554', y=1554.07, place='Brussels &rarr; London', st='found', stt='already in print; leaf identified, published cipher checked',
          title='Charles V to his ambassadors in England, 24 January 1554: Besan&ccedil;on Ms 1582, f. 2',
          blurb='A leaf of cipher at Besan&ccedil;on, catalogued as a letter of 1555, with a decipherment of the time around it. The text was already in print from the minute (Gachard 1882; Calendar of State Papers, Spain XII) and the cipher was published by Eva Pich-Ponce in 2024. Brice Dudout identified the leaf as the passage of Charles V&rsquo;s letter of 24 January 1554 that Weiss printed as a gap in the Besan&ccedil;on copy, re-derived the key from the leaf&rsquo;s own decipherment and found it agrees with the published cipher, and listed about two dozen places where the cipher and the old decipherment differ; the printed minute sides with the cipher in 21. The decode made here gives 215 of 358 words sure.',
@@ -3864,7 +3864,7 @@ IMAGES['piccolomini25054'] = None
 
 IMAGES['dresdenj345'] = ('dresdenj345_lead.jpg', 'The opening cipher lines of f. 249r, with red word dividers', 'SLUB Dresden, Mscr.Dresd.J.345, f. 249r, scan 503 via IIIF, Public Domain Mark 1.0')
 
-IMAGES['philadelphia10a132'] = None
+IMAGES['philadelphia10a132'] = ('philadelphia10a132_lead.jpg', 'The first three lines of f. 76r: Dpon kxsp uf spub, with the initials after in nomine set between stops', 'College of Physicians of Philadelphia, MS 10a 132, f. 76r, via the Internet Archive copy (cpp_10a_132)')
 
 IMAGES['claver1497'] = None
 

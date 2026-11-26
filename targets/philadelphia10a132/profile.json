@@ -98,6 +98,12 @@
    "kind": "verification",
    "what": "Filed the issue evidence and checked the line replay against the submitted transcription and key.",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-26",
+   "kind": "verification",
+   "what": "Page review: the page now states the key and a worked example, the translation and context. The extent chip is measured on cipher letters (1,128 of 1,138 valued) and the 84% is given as a word share (199 of 237 sure words). The two document entries are shown as one text.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -109,9 +115,9 @@
    "transcription",
    "key recovered"
   ],
-  "fraction_read": 0.8396624472573839,
+  "fraction_read": 0.9912,
   "fraction_read_method": "measured",
-  "fraction_read_source": "hole-ledger.md: 185 of 217 for f. 76r/v and 14 of 20 on f. 75r.",
+  "fraction_read_source": "aligned.tsv, cipher column: 1,128 of 1,138 cipher letters carry a value; 10 signs are marked '?' (gutter, cancellation, damage). Clear Roman numerals are not counted. Word share is separate: hole-ledger.md gives 185 of 217 words sure on ff. 76r-76v and 14 of 20 on f. 75r (199 of 237, 84%).",
   "verification": [
    "key confirms"
   ],
@@ -141,13 +147,16 @@
   ],
   "texts": [
    {
-    "doc": "76r-76v",
+    "doc": [
+     "76r-76v",
+     "75r"
+    ],
     "transcription": "aligned.tsv",
     "decryption": "aligned.tsv",
     "state": "read in part",
-    "summary": "A ciphered Latin love-binding conjuration, 76r-76v.",
+    "summary": "A Latin love-binding conjuration addressed to a rota, enciphered by a one-letter shift: the main text on ff. 76r-76v and a cancelled first version of its opening on f. 75r.",
     "reading": "reading.md",
-    "read_share": 0.8525345622119815,
+    "read_share": 0.8397,
     "translation": "translation.md",
     "language": "la",
     "reading_review": {
@@ -155,30 +164,14 @@
      "by": "Codex independent claims review, Claver and Latin",
      "date": "2026-11-21",
      "note": "The Latin and the English were checked against the 39 exact line replays. The formula is coherent in stretches, with unresolved wording at the gutter, in the cancelled opening and at the end. This review used the filed evidence and did not recheck the photographs."
-    }
-   },
-   {
-    "doc": "75r",
-    "transcription": "aligned.tsv",
-    "decryption": "aligned.tsv",
-    "state": "read in part",
-    "summary": "A ciphered Latin love-binding conjuration, 75r.",
-    "reading": "reading.md",
-    "read_share": 0.7,
-    "translation": "translation.md",
-    "language": "la",
-    "reading_review": {
-     "grade": "B",
-     "by": "Codex independent claims review, Claver and Latin",
-     "date": "2026-11-21",
-     "note": "The Latin and the English were checked against the 39 exact line replays. The formula is coherent in stretches, with unresolved wording at the gutter, in the cancelled opening and at the end. This review used the filed evidence and did not recheck the photographs."
-    }
+    },
+    "label": "Folios 76r and 76v, with the cancelled opening on 75r"
    }
   ],
   "key_file": "key.tsv",
   "gaps": [
    {
-    "item": "unresolved clause, doubtful rota/ruta forms and final numeral",
+    "item": "a clause on f. 76v that cannot yet be construed, the rota/ruta spelling, unread signs at the gutter and under the cancellation on f. 75r, and the closing numeral",
     "blocker": "illegible"
    }
   ],

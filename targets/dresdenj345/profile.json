@@ -122,6 +122,12 @@
    "kind": "verification",
    "what": "Filed the issue evidence and checked the line replay against the submitted transcription and key.",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-26",
+   "kind": "verification",
+   "what": "Page review: the page now gives the key with a worked example, the recipes in English and the extent measured on signs (1,463 of 1,470 valued) apart from the word share (305 of 310 sure words in the two recipes). The cipher-reveal passage was given its word divisions.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -132,9 +138,9 @@
   "contribution": [
    "transcription"
   ],
-  "fraction_read": 0.9838709677419355,
+  "fraction_read": 0.9952,
   "fraction_read_method": "measured",
-  "fraction_read_source": "The two complete recipe readings give 150/154 and 155/156 sure cipher words; the f. 250r fragment is outside both recipe counts.",
+  "fraction_read_source": "Transcription files 249r, 249v and 250r: 1,463 of 1,470 signs carry a value; 7 are unread ('?' x6 and the quantity mark on 249r line 18). Clear numerals are not counted. Word share is separate and counts the two recipes only: 150 of 154 sure words on f. 249r and 155 of 156 on f. 249v (305 of 310, 98%); the f. 250r fragment is outside both counts.",
   "verification": [
    "key confirms"
   ],
@@ -162,7 +168,7 @@
     "transcription": "249r-transcription.txt",
     "decryption": "249r-literal.tsv",
     "state": "read",
-    "summary": "Two cipher recipes in a Dresden manuscript, 249r.",
+    "summary": "Recipe for a man afflicted with leprosy for a year: a herb bath, swan broth, bloodletting and a distilled water to drink; German, written in the symbol alphabet.",
     "reading": "249r-reading.md",
     "read_share": 0.974025974025974,
     "translation": "249r-translation.md",
@@ -179,7 +185,7 @@
     "transcription": "249v-transcription.txt",
     "decryption": "249v-literal.tsv",
     "state": "read",
-    "summary": "Two cipher recipes in a Dresden manuscript, 249v.",
+    "summary": "Recipe for writing in the sun with lion's blood and herb leaves, then burning them with rosemary wood in sunshine, with a warning about the smoke; German, written in the symbol alphabet.",
     "reading": "249v-reading.md",
     "read_share": 0.9935897435897436,
     "translation": "249v-translation.md",
@@ -196,8 +202,9 @@
     "transcription": "250r-transcription.txt",
     "decryption": "250r-literal.tsv",
     "state": "decoded, not read",
-    "summary": "Two cipher recipes in a Dresden manuscript, 250r.",
-    "language": "de"
+    "summary": "The first four cipher lines of a third text, announcing the characters of the seven planets, Saturn first; a fragment, not part of either recipe.",
+    "language": "de",
+    "label": "Folio 250r, the opening of a third text"
    }
   ],
   "key_file": "key.tsv",

@@ -2,7 +2,7 @@
 
 Status: read in part.
 
-Larry Beck and Sonny Panesar, with ChatGPT, applied the adjacent alphabet on f. 248v to recipes on ff. 249r and 249v. The earlier review verified the line replays and sampled the divider marks. The sure-word figures are 150 of 154 on f. 249r and 155 of 156 on f. 249v. The latter includes the two legible words *in iren*, whose meaning remains uncertain. The four cipher lines beginning f. 250r belong to a third text. Catalogue 1164 covers further leaves and stays open. Historical medical claims belong to the manuscript. The alphabet and literal sign replays accompany the latest divider transcriptions.
+Larry Beck and Sonny Panesar, with ChatGPT, applied the adjacent alphabet on f. 248v to recipes on ff. 249r and 249v. The earlier review verified the line replays and sampled the divider marks. The sure-word figures are 150 of 154 on f. 249r and 155 of 156 on f. 249v. The latter includes the two legible words *in iren*, whose meaning remains uncertain. The four cipher lines beginning f. 250r belong to a third text. Two measures, kept apart on the page: 1,463 of 1,470 signs carry a value (7 unread), and 305 of 310 words are sure in the two recipes. Catalogue 1164 covers further leaves and stays open. Historical medical claims belong to the manuscript. The alphabet and literal sign replays accompany the latest divider transcriptions.
 
 Source submission and review: https://github.com/dbourdeau/cyphersolver/issues/787
 
