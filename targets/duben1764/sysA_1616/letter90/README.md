@@ -76,3 +76,13 @@ key_c02 unchanged (passed its second pre-registered test, `../may1764/`). Two gr
 are kept apart (`check_c02/`). Strict count: **651 sure + 81 probable of about 860 words (sure 0.757; sure + probable 0.851): read in part.**
 87L with key_c02 (39 of 46 groups known on the three transcribed lines) still gives no French ("autr man ... in ti sa t t so ac r"): 87-89
 is not system A, as found with key_c01; not pursued.
+
+## Addendum, 26 Nov 2026: four sense values counted probable (review of PR #759)
+Four key_c02 values had been counted as "confirmed by a period clear", though the clears give as many or more mismatching
+emissions as matches: 252 eil (2 matches, 4 mismatches), 355 ig (2/2), 360 jo (1/4) and 405 leursma (1/2). The words on
+them are now **probable** in `check_c02/reading_90R-93L_key_c02_strict_plate1711.txt` (Leurs Majestés ×5, témoignoit,
+ajouter, pareille; `check_c02/sense_values_vs_period_clears.tsv` gives the new status). Count:
+**641 sure + 93 probable of about 858 words (sure 0.747; sure + probable 0.855): read in part.** key_c02, the transcriptions
+and the measures are unchanged. `reading_90R-93L_key_c02_tagged.txt` is marked superseded: it counted the sense values as
+sure on the ground that key_c02 had passed on 20/31 Aug 1764, which it did not. The blind digit sheet of 17 Nov, with the
+answers and their SHA-256, is in `../blind_digit_sheet_1711/`.

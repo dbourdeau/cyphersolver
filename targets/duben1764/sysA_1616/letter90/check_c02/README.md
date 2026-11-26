@@ -36,3 +36,10 @@ Applied in `reading_90R-93L_key_c02_strict_plate1711.txt` (the file above is kep
 92L15 538 "jusqu'ici" become sure; 92L12 606 (0, absent from key_c02) makes "peu" probable and 92R17 574 (4, absent) makes "sans" probable
 (each had been counted sure plus one unresolved word); 90R02 193 ("chagrin") and 91L03 616 ("forte") go against the sense and stay probable;
 91R13 218 ("devoirs") is confirmed. **Count: 654 sure + 80 probable of about 858 words: sure 0.762, sure + probable 0.855: read in part.**
+
+## 26 Nov 2026: four more values counted probable (review of PR #759)
+252 eil, 355 ig, 360 jo and 405 leursma are met in a period clear, but with as many or more mismatching emissions as matches
+(see the tsv, whose status column now says so). Words on them are probable in `reading_90R-93L_key_c02_strict_plate1711.txt`:
+Leurs Majestés (405) at 90R06, 92L09, 92L14, 92L16 and 92R15; témoignoit (355) at 91L10; ajou-ter (360) at 92L13-14; and
+pareille (252) at 92R06. **Count: 641 sure + 93 probable of about 858 words: sure 0.747, sure + probable 0.855: read in part.**
+None of the four occurs in 104R-105L. The sheet behind the 18 Nov section is in `../../blind_digit_sheet_1711/`.

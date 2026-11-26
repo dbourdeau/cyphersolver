@@ -512,3 +512,17 @@ Files: `sysA_1616/may1764/` (PREREG-C02b, transcriptions, measure, reading, READ
   decipherment). English translation and summary in `sysA_1616/may1764/reading_1764-05-15.md` (Panin's assurances, Catherine held
   back by Frederick II, Saldern and Stakejeff, pressing Panin if the Diet is called early).
 - Still open in Chiffer n:o 1: 104R-105L (another letter, not transcribed), 87-89, and 90R-93L (strict 0.78 with key_c02).
+
+## 26 Nov 2026: review points of PR #759 (Brice Dudout's session, Claude Opus 5.5)
+
+No new measure; key_c02, the transcriptions and the frozen files are unchanged.
+- **90R-93L**: four key_c02 values had been counted as confirmed by a period clear, though the clears give as many or more
+  mismatching emissions as matches (252 eil 2/4, 355 ig 2/2, 360 jo 1/4, 405 leursma 1/2). The words on them are now probable:
+  **641 sure + 93 probable of about 858 words (sure 0.747; sure + probable 0.855): read in part**
+  (`sysA_1616/letter90/check_c02/`). None of the four occurs in 104R-105L, whose count is unchanged (0.808 / 0.948).
+- `sysA_1616/letter90/reading_90R-93L_key_c02_tagged.txt` is marked superseded. It counted the sense values as sure on the
+  ground that key_c02 had passed on 20/31 Aug 1764; that test failed.
+- The blind digit sheet of 17 Nov (23 questions, 4 controls), with the answers as exported and their SHA-256, is in
+  `sysA_1616/blind_digit_sheet_1711/`. The page itself is not added, because it embeds image crops.
+- 15/4 May 1764 stays worded as read through its contemporary decipherment, not by the key: the 415 of 418 sure words are the
+  words of the period clear, and key_c02 decodes about 0.80 of the clear's letters.

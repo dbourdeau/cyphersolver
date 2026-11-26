@@ -48,3 +48,7 @@ Applied in `reading_104R-105L_key_c02_tagged_plate1711.txt` (the tagged file abo
 confirmed, but "soutien" also rests on the blotted 357/448, so it stays probable. Against the sense (words stay probable): 104R03 g9 534
 ("favorable"), 104R05 g12 557 ("qu'il"), 104R17 g14 201 ("crainte"), 105L03 g11 212 ("de"); 105L07 g9 582 sits in an unresolved span.
 **Count: 235 sure + 41 probable of about 291 words: sure 0.808, sure + probable 0.948: read in part.**
+
+## 26 Nov 2026 (review of PR #759)
+None of the four sense values now counted probable in 90R-93L (252, 355, 360, 405) occurs in this letter, so the count above
+is unchanged. The blind digit sheet of 17 Nov, with the answers and their SHA-256, is in `../blind_digit_sheet_1711/`.
