@@ -342,6 +342,12 @@
    "what": "Full-texts audit: the frozen system Y key (dudout/KEY-1555.json, longest code first) applied to the system X transcriptions of 03r and 09r with the marks dropped: no Italian word run on either page (e.g. 03r line 1 'rrmenidlisdagl ama', 09r line 1 'pelrrsnuioa euo oinaisr'). System X is not system Y with marks. No decryption of 03r or 09r exists or can be produced: no key.",
    "result": "ruled out",
    "technique": ["key matching"]
+  },
+  {
+   "date": "2026-11-25",
+   "kind": "verification",
+   "what": "Sign plate 2511 (NOTES, Sign plate 2511, 25 Nov 2026): three doubtful signs of 02r and 06r with three hidden controls, answered blind by the contributor Brice Dudout; rule dudout/sign_check_2511/REGLE-SELECTION.md (SHA-256 6d068c06...9486) hashed before any thumbnail; AI model (Claude Opus 5.5) for rule, thumbnails, plate and scoring. Controls 3 of 3. quasi (02r line 10, digit 14, [6/0]) answered 0: sure once recoded; Io (06r line 9) answered 1, as transcribed, stays probable; the first sign of 02r line 8 is two doubtful signs 6? 5? (remark of the checker), giving 'as': unresolved. Three targets, under the eight of outcome.sign_check, so recorded here and in NOTES, not there. Recoding of 02r proposed in dudout/capilupi1546-planche-2511.patch, not applied; until the interlinear '5 1' of suplica is checked blind, 02r stays read in part at 121 of 128 sure (94.5 %).",
+   "result": "worked"
   }
  ],
  "outcome": {

@@ -11,8 +11,12 @@ is used.
 
 ## What this changes
 
-Image 02r goes from "read in part" to **read** on the strict count (sure words only): **122 of 128 = 95.3 %**
-(before: 118 of 128 = 92.2 % in the committed files). The other folios are not recoded here.
+Image 02r goes from 118 to **121 of 128 = 94.5 %** sure words (strict count): it stays **read in part**. It would reach
+122 of 128 = 95.3 % (read) only if the interlinear "5 1" of *suplica* are confirmed blind (plate 2511c, see point 3).
+The other folios are not recoded here.
+
+*Revised on 26 Nov 2026 after Daniel's review of #984:* *suplica* counts as probable until plate 2511c; plate 2511
+(three targets, under the schema's eight) is recorded in NOTES and as a solution step, not in `outcome.sign_check`.
 
 ## How
 
@@ -33,19 +37,21 @@ Image 02r goes from "read in part" to **read** on the strict count (sure words o
      (the sense would want *che*). No value is taken from the sense: the word stays unresolved, now ‹as›.
 3. **A reading rule decided on 25 Nov 2026.** A clear correction written by the writer above the line, in the same hand,
    is read in place of the sign it corrects. It applies once here: at *suplica* (02r line 7) a sign is blotted out and
-   "5 1" is written above it, clear. The transcription had `#^51`; it now has `#~ 5 1`, and the key gives *suplica*:
-   sure. This gain comes from the rule, not from a plate answer.
+   "5 1" is written above it. The transcription had `#^51`; it now has `#~ 5 1`, and the key gives *suplica*.
+   The two digits were read by the model, not by the checker, and on sheet C this hand's 1 was a 5 or a 7 at five
+   places: *suplica* stays **probable** until the two digits are checked blind (plate 2511c, sent to the checker on
+   26 Nov 2026).
 
 ## Count of 02r (README rule; Daniel's count of 12 Nov as the base)
 
 | | words | sure | probable | restored | unresolved | strict | sure + probable |
 |---|---|---|---|---|---|---|---|
 | committed | 128 | 118 | 6 | 2 | 2 | 92.2 % | 96.9 % |
-| after this patch | 128 | **122** | 4 | 0 | 2 | **95.3 %** | 98.4 % |
+| after this patch | 128 | **121** | 5 | 0 | 2 | **94.5 %** | 98.4 % |
+| if plate 2511c confirms "5 1" | 128 | 122 | 4 | 0 | 2 | 95.3 % | 98.4 % |
 
-The four words that move: *contiene* and *senza* (restored -> sure, sheets C and R), *quasi* (probable -> sure, plate
-2511), *suplica* (probable -> sure, the interlinear rule). The margin is one word: without either of the last two,
-02r would stay at 121/128 = 94.5 %. Whole system Y with only 02r recoded: 635 of 692 sure = 91.8 % (was 91.2 %).
+The three words that move: *contiene* and *senza* (restored -> sure, sheets C and R), *quasi* (probable -> sure, plate
+2511). *suplica* stays probable for now. Whole system Y with only 02r recoded: 634 of 692 sure = 91.6 % (was 91.2 %).
 
 ## Applying it
 
@@ -56,11 +62,11 @@ and `dudout/translation.md` (three marks dropped: contains, almost, without). Af
 with `KEY-1555.json` (the one that reproduces `decryption.txt` exactly on all seven Y folios) gives the patched 02r
 line. 05r, the held-out folio, is not touched, so `measure_1555.py` gives the same M.
 
-Not in the patch, because they are the target-level files: `profile.json` would need, for img-02r, `"read": "read"`,
-`state` "read", `read_share` 0.953 and a `sign_check` entry for plate 2511 (signs_checked 3, controls 3,
-controls_passed 3, as_transcribed 1, corrected 1, unresolved 1 (‹as›), sheet_faults none found); `fraction_read` 0.918
-if only 02r is recoded. NOTES would need a "Sign plate 2511" paragraph and the reading rule. The target stays "read in
-part" (05r-05v, 06r-07r and system X).
+Target-level files (in this branch, not in the patch): plate 2511 is a solution step of 25 Nov 2026 in `profile.json`
+and a "Sign plate 2511" section in NOTES, with the reading rule and the open point on *suplica*; it is not an
+`outcome.sign_check` entry (three targets, under the eight the schema asks for). If the patch is applied, img-02r keeps
+"read in part" with `read_share` 0.945; `fraction_read` 0.916 if only 02r is recoded. Whether a later blind call that
+crosses 95 % also moves the class is Daniel's decision. The target stays "read in part" (05r-05v, 06r-07r and system X).
 
 ## Files (all in `targets/capilupi1546/dudout/`)
 - `PROPOSAL-2511.md`: this file.
