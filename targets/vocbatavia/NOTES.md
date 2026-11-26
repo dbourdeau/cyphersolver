@@ -41,6 +41,8 @@ Per-letter arithmetic is in letters/<letter>/RESULT*.md and the *_output.txt fil
 - 1643: copy 2 '74' is '70' in copy 1 (copy variant or misreading); '2 28 6 ...' copy 1 may write '12 28 6 ...'.
 
 ## Remaining gaps
+
+- **Reading state (26 Nov 2026):** all four texts are now marked "decoded, not read" and the outcome class is "not read". The key and the per-letter figures are unchanged. No person has yet read the decryptions as sentences, which the Reading check needs (a reading_review graded A or B). The class can go back to "read in part" once a reader has read and graded them.
 - 1623 letter: first pass below the 65% bar (59.26%); 13 numbers set only from context - blocker: open-codes; Reading exists in the 1079 margins; values set post hoc in SECOND_PASS_values.tsv.
 - 1640 postscript: 13 letter-cipher (system B) words - blocker: open-codes; LC_KEY_v1 test failed (5/13); the 617 interlinear gloss is only partly legible at the NA image resolution.
 - 1643 letter: 27 of 86 number groups uncovered - blocker: open-codes; 12 are isolated system-B signs the frozen rule cannot score; run 905.3 is system B ('eylanden' in the gloss).
