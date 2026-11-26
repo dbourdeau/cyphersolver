@@ -1,12 +1,12 @@
 # The cipher on folio 103v
 
-Herzog August Bibliothek, Cod. Guelf. 80.4 Aug. 8°, catalogue 3897 (lead 3656 before it passed the gate; removed from the catalogue at this write-up). A reader added a German judgment below an alchemical recipe. The host volume dates to the fifteenth century. The cipher addition is undated. [Library catalogue](https://diglib.hab.de/?catalog=Heinemann&db=mss&id=80-4-aug-8f&list=ms)
+Herzog August Bibliothek, Cod. Guelf. 80.4 Aug. 8°, catalogue 3897 (lead 3656 before it passed the gate). At this write-up the catalogue entry was narrowed to the cipher groups of the separate recipe on f. 105r, which stay open there. A reader added a German judgment below an alchemical recipe. The host volume dates to the fifteenth century. The cipher addition is undated. [Library catalogue](https://diglib.hab.de/?catalog=Heinemann&db=mss&id=80-4-aug-8f&list=ms)
 
 ## Reading
 
 **Status: read in part (26 Nov 2026).** By the README word rule (sure words only), 8 of the 11 cipher words come out of the key with nothing supplied (72.7%). Three words carry supplied letters: *da[s]*, *wec[gk]* and *philo[s]ophei*. The short-text floor allows at most two holes in a text under 40 words, so it does not apply and the note is read in part, not read. By signs, 48 of 52 take a value from the key (92.3%).
 
-> Mich dunct also, da[?s] dises der rechte wec[?gk] ist der philo[?s]ophei.
+> Mich dunct also, da[s] dises der rechte wec[gk] ist der philo[s]ophei.
 
 “It seems to me, then, that this is the true way of philosophy.” The word for “way” begins *wec-* and has two further signs. Their proposed values yield *wecgk*. The evidence for the word is stronger than the evidence for the precise order and values of the final consonants. The writer splits *philo-sophei* between manuscript lines. Punctuation and capitalization are editorial. [Full-resolution manuscript page](https://diglib.hab.de/mss/80-4-aug-8f/max/00218.jpg)
 
@@ -47,6 +47,8 @@ The remaining cipher groups on 105r are less distinct. After *in aquam*, an appa
 ## Remaining gaps
 - the two descended 7-like signs J and j, s in da[s] and philo[s]ophei - blocker: too-short; each occurs once in the four lines and no annotation read elsewhere in the volume gives either shape a value, so s is supplied from the sense
 - the last two signs of wec?? (F and E, read g and k) - blocker: too-short; their values rest on one coin name on image 00155 (pfenni?c?), where they stand on either side of c, while the 1432 spelling weckg has the opposite order; no other occurrence fixes them
+
+The cipher groups of the separate Latin recipe on f. 105r are outside this record (the four-line note on f. 103v); they stay open as catalogue 3897, narrowed to them on 26 Nov 2026.
 
 ## Escalation
 - [x] siblings: the other cipher annotations of the volume read for comparison (images 00030, 00036, 00074, 00155; 103v below the note; 104v; 105r); none gives J, j, F or E a value beyond the proposed g and k from 00155

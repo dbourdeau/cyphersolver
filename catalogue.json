@@ -122176,6 +122176,98 @@
    "repository": "unidentified"
   },
   {
+   "id": 3897,
+   "counted": true,
+   "year": 1450,
+   "date": "15th-century host manuscript; the adjacent alphabets are in a later hand, and the cipher additions are undated",
+   "title": "Cipher groups in a Latin recipe on f. 105r of a Wolfenbüttel alchemical miscellany (narrowed: the f. 103v note is deciphered in part)",
+   "correspondents": "Unidentified",
+   "place": "Wolfenbüttel",
+   "language": "Undetermined",
+   "region": "Germany",
+   "period": "unknown",
+   "shelfmark": "Herzog August Bibliothek, Cod. Guelf. 80.4 Aug. 8°, f. 105r",
+   "folio_note": "f. 105r, HAB image 00221: cipher groups mixed into a Latin recipe after the clear words in aquam, sepe and fiat. The four-line German note on f. 103v (image 00218) is written up separately (wolfenbuettel80); the alphabets on ff. 104r-v (00219-00220) and the labels on 104v were used as comparisons.",
+   "cls": "B",
+   "status": "The key recovered from the f. 103v note (targets/wolfenbuettel80/key.tsv) gives mercuricm (very likely mercurium), sulphurem and salem in the first lines of f. 105r, and fragments further down (fiat?, solum, arso, s?lui?t, sulpur), but the groups after in aquam, sepe and fiat do not yet yield a continuous text of the recipe. Heinemann (1903) identifies the adjacent alphabets as in a later hand; no published expansion found.",
+   "why": "The same opening has an alphabet table and prose containing cipher groups. Together they give a concrete test for a candidate substitution.",
+   "importance": 2,
+   "solvability": 3,
+   "difficulty": 3,
+   "score_note": "The supplied alphabets and repeated groups make a test possible; the hands, dates and relationship among systems are uncertain.",
+   "verify": "Transcribe the remaining groups on image 00221 sign by sign with the wolfenbuettel80 key, mark the smudged and weakly marked signs, and test whether the recipe reads continuously; record any new sign values back in targets/wolfenbuettel80/.",
+   "links": [
+    {
+     "label": "Four-line cipher passage (HAB 00218)",
+     "href": "https://diglib.hab.de/mss/80-4-aug-8f/start.htm?image=00218"
+    },
+    {
+     "label": "Facing alphabet (00219)",
+     "href": "https://diglib.hab.de/mss/80-4-aug-8f/start.htm?image=00219"
+    },
+    {
+     "label": "Further groups (00220)",
+     "href": "https://diglib.hab.de/mss/80-4-aug-8f/start.htm?image=00220"
+    },
+    {
+     "label": "Mixed passage (00221)",
+     "href": "https://diglib.hab.de/mss/80-4-aug-8f/start.htm?image=00221"
+    },
+    {
+     "label": "Heinemann’s description",
+     "href": "https://diglib.hab.de/?catalog=Heinemann&db=mss&id=80-4-aug-8f&list=ms"
+    },
+    {
+     "label": "Lang, Zotov and Piorko’s survey",
+     "href": "https://dspace.ut.ee/items/2d947b3a-6246-4934-8d4e-02fb056c7992"
+    }
+   ],
+   "seen": "image",
+   "needs_archive_scan": "no",
+   "source": "Object-by-object review of the German collections in Lang, Zotov and Piorko (2024), 22 November 2026",
+   "vetting": {
+    "date": "2026-11-22",
+    "by": "Codex (GPT-6), manuscript review",
+    "seen": {
+     "kind": "scan",
+     "where": "Herzog August Bibliothek WDB, original scan IDs 00218–00221. Viewed the complete scans of these four faces from the library’s PDF.",
+     "extent": "Four lines of grouped, figure-like characters on scan 00218, followed by isolated groups in clear prose. Further groups at the foot of 00220 and in mixed text on 00221.",
+     "cipher": "The added text uses repeated numeral-like signs with strokes, dots and other modifiers. Several groups interrupt ordinary words. The facing alphabet table pairs characters with individual letters; no continuous plaintext is aligned with the four-line passage."
+    },
+    "prior_art": {
+     "decode": "No match under the HAB digital ID 80-4-aug-8f or shelfmark 80.4 Aug in the local DECODE inventory.",
+     "tomokiyo": "Neither Wolfenbüttel shelfmark form occurs in the project’s unsolved.htm snapshot.",
+     "lasry": "No shelfmark match in Lasry’s GL.htm key inventory.",
+     "edition": "Heinemann, Die Augusteischen Handschriften 5 (1903), pp. 151–152, distinguishes the German tract from the Alphabeta diversa in a later hand on f. 104r–v. His catalogue prints no expansion of the added groups.",
+     "literature": "Lang, Zotov and Piorko (2024) report a ciphered line without identifying its folio. Shelfmark searches using German and English cipher terms located the library records and the survey but no published reading of scan 00218. The survey’s line cannot be positively equated with this four-line passage."
+    },
+    "key_check": "On the next face, scan 00219, a table with letter labels pairs ordinary letters with signs. Some forms resemble those on the other faces. An alphabet also appears on 00220. No recovered plaintext for the selected passage was located; applicability of either table remains to be tested.",
+    "duplicates": "The local and upstream inventories were checked when this shelfmark entered the queue. This is the existing Wolfenbüttel lead 3656; all the grouped passages form one target. Open issue searches on ID and digital shelfmark returned zero.",
+    "searches": [
+     {
+      "query": "80.4 Aug. Geheimschrift entziffert Alphabet Zeichen Alchemie 104v Wolfenbüttel",
+      "result": "HAB identifies the volume and supplies the Heinemann description. No reading surfaced."
+     },
+     {
+      "query": "80-4-aug-8f cipher alphabet alchemical encoded decrypted folio 104 103",
+      "result": "The HistoCrypt survey records cipher in the volume, without citing a folio."
+     },
+     {
+      "query": "Wolfenbüttel 80.4 Aug. 8° hereticum falsum apostatam Heinemann",
+      "result": "No decipherment associated with the rubric on the table page was found. A separately indexed 80.4 Aug. 2° is an unrelated book."
+     }
+    ],
+    "verdict": "open"
+   },
+   "ark": "",
+   "scored": "vetted",
+   "repository": "unidentified",
+   "outcome": "attempted, open",
+   "known": "The four-line German note on f. 103v is deciphered in part on the wolfenbuettel80 page (key recovered from ciphertext-only; 8 of 11 cipher words read with nothing supplied, 22 Nov 2026): Mich dunct also, da[s] dises der rechte wec[gk] ist der philo[s]ophei. The same key gives the labels spirtus, corpus and anima on f. 104v and mercuricm (very likely mercurium), sulphurem and salem on f. 105r.",
+   "open": "The cipher groups of the separate Latin recipe on f. 105r (after in aquam, sepe and fiat): read only in fragments (fiat, solum, arso, s?lui?t, sulpur), no continuous translation yet; an apparent footed 4 beside a smudge is unread.",
+   "as_of": "2026-11-26"
+  },
+  {
    "id": 3898,
    "counted": true,
    "year": 1700,

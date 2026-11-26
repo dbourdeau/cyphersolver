@@ -938,7 +938,7 @@ PAGES = [
     dict(slug='wolfenbuettel80', label='Wolfenb&uuml;ttel alchemical note', year='Undated note in a 15th-century volume', y=1450, place='Herzog August Bibliothek, Wolfenb&uuml;ttel', st='partial', stt='read in part',
          title='The Wolfenb&uuml;ttel alchemical manuscript',
          blurb='Four ciphered lines beneath a recipe give a reader&rsquo;s judgment in German. Other annotations in the volume help identify the word for &ldquo;way.&rdquo; Four sign values remain provisional, so three of the eleven words carry supplied letters: read in part.',
-         quote='Mich dunct also, da[?s] dises der rechte wec[?gk] ist der philo[?s]ophei.',
+         quote='Mich dunct also, da[s] dises der rechte wec[gk] ist der philo[s]ophei.',
          rights='Herzog August Bibliothek Wolfenb&uuml;ttel, Cod. Guelf. 80.4 Aug. 8&deg;, f. 103v, WDB (CC BY-SA)'),
     dict(slug='siena25', label='Siena no. 25', year='undated', y=1450, place='Sienese envoys &rarr; Siena', st='solved', stt='key from the ciphertext',
          title='Siena no. 25: a lord on the road to Casole',
