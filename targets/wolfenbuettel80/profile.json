@@ -27,7 +27,7 @@
     "source": "decipher.py and NOTES.md",
     "image_quality": "good"
    },
-   "read": "read"
+   "read": "read in part"
   }
  ],
  "system": {
@@ -109,14 +109,43 @@
    "what": "The dotted circle gives w in weisse on scan 00030 and in worden and wol on 00155. The rare consonant signs in the coin name on 00155 recur in wec?? on 00218. Historical weckg supports reading the noun as Weg, while the order of the two proposed consonant values remains provisional.",
    "result": "worked"
   },
-  {"date": "2026-11-22", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 48 tokens, 16 types, de-1500s order 4: reading -1.993 per letter; Verdict: too short.", "result": "partial"}
+  {
+   "date": "2026-11-22",
+   "kind": "verification",
+   "technique": [
+    "statistical test",
+    "language-model scoring"
+   ],
+   "what": "Statistical validation (docs/_validate.py): 48 tokens, 16 types, de-1500s order 4: reading -1.993 per letter; Verdict: too short.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-26",
+   "kind": "verification",
+   "what": "Recounted by the README word rule (sure words only): 8 of 11 cipher words read with nothing supplied; da[s], wec[gk] and philo[s]ophei are holes. Three holes exceed the short-text floor of two, so the class changed from read to read in part. No values changed.",
+   "result": "partial"
+  }
  ],
- "outcome": {"validation": {"date": "2026-11-22", "model": "de-1500s", "file": "validation.tsv", "tokens": 48, "types": 16, "tokens_per_type": 3.0, "score": -1.993, "nulls": {}, "verdict": "too short", "notes": "claimed per-occurrence score -1.993; polyphony 0.0; 4 unread tokens left out; annealer on the real text from random keys reached n/a"},
-  "class": "read",
+ "outcome": {
+  "validation": {
+   "date": "2026-11-22",
+   "model": "de-1500s",
+   "file": "validation.tsv",
+   "tokens": 48,
+   "types": 16,
+   "tokens_per_type": 3.0,
+   "score": -1.993,
+   "nulls": {},
+   "verdict": "too short",
+   "notes": "claimed per-occurrence score -1.993; polyphony 0.0; 4 unread tokens left out; annealer on the real text from random keys reached n/a"
+  },
+  "class": "read in part",
   "key": "partial",
   "method": "key recovered from ciphertext-only",
-  "verification": ["historical consistency"],
-  "notes": "The eleven words of the four-line judgment on f. 103v read as sense. The last two consonant values in the word for Weg and the precise forms of two s readings are provisional. The record covers the four-line document. Other cipher annotations supplied comparisons.",
+  "verification": [
+   "historical consistency"
+  ],
+  "notes": "Read in part by the README word rule (sure words only, 19 Nov 2026): 8 of the 11 cipher words of the four-line judgment on f. 103v come out of the key with nothing supplied (0.727). Three words carry letters supplied in the reading: da[s], wec[gk] and philo[s]ophei. The short-text floor allows at most two holes in a text under 40 words, so it does not apply. The record covers the four-line document. Other cipher annotations supplied comparisons.",
   "method_basis": "The first German words emerged from a substitution search on the transcribed cipher. Other inscriptions in the same volume checked and extended the mapping.",
   "contribution": [
    "transcription",
@@ -132,14 +161,33 @@
     "reading": "reading.txt",
     "translation": "translation.txt",
     "language": "de",
-    "state": "read",
-    "summary": "A reader judges the preceding alchemical work to be the true way of philosophy. Four tentative letter values are marked in the German reading.",
+    "state": "read in part",
+    "summary": "A reader judges the preceding alchemical work to be the true way of philosophy. Eight of the eleven words come out of the key; three carry supplied letters, so the note is read in part.",
     "reading_review": {
      "grade": "A",
      "by": "Codex",
      "date": "2026-11-22",
      "note": "One continuous German sentence. The strict key leaves four signs open and the reading marks all four."
-    }
+    },
+    "read_share": 0.727,
+    "floor_used": false,
+    "cipher_words": 11,
+    "holes": 3
+   }
+  ],
+  "fraction_read": 0.923,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "48 of 52 signs take a value from key.tsv (validation.tsv; the two descended 7-like signs and the last two signs of wec?? are open). By words, 8 of 11 cipher words are read with nothing supplied (0.727), which decides the class.",
+  "gaps": [
+   {
+    "item": "the two descended 7-like signs J and j (s in da[s] and philo[s]ophei)",
+    "blocker": "too-short",
+    "detail": "each occurs once in the four lines and no annotation read elsewhere in the volume gives either shape a value; s is supplied from the sense"
+   },
+   {
+    "item": "the last two signs of wec?? (F and E, read g and k)",
+    "blocker": "too-short",
+    "detail": "their values rest on one coin name on image 00155 (pfenni?c?), where they stand on either side of c, while the 1432 spelling weckg has the opposite order; no other occurrence fixes them"
    }
   ]
  }

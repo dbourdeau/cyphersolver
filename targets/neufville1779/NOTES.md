@@ -1,6 +1,6 @@
 # neufville1779: Jean de Neufville's syllabic code with Baudouin, Sartine's secretary (Amsterdam-Paris, 1779-1780)
 
-Status: in progress (read in part; folder only, no site page; Daniel is free to write the page or change anything here).
+Status: read in part; written up 24 Nov 2026 (docs/neufville1779.html). The open numbers were retried on every glossed page of the file; the rest needs the Paris archives (see Remaining gaps).
 
 ## What it is
 
@@ -136,7 +136,7 @@ Done for the project at integration of pull request #587; the contributor's text
   Neufville negociant à Amsterdam". The hand of these letters and of the letters of January 1780 looks the same; that
   was judged by eye, by an AI model, not by a person. 7 March 1779 was a Sunday, so "Lundy 7" is the writer's slip or
   the letter is of the 8th.
-  - Not checked here: that Baudouin was Sartine's secretary, and the Franklin Papers notes (28:354 n.9; 29:5-7 n.4;
+  - (Superseded: checked later in Founders Online via Chrome, 14 Nov 2026; see below.) Not checked here at first: that Baudouin was Sartine's secretary, and the Franklin Papers notes (28:354 n.9; 29:5-7 n.4;
     29:438). Founders Online answered scripted requests with an empty response on 14 Nov 2026 (a bot check); it needs a
     browser.
 - **Strict read shares** (sure words only; an open number, an unread number and a unit set by the word against the key
@@ -406,11 +406,23 @@ Searches made:
   "Arras" in van Winter vol. 2, probably the town, was not seen.
 - Cryptiana: nothing found.
 
+## Transcription doubts
+
+Every number of the three bare passages was checked against the National Archives Catalog frames at integration (68 of
+68 agree, frames 0428, 0363, 0364a); B491 and B573 were each transcribed in two passes (top-down and from the end).
+- last number of p.573 (B573) - read: 369 or 349; checked: image, decode, second agent's transcription; the middle digit is this hand's 6 or its looped 4; both agents read 369; a hole either way
+- 30 in "ar{g}ent" (B573) and "{G}rand" (B492) - read: 30 as written; checked: image, decode; 30 is clear, but its only key value is "re" (p.599, p.605); the unit is set by the word and counted as a hole
+- 206 or 204 (B491) - read: 204 = le; checked: image, decode, second pass; pass 2 corrected pass 1's 206
+- 224 (B573) - read: 224 as written; checked: image, decode; m in "compter" (p.600), n in "l'emprunt" (p.573), so m/n (key/corrections_post_test.tsv)
+- gloss over 143 (p.534) - read: vaisseau(x); checked: image, decode, two passes; faint, read the same in both passes; carries "vaisseau" in B492
+- figure before 488 (p.529) - read: left doubtful; checked: image, decode (not in any decoded passage; the key holds no value from it); a tall sign like a long-tailed z with a small sign above, not a clear 3; the gloss "3" there stands over the figure 6 (corrected 15 Nov 2026)
+- 473 (p.579) - read: left out; checked: image, decode (gloss under "L'approvisionnement la Hollande"; not used by any reading); doubtful, left out of test T5
+
 ## Remaining gaps
 
 - Numbers 3, 58, 227, 369/349, 30 as "g", 507, 501 and 162, the two lines of p.527, and the likely nulls 405, 387, 390 and 447 - blocker: open-codes; retried on 14 Nov 2026 with the glossed letters pp.516-548 transcribed in full: none is glossed with a value that fits (3 has no gloss, the p.529 "numeral 3" being the gloss of 6; 501 and 507 only unglossed or struck).
 - A glossed or deciphered copy of the bare groups (pp.491-492, 573) - blocker: needs-physical-access; none is in this file (all 808 images paged; Baudouin's letters pp.487-515 and 549-590 surveyed page by page on 14 Nov 2026, the neighbours of the bare pages read, p.579 transcribed in full); Baudouin's office copies or de Neufville's sent letters may survive in the Archives nationales, Marine B4/B7, not seen. The clear text of pp.487-515 and 549-590 is not transcribed; it carries no code.
-- That "Dunoyer" is Baudouin is not confirmed outside the file - blocker: needs a comparison of hands with Baudouin's signed notes (American Philosophical Society) or his office papers (Archives nationales, Marine B4, B7).
+- That "Dunoyer" is Baudouin is not confirmed outside the file - blocker: needs-physical-access; needs a comparison of hands with Baudouin's signed notes (American Philosophical Society) or his office papers (Archives nationales, Marine B4, B7).
 
 ## Escalation
 

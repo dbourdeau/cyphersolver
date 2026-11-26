@@ -1,0 +1,21 @@
+# What the filed key reads in Wicham’s letters
+
+Two independent readers identified five occurrences of compact three-digit numbers on the September and August letters. They read the originals without seeing a key. A separate reader transcribed the key. Its dates and labels are documented in the source note. [June and September leaves](https://link.gale.com/apps/doc/MC4304680514/SPOL) · [August letter](https://link.gale.com/apps/doc/MC4304680517/SPOL) · [Key, scan 168](https://link.gale.com/apps/doc/MC4304680518/SPOL)
+
+| Letter and position | Agreed figure | Reading of the entry on f.156v | Relation to Green |
+|---|---|---|---|
+| 21 September, f.153r, line 8 | 137 | Owen | Green names Owen here. |
+| Same, line 10 after “with” | 138 | Char. paget | Green prints Paget. The key also provides an abbreviated forename. |
+| Same, line 11 after “may undo” | 144 | S[…], first reader *Sterr.* | Green gives “undo me”. The key has an abbreviated S-name. Two subsequent visual checks agree on the written number. One reader saw “Stirr.” and the other could not settle the interior letters. Keep the exact name open. |
+| 10 August, f.155r, line 18, exchange of gold | 145 | Jaques | Green already names Jaques. |
+| Same, line 20, sender of a letter | 137 | Owen | Green already names Owen. |
+
+These are **five occurrences of four distinct codes**. In the table literals there are four fully written cipher-word occurrences (Owen twice, paget, Jaques). The two abbreviated names receive no additional word credit. The second sign run on September line 10 and other mixed or graphic words remain open. The numbers are distinct from ordinary sums and dates. The different letters have different editorial years in brackets; the September close has no written year. Two readers preferred 10 August on f.155v, one preferred 20, and Green prints 10. The September address to Derick is on the letter’s own reverse, f.153v, visible on scan 165. [Green (1870), pp.173–175](https://archive.org/details/bub_gb_ELGK9pFXS50C/page/173)
+
+**September test: MISS.** We specified Owen, Paget and Paldey for the three numeral slots, in that order, requiring all three. The score was 2/3. The third literal in the frozen single-reader table was Sterr.; later source review disputes its internal letters. Green places Paldey in the neighboring sentence, and the prediction assigned that name to the wrong numeric slot. A shuffle of the 65 eligible entries, with 1,000 trials, gave 979 scores of zero and 21 of one. None reached two (corrected probability 1/1001). The number of matched names still misses the required three. Plan SHA-256 1bd08b2f13a4eac49c3a1366f3b6eb591a1f27f97cc5644a05aa1763de1faee1. Numeric inputs, individual controls and output are preserved.
+
+**July and August test: MISS.** We specified four name concepts per letter and required three hits overall with at least one per letter. July contains a graphic sequence and no agreed three-digit cipher number. August supplies Jaques and Owen, scoring two of the eight possible letter-concept pairs. Among 1,000 shuffled tables the scores were zero 913 times, one 84 times, and two three times (corrected probability 4/1001). The count and the both-letter requirement missed. Plan SHA-256 d65cc0f41409b281e3a3036370a34e1610ee124abab5f8dd2710d66812d876aa. Two manuscript readers and the source reader had separate assignments. Neither test was repeated.
+
+**June remains open.** Two candidate mixed-letter groups start with a shape resembling 2. Their internal letters or group boundaries do not fully agree between the two blind transcriptions. Row 2 on f.157r is indeed numbered 2. The surviving instructions on the preceding key leaf describe C-shaped and P-shaped marks for identifying ciphers, and the instructions below the shifted table discuss nulls and doubling. No inspected instruction prescribes using an initial Arabic 2 to choose row 2. Two partial groups are too short to choose that convention or supply a complete name on their own. No June word is credited. An independent letter with a glossed, 2-prefixed token would let us test the convention. [June original](https://link.gale.com/apps/doc/MC4304680514/SPOL) · [Key instructions](https://link.gale.com/apps/doc/MC4304680518/SPOL)
+
+AI agents did this work; no person has checked it.

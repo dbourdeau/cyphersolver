@@ -1,8 +1,10 @@
 # The cipher on folio 103v
 
-Herzog August Bibliothek, Cod. Guelf. 80.4 Aug. 8°, local research lead 3656. A reader added a German judgment below an alchemical recipe. The host volume dates to the fifteenth century. The cipher addition is undated. [Library catalogue](https://diglib.hab.de/?catalog=Heinemann&db=mss&id=80-4-aug-8f&list=ms)
+Herzog August Bibliothek, Cod. Guelf. 80.4 Aug. 8°, catalogue 3897 (lead 3656 before it passed the gate; removed from the catalogue at this write-up). A reader added a German judgment below an alchemical recipe. The host volume dates to the fifteenth century. The cipher addition is undated. [Library catalogue](https://diglib.hab.de/?catalog=Heinemann&db=mss&id=80-4-aug-8f&list=ms)
 
 ## Reading
+
+**Status: read in part (26 Nov 2026).** By the README word rule (sure words only), 8 of the 11 cipher words come out of the key with nothing supplied (72.7%). Three words carry supplied letters: *da[s]*, *wec[gk]* and *philo[s]ophei*. The short-text floor allows at most two holes in a text under 40 words, so it does not apply and the note is read in part, not read. By signs, 48 of 52 take a value from the key (92.3%).
 
 > Mich dunct also, da[?s] dises der rechte wec[?gk] ist der philo[?s]ophei.
 
@@ -41,3 +43,15 @@ The remaining cipher groups on 105r are less distinct. After *in aquam*, an appa
 - **Last sign at the fold, 103v.** - read: essi followed by an unresolved sign; checked: image, decode; The visible beginning suggests *essi[g]*. Too little of the last glyph survives in the photograph to use it as a key for g.
 - **Third label, 104v.** - read: anima, initial a partly obscured; checked: image, decode; The left edge is obscured by the stamp. The surviving loop and the readable *nima* support the initial a.
 - **First group, 105r.** - read: mercuricm, likely mercurium; checked: image, decode; The penultimate sign lacks the clear cross-stroke visible earlier in the word. Both the literal output and the proposed expansion are retained above.
+
+## Remaining gaps
+- the two descended 7-like signs J and j, s in da[s] and philo[s]ophei - blocker: too-short; each occurs once in the four lines and no annotation read elsewhere in the volume gives either shape a value, so s is supplied from the sense
+- the last two signs of wec?? (F and E, read g and k) - blocker: too-short; their values rest on one coin name on image 00155 (pfenni?c?), where they stand on either side of c, while the 1432 spelling weckg has the opposite order; no other occurrence fixes them
+
+## Escalation
+- [x] siblings: the other cipher annotations of the volume read for comparison (images 00030, 00036, 00074, 00155; 103v below the note; 104v; 105r); none gives J, j, F or E a value beyond the proposed g and k from 00155
+- [x] clear-pages: the facing alphabet on 104r (image 00219) checked; it gives the 3-like form as i where the note needs d, and has no value for the open signs
+- [x] known-keys: the alphabets on 104r and 00220 compared sign by sign; neither supplies the four open signs
+- [x] print: Heinemann (1903) pp. 151-152 and Lang, Zotov and Piorko (2024) searched; no reading of the note or of the alphabets
+- [x] key-rebuild: g and k proposed for F and E from the coin name on 00155; kept out of the strict decoder because the order is unconfirmed
+- [x] retry: decipher.py re-run with the strict key on all four lines (26 Nov 2026); the same four signs stay open

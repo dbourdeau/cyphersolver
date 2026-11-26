@@ -3,6 +3,8 @@
 Status: in progress (read in part, folder only, no page). Four of the five cipher telegrams were deciphered at the time
 by General Scammon's headquarters; our part is the route, the code-word values, a held-out test of them, and a partial
 reading of the fifth telegram, GLC02414.339, which has no decipherment of the time in the collection.
+Next step (write-up pass, 24 Nov 2026, still no page): open the rest of GLC02414 .100-.350 in the Adam Matthew edition for
+more pairs carrying the unvalued .339 code words (Virginia, Missouri, gaol, bent, amore, away, nile), then key-rebuild and retry.
 
 Contributed by Andrew Beling, with AI agents (Claude Opus 5.5), 13 November 2026. Lead 2051 in `research/leads.json`.
 

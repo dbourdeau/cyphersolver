@@ -1,0 +1,11 @@
+LABEL: visser1917_houtrouw2026_followup_draft1
+Local UTC: 20261125T151615Z
+Files: 184 (every file of the folder outside timestamps/pr_folder/)
+Manifest SHA-256: c584bdddbf181d034ac4e86e04d04a6bb1b072897b7ce54e4cc7d017d52c913a
+RFC 3161, freetsa.org: status Granted., time Nov 25 15:16:15 2026 GMT
+RFC 3161, timestamp.digicert.com: status Granted., time Nov 25 15:16:16 2026 GMT
+RFC 3161, timestamp.sectigo.com: status Granted., time Nov 25 15:16:16 2026 GMT
+Verify DigiCert and Sectigo: openssl ts -verify -data MANIFEST.sha256 -in MANIFEST.sha256.<authority>.tsr -CAfile <a bundle of public root certificates>
+Verify FreeTSA: the same, with -CAfile and -untrusted set to FreeTSA's own root and signing certificates, as its site publishes them
+Check the files: sha256sum -c timestamps/pr_folder/MANIFEST.sha256, run from the folder
+OpenTimestamps: none made

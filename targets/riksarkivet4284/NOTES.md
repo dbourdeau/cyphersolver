@@ -1,8 +1,14 @@
-# Latin numerical cipher letter of 1628, Riksarkivet Chifferklaver låda II:114 (DECODE R4284)
+# Gustav II Adolf to Axel Oxenstierna, Stockholm, 18 Nov 1627 (last part), Riksarkivet Chifferklaver låda II:114 (DECODE R4284)
+
+Dated from the printed edition (see "The 1888 print"); the dateline page is not in R4284; the day 18 is the editors',
+from the register; "bref för 1628" is where it was filed. Until 24 Nov 2026 this target was titled "Latin numerical
+cipher letter of 1628".
 
 Status: in progress (26 Oct 2026). **Key matched: DECODE R4325, the horizontal alphabet strip on I25940** (Dolly
 Moulekhi, issue #98). The numbers decode into 17th-century Swedish with enciphered Latin phrases; decoded, not read
-(no segmented reading or translation yet). Earlier: attempted, open (0 of 822 groups).
+(a segmented reading exists as a proposal, 105 of 168 words sure; no translation here). The letter is printed with a
+decipherment of the time in an 1888 edition, from another copy (Andrew Beling, issue #893). Earlier: attempted, open
+(0 of 822 groups).
 
 Split on 14 Oct 2026 from `riksarkivet1628` under the one-key rule (George Lasry, 14 Oct 2026). Catalogue item 207
 bundled 14 Riksarkivet records; they are unrelated ciphers, each now with its own entry: the Bremen letters of 1631
@@ -20,7 +26,9 @@ Work date: 2026-09-21. Catalogue item 207 (class A), still open for this record.
 Riksarkivet, Stockholm, Chifferklaver låda II:114; DECODE R4284 (two PDF images, `IMG_R4284_I25750_P.pdf` and
 `I25751`, public record; not committed). DECODE: undated (1600-1699), cleartext language Latin, Non-decrypted. An
 archival note at the foot of the first page reads "Legat … till L. Camerarius bref för 1628": filed with the letters
-to Ludwig Camerarius, the Palatine (and from 1626 Swedish) agent, for 1628. Comma-separated numbers with Latin words in
+to Ludwig Camerarius, the Palatine (and from 1626 Swedish) agent, for 1628. That is the filing, not the date of the
+letter: it is the last part of Gustav II Adolf's letter to Axel Oxenstierna of 18 Nov 1627 (below), in Swedish with
+Latin. Comma-separated numbers with Latin words in
 clear (*Sequentes etiam*, *pro eo tempore*, *praeter omnia alia*, *et quorum*, *Sed*, *Cum*, *Quo casu*, *Sed etiam
 tam pro*). Beside it lies a leaf on which someone tried a *letter* cipher on four phrases: *effusorem sanguinis*,
 *pestem patriae*, *praeter naturalem*, *disturbatorem religionis*.
@@ -66,19 +74,59 @@ reading -3.123 per letter, random keys -6.458 (z 8.6), a key annealed onto the s
 modern Swedish. The evidence for the match is the archival key itself, applied unchanged, and the running Swedish it
 gives.
 
+## The 1888 print (Andrew Beling, issue #893, 22-23 Nov 2026)
+
+Identified by Andrew Beling (@ajbeling) with AI agents, issue #893. The letter is printed in *Rikskansleren Axel
+Oxenstiernas skrifter och brefvexling* II:1 (1888), no. 296, pp. 362-367: Gustav II Adolf to Axel Oxenstierna in
+Prussia, Stockholm, 18 Nov 1627, signed by Salvius, docketed as presented at Elbing on 12 Dec 1627. The edition says
+the letter is almost wholly in cipher and prints it with Lars Grubbe's decipherment of the time, compared with the
+register for 1627; the day in the dateline is bracketed "[18]" and comes from the register. R4284 is the part from
+p. 366 to the end ("i det närmeste kunna draga endera armeens speser" to "communicera medh eder för denne gången").
+
+R4284 is another copy, not the one printed: it has Latin clear words where the print has Swedish (*nobis et patriae
+securum* against "vår och rijckzsens säkerheet"). So the print is a parallel text, not a gloss on this document, and
+a word taken from it is probable, not read.
+
+Checked here (integration review of 23 Nov 2026, an AI agent): the Internet Archive OCR text of the 1888 volume, where
+no. 296, the date, the signature, the editors' note and the passage were found as he gives them. Not checked: the
+print's page images; R4284's images for this; R4325's word lists. Whether R4284 is a draft, a copy for Camerarius or an
+enciphered duplicate is not known.
+
+**Ten code values, probable** (source: print only, parallel text; none checked against the key's own word lists):
+
+| group | value from the print's slot |
+|---|---|
+| 952 | armeens |
+| 831 | tollerne |
+| 1493 (number doubtful) | stilleståndh |
+| 692 (twice) | Polacken / Pollniske: a stem for Polack- or Polen; the word order around 1273 differs from the print |
+| 608, 1302 | Ligisterna(s) |
+| 706 | Pryssen |
+| 487 | assecurera |
+| 1273 | konungar |
+
+Open: 347, 1042, 1336, 800, 659. His table gives 579 as Sigismundus and 1400 as porterne, both probable.
+
+**His segmented reading against the print** (Moulekhi's key; no image checked by him; the reading, the marked
+decryption and his translation are not in the repository, he holds them). His strict count by the README rule, 23 Nov
+2026: 168 cipher words in ten sentences (27, 14, 22, 9, 36, 18, 5, 20, 13, 4), **105 sure (62.5%)**, 63 holes (by
+kind 18, 19, 5, 9, 2, 9, 1); every sentence has a hole and sentence 10 has no sure word. The table adds up (checked in
+the review). Of 120 sure words with a counterpart in the print, 92 are the same, 23 equivalent and 5 wrong. He claims no
+decipherment and agrees the letter is decoded, not read.
+
 ## Remaining gaps
-- R4284: no segmented reading or translation yet (decoded, not read) - blocker: not-attempted; segment the decode into Swedish and Latin words, mark the anomalous strings, and translate
-- 23 large number groups and 2 doubtful tokens - blocker: not-attempted; try R4325's word-code lists on them, and re-read the doubtful multi-digit numbers on the image (some may be two numbers run together)
+- R4284: a segmented reading exists as a proposal (Beling, issue #893): 105 of 168 words sure (62.5%), every sentence with a hole; needs the image check and a translation - blocker: not-attempted; his reading and translation are not in the repository
+- 23 large number groups and 2 doubtful tokens - blocker: not-attempted; ten have a probable value from the 1888 print (a parallel text), 347, 1042, 1336, 800 and 659 have none; try R4325's word-code lists on them, and re-read the doubtful multi-digit numbers on the image (some may be two numbers run together). To check on the image: 208 as 108 (å, "åhr"); line 40, 26 as 36 (f, "efterlåta"); line 41, 30 and 104 as 36 and 101 ("fulkombligen"). These three are Beling's guesses from the print, not corrections; "der är" and "hökstaten" have no one-digit explanation
 
 ## Escalation
 - [x] siblings: all 14 records of catalogue 207 opened; 70 Chifferklaver key records R4259-R4329 fetched
 - [ ] clear-pages: not done — the key-test leaf (four phrases over letter-cipher signs) not used
 - [x] known-keys: **R4325's alphabet strip fits** (Moulekhi, 25 Oct 2026; checked on the image here); earlier only R4310 and R4296 had been tried
-- [ ] print: not done — Camerarius correspondence editions not searched
+- [x] print: 1888 edition no. 296 found (Beling, #893); a parallel text of another copy, with Lars Grubbe's decipherment of the time
 - [x] key-rebuild: blind homophonic annealing on Latin (21 Sept 2026), no result
 - [ ] retry: the reading and the large groups are still to do with the key in hand
 
 ## Next
 
-Re-read the doubtful multi-digit numbers on the image; try the 68 other box keys; search the Camerarius editions for
-a letter of 1628 matching the clear words.
+Re-read the doubtful multi-digit numbers on the image, the three guesses above first; try R4325's word lists on the
+large groups; build the segmented reading and translation here and count it with `docs/_check_reading.py`.

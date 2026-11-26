@@ -1,0 +1,9 @@
+Key 313 (Roberto Narváez's; see NOTES.md for the citation). Stated as a rule so that a reader can rebuild it; Narváez's
+printed table is not reproduced here.
+
+Alphabet (27 letters): A B C D E F G H I J K L M N Ñ O P Q R S T U V W X Y Z
+Encipher: cipher letter = plain letter shifted forward by 3, 1, 3, 3, 1, 3, ... places (mod 27), the cycle 3-1-3
+          starting at the first letter of each cipher run, spaces between words dropped.
+Decipher: shift back by 3, 1, 3, ...  (scripts/decrypt.py)
+In this letter the cycle runs on through a whole run, across line breaks; in the Sánchez letter of the same fondo
+(targets/sanchez1922) it restarts at every word.

@@ -68,4 +68,4 @@ Credit:
 - 5 rows with cipher digits have no decode line. Their record pages name them.
 - The runs behind sections 2 to 4 are not in this folder. Their numbers come from my own record.
 - **The counts** in `README.md`, the record pages and `profile.json` come from the decode lines of the record pages.
-- **Not run:** this ledger's checker `docs/_check_reading.py`. No document is claimed read, and no reading file is in this folder.
+- **Working readings (7 pure-blind dotted letters):** `scripts/verify_readings.py` checks `readings/rXXXX_reading.md` (`R8660`, `R8661`, `R8664`, `R8665`, `R8668`, `R8673`, `R8718`) mechanically against the unedited decodes in `rXXXX.md`: 524 of 804 cipher words sure (0.652), 280 holes, zero unmarked departures. All 51 documents remain filed as `"decoded, not read"` in `profile.json`; independent reading review and `docs/_check_reading.py` remain for the maintainer.
