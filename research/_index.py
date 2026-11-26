@@ -47,7 +47,7 @@ KIND_NOTES = {
 # Folders the rules below cannot place from their name.
 OVERRIDE = {
     'archive_sweep_2026-10': 'tooling',
-    'catalogue_review_20261020': 'vetting', 'frame_check_2026-10': 'vetting', 'latam_vetting': 'vetting',
+    'catalogue_review_20261020': 'vetting', 'sweep_2026-11-22_catalogue_review_pr910': CROSS, 'frame_check_2026-10': 'vetting', 'latam_vetting': 'vetting',
     'verify_2026-10': 'vetting',
     'dudout_2026-10-29': 'contributed', 'dudout_sarmiento_ms2093': 'contributed', 'dudout_dorffler1773': 'contributed',
     'laurens_bourdieu_1782': 'contributed',
