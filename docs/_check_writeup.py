@@ -50,7 +50,7 @@ def tdir(folder):
 SITE = 'https://dbourdeau.github.io/cyphersolver/'
 SURVEYS = {'solved', 'highlights', 'top25'}
 INDEX_PAGES = {'siena1421'}   # a page that only lists the write-ups a split series became (Siena, Concistoro 2308)
-TOOL_PAGES = {'atlas', 'keys', 'key-evolution', 'secret', 'indus-bench', 'glossary', 'contributors', 'contribute', 'further', 'archives', 'findings', '404', 'method', 'methode', 'corrections'}   # interactive and reference pages, not write-ups
+TOOL_PAGES = {'atlas', 'keys', 'key-evolution', 'secret', 'indus-bench', 'glossary', 'contributors', 'contribute', 'further', 'archives', 'findings', '404', 'method', 'method-fr', 'corrections'}   # interactive and reference pages, not write-ups
 # The famous undeciphered targets (Indus script, Voynich, Beale, Kryptos ...) are written up on the site but keep no
 # profile.json and stay out of the LLM-performance paper data (owner's rule, 23 Sept 2026).
 FAMOUS = {'indus', 'voynich', 'beale', 'kryptos', 'dorabella', 'zodiac', 'z340', 'z13', 'linear_a', 'lineara',
@@ -165,10 +165,13 @@ def read_bar(folder):
     if any((g.get('blocker') == 'not-attempted') for g in out.get('gaps') or []): why.append('a gap is not-attempted')
     docs_open = [d.get('id') for d in prof.get('documents') or [] if d.get('read') in ('read in part', 'not read')]
     if docs_open: why.append('documents not read in full: ' + ', '.join(map(str, docs_open[:4])))
-    # the per-document read bar (24 Oct 2026): every text entry read, each at 95% of its words read as sense
+    # the per-document read bar (24 Oct 2026): every text entry read, each at 95% of its words read as sense, or a
+    # short text that meets the short-text floor (README Conventions, 19 Nov 2026; _texts.floor_problem)
+    import _texts
     under = [str(t.get('label') or t.get('doc')) for t in out.get('texts') or []
              if (t.get('state') or 'read') in ('read in part', 'decoded, not read')
-             or (isinstance(t.get('read_share'), (int, float)) and t['read_share'] < READ_BAR)]
+             or (isinstance(t.get('read_share'), (int, float)) and t['read_share'] < READ_BAR
+                 and _texts.floor_problem(t) is not None)]
     if under: why.append('texts under 95% of words read as sense: ' + ', '.join(under[:4]))
     if out.get('fraction_read_method') == 'estimated': why.append('fraction_read is estimated, not measured')
     return not why, why
@@ -942,6 +945,15 @@ def audit(brief=False):
     for n, cs in stopped:
         print(f'   #{n} {str(entries[n].get("title", ""))[:50]}  <- ' + ', '.join(f'targets/{f}/ ({st})' for f, st, _ in cs))
     problems += len(stopped)
+    # an in-progress folder that names a catalogue number the claim rule misses leaves the entry showing Open while it
+    # is worked (catalogue 2393, George Lasry 25 Nov 2026). Listed only where the entry is open and nobody claims it.
+    missed = [(f, [i for i in ids if int(i) in entries and not entries[int(i)].get('outcome') and int(i) not in claims])
+              for f, ids in _claims.unclaimed()]
+    missed = [(f, ids) for f, ids in missed if ids]
+    print(f'K2. In-progress folders naming an open catalogue entry they do not claim: {len(missed)} (start a line with '
+          f'"Catalogue <n>." in the first 20 lines of NOTES.md if the folder works on it; otherwise ignore)')
+    for f, ids in missed:
+        print(f'   targets/{f}/  names #' + ', #'.join(ids))
     # 12. the catalogue vetting gate (_check_catalogue.py): entries from GATE_ID on need a complete vetting block
     import _check_catalogue
     fail, line = _check_catalogue.summary()

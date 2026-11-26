@@ -205,3 +205,22 @@ check of the whole page, and the sign names are the contributor's own shape code
   crops, the struck cipher passages on cc. 40v, 41r and 46v as a second test, the table of mendoza1548 applied to
   c. 44r, and Vazquez and Rose / Varo Zafra opened.
 
+## Shape splits checked blind (dudout, 23-25 Nov 2026), a proposal
+
+Brice Dudout answered a blind sign sheet on the `x` and `o'` splits (13 targets, 2 controls passed, rule hashed first).
+The `o'` split holds 3 of 3: small round = ga, flat = ta. For `x`, decoded with the sheet key: looped = de 5 of 5,
+round = no 4 of 4, and one third shape (`x8`, de). (The first version decoded two no places as looped, "against";
+corrected 25 Nov, key committed.) A second sheet (25 Nov, 3 controls passed) asked those two again in tight frames: both
+round. So the `x` split agrees at the 10 x answered blind; the other 4 x are example places whose form was labelled by
+the model when the sheets were built. "no comunique" (L12), "puerta", "abierta" (L16) and "uno" (L13) read from the
+signs; "govierno" (L03) and "no" (L08) rest on example places and are probable: 126 of 154 (81.8%). Record, labelled
+transcription and marked reading: `dudout/README.md`. The files above are unchanged; the owners decide whether to
+adopt the labels.
+
+Before / after (integration of PR #968, 26 Nov 2026). The labels are a proposal and are **not adopted**: the counted
+share stays 122 of 154 words from the signs (79.2%, `reading_44r_marked.md`). If LcCompany / WAINUT adopt them, it
+becomes 126 of 154 (81.8%): 154 words, 24 marked (22 repairs, 2 probable), 4 code words. read_share and
+`fraction_read_source` move only then, with a solution step. Sheet 2311 (13 targets) stays out of `outcome.sign_check`
+until then; sheet 2511 (4 targets, under the 8-sign minimum) is in NOTES and a solution step only. On sheet 2511,
+control K3 was target X5 of sheet 2311, so its known answer rests partly on Brice's earlier answer. Not checked: the
+signs on the Estense image.

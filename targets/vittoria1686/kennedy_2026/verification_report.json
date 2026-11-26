@@ -1,0 +1,174 @@
+{
+  "target": "Vittoria & Faustina Gonzaga Cipher Correspondence (1686-1691)",
+  "archive": "Biblioteca Estense Universitaria, Modena, Autografoteca Campori, Lettera G, Gonzaga, Vittoria (Sec. XVII-XVIII), cc. 3r-4v, 11r-12v, 20r-21v, 22r-23v",
+  "catalogue_ref": "dbourdeau/cyphersolver ID=1570 (independent full-corpus completion building on WAINUT PR #226, 3 Nov 2026)",
+  "author": "Matthew Kennedy (ORCID: 0009-0000-7198-7250)",
+  "corpus_summary": {
+    "total_word_entries": 269,
+    "total_cipher_words": 267,
+    "alphabetic_cipher_words": 251,
+    "nomenclator_words": 16,
+    "cleartext_numerals": 2,
+    "atomic_alpha_tokens_total": 1028,
+    "atomic_alpha_tokens_L1_1686": 631,
+    "atomic_alpha_tokens_L2_L4_1688_1691": 397,
+    "distinct_alpha_symbols_L1": 21,
+    "distinct_alpha_symbols_L2_L4": 19
+  },
+  "unique_decodability": {
+    "unique": 269,
+    "total": 269,
+    "ambiguous": 0,
+    "failed": 0,
+    "pass": true
+  },
+  "round_trip": {
+    "exact": 269,
+    "total": 269,
+    "accuracy": "100.00%",
+    "pass": true
+  },
+  "structural_proof": {
+    "rule": "9 consecutive pairs of 17th-c. Italian alphabet (a..t) mapped to multiples of 5 (5..90) with EVERY adjacent pair swapped, plus tail single-digit codes u/v=2, z=3",
+    "bijection_space_18_factorial": 6402373705728000,
+    "chance_probability": 1.5619206968586225e-16
+  },
+  "cipher_statistics": {
+    "ioc_L1_1686": 0.07399693104922898,
+    "ioc_L2_L4_1688_1691": 0.07275526041269115,
+    "ioc_full_corpus": 0.07326503472393242,
+    "italian_expected_ioc": 0.0738,
+    "shannon_H1_bits": 3.9591996998800063,
+    "shannon_H2_cond_bits": 3.226012653019522
+  },
+  "language_model_inputs": {
+    "it_pack_file": "IT_pack.npz",
+    "it_pack_sha256": "85b56a0ed63dc27fed2d64ad3a1b4572c19d4726461c0faa4540d98d22245d99",
+    "it_lexicon_file": "IT_top_lexicon_words.json",
+    "it_lexicon_sha256_lf": "a55772a4727b3cacfa9a6904849714e93f23afde65ce1986311db53cf09db455",
+    "provenance": "Self-contained Renaissance & diplomatic Italian corpus (166,644 A-Z chars from Machiavelli/Galileo/diplomatic prose + 3,600 morphological lexicon words; Jelinek-Mercer log10(0.65 P4 + 0.25 P3 + 0.08 P2 + 0.02 P1) + 1.08 clipped to [-6.75, -1.20]; zero overlap with Vittoria Gonzaga letters)"
+  },
+  "blind_unsupervised_sa_L1_only": {
+    "solver": "21-to-21 bijective Simulated Annealing on L1 (1686) alone (60 restarts x 20k steps, Italian quadgrams only, no cribs, no swapped-pair prior)",
+    "runtime_seconds": 9.79,
+    "canonical_symbol_accuracy": "17/21 (80.95%)",
+    "train_L1_token_accuracy": "610/631 (96.67%)",
+    "heldout_L2_L4_token_accuracy": "381/397 (95.97%)",
+    "blind_bijective_key": {
+      ".5.": "V",
+      "10": "A",
+      "15": "D",
+      "2": "U",
+      "20": "C",
+      "25": "F",
+      "3": "H",
+      "30": "E",
+      "35": "Z",
+      "40": "G",
+      "45": "L",
+      "50": "I",
+      "55": "N",
+      "60": "M",
+      "65": "P",
+      "7": "O",
+      "70": "B",
+      "75": "R",
+      "80": "Q",
+      "85": "T",
+      "90": "S"
+    }
+  },
+  "mc_quadgram_50k": {
+    "L1_train_proposed": {
+      "label": "L1 1686 (Proposed Key)",
+      "n_tokens": 631,
+      "n_trials": 50000,
+      "score": -3.5398616946426924,
+      "null_mean": -5.511698881495462,
+      "null_std": 0.2887434675178891,
+      "null_max": -4.17222258353689,
+      "margin_over_max_null": 0.6323608888941972,
+      "z_score": 6.829027869628271,
+      "null_exceedances": 0,
+      "emp_p_upper": 1.999960000799984e-05,
+      "gauss_p": 4.274598335774442e-12
+    },
+    "L2_L4_heldout_proposed": {
+      "label": "L2-L4 1688-91 Held-Out (Proposed Key)",
+      "n_tokens": 397,
+      "n_trials": 50000,
+      "score": -3.620208302730231,
+      "null_mean": -5.2533044888908975,
+      "null_std": 0.2686856304254365,
+      "null_max": -4.164395004964722,
+      "margin_over_max_null": 0.5441867022344908,
+      "z_score": 6.078092764301627,
+      "null_exceedances": 0,
+      "emp_p_upper": 1.999960000799984e-05,
+      "gauss_p": 6.081019763274909e-10
+    },
+    "L2_L4_heldout_blind_sa": {
+      "label": "L2-L4 1688-91 Held-Out (Blind Bijective SA from 1686)",
+      "n_tokens": 397,
+      "n_trials": 50000,
+      "score": -3.6537280875414155,
+      "null_mean": -5.4205101062601475,
+      "null_std": 0.2714399504281519,
+      "null_max": -4.152112344497351,
+      "margin_over_max_null": 0.4983842569559358,
+      "z_score": 6.508924039854575,
+      "null_exceedances": 0,
+      "emp_p_upper": 1.999960000799984e-05,
+      "gauss_p": 3.784549114757935e-11
+    },
+    "full_corpus_proposed": {
+      "label": "Full 4-Letter Corpus (Proposed Key)",
+      "n_tokens": 1028,
+      "n_trials": 50000,
+      "score": -3.5694012427911526,
+      "null_mean": -5.5134840051543215,
+      "null_std": 0.28427227283231354,
+      "null_max": -4.291598586105719,
+      "margin_over_max_null": 0.7221973433145665,
+      "z_score": 6.8388054276047665,
+      "null_exceedances": 0,
+      "emp_p_upper": 1.999960000799984e-05,
+      "gauss_p": 3.9928128757088904e-12
+    }
+  },
+  "mc_lexicon_10k": {
+    "L1_train_proposed": {
+      "label": "L1 1686 (Proposed Key)",
+      "true_hits": 52,
+      "total_words": 133,
+      "hit_rate_pct": 39.1,
+      "null_mean": 2.4771,
+      "null_std": 3.4307218737836394,
+      "null_max": 27,
+      "z_score": 14.435125265745512,
+      "null_exceedances": 0
+    },
+    "L2_L4_heldout_proposed": {
+      "label": "L2-L4 1688-91 Held-Out (Proposed Key)",
+      "true_hits": 41,
+      "total_words": 84,
+      "hit_rate_pct": 48.81,
+      "null_mean": 2.7269,
+      "null_std": 3.8973112903037848,
+      "null_max": 23,
+      "z_score": 9.820385683643124,
+      "null_exceedances": 0
+    },
+    "L2_L4_heldout_blind_sa": {
+      "label": "L2-L4 1688-91 Held-Out (Blind Bijective SA)",
+      "true_hits": 40,
+      "total_words": 84,
+      "hit_rate_pct": 47.62,
+      "null_mean": 2.8588,
+      "null_std": 3.93405773229424,
+      "null_max": 25,
+      "z_score": 9.44093923561722,
+      "null_exceedances": 0
+    }
+  }
+}

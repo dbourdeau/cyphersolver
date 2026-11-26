@@ -16,6 +16,7 @@ names them (PR #682 is the sweep itself). Result: 2 unvetted, 1 partly_read.
   each, with nothing for the verso word. Friedman calls it unresolved. Gil-Fleischer was not opened. The recto codes
   were seen at native resolution with no gloss. The verso word (about 11 signs) has no reading in print and could be
   split off as a key-test target (the J277 and Bodl. heb. f 102/28 Coptic-numeral alphabets are not yet tested).
+  A [follow-up research note](https://dbourdeau.github.io/cyphersolver/ibnezra1139.html) tests the four marks on recto 12 and the repeated signs on the verso.
 - **2889, Penn Museum E16470: unvetted.** The host serves only a 1600 px frame, in which the fragment is about 520 px
   across. The EXIF shows a 5944 x 5348 px master that is not online. Neither side is established as Arabic or as cipher;
   the separate signs may be numerals or fractions. It needs the master scan from the museum and a papyrologist.

@@ -1,0 +1,1 @@
+Juzgo de alta conveniencia que **C[h]ao acompañe a Ud.** durante **campañ[a]. Te[rr]a[z]as** no se da cuenta [del] **peligro** [que] entraña que **venga dicho general**. Salúdolo afectuosamente. El Gob. Militar, F. Ávila.

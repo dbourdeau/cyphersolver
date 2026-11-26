@@ -2,6 +2,8 @@
 
 Status: in progress. Not yet written up: no site page or README row. Read in part, with escalation steps still open (see Remaining gaps and Escalation). The status below is the contributor's.
 
+Triage, 24 Nov 2026 (integration round, AI agent): not written up. 195 of 197 cipher words read as sense (99.0%), over the read bar, but four gaps are `not-attempted` and workable from the online Estense images. Next step: a second reader on the masked strips of rows 16-19 (the third-pass readings that go against the gloss), a full reading of the gloss, and the end of the clear text of c. 50v; then class it again (likely read, with the illegible signs of rows 01, 07, 10, 13, 17 as outside gaps). The Ariosto c. 1 passage is a different cipher and is not part of this target's class. Not the system of ercole1547 (catalogue 2160, PR #933), a sign-and-vowel table: no one-key conflict.
+
 Status: read in part (3 Nov 2026), as a transcription job. Biblioteca Estense Universitaria, Modena, Autografoteca Campori, Lettera E, Este (d'), Ercole II d'Este, duca di Ferrara, cc. 50-51.
 
 Catalogue 1566 holds three letters in three systems. One key, one entry: this folder has the 1559 letter to Bentivoglio and a note on Ariosto's c. 1, which is not solved, and `targets/alfonso1576` has the 1576 letter.

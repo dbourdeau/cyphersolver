@@ -2,6 +2,8 @@
 
 Status: in progress (integration check 13 Nov 2026: folder only, no page; the gaps are workable: second transcription, Glückstadt verso, codes, Vienna clear text; and the codes and corrected decodes of the 1644-45 letters; 14 Nov 2026: five more 1645 letters (PR #545, second part) are in as documents 5-9, all read in part, and the 28 = o suspicion is withdrawn by its contributor (PR #558)).
 
+Next step (write-up check 24 Nov 2026): re-decode the Vienna letter with key v3 in a separately counted pass, then transcribe the Glückstadt verso (image 3) and the Vienna clear text; all online, so no page yet.
+
 Documents 3-9 (Glückstadt 1644 and 1645, Brice Dudout, PR #545) use the same key and are filed here under `dudout/` (one key, one entry); see the sections "Documents 3-4" and "Documents 5-9" below. Nothing in Malcolm McBratney's files was changed by that merge.
 
 Contributor's status line: **key family recovered; read in part; both documents below our own 65% line.** Contributed. No claim of a first reading (see Prior art).

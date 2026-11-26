@@ -1,6 +1,6 @@
 # Rinaldo d'Este, duke of Modena, to "Marchese Taddeo", 6 Jun 1697, cc. 73r-73v (Biblioteca Estense)
 
-Status: in progress. Not yet written up: no site page or README row. Read in part, with escalation steps still open (see Remaining gaps and Escalation). The status below is the contributor's.
+Status: in progress (24 Nov 2026 review: no page yet. Next step: transcribe the clear text and any cipher of cc. 74r-74v on the Estense scans, then work the open codes 196, 193, 191, 130, 175, 91, 57, 55 against the gloss and other Rinaldo letters in the Estense collection; measured share 45/68 = 66%, below the bar.)
 
 Not in the catalogue; found in a sweep of the Estense digital collections for letters with cipher. No catalogue number.
 
@@ -141,6 +141,15 @@ images, and the gloss values of the codes.
   (73r L02-L11 and all of 73v).
 - The clear text was read only around the cipher. 74r-74v were not examined.
 - Recipient: "Marchese Taddeo". Identifying him as Taddeo Rangoni is a suggestion and was not checked.
+
+## Escalation
+
+- [ ] siblings: other Rinaldo d'Este cipher letters in the Estense digital collections not searched for the open codes
+- [x] clear-pages: the interlinear decipherment used for the key and the code values read from the gloss
+- [ ] known-keys: no Modena nomenclator of the 1690s searched or tried
+- [ ] print: prior art searched (see Prior art); calendars of Rinaldo's correspondence not searched
+- [x] key-rebuild: letter key rebuilt from the gloss (reversed alphabet), held-out test on 73v
+- [ ] retry: cc. 74r-74v not examined; no pass by eye of the whole page
 
 ## Prior art
 

@@ -1,0 +1,46 @@
+# Partial reconstruction of Van Spaen's Vienna code
+
+A 93-entry candidate table fitted to G. C. van Spaen’s dispatch of 21 March 1807 made word predictions for two other dispatches. **32 of 43 predictions** matched the 28 March period decipherment within the prescribed position window. On the 14 March dispatch, **48 of 61 predictions** matched. The best of 1,000 shuffled tables scored 16 and 20, respectively. Both contemporary French decipherments survive. This local evidence draft concerns the reusable marked numerical code. [Nationaal Archief, Foreign Ministry, inventory 248](https://www.nationaalarchief.nl/onderzoeken/archief/2.01.08/invnr/248)
+
+| Dispatch | Source scans in inventory 248 | Cipher positions accepted / all | Positions assigned a candidate | Prospective word matches | Best shuffled score |
+|---|---|---:|---:|---:|---:|
+| 21 March, No. 23, training | 2 right, 3 left, 5 right, 6 left; period copy on 3–5 | 721/745 | — | — | — |
+| 28 March, No. 26 | 173 right and 174 left; period copy 174 right and 175 left | 329/355 | 72 | 32/43, 18 distinct forms | 16 |
+| 14 March, No. 21 | 14–17; period copy 15–16 | 430/432 | 82 | 48/61, 20 distinct forms | 20 |
+
+Two independent readers saw only cipher panels. Each type comprises the number, superscript and any trailing stroke. Each unresolved position remains in the count. Two monotone alignments of No. 23 to its French copy allowed whole words and fragments. A candidate needed the same unique most frequent segment under both settings, with at least two fit occurrences and support in at least two thirds of its occurrences under each. The table includes 53 whole-word values and 40 fragments. The test of No. 26 then froze all predictions before the scorer used its separately sealed reference. After that test, the exact same table went into a new prospective test on No. 21. Each test used its own French reference, transcribed from the period copy and sealed by the coordinating agent before scoring. The fitting investigator had previously seen a small spread of scan 174 while checking the date and layout, including the page bearing part of the French copy, without transcribing the body. [Fit and first transfer protocol](march/PLAN.md) · [Fixed-key second protocol](march14/PLAN.md)
+
+The scoring program required exact normalized French tokens in order, allowing each reference token to be used once. The predicted and observed centers had to fall within four percentage points of document length. Apostrophes split tokens, so *qu* can count. Each test required eight predictions, five matches, four different matched forms and a score above every shuffled control. These are measures of prediction accuracy with a location tolerance. The tests did not determine a fraction of cipher words read. On 14 March there was one prospective complete word assembled from two fragments, *reront*. It missed. [28 March results](march/transfer_result.json) · [14 March results](march14/transfer_result.json)
+
+## Individual candidates
+
+| Marked number | Reading | Matches / predictions, 28 March | Matches / predictions, 14 March |
+|---|---|---:|---:|
+| 224, two dots | aussi | 2/2 | 1/1 |
+| 293, cross | guerre | 2/2 | 1/1 |
+| 723, two dots | cette | 2/2 | 3/3 |
+| 82, cross | de | 2/2 | 1/2 |
+| 859, ring | qu | 4/4 | no opportunity |
+| 9, v-mark | que | 2/2 | 2/5 |
+
+These six matched every predicted occurrence, with at least two nonoverlapping position windows, on the first held-out letter. The second letter supported *aussi*, *guerre* and *cette* at every opportunity, and weakened the case for *de* and *que* under the same rule. Short common words can match by accident. In No. 26, cipher positions 90–92 predicted *guerre, et, qu*, matching consecutive reference tokens 53–55. In No. 21, positions 246–248 predicted *que, pour, la*, matching consecutive tokens 157–159. The aggregate evidence supports transfer of the code; individual entries remain candidates for exact manual alignment. [Every prediction by code](march14/cross_letter_support.tsv) · [28 March matched positions](march/transfer_matches.tsv) · [14 March matched positions](march14/transfer_matches.tsv)
+
+## January miss and prior work
+
+No. 7 of 24 January 1807 is a different experiment on scans 105–106. Its within-letter position model proposed five tokens and matched just two occurrences of *de*. Of 1,000 shuffled controls, 226 equalled or exceeded that score; the highest was four. The investigator had seen the known French copy before this within-letter split. No January value entered the March table. [January protocol](january/VIENNA_PLAN.md) · [January result](january/vienna_result.json)
+
+The receiving dockets also identify prose companions to Nos. 3, 7 and 9. The prose letter paired with No. 7 dates Lucchesini’s arrival, and the 10 and 31 January letters record Van Spaen’s changing information about Vincent’s mission. [January manuscript comparisons](january/JANUARY_COMPANIONS.md)
+
+My 14 November 2026 survey of these files is my own working record, made with AI agents, and is not in this repository. Its inventory 248 part, “cipher survey”, paged all 451 scans and listed the nine Vienna cipher dispatches of January–April 1807, each with its separate clear copy, an estimated group count and a sample of its first line. Its pair list for inventory 204A, scans 211–274, is a table of 543 number–word pairs read by helper agents from the clerks’ working copies, with a notes file. A summary written the same day drew on both. Two new cipher-only readings corrected seven of the survey’s first ten numbers for No. 7. The survey dated No. 26 to 20 March. The manuscript dateline on scan 173 reads 28 March and the separate inventory 204A entry agrees. The pair list gives 227 for *armée* under the Munich dispatch of 15 October 1807, lower on inventory 204A scan 254; my summary wrongly attributed it to Vienna. The pair list’s 718+ for *du* on the same scan is withdrawn below. These corrections are now noted in my own files. The sparse 204A period corrections were excluded from fitting and scoring. [Inventory 248](https://www.nationaalarchief.nl/onderzoeken/archief/2.01.08/invnr/248) · [Inventory 204A](https://www.nationaalarchief.nl/onderzoeken/archief/2.01.08/invnr/204A)
+
+The repository already has the distinct *spaen1808* target, the Düsseldorf correspondence using unmarked code groups in inventory 281. Its *batavia1800* target concerns Smissaert and a different cipher. The locally saved 19 November check included 902 target-directory names, with no *spaen1807*, and an issue/PR name search for “Spaen” returned zero. This bounded check does not establish historical priority. Neither the existing Düsseldorf key nor Van Kampen's different St Petersburg material provides an independent reading of the Vienna messages. [Existing Düsseldorf work](https://github.com/dbourdeau/cyphersolver/tree/fe637468dc7d728abca6bec06bfe8b8112508fef/targets/spaen1808) · [Separate Batavia example](https://github.com/dbourdeau/cyphersolver/tree/fe637468dc7d728abca6bec06bfe8b8112508fef/targets/batavia1800)
+
+## Checks against the working decipherments
+
+After scoring, two blind readers working independently on the annotation sheet examined the clerks’ marks in inventory 204A. On scan 253 right both favored cross-marked 238 below a struck word corrected to *on*. The number and word agree with both No. 23 training paths at position 309, where the predeclared rule had excluded the once-occurring code. On scan 254 left both preferred cross-marked 710 near *justement*; *du jour* is on the following line. The note withdraws the earlier attribution of *du* to cross-marked 718. The two other local annotations and the difference between *On donnera* and *on leur donnera* are described in the appendix. These checks took place after the two tests and did not alter either key or score. [Post-score manuscript appendix](appendix/NOTES_working_copy.md)
+
+## Scans and their conditions
+
+No conditions were negotiated for the Nationaal Archief scans, and nobody agreed to any. On 14 November 2026 my AI agents downloaded the scans of archive 2.01.08, inventories 248, 204A, 281, 87 and 88, from the archive’s public online viewer and its public image interface, with no account, no order and no correspondence. On 19 November they fetched ten larger copies of scans from inventories 248 and 204A the same way. The interface reports `isDownloadable: true` for inventory 248 and no user restriction. The archive’s [terms of use for scans](https://www.nationaalarchief.nl/en/node/44203) say that images with a download button marked Public Domain or CC0 may be reused without restriction, and that images without a download button are protected by copyright. On 22 November 2026 the [inventory 248 page](https://www.nationaalarchief.nl/onderzoeken/archief/2.01.08/invnr/248), read without its image viewer, showed no rights statement for these scans. The marking on the individual scan pages has not been checked. No image is included here, only transcriptions and the hashes of three crops.
+
+AI agents did this work; no person has checked it.

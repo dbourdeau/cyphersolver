@@ -288,3 +288,16 @@ changed.
 Sure groups: 14 of 19 -> **12 of 19 = 0.632** (12 S, 4 P, 3 unresolved). Still read in part. fraction_read (0.36) does not
 count R4844's units and is unchanged.
 
+## Integration of #821, 20 Nov 2026
+
+Done at the integration of PR #821 (maintainer session, an AI agent; nothing here was checked on the DECODE images).
+- `profile.json`: the `reading_review` of the sign-words entry is now the reviewer's (grade B), in place of the
+  contributor's own of 9 Nov 2026. `outcome.gaps`, the sign part of `outcome.parts` and `outcome.notes` now give the state
+  of the Remaining gaps section above: a partial sign key, sheets K and K2, 12 of 19 groups certain, 4 probable, 3
+  unresolved; open: groups 2, 4, 10, the fifth sign of group 14, MP and ψ in group 16.
+- The K2 relabel of the fifth sign of group 14 (⊥ -> EQ) stays in the sign column of `dudout/reading_R4844_signs.md`, but
+  it was not accepted on review as a settled correction: sheets K and K2 disagree on that sign. `sign_check_pending.json`
+  says so in its K2 entry, so the sign is not counted as corrected when the record moves to `outcome.sign_check` after #789.
+- Not decided: the sign part of `outcome.parts` still has method "not solved" and extent "none", which record the project's
+  own attempt of 21 Sept 2026 (section 4). Whether it is reclassed on the contributed sign key, with `outcome.provenance`
+  and the README row to match, is left to the owner.

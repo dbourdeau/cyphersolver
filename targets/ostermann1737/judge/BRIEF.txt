@@ -1,0 +1,12 @@
+JUDGE BRIEF: ostermann1737 (Ostermann to Kalushkin, 17/28 April 1737, Russian, one leaf, 20 cipher lines)
+
+You are given judge/decode.txt: line number, tab, decoded text. It is the single decode of a frozen transcription with a frozen key. Language: 18th-century Russian, pre-reform spelling as the cipher clerk wrote it (no ѣ or і distinguished by this key; phonetic spellings such as "ходитца", "писмо", "протчемъ" are period forms, not errors). Word gaps are the transcriber's reading of gaps on the leaf: prepositions are often joined to the next word and words are broken at line ends. "/" is a divider stroke and "//" a line-end flourish: neither is a letter, do not score them. "[...]" is one illegible sign: do not score it. "от" in lines 8 and 14 comes from ONE sign (a ligature): score it as one letter.
+
+Score every decoded letter:
+  S = letter in a word that reads as sense in the language
+  E = the one wrong letter in an otherwise readable word (one-letter slip)
+  N = no sense
+Do not emend. Do not use any other source.
+
+Report: counts of S, E, N and S% for (a) each line, (b) lines 1-16 (training), (c) lines 17-20 (held-out), (d) all 20 lines. Give the sums in full. Expected letter total: 770 (training 622, held-out 148) if the "от" ligatures count as one letter each.
+List each E and N with line and word.

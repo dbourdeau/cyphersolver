@@ -188,3 +188,18 @@ over the bold words only, the clear Italian and the notes and tables of the file
 - [x] print: ASMo inventory and Somogyi 2025 found; R1138 already read
 - [x] key-rebuild: EM key from Somogyi cribs (89.6%); V1921 values (lone o = h/u, oo = b, z+/x+/xp = q, EL = f, K = et); pass 4 values (o+ = s, Z+/Zp = q, D = b/x, plain c = o)
 - [x] retry: 22-23 Oct 2026 (b18) - R1139 and R1136 re-read on 2-2.2x strips of the native images, R1139 five labels corrected, partial readings and translations written (0.18 and 0.0 clean), blockers named; done 2 Oct 2026 - V1921 re-transcribed and read 97.0 %; R1139 and R1136 re-decoded with the new values (`beam21.py`), phrases checked on the crops and regraded (`pass3_r1136_r1139.md`, `regrade21.py`: R1139 83.8 %, R1136 59.4 %); pass 4 (2 Oct, later): R1136 re-transcribed and regraded 66.9 %, R1139 second pass 88.7 %; pass 5 (3 Oct) R1139 89.7 %. Still open as work, not as escalation: a full second transcription of R1136
+
+## 24 Nov 2026 - R1139 / R1136: blind sign-shape sheet on 4, p+, q+ (Brice Dudout, with Claude), `dudout/sign_check_2411/`
+Brice Dudout looked at 9 signs blind on DECODE R1139 and R1136, plus 3 controls (all 3 passed). The rule was hashed first.
+- The 4 / q+ / crossed-y family is three signs:
+  - 4 is confirmed three times.
+  - The "4" of R1139 L01 "com[4]" is a crossed y, so "come" needs no value for 4.
+  - q+ (L04) and q? (L06) are a crossed q, a form of their own. One more crossed q is at R1136 L05.
+  - L07 end q+ is unresolved.
+- p+ is a crossed p, so p = n. The s given there by sense is not supported.
+- "1 1" at L07 end is u, so U = g. No word results.
+- {probable}, by sense only: q+ = a at L04 and L06, the same value as q.
+- Effect on the word-level count: R1139 goes from 118 to 119 sure out of 140; R1136 is unchanged. Both stay decoded, not read.
+
+key21, the transcriptions and the readings are unchanged. The relabels are only proposed, in `dudout/sign_check_2411/proposed-alphabet/`.
+Open: the 4 at R1139 L02 end ("[4] credo") needs the same question (crossed y or 4?).

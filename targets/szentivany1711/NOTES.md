@@ -1,4 +1,6 @@
-# Szent-Ivány to Rákóczi, Munkács, 14 May 1711 · #3674
+# Szent-Ivány to Rákóczi, Munkács, 14 May 1711 · catalogue 3910
+
+Catalogue 3910 (#3674 in the draft of PR #910, before the gate gave it its id); removed from the catalogue at this write-up.
 
 **Read in part.** The contemporary decipherment of Szent-Ivány's dispatch of 20 May supplies a key to his letter of 14 May. Szent-Ivány explains why he has held back from offensive action and asks the prince to send men to sustain morale. The four inserted cipher passages contain 56 groups. The evidence for the reading comes from two different letters.
 

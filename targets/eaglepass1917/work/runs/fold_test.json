@@ -1,0 +1,81 @@
+{
+ "what": "Frozen-plan construction test of the eaglepass1917 key, run 23 Nov 2026 10:24-10:25 EST (plan written and hashed 10:23) by an AI agent (Claude Opus 5.5). The plan (SHA-256 f6372af4f261a71559eb772e0a757856081aa68812c3977ff34f8ba493cedee2) and the search script are kept outside this package because they also hold keys printed in the Narvaez book.",
+ "honest_start": "The TIRANO fold was first noticed by eye in the eleven recovered pairs; the search below checks it and looks for any other fit. It is not a blind discovery.",
+ "constructions": "keyword alphabet (keyword without repeats, rest of the alphabet ascending or descending), 26 and 27 letters (27 with N-tilde), (a) folded on itself about every axis, (b) written in two rows and paired with every offset, second row as written or reversed; empty keyword = plain alphabet (shifted and reversed pairings)",
+ "keywords": {
+  "W1": 16608,
+  "W2": 137,
+  "W3": 6440,
+  "W4": 6
+ },
+ "keyword_lists": "W1 corpus words of 3-15 letters (Archivo Santander XIV OCR + Spanish readings of 13 Mexican targets in this repository); W2 the 100 words of the consular key list, Narvaez p. 338 fig. 9, as read blind; W3 words of 3-15 letters in our OCR of Narvaez ch. IX; W4 MURCIELAGO, ANTONIO, ESCULTOR, RODIN, TREINTAIUNO, TREINTAYUNO",
+ "distinct_restricted_keys_searched": 3700233,
+ "hit_rule": "a candidate must give exactly the 21 observed cipher->plain values",
+ "control_positive": {
+  "found": 50,
+  "of": 50,
+  "passed": true,
+  "how": "fold keys from 50 random corpus words (seed 7), restricted to the same 21 letters"
+ },
+ "control_random": {
+  "hits26": 0,
+  "of26": 2000,
+  "hits27": 0,
+  "of27": 1000,
+  "rate": 0.0,
+  "passed": true
+ },
+ "control_random_how": "random reciprocal keys (seed 11): 2,000 on 26 letters with two fixed letters, 1,000 on 27 letters with one",
+ "real_hits": [
+  {
+   "word": "TIRANO",
+   "lists": [
+    "W1"
+   ],
+   "n": 26,
+   "rest": "asc",
+   "construction": [
+    "fold",
+    0
+   ]
+  }
+ ],
+ "near_misses_19_or_20_of_21": [
+  {
+   "word": "TIRANO",
+   "n": 26,
+   "rest": "asc",
+   "construction": [
+    "rows",
+    13,
+    "rev",
+    12
+   ],
+   "match": 20
+  },
+  {
+   "word": "TRANTO",
+   "n": 26,
+   "rest": "asc",
+   "construction": [
+    "fold",
+    25
+   ],
+   "match": 19
+  },
+  {
+   "word": "TRANTO",
+   "n": 26,
+   "rest": "asc",
+   "construction": [
+    "rows",
+    13,
+    "rev",
+    0
+   ],
+   "match": 19
+  }
+ ],
+ "family_note": "The same search finds that the 1915 'Clave Garduno' table printed by Narvaez (p. 311) is the fold of the 27-letter keyword alphabet GARDUNO (with N-tilde); no fit for row 2 of Seguin's 1916 plana (fig. 7). The tables themselves are not reproduced here.",
+ "controls_meaning": "The positive control only checks the search code. The random control bounds the false-fit rate at about 0.1%; analytically a random reciprocal key matches a given candidate on the 12 facts the telegram fixes (11 pairs + T) with probability about 3e-14, so about 1e-7 over the 3.7 million keys searched. An independent AI reviewer's wider search (11.7 million keys, adding columnar-transposed keyword alphabets) also found only TIRANO (a model check)."
+}

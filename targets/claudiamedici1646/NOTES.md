@@ -4,9 +4,9 @@ WAINUT, 6 Nov 2026. Work done with AI language-model agents viewing the photogra
 described below. No human palaeographer has checked the text. An independent AI language-model agent checked the
 work (`VERIFY.md`); the fixes made after that check are listed near the end of this file.
 
-Status: in progress (not yet written up). Read in part, 6 Nov 2026: both bare letters are read in part. 24793 sits
+Status: read in part, written up 24 Nov 2026 (integration review). Both bare letters are read in part. 24793 sits
 right at the read bar (95.2% verbatim counting the code groups, 94.9% without them) and is not claimed as read.
-No site page or README row; the open points are under Remaining gaps.
+Every open point needs a clean scan of the frames (see Remaining gaps); the online photographs have been used to their limit.
 
 ## Result in one paragraph
 
@@ -200,13 +200,12 @@ predate these changes.
 
 ## Remaining gaps
 
-- The date of 24793 (and whether it continues on another page) is not on the frame.
-- The phrase "indisciplinate genti" in 24800 needs a clean image of L05.
-- The "forze" sign in 24793 L03 and the five single-sign repairs (5/s and g/D shapes) need clean scans of inv. 24793
-  and 24800 from SOA Zámrsk.
-- Not used: glossed frames 24787, 24788, 24789, 24794, 24799, 24799_1, 24806 (24806_1 is a blank verso). They would
-  give a larger held-out test.
-- No human has checked any sign.
+- 24793 L03 'forze', fourth sign not the key's z shape - blocker: illegible; only z gives a word; the soft microfilm photograph does not settle the shape, a clean scan from SOA Zámrsk would (and with it the 'read' status of 24793)
+- 24800 L05-L06 'indisciplinate genti' - blocker: illegible; the signs give 'indisciplinitelenti', two changed signs give the reading; needs a clean image of L05
+- the five other single-sign repairs (5/s and g/D shapes, a cross for 4, a 2/Q loop) - blocker: needs-physical-access; the photographs are soft and clean scans of inv. 24793 and 24800 exist only at SOA Zámrsk
+- date of 24793, and whether it continues on another page - blocker: needs-physical-access; day and month are not on the frame and no continuation page is in the online zip
+- held-out test small (13 words, gloss visible) - blocker: too-short; the unused glossed frames 24787, 24788, 24789, 24794, 24799, 24799_1 and 24806 would enlarge the test of the key, not change the reading
+- no human has checked any sign - blocker: needs-physical-access; a palaeographer with the frames or a clean scan
 
 ## Escalation
 
@@ -215,5 +214,17 @@ predate these changes.
 - [x] known-keys: Vlnas 2017, table 5 (from inv. 24790), compared sign by sign; it agrees
 - [x] print: Vlnas 2017 (24793 and 24800 listed as not deciphered), one web search; no edition found
 - [x] key-rebuild: every letter sign and code group in both letters has a value; nothing left to rebuild
-- [ ] retry: the 'forze' sign, the five repaired shapes and 'indisciplinate genti' need clean scans from SOA Zámrsk
-  (not ordered); the unused glossed siblings would enlarge the held-out test
+- [x] retry: every doubtful sign and repair was looked at again on 4x crops of the only online photographs (solver's pass 2 and the independent check in VERIFY.md) and regraded with the frozen key; 'forze' was downgraded to doubtful, the others stay marked. A clean scan is the only further step
+
+## Transcription doubts
+
+Checked by the solver on 4x crops with no overlay and by the independent blind copy in VERIFY.md (6 Nov 2026); the integration review of 24 Nov 2026 re-read the decodes against these lines but did not view the images.
+
+- I? (24793 L03, 'forze') - read: z; checked: image, decode, transcription; an n-like form with a stroke over it, not the upright z of L12 'sforzo'; only z gives a word; stays doubtful
+- r (24793 L02, 'con') - read: c; checked: image, decode, transcription; r-like sign, the key's value gives no word; marked repair
+- g (24793 L04, "de'") - read: D (d); checked: image, decode, transcription; no visible cross-bar; marked repair
+- g (24793 L08, "dall'") - read: D (d); checked: image, decode, transcription; no visible cross-bar; marked repair
+- 2/Q (24800 L01, 'per') - read: Q (p); checked: image, decode, transcription; the loop may be closed; marked repair
+- y/4 (24800 L05, after 'cagione') - read: y (i, 'i disordini'); checked: image, decode, transcription; y preferred on the shape, and it gives the article
+- y and c (24800 L05, 'indisciplinate genti') - read: a, g; checked: image, decode, transcription; two changed signs in one phrase, a conjecture flagged [?...]
+- + (24800 L07, 'prudentemente') - read: 4 (m); checked: image, decode, transcription; a clear cross in both passes; marked repair

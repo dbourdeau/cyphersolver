@@ -121,3 +121,33 @@ Run it with `python3 scripts/measure65.py <worktree> no65_signs_reread.txt ../n6
   *questa sua*); f. 120r L23 *causa* (not *cosa*). *Duca* and *Papa* are spelled out in cipher on f. 120r.
 
 Based on Lasry's key, Arya Patel's identification of f. 123, and your no. 66 re-read and transcriptions.
+
+## 24 Nov 2026: blind sign sheet 2411 (`sign_check/`)
+Seven doubtful signs of no. 63 were put to Brice Dudout as a blind sheet, with controls 3/3. Five words become sure:
+meter, rendera, lega, oficio and deposition. The reader's remark "italic n = n with inward tail" was adopted, so
+italic n = e, and "et" (f. 115r) is now read as probable.
+
+`no63_signs_2411.txt` and `no63_reading_2411.md` are the 24 Nov versions. The frozen 12 Nov files are unchanged.
+
+Words (841): sure 743 -> **748**, probable 52 -> 48, unresolved 25 -> 24. Sure + probable 94.5% -> **94.6%**, still
+under 95%. Details are in `sign_check/README.md`.
+
+## 24 Nov 2026 (late): blind sign sheet 2411-95 (`sign_check/`)
+Three unread groups of no. 63 that hinged on one pi / italic-n sign were put to Brice Dudout as a second blind sheet
+(controls 3/3). All three are the italic n (e): "et" and "e" (f. 116r l.16, sure) and "egli° era" (f. 116r l.31,
+probable: word cut by sense). `no63_signs_2411_95.txt` and `no63_reading_2411_95.md` are the new versions; earlier
+files are unchanged.
+
+Words (841): sure 748 -> **750**, probable 48 -> 49, unresolved 24 -> 21. Sure + probable 94.6% -> **95.01%**, at the
+line by 0.05 word; 94.99% with our stricter tokenisation (839 words); 89.2% on sure words alone. State left to the
+maintainer. Details in `sign_check/README.md`.
+
+## 25 Nov 2026: blind sign sheet 2411-95b (`sign_check/`)
+Two single-sign doubts of no. 63 were put to Brice Dudout as a third blind sheet (controls 3/3): the looped sign of
+"diligen-" is the looped B (z): **diligenza** (was diligen[tia], restored), and the first sign of (5)v9 is the barred
+looped delta (o): **serviva o al tirar Papa in lega** (was unread). Both sure. `no63_signs_2411_95b.txt` and
+`no63_reading_2411_95b.md` are the new versions; earlier files are unchanged.
+
+Words (841): sure 750 -> **752**, restored 9 -> 8, unresolved 21 -> 20. Sure + probable 95.01% -> **95.24%** (801/841,
+margin 2.05 words); 95.23% (799/839) with our stricter tokenisation; 89.4% on sure words alone. State left to the
+maintainer. Details in `sign_check/README.md`.

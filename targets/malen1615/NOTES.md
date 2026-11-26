@@ -5,6 +5,7 @@ Permalink: https://proxy.archieven.nl/0/69A9B00BC5F844C596AD986F5A60678C (archie
 
 Status: in progress (not yet written up). Letter 1 read in part, letter 2 decoded, not read (12-13 Nov 2026); the
 Dutch passages of letter 2 are not transcribed and escalation steps remain open (see the end of this file).
+Next step (24 Nov 2026 write-up pass, no page): transcribe the Dutch cipher passages of letter 2 (scans 5-6, archieven.nl tiles) in two passes and read them with key.tsv.
 
 ## Documents
 

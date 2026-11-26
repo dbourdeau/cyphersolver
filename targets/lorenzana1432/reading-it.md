@@ -1,5 +1,7 @@
 # Bernardo ad Averardo, c. 208r
 
+<!-- Conventions (added at the write-up, 24 Nov 2026): the running text of the whole recto, clear words and cipher together. Punctuation, accents, word division and u/v are editorial, and common spellings are regularised (soccorrere for the cipher's socchorere, Castello Nuovo for chastello nuouo, uomini for huomini). The cipher words in the letter's own spelling, as the key gives them, are in literal.tsv and april.tsv. Square brackets mark a letter supplied in a cipher word or a doubtful clear word; bracketed dots mark clear text that gives no sense. -->
+
 ## Reading
 
 Egregie pater et domine mi. Questa mattina ho una da' nostri signori Dieci, della quale [?credo] siate informato. Nondimeno ve ne vo' avvisare quanto da loro m'è suto comandato, ch'è ch'io debba isfasciare e levare via ogni fortezza a tutte queste castella, cioè Parlascio, Castello Nuovo, Santa Luce, Santo Regolo e Lore[n]zano. E ch'io proceggha e [?tento] tenere le mani addosso a Chianni.

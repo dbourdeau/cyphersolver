@@ -2,7 +2,7 @@
 
 Gelders Archief (Arnhem), 0613 Familie Bentinck / Aldenburg Bentinck, inv. nr. 3889, 79 scans.
 Permalink: https://proxy.archieven.nl/0/9F5C2770E8A342E0A4384AC604A46608 (viewer on www.archieven.nl).
-Status: in progress (not yet written up). The July letter is read from the contemporary slip; the May 1730 letters and the other code scans are workable and untried (see Remaining gaps).
+Status: in progress (not yet written up). Next step (24 Nov 2026 review): transcribe the May 1730 letters (scans 5/7-13, online) and run a ciphertext-only attack on their letter groups using the July word list; pair the scan 69 slip. The July letter is read from the contemporary slip; the May 1730 letters and the other code scans are workable and untried (see Remaining gaps).
 
 Scans are not in this folder (screenshots kept locally only). Writer and addressee as given by the inventory and the
 catalogue entry; the letter is addressed "A Monsieur de Ginkel".

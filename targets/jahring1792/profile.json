@@ -227,6 +227,15 @@
    ],
    "what": "Integration check of PR #559 (14 Nov 2026): own Porta decoder from key.tsv reproduces decryption_119.txt and decryption_120.txt, 372 of 372 letters; arcinsys image 119 fetched (plain GET) and runs 119.1, 119.8 and 119.12 (41 letters) compared: all as now transcribed, the three corrected places a pointed v. scripts/heldout.py re-run on the corrected runs: working key Porta 333/348 = 0.957 (was 330/348 = 0.948), frozen key as frozen 305/346 = 0.882 (was 303/346 = 0.876), Vigenere and Beaufort controls unchanged (0/348, 3/348; 1/346, 4/346); heldout_result.txt updated.",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "transcription",
+   "technique": [
+    "other"
+   ],
+   "what": "Write-up pass (24 Nov 2026, AI agent for the maintainers): arcinsys image 121 fetched again (3500 x 2655) and the cipher block cropped at 2-3x. Every cipher letter carries the second hand's key letter, and the block is legible line by line. A trial copy of line 1 (42 letters) decoded with the Porta table gives 'kuppelistgutge' (the first letter, d, decodes as r here), then letters that do not yet read; the trial copy is not secure from letter 15 on. Not finished: no page; the full two-pass transcription of 120.5 and the 121 block remains the next step.",
+   "result": "partial"
   }
  ],
  "outcome": {
