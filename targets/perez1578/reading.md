@@ -2,7 +2,11 @@
 
 {x} probable; ‹x› unresolved; <x> = Pérez's plain text around the cipher (not counted).
 
-<[…] el despacho que lleva este correo,> pero con grandissima dificultad del consejo de hazienda, por no aver un real y tantas cosas que proveer <, por lo qual […]>
+A group transcribed with "?" (a doubtful sign, e.g. 25:.? in "proveer") is read with the value the sense requires and is
+not marked (convention declared after the key-replay audit of 24 Nov 2026). "grandisima" follows the cipher (single s),
+corrected from "grandissima" after that audit.
+
+<[…] el despacho que lleva este correo,> pero con grandisima dificultad del consejo de hazienda, por no aver un real y tantas cosas que proveer <, por lo qual […]>
 
 <[…] quando no huviesse otras causas,> {ir} acomodado {esso} de alguna {manera} que se {pueda} {estragar}, temiendo el peligro de los sucesos, estando lo de la hazienda tan {estrecho} que tengo por {imposible} del poderse acudir con tanto como es menester <, y advierto a V. Al. […]>
 

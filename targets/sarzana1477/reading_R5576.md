@@ -1,0 +1,3 @@
+# R5576 (cart. 1598 no. 102), 7 June
+
+Non vi ho scripto de la venuta de Iohan Galeasmo in questa terra, perche non era al fine. Ma como ho inteso, per vivere cum manco spesa, meser Ludovico ha avuto da Firensa {pro} e contra circa il suo dover esser del Consiglio ducale. Mi pare che, posendolo haver cum utile e stasi di qua, se ne contentaria. Uno doctore mio parente, venuto heri da Firensa, mi diceva haver inteso da uno residente in quela cita per il duca di Modena che el conte Guido Rangone per venir presto di qua, mandato dal suo duca predicto, dubito de qualche trama. Sarsane, die septe iunii, etcetera.

@@ -2,13 +2,13 @@
 
 Status: read in part.
 
-Larry Beck, Mark Addis and Panos Archondakis, with ChatGPT, recovered a one-letter shift. By his account, Jacob Houtrouw independently transcribed the manuscript and derived the same shift and text using a model. The transcription awaits human verification. All 39 rows replay exactly. The later word ledger gives 185 sure of 217 on ff. 76r–v and 14 of 20 on the cancelled opening. Retain the unresolved clause on f. 76v and closing numeral, and the uncertain expansion of the initials.
+Larry Beck, Mark Addis and Panos Archondakis, with ChatGPT, recovered a one-letter shift. A second independent decipherment and transcription (model-made, no person checked the transcription), credited to Jacob Houtrouw, agrees on key and text. All 39 rows replay exactly. The later word ledger gives 185 sure of 217 on ff. 76r–v and 14 of 20 on the cancelled opening. Retain the unresolved clause on f. 76v and closing numeral, and the uncertain expansion of the initials.
 
 Source submission and review: https://github.com/dbourdeau/cyphersolver/issues/786
 
 ## Transcription doubts
 
-- 75r cancellation; 76r and 76v gutter, names and closing line - read: see hole-ledger.md; checked: image as described by the contributor or prior review, decode; The contributor compared the manuscript photographs and later crops. The independent rota/ruta inspection is pending. The linked literal TSV preserves the doubtful signs and the edited reading keeps the proposed forms marked.
+- 75r cancellation; 76r and 76v gutter, names and closing line - read: see hole-ledger.md; checked: image as described by the contributor or prior review, decode; The contributor compared the manuscript photographs and later crops. The independent rota/ruta inspection is still open: it has not been made. The linked literal TSV preserves the doubtful signs and the edited reading keeps the proposed forms marked.
 
 ## Remaining gaps
 

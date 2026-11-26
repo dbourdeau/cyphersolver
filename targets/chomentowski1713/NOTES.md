@@ -106,3 +106,11 @@ blocker) is now no-key-material for the R7476 and R7484 word residues: values ce
 - [x] retry (23 Oct 2026): R7476 re-spelt from its figures and aligned word by word with the token stream (r2b); doubtful words marked; rescored 0.524, demoted
 - [x] retry: R7476 glosses re-read at high contrast, unread stretches re-transcribed digit by digit at 3x (passes 4-6); R7484 pass 3 at 3.5x; Polish candidates scored with lang/ pl-modern
 - [x] retry (23 Oct 2026, r2k): R7484 and R7485 re-spelt from their figures, slips bracketed, aligned word by word; rescored 0.739 / 0.75, keep read
+
+## 24 Nov 2026 - R7476 p. 32, the twin digits 4 / 7 checked by a blind reader (Brice Dudout, with Claude), `dudout/`
+A blind sheet of 11 questions (8 targets, 3 controls, 3/3) separates an angular 4 from a hooked figure, the hand's 7.
+Three digits transcribed 4 are the hooked 7: p.32 L13 141 -> 171 (na: "wyjeżdżał na"), L24 244 -> 247 (sa: "samego"),
+L25 240 -> 270 (t, no letter change); "[?od]" at L24 is probable (cut by sense). Tokens read 1,538 -> 1,542 of 1,621
+(95.1%; 1,544 with [?od]); no read word breaks. The explicit-hole score (0.524, 23 Oct 2026) was not re-run, so the
+state of R7476 is unchanged. The key is unchanged; the 4/7 conflicts in syllabary.tsv need a visual pass first.
+Details in `dudout/README.md`; no image is committed.

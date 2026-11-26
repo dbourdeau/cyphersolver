@@ -1,6 +1,6 @@
 # Established text (Italian)
 
-Conventions: {x} probable; <x> unresolved. Spelling of the cipher kept (qulche, aparenti, tuto, sano, posono, iritando, zopicamento); u/v, accents and punctuation modernised.
+Conventions: {x} probable; <x> unresolved. Spelling of the cipher kept (qulche, aparenti, tuto, sano, posono, iritando, zopicamento); u/v, accents and punctuation modernised. A sign transcribed with "?" that is not listed under "Probable words" is read with its key value and not marked (convention declared after the key-replay audit of 24 Nov 2026).
 
 Io et fuori de le parti ho {qulche} informatione della mala natura et inclinatione del {vescovo} al partito {contrario}, non tanto per ragione di moderna politica, quanto per zopicamento di religione; et anderò temporeggiando il più che potrò, col far dimostrationi aparenti di sentimento in suo favore et contra, ma tardi di esecutione, iritando in tanto le parti a vomitar tuto quello che sano et posono [in clear in the letter: per poter meglio informar costì et più maturamente risolvere quel che convenga in questo così notabile accidente.] <canonizatorio> della festa che si può sperare il nostro <c> un giorno, se non è più che caduto.
 

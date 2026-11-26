@@ -24,6 +24,8 @@ ff.), No. 98 (Ford 4:406); the two No. 85 passages on 0197 that Ford prints as n
 
 ## No. 85, 0196 left, lines 11-16 (not in Ford: table reading only)
 
+(21 Nov 2026: read again with the code sheet from two blind transcriptions, `no85_foot.txt` and `texts/no85_foot_reading.md`; the two passages on 0197 are read there too.)
+
 Ford ends the cypher at "the rest of the Russian dominions." The MS block goes on for six lines (the task's "lines
 12-23" is this; the line count differs because the top of the block is 10 lines here). Right edge lost in the gutter.
 

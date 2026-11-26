@@ -1,0 +1,52 @@
+# Blanquet to Rubio Navarrete, 19 May 1914: partial reading with Clave núm. 109
+
+*Update, 22 Nov 2026: Narváez's 2019 book, described below as unavailable or unchecked, has since been checked (chapters VII-XI, pp. 261-410, and the index, pp. 487-495). It prints neither the three telegrams nor Clave núm. 109. See NOTES.md.*
+
+A two-sheet manuscript in General Guillermo Rubio Navarrete's papers transmits a message from the Secretaría de Guerra. Its heading names Rubio, it is dated 19 May 1914, and its second sheet ends “Blanquet.” CEHM supplies [Aureliano] for the sender and [México] for the origin. The unaltered War Ministry cipher card previously transcribed by Brice Dudout gives **abstenerse de hacer indicaciones**, **individuos** and **proceder con energía**. Later runs yield **sorprender**, **ellos** and **sobre**. The previously published three examples of this table went from Rubio to the Minister. The new witness shows the same table used in correspondence going the other way. [CEHM DLXXIII.2.41.22-41, record 138008](https://www.cehm.org.mx/Buscador/FichaBasica/138008?Tipo=A)
+
+## Key, witnesses and independence
+
+Dudout previously read three outgoing telegrams with the historical card “Clave núm. 109. Secretaría de Guerra y Marina, con el General Guillermo Rubio Navarrete,” CEHM DLXXIII.1.28.14-23. The exact 160-entry repository table was applied with no fitting, offsets, new entries or corrections. Three already published telegrams provided only positive controls. The entire May manuscript and a separate 25 March presidential telegram were held out. The candidate table was chosen for the May correspondents. The March telegram was included as a distinct comparison because Dudout had described it as presidential-code traffic. PRIOR_WORK.md records the archive calendar, repository and survey evidence, and limits to publication history. [Repository source and pre-existing readings](https://github.com/dbourdeau/cyphersolver/tree/main/targets/rubio1913)
+
+Two AI readers independently inspected the three scans without a key or previous transcription. The two copies were frozen before alignment. Each disagreement, clipped figure or possible incomplete group occupies a place in the denominator. On May 19 the readers agreed on 90 of 98 positions. On March 25 they agreed on 100 of 107; one agreed number, 198, lies beyond the table. The full positional ledgers, uncertainty statements and agreed cipher runs are included. The source images stay at the archive.
+
+The plan and key hash were frozen at 17:01:31 UTC on 18 November 2026. The positive calibration and threshold were frozen at 17:02:16. The test inputs and alignment were frozen at 17:04:18, before producing the two held outputs. The test score averages Spanish trigram log probabilities only across boundaries between two or more cipher groups. It cannot gain credit merely from the internal letters of printed military codewords. Each test uses 1,000 independently shuffled tables. The marks are at least 75% of all positions covered, 12 adjacent known pairs, 20 cross-boundary trigrams, the frozen language floor and a score higher than at least 996/1,000 controls. A positive text reading also requires two contextual words of at least four letters, on different runs and each made from at least two agreed groups, without filling a hole.
+
+All three positive controls beat all 1,000 permuted tables. Their mean boundary scores were −2.3172 (18 July 1913), −2.1408 (13 March 1914) and −2.4392 (18 March 1914). The resulting preregistered minimum held score, the weakest positive minus 0.20, was −2.6392. The complete control distributions are included.
+
+| Held-out witness | Groups covered | Adjacent pairs | Boundary trigrams | Score | Maximum shuffled | Controls beaten | Plus-one p | Result |
+|---|---:|---:|---:|---:|---:|---:|---:|---|
+| Blanquet to Rubio, May 19, both sheets | 90/98 | 75 | 104 | −2.5395 | −2.6623 | 1,000/1,000 | .000999 | Pass |
+| [Rubio] to Huerta, March 25, single recovered sheet | 99/107 | 83 | 140 | −3.5582 | −2.7290 | 418/1,000 | .5824 | Miss |
+
+The opening *abstenerse* requires seven separate agreed groups. *Individuos*, *proceder* and *sorprender* occur in other runs and each spans more than one group. All four satisfy the independent lexical condition. *General* comes from one card entry and is counted in the word inventory but provides no such test. The high numerical coverage on March 25 shows why neither range overlap nor isolated military words suffice. No sure words were awarded to that draft. The miss concerns only the exact Clave 109 table and the recovered sheet. The catalogue calls the item incomplete and the next digital image returned 404; the physical survival of any further sheet is unknown. [CEHM DLXXIII.2.41.17-41, record 138003](https://www.cehm.org.mx/Buscador/FichaBasica/138003?Tipo=A)
+
+## Spanish reading and English summary
+
+The following are **all May cipher runs in order**. A vertical bar marks a tested run break; in two places a page edge or uncertain line ending required a conservative break. A question mark represents one entire unknown group. Case, spaces and line wrapping here are editorial. Original accents or capitalization within individual published entries are preserved in may19_words.tsv and the per-group JSON emissions.
+
+> ABSTENERSE DE HACER INDICACIÓNES | CASTIAPREHENO IMPUST? | INDIVIDUOS | POR EL GENERAL | PROCEDER CON ENERGIA | INDIVIDUOS H??? | ?DICIOSA | NO | ARA | SORPRENDER | ELLOS | VIGILA?? | SOBRE | SO? MAS ILIGROSOS.
+
+The sure Spanish reading, with unresolved cipher words and stretches retained in brackets, is:
+
+> Abstenerse de hacer indicaciones | […] […] | individuos | por el general | proceder con energía | individuos […] | […] | […] | […] | sorprender | ellos | […] | sobre | […] […] […].
+
+The card emits *ción* in the middle of *indicaciónes*. Ordinary Spanish drops the written accent in the plural *indicaciones*. The card emits unaccented *energia*, normalized to *energía*. Neither change modifies a base letter. A proposed *castigo impuesto* would have to replace the complete *aprehen* entry by *g*, insert a missing *e* and choose the final unknown. It is conjectural. *Vigilancia* and *más peligrosos* likewise are contextual possibilities only. The boundary around *no* falls at a damaged page edge and *ara* would need an initial *h* to give *hará*. No editorial proposal modifies the historical table.
+
+In English, Blanquet tells Rubio to refrain from making suggestions or representations. He refers to individuals who, in the intervening clear Spanish, were “consignados” by a general whose surname appears as Her- / nandez across two lines (single later visual reading, provisionally Hernández), and tells Rubio to proceed energetically. The second sheet puts clear *de* between cipher SORPRENDER and ELLOS. The surviving sequence is *Ud. sorprender de ellos* with the preceding verb fragment uncertain at the page turn. The preposition matters for deciding who might surprise whom. Clear *prevenir y ejercer estricta* precedes the incomplete VIGILA??. The damaged middle and several cipher groups prevent a complete account of whom these instructions concerned or what penalty Blanquet meant.
+
+## Word accounting and remaining gaps
+
+Counting only cipher words and using the provisional division in may19_words.tsv, **15 of an estimated 25 are lexically sure (60%)**. Thirteen match the proposed word in spelling when case and spacing are ignored. Two require the accent changes documented above. Repeated *individuos* counts twice. The 25 includes the damaged segments and single key entries but no clear connecting words. Cipher groups determine the 98 positions exactly; their word boundaries are editorial. The unresolved strings around the lower edge of page one and the ending could change the original word total. Five of the fifteen credited word occurrences each reproduce a single numbered entry: *de* (66), *por* (143), *el* (117), *general* (132) and *con* (126). The other ten occurrences span several numbers and include *individuos* twice. Eight of these ten match the editorial spelling apart from case, and two have the accent changes above. The word table labels every sure reading, conjecture and withheld item, retaining each group's literal emission. No word is inferred from a lone military entry in the negative control.
+
+The earlier repository target and survey already identify this group of ciphers. No claim is made to have discovered the archive, the card or the three existing readings. The full 2019 Narváez monograph was unavailable. Whether the May telegram also survives in an edition or another office's register remains open. Its faint final line, the single-word code entries and possible scribal or telegraphic errors merit an independent human reading.
+
+Run `python3 -I targets/blanquet1914/rerun_tests.py` from the repository root. It verifies the hashes of the repository's own key, positive-control transcription and Spanish corpus, replays both held tests and all three calibration scores, and confirms the two alignments and word inventory. No images or duplicate copy of the published key are distributed.
+
+Nicolás Ávila Seoane identifies the Centro de Estudios de Historia de México Carso among the sources of Rodríguez Narváez's 2019 study. Chapters VII–VIII concern Madero and chapter IX the Constitutionalist Revolution. Gabriel Martínez Carmona discusses the Madero and Carranza material on p. 965. Neither review identifies this telegram. Comparison with the book's name index, chapter IX, footnotes and illustrations remains open. [Ávila Seoane, pp. 281–282](https://revistas.ucm.es/index.php/DOCU/es/article/download/75482/4564456557065) · [Martínez Carmona, p. 965](https://www.scielo.org.mx/pdf/hm/v72n2/2448-6531-hm-72-02-963.pdf)
+
+PRIOR_WORK.md also records the full 2015 article and its seven figures. Narváez prints other CEHM correspondence, including the Félix Díaz and Carranza cases. None identifies CEHM 138008 or War Ministry Clave 109. [Narváez, 2015, pp. 118–132](https://doi.org/10.5209/rev_DOCU.2015.v13.49742)
+
+The later full-text and illustration check in PRIOR_WORK.md found no reading of CEHM 138008 in Narváez’s 2025 article. Its two deciphered drafts belong to the Constitutionalist diplomatic network. The 2019 book remains a separate priority check. [Narváez, full 2025 article and figures](https://www.redalyc.org/journal/600/60082677009/60082677009.pdf)
+
+AI agents did this work; no person has checked it.

@@ -37,6 +37,8 @@ are cached; `python -m lang.lm <model> --rebuild` rebuilds.
 | `early` | as modern, plus j→i, v→u | 15th–17th-c. vernacular: the cipher clerks did not distinguish them |
 | `latin` | as early, plus k→c, y→i, w→u | Latin |
 | `enigma` | umlauts ae/oe/ue, ß→sz, ch/ck→q | German Enigma/Wehrmacht traffic |
+| `hebrew` | Hebrew script: points, cantillation and maqqef dropped, final forms folded; 22 consonants | Hebrew letter ciphers |
+| `ja` | Arabic-script text mapped letter by letter to Hebrew letters (th to t, dh to d, kh to h, dad to tsade, za to tet, ghayn to ayin): 22 letters | Judaeo-Arabic in Hebrew script |
 | `arabic` | Arabic script: vowel signs, shadda, tatweel and hamza dropped, alif variants and alif maqṣūra → alif, ta marbūṭa kept; 29 letters | Arabic letter ciphers |
 
 Always normalise candidate plaintext with the same scheme as the model (`models.json` → `norm`).
@@ -70,6 +72,8 @@ Always normalise candidate plaintext with the same scheme as the model (`models.
 | `la` | Latin | 27 Gutenberg texts, 6.8 M | papal, imperial, humanist |
 | `la-letters` | Latin letters, classical-1520 | Latin Library (CLTK mirror on GitHub): Piccolomini, Poggio, Petrarch, Erasmus, Cicero letters, 1.9 M | 15th-c. diplomatic Latin; reachable when Gutenberg is not (buda1490) |
 | `ar-mamluk` | Arabic c. 1320–1370 | OpenITI: diwans of Ṣafī al-Dīn al-Ḥillī and Ibn Nubāta, al-Ṣafadī's *Kashf al-ḥāl* and *Alḥān al-sawājiʿ*, al-ʿUmarī's *al-Taʿrīf*, 2.2 M letters, norm `arabic` | Mamluk chancery and adab Arabic (qaysarani1350) |
+| `he-tanakh` | Hebrew, biblical | 24 books of the Hebrew Bible from the Sefaria API (21,800 verses, 1.4 M consonants), norm `hebrew` (22 consonants, finals folded), built by `python -m lang.build_he_tanakh` | Hebrew-script ciphers; rough fit for Geniza prose (tsk2424, tsk2437) |
+| `ja-from-arabic` | Arabic read as Judaeo-Arabic in Hebrew letters | the `ar-mamluk` corpora through the usual Arabic-to-Hebrew letter mapping (28 letters merge into 22), norm `ja` | proxy for Judaeo-Arabic in Hebrew script; real spelling differs (matres lectionis, final alif) (tsk2424, tsk2437) |
 | `pt-`, `da-`, `sv-`, `pl-`, `hu-`, `cy-modern` | | ~1–6 M each | language ID, northern/eastern targets |
 
 ## Known gaps

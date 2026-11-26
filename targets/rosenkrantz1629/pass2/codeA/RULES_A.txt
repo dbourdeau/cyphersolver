@@ -1,0 +1,15 @@
+Code A key of record: rules (written before the held-out decode)
+Source: solver run runs/A1n_monoP4_s1.txt (tools/gsolve2.c), training letter A1 only (2 Feb 1629, images 266R-270L
+except the postscript leaf 267R-268L). Settings: LM pass2/lm/da1620.bin (5-gram, Christian IV letters), candidates a-z,
+plus '|' (word code) for values >= 200; letters non-decreasing along each row of the 9-column grid (values with the
+same v mod 9, ordered by v) for values < 200; chi-square weight 0.5; per-symbol cost 4 for a value >= 200 read as a
+letter; 25 restarts x 800000 iterations, T 3.0 -> 0.1. Seeds 1 and 2 gave the identical key (score -911.353);
+seeds 3 and 4 ended in worse optima (-1050.2, -1049.8). The converged runs at cost settings 2, 3 and 6 gave the same
+letters for every value < 200 (they differ only in which values >= 200 are letters). No hand edits.
+Decoding rules for the held-out letters (A1P = postscript leaf 267R-268L; A2 = 15 Feb 1629, 275R-276L):
+1. A value in KEY_A.tsv with a letter -> that letter. WORD -> shown as [value] (word code, not solved).
+2. A value < 200 not in KEY_A.tsv (never seen in A1): if its nearest A1 values below and above it in the same grid
+   row (same v mod 9) carry the same letter, that letter; otherwise '?'.
+3. A value >= 200 not in KEY_A.tsv -> [value] (word code).
+4. Doubtful digits (marked ? in the frozen transcription) are decoded as read; unreadable tokens -> '?'.
+5. Clear text -> '/' in the judge file. No emendation.

@@ -24,7 +24,7 @@ Read in part, 185 of 217 cipher words on ff. 76r–v. The source text is Latin.
 
 ## Credit and sources
 
-Larry Beck, Mark Addis and Panos Archondakis, with the help of ChatGPT. By his account, Jacob Houtrouw independently transcribed the manuscript and derived the same shift and text using a model. The transcription awaits human verification.
+Larry Beck, Mark Addis and Panos Archondakis, with the help of ChatGPT. A second independent decipherment and transcription (model-made, no person checked the transcription), credited to Jacob Houtrouw, agrees on key and text.
 
 - [Source](https://github.com/dbourdeau/cyphersolver/issues/786)
 - [Submission and review](https://github.com/dbourdeau/cyphersolver/issues/786)

@@ -1,6 +1,6 @@
 # Giovanni Battista Gondi to Commendator Galilei, 11 May 1649 (new find, Biblioteca Estense)
 
-Status: in progress. Not yet written up: no site page or README row. Classed read, so it is ready for the /writeup skill. The status below is the contributor's.
+Status: finished, 24 Nov 2026: read (99 of 101 sign-bearing cipher words), key recovered from the adjacent interlinear decipherment; written up as docs/gondi1649.html (integration of 24 Nov 2026, see the last section).
 
 Not in the catalogue and not on DECODE: found in a sweep of the Estense Autografoteca Campori for letters marked as
 ciphered. No catalogue number.
@@ -106,17 +106,30 @@ search (3 Nov 2026) for a Commendatore Galilei serving Tuscany in 1649 found not
 
 ## Remaining gaps
 
-- `5 8` on L09: unread. One occurrence; no outside blocker except that it occurs only once. The independent check
-  read the same place as `5 0? B`: it sees a loop between the 5 and the B-shaped sign, which our adjudication did not
-  accept. Unresolved; it does not change the reading, since neither side reads the pair.
-- Code 273 on L13: read as Vicerè from context only (223 is Vicerè on L06). A second letter of this correspondence would
-  settle it.
-- Doubtful signs: `6?` in *replica* (L07) and `2?` in *ragione* (L13). Both are settled by sense, and both are marked.
-- *che* (L01) and *et* (L12) are read from a 5 and a 4 that show no bar. The bar may be shared or faint.
-- The identity of the Commendator Galilei and of the Viceroy (S.E.): not in the document.
-- The clear text of the letter (cc. 1r-2v) was read only around the cipher, and roughly. It is not part of this job.
-  Two clear phrases in `reading_c1r.md` are marked rough after the check: the opening "Se già havessi detto ..." and
-  "portarla a S.A." (the check reads the clear as "portar all'A.S.").
+- pair `5 8` at the start of L09 - blocker: too-short; one occurrence, no value in the key, the decipherer writes "havere"; the independent check reads `5 0? B`. Unread either way.
+- code 273 on L13 - blocker: too-short; read as Vicerè from its place under the gloss "Vic.Re" only (223 is Vicerè on L06); a second letter of this correspondence would settle it.
+- doubtful signs `6?` in *replica* (L07) and `2?` in *ragione* (L13) - blocker: illegible; settled by sense and marked.
+- *che* (L01) and *et* (L12) from a 5 and a 4 that show no bar - blocker: illegible; the bar may be shared or faint.
+
+Outside the cipher and its read share, so not gaps of the reading: the clear text of cc. 1r-2v was read only around the
+cipher, roughly (two phrases marked rough in `reading_c1r.md`), and the Commendator Galilei and the Viceroy (S.E.) are
+not named in the document; one web search each (3 and 4 Nov 2026) found nothing.
+
+## Escalation
+
+- [n/a] siblings: the decipherment on the page covers the whole cipher, so no sibling is needed; other Gondi letters in the Autografoteca Campori were not searched.
+- [x] clear-pages: the interlinear decipherment of the time covers all the cipher and was used for the key.
+- [n/a] known-keys: the key was recovered from the decipherment on the page itself; no other key is needed.
+- [x] print: one web search for an edition (3 Nov 2026), none found; Brovadan 2020 and the Mediceo del Principato not tried.
+- [x] key-rebuild: key built on L00-L06, frozen, tested on L07-L13 (139 of 148 units).
+- [x] retry: every cipher line compared again with the image on 24 Nov 2026 (L00-L03, L05, L06, L10 here; the rest by the independent check); no sign value changed.
+
+## Transcription doubts
+
+- `6?` in *replica* (L07) - read: e; checked: image, decode, transcription; a heavy blot stands where the 6 should be (seen again on 24 Nov 2026); *replica* is the decipherer's word and the sense.
+- `2?` in *ragione* (L13) - read: g; checked: image, decode, transcription; the independent check sees a clean 2; kept marked.
+- `5 8` (L09 start) - read: unread; checked: image, decode, transcription; on 24 Nov 2026 the second sign looks like a joined 0 and 3 or a B, as the check says (`5 0? B`); no value fits.
+- bare 5 for *che* (L01) and bare 4 for *et* (L12) - read: che, et; checked: image, decode; no bar seen; the decipherer has "che" and "et".
 
 ## Independent check (VERIFY.md)
 
@@ -178,3 +191,15 @@ were not reachable from the maintainer's session. A web search for the Commendat
 letters and the Florentine state archive (Mediceo del Principato) are untried. Also still missing: a statistical
 validation record (`docs/_validate.py --write` or `--na` with a reason).
 
+## Integration, 24 Nov 2026: class restored to read; written up
+
+- The second reading the 4 Nov note asked for: c. 1r fetched again from the Estense IIIF service (full-size regions,
+  one request at a time) and the signs of L00-L03, L05, L06 and L10 compared with `transcription_c1r.txt`. **Not blind**:
+  the transcription was in view. All sign values agree; a few commas were not looked for. The other seven lines had
+  the independent check's blind copy. Images were kept outside the repository.
+- The two other `not-attempted` items of 4 Nov (the clear text of cc. 1r-2v, the identity of the persons) are outside
+  the cipher and outside its read share; they are kept as notes under Remaining gaps, not as gaps. With them, the
+  read bar is met: 99 of 101 sign-bearing words (98.0%), the only open pieces single-occurrence ones. Class: read.
+- Statistical validation recorded as not applicable (`_validate.py --na`): the cipher is polyphonic and the values
+  come from the decipherment written over every cipher line.
+- Portrait: none found for Gondi; the recipient is not identified (`docs/_explore_skip.json`).

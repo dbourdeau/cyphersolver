@@ -6,7 +6,7 @@ Status: in progress (Brice Dudout, 12 Nov 2026; integration check 13 Nov 2026). 
 - **By document, strict:** 02r 92.2 %, 04r 96.6 %, 05r-05v 87.3 %, 06r-07r 90.6 %. Only 04r (118 words) reaches the 95 % bar.
 - **System X** (images 03r and 09r, about 1,400 digits) is a different hand and system and is not attacked.
 - **The key** was proposed by Claude Fable 5.2, frozen, and passed one preregistered measure on the held-out folio 05r: M = 0.7962 against 200 controls (max 0.175). The frozen key and the measure's lexicon were added in PR #521; the hash, M and the controls were re-run and checked on 13 Nov 2026 (second integration check below).
-- **No human palaeographer** has checked the transcription or the reading.
+- **No human palaeographer** has checked the transcription or the reading as a whole. On 18 Nov 2026 the contributor, Brice Dudout, answered two blind sheets of 20 doubtful digits (sheets C and R, 4 controls of 4); see Sign checks, 18 Nov 2026. The checker is the contributor, not an independent reader.
 
 ## The document
 
@@ -66,6 +66,8 @@ This is a simple substitution with codes of one or two digits, with no homophone
 - inmmender = intender (06r).
 
 Related: 'mignor' for 'signor' twice (06r, 06v). This is either a transcription confusion between two signs of the hand or a code the key lacks. It is to be checked on the images.
+
+**Settled on 18 Nov 2026 (images re-read):** not a key problem. On blind sheet C the five 'mm' places were shown as one boxed digit each; the answer was 5 four times and 7 once, never 1. The 1 of code 11 at these places is a transcription error (a 5 or a 7 of the cursive hand read as 1), and 'mignor' is the same error (sheet R: 5 twice). Code 11 keeps no second value. See Sign checks, 18 Nov 2026.
 
 ## How it was done
 
@@ -137,7 +139,7 @@ Done on the files as submitted (PR #497); no human palaeographer.
 - **Own decoder.** Written from `dudout/key.txt` only (23 simple codes, longest first). It gives the same Italian as `decryption.txt` (letter similarity 0.93-0.98 per folio); the difference is the parse of ambiguous strings (e.g. 51 u against 5 + 1), which the roughly 2,000 composite entries of the frozen JSON settle. KEY-1555.json and the lexicon file were not in PR #497, so at this first check the frozen hash, M = 0.7962 and the controls (max 0.175) could not be reproduced exactly; PR #521 added them and they were checked (second integration check, below). With my own lexicon (16th-century Italian words of frequency >= 30, 3 letters or more) and the simple key, held-out 05r gives M = 0.83 against 200 permuted-value controls with max 0.34, mean 0.16. The key therefore works as a system on 05r; the order of events (protocol before key) is by the contributor's record only.
 - **What the test shows.** The held-out folio is a sibling of the training folios (same hand, same letter, same system), and the key came from a package that held the other Y folios and the 1545 c. 48 and c. 49r digits. It validates the key on that system. It does not validate each word.
 - **Image check.** The manifest of cc. 80a-80h (18 images, 0080-01r to 0080-09v) loads with curl; images load as regions at native size (full-size requests above 1599 px are refused). The labels used here are the manifest labels: 02r = 0080-02r (canvas 3), 05r = canvas 9 (0080-05r, penciled 80d), 09r = canvas 17. So the carta mapping is answered by the manifest, as far as the labels go. On 05r, lines 1-4 and the end of line 7 (about 150 groups) agree with the transcription by count and shape. The 7 / 9 distinction (short bar against hook) was not judged independently.
-- **Code 11.** At 'imperammor' (05r line 7) the image shows two short 1-shaped strokes before the 2. The transcription is as written, so the 'mm' is a key problem (a second value of 11, mostly t, once l), not a transcription slip. Code 11 never gives a valid 'mm' anywhere in the decryption.
+- **Code 11.** At 'imperammor' (05r line 7) the image shows two short 1-shaped strokes before the 2. The transcription is as written, so the 'mm' is a key problem (a second value of 11, mostly t, once l), not a transcription slip. Code 11 never gives a valid 'mm' anywhere in the decryption. **Superseded on 18 Nov 2026 by sign sheet C** (Sign checks, 18 Nov 2026): the five 'mm' digits were answered 7, 5, 5, 5, 5, never 1, so the 'mm' is a transcription error, not a key problem; at 'imperammor' the blind answer chose 5, and that disagreement with this check stays on record.
 - **Same cipher as capilupi1545?** The digit system of c. 48 and c. 49r (Camillo Capilupi, Feb 1546) is the same as system Y: the simple key gives Italian runs on their first-pass digits (they were in the build set, so this is not independent). The 8 May 1545 letter in that folder is a different, homophonic cipher. One key, one entry: the digit key is held here. When both targets are finished they are to be one page about the digit system, with c. 48 and c. 49r read here from a fresh transcription; until then each folder points to the other.
 - **Date.** Docket year 1546 against content that fits 1545 (Charles of Orleans died on 9 Sept 1545): left as a gap; no one has looked at the docket on the image.
 
@@ -154,7 +156,7 @@ PR #521 adds `dudout/KEY-1555.json`, `dudout/lexicon_1555.txt` and `dudout/HASHE
 ## Remaining gaps
 
 - **System X (03r, 09r).** Blocker: too-short. About 1,400 digits in another system; the glosses are partial and not alignable. A table or a clear copy would open it.
-- **'mm' for t or l (code 11), and 'mignor' for 'signor'.** Blocker: open-codes. Five and two occurrences.
+- **'mm' for t or l (code 11), and 'mignor' for 'signor'.** Closed on 18 Nov 2026: transcription errors, not a key gap (Sign checks, 18 Nov 2026). The committed transcriptions are not yet recoded; see there.
 - **05r under the bar (93.9 %).** Blocker: illegible. It has 8 restored words to check on the image.
 - **The key on capilupi1545 c. 48 and c. 49r.** Blocker: not-attempted as a reading. A quick test at integration shows the key gives Italian runs on their first-pass digits (see Integration check), but they were part of the build set and the transcription is a first pass. To be read properly, on a re-transcription.
 - **Date (1545 or 1546).** Blocker: needs-physical-access. The docket year conflicts with the content.
@@ -168,7 +170,7 @@ PR #521 adds `dudout/KEY-1555.json`, `dudout/lexicon_1555.txt` and `dudout/HASHE
 - [ ] known-keys: no table of Ippolito or Camillo for this system is known. The 1556 and 1560 tables mentioned in capilupi1545 were not tried.
 - [ ] print: no printed edition checked. Nothing found in the repository, the issues or catalogue 1555.
 - [x] key-rebuild: Opus anneals failed (OPUS-ESSAI); Fable key frozen and measured on held-out 05r: PASS.
-- [ ] retry: the 'mm' and 'mignor' places and the restored words of 05r, against the images.
+- [x] retry: the 'mm' and 'mignor' places and other restored or probable words, 20 digits in all, against the images (blind sheets C and R, 18 Nov 2026).
 
 ## Credits
 
@@ -209,6 +211,27 @@ We count system Y as read and the target as read in part, for two reasons:
 
 The 'mm' readings may hide a transcription error in one sign of the cursive hand; we have not yet gone back to the images for them. No image or crop is included.
 
+(Superseded on 18 Nov 2026: we went back to the images; the 'mm' readings are a transcription error. See Sign checks, 18 Nov 2026.)
+
 ## 14 Nov 2026 full-texts audit: system X has no decryption
 
 The full-texts check asks for a decryption file for images 03r and 09r. None exists and none can be produced: system X has no key. One test was run so that the gap is not only "not attacked": the frozen system Y key (`dudout/KEY-1555.json`, longest code first) applied to `dudout/transcription_03r.txt` and `dudout/transcription_09r.txt`, marks (overline, stroke, superscripts) dropped, gives no Italian word run on either page (03r line 1 `rrmenidlisdagl ama`, 09r line 1 `pelrrsnuioa euo oinaisr`). X is not Y written with marks. Ruled out; recorded as a solution step. The two entries stay in `outcome.texts` with their transcriptions and no decryption, so the check keeps reporting "no decryption file" for them; that message is true. Blocker unchanged (Remaining gaps, system X): about 1,400 digits, partial glosses that do not align; a table or a clear copy would open it.
+
+## Sign checks, 18 Nov 2026 (sheets C and R)
+
+Level sought: "AI decipherment, human-checked on a sample of signs" (`outcome.sign_check`). It checks how digits are written, not the key or the reading, and it changes neither the class nor the read share.
+
+**Who did what.** The checker is Brice Dudout, the contributor of this reading (a project member, not an independent reader). He answered each question blind: one boxed digit on its line, two or three digit shapes cut from sure words of the same hand, plus "none / other shape", "illegible" and "not a sign"; no value, gloss, word or place was shown. An AI model (Claude Opus 5.5) wrote the selection rules, chose the digits by those rules, cut the thumbnails, built the sheets and scored the answers. The answer key (which option is which shape, and the thumbnail boxes) stays private; its content for each question is written out in the results tables below. No image or thumbnail is committed.
+
+| sheet | rule (written and hashed before the signs were chosen) | answers (exported) | target digits | controls | confirmed (transcription corrected) | rejected (as transcribed) |
+|---|---|---|---|---|---|---|
+| C | `sign_check/sheet-C-rule.md`, SHA-256 201f2d4aa4e20a8d7fad5b90c38e00768a2067f131bbeb9937bac4dbacae72be | `sign_check/sheet-C-answers.json`, 2026-11-18 15:47 UTC, SHA-256 f44cdeccefd4b829ea13dd87c36e3a9c4ab26952a832be82a927a82c242e244c | 10 | 2 of 2 | 8 | 2 (fece, e) |
+| R | `sign_check/sheet-R-rule.md`, SHA-256 a0d19bff3242762b5c319a3d29b67afa3f7b45b7ddf8bc5adf24026624d3bc3f | `sign_check/sheet-R-answers.json`, 2026-11-18 16:51 UTC, SHA-256 6435a345d93d8ee6c394b425467ee68f44545b1b4e514f6b40c851d79331b7f1 | 10 | 2 of 2 | 8 | 2 (più, che: the [7/9] is a long 7) |
+
+Results question by question: `sign_check/sheet-C-results.tsv`, `sign_check/sheet-R-results.tsv`. No thumbnail was found faulty; no free-text remark was given. The rules are in French, as written; the hashes are of these files. The hashes were taken before the answers but were not published before them, so that timing is by the contributor's record.
+
+- **Sheet C** (rule: one-digit corrections that would turn a restored [x] word into the reading's word; 05r first, then the 'mm' series, then the other [x] in folio order). The five 'mm' digits (04r, 05r twice, 06r, 06v) were answered 7, 5, 5, 5, 5: the 'mm' is a transcription error, not a key value (see Open point on code 11).
+- **Sheet R** (rule: same kind of one-digit corrections on the probable {x} and restored [x] words left after sheet C; no digit of sheet C, two new controls). 'mignor' is 'signor' twice; contiene, potrebe, ha (05v), Farnese, suplicationi and gentildona follow the key once the digit is corrected.
+- **One disagreement on record.** At 'imperammor' (05r line 7) the integration check of 13 Nov saw two short 1-shaped strokes. The blind answer (sheet C, q08) chose 5 among 7, 5 and 1. Both readings of the image are recorded; a second reader would settle it.
+- **Not yet done.** The page rule says that what an answer contradicts is recoded or marked in the reading first. The 16 corrections are applied in our local copies (not committed); `dudout/transcription_*.txt`, `dudout/decryption.txt` and `dudout/reading.md` here are unchanged, so the figures above (631 of 692 sure, 91.2 %) still describe the committed files. On the corrected local copy the count is 647 sure, 31 probable, 10 restored, 4 unresolved of 692 (93.5 % sure; 05r-05v 90.5 %): still read in part. Recoding the committed files is a separate step.
+- **Limits.** One checker, inside the project. Two controls per sheet show little on their own. The digits were chosen because they were doubtful: a diagnostic, not a sample of the text. No person has audited the model's part.

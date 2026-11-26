@@ -3,6 +3,7 @@
 WAINUT, 12 Nov 2026. Work by AI language-model agents for WAINUT; no human palaeographer checked the text.
 
 Read in part, 13 Nov 2026: Narváez's key 313 applied to the 11 cipher runs; 22 of 32 cipher words are read as typed (68.8%), 7 carry a typing slip, 3 are holes. Written up on the site (sanchez1922.html) at the integration of PR #512.
+24 Nov 2026 (issue #942, Andrew Beling; owner's decision): W08 YULAS counted read, so 23 of 32 (71.9%), 2 holes; still read in part.
 
 ## Document
 
@@ -35,9 +36,10 @@ also tried: it gives no sense.
 `reading_DCXXI.3.323.1.md`, `translation_DCXXI.3.323.1.md`; `scripts/decrypt.py` (key 313, restart per word);
 `scripts/check_marks.py` rebuilds the decryption and checks the marks: passes.
 
-Words: **32 cipher words: 22 verbatim, 7 repaired, 0 from a gloss, 3 holes.** Repairs: LANDERO{U/S},
+Words: **32 cipher words: 23 verbatim, 7 repaired, 0 from a gloss, 2 holes** (since 24 Nov 2026; 22 and 3 before W08 was counted read). Repairs: LANDERO{U/S},
 TLAX{E/C}ALA, MIXTEC{Y/A}, MARQUE{X/Z}, URDAP{Q/I}LLETA, MACHOR{P/R}{Q/O}, MAN{T/U}EL. Holes: W06 "ybld" (VAIA),
-W08 "bvñdt" (YULAS, after "Lic."), W10 "fpufv" (CORCU, a surname in the cover address).
+W10 "fpufv" (CORCU, a surname in the cover address). W08 "bvñdt" (YULAS, after "Lic.") was a hole until 24 Nov 2026 and is now
+read: the signs give it exactly, and the slip below confirms four of its five letters.
 
 What the cipher hides: the death of General Landeros in the district of Huejotzingo (the CEHM record of DCXXI.3.330.1
 mentions the death of Landeros); the plan to "nombrar una junta"; the newspaper "El Látigo" to be printed in
@@ -57,7 +59,24 @@ It is a partial gloss only: no word count above rests on it.
 
 State proposed: **not prose** (names, a place, a title and one short phrase in a clear letter).
 
-The words are counted by the README rule: a word with a restored or replaced letter is not read as typed, and a hole is not read, so 22 of 32 (68.8%), the contributor's own figure too.
+The words are counted by the README rule: a word with a restored or replaced letter is not read as typed, and a hole is not read, so 22 of 32 (68.8%), the contributor's own figure too; 23 of 32 (71.9%) since W08 was counted read on 24 Nov 2026.
+
+## The slip filed with the Wellington letter (issue #942, Andrew Beling, 24 Nov 2026)
+
+Andrew Beling found a narrow slip in blue ink, one hand, on image 0001 of DCXXI.6.588.1 (the "J. W. Wellington" letter of the
+same fondo): http://visor.cehm.org.mx/assets/docx/fondos/jzd/DCXXI/6/588/1/DCXXI.6.588.1.0001.jpg . It lists W01-W10 of this
+letter in order (without "Goitia" and the signature): Landeros / nombrar una Junta / Tlaxcala / "El Látigo" / Figueroa / Mixteca
+Baja, oax. / Miguel Gutiérrez / Manuel Márquez / Arturo Osorio / Rodolfo Urdapilleta / Francisco Machorro / Lic. ?ulas / Emilio /
+Manuel Cortez / Plazuela Parral #1 / Puebla, Pue. The capital of "?ulas" has the shape this hand uses for J, so probably "Julas".
+The integration review opened the image and read it the same way (24 Nov 2026).
+
+The slip differs from the signs in three places (Baja against VAIA, ?ulas against YULAS, Cortez against COR?ES), so it is not a
+letter-for-letter decoding, and it is filed with another item. **It is not used as a gloss**: no word is counted read on its
+authority. Owner's decision of 24 Nov 2026: W08 counts read as typed, YULAS (the signs give it exactly; the slip has Julas); W06
+and W10 stay holes, with Baja and Cortés offered from the slip. Andrew Beling's notes on the signs: BAJA would be `ebmd`, two signs
+off `ybld`; CORTES enciphers `fpuwfv`, so a dropped fourth sign gives `fpufv`, and CORES with a one-place skip of the key cycle
+gives the same signs. Not checked: how the slip came to be filed with DCXXI.6.588.1, and his CEHM catalogue searches (neither
+Yulas nor Julas found).
 
 ## Prior art (checked 12 Nov 2026)
 
@@ -86,12 +105,12 @@ full page only. No human palaeographer has checked the text. Who Sánchez is is 
 
 - W06 "ybld" (VAIA) in "la Mixteca, [?], de Oaxaca" - blocker: too-short; one occurrence. The reviewer suggests
   "Baja" (the Mixteca Baja is a region of Oaxaca); with the third shift 2 instead of 3 the word gives VAJA, which
-  fits "Baja" with V for B. Offered as [?Baja] in the sentences, counted as a hole.
-- W08 "bvñdt" (YULAS), the name after "Lic." - blocker: too-short; one occurrence, and no single-shift change gives
-  a name we can confirm.
+  fits "Baja" with V for B. Offered as [?Baja] in the sentences, counted as a hole. The slip filed with the
+  Wellington letter (issue #942) has "Mixteca Baja", which supports the suggestion but is not used as a gloss.
 - W10 "fpufv" (CORCU), the surname in the cover address - blocker: illegible; the pencil note at the foot of p. 2
   that seems to decode this address ("Manuel Co/Ro z[a]...", read by the reviewer on an enhanced scan) is
-  overwritten at the surname.
+  overwritten at the surname. The slip filed with the Wellington letter has "Manuel Cortez": [?Cortés] is offered
+  from it in the sentences, still a hole (the signs give COR?ES; CORTES with a dropped sign or CORES with a key skip).
 - Pen strokes over letters in W07 (xf, uu, lw, ut), perhaps a reader's marks - blocker: illegible; not interpreted
   on the scan. The typed letters under them decode to MIGUEL GUTIERREZ GOITIA and MANUEL MARQUE{X/Z}.
 
@@ -108,7 +127,8 @@ full page only. No human palaeographer has checked the text. Who Sánchez is is 
 - [n/a] key-rebuild: the key is published and fixed (3 entries); the misses are typing slips in single words, so
   there is nothing to extend
 - [x] retry: the three holes retried with every single-position change of shift (0 to 4) and with key 103: only
-  VAJA for W06 comes near a word (see above); YULAS and CORCU stay holes
+  VAJA for W06 comes near a word (see above); CORCU stays a hole. YULAS, exact from the signs, counted read on
+  24 Nov 2026 after the slip filed with the Wellington letter gave "Lic. ?ulas" (issue #942)
 
 ## Integration check (13 Nov 2026)
 

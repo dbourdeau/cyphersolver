@@ -256,7 +256,8 @@
    "what": "After the test, while packaging: No. 73 (29 May 1793, M43-02-0285), not in the build, decodes to the clerk's separate decipherment for 16 of 17 groups (the 17th has no table value). Not pre-registered.",
    "result": "worked"
   },
-  {"date": "2026-11-15", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 364 tokens, 179 types, en-modern order 4: reading -1.842 per letter; random keys -2.665 (z 9.6); key annealed onto shuffled ciphertext best -1.823 (mean -1.85, z 0.4); annealer on the real text -1.793. Verdict: underdetermined.", "result": "partial"}
+  {"date": "2026-11-15", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 364 tokens, 179 types, en-modern order 4: reading -1.842 per letter; random keys -2.665 (z 9.6); key annealed onto shuffled ciphertext best -1.823 (mean -1.85, z 0.4); annealer on the real text -1.793. Verdict: underdetermined.", "result": "partial"},
+  {"date": "2026-11-24", "kind": "verification", "what": "Integration review of 24 Nov 2026 (AI agent, for the maintainers): print step closed (GL.htm copies grepped, no Humphreys entry; the Naval Documents volumes for March and August 1799 already checked); the three readings read as sentences and graded (214 B, 188 B, April 1799 A), replacing the author's preliminary grades; open codes searched in every page of the film, so every gap has an outside blocker (needs-physical-access, open-codes). Sure words 224 of 281 (79.7%): read in part.", "result": "partial"}
  ],
  "outcome": {"validation": {"date": "2026-11-15", "model": "en-modern", "file": "validation.tsv", "tokens": 364, "types": 179, "tokens_per_type": 2.03, "score": -1.842, "nulls": {"random keys": {"n": 200, "mean": -2.665, "sd": 0.086, "max": -2.422, "z": 9.6, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -1.85, "sd": 0.018, "max": -1.823, "z": 0.4, "p": 0.4286}}, "power": -1.793, "verdict": "underdetermined", "notes": "claimed per-occurrence score -1.842; polyphony 0.003; 60 unread tokens left out; annealer on the real text from random keys reached -1.793"}, 
   "class": "read in part",
@@ -317,9 +318,9 @@
     "summary": "Humphreys can account for Spain's wavering over the Spanish minister Yrujo's recall only by supposing that Yrujo shares, with certain lea[d?][ing?] [men?] at Madrid, in the profits of an exclusive [trade?] from the United States to the Spanish colonies; asks whether to stay at Lisbon or go home if forced to leave Spain; tells Urquijo of his own belief that France had {never} given up its design on Louisiana (\"re[197][1355]ished\", read as \"relinquished\", is mostly guessed), and reports Urquijo's assurance that France {should} {never} get it while he remained in office.",
     "reading_review": {
      "grade": "B",
-     "by": "Author's agents (Andrew Beling, with AI agents)",
-     "date": "2026-11-14",
-     "note": "PRELIMINARY: author's self-check, not a reviewer's grade. For a maintainer to confirm or replace. Recorded by Andrew Beling's own AI agents (the working agent and a second checking agent; not a person). Read as sentences against the decode; the second agent checked the transcription on the image and set the wording of every content claim. Holes and guesses are marked word by word (readings/marked_214.tsv). Not an outside check."
+     "by": "integration review of 24 Nov 2026 (AI agent, for the maintainers); not a person",
+     "date": "2026-11-24",
+     "note": "Read as sentences 24 Nov 2026 from readings/reading_214.txt against marked_214.tsv. Passages a, e, f-j form English sentences with the clear text around them (Yrujo's share in an exclusive trade, the request for orders, Urquijo's assurances on Louisiana); passages b, c and d are short and largely names, partly unread ([713][983]ishefernan, urque[426][jo?]). Many sentences carry a guess or a hole ('trade', 'leading men', 'Basle', 'relinquished', [314], [646], [766]), so coherent but raw: grade B. The author's own agents' preliminary B is replaced by this review."
     },
     "read_share": 0.786,
     "note": "Sure words only (README Conventions): 176 of 224 (78.6%), the 173 words on the frozen table and the 3 whose context value is attested by a clerk's decipherment of the same group (basis H: carried, never twice); words resting on a hidden digit restored by sense (basis P, 14), on sense only (24) or unread (10) are counted as holes (readings/marked_214.tsv, key/context_values.tsv). Our earlier figure, counting the basis-P words as read: 190 of 224 (0.848). By code groups: 293 of 352 read by the frozen table (0.832)."
@@ -334,9 +335,9 @@
     "summary": "The Swedish chargé at Madrid (from the enclosures) gave Humphreys reason to believe (the reading, word for word) \"that the government of [Sweden?] {now} less [inclin?]d to use management with that of France ... and that it is even probable the Baron [935] sta[ël?] would soon retire from Paris\"; fills the asterisks in Naval Documents, Quasi-War 2:437.",
     "reading_review": {
      "grade": "B",
-     "by": "Author's agents (Andrew Beling, with AI agents)",
-     "date": "2026-11-14",
-     "note": "PRELIMINARY: author's self-check, not a reviewer's grade. For a maintainer to confirm or replace. Recorded by Andrew Beling's own AI agents (the working agent and a second checking agent; not a person). Read as sentences; transcribed independently by the second agent (one difference, settled on the image). 'Sweden', 'inclined' and 'Staël' are guesses. Not an outside check."
+     "by": "integration review of 24 Nov 2026 (AI agent, for the maintainers); not a person",
+     "date": "2026-11-24",
+     "note": "Read as one sentence 24 Nov 2026 from readings/reading_188.txt. It is grammatical English with the clear text before and after; 'Sweden', 'inclined' and 'Staël' are guesses and [126], [?405] and [935] stay open, so the middle of the sentence is not sure: grade B. The author's own agents' preliminary B is replaced by this review."
     },
     "read_share": 0.814,
     "note": "Sure words only (README Conventions): 35 of 43 (81.4%), all on the frozen table; 'now' (a hidden first digit restored by sense, basis P), four sense-only guesses and three unread groups are counted as holes (readings/marked_188.tsv). Our earlier figure, counting 'now' as read: 36 of 43 (0.837). By code groups: 50 of 56 read by the frozen table (0.893)."
@@ -350,10 +351,10 @@
     "language": "en",
     "summary": "Humphreys has seen a letter from the Dutch minister at Paris reporting (in clear) the outcry against Scherer's peculations and Rewbell's leaving the Directory with thirty millions.",
     "reading_review": {
-     "grade": "B",
-     "by": "Author's agents (Andrew Beling, with AI agents)",
-     "date": "2026-11-14",
-     "note": "PRELIMINARY: author's self-check, not a reviewer's grade. For a maintainer to confirm or replace. Recorded by Andrew Beling's own AI agents (the working agent; not a person). 16 groups; 14 from the frozen table, 'Dutch' from a clerk's gloss on frame 0307 found after the test, 'Paris' with its last digit uncertain. Not an outside check."
+     "grade": "A",
+     "by": "integration review of 24 Nov 2026 (AI agent, for the maintainers); not a person",
+     "date": "2026-11-24",
+     "note": "Read 24 Nov 2026 from readings/reading_0364.txt: 'I have seen a letter from the {Dutch} minister at {Paris} which reports that' runs straight into the clear text. Fourteen words, twelve from the frozen table; 'Paris' rests on a group whose last digit is cut by the binding. Grade A. The author's own agents' preliminary B is replaced by this review."
     },
     "read_share": 0.929,
     "note": "Sure words only (README Conventions): 13 of 14 (92.9%): 12 on the frozen table and 'Dutch' (1290), given by a clerk's gloss of the same group on frame 0307. 'Paris' stands on 74[2?], whose last digit is cut by the binding at the page edge; on our saved full-size image of frame 0364 (5152 x 3296) only the edge of a stroke shows after 74, so it is counted as a hole. Our earlier figure, counting 'Paris' as read: 14 of 14."
@@ -385,7 +386,7 @@
     "basis": "Frozen table for 357 of 424 groups; context values, marked by basis, for the rest that are read."
    }
   ],
-  "notes": "Status: in progress, folder only. The code is known to scholarship (Boyd's Code No. 8); its key is lost and the Jefferson Papers' partial reconstruction is unpublished. The readings of Nos. 188 and 214 were not found in print or on the film.",
+  "notes": "The code is known to scholarship (Boyd's Code No. 8); its key is lost and the Jefferson Papers' partial reconstruction is unpublished. The readings of Nos. 188 and 214 were not found in print or on the film.",
   "fraction_read": 0.889,
   "fraction_read_method": "measured",
   "fraction_read_source": "scripts/mark_reading.py over readings/words_214.txt, words_188.txt, words_0364.txt, unit cipher groups (punctuation groups included): 377 of 424 read by the frozen table (357) or by a context value supported by a second occurrence or by visible digits (20); sense-only guesses and unread groups counted as unread.",

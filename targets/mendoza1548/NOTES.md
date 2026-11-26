@@ -1,6 +1,7 @@
 # mendoza1548: Diego Hurtado de Mendoza to Antoine Perrenot de Granvelle, bishop of Arras, Rome, 29 May 1548 (BNE MSS/20212/29/1)
 
 Status: in progress (14 Nov 2026: read in part, 0.856 of words by the strict count after PR #570; 34 supplied words can still be worked from the other five letters under MSS/20212/29; no page yet).
+Next step (24 Nov 2026 write-up pass, no page): open the other five letters MSS/20212/29/2-6 on BNE Digital for the same cipher and retry the 34 supplied words and the 10 unread sign types against them.
 
 Catalogue #1268. Madrid, Biblioteca Nacional de España, MSS/20212/29/1 (BNE Digital bdh0000172694, the first of six
 letters under MSS/20212/29/1-6). The cipher was transcribed sign by sign, and the key was rebuilt from two sources:

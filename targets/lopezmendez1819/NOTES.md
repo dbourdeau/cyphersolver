@@ -1,7 +1,5 @@
 # Luis López Méndez to Simón Bolívar, London, 29 Jan 1819 (catalogue 1523)
 
-Status: in progress. Not yet written up: no site page or README row. Read in part, or not read, with escalation steps still open (see its status below, Remaining gaps and Escalation). The status below is the contributor's.
-
 Status: **read in part, cipher words only.** 14 of the 15 cipher words (93%) read as sense; the 15th, "[?Maracaibo]", is a context guess. These are words read from context, with a partial table consistent with them. This is a plaintext-guided partial table, not a recovered key.
 
 Fifteen underlined words in the letter read as "he estado preso cinco veces y he salido con fianza", "Mac Gregor", "para [?Maracaibo]" and "Santafé". The table fits them without conflict. It has not been checked against a biography or against another López Méndez cipher letter, because none was found or reached.
@@ -81,7 +79,23 @@ Not reached: Bákula 1949, the Archivo del Libertador, the O'Leary correspondenc
 
 ## Remaining gaps
 
-- The word "[?Maracaibo]": the fourth sign (written t, extra stroke above) has no value and the identification is a guess.
-- The rest of the table: q, u, j, x, k, ñ and most cells of every column but e cannot be filled from 70 signs. A real key needs another letter in this table; none was found.
-- e1 = b, t1 = m and d1 = g rest on context alone.
-- Whether López Méndez was jailed five times is not confirmed by any other source.
+- The word "[?Maracaibo]": the fourth sign (written t, extra stroke above) has no value and the identification is a guess - blocker: too-short; a = l in all eleven other places, and 70 signs give no second instance of this sign.
+- The rest of the table: q, u, j, x, k, ñ and most cells of every column but e - blocker: no-key-material; 70 signs cannot fill it and no other letter in this table was found (DataViva searched by name with cifr/clave/secreta, research/latam_north).
+- e1 = b, t1 = m and d1 = g rest on context alone - blocker: too-short; each occurs in one or two words only.
+- Whether López Méndez was jailed five times is not confirmed by any other source - blocker: no-key-material; a historical question, not a cipher gap (Mondolfi's biography not checked).
+
+## Escalation
+
+- [x] siblings: the unit ff. 222-233 has no other cipher; the DataViva sweep searched López Méndez with "cifr", "clave" and "secreta" and found no other letter in this table (research/latam_north/README.md).
+- [x] clear-pages: no decipherment over or beside the cipher words, and no clear copy in the unit.
+- [x] known-keys: the vetting found that no key in the repository fits; not on DECODE or cryptiana.
+- [x] print: 15 O'Leary volumes on archive.org grepped (vetting), Lasry's GL.htm copies grepped (no Bolívar or López Méndez); Bákula 1949, the Archivo del Libertador and Mondolfi not reached.
+- [x] key-rebuild: the 20-symbol table built from the context, 0 conflicts, control 62 of 20,000 (all the true assignment).
+- [x] retry: the doubtful marks re-read at 4-7x (NOTES, Independent blind check); the m1 on f. 228r settled; the stroke over the last t of "t1 l e4 t" stays open.
+
+## Transcription doubts
+
+- digit over the first i of "i3 l e4 l" (f. 227v l. 27) - read: i3 (p); checked: image (4-7x), decode, transcription (blind second reading); clear 3, "para".
+- stroke over the first m on f. 228r - read: m1 (c); checked: image, decode, transcription (blind check's rerun took it as m1); "caibo".
+- stroke over the last t of "t1 l e4 t" (f. 227v l. 27) - read: t? (no value); checked: image (7x), decode; unresolved, stays marked as the hole in [?Maracaibo].
+- other undecided digit marks of the blind check (2 or 3 in all) - read: as transcribed; checked: image, decode, transcription; none changes a letter value.

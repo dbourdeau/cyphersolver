@@ -1,0 +1,280 @@
+{
+ "schema_version": 1,
+ "target": "stubbs1700",
+ "title": "Letter in three different ciphers to George Stubbs, University College, Oxford, c. 1698-1701 (SAL THO/57/127): an Oxford student's journey to Salisbury at assize time, first reading (contributed by Brice Dudout)",
+ "documents": [
+  {
+   "id": "stubbs-P1",
+   "read": "read in part",
+   "shelfmark": "Society of Antiquaries of London, archives, THO/57/127 (Thorpe Bequest; THO/57 = original letters mainly to John Thorpe senior), page 1",
+   "date": "c. 1698-1701 (internal evidence; see NOTES.md)",
+   "year": 1700,
+   "country": "England",
+   "route": "an Oxford student, unnamed (Salisbury) -> George Stubbs (Stubbes), University College, Oxford",
+   "language": "English",
+   "cleartext_in_document": "none",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "partial": false
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Images read from the Society of Antiquaries of London's online catalogue (archives); © SAL, catalogue notice: not to be reproduced without prior permission; not distributed",
+    "image_quality": "good",
+    "notes": "Two blind passes and a blind arbiter; see blind/."
+   },
+   "length": {
+    "tokens": 1575,
+    "unit": "symbols",
+    "measured": true,
+    "file": "transcription.txt"
+   }
+  },
+  {
+   "id": "stubbs-P2",
+   "read": "read in part",
+   "shelfmark": "Society of Antiquaries of London, archives, THO/57/127 (Thorpe Bequest; THO/57 = original letters mainly to John Thorpe senior), page 2",
+   "date": "c. 1698-1701 (internal evidence; see NOTES.md)",
+   "year": 1700,
+   "country": "England",
+   "route": "an Oxford student, unnamed (Salisbury) -> George Stubbs (Stubbes), University College, Oxford",
+   "language": "English",
+   "cleartext_in_document": "none",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "partial": false
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Images read from the Society of Antiquaries of London's online catalogue (archives); © SAL, catalogue notice: not to be reproduced without prior permission; not distributed",
+    "image_quality": "good",
+    "notes": "Two blind passes and a blind arbiter; see blind/."
+   },
+   "length": {
+    "tokens": 2768,
+    "unit": "symbols",
+    "measured": true,
+    "file": "transcription.txt"
+   }
+  },
+  {
+   "id": "stubbs-P3",
+   "read": "read in part",
+   "shelfmark": "Society of Antiquaries of London, archives, THO/57/127 (Thorpe Bequest; THO/57 = original letters mainly to John Thorpe senior), page 3",
+   "date": "c. 1698-1701 (internal evidence; see NOTES.md)",
+   "year": 1700,
+   "country": "England",
+   "route": "an Oxford student, unnamed (Salisbury) -> George Stubbs (Stubbes), University College, Oxford",
+   "language": "English",
+   "cleartext_in_document": "none",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "partial": false
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Images read from the Society of Antiquaries of London's online catalogue (archives); © SAL, catalogue notice: not to be reproduced without prior permission; not distributed",
+    "image_quality": "good",
+    "notes": "Two blind passes and a blind arbiter; see blind/."
+   },
+   "length": {
+    "tokens": 1736,
+    "unit": "symbols",
+    "measured": true,
+    "file": "transcription.txt"
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "monoalphabetic"
+  ],
+  "summary": "One letter, three pages, each in a different simple-substitution alphabet of invented signs for English, no word division: p.1 pigpen-like boxes with wedges at 8 positions; p.2 bars with up/down/crossing ticks; p.3 letter-like glyphs (digits, Latin and Greek look-alikes). No homophones, no nomenclator seen.",
+  "symbol_kind": "symbols",
+  "homophones": {
+   "used": false
+  },
+  "nomenclator": {
+   "present": false
+  },
+  "nulls": {
+   "present": false
+  },
+  "word_division": "none",
+  "diacritics": {
+   "used": false
+  },
+  "key_order": "random",
+  "distinct_symbols": 96
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "images"
+  ],
+  "attack": "ciphertext-only",
+  "human_role": "Brice Dudout set the protocol; the SAL archivist pointed the piece out; AI agents transcribed (two blind passes and a blind arbiter per page), built the keys, measured and read.",
+  "models": [
+   "Claude Opus 5.5 (Anthropic), agents run by Brice Dudout"
+  ],
+  "first_date": "2026-11-23",
+  "last_date": "2026-11-23"
+ },
+ "solution": [
+  {
+   "kind": "transcription",
+   "what": "All three pages and their margins (6079 signs) in two blind passes and a blind arbiter.",
+   "result": "worked",
+   "technique": [
+    "other"
+   ]
+  },
+  {
+   "kind": "reading",
+   "technique": [
+    "simulated annealing",
+    "language-model scoring"
+   ],
+   "what": "One key per page built by simulated annealing (English quadgrams, bijective swaps) on a training portion, frozen, then one pre-registered measure on a held-out portion (>= 300 signs) against 200 permuted-key controls.",
+   "result": "partial"
+  },
+  {
+   "kind": "control",
+   "technique": [
+    "statistical test",
+    "language-model scoring"
+   ],
+   "what": "Pre-registered measure on the held-out portion of p. 1 (lines 33-41, 315 signs): lexical coverage 0.848 against a best of 200 permuted-key controls of 0.479; criterion >= 0.85 and >= best control + 0.30. Missed the absolute bar by 0.002: the p. 1 key is not validated, although the held-out text reads as English.",
+   "result": "failed"
+  },
+  {
+   "kind": "control",
+   "technique": [
+    "statistical test",
+    "language-model scoring"
+   ],
+   "what": "Pre-registered measure on the held-out portion of p. 2 (lines 61-68, 304 signs): lexical coverage 0.915 against a best of 200 permuted-key controls of 0.500; criterion >= 0.85 and >= best control + 0.30. Pass: the p. 2 key is validated.",
+   "result": "worked"
+  },
+  {
+   "kind": "control",
+   "technique": [
+    "statistical test",
+    "language-model scoring"
+   ],
+   "what": "Pre-registered measure on the held-out portion of p. 3 (lines 28-34, 327 signs): lexical coverage 0.976 against a best of 200 permuted-key controls of 0.551; criterion >= 0.85 and >= best control + 0.30. Pass: the p. 3 key is validated.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "validation": {
+   "date": "2026-11-23",
+   "verdict": "weak",
+   "notes": "Lexical coverage of the decoded held-out text. P2 0.9145 vs best control 0.5 (pass); P3 0.9755 vs 0.5505 (pass); P1 0.8476 vs 0.4794 (fails the 0.85 threshold by 0.002; key not validated although the text reads). Criterion: >= 0.85 and >= best control + 0.30. Portions burnt. The p. 1 key is NOT validated; the p. 2 and p. 3 keys are."
+  },
+  "class": "read in part",
+  "key": "recovered",
+  "method": "key recovered from ciphertext-only",
+  "fraction_read": 0.828,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "rule of #728 over the words of the clear text (cipher has no word division): 1205 sure of 1456; probable (one sign corrected), restored and unresolved words are holes. Per page in texts.",
+  "first_break": true,
+  "verification": [
+   "matched control",
+   "historical consistency"
+  ],
+  "provenance": "contributed",
+  "credits": [
+   {
+    "who": "sal",
+    "role": "pointer",
+    "note": "Society of Antiquaries of London, archives: the archivist pointed out THO/57/127; images read from the Society's online catalogue (copyright notice: not to be reproduced without prior permission; no image reproduced here)",
+    "date": "2026-11"
+   },
+   {
+    "who": "dudout",
+    "role": "solution",
+    "note": "blind transcription, keys and first reading of the three pages",
+    "date": "2026-11-23"
+   }
+  ],
+  "gaps": [
+   {
+    "item": "P1 key",
+    "blocker": "no-key-material",
+    "detail": "held-out score 0.848 < 0.85: the p. 1 key is not validated; the reading of p. 1 stands as unvalidated (no fresh held-out portion remains for a second measure)"
+   },
+   {
+    "item": "P3 glyphs",
+    "blocker": "illegible",
+    "detail": "γ-like 7 (probably p) merged with 7 (o) in the frozen transcription; h/k not separated in the margin"
+   },
+   {
+    "item": "Doubtful signs of pp. 1 and 2 (62 and 87 probable words, most one look-alike sign; the p. 1 margin rotation artefact)",
+    "blocker": "not-attempted",
+    "detail": "open and workable: a blind sign check of those places against the catalogue images has not been done"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "stubbs-P1",
+    "label": "THO/57/127, page 1 (box cipher)",
+    "transcription": "transcription.txt",
+    "decryption": "decryption.txt",
+    "reading": "reading_P1.md",
+    "language": "en",
+    "state": "read in part",
+    "summary": "278 of 363 words sure (rule of #728); key NOT validated on held-out (0.8476 vs best control 0.4794).",
+    "reading_review": {
+     "grade": "B",
+     "by": "integration review of PR #909 (AI agent, for the maintainers); not a person",
+     "date": "2026-11-24",
+     "note": "Decryption reproduced in round 4 from key.tsv and the transcription (155 of 155 lines, three pages) and sure words recounted there (278 of 363); the reading files are unchanged since. Read here as sentences in reading_P1.md: continuous English narrative in period spelling (the ride from Oxford, a sleepless night, the spire in sight, arrival at the inn, carrying the letters round the town). It reads through; most holes are single-sign slips with the word plain from the rest, but there are four runs of two or three unresolved words where the sentence is lost, and the last three lines are thick with corrections. Grade B: coherent but raw. The page-1 key is not validated (0.848 < 0.85). Not checked: the images, the 200 controls, that the key was frozen before the measure."
+    }
+   },
+   {
+    "doc": "stubbs-P2",
+    "label": "THO/57/127, page 2 (bar-and-tick cipher)",
+    "transcription": "transcription.txt",
+    "decryption": "decryption.txt",
+    "reading": "reading_P2.md",
+    "language": "en",
+    "state": "read in part",
+    "summary": "557 of 671 words sure (rule of #728); key validated on held-out (0.9145 vs best control 0.5).",
+    "reading_review": {
+     "grade": "B",
+     "by": "integration review of PR #909 (AI agent, for the maintainers); not a person",
+     "date": "2026-11-24",
+     "note": "Decryption reproduced in round 4 from key.tsv and the transcription (155 of 155 lines, three pages) and sure words recounted there (557 of 671); the reading files are unchanged since. Read here as sentences in reading_P2.md: continuous English (return to Salisbury at the assizes, the characters of the town, the coffee house, the ladies, Elderton the fop, the cathedral). Sentences hold over long stretches; holes are mostly single-sign slips, with two short runs of unresolved words (after 'diuine', and around 'the oatmeal') where the sense breaks. Grade B: coherent but raw. Key validated on the held-out portion as filed (0.915). Not checked: the images, the 200 controls, that the key was frozen before the measure."
+    }
+   },
+   {
+    "doc": "stubbs-P3",
+    "label": "THO/57/127, page 3 (letter-like glyphs (digits, Latin and Greek look-alikes))",
+    "transcription": "transcription.txt",
+    "decryption": "decryption.txt",
+    "reading": "reading_P3.md",
+    "language": "en",
+    "state": "read in part",
+    "summary": "370 of 422 words sure (rule of #728); key validated on held-out (0.9755 vs best control 0.5505).",
+    "reading_review": {
+     "grade": "B",
+     "by": "integration review of PR #909 (AI agent, for the maintainers); not a person",
+     "date": "2026-11-24",
+     "note": "Decryption reproduced in round 4 from key.tsv and the transcription (155 of 155 lines, three pages) and sure words recounted there (370 of 422); the reading files are unchanged since. Read here as sentences in reading_P3.md: continuous English (the ladies in the cathedral, Mrs Horrell, the witty lady who has written plays, the assizes, the close). The cleanest of the three pages: nearly every hole is one repeated sign slip (o for p, m for u), and the only break is a run of four unresolved words in the last sentence. Grade B rather than A because 52 of 422 words carry a correction. Key validated on the held-out portion as filed (0.976). Not checked: the images, the 200 controls, that the key was frozen before the measure."
+    }
+   }
+  ],
+  "key_file": "key.tsv"
+ }
+}

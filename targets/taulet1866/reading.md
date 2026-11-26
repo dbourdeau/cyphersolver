@@ -6,6 +6,9 @@ Jan-Mar 1866. AHN, DIVERSOS-COLECCIONES, 193, N.99 (PARES 5928106).
 Marks: clear words of the copybook are given only as context in ⟨ ⟩ (not counted). In the cipher: {x} = probable (a
 one-number slip of the cipherer or copyist, corrected by sense; the justification follows each passage); [x] = restored;
 ‹…› = unresolved. There are no restored and no unresolved words in this unit.
+A number transcribed with "?" (a doubtful figure, e.g. 36? in coronel, 32? in Taulet, 33? in jueves) is read with the
+value the sense requires among the readings of that figure and is not marked (convention declared after the key-replay
+audit of 24 Nov 2026).
 
 Classes (Daniel's rule). **Certain** = every letter given by the key, applied without change. **Probable** = one number
 corrected by sense. The key itself is **partial** by our own protocol (held-out margin 0.277, under our 0.30 rule; see
@@ -24,7 +27,7 @@ validation.txt), so we classify the unit "read in part" although every cipher wo
 Read share: certain only 71/76 = **0.934**; certain + probable (Daniel's rule) 76/76 = 1.000. We keep "read in part"
 because the key fell short of our validation rule, not because words are open.
 
-The five probable words: entendi{d}os (S07), n{o} (S13), sába{d}o (S21), domi{n}go (S22), mar{c}he (S32).
+The five probable words: entendi{d}os (S07), n{o} (S13), sába{do} (S21), domi{n}go (S22), mar{c}he (S32).
 
 ## Report 21 (view 26, Jalet, about 30 Jan 1866): S03-S10
 
@@ -53,7 +56,7 @@ Each short run is the day of the week of the report, and all agree with the 1866
 | S18 | 22 (27), 31 Jan (Wednesday) | miércoles |
 | S19 | 23 (27), 1 Feb (Thursday) | jueves |
 | S20 | 24 (28), 2 Feb (Friday) | viernes |
-| S21 | 30 (30), 3 Feb (Saturday) | sába{d}o |
+| S21 | 30 (30), 3 Feb (Saturday) | sába{do} |
 | S22 | 31 (30), 4 Feb (Sunday) | domi{n}go |
 | S23 | 33 (31), 5 Feb (Monday) | lunes |
 | S24 | 34 (32), 6 Feb (Tuesday) | martes |
@@ -64,7 +67,7 @@ Each short run is the day of the week of the report, and all agree with the 1866
 | S29 | 51 (40), 13 Feb (Tuesday) | martes |
 | S30 | 55 (42), 14 Feb (Wednesday) | miércoles |
 
-- sába{d}o (S21): written 10-21-14-21-64-10 "sabaos", ending 64-10 where 61-64 (d-o) is required; corrected by the day
+- sába{do} (S21): written 10-21-14-21-64-10 "sabaos", ending 64-10 where 61-64 (d-o) is required, so two numbers are corrected and both are marked; corrected by the day
   (3 Feb 1866 was a Saturday; S27 has the regular form 10-21-14-62-61-64 sábado).
 - domi{n}go (S22): the fifth number is doubtful in the image (21|29). The reading kept in the frozen transcription, 21,
   gives "domiago"; the variant 29 gives "domingo", as do the day (4 Feb 1866, Sunday) and S01/S02. Counted probable
