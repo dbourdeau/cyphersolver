@@ -37304,7 +37304,7 @@
    "score_note": "Scored from the Kalliope description during the Oct 2026 Kalliope/DDB sweep (research/kalliope_ddb/); not viewed",
    "year": 1650,
    "date": "1596-1700",
-   "title": "Alchemical miscellany with a section of \"Geheimschrift\" (Bl. 248 ff.), SLUB Mscr.Dresd.J.345",
+   "title": "Alchemical miscellany in secret script, the remaining leaves after f. 249v (Dresden J.345)",
    "correspondents": "unknown",
    "place": "unknown",
    "language": "German; Latin; Italian",
@@ -37313,7 +37313,7 @@
    "shelfmark": "SLUB Dresden, Mscr.Dresd.J.345",
    "folio_note": "Bl. 248 ff. \"Geheimschrift\"; Bl. 274 follows",
    "cls": "C",
-   "status": "Kalliope (DE-611-HS-3063531) contents list only. Probably an alchemical sign alphabet; undated within 1596-1700.",
+   "status": "The two complete recipes on ff. 249r–v were read with the known alphabet on f. 248v, and the start of f. 250r is filed as a fragment. The cipher section continues beyond these recipes.",
    "why": "Possible alchemical cipher of the early 17th century in a Saxon court-library manuscript.",
    "importance": 1,
    "solvability": 2,
@@ -37365,7 +37365,9 @@
    },
    "access": "online",
    "access_note": "online (set 4 Nov 2026 from vetting.seen, scan: SLUB IIIF, manifest https://iiif.slub-dresden.de/iiif/2/479379637/manifest.json (digital.slub-dresden.de itsel)",
-   "repository": "slub"
+   "repository": "slub",
+   "outcome": "attempted, open",
+   "writeup": "dresdenj345.html"
   },
   {
    "id": 1165,
@@ -43862,64 +43864,6 @@
      "literature": "Searched Angel Angel & Morales-Luna 2008 (revista.unam.mx vol.9 num3 art18, Diaz-Bravo substitution and Diaz cryptography) and Narvaez 2015 (Documenta & Instrumenta, Mexican cryptosystems 1907-1921) via web search; neither names this record in the snippets seen (full texts not read)."
     },
     "key_check": "Keys named but not applied: the Diaz-Bravo table of Angel & Morales-Luna 2008 and the translated sibling Reyes-Diaz records in fondo DLI were not retrievable in this session, so the leaf was not decoded; no Reyes key in this repo or DECODE. The numbers look like a numeric nomenclator (words to 3-5 digit numbers), not the Diaz-Bravo letter table.",
-    "duplicates": "known.py on fondo/shelfmark and correspondents found only this lead and research/latam_mexico/candidates.json; no catalogue, ledger or DECODE duplicate.",
-    "verdict": "open"
-   },
-   "repository": "cehm"
-  },
-  {
-   "id": 1449,
-   "counted": true,
-   "year": 1901,
-   "date": "12 Oct 1901",
-   "title": "Meza Salinas → Bernardo Reyes, cipher letter left \"sin traducción\"",
-   "correspondents": "Meza Salinas → Gen. Bernardo Reyes (then Secretary of War)",
-   "place": "unknown",
-   "language": "Spanish",
-   "region": "Americas",
-   "period": "1901-1950",
-   "shelfmark": "CEHM-Carso, Fondo DLI, DLI.34.6704.1",
-   "folio_note": "Whole letter in cipher",
-   "cls": "A",
-   "status": "CEHM: \"Sin traducción\", document type \"Carta cifrada\". Other 1901 cipher letters to Reyes (I. J. Mendoza, DLI.33.6599.1, on Camilo Arriaga sheltering General Treviño) are summarised.",
-   "why": "Intelligence to Reyes in the year of the Liberal clubs and Arriaga's movement.",
-   "importance": 2,
-   "solvability": 3,
-   "difficulty": 2,
-   "score_note": "Scored from the CEHM online catalogue record during the Oct 2026 Mexico sweep (research/latam_mexico/); not viewed",
-   "verify": "View at CEHM.",
-   "links": [
-    {
-     "label": "CEHM DLI.34.6704.1",
-     "href": "https://www.cehm.org.mx/Buscador/FichaBasica/120053?Tipo=A"
-    }
-   ],
-   "seen": "image",
-   "source": "CEHM-Carso (Centro de Estudios de Historia de México, Fundación Carlos Slim) sweep",
-   "prior_art": "open as far as checked (28 Oct 2026: known.py).",
-   "needs_archive_scan": "no",
-   "access_note": "CEHM-Carso catalogue marks the item 'Formato Digital': scans are viewable at CEHM with a reader account (not checked here)",
-   "ark": "",
-   "scored": "vetted",
-   "access": "online",
-   "vetting_note": "CEHM-Carso record text read 29 Oct 2026 (FichaCompleta/120053: catalogue fields only, matches the lead); the scans need a CEHM reader account and could not be opened, so no cipher, decipherment-on-leaf or key check was possible; access is 'online', not 'archive', so 'not online' is not allowed; known.py shows only this lead and research/latam_mexico/candidates.json, no ledger, DECODE or target hit; no evidence for closing it.",
-   "vetting": {
-    "date": "2026-10-29",
-    "by": "claude vetting batch c03",
-    "seen": {
-     "kind": "scan",
-     "where": "https://www.cehm.org.mx/Buscador/VisorArchivoDigital?jzd=/janium/JZD/DLI/34/6704/1/DLI.34.6704.1.jzd&fn=120053 (CEHM viewer, Chrome 29 Oct 2026, page 1 of 1)",
-     "extent": "One letter, 12 Oct 1901, 14 lines almost wholly in hyphenated 2-digit groups (about 150 groups) with clear numerals and a few clear words",
-     "cipher": "Handwritten; salutation and a few words clear ('Respetable Sr. y amigo', 'Congreso Pan Americano', '40.000'); body in 2-digit groups (57-98-95-69-68-51 ...); no decipherment on the leaf; CEHM: 'Sin traduccion'"
-    },
-    "prior_art": {
-     "decode": "Searched DECODE-style terms via web search (Reyes/Diaz/Limantour/Jara cipher); no DECODE record or Mexican CEHM material found; known.py shows no DECODE hit.",
-     "tomokiyo": "Web search for Tomokiyo cryptiana plus Mexico/Reyes/Diaz found nothing; Cryptiana does not appear to cover CEHM-Carso material.",
-     "lasry": "No Lasry entry for Mexican 19th/20th-century cipher letters found in web search or known.py.",
-     "edition": "No printed decipherment found in web search; the CEHM record itself carries no translation.",
-     "literature": "Searched Angel Angel & Morales-Luna 2008 (revista.unam.mx vol.9 num3 art18, Diaz-Bravo substitution and Diaz cryptography) and Narvaez 2015 (Documenta & Instrumenta, Mexican cryptosystems 1907-1921) via web search; neither names this record in the snippets seen (full texts not read)."
-    },
-    "key_check": "Keys named but not applied: the Diaz-Bravo table of Angel & Morales-Luna 2008 and the translated sibling Reyes-Diaz records in fondo DLI were not retrievable in this session, so the leaf was not decoded; no Reyes key in this repo or DECODE. The 2-digit groups run to about 99 and look like a homophonic or syllabic table; the clear words 'Congreso Pan Americano' are cribs.",
     "duplicates": "known.py on fondo/shelfmark and correspondents found only this lead and research/latam_mexico/candidates.json; no catalogue, ledger or DECODE duplicate.",
     "verdict": "open"
    },
@@ -64103,87 +64047,6 @@
    "repository": "us-unid"
   },
   {
-   "id": 2130,
-   "counted": true,
-   "year": 1550,
-   "date": "16th century",
-   "title": "Medical-pharmaceutical miscellany: \"leaves 75r and 76 in cipher\"",
-   "correspondents": "unknown",
-   "place": "Italy",
-   "language": "Latin; Italian",
-   "region": "Italy",
-   "period": "1497-1559",
-   "shelfmark": "College of Physicians of Philadelphia, medical-pharmaceutical miscellany (ArchiveGrid 890322753)",
-   "folio_note": "ff. 75r, 76",
-   "cls": "C",
-   "status": "Record: \"(leaves 75r and 76 in cipher)\". Recipes are often simple substitutions; the College digitises some manuscripts, not checked for this one.",
-   "why": "A secret recipe.",
-   "importance": 2,
-   "solvability": 4,
-   "difficulty": 1,
-   "score_note": "Scored from the archive description during the Nov 2026 US blocked-sources sweep (research/sweep_2026-11_us_blocked/); not viewed",
-   "verify": "Ask for the two leaves.",
-   "links": [
-    {
-     "label": "ArchiveGrid record",
-     "href": "https://researchworks.oclc.org/archivegrid/collection/data/890322753"
-    }
-   ],
-   "seen": "image",
-   "source": "ArchiveGrid sweep",
-   "prior_art": "open as far as checked (3 Nov 2026: known.py on names and shelfmark; archive description says nothing of a decipherment; no edition compared)",
-   "needs_archive_scan": "yes",
-   "access_note": "online (corrected 4 Nov 2026: was archive, 'no scan found online'; leaves 75r and 76r are on OPenn and were viewed)",
-   "decode_ids": [],
-   "ark": "",
-   "access": "online",
-   "scored": "vetted",
-   "vetting": {
-    "date": "2026-11-03",
-    "by": "claude leads review batch r02 (audit of b06)",
-    "seen": {
-     "kind": "scan",
-     "where": "OPenn, College of Physicians of Philadelphia Ms. 10a 132, https://openn.library.upenn.edu/Data/0027/cpp_10a_132/data/web/6207_0112_web.jpg (f. 75r) and 6207_0114_web.jpg (f. 76r)",
-     "extent": "f. 76r, about 21 lines of cipher filling the page; f. 75r opens with three crossed-out lines of the same cipher; f. 76v not viewed",
-     "cipher": "Viewed both leaves: Latin cursive text on f. 75r below the struck lines, then on f. 76r a full page of word-spaced unfamiliar spellings (e.g. 'qfs', 'tbouborn') in the same letter shapes as the crossed-out heading, a monoalphabetic-style substitution of a Latin text; no plaintext, key or interlinear decipherment appears on either leaf."
-    },
-    "prior_art": {
-     "decode": "known.py on the miscellany, College of Physicians and 10a 132: no hits in the DECODE dump, repo or leads other than this lead.",
-     "tomokiyo": "Searched Tomokiyo cryptiana for the College of Physicians of Philadelphia and Italian medical-recipe ciphers: no page on this manuscript.",
-     "lasry": "Searched Lasry, HistoCrypt and DECRYPT for 10a 132 and for this miscellany: nothing.",
-     "edition": "Opened the OPenn TEI record (cpp_10a_132_TEI.xml): 'Fol.76 in cipher', citing Hirsch, Catalogue of the Manuscripts and Archives of the College of Physicians (1983), no. 646. Hirsch was not opened; it is a catalogue, and nothing suggests it reads the cipher. No edition of the miscellany found.",
-     "literature": "Searched for 10a 132, Bertapalia, 'cipher' and Caesar: no study of the cipher leaf."
-    },
-    "key_check": "No key in the volume or in the repo; none on DECODE; a simple letter substitution is suggested by the shapes but was not tested.",
-    "key_in_volume": "None seen on ff. 75r-76r; the rest of the volume was not paged through.",
-    "duplicates": "known.py on the miscellany, 10a 132 and College of Physicians: only this lead's row; no catalogue entry or target.",
-    "verdict": "open",
-    "searches": [
-     {
-      "query": "College of Physicians of Philadelphia medical pharmaceutical miscellany Italy 16th century 'in cipher' leaves 75r",
-      "result": "Found the OPenn record for Ms. 10a 132 (c. 1550, Italy, Latin) noting 'Fol. 76 in cipher' and giving image paths for ff. 75-76; no decipherment mentioned."
-     },
-     {
-      "query": "cpp_10a_132 cipher fol. 76 Caesar shift medical miscellany College of Physicians Philadelphia deciphered",
-      "result": "Only the OPenn record and the Hirsch catalogue (no. 646) came back; nothing on a cipher or its solution."
-     },
-     {
-      "query": "Medical-pharmaceutical miscellany Philadelphia Ms. 10a 132 Bertapalia Venereal Man cipher leaf Schoenberg database",
-      "result": "No match for this manuscript in the Schoenberg Database or Penn catalogue results; no cipher study."
-     },
-     {
-      "query": "Tomokiyo cryptiana Italian 16th century medical recipe cipher College of Physicians Philadelphia 10a 132",
-      "result": "Unrelated Borg cipher, Tomokiyo's 1593 Italian ciphers and others; nothing on this volume."
-     },
-     {
-      "query": "OPenn TEI cpp_10a_132: grep cipher, note, bibl, Hirsch",
-      "result": "Notes 'Fol.76 in cipher'; related resource Hirsch no. 646; no reading."
-     }
-    ]
-   },
-   "repository": "cpp"
-  },
-  {
    "id": 2132,
    "counted": true,
    "year": 1658,
@@ -72280,77 +72143,6 @@
     "verdict": "open"
    },
    "repository": "asf"
-  },
-  {
-   "id": 2357,
-   "counted": true,
-   "year": 1646,
-   "date": "c. 1646 (microfilm of 1646 letters; own date not on the frame)",
-   "title": "Italian letter to Ottavio Piccolomini in a two-digit number cipher, without decipherment",
-   "correspondents": "unidentified -> Ottavio Piccolomini",
-   "place": "not read",
-   "language": "Italian",
-   "region": "Central Europe",
-   "period": "1611-1650",
-   "shelfmark": "SOA Zámrsk, Rodinný archiv Piccolominiů (Náchod), inv. č. 25054",
-   "folio_note": "One page: about 10 lines of two-digit groups (many 3x and 4x numbers: 34 44 13 ...) within Italian clear text. One or two isolated words written above the lines; no running decipherment.",
-   "cls": "B",
-   "status": "Seen (6 Nov 2026): practically bare. inv. 25040, a few frames earlier, uses two-digit groups and is glossed between the lines; whether it is the same cipher is not checked.",
-   "why": "Part of the 1646 Piccolomini intelligence stream; a short two-digit cipher with a possible glossed sibling.",
-   "importance": 2,
-   "solvability": 3,
-   "difficulty": 2,
-   "verify": "Compare the number set with inv. 25040; if it matches, apply the glossed values; otherwise solve as a two-digit substitution with the Italian clear text as context.",
-   "links": [
-    {
-     "href": "https://theses.cz/id/p3p2kb/",
-     "label": "Vlnas 2017 thesis (text + appendix zip of the photographs)"
-    }
-   ],
-   "access_note": "photographs of the microfilm frames in the appendix zip of Vlnas 2017 (theses.cz/id/p3p2kb, file P_lohy_A_a_B.zip, 14.5 MB, behind a JavaScript proof-of-work page that Chrome passes); the originals and the microfilms are in SOA Zámrsk (RA Piccolomini is not item-indexed on ARON and has no digital objects)",
-   "seen": "image",
-   "score_note": "Scored from the photographs in the appendix of Vlnas 2017 (theses.cz/id/p3p2kb), viewed frame by frame in Chrome on 6 Nov 2026 (research/sweep_2026-11_czech_chrome/)",
-   "prior_art": "open as far as checked (6 Nov 2026): known.py on the inventory numbers, Piccolomini, Claudia de' Medici, Frankenthal, Amalfi, Zámrsk: no hit beyond catalogue #577 (Claudia de' Medici to Baden 1633, another archive); Vlnas 2017 deciphered four other frames of the same microfilm (inv. 25039, 24873, 24790, 25106) and printed their keys, but left these frames undeciphered (his appendix B); Lasry, DECODE and Tomokiyo not searched beyond the known.py dumps",
-   "needs_archive_scan": "no",
-   "source": "Czech regional archives, Chrome pass (SOA Litoměřice, SOA Třeboň, ZA Opava, theses.cz), Nov 2026",
-   "ark": "",
-   "scored": "vetted",
-   "vetting": {
-    "date": "2026-11-06",
-    "by": "claude leads review batch n15",
-    "seen": {
-     "kind": "scan",
-     "where": "Vlnas 2017 appendix zip (theses.cz/id/p3p2kb), frame 25054.jpg, rotated and zoomed in Chrome, 6 Nov 2026 (not saved)",
-     "extent": "One page: about 10 lines of two-digit groups (3x, 4x, 1x, 2x values: 34 44 13 ...) in Italian clear text; frame number 453",
-     "cipher": "Two-digit substitution groups; two or three isolated letters or a word written above single groups, no running decipherment. Label inv. č. 25054 at the foot."
-    },
-    "searches": [
-     {
-      "query": "\"Piccolomini\" Zámrsk inv. 25054 OR 25040 cifra due cifre lettera italiana 1646",
-      "result": "No hit on inv. 25054 or 25040; only Piccolomini family pages."
-     },
-     {
-      "query": "cryptiana Tomokiyo Piccolomini cipher 1646",
-      "result": "Cryptiana index and unsolved list surfaced; 1646 items are English royalist letters; no Piccolomini two-digit cipher."
-     },
-     {
-      "query": "Piccolomini 1646 cipher vowels replaced by odd numbers 1 3 5 7 9 Italian letter",
-      "result": "General papers (papal ciphers, Farnese letter); no publication of the Piccolomini microfilm ciphers beyond Vlnas."
-     }
-    ],
-    "prior_art": {
-     "decode": "known.py \"25054\" \"Piccolomini\" \"Zámrsk\" on the DECODE dumps: none; no Zámrsk record on DECODE.",
-     "tomokiyo": "Tomokiyo's Cryptiana index (satoru.net) surfaced in search with no Piccolomini two-digit cipher.",
-     "lasry": "Nothing in GL.htm or the Lasry paper targets on a Piccolomini two-digit cipher.",
-     "edition": "No edition. Vlnas 2017 (theses.cz/id/p3p2kb), STAG89021.pdf: inv. 25054 is B28 in appendix B (not deciphered); 25040, the possible glossed sibling, is B01.",
-     "literature": "HistoCrypt 2018 (Musílek & Hubálovský) prints a homophonic two-digit example from 25039 only; nothing on 25054."
-    },
-    "key_check": "Not compared: inv. 25040 (glossed two-digit groups) may share the system; the French grid key of 25039 (Vlnas ch. 4.1) is another candidate; neither tested.",
-    "key_in_volume": "Possibly inv. 25040 on the same microfilm (two-digit groups with interlinear gloss); identity of system not checked.",
-    "duplicates": "known.py \"25054\" \"Piccolomini\" (6 Nov 2026): this lead and the sweep only.",
-    "verdict": "open"
-   },
-   "repository": "soa-zamrsk"
   },
   {
    "id": 2358,
@@ -87707,63 +87499,6 @@
    },
    "scored": "vetted",
    "repository": "bne"
-  },
-  {
-   "id": 2858,
-   "counted": true,
-   "year": 1497,
-   "date": "19 Jun 1497",
-   "period": "1497-1559",
-   "language": "Spanish",
-   "region": "Spain",
-   "cls": "B",
-   "title": "Juan Claver to the Catholic Monarchs, Milan, 19 Jun 1497: diplomatic news from France and Italy, cipher at the end",
-   "correspondents": "Juan Claver (ambassador) -> Catholic Monarchs",
-   "place": "Milan",
-   "shelfmark": "Archivo Historico Provincial de Zaragoza (Archivo del Reino de Aragon), Coleccion Zurita, C_CRAR/000001/0040",
-   "folio_note": "1 letter, incomplete (torn); cipher at the end",
-   "status": "Online (PDF on DARA). DARA summary: 'Escritura cifrada en la parte final del mensaje'. First-leaf image viewed 15 Nov 2026. Not vetted against lead 1048 (Claver to the Monarchs, Milan, 23 Jun 1497): the dates differ by four days, so it may be a draft, a duplicate or a different letter.",
-   "why": "Same writer and place as lead 1048, 1497; Parisi deciphered Claver's later letters, so the key may be in print.",
-   "importance": 3,
-   "solvability": 3,
-   "difficulty": 3,
-   "score_note": "Scored from the DARA record and the thumbnail of the first leaf (15 Nov 2026, wave 8); the vetting block says what was viewed",
-   "verify": "Compare with lead 1048 (23 Jun 1497, Milan) and Parisi 2019 before promoting; check the last leaf of the PDF.",
-   "links": [
-    {
-     "href": "https://dara.aragon.es/opac/app/item?i=1056537",
-     "label": "DARA record C_CRAR/000001/0040"
-    }
-   ],
-   "source": "DARA (dara.aragon.es) results and item pages, fetched same-origin in Chrome, wave 8, 15 Nov 2026",
-   "ark": "",
-   "needs_archive_scan": "no",
-   "seen": "image",
-   "scored": "vetted",
-   "vetting": {
-    "date": "2026-11-16",
-    "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 17 vetting",
-    "seen": {
-     "kind": "scan",
-     "where": "DARA record https://dara.aragon.es/opac/app/item?i=1056537 (C_CRAR/000001/0040), PDF attachment b4/11/AHPZ_C_CRAR_000040.pdf, two images extracted (img/dara_0040_p0_0.jpeg 1578 x 2211 px, recto; dara_0040_p1_0.jpeg 2219 x 1575 px, verso) and viewed 16 Nov 2026.",
-     "extent": "One leaf, the end of the letter (the beginning is lost; DARA: 'Incompleta', torn at lower left): about 28 lines of clear Spanish, then about 13 lines of cipher, then the clear close 'y acreciente Dios las reales ... Fecha en Milán a XVIIII de junyo de 97' and the signature. Verso: address 'A los muy altos y muy poderosos principes ... el Rey y la Reyna de Spaña' and the endorsement 'De Claver xix de junio'.",
-     "cipher": "Sign cipher of letter-like forms, digits, dots and colons with spaces between groups (word-separated), about 13 lines and roughly 400 signs; nothing written between the lines, in the margin or on the verso."
-    },
-    "prior_art": {
-     "decode": "DECODE RecordsList search 16 Nov 2026: 'Claver' 1 record, R9591 (RAH Salazar 9/8 ff. 20-21v, Claver, Naples 1500); 'Zurita' 0. No record of this Zaragoza letter.",
-     "tomokiyo": "cryptiana unsolved.htm (repo copy) grepped for 'Claver', 'Zurita', 'Ferdinand': no Claver item; its Ferdinand entries are Garcilaso 1498 (Parisi), Espagnol 318 and Catherine of Aragon.",
-     "lasry": "GL.htm (repo copy) grepped for 'Claver', 'Ferdinand', 'Fernando': no hit for Claver or this letter.",
-     "edition": "Printed: C. Villanueva Morte and Á. Fernández de Córdova Miralles, El embajador Claver. Diplomacia y conflicto en las «Guerras de Italia» (1495-1504), Anejos del Anuario de Estudios Medievales, CSIC 2025 (open PDF https://zaguan.unizar.es/record/151256/files/BOOK-2025-316.pdf, downloaded 16 Nov 2026), Apéndice documental, Documento 10 (pp. 178-179) transcribes this letter from 'DARA 003006/0040' and prints the cipher as '[diez líneas en cifra]'; the text discussion (p. 69 n. 182) uses only the clear part.",
-     "literature": "Same book, pp. 21-23: Ivan Parisi deciphered Claver's despatches from Milan and Naples and rebuilt his nomenclators 'casi por completo', and the decipherments printed in the appendix (docs of 1498-1502) are credited to him; Parisi, 'La decrittazione di cinque lettere cifrate di Juan Claver' (ASPN 137, 2019) covers 1500-02. Neither reads this 1497 passage. Web search (Juan Claver Milán 1497 carta cifrada) found nothing else."
-    },
-    "key_check": "No key tested. Key held in print: Parisi's reconstructed Claver nomenclators (1498 Ocaña despatches to the duke of Milan, and the Naples system of 1500-02, Parisi 2019 and the 2025 appendix) may cover the 1497 Milan system; not compared.",
-    "key_held": "Parisi's Claver tables (ASPN 2019; El embajador Claver 2025, appendix decipherments): not compared with this 1497 passage.",
-    "duplicates": "known.py 'Claver' and 'C_CRAR' (16 Nov 2026): the other Claver row is lead 1048 (RAH Salazar A-11 ff. 131-133, 23 Jun 1497), a different letter: the 2025 book cites 1048 separately (n. 183, report on the Gandía murder, printed by Suárez Fernández, Política internacional V docs 29-30). The CRAR catalogue entries 2854-2857 and 2865 are other letters.",
-    "verdict": "open"
-   },
-   "access": "online",
-   "access_note": "DARA PDF AHPZ_C_CRAR_000040.pdf (two page images), fetched 15 Nov 2026 by the earlier wave-17 run.",
-   "repository": "unidentified"
   },
   {
    "id": 2860,
