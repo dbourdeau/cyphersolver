@@ -29,17 +29,17 @@ Two blind passes per letter by two AI agents that had not seen the key sheet, th
 The lexicon (`LEXIQUE-FR-EARLY.txt`, 49,486 forms) is ours and not committed; `measure.py` and `measure2.py` read it from our working tree.
 
 ## Reading
-Rule: sure = the key gives the word from the transcription as it stands (choosing within each digit's set is the reading); probable `{x}` = one or two digits differ from the transcription; supplied `[x]`; unread `[...]`.
+Rule: sure = the key gives the word from the transcription as it stands (choosing within each digit's set is the reading); probable `{x}` = one or two digits differ from the transcription; supplied `[x]`; unread `‹…›` (`‹… n›` = n words).
 | Doc | Words | Sure | Probable | Supplied | Unread | Sure share |
 |---|---|---|---|---|---|---|
 | A | 487 | 427 | 30 | 2 | 28 | 0.877 |
-| B | 253 | 225 | 5 | 2 | 21 | 0.889 |
+| B | 254 | 224 | 5 | 3 | 22 | 0.882 |
 Read in part. On three portions of letter A over 300 characters, the share read by sense (sure + probable + supplied) is 0.991, 0.960 and 0.975; on the whole letter 0.943.
 
 ## Content and context
-- **A** (26 May 1726, to M. de Boissiran, conseiller at the « table royale » of Saintes — presumably the Table de marbre or a royal court seat; to be checked). The writer, who signs « votre très humble servante Poussard », denounces a woman, « hipocrite », « une femme si dangereuse », who spreads what happens in the house, went « dimanche dernier » to speak to two gentlemen, and boasts of her power over Boissiran's mind; the writer keeps to her room and says she will never abandon her blood and her « pauvres enfants ». Then estate business: the metayer wants the terms of the metairie and whether to mow the meadows, two calves; the metayer's father, recently dead, had stood surety for a miller who set fire to a mill, a loss of 2,000 livres.
-- **B** (Bordeaux, 14 Aug 1725): a mother to her son (« mon cher fils », « ta chère et sincère amie Poussard »): a passage by ship to Marennes, a maidservant, cabbages and shoes, a letter from his procureur, his cordonnier, and anger at his letter.
-- **C** (Bordeaux, July 1725): to be read; words seen: « mon cher fils », « Rochefort », « malheureuse », « crime », « ta tante Garnier », « adieu mon cher petit mari ».
+- **A** (26 May 1726, to M. de Boissiran, address « [conseiller ?] à la table royalle, à Saintes »; what the « table royale » of Saintes was is not known to us). The writer, who signs « votre très humble servante Poussard », denounces a woman she does not name, « hipocrite », « une femme si dangereuse », who repeats outside what happens in the house (« le logis »), went « dimanche dernier » to speak to two gentlemen, and boasts of her power over Boissiran's mind; the writer keeps to her room, speaks of « mes pauure enfans » and writes « je {j'abandonneray} jamais mon sang » (verb probable). Then estate business: the metayer wants the terms of the metairie and whether to mow the meadows, two calves; « {Son} pere », recently dead (probably the metayer's father), had stood « {caution} » for a miller who set fire to a mill, a loss of 2,000 livres.
+- **B** (Bordeaux, 14 Aug 1725): the writer calls him « mon cher fils », « mon cher ami », « mon bon amy » and signs « ta chere et {sincere} amie, Poussard »; she also speaks of « mon fils » in the third person and of « la Poussard » (« elle estoit fort en colere de ta lettre »), and letter C has « adieu mon cher petit mari ». The relation between writer and addressee (mother and son, wife and husband, or other) is **not established**. Contents: a passage by ship to Marennes, a maidservant, cabbages and shoes, a letter from his procureur, his cordonnier, and anger at his letter.
+- **C** (Bordeaux, July 1725): to be read; words seen: « mon cher fils », « chassée de Rochefort », « malheureuse », « crime », « ta tante Garnier », « adieu mon cher petit mari ».
 - Signature: the cipher 19688021 (A, B, and C) gives P/D-o-u-s-s-a-r-d; « Toussart » (T = 9) and « Goussart » (G = 6) are excluded. The pencil note on B reads « Anne Poussart ». The family relation of the Poussard writer(s) to Boissiran is to be established.
 
 ## Transcription doubts
@@ -53,8 +53,8 @@ Read in part. On three portions of letter A over 300 characters, the share read 
 
 ## Remaining gaps
 - Letter C, line starts of p. 1 (left half, 17 lines) and p. 3 (top, 6 lines) - blocker: illegible; out of focus on the photographs and p. 3 is holed; sharp photographs asked for through the volunteer.
-- Probable words of A (30) and holes of B (21) - blocker: not-attempted; a blind sign check of the 3/7, 4/6/9 and 0/9 shapes on the photographs is open and workable.
-- Names in A (p3.01, p3.05, Caux, Cauerne) and the identity of the Poussard writer(s) - blocker: not-attempted; genealogy of the Boissiran and Poussard families not yet searched.
+- Probable words of A (30) and holes of B (22) - blocker: not-attempted; a blind sign check of the 3/7, 4/6/9 and 0/9 shapes on the photographs is open and workable.
+- Names in A (p3.01, p3.05, Caux, Cauerne) and the identity of the Poussard writer(s) - blocker: not-attempted; genealogy not yet established. Leads (web, 27 Nov 2026, not checked on sources): a logis de Boissirand at Saint-Sulpice-de-Royan, lived in by a Samuel Robert until his death in 1740, bought in 1741 by André Bréjon, sieur de Grandchamp (Musée du patrimoine du Pays royannais inventory); the catalogue title « Robert de Boissiran » fits a Robert family; a noble Poussard family is attested in Saintonge, with no link found to the writer.
 - Table 1 of the key sheet (letter cipher) and the short line of photo 162013 - blocker: not-attempted; outside these three letters.
 
 ## Escalation
