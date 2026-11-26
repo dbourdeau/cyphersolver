@@ -59010,7 +59010,7 @@
    "score_note": "Scored during the 25 Nov 2026 thorough Geniza sweep (research/sweep_2026-11-25_geniza_thorough/); image viewed by the sweep",
    "ark": "",
    "scored": "sweep",
-   "vetting_note": "CUL Or.1080 6.12 (PGP 19773): four lines of fast cursive strokes on parchment seen at 1600 px; the script is not identified (shorthand, siyaq, numerals or an Indic or Ethiopic hand) so it is not shown to be a cipher; PGP says \"perhaps a shorthand or numerical notation\". Needs a palaeographer (Bohak, Elbaum) or comparison with Judaeo-Arabic shorthand and siyaq before it can be called open. (research/vetting_2026-11-25_geniza_and_backlog/vetting.json)"
+   "vetting_note": "CUL Or.1080 6.12 (PGP 19773): seen at 1316x2000 px plus 1424 px crops, four lines of about 45-60 rapid cursive stroke-and-hook signs and about 20 below; the script is not identified (Arabic-script or Hebrew-script shorthand, siyaq, numerals or another hand), no one has transcribed it, so ciphertext is not shown to exist. Needs a palaeographer (Bohak, Elbaum, a siyaq or Arabic shorthand specialist) or the CUL Genizah Unit to say what script it is; PGP: needs examination. (research/vetting_2026-11-26_geniza_c/vetting.json)"
   },
   {
    "id": 3857,
@@ -59048,7 +59048,7 @@
    "score_note": "Scored during the 25 Nov 2026 thorough Geniza sweep (research/sweep_2026-11-25_geniza_thorough/); image viewed by the sweep",
    "ark": "",
    "scored": "sweep",
-   "vetting_note": "T-S Ar.39.472 (PGP 20963): table of about 45 cells with red numbers, abjad headings, 4-3-2-1 numeral columns and non-word letter strings, seen in a native crop; it looks like a letter-divination (geomantic or zairja) table, not shown to be a cipher; PGP says accounts or calendrical reckoning are possible. Needs an Arabic magic-table specialist; do not offer as a cipher yet. (research/vetting_2026-11-25_geniza_and_backlog/vetting.json)"
+   "vetting_note": "T-S Ar.39.472 (PGP 20963): both sides seen at 1626x2000 px with a 2000 px crop; a structured table of about 45 cells, each with a red ordinal, a large abjad heading letter, a numeral column (9, 6, 4, 3, 2, 1 pattern) and rows of non-word Arabic letters; layout is that of a letter-science, divination or calculation table, not a message, but a coded text is not excluded. Needs an Arabic ilm al-huruf or jafr specialist to name the table type; no edition, no key and no decipherment found. (research/vetting_2026-11-26_geniza_c/vetting.json)"
   },
   {
    "id": 3858,
@@ -59090,7 +59090,42 @@
    "score_note": "Scored during the 25 Nov 2026 thorough Geniza sweep (research/sweep_2026-11-25_geniza_thorough/); image viewed by the sweep",
    "ark": "",
    "scored": "sweep",
-   "vetting_note": "CUL Or.1080 14.13 + 14.25 (PGP 31451, 31508): amulet; 14.13 has seven underlined lines of alif-like strokes mixed with eastern numerals, 14.25 has a diagram, ring-ended signs and strings; seen at 1400 px. The stroke-and-numeral lines read as abjad numbers or an amulet number series rather than as an encoded text; not shown to be a cipher. Needs the red instructions on 14.25 read and a wafq (magic square) check. (research/vetting_2026-11-25_geniza_and_backlog/vetting.json)"
+   "vetting": {
+    "date": "2026-11-26",
+    "by": "Daniel Bourdeau; Claude Code session (Claude Sonnet 5.5), 26 Nov 2026",
+    "seen": {
+     "kind": "scan",
+     "where": "CUDL IIIF images.lib.cam.ac.uk MS-OR-01080-00014-00013 (14.13 recto 1505x2000 px, verso 1200x1652 px, native 2568x3412) and MS-OR-01080-00014-00025 (14.25 recto 1542x2000 px, verso 1200x1604 px), viewed 26 Nov 2026",
+     "extent": "14.13 recto: seven underlined lines of about 20-30 marks each; verso shows only ink offset. 14.25 recto: strokes-and-numerals line, ring-ended signs and a diagram; verso: a boxed diagram of ring-ended charakteres with a three-line red Arabic caption.",
+     "cipher": "No cipher shown. 14.13 holds underlined strings of alif-like strokes mixed with Eastern Arabic digits (9, 8, 4) and a few hooked letters, the usual look of an amulet sign series; 14.25 holds ring-ended charakteres in a box and a red Arabic caption (basmala; protects against iron, guns, spears and whatever one fears). No plaintext, key or gloss is written on or with either leaf, and no linguistic content is evident in the marks."
+    },
+    "prior_art": {
+     "decode": "decode_search.py 26 Nov 2026 for Or.1080, Genizah, Geniza amulet: 0 Genizah records (Or.1080 matched only unrelated BnF Mary Queen of Scots rows).",
+     "tomokiyo": "cryptiana.web.fc2.com/code/unsolved.htm fetched 26 Nov 2026 and grepped for Genizah, Or.1080, amulet, Bohak, Taylor: no hit.",
+     "lasry": "cryptiana.web.fc2.com/code/GL.htm (Lasry's decipherments) fetched 26 Nov 2026 and grepped for the same terms: no hit.",
+     "edition": "No edition: PGP 31508 and 31451 carry no scholarship records; Schaefer-Shaked Magische Texte volumes searched on the web, nothing ties these leaves to them (not opened).",
+     "literature": "Web searches 26 Nov 2026 on the shelfmarks with amulet, with Bohak and with Schaefer-Shaked found only the PGP records, whose description is 'mysterious strings of Arabic letters and numbers', tag magic, and the protective caption."
+    },
+    "key_check": "The Bohak ring-letter key (T-S K24.19) is for Hebrew-script ring signs; the 14.25 charakteres have ring ends but are few and look free-form, and the stroke-numeral lines of 14.13 are not that system; no key was applied because no text was shown.",
+    "key_in_volume": "No key in the unit seen; Or.1080 J277 (alphabet and pair tables) not compared with these marks.",
+    "duplicates": "known.py searches for 'Or.1080 14.13' and 'Or.1080 14.25': only this lead (3858) and the 25 Nov sweep and vetting rows; leads.json and catalogue.json hold no other entry for the leaves or for PGP 31451 and 31508.",
+    "searches": [
+     {
+      "query": "\"Or.1080 14.25\" OR \"Or.1080 14.13\" Genizah amulet",
+      "result": "Only the PGP record 31508 (paraliterary, magic), amulet caption; no scholarship."
+     },
+     {
+      "query": "Schaefer-Shaked Magische Texte aus der Kairoer Geniza Or.1080 iron guns spears amulet",
+      "result": "Series found but nothing linking it to these leaves; sibling Or.1080 6.19 cites Shaked and Naveh instead."
+     },
+     {
+      "query": "decode_search.py Or.1080; Geniza amulet; cryptiana unsolved.htm and GL.htm grep",
+      "result": "No DECODE, Tomokiyo or Lasry record of these leaves."
+     }
+    ],
+    "verdict": "not_cipher",
+    "closed": "An amulet (red caption on 14.25 verso: protection against iron, guns, spears) whose marks are charakteres and stroke-and-digit sign series with no demonstrated linguistic content, so no ciphertext is shown; kept closed unless a magic-text specialist shows an encoded text. The 25 Nov sweep's 'letter-number code' was a guess from the stroke-and-digit lines."
+   }
   },
   {
    "id": 3859,
