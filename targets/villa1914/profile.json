@@ -86,6 +86,18 @@
   "fraction_read": 0.8571428571428571,
   "fraction_read_method": "measured",
   "fraction_read_source": "17/18 and 7/10 under the preferred readings; 16/18 and 6/10 under the stricter counts.",
+  "gaps": [
+   {
+    "item": "March group 69 (CH, contextual) and the first DA",
+    "blocker": "not-attempted",
+    "detail": "Untried 1914 sibling telegrams CEHM CMXV.35.3433.1-2 and 35.3492.2-3 are online."
+   },
+   {
+    "item": "June groups 33 and 37 unassigned; 99 is C or CH",
+    "blocker": "not-attempted",
+    "detail": "Same siblings; see NOTES.md Escalation."
+   }
+  ],
   "key_file": "key.tsv",
   "texts": [
    {
@@ -137,13 +149,36 @@
    }
   ]
  },
- "conditions": "unknown",
+ "conditions": {
+  "prior_solution": {
+   "exists": "partial",
+   "where": "Pencil reading of part of the June telegram on its reverse (CEHM CMXV.34.3344.1, 0002.jpg); none known for March.",
+   "found": "before attempt",
+   "used": true
+  },
+  "inputs": [
+   "images",
+   "cleartext context",
+   "known plaintext"
+  ],
+  "attack": "known plaintext",
+  "human_role": "Ashton Allen ran the work with OpenAI Codex and Python and filed it in issue #845; the maintainers reviewed it there.",
+  "models": [
+   "OpenAI Codex (contributor; exact model not recorded)"
+  ]
+ },
  "solution": [
   {
    "date": "2026-11-21",
    "kind": "verification",
    "what": "Replayed 137 groups and checked the linked March front, June front and June reverse. March is a consistency check.",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-26",
+   "kind": "access",
+   "what": "Integration review (AI agent, for the maintainers): fetched the CEHM visor fronts of the 1914 records listed with these in catalogue 1462. CMXV.35.3433.1-2 (27 Jul 1914) and CMXV.35.3492.2-3 (24 Aug 1914) are two-digit group telegrams with clear words between, untranscribed; CMXV.35.3464.1 (2 Aug 1914) is a plain-word code telegram. A glance at the first line of 3433.1-2 with the June values gave no Spanish; not a test. Next step: transcribe both and test the March and June keys on them.",
+   "result": "partial"
   }
  ]
 }
