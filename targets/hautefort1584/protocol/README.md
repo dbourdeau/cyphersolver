@@ -13,7 +13,13 @@ their SHA-256 are in `lot15-sent-files.sha256` (paths shortened to the folder; n
 | transcriptions B / C / H | B_f161r_*, C_f160v_*, fable2/H/H_f207v_* | f161/, f160/, f207v/ (read1, read2, read_final) |
 | sign codes hand 2 | GLYPHS-MAIN2.md | f207-209/GLYPHS-hand2.md |
 
-All hashes listed in PREREG*.sha256, B_/C_/H_*.sha256 match the committed files (checked 17 Nov 2026).
+The hashes listed in PREREG*.sha256 and B_/C_/H_*.sha256 match the committed files (checked 17 Nov 2026), with these exceptions:
+- `CHOIX-PORTION.sha256` has two lines for `CHOIX-PORTION.md`. The first (7e5f386f...) is the text before the addendum of 16 Nov;
+  the addendum was appended to it, so that text is the first 9 lines of the committed file (`head -n 9 CHOIX-PORTION.md | sha256sum`
+  gives 7e5f386f...). The second (536383c2...) is the amended text, the file committed here; it is also the hash in
+  `PREREG-main2.sha256`.
+- The lexicon files named in the sidecars (`lex/fr-1520s-diplomatic.txt`, `lex/fr-henri4.txt`, `lex/lexique-fr-cyphersolver.json`)
+  and the crops and images (`crops/*`, `fable2/crops/*`, `src/*.png`) are not committed, so their hashes cannot be checked here.
 PREREG-v4 (key_main1_v4.json, measure_v4.py) was never run; those two files are not committed.
 
 Timeline (file modification times, 16 Nov 2026, CET; by the contributor's record):
