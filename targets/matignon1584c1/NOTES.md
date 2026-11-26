@@ -94,7 +94,29 @@ Adour below Bayonne); the inhabitants of Bayonne; "soubz peine"; "faisant sembla
   0.743 (200 controls: max 0.347), decoded, not read (strict share 0.530, 44/83). Tomokiyo built his table partly
   from f. 54, so this test is not fully independent. fr. 3255 f. 85r ll. 1-16, 456 signs: 0.450 (max 0.425). The
   leaf carries a period interlinear decipherment (existing), and it is in another hand with sign forms absent from
-  the key. Blocker: no fresh portion is left. Details in #709.
+  the key. Blocker: no fresh portion is left. Files: `siblings/` (see "Sibling tests E1 and E2" below).
+
+## Sibling tests E1 and E2 (17 Nov 2026)
+
+Files in `siblings/`, in the layout of the working folder where they were frozen:
+- `PREREG-E.md` (sha256 f5542ba2…93df, in `PREREG-E.sha256`): the two portions, chosen before any transcription.
+- `transcription/E_pass1.txt`, `transcription/E_pass2.txt`: the two blind passes (both leaves in each file).
+- `transcription/E1_portion_final.txt` (f. 54r ll. 3-12, 432 labels) and `transcription/E2_portion_final.txt`
+  (f. 85r ll. 1-16, 456 labels): arbitrated on the image without a key; the rules are at the head of each file.
+- `PREREG-E2.md` (sha256 dcc633d7…b8de, in `PREREG-E2.sha256`): freezes the key, the scripts, the two passes and the
+  two arbitrated portions before any decoding. In it, `../key_D.tsv` is `key.tsv` here (same sha256 eb00fd85…3404,
+  also `f24/test_D/key_D.tsv`), and `../scripts/decode.py` is `scripts/decode.py` (9206a6a0…).
+- `scripts/run_measure_E.sh`: the single run (E1, then E2). It keeps the absolute paths of the working folder.
+- `mesure/E1_decoded.txt`, `mesure/E2_decoded.txt`: decoder output. `mesure/RESULTAT_E1.txt`, `mesure/RESULTAT_E2.txt`:
+  raw output of `measure.py` (321/432 = 74.3%, max shuffled 34.7%; 205/456 = 45.0%, max shuffled 42.5%).
+- `lecture/E1_reading_marked.txt`: the word-level reading of E1, made after the test (strict 44/83 = 0.530).
+
+To check: the sha256 of the two PREREG files against the hashes above; the hash lines of `PREREG-E2.md` against the
+files, with the two renames above; `python3 scripts/decode.py key.tsv siblings/transcription/E1_portion_final.txt`
+gives `siblings/mesure/E1_decoded.txt` byte for byte (the same for E2); `measure.py` on the decoded files gives the
+RESULTAT figures. Freeze order on the working disk (file times, CET; they are not proof): PREREG-E 13:21; passes 13:36
+and 13:46; arbitrated portions 13:59:11; PREREG-E2 13:59:26; decoded files and RESULTAT 13:59:34-39. The f. 85
+interlinear decipherment is recorded as that leaf's plaintext in `profile.json`. It is not transcribed here.
 
 ## Escalation
 
@@ -106,8 +128,10 @@ Adour below Bayonne); the inhabitants of Bayonne; "soubz peine"; "faisant sembla
 - [x] print: no printed decipherment found; Tomokiyo gives no reading.
 - [x] siblings: fr. 15567 f. 54 and fr. 3255 f. 85 transcribed (two blind passes, arbitrated) and measured on 17 Nov
   2026: 0.743 and 0.450, both below 0.85.
-- [x] retry: five single pre-registered tests. Test 1 passed (0.876). Tests 2 and 3 (0.767, 0.764) are below 0.85
-  and above max + 0.30. Tests 4 and 5 (siblings, 0.743 and 0.450) are below 0.85.
+- [x] retry: five single pre-registered tests, with three key files. A (0.876, passed) used
+  `holdout/key_frozen.tsv`. C (0.767) used `retest_C/key_C.tsv`, corrected on the development lines after A. D (0.764,
+  f. 24), E1 (0.743, f. 54) and E2 (0.450, f. 85) used `key_D.tsv` = `key.tsv` (= key_C + 6 = p). C, D, E1 and E2
+  are re-tests after development changes. All four are below 0.85; C and D are above max + 0.30.
 - [ ] second reader: no independent person has checked the transcription or the reading.
 
 ## Credits
