@@ -11,12 +11,13 @@ is used.
 
 ## What this changes
 
-Image 02r goes from 118 to **121 of 128 = 94.5 %** sure words (strict count): it stays **read in part**. It would reach
-122 of 128 = 95.3 % (read) only if the interlinear "5 1" of *suplica* are confirmed blind (plate 2511c, see point 3).
-The other folios are not recoded here.
+Image 02r goes from 118 to **122 of 128 = 95.3 %** sure words (strict count), over the 95 % bar. The last word,
+*suplica*, rests on plate 2511c (26 Nov 2026, see point 3). Whether the class of 02r follows is Daniel's decision
+(review of #984, point 2). The other folios are not recoded here.
 
-*Revised on 26 Nov 2026 after Daniel's review of #984:* *suplica* counts as probable until plate 2511c; plate 2511
-(three targets, under the schema's eight) is recorded in NOTES and as a solution step, not in `outcome.sign_check`.
+*Revised on 26 Nov 2026 after Daniel's review of #984:* plate 2511 (three targets, under the schema's eight) is
+recorded in NOTES and as a solution step, not in `outcome.sign_check`; the interlinear "5 1" of *suplica* were put on
+a blind plate (2511c), which confirmed them.
 
 ## How
 
@@ -39,19 +40,21 @@ The other folios are not recoded here.
    is read in place of the sign it corrects. It applies once here: at *suplica* (02r line 7) a sign is blotted out and
    "5 1" is written above it. The transcription had `#^51`; it now has `#~ 5 1`, and the key gives *suplica*.
    The two digits were read by the model, not by the checker, and on sheet C this hand's 1 was a 5 or a 7 at five
-   places: *suplica* stays **probable** until the two digits are checked blind (plate 2511c, sent to the checker on
-   26 Nov 2026).
+   places. **Plate 2511c (26 Nov 2026)** put the two digits blind, each against shapes 1, 5 and 7 cut from sure words
+   of 02r, with three hidden controls (a sure 1, 5 and 7 of the same hand): controls 3 of 3; the first digit answered
+   5, the second 1, as transcribed. The checker remarked of both that they are written above another line, which is
+   what they are. *suplica* is now **sure**. Rule, answers and results: `sign_check_2511c/`.
 
 ## Count of 02r (README rule; Daniel's count of 12 Nov as the base)
 
 | | words | sure | probable | restored | unresolved | strict | sure + probable |
 |---|---|---|---|---|---|---|---|
 | committed | 128 | 118 | 6 | 2 | 2 | 92.2 % | 96.9 % |
-| after this patch | 128 | **121** | 5 | 0 | 2 | **94.5 %** | 98.4 % |
-| if plate 2511c confirms "5 1" | 128 | 122 | 4 | 0 | 2 | 95.3 % | 98.4 % |
+| after this patch | 128 | **122** | 4 | 0 | 2 | **95.3 %** | 98.4 % |
 
-The three words that move: *contiene* and *senza* (restored -> sure, sheets C and R), *quasi* (probable -> sure, plate
-2511). *suplica* stays probable for now. Whole system Y with only 02r recoded: 634 of 692 sure = 91.6 % (was 91.2 %).
+The four words that move: *contiene* and *senza* (restored -> sure, sheets C and R), *quasi* (probable -> sure, plate
+2511), *suplica* (probable -> sure, interlinear rule and plate 2511c). The margin is one word. Whole system Y with only
+02r recoded: 635 of 692 sure = 91.8 % (was 91.2 %).
 
 ## Applying it
 
@@ -64,9 +67,9 @@ line. 05r, the held-out folio, is not touched, so `measure_1555.py` gives the sa
 
 Target-level files (in this branch, not in the patch): plate 2511 is a solution step of 25 Nov 2026 in `profile.json`
 and a "Sign plate 2511" section in NOTES, with the reading rule and the open point on *suplica*; it is not an
-`outcome.sign_check` entry (three targets, under the eight the schema asks for). If the patch is applied, img-02r keeps
-"read in part" with `read_share` 0.945; `fraction_read` 0.916 if only 02r is recoded. Whether a later blind call that
-crosses 95 % also moves the class is Daniel's decision. The target stays "read in part" (05r-05v, 06r-07r and system X).
+`outcome.sign_check` entry (three targets, under the eight the schema asks for). Plate 2511c (two targets) is recorded the same way. If the patch is
+applied, img-02r has `read_share` 0.953 (122/128); `fraction_read` 0.918 if only 02r is recoded. Whether 02r's class
+moves to "read" is Daniel's decision. The target stays "read in part" (05r-05v, 06r-07r and system X).
 
 ## Files (all in `targets/capilupi1546/dudout/`)
 - `PROPOSAL-2511.md`: this file.
@@ -74,6 +77,7 @@ crosses 95 % also moves the class is Daniel's decision. The target stays "read i
 - `RECOMPTE-2511.md`: the recount, word by word (in French).
 - `sign_check_2511/`: the selection rule and its amendment (in French; the `.sha256` files check them), the answers
   (`answers-2511-capilupi.json`) and their meaning in English (`results.tsv`).
+- `sign_check_2511c/`: plate 2511c, its rule (in French, `.sha256` checks it), the answers and `results.tsv`.
 - `SHA256SUMS-2511`: hashes of the files above.
 
 Images: Estense, Autografoteca Campori, cc. 80a-80h (Lodovico, CC BY-NC-SA), used for study only. No image, crop or

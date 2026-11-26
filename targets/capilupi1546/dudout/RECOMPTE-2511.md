@@ -9,7 +9,7 @@ irrésolus ‹x› comptés à part ; seuil strict = sûrs seuls (95 %).
 | contiene | 02r_07 | [restitué] | sûr | feuille R, q09 : 3 (était [9/3]) |
 | senza | 02r_15 | [restitué] | sûr | feuille C, q05 : 3 (était 9) |
 | quasi | 02r_10 | {probable} | sûr | planche 2511, q06 : 0 (était [6/0]) |
-| suplica | 02r_07 | {probable} | {probable} | règle du 25/11 : « 5 1 » interlinéaires du scribe lus ; chiffres lus par le modèle, planche aveugle 2511c en attente (revue de Daniel, #984, 26/11) |
+| suplica | 02r_07 | {probable} | sûr | règle du 25/11 (« 5 1 » interlinéaires du scribe lus) + planche aveugle 2511c du 26/11 (revue de Daniel, #984) : contrôles 3/3, 5 et 1 confirmés |
 | ‹a› → ‹as› | 02r_08 | irrésolu | irrésolu | planche 2511, q01 : deux signes « 6? 5? » ; « as » n'est pas un mot |
 
 Inchangés : {non}, {che}, {V. Ecel.} (un mot), {la} : probables ; ‹ao› : irrésolu. Io (06r, q05 = 1) reste {probable},
@@ -20,11 +20,10 @@ hors de ce correctif.
 |---|---|---|---|---|---|---|---|
 | déposé (12/11) | 128 | 118 | 6 | 2 | 2 | 92,2 % | 96,9 % |
 | après C + R | 128 | 120 | 6 | 0 | 2 | 93,8 % | 98,4 % |
-| **après 2511 + règle** | 128 | **121** | 5 | 0 | 2 | **94,5 %** | 98,4 % |
-| si la planche 2511c confirme « 5 1 » | 128 | 122 | 4 | 0 | 2 | 95,3 % | 98,4 % |
+| **après 2511 + règle + 2511c** | 128 | **122** | 4 | 0 | 2 | **95,3 %** | 98,4 % |
 
-02r reste « read in part » en sûrs seuls (seuil : 122/128) ; il passerait « read » si la planche 2511c confirme « 5 1 ».
+02r atteint le seuil en sûrs seuls (122/128) ; le changement de classe reste la décision de Daniel.
 
 ## Système Y entier, avec 02r seul recodé
-634 sûrs, 36 {x}, 18 [x], 4 ‹x› sur 692 : 91,6 % sûrs seuls, 96,8 % S + {x}.
-(Avec toutes les corrections locales C, R, C3 et 2511, non proposées ici, suplica en {probable} : 651/692 = 94,1 %.)
+635 sûrs, 35 {x}, 18 [x], 4 ‹x› sur 692 : 91,8 % sûrs seuls, 96,8 % S + {x}.
+(Avec toutes les corrections locales C, R, C3, 2511 et 2511c, non proposées ici : 652/692 = 94,2 %.)
