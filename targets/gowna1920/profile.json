@@ -74,6 +74,12 @@
    "kind": "verification",
    "what": "Filed the issue evidence and checked the line replay against the submitted transcription and key.",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-26",
+   "kind": "verification",
+   "what": "Page review: the page now gives the English text and context first, the key (INTERVAL alphabet paired with its reverse, 12 pairs and G alone) with a worked example, who did it and what was checked, and keeps the two measures apart. The chip is a word share (42 of 45); by letters the key values 186 of 190 (Longford), 185 of 190 (Granard) and 130 of 148 (damaged sheet). The 19 filed rows decode to the filed reading with the filed key (as NOTES records); no replay script exists. The reveal figure was given word marks. Not checked: the images, the date, the place attributions, the historical alphabets known beforehand.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -87,7 +93,7 @@
   ],
   "fraction_read": 0.9333333333333333,
   "fraction_read_method": "measured",
-  "fraction_read_source": "reading.md: 42 of 43 body cipher words (divide editorial hyphens); 42 of 45 with edge groups.",
+  "fraction_read_source": "reading.md: word share, 42 of 45 words sure (43 body words with editorial hyphens divided, plus the two unknown edge groups; 42 of 43 body words). The one unsure body word is the day, OENTH. Letter share, counted on transcription.tsv: Longford 186 of 190 signs valued (4 marked '?'), Granard 185 of 190 (5), damaged sheet 130 of 148 (18).",
   "verification": [
    "key confirms"
   ],
@@ -105,7 +111,7 @@
     "transcription": "transcription.tsv",
     "decryption": "literal.tsv",
     "state": "read in part",
-    "summary": "The Gowna police telegram, gowna.",
+    "summary": "Police telegram, said to date from 12 May 1920, describing two motor vehicles connected with the burning of Gowna barracks: a large dark open Ford, apparently old, and a grey covered van about the size of a police van. Three copies: Longford and Granard (190 letters each) and a damaged sheet (148 letters).",
     "reading": "reading.md",
     "read_share": 0.9333333333333333,
     "language": "en",
@@ -114,7 +120,8 @@
      "by": "Codex independent claims review, Gowna and Meza",
      "date": "2026-11-21",
      "note": "Read the combined English and checked the 19 literal lines. The complete telegram copies each have 190 positions. The body contains one doubtful day word and there are two open edge groups. The review used the filed transcriptions and did not recheck the images."
-    }
+    },
+    "label": "Telegram copies"
    }
   ],
   "key_file": "key.tsv",
@@ -132,6 +139,7 @@
    "date": "2026-11-21",
    "verdict": "not applicable",
    "notes": "The training fragment and copies repeat the same message; exact replay is evidence of fit, without a fresh independent test corpus."
-  }
+  },
+  "fraction_read_unit": "words"
  }
 }

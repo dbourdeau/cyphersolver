@@ -73,6 +73,12 @@
    "kind": "verification",
    "what": "Filed the issue evidence and checked the line replay against the submitted transcription and key.",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-26",
+   "kind": "verification",
+   "what": "Page review: rewrote the write-up from NOTES.md, profile.json and key.tsv. Rechecked the sign counts (437 signs, 390 P, 44 V, 3 U) against transcription.tsv and key.tsv, and marked word starts in the reveal file against cipher-reading.md. Not rechecked against the manuscript images, and no prior publication of this passage was searched for.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -85,7 +91,7 @@
   ],
   "fraction_read": 0.9615384615384616,
   "fraction_read_method": "measured",
-  "fraction_read_source": "cipher-reading.md: prior review counts 100 of 104 cipher words; count is 99 if anomalous sopiendo is a hole.",
+  "fraction_read_source": "100 of 104 cipher words sure (cipher-reading.md, prior review; 99 of 104 if the anomalous 'sopiendo' counts as a hole). Signs, a separate measure: 437 signs in transcription.tsv, 434 valued (390 matching the printed form, 44 provisional) and 3 unresolved (G31, G40, G42), plus a tear of about two signs.",
   "verification": [
    "key confirms"
   ],
@@ -108,7 +114,7 @@
     "transcription": "transcription.tsv",
     "decryption": "literal.tsv",
     "state": "read",
-    "summary": "Juan Claver’s cipher letter from Milan, claver.",
+    "summary": "The enciphered passage of Juan Claver's letter from Milan to the Catholic Monarchs: reports on the French king, the archduke and the King of the Romans, and on troops leaving a place in Burgundy.",
     "reading": "cipher-reading.md",
     "read_share": 0.9615384615384616,
     "translation": "cipher-translation.md",
@@ -118,7 +124,8 @@
      "by": "Codex independent claims review, Claver and Latin",
      "date": "2026-11-21",
      "note": "The Spanish cipher block and English translation are coherent with scattered holes. The review reproduced all 11 aligned lines and counted 437 cipher signs. Earlier review sampled the manuscript; this review used the committed transcriptions and explicit sign-doubt record."
-    }
+    },
+    "label": "The cipher passage of the letter of 19 June 1497"
    }
   ],
   "key_file": "key.tsv",
@@ -127,6 +134,7 @@
     "item": "three unresolved signs and lacuna at the tear",
     "blocker": "illegible"
    }
-  ]
+  ],
+  "fraction_read_unit": "words"
  }
 }

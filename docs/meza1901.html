@@ -64,21 +64,43 @@
 <div class="seal solved" aria-hidden="true"><span class="long">adjacent plaintext</span></div>
 </section>
 <main>
-<nav class="toc" aria-label="On this page"><span>On this page</span><a href="#cipher">The cipher and key</a><a href="#gaps">What remains open</a><a href="#texts">Full texts</a><a href="#sources">Sources</a></nav>
+<nav class="toc" aria-label="On this page"><span>On this page</span><a href="#text">What the letter says</a><a href="#cipher">The cipher and key</a><a href="#found">Where the key came from and how it was checked</a><a href="#gaps">What is deciphered and what remains open</a><a href="#texts">Full texts</a><a href="#sources">Sources</a></nav>
 <div class="callout glance">
 <p class="gl-top"><strong>At a glance</strong><span class="gl-res">Key from adjacent plaintext &middot; complete</span></p>
-<dl><dt>Where</dt><dd>CEHM DLI.34.6704.1</dd><dt>Credit</dt><dd>Anna Beck and Larry Beck</dd></dl>
+<dl><dt>Where</dt><dd>CEHM DLI.34.6704.1</dd><dt>Date and language</dt><dd>12 October 1901, Spanish</dd><dt>Words sure</dt><dd>24 of 24 enciphered words (21 straight from the key, 3 repaired); 142 of 142 groups valued</dd><dt>Credit</dt><dd>Anna Beck and Larry Beck</dd></dl>
 </div>
-<h2 id="cipher"><span class="num">01</span> The cipher and key</h2>
+<h2 id="text"><span class="num">01</span> What the letter says</h2>
+<p>The letter is dated 12 October 1901 and is addressed to General Don Bernardo Reyes. The writer, Meza Salinas, warns him that the Flores Mag&oacute;n brothers will publish a leaflet on the 23rd of the month in which Reyes and the president will be insulted, supposedly (<em>dizque</em>) to expose the immorality of the administration before the Pan-American Congress. Forty thousand copies have already been ordered printed. He adds that when he can speak with Reyes, or with someone trustworthy, he will report everything that has been done and is being done in the states, and signs as a friend who holds him in great esteem.</p>
+<p>Only part of the letter is enciphered. The date, the address and the greeting are plain, and so are a number of ordinary words in the body (<em>Los</em>, <em>el 23</em>, <em>en que ser&aacute;n</em>, <em>Vd. y el</em>, <em>con objeto dizque de poner de manifiesto ante el Congreso Pan Americano</em>, <em>Se repartir&aacute;n 40.000 que ya est&aacute;n mandadas</em>). The enciphered words are the sensitive ones: the name of the Flores Mag&oacute;n brothers, the publishing, the insults, the president, the immorality of the administration, the printing and the reporting. The Spanish, the literal output and an English translation are under Full texts below.</p>
+<p class="muted">Context not checked here: who Meza Salinas, Reyes and the Flores Mag&oacute;n brothers were, and which president is meant (the letter does not name him; the translation note says so). The sources of this project do not carry that history, and none is added.</p>
+<h2 id="cipher"><span class="num">02</span> The cipher and key</h2>
 <figure class="creveal" data-src="reveal/meza1901.json"></figure>
-<p>The Becks reconstructed 46 number values from the Spanish context in the letter. The key produces each of the 23 literal runs, covering 142 groups. It preserves the written forms florse, insultads and presidnntn. Brice Dudout pointed out a period typescript of the decipherment in the adjacent archive record.</p>
-<h2 id="gaps"><span class="num">02</span> What remains open</h2>
-<p>The period typescript settles the three words where the cipher output has slips. The earlier review counts 21 words recovered from the key and three from the period sheet. The contributors report that they did not use that sheet to derive the key. Their browsing chronology is unavailable.</p>
+<p>The cipher is a homophonic substitution: each letter of a word is written as a two-digit number, and a frequent letter has several numbers to choose from. Each enciphered word is a run of numbers joined by hyphens, one run per word (a word broken at a line end carries an <code translate="no">=</code> in the transcription). The letter has 142 groups in 23 runs, drawn from 46 distinct numbers. The project profile records no nomenclator (no numbers for whole words or names), so every word is spelled out letter by letter, without accents: the numbers do not encode accents or capitals.</p>
+<p>The filed key has 46 rows, for 20 letters. The table gives them in alphabetical order of the plain letter.</p>
+<table class="keystrip"><tbody><tr><th scope="row">Plain letter</th><td>a</td><td>b</td><td>c</td><td>d</td><td>e</td><td>f</td><td>g</td><td>h</td><td>i</td><td>j</td><td>l</td><td>m</td><td>n</td><td>o</td><td>p</td><td>r</td><td>s</td><td>t</td><td>u</td><td>z</td></tr><tr><th scope="row">Cipher numbers</th><td>39 49 59</td><td>36 56</td><td>38 48 58</td><td>34 44 54</td><td>31 41 51</td><td>57</td><td>55</td><td>32</td><td>30 40 50</td><td>99</td><td>28 88 98</td><td>24 84 94</td><td>21 81 91</td><td>25 85 95</td><td>22 92</td><td>19 69 79</td><td>18 68 78</td><td>63 73</td><td>14 64</td><td>60</td></tr></tbody></table>
+<p>One regularity is visible in the table: for <em>a</em>, <em>c</em>, <em>d</em>, <em>e</em> and <em>i</em> the three numbers end in the same digit and begin with 3, 4 and 5 (<em>e</em> is 31, 41, 51; <em>a</em> is 39, 49, 59; <em>i</em> is 30, 40, 50). The other letters do not follow it, and nothing further about the structure of the key is claimed here.</p>
+<p><strong>Worked example, line L01.</strong> After the plain <em>Los</em>, the first run is <span class="ct">57-98-95-69-68-51</span>. The key gives 57 = f, 98 = l, 95 = o, 69 = r, 68 = s, 51 = e, so the run spells <em>florse</em>, which is how the filed output keeps it. The period typescript has <em>Flores</em>: the last two letters are in the other order. The three slips of this kind are listed under &ldquo;What is deciphered and what remains open&rdquo; below.</p>
+<h2 id="found"><span class="num">03</span> Where the key came from and how it was checked</h2>
+<p>Anna Beck and Larry Beck, working with ChatGPT, reconstructed the 46 values from the Spanish context around the cipher, that is, from the plain words of this same letter, which suggest what each enciphered word must be. Their account says they did not use the separate period decipherment to build the key. Brice Dudout pointed to that typescript, filed at CEHM as DLI.34.6703.2, in the archive snapshot they consulted. &ldquo;Their browsing chronology is unavailable&rdquo; means that the original sequence of what the contributors looked at, and when, is lost, so it cannot now be shown whether they saw the typescript before they finished the key.</p>
+<p>What was checked: this project rechecked all 23 runs against the key, and every run reproduces the filed output with no mismatch. The typescript, a typed decipherment of the same letter, is transcribed in the repository and was compared with the filed reading. The earlier review of the submission checked the manuscript and cited the typescript for the three slips. What was not checked: the transcription of the numbers has not been recompared with the manuscript images by this project; it rests on the contributors&rsquo; descriptions of the images and the earlier review. The flourish before the signature is left open in the transcription; the typescript signs <em>T. Meza y Salinas</em>.</p>
+<p><strong>This is a fit, not an independent test.</strong> The key was inferred from this same letter, so reproducing the letter with it shows that the key is consistent with the letter, not that it was found blind. The profile records the validation as &ldquo;not applicable&rdquo; for that reason. The period typescript is adjacent plaintext: it exists in the archive and was available to check the words, and it is not an unseen control.</p>
+<h2 id="gaps"><span class="num">04</span> What is deciphered and what remains open</h2>
+<p>Two measures are kept apart. Of the <strong>groups</strong>, 142 of 142 carry a value in the key. Of the <strong>words</strong>, 24 of 24 enciphered words are sure: 21 come straight from the key, and 3 are repaired with the period typescript. The 23 runs give 24 words because run C14, <em>hablarcon</em>, is two words, <em>hablar con</em>, written without a break. No group is unvalued and no word is left open.</p>
+<p>What is not clean, and is listed so that it is not lost:</p>
+<ul>
+<li><em>florse</em> (run C01) for <em>Flores</em>: the last two letters are in the other order;</li>
+<li><em>insultads</em> (C09) for <em>insultados</em>: an <em>o</em> is missing before the final <em>s</em>;</li>
+<li><em>presidnntn</em> (C10) for <em>presidente</em>: the seventh and last letters, which should be <em>e</em>, are both written 21, a number the key gives to <em>n</em>; why is not known;</li>
+<li><em>hablarcon</em> (C14) is two words written together;</li>
+<li>the period typescript differs from the filed letter in three places: it omits <em>de este mes</em> after <em>el 23</em>, it inserts <em>Sr.</em> before <em>Presidente</em>, and it has <em>alguno</em> where the key gives <em>alguien</em>;</li>
+<li>the flourish before the signature is unresolved in the transcription; the key does not touch it;</li>
+<li>not checked: the history of the people and events named (section 01) and the transcription against the images (section 03).</li>
+</ul>
 <!-- texts:start -->
 <h2 id="texts">Full texts</h2>
 <p>The transcription and the decryption of every document on this page, so that the reading can be used and checked. Short files are shown here; all are in the repository.</p>
-<h3>meza <span class="muted">(CEHM DLI.34.6704.1)</span></h3>
-<p>Meza Salinas warns Bernardo Reyes about a pamphlet, meza.</p>
+<h3>The letter of 12 October 1901, 23 enciphered runs in plain Spanish</h3>
+<p>Meza Salinas warns General Bernardo Reyes that the Flores Magón brothers will publish a leaflet on 23 October insulting him and the president, run 40,000, and offers to report on the states.</p>
 <details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/meza1901/transcription.txt">transcription.txt</a></p><pre translate="no">line	transcription
 H01	12 de Octubre de 1901.
 H02	Sr. Gral.
@@ -110,7 +132,7 @@ Los florse magon publicaran el 23 de este mes una hoja suelta en que serán insu
 Cuando pueda hablarcon ud ó con alguien de confianza comunicare a ud cuanto se ha hecho y se está haciendo en los estados.
 Su amigo que lo estima mucho.
 [signature: Meza y Salinas; preceding initial/flourish unresolved]</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/meza1901/reading.md">reading.md</a></p><pre translate="no">Flores, insultados and presidente are attested by the contemporary typescript. The literal file preserves the cipher?s spellings. Accents, capitalization, word spacing and sentence punctuation are normalized; accents are not encoded by the numerical groups.
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/meza1901/reading.md">reading.md</a></p><pre translate="no">Flores, insultados and presidente are attested by the contemporary typescript. The literal file preserves the cipher’s spellings. Accents, capitalization, word spacing and sentence punctuation are normalized; accents are not encoded by the numerical groups.
 
 12 de octubre de 1901.
 
@@ -142,7 +164,10 @@ Meza Salinas
 `Brothers` makes the plural `Los ... Magón` explicit; `hermanos` is not itself written. `Leaflet` renders `hoja suelta`, a printed sheet or broadside. `Supposedly` preserves the writer&#x27;s distancing `dizque`. `The states` must not be expanded to `the United States`. The text does not name the president; identifying the officeholder is historical context rather than a decrypted name. No individual brother is named in the letter.</pre></details>
 <p class="ftext">Key: <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/meza1901/key.tsv">key.tsv</a></p>
 <!-- texts:end -->
-<h2 id="sources"><span class="num">03</span> Sources</h2>
+<!-- replay:start -->
+<figure class="sreplay" data-src="steps/meza1901.json"></figure>
+<!-- replay:end -->
+<h2 id="sources"><span class="num">05</span> Sources</h2>
 <ul><li><a href="https://www.cehm.org.mx/Buscador/FichaBasica/120053?Tipo=A">Archive or manuscript</a></li><li><a href="https://github.com/dbourdeau/cyphersolver/issues/791">Contributor submission and review</a></li><li><a href="https://www.cehm.org.mx/Buscador/FichaBasica/120051?Tipo=A">Period typescript, CEHM DLI.34.6703.2</a></li><li>The <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/meza1901/contemporary-typescript.txt">transcribed period typescript</a> confirms all three repaired words. It has <i>alguno</i> where the cipher gives <i>alguien</i>, and omits <i>de este mes</i>.</li></ul>
 <p class="muted">Transcription, key and reading in <a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/meza1901">the repository folder</a>.</p>
 <!-- cite:start -->
@@ -160,10 +185,11 @@ Meza Salinas
 <!-- cite:end -->
 </main>
 <footer><div class="in">
-  <span>Daniel Bourdeau, September 2026 &middot; Text released under CC BY 4.0 &middot; Archive images linked in Sources</span>
+  <span>Daniel Bourdeau, November 2026 &middot; Text released under CC BY 4.0 &middot; Archive images linked in Sources</span>
   <nav aria-label="Footer"><a href="index.html">Overview</a><a href="method.html">Method and review</a><a href="bell1900.html" rel="prev">&larr; Bell to Mabel Bell 1900 1900</a><a href="army1901in.html" rel="next">Japanese Army kana table, 1901 1901 &rarr;</a><a href="https://github.com/dbourdeau/cyphersolver/issues/new?template=verification.yml&amp;title=Verification%3A+meza1901&amp;page=https%3A%2F%2Fcyphersolver.com%2Fmeza1901.html" rel="noopener">Contest or verify this reading &#8599;</a><a href="corrections.html">Corrections</a><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">Code &#8599;</a><a href="contribute.html#email">Contact &#9993;</a><a href="feed.xml">Feed</a><a href="#top">Top &uarr;</a></nav>
 </div></footer>
 <script src="cipher-reveal.js?v=2ca93935" defer></script>
+<script src="solve-replay.js?v=572104d3" defer></script>
 <script src="zoom.js?v=572104d3" defer></script>
 <script src="site.js?v=572104d3"></script>
 </body>

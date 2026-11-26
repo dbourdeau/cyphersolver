@@ -59,46 +59,69 @@
 <p class="readjump"><a href="#texts">Go to the full text &darr;</a></p><!-- /readjump -->
 <p class="sub">The letter mixes Italian prose with numerical cipher, including a passage about Piccolomini’s return.</p>
 <p class="meta">Daniel Bourdeau &middot; posted <time datetime="2026-11-26">26 November 2026</time></p>
-<p class="outcome">Method: <a href="glossary.html#adjpt" title="key recovered based on adjacent plaintext">key from adjacent plaintext</a> &middot; Extent: partial (78% of cipher tokens valued, not the word count)</p><!-- /outcome -->
+<p class="outcome">Method: <a href="glossary.html#adjpt" title="key recovered based on adjacent plaintext">key from adjacent plaintext</a> &middot; Extent: partial (78% of cipher words sure, not the sign count)</p><!-- /outcome -->
 <p class="credits">Contributed by <a href="contributors.html#annabeck">Anna Beck</a> (solution) and <a href="contributors.html#beck">Larry Beck</a> (solution)</p><!-- /credits -->
 <div class="seal partial" aria-hidden="true"><span class="long">adjacent plaintext</span></div>
 </section>
 <main>
-<nav class="toc" aria-label="On this page"><span>On this page</span><a href="#cipher">The cipher and key</a><a href="#gaps">What remains open</a><a href="#texts">Full texts</a><a href="#sources">Sources</a></nav>
+<nav class="toc" aria-label="On this page"><span>On this page</span><a href="#text">What the text says</a><a href="#cipher">The cipher and key</a><a href="#gaps">What is deciphered and what remains open</a><a href="#texts">Full texts</a><a href="#sources">Sources</a></nav>
 <div class="callout glance">
-<p class="gl-top"><strong>At a glance</strong><span class="gl-res">Key from adjacent plaintext &middot; partial (78% of cipher tokens valued, not the word count)</span></p>
-<dl><dt>Where</dt><dd>SOA Zámrsk, RA Piccolominiů, inv. 25054</dd><dt>Credit</dt><dd>Anna Beck and Larry Beck</dd></dl>
+<p class="gl-top"><strong>At a glance</strong><span class="gl-res">Key from adjacent plaintext &middot; partial (78% of cipher words sure, not the sign count)</span></p>
+<dl><dt>Where</dt><dd>SOA Zámrsk, RA Piccolominiů, inv. 25054</dd><dt>Words sure</dt><dd>25 of 32 (78%) cipher words; 157 of 157 symbols valued</dd><dt>Credit</dt><dd>Anna Beck and Larry Beck</dd></dl>
 </div>
-<h2 id="cipher"><span class="num">01</span> The cipher and key</h2>
+<h2 id="text"><span class="num">01</span> What the text says</h2>
+<p>The letter is in Italian. Most of it is plain; some words are written in two-digit numbers. The three passages that carry cipher say the following (square brackets mark what is uncertain).</p>
+<blockquote>
+<p>[Someone] had a conversation with me and reassured me by saying that he [two cipher words unresolved] certain [of] Your Excellency&rsquo;s return.</p>
+<p>&hellip; it seems to me that he thinks little of us. And [S.A., a title not yet expanded] replied to me: &ldquo;It is true: of our generals, the enemy values only Piccolomini.&rdquo;</p>
+<p>&hellip; if Your Excellency is to be assigned to return there, you would do me a great favour by letting me know.</p>
+</blockquote>
+<p>So the writer, who seems to be an officer, reports a talk about the addressee&rsquo;s return and the remark that the enemy values only Piccolomini among &ldquo;our generals&rdquo;, and asks to be told of the assignment. The plain lines around the cipher, as the contributors transcribed them (several words bracketed as uncertain), mention an enemy who may attack again, ask that the letter be shown only to the secretary who will decipher it, and promise to add any news below. The translation does not say who the enemy is, where the return is to, or who the addressee is.</p>
+<p class="muted">The sources give no date for the letter. The notes record no basis for the year the site&rsquo;s listing gives (1646), and that year was not checked here. The title that looks like S.A. recurs on lines 4, 6, 8, 11, 15 and 16, and its expansion is open. Full Italian and English texts are under Full texts below.</p>
+<h2 id="cipher"><span class="num">02</span> The cipher and key</h2>
 <figure class="creveal" data-src="reveal/piccolomini25054.json"></figure>
-<p>The 17-value table comes from the visible annotations and Italian context. A deciphered sibling, inv. 25040, provides a comparison with the same values, including the title and name Baron Engfurt. The replay covers 157 figures in 15 runs.</p>
-<h2 id="gaps"><span class="num">02</span> What remains open</h2>
-<p>Eight of the 25 sure words stand under glosses. Seven are still doubtful. The surviving cipher-bearing lines are filed with the surrounding clear words where the contributors transcribed them.</p>
+<p>The cipher is a simple substitution: each plain letter is written as a two-digit number, and the same number always stands for the same letter. The key has 17 values, one letter per number, with no second number for any letter (no homophones) and no code words for names or phrases (no nomenclator). The letter did not come with its key; the key was recovered from the letter itself.</p>
+<table class="keystrip"><tbody><tr><th scope="row">Cipher number</th><td>12</td><td>13</td><td>14</td><td>15</td><td>21</td><td>22</td><td>24</td><td>25</td><td>31</td><td>32</td><td>33</td><td>34</td><td>41</td><td>44</td><td>51</td><td>52</td><td>54</td></tr><tr><th scope="row">Plain letter</th><td>a</td><td>l</td><td>o</td><td>h</td><td>c</td><td>d</td><td>u</td><td>s</td><td>e</td><td>p</td><td>m</td><td>t</td><td>g</td><td>i</td><td>b</td><td>n</td><td>r</td></tr></tbody></table>
+<p>All 157 signs of the letter are in this table. Number 51 (b) does not occur in the letter, so the letter uses 16 of the 17 values. The key has no value for 11, 23 or 35, and none of those numbers appears in the transcription.</p>
+<p>Worked example, the first line of the cipher: <span class="ct">15 12</span> is h, a, <em>ha</em> (&ldquo;has&rdquo;); <span class="ct">34 31 52 24 34 14</span> is t, e, n, u, t, o, <em>tenuto</em> (&ldquo;held&rdquo;); <span class="ct">33 31 21 14</span> is m, e, c, o, <em>meco</em> (&ldquo;with me&rdquo;). Together: <em>ha tenuto meco un discorso</em>, &ldquo;had a conversation with me&rdquo;.</p>
+<p>The literal output keeps the transcription&rsquo;s strings exactly as they stand, and the reading repairs them. In the transcription a slash is a visible separator that sometimes splits a word, so the literal output has <em>hatenut o</em> and the reading joins it as <em>ha tenuto</em>. Some strings have the right letters with the wrong word division (<em>deino strigenerali</em> for <em>de i nostri generali</em>, <em>stimac he</em> for <em>stima che</em>). Others are damaged: <em>cistmi</em> for <em>ci stimi</em> (one sign missing) and <em>ritornatci</em> for <em>ritornarci</em> (the eighth sign of the run is provisionally 34, t, with 54, r, as the alternative). The strings <em>poiea</em> and <em>eder</em> are kept as they stand, not replaced by fluent Italian. The figure above plays the literal output with its words spaced as the reading divides them.</p>
+<p><strong>Who did it and how it was checked.</strong> Anna Beck and Larry Beck, working with ChatGPT, recovered the 17 values from the small period glosses (plain letters written above the numbers) listed for frame 453, together with the Italian context; the notes count eight of the 25 sure words as covered by a period gloss. V&aacute;clav Vlnas&rsquo;s thesis supplied the photographs. The contributors compare the key with a deciphered sibling letter, inv. 25040, including the title and name Baron Engfurt. That comparison, the name, and the sibling&rsquo;s &ldquo;same values&rdquo; are the contributors&rsquo; statements and are <strong>not checked</strong> here. The notes say the table printed in Vlnas&rsquo;s thesis differs from this one; they do not say in which values. Every observation about the images (the raised correction on the fifth sign of line 1, the glosses, the crowded final strokes on line 2) rests on the contributors&rsquo; descriptions and an earlier review, and this project has not recompared the transcription with the images. What was checked here is that every one of the 157 signs in the transcription has a value in the key and that the literal output follows from those values.</p>
+<h2 id="gaps"><span class="num">03</span> What is deciphered and what remains open</h2>
+<p>Two measures are kept apart. Of the <strong>157 signs</strong>, all 157 have a value in the key. Of the <strong>32 cipher words</strong>, <strong>25</strong> are sure (78%), below the 95% the project requires, and seven are doubtful, so the entry stays partial on the word measure. The notes give the blocker as illegibility in the photographs and do not itemise the seven words. The passages they flag are:</p>
+<ul>
+<li><em>tenuto</em> on line 1, whose fifth sign uses a raised correction (52, n);</li>
+<li><em>poiea</em> on line 2 and <em>eder</em> on line 3, kept as written and unresolved;</li>
+<li><em>ecclentia</em> on line 4, nine letters, probably &ldquo;Excellency&rdquo;, with missing letters that are not silently inserted;</li>
+<li><em>stimi</em> on line 7, where the transcription has <em>stmi</em> and the <em>i</em> is supplied;</li>
+<li><em>ritornarci</em> on line 14, with 34 (t) provisional and 54 (r) the alternative;</li>
+<li>the clear title that looks like S.A., whose expansion is open.</li>
+</ul>
+<p class="muted">That is six cipher words (the title is clear text), and the notes do not say which seventh word is doubtful, so none is guessed. The sibling comparison, the name Baron Engfurt, the difference from Vlnas&rsquo;s printed table and the date are marked not checked above.</p>
 <!-- texts:start -->
 <h2 id="texts">Full texts</h2>
 <p>The transcription and the decryption of every document on this page, so that the reading can be used and checked. Short files are shown here; all are in the repository.</p>
-<h3>25054 <span class="muted">(SOA Zámrsk, RA Piccolominiů, inv. 25054)</span> <span class="st partial">read in part</span></h3>
-<p>A partially deciphered letter in the Piccolomini archive, 25054.</p>
+<h3>Letter with cipher on frame 453 <span class="st partial">read in part</span></h3>
+<p>An officer writes in Italian, with numbers for some words, about a conversation in which he was reassured of the addressee&#x27;s return. He quotes the reply that the enemy values only Piccolomini among their generals, and asks to be told if the addressee is assigned to return there.</p>
 <p class="muted">Builds coherent sentences, but under the read bar of 95% of words read as sense (78% here); the holes are marked in the reading.</p>
-<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/piccolomini25054/physical-lines.md">physical-lines.md</a></p><pre translate="no">**Inv. 25054, frame 453, film 31/2.** The photograph has 20 lines of base text. These are the 11 lines containing cipher, numbered both by position on the leaf and by the labels in our first transcription. Lines 5, 6, 11, 12 and 16 through 20 contain only Italian prose. Small plaintext letters *above* the numbers are recorded separately in the [gloss inventory](https://github.com/dbourdeau/cyphersolver/issues/790#issuecomment-7034991952).
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/piccolomini25054/physical-lines.md">physical-lines.md</a></p><pre translate="no">Inv. 25054, frame 453, film 31/2. The photograph has 20 lines of base text. These are the 11 lines containing cipher, numbered both by position on the leaf and by the labels in our first transcription. Lines 5, 6, 11, 12 and 16 through 20 contain only Italian prose. Small plaintext letters above the numbers are recorded separately in the [gloss inventory](https://github.com/dbourdeau/cyphersolver/issues/790#issuecomment-7034991952).
 
-Backticks enclose the numbers. Each pair corresponds to one cipher sign. A slash denotes a visible separator even when it splits a word. The fifth sign on A1 uses the raised correction, 52. Word spacing, punctuation and points in the apparent title S.A. are editorial where indistinct. A question mark in brackets flags a doubtful reading of the handwriting. A terminal hyphen records continuation on the next physical line.
+Angle brackets ⟨ ⟩ enclose each run of numbers. Each pair corresponds to one cipher sign. A slash denotes a visible separator even when it splits a word. The fifth sign on A1 uses the raised correction, 52. Word spacing, punctuation and points in the apparent title S.A. are editorial where indistinct. A question mark in brackets flags a doubtful reading of the handwriting. A terminal hyphen records continuation on the next physical line.
 
 | Physical line | Run | Numbers and clear words in their original order |
 | --- | --- | --- |
-| 1 | A1 | `15 12 34 31 52 24 34 / 14 / 33 31 21 14 / 24 52 / 22 44 25 21 14 54 25 14 / 31` |
-| 2 | A2a, A2b | `34 / 21 14 52 25 14 13 12 34 14 / 33 44` col [dirmi?], ch’egli `32 14 44 31 12` |
-| 3 | A3 | `31 / 22 31 54 / 21 31 54 34 14 / 44 13 / 54 44 34 14 54 52 14 / 22 44` |
-| 4 | A4 | `24 14 25 34 54 12 / 31 21 21 13 31 52 34 44 12 /` una volta [S.A.?] [in?] mar- |
-| 7 | B1 | si ch[e?] li vedeuo, soggiungendo mi pare ch’ `21 44 25 34 33 44` |
-| 8 | B2a, B2b | `32 14 21 14` e [S.A.?] mi rispose è uero, L’Inimico `22 31 44 52 14` |
-| 9 | B3a, B3b | `25 34 54 44 41 31 52 31 54 12 13 44` non `25 34 44 33 12 21` |
-| 10 | B4 | `15 31 / 44 13 / 32 44 21 14 13 14 33 44 52 44` sì ch[e?] V.E. può argo- |
-| 13 | C1 | ticolare [perch’?] no[n] uorei mai si sapesse, se V.E. `25 12 54 12 / 22 31 25` |
-| 14 | C2a, C2b | `34 44 52 12 34 14 /` à `54 44 34 14 54 52 12 34 21 44` mi farà |
-| 15 | C3 | so[m?]ma gratia `22 44 12 24 44 25 12 54 33 31 13 14` e se [S.A.?] |
+| 1 | A1 | ⟨15 12 34 31 52 24 34 / 14 / 33 31 21 14 / 24 52 / 22 44 25 21 14 54 25 14 / 31⟩ |
+| 2 | A2a, A2b | ⟨34 / 21 14 52 25 14 13 12 34 14 / 33 44⟩ col [dirmi?], ch’egli ⟨32 14 44 31 12⟩ |
+| 3 | A3 | ⟨31 / 22 31 54 / 21 31 54 34 14 / 44 13 / 54 44 34 14 54 52 14 / 22 44⟩ |
+| 4 | A4 | ⟨24 14 25 34 54 12 / 31 21 21 13 31 52 34 44 12 /⟩ una volta [S.A.?] [in?] mar- |
+| 7 | B1 | si ch[e?] li vedeuo, soggiungendo mi pare ch’ ⟨21 44 25 34 33 44⟩ |
+| 8 | B2a, B2b | ⟨32 14 21 14⟩ e [S.A.?] mi rispose è uero, L’Inimico ⟨22 31 44 52 14⟩ |
+| 9 | B3a, B3b | ⟨25 34 54 44 41 31 52 31 54 12 13 44⟩ non ⟨25 34 44 33 12 21⟩ |
+| 10 | B4 | ⟨15 31 / 44 13 / 32 44 21 14 13 14 33 44 52 44⟩ sì ch[e?] V.E. può argo- |
+| 13 | C1 | ticolare [perch’?] no[n] uorei mai si sapesse, se V.E. ⟨25 12 54 12 / 22 31 25⟩ |
+| 14 | C2a, C2b | ⟨34 44 52 12 34 14 /⟩ à ⟨54 44 34 14 54 52 12 34 21 44⟩ mi farà |
+| 15 | C3 | so[m?]ma gratia ⟨22 44 12 24 44 25 12 54 33 31 13 14⟩ e se [S.A.?] |
 
-On line 2 the earlier submission read *col dire*. The word may be *dirmi*; the final strokes are crowded. On line 7 *si* completes *rispo-* in the preceding line. On lines 10-11, *argo-* continues as *mentare i sensi* (argomentare). On line 13 *ticolare* completes *par-* on the preceding line. The same contracted form resembling *S.A.* recurs on lines 4, 6, 8, 11, 15 and 16. Its expansion and the person&#x27;s identity remain open. On line 14 the eighth sign of the second run is still provisionally **34** (alternative **54**). The 11 rows retain 15 runs and 157 signs; the additional slashes written at the transition into prose do not add any signs. [Vlnas, appendix photograph 25054.jpg](https://theses.cz/id/p3p2kb/P_lohy_A_a_B.zip)
+On line 2 the earlier submission read col dire. The word may be dirmi; the final strokes are crowded. On line 7 si completes rispo- in the preceding line. On lines 10-11, argo- continues as mentare i sensi (argomentare). On line 13 ticolare completes par- on the preceding line. The same contracted form resembling S.A. recurs on lines 4, 6, 8, 11, 15 and 16. Its expansion and the person&#x27;s identity remain open. On line 14 the eighth sign of the second run is still provisionally 34 (alternative 54). The 11 rows retain 15 runs and 157 signs; the additional slashes written at the transition into prose do not add any signs. [Vlnas, appendix photograph 25054.jpg](https://theses.cz/id/p3p2kb/P_lohy_A_a_B.zip)
 
 [The nine clear Italian lines](clear-italian-lines.md) are filed separately.</pre></details>
 <details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/piccolomini25054/literal.tsv">literal.tsv</a></p><pre translate="no">line	plain
@@ -117,13 +140,13 @@ C1	sara des
 C2a	tinato
 C2b	ritornatci
 C3	diauisarmelo</pre></details>
-<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/piccolomini25054/reading.md">reading.md</a></p><pre translate="no">A: `ha tenuto meco un discorso et consolato mi` [clear: `col [dirmi?], ch&#x27;egli`] `[poiea] [eder] certo il ritorno di uostra ecclentia`.
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/piccolomini25054/reading.md">reading.md</a></p><pre translate="no">A: ha tenuto meco un discorso et consolato mi [clear: col [dirmi?], ch&#x27;egli] [poiea] [eder] certo il ritorno di uostra ecclentia.
 
-B: [clear: `mi pare ch&#x27;`] `ci st[i]mi poco` [clear: `e [S.A.?] mi rispose è vero l&#x27;inimico`] `de i nostri generali` [clear: `non`] `stima che il Picolomini`.
+B: [clear: mi pare ch&#x27;] ci st[i]mi poco [clear: e [S.A.?] mi rispose è vero l&#x27;inimico] de i nostri generali [clear: non] stima che il Picolomini.
 
-C: [clear: `se V.E.`] `sara destinato` [clear: `a`] `ritorna{t→r}ci` [clear: `mi farà somma gratia`] `di auisarmelo`.
+C: [clear: se V.E.] sara destinato [clear: a] ritorna{t→r}ci [clear: mi farà somma gratia] di auisarmelo.
 
-The broken strings **poiea eder** are preserved, not replaced by fluent Italian. In B, the inserted i is explicitly bracketed. In C, the proposed t-to-r repair is explicit. *Ecclentia* is the literal nine-letter cipher result; its likely intended sense is “Excellency,” but the missing letters are not silently inserted. Period u/v spelling is retained in the literal data.</pre></details>
+The broken strings poiea eder are preserved, not replaced by fluent Italian. In B, the inserted i is explicitly bracketed. In C, the proposed t-to-r repair is explicit. Ecclentia is the literal nine-letter cipher result; its likely intended sense is “Excellency,” but the missing letters are not silently inserted. Period u/v spelling is retained in the literal data.</pre></details>
 <details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/piccolomini25054/translation.md">translation.md</a></p><pre translate="no">These are the three cipher-bearing passages, with enough clear Italian to connect them. Square brackets identify editorial qualifications. This is not a translation of every clear word on the page.
 
 &gt; [Someone] had a conversation with me and reassured me by saying that he [two cipher words unresolved] certain [of] Your Excellency&#x27;s return.
@@ -132,10 +155,13 @@ The broken strings **poiea eder** are preserved, not replaced by fluent Italian.
 &gt;
 &gt; ... if Your Excellency is to be assigned to return there [one group uncertain in “ritornarci”], you would do me a great favour by letting me know.
 
-“Values only Piccolomini” renders *non stima che il Picolomini*. It does not identify who the enemy is or where Piccolomini is to return. The historical context does not supply missing cipher letters.</pre></details>
+“Values only Piccolomini” renders non stima che il Picolomini. It does not identify who the enemy is or where Piccolomini is to return. The historical context does not supply missing cipher letters.</pre></details>
 <p class="ftext">Key: <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/piccolomini25054/key.tsv">key.tsv</a></p>
 <!-- texts:end -->
-<h2 id="sources"><span class="num">03</span> Sources</h2>
+<!-- replay:start -->
+<figure class="sreplay" data-src="steps/piccolomini25054.json"></figure>
+<!-- replay:end -->
+<h2 id="sources"><span class="num">04</span> Sources</h2>
 <ul><li><a href="https://theses.cz/id/p3p2kb/">Archive or manuscript</a></li><li><a href="https://github.com/dbourdeau/cyphersolver/issues/790">Contributor submission and review</a></li></ul>
 <p class="muted">Transcription, key and reading in <a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/piccolomini25054">the repository folder</a>.</p>
 <!-- cite:start -->
@@ -153,10 +179,11 @@ The broken strings **poiea eder** are preserved, not replaced by fluent Italian.
 <!-- cite:end -->
 </main>
 <footer><div class="in">
-  <span>Daniel Bourdeau, September 2026 &middot; Text released under CC BY 4.0 &middot; Archive images linked in Sources</span>
+  <span>Daniel Bourdeau, November 2026 &middot; Text released under CC BY 4.0 &middot; Archive images linked in Sources</span>
   <nav aria-label="Footer"><a href="index.html">Overview</a><a href="method.html">Method and review</a><a href="rupert.html" rel="prev">&larr; Rupert and Digby-coach ciphers 1645&ndash;46 1645&ndash;46</a><a href="brienne1067.html" rel="next">Brienne to Queen of Poland, Compiègne,&hellip; 1646 &rarr;</a><a href="https://github.com/dbourdeau/cyphersolver/issues/new?template=verification.yml&amp;title=Verification%3A+piccolomini25054&amp;page=https%3A%2F%2Fcyphersolver.com%2Fpiccolomini25054.html" rel="noopener">Contest or verify this reading &#8599;</a><a href="corrections.html">Corrections</a><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">Code &#8599;</a><a href="contribute.html#email">Contact &#9993;</a><a href="feed.xml">Feed</a><a href="#top">Top &uarr;</a></nav>
 </div></footer>
 <script src="cipher-reveal.js?v=2ca93935" defer></script>
+<script src="solve-replay.js?v=572104d3" defer></script>
 <script src="zoom.js?v=572104d3" defer></script>
 <script src="site.js?v=572104d3"></script>
 </body>

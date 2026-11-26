@@ -194,6 +194,7 @@ def attach_methods():
             if len(out.get('parts') or []) > 1:           # a split entry: each part has its own method (README Conventions)
                 p['parts'] = [(x['label'], x['method'], x['extent']) for x in out['parts']]
             p['frac'] = out.get('fraction_coherent') if isinstance(out.get('fraction_coherent'), (int, float)) else                         out.get('fraction_read') if isinstance(out.get('fraction_read'), (int, float)) else None
+            p['frac_unit'] = out.get('fraction_read_unit') if out.get('fraction_read_unit') in ('tokens', 'words') else 'tokens'
             p['frac_src'] = 'coherent' if isinstance(out.get('fraction_coherent'), (int, float)) else 'read'
         p['stt_hand'] = p['stt']
         p['st'] = M.status_class(p['method'], p['extent'])
@@ -212,6 +213,7 @@ def outcome_html(p):
         # the chip is a token, group or line measure (fraction_coherent / fraction_read), not the read share over
         # cipher words that decides the class (README Conventions, 16 Nov 2026): say what it measures
         ext += (f' ({shown}% of the cipher coherent by tokens or lines, not the word count)' if p.get('frac_src') == 'coherent'
+                else f' ({shown}% of cipher words sure, not the sign count)' if p.get('frac_unit') == 'words'
                 else f' ({shown}% of cipher tokens valued, not the word count)')
     if M.key_only(m, p['extent']): ext = 'none (key obtained, text not read)'   # George Lasry, 24 Oct 2026
     if p.get('parts') and len({x[1] for x in p['parts']}) > 1:      # several targets, several methods

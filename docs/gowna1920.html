@@ -58,26 +58,43 @@
 <p class="readjump"><a href="#texts">Go to the full text &darr;</a></p><!-- /readjump -->
 <p class="sub">The three surviving copies describe two vehicles connected to the burning of Gowna barracks.</p>
 <p class="meta">Daniel Bourdeau &middot; posted <time datetime="2026-11-26">26 November 2026</time></p>
-<p class="outcome">Method: <a href="glossary.html#ct" title="key recovered from ciphertext-only">ciphertext-only break</a> &middot; Extent: partial (93% of cipher tokens valued, not the word count)</p><!-- /outcome -->
+<p class="outcome">Method: <a href="glossary.html#ct" title="key recovered from ciphertext-only">ciphertext-only break</a> &middot; Extent: partial (93% of cipher words sure, not the sign count)</p><!-- /outcome -->
 <p class="credits">Contributed by <a href="contributors.html#beck">Larry Beck</a> (new cipher with solution)</p><!-- /credits -->
 <div class="seal partial" aria-hidden="true"><span class="long">ciphertext-only</span></div>
 </section>
 <main>
-<nav class="toc" aria-label="On this page"><span>On this page</span><a href="#cipher">The cipher and key</a><a href="#gaps">What remains open</a><a href="#texts">Full texts</a><a href="#sources">Sources</a></nav>
+<nav class="toc" aria-label="On this page"><span>On this page</span><a href="#text">What the text says</a><a href="#cipher">The cipher and key</a><a href="#gaps">What is deciphered and what remains open</a><a href="#texts">Full texts</a><a href="#sources">Sources</a></nav>
 <div class="callout glance">
-<p class="gl-top"><strong>At a glance</strong><span class="gl-res">Ciphertext-only break &middot; partial (93% of cipher tokens valued, not the word count)</span></p>
-<dl><dt>Where</dt><dd>IE-MA-CP-03-21, PDF pp. 11–13</dd><dt>Credit</dt><dd>Larry Beck</dd></dl>
+<p class="gl-top"><strong>At a glance</strong><span class="gl-res">Ciphertext-only break &middot; partial (93% of cipher words sure, not the sign count)</span></p>
+<dl><dt>Where</dt><dd>IE-MA-CP-03-21, PDF pp. 11–13</dd><dt>Words sure</dt><dd>42 of 45 (93%) across the copies, counting the two unknown edge groups; 42 of 43 in the body. By letters the key values 186 of 190 (Longford), 185 of 190 (Granard) and 130 of 148 (damaged sheet)</dd><dt>Credit</dt><dd>Larry Beck</dd></dl>
 </div>
-<h2 id="cipher"><span class="num">01</span> The cipher and key</h2>
+<h2 id="text"><span class="num">01</span> What the text says</h2>
+<p>Three copies survive of a short police telegram in English. Put together, they say:</p>
+<blockquote><p>[opening group] Description of two motor cars used at burning of Gowna Barrack morning [tenth] instant. No. one, large-sized dark-coloured open Ford car, appeared to be an old one. No. two, a grey-coloured motor van about size of police van, fully covered. [closing group]</p></blockquote>
+<p>So the message describes two vehicles seen in connection with the burning of Gowna barracks: an old, dark, open Ford car, and a grey covered van about the size of a police van. &ldquo;Instant&rdquo; means &ldquo;of this month&rdquo;, so the morning in question is a day of the same month as the telegram. The day word is spelt <em>OENTH</em> in both complete copies; &ldquo;tenth&rdquo; is a conjecture, and the sources call the day doubtful. The first and last groups are letter groups whose meaning is unknown (section 03).</p>
+<p>The submission also points to a separate reply from General Headquarters (GHQ) about a plan concerning a whiskey store, and says the two records should be shown together. That reply is not enciphered text on this page and its wording is not in this project&rsquo;s files: its content is not checked here.</p>
+<p class="muted">Not checked here: the date of the telegram (12 May 1920), and which copy belongs to Longford and which to Granard. These come from the contributor&rsquo;s statement and the archive file as described by him; the project has not compared them with the images. The spellings <em>BARACK</em>, <em>APEARED</em> and <em>FULY</em> are the copies&rsquo;, not corrections.</p>
+<h2 id="cipher"><span class="num">02</span> The cipher and key</h2>
 <figure class="creveal" data-src="reveal/gowna1920.json"></figure>
-<p>Beck recovered the reciprocal letter table from the damaged sheet. The keyword INTERVAL generates the table, but the issued keyword remains unknown. The method used already known examples of keyed reciprocal alphabets. A new replay reproduces all 19 submitted rows.</p>
-<h2 id="gaps"><span class="num">02</span> What remains open</h2>
-<p>The date word and opening and closing groups remain open. The collation gives 42 of 43 body words, or 42 of 45 units when the edge groups are included.</p>
+<p>The cipher is a reciprocal substitution on a keyword alphabet. Write the alphabet as <strong>INTERVAL</strong> followed by the remaining letters in order, with J left out (25 letters): <span class="ct">INTERVALBCDFGHKMOPQSUWXYZ</span>. Pair it letter for letter with the same alphabet backwards, <span class="ct">ZYXWUSQPOMKHGFDCBLAVRETNI</span>. Each cipher letter then stands for its partner, and the partner stands for it, so the same table enciphers and deciphers. G is paired with itself. Each plain letter has one cipher letter (no homophones) and there is no nomenclator.</p>
+<table class="keystrip"><tbody><tr><th scope="row">Cipher letter</th><td>I</td><td>N</td><td>T</td><td>E</td><td>R</td><td>V</td><td>A</td><td>L</td><td>B</td><td>C</td><td>D</td><td>F</td><td>G</td></tr><tr><th scope="row">Plain letter</th><td>Z</td><td>Y</td><td>X</td><td>W</td><td>U</td><td>S</td><td>Q</td><td>P</td><td>O</td><td>M</td><td>K</td><td>H</td><td>G</td></tr></tbody></table>
+<p class="muted">Each column is a pair that works both ways: cipher I is plain Z and cipher Z is plain I, and so on (the 25-letter table is in key.tsv). The keyword INTERVAL reproduces the alphabet, but the keyword actually issued is unknown.</p>
+<p>Worked example, the start of the Longford copy: the letters <span class="ct">B Y O K</span> become O N B D. The O N B is the opening group, whose meaning is unknown, and D begins the first word. Then <span class="ct">V M U Z L X Z B Y</span> becomes S C R I P T I O N, the middle of &ldquo;description&rdquo;. The copies run their letters together, so the word divisions in the reading are editorial.</p>
+<p><strong>Who found it and how it was checked.</strong> Larry Beck, working with ChatGPT, recovered the table from the damaged sheet using a dictionary and a substitution design informed by historical reciprocal alphabets; the contributors transcribed the three copies. The notes say these historical examples were known before the search, so the &ldquo;ciphertext-only&rdquo; label for the method is generous: the idea of the key type came from earlier cases, and what was recovered from the text was the table. The 19 filed rows (7 damaged, 6 Longford, 6 Granard) decode to the filed reading with the filed key; this was checked again for this page by decoding transcription.tsv with key.tsv. An independent claims review (grade A) read the combined English and checked the 19 literal lines. It used the filed transcriptions and did not recheck the images, and nor has this project: the transcriptions are as the contributors and the earlier review described the images.</p>
+<h2 id="gaps"><span class="num">03</span> What is deciphered and what remains open</h2>
+<p>Two measures are kept apart. <strong>By letters</strong>, the key gives a value to every transcribed letter except the signs marked &ldquo;?&rdquo;: 186 of 190 in the Longford copy (4 marked), 185 of 190 in the Granard copy (5) and 130 of 148 on the damaged sheet (18, a torn fragment). A value is not a sure reading: the Granard copy has slips of its own, for example <em>MOTNOR</em> for &ldquo;motor&rdquo; and <em>DUEARED</em> where Longford has &ldquo;appeared&rdquo;. <strong>By words</strong>, 42 of 45 are sure across the copies (93%): 43 words in the body, with the hyphenated compounds counted as their parts, and the two edge groups. Of the 43 body words, 42 are sure (98%). The entry stays partial because the edge groups count against it.</p>
+<ul>
+<li>the opening group: <em>ONB</em> in the Longford copy, <em>QPG</em> in the Granard copy. The two complete copies differ and neither is settled;</li>
+<li>the closing group: <em>NVB</em> (Longford) and <em>N?B</em> (Granard). No framing value for either edge group has been established;</li>
+<li>the day word <em>OENTH</em>, identical in both copies; &ldquo;tenth&rdquo; is only the context&rsquo;s suggestion;</li>
+<li>the signs marked &ldquo;?&rdquo; on each sheet, which the contributor&rsquo;s fresh reading kept unresolved; two letters on lines 2 and 4 of the damaged sheet (<em>GYQOQ</em> or <em>EYQOQ</em>, <em>QUWK</em> or <em>RUWK</em>) are transcribed differently by the contributor and the earlier review, and neither choice changes the word count;</li>
+<li>the date of the telegram and the attribution of the copies, not checked (section 01).</li>
+</ul>
 <!-- texts:start -->
 <h2 id="texts">Full texts</h2>
 <p>The transcription and the decryption of every document on this page, so that the reading can be used and checked. Short files are shown here; all are in the repository.</p>
-<h3>gowna <span class="muted">(IE-MA-CP-03-21, PDF pp. 11–13)</span> <span class="st partial">read in part</span></h3>
-<p>The Gowna police telegram, gowna.</p>
+<h3>Telegram copies <span class="st partial">read in part</span></h3>
+<p>Police telegram, said to date from 12 May 1920, describing two motor vehicles connected with the burning of Gowna barracks: a large dark open Ford, apparently old, and a grey covered van about the size of a police van. Three copies: Longford and Granard (190 letters each) and a damaged sheet (148 letters).</p>
 <p class="muted">Builds coherent sentences, but under the read bar of 95% of words read as sense (93% here); the holes are marked in the reading.</p>
 <details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/gowna1920/transcription.tsv">transcription.tsv</a></p><pre translate="no">line	cipher
 damaged.01	… VMUZL XZBYB HXEBC BXBUM Q?…
@@ -121,11 +138,15 @@ granard.05	LDONENOTWPAGREYCOLOUREDMOTORVANABOU
 granard.06	TSIZEOFPOLICEVANFULYCOVEREDN?B</pre></details>
 <details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/gowna1920/reading.md">reading.md</a></p><pre translate="no">&gt; [Opening group] Description of two motor cars used at burning of Gowna Barrack morning [tenth] instant. No. one, large-sized dark-coloured open Ford car, appeared to be an old one. No. two, a grey-coloured motor van about size of police van, fully covered. [Closing group]
 
-Spaces, punctuation and standard spelling are editorial. Both complete copies give `BARACK` and `OENTH`. The Longford form gives `APEAREDTOBEANOLDONE`, so the earlier brackets around “be” can come out. On your count that makes **42 of 45 units** secure in the combined reading (42 of 43 body words). The uncertain word is the day, for which the context supports “tenth”. The opening and closing groups can be transcribed in places, but their meaning is unknown. That count measures words understood across the copies. Individual sheets still have doubtful letters.</pre></details>
+Spaces, punctuation and standard spelling are editorial. Both complete copies give `BARACK` and `OENTH`. “Be” rests on the Longford form, `APEAREDTOBEANOLDONE`; the Granard copy is garbled at that point (`DUEAREDTOBRANO`). On Beck’s count that makes **42 of 45 units** secure in the combined reading (42 of 43 body words). The uncertain word is the day, for which the context supports “tenth”. The opening and closing groups can be transcribed in places, but their meaning is unknown. That count measures words understood across the copies. Individual sheets still have doubtful letters.</pre></details>
 <p class="ftext">Key: <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/gowna1920/key.tsv">key.tsv</a></p>
 <!-- texts:end -->
-<h2 id="sources"><span class="num">03</span> Sources</h2>
+<!-- replay:start -->
+<figure class="sreplay" data-src="steps/gowna1920.json"></figure>
+<!-- replay:end -->
+<h2 id="sources"><span class="num">04</span> Sources</h2>
 <ul><li><a href="https://www.militaryarchives.ie/uploads/MAC-002/IE_MA_CP_03_21.pdf#page=9">Archive or manuscript</a></li><li><a href="https://github.com/dbourdeau/cyphersolver/issues/829">Contributor submission and review</a></li></ul>
+<p class="muted">The archive link opens the PDF at page 9, while the profile records the telegram at PDF pp. 11–13; the two have not been reconciled.</p>
 <p class="muted">Transcription, key and reading in <a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/gowna1920">the repository folder</a>.</p>
 <!-- cite:start -->
 <details class="cite" id="cite"><summary>Cite this page</summary>
@@ -142,10 +163,11 @@ Spaces, punctuation and standard spelling are editorial. Both complete copies gi
 <!-- cite:end -->
 </main>
 <footer><div class="in">
-  <span>Daniel Bourdeau, September 2026 &middot; Text released under CC BY 4.0 &middot; Archive images linked in Sources</span>
+  <span>Daniel Bourdeau, November 2026 &middot; Text released under CC BY 4.0 &middot; Archive images linked in Sources</span>
   <nav aria-label="Footer"><a href="index.html">Overview</a><a href="method.html">Method and review</a><a href="ludendorff1918.html" rel="prev">&larr; Ludendorff to Stockholm 1918 1918</a><a href="soviet1919.html" rel="next">Seven courier letters, Germany to Russia 1919&ndash;20 1919&ndash;20 &rarr;</a><a href="https://github.com/dbourdeau/cyphersolver/issues/new?template=verification.yml&amp;title=Verification%3A+gowna1920&amp;page=https%3A%2F%2Fcyphersolver.com%2Fgowna1920.html" rel="noopener">Contest or verify this reading &#8599;</a><a href="corrections.html">Corrections</a><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">Code &#8599;</a><a href="contribute.html#email">Contact &#9993;</a><a href="feed.xml">Feed</a><a href="#top">Top &uarr;</a></nav>
 </div></footer>
 <script src="cipher-reveal.js?v=2ca93935" defer></script>
+<script src="solve-replay.js?v=572104d3" defer></script>
 <script src="site.js?v=572104d3"></script>
 </body>
 </html>

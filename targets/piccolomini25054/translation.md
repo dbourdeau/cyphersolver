@@ -6,4 +6,4 @@ These are the three cipher-bearing passages, with enough clear Italian to connec
 >
 > ... if Your Excellency is to be assigned to return there [one group uncertain in “ritornarci”], you would do me a great favour by letting me know.
 
-“Values only Piccolomini” renders *non stima che il Picolomini*. It does not identify who the enemy is or where Piccolomini is to return. The historical context does not supply missing cipher letters.
+“Values only Piccolomini” renders non stima che il Picolomini. It does not identify who the enemy is or where Piccolomini is to return. The historical context does not supply missing cipher letters.

@@ -74,6 +74,12 @@
    "kind": "verification",
    "what": "Filed the issue evidence and checked the line replay against the submitted transcription and key.",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-26",
+   "kind": "verification",
+   "what": "Page review. Rechecked all 23 runs of aligned.tsv against key.tsv (142 groups, 46 values, 0 mismatches) and the three slips (florse, insultads, presidnntn) against contemporary-typescript.txt, which also omits 'de este mes', inserts 'Sr.' before Presidente and has 'alguno' for 'alguien'. The key was inferred from this same letter, so the check is a fit, not an independent test. Images not recompared by this project.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -87,7 +93,7 @@
   ],
   "fraction_read": 1.0,
   "fraction_read_method": "measured",
-  "fraction_read_source": "aligned.tsv: 23 runs, 24 words with hablar con split; 21 literal, 3 attested by period typescript.",
+  "fraction_read_source": "aligned.tsv, checked against key.tsv: 142 of 142 groups valued; 24 of 24 words sure (21 literal, 3 repaired with the period typescript). The 23 runs give 24 words because run C14, hablarcon, is two words (hablar con).",
   "verification": [
    "key confirms"
   ],
@@ -122,7 +128,7 @@
     "transcription": "transcription.txt",
     "decryption": "literal.txt",
     "state": "read",
-    "summary": "Meza Salinas warns Bernardo Reyes about a pamphlet, meza.",
+    "summary": "Meza Salinas warns General Bernardo Reyes that the Flores Magón brothers will publish a leaflet on 23 October insulting him and the president, run 40,000, and offers to report on the states.",
     "reading": "reading.md",
     "read_share": 1.0,
     "translation": "translation.md",
@@ -132,7 +138,8 @@
      "by": "Codex independent claims review, Gowna and Meza",
      "date": "2026-11-21",
      "note": "The Spanish and English read coherently. The 46-entry table gives the 142 groups exactly. Brice Dudout’s prior archive note attests the three slip corrections from the contemporary typescript. This review checked the filed texts and earlier archive note."
-    }
+    },
+    "label": "The letter of 12 October 1901, 23 enciphered runs in plain Spanish"
    }
   ],
   "key_file": "key.tsv",
@@ -140,6 +147,7 @@
    "date": "2026-11-21",
    "verdict": "not applicable",
    "notes": "The source-audited alignment uses substantially the same letter as the context used to infer the key. The typed witness checks the three slips; the replay is not a held-out statistical test."
-  }
+  },
+  "fraction_read_unit": "words"
  }
 }

@@ -1,4 +1,4 @@
-Flores, insultados and presidente are attested by the contemporary typescript. The literal file preserves the cipher?s spellings. Accents, capitalization, word spacing and sentence punctuation are normalized; accents are not encoded by the numerical groups.
+Flores, insultados and presidente are attested by the contemporary typescript. The literal file preserves the cipher’s spellings. Accents, capitalization, word spacing and sentence punctuation are normalized; accents are not encoded by the numerical groups.
 
 12 de octubre de 1901.
 
