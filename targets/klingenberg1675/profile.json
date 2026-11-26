@@ -1039,6 +1039,35 @@
         "image_quality": "fair",
         "notes": "Blind transcription by Claude Fable (Anthropic) given a sign sheet with no values (PROMPT.txt, SHEET.md in the evidence folder; the same sheet as for 134R), frozen (md5 b14ed0b0..., sha256 45eb74ea...) at 04:18:42Z before one decode. 43 runs; 827 decoded tokens, 809 valued, 18 holes, 26 doubt-flagged, 35 struck groups not decoded (DECODE_RUN.txt; decode_once.py's count, not docs/_check_profile.py --measure). Three fully struck lines after 42L line 24 not read. Not compared with the images after the decode."
       }
+    },
+    {
+      "id": "260195-72L-PS",
+      "read": "not read",
+      "shelfmark": "Rigsarkivet, Tyske Kancelli, Udenrigske Afdeling: Koncepter til skrivelser fra Conrad Biermann, 1675 (drafts unit 260195, Arkivalieronline), images 72L-72R (one spread, api id 48574280): the P.S. of the draft whose body 68R-72L is filed as 260195-68R",
+      "date": "late July 1675 (estimated, as for 260195-68R, whose P.S. it is)",
+      "year": 1675,
+      "country": "Denmark",
+      "route": "Conrad Biermann, German Chancery, Copenhagen, to Paul von Klingenberg, Danish plenipotentiary at The Hague (a draft; as for 260195-68R)",
+      "language": "German",
+      "cleartext_in_document": "interspersed",
+      "plaintext": {
+        "location": [
+          "none"
+        ],
+        "source": "No decipherment in the copybook or the drafts; no key sheet found (the repository's sweep of TKUA Chiffer 1670-1709, keyhunt.md). The only earlier decode of this P.S. is our own first reader's (b165, 12 Nov 2026, not blind, transcription not in the repository), logged at 33/51 = 64.71% and parked."
+      },
+      "length": {
+        "tokens": 117,
+        "unit": "mixed",
+        "measured": false,
+        "file": "texts/260195-72L-PS_klingenberg_transcription_blind.tsv"
+      },
+      "transcription": {
+        "by": "llm from images",
+        "source": "Rigsarkivet Arkivalieronline image 48574280 (unit 260195, image 72), plain GET 2026-11-24T08:48:40Z, md5 9dee715e11ab980cf11d9dc050fcaa3f; two crops made from it (evidence/blind/sibling_260195-72L-PS_2026-11-24/FETCH_LOG.txt, CROPS.tsv, IMAGES_MD5.txt); the image and crops are not committed",
+        "image_quality": "fair",
+        "notes": "Blind transcription by Claude Fable (Anthropic) given two crops and a neutral sign sheet S01-S31 with no values (packet/PROMPT.txt, packet/SHEET.md; label-to-sign table sheet_to_key.tsv kept outside the packet), frozen (md5 3811eb5bad3860f809848765411b0f4b, sha256 6b607976...) at 2026-11-24T09:02:36Z before one decode. 5 runs; 117 decoded tokens, 111 valued, 6 holes, 18 doubt-flagged, 4 struck groups not decoded (DECODE_RUN.txt; decode_once.py's count, not docs/_check_profile.py --measure). Four blots on the two pages not read. Not compared with the images after the decode."
+      }
     }
   ],
   "system": {
@@ -1383,6 +1412,59 @@
       ],
       "what": "Project check of PR #695 (a model session, not a person): decode_once.py reproduces the filed decode byte for byte and a second decoder written from key.tsv agrees on all 43 runs; the frozen hashes match the files and the key files are those on main since 12 Nov 2026; shuffle.py re-run gives 0 of 5,000 at both seeds. Images fetched again (md5 as logged): 41R compared at reduced size (about 190 tokens) and about 45 tokens of 42L, 43L, 43R at full size, no difference; the join with 44L holds. Code 485 is written 485 at both places where 'ni' is wanted, so it is not a reader's slip. By words (README Conventions): 294 of 331 = 88.8%; the 95.04% is the share of decode units. Class stays decoded, not read; no reading_review recorded. The order of fetch, freeze and decode is by the contributor's record.",
       "result": "worked"
+    },
+    {
+      "date": "2026-11-24",
+      "kind": "literature search",
+      "technique": [
+        "other"
+      ],
+      "what": "Prior art and collision check for the P.S. of the 260195-68R draft (images 72L-72R) before any transcription (evidence/blind/sibling_260195-72L-PS_2026-11-24/PRIOR_ART.md): no published reading anywhere; the print (Aarsberetninger VI, Historisk Tidsskrift 5. R. IV) gives the policy, not the wording; no DECODE record. The only earlier decode is our own first reader's (b165, 12 Nov 2026, not blind; evidence/first_reader/b165_PARKED.tsv row 11: 33/51 = 64.71% with a stray 'r' counted E, shuffle 0/5,000, parked on the 65% line; transcription not in the repository). So this pass is a blind re-test of our key on a passage it nearly passed, not a first reading. The packet builder read the PARKED row (the topics in four words); none of it went into the packet. Open pull requests (79 merge refs, heads fetched and diffed, 24 Nov 2026 09:05Z): none touches targets/klingenberg1675.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-11-24",
+      "kind": "transcription",
+      "what": "Blind transcription of the P.S. on 260195 images 72L-72R (image 48574280 fetched by plain GET at 08:48:40Z, cropped, then deleted; re-fetchable, md5 in FETCH_LOG.txt) by Claude Fable with a neutral sign sheet (S01-S31, seed 72) and no values. Declared in RUNBOOK.txt and FREEZE.txt before any read: about 120 tokens, so the 65% line and the shuffle control may fail on length alone. Packet frozen (FREEZE.txt, 08:59:13Z); BLIND.tsv frozen (md5 3811eb5bad3860f809848765411b0f4b, sha256 6b607976...) at 09:02:36Z. 5 runs; the reader flagged 18 doubtful tokens and two marks not on the sheet.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-11-24",
+      "kind": "reading",
+      "technique": [
+        "key matching"
+      ],
+      "what": "One decode (decode_once.py: the dec1/SIGN code of scripts/count.py unchanged, plus the S-label translation; hashes checked) with key.tsv, map v4 and table M3 frozen from upstream main 8b75e65ac (same sha256 as the 16 Nov freeze): 117 tokens, 111 valued, 6 holes. One strict judging pass by a separate Claude session given only the brief and the decode, no emendation: S 104, E 4, N 9 of 117 units = 88.89% (N: 6 codes with no value in v4 (98, 243, 385, 211, 292, 255), 3 no-sense units). By words: 33 of 46 = 71.7%. Re-tally by tools/after_judge.py: 0 unit-count mismatches. The judge noted 'z' where 'n' is wanted twice; both are the sign the reader labelled S20~ (T = z) with the note that it differs from the ordinary S22 (y = n). The 'go' for 'fo' unit is 459~, which the reader gave as '9 or 4' (454 = fo). Not checked on the images; key and figure unchanged.",
+      "result": "partial"
+    },
+    {
+      "date": "2026-11-24",
+      "kind": "control",
+      "technique": [
+        "language-model scoring",
+        "statistical test"
+      ],
+      "what": "Shuffled-key control, the 41R shuffle.py with only paths and the S-label translation changed: values permuted among signs within each class (199 number codes, 29 letter signs), 5,000 shuffles at seeds 20261112 and 7, lang model de-1640s (order 5, letters only), mean log-prob per letter over 219 letters. Real -1.9969; shuffles >= real: 0 of 5,000 at both seeds (max -2.9296 and -2.8639). Pass (rule: fewer than 5). The 65% line also passed (88.89%).",
+      "result": "worked"
+    },
+    {
+      "date": "2026-11-24",
+      "kind": "reading",
+      "technique": [
+        "other"
+      ],
+      "what": "docs/_check_reading.py on texts/260195-72L-PS_klingenberg_reading.md (runs only, no clear German between them): 0.569, 'marginal' (29/51 sentences clean, most of them the file's English header lines; holes 0.192), under the 0.60 line; the decryption file 0.0 (0/7). No reviewer has recorded a reading_review and the cipher words read at 33 of 46 (71.7%), so the P.S. is filed decoded, not read. No person has checked the transcription, the judging, the reading or the English.",
+      "result": "partial"
+    },
+    {
+      "date": "2026-11-24",
+      "kind": "verification",
+      "technique": [
+        "statistical test",
+        "other"
+      ],
+      "what": "Check by the project of the 72L-72R P.S. blind decode (PR #931), by a model session for the maintainers, not a person (NOTES, 'Check by the project (PR #931, 24 Nov 2026)'). A decoder written here from the sign rows of key.tsv, maps M3 and v4 and sheet_to_key.tsv gives the filed decryption on 5 of 5 rows (117 tokens, 111 valued, 6 holes, 18 doubt-flagged, 4 struck groups); all 18 hashes of FREEZE.txt verify, the two packet crops rebuilt from image 48574280 fetched again; judge figures recounted (104 S, 4 E, 9 N of 117; 33 of 46 words, 27 of 46 with the words on doubt-flagged tokens held as probable); shuffle control re-run as sent (real -1.9969, 0 of 5,000 at both seeds). All 117 tokens and 4 struck groups compared with the image: no difference. Passed on, a model's reading of the image (probable): the clear word before run 2 reads 'nigst' (most likely schleu-nigst across the line end), not 'nicht' as the frozen transcription, the reading and the translation give it; both S20~ signs show a y-like body under a flat top bar, so the open point is that sign's value, not a slip; before run 4 the clear text has 'M. Müller weilen [sie] vielleicht'. PRIOR_ART.md line 3 has 'Christoph' Klingenberg for Paul (hashed file, not edited). Class left at decoded, not read; the order of events (one commit) rests on the contributor's record. Not checked: the value of the bar-topped sign, 459 or 454, the six unvalued codes.",
+      "result": "worked"
     }
   ],
   "outcome": {
@@ -1488,12 +1570,17 @@
       {
         "item": "Ten passages parked by the first reader (59R-60L, 70R, 254R, 263L, 274R, 72L-72R P.S., 112R-113, 134R-136L body, 151R P.S., 152L; 253R-254L not transcribed)",
         "blocker": "illegible",
-        "detail": "112R-113 and 253R-254L are illegible (bleed-through, overwriting). For the others the transcriptions were not sent, only md5 values and logged figures (322 of 455 word units, 70.77%). 134R-136L body: blind sibling transcription and decode added 16 Nov 2026 (texts/260195-134R_*; 88.47% strict, shuffle 0/5,000 at two seeds). 253R-254L: blind attempt 16 Nov 2026 failed (59.2% strict), not filed."
+        "detail": "112R-113 and 253R-254L are illegible (bleed-through, overwriting). For the others the transcriptions were not sent, only md5 values and logged figures (322 of 455 word units, 70.77%). 134R-136L body: blind sibling transcription and decode added 16 Nov 2026 (texts/260195-134R_*; 88.47% strict, shuffle 0/5,000 at two seeds). 253R-254L: blind attempt 16 Nov 2026 failed (59.2% strict), not filed. 72L-72R P.S.: blind sibling transcription and decode added 24 Nov 2026 (texts/260195-72L-PS_*; 88.89% strict, shuffle 0/5,000 at two seeds; a blind re-test of our key, not a first reading; decoded, not read)."
       },
       {
         "item": "260195 41R-43R (blind sibling decode, 16 Nov 2026): 18 codes with no value in v4, the 485 'mu'/'ni' entry, three struck lines after 42L line 24",
         "blocker": "open-codes",
         "detail": "Codes 327 (x3), 416 (x2), 25?, 395, 107, 19, 250, 251, 116, 100, 112, 16?, 426, 582, 41 have no value in map v4. Code 485 (table M3 'mu') gives 'mu' where 'ni' is wanted twice and is right once: a suspected key-table entry (or 485/488 confusion), not checked on the images. The struck lines were not transcribed."
+      },
+      {
+        "item": "260195 72L-72R P.S. (blind sibling decode, 24 Nov 2026): 6 codes with no value in v4, two 'z' for 'n' units, one 'go' for 'fo' unit, four blots",
+        "blocker": "open-codes",
+        "detail": "Codes 98, 243, 385, 211, 292, 255 have no value in map v4. Both 'z' units are the reader's S20~ (T), flagged as unlike the ordinary S22 (y = n); 'go' is 459~, read '9 or 4' (454 = fo). Neither checked on the images. The four blots on 72L-72R hide what is under them (illegible). The clear German between the runs is not transcribed."
       }
     ],
     "texts": [
@@ -2216,6 +2303,19 @@
         "language": "de",
         "state": "decoded, not read",
         "summary": "(Diplomatic, military) The allies' distrust whether the King was in earnest to go into action against Sweden; the allies have least cause to complain, having met the treaties in no point, while the King raised the stipulated [16],000 men and equipped his fleet, drawing Swedish strength to Scania; whether the declaration of war should be made with actual rupture or in words, separately or jointly at The Hague (Zell advising against); refusing the other party's offers is declaration enough; a corps of troops and an important design to be communicated; subsidies paid and unpaid. Continues as 260195-44. English by Claude, unchecked. Strict judge 786/827 = 95.04%; blind transcription by Claude Fable; shuffle 0/5,000 at two seeds."
+      },
+      {
+        "doc": "260195-72L-PS",
+        "label": "Biermann draft, late July 1675, P.S. (unit 260195, images 72L-72R; the P.S. of 260195-68R): blind sibling decode (decoded, not read)",
+        "transcription": [
+          "texts/260195-72L-PS_klingenberg_transcription_blind.tsv"
+        ],
+        "decryption": "texts/260195-72L-PS_klingenberg_decryption_blind.txt",
+        "reading": "texts/260195-72L-PS_klingenberg_reading.md",
+        "translation": "texts/260195-72L-PS_klingenberg_translation.md",
+        "language": "de",
+        "state": "decoded, not read",
+        "summary": "(Navy, military) The said sailors to be got in hand and sent over little by little as they are obtained, with the first opportunities; good captains and [?] lieutenants to be taken on; the recruiting [?] does not go forward. English by Claude, unchecked. Strict judge 104/117 = 88.89% (by words 33/46); blind transcription by Claude Fable; shuffle 0/5,000 at two seeds. A blind re-test of our key: our non-blind first reader decoded this P.S. on 12 Nov 2026 (33/51, parked)."
       }
     ],
     "key_file": [

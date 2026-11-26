@@ -1,0 +1,57 @@
+# Blind shape transcription of c. 1r (Saint-Mauris to Ferrante Gonzaga, 1547, Biblioteca Estense)
+# Who/when: Claude (Opus 5.5) sub-agent, 2026-11-23. Blind: only scans/c01r.jpg and wainut-SIGNS.md were read.
+# Method: PIL crops of each row in 3 overlapping thirds, upscaled 1.5x, plus 2-3x zooms on doubtful signs.
+# Rows: 27 = 7 (opening block, L01 starts with "Monseigneur") + 20 (main block). Later glosses in other ink ignored.
+# Conventions decided (by comparing several instances):
+#   d   = loop with a long oblique tail coming in from upper left (most common loop sign), NOT crossed.
+#   D/  = the same loop with an extra short oblique stroke crossing it (clearly distinct, rarer).
+#   u   = small v-shaped sign with a tiny loop at its left foot (the "v" of vt); kept separate from d.
+#   w   = two joined small loops (infinity-like / omega-like), incl. the open "ew" variant at start of L18 and in L20.
+#   O   = dumbbell. In L08 the first O has a small dot above its bar (not transcribed separately).
+#   #   = H with one or two crossbars (both forms merged).
+#   8   = 8-like sign, often with a short flat stroke on top (all forms merged; distinct from & of L12/L20).
+#   fs  = f-like stem with loop on the right (written fu / fv / fo / fa / fn; all merged).
+#   y   = 7-like sign with descending loop, and the gamma-like crossed loop of L13 (which has a dot above).
+#   q   = 9-like ring with a straight vertical descending stem.
+#   b   = only the b/beta-like sign of L18.
+#   12  = 1-like stroke with raised 2; 1o? in L16 = same base with a blotted mark above (2 or o).
+#   "/" = long oblique page stroke between signs; "(" = page closing stroke.
+# N-shapes introduced:
+#   N1 = curly x whose right half closes into a loop (like x+d ligature), distinct from plain x (L01, L02, L03, L09, L26).
+#   N2 = 8-like vertical curl crossed by a horizontal bar (L07, L15, L27).
+#   N3 = 8/g-like loop joined to a b-like looped stem ("gb" ligature), followed by "." in L07 (L07, L16).
+#   N4 = figure 4 whose stem ends in a closed loop (L10, L13).
+#   N5 = small loop joined to a double-barred cross (like vt but with #) (L11, L14, L26).
+#   N6 = isolated small ring on the line (start of L12).
+#   N7 = p/rho-like: ring at upper right with a long stem descending to lower left (L01, L04, L06 x2, L21 upright form).
+#   N8 = 6-like sign whose bowl extends into a rightward horizontal loop (L16).
+# Uncertainties: L02 sign 4 read 5 (S-shape, no clear raised o); dots marked .? are faint/possibly specks (L08, L10);
+#   L23 two blotted small signs read u?; L17 second sign blotted (5o); y vs z for 7-like forms; N7 vs q mapping;
+#   u vs d split may differ from the reference naming.
+1r L01: "Monseigneur" ( a . 8 . @ x 6o N1 O 12 5o w N7 W 4o fs d O vt +o 12 5o @
+1r L02: # R N1 5? a 3o @ O vt u 4o D/ w x3 12 q 8 d O / sq eee fs 4o / 5o w 12
+1r L03: vt u O d x3 @ x x: 6 4s @ O # N1 12 u 8 4o . W O y n # 6 12 w
+1r L04: N7 # q 5o 12 O Le 4o / vt sq w d W O vt 8 12 4o Le 4o vt a O
+1r L05: 12 w 5o vt 4o x: mx # 5o w 6o O D/ x 12 W 6 d O z x3 w x: 3o 4o
+1r L06: # 5o fs N7 O vt xo w fs @ O 4o N7 x Le eee x: vt n 12 O x3
+1r L07: x3 O vt 3o 4o z N2 . N3 . (
+1r L08: O x u w x: eee D/ 12 a vt y w x: vt O . 5o .? d . a 4o 12 dd 12 d . w vt
+1r L09: 6 d O / N1 q y u 4o / x: O +o w a 8 6 / 4s w 5o R O +o @ x3 a
+1r L10: x3 x d a O xo dd eee @ # vt z @ N4 O # sq x d 3o .? 8 12 O
+1r L11: W w x: # 4o fs mx +o O vt x3 w 12 5o d 4o N5 x fs eee x: 6 n
+1r L12: N6 a Le x x: 6 . O 3o sq W 12 vt 5o w & z O vt 3o @ W x: O x3
+1r L13: O fs n @ d 4o mx # xo 4o z 3o O xo . y z x a N4 w # 8 12
+1r L14: 4o a eee u x @ vt sq w 12 d W 4o vt N5 dd n xo 3o a 8 5o 4o
+1r L15: vt +o O x3 4o 12 W N2 D/ a xo 6o sq x d w 12 @ W u O vt x u
+1r L16: 8 W 4o w 12 O N8 4o u @ O 1o? W N3 vt O d x fs 12 6o O
+1r L17: x: 5o . 12 w 6o O D/ x d R x x: 6 sq w 12 d D/ 4o u 6o eee x: 4o 3o
+1r L18: w 12 a vt 4o +o w 12 # O x 12 # O b w a vt sq eee d 8 12 w
+1r L19: 6o @ O x: 4o W 12 6o / +o a d O / vt / d a O # vt / +o 4o z w x:
+1r L20: dd 4o 6 w 12 d / a 12 vt 8 12 O vt x D/ x3 4o w 12 O / 5o w & vt u
+1r L21: x 6o O vt / O vt xo d a sq 6 / 12 w vt N7 d 4o / a x: 3o O # 6 a
+1r L22: q # / 4o x: x3 4o xo a O 6 a W x: O vt xo x 12 d w a 3o / x
+1r L23: 12 q @ d / u? . y O a Le 4o 5o d / u w 6o O x: / 8 12 O D/ 4o u? O
+1r L24: D/ w 12 x: O vt / O 2 W O fs d . dd O vt / sq w 12 d W 4o vt
+1r L25: 12 w 5o vt x D/ vt . d O fs 4o vt / xo x d a 4o +o O vt sq O
+1r L26: vt x3 N1 mx / 8 a O x: 2 w 12 5o eee x: 3o / mx2 W O u N5 4o d
+1r L27: O 12 d N2 . x . 8 . (

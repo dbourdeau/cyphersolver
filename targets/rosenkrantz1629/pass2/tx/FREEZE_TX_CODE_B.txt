@@ -1,0 +1,6 @@
+FREEZE_TX code B (pass 2), 2026-11-24T12:34:08Z
+f539632e84c0b5dd91f892262b21f2dcffd0f3fcd7baddde55fc73c5c170d90f  tx/CODE_B_FROZEN.tsv
+Source images: unit 261258 images 280R, 281L, 283R, 284L, 284R (+ margin), 285L (+ margin), 289L. One reader (this agent), strips at 1.0-1.35x native and 3x zooms; clear text only loosely read (context, not collated). Doubtful digits marked ?.
+Tokens [measured with tools/numlib.py]: B1 (Statholder 13 Mar) 53; B2 (Chancellor 13 Mar, same ciphered sentences as B1) 38; B3 (Chancellor 20 Mar) 146; B4 (Statholder 24 Mar) 36. Sum 53+38+146+36 = 273.
+B1 and B2 agree token for token where they overlap (2273 172 29 65 202 175 1796 1797 1781 36 47 415 204 65 52 1441 93 96 62 179 123 181; 1445 2283 1807 2310 2274 126 123 109 2311 387 191 133 95 972 182 1171).
+DISCLOSED: exploratory tests (step and modulus statistics, solver runs mod 24, grid widths 28/24/9) were run on this agent's draft reading (codeB/work/runsB.py, unique text B1+B3+B4) before this freeze. No key resulted. A split for any claimed key: training B1+B3, held-out B4 (+B2 as a copy check).

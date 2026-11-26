@@ -1,4 +1,4 @@
-"""The catalogue vetting gate: catalogue.json holds vetted leads only; everything else waits in research/leads.json.
+"""Review local leads and check the source evidence for WWI Cipher Repository entries.
 
   python docs/_check_catalogue.py                 check catalogue.json: every entry from id GATE_ID on must carry a
                                                   complete "vetting" block with verdict "open"; prints result: valid
@@ -38,6 +38,7 @@ then quote the archive's description of the cipher. Each prior_art value says wh
 they are listed by --audit, not failed.
 """
 import datetime, json, pathlib, re, sys
+from collections import Counter
 
 HERE = pathlib.Path(__file__).resolve().parent
 ROOT = HERE.parent
@@ -126,6 +127,31 @@ def collisions(e, entries):
     return out
 
 
+WW1_URL = re.compile(r'https://www\.ww1ciphers\.com/message/[a-z0-9]+(?:-[a-z0-9]+)*')
+
+
+def entry_problems(e):
+    """Local leads need project vetting. WWI cases carry the dated source listing."""
+    if 'ww1' not in e:
+        return vetting_problems(e)
+    source = e['ww1']
+    if not isinstance(source, dict):
+        return ['ww1 must give the source listing and checked date']
+    out = []
+    if source.get('listing') not in ('undeciphered', 'unidentified'):
+        out.append('ww1.listing must name one of the two WWI source lists')
+    try:
+        datetime.date.fromisoformat(str(source.get('checked')))
+    except ValueError:
+        out.append('ww1.checked must be an ISO date')
+    links = e.get('links') or []
+    if not links or not WW1_URL.fullmatch(str(links[0].get('href') or '')):
+        out.append('first link must be a direct WWI Cipher Repository message URL')
+    if e.get('source') != 'WWI Cipher Repository' or e.get('access') != 'online':
+        out.append('WWI entries must identify the source and online access')
+    return out
+
+
 def check():
     _, entries = load(CAT, 'entries')
     _, leads = load(LEADS, 'leads')
@@ -135,13 +161,17 @@ def check():
         print(f'catalogue id {d} appears more than once'); bad += 1
     for d in sorted(set(ids) & {l['id'] for l in leads}):
         print(f'id {d} is both a catalogue entry and a lead'); bad += 1
+    urls = Counter(l.get('href') for e in entries if 'ww1' in e for l in (e.get('links') or [])[:1])
+    for url, count in urls.items():
+        if count > 1:
+            print(f'{url} appears in {count} WWI entries'); bad += 1
     import _repositories as R       # each entry's holding archive: an id in repositories.json (docs/_repositories.py --write fills it)
     for e in entries:
         if e.get('repository') and e['repository'] not in R.BY_ID:
             print(f'#{e["id"]} repository "{e["repository"]}" is not in repositories.json'); bad += 1
         if e['id'] < GATE_ID:
             continue
-        p = vetting_problems(e)
+        p = entry_problems(e)
         if p:
             bad += 1
             print(f'#{e["id"]} {e.get("title", "")[:60]}')
@@ -206,7 +236,7 @@ def summary():
     """(gate failures, one-line summary) for the SessionStart audit in _check_writeup.py."""
     _, entries = load(CAT, 'entries')
     _, leads = load(LEADS, 'leads')
-    fail = [e for e in entries if e['id'] >= GATE_ID and vetting_problems(e)]
+    fail = [e for e in entries if e['id'] >= GATE_ID and entry_problems(e)]
     legacy = sum(1 for e in entries if e['id'] < GATE_ID and 'vetting' not in e)
     closed = sum(1 for l in leads if (l.get('vetting') or {}).get('verdict') not in (None, 'open'))
     ready = sum(1 for l in leads if not vetting_problems(l))

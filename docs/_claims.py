@@ -16,9 +16,9 @@ import re, pathlib
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 NUMS = r'(\d{1,4}(?:\s*(?:\+|,|and|&)\s*\d{1,4})*)\b'      # ids passed 999 in Oct 2026
-IN_TITLE = re.compile(r'(?i)\b(?:catalogue(?: items?| nos?\.?)?|cat\.) ?' + NUMS)
+IN_TITLE = re.compile(r'(?i)\b(?:catalogue(?: entry| items?| nos?\.?)?|cat\.) ?\**' + NUMS)
 AT_START = re.compile(r'(?:^[-*>\s]*|[.:;]\**\s+)(?:\**\s*)(?:Unsolved Catalogue|Catalogue|Target: catalogue)'
-                      r'(?: items?| nos?\.?)? ?' + NUMS, re.M)
+                      r'(?: entry| items?| nos?\.?)? ?\**' + NUMS, re.M)      # the number may be bold: "Catalogue **2393**" (2393 missed, 25 Nov 2026)
 STATUS = re.compile(r'^\**Status(?::\**|\**:)\s*\**\s*(.*)$', re.I | re.M)
 
 
@@ -37,10 +37,29 @@ def claims():
         head = '\n'.join(lines[:40])
         m = STATUS.search(head)
         st, line = state(head), (m.group(1).strip() if m else '')
-        found = [x for mm in IN_TITLE.finditer(lines[0] if lines else '') for x in re.findall(r'\d+', mm.group(1))]
+        title = next((l for l in lines[:5] if l.startswith('#')), lines[0] if lines else '')   # Status may come first (hm64)
+        found = [x for mm in IN_TITLE.finditer(title) for x in re.findall(r'\d+', mm.group(1))]
         found += [x for mm in AT_START.finditer('\n'.join(lines[1:20])) for x in re.findall(r'\d+', mm.group(1))]
         for n in dict.fromkeys(int(x) for x in found):
             out.setdefault(n, []).append((notes.parent.name, st, line))
+    return out
+
+
+LOOSE = re.compile(r'(?i)\b(?:catalogue|cat\.)(?: entry| items?| nos?\.?)? ?\**(\d{3,4})\b')
+
+
+def unclaimed():
+    """In-progress folders whose head names a catalogue number that claims() does not pick up: a missed claim leaves
+    the entry showing Open while someone works on it (George Lasry, 25 Nov 2026, catalogue 2393). [(folder, [ids])]"""
+    got = {f for cl in claims().values() for f, _, _ in cl}
+    out = []
+    for notes in sorted((ROOT / 'targets').glob('*/NOTES.md')):
+        if notes.parent.name in got: continue
+        try: head = '\n'.join(notes.read_text(encoding='utf-8').splitlines()[:20])
+        except (OSError, UnicodeDecodeError): continue
+        if state(head) != 'in progress': continue
+        ids = list(dict.fromkeys(LOOSE.findall(head)))
+        if ids: out.append((notes.parent.name, ids))
     return out
 
 

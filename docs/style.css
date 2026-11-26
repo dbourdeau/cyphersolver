@@ -490,7 +490,7 @@ ul.findings b{color:var(--head)}
 .sb-methods .sb-legend{margin-bottom:0}
 .sb-legend{display:flex;flex-wrap:wrap;gap:.4rem 1.1rem;margin:.6rem 0 1.2rem;font-family:var(--ui);font-size:var(--fs-sm);color:var(--muted)}
 .sb-legend .lg i{display:inline-block;width:.6em;height:.6em;border-radius:2px;margin-right:.45em;vertical-align:-.02em}
-.sb-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem 1.4rem;margin:0 0 1.2rem}
+.sb-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem 1.4rem;margin:0 0 1.2rem}
 .sb-big{border-top:3px solid var(--acc,var(--rule));padding-top:.7rem}
 .sb-big.fam-key{--acc:var(--fam-key)}.sb-big.fam-ext{--acc:var(--fam-ext)}.sb-big.fam-no{--acc:var(--fam-no)}
 .sb-big b{display:block;font-family:var(--display);font-weight:500;font-size:clamp(2rem,4vw,2.9rem);line-height:1;color:var(--head);letter-spacing:-.02em;font-variation-settings:"opsz" 144}
@@ -1648,6 +1648,10 @@ html.fs-lock{overflow:hidden}
 .filmdlg{width:min(92vw,900px);max-width:none;padding:0;border:0;background:transparent;overflow:visible}
 .filmdlg::backdrop{background:rgba(10,7,3,.82)}
 .filmdlg .herovid{max-width:none;margin:0}
+.pagefilm{margin:2rem 0 2.4rem}
+.pagefilm .pf-head{margin:0 0 .7rem;font:400 var(--fs-ui,.95rem) var(--ui);color:var(--muted)}
+.pagefilm .herovid{max-width:none;margin:0}
+.hv-credit{margin:.7rem 0 0;text-align:left;font:400 .78rem/1.45 var(--ui);color:var(--muted)}
 .filmdlg{--ink:#f3e9d2;--ink2:#e2d3b3;--muted:#b9ad95;--head:#f6ead0;--rule:rgba(246,234,208,.2);--gold:#d9ac52;--gold2:#f0cf86;--gold-ink:#1a1408;color:var(--ink)}
 .herostrip .herostats a .lg-only{margin-right:-.3rem}
 .filmdlg .film-x{display:block;margin:0 0 .6rem auto;background:transparent;color:#f3e9d2;box-shadow:inset 0 0 0 1px rgba(246,234,208,.5)}
@@ -1810,3 +1814,38 @@ body:has(.ms-bg) ul.findings li[data-mirror] .fth .sc{mix-blend-mode:multiply;fi
 .cr-more[hidden]{display:none}
 @media (max-width:640px){.cr-tiles{--crh:11.5rem}}
 @media print{.cr-more{display:none}}
+/* films: the poster shelf on the home page and films.html (_films_page.py, 25 Nov 2026). One row that scrolls
+   sideways, so it keeps its height as films are added; the last card goes to the full list. */
+.filmshelf{margin:1.1rem 0 .4rem;min-width:0}
+.filmshelf .fs-h{margin:0 0 .5rem;font:600 var(--fs-xs) var(--ui);letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.filmshelf ul{display:flex;gap:.75rem;margin:0;padding:0 0 .5rem;list-style:none;overflow-x:auto;scroll-snap-type:x proximity;-webkit-overflow-scrolling:touch;scrollbar-width:thin}
+.filmshelf li{flex:0 0 10.5rem;scroll-snap-align:start;margin:0}
+.filmcard{display:flex;flex-direction:column;gap:.4rem;text-decoration:none;border:0;color:var(--ink2)}
+.filmcard .fc-img{position:relative;display:block;aspect-ratio:16/9;border-radius:6px;overflow:hidden;background:rgba(0,0,0,.35);box-shadow:inset 0 0 0 1px rgba(246,234,208,.22)}
+.filmcard img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .25s ease}
+.filmcard .fc-play{position:absolute;left:50%;top:50%;width:2.3rem;height:2.3rem;margin:-1.15rem 0 0 -1.15rem;border-radius:50%;background:rgba(12,9,5,.55);box-shadow:inset 0 0 0 1px rgba(246,234,208,.7)}
+.filmcard .fc-play::before{content:"";position:absolute;left:55%;top:50%;transform:translate(-50%,-50%);border-style:solid;border-width:.38rem 0 .38rem .62rem;border-color:transparent transparent transparent #f6ead0}
+.filmcard .fc-len{position:absolute;right:.35rem;bottom:.3rem;padding:.05rem .35rem;border-radius:3px;background:rgba(12,9,5,.7);font:500 .72rem var(--ui);color:#f6ead0;font-variant-numeric:tabular-nums}
+.filmcard .fc-t{font:500 var(--fs-ui) var(--ui);line-height:1.3}
+.filmcard:hover .fc-t,.filmcard:focus-visible .fc-t{color:var(--gold2)}
+.filmcard:hover img{transform:scale(1.04)}
+.filmcard:focus-visible .fc-img{outline:2px solid var(--gold2);outline-offset:2px}
+.filmcard.fc-all .fc-img{display:grid;place-content:center;text-align:center;background:rgba(217,172,82,.08)}
+.filmcard.fc-all .fc-n{font:400 1.9rem/1 var(--serif,Georgia,serif);color:var(--gold2)}
+.filmcard.fc-all .fc-nl{font:600 .7rem var(--ui);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+@media (prefers-reduced-motion:reduce){.filmcard img{transition:none}.filmcard:hover img{transform:none}}
+@media (max-width:640px){.filmshelf{margin:1rem 0 .2rem}.filmshelf li{flex-basis:8.6rem}}
+.filmlist{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,26rem),1fr));gap:2.2rem 2rem;margin:1rem 0 3rem}
+.filmlist .film{min-width:0;scroll-margin-top:5rem}
+.filmlist video{display:block;width:100%;aspect-ratio:16/9;border-radius:6px;background:#000}
+.filmlist h2{margin:.9rem 0 .4rem;font-size:var(--fs-xl,1.3rem);text-wrap:balance}
+.filmlist h2 .fl{font:500 var(--fs-ui) var(--ui);color:var(--muted);font-variant-numeric:tabular-nums}
+.filmlist p{margin:.3rem 0}
+.filmlist .flinks a{white-space:nowrap}
+/* the player's volume slider and full-screen button (herovid.js, 25 Nov 2026) */
+.hv-ctl .hv-vol{align-self:center;width:84px;height:34px;margin:0 .1rem;accent-color:var(--gold2);opacity:.75;cursor:pointer;background:transparent}
+.herovid:hover .hv-ctl .hv-vol,.hv-ctl .hv-vol:focus-visible{opacity:1}
+.hv-ctl .hv-fs{opacity:.85}
+.herovid.fs .hv-frame{display:flex;align-items:center;justify-content:center;background:#000}
+.herovid.fs video{width:100%;height:100%;max-height:100vh;aspect-ratio:auto;object-fit:contain;border:0;border-radius:0}
+.herovid.fs .hv-ctl .hv-vol{display:none}

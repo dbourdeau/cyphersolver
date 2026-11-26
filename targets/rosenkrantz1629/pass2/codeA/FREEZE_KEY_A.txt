@@ -1,0 +1,6 @@
+FREEZE_KEY code A (pass 2), 2026-11-24T12:24:05Z. Built from training letter A1 only (frozen transcription tx/CODE_A_FROZEN.tsv, sha256 08867ad2...). Frozen before any decode of the held-out letters A1P and A2 with this key.
+2b473d0d7cefed4f4661338352755923173564d917130ac1626fd235196133da  codeA/KEY_A.tsv
+c8716d3b54e546f38b8cd7b8e68b91dd75ea3f8f1422bfd57fce89d5f096e5f0  codeA/RULES_A.txt
+8361997beb42092ffae613a251f35804945744100ad9c852c6e66727b3602aa8  codeA/decode_A.py
+08867ad2b7954b6bfbddad9e7ebed59d636f52204cc983208d0cd4986c509e98  tx/CODE_A_FROZEN.tsv
+Disclosed: the exploratory run P2-002 (previous agent, before the transcription freeze) decoded all code A text with an unconstrained key; its output tmp/A1_run1.txt was read by the previous agent and, at the start of this session, by this agent. While checking contexts of value 308 this agent also looked at the numbers of one A1P line (267R 9). The key above is mechanical solver output from A1 only.

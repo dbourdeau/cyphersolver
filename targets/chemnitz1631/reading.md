@@ -6,12 +6,16 @@ frozen (PREREG-3, SHA-256) and tested on a held-out page (58 left): S 0.969 vs b
 Marks: plain = sure (key value, transcription clear) ; {probable} = sense-driven, one group read against the key or a
 transcription doubt (4/7, 24/27, 14, 58, 21) ; [restored] = value not in the 57 key, deduced here from sense (46=w, 29=b,
 51=r, Sd=w, Sf=t, 10=c, t=i) ; ‹unresolved› = none.
+Spelling (after the key-replay audit of 24 Nov 2026): the words keep the spelling the key gives (niemant, sol, zimlicher),
+except that u is written v where the German needs it (uolck = volck, uorath = vorath, uerhanden = verhanden). In the
+second "feindes" of image 55 the last group is 9: key.tsv gives only its main value u, but the glosses of image 57
+(gloss57_pairs.txt) give 9 = u 15 times, v 6, s 4 and ü 1, so s is a glossed value of 9, not one taken from the sense.
 
 ## Image 55 (one leaf, date not read here; 7 lines, 212 groups)
 Clear before: "…erlegen solle."
 man konte aus dieser stad {den} feind {gewaltig} alert [clear: halten], auch wol {unterweilen} ein und ander quartier
 des feindes aufschlagen; aber das newe volck ist weder des [travaillirens] noch des feindes {gewohnt}, derhalben
-niemandt [rathen] wil, das man damit etwas hazardiren [clear: solle].
+niemant [rathen] wil, das man damit etwas hazardiren [clear: solle].
 — "From this town one could keep the enemy strongly on the alert, and now and then beat up one or another of his
 quarters; but the new troops are used neither to hard service nor to the enemy, so nobody will advise risking anything
 with them."
@@ -20,7 +24,7 @@ Groups read against the key: 'den' 59 (key d, here d — ok), 'gewaltig' 48=g (k
 
 ## Image 56 left (letter dated Nuremberg 7 Dec. 1631; 8 lines, 240 groups)
 Clear before: "…Proviantfuhren überlassen."
-zu {Anspach} soll noch ziemlicher vorath an [gewehr] und schonen stucken verhanden {sein}; die {wird} der {feind}
+zu {Anspach} sol noch zimlicher vorath an [gewehr] und schonen stucken verhanden {sein}; die {wird} der {feind}
 gewis {hinweck} nehmen, [wan] man ihm nicht vorkombt. das muste [aber] mit [gewalt] [geschehen]. [clear: Dan da man]
 es in der guthe der {regierung} anmuthen wurde, wurde es ohn {zweifel} durch [ungetrewe] diener {dem} feind
 [entdeckt] [clear: worden].

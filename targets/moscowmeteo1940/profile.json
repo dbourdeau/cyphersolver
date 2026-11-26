@@ -165,13 +165,30 @@
    "verdict": "not applicable",
    "notes": "No key recovered by us and no language read: the keys are Japanese; checked on the reports' own held-out examples (60/60, 25/25) and on Audric's example (25/25)."
   },
-  "human_check": {
-   "date": "2026-10-28",
-   "by": "Brice Dudout",
-   "passage": "5th additive of 12 Nov 1938; subtractor for cipher 6 of 29 Apr 1940; ten cells of the October 1940 grids",
-   "result": "corrected",
-   "note": "34135 -> 34235; cipher 6 -> 8 probable (6 possible); ten October cells confirmed as read"
-  },
+  "sign_check": [
+   {
+    "date": "2026-10-28",
+    "checker": "Brice Dudout",
+    "checker_kind": "project",
+    "model_roles": [
+     "rule",
+     "thumbnails",
+     "sheet",
+     "scoring",
+     "remarks"
+    ],
+    "signs_checked": 12,
+    "controls": 0,
+    "controls_passed": 0,
+    "as_transcribed": 10,
+    "corrected": 1,
+    "unresolved": 1,
+    "not_counted": 0,
+    "rule": "NOTES, targeted visual review (28 Oct 2026): the 12 questions were chosen by an AI agent when the sheet (RC1) was built; no rule was written or hashed apart",
+    "sheet_faults": "none found",
+    "note": "Sheet RC1 (28 Oct 2026), shapes only, references cut from the same page: the 5th additive of 12 Nov 1938 corrected (34135 -> 34235); the subtractor cell for cipher figure 6 on 29 Apr 1940 answered with a remark only (badly stamped, 8 probable, 6 possible), counted as unresolved; two even-day and eight odd-day October 1940 cells as read. It had no control, so it does not meet the level. The checker is the contributor of the reading. Recorded until 19 Nov 2026 as outcome.human_check; moved here because AI agents built and scored the sheet (a human_check is a check without AI help)."
+   }
+  ],
   "credits": [
    {
     "who": "dudout",

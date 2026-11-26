@@ -1,7 +1,7 @@
 {
  "schema_version": 1,
  "target": "hernandez1911",
- "title": "A telegram from González Garza to Braulio Hernández, 27 March 1911 (CEHM-Carso CMXV.15.1420.3-6): a letter-swap key read by William Echols",
+ "title": "Two telegrams of the Hernández letter-swap card, El Paso - Presidio, 27-28 March 1911 (CEHM-Carso CMXV.15.1420.3-6 and 1430.3-3): the card applied by William Echols and by Daniel Jalkut; 1430.3-3 was also deciphered at the time",
  "documents": [
   {
    "id": "cmxv-15-1420",
@@ -36,6 +36,40 @@
     "from": "El Paso",
     "to": "Presidio"
    }
+  },
+  {
+   "id": "cmxv-15-1430-3",
+   "read": "read",
+   "shelfmark": "CEHM-Carso, Fondo CMXV (Archivo Federico González Garza), CMXV.15.1430.3-3",
+   "date": "28 March 1911",
+   "year": 1911,
+   "country": "United States",
+   "route": "\"E H Leroy\" = Braulio Hernández (Presidio, Texas) -> Lic. Fred G. Garza = Federico González Garza (El Paso, Texas)",
+   "language": "Spanish",
+   "cleartext_in_document": "none",
+   "plaintext": {
+    "location": [
+     "margin"
+    ],
+    "source": "A pencil decipherment of the time at the head of the form, \"Total 160 h - Diga si viene refuerzo y\", then a faint last word under the CEHM watermark that the PR #831 review could not read: 9 of the 10 coded words. Not in the typed list CMXV.18.1795.1 (searched by the contributor).",
+    "partial": true
+   },
+   "length": {
+    "tokens": 49,
+    "unit": "letters",
+    "measured": true,
+    "file": "../duron1911/siblings/transcription.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Daniel Jalkut with Claude Code (claude-opus-5-5), from the CEHM viewer image (study copy, not redistributed); PR #831, the block CMXV.15.1430.3-3 of the siblings file",
+    "image_quality": "good",
+    "notes": "Telegram of 4:37 pm; all 10 groups are coded: 49 letters, measured with _check_profile.py --measure --letters on the two lines of its block; '|' marks the pencil strokes of the decipherer of the time. The PR #831 review compared all 10 groups and the pencil line with the CEHM image (a model's comparison)."
+   },
+   "places": {
+    "from": "Presidio",
+    "to": "El Paso"
+   }
   }
  ],
  "system": {
@@ -62,21 +96,23 @@
  "conditions": {
   "prior_solution": {
    "exists": "in archive",
-   "where": "The key card for the recipient (CMXV.16.1557.1, scan 16) in the same fonds gives the pairs; no decipherment of this telegram stands on the sheet and the contributor found none in print.",
+   "where": "The key card for the recipient (CMXV.16.1557.1, scan 16) in the same fonds gives the pairs. For CMXV.15.1420.3-6 no decipherment stands on the sheet and the contributor found none in print. CMXV.15.1430.3-3 carries a pencil decipherment of the time at the head of the form (9 of its 10 words), which Daniel Jalkut found when he checked his decode against the sheet (PR #831); it is not in the typed list CMXV.18.1795.1.",
    "found": "before attempt",
    "used": true
   },
   "inputs": [
    "transcription",
-   "key from archive"
+   "key from archive",
+   "images"
   ],
   "attack": "key from archive",
-  "human_role": "William Echols submitted the transcription, the key and the reading (issue #351), made with GPT-6.1 Sol in Codex. The project re-ran the four decryptions; it has not seen the scans or the card.",
+  "human_role": "William Echols submitted the transcription, the key and the reading of CMXV.15.1420.3-6 (issue #351), made with GPT-6.1 Sol in Codex; the project re-ran the four decryptions and has not compared that telegram with its image. Daniel Jalkut (PR #831, with Claude Code) transcribed CMXV.15.1430.3-3 from the CEHM image, applied the card and found the pencil decipherment on the form. The PR #831 review (an AI agent) compared the card with scan 16 and the 1430.3-3 groups and gloss with the image; no person has.",
   "models": [
-   "GPT"
+   "GPT",
+   "Claude Opus 5.5 (Anthropic) in Claude Code, run by Daniel Jalkut (CMXV.15.1430.3-3, PR #831)"
   ],
   "first_date": "2026-11-09",
-  "last_date": "2026-11-09"
+  "last_date": "2026-11-21"
  },
  "solution": [
   {
@@ -96,6 +132,36 @@
    "kind": "verification",
    "what": "Project check: the four coded words decrypted again with the five pairs agree with the contributor's decryption on all 29 letters (VERIFICATION.md). No scan or card compared.",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-20",
+   "kind": "transcription",
+   "what": "Daniel Jalkut (PR #831) transcribed CMXV.15.1430.3-3 from the CEHM image, with nine other sibling telegrams of catalogue 1462 (files in ../duron1911/siblings/).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-20",
+   "kind": "sibling key",
+   "what": "Hypothesis that the Presidio telegrams of 27-31 March 1911 signed B. Hernández, B. H. Leroy or E. H. Leroy use the Hernández card, as 1420.3-6 does. Applied to 1430.3-3 it gives 'total cieto sesenta hombres digas iviene reouerzo y canon': two slips, the n of ciento missing and s (plain o) where refuerzo wants f.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-20",
+   "kind": "verification",
+   "what": "Contributor's control: the decode agrees with the pencil decipherment of the time at the head of the form ('Total 160 h - Diga si viene refuerzo y'), which was not used to find the key; the gloss gives ciento (160) and refuerzo, the two words with a slip.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-20",
+   "kind": "verification",
+   "what": "PR #831 review (an AI agent, two rounds): own decoder from key.tsv equal to the filed decryption of 1430.3-3 (49 letters); all 10 groups and the pencil line compared with the CEHM image; the card compared with CMXV.16.1557.1 scan 16, typed 'Hernández : l n r s t / a e i o u', the five pairs of key.tsv.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-21",
+   "kind": "access",
+   "what": "Integration of PR #831: CMXV.15.1430.3-3 filed here (one key, one entry); its files stay in ../duron1911/siblings/ and are referenced; own decode from key.tsv repeated, equal to the filed decryption. The four other Hernández-card telegrams of PR #831 (1420.5-6, 10 sure words of 19; 1420.6-6, 1432.3-4 and 1447.1-3, decoded, not read) are not filed here: they would make this target read in part, and that is the owner's decision.",
+   "result": "partial"
   }
  ],
  "outcome": {
@@ -106,13 +172,15 @@
   },
   "class": "read",
   "verification": [
-   "key confirms"
+   "key confirms",
+   "contemporary decipherment"
   ],
   "method": "read with known key",
   "key": "not applicable",
-  "method_basis": "The key is the archive's own card for the recipient, found in the same fonds by the contributor and applied; the project re-ran the four decryptions. The key was not recovered from the ciphertext.",
+  "method_basis": "The key is the archive's own card for the recipient, found in the same fonds by the contributor and applied; the project re-ran the four decryptions. The key was not recovered from the ciphertext. CMXV.15.1430.3-3 (part 2) is read from the pencil decipherment of the time on its form, which the card confirms and completes (the last word, cañón).",
   "contribution": [
-   "transcription"
+   "transcription",
+   "catalogue correction"
   ],
   "provenance": "contributed",
   "credits": [
@@ -121,24 +189,38 @@
     "role": "solution",
     "note": "transcription, key card and reading of CMXV.15.1420.3-6; issue #351",
     "date": "2026-11-09"
+   },
+   {
+    "who": "jalkut",
+    "role": "solution",
+    "note": "transcription of CMXV.15.1430.3-3 from the CEHM image, the Hernández card applied to it, and the pencil decipherment of the time on the form found and compared with the decode; PR #831",
+    "date": "2026-11-20",
+    "source": "https://github.com/dbourdeau/cyphersolver/pull/831"
+   },
+   {
+    "who": "contemporary",
+    "role": "prior solution",
+    "note": "the pencil decipherment of the time at the head of CMXV.15.1430.3-3 ('Total 160 h - Diga si viene refuerzo y')",
+    "date": "1911",
+    "published": false
    }
   ],
   "gaps": [
    {
-    "item": "a human check of the transcription and of the key card against the CEHM scans",
+    "item": "a human check of the transcriptions and of the key card against the CEHM scans",
     "blocker": "needs-physical-access",
-    "detail": "cehm.org.mx is not reachable from the project and the images may not be redistributed"
+    "detail": "the PR #831 review (an AI agent) compared the card with scan 16 and the groups of 1430.3-3 with its image over plain http; no person has compared them, the coded words of 1420.3-6 were not compared with their image, and the images may not be redistributed"
    },
    {
-    "item": "whether the telegram is already in print (Narváez 2011 and 2019, the recipients' papers)",
+    "item": "whether the telegrams are already in print (Narváez 2011 and 2019, the recipients' papers)",
     "blocker": "needs-physical-access",
-    "detail": "the contributor reports none found; the project did not search these books"
+    "detail": "the contributors report none found; the project did not search these books"
    }
   ],
-  "notes": "Transcription, key card and reading by William Echols; checked by the project against his submission only, not against the scans.",
+  "notes": "CMXV.15.1420.3-6: transcription, key card and reading by William Echols, checked by the project against his submission; the card was compared with scan 16 at the PR #831 review, the telegram's image was not. CMXV.15.1430.3-3: transcription and decode by Daniel Jalkut (PR #831), read from the pencil decipherment of the time on the form, which the card confirms; compared with the CEHM image by the PR #831 review (a model). Four more Hernández-card telegrams of PR #831 (1420.5-6, 1420.6-6, 1432.3-4, 1447.1-3) stay in ../duron1911/siblings/ until the owner decides whether this target becomes read in part.",
   "fraction_read": 1.0,
   "fraction_read_method": "measured",
-  "fraction_read_source": "Counted from decryption.txt: all 4 coded words, 29 of 29 letters, decrypt to Spanish words.",
+  "fraction_read_source": "By cipher words: CMXV.15.1420.3-6, 4 of 4 (29 of 29 letters, decryption.txt); CMXV.15.1430.3-3, 10 of 10 (8 from the card alone, ciento and refuerzo from the pencil gloss; ../duron1911/siblings/reading.md). 14 of 14.",
   "key_file": "key.tsv",
   "texts": [
    {
@@ -160,6 +242,46 @@
      "date": "2026-11-09",
      "note": "Read the telegram as Spanish sentences: the four decoded words fill the gaps of the clear text and make coherent clauses; the transcription is the contributor's and was not compared with the scan."
     }
+   },
+   {
+    "doc": [
+     "cmxv-15-1430-3"
+    ],
+    "label": "Telegram of 28 March 1911, \"E H Leroy\" (Braulio Hernández) to Federico González Garza (CEHM-Carso CMXV.15.1430.3-3)",
+    "transcription": "../duron1911/siblings/transcription.txt",
+    "decryption": "../duron1911/siblings/decryption.txt",
+    "reading": "../duron1911/siblings/reading.md",
+    "reading_section": "CMXV.15.1430.3-3",
+    "translation": "../duron1911/siblings/reading.md",
+    "language": "es",
+    "state": "read",
+    "read_share": 1.0,
+    "cipher_words": 10,
+    "holes": 0,
+    "summary": "Braulio Hernández (\"E H Leroy\") at Presidio to González Garza at El Paso: a total of one hundred and sixty men; say whether reinforcements and the cannon are coming. Deciphered at the time in pencil on the form; the Hernández card gives the same text.",
+    "note": "The siblings files of PR #831 hold ten telegrams: this entry is the block or section headed CMXV.15.1430.3-3 in each, and its English is in the same section of reading.md. Read from the decipherment of the time: ciento (160) and refuerzo stand in the pencil gloss, so all 10 cipher words are read. The reading marks cie{n}to and re{f}uerzo because the card's output has a slip in each; the card alone gives 8 of 10 (2 holes, which the short-text floor would also allow).",
+    "reading_review": {
+     "grade": "A",
+     "by": "integration review of PR #831 (AI agent, for the maintainers); not a person",
+     "date": "2026-11-21",
+     "note": "Two clauses read as Spanish against the translation: 'Total ciento sesenta hombres. Diga si viene refuerzo y cañón.' Checked: own decode from key.tsv equal to the filed decryption (49 letters); the PR #831 review compared all 10 groups and the pencil line 'Total 160 h - Diga si viene refuerzo y' with the CEHM image, and the crop of that line was looked at again here; 8 words come from the card alone, ciento and refuerzo carry a slip each and stand in the gloss, and the last word, cañón, comes from the card (CLESE, as in 1420.3-6). Not checked: the faint last word of the gloss, under the watermark; the form's other lines. A model's reading: no person has checked it."
+    }
+   }
+  ],
+  "parts": [
+   {
+    "label": "CMXV.15.1420.3-6",
+    "records": "cmxv-15-1420",
+    "method": "read with known key",
+    "extent": "complete",
+    "basis": "the archive's Hernández card (CMXV.16.1557.1, scan 16) applied to the four coded words (William Echols, issue #351)"
+   },
+   {
+    "label": "CMXV.15.1430.3-3",
+    "records": "cmxv-15-1430-3",
+    "method": "read from existing decipherment",
+    "extent": "complete",
+    "basis": "the pencil decipherment of the time at the head of the form gives 9 of the 10 words; the Hernández card gives the same text and the last word, cañón (Daniel Jalkut, PR #831)"
    }
   ]
  }

@@ -21,7 +21,7 @@ Twelve pairs; a letter in the upper row is written as the one under it, and the 
 The upper-row signs for h and i are written like "3" and "1", the lower-row z like "2"; both passes see these shapes,
 and h, i, z are the only letters that complete the alphabet: **h and i are inferred**, not read (z likewise). Count,
 as in `key_reconciliation.md`: 23 cipher cells (12 alphabet pairs and 11 number signs), 22 agreed in both passes,
-two of them (the pairs h-y and i-z) as shapes only, and 1 doubtful (number 8).
+two of them (the h-half of h-y and both halves of i-z) as shapes only, and 1 doubtful (number 8).
 
 Worked examples on the page: "gnad" = `xoku`; "Tagen" = `ckxqo`; "der Fürst v. Zollern wird in 3 Tagen von Stuttgard
 weg gehen" written "der Hector wird in p. ckxqo von Tripoli". The last group (for "weg gehen") is read differently by

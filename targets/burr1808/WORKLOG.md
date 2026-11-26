@@ -15,3 +15,4 @@
 - 2026-11-05 hypothesis: no keyword behind the shifts (26 offsets and the reversed form).
 - 2026-11-05 retry: the rubbed group at all six phases, 3 and 4 numbers: no word fits before "hourly"; left open.
 - 2026-11-05 measure: decrypt.py --measure: 973 numbers, 969 give sense (99.6%).
+- 2026-11-24 correction: img1.A.05 has "submit" (26,19,10,19,1,16) twice on the page, not three times; the extra group removed from transcription.txt, numbers_10feb1808.txt and validation.tsv; reading_numbers.txt regenerated: 967 numbers, 963 give sense (99.6%); IoC 0.0431 overall, 0.0611 at 6, 0.0636 at 12; _validate.py rerun, pass.

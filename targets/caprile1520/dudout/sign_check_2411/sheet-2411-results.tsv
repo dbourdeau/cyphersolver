@@ -1,0 +1,13 @@
+q	code	lieu	etiquette_transcrite	reponse	forme	verdict
+q01	U1	R1139 L07 fin « 1 1 »	1 1	forme 2	u	u ; « 1 1 » -> U (propose)
+q02	P1	R1139 L03 p+	p+	forme 2	p	p barre ; p+ = p (hypothese a tester)
+q03	A7	R1139 L06 q?	q?	aucune / autre forme [q barre]	aucune	aucune / autre forme, remarque « q barre » ; etiquette q? inchangee ; q barre (= q+) propose
+q04	A2	R1139 L01 fin « 4 8 1 7 »	4	forme 3	4	4 confirme ; inchange
+q05	A6	R1139 L07 fin q+	q+	aucune / autre forme	aucune	aucune / autre forme, sans remarque ; q+ inchange
+q06	A4	R1136 L12 début « 4 Z »	4	forme 3	4	4 confirme ; inchange (boite agrandie apres hachage, voir INTEGRATION)
+q07	A5	R1139 L04 q+	q+	aucune / autre forme [q barre]	aucune	aucune / autre forme, remarque « q barre » ; etiquette q+ inchangee, forme propre proposee
+q08	K3	controle	-	forme 1	q	CTRL OK
+q09	K1	controle	-	forme 2	x	CTRL OK
+q10	A1	R1139 L01 « z 4 o »	4	forme 3	yb	y barre ; etiquette 4 -> y (propose, ce lieu seulement)
+q11	K2	controle	-	forme 1	lam	CTRL OK
+q12	A3	R1136 L10 « QB 4 x »	4	forme 3	4	4 confirme ; inchange

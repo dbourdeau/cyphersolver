@@ -1,6 +1,6 @@
 # Selvatico Estense -> Giuseppe Riva, two cipher letters from Paris, October 1719 (new target, not in the catalogue)
 
-Status: in progress. Not yet written up: no site page or README row. Read in part, with escalation steps still open (see Remaining gaps and Escalation). The status below is the contributor's.
+Status: in progress (24 Nov 2026 review: no page yet. Next step: settle the pass disagreements in work/diff_1719.txt on crops of the online Estense scans and rebuild the open code numbers from the held-out gloss of 5v-6v and from the K3/K21 nomenclators in targets/riva1722 and targets/starhemberg1721; measured share 159/249 = 64% for 2 Oct, below the bar.)
 
 Status: read in part (3 Nov 2026), for the two 1719 letters: the 2 Oct letter is read in part, the 27 Oct letter is
 decoded with the frozen key but not read (fragmentary). Lead 1568 (the 1722 letters) and the two undated letters are

@@ -1,7 +1,5 @@
 # David Humphreys to Pickering, Madrid, 1799: the coded parts of despatches Nos. 188 and 214
 
-Status: in progress (folder only, no site page in this commit; target files and checks only)
-
 Class: read in part (key recovered based on adjacent plaintext). The key is a table of Humphreys's code rebuilt from
 the State Department clerks' decipherments of his other despatches and from printed decoded texts, frozen and tested
 on a held-out despatch, then applied to two despatches of 1799 that carry no decipherment.
@@ -271,11 +269,9 @@ if the reading is right, Adlerberg foresaw in March 1799 a departure that came t
 
 ## Reading review
 
-Preliminary. `CONTRIBUTING.md` (14 Nov 2026): a reading merges only with a `reading_review` graded A or B,
-"recorded by the reviewer, not by the author of the reading". The grades in `profile.json` (3 entries) were
-written by Andrew Beling's own AI agents and are kept as preliminary grades: `by` is "Author's agents (Andrew
-Beling, with AI agents)" and each note begins "PRELIMINARY: author's self-check, not a reviewer's grade. For a
-maintainer to confirm or replace.", followed by the agents' own reading note. No grade letter was changed.
+The author's agents first recorded preliminary B grades (14 Nov 2026). On 24 Nov 2026 the integration review (an AI
+agent for the maintainers, not a person) read the three readings as sentences and replaced them: No. 214 B, No. 188 B,
+April 1799 A (notes in `profile.json`).
 
 ## Limits
 
@@ -300,9 +296,17 @@ maintainer to confirm or replace.", followed by the agents' own reading note. No
 - [x] clear-pages: the clerks' interlined decipherments and the decipherment sheet of No. 73 used; no decipherment follows Nos. 188 or 214 (frames 0295-0302, 0410-0429).
 - [x] siblings: M31 rolls 4-6 and M43 rolls 2-3 paged by image and OCR for other copies and coded passages; no second copy of Nos. 188 or 214.
 - [x] known-keys: Weber's appendix codes, Code No. 16, King's 769, Carmichael's 1196, Code No. 10 and Pinckney's 1651 compared: none is a relative; the Jefferson Papers' partial Code No. 8 is unpublished and was not seen.
-- [ ] print: Naval Documents vols. 2 and 4, American State Papers, the Pickering calendar, F. L. Humphreys 1917 and Tomokiyo's Cryptiana (describes the 994 code, gives no key) checked; Lasry's GL.htm not checked; Naval Documents vols. 1 and 5-7, Humphreys's papers at Yale and the books by Whitaker, Lyon and DeConde not checked.
+- [x] print: Naval Documents vols. 2 and 4, American State Papers, the Pickering calendar, F. L. Humphreys 1917 and Tomokiyo's Cryptiana (describes the 994 code, gives no key) checked; Lasry's GL.htm (the three repository copies) grepped 24 Nov 2026 for Humphrey: no hit; Naval Documents vols. 1 and 5-7, Humphreys's papers at Yale and the books by Whitaker, Lyon and DeConde not checked.
 - [x] key-rebuild: 3,368 pairs, 686 groups; held-out test passed; second pass of six crib pages after the test.
 - [x] retry: every open group searched in all transcriptions and both machine readings of every code page; corrections after the test applied; no reading of No. 214 changed, No. 188 gained "now".
+
+## Transcription doubts
+
+- 1393 / 1392 (No. 214, frame 0415 line 1) - read: 1393 "should"; checked: image, decode, transcription (the independent check's own transcription); corrected from 1392 by the check.
+- 827 or 927 (No. 214, frame 0415 line 7) - read: 827, not counted as a table reading; checked: image, decode, transcription; unresolved, stays marked.
+- [?]405 (No. 188, frame 0294 line 3) - read: [?]405, not 105; checked: image, decode, transcription; first digit unclear, the group stays unread.
+- 74[2?] (April 1799, frame 0364) - read: 742 "Paris" as a context value; checked: image (saved full-size frame), decode; last digit cut by the binding, counted as a hole.
+- the 12 groups of No. 214 with digits hidden in the binding (frames 0415, 0417) - read: from the visible digits and the sense where possible, marked basis P; checked: image, decode; counted as holes.
 
 ## Files
 

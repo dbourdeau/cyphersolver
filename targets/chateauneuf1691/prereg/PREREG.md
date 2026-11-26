@@ -1,0 +1,9 @@
+# PREREG — Châteauneuf 1691-1694 (AN AE/B/I/381), numeric code — written 2026-11-20 BEFORE any key is built
+Key source: transcr/gloss_376.txt ONLY (letter of 17 Jan 1694, ff. 376-392, numbers + period interlinear decipherment).
+Held-out portion: transcr/gloss_452.txt, ALL its N lines (letter of 21 Sep 1694, ff. 452-461, 457 groups >= 300). Not used in any way to build or adjust the key; one single measure; after it the portion is burnt.
+Key: number -> plaintext value (letter(s)/syllable/word or NULL), derived from gloss_376 by alignment of the number sequence of each passage with the letters of its gloss; frozen with SHA-256 (prereg/KEY_v1.json) before the measure and before any decoding of ff. 152, 155, 232, 239, 433.
+Measure: for held-out, concatenate in document order all number groups (clear words in braces dropped); decode each with KEY_v1 (unknown/illegible -> '?', NULL -> ''); reference = concatenation of all G lines (except '(none)'). Normalisation of both strings: lower case, accents removed, keep letters a-z only, j->i, v->u, y->i. Score = 1 - Levenshtein(decoded, reference)/len(reference) (character agreement).
+Controls: 200 keys obtained by randomly permuting the VALUES of KEY_v1 among its code numbers (random.Random(seed=1691+k), k=0..199); same score.
+Criterion (fixed now): PASS iff score >= 0.85 AND score >= max(control scores) + 0.30. Word agreement reported, not decisive.
+Then: undeciphered pieces read from the arbitrated blind transcriptions (blind_P1 + blind_P2 + arbiter) with KEY_v1; counting by rule #728 (sure words only over cipher words; probables/restorations/context-only values = holes; < 40 cipher words: "read" with <= 2 holes).
+Note: if 1691 pieces (ff. 152, 155: King's code) do not decode with KEY_v1 they are reported as another code, not forced.

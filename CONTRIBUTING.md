@@ -162,7 +162,11 @@ Each target's `profile.json` carries `outcome.credits`: who contributed and in w
 cipher with solution, verification, key or decipherment used, prior solution, key corrected, transcription,
 identification, pointer). The ids are in [contributors.json](contributors.json). `outcome.provenance` says whose result
 it is: `project`, `contributed` or `mixed`. The write-up's credits line, the contributors page and the front page's
-top contributors are all built from these fields. `docs/_check_profile.py` checks them.
+top contributors are all built from these fields. `docs/_check_profile.py` checks them. When a folder comes from
+someone's lead (its documents are in the lead row, shelfmark and folios, and the lead is older than the folder), the
+person writing the folder adds the finder's `new cipher` credit, and the maintainers check it at the merge; there is
+no such credit when those documents were already in DECODE, the catalogue, a lead or a target, or deciphered in print
+or on Cryptiana, before the lead (issue #969).
 
 Results contributed from outside are marked as such and are kept out of the figures for the study of how language
 models perform against historical ciphers (`docs/_export_profiles.py` leaves out `contributed`, flags `mixed`).

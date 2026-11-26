@@ -2,11 +2,111 @@
 # Periodic numerical table of the Lovell type. Alphabet of 27 signs: a..z and &.
 # Key word WIN, used cyclically letter by letter. Under key letter K the plaintext letter K is written 1,
 # the next letter 2, and so on round the alphabet: number = (p - K) mod 27 + 1 (a = 0 ... & = 26).
-# Numbers above 27 are code groups. Their meanings are not known (no code list found).
+# Numbers above 27 are word numbers of Dana's own list (below). On 27 Oct 2026 the list had not been found.
 #
 # plain:  a  b  c  d  e  f  g  h  i  j  k  l  m  n  o  p  q  r  s  t  u  v  w  x  y  z  &
 W      : 6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27  1  2  3  4  5
 I      :20 21 22 23 24 25 26 27  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19
 N      :15 16 17 18 19 20 21 22 23 24 25 26 27  1  2  3  4  5  6  7  8  9 10 11 12 13 14
 #
-# Code groups seen: 29, 31, 137, 168 (meaning unknown).
+# Dana's own table of October 1782: PCC 89 vol. II p. 656 (NARA naId 502963402, object 262), found by Brice Dudout
+# (27 Oct 2026), viewed in the integration review of 24 Nov 2026 (one AI reading at reduced size). A clerk's copy is
+# in PCC item 109 (naId 2316037, objects 103-104), found by Andrew Beling (issue #898).
+# On the sheet the three columns are headed W, a, r (Dana's key word is "War") and hold the N, W and I rows above,
+# in that order (a = 15, 6, 20; n = 1, 19, 6). WIN is the same key written in Lovell's convention, where the key
+# letter is the letter numbered 1. The sheet's example
+# "When the Army of America go" = 10 13 24 1 25 27 19 35 2 11 33 21 20 runs N, W, I.
+# Rule (item 109 copy): "When you come to an arbitrary character, begin your Key word anew. # Or to a Cypher above
+# 27": after a word number the key starts again at N.
+#
+# Word list: three numbers per word, the word followed by its numbers. Blocks 30-122 (31 words), 123-215 (31 words),
+# 216-263 (16 words); 264-305 (fourteen rows of three) blank. 78 words.
+# Read on 24 Nov 2026 by an AI model from Dana's sheet (p. 656, the frame at full size) and laid beside the clerk's
+# copy; no person has checked it. The sheet writes the first row of each block in full and then the last figure or
+# figures only ("Administration 1 2 3"); the numbers below are filled in from that pattern, and the rows written in
+# full on the sheet (40, 50, 60, 70, 80, 90, 100, 120, 130, 140, 150, 160, 170, 180, 190, 200, 220, 230, 240, 250)
+# agree with it. Spellings as on the sheet. In the Vergennes row the last number looks like 263 on both copies;
+# its place in the column is 260.
+# word                 numbers
+Adams                  30  61  92
+Administration         31  62  93
+Ally or Allies         32  63  94
+America                33  64  95
+American               34  65  96
+Army                   35  66  97
+Austria                36  67  98
+Bacounin (Mr)          37  68  99
+Besborodki (Mr)        38  69 100
+Berlin                 39  70 101
+Britain                40  71 102
+British                41  72 103
+Congress               42  73 104
+Constantinople         43  74 105
+Copenhagen             44  75 106
+Counsellors            45  76 107
+Counsels               46  77 108
+Country                47  78 109
+Court                  48  79 110
+Credit                 49  80 111
+Crimea                 50  81 112
+Dana                   51  82 113
+Danish                 52  83 114
+Denmark                53  84 115
+Dutch                  54  85 116
+Emperor                55  86 117
+Empress                56  87 118
+Europe                 57  88 119
+Fishery                58  89 120
+France                 59  90 121
+French                 60  91 122
+Franklin              123 154 185
+Government            124 155 186
+Grand-Duke            125 156 187
+Hague                 126 157 188
+Holland               127 158 189
+Jay                   128 159 190
+Khan                  129 160 191
+King                  130 161 192
+Lisbon                131 162 193
+Loan                  132 163 194
+London                133 164 195
+Madrid                134 165 196
+Mediation             135 166 197
+Men                   136 167 198
+Minister              137 168 199
+Ministry              138 169 200
+Money                 139 170 201
+Navy                  140 171 202
+Osterman (Count)      141 172 203
+Panin (Count)         142 173 204
+People                143 174 205
+Petersbourg           144 175 206
+Philadelphia          145 176 207
+Poland                146 177 208
+Porte (The)           147 178 209
+Portugal              148 179 210
+Potemkin (Prince)     149 180 211
+Russia                150 181 212
+Russian               151 182 213
+Ships                 152 183 214
+Spain                 153 184 215
+Spanish               216 232 248
+State                 217 233 249
+Stockholm             218 234 250
+Sweden                219 235 251
+Swedish               220 236 252
+Tartars               221 237 253
+Treaty                222 238 254
+Troops                223 239 255
+Turkish               224 240 256
+Turkey                225 241 257
+United Provinces      226 242 258
+United States         227 243 259
+Vergennes (Count)     228 244 260
+Versailles            229 245 261
+Vienna                230 246 262
+Warontzow (Count)     231 247 263
+#
+# Groups seen in No. 23: 31 = Administration, 137 and 168 = Minister (read with the table).
+# 29 is in neither the alphabets (1-27) nor the word list (from 30): open; read as a slip for i from the sentence.
+# In the N position (Dana's first column, W) i is 23.

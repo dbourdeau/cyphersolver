@@ -11,6 +11,14 @@ Classes (Daniel's rule). **Certain** = read by the only verified table (T6, the 
 applied without change, every letter given by the table. **Probable** = read by sense with a table that is not verified
 (K3, K5, T8, T9; view 12 was the burned held-out set of the first protocol). Restored and unresolved words are counted apart.
 
+Declared after the key-replay audit of 24 Nov 2026: in the probable tables (K3, K5, T8, T9), whose values are not
+verified, the words are read as wholes from the sense, and letters where the table gives another letter (or "*", no
+value) are not all put in [ ]. The audit counted about 36 such groups, for example in 03.02 legocios = negocios,
+capitan = capital, el = en, and in K5 the unit g (table value "*") read l or c. These words are all counted probable,
+never certain, so the counts below do not change; the raw table output, without correction, is in decryption.txt.
+The lines 11.04-11.09 (P112), read below, were missing from transcription.txt and decryption.txt; they are now copied
+from the frozen transcription (frozen/TRANSCRIPTION-2421-AV01.txt) and decoded with T9 unchanged.
+
 ## Counts (cipher words, counted by hand on decryption.txt; approximate)
 
 | group | certain | probable | restored | unresolved |

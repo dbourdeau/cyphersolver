@@ -1,0 +1,239 @@
+{
+ "schema_version": 1,
+ "target": "stamour1626",
+ "title": "Period cipher table Besançon BM Ms 1580, f. 239 (\"pour les lettres / Le Comte de St Amour\") and the ciphered passages of the Count of Saint-Amour's letters to the Count of Cantecroy, Oct-Dec 1626 (Ms Granvelle 62)",
+ "documents": [
+  {
+   "id": "ms1580f239",
+   "read": "not applicable",
+   "shelfmark": "Bibliothèque municipale de Besançon, Ms 1580, f. 239r",
+   "date": "undated (17th century; serves the letters of 1626)",
+   "year": 1626,
+   "country": "Spanish Netherlands",
+   "route": "cipher table for the Count of Saint-Amour's letters",
+   "language": "French",
+   "pages": 1,
+   "cleartext_in_document": "mostly clear",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "A key sheet: letters with their signs.",
+    "partial": false
+   },
+   "length": {
+    "tokens": 27,
+    "unit": "symbols",
+    "measured": true,
+    "file": "key.tsv"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Claude (Opus 5.5) for Brice Dudout, 18 Nov 2026: two independent passes, full agreement on the table",
+    "image_quality": "good",
+    "notes": "Research scan sent by the Bibliothèque municipale de Besançon on 18 Nov 2026; not reproduced."
+   }
+  },
+  {
+   "id": "ms62",
+   "read": "not read",
+   "shelfmark": "Bibliothèque municipale de Besançon, Ms Granvelle 62, ff. 322-334 (Mémoire Vive views 373-390)",
+   "date": "12 Oct - 18 Dec 1626",
+   "year": 1626,
+   "country": "Spanish Netherlands",
+   "route": "Count of Saint-Amour (\"du camp\") -> Count of Cantecroy",
+   "language": "French",
+   "pages": 18,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "interlinear",
+     "margin"
+    ],
+    "source": "Interlinear words by a period hand (img379-381) and marginal notes by a later hand (img382, img390); partial.",
+    "partial": true
+   },
+   "length": {
+    "tokens": 474,
+    "unit": "symbols",
+    "measured": true,
+    "file": "transcription/ms62_cipher_blind.tsv"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Claude (Opus 5.5), a fresh agent blind to the table, 18 Nov 2026; hashed before decoding",
+    "image_quality": "fair",
+    "notes": "8 signs illegible; omega written above a sign noted in remarks, not counted."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "monoalphabetic",
+   "homophonic",
+   "code"
+  ],
+  "summary": "Period table: one sign per letter (numbers 24, 13, 16, 15, 14 for the vowels, symbols for consonants), a second sign for d, e, i, o written above, user's homophones a = 12, e = 18; the letters also use code numbers (22, 75, 99 ...) not on the table.",
+  "symbol_kind": "digits and symbols",
+  "distinct_symbols": 27,
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": true,
+   "max_per_vowel": 3,
+   "max_per_consonant": 2
+  },
+  "nomenclator": {
+   "present": true
+  },
+  "nulls": {
+   "present": false
+  },
+  "key_order": "alphabetical",
+  "word_division": "partial",
+  "notes": "distinct_symbols counts the signs on the table (20 + 4 above + 3 noted); the letters use further signs and code numbers."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "in archive",
+   "where": "The period table (Ms 1580 f. 239) and the period interlinear decipherments and later marginal notes on Ms Granvelle 62",
+   "found": "before attempt",
+   "used": true
+  },
+  "inputs": [
+   "images",
+   "key from archive"
+  ],
+  "attack": "key from archive",
+  "human_role": "Brice Dudout asked the Bibliothèque municipale de Besançon for f. 239 as the probable key of the Saint-Amour letters (04 Nov 2026) and received it free on 18 Nov 2026; Claude transcribed, pre-registered and ran the test.",
+  "tools": [
+   "decode.py",
+   "test_ms62/measure.py"
+  ],
+  "models": [
+   "Claude Opus 5.5 (Anthropic), agents run by Brice Dudout"
+  ],
+  "sessions": 1,
+  "first_date": "2026-11-18",
+  "last_date": "2026-11-18"
+ },
+ "solution": [
+  {
+   "date": "2026-11-04",
+   "kind": "access",
+   "what": "Scan of Ms 1580 f. 239 requested from the Bibliothèque municipale de Besançon; received free for research on 18 Nov 2026. Ms Granvelle 62 from Mémoire Vive.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-18",
+   "kind": "transcription",
+   "what": "Table transcribed twice (full agreement); cipher passages of Ms Granvelle 62 transcribed blind by a fresh agent (474 signs), hashed.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-18",
+   "kind": "control",
+   "technique": [
+    "language-model scoring"
+   ],
+   "what": "Pre-registered single measure (lexical coverage of the decode vs 200 shuffled-value controls): M 0.710 vs max 0.685; criterion M >= 0.85 and M >= max + 0.30 not met. Measure not discriminating on a text cut by code numbers.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-18",
+   "kind": "verification",
+   "technique": [
+    "plaintext matching"
+   ],
+   "what": "After the measure: decoded words coincide with the period interlinear decipherments (img379-381) and later marginal notes (img382, img390).",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-18",
+   "kind": "literature search",
+   "what": "Repository, web search (CCFr records, Granvelle cipher literature): no edition or decipherment of the 1626 passages found.",
+   "result": "failed"
+  }
+ ],
+ "outcome": {
+  "method": "not solved",
+  "method_basis": "The key is the period table; the passages carry partial period decipherments; no reading made. Pre-registered test failed.",
+  "contribution": [
+   "transcription"
+  ],
+  "class": "not read",
+  "key": "partial",
+  "first_break": false,
+  "gaps": [
+   {
+    "item": "code numbers (22, 75, 99 ...) and shapes off the table",
+    "blocker": "open-codes",
+    "detail": "160 of 474 signs"
+   },
+   {
+    "item": "reading of the passages",
+    "blocker": "open-codes",
+    "detail": "160 of 474 signs are code numbers or shapes off the table and no list of them is known (the sheet carries none; the period interlinear words gloss only some passages, img379-381), so a reading would fill a third of the signs by sense alone; the mechanical decode is given"
+   }
+  ],
+  "verification": [
+   "contemporary decipherment"
+  ],
+  "provenance": "contributed",
+  "notes": "EXISTING material: period key and period decipherments. The pre-registered test FAILED and is reported as such. No image of the Bibliothèque municipale de Besançon is reproduced.",
+  "texts": [
+   {
+    "doc": "ms1580f239",
+    "label": "Ms 1580, f. 239r: cipher table for the Count of Saint-Amour's letters",
+    "transcription": [
+     "transcription/f239_pass1.tsv",
+     "transcription/f239_pass2.tsv"
+    ],
+    "decryption": [
+     "key.tsv"
+    ],
+    "language": "fr",
+    "summary": "Cipher table headed 'de Madrid 101' and 'pour les lettres / Le Comte de St Amour'.",
+    "state": "not prose"
+   },
+   {
+    "doc": "ms62",
+    "label": "Ms Granvelle 62 ff. 322-334: ciphered passages of Saint-Amour's letters to Cantecroy, Oct-Dec 1626",
+    "transcription": [
+     "transcription/ms62_cipher_blind.tsv"
+    ],
+    "decryption": [
+     "decryption_ms62.txt"
+    ],
+    "language": "fr",
+    "summary": "Letters 'du camp' of the Count of Saint-Amour to the Count of Cantecroy (12 Oct - 18 Dec 1626); the decoded words (paix, offert, artifice, la commission de l'ambassade, faveur en Espagne, la Royne est grosse in a later note) point to peace talk and Madrid news; not read.",
+    "state": "decoded, not read"
+   }
+  ],
+  "key_file": [
+   "key.tsv"
+  ],
+  "credits": [
+   {
+    "who": "contemporary",
+    "role": "prior solution",
+    "note": "The cipher table Ms 1580 f. 239, and the interlinear decipherments on Ms Granvelle 62"
+   },
+   {
+    "who": "dudout",
+    "role": "new cipher",
+    "note": "Ms 1580 f. 239 and the ciphered passages of Ms Granvelle 62 ff. 322-334 brought into the ledger; table and passages transcribed, pre-registered test run and reported as failed (Claude for Brice Dudout)",
+    "date": "2026-11-18",
+    "source": "this folder"
+   },
+   {
+    "who": "dudout",
+    "role": "identification",
+    "note": "The table matched to the letters of Oct-Dec 1626 in Ms Granvelle 62 ff. 322-334, by agreement with the period decipherments on the pages",
+    "date": "2026-11-18",
+    "source": "this folder"
+   }
+  ]
+ }
+}

@@ -5,6 +5,9 @@ words in lower case; [ ] = words supplied for the sense (telegraphic style, noth
 restored by the sense (keying or transmission slip), with the mechanical reading after it; ⟨?⟩ = unresolved group.
 Count by cipher letter (Daniel's 95 % rule): sure / probable (one letter corrected by a variant written on the sheet) /
 restored by the sense / unresolved.
+Where the main tape and its Ct repeat (collation strip) differ, the text follows the strip that gives the word, and this
+choice is not marked in the text (e.g. no. 3 telegraphar, no. 7 parece, citados, apesar); the variant is named in the notes
+under the telegram (convention declared after the key-replay audit of 24 Nov 2026).
 
 ## A. Key MFTDBSJV (14 March - 17 April 1914): validated (validation.txt)
 

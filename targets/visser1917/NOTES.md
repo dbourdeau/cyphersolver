@@ -116,6 +116,15 @@ or in MID files 9140-103 and 4131-44, which are not digitised. A web search (Olg
   at this image quality.
 - No glyph-by-glyph transcription was made: the frames are small and the signs are close together. A transcription
   from these frames would need a second, independent reading to be usable.
+- **A sealed attempt that missed (Jacob Houtrouw, GitHub TheLightningCount, with Claude; 14 to 18 Nov 2026).** His
+  report is in [`houtrouw2026/`](houtrouw2026/README.md), sent at our request (issue #542, pull request #874). Tested:
+  a blind transcription from frames 39 and 58 (120 signs, 17 classes), solved as a one-to-one substitution by simulated
+  annealing in Spanish, German and English, under a plan time-stamped before the runs, with the key strip on frame 42
+  as the check. Result: Spanish passed its score bar (p = 0.0010), but the strip gave only two sure signs and the key
+  agrees with neither (five were needed); German (p = 0.0460) and English (p = 0.0030) did not pass; the fallback with
+  the strip could not pass (p = 0.5); the Bureau's word was not found. No reading is offered, and the class and
+  catalogue 698 are unchanged. We checked the file hashes, the DigiCert and Sectigo receipts and the filed figures; the
+  runs were not rerun here and the frames were not compared with his transcription.
 
 ## 6. Corrections to catalogue 698
 
@@ -159,3 +168,5 @@ or in MID files 9140-103 and 4131-44, which are not digitised. A web search (Olg
 ## Files
 
 - `NOTES.md`, `profile.json`. No images are included; every frame is linked above.
+- `houtrouw2026/`: Jacob Houtrouw's report of a failed attempt (section 5), with its plan, results, blind
+  transcriptions and time-stamp receipts.
