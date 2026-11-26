@@ -202,16 +202,27 @@
    ],
    "what": "R1137 anneal key applied to V1908 line 7: 'adlmodegmo?racentogseti?tipodtare'; joint anneal R1137+V1908 (12 x 120k, fixed consensus values): 'adlmodelmoframentossediftiportare', 'dancoar'. Fragments ('portare'), no reading.",
    "result": "failed"
+  },
+  {
+   "date": "2026-11-21",
+   "kind": "hypothesis",
+   "technique": [
+    "key-structure hypothesis",
+    "contextual inference"
+   ],
+   "what": "Issue #843: Chimdindu Denalex Orakwue found an alphabetical step of five for the primary numeric series, with 50 unused and 96 for u/v. The separately filed table and secondary values reproduce all 27 submitted lines on the unchanged transcriptions. 675 of 708 tokens have a value. This is coverage of transcribed tokens, not a reading share.",
+   "result": "partial"
   }
  ],
  "outcome": {
-  "method": "not solved",
-  "method_basis": "Ciphertext-only annealing over both letters gives a partly consistent key and scattered phrases but no reading; no key or decipherment exists, R1137's image does not settle the digits and most of V1908's cipher is lost in the photocopy.",
+  "method": "key recovered from ciphertext-only",
+  "method_basis": "Orakwue inferred the numeric progression from ciphertext and compared it with the earlier ciphertext-only anneal. The resulting partial table gives isolated phrases, with several lines still undeciphered as prose.",
   "contribution": [
-   "transcription"
+   "transcription",
+   "key recovered"
   ],
   "class": "not read",
-  "key": "none",
+  "key": "partial",
   "fraction_read": 0,
   "fraction_read_method": "measured",
   "fraction_read_source": "No group of R1137 is claimed as read; the anneal fragments (lettere per, presto, saria meglio) are grade M at best and are not a reading (f37_*.txt, r1137_crib_out.txt).",
@@ -236,7 +247,16 @@
     "note": "pointed to Vestigia V1908 (catalogue 846), Cistarelli 14 Oct 1520 in the same cipher; has asked ASMo for the original",
     "date": "2026-10-28",
     "source": "note to the project, 28 Oct 2026"
+   },
+   {
+    "who": "orakwue",
+    "role": "key corrected",
+    "date": "2026-11-21",
+    "source": "https://github.com/dbourdeau/cyphersolver/issues/843",
+    "note": "Identified the alphabetical progression and filed the 29-value table and literal replay."
    }
-  ]
+  ],
+  "provenance": "mixed",
+  "key_file": "orakwue-step5/key.tsv"
  }
 }
