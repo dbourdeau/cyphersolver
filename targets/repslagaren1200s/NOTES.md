@@ -1,4 +1,4 @@
-# Catalogue 3644 · Repslagaren cattle bone
+# Catalogue 3890 · Repslagaren cattle bone
 
 **Method: not solved. Extent: none (text not read).** The ten positions on face B yield no established word. Three shapes have published rune values. No complete decipherment surfaced in the sources below.
 
