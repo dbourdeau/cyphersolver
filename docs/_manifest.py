@@ -1882,6 +1882,8 @@ PAGES = [
          blurb='Three DECODE records catalogued as R&aacute;k&oacute;czi&rsquo;s are French reports to him. Two were deciphered (97% of groups) with the Bonac&ndash;Groffey key DECODE R639, corrected from its image; about a third of their groups had been deciphered between the lines at the time. The third, in an earlier issue of the table, has its own contemporary clear copy.',
          quote='&ldquo;qu&rsquo;il n&rsquo;entrera en Moschovie que la campagne qui vient&rdquo;',
          rights='Manuscript: Magyar Nemzeti Lev&eacute;lt&aacute;r; images not reproduced because archive permission is required'),
+    dict(slug='szentivany1711', label='Szent-Ivány to Rákóczi', year='1711', y=1711.37, place='Munkács', st='partial', stt='read in part',
+         title='Szent-Ivány to Rákóczi, Munkács, 14 May 1711', blurb='A later dispatch supplies the alphabet for four passages on garrison morale. The last reads szíveket, hearts.', quote='szíveket', rights='Cipher groups transcribed from Bánkúti and Mészáros (2012), p. 1109.'),
     dict(slug='rakoczi1711', label='R&aacute;k&oacute;czi at Lw&oacute;w 1711', year='1711', y=1711.49, place='Lw&oacute;w &rarr; an envoy bound for Holland', st='partial', stt='read in part',
          title='Ferenc R&aacute;k&oacute;czi II to an envoy, Lw&oacute;w, 27 June 1711',
          blurb='R&aacute;k&oacute;czi&rsquo;s own Latin letter, eight weeks after the Peace of Szatm&aacute;r, in a syllabic cipher with homophones (DECODE R483, misdated 7 June). His clerk deciphered it between the lines; the decipherment was transcribed, and the lost key rebuilt from it by alignment (224 codes, 70% of the clerk&rsquo;s letters reproduced).',
@@ -3423,6 +3425,7 @@ IMAGES['renard1549'] = None
 IMAGES['gonzaga1549'] = ('gonzaga1549_lead.jpg', 'c. 60v, lines 19-21 of the letter of 14 November 1549', 'Biblioteca Estense Universitaria, Modena, Autografoteca Campori, Lettera K, Karl V, sfasc. IV c. 60v, via the Estense Digital Library (CC BY-NC-SA)')
 IMAGES['vargas1552'] = ('vargas1552_lead.jpg', 'Archive image 0002: the struck-through cipher block with the decipherment in the left margin', 'Archivo General de Simancas, Estado leg. 1320 ff. 35-38, image 0002, via DECODE R9967')
 IMAGES['transylvania1645'] = ('transylvania1645_lead.jpg', 'R4937, 1646: running cipher letters with clear words such as Cum satisfactione Evangelicorum', 'Romanian National Archives, Cluj, Keresdi Bethlen 15 (1646), via DECODE R4937')
+IMAGES['szentivany1711'] = None
 IMAGES['vetesi1705'] = None
 IMAGES['costabili1493'] = None
 IMAGES['erving1807'] = ('erving1807_hanover.jpg', 'M31 reel 12, frame 0285: Erving&rsquo;s code groups with Madison&rsquo;s interlinear decode, &ldquo;having Ha&mdash;er&rdquo; and &ldquo;exchange Hanover for Giblartar&rdquo;', 'National Archives and Records Administration, RG 59, M31 reel 12, frame 0285')
