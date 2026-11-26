@@ -1028,7 +1028,7 @@
     "key_check": "BL deciphered Drake despatches would be the nearest key source; not seen.",
     "duplicates": "Same items as lead 1156 (Drake papers Devon 1700m-0/C/P/398, /453, /661, /674, /701) and id 833; known.py hit leads.json.",
     "verdict": "duplicate",
-    "closed": "Duplicate of lead 1156 (Drake papers, Devon)."
+    "closed": "Duplicate of catalogue 1156 (Drake papers, Devon), which holds the same three pieces, 1700m-0/C/P/661, /674 and /701, and adds /398 and /453. Confirmed 26 Nov 2026 on issue #976: Brice Dudout has asked Devon for a quote for copies of the three; any reading is filed against catalogue 1156."
    }
   },
   {
@@ -1724,7 +1724,7 @@
    "id": 892,
    "counted": true,
    "region": "Central Europe",
-   "seen": "catalogue",
+   "seen": "image",
    "source": "Austria sweep (OeStA AIS)",
    "prior_art": "open (checked 28 Oct 2026: repo ledgers, DECODE list, research/central_archives; no decipherment found in the AIS description)",
    "score_note": "Scored from the archive description during the Oct 2026 Austria (OeStA/HHStA) sweep (research/aut_hhsta/); not viewed",
@@ -1734,12 +1734,12 @@
    "title": "Ferdinand I's ciphered despatches to his resident Malvezzi, and Malvezzi's replies, spring-autumn 1550",
    "correspondents": "Ferdinand I -> Johann Maria Malvezzi; Malvezzi -> Ferdinand I",
    "place": "Vienna / Constantinople",
-   "language": "Italian",
+   "language": "Latin / Italian",
    "period": "1497-1559",
    "shelfmark": "HHStA Wien, StAbt Tuerkei I 8-2-22 (ID 7048237), 8-2-24 (7048241), 8-3-10 (7048434), 8-3-12 (7048437), 9-1-2 (7079699)",
    "folio_note": "fol. 111-114/119-122, 123-124, 160-161, 167-171, 166-167; 8-2-22 has 1 Ausfertigung and 1 Abschrift, 8-3-12 1 Ausfertigung and 1 Duplikat; images online; Austro-Turcica prints the despatches",
    "cls": "A",
-   "status": "AIS 'chiffriert'; no decipherment. Ferdinand->Malvezzi was read for 1548 (malvezzi1548, R366/R367); the 1550 outgoing letters are not in the repo, and several have two copies (a check on copyist errors).",
+   "status": "Partly in cipher. All five items seen on the archive's images (23 Nov 2026): 8-2-24, 8-3-12 and 9-1-2 are Latin, 8-2-22 and 8-3-10 Italian. Deciphered at the time or later: 16th-century interlinear decipherments over the cipher lines of the originals of 8-2-22 and 8-3-10; 19th-century decipherments filed with 8-3-12 and 9-1-2; the clear draft of 8-2-24 at 8-2-10 fol. 74. Printed with the cipher passages in clear in Austro-Turcica 1541-1552, Nos. 155, 156, 163, 165, 193 (pp. 415-418, 418-419, 433-434, 437, 513), seen 24 Nov 2026 in the Bavarian State Library copy bsb00150599. The malvezzi1548 key brief, with sign links made by us, reads the three Latin letters above the pass marks (research/vetting_2026-11-23_ajbeling/).",
    "why": "Same key family as the 1548 reading, so a test of whether the cipher stayed unchanged through 1550.",
    "importance": 3,
    "solvability": 4,
@@ -1762,6 +1762,63 @@
    "ark": "",
    "scored": "sweep",
    "vetting": {
+    "date": "2026-11-23",
+    "by": "Andrew Beling (ajbeling), with AI agents (Claude Opus 5.5) and an independent AI review (Claude Opus 5.5)",
+    "supersedes": "The block of 29 Oct 2026 (partly_read) had not seen any cipher; from the archive's descriptions it already noted the 19th-century decipherment of 8-3-12, the clear draft of 8-2-24 at 8-2-10 fol. 74 and the archive's citation of Austro-Turcica for all five. 'No decipherment' is in the lead's status field, not in that block. This block adds: all five items seen at reading size; three of them are Latin, not Italian as the lead says; 16th-century interlinear decipherments over the cipher lines of the originals of 8-2-22 and 8-3-10 (every cipher line on the images we viewed); the 19th-century decipherment of 9-1-2; a pencil gloss on 8-2-24; tests of the malvezzi1548 key brief on all five. With every cipher passage deciphered on record, the verdict becomes read.",
+    "seen": {
+     "kind": "scan",
+     "where": "Austrian State Archives, AIS records https://www.archivinformationssystem.at/detail.aspx?ID=7048237, https://www.archivinformationssystem.at/detail.aspx?ID=7048241, https://www.archivinformationssystem.at/detail.aspx?ID=7048434, https://www.archivinformationssystem.at/detail.aspx?ID=7048437, https://www.archivinformationssystem.at/detail.aspx?ID=7079699 and the clear draft https://www.archivinformationssystem.at/detail.aspx?ID=7048141 (images 9-10); all images of the five items viewed at full archive size on 23 Nov 2026 (3,500-4,000 px across; the 9-1-2 decipherment card 1,493 px, legible). Images not reproduced here.",
+     "extent": "8-2-22 (Malvezzi to Ferdinand, Constantinople, 24 Mar 1550, Italian; original with four cipher passages of about 46 lines, deciphered between the lines on every page viewed; a duplicate in cipher without gloss; 8 images); 8-2-24 (Ferdinand to Malvezzi, Vienna, 25 Mar 1550, Latin, 26 cipher lines, 2 images; clear draft 8-2-10 fol. 74); 8-3-10 (Malvezzi to Ferdinand, Constantinople, 22 Apr 1550, Italian, about 50 cipher lines, deciphered between the lines on both pages viewed, 2 images); 8-3-12 (Ferdinand to Malvezzi, Brno, 28 Apr 1550, Latin, original 42 cipher lines and duplicate 29 lines, plus a 19th-century decipherment, 6 images); 9-1-2 (Ferdinand to Malvezzi, Augsburg, 3 Oct 1550, Latin, 3 cipher lines, plus a 19th-century decipherment, 3 images).",
+     "cipher": "Graphic-sign homophonic cipher of Malvezzi's alphabet (signs such as circle on a stem, hash, two bars, Greek letters, numerals for doubled letters, null words Cum, Porro, Spo, Dar; code words Ras, ki, ka, zus, zos). Decipherments on or with the leaves: 16th-century Italian glosses over the cipher lines of the originals of 8-2-22 and 8-3-10 (every line on the images viewed); 19th-century 'Entzifferung' sheets with 8-3-12 (images 5-6) and 9-1-2 (image 3); a modern pencil gloss over lines 1-3 of 8-2-24. Cipher of 8-3-12, 8-2-24, 9-1-2, 8-3-10 fol. 160r and two passages of 8-2-22 transcribed twice (the second blind) and decoded with the upstream malvezzi1548 key (lead892_test/, lead892_rest/)."
+    },
+    "prior_art": {
+     "decode": "Not on DECODE for these five items (block of 29 Oct 2026); not searched again, as the archive's own decipherments and the print below settle the verdict.",
+     "tomokiyo": "No Cryptiana page for these 1550 letters (block of 29 Oct 2026); not searched again.",
+     "lasry": "No Lasry work on these items (block of 29 Oct 2026); not searched again.",
+     "edition": "Austro-Turcica 1541-1552, ed. Karl Nehring (Munich 1995). Seen 24 Nov 2026 by an AI agent of ours (Claude Opus 5.5) in the Bavarian State Library's free digital copy https://www.digitale-sammlungen.de/en/view/bsb00150599, from the library's OCR text of the scans (page images not viewed): all five letters are printed with the cipher passages in clear between /: and :/ — No. 155 pp. 415-418 (8-2-22), No. 156 pp. 418-419 (8-2-24, the letter of 25 March, text from the draft on 8-2-10 fol. 74, not the draft of 17 March), No. 163 pp. 433-434 (8-3-10), No. 165 p. 437 (8-3-12), No. 193 p. 513 (9-1-2). Earlier HathiTrust full-text phrase searches (23 Nov 2026, search_log_hathitrust.md) had found phrases of each in this volume.",
+     "literature": "In this repository: targets/malvezzi1548 (Daniel Bourdeau, the 1548 letter and the key brief from DECODE R367/R386, used here); targets/huyson1547 (Brice Dudout's K-C01, calibrated on Türkei I 7-3-20 and tested on 8-3-8; not used here and not on these items); lead 2682 (vetted read, 16 Nov 2026), the rest of Türkei I Kt. 8-9, which names 8-2-22, 8-2-24 and 8-3-10 as its overlap with this lead and records from the Hungaricana regests that the Malvezzi cipher pieces are deciphered and printed in Nehring. No open issue or pull request names lead 892, Malvezzi or Türkei (gh search, 23 Nov 2026)."
+    },
+    "key_check": "Daniel Bourdeau's targets/malvezzi1548/KEY_BRIEF.md, unedited (SHA-256 66f98502...c7793fd, as upstream), with links from its word descriptions to the 1550 sign shapes made by us and frozen before decoding (some wrong; README). Decoded mechanically from blind transcriptions against the witness on record, pass marks in hashed plans, 200 shuffled keys: 8-3-12 0.924 (pass mark 0.85); 8-2-24 0.875 against its clear draft (0.85); 9-1-2 0.911 (0.85); Malvezzi's Italian 8-3-10 fol. 160r 0.783 and two passages of 8-2-22 0.739 against our reading of the interlinear glosses (0.80, missed). The key beats every shuffled key on all five (best 0.392-0.478; an independent re-run with 2,000: best 0.414-0.511). The 1550 copies also use a looped q, & and a star as nulls, and alpha for x, which the brief does not list.",
+    "key_held": "targets/malvezzi1548 (DECODE R367, R386); targets/huyson1547/key_KC01.json",
+    "duplicates": "Catalogue 500 lists Türkei I 7-1-4, 7-2-18, 7-2-25, 7-3-39, 8-3-8, 8-3-11, 8-4-6, 9-1-8, none of these five; targets/huyson1547 used 7-3-20 and 8-3-8. Lead 2682 (read) covers the remainder of Türkei I Kt. 8-9 'beyond the ones in leads 891/892' and names 8-2-22, 8-2-24 and 8-3-10 only as the overlap to match against this lead: related, not a duplicate.",
+    "searches": [
+     {
+      "query": "AIS detail pages 7048237, 7048241, 7048434, 7048437, 7079699, 7048141",
+      "result": "Descriptions read: language, dates, 'chiffriert' or 'teilweise chiffriert'; 8-3-12 'Dechiffrierung aus dem 19. Jh. liegt bei'; 8-2-24 'nicht chiffriertes Konzept liegt fol. 74 (8-2-10)'; all five 'Ediert in: Austro-Turcica' with pages; 8-2-10 is the Reinkonzept of 17 Mar 1550 with the draft of 25 Mar on fol. 74."
+     },
+     {
+      "query": "HathiTrust full-text phrase 'quemadmodum a Rege suo sibi iussum'",
+      "result": "1 result: Austro-Turcica 1541-1552 (1995), search only (8-3-12)."
+     },
+     {
+      "query": "HathiTrust full-text phrase 'mentem dilectionis' and 'mentem dilectissimi fratris'",
+      "result": "First: Austro-Turcica only; second: no result. A two-word phrase hit somewhere in the volume; it does not show how the edition prints this letter."
+     },
+     {
+      "query": "HathiTrust full-text phrase 'de successibus omnibus certiores facere pergas'",
+      "result": "1 result: Austro-Turcica 1541-1552 (9-1-2)."
+     },
+     {
+      "query": "HathiTrust full-text phrases 'ogniuno se lamenta', 'aspettano corrieri', 'arrogante superbo'",
+      "result": "First two: Austro-Turcica only (8-3-10 cipher passages on fol. 160r); third: only an Italian dictionary of 1805."
+     },
+     {
+      "query": "HathiTrust full-text phrases 'nove de Soria', 'non se dechiara el tempo', 'movimento alchuno', 'amotinarsi contra'",
+      "result": "First three: Austro-Turcica only (8-2-22 cipher passages); fourth: no result."
+     },
+     {
+      "query": "HathiTrust full-text phrases 'pro toto regno nobis permittendo', 'petitionem Transsylvaniae', 'gradatim descendas'",
+      "result": "First two: Austro-Turcica only (8-2-24, or the draft of 17 Mar on pp. 410-415); third: not in Austro-Turcica."
+     },
+     {
+      "query": "gh search issues and pull requests: malvezzi, Türkei, Turkei, 892, Ferdinand",
+      "result": "None open on these items (issue 746 is ferdinand1552, another letter)."
+     }
+    ],
+    "verdict": "read",
+    "closed": "Read at the time and printed: the ciphered passages of Malvezzi's 8-2-22 and 8-3-10 are deciphered between the lines of the originals in a 16th-century hand; 8-3-12 and 9-1-2 have 19th-century decipherments filed with them; 8-2-24 has its clear draft at Türkei I 8-2-10 fol. 74. Austro-Turcica 1541-1552 prints all five with the cipher passages in clear: Nos. 155 (pp. 415-418), 156 (418-419), 163 (433-434), 165 (437), 193 (513), seen 24 Nov 2026 by an AI agent of ours in the Bavarian State Library copy bsb00150599 (OCR text). Lead 2682 (read) records the same for the rest of these boxes. The malvezzi1548 key brief with our sign links reads the Latin letters 8-3-12, 8-2-24 and 9-1-2 above the pass marks (lead892_test/, lead892_rest/)."
+   },
+   "vetting_superseded": {
     "date": "2026-10-29",
     "by": "claude vetting batch 02",
     "seen": {
@@ -2174,24 +2231,24 @@
   {
    "id": 903,
    "counted": true,
-   "year": 1594,
-   "date": "Jan-Jun 1594",
-   "title": "Phelippes-drafted Catholic intercepts: Allen letter (28 Jan), \"J. to A.\" (14 Mar), Wicham/Sterrell to Derick (1 Jun)",
+   "year": 1592,
+   "date": "28 Jan 1592, 14 Mar 1593 and 1 Jun [1594] (grouped search hits)",
+   "title": "Grouped search hits: Bristowe to White, Barnes to Paget, and Wicham to Derick",
    "correspondents": "unknown English Catholic correspondents -> Antwerp / Spain",
    "place": "unknown",
    "language": "English",
    "region": "Low Countries",
    "period": "1589-1598",
-   "shelfmark": "CSP Domestic Elizabeth 1591-94 (Green), nos. around 69 (Roger Manners), 76 (Aubrey) and Dom. Eliz. 1581-90 no. 75 (Winwood to Cecil)",
-   "folio_note": "Each 2-3 pp. in cipher; asterisks mark \"undecipherable\" parts",
+   "shelfmark": "Green (1867), vol. CCXLI no.26 and vol. CCXLIV no.75. Green (1870), vol. CCLXXXIII no.75.I. TNA SP 12/244 f.140 and SP 12/283a ff.151–158.",
+   "folio_note": "The January hit, Bristowe to White, is Green (1867) p.175, no.26, 28 January 1592 (catalogue 955). The March item is Green (1867) p.328, no.75, 14 March 1593 (lead 957). Wicham to Derick is Green (1870) pp.173–175, no.75.I, 1 June [1594], TNA SP 12/283a ff.151–152. The years in brackets are editorial.",
    "cls": "B",
-   "status": "Calendar note only; Phelippes drafted decipher copies, but passages \"proved undecipherable\". The calendar note means the manuscript carries no contemporary decipherment; the editor may have read some of it, so the printed abstract can already contain the sense. ",
+   "status": "The January and March items have separate records. The June letter survives in an enclosure with three keys listed by Green (1870), p.175. Some passages in this correspondence carry interlinear writing.",
    "why": "Intercepted Catholic correspondence after the Armada, Cardinal Allen's circle.",
    "importance": 3,
    "solvability": 3,
    "difficulty": 3,
    "score_note": "Scored from a printed calendar/edition note on archive.org during the Oct 2026 Internet Archive metadata sweep (research/ia_meta/); original manuscript not viewed",
-   "verify": "Locate the Phelippes drafts in SP 12 and SP 106.",
+   "verify": "Compare any remaining graphic and mixed-letter groups in the Wicham packet with the three enclosed keys. Consult the dated folios rather than the outer packet date.",
    "links": [
     {
      "label": "CSP Domestic Elizabeth 1591-94",
@@ -2204,6 +2261,22 @@
     {
      "label": "CSP Domestic Eliz. (Wicham/Sterrell)",
      "href": "https://archive.org/details/bub_gb_ELGK9pFXS50C"
+    },
+    {
+     "label": "Wicham to Derick, June letter (library subscription)",
+     "href": "https://link.gale.com/apps/doc/MC4304680514/SPOL"
+    },
+    {
+     "label": "Three enclosed cipher keys (library subscription)",
+     "href": "https://link.gale.com/apps/doc/MC4304680518/SPOL"
+    },
+    {
+     "label": "Green (1870), pp.173–175",
+     "href": "https://archive.org/details/bub_gb_ELGK9pFXS50C/page/173"
+    },
+    {
+     "label": "Winwood to Cecil, 10 April 1602, printed in Memorials I, p.404",
+     "href": "https://archive.org/details/memorialsofaffai01winw/page/404"
     }
    ],
    "seen": "catalogue",
@@ -2212,9 +2285,24 @@
    "ark": "",
    "scored": "vetted",
    "access": "archive",
-   "access_note": "TNA SP 12 (State Papers Online, Gale subscription, not used). The calendar is on archive.org (calendarofstatep03greauoft).",
-   "vetting_note": "Not unblocked on 11 Nov 2026: the SP 12 manuscripts are only on State Papers Online (Gale, subscription login; not attempted, no login may be used) and none of this session's reachable hosts carries the images. The calendar text was already read: the bundle's three items do not match the calendar (located items are Phelippes drafts of 1593, nos. 18, 75, 79, each printing his partial decipherment). Needs SP 12/244-246 images to split the bundle into single documents with correct dates.",
+   "access_note": "Originals of Barnes and Wicham and the enclosed keys were viewed through a subscribing library in Gale State Papers Online, which needs a subscription; see the cited records. Green's printed calendars are public on archive.org.",
    "vetting": {
+    "date": "2026-11-18",
+    "by": "Andrew Beling (ajbeling), with AI agents",
+    "seen": {
+     "kind": "scan",
+     "where": "Green (1867) pp. 175 and 328 and Green (1870) pp. 173-175 (archive.org); TNA SP 12/283a ff. 151-158 (Winwood's enclosures of 10 April 1602), State Papers Online (Gale) scans 162-168, viewed through a subscribing library on 18 Nov 2026.",
+     "extent": "The June letter of Wicham to Derick, 1 June [1594], SP 12/283a ff. 151-152, enclosure 75.I; the September and August letters ff. 153-155; three keys ff. 156-158 (Green 1870, p. 175, enclosures 75.V-VII).",
+     "cipher": "Three-digit numbers and graphic signs in the June, September and August letters; five agreed numbers in the September and August letters have entries in the first key (wicham/NOTES_results.md)."
+    },
+    "key_check": "The three keys enclosed with the letters survive at SP 12/283a ff. 156-158 and were transcribed (wicham/key/). Two pre-registered tests of the first key missed their marks: September 2 of 3 names (all three required; best of 1,000 shuffles 1), July-August 2 of 8 with one letter scoring nothing (3 needed, one per letter). No word of the June letter is read.",
+    "key_in_volume": "SP 12/283a ff. 156-158: number tables, five shifted alphabets and a graphic alphabet (Green 1870, p. 175, enclosures 75.V-VII).",
+    "duplicates": "The January hit is Bristowe [Moody] to White, 28 Jan 1592, Green (1867) p. 175 no. 26: catalogue 955. The March hit is Barnes to Paget, 14 Mar 1593: lead 957. The Andrada item is lead 1007. The June Wicham letter has no record of its own (leads.json and catalogue.json searched for Wicham, Derick and Sterrell, 22 Nov 2026).",
+    "verdict": "duplicate",
+    "closed": "The grouped record stays closed: its January and March items are catalogue 955 and lead 957. The June item named in it does exist, in the 1601-1603 calendar (Green 1870 no. 75.I), not in the 1591-1594 volume that the vetting of 16 Nov 2026 searched; it survives with its keys and could be split off as a lead of its own.",
+    "supersedes": "Same verdict as the vetting of 16 Nov 2026, which found no Allen letter of 28 Jan and no Wicham letter of 1 June in the 1591-1594 calendar. New evidence: the January item identified as catalogue 955, and the Wicham letter found in Green (1870) and on the manuscript with three keys, so the title, dates, shelfmark and links are corrected."
+   },
+   "vetting_superseded": {
     "date": "2026-11-16",
     "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
     "seen": {
@@ -3322,24 +3410,24 @@
   {
    "id": 957,
    "counted": true,
-   "year": 1594,
-   "date": "14 Mar 1594 (item 75)",
+   "year": 1593,
+   "date": "14 Mar 1593 (Green, item 75)",
    "title": "Thomas Barnes to Charles Paget: draft by Phelippes, asterisked passages proved undecipherable",
    "correspondents": "Thomas Barnes → Charles Paget",
    "place": "unknown",
    "language": "English",
    "region": "England",
    "period": "1589-1598",
-   "shelfmark": "Calendar of State Papers, Domestic, Elizabeth 1591-94 (Green 1867) - CSP Domestic Elizabeth 1591-94, item 75",
-   "folio_note": "CSP Domestic Elizabeth 1591-94, item 75",
+   "shelfmark": "The National Archives, SP 12/244, f. 140r–v",
+   "folio_note": "Green (1867), p. 328, item 75. Gale scan 149 shows cipher in the body and margin of f. 140r. Scan 150 shows its endorsed verso at left.",
    "cls": "B",
    "status": "Green: 'Draft by Phelippes, endorsed by him Written by J. to A. The italics are in cipher, undeciphered; the passages marked by asterisks have proved undecipherable.' Brittany, Guernsey and Jersey.",
    "why": "Brittany campaign intelligence.",
    "importance": 3,
    "solvability": 2,
    "difficulty": 4,
-   "score_note": "Scored from the printed calendar text during the Oct 2026 Internet Archive full-text sweep (research/ia_fulltext/); not viewed against the original",
-   "verify": "SP 12/247; Phelippes/Paget cipher family (DECODE).",
+   "score_note": "Scored from the printed calendar text during the Oct 2026 Internet Archive full-text sweep (research/ia_fulltext/); manuscript images inspected through a subscribing library on 18 Nov 2026",
+   "verify": "Compare the ink and annotations on f. 140r with the two asterisked gaps in Green. The March item is also recorded under lead 903. Compare keys in the Phelippes/Paget family.",
    "links": [
     {
      "label": "Printed volume, full text search (proved undecipherable)",
@@ -3348,16 +3436,39 @@
     {
      "label": "Plain-text OCR",
      "href": "https://archive.org/download/cu31924091775274/cu31924091775274_djvu.txt"
+    },
+    {
+     "label": "Original manuscript (Gale, library subscription)",
+     "href": "https://link.gale.com/apps/doc/MC4304381077/SPOL"
+    },
+    {
+     "label": "Green (1867), printed p. 328 (Gale, library subscription)",
+     "href": "https://link.gale.com/apps/doc/MC4304300001/SPOL"
     }
    ],
-   "seen": "catalogue",
+   "seen": "image",
    "source": "Internet Archive full-text sweep",
    "prior_art": "open (checked 28 Oct 2026: the printed volume says undeciphered; full-text search of the volume finds no later decipherment; repo grep finds no target; web search not run, importance 3: cryptiana not searched)",
    "ark": "",
    "scored": "sweep",
    "access": "archive",
-   "access_note": "not online (backfilled 28 Oct 2026 from the entry: known only from a printed calendar/catalogue (Calendar of State Papers, Domestic, Elizabeth 1591-94 (Green 1867) - C); original manuscript not online)",
+   "access_note": "The original, SP 12/244 f. 140r–v (Gale scans 149–150), is imaged in Gale State Papers Online, which needs a subscription; we viewed it through a subscribing library. A solver without one cannot open the leaf. Green's printed calendar is public on archive.org.",
    "vetting": {
+    "date": "2026-11-18",
+    "by": "Andrew Beling (ajbeling), with AI agents",
+    "seen": {
+     "kind": "scan",
+     "where": "The National Archives, SP 12/244 f. 140r-v, State Papers Online (Gale) scans 149-150, viewed through a subscribing library on 18 Nov 2026 (https://link.gale.com/apps/doc/MC4304381077/SPOL); Green (1867) p. 328, item 75.",
+     "extent": "One draft in Phelippes's hand, f. 140r with cipher in the body and in the margin written sideways; f. 140v endorsed and largely blank.",
+     "cipher": "Two readers, working apart and without a key, marked 133 and 111 cipher positions on f. 140r; 43 shape positions agree (barnes/agreed_positions.tsv). Green: 'The italics are in cipher, undeciphered'."
+    },
+    "key_check": "No Barnes or Paget key is held in the repository; none tested. No cipher word read.",
+    "duplicates": "Unchanged from the vetting of 29 Oct 2026: the March item of grouped lead 903 is this draft (Green 1867 no. 75). Catalogue and leads searched again on 18 Nov 2026 for Barnes and 'J. to A.': no other record.",
+    "verdict": "duplicate",
+    "closed": "Same draft as the March item of lead 903; this record keeps it. Only the date and source fields change: Green p. 328 dates the draft 14 March 1593, as the vetting of 29 Oct 2026 already said, while the top-level year and date say 1594.",
+    "supersedes": "Same verdict as the vetting of 29 Oct 2026. New evidence: the manuscript seen (SP 12/244 f. 140r-v), so the shelfmark, folio, links and access fields are corrected, and the year is set to 1593 as that vetting found."
+   },
+   "vetting_superseded": {
     "date": "2026-10-29",
     "by": "claude vetting batch 13",
     "seen": {
@@ -8040,6 +8151,46 @@
    "access": "online",
    "access_note": "FranceArchives record shows images (b9a6451e: IIIF viewer (ANOM images); 081b520c: IIIF viewer (ANOM images); 246c20ac: IIIF viewer (ANOM images)) (checked 28 Oct 2026)",
    "vetting": {
+    "date": "2026-11-22",
+    "by": "Andrew Beling (ajbeling), with AI agents (Claude, claude-opus-5-5)",
+    "seen": {
+     "kind": "scan",
+     "where": "ANOM page images by IIIF, 22 Nov 2026: COL C8 A 51 f. 109 (record ark:/61561/zn401hgefcg, images FRANOM23_C8A_051_0204-0214), C8 A 58 f. 33 (ark:/61561/zn401uptqh, FRANOM23_C8A_058_0059-0066), C8 A 59 f. 158 (ark:/61561/zn401rsnkma, FRANOM23_C8A_059_0268-0279), and C8 A 56 f. 54 (ark:/61561/zn401utsvwe, FRANOM23_C8A_056_0096-0107), f. 73 (ark:/61561/zn401c104yw, 0133-0146), f. 85 (ark:/61561/zn401zyx1xd, 0157-0166) and f. 253 (ark:/61561/zn401mllfgb, 0463-0471); each with its neighbouring leaves. Image FRANOM23_C8A_056_0097 (f. 54r) is damaged on the server: the full image returns an error and only its right half could be fetched, with black blocks in it.",
+     "extent": "C8 A 51 ff. 109-113 (Champigny, Fort-Royal, 21 Dec 1740, duplicate): f. 109r clear, then about 100-110 lines of numbers to f. 113r with clear passages between. C8 A 58 ff. 33-34 (Caylus, Martinique, 10 Mar 1748, duplicate): about 90 lines. C8 A 59 ff. 158-161 (Bompar and Hurson, Fort-Royal, 14 Nov 1751, duplicate): about 140 lines. C8 A 56 ff. 54-56v (Champigny, Fort-Royal, 17 Aug 1744): about 100 lines, with its enclosure f. 57-57v (48 lines, 381 groups, the copy of Knowles's notice). C8 A 56 ff. 73-77v (Champigny, Fort-Royal, 16 Nov 1744, duplicate): about 150 lines, nearly all code. C8 A 56 ff. 85-88 (Champigny, 24 Nov 1744): clear and code mixed, about 80 lines of numbers. C8 A 56 ff. 253-255 (Champigny, 6 Feb 1745): about 75 lines. All to the minister (Maurepas). Line counts by eye from contact sheets (within about 10%); one page of each checked line by line at full size.",
+     "cipher": "Number code in groups of up to three digits. Every letter carries the ministry's contemporary decipherment: French above each line on C8 A 51 f. 109, C8 A 59 f. 158 and C8 A 56 ff. 54, 73, 85 and 253 (checked line by line: all 20 lines of C8 A 51 f. 110r, 24 of C8 A 59 f. 159v, 22 of C8 A 56 f. 56r, 13 of f. 75v, about 20 each of ff. 87r, 87v and 254r); C8 A 58 f. 33 has it in a narrow column in the left margin, continued below the signature on f. 34r and onto f. 34v. The only bare code is the enclosure C8 A 56 f. 57-57v (381 groups), which the calendar's 'part of this letter has not been decrypted' describes; f. 54r itself is glossed on every line that the damaged image shows."
+    },
+    "prior_art": {
+     "decode": "decode_search.py on C8A, Caylus, Champigny, Bompar and Martinique (22 Nov 2026): no record of these letters; Champigny finds only R7624 (BL Add MS 32263 f. 111), a different intercept.",
+     "tomokiyo": "Not searched for these three: the decipherment is on the leaves, so a later study would not change the verdict.",
+     "lasry": "Not searched on the web for these three, for the same reason.",
+     "edition": "ANOM online inventory for the three items: '(chiffrée)' or 'lettre en partie chiffrée', nothing about a decipherment. Taillemite's printed inventory of C8A not opened. No printed text of the letters known.",
+     "literature": "targets/champigny1744 (Dudout, 28 Oct 2026) reads f. 57, the enclosure of C8 A 56 f. 54, with a key built from the 1744 glosses; that enclosure is the part the inventory calls 'not decrypted'. Nothing on the 1740, 1748 or 1751 pieces."
+    },
+    "key_check": "Not needed: each letter carries its own decipherment, and the one bare piece, C8 A 56 f. 57, is read in targets/champigny1744 with a key from the 1744 glosses. Whether the 1740, 1748 and 1751 pieces use that 1744 code was not tested.",
+    "duplicates": "known.py 'C8 A 58', 'C8 A 59', 'C8 A 51', Caylus, Bompar, Hurson (22 Nov 2026): only this lead and its sweep row. No pull request or issue names lead 1204 or these folios.",
+    "searches": [
+     {
+      "query": "ANOM IIIF manifests for C8 A 51 f. 109, C8 A 58 f. 33, C8 A 59 f. 158, with their neighbouring leaves",
+      "result": "All three carry the clerk's decipherment (interlinear on ff. 109 and 158, in the margin and after the signature on f. 33); no separate decipherment sheet is filed, none is needed."
+     },
+     {
+      "query": "ANOM online inventory entries for the three items",
+      "result": "'(chiffrée)' or 'lettre en partie chiffrée'; dates 21 Dec 1740, 10 Mar 1748, 14 Nov 1751; no word about a decipherment."
+     },
+     {
+      "query": "known.py and repository search for Caylus, Bompar, Hurson, C8 A 51, C8 A 58, C8 A 59",
+      "result": "Nothing beyond lead 1204 and research/calames_biblissima; targets/champigny1744 covers C8 A 56 f. 57 only."
+     },
+     {
+      "query": "ANOM IIIF manifests for C8 A 56 ff. 54, 73, 85, 253, with neighbouring leaves (22 Nov 2026)",
+      "result": "All four letters glossed between the lines; f. 54's undeciphered part is the enclosure f. 57 (images 0103-0104), bare, 381 groups, read in targets/champigny1744; f. 54r image 0097 partly damaged on the server."
+     }
+    ],
+    "verdict": "read",
+    "closed": "Read. Every piece the lead names carries the ministry's contemporary decipherment on the leaf, except the enclosure C8 A 56 f. 57, which is read in targets/champigny1744. Seen 22 Nov 2026: C8 A 51 f. 109 (Champigny, 21 Dec 1740) and C8 A 59 f. 158 (Bompar and Hurson, 14 Nov 1751) between the lines; C8 A 58 f. 33 (Caylus, 10 Mar 1748) in the margin and after the signature; C8 A 56 ff. 54 (17 Aug 1744), 73 (16 Nov 1744), 85 (24 Nov 1744) and 253 (6 Feb 1745), Champigny, between the lines. Seen 3 Nov 2026: C8 A 56 ff. 13, 79, 323 and C8 A 51 f. 116. Attested by targets/champigny1744: ff. 40, 44, 54-56v, 59, 63, 67.",
+    "supersedes": "Changes the verdict of 3 Nov 2026 from partly_read to read. New evidence: the pieces that block had not viewed (C8 A 51 f. 109, C8 A 58 f. 33, C8 A 59 f. 158) and the three nobody had recorded (C8 A 56 ff. 73, 85, 253) have now been seen and all are deciphered on the leaf; the calendar's 'part of this letter has not been decrypted' for C8 A 56 f. 54 is its bare enclosure f. 57, read since in targets/champigny1744. Also: f. 109 is of 1740 and f. 158 of 1751, outside King George's War."
+   },
+   "vetting_superseded": {
     "date": "2026-11-03",
     "by": "claude leads review batch c09",
     "seen": {
@@ -16916,9 +17067,9 @@
    "id": 1550,
    "counted": true,
    "year": 1506,
-   "date": "6 - 30 Sep 1506",
+   "date": "6 Sep - 6 Oct 1506",
    "title": "Letters to Machiavelli at the court of Julius II (1506 legation) with ciphered phrases, some not deciphered",
-   "correspondents": "Biagio Buonaccorsi and the Dieci di Balìa → Niccolò Machiavelli",
+   "correspondents": "Biagio Buonaccorsi → Niccolò Machiavelli",
    "place": "Florence",
    "language": "Italian",
    "region": "Italy",
@@ -16968,13 +17119,13 @@
      "decode": "known.py 'Machiavelli IV/83', 'Buonaccorsi': no DECODE record.",
      "tomokiyo": "Web search found no cryptiana page on the 1506 Florence-Julius II cipher.",
      "lasry": "No Lasry publication found by web search.",
-     "edition": "Villari, Machiavelli e i suoi tempi vol. I (1877), Documenti pp. 631-35, checked in the archive.org full text: IV/84 printed from Machiavelli's interlinear decipherment, IV/83 printed without the cipher runs, IV/105 printed with numerals. Epistolario (Gaeta 1969), Opere III (UTET 1984) and Bausi 2022 not accessible.",
+     "edition": "Villari, Machiavelli e i suoi tempi vol. I (1877), Documenti pp. 631-35, checked in the archive.org full text: IV/84 printed from Machiavelli's interlinear decipherment, IV/83 printed without the cipher runs, IV/105 printed with numerals. Epistolario (Gaeta 1969), Opere III (UTET 1984) and Bausi 2022 not accessible. Bausi (ed.), Lettere (2022), I, nos. 118, 120, 125, 128, 133, prints all six letters; the cipher passages of IV/81-84 deciphered between asterisks (PR #842, checked 21 Nov 2026).",
      "literature": "Web searches (Bausi Lettere 2022, Epistolario Buonaccorsi 1506) found no discussion of these cipher phrases."
     },
     "key_check": "No 1506 key is held; VI/82 key sheets were viewed but are not shown to be the 1506 system and were not applied. The IV/84 interlinear pairs would be the crib.",
     "duplicates": "known.py 'Machiavelli IV/83', 'Buonaccorsi', 'Machiavelli': only sibling leads of this batch.",
-    "verdict": "partly_read",
-    "closed": "IV/84 was read at the time and printed (Villari 1877) and IV/105 holds only name numerals; what is left is two short unread runs on IV/83 (about 100 signs), too little for a target."
+    "verdict": "read",
+    "closed": "Bausi (ed.), Lettere (2022), I: nos. 120 (IV/81), 125 (IV/82), 128 (IV/83), 133 (IV/84) print every cipher passage deciphered between asterisks (cipher parts newly deciphered by M. Simonetta), including the IV/83 runs of paras 5, 6, 11 left unread by the 29 Oct vetting (printed earlier by Villari 2nd ed. and Alvisi, with errors) and IV/82 para 8 (unglossed, omitted by earlier editions); IV/105 = no. 118 has no cipher: 'l'ultime de' dua e de' 3' are Machiavelli's two lost letters (n. 10). Checked in the edition PDF, 21 Nov 2026, PR #842 (Andrew Beling)."
    }
   },
   {
@@ -17025,7 +17176,7 @@
      "decode": "Not searched on DECODE this pass: the printed decipherment settles the verdict; known.py 'Machiavelli IV/104' finds only this lead.",
      "tomokiyo": "Not searched this pass; grep of unsolved.htm for Buonaccorsi and Machiavelli gave no hit.",
      "lasry": "Not searched this pass: the printed decipherment in the Machiavelli editions settles the verdict.",
-     "edition": "Opened: Martelli's Sansoni edition (1971) no. 173 and the Bompiani Tutte le opere no. 173 print the whole letter with the cipher passages in clear between asterisks. The lead's UTET 1984 no. 181 and Bausi 2022 were not needed.",
+     "edition": "Opened: Martelli's Sansoni edition (1971) no. 173 and the Bompiani Tutte le opere no. 173 print the whole letter with the cipher passages in clear between asterisks. The lead's UTET 1984 no. 181 and Bausi 2022 were not needed. Also Bausi (ed.), Lettere (2022), II, no. 197, pp. 802-809, and Passerini 1873 as first print (PR #842, 21 Nov 2026).",
      "literature": "The letter is the well-known warning to Machiavelli about the anonymous denunciation of December 1509; no further search made."
     },
     "key_check": "No key needed: the cipher passages are printed deciphered. The plain-cipher pairs would give Buonaccorsi's 1509 alphabet for the sibling leads (Carte Machiavelli IV/83, IV/84, IV/105).",
@@ -36718,6 +36869,42 @@
    "ark": "",
    "scored": "sweep",
    "vetting": {
+    "date": "2026-11-17",
+    "by": "Brice Dudout (dudout, L'Europe chiffrée), with Claude (Anthropic, Claude Opus 5.5) as agent",
+    "seen": {
+     "kind": "scan",
+     "where": "Rome, Biblioteca Casanatense, Ms. 1309, c. 3r: paid colour reproduction, 3752 x 5000 px, received 17 Nov 2026 (image © 2026 Giovanni De Angelis / SIAE, Biblioteca Casanatense; private study, not reproduced here). Compared with Philadelphia, University of Pennsylvania Libraries, Ms. Codex 553 (OPenn, CC BY 4.0), ff. 1r-9v (images 3355_0028 to 0045).",
+     "extent": "The whole of Casanatense c. 3r read at full size (17 lines plus the catchword 'forando'); Penn ff. 1r-6r read in full to find the parallel text, which is Penn f. 5v, last six lines, to f. 6r, line 11.",
+     "cipher": "None on c. 3r. The leaf is a clear Italian copy. Its first lines are the end of a letter: 'dieci righe di cifra, et à V.S. Ill.ma faccio humilissima r[iverenz]a'. Penn f. 5v gives the whole sentence: 'Saran con questa dieci righe di Cifra'. So the original dispatch enclosed ten lines of cipher. The register does not copy those lines as cipher. The next paragraph, in clear in both copies ('1000 Mi hà avvisato, che havendo l'Ambasciatore Zeno quà scritto ... che cerchi divertirlo del far officio'), is probably their content. The only coded element on the leaf is the cover number 1000 for the informant, which Penn writes as '1000 Mille'. Penn f. 5r has a second four-figure cover number after 'in Roma'. Nothing on c. 3r is cipher to be solved."
+    },
+    "prior_art": {
+     "decode": "decode_search.py 'Zacchia', 'Casanatense', 'Ludovisi' (17 Nov 2026): 0 records each. The search is shallow, so this is weak evidence.",
+     "tomokiyo": "No Zacchia or Venice 1621 nunciature page found on Cryptiana in the 4 Nov sweep (lead's prior_art); not searched again, as there is no ciphertext.",
+     "lasry": "No Ludovisi-era nunciature key in Lasry's list as checked on 4 Nov (lead's prior_art); not searched again, as there is no ciphertext.",
+     "edition": "No printed edition of Zacchia's Venice letters of 1621 was found (one web search on 17 Nov 2026). Ploncher (ASI 9, 1882) prints only the 1623 Sarpi letters of Ms. 1308. The Folger holds a Strozzi transcript of Ludovisi's letters to the nuncio for 1622; it is the other side of the correspondence.",
+     "literature": "Angione, 'Politica e informazione a Venezia' (2020), on the preceding Donati nunciature (1618-1621), covers the archival setting but not this register."
+    },
+    "key_check": "No key tested: the leaf holds no ciphertext. The cover numbers (1000 and the four-figure number on Penn f. 5r) belong to a numerical nomenclator. Its key is not in either register.",
+    "duplicates": "known.py 'Ms. 1309' 'Zacchia' 'Codex 553' (17 Nov 2026): only lead 2202 itself, with its vetting block of 4 Nov 2026. No open issue or pull request names 2202 (gh search, 17 Nov 2026).",
+    "searches": [
+     {
+      "query": "known.py 'Ms. 1309' 'Zacchia' 'Codex 553'",
+      "result": "Only lead 2202 and its own vetting block of 4 Nov 2026 (not_cipher)."
+     },
+     {
+      "query": "gh pr/issue list -R dbourdeau/cyphersolver --state all --search '2202 OR Zacchia OR Ludovisi OR Casanatense'",
+      "result": "Only closed PR #286, which deals with other catalogue numbers. No work on this register."
+     },
+     {
+      "query": "web: Laudivio Zacchia nunziatura Venezia 1621 lettere Ludovisi cifra edizione",
+      "result": "No edition of the 1621 letters and no study of their cipher. Found only the Folger transcript of Ludovisi's side (1622) and Angione 2020 on the Donati nunciature."
+     }
+    ],
+    "verdict": "not_cipher",
+    "closed": "Confirms the verdict of 4 Nov 2026 on the leaf named by the Manus record. Casanatense Ms. 1309, c. 3r, seen at full size, has no ciphertext. 'Dieci righe di cifra' are words of the letter: 'Saran con questa dieci righe di Cifra' (Penn f. 5v) refers to a cipher enclosure that the register does not copy as cipher. The register gives a clear paragraph in its place, '1000 Mi hà avvisato ...'. It concerns ambassador Zeno, the Jesuits and the Pope, and is the same in both copies. This paragraph is probably the content of the ten lines. The 'nomi propri cifrati' are cover numbers such as 1000. One correction to the earlier block: the lines are not omitted. Their content seems to be copied in clear, so the original dispatch, if it survives with its cipher (Vatican, Segreteria di Stato, Venezia; not checked), would form a cipher/clear pair.",
+    "supersedes": "The block of 4 Nov 2026 (not_cipher) rested on the Penn scans and the Manus record. This block keeps that verdict and adds what that block lacked: the Casanatense leaf c. 3r itself, seen at full size. It also corrects one statement. The ten cipher lines are not left out of the register: the clear paragraph that follows the letter ('1000 Mi hà avvisato ...') appears to give their content."
+   },
+   "vetting_superseded": {
     "verdict": "not_cipher",
     "closed": "Penn Ms. Codex 553 (scans viewed on Colenda IIIF) is a clear-text register of Zacchia's letters in which proper names appear as numbers (e.g. 1000) and the nuncio writes that 'dieci righe di cifra' accompany a letter without the lines being copied; the Casanatense Ms. 1309 record says the same, so there is no ciphertext block, only isolated nomenclator numbers.",
     "date": "2026-11-04"
@@ -44591,7 +44778,7 @@
    "access_note": "open scans at sok.riksarkivet.se; lbiiif images need Referer: https://sok.riksarkivet.se/ for scripts",
    "ark": "",
    "scored": "sweep",
-   "vetting_note": "Cipher seen by the sweep (R0001377 images 129-130), but the edition that would settle it could not be opened: Handlingar rörande Skandinaviens historia del 30 (1849) p. 91 prints this letter of 30 July 1634 according to the register in del 41. Tried 11 Nov 2026: archive.org title list (15 HSH items, none is del 30) and full-text search; runeberg.org/hrsh (delar 1-27 only); Google Books feed (del 30 record Q2HV0AEACAAJ is metadata only; API quota exceeded); Deutsche Digitale Bibliothek (BSB scans of delar 15, 18, 28 listed, search page behind an Anubis challenge, not passed). AOSB I:12 and the Riksarkivet Oxenstierna text database (CAPTCHA) not opened either. Next: a library copy of HSH 30 or AOSB I:12 at 30 July 1634; if the four passages are printed in clear, close as read."
+   "vetting_note": "Oxenstierna to Queen Christina, 30 July 1634: the printed edition (Handlingar rorande Skandinaviens historia del 30, 1849, p. 91, or AOSB I:12) is still not found online; archive.org lists 15 HSH volumes and none is del 30 (rechecked 25 Nov 2026). If the passages are printed in clear it closes as read. (research/vetting_2026-11-25_geniza_and_backlog/vetting.json)"
   },
   {
    "id": 2531,
@@ -51860,13 +52047,13 @@
    "year": 1578,
    "date": "Apr 1577 - Nov 1578",
    "title": "Letters \"avec chiffre\" to the marquis de Humieres, governor of Peronne, 1577-78, with two cipher tables in fr. 3329",
-   "correspondents": "Maineville; Pierre de Roncherolles; Philippe Laisne; unknown -> Jean de Humieres",
+   "correspondents": "Maineville; Pierre de Roncherolles; Philippe Laisne; unknown -> Jacques de Humieres",
    "place": "Peronne / Chenonceaux",
    "language": "French",
    "region": "France",
    "period": "1560-1589",
    "shelfmark": "BnF Manuscrits, fr. 3329, fr. 3409, fr. 4717",
-   "folio_note": "fr. 3329 nos. 1-2 (two \"tables de chiffres\"), 78 (f. 159), 81 (f. 104), 82 (f. 105); fr. 3409 no. 49 (f. 126, 21 Nov 1578); fr. 4717 no. 49 (f. 91, 2 Apr 1577)",
+   "folio_note": "fr. 3329 nos. 1-2 (two \"tables de chiffres\"), 78 (f. 159), 81 (f. 164), 82 (f. 165), 107 (f. 197, 30 Sep, no year); fr. 3409 no. 49 (f. 126, 21 Nov 1578); fr. 4717 no. 49 (f. 91, 2 Apr 1577)",
    "cls": "A",
    "status": "Printed catalogue entry (Omont/Delisle printed Catalogue general des manuscrits francais, Ancien fonds (1868-1895; archive.org cataloguemanfran / p1cataloguegnr volumes, OCR)) lists these pieces as \"avec chiffre\" / \"en chiffre\" with no decipherment noted; where the catalogue says \"avec chiffre et dechiffrement\" a decipherment is attached and the piece is not counted here. Not viewed. fr. 3329 also holds the \"Nouvelles d'Alencon, 3 May 1577, avec chiffre\" (f. 159); not a Villeroi 1577 letter (that is already solved here).",
    "why": "A governor of Peronne in the 1577 war of the League of Peronne; the cipher tables sit in the same collection as the letters, a rare case of key and ciphertext together.",
@@ -51889,7 +52076,7 @@
    "ark": "",
    "access": "archive",
    "scored": "sweep",
-   "vetting_note": "Vetting pass 14 Nov 2026 (Omont sweep): Not online; shelfmarks unconfirmed. General warning: Omont's volume numbers are OCR readings and his folio numbers an older foliation, so check each row against the Gallica title before use."
+   "vetting_note": "Not digitised: BnF fr. 3329, fr. 3409 and fr. 4717 have no Gallica copy (catalogue records ark:/12148/cc497913, cc49879s, cc57767r show none, and Gallica's search for 'Français 3329' and its manuscript search for Humières with 'chiffre' find printed books and other volumes only, 22 Nov 2026); the leaves need a BnF reproduction order or the Richelieu reading room. Corrections from the BnF record of fr. 3329, read 22 Nov 2026, which agree with research/audit_2026-11-16_omont_shelfmarks: no. 81 (Maineville, Chenonceaux, 7 May 1577) is f. 164 and no. 82 (Pierre de Roncherolles, Pont-Saint-Pierre, 9 May 1577) f. 165, not ff. 104-105; no. 107 (Maineville, 'D'Ennet', 30 Sept, 'Avec chiffre', f. 197) is missing from the lead; no. 1 is a 'Table de déchiffrement anonyme' and no. 2 a 'Table de chiffrement de Monsieur de Humières pour correspondre avec Monsieur d'Entragues', so they are not a matched pair and no. 2 need not be the key of these letters; the governor of Péronne is named in the same volume as 'J[acques de] Humyeres' (no. 84, f. 168, 18 May 1577), not Jean, and the record does not call him marquis. The audit also notes fr. 3409 no. 39 ('Chiffre') and fr. 4717 no. 11 ('Clef d'un chiffre') as keys in the other two volumes. (research/vetting_2026-11-22_ajbeling/vetting.json)"
   },
   {
    "id": 2731,
@@ -56642,50 +56829,6 @@
    "access_note": "Waseda institutional repository PDF https://waseda.repo.nii.ac.jp/record/30633/files/i14_a0133.pdf; i14_a0147 and 2065/6825 are reachable the same way (not fetched)."
   },
   {
-   "id": 2884,
-   "counted": true,
-   "year": 1200,
-   "date": "undated Geniza fragment (PGP gives no date; paper)",
-   "title": "Paper fragment with eleven lines in an unidentified sign script; Arabic-script text on the other side",
-   "correspondents": "unknown",
-   "place": "Egypt (Cairo Geniza)",
-   "language": "unknown (Arabic or Judaeo-Arabic expected: the other side is in Arabic script)",
-   "period": "unknown",
-   "shelfmark": "Cambridge University Library, T-S K24.24 (PGPID 33913; the Arabic side is PGPID 32108)",
-   "folio_note": "one side: 11 lines of signs, roughly 20-25 signs a line (about 250 signs), with long slanted strokes and dots between groups; a narrow column of fainter signs down the right margin. Other side: 6-7 lines of large Arabic script (PGP: letter? 'al-mawla' mentioned)",
-   "cls": "C",
-   "status": "PGP 33913: 'Magical fragment, perhaps. Unidentified alphabet or cipher', tags cipher, magic; no scholarship record. Seen at native resolution: some signs resemble Hebrew bet, he, het and samekh, others are loops and crossed forms; it is running text in lines, not a row of charakteres. Not on DECODE. No vetting block: the T-S K box is the magic box, and the Schaefer-Shaked edition and Bohak's inventory of Geniza magical fragments were not opened.",
-   "why": "About 250 signs of continuous text with word dividers: the longest unread sign-script text found in the Geniza pass, long enough for a substitution attack if the language is Arabic.",
-   "importance": 2,
-   "solvability": 3,
-   "difficulty": 4,
-   "verify": "Check Schaefer and Shaked, Magische Texte aus der Kairoer Geniza I-III (index of T-S K fragments) and Bohak's catalogue of Geniza magical fragments for K24.24; ask the Princeton Geniza Project; rule out a known script (a cursive of Coptic, Syriac or a shorthand) before treating it as a cipher; read the Arabic side for a date or names.",
-   "links": [
-    {
-     "label": "PGP 33913",
-     "href": "https://geniza.princeton.edu/en/documents/33913/"
-    },
-    {
-     "label": "PGP 32108 (Arabic side)",
-     "href": "https://geniza.princeton.edu/en/documents/32108/"
-    },
-    {
-     "label": "CUDL image, sign side (IIIF)",
-     "href": "https://images.lib.cam.ac.uk/iiif/MS-TS-K-00024-00024-000-00001.jp2/full/full/0/default.jpg"
-    }
-   ],
-   "prior_art": "none found, edition not checked (15 Nov 2026: PGP records, one web search on the shelfmark, DECODE; Schaefer-Shaked and Bohak's inventory not opened)",
-   "needs_archive_scan": "no",
-   "access_note": "CUDL IIIF by plain curl; 'full' is capped at 2000 px, native 3806 x 3664 px by regions",
-   "region": "Other",
-   "source": "Arabic sweep 15 Nov 2026 (part A)",
-   "score_note": "Scored in the Arabic sweep of 15 Nov 2026, part A (research/sweep_2026-11-15_arabic/part_A.md); image viewed at full size",
-   "seen": "image",
-   "ark": "",
-   "scored": "sweep",
-   "vetting_note": "Not established as a cipher rather than an unidentified script. The sign side is real running text with no gloss, it is not edited in Schäfer-Shaked MTKG I-III (tables of contents of all three volumes read), and nothing published on it was found; but nobody has ruled out a known script (the Geniza holds Indian-script letters that were long unidentified: Bohak's Devanagari T-S AS 159.247-248, Fragment of the Month March 2008), and Bohak's inventory of Geniza magical fragments and the MTKG Geniza-Fragmente indices (Bd. I-III) were not opened. Next step: a palaeographer's identification (Bohak or Elbaum, Princeton Geniza Project) and the MTKG registers; if no script matches, the lead can be written open. (research/vetting_2026-11-15_arabic_1/vetting.json)"
-  },
-  {
    "id": 2885,
    "counted": true,
    "year": 1139,
@@ -57061,6 +57204,74 @@
     "verdict": "key_lookup",
     "closed": "Clear copies of both telegrams are filed in the same file (HIL/65/159-160 and HIL/65/153), so the plaintext is known; kept as a lead for the key, which may bear on 2899."
    }
+  },
+  {
+   "id": 2901,
+   "counted": true,
+   "year": 1913,
+   "date": "1913-1914 (code words also in HIL/64, 1910-1912)",
+   "title": "Sudan Government telegrams with dictionary code words (Aglossa, Agyllinos, Alantapfel, Flagitate ...) left undecoded in the Khedive's copies",
+   "correspondents": "Sudan Government departments in Khartoum (Intelligence 'Mukhabarat', Finance, Civil Secretary, the Governor-General 'Hakimam') and the Sudan Agency and Finance branch in Cairo",
+   "place": "Khartoum and Cairo",
+   "language": "English",
+   "period": "1901-1950",
+   "shelfmark": "Durham University Library, Archives and Special Collections, Abbas Hilmi II papers, HIL/65/1-1127, e.g. HIL/65/823-824, 849, 910, 928-929, 964, 966, 984, 1030-1031, 1092; also HIL/64 (not listed)",
+   "folio_note": "Seen as image (cropped contact sheets of 1,024 px frames: about half of each form's text lines). Otherwise clear English telegrams carry artificial code words of a multilingual dictionary code, all beginning A... or Fl...: 'Said Acacio agyllinos sheikh Mohammed Wadai academical agyllinos stop Nuba mountains Mekke Pedura and sheikh Musa el Aisa academical agyllinos' (HIL/65/928); 'ajustamos Yusef Kamel caponarom aginaverid 1913 agitrionne Sunduk Kassala ajelastris' (HIL/65/1030); 'Afrosponde Agazapada to next higher class flamle ... acquisto Hassan Badr ... acquitrino Yusef Kamel' (1031); 'Aglossa 114 flagitate repayment in London' (910); 'Aeruginis floorless to Sirdar' (966); 'all of Alantapfel' (1092). Seen in roughly one telegram in fifteen of the about 265 two-form frames viewed; no decode beside any of them.",
+   "cls": "B",
+   "status": "15 Nov 2026: code words seen, bare. This is a code book system, not a cipher: reading it needs the Sudan Government's telegraph code (not looked for; the Durham Sudan Archive, TNA FO 141 or WO 33 are the likely places) or a reconstruction from context (the words stand for stock phrases such as ranks, classes of decoration, 'with reference to my telegram'). The A... and Fl... words look like vocabulary of the Berne Official Vocabulary family used by private codes; not checked against any printed code. Count is an estimate from cropped sheets, not a tally. known.py: no hit.",
+   "why": "Explains what the Durham catalogue means by 'use of code' in HIL/64 and HIL/65. A weak cipher target on its own (stock phrases, partly guessable), listed so the code book can be looked for; with it every code word in the two files reads at once.",
+   "region": "England",
+   "importance": 1,
+   "solvability": 2,
+   "difficulty": 3,
+   "seen": "image",
+   "needs_archive_scan": "no",
+   "verify": "Look for the Sudan Government telegraph code book (Durham Sudan Archive, TNA FO 141, WO 33); tally the code words over all frames.",
+   "score_note": "Scored from the sweep record (15 Nov 2026, wave 15)",
+   "links": [
+    {
+     "href": "https://n2t.durham.ac.uk/ark:/32150/t1mh128nf091.html",
+     "label": "Catalogue record / images"
+    }
+   ],
+   "source": "Wave 15 Arabic leftovers sweep, 15 Nov 2026 (Durham IIIF by curl; CUDL search in Chrome)",
+   "ark": "",
+   "scored": "sweep",
+   "vetting_note": "Durham HIL/65 Sudan Government telegrams: dictionary code words are real but it is a printed code-book system, so the lead needs the Sudan Government telegraph code from the Durham Sudan Archive or TNA FO 141 / WO 33 before it can be offered; no per-telegram extent has been tallied. (research/vetting_2026-11-25_geniza_and_backlog/vetting.json)"
+  },
+  {
+   "id": 2903,
+   "counted": true,
+   "year": 1593,
+   "date": "Vikrama samvat 1650 (1593/94)",
+   "title": "Coded scribe's or place name in the colophon of a Jain manuscript (Abhayadeva's Vipakasutravrtti, CUL Add. 2255, f. 19v)",
+   "correspondents": "an unnamed Jain scribe; later owner Pandit Vimalavijayagani",
+   "place": "Western India (Gujarat or Rajasthan); not stated",
+   "language": "Sanskrit and Prakrit; colophon note in Gujarati",
+   "period": "1589-1598",
+   "shelfmark": "Cambridge University Library, MS Add. 2255, f. 19v, line 14",
+   "folio_note": "Seen as image (CUDL IIIF, 2,000 px wide; page image 40). After 'samvat 1650 varse ... kalyanam astu' and before 'lasitam' (= likhitam) stand about a dozen signs in two or three groups divided by dandas, unlike the Jaina Devanagari of the text; they look like numeral forms. The owner's note follows in clear.",
+   "cls": "A",
+   "status": "15 Nov 2026: CUDL record: the name is 'written in what seems to be coded characters instead of ordinary Jaina Devanagari. Their meaning is yet to be deciphered'. known.py: no hit. No prior-art search (Indian numeral-syllable ciphers such as ankapalli and the scribal 'mula-deviya' substitutions are the obvious first tests). Outside the Arabic scope of this sweep; found through the CUDL search.",
+   "why": "Stated unread by the cataloguer and on a free image, but only about twelve signs: solvable only if it is a known Indian scribal cipher, which is likely.",
+   "region": "Other",
+   "importance": 1,
+   "solvability": 2,
+   "difficulty": 3,
+   "seen": "image",
+   "needs_archive_scan": "no",
+   "verify": "Search prior art on Jain scribal ciphers; test the known Indian numeral-syllable substitutions on the dozen signs.",
+   "score_note": "Scored from the sweep record (15 Nov 2026, wave 15)",
+   "links": [
+    {
+     "href": "https://cudl.lib.cam.ac.uk/view/MS-ADD-02255/40",
+     "label": "Catalogue record / images"
+    }
+   ],
+   "source": "Wave 15 Arabic leftovers sweep, 15 Nov 2026 (Durham IIIF by curl; CUDL search in Chrome)",
+   "ark": "",
+   "scored": "sweep",
+   "vetting_note": "CUL MS Add. 2255 f. 19v line 14 (CUDL image 40, seen at 2000 px): after \"samvat 1650 ... kalyanam astu\" a short run of about twelve signs, Devanagari digits and a cross (reads as 746 || 117 16 x 44 | 8), then the clear owner note; they are numerals, so the \"code\" may be the Jain numeral-name convention (anka-lipi) and not a cipher. Too short to count as a target on its own; needs an Indologist or a published Jain scribal-numeral table. (research/vetting_2026-11-25_geniza_and_backlog/vetting.json)"
   },
   {
    "id": 2906,
@@ -58330,6 +58541,2242 @@
    "needs_archive_scan": "no",
    "seen": "image",
    "source": "Alcort series on DARA, found by the wave 9 sweep (research/sweep_2026-11-15_chrome_wave9/key_leads.json, excluded there because the decipherment is on the sheet); the tests are Brice Dudout's, issue #779, 18 Nov 2026",
+   "ark": "",
+   "scored": "sweep",
+   "vetting_note": "Alcort D/0004: the marginal decipherment of the time is on the sheet, and the lead is being worked in issue #779 (two pre-registered key-sheet tests by Brice Dudout); the verdict follows that work (read in part, with the key rebuilt, rather than open). Not touched by this pass. (research/vetting_2026-11-25_geniza_and_backlog/vetting.json)"
+  },
+  {
+   "id": 3850,
+   "counted": true,
+   "year": 1917,
+   "date": "25 Nov 1916 or 1917",
+   "title": "F. J. Lobo, Mexican consul at Clifton, Arizona → Ignacio Bonillas, Washington: cipher telegram that Bonillas could not read (with a second of 26 Nov)",
+   "correspondents": "F. J. Lobo, Mexican consul at Clifton, Arizona → Ignacio Bonillas, Mexican embassy, Washington",
+   "place": "Clifton, Arizona",
+   "language": "Spanish",
+   "region": "Americas",
+   "period": "1901-1950",
+   "shelfmark": "Archivo Histórico Genaro Estrada, Secretaría de Relaciones Exteriores (AHGE-SRE), Archivo de la Embajada de México en Estados Unidos (AEMEUA), leg. 507, exp. 6, unfoliated",
+   "folio_note": "Two telegrams, of 25 and 26 Nov, and Bonillas's oficio A-743 of 27 Nov asking Lobo whether his office held the \"Murciélago\" key. The 25 Nov telegram is pictured in Narváez 2019, p. 344, fig. 14: a Western Union form received in Washington, three typed lines of five-letter groups, the word \"OCHO\", the signature \"F J LOBO\", a handwritten word below it and pencil marks over some groups. The 26 Nov telegram is not pictured.",
+   "cls": "B",
+   "status": "Known only from Narváez 2019, pp. 344-345, nn. 48-49: Bonillas could not decipher the telegrams of 25 and 26 Nov and wrote to Lobo (A-743, 27 Nov); Narváez did not find Lobo's answer; the \"Murciélago\" square (printed in the book, fig. 8, p. 335) fails on the pictured telegram although \"cajista\", word 8 of the list, appears on it; Narváez suggests Lobo used a differently arranged square. The caption of fig. 14 gives 1916; p. 345 says Bonillas was writing to Lobo about the key in November 1917. The row sorts under 1917 because the book's text dates Bonillas's oficio to that month; the caption's 1916 is not explained, and the year stays open until the file is seen. The pencil marks on the form are not identified as a decipherment. Ciphertext seen only as the book's printed figure, in a photograph of a library copy; not transcribed. Not found on DECODE; not in the repository (known.py).",
+   "why": "A consular telegram of the Carranza government in the United States that its own embassy could not read; it would show how the consulates used the \"Murciélago\" square.",
+   "importance": 2,
+   "solvability": 3,
+   "difficulty": 3,
+   "score_note": "Scored from the printed figure and text of Narváez 2019 during the Nov 2026 reading of that book (research/sweep_2026-11-22_ajbeling_mexico/); viewed only in print",
+   "verify": "Ask AHGE-SRE for images of AEMEUA leg. 507 exp. 6 (both telegrams, A-743 and any answer or decipherment) and settle the year; test the \"Murciélago\" square of fig. 8 in other arrangements, with the April telegram on pp. 341-343 (figs. 12-13, with its plain text) as a control.",
+   "links": [
+    {
+     "label": "Review of Narváez 2019 in Historia Mexicana 72:2 (no online record of the archive file)",
+     "href": "https://www.scielo.org.mx/pdf/hm/v72n2/2448-6531-hm-72-02-963.pdf"
+    }
+   ],
+   "seen": "catalogue",
+   "source": "Narváez 2019 (printed figure)",
+   "prior_art": "Narváez 2019 pp. 344-345 tried the \"Murciélago\" square and failed; nothing else found (checked 22 Nov 2026: known.py, DECODE, the Cryptiana snapshot unsolved.htm, a web search on Lobo, Clifton, Bonillas and Murciélago)",
+   "needs_archive_scan": "yes",
+   "access_note": "The 25 Nov telegram is pictured in the book (Narváez 2019, p. 344, fig. 14); the 26 Nov telegram and the rest of the file only at AHGE-SRE, Mexico City.",
+   "ark": "",
+   "access": "archive",
+   "scored": "sweep"
+  },
+  {
+   "id": 3644,
+   "counted": true,
+   "year": 1782,
+   "date": "10 Aug 1782",
+   "title": "Henry Laurens (Nantes) → James Bourdieu (London): clear letter with 13 numerical code designations (12 distinct numbers), key not known",
+   "correspondents": "Henry Laurens → James Bourdieu",
+   "place": "Nantes",
+   "language": "English",
+   "region": "Americas",
+   "period": "1701-1800",
+   "shelfmark": "University of South Carolina, South Caroliniana Library, Henry Laurens Papers (accession 13612), amerrevsc id 2206 (images 2203-2205)",
+   "folio_note": "Three pages, images 2203 to 2205 of record 2206. 13 code positions, 12 distinct numbers (only 19 repeats), in this order: 29 (page 1, line 10); 21, 19, 55, 57, 68, 36, 54, 23, 56, 19, 67, 20 (page 2, lines 11 to 21); none on page 3. The rest is clear English. Two AI readers working without a key agree on all 13.",
+   "cls": "B",
+   "status": "Not on DECODE (keyword search 'Bourdieu': 0 records, 20 Nov 2026); not in the catalogue or the leads (known.py 'Bourdieu', '13612', 'amerrevsc', 'Laurens': only the research note itself and lead 1435, a different letter of 1778). The Papers of Henry Laurens, vol. 15 (1999), seen in Google Books snippets, say the key to the Laurens-Bourdieu number code is not known and that the numbers do not seem to have been fixed to persons; the volume prints the letter of 4 June 1782 (pp. 526-528) and, by the contributor's reading of its index, not this letter in full. What the research note research/laurens_bourdieu_1782/ (PR #827) adds: here Laurens quotes what he wrote to Franklin on 7 Aug 1782 (postscript, image 2497) with numbers for the names, so 68 = Mr Bourdieu, 36 = American Independence, 54 = Lord S (Shelburne, per the Laurens editors) and 23 = the French interest (exact word unknown). Two looser comparisons put Franklin at both 19s (Laurens to Oswald, 7 Aug, image 2495; 'neither 56 nor 19' against the postscript's 'neither Count Vergennes nor yourself'), as the edition had suggested for June; 56 = Vergennes is suggested and left open. Six of 13 positions have a referent; three of them (68, 36, 54) rest on a word-for-word parallel. Open: 29, 21, 55, 57, 56, 67, 20. The letter to Bourdieu of 28 Aug 1782 (image 2460) repeats 19 and 68 ('I have lately heard from 19. Seemingly a studied silence respecting the concerns of 68') and has 'No. 45'; Franklin and Bourdieu fit there, which is compatibility, not confirmation. The letter of 30 Nov 1782 (image 2994) has 44, open. A pre-registered check of six letters to Bourdieu of Oct-Nov 1782 found none of 68, 36, 54, 23. A second witness is in the Shelburne papers at the Clements Library, vol. 35 no. 55 (HMC Fifth Report, 1876, p. 256: 'written partly in Cypher'), the volume of catalogue entry 772, which does not name this letter. All readings are the contributor's AI agents'. No maintainer has seen the images: digital.tcl.sc.edu did not answer on 20 Nov 2026 by script, in the app's browser or in Chrome. No reading is claimed; the lead is not vetted.",
+   "why": "Henry Laurens, out of the Tower and in France, writes to a London friend about the Paris peace talks of summer 1782 with numbers for persons and causes; the seven numbers still open, and the numbers of his other letters to Bourdieu (4 June, 28 August, 30 November 1782), can be tested against his clear letters of the same days.",
+   "importance": 3,
+   "solvability": 2,
+   "difficulty": 4,
+   "score_note": "Scored by the maintainers at the integration of PR #827 (21 Nov 2026) from the contributor's research note (research/laurens_bourdieu_1782/) and the project's two reviews of it; the images were seen by the contributor's AI agents, not by the project. Solvability 2: 13 numbers in a clear letter, open only to parallel passages, and the edition finds the numbers not fixed to persons. Difficulty 4: 13 tokens allow no statistics.",
+   "verify": "A maintainer opens image 2204 (page 2, lines 11 to 21: twelve numbers and the marked quotation), image 2497 (the postscript to Franklin, 7 Aug) and image 2460 (28 Aug: the passage with 45, 19, 68 and the address) and checks them against the two readings in research/laurens_bourdieu_1782/. Then: does Franklin's letter to Laurens of 19 Aug 1782 (Franklin Papers vol. 38) mention Bourdieu? Open Papers of Henry Laurens vol. 15 (pp. 526-528, 551-552, the index under Bourdieu) for an abstract of this letter. Ask the Clements Library for images of Shelburne papers vol. 35 no. 55 and see whether that witness keeps or expands the numbers. Search Lasry's papers and HistoCrypt.",
+   "links": [
+    {
+     "label": "USC record 2206: Laurens to Bourdieu, 10 Aug 1782",
+     "href": "https://digital.tcl.sc.edu/digital/collection/amerrevsc/id/2206/"
+    },
+    {
+     "label": "Page 2, image 2204 (the numbered passage)",
+     "href": "https://digital.tcl.sc.edu/iiif/2/amerrevsc:2204/full/1800,/0/default.jpg"
+    },
+    {
+     "label": "Laurens to Franklin, 7 Aug 1782, postscript, image 2497",
+     "href": "https://digital.tcl.sc.edu/iiif/2/amerrevsc:2497/full/1800,/0/default.jpg"
+    },
+    {
+     "label": "Laurens to Bourdieu, 28 Aug 1782, image 2460",
+     "href": "https://digital.tcl.sc.edu/iiif/2/amerrevsc:2460/full/1400,/0/default.jpg"
+    },
+    {
+     "label": "Research note research/laurens_bourdieu_1782/",
+     "href": "https://github.com/dbourdeau/cyphersolver/tree/main/research/laurens_bourdieu_1782"
+    },
+    {
+     "label": "Pull request #827",
+     "href": "https://github.com/dbourdeau/cyphersolver/pull/827"
+    },
+    {
+     "label": "Franklin Papers vol. 37: Laurens to Franklin, 7 Aug 1782",
+     "href": "https://founders.archives.gov/documents/Franklin/01-37-02-0468"
+    },
+    {
+     "label": "HMC Fifth Report (1876), p. 256: Shelburne vol. 35 no. 55",
+     "href": "https://archive.org/details/FifthReportHMC1876/page/256/mode/1up"
+    }
+   ],
+   "seen": "image",
+   "source": "GitHub pull request #827 (Andrew Beling, ajbeling, with AI agents): research note research/laurens_bourdieu_1782/, merged 21 Nov 2026; finder ajbeling; row written by the maintainers at integration",
+   "prior_art": "open (checked 20 Nov 2026 in the review of PR #827: Papers of Henry Laurens vol. 15, Google Books snippets only: key not known, numbers not fixed to persons, '45' the peace commission in June; Tomokiyo, cryptiana code/frankli2.htm: one parenthesis citing the edition pp. 526-528 (Laurens's cipher survives only in letters to Bourdieu; '45' = peace commission), nothing on this letter's numbers; DECODE keyword search: 'Bourdieu' 0 records, 'Laurens' only L. P. van de Spiegel records; Franklin Papers vol. 37 pp. 708-710 print the 7 Aug letter and its postscript, Founders Online not re-read (empty page to scripts); HMC Fifth Report p. 256 (vol. 35 no. 55, 'written partly in Cypher') checked on the archive.org OCR text at integration. Not searched: Lasry's papers, HistoCrypt, Cryptologia)",
+   "needs_archive_scan": "no",
+   "access_note": "IIIF images online at digital.tcl.sc.edu (the contributor reports the library marks them public domain); the host did not answer the project on 20 Nov 2026 by script, in the app's browser or in Chrome. The Clements witness (Shelburne vol. 35) is unavailable for its physical condition.",
+   "ark": "",
+   "scored": "sweep"
+  },
+  {
+   "id": 3851,
+   "counted": true,
+   "year": 1500,
+   "date": "notes dated 1479, 1518 and 1564 on the manuscript's flyleaves; the secret-character signature is undated",
+   "title": "Syriac miscellany: signature in secret characters after four Syriac verses (fol. 198b)",
+   "correspondents": "unknown (a possessor or scribe of the volume)",
+   "place": "Syria or Upper Mesopotamia (Syriac Orthodox)",
+   "language": "Syriac (expected)",
+   "period": "1497-1559",
+   "shelfmark": "London, British Library, Add. MS 21580, fol. 198b (Wright, Catalogue of Syriac MSS in the British Museum, vol. 2, no. DCCXXIII)",
+   "folio_note": "Wright: 'Four Syriac verses in praise of the [...], with an Arabic translation, and a signature in secret characters' (fol. 198b)",
+   "cls": "C",
+   "status": "Catalogue only. Wright prints the verses but does not read the signature. Not on DECODE; known.py: no hits.",
+   "why": "A Syriac cryptogram signature with a dated owner context; Syriac secret alphabets (Bardaisan, Simon, Narsai) are held as key material from Sachau's Berlin catalogue, so it may read at once.",
+   "importance": 1,
+   "solvability": 4,
+   "difficulty": 1,
+   "verify": "Check whether BL has digitised Add. MS 21580; if so, read fol. 198b against the Syriac secret alphabets in Sachau 1899 (nos. 90, 224, 338 ...). Search Wright's index and the BL Syriac literature for a reading.",
+   "links": [
+    {
+     "label": "Wright, Catalogue of Syriac MSS, vol. 2 (archive.org)",
+     "href": "https://archive.org/details/catalogueofsyria02brituoft"
+    }
+   ],
+   "prior_art": "not established (checked 24 Nov 2026: Wright prints no reading; DECODE harvest and known.py no hits; no web hit)",
+   "needs_archive_scan": "unknown: BL digitisation of Add. 21580 not checked",
+   "access_note": "Catalogue text on archive.org by plain curl; leaf not seen",
+   "source": "research/sweep_2026-11-24_arabic_treatises",
+   "region": "Other",
+   "seen": "catalogue",
+   "score_note": "Scored from the catalogue description during the 24 Nov 2026 Arabic treatises sweep (research/sweep_2026-11-24_arabic_treatises/); not viewed",
+   "ark": "",
+   "scored": "sweep",
+   "vetting_note": "BL Add. MS 21580 f. 198b: signature in secret characters named only in Wright's catalogue; BL digitisation not established by a search of 25 Nov 2026 and the leaf has not been seen. Next: search BL Digitised Manuscripts and Wright vol. 2 on archive.org at no. DCCXXIII. (research/vetting_2026-11-25_geniza_and_backlog/vetting.json)"
+  },
+  {
+   "id": 3852,
+   "counted": true,
+   "year": 615,
+   "date": "manuscript dated A.D. 615 (Gospels); the marginal line in secret characters is undated, probably later",
+   "title": "Nestorian Gospel book of A.D. 615: line of writing in a secret character on the outer margin of the colophon page",
+   "correspondents": "unknown",
+   "place": "Persian Empire (East Syriac; colophon names Nisibis clergy)",
+   "language": "Syriac (expected)",
+   "period": "unknown",
+   "shelfmark": "London, British Library, Add. MS 14471 (Wright, Catalogue of Syriac MSS in the British Museum, vol. 1, no. LXXVII), colophon page near fol. 108",
+   "folio_note": "Wright: 'On the outer margin of this page there is a line of writing in a secret character', said of the page with the colophon of A.D. 615 (fol. 108)",
+   "cls": "C",
+   "status": "Catalogue only; no reading in Wright. Not on DECODE; known.py: no hits.",
+   "why": "One line of Syriac cryptogram in one of the oldest dated Gospel books; short, but a possible very early dated cipher note if the line is old.",
+   "importance": 2,
+   "solvability": 3,
+   "difficulty": 1,
+   "verify": "Find a digitisation (BL Digitised Manuscripts; the Add. 14,4xx Nitrian books are partly online); read the line against the Syriac secret alphabets in Sachau 1899; date the hand.",
+   "links": [
+    {
+     "label": "Wright, Catalogue of Syriac MSS, vol. 1 (archive.org)",
+     "href": "https://archive.org/details/catalogueofsyria01brituoft"
+    }
+   ],
+   "prior_art": "not established (checked 24 Nov 2026: Wright prints no reading; DECODE harvest and known.py no hits)",
+   "needs_archive_scan": "unknown: BL digitisation not checked",
+   "access_note": "Catalogue text on archive.org; leaf not seen. The shelfmark is taken from the bracket that closes Wright's entry LXXVII; confirm it on the catalogue page.",
+   "source": "research/sweep_2026-11-24_arabic_treatises",
+   "region": "Other",
+   "seen": "catalogue",
+   "score_note": "Scored from the catalogue description during the 24 Nov 2026 Arabic treatises sweep (research/sweep_2026-11-24_arabic_treatises/); not viewed",
+   "ark": "",
+   "scored": "sweep",
+   "vetting_note": "BL Add. MS 14471 (Gospels of 614/5): one line in a secret character on the colophon margin per Wright; the BL record is inconsistent with the lead's shelfmark and no digitisation was found on 25 Nov 2026; leaf not seen. Confirm the shelfmark on Wright vol. 1 no. LXXVII before any viewing. (research/vetting_2026-11-25_geniza_and_backlog/vetting.json)"
+  },
+  {
+   "id": 3853,
+   "counted": true,
+   "year": 1550,
+   "date": "16th century (vHMML)",
+   "title": "Arabic manuscript with poems in Turkish and in a secret alphabet beside the colophon (fol. 161r)",
+   "correspondents": "copied by Muhammad b. Amir",
+   "place": "unknown (Ottoman lands)",
+   "language": "Ottoman Turkish (expected)",
+   "period": "1497-1559",
+   "shelfmark": "Beirut, Universite Saint-Joseph, Bibliotheque orientale, MS 2/980, fol. 161r (HMML project USJ 2 00980; vHMML record 505593)",
+   "folio_note": "vHMML: 'Copied by Muhammad b. Amir. Colophon, fol. 161r. Poems in Turkish and secret alphabet, fol. 161r'",
+   "cls": "C",
+   "status": "Catalogue only. Images are 'Registered' on vHMML (sign-in needed), so not seen. Not on DECODE; known.py: no hits.",
+   "why": "Verse written in a secret alphabet next to a colophon, the same genre as the LJS 51 cipher verses; may be a sign table rather than text, which only the image will settle.",
+   "importance": 1,
+   "solvability": 3,
+   "difficulty": 2,
+   "verify": "View the images with a vHMML account (the owner's, not one created by a session); decide whether fol. 161r holds enciphered text or an alphabet table.",
+   "links": [
+    {
+     "label": "vHMML record",
+     "href": "https://www.vhmml.org/readingRoom/view/505593"
+    }
+   ],
+   "prior_art": "not established (checked 24 Nov 2026: vHMML record, DECODE harvest, known.py)",
+   "needs_archive_scan": "no: images on vHMML behind registration",
+   "access_note": "vHMML record JSON by plain curl (readingRoom/view/<id>); images need sign-in",
+   "source": "research/sweep_2026-11-24_arabic_treatises",
+   "region": "Other",
+   "seen": "catalogue",
+   "score_note": "Scored from the catalogue description during the 24 Nov 2026 Arabic treatises sweep (research/sweep_2026-11-24_arabic_treatises/); not viewed",
+   "ark": "",
+   "scored": "sweep",
+   "vetting_note": "USJ MS 2/980 f. 161r (vHMML 505593): images need a vHMML sign-in with the owner's own account, so the leaf is not seen; it may be an alphabet table and not a text. Waits for a sign-in by the owner. (research/vetting_2026-11-25_geniza_and_backlog/vetting.json)"
+  },
+  {
+   "id": 3854,
+   "counted": true,
+   "year": 1550,
+   "date": "16th century (?) (vHMML; Flugel 1906)",
+   "title": "Ibn al-'Arabi, 'Anqa' mughrib: copy that 'includes writing in a secret alphabet'",
+   "correspondents": "",
+   "place": "unknown",
+   "language": "Arabic",
+   "period": "1497-1559",
+   "shelfmark": "Vienna, Osterreichische Nationalbibliothek, Cod. N.F. 303 (Flugel no. 1906; HMML 24701-001; vHMML record 530719)",
+   "folio_note": "vHMML: 'Includes writing in a secret alphabet. Excerpts, fol. 70v-71r'. The opening ff. 70v-71r (image 73) was seen: ordinary naskh text and marginal notes, no secret signs; the secret-alphabet passage was not located (images 5-72 not screened at reading size)",
+   "cls": "C",
+   "status": "Probably part of the work itself: Ibn al-'Arabi's 'Anqa' mughrib is known for passages in enigmatic letters, discussed in Elmore's translation and study (1999), which was not opened. Not on DECODE.",
+   "why": "Only worth keeping if the secret-alphabet passage is a scribe's note rather than the author's own enigma, which is literary and studied.",
+   "importance": 1,
+   "solvability": 2,
+   "difficulty": 2,
+   "verify": "Page images 5-72 (vHMML IIIF, plain curl) at 1,400 px; then check Elmore 1999 for the passage.",
+   "links": [
+    {
+     "label": "vHMML record",
+     "href": "https://www.vhmml.org/readingRoom/view/530719"
+    },
+    {
+     "label": "vHMML IIIF manifest",
+     "href": "https://www.vhmml.org/image/manifest/530719?objectType=READING_ROOM"
+    }
+   ],
+   "prior_art": "probably studied as part of the text (Elmore 1999, not opened)",
+   "needs_archive_scan": "no",
+   "access_note": "vHMML 'Unregistered' object: manifest and IIIF images (6000 x 4288 microfilm spreads) answer plain curl",
+   "source": "research/sweep_2026-11-24_arabic_treatises",
+   "region": "Other",
+   "seen": "catalogue",
+   "score_note": "Scored from the catalogue description during the 24 Nov 2026 Arabic treatises sweep (research/sweep_2026-11-24_arabic_treatises/); not viewed",
+   "ark": "",
+   "scored": "sweep",
+   "vetting_note": "ONB Cod. N.F. 303 (Ibn al-Arabi, Anqa mughrib): the secret-alphabet passage was not located in images 5-72 and is probably the author's own enigmatic letters, studied in Elmore 1999 (not opened). Lead is more likely closed as not a scribal cipher once Elmore is read. (research/vetting_2026-11-25_geniza_and_backlog/vetting.json)"
+  },
+  {
+   "id": 3856,
+   "counted": true,
+   "seen": "image",
+   "source": "Thorough Geniza sweep 25 Nov 2026 (PGP metadata dump + CUDL IIIF)",
+   "prior_art": "open as far as checked (25 Nov 2026: PGP dump, web search; see vetting)",
+   "needs_archive_scan": "no",
+   "correspondents": "unknown scribe",
+   "place": "Fustat/Cairo (Geniza)",
+   "access_note": "CUDL IIIF by plain curl: images.lib.cam.ac.uk/iiif/<id>-000-0000N.jp2/full/<w>,/0/default.jpg",
+   "shelfmark": "Cambridge University Library, CUL Or.1080 6.12",
+   "pgpid": 19773,
+   "title": "Parchment leaf with four lines of an unidentified cursive script",
+   "year": 1300,
+   "date": "undated Geniza; unassessed",
+   "language": "unknown (shorthand, numerals or foreign script)",
+   "period": "unknown",
+   "folio_note": "four lines of about 45-60 stroke-like signs, plus about 20 signs below; floral motif lower left",
+   "status": "PGP: \"four lines in a mysterious script, perhaps a shorthand or numerical notation\". Image: rapid cursive of vertical strokes and hooks, not recognisable as Hebrew or Arabic at 1,300 px. May be Judaeo-Arabic shorthand, an Indic or Ethiopic script, or numerals.",
+   "why": "Four full lines (about 200 signs) of an unknown writing system on parchment; no catalogue reading.",
+   "verify": "Fetch at native resolution and compare with T-S AS 159.247/248 (Indic) and Ethiopic hands before treating as a cipher; a script identification may end it.",
+   "importance": 2,
+   "solvability": 2,
+   "difficulty": 3,
+   "cls": "B",
+   "region": "Other",
+   "links": [
+    {
+     "label": "PGP 19773",
+     "href": "https://geniza.princeton.edu/en/documents/19773/"
+    },
+    {
+     "label": "CUDL image",
+     "href": "https://images.lib.cam.ac.uk/iiif/MS-OR-01080-00006-00012-000-00001.jp2/full/full/0/default.jpg"
+    }
+   ],
+   "vetting": {
+    "date": "2026-11-25",
+    "by": "claude session 25 Nov 2026, thorough Geniza sweep",
+    "seen": {
+     "kind": "scan",
+     "where": "CUDL Or.1080 6.12 recto at 1400 px",
+     "extent": "4 lines about 200 signs",
+     "cipher": "Unidentified cursive strokes; identification not settled"
+    },
+    "prior_art": {
+     "pgp": "PGP record read (metadata dump of 25 Nov 2026 and web search): no transcription, translation or footnote; description only.",
+     "literature": "Web search 25 Nov 2026 for the shelfmark with cipher / secret script / Bohak: nothing. Not in the cipher lists of Bohak 2010 (CSIC), Elbaum 2022 or the 6 and 15 Nov repo sweeps.",
+     "decode": "No Hebrew-script or Geniza record in DECODE (6 Nov sweep, grep of catalogue_harvest/decode/list.json).",
+     "tomokiyo_lasry": "Not checked again this session (6 Nov sweep: none).",
+     "not_checked": "Schaefer-Shaked / Bohak inventories of Geniza magic, FGP catalogue (registration), CUDL catalogue (WAF)."
+    }
+   },
+   "date_range_note": "period given by the sweep: 1101-1400",
+   "score_note": "Scored during the 25 Nov 2026 thorough Geniza sweep (research/sweep_2026-11-25_geniza_thorough/); image viewed by the sweep",
+   "ark": "",
+   "scored": "sweep",
+   "vetting_note": "CUL Or.1080 6.12 (PGP 19773): four lines of fast cursive strokes on parchment seen at 1600 px; the script is not identified (shorthand, siyaq, numerals or an Indic or Ethiopic hand) so it is not shown to be a cipher; PGP says \"perhaps a shorthand or numerical notation\". Needs a palaeographer (Bohak, Elbaum) or comparison with Judaeo-Arabic shorthand and siyaq before it can be called open. (research/vetting_2026-11-25_geniza_and_backlog/vetting.json)"
+  },
+  {
+   "id": 3857,
+   "counted": true,
+   "seen": "image",
+   "source": "Thorough Geniza sweep 25 Nov 2026 (PGP metadata dump + CUDL IIIF)",
+   "prior_art": "open as far as checked (25 Nov 2026: PGP dump, web search; see vetting)",
+   "needs_archive_scan": "no",
+   "correspondents": "unknown scribe",
+   "place": "Fustat/Cairo (Geniza)",
+   "access_note": "CUDL IIIF by plain curl: images.lib.cam.ac.uk/iiif/<id>-000-0000N.jp2/full/<w>,/0/default.jpg",
+   "shelfmark": "Cambridge University Library, T-S Ar.39.472",
+   "pgpid": 20963,
+   "title": "Table of about 45 cells with abjad-letter headings and non-word letter strings (divinatory or coded)",
+   "year": 1300,
+   "date": "undated Geniza; unassessed",
+   "language": "Arabic letters (non-words)",
+   "period": "unknown",
+   "folio_note": "two sides, about 45 cells, each with a red number, a bold abjad letter, 3-4 lines of letter strings and a numeral column",
+   "status": "PGP: \"letters written individually, rarely form words, possibly abbreviations or codes\". Image (by agent, rechecked in part): a letter-number table of about 1,000 letters. May be an ilm al-huruf / zairja type divination table, not a cipher.",
+   "why": "Large body of non-word Arabic letters in a tabular layout; a coded table or a divination chart.",
+   "verify": "Compare with zairja and wafq tables in Ahlwardt and Dorn; if it is a lookup table it has a published key.",
+   "importance": 2,
+   "solvability": 2,
+   "difficulty": 3,
+   "cls": "B",
+   "region": "Other",
+   "links": [
+    {
+     "label": "PGP 20963",
+     "href": "https://geniza.princeton.edu/en/documents/20963/"
+    }
+   ],
+   "date_range_note": "period given by the sweep: 1101-1400",
+   "score_note": "Scored during the 25 Nov 2026 thorough Geniza sweep (research/sweep_2026-11-25_geniza_thorough/); image viewed by the sweep",
+   "ark": "",
+   "scored": "sweep",
+   "vetting_note": "T-S Ar.39.472 (PGP 20963): table of about 45 cells with red numbers, abjad headings, 4-3-2-1 numeral columns and non-word letter strings, seen in a native crop; it looks like a letter-divination (geomantic or zairja) table, not shown to be a cipher; PGP says accounts or calendrical reckoning are possible. Needs an Arabic magic-table specialist; do not offer as a cipher yet. (research/vetting_2026-11-25_geniza_and_backlog/vetting.json)"
+  },
+  {
+   "id": 3858,
+   "counted": true,
+   "seen": "image",
+   "source": "Thorough Geniza sweep 25 Nov 2026 (PGP metadata dump + CUDL IIIF)",
+   "prior_art": "open as far as checked (25 Nov 2026: PGP dump, web search; see vetting)",
+   "needs_archive_scan": "no",
+   "correspondents": "unknown scribe",
+   "place": "Fustat/Cairo (Geniza)",
+   "access_note": "CUDL IIIF by plain curl: images.lib.cam.ac.uk/iiif/<id>-000-0000N.jp2/full/<w>,/0/default.jpg",
+   "shelfmark": "Cambridge University Library, CUL Or.1080 14.13 and 14.25",
+   "pgpid": 31508,
+   "title": "Protective amulet leaves with eight lines of alif-like strokes and Indic digits (letter-number code)",
+   "year": 1300,
+   "date": "undated Geniza; unassessed",
+   "language": "Arabic instructions, coded lines",
+   "period": "unknown",
+   "folio_note": "14.13: eight underlined lines of about 25 marks; 14.25: three lines of 25 marks and a diagram, red Arabic instructions",
+   "status": "PGP: \"mysterious strings of Arabic letters and numbers with diagrams\". Image: amulet whose strings read like a wafq/abjad letter-number code.",
+   "why": "About 200 marks in lines plus a diagram; amulet code, may be a magic square rather than a cipher.",
+   "verify": "Check against wafq (magic square) conventions and the red instructions before attempting.",
+   "importance": 2,
+   "solvability": 2,
+   "difficulty": 3,
+   "cls": "B",
+   "region": "Other",
+   "links": [
+    {
+     "label": "PGP 31508",
+     "href": "https://geniza.princeton.edu/en/documents/31508/"
+    },
+    {
+     "label": "PGP 31451",
+     "href": "https://geniza.princeton.edu/en/documents/31451/"
+    }
+   ],
+   "date_range_note": "period given by the sweep: 1101-1400",
+   "score_note": "Scored during the 25 Nov 2026 thorough Geniza sweep (research/sweep_2026-11-25_geniza_thorough/); image viewed by the sweep",
+   "ark": "",
+   "scored": "sweep",
+   "vetting_note": "CUL Or.1080 14.13 + 14.25 (PGP 31451, 31508): amulet; 14.13 has seven underlined lines of alif-like strokes mixed with eastern numerals, 14.25 has a diagram, ring-ended signs and strings; seen at 1400 px. The stroke-and-numeral lines read as abjad numbers or an amulet number series rather than as an encoded text; not shown to be a cipher. Needs the red instructions on 14.25 read and a wafq (magic square) check. (research/vetting_2026-11-25_geniza_and_backlog/vetting.json)"
+  },
+  {
+   "id": 3859,
+   "counted": true,
+   "seen": "image",
+   "source": "Thorough Geniza sweep 25 Nov 2026 (PGP metadata dump + CUDL IIIF)",
+   "prior_art": "open as far as checked (25 Nov 2026: PGP dump, web search; see vetting)",
+   "needs_archive_scan": "no",
+   "correspondents": "unknown scribe",
+   "place": "Fustat/Cairo (Geniza)",
+   "access_note": "CUDL IIIF by plain curl: images.lib.cam.ac.uk/iiif/<id>-000-0000N.jp2/full/<w>,/0/default.jpg",
+   "shelfmark": "Cambridge University Library, T-S K12.60 (verso)",
+   "pgpid": 41966,
+   "title": "Grid of about 20 ring-ended charakteres each glossed by a small letter (probable key to the ring-letter family)",
+   "year": 1200,
+   "date": "undated Geniza; unassessed",
+   "language": "sign table",
+   "period": "unknown",
+   "folio_note": "verso of a legal fragment: grid of about 20 signs with gloss letters; recto margin has 2 lines of about 26 Greek or Coptic-like signs",
+   "status": "PGP: \"various magical ball and stick symbols\" on verso. Agent view: each ring-ended sign has a small letter beside it, which would be a key, and it is the same sign family as the Bohak cipher (K24.19/23, K5.7, ENA 3682.7).",
+   "why": "A possible sign-to-letter table for the ring-letter cipher: not ciphertext itself, but a key candidate. Bohak 2010 already published a key for that family, so first compare.",
+   "verify": "Compare the 20 signs and glosses with Bohak 2010 (CSIC, 9-23) key table.",
+   "importance": 2,
+   "solvability": 3,
+   "difficulty": 2,
+   "cls": "B",
+   "region": "Other",
+   "links": [
+    {
+     "label": "PGP 41966",
+     "href": "https://geniza.princeton.edu/en/documents/41966/"
+    }
+   ],
+   "date_range_note": "period given by the sweep: 1051-1300",
+   "score_note": "Scored during the 25 Nov 2026 thorough Geniza sweep (research/sweep_2026-11-25_geniza_thorough/); image viewed by the sweep",
+   "ark": "",
+   "scored": "sweep",
+   "vetting": {
+    "date": "2026-11-25",
+    "by": "Daniel Bourdeau; Claude Code session (Claude Sonnet 5.5), 25 Nov 2026",
+    "verdict": "not_cipher",
+    "seen": {
+     "kind": "scan",
+     "where": "CUDL IIIF T-S K12.60 verso at 1572 x 2000 px, 25 Nov 2026; PGP record 41966.",
+     "extent": "Verso of a parchment legal fragment: a grid of about 20 ring-ended magical signs (charakteres), each with one small Hebrew letter beside it, loose marks below.",
+     "cipher": "A sign-to-letter table: each charakter carries a single gloss letter. There is no running ciphertext on the leaf, so it is key-type material for the ring-letter family of Bohak 2010 (T-S K24.19/23, K5.7), not a message."
+    },
+    "prior_art": {
+     "decode": "decode_search.py Geniza and Cairo, 25 Nov 2026: 0 records.",
+     "tomokiyo": "cryptiana unsolved.htm: no Geniza page.",
+     "lasry": "cryptiana GL.htm: no Geniza page.",
+     "edition": "PGP 41966 describes it as a probable Arabic legal document with magical ball-and-stick symbols on the verso; no scholarship page.",
+     "literature": "Bohak 2010 (Edicion de textos magicos, pp. 9-23) publishes the key to the ring-letter cipher; this table was not found cited."
+    },
+    "key_check": "A key candidate for the ring-letter family; to be compared with the Bohak key when T-S K5.7, ENA 3682.7 and ENA 3207.17 are attacked.",
+    "duplicates": "known.py \"K12.60\" (25 Nov 2026): only this lead and sweep READMEs.",
+    "closed": "key table of charakteres with gloss letters, no ciphertext (vetting_2026-11-25_geniza_and_backlog)"
+   }
+  },
+  {
+   "id": 3861,
+   "counted": true,
+   "source": "Geniza follow-up sweep 26 Nov 2026 (PGP IIIF manifests, CUDL IIIF)",
+   "needs_archive_scan": "no",
+   "place": "Fustat/Cairo (Geniza)",
+   "region": "Other",
+   "period": "unknown",
+   "seen": "image",
+   "cls": "B",
+   "importance": 3,
+   "solvability": 3,
+   "difficulty": 2,
+   "shelfmark": "Cambridge University Library, T-S K5.7",
+   "pgpid": 42030,
+   "title": "Four columns of ring-letter cipher signs, colon-divided (Bohak family)",
+   "year": 1100,
+   "date": "11th c. per PGP; undated on the leaf",
+   "language": "Hebrew ring-letter cipher (Bohak's system)",
+   "correspondents": "unknown",
+   "access_note": "CUDL IIIF by plain curl: images.lib.cam.ac.uk/iiif/MS-TS-K-00005-00007-000-0000{1,2}.jp2/full/full/0/default.jpg",
+   "folio_note": "recto: four long colon-divided lines (Bohak: 26 positions each) and a few small marginal signs; verso blank (viewed 26 Nov 2026)",
+   "status": "PGP: 'magical characteres in an indecipherable cipher' (from CUDL). Image: continuous strings of the same ring-ended signs as T-S K24.19, divided by colons, so a text cipher, not a charakteres table. VETTED 26 Nov 2026: Bohak 2010 pp. 13-15 already prints this leaf with a K24.19 transliteration; duplicate of catalogue 3757.",
+   "why": "About 150 signs of a cipher whose alphabet Bohak published, on a leaf not in his edition; the answer to the cross-check question is that it is a text cipher.",
+   "verify": "Map the signs with Bohak 2010 and T-S K12.60; test the first words for magical formulae.",
+   "links": [
+    {
+     "label": "PGP 42030",
+     "href": "https://geniza.princeton.edu/en/documents/42030/"
+    }
+   ],
+   "score_note": "importance 3, solvability 3 (key in print), difficulty 2.",
+   "vetting": {
+    "date": "2026-11-26",
+    "by": "Claude Code session (Claude Sonnet 5.5), vetting of the 26 Nov 2026 Geniza follow-up rows",
+    "seen": {
+     "kind": "scan",
+     "where": "CUDL IIIF by curl, 26 Nov 2026: https://images.lib.cam.ac.uk/iiif/MS-TS-K-00005-00007-000-00001.jp2/full/full/0/default.jpg (995 x 2000 px served; native 2480 px wide), recto viewed whole; verso (...00002.jp2) viewed whole.",
+     "extent": "Recto: four long lines written down the sheet (the leaf shown turned), colon-divided ring-ended signs, plus a few small marginal signs (Hebrew-vowel-like marks, Arabic consonants); Bohak counts 26 positions per line. Verso blank.",
+     "cipher": "The same ring-ended sign set as T-S K24.19, with some extra marks; no plaintext or gloss written on the leaf. Bohak 2010 prints a four-line decipherment of it (below), so a transliteration exists outside the leaf."
+    },
+    "prior_art": {
+     "decode": "decode_search.py, 26 Nov 2026: \"Genizah\", \"Geniza\", \"Judaeo-Arabic\", \"Rylands\", \"Taylor-Schechter\", \"Bohak\" each 0 pages, 0 rows; a grep of the 8 DECODE harvest batches in research/catalogue_harvest/decode for Geniza, Genizah, Taylor-Schechter, Rylands, Judaeo, Cairo finds nothing (two \"Hebrew\" hits are a German Arndt volume and a Latin Lumen luminum, unrelated). No Geniza record is on DECODE.",
+     "tomokiyo": "cryptiana.web.fc2.com/code/unsolved.htm fetched live 26 Nov 2026 (125 kB, Shift_JIS) and grepped for Geniza, Genizah, Taylor, Rylands, Bohak, K5.7, K24, 5652, Cairo, Judeo, Judaeo, Hebrew, Fustat: 0 hits (the only \"Manchester\" hits are the Earl of Manchester papers, 1702).",
+     "lasry": "cryptiana.web.fc2.com/code/GL.htm (Lasry decipherments) fetched live 26 Nov 2026 (184 kB) and grepped for the same terms: 0 hits. No Lasry reading of a Geniza ring-letter text is known.",
+     "edition": "Bohak 2010, pp. 13-15 and fig. 2 (CSIC volume PDF read in full, 26 Nov 2026): he first noticed K5.7 through Wasserstrom's note \"written in some as yet indecipherable code\", and prints the four lines decoded with the K24.19 table (line 1 begins aleph yod vav dalet vav he mem kaf het gimel tet ...). He calls the result \"four lines of meaningless gibberish\": each line has 26 letters, lines 2 and 4 begin identically and cover aleph to yod, the first two and last two letters read vertically leave 22 letters, so a letter permutation is suspected, \"its exact nature still awaits further elucidation\". Catalogue 3757 (open, Codex, 23 Nov 2026) already records exactly this leaf and problem.",
+     "literature": "PGP 42030 (live 26 Nov 2026): \"Sequence of magical characteres in an indecipherable cipher ... (Information from CUDL)\", tag cipher, bibliography 0, scholarship page 404. Searches 26 Nov 2026 for K5.7 with Bohak, permutation, decipherment found no reading after Bohak 2010. The 15 Nov sweep called it charakteres, not a text cipher: Bohak's text shows it is the K24.19 cipher with a puzzling arrangement, not a plain message."
+    },
+    "key_check": "Bohak applied the K24.19 table (fig. 3) and got four lines of apparent gibberish with a recurring alef-to-yod opening; the key is therefore not what is missing, the arrangement (permutation or voces magicae) is. Nothing was tested here beyond the check that the signs on the image are of the K24.19 family.",
+    "key_in_volume": "Bohak 2010 fig. 3, p. 21, the K24.19 sign table; applied by Bohak, no reading follows.",
+    "key_held": "The fig. 3 table is in print; not re-applied here because Bohak's transliteration of the same four lines is already in print.",
+    "duplicates": "DUPLICATE of catalogue 3757 (T-S K5.7, \"inner 22 positions in each row\", vetted open 23 Nov 2026 from Bohak pp. 13-15 and fig. 2, PGP 42030). The shelfmark string differs, so the mechanical collision check does not see it. Also searched leads.json, targets/ and research/ for \"K5.7\" and \"42030\": only 3757, the Geniza sweep READMEs and this row.",
+    "searches": [
+     {
+      "query": "Bohak 2010 full text (pp. 9-23) for K 5.7 and fig. 2",
+      "result": "Four-line transliteration printed on p. 13, 26 letters per line, unresolved arrangement on p. 14."
+     },
+     {
+      "query": "catalogue.json and leads.json for K5.7, 42030",
+      "result": "Catalogue 3757 is the same leaf."
+     },
+     {
+      "query": "decode_search.py, cryptiana unsolved.htm and GL.htm (Geniza terms)",
+      "result": "0 hits."
+     },
+     {
+      "query": "web: K5.7 Bohak decipherment permutation",
+      "result": "PGP and Manchester pages only; nothing after Bohak 2010."
+     }
+    ],
+    "verdict": "duplicate",
+    "closed": "same leaf and same open problem as catalogue 3757 (Bohak 2010 pp. 13-15 fig. 2 prints the decoded four lines; the work continues under 3757)"
+   },
+   "ark": "",
+   "scored": "sweep"
+  },
+  {
+   "id": 3862,
+   "counted": true,
+   "year": 1933,
+   "date": "18 Nov 1933",
+   "title": "3. Division, Berlin, 18 Nov 1933 → 3. (Preußische) Fahrabteilung, Berlin-Lankwitz: a Reichswehr exercise message (\"Uebungsspruch\") in five-letter groups",
+   "correspondents": "3. Division, Abt. Stonach (Berlin) → \"Verteiler: Gruppe 3\"; the copy received by the 3. (Preußische) Fahrabteilung, Berlin-Lankwitz",
+   "place": "Berlin",
+   "language": "German",
+   "region": "Germany",
+   "period": "1901-1950",
+   "shelfmark": "NARA RG 242, microfilm T405, roll 1 (\"Number 1\", NAID 332024052), frame 1056",
+   "folio_note": "frame 1056: one typed block of 86 letters in 18 five-letter groups (the last of one letter), heading numbers 2318 1130 86 2865 (the third is the letter count); receipt stamp of the Fahrabteilung, \"Eing. 24.11.33\", journal no. 808/33",
+   "cls": "A",
+   "status": "Typed exercise message, seen on the frame image (13 Nov 2026). No decipherment on the frame, read row by row at 0.8 of full size on 13 Nov 2026 and looked over at full size on 23 Nov 2026; its margins hold the registry's hand only (the document's number and day, the receipt stamp's entries, a folio number). The other frames of 1048-1100, apart from 1093 and 1094, were seen on a contact sheet at 0.04 of full size, and those of 1054-1058, 1092, 1095 and 1096 also in NARA's page text; none of them was read. Frame 1055, by NARA's page text the unit's draft cover letter of 30.11.33, sends its answer to an exercise message of 28.11.33, and by the maintainer's review it is filed as 808/33 too (the page text gives \"808/73\"). The filing links the two, but this message is of 18 Nov and was received on 24 Nov: that frame 1055 answers it is provisional, and the answer was not found. The letters are unevenly spread (index of coincidence 0.070 over 86 letters; evenly spread letters, such as the Enigma gives, come to about 0.038 at this length, give or take about 0.003), and the system is not identified. The groups as read on 13 Nov 2026 are in the README, with the doubtful letters marked. Class A rests on frame 1093, a sibling filed with its plain text below it, and is provisional: that plain text is aligned with only 94 of frame 1093's 112 letters, and no common system for the July and November messages is established. Not found on DECODE by four keyword searches. Not in the repository (known.py).",
+   "why": "Reichswehr exercise traffic of 1933 in a system not yet identified, which no public source we found describes, with a possible sibling in the same file (frame 1093) whose plain text is written below it.",
+   "importance": 2,
+   "solvability": 2,
+   "difficulty": 4,
+   "score_note": "Scored from the frame images during the Nov 2026 NARA T405 sweep (research/sweep_2026-11-22_nara_t405/); viewed",
+   "verify": "Look on roll 1 for the answer sent with frame 1055 and see whether it answers this message (frame 1055 names an exercise message of 28.11.33); compare the message number that frame 1055 cites (732/33 by NARA's page text) with frame 1056's own, which the reading of 13 Nov leaves partly unread; have a person read the handwritten notes on frame 1093; Bundesarchiv RH 57/72 (Geheimschriftwesen, 1934-35, with \"ein Heft zu den Geheimschlüsseln im Reichsheer\") may describe the system.",
+   "links": [
+    {
+     "label": "T405 roll 1, frame 1056",
+     "href": "https://catalog.archives.gov/medialz/dc-metro/rg-242/7794463/T405/T405-0001/T405-0001-01056.tif"
+    },
+    {
+     "label": "T405 roll 1 (NAID 332024052)",
+     "href": "https://catalog.archives.gov/id/332024052"
+    }
+   ],
+   "seen": "image",
+   "source": "NARA T405 sweep",
+   "prior_art": "open (checked 22 Nov 2026: known.py at main 4525b440, DECODE, the Cryptiana snapshot unsolved.htm, web searches with Lasry and HistoCrypt; no edition of these files known)",
+   "needs_archive_scan": "no",
+   "access_note": "Frame images free on NARA's online catalogue, no login (about 23 MB each, TIFF).",
+   "reserved": {
+    "by": "Jacob Houtrouw",
+    "since": "2026-11-26",
+    "until": "2026-12-26"
+   },
+   "ark": "",
+   "scored": "sweep"
+  },
+  {
+   "id": 3863,
+   "counted": true,
+   "year": 1933,
+   "date": "22 Jul 1933",
+   "title": "3. Division, Berlin, 22 Jul 1933 → 3. (Preußische) Fahrabteilung, Berlin-Lankwitz: a Reichswehr exercise message (\"Uebungsspruch\") in five-letter groups",
+   "correspondents": "3. Division, Stonach (Berlin) → \"Verteiler (Gruppe III)\"; the copy received by the 3. (Preußische) Fahrabteilung, Berlin-Lankwitz",
+   "place": "Berlin",
+   "language": "German",
+   "region": "Germany",
+   "period": "1901-1950",
+   "shelfmark": "NARA RG 242, microfilm T405, roll 1 (\"Number 1\", NAID 332024052), frame 1094",
+   "folio_note": "frame 1094: one typed block of 108 letters in 22 five-letter groups (the last of three letters), heading 2007 - 108 - 1515 - 7578 (the second number is the letter count); receipt stamp of the Fahrabteilung, \"Eing. 25.7.33\", journal no. 492/33",
+   "cls": "A",
+   "status": "Typed exercise message, seen on the frame image (13 Nov 2026). No decipherment on the frame, read row by row at 0.8 of full size on 13 Nov 2026 and looked over at full size on 23 Nov 2026; its margins hold the registry's hand only (the document's number and day, the receipt stamp's entries, a folio number, the journal number). On frame 1093, under the Fahrabteilung's answer, a handwritten note headed \"aufgenommen\" may be its decipherment; as we read it, the note needs letters this message lacks and accounts for at most 68 of its 108 letters, so either it is not this text's plain text or our reading of it is wrong. No person has read the note, so it counts as unread here: this row holds only if the note is not this message's decipherment. The letters are unevenly spread (index of coincidence 0.072 over 108 letters; evenly spread letters, such as the Enigma gives, come to about 0.038 at this length, give or take about 0.003), and the system is not identified. The groups as read on 13 Nov 2026 are in the README, with the doubtful letters marked. Class A rests on frame 1093, the answer to this message, filed with a plain text below it, and is provisional: that plain text is aligned with only 94 of frame 1093's 112 letters, and no common system for the July and November messages is established. Not found on DECODE by four keyword searches. Not in the repository (known.py).",
+   "why": "Reichswehr exercise traffic of 1933 in a system not yet identified, which no public source we found describes, with its answer on frame 1093 and that answer's plain text written below it.",
+   "importance": 2,
+   "solvability": 2,
+   "difficulty": 4,
+   "score_note": "Scored from the frame images during the Nov 2026 NARA T405 sweep (research/sweep_2026-11-22_nara_t405/); viewed",
+   "verify": "Have a person read the two handwritten notes on frame 1093, first the one headed \"aufgenommen\": if it is this message's decipherment, this row is a read cipher, not a lead; test the system on the answer of frame 1093, whose plain text is written below it (single and double columnar transposition missed there under a sealed plan of 14 Nov 2026); Bundesarchiv RH 57/72 may describe the system.",
+   "links": [
+    {
+     "label": "T405 roll 1, frame 1094",
+     "href": "https://catalog.archives.gov/medialz/dc-metro/rg-242/7794463/T405/T405-0001/T405-0001-01094.tif"
+    },
+    {
+     "label": "T405 roll 1, frame 1093 (the answer, with the notes)",
+     "href": "https://catalog.archives.gov/medialz/dc-metro/rg-242/7794463/T405/T405-0001/T405-0001-01093.tif"
+    },
+    {
+     "label": "T405 roll 1 (NAID 332024052)",
+     "href": "https://catalog.archives.gov/id/332024052"
+    }
+   ],
+   "seen": "image",
+   "source": "NARA T405 sweep",
+   "prior_art": "open (checked 22 Nov 2026: known.py at main 4525b440, DECODE, the Cryptiana snapshot unsolved.htm, web searches with Lasry and HistoCrypt; no edition of these files known)",
+   "needs_archive_scan": "no",
+   "access_note": "Frame images free on NARA's online catalogue, no login (about 23 MB each, TIFF).",
+   "reserved": {
+    "by": "Jacob Houtrouw",
+    "since": "2026-11-26",
+    "until": "2026-12-26"
+   },
+   "ark": "",
+   "scored": "sweep"
+  },
+  {
+   "id": 3864,
+   "counted": true,
+   "year": -50,
+   "date": "Herodian period",
+   "title": "Words of the Maskil, fragment 5 ii, line 7",
+   "correspondents": "unknown",
+   "place": "Qumran Cave 4 (findspot)",
+   "language": "Hebrew",
+   "region": "Other",
+   "period": "unknown",
+   "shelfmark": "4Q298",
+   "folio_note": "Words of the Maskil, fragment 5 ii, line 7",
+   "cls": "B",
+   "status": "Four consecutive unidentified signs precede a doubtful final kaf in the published transcription. Lines 8–10 preserve further words.",
+   "why": "Recovering a word could clarify the address to the Sons of Dawn.",
+   "importance": 3,
+   "solvability": 3,
+   "difficulty": 4,
+   "score_note": "Estimate for recovering or verifying surviving signs in the specified passage.",
+   "verify": "Compare each trace in color and infrared with secure signs in the same hand before considering context.",
+   "links": [
+    {
+     "label": "Photographs or illustrated edition",
+     "href": "https://www.deadseascrolls.org.il/explore-the-archive/manuscript/4Q298-1?locale=he_IL"
+    },
+    {
+     "label": "Published reading or discussion",
+     "href": "https://lexicon.qumran-digital.org/transcriptions/4Q298/2026-10-06/index.html"
+    }
+   ],
+   "seen": "catalogue",
+   "source": "November 2026 session catalogue intake",
+   "prior_art": "Four consecutive unidentified signs precede a doubtful final kaf in the published transcription. Lines 8–10 preserve further words.",
+   "needs_archive_scan": "no",
+   "access_note": "Photographs are referenced in the linked sources. No images are redistributed.",
+   "ark": "",
+   "scored": "sweep"
+  },
+  {
+   "id": 3865,
+   "counted": true,
+   "year": -50,
+   "date": "Second Temple period",
+   "title": "Zodiacal Physiognomy, detached fragment 2 in Popović’s numbering",
+   "correspondents": "unknown",
+   "place": "Qumran Cave 4 (findspot)",
+   "language": "Hebrew",
+   "region": "Other",
+   "period": "unknown",
+   "shelfmark": "4Q186",
+   "folio_note": "Zodiacal Physiognomy, detached fragment 2 in Popović’s numbering",
+   "cls": "B",
+   "status": "Popović and Geller give competing reconstructions. The position of the detached fragment and some readings remain disputed. The text uses mixed scripts and left-to-right Hebrew.",
+   "why": "The detached lines relate physical features to the interpretation of a person’s character.",
+   "importance": 3,
+   "solvability": 2,
+   "difficulty": 4,
+   "score_note": "Estimate for recovering or verifying surviving signs in the specified passage.",
+   "verify": "Register the old plate against infrared photographs. Test the line spacing independently of the proposed head-to-foot order.",
+   "links": [
+    {
+     "label": "Photographs or illustrated edition",
+     "href": "https://www.deadseascrolls.org.il/explore-the-archive/image/B-370747"
+    },
+    {
+     "label": "Published reading or discussion",
+     "href": "https://discovery.ucl.ac.uk/id/eprint/10193507/1/Geller%202023%20Aest%204%20Qumran%20Phys.pdf"
+    }
+   ],
+   "seen": "catalogue",
+   "source": "November 2026 session catalogue intake",
+   "prior_art": "Popović and Geller give competing reconstructions. The position of the detached fragment and some readings remain disputed. The text uses mixed scripts and left-to-right Hebrew.",
+   "needs_archive_scan": "no",
+   "access_note": "Photographs are referenced in the linked sources. No images are redistributed.",
+   "ark": "",
+   "scored": "sweep"
+  },
+  {
+   "id": 3866,
+   "counted": true,
+   "year": -50,
+   "date": "Second Temple period",
+   "title": "Midrash Moshe, column I, lines 14–20",
+   "correspondents": "unknown",
+   "place": "Qumran Cave 4 (findspot)",
+   "language": "Hebrew",
+   "region": "Other",
+   "period": "unknown",
+   "shelfmark": "4Q249",
+   "folio_note": "Midrash Moshe, column I, lines 14–20",
+   "cls": "B",
+   "status": "Ben-Dov reconstructed the column. Two occurrences of משפט אחד bracket damaged wording in the upper Cryptic A text. The undertext complicates stroke identification.",
+   "why": "A recovered clause could clarify the analogy between the two laws of household impurity.",
+   "importance": 3,
+   "solvability": 2,
+   "difficulty": 4,
+   "score_note": "Estimate for recovering or verifying surviving signs in the specified passage.",
+   "verify": "Map surviving upper-text traces across the numbered fragments and test wording against the adjoining lines.",
+   "links": [
+    {
+     "label": "Photographs or illustrated edition",
+     "href": "https://www.academia.edu/78124990/_An_Early_Halakhic_Midrash_in_the_Fragments_of_4Q249_Midrash_Moshe_Meghillot_15_2021_in_Hebrew"
+    },
+    {
+     "label": "Published reading or discussion",
+     "href": "https://orion-bibliography.huji.ac.il/node/75930"
+    }
+   ],
+   "seen": "catalogue",
+   "source": "November 2026 session catalogue intake",
+   "prior_art": "Ben-Dov reconstructed the column. Two occurrences of משפט אחד bracket damaged wording in the upper Cryptic A text. The undertext complicates stroke identification.",
+   "needs_archive_scan": "no",
+   "access_note": "Photographs are referenced in the linked sources. No images are redistributed.",
+   "ark": "",
+   "scored": "sweep"
+  },
+  {
+   "id": 3867,
+   "counted": true,
+   "year": -50,
+   "date": "Second Temple period",
+   "title": "Rule of the Congregation, column IV, line 13",
+   "correspondents": "unknown",
+   "place": "Qumran Cave 4 (findspot)",
+   "language": "Hebrew",
+   "region": "Other",
+   "period": "unknown",
+   "shelfmark": "4Q249a",
+   "folio_note": "Rule of the Congregation, column IV, line 13",
+   "cls": "B",
+   "status": "The encrypted Cave 4 copy and the ordinary-script Cave 1 copy (1QSa II 11) preserve different traces at the disputed sentence boundary involving מושב. See §24 of the reconstruction.",
+   "why": "The wording determines where the assembly provision begins.",
+   "importance": 3,
+   "solvability": 2,
+   "difficulty": 4,
+   "score_note": "Estimate for recovering or verifying surviving signs in the specified passage.",
+   "verify": "Compare the traces independently in each witness before aligning them. Record differences between copies.",
+   "links": [
+    {
+     "label": "Photographs or illustrated edition",
+     "href": "https://megillot.haifa.ac.il/images/RQ2901002.pdf"
+    },
+    {
+     "label": "Published reading or discussion",
+     "href": "https://www.academia.edu/37080131/RECONSTRUCTION_OF_A_SINGLE_COPY_OF_THE_QUMRAN_CAVE_4_CRYPTIC_SCRIPT_SEREKH_HAEDAH_1"
+    }
+   ],
+   "seen": "catalogue",
+   "source": "November 2026 session catalogue intake",
+   "prior_art": "The encrypted Cave 4 copy and the ordinary-script Cave 1 copy (1QSa II 11) preserve different traces at the disputed sentence boundary involving מושב. See §24 of the reconstruction.",
+   "needs_archive_scan": "no",
+   "access_note": "Photographs are referenced in the linked sources. No images are redistributed.",
+   "ark": "",
+   "scored": "sweep"
+  },
+  {
+   "id": 3868,
+   "counted": true,
+   "year": -50,
+   "date": "Second Temple period",
+   "title": "Lunisolar calendar, fragment 1, column i, line 1",
+   "correspondents": "unknown",
+   "place": "Qumran Cave 4 (findspot)",
+   "language": "Hebrew",
+   "region": "Other",
+   "period": "unknown",
+   "shelfmark": "4Q317",
+   "folio_note": "Lunisolar calendar, fragment 1, column i, line 1",
+   "cls": "B",
+   "status": "Jacobus questions whether the traces support the published restoration of day four and eleven parts obscured. The calendar and its cryptic alphabet are known.",
+   "why": "The comparison can separate a calendrical prediction from a surviving observation.",
+   "importance": 3,
+   "solvability": 2,
+   "difficulty": 4,
+   "score_note": "Estimate for recovering or verifying surviving signs in the specified passage.",
+   "verify": "Derive the predicted day and quantity from adjacent dated entries, then check which letters the photographs actually preserve.",
+   "links": [
+    {
+     "label": "Photographs or illustrated edition",
+     "href": "https://library.biblicalarchaeology.org/article/the-mysterious-mount-zion-mug/4qcrypta-lunisolar-calendar_4q317/"
+    },
+    {
+     "label": "Published reading or discussion",
+     "href": "https://www.academia.edu/4717689/Qumran_Calendars_and_the_Creation_A_Study_of_4QcryptA_Lunisolar_Calendar_4Q317_"
+    }
+   ],
+   "seen": "catalogue",
+   "source": "November 2026 session catalogue intake",
+   "prior_art": "Jacobus questions whether the traces support the published restoration of day four and eleven parts obscured. The calendar and its cryptic alphabet are known.",
+   "needs_archive_scan": "no",
+   "access_note": "Photographs are referenced in the linked sources. No images are redistributed.",
+   "ark": "",
+   "scored": "sweep"
+  },
+  {
+   "id": 3869,
+   "counted": true,
+   "year": -50,
+   "date": "Second Temple period",
+   "title": "Cave 4 scrap attributed to 4Q362",
+   "correspondents": "unknown",
+   "place": "Qumran Cave 4 (findspot)",
+   "language": "Hebrew",
+   "region": "Other",
+   "period": "unknown",
+   "shelfmark": "PAM 43.697, fragment 50",
+   "folio_note": "Cave 4 scrap attributed to 4Q362",
+   "cls": "B",
+   "status": "Perrot identified four Cryptic B signs. Oliveiro discussed the possible vav in note 6 and omitted this scrap from his decipherment of the two larger manuscripts.",
+   "why": "The scrap offers an independent test of the identification and the sign table.",
+   "importance": 3,
+   "solvability": 1,
+   "difficulty": 4,
+   "score_note": "Estimate for recovering or verifying surviving signs in the specified passage.",
+   "verify": "Measure the four signs against the published Cryptic B forms and test the proposed attribution to 4Q362.",
+   "links": [
+    {
+     "label": "Photographs or illustrated edition",
+     "href": "https://doi.org/10.2143/RQ.31.2.3287248"
+    },
+    {
+     "label": "Published reading or discussion",
+     "href": "https://research.rug.nl/en/publications/cracking-another-code-of-the-dead-sea-scrolls-deciphering-cryptic/"
+    }
+   ],
+   "seen": "catalogue",
+   "source": "November 2026 session catalogue intake",
+   "prior_art": "Perrot identified four Cryptic B signs. Oliveiro discussed the possible vav in note 6 and omitted this scrap from his decipherment of the two larger manuscripts.",
+   "needs_archive_scan": "no",
+   "access_note": "Photographs are referenced in the linked sources. No images are redistributed.",
+   "ark": "",
+   "scored": "sweep"
+  },
+  {
+   "id": 3870,
+   "counted": true,
+   "year": 50,
+   "date": "First century CE",
+   "title": "Mount Zion cup, competing readings of the incised inscription",
+   "correspondents": "unknown",
+   "place": "Mount Zion, Jerusalem (findspot)",
+   "language": "Hebrew",
+   "region": "Other",
+   "period": "unknown",
+   "shelfmark": "Mount Zion excavations, inscribed stone cup (2009 find)",
+   "folio_note": "Mount Zion cup, competing readings of the incised inscription",
+   "cls": "B",
+   "status": "Pfann published a preliminary reading. A subsequent reading addresses the mixed-script inscription. Distinguish disagreements about visible signs and word division from readings that differ only in vocalization.",
+   "why": "The wording bears on the proposed ritual function of the vessel.",
+   "importance": 3,
+   "solvability": 2,
+   "difficulty": 4,
+   "score_note": "Estimate for recovering or verifying surviving signs in the specified passage.",
+   "verify": "Collate the signs on the facets against both editions and identify which differences can be tested from the photographs.",
+   "links": [
+    {
+     "label": "Photographs or illustrated edition",
+     "href": "https://www.biblicalarchaeology.org/wp-content/uploads/PfannStoneCupSmall.pdf"
+    },
+    {
+     "label": "Published reading or discussion",
+     "href": "https://library.biblicalarchaeology.org/sidebar/deciphering-the-inscription/"
+    }
+   ],
+   "seen": "catalogue",
+   "source": "November 2026 session catalogue intake",
+   "prior_art": "Pfann published a preliminary reading. A subsequent reading addresses the mixed-script inscription. Distinguish disagreements about visible signs and word division from readings that differ only in vocalization.",
+   "needs_archive_scan": "no",
+   "access_note": "Photographs are referenced in the linked sources. No images are redistributed.",
+   "ark": "",
+   "scored": "sweep"
+  },
+  {
+   "id": 3871,
+   "counted": true,
+   "year": -50,
+   "date": "Second Temple period (approximate sorting year)",
+   "title": "4Q249r, disputed reading on joined fragments 2a–b",
+   "correspondents": "unknown",
+   "place": "Qumran Cave 4 (findspot)",
+   "language": "Hebrew",
+   "region": "Other",
+   "period": "unknown",
+   "shelfmark": "4Q249r",
+   "folio_note": "Fragments 2a–b line 1",
+   "cls": "B",
+   "status": "Qumran-Digital retains an unidentified sign before ḥet and an uncertain waw in the sequence ending ḥet–mem–waw.",
+   "why": "Published alternatives give a narrow test of whether competing word readings fit the surviving ink.",
+   "importance": 3,
+   "solvability": 2,
+   "difficulty": 4,
+   "score_note": "Estimate for identifying individual surviving signs.",
+   "verify": "Match the outline and line layout in Pfann's edition to an IAA image. Record the fragment image ID, compare surviving strokes with secure Cryptic A forms, and mark lost material separately.",
+   "links": [
+    {
+     "label": "Edition record (Orion Center)",
+     "href": "https://orion-bibliography.huji.ac.il/node/67314"
+    },
+    {
+     "label": "Qumran-Digital transcription",
+     "href": "https://lexicon.qumran-digital.org/transcriptions/4Q249r/2026-10-06/index.html?v=2026-10-06"
+    },
+    {
+     "label": "IAA group photograph, plate 598",
+     "href": "https://www.deadseascrolls.org.il/explore-the-archive/image/B-496296"
+    },
+    {
+     "label": "Museum plate inventory",
+     "href": "https://lyingpen.uia.no/dssinventoryproject/museum-plates/"
+    }
+   ],
+   "seen": "catalogue",
+   "source": "November 2026 Qumran fragment intake",
+   "prior_art": "Stephen J. Pfann, DJD 36 (2000), and the Qumran-Digital diplomatic transcription. The Cryptic A alphabet has an established reading.",
+   "needs_archive_scan": "no",
+   "access_note": "Public group photograph. Exact crop has yet to be identified against the edition.",
+   "ark": "",
+   "scored": "sweep"
+  },
+  {
+   "id": 3872,
+   "counted": true,
+   "year": -50,
+   "date": "Second Temple period (approximate sorting year)",
+   "title": "4Q249z, unread signs on fragments 3 and 5",
+   "correspondents": "unknown",
+   "place": "Qumran Cave 4 (findspot)",
+   "language": "Hebrew",
+   "region": "Other",
+   "period": "unknown",
+   "shelfmark": "4Q249z",
+   "folio_note": "Fragment 3 line 2 and fragment 5 lines 1–2",
+   "cls": "B",
+   "status": "Qumran-Digital marks unidentified signs on either side of tav on fragment 3 and on either side of dalet on fragment 5.",
+   "why": "Adjacent legible letters give scale and orientation for comparing damaged strokes. This miscellaneous designation can include multiple manuscripts.",
+   "importance": 3,
+   "solvability": 2,
+   "difficulty": 4,
+   "score_note": "Estimate for identifying individual surviving signs.",
+   "verify": "Match the outline and line layout in Pfann's edition to an IAA image. Record the fragment image ID, compare surviving strokes with secure Cryptic A forms, and mark lost material separately.",
+   "links": [
+    {
+     "label": "Edition record (Orion Center)",
+     "href": "https://orion-bibliography.huji.ac.il/node/67322"
+    },
+    {
+     "label": "Qumran-Digital transcription",
+     "href": "https://lexicon.qumran-digital.org/transcriptions/4Q249z/2026-10-06/index.html?v=2026-10-06"
+    },
+    {
+     "label": "IAA group photograph, PAM 43.408",
+     "href": "https://www.deadseascrolls.org.il/explore-the-archive/image/B-284441"
+    },
+    {
+     "label": "Museum plate inventory",
+     "href": "https://lyingpen.uia.no/dssinventoryproject/museum-plates/"
+    }
+   ],
+   "seen": "catalogue",
+   "source": "November 2026 Qumran fragment intake",
+   "prior_art": "Stephen J. Pfann, DJD 36 (2000), and the Qumran-Digital diplomatic transcription. The Cryptic A alphabet has an established reading.",
+   "needs_archive_scan": "no",
+   "access_note": "Public group photograph. Exact crop has yet to be identified against the edition.",
+   "ark": "",
+   "scored": "sweep"
+  },
+  {
+   "id": 3873,
+   "counted": true,
+   "year": -50,
+   "date": "Second Temple period (sorting year approximate)",
+   "title": "4Q363 fragment 3 — Two unread signs between mem and nun",
+   "correspondents": "unknown",
+   "place": "Qumran Cave 4 (findspot)",
+   "language": "Hebrew",
+   "region": "Other",
+   "period": "unknown",
+   "shelfmark": "4Q363, IAA 364-3",
+   "folio_note": "Fragment 3, line 2",
+   "cls": "B",
+   "status": "Oliveiro leaves two consecutive signs unidentified and gives no translation for line 2.",
+   "why": "The line above repeats a sequence on fragment 1. That supplies an independent comparison for this hand and a check on orientation.",
+   "importance": 3,
+   "solvability": 2,
+   "difficulty": 4,
+   "score_note": "Estimate for recovering or narrowing a damaged sign reading.",
+   "verify": "Compare the repeated sequence on fragments 1 and 3, then classify the two marks on line 2 independently using the published letterform table. The parallel applies to line 1 only.",
+   "links": [
+    {
+     "label": "IAA full-spectrum recto",
+     "href": "https://www.deadseascrolls.org.il/explore-the-archive/image/B-475159"
+    },
+    {
+     "label": "Oliveiro, transcription and letterform table",
+     "href": "https://doi.org/10.1163/15685179-bja10074"
+    }
+   ],
+   "seen": "catalogue",
+   "source": "November 2026 Cryptic B passage survey",
+   "prior_art": "Oliveiro, Dead Sea Discoveries 33 (2026), section 5.2.3. The earlier project Hebrew sweep cited the general decipherment.",
+   "needs_archive_scan": "no",
+   "access_note": "Shai Halevi, May 2014, plate 364 fragment 3.",
+   "ark": "",
+   "scored": "sweep"
+  },
+  {
+   "id": 3874,
+   "counted": true,
+   "year": -50,
+   "date": "Second Temple period (sorting year approximate)",
+   "title": "4Q363 fragment 6 — Possible zayin in the Cryptic B alphabet",
+   "correspondents": "unknown",
+   "place": "Qumran Cave 4 (findspot)",
+   "language": "Hebrew",
+   "region": "Other",
+   "period": "unknown",
+   "shelfmark": "4Q363, IAA 364-6",
+   "folio_note": "Fragment 6, line 1",
+   "cls": "B",
+   "status": "Oliveiro marks the zayin uncertain and leaves a separate mark unidentified on the same line.",
+   "why": "Oliveiro reports only this one possible occurrence of zayin. Its identification affects the inventory of the script.",
+   "importance": 3,
+   "solvability": 2,
+   "difficulty": 4,
+   "score_note": "Estimate for recovering or narrowing a damaged sign reading.",
+   "verify": "Compare the surviving zigzag with other Cryptic B forms, allowing for damage at the lower edge. Report whether any strokes discriminate among alternatives.",
+   "links": [
+    {
+     "label": "IAA full-spectrum recto",
+     "href": "https://www.deadseascrolls.org.il/explore-the-archive/image/B-475171"
+    },
+    {
+     "label": "Oliveiro, transcription and letterform table",
+     "href": "https://doi.org/10.1163/15685179-bja10074"
+    }
+   ],
+   "seen": "catalogue",
+   "source": "November 2026 Cryptic B passage survey",
+   "prior_art": "Oliveiro, Dead Sea Discoveries 33 (2026), section 5.2.6. The earlier project Hebrew sweep cited the general decipherment.",
+   "needs_archive_scan": "no",
+   "access_note": "Shai Halevi, May 2014, plate 364 fragment 6.",
+   "ark": "",
+   "scored": "sweep"
+  },
+  {
+   "id": 3875,
+   "counted": true,
+   "year": -50,
+   "date": "Second Temple period (approximate sorting year)",
+   "title": "4Q362 fragment 14, line 3 — Erased letter beside a correction",
+   "correspondents": "unknown",
+   "place": "Qumran Cave 4 (findspot)",
+   "language": "Hebrew",
+   "region": "Other",
+   "period": "unknown",
+   "shelfmark": "4Q362, IAA 901 fragment 14",
+   "folio_note": "fragment 14, line 3",
+   "cls": "B",
+   "status": "Residual uncertainty in Emmanuel Oliveiro’s published Cryptic B decipherment.",
+   "why": "Whether the erased character was yod changes how the adjacent Hebrew words divide. Compare the erased mark with the inserted letter and surviving yods in this hand.",
+   "importance": 4,
+   "solvability": 3,
+   "difficulty": 4,
+   "score_note": "Priority 1 of 15. Ordering weighs a testable letter choice, photographic controls and the consequence for the reading.",
+   "verify": "Whether the erased character was yod changes how the adjacent Hebrew words divide. Compare the erased mark with the inserted letter and surviving yods in this hand.",
+   "links": [
+    {
+     "label": "Oliveiro, Cryptic B edition, section 5.1",
+     "href": "https://doi.org/10.1163/15685179-bja10074"
+    },
+    {
+     "label": "IAA, PAM 43.385 (edition photograph)",
+     "href": "https://www.deadseascrolls.org.il/explore-the-archive/image/B-284418"
+    }
+   ],
+   "seen": "catalogue",
+   "source": "Ranked Qumran passage survey, November 2026",
+   "prior_art": "Oliveiro, Dead Sea Discoveries 33 (2026), 159–185, with tables of letterforms and a fragment concordance.",
+   "needs_archive_scan": "no",
+   "access_note": "Edition locator IAA 901, fragment 14. The linked PAM image is a group photograph.",
+   "ark": "",
+   "scored": "sweep"
+  },
+  {
+   "id": 3876,
+   "counted": true,
+   "year": -50,
+   "date": "Second Temple period (approximate sorting year)",
+   "title": "4Q362 fragment 7, line 1 — Aleph or zayin at the broken edge",
+   "correspondents": "unknown",
+   "place": "Qumran Cave 4 (findspot)",
+   "language": "Hebrew",
+   "region": "Other",
+   "period": "unknown",
+   "shelfmark": "4Q362, IAA 901 fragment 7",
+   "folio_note": "fragment 7, line 1",
+   "cls": "B",
+   "status": "Residual uncertainty in Emmanuel Oliveiro’s published Cryptic B decipherment.",
+   "why": "The two letters lead to different possible verbs. Compare the terminal strokes on PAM 41.692 and the later photograph before using the grammar to choose.",
+   "importance": 4,
+   "solvability": 3,
+   "difficulty": 4,
+   "score_note": "Priority 2 of 15. Ordering weighs a testable letter choice, photographic controls and the consequence for the reading.",
+   "verify": "The two letters lead to different possible verbs. Compare the terminal strokes on PAM 41.692 and the later photograph before using the grammar to choose.",
+   "links": [
+    {
+     "label": "Oliveiro, Cryptic B edition, section 5.1",
+     "href": "https://doi.org/10.1163/15685179-bja10074"
+    },
+    {
+     "label": "IAA, PAM 43.385 (edition photograph)",
+     "href": "https://www.deadseascrolls.org.il/explore-the-archive/image/B-284418"
+    }
+   ],
+   "seen": "catalogue",
+   "source": "Ranked Qumran passage survey, November 2026",
+   "prior_art": "Oliveiro, Dead Sea Discoveries 33 (2026), 159–185, with tables of letterforms and a fragment concordance.",
+   "needs_archive_scan": "no",
+   "access_note": "Edition locator IAA 901, fragment 7. The linked PAM image is a group photograph.",
+   "ark": "",
+   "scored": "sweep"
+  },
+  {
+   "id": 3877,
+   "counted": true,
+   "year": -50,
+   "date": "Second Temple period (approximate sorting year)",
+   "title": "4Q249k fragment 1, lines 4–5 — Unread signs below the Leviticus parallel",
+   "correspondents": "unknown",
+   "place": "Qumran Cave 4 (findspot)",
+   "language": "Hebrew",
+   "region": "Other",
+   "period": "unknown",
+   "shelfmark": "4Q249k",
+   "folio_note": "fragment 1, lines 4–5",
+   "cls": "B",
+   "status": "Unresolved or uncertain signs in the Qumran-Digital diplomatic transcription.",
+   "why": "Earlier lines parallel Leviticus 26, providing examples of this hand. Identify the marks flanking shin in line 5 and the two marks in line 4 independently of the biblical wording.",
+   "importance": 4,
+   "solvability": 3,
+   "difficulty": 4,
+   "score_note": "Priority 3 of 15. Ordering weighs a testable letter choice, photographic controls and the consequence for the reading.",
+   "verify": "Earlier lines parallel Leviticus 26, providing examples of this hand. Identify the marks flanking shin in line 5 and the two marks in line 4 independently of the biblical wording.",
+   "links": [
+    {
+     "label": "Qumran-Digital transcription",
+     "href": "https://lexicon.qumran-digital.org/transcriptions/4Q249k/2026-10-06/index.html?v=2026-10-06"
+    },
+    {
+     "label": "IAA plate 590 (group photograph)",
+     "href": "https://www.deadseascrolls.org.il/explore-the-archive/image/B-371393"
+    }
+   ],
+   "seen": "catalogue",
+   "source": "Ranked Qumran passage survey, November 2026",
+   "prior_art": "Pfann, DJD 36 (2000), and Qumran-Digital. The designation follows the edition.",
+   "needs_archive_scan": "no",
+   "access_note": "Match the fragment to DJD 36 plate XXXVIII on the linked group photograph.",
+   "ark": "",
+   "scored": "sweep"
+  },
+  {
+   "id": 3878,
+   "counted": true,
+   "year": -50,
+   "date": "Second Temple period (approximate sorting year)",
+   "title": "4Q362 fragment 18, line 2 — Lamed or nun before a plural ending",
+   "correspondents": "unknown",
+   "place": "Qumran Cave 4 (findspot)",
+   "language": "Hebrew",
+   "region": "Other",
+   "period": "unknown",
+   "shelfmark": "4Q362, IAA 901 fragment 21",
+   "folio_note": "fragment 18, line 2",
+   "cls": "B",
+   "status": "Residual uncertainty in Emmanuel Oliveiro’s published Cryptic B decipherment.",
+   "why": "The two shapes admit different Hebrew restorations. Test the remaining stroke against examples in the same hand before weighing the proposed biblical parallels.",
+   "importance": 4,
+   "solvability": 3,
+   "difficulty": 4,
+   "score_note": "Priority 4 of 15. Ordering weighs a testable letter choice, photographic controls and the consequence for the reading.",
+   "verify": "The two shapes admit different Hebrew restorations. Test the remaining stroke against examples in the same hand before weighing the proposed biblical parallels.",
+   "links": [
+    {
+     "label": "Oliveiro, Cryptic B edition, section 5.1",
+     "href": "https://doi.org/10.1163/15685179-bja10074"
+    },
+    {
+     "label": "IAA, PAM 43.385 (edition photograph)",
+     "href": "https://www.deadseascrolls.org.il/explore-the-archive/image/B-284418"
+    }
+   ],
+   "seen": "catalogue",
+   "source": "Ranked Qumran passage survey, November 2026",
+   "prior_art": "Oliveiro, Dead Sea Discoveries 33 (2026), 159–185, with tables of letterforms and a fragment concordance.",
+   "needs_archive_scan": "no",
+   "access_note": "Edition locator IAA 901, fragment 21. The linked PAM image is a group photograph.",
+   "ark": "",
+   "scored": "sweep"
+  },
+  {
+   "id": 3879,
+   "counted": true,
+   "year": -50,
+   "date": "Second Temple period (approximate sorting year)",
+   "title": "4Q362 fragment 2, line 5 — Unmatched sign in the grave passage",
+   "correspondents": "unknown",
+   "place": "Qumran Cave 4 (findspot)",
+   "language": "Hebrew",
+   "region": "Other",
+   "period": "unknown",
+   "shelfmark": "4Q362, IAA 901 fragment 1",
+   "folio_note": "fragment 2, line 5",
+   "cls": "B",
+   "status": "Residual uncertainty in Emmanuel Oliveiro’s published Cryptic B decipherment.",
+   "why": "The editor considers zayin or samekh. Test the outline against both and allow a damaged example of another letter. Earlier photographs also preserve more of lines 1–2.",
+   "importance": 4,
+   "solvability": 3,
+   "difficulty": 4,
+   "score_note": "Priority 5 of 15. Ordering weighs a testable letter choice, photographic controls and the consequence for the reading.",
+   "verify": "The editor considers zayin or samekh. Test the outline against both and allow a damaged example of another letter. Earlier photographs also preserve more of lines 1–2.",
+   "links": [
+    {
+     "label": "Oliveiro, Cryptic B edition, section 5.1",
+     "href": "https://doi.org/10.1163/15685179-bja10074"
+    },
+    {
+     "label": "IAA, PAM 43.385 (edition photograph)",
+     "href": "https://www.deadseascrolls.org.il/explore-the-archive/image/B-284418"
+    },
+    {
+     "label": "Earlier PAM 41.374",
+     "href": "https://www.deadseascrolls.org.il/explore-the-archive/image/B-298920"
+    }
+   ],
+   "seen": "catalogue",
+   "source": "Ranked Qumran passage survey, November 2026",
+   "prior_art": "Oliveiro, Dead Sea Discoveries 33 (2026), 159–185, with tables of letterforms and a fragment concordance.",
+   "needs_archive_scan": "no",
+   "access_note": "Edition locator IAA 901, fragment 1. The linked PAM image is a group photograph.",
+   "ark": "",
+   "scored": "sweep"
+  },
+  {
+   "id": 3880,
+   "counted": true,
+   "year": -50,
+   "date": "Second Temple period (approximate sorting year)",
+   "title": "4Q362 fragment 6, line 2 — Possible waw at the end of a verb",
+   "correspondents": "unknown",
+   "place": "Qumran Cave 4 (findspot)",
+   "language": "Hebrew",
+   "region": "Other",
+   "period": "unknown",
+   "shelfmark": "4Q362, IAA 901 fragment 9",
+   "folio_note": "fragment 6, line 2",
+   "cls": "B",
+   "status": "Residual uncertainty in Emmanuel Oliveiro’s published Cryptic B decipherment.",
+   "why": "Compare the dot at the tip of the surviving stroke with the unusual waw on fragment 9 line 2. A confirmed ending would secure the verbal form.",
+   "importance": 3,
+   "solvability": 3,
+   "difficulty": 4,
+   "score_note": "Priority 6 of 15. Ordering weighs a testable letter choice, photographic controls and the consequence for the reading.",
+   "verify": "Compare the dot at the tip of the surviving stroke with the unusual waw on fragment 9 line 2. A confirmed ending would secure the verbal form.",
+   "links": [
+    {
+     "label": "Oliveiro, Cryptic B edition, section 5.1",
+     "href": "https://doi.org/10.1163/15685179-bja10074"
+    },
+    {
+     "label": "IAA, PAM 43.385 (edition photograph)",
+     "href": "https://www.deadseascrolls.org.il/explore-the-archive/image/B-284418"
+    }
+   ],
+   "seen": "catalogue",
+   "source": "Ranked Qumran passage survey, November 2026",
+   "prior_art": "Oliveiro, Dead Sea Discoveries 33 (2026), 159–185, with tables of letterforms and a fragment concordance.",
+   "needs_archive_scan": "no",
+   "access_note": "Edition locator IAA 901, fragment 9. The linked PAM image is a group photograph.",
+   "ark": "",
+   "scored": "sweep"
+  },
+  {
+   "id": 3881,
+   "counted": true,
+   "year": -50,
+   "date": "Second Temple period (approximate sorting year)",
+   "title": "4Q362 fragments 9–10, line 3 — Word division and possible aleph",
+   "correspondents": "unknown",
+   "place": "Qumran Cave 4 (findspot)",
+   "language": "Hebrew",
+   "region": "Other",
+   "period": "unknown",
+   "shelfmark": "4Q362, IAA 901 fragment 11 and 12",
+   "folio_note": "fragments 9–10, line 3",
+   "cls": "B",
+   "status": "Residual uncertainty in Emmanuel Oliveiro’s published Cryptic B decipherment.",
+   "why": "PAM 40.975 shows the two pieces together. Use their original alignment to test the proposed space and compare the irregular letters with secure alephs.",
+   "importance": 3,
+   "solvability": 3,
+   "difficulty": 4,
+   "score_note": "Priority 7 of 15. Ordering weighs a testable letter choice, photographic controls and the consequence for the reading.",
+   "verify": "PAM 40.975 shows the two pieces together. Use their original alignment to test the proposed space and compare the irregular letters with secure alephs.",
+   "links": [
+    {
+     "label": "Oliveiro, Cryptic B edition, section 5.1",
+     "href": "https://doi.org/10.1163/15685179-bja10074"
+    },
+    {
+     "label": "IAA, PAM 43.385 (edition photograph)",
+     "href": "https://www.deadseascrolls.org.il/explore-the-archive/image/B-284418"
+    },
+    {
+     "label": "Earlier PAM 40.975, join cited by Oliveiro",
+     "href": "https://www.deadseascrolls.org.il/explore-the-archive/image/B-279122"
+    }
+   ],
+   "seen": "catalogue",
+   "source": "Ranked Qumran passage survey, November 2026",
+   "prior_art": "Oliveiro, Dead Sea Discoveries 33 (2026), 159–185, with tables of letterforms and a fragment concordance.",
+   "needs_archive_scan": "no",
+   "access_note": "Edition locator IAA 901, fragment 11 and 12. The linked PAM image is a group photograph.",
+   "ark": "",
+   "scored": "sweep"
+  },
+  {
+   "id": 3882,
+   "counted": true,
+   "year": -50,
+   "date": "Second Temple period (approximate sorting year)",
+   "title": "4Q362 fragment 8, line 2 — Competing readings from the bottoms of letters",
+   "correspondents": "unknown",
+   "place": "Qumran Cave 4 (findspot)",
+   "language": "Hebrew",
+   "region": "Other",
+   "period": "unknown",
+   "shelfmark": "4Q362, IAA 901 fragment 10",
+   "folio_note": "fragment 8, line 2",
+   "cls": "B",
+   "status": "Residual uncertainty in Emmanuel Oliveiro’s published Cryptic B decipherment.",
+   "why": "Test he versus ayin at the fourth sign and aleph versus lamed later in the line. The angles of the surviving strokes offer a measurable distinction.",
+   "importance": 3,
+   "solvability": 3,
+   "difficulty": 4,
+   "score_note": "Priority 8 of 15. Ordering weighs a testable letter choice, photographic controls and the consequence for the reading.",
+   "verify": "Test he versus ayin at the fourth sign and aleph versus lamed later in the line. The angles of the surviving strokes offer a measurable distinction.",
+   "links": [
+    {
+     "label": "Oliveiro, Cryptic B edition, section 5.1",
+     "href": "https://doi.org/10.1163/15685179-bja10074"
+    },
+    {
+     "label": "IAA, PAM 43.385 (edition photograph)",
+     "href": "https://www.deadseascrolls.org.il/explore-the-archive/image/B-284418"
+    }
+   ],
+   "seen": "catalogue",
+   "source": "Ranked Qumran passage survey, November 2026",
+   "prior_art": "Oliveiro, Dead Sea Discoveries 33 (2026), 159–185, with tables of letterforms and a fragment concordance.",
+   "needs_archive_scan": "no",
+   "access_note": "Edition locator IAA 901, fragment 10. The linked PAM image is a group photograph.",
+   "ark": "",
+   "scored": "sweep"
+  },
+  {
+   "id": 3883,
+   "counted": true,
+   "year": -50,
+   "date": "Second Temple period (approximate sorting year)",
+   "title": "4Q249m fragment 1, lines 5 and 8 — Unread signs in a ten-line fragment",
+   "correspondents": "unknown",
+   "place": "Qumran Cave 4 (findspot)",
+   "language": "Hebrew",
+   "region": "Other",
+   "period": "unknown",
+   "shelfmark": "4Q249m",
+   "folio_note": "fragment 1, lines 5 and 8",
+   "cls": "B",
+   "status": "Unresolved or uncertain signs in the Qumran-Digital diplomatic transcription.",
+   "why": "Line 5 has an unidentified sign after a readable phrase. Line 8 has two more. The other lines supply comparison letters from the same piece.",
+   "importance": 3,
+   "solvability": 2,
+   "difficulty": 4,
+   "score_note": "Priority 9 of 15. Ordering weighs a testable letter choice, photographic controls and the consequence for the reading.",
+   "verify": "Line 5 has an unidentified sign after a readable phrase. Line 8 has two more. The other lines supply comparison letters from the same piece.",
+   "links": [
+    {
+     "label": "Qumran-Digital transcription",
+     "href": "https://lexicon.qumran-digital.org/transcriptions/4Q249m/2026-10-06/index.html?v=2026-10-06"
+    },
+    {
+     "label": "IAA plate 590 (group photograph)",
+     "href": "https://www.deadseascrolls.org.il/explore-the-archive/image/B-371393"
+    }
+   ],
+   "seen": "catalogue",
+   "source": "Ranked Qumran passage survey, November 2026",
+   "prior_art": "Pfann, DJD 36 (2000), and Qumran-Digital. The designation follows the edition.",
+   "needs_archive_scan": "no",
+   "access_note": "Match the fragment to DJD 36 plate XXXVIII on the linked group photograph.",
+   "ark": "",
+   "scored": "sweep"
+  },
+  {
+   "id": 3884,
+   "counted": true,
+   "year": -50,
+   "date": "Second Temple period (approximate sorting year)",
+   "title": "4Q249p fragment 1, lines 2–3 and 11 — Three consecutive unread traces on line 11",
+   "correspondents": "unknown",
+   "place": "Qumran Cave 4 (findspot)",
+   "language": "Hebrew",
+   "region": "Other",
+   "period": "unknown",
+   "shelfmark": "4Q249p",
+   "folio_note": "fragment 1, lines 2–3 and 11",
+   "cls": "B",
+   "status": "Unresolved or uncertain signs in the Qumran-Digital diplomatic transcription.",
+   "why": "Start on line 2, where a kaf separates two unidentified marks. Use the better-preserved middle lines as a handwriting sample before testing the three bottom-line traces.",
+   "importance": 3,
+   "solvability": 2,
+   "difficulty": 4,
+   "score_note": "Priority 10 of 15. Ordering weighs a testable letter choice, photographic controls and the consequence for the reading.",
+   "verify": "Start on line 2, where a kaf separates two unidentified marks. Use the better-preserved middle lines as a handwriting sample before testing the three bottom-line traces.",
+   "links": [
+    {
+     "label": "Qumran-Digital transcription",
+     "href": "https://lexicon.qumran-digital.org/transcriptions/4Q249p/2026-10-06/index.html?v=2026-10-06"
+    },
+    {
+     "label": "IAA plate 589 (group photograph)",
+     "href": "https://www.deadseascrolls.org.il/explore-the-archive/image/B-371392"
+    }
+   ],
+   "seen": "catalogue",
+   "source": "Ranked Qumran passage survey, November 2026",
+   "prior_art": "Pfann, DJD 36 (2000), and Qumran-Digital. The designation follows the edition.",
+   "needs_archive_scan": "no",
+   "access_note": "Match the fragment to DJD 36 plate XXXIX on the linked group photograph.",
+   "ark": "",
+   "scored": "sweep"
+  },
+  {
+   "id": 3885,
+   "counted": true,
+   "year": -50,
+   "date": "Second Temple period (approximate sorting year)",
+   "title": "4Q362 fragment 3, line 4 — Unknown sign before a partly read Hebrew phrase",
+   "correspondents": "unknown",
+   "place": "Qumran Cave 4 (findspot)",
+   "language": "Hebrew",
+   "region": "Other",
+   "period": "unknown",
+   "shelfmark": "4Q362, IAA 901 fragment 2",
+   "folio_note": "fragment 3, line 4",
+   "cls": "B",
+   "status": "Residual uncertainty in Emmanuel Oliveiro’s published Cryptic B decipherment.",
+   "why": "The editor offers a possible construct phrase ending in “the men.” Test the proposed opening against the surviving mark and spacing.",
+   "importance": 3,
+   "solvability": 2,
+   "difficulty": 4,
+   "score_note": "Priority 11 of 15. Ordering weighs a testable letter choice, photographic controls and the consequence for the reading.",
+   "verify": "The editor offers a possible construct phrase ending in “the men.” Test the proposed opening against the surviving mark and spacing.",
+   "links": [
+    {
+     "label": "Oliveiro, Cryptic B edition, section 5.1",
+     "href": "https://doi.org/10.1163/15685179-bja10074"
+    },
+    {
+     "label": "IAA, PAM 43.385 (edition photograph)",
+     "href": "https://www.deadseascrolls.org.il/explore-the-archive/image/B-284418"
+    }
+   ],
+   "seen": "catalogue",
+   "source": "Ranked Qumran passage survey, November 2026",
+   "prior_art": "Oliveiro, Dead Sea Discoveries 33 (2026), 159–185, with tables of letterforms and a fragment concordance.",
+   "needs_archive_scan": "no",
+   "access_note": "Edition locator IAA 901, fragment 2. The linked PAM image is a group photograph.",
+   "ark": "",
+   "scored": "sweep"
+  },
+  {
+   "id": 3886,
+   "counted": true,
+   "year": -50,
+   "date": "Second Temple period (approximate sorting year)",
+   "title": "4Q249n fragment 1, line 3 — Unidentified signs on either side of lamed",
+   "correspondents": "unknown",
+   "place": "Qumran Cave 4 (findspot)",
+   "language": "Hebrew",
+   "region": "Other",
+   "period": "unknown",
+   "shelfmark": "4Q249n",
+   "folio_note": "fragment 1, line 3",
+   "cls": "B",
+   "status": "Unresolved or uncertain signs in the Qumran-Digital diplomatic transcription.",
+   "why": "On fragment 1 the lamed anchors two unresolved marks. Compare them with letters in the two preceding lines before using the proposed liturgical context.",
+   "importance": 3,
+   "solvability": 2,
+   "difficulty": 4,
+   "score_note": "Priority 12 of 15. Ordering weighs a testable letter choice, photographic controls and the consequence for the reading.",
+   "verify": "On fragment 1 the lamed anchors two unresolved marks. Compare them with letters in the two preceding lines before using the proposed liturgical context.",
+   "links": [
+    {
+     "label": "Qumran-Digital transcription",
+     "href": "https://lexicon.qumran-digital.org/transcriptions/4Q249n/2026-10-06/index.html?v=2026-10-06"
+    },
+    {
+     "label": "IAA plate 590 (group photograph)",
+     "href": "https://www.deadseascrolls.org.il/explore-the-archive/image/B-371393"
+    }
+   ],
+   "seen": "catalogue",
+   "source": "Ranked Qumran passage survey, November 2026",
+   "prior_art": "Pfann, DJD 36 (2000), and Qumran-Digital. The designation follows the edition.",
+   "needs_archive_scan": "no",
+   "access_note": "Match the fragment to DJD 36 plate XXXVIII on the linked group photograph.",
+   "ark": "",
+   "scored": "sweep"
+  },
+  {
+   "id": 3887,
+   "counted": true,
+   "year": -50,
+   "date": "Second Temple period (approximate sorting year)",
+   "title": "4Q249l fragment 1, line 7 — Unread sign near the foot of a Leviticus fragment",
+   "correspondents": "unknown",
+   "place": "Qumran Cave 4 (findspot)",
+   "language": "Hebrew",
+   "region": "Other",
+   "period": "unknown",
+   "shelfmark": "4Q249l",
+   "folio_note": "fragment 1, line 7",
+   "cls": "B",
+   "status": "Unresolved or uncertain signs in the Qumran-Digital diplomatic transcription.",
+   "why": "The final line preserves a shin, a tentative kaf and an unidentified sign. Use secure forms above for comparison. The Leviticus parallel is several lines away.",
+   "importance": 3,
+   "solvability": 2,
+   "difficulty": 4,
+   "score_note": "Priority 13 of 15. Ordering weighs a testable letter choice, photographic controls and the consequence for the reading.",
+   "verify": "The final line preserves a shin, a tentative kaf and an unidentified sign. Use secure forms above for comparison. The Leviticus parallel is several lines away.",
+   "links": [
+    {
+     "label": "Qumran-Digital transcription",
+     "href": "https://lexicon.qumran-digital.org/transcriptions/4Q249l/2026-10-06/index.html?v=2026-10-06"
+    },
+    {
+     "label": "IAA plate 598 (group photograph)",
+     "href": "https://www.deadseascrolls.org.il/explore-the-archive/image/B-496296"
+    }
+   ],
+   "seen": "catalogue",
+   "source": "Ranked Qumran passage survey, November 2026",
+   "prior_art": "Pfann, DJD 36 (2000), and Qumran-Digital. The designation follows the edition.",
+   "needs_archive_scan": "no",
+   "access_note": "Match the fragment to DJD 36 plate XXXVIII on the linked group photograph.",
+   "ark": "",
+   "scored": "sweep"
+  },
+  {
+   "id": 3888,
+   "counted": true,
+   "year": -50,
+   "date": "Second Temple period (approximate sorting year)",
+   "title": "4Q249s fragment 1, lines 2–3 — Unread initials on two adjacent lines",
+   "correspondents": "unknown",
+   "place": "Qumran Cave 4 (findspot)",
+   "language": "Hebrew",
+   "region": "Other",
+   "period": "unknown",
+   "shelfmark": "4Q249s",
+   "folio_note": "fragment 1, lines 2–3",
+   "cls": "B",
+   "status": "Unresolved or uncertain signs in the Qumran-Digital diplomatic transcription.",
+   "why": "Fragment 1 has an unidentified mark before waw on line 2 and before resh–mem on line 3. Both can be located, but little neighboring text survives.",
+   "importance": 3,
+   "solvability": 2,
+   "difficulty": 4,
+   "score_note": "Priority 14 of 15. Ordering weighs a testable letter choice, photographic controls and the consequence for the reading.",
+   "verify": "Fragment 1 has an unidentified mark before waw on line 2 and before resh–mem on line 3. Both can be located, but little neighboring text survives.",
+   "links": [
+    {
+     "label": "Qumran-Digital transcription",
+     "href": "https://lexicon.qumran-digital.org/transcriptions/4Q249s/2026-10-06/index.html?v=2026-10-06"
+    },
+    {
+     "label": "IAA plate 598 (group photograph)",
+     "href": "https://www.deadseascrolls.org.il/explore-the-archive/image/B-496296"
+    }
+   ],
+   "seen": "catalogue",
+   "source": "Ranked Qumran passage survey, November 2026",
+   "prior_art": "Pfann, DJD 36 (2000), and Qumran-Digital. The designation follows the edition.",
+   "needs_archive_scan": "no",
+   "access_note": "Match the fragment to DJD 36 plate XXXIX on the linked group photograph.",
+   "ark": "",
+   "scored": "sweep"
+  },
+  {
+   "id": 3889,
+   "counted": true,
+   "year": -50,
+   "date": "Second Temple period (approximate sorting year)",
+   "title": "4Q362 fragment 20, lines 1–3 — Three lines with unidentified traces",
+   "correspondents": "unknown",
+   "place": "Qumran Cave 4 (findspot)",
+   "language": "Hebrew",
+   "region": "Other",
+   "period": "unknown",
+   "shelfmark": "4Q362, IAA 901 fragment 22",
+   "folio_note": "fragment 20, lines 1–3",
+   "cls": "B",
+   "status": "Residual uncertainty in Emmanuel Oliveiro’s published Cryptic B decipherment.",
+   "why": "The edition marks an unidentified sign on each line. Begin with line 2, where more adjacent letters survive. Line 3 has only an isolated trace.",
+   "importance": 3,
+   "solvability": 2,
+   "difficulty": 4,
+   "score_note": "Priority 15 of 15. Ordering weighs a testable letter choice, photographic controls and the consequence for the reading.",
+   "verify": "The edition marks an unidentified sign on each line. Begin with line 2, where more adjacent letters survive. Line 3 has only an isolated trace.",
+   "links": [
+    {
+     "label": "Oliveiro, Cryptic B edition, section 5.1",
+     "href": "https://doi.org/10.1163/15685179-bja10074"
+    },
+    {
+     "label": "IAA, PAM 43.385 (edition photograph)",
+     "href": "https://www.deadseascrolls.org.il/explore-the-archive/image/B-284418"
+    }
+   ],
+   "seen": "catalogue",
+   "source": "Ranked Qumran passage survey, November 2026",
+   "prior_art": "Oliveiro, Dead Sea Discoveries 33 (2026), 159–185, with tables of letterforms and a fragment concordance.",
+   "needs_archive_scan": "no",
+   "access_note": "Edition locator IAA 901, fragment 22. The linked PAM image is a group photograph.",
+   "ark": "",
+   "scored": "sweep"
+  },
+  {
+   "id": 3894,
+   "counted": true,
+   "year": 1750,
+   "date": "Probably eighteenth century (cataloguer's estimate), 13 Rabīʿ al-Awwal, year unresolved",
+   "title": "Muḥammad ʿĀshiq’s coded copying year in a Lahore manuscript of Khayyam’s algebra",
+   "correspondents": "Muḥammad ʿĀshiq, copyist",
+   "place": "Lahore",
+   "language": "Arabic",
+   "region": "Other",
+   "period": "1701-1800",
+   "shelfmark": "Columbia University, Rare Book & Manuscript Library, MS Or 34, f. 49v",
+   "folio_note": "One compact group of small signs following the word for year in the colophon. The other lines of the leaf are ordinary Arabic.",
+   "cls": "C",
+   "status": "Columbia identifies the copying year as encoded and unread. The century is an estimate. The sorting year 1750 is its midpoint.",
+   "why": "The surviving day and month constrain the answer to a short numerical problem in a dated manuscript tradition.",
+   "importance": 2,
+   "solvability": 3,
+   "difficulty": 3,
+   "score_note": "A short date with adjacent context, but no secure sign values.",
+   "verify": "Transcribe the small signs and their overmarks separately. Compare the date notation in other copies by this scribe and test any proposed year against the full colophon.",
+   "links": [
+    {
+     "label": "Columbia catalogue description and facsimile sequence",
+     "href": "https://openn.library.upenn.edu/Data/0032/html/ms_or_034.html"
+    },
+    {
+     "label": "Folio 49v, full leaf",
+     "href": "https://openn.library.upenn.edu/Data/0032/ms_or_034/data/web/9808_0109_web.jpg"
+    }
+   ],
+   "seen": "image",
+   "source": "OPenn Judaica, Cairo Genizah and Muslim World description sweep, 22 November 2026",
+   "needs_archive_scan": "no",
+   "vetting": {
+    "date": "2026-11-22",
+    "by": "Codex, OPenn manuscript sweep",
+    "seen": {
+     "kind": "scan",
+     "where": "https://openn.library.upenn.edu/Data/0032/ms_or_034/data/web/9808_0109_web.jpg",
+     "extent": "Folio 49v, one short group on the third horizontal line of the colophon.",
+     "cipher": "A row of small repeated numeral-like signs with overmarks extends to the left of the elongated word سنة. The next line gives the Hijri era. No expansion of the group is visible."
+    },
+    "prior_art": {
+     "decode": "Checked the 10,106-record local DECODE list for Lahore, Khayyam, MS Or 34 and the OPenn identifier ms_or_034. No object match.",
+     "tomokiyo": "Checked the local unsolved.htm and searched for Tomokiyo with Lahore, Khayyam and the Columbia shelfmark. No reading located.",
+     "lasry": "Search for Lasry with Columbia, Lahore, Khayyam and Or 34 produced no corresponding decipherment.",
+     "edition": "Columbia’s OPenn description explicitly leaves the coded year unread. Columbia's exhibit of Smith Oriental MS 45 concerns a different manuscript. An edition of the algebra alone does not date this copy.",
+     "literature": "Searched for the shelfmark, copyist, Lahore and the Khayyam manuscript with Smith and Kasir. The results yielded no published expansion of this colophon."
+    },
+    "key_check": "The leaf gives the day, month and era in clear. The description and colophon supply no key or equivalent year. Abjad or another numerical convention still requires testing.",
+    "duplicates": "Checked catalogue, leads, solved index and the DECODE metadata for MS Or 34, ms_or_034, Khayyam and Lahore. No duplicate of this copying date located.",
+    "verdict": "open",
+    "searches": [
+     {
+      "query": "Columbia MS Or 34 Lahore Khayyam coded year colophon deciphered",
+      "result": "No full reading located for Columbia University, Rare Book & Manuscript Library, MS Or 34, f. 49v. An edition of the algebra alone does not date this copy."
+     },
+     {
+      "query": "Muhammad Ashiq Khayyam Lahore Columbia Smith colophon copied date cipher Kasir",
+      "result": "No full reading located for Columbia University, Rare Book & Manuscript Library, MS Or 34, f. 49v. An edition of the algebra alone does not date this copy."
+     },
+     {
+      "query": "OPenn Columbia Or 34 Khayyam copying year inscription numeral cipher",
+      "result": "No full reading located for Columbia University, Rare Book & Manuscript Library, MS Or 34, f. 49v. An edition of the algebra alone does not date this copy."
+     }
+    ]
+   },
+   "vetting_note": "Held as a lead (26 Nov 2026, review of PR #910): a coded copying year of a few numeral-like signs in a colophon, the same kind of item the 25 Nov vetting pass held back as lead 2903 (CUL Add. 2255: too short, may be numerals, not a cipher). Needs a longer text or a parallel before promotion.",
+   "ark": "",
+   "scored": "sweep"
+  },
+  {
+   "id": 3914,
+   "counted": true,
+   "title": "Six-sign cryptogram inside the front cover of the Hilandar Psalter",
+   "year": 1505,
+   "date": "Manuscript assigned tentatively to the 1500s decade; cover inscription undated",
+   "language": "Serbian Church Slavonic manuscript",
+   "region": "Other",
+   "place": "Hilandar Monastery, Mount Athos (OSU microfilm)",
+   "period": "unknown",
+   "shelfmark": "Ohio State University Libraries, SPEC.HM.SMS.112, inside front cover",
+   "folio_note": "The catalogue transcribes six characters, lnīrlḟ. The separate seal is associated with the monk Gregory.",
+   "correspondents": "Unidentified writer",
+   "cls": "B",
+   "importance": 2,
+   "solvability": 1,
+   "difficulty": 4,
+   "why": "The editions of Sava's directions on reading the Psalter concern a different text. The library distinguishes the cryptogram from the seal on the cover. Former numbers 192 and 91.",
+   "status": "Ohio State transcribes the inscription and describes it as unresolved.",
+   "verify": "Check the two diacritics and whether any further signs are visible on the microfilm before testing names.",
+   "score_note": "Only six transcribed signs are available, which limits the ability to distinguish candidate readings.",
+   "access": "archive",
+   "seen": "image",
+   "needs_archive_scan": "yes",
+   "access_note": "Microfilm available at Ohio State, SPEC.HM.SMS.112.",
+   "links": [
+    {
+     "label": "Hilandar 112 microfilm catalogue record",
+     "href": "https://search.library.osu.edu/permalink/01OHIOLINK_OSU/2g3e0k/alma991061307729708507"
+    },
+    {
+     "label": "Hilandar Research Library microfilm access",
+     "href": "https://library.osu.edu/hrl/research-support"
+    },
+    {
+     "label": "Published use of the psalter's liturgical instructions",
+     "href": "https://doiserbia.nb.rs/img/doi/0584-9888/2023/0584-98882301455Z.pdf"
+    }
+   ],
+   "source": "Ohio State Hilandar Research Library manuscript catalogue sweep, 22 November 2026",
+   "vetting": {
+    "date": "2026-11-22",
+    "by": "Codex (GPT-6), catalogue research",
+    "verdict": "open",
+    "seen": {
+     "kind": "transcription",
+     "where": "Ohio State University Libraries, SPEC.HM.SMS.112, inside front cover. Ohio State item record inspected via its public discovery service. https://search.library.osu.edu/permalink/01OHIOLINK_OSU/2g3e0k/alma991061307729708507",
+     "extent": "The catalogue transcribes six characters, lnīrlḟ. The separate seal is associated with the monk Gregory.",
+     "cipher": "The manuscript catalogue records: “Unresolved cryptogram on the inside of the front cover \"lnīrlḟ\"”. The catalogue supplies the signs and no plaintext."
+    },
+    "prior_art": {
+     "decode": "No DECODE hit for Hilandar and Chilandar in the search for Hilandar 112.",
+     "tomokiyo": "No reference to Hilandar 112 under the collection name in the local Cryptiana unsolved index.",
+     "lasry": "The local GL.htm index has no entry under the collection name for Hilandar 112.",
+     "edition": "The editions of Sava's directions on reading the Psalter concern a different text. The library distinguishes the cryptogram from the seal on the cover. Former numbers 192 and 91.",
+     "literature": "The library supplies a sequence but does not expand it. Located scholarship illustrating the directions on using the Psalter, with no reading of the cover cipher identified."
+    },
+    "key_check": "No key or verified expansion for Hilandar 112 inside front cover in the sources inspected. Check the two diacritics and whether any further signs are visible on the microfilm before testing names.",
+    "duplicates": "The collection name and manuscript identifier were checked in both ledgers and against open project work. The grouped lead 2109 named this psalter as well as the Terter Gospels. This entry covers only the cover sequence.",
+    "searches": [
+     {
+      "query": "OSU library catalogue: SPEC.HM.SMS.112 (991061307729708507)",
+      "result": "The manuscript description explicitly locates the cryptogram at inside front cover."
+     },
+     {
+      "query": "Hilandar psalter 112 front cover cryptogram Gregory lnīrlḟ",
+      "result": "The library supplies a sequence but does not expand it."
+     },
+     {
+      "query": "Hilandar 112 psalter Gregory cipher inside cover Serbian psalter cryptogram rešeno 112",
+      "result": "Located scholarship illustrating the directions on using the Psalter, with no reading of the cover cipher identified."
+     }
+    ]
+   },
+   "vetting_note": "Held as a lead (26 Nov 2026, review of PR #910): six transcribed characters (lnīrlḟ), likely initials or a short litorea; too short to count as a target on its own (25 Nov vetting pass, lead 2903 precedent). Needs a longer text or a parallel before promotion.",
+   "year_note": "Sorting year only, chosen from the date field when the PR #910 rows were put back as leads (26 Nov 2026); the date field is the evidence.",
+   "ark": "",
+   "scored": "sweep"
+  },
+  {
+   "id": 3920,
+   "counted": true,
+   "title": "Transposed letter sequence in the Buslaev Psalter",
+   "year": 1480,
+   "date": "1470s–1480s (RSL dating)",
+   "shelfmark": "Russian State Library (RSL), F. 304/I, no. 308, f. 210v",
+   "folio_note": "A continuous Cyrillic sequence beginning гластрашн. The separate cipher table and ornamental monograms in this volume are outside this entry.",
+   "place": "Russian State Library (RSL)",
+   "region": "Other",
+   "language": "Church Slavonic or Russian",
+   "period": "unknown",
+   "correspondents": "Unidentified writer",
+   "cls": "B",
+   "why": "Butskikh distinguishes this example from familiar reversed words. He identifies a rearrangement of letters without establishing the ordering rule.",
+   "status": "Butskikh lists X.23 as undeciphered. The RSL dates the surviving manuscript later than the 1429 date in Butskikh’s caption. The alternative dating has no bearing on the identity of f. 210v.",
+   "verify": "Compare the published sequence with f. 210v before testing arrangements.",
+   "importance": 2,
+   "solvability": 2,
+   "difficulty": 4,
+   "score_note": "Published transcription available; the reading of the underlying message remains uncertain.",
+   "source": "N. V. Butskikh, Drevnerusskaia kriptografiia (2024), X.23",
+   "seen": "image",
+   "needs_archive_scan": "no",
+   "links": [
+    {
+     "label": "Butskikh, transcription and solution register, X.23",
+     "href": "https://djvu.online/file/YFPzpXA1e6q1X"
+    },
+    {
+     "label": "Manuscript catalogue or earlier edition",
+     "href": "https://search.rsl.ru/ru/record/01004704435"
+    }
+   ],
+   "vetting": {
+    "date": "2026-11-22",
+    "by": "Codex (GPT-6), catalogue research",
+    "verdict": "open",
+    "seen": {
+     "kind": "transcription",
+     "where": "N. V. Butskikh, Drevnerusskaia kriptografiia (2024), item X.23 at https://djvu.online/file/YFPzpXA1e6q1X",
+     "extent": "A continuous Cyrillic sequence beginning гластрашн. The separate cipher table and ornamental monograms in this volume are outside this entry.",
+     "cipher": "Butskikh distinguishes this example from familiar reversed words. He identifies a rearrangement of letters without establishing the ordering rule."
+    },
+    "prior_art": {
+     "decode": "The DECODE search for Buslaev returned zero records.",
+     "tomokiyo": "No relevant collection or shelfmark match for Russian State Library (RSL), F. 304/I, no. 308, f. 210v in the project's Cryptiana unsolved-list comparison.",
+     "lasry": "No corresponding item for Russian State Library (RSL), F. 304/I, no. 308, f. 210v in the local GL.htm comparison.",
+     "edition": "Butskikh distinguishes this example from familiar reversed words. He identifies a rearrangement of letters without establishing the ordering rule.",
+     "literature_note": "The RSL dates the surviving manuscript later than the 1429 date in Butskikh’s caption. The alternative dating has no bearing on the identity of f. 210v."
+    },
+    "key_check": "No item-specific key or validated full reading located for X.23. Compare the published sequence with f. 210v before testing arrangements.",
+    "duplicates": "The project ledgers and reference lists were searched by collection or shelfmark. Russian State Library (RSL), F. 304/I, no. 308, f. 210v is the target; the plate numbers refer to Butskikh's survey.",
+    "searches": [
+     {
+      "query": "Буслаевская псалтирь 210 об тайнопись гластрашн расшифровка",
+      "result": "Butskikh distinguishes this example from familiar reversed words. He identifies a rearrangement of letters without establishing the ordering rule."
+     },
+     {
+      "query": "Псалтирь Буслаевская ф.304.I 308 сканы рукопись Троице-Сергиева лавра",
+      "result": "The RSL dates the surviving manuscript later than the 1429 date in Butskikh’s caption. The alternative dating has no bearing on the identity of f. 210v."
+     },
+     {
+      "query": "Buslaev Psalter folio 210v cryptogram decipherment rearranged letters Buslaevskaia",
+      "result": "No validated plaintext identified for Russian State Library (RSL), F. 304/I, no. 308, f. 210v."
+     }
+    ]
+   },
+   "vetting_note": "Held as a lead (26 Nov 2026, review of PR #910): prior_art.literature in the PR records no literature search (its text, kept as literature_note, repeats the dating or shelfmark remarks). Search the literature on this item (Butskikh's sources, later studies by shelfmark and opening sequence) and record the result before promotion.",
+   "year_note": "Sorting year only, chosen from the date field when the PR #910 rows were put back as leads (26 Nov 2026); the date field is the evidence.",
+   "ark": "",
+   "scored": "sweep"
+  },
+  {
+   "id": 3927,
+   "counted": true,
+   "title": "Transposed letters in Andrei Kuznetsov’s miscellany",
+   "year": 1685,
+   "date": "Late 17th century",
+   "shelfmark": "NLR, Q.XVII.56, item X.24",
+   "folio_note": "A continuous sequence beginning qмвμодрзмч. Butskikh prints the string separately from other alphabet exercises in the volume.",
+   "place": "NLR",
+   "region": "Other",
+   "language": "Church Slavonic or Russian",
+   "period": "unknown",
+   "correspondents": "Unidentified writer",
+   "cls": "B",
+   "why": "Butskikh classifies the string as reordered letters. The ordering rule is unknown. A possible reference to wisdom is the editor’s conjecture.",
+   "status": "The plate caption gives Q.XVII.56 and the index gives Q.VII.56. The title, owner and plate number identify the published target despite this discrepancy.",
+   "verify": "Compare the published string with the original before testing permutations.",
+   "importance": 2,
+   "solvability": 2,
+   "difficulty": 4,
+   "score_note": "The published transcription gives a starting point for checking this passage.",
+   "source": "N. V. Butskikh, Drevnerusskaia kriptografiia (2024), X.24",
+   "needs_archive_scan": "no",
+   "links": [
+    {
+     "label": "Butskikh, item X.24",
+     "href": "https://djvu.online/file/YFPzpXA1e6q1X"
+    }
+   ],
+   "vetting": {
+    "date": "2026-11-22",
+    "by": "Codex (GPT-6), catalogue research",
+    "verdict": "open",
+    "seen": {
+     "kind": "transcription",
+     "where": "N. V. Butskikh, Drevnerusskaia kriptografiia (2024), X.24 at https://djvu.online/file/YFPzpXA1e6q1X",
+     "extent": "A continuous sequence beginning qмвμодрзмч. Butskikh prints the string separately from other alphabet exercises in the volume.",
+     "cipher": "Butskikh classifies the string as reordered letters. The ordering rule is unknown. A possible reference to wisdom is the editor’s conjecture."
+    },
+    "prior_art": {
+     "decode": "The DECODE query for Kuznetsov returned no rows.",
+     "tomokiyo": "The local Cryptiana list had no match under Kuznetsov.",
+     "lasry": "The Lasry list search did not identify the Kuznetsov inscription.",
+     "edition": "Butskikh classifies the string as reordered letters. The ordering rule is unknown. A possible reference to wisdom is the editor’s conjecture.",
+     "literature_note": "The plate caption gives Q.XVII.56 and the index gives Q.VII.56. The title, owner and plate number identify the published target despite this discrepancy."
+    },
+    "key_check": "No published working key was identified for X.24. Compare the published string with the original before testing permutations.",
+    "duplicates": "The catalogue, lead queue, reference lists and open project work were checked for Kuznetsov. The distinct target is NLR, Q.XVII.56, item X.24.",
+    "searches": [
+     {
+      "query": "Андрей Кузнецов сборник Q.VII.56 РНБ масонская азбука запись тайная расшифровка",
+      "result": "No confirmed decipherment of NLR, Q.XVII.56, item X.24 was located by this query."
+     },
+     {
+      "query": "РНБ Q.XVII.56 Андрей Кузнецов мудрость тайнопись рукопись нечитаемая запись",
+      "result": "No confirmed decipherment of NLR, Q.XVII.56, item X.24 was located by this query."
+     },
+     {
+      "query": "Кузнецов Q.VII.56 мудрости литорея расшифровка перестановка букв Буцких",
+      "result": "No confirmed decipherment of NLR, Q.XVII.56, item X.24 was located by this query."
+     }
+    ]
+   },
+   "seen": "image",
+   "vetting_note": "Held as a lead (26 Nov 2026, review of PR #910): prior_art.literature in the PR records no literature search (its text, kept as literature_note, repeats the dating or shelfmark remarks). Search the literature on this item (Butskikh's sources, later studies by shelfmark and opening sequence) and record the result before promotion.",
+   "year_note": "Sorting year only, chosen from the date field when the PR #910 rows were put back as leads (26 Nov 2026); the date field is the evidence.",
+   "ark": "",
+   "scored": "sweep"
+  },
+  {
+   "id": 3929,
+   "counted": true,
+   "title": "The copyist’s numerical name puzzle in the Burtsev illustrated Apocalypse",
+   "year": 1900,
+   "date": "Late 19th or early 20th century",
+   "shelfmark": "BAN, 1.5.93 (Burtsev 21), f. 128v",
+   "folio_note": "The colophon gives a seven-letter first name in three syllables, then numerical clues for the patronymic and surname. The stated total is 7334.",
+   "place": "BAN",
+   "region": "Other",
+   "language": "Church Slavonic or Russian",
+   "period": "unknown",
+   "correspondents": "Unidentified writer",
+   "cls": "B",
+   "why": "Podkovyrova prints the colophon in the Academy library’s 2005 study, p. 89. The stated component values do not add to the grand total. Butskikh lists the puzzle as unresolved.",
+   "status": "The book imitates an older manuscript. Old paper is not a date for the colophon. An attribution to a workshop would not itself decode the writer’s full name.",
+   "verify": "Check the four numbers in both printed versions before using them to screen names.",
+   "importance": 2,
+   "solvability": 2,
+   "difficulty": 4,
+   "score_note": "The published transcription gives a starting point for checking this passage.",
+   "source": "N. V. Butskikh, Drevnerusskaia kriptografiia (2024), XVII.26",
+   "needs_archive_scan": "no",
+   "links": [
+    {
+     "label": "Butskikh, item XVII.26",
+     "href": "https://djvu.online/file/YFPzpXA1e6q1X"
+    },
+    {
+     "label": "Podkovyrova, manuscript description and colophon",
+     "href": "https://arran.ru/images/nd/biblio/1/article5.pdf#page=87"
+    }
+   ],
+   "vetting": {
+    "date": "2026-11-22",
+    "by": "Codex (GPT-6), catalogue research",
+    "verdict": "open",
+    "seen": {
+     "kind": "transcription",
+     "where": "N. V. Butskikh, Drevnerusskaia kriptografiia (2024), XVII.26 at https://djvu.online/file/YFPzpXA1e6q1X",
+     "extent": "The colophon gives a seven-letter first name in three syllables, then numerical clues for the patronymic and surname. The stated total is 7334.",
+     "cipher": "Podkovyrova prints the colophon in the Academy library’s 2005 study, p. 89. The stated component values do not add to the grand total. Butskikh lists the puzzle as unresolved."
+    },
+    "prior_art": {
+     "decode": "The DECODE query for Burtsev returned no rows.",
+     "tomokiyo": "The local Cryptiana list had no match under Burtsev.",
+     "lasry": "The Lasry list search did not identify the Burtsev inscription.",
+     "edition": "Podkovyrova prints the colophon in the Academy library’s 2005 study, p. 89. The stated component values do not add to the grand total. Butskikh lists the puzzle as unresolved.",
+     "literature_note": "The book imitates an older manuscript. Old paper is not a date for the colophon. An attribution to a workshop would not itself decode the writer’s full name."
+    },
+    "key_check": "No published working key was identified for XVII.26. Check the four numbers in both printed versions before using them to screen names.",
+    "duplicates": "The catalogue, lead queue, reference lists and open project work were checked for Burtsev. The distinct target is BAN, 1.5.93 (Burtsev 21), f. 128v.",
+    "searches": [
+     {
+      "query": "БАН 1.5.93 Бурцева Апокалипсис писец имя семь литер старообрядческая рукопись расшифровка",
+      "result": "No confirmed decipherment of BAN, 1.5.93 (Burtsev 21), f. 128v was located by this query."
+     },
+     {
+      "query": "Бурцева 21 Апокалипсис лицевой 1.5.93 Подковырова писец числовая запись",
+      "result": "No confirmed decipherment of BAN, 1.5.93 (Burtsev 21), f. 128v was located by this query."
+     },
+     {
+      "query": "Апокалипсис 1.5.93 128 отчество имя писца тайнопись рукопись БАН",
+      "result": "No confirmed decipherment of BAN, 1.5.93 (Burtsev 21), f. 128v was located by this query."
+     }
+    ]
+   },
+   "seen": "image",
+   "vetting_note": "Held as a lead (26 Nov 2026, review of PR #910): prior_art.literature in the PR records no literature search (its text, kept as literature_note, repeats the dating or shelfmark remarks). Search the literature on this item (Butskikh's sources, later studies by shelfmark and opening sequence) and record the result before promotion.",
+   "year_note": "Sorting year only, chosen from the date field when the PR #910 rows were put back as leads (26 Nov 2026); the date field is the evidence.",
+   "ark": "",
+   "scored": "sweep"
+  },
+  {
+   "id": 3930,
+   "counted": true,
+   "title": "The 1826 number inscription in the Amfilokhii Trefologion",
+   "year": 1826,
+   "date": "1826",
+   "shelfmark": "RSL, F. 7, no. 34, f. 446r",
+   "folio_note": "Four digit groups arranged over three lines begin with 1111121. All groups appear in the transcription.",
+   "place": "RSL",
+   "region": "Other",
+   "language": "Church Slavonic or Russian",
+   "period": "unknown",
+   "correspondents": "Unidentified writer",
+   "cls": "B",
+   "why": "Butskikh includes the 1826 addition in the unresolved register and considers an arithmetic ownership inscription possible. The intended content and mechanism are uncertain.",
+   "status": "The RSL describes the underlying book as sixteenth-century and identifies leaves 446–449 as additions. The 1826 date applies to the inscription.",
+   "verify": "Check grouping and spacing on f. 446r and look for comparable ownership inscriptions.",
+   "importance": 2,
+   "solvability": 2,
+   "difficulty": 4,
+   "score_note": "The published transcription gives a starting point for checking this passage.",
+   "source": "N. V. Butskikh, Drevnerusskaia kriptografiia (2024), XIX.17",
+   "needs_archive_scan": "no",
+   "links": [
+    {
+     "label": "Butskikh, item XIX.17",
+     "href": "https://djvu.online/file/YFPzpXA1e6q1X"
+    },
+    {
+     "label": "Russian State Library, manuscript record",
+     "href": "https://lib-fond.ru/lib-rgb/7/f-7-34/"
+    }
+   ],
+   "vetting": {
+    "date": "2026-11-22",
+    "by": "Codex (GPT-6), catalogue research",
+    "verdict": "open",
+    "seen": {
+     "kind": "transcription",
+     "where": "N. V. Butskikh, Drevnerusskaia kriptografiia (2024), XIX.17 at https://djvu.online/file/YFPzpXA1e6q1X",
+     "extent": "Four digit groups arranged over three lines begin with 1111121. All groups appear in the transcription.",
+     "cipher": "Butskikh includes the 1826 addition in the unresolved register and considers an arithmetic ownership inscription possible."
+    },
+    "prior_art": {
+     "decode": "The DECODE query for Amfilokhii returned no rows.",
+     "tomokiyo": "The local Cryptiana list had no match under Amfilokhii.",
+     "lasry": "The Lasry list search did not identify the Amfilokhii inscription.",
+     "edition": "Butskikh includes the 1826 addition in the unresolved register and considers an arithmetic ownership inscription possible. The intended content and mechanism are uncertain.",
+     "literature_note": "The RSL describes the underlying book as sixteenth-century and identifies leaves 446–449 as additions. The 1826 date applies to the inscription."
+    },
+    "key_check": "No published working key was identified for XIX.17. Check grouping and spacing on f. 446r and look for comparable ownership inscriptions.",
+    "duplicates": "The catalogue, lead queue, reference lists and open project work were checked for Amfilokhii. The distinct target is RSL, F. 7, no. 34, f. 446r.",
+    "searches": [
+     {
+      "query": "РГБ ф. 7 № 34 трефологий 1826 владельческая запись ряд цифр тайнопись расшифровка",
+      "result": "No confirmed decipherment of RSL, F. 7, no. 34, f. 446r was located by this query."
+     },
+     {
+      "query": "Трефологий XVI в. РГБ ф 7 34 446 владельческая запись цифровая библиотека",
+      "result": "No confirmed decipherment of RSL, F. 7, no. 34, f. 446r was located by this query."
+     },
+     {
+      "query": "111451040 1224566452 Трефологий 1826 запись цифры решение Буцких",
+      "result": "No confirmed decipherment of RSL, F. 7, no. 34, f. 446r was located by this query."
+     }
+    ]
+   },
+   "seen": "image",
+   "vetting_note": "Held as a lead (26 Nov 2026, review of PR #910): prior_art.literature in the PR records no literature search (its text, kept as literature_note, repeats the dating or shelfmark remarks). Search the literature on this item (Butskikh's sources, later studies by shelfmark and opening sequence) and record the result before promotion.",
+   "ark": "",
+   "scored": "sweep"
+  },
+  {
+   "id": 3931,
+   "counted": true,
+   "title": "Anfim of Golgotha’s closing word puzzle",
+   "year": 1600,
+   "date": "16th or 17th century",
+   "shelfmark": "Anfim, On the force of written marks, final passage (Jagić edition, vol. I, pp. 785–788)",
+   "folio_note": "A sequence of repeated words, including ей and мой, closes the grammatical treatise. Prokhorov transcribes the passage in the entry on Anfim.",
+   "place": "Anfim",
+   "region": "Other",
+   "language": "Church Slavonic or Russian",
+   "period": "unknown",
+   "correspondents": "Anfim of Golgotha",
+   "cls": "B",
+   "why": "Butskikh discusses the repeated words as a deliberately oblique text and reports no full reading. Prokhorov independently prints the sequence in his account of the author.",
+   "status": "The plate caption in Butskikh repeats the shelfmark of the preceding example. The independent edition identifies the passage by author, work and position.",
+   "verify": "Collate repetitions against the Jagić edition before interpreting their counts.",
+   "importance": 2,
+   "solvability": 2,
+   "difficulty": 4,
+   "score_note": "The published transcription gives a starting point for checking this passage.",
+   "source": "N. V. Butskikh, Drevnerusskaia kriptografiia (2024), XIII.17",
+   "needs_archive_scan": "no",
+   "links": [
+    {
+     "label": "Butskikh, item XIII.17",
+     "href": "https://djvu.online/file/YFPzpXA1e6q1X"
+    },
+    {
+     "label": "Prokhorov, entry on Anfim",
+     "href": "https://djvu.online/file/RyAOQnqq0Z3it"
+    }
+   ],
+   "vetting": {
+    "date": "2026-11-22",
+    "by": "Codex (GPT-6), catalogue research",
+    "verdict": "open",
+    "seen": {
+     "kind": "transcription",
+     "where": "N. V. Butskikh, Drevnerusskaia kriptografiia (2024), XIII.17 at https://djvu.online/file/YFPzpXA1e6q1X",
+     "extent": "A sequence of repeated words, including ей and мой, closes the grammatical treatise. Prokhorov transcribes the passage in the entry on Anfim.",
+     "cipher": "Butskikh discusses the repeated words as a deliberately oblique text and reports no full reading. Prokhorov independently prints the sequence in his account of the author."
+    },
+    "prior_art": {
+     "decode": "The DECODE query for Anfim returned no rows.",
+     "tomokiyo": "The local Cryptiana list had no match under Anfim.",
+     "lasry": "The Lasry list search did not identify the Anfim inscription.",
+     "edition": "Butskikh discusses the repeated words as a deliberately oblique text and reports no full reading. Prokhorov independently prints the sequence in his account of the author.",
+     "literature_note": "The plate caption in Butskikh repeats the shelfmark of the preceding example. The independent edition identifies the passage by author, work and position."
+    },
+    "key_check": "No published working key was identified for XIII.17. Collate repetitions against the Jagić edition before interpreting their counts.",
+    "duplicates": "The catalogue, lead queue, reference lists and open project work were checked for Anfim. The distinct target is Anfim, On the force of written marks, final passage (Jagić edition, vol. I, pp. 785–788).",
+    "searches": [
+     {
+      "query": "Анфим Голгофский ей мой книжной тайнопись решение Ягич",
+      "result": "No confirmed decipherment of Anfim, On the force of written marks, final passage (Jagić edition, vol. I, pp. 785–788) was located by this query."
+     },
+     {
+      "query": "Анфим о силе книжной загадка расшифровка кто обитает ей мой",
+      "result": "No confirmed decipherment of Anfim, On the force of written marks, final passage (Jagić edition, vol. I, pp. 785–788) was located by this query."
+     },
+     {
+      "query": "Анфим Голгофский О силе книжной Ягич Прохоров тайнопись толкование повторение мой ей",
+      "result": "No confirmed decipherment of Anfim, On the force of written marks, final passage (Jagić edition, vol. I, pp. 785–788) was located by this query."
+     }
+    ]
+   },
+   "seen": "image",
+   "vetting_note": "Held as a lead (26 Nov 2026, review of PR #910): prior_art.literature in the PR records no literature search (its text, kept as literature_note, repeats the dating or shelfmark remarks). Search the literature on this item (Butskikh's sources, later studies by shelfmark and opening sequence) and record the result before promotion.",
+   "year_note": "Sorting year only, chosen from the date field when the PR #910 rows were put back as leads (26 Nov 2026); the date field is the evidence.",
+   "ark": "",
+   "scored": "sweep"
+  },
+  {
+   "id": 3933,
+   "counted": true,
+   "title": "Five-letter cryptogram in the Hilandar cherubic hymnal",
+   "year": 1889,
+   "date": "1889 (hymnal; note undated)",
+   "region": "Other",
+   "place": "Hilandar Monastery, Mount Athos",
+   "period": "unknown",
+   "language": "Church Slavonic manuscript",
+   "shelfmark": "Hilandar Monastery, Slavonic MS 786, terminal notes",
+   "folio_note": "The catalogue transcribes five separated letters, R S M Z K, in the terminal notes. It separately records a date on 60a and the name Sofronius inside the back cover.",
+   "correspondents": "Unidentified writer",
+   "cls": "B",
+   "why": "Ohio State’s manuscript catalogue identifies this sequence as a cryptogram and transcribes it. The record gives no expansion. A sequence of initials is possible. The attribution to Sofronius applies to a neighbouring note and does not supply a reading.",
+   "status": "Searches for the five letters in Roman and Cyrillic transliteration and for the hymnal by number found no documented expansion. Its brevity limits identification without parallels.",
+   "verify": "Inspect the terminal notes for punctuation and compare the sequence with initials in contemporary Athonite chant books.",
+   "importance": 2,
+   "solvability": 1,
+   "difficulty": 4,
+   "score_note": "Short catalogue transcription; original handwriting awaits inspection.",
+   "source": "Ohio State University Libraries, Neumatic (late Byzantine) cherubic hymns, 1889",
+   "links": [
+    {
+     "label": "Ohio State manuscript description and transcription",
+     "href": "https://search.library.osu.edu/permalink/01OHIOLINK_OSU/2g3e0k/alma991054257309708507"
+    },
+    {
+     "label": "Hilandar Research Library access",
+     "href": "https://library.osu.edu/hrl/research-support"
+    }
+   ],
+   "access": "archive",
+   "needs_archive_scan": "yes",
+   "access_note": "Transcription available online. Consult the Hilandar Research Library microfilm for the original handwriting.",
+   "vetting": {
+    "date": "2026-11-22",
+    "by": "Codex (GPT-6), catalogue research",
+    "verdict": "open",
+    "seen": {
+     "kind": "transcription",
+     "where": "Ohio State University Libraries, OCLC 17655799, descriptive note at https://search.library.osu.edu/permalink/01OHIOLINK_OSU/2g3e0k/alma991054257309708507",
+     "extent": "The catalogue transcribes five separated letters, R S M Z K, in the terminal notes. It separately records a date on 60a and the name Sofronius inside the back cover.",
+     "cipher": "Ohio State’s manuscript catalogue identifies this sequence as a cryptogram and transcribes it. The record gives no expansion."
+    },
+    "prior_art": {
+     "decode": "The DECODE collection-name searches Hilandar and Chilandar gave zero rows for the cherubic hymnal.",
+     "tomokiyo": "No Hilandar 786 identification in the local Cryptiana index.",
+     "lasry": "No Lasry list entry for this Athonite hymn-book sequence under the collection name.",
+     "edition": "The Ohio State description transcribes the five-letter note without a reading.",
+     "literature": "Searches for the five letters in Roman and Cyrillic transliteration and for the hymnal by number found no documented expansion. Its brevity limits identification without parallels."
+    },
+    "key_check": "The record gives no expansion. A sequence of initials is possible. The attribution to Sofronius applies to a neighbouring note and does not supply a reading.",
+    "duplicates": "Checked the collection number, transcription and project ledgers. The inscribed hymnal is MS 786, shelf designation 805, distinct from the 1896 title-page signature in catalogue 3680.",
+    "searches": [
+     {
+      "query": "Hilandar 786 cherubic hymns R S M Z K cryptogram Sofronius 1889 Kalistrat decoded",
+      "result": "Searches for the five letters in Roman and Cyrillic transliteration and for the hymnal by number found no documented expansion. Its brevity limits identification without parallels."
+     },
+     {
+      "query": "Хиландар 786 херувике 1889 Софроније Р С М З К тајнопис запис",
+      "result": "No item-specific plaintext found for Hilandar Monastery, Slavonic MS 786, terminal notes."
+     },
+     {
+      "query": "Hilandar manuscript 786 neumes cryptogram music monogram 1889 study chant",
+      "result": "The record gives no expansion. A sequence of initials is possible. The attribution to Sofronius applies to a neighbouring note and does not supply a reading."
+     }
+    ]
+   },
+   "seen": "image",
+   "vetting_note": "Held as a lead (26 Nov 2026, review of PR #910): five separated letters (R S M Z K); the vetting itself says a sequence of initials is possible and that its brevity limits identification; too short to count as a target on its own (25 Nov vetting pass, lead 2903 precedent). Needs a longer text or a parallel before promotion.",
    "ark": "",
    "scored": "sweep"
   }

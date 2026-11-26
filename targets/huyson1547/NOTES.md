@@ -45,8 +45,39 @@ Charrière II gives summaries. Austro-Turcica 1995 not consulted.
 
 ## Method
 
-Method: (1) starting key = Malvezzi’s alphabet preserved with Ferdinand I’s letter to Malvezzi of 23 January 1548 (DECODE R367, read by Daniel Bourdeau), calibrated on another ciphered copy in the same series whose contemporary decipherment survives (7-3-20), then frozen (SHA-256 fingerprint) before any reading of 7-2-18; (2) held-out validation: on an unglossed copy of a ciphered letter of 1550 (8-3-8), decoding frozen before its contemporary decipherment was opened: 92.5% of letters agree with the gloss (84.3% mechanically from the key alone), against 20% on average and 31% at most for permuted keys; (3) atlas of the copyist’s letter forms (the “8” family is told apart by its foot); (4) line-by-line reading of 7-2-18 on the native AIS images, with no known text, counting sure, probable and unresolved groups; the show-through on 145v was digitally subtracted for reading; (5) blind visual review by Brice Dudout of 20 doubtful signs presented as shapes (two sheets, 19 confirmed, one re-examined); (6) Ribier and Charrière were used to identify people and check the sense, never to fix a value.
+Method: (1) starting key = Malvezzi’s alphabet preserved with Ferdinand I’s letter to Malvezzi of 23 January 1548 (DECODE R367, read by Daniel Bourdeau), calibrated on another ciphered copy in the same series whose contemporary decipherment survives (7-3-20), then frozen (SHA-256 fingerprint) before any reading of 7-2-18; (2) held-out validation: on an unglossed copy of a ciphered letter of 1550 (8-3-8), decoding frozen before its contemporary decipherment was opened: 92.5% of letters agree with the gloss (84.3% mechanically from the key alone), against 20% on average and 31% at most for permuted keys; (3) atlas of the copyist’s letter forms (the “8” family is told apart by its foot); (4) line-by-line reading of 7-2-18 on the native AIS images, with no known text, counting sure, probable and unresolved groups; the show-through on 145v was digitally subtracted for reading; (5) blind visual review by Brice Dudout of 20 doubtful signs presented as shapes, on two sheets that AI agents built and scored (19 confirmed, one re-examined; see "Sign checks" below); (6) Ribier and Charrière were used to identify people and check the sense, never to fix a value.
 
 ## Remaining gaps
 
 - 18 groups left unresolved (4 in Malvezzi's Italian heading, 143r l. 2); {Bareo} and one group in 145v l. 17 not identified.
+
+## Sign checks: moved from human_check (19 Nov 2026)
+
+Daniel Bourdeau's review of PR #789 (19 Nov 2026) asked who prepared the sheets behind `outcome.human_check`, which the schema defines as a check against the image without AI help. Here AI agents prepared them: they chose the questions, cut the thumbnails from sure words of the same hand, built the two HTML sheets (C05b and C12, 27 Oct 2026) and scored the answers; Brice Dudout, the contributor of the reading, only chose the shapes. The record therefore moves to `outcome.sign_check`, two sheets: C05b, 12 signs, 11 as transcribed, 1 answered "other" with a remark (143r l. 12, second sign), which an agent then re-examined on a zoom and read as the transcribed o; C12, 8 signs, all 8 as transcribed. Neither sheet had a control, and no selection rule was written or hashed apart, so neither meets the level "AI decipherment, human-checked on a sample of signs". The sheets, thumbnails and answer files stay in the contributor's working folder; nothing in the reading changes.
+
+## 25 Nov 2026 - held-out re-test of the frozen key on a 1550 letter (Brice Dudout, with Claude)
+The blind check of 27 Oct covered only 148 signs of 8-3-8. The key was tested once more, on new material, under the
+current rules (held-out portion of at least 300 cipher signs, pass mark 0.85 on characters and a margin of 0.30 over the
+best of 200 shuffled keys, fixed before decoding). The material comes from **Andrew Beling's vetting of lead 892
+(PR #945)**: he identified the clear draft 8-2-10 fol. 74 (AIS 7048141) of HHStA Türkei I **8-2-24** (AIS 7048241,
+Ferdinand I to Malvezzi, Vienna, 25 Mar 1550) and transcribed it; his transcription is the reference.
+
+| Measure | Value |
+|---|---|
+| Portion | 9 cipher lines of fol. 123r, **354 cipher signs**, never measured before |
+| Character agreement | **0.887** (pass mark 0.85) |
+| Best of 200 shuffled keys | 0.421 (mean 0.332): margin needed 0.721 |
+| Word agreement (reported, not decisive) | 51/70 = 0.729 |
+| Result | **PASS** |
+
+Hashes: key `cle_K1547_consolidee.json` 8fbf1dd2...d4bcceb (K-C01 plus the sign atlas and the later values of the
+published reading), plan PREREG.md fcd2c149..., transcription b4110051..., decode 8d61ebc1... Before decoding, the system
+was checked: the nulls (spu, atq, etiam, Dec, cum, z), the code Ras and the doubled-letter numbers 12-16 are the same in
+1547 and 1550, and the value-class frequency cosine is 0.909 against a shuffled maximum of 0.827. The decode runs from
+"a quondam rege Ioanne tentum et possessum fuit apud [Ras] agere et instare deberes..." to "...in Dalmatia, Croatia et
+Sclauonia alias possedi[mus]". In passing: the word of the draft left as "ats" before *possedimus* is enciphered
+*a l i a s*, so the abbreviation is *alias*.
+
+The frozen key now passes a held-out test that meets the current rules; nothing in the published reading of 7-2-18
+changes. Limits: the 1550 transcription was made by one AI agent and has not been reviewed by a human; the test covers
+the key and the system, not the 1547 hand. Files: `validation_8-2-24/` (no image; Andrew's reference stays in his PR).

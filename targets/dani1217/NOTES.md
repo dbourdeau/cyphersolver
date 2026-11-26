@@ -1,4 +1,4 @@
-# Catalogue no. 2886: two cipher lines on the title page of ad-Dani's at-Taisir (Berlin, Ms. or. oct. 3629, 615 AH / 1217)
+# Catalogue no. 2886: two cipher lines on the title page of ad-Dani's at-Taisir (Berlin, Ms. or. oct. 3629, 615 AH / July 1218)
 
 Status: in progress. Attempted 16 Nov 2026 from the printed plate; not solved. The manuscript leaf itself has not
 been seen.
@@ -6,6 +6,10 @@ been seen.
 Staatsbibliothek zu Berlin, Ms. or. oct. 3629, f. 1a, between the title and the author line: two lines of separate
 signs, which Sellheim (VOHD XVII A 1, 1976, no. 12, p. 23) counts as "43(?) Buchstaben in Geheimschrift", partly
 smudged, seven of them repeated in the margin of f. 72b. He gives no reading and points to his Abb. 92 for comparison.
+
+## Findings from 22 November 2026
+
+The colophon dates the copy to July 1218. Sellheim printed 1217. The date and authorship of the cipher lines remain uncertain. The seven signs he reports on folio 72b provide the strongest independent check on a proposed reading. Searches using a provisional 43-position transcription and comparisons with historical alphabet tables yielded no verified plaintext. [Full research record and sources](research-2026-11.md) · [Published photograph](https://content.staatsbibliothek-berlin.de/dc/PPN1879946874-00000461/full/full/0/default.jpg)
 
 ## Source used
 
@@ -23,7 +27,7 @@ Abb. 92 (Ms. or. oct. 3938 f. 1a, about 1800) is an owner's note with the same w
 sign by sign against the clear text above it: each letter is its abjad value written as an Arabic digit with a small
 loop beneath it for each zero (mim = 4 with one loop, shin = 3 with two loops, ya = 1 with a loop, ha = 8, ta' = 9,
 waw = 6 bare). The cipher line begins "Muhammad ash-Shanawani" and continues "al-Khatib bi-l-...", right to left.
-This is a system, not a key: it has no secret part, so if the 1217 lines used it they should read at sight.
+This is a system, not a key: it has no secret part, so if the title-page lines used it they should read at sight.
 
 ## Transcription
 
@@ -92,6 +96,10 @@ Line 2 opens A B C C D with the two C signs adjacent, the first with two short m
 - Retry: not worth repeating from the plate.
 
 ## Prior work
+
+**22 November comparison and name test.** I located Wüstenfeld's actual 1879 alphabet on the unnumbered lithographed plate before p. 351. The 9-like sign there represents ṣād, and the peaked sign represents tāʾ. Applied to the opening of Berlin line 2 (A B), those tentative identifications give صت. The doubled C that follows has no secure match, and the small under-marks on the Berlin plate remain unexplained. The source provides an 18-letter partial alphabet from another codex. This comparison does not establish shared cipher values. [Göttingen plate](https://manifests.sub.uni-goettingen.de/iiif/image/gdz:PPN252457072_1879:00000368/full/1100,/0/default.jpg) · [Berlin plate](https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN1879946874&PHYSID=PHYS_0461)
+
+[name_alignment.py](name_alignment.py) slides the scribe's name across both lines under a one-to-one substitution, allowing both reading directions, alternative spellings of the names, and 0–3 lost signs at the recorded break in line 2. At least three quarters of the letters must coincide with classed signs. The short form produced zero exact fits in 944 tested placements, including duplicate placements across gap settings. Adding الشافعي المقري produced zero in 808. The best short form still has one inconsistent pair. For the full name every tested placement has at least 15 pairwise equality conflicts, which need not represent 15 separate letter errors. This tests consecutive text under the current sign classification only.
 
 None found: Sellheim 1976 describes and reproduces the lines without a reading; the catalogue vetting of 15 Nov 2026
 searched DECODE, Tomokiyo, Lasry's key list and the web; a web search on the shelfmark on 16 Nov 2026 found the

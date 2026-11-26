@@ -60,7 +60,7 @@
     "source": "As for 31 Jan."
    },
    "length": {
-    "tokens": 341,
+    "tokens": 335,
     "distinct": 26,
     "unit": "symbols",
     "measured": true,
@@ -277,38 +277,57 @@
    ],
    "what": "Statistical validation (docs/_validate.py): 969 tokens, 136 types, en-modern order 4: reading -2.211 per letter; random keys -7.468 (z 21.4); key annealed onto shuffled ciphertext best -4.054 (mean -4.182, z 25.6); annealer on the real text -3.573. Verdict: pass.",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "transcription",
+   "technique": [
+    "other"
+   ],
+   "what": "Line img1.A.05 re-read from the image while framing it for a film: the group 26,19,10,19,1,16 (submit) is on the page twice, not three times. The extra group removed from transcription.txt, numbers_10feb1808.txt and validation.tsv (the key could not catch it: a six-letter word leaves the key in place); 967 numbers, 963 give sense; IoC 0.0431 overall, 0.0611 at period 6, 0.0636 at 12.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "verification",
+   "technique": [
+    "statistical test",
+    "language-model scoring"
+   ],
+   "what": "Statistical validation (docs/_validate.py): 963 tokens, 136 types, en-modern order 4: reading -2.213 per letter; random keys -7.468 (z 21.4); key annealed onto shuffled ciphertext best -4.14 (mean -4.197, z 40.6); annealer on the real text -3.507. Verdict: pass.",
+   "result": "worked"
   }
  ],
  "outcome": {
   "validation": {
-   "date": "2026-11-05",
+   "date": "2026-11-24",
    "model": "en-modern",
    "file": "validation.tsv",
-   "tokens": 969,
+   "tokens": 963,
    "types": 136,
-   "tokens_per_type": 7.12,
-   "score": -2.211,
+   "tokens_per_type": 7.08,
+   "score": -2.213,
    "nulls": {
     "random keys": {
      "n": 200,
      "mean": -7.468,
      "sd": 0.246,
-     "max": -6.864,
+     "max": -6.88,
      "z": 21.4,
      "p": 0.005
     },
     "shuffled refit": {
      "n": 6,
-     "mean": -4.182,
-     "sd": 0.077,
-     "max": -4.054,
-     "z": 25.6,
+     "mean": -4.197,
+     "sd": 0.049,
+     "max": -4.14,
+     "z": 40.6,
      "p": 0.1429
     }
    },
-   "power": -3.573,
+   "power": -3.507,
    "verdict": "pass",
-   "notes": "claimed per-occurrence score -2.211; polyphony 0.0; 4 unread tokens left out; annealer on the real text from random keys reached -3.573"
+   "notes": "claimed per-occurrence score -2.213; polyphony 0.0; 4 unread tokens left out; annealer on the real text from random keys reached -3.507"
   },
   "method": "key recovered from ciphertext-only",
   "method_basis": "The period and the six shifts were found by the index of coincidence and column frequency fitting on the cipher alone; nothing on the sheets or in print gave plaintext or a key.",
@@ -323,7 +342,7 @@
   "key": "recovered",
   "fraction_read": 0.996,
   "fraction_read_method": "measured",
-  "fraction_read_source": "reading_numbers.txt (decrypt.py --measure), cipher numbers: 969 of 973",
+  "fraction_read_source": "reading_numbers.txt (decrypt.py --measure), cipher numbers: 963 of 967 (recounted 24 Nov 2026)",
   "codes_open": {
    "open": 0,
    "total": 0,

@@ -51,6 +51,25 @@
     chs.forEach((b,i)=>b.addEventListener('click',()=>{ own(); v.currentTime=T[i]; go(); }));
     // at the end: back to the poster, with the buttons still over it
     v.addEventListener('ended',()=>{ held=true; over=true; v.load(); hv.classList.add('at-end'); });
+    // volume and full screen (25 Nov 2026): a slider beside the mute button (not on touch screens, where the device
+    // buttons set the volume) and a full-screen button; double-click or F also toggles full screen. In full screen the
+    // browser's own controls come back, with the seek bar and volume.
+    const ctl=hv.querySelector('.hv-ctl'), frame=hv.querySelector('.hv-frame');
+    if(ctl&&!matchMedia('(pointer:coarse)').matches){ const vol=document.createElement('input');
+      vol.type='range'; vol.min='0'; vol.max='1'; vol.step='0.05'; vol.value=String(v.volume); vol.className='hv-vol'; vol.setAttribute('aria-label','Volume');
+      vol.addEventListener('input',()=>{ own(); v.volume=+vol.value; v.muted=+vol.value===0; if(!v.muted && v.paused && v.currentTime===0) go(); });
+      v.addEventListener('volumechange',()=>{ vol.value=String(v.muted?0:v.volume); });
+      mu.after(vol); }
+    const fsEl=frame&&frame.requestFullscreen?frame:null;
+    const fsOn=()=>document.fullscreenElement===frame;
+    const fsToggle=()=>{ if(fsEl){ if(fsOn()) document.exitFullscreen(); else fsEl.requestFullscreen().catch(()=>{}); }
+      else if(v.webkitEnterFullscreen){ v.webkitEnterFullscreen(); } };
+    if(ctl&&(fsEl||v.webkitEnterFullscreen)){ const fb=document.createElement('button'); fb.type='button'; fb.className='hv-fs'; fb.setAttribute('aria-label','Full screen');
+      fb.innerHTML='<svg width="15" height="15" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 6V2h4M10 2h4v4M14 10v4h-4M6 14H2v-4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>';
+      fb.addEventListener('click',fsToggle); ctl.append(fb);
+      document.addEventListener('fullscreenchange',()=>{ const on=fsOn(); hv.classList.toggle('fs',on); v.controls=on; fb.setAttribute('aria-label',on?'Leave full screen':'Full screen'); }); }
+    v.addEventListener('dblclick',fsToggle);
+    hv.addEventListener('keydown',e=>{ if((e.key==='f'||e.key==='F')&&!e.ctrlKey&&!e.metaKey&&!e.altKey&&e.target.tagName!=='INPUT'){ e.preventDefault(); fsToggle(); } });
     ['play','pause','volumechange','emptied'].forEach(e=>v.addEventListener(e,sync));
     v.addEventListener('timeupdate',()=>{ const t=v.currentTime, d=v.duration||60;
       chs.forEach((b,i)=>{ const a=T[i], z=i+1<T.length?T[i+1]:d;

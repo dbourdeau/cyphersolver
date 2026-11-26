@@ -1,6 +1,6 @@
 # Ludwik Wąsowicz to Aleksander Michał Lubomirski, 1662-1663 (catalogue 439)
 
-Status: read in part (16 Nov 2026, recounted over cipher words: 251 of 281, 89.3%; only R7509 reaches 95%). Was read (Brice Dudout, 27 Oct 2026; seven letters, cipher passages counted in number groups, not words: about 95% of the groups or more in each letter, R7504 100%, R7510 about 98.7%; certain, probable, restored and unresolved groups not counted separately (marked in reading.md); Daniel Bourdeau's 95% rule).
+Status: read in part (25 Nov 2026, after a blind sign sheet on R7508: 255 of 281 cipher words, 90.7%; 16 Nov 2026 recount 251 of 281, 89.3%; only R7509 reaches 95%). Was read (Brice Dudout, 27 Oct 2026; seven letters, cipher passages counted in number groups, not words: about 95% of the groups or more in each letter, R7504 100%, R7510 about 98.7%; certain, probable, restored and unresolved groups not counted separately (marked in reading.md); Daniel Bourdeau's 95% rule).
 
 Contributed by Brice Dudout (Europe chiffrée), 27 Oct 2026. Write-up:
 https://bdudout.github.io/europe-chiffree/en/documents.html#krakow-1663
@@ -37,7 +37,7 @@ following R7509.
 - “z z{a}wiązku wynidzie” (19/3/1663): “will leave the confederation”. The group after 13 (z) is badly formed; “z zawiązku” (zawiązek = the confederation) is the likeliest reading, “z związku” remains possible. ‹przezęidą›: meaningless as it stands, two digits uncertain; the expected sense is “przeydą” (will pass over), not proven. komendyrowani‹e›: the end of the word lies outside our line crop.
 - “lepszych … chorągwi”: the better banners (cavalry companies). The Marshal promises to detach companies from the confederation after the circle has met; the letter of 5 May 1663 takes the question up again: “whether he detaches the banners from the confederation, as he promised”.
 - 17–18 February 1663: ‹z›udiencyach = 13 (z) written for 53 (a), “audiencyach”. kon‹36›idencyą = 36, a number not in the table, reversal of 63 (f): “konfidencyą”. {n}ie kazano: the first group is 92 (u) in our transcription, to be read 52 (n). The “Starost of Spisz” (starosta spiski): the Spisz starosty was held by the Lubomirskis; the holder meant here is not established. “Bieykowski” and “the father” (oyciec, perhaps a cleric) are not identified with certainty.
-- 5 May 1663: the letter of the blind validation. After the measurement, errors in the frozen transcription were identified, without touching the file: a flat-topped 3 read as 5 (cho{d}ził, {około}), 35 read for 38 ({p}ilniey), “21 [3]” for 25 23 (Marszał{ek}), “40 33 0 35” for 70 33 25 35 ({oderwie}). {iak}‹ł›: 90 53 23 = “iak”; the following 40 (ł) is the writer’s addition. The King did leave Cracow in summer 1663 for the Ukrainian campaign of 1663–1664.
+- 5 May 1663: the letter of the blind validation. After the measurement, errors in the frozen transcription were identified (the frozen file itself is unchanged; since 25 Nov 2026 it is kept as `texts/R7508_transcription_frozen.txt` and the working transcription carries the digits settled by the sign sheet below): a flat-topped 3 read as 5 (cho{d}ził, {około}), 35 read for 38 ({p}ilniey), “21 [3]” for 25 23 (Marszał{ek}), “40 33 0 35” for 70 33 25 35 ({oderwie}). {iak}‹ł›: 90 53 23 = “iak”; the following 40 (ł) is the writer’s addition. The King did leave Cracow in summer 1663 for the Ukrainian campaign of 1663–1664.
 - Ludwik Wąsowicz is known here only from these letters and the ANK inventory (stolnik łomżyński). The heading of the key sheet also names a Kotowicz, probably another correspondent using the same cipher. File AKPot 3227 also holds a letter of Michał Kazimierz Radziwiłł (1669) with cipher passages (Bourdeau catalogue no. 440), not dealt with here.
 - 9 December 1663, Jarosław (R7509 + R7510): R7510 (pp. 243–248) has no form of address and ends with “W Jarosławiu d. 9 decembr. 1663”, a date copied in pencil at the head of R7509 (p. 237); the two DECODE records are most likely two parts of one letter. It follows the funeral of the “podczaszy”: most likely Konstanty Jacek Lubomirski, Cupbearer (podczaszy) of the Crown, the recipient’s brother, who died childless in 1663 and owned Jarosław (identification to be confirmed); “the lady” would be his widow, Domicela Barbara née Szczawińska. Born (“Bornowscy”, his people), who “is already taking Połonne away”, Argent, Paczanowski, Paprocki and Woieński are not identified. The Marshal, then at Przeworsk and Łańcut, keeps out of John II Casimir’s Ukrainian expedition (winter 1663–1664): “iam ani hetman ani żołnierz do wiosny”.
 - Reading of R7510: a{n}i = 92 (u) written for 52 (n), the same confusion of shapes as in February 1663; ‹d›ytności = 33 (d) for 22 (b), “bytności” (presence); ‹z› = 93, an overwritten 13; upo[do]bał, list[u], teraźnie[y]szych: numbers lost in the tear of the right edge or cut off at line end. “Szelągami”: in szelągi, the debased small copper coin (the “boratynki”) with which the army and its deputies were then paid. “We Gdańsku”: at Danzig. “Krzemyk wnętrzny”: a stone (“little flint”).
@@ -63,23 +63,23 @@ number or a number without value. Counted by hand (the old figures counted numbe
 | R7505, 25 Jan 1663 | 19 | 18 | 0.947 | [do]syc |
 | R7506, 17-18 Feb 1663 | 29 | 26 | 0.897 | ‹z›udiencyach, kon‹36›idencyą, {n}ie |
 | R7507, 19 Mar 1663 | 29 | 25 | 0.862 | oderwac, z{a}wiązku, ‹przezęidą›, komendyrowani‹e› |
-| R7508, 5 May 1663 | 48 | 36 | 0.75 | {ze}by, {p}ilniey, cho{d}ził, {około}, Marszał{ek}, dworowi, rozumienia, marszałka, iesli, {oderwie}, {iak}‹ł›, od |
+| R7508, 5 May 1663 | 48 | 40 | 0.833 | {ze}by, {p}ilniey, cho{d}ził, {około}, Marszał{ek}, {oderwie}, {iak}‹ł›, od |
 | R7509, 9 Dec 1663 | 6 | 6 | 1.0 | none |
 | R7510, 9 Dec 1663 (cont.) | 126 | 119 | 0.944 | list[u], d{a}no, teraźnie[y]szych, a{n}i, ‹d›ytności, upo[do]bał, ‹z› |
 
-Total 251 of 281 = **0.893**. R7508 is counted by reading words (its groups run words together: "w czym", "onimsątu"),
+Total 255 of 281 = **0.907** (251, 0.893, before the sign sheet of 23 Nov 2026 on R7508). R7508 is counted by reading words (its groups run words together: "w czym", "onimsątu"),
 R7510 by cipher groups, the least number of words the decode shows (an estimate: about nine of its groups hold two
 words, which would put it at about 0.95). Seven letters go **read -> read in part**; R7509 (6 words) stays read; the
 class goes **read -> read in part**; the key stays recovered. Judgement calls: p[a]nem in R7504 is counted a hole
 because the reading brackets the a (if pnem is the writer's contraction the letter is 21 of 22, 0.955); [do]syc in R7505
 decides that letter (18 of 19 against 19 of 19); the blotted digits of R7508 that the reading settles without a mark
-(dworowi, rozumienia, marszałka, iesli, od) are holes because the decryption marks them ambiguous. `v10_relabel.py` (dry run) gives 0.87, 0.927, 0.85,
+were holes because the decryption marked them ambiguous; the sign sheet of 23 Nov 2026 settled the digits of dworowi, rozumienia, marszałka and iesli (od stays a hole). `v10_relabel.py` (dry run) gives 0.87, 0.927, 0.85,
 0.914, 0.945, 0.971, 0.893 and 0.963 for the eight readings: it scores the whole reading, clear context included, and
 counts the `[…]` elisions as holes, so it cannot reproduce the counts.
 
 ## Remaining gaps
 
-- R7508: 12 of 48 cipher words carry a blotted or ambiguous number (a flat-topped 3 read as 5, overwritten digits) - blocker: illegible; the DECODE images are restricted and not in the checkout, and the transcription was frozen for the blind test, its errors identified only afterwards
+- R7508: 8 of 48 cipher words carry a blotted or ambiguous number (12 before the sign sheet of 23 Nov 2026) (a flat-topped 3 read as 5, overwritten digits) - blocker: illegible; the DECODE images are restricted and not in the checkout, and the transcription was frozen for the blind test, its errors identified only afterwards
 - R7510: numbers lost in the tear of the right edge or cut off at line end (list[u], upo[do]bał, teraźnie[y]szych), the slips a{n}i, ‹d›ytności, d{a}no and the overwritten ‹z› - blocker: illegible; tear of the right edge, DECODE images restricted
 - R7507: oderwac, z{a}wiązku, ‹przezęidą› and the end of komendyrowani‹e› - blocker: illegible; blotted digits and a word outside the line crop
 - R7506, R7504, R7503, R7505: ‹z›udiencyach, kon‹36›idencyą (36 is not in the table), {n}ie, p[a]nem, Tekiel‹e›mu, ru‹y›ki, [do]syc - blocker: too-short; one copy of each letter and a table with no value for these numbers, so nothing to check them against
@@ -93,3 +93,28 @@ counts the `[…]` elisions as holes, so it cannot reproduce the counts.
 - [n/a] print: not searched in this recount; the notes record these as the first published decipherment to our knowledge
 - [n/a] key-rebuild: the key is the table R7501, one number per letter, with no gap to bracket; the numbers outside it are slips
 - [n/a] retry: the blotted digits were not re-read on the images in this recount (DECODE restricted, images not in the checkout)
+
+## Sign sheet on R7508, 23 Nov 2026 (Brice Dudout, with Claude)
+
+The 3, the 5 and the 1 look alike in this hand (a flat-topped 3, a 5 like a flagged long s, a short 1). A blind sign
+sheet asked Brice Dudout to choose the form of nine ambiguous digits of R7508, with three controls from sure words (all
+passed); the rule was written and hashed first (`sign_check_2311/`). Seven digits were settled and entered in
+`texts/R7508_transcription.txt` (the transcription frozen for the blind test is kept as
+`texts/R7508_transcription_frozen.txt`): 13, 33, 35, 35, 23, 25, 30. Read by the R7501 table with no value added,
+dworowi, rozumienia, marszałka and iesli now read whole: R7508 36 -> 40 of 48 (0.833), all eight letters 255 of 281
+(0.907), still read in part. Two digits stay open: l3 "35" of cho{d}ził ("cannot tell", the reviewer saw 1, 3 or 7)
+and the last digit of l8 "3[5]" of od (answered "other form", the reviewer saw a 7). No 7 occurs in R7501 or in the
+eight transcriptions; both places want d by the sense, which would make 37 a second d, but that is a new value from the
+sense only and is not used.
+
+**Integration of PR #966 (26 Nov 2026).** Under the owner rule of 24-25 Nov, a blind human shape call that removes a
+mark may move read_share when NOTES and a solution step give the before and after counts: R7508 36 -> 40 of 48
+(0.750 -> 0.833), all letters 251 -> 255 of 281 (0.893 -> 0.907). Class unchanged (read in part). The reader is the
+reading's own author (Brice Dudout, credited for the solution). The sheet (9 targets, 3 controls) is not entered in
+`outcome.sign_check`: its rule was committed with the answers, so the schema's "rule in NOTES dated before the answers"
+is not met. The hashed rule's clause 3 (propose a change only if the 95% bar is crossed) was relaxed by the contributor
+after the answers to "whenever it improves the reading", as disclosed in `sign_check_2311/`; the scoring follows the
+rule. The rule labels W3 "(rozumienia)"; it is the first group of line 6, the r of dworowi (`results.tsv` is right).
+The sheet key (option order per question) is not committed. Page, README row, findings line and SOLVED_CATALOGUE row
+updated to 255 of 281. Not checked: the digits on the DECODE image.
+

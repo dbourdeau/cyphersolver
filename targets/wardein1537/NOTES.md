@@ -60,7 +60,7 @@ Statistical validation (`mk_validation.py` → `validation.tsv`, R9414 only, `de
 ## Remaining gaps
 
 - P1.12-32, P2.15-19, P3.01-09, P3.39-P4.01, P4.21-35, P5.05-07 decoded, not read (0.310 / 0.379 explicit holes, re-read 23 Oct 2026; 0.172 / 0.241 with conjectures as holes, v2_score.py) - blocker: no-key-material; they hold most of the unresolved words, code signs and blots listed below
-- code signs without a key (about 10 words: Ψ at P2.02, 08, 09, 27; swash X at P2.15, P2.25, P4.02, P4.21; K at P4.33, probably "the king") - blocker: no-key-material; single name/word signs, no key in the volume or on DECODE
+- code signs without a key (about 10 words: Ψ at P2.02, 08, 09, 27; swash X at P2.15, P2.25, P4.02, P4.21; K at P4.33, probably "the king") - blocker: no-key-material; single name/word signs, no key in the volume or on DECODE; shapes checked blind on 24 Nov 2026 (section below): K and Ψ one sign, P4.21 not the swash X
 - blotted or struck signs (about 15 words) - blocker: illegible; ink blots and deletions on the DECODE images
 - legible but unresolved words (about 55; candidates in gapfill.py output) - blocker: no-key-material; four full image passes, sibling keys and a one-edit lexicon search done, homophone ambiguity remains
 
@@ -116,3 +116,24 @@ Statistical validation (`mk_validation.py` → `validation.tsv`, R9414 only, `de
 - `r9414/`: transcription*.txt, key*.txt, beam*, dec*, reading*.txt, count_v2.py, gapfill.py, `cp12/` pass logs.
   Crop scripts refer to image folders that are not in the repository.
 - `mk_validation.py` → `validation.tsv`.
+
+## 24 Nov 2026 - blind sign-shape sheet 2411b on the code signs (Brice Dudout, with Claude), `dudout/sign_check_2411b/`
+Brice Dudout looked at 15 signs blind on DECODE R9414, plus 3 controls (V, χ, ω; all 3 passed). The rule was hashed first
+(6dee2a93…). An earlier sheet (2411) had a mis-framed ω example and a missed control: it was not integrated, and none of its
+answers is used.
+
+Results:
+- Large Ψ: P1.25, P2.02, P2.03, P2.08, P2.09, P2.27 and the K at P4.33 are all the same form. K and Ψ are one sign (merge
+  proposed); it has no value.
+- Swash X: confirmed at P2.25 and P4.02. P4.21 is "another form" (a large stretched x), kept as its own sign.
+- Barred ∂: P2.19, P4.21 and P4.23 are one form (a d with one long bar), a sign outside the key with no value. P3.39 is a d
+  crossed by a bar and an oblique stroke, its own form (a faint candidate at P3.03). The form with two short bars (P2.08,
+  P2.17, P3.09, P3.19, P3.28) was not tested.
+- ω at P2.15 (4th sign) is confirmed.
+
+Observation, not a test (computed on the places that suggested it): every barred ∂ found is the first cipher sign after a
+passage in clear (9 of 9). Of 33 clear passages, 10 are followed by d/b, against 3.1 % of all signs. This fits a mark for
+resuming the cipher rather than a letter (`dudout/sign_check_2411b/proposed-alphabet/HYPOTHESE-REPRISE.md`).
+
+The key and the reading are unchanged. fraction_read stays at 0.648 (819 of 1,263 words), because these signs were already holes.
+Also noted: P1.24 has a Y of the same form as the large Ψ between "sein" and "bei", which reading_v5 leaves out without a hole.

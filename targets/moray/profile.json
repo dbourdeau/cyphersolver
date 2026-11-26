@@ -177,9 +177,9 @@
   "notes": "Reading by the contributor; transcription splits not checked on the image here (R8345 private, no login in the integration session). The project's own Sept 2026 attempt on Tomokiyo's transcription failed because his symbol 19 carries both 'the' and 'm'.",
   "gaps": [
    {
-    "item": "the five glyph splits (U/M, x/P, F/s, z3 shapes, e/c)",
-    "blocker": "not-attempted",
-    "detail": "check on the DECODE R8345 image with a login"
+    "item": "the z shapes at L1.25 (Z5), L2.37 (Z3), L4.5 (Z2); the other four glyph splits (U/M, x/P, F/s, e/c) were confirmed on the image by a blind sheet on 24 Nov 2026 (dudout/sign_check_2411/)",
+    "blocker": "too-short",
+    "detail": "the blind sheet answered one form of its own at the three places (z-bis), found nowhere else in the piece; its value (y by sense at two places) needs another Moray-Wood letter in the same cipher"
    },
    {
     "item": "seven-sign last word (L4) and hapax glyphs Zz, t, x3, Xs",
@@ -213,6 +213,9 @@
    }
   ],
   "key_file": "aaymeloglu/key.json",
+  "sign_check": [
+   {"date": "2026-11-24", "checker": "Brice Dudout", "checker_kind": "project", "model_roles": ["rule", "thumbnails", "sheet", "scoring", "remarks"], "signs_checked": 12, "controls": 3, "controls_passed": 3, "as_transcribed": 7, "corrected": 1, "unresolved": 4, "not_counted": 0, "rule": "dudout/sign_check_2411/sheet-2411-rule.md (24 Nov 2026, before the thumbnails and the answers, with an integration clause)", "rule_hash": "8aa5d6cbbe55836be616749b52f57d75f0e9937b7f1656b0ad533c0b4ef750fc", "sheet_faults": "none found", "note": "DECODE R8345 (images private). Key and reading unchanged. Confirmed as transcribed: the U/M split (3 of 3), P distinct from x (L2.21), F = the Tomokiyo f and s merge (2 of 2), c at L1.27 (not e). L4.2 (x3) answered xd (n). The three z places L1.25 (Z5), L2.37 (Z3), L4.5 (Z2) answered 'another form of z', the same form at the three places (z-bis), none confirmed; L4.4 (Xs) answered 'another form', remark: mirror of X. Strict count 27 of 35 words unchanged (26 if L2.37 is no longer counted as Z3). Not a human_check: AI agents built and scored the sheet."}
+  ],
   "credits": [
    {
     "who": "tomokiyo",
@@ -227,7 +230,8 @@
     "date": "2026-11-13",
     "source": "https://github.com/dbourdeau/cyphersolver/issues/553",
     "published": true
-   }
+   },
+   {"who": "dudout", "role": "verification", "note": "blind sign-shape sheet 2411 on the glyph splits of R8345 (DECODE, images private; Brice Dudout reader, sheet built and scored by AI agents; dudout/sign_check_2411/): U/M, x/P, F/s and e/c confirmed; the three z places are one form of their own (z-bis); key and reading unchanged", "date": "2026-11-24"}
   ]
  }
 }

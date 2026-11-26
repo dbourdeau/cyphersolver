@@ -1,0 +1,63 @@
+{
+ "prereg": {
+  "file": "PREREG-O3.md",
+  "sha256": "fd80c8234ba34c04c35a7752982475af690a250fb2be2919257b4af9dbf330cc",
+  "verified": true
+ },
+ "portion": "Modena, Biblioteca Estense, Campori, Saint-Mauris 1547 letter, c. 1v L01-L26 + c. 2r L01-L09 (35 rows)",
+ "pass_A": {
+  "file": "passe-A/transcription_passA.txt",
+  "sha256": "691d2051b2591f3844a737474d6c153596d026c6377c2765ba959e944a39b287"
+ },
+ "pass_B": {
+  "file": "passe-B/transcription_passB.txt",
+  "sha256": "e3b9ae6f45b6a8092fae6992696e5f03fcb16eb654633130c32e1389c721a0f1"
+ },
+ "agreement_AB": {
+  "tool": "WAINUT compare.load + row-by-row SequenceMatcher, no BMAP (tools/compare_o3.py)",
+  "aligned": 791,
+  "same": 760,
+  "rate": 0.961,
+  "disputes": 31,
+  "gate": ">= 0.80 -> continue"
+ },
+ "arbitration": {
+  "file": "ARBITRAGE/ARBITRAGE.tsv",
+  "A": 18,
+  "B": 12,
+  "neither": 1
+ },
+ "merged": {
+  "file": "transcription_1547_c1v2r_merged.txt",
+  "sha256": "1ebb74d67b44c3606ad02cd04917fb3f5d3297e6fbccaa8952d0616cb7700866",
+  "frozen": "2026-11-25 09:22:36 CET",
+  "tokens": 791
+ },
+ "measure": {
+  "run_at": "2026-11-25 09:22:47 CET",
+  "command": "python3 ../o2-2311/measure_o2.py transcription_1547_c1v2r_merged.txt ../o2-2311/wainut-key.tsv <fr-1520s-diplomatic.txt> 1548",
+  "tool_sha256": "bc5d71cd253f9281c83ba95c46dd9e3c36bab514ac0ea67a99cbf8c3e5eb0088",
+  "key_sha256": "b9e69238cd30569c01b1566bc6548fb1d16a030c652ecca053c6a98b89d5e034",
+  "corpus_sha256": "813012bd28f1ee3111fe8c0800cfa35ab638b83c7038ab3eef16c63e088b617e",
+  "seed": 1548,
+  "tokens": 791,
+  "tokens_with_key_value": 746,
+  "decoded_letters": 750,
+  "lexicon_types": 9890,
+  "M": 0.784,
+  "controls": {
+   "n": 200,
+   "max": 0.3914,
+   "mean": 0.2195,
+   "method": "values permuted among the key's signs"
+  },
+  "margin": 0.3926,
+  "criteria": {
+   "letters_ge_300": true,
+   "M_ge_0.85": false,
+   "M_ge_max_controls_plus_0.30": true
+  }
+ },
+ "verdict": "FAIL",
+ "consequence": "PREREG-O3 §5: nothing on cc. 1v-2r is a validated text; decode kept as data; c. 1v-2r burnt; the 1547 letter has no fresh portion left for this key."
+}

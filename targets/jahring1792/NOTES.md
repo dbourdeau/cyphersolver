@@ -4,6 +4,7 @@ Contributed by WAINUT (lccompany). Work of 12 Nov 2026 by AI language-model agen
 
 Status: in progress. Not written up: the core of the report (run 120.5 and the block of image 121) was only transcribed in fragments and
 several gaps are not-attempted (see Remaining gaps); the key (Porta table, keyword constantinopolitanus) works, so these are workable.
+Next step (24 Nov 2026 write-up pass, no page): transcribe run 120.5 and the 121 block in two passes from the arcinsys image at 2-3x, using the key letter the second hand wrote over each sign, then read them.
 
 ## Documents
 

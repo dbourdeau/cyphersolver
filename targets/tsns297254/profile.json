@@ -1,0 +1,94 @@
+{
+  "schema_version": 1,
+  "target": "tsns297254",
+  "title": "T-S NS 297.254: a hooked sign in a Cairo Geniza daily account",
+  "documents": [
+    {
+      "id": "tsns297254",
+      "shelfmark": "Cambridge University Library, T-S NS 297.254 (PGP 24835)",
+      "year": "unknown",
+      "date": "Approximately 12th century (PGP)",
+      "country": "unknown",
+      "language": "Arabic",
+      "cleartext_in_document": "mostly clear",
+      "plaintext": {
+        "location": [
+          "none"
+        ],
+        "source": "PGP proposes an expansion of the isolated sign."
+      },
+      "length": {
+        "tokens": 2,
+        "distinct": 1,
+        "unit": "symbols",
+        "measured": false
+      },
+      "transcription": {
+        "by": "mixed",
+        "source": "https://geniza.princeton.edu/en/documents/24835/",
+        "notes": "PGP sign transcription; placements checked against both photographs. Counts cover only the disputed hook."
+      },
+      "read": "not read"
+    }
+  ],
+  "system": {
+    "types": [
+      "unknown"
+    ],
+    "summary": "Isolated accounting sign with disputed expansion.",
+    "symbol_kind": "symbols",
+    "distinct_symbols": 1,
+    "diacritics": {
+      "used": "unknown"
+    },
+    "homophones": {
+      "used": "unknown"
+    },
+    "nomenclator": {
+      "present": "unknown"
+    },
+    "nulls": {
+      "present": "unknown"
+    },
+    "key_order": "unknown"
+  },
+  "conditions": {
+    "prior_solution": {
+      "exists": "unknown",
+      "where": "Princeton Geniza Project suggests addā (paid)."
+    },
+    "inputs": [
+      "images",
+      "cleartext context",
+      "published reading"
+    ],
+    "attack": "archive decipherment",
+    "human_role": "Selected the manuscripts and requested comparison.",
+    "models": [
+      "Codex"
+    ],
+    "tools": [
+      "Cambridge IIIF photographs",
+      "PGP catalogue",
+      "OpenCV SIFT and visual registration"
+    ]
+  },
+  "solution": [
+    {
+      "kind": "transcription",
+      "what": "Located the two ledger hooks and compared their surroundings with the 167-dirham annotation in T-S Misc.28.232.",
+      "result": "partial"
+    }
+  ],
+  "outcome": {
+    "method": "not solved",
+    "method_basis": "The comparison establishes placement. A shared expansion or accounting function remains unverified.",
+    "contribution": [
+      "none"
+    ],
+    "verification": [
+      "none"
+    ],
+    "class": "not read"
+  }
+}

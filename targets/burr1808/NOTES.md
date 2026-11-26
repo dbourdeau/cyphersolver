@@ -1,6 +1,6 @@
 # Aaron Burr to Theodosia Burr Alston, Baltimore, 31 January, 10 and 18 February [1808]: Vigenère letters filed with GLC01523
 
-Status: read. Key recovered from the ciphertext alone (period-6 Vigenère, numbers 1-26), 5 Nov 2026. 969 of 973
+Status: read. Key recovered from the ciphertext alone (period-6 Vigenère, numbers 1-26), 5 Nov 2026. 963 of 967
 cipher numbers read (99.6%); one rubbed group of four numbers open.
 
 ## The documents
@@ -38,9 +38,9 @@ No keyword behind the six shifts was found (all 26 alphabet offsets and the reve
 
 ## How the key was found
 
-1. Transcribed section A (80 words, 341 numbers). Letter frequencies flat (top number 8.5%), all 26 values used:
-   polyalphabetic. Repeats: one 6-number word three times running (26,19,10,19,1,16 = "submit").
-2. Index of coincidence by period: 0.0435 overall, 0.0618 at period 6, 0.0583 at 12.
+1. Transcribed section A (79 words, 335 numbers). Letter frequencies flat (top number 8.5%), all 26 values used:
+   polyalphabetic. Repeats: one 6-number word twice running (26,19,10,19,1,16 = "submit").
+2. Index of coincidence by period: 0.0431 overall, 0.0611 at period 6, 0.0636 at 12 (recounted 24 Nov 2026).
 3. Column-by-column chi-square against English letter frequencies at period 6 gave the shifts at once; section A
    read "below the black line is copy of my last by the schooner wolf ...".
 4. Transcribed the rest; the same key reads every section from the first key place.
@@ -56,7 +56,7 @@ Full line-by-line reading: `reading_numbers.txt` (from `python decrypt.py --meas
 **[Baltimore, 10 February 1808]** (img1, section A)
 > Below the black line is copy of my last, by the schooner Wolf, Capt. Jones, to sail about the eighteenth. You will
 > hear again. Keep up your spirits. My plans are not changed. Yet at Baltimore incog., the tenth February. Business
-> now detains me. We must submit, submit, submit to ten days more of suspense. The promise in [?] my last was rashly
+> now detains me. We must submit, submit to ten days more of suspense. The promise in [?] my last was rashly
 > made. Affairs begin to look up. J'y travaille. What would Gamp not give to know that you are all well.
 
 **[Copy of the letter of 31 January 1808]** (img1, sections B and C)
@@ -88,7 +88,7 @@ Full line-by-line reading: `reading_numbers.txt` (from `python decrypt.py --meas
 | img2.02 | 2?,11?,1,23 | — | unread: middle number rubbed on a fold; the key falls back one place after it | — |
 | img2.03 | 26,12,13,9,15,6,15 | detains | gives "deoains"; the key needs 18 for 13 | C |
 
-Measured with `decrypt.py --measure`: 973 cipher numbers, 969 giving sense (99.6%).
+Measured with `decrypt.py --measure`: 967 cipher numbers, 963 giving sense (99.6%; recounted 24 Nov 2026).
 
 ## Prior work
 
@@ -101,6 +101,14 @@ Measured with `decrypt.py --measure`: 973 cipher numbers, 969 giving sense (99.6
   1808. No January-February 1808 letter printed as a document. The editorial note itself (vol. 2, pp. 1040-1045) was not
   read: it may mention or quote these letters.
 - cryptiana: Burr only for the 1806 Entick dictionary code. Not on DECODE.
+
+## Correction, 24 Nov 2026
+
+Line A.05 of img1 has the group 26,19,10,19,1,16 ("submit") twice on the page, not three times: the third copy in the
+first transcription was a slip. A six-letter word leaves the key where it was, so the decryption could not show it; it
+was seen when the line was framed for the Burr film. The group is removed from `transcription.txt`,
+`numbers_10feb1808.txt` and `validation.tsv`; `reading_numbers.txt` regenerated (`decrypt.py --measure`); counts and the
+index of coincidence recomputed; `docs/_validate.py` rerun (pass). The control in `control.py` keeps its 341 letters.
 
 ## Remaining gaps
 

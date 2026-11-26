@@ -1,0 +1,350 @@
+{
+ "schema_version": 1,
+ "target": "tremais1759",
+ "title": "Trémais to the minister of the Marine, cipher letter, Montréal, 6 Nov 1759, ANOM, COL C11A 104, ff.346-347v (CABAC_PIAF_60950) (catalogue 1392)",
+ "documents": [
+  {
+   "id": "A",
+   "shelfmark": "ANOM, COL C11A 104, ff.346-347v (CABAC_PIAF_60950); LAC e000875270-e000875272 (3 images)",
+   "date": "6 Nov 1759",
+   "year": 1759,
+   "country": "France",
+   "route": "Montréal -> Versailles",
+   "language": "French",
+   "pages": 4,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No decipherment bound with the letter; the LAC transcript (reel C-2402) omits it; Roy's dossier (RAPQ 1959-60) does not print it; web searches 23 Nov 2026 found nothing.",
+    "partial": false
+   },
+   "length": {
+    "tokens": 1349,
+    "distinct": 251,
+    "unit": "code groups",
+    "measured": true,
+    "file": "ct.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "LAC microfilm images e000875270-272 (624 and 1125 px wide)",
+    "corrections": 0,
+    "image_quality": "poor",
+    "notes": "nov_transcription_v2.tsv, made 23 Nov 2026 by a Claude agent before opening the transcription in issue 810 (emgeorrk), then compared with it: 737 of 1,279 main-text numbers agree exactly (58%), 279 undecidable on the image and kept as bracket alternatives; ct.txt takes the first alternative. 40 of 53 lines of f.346v are cut at the gutter."
+   },
+   "read": "read in part",
+   "places": {
+    "from": "Montréal",
+    "to": "Versailles"
+   }
+  },
+  {
+   "id": "B",
+   "shelfmark": "ANOM, COL C11A 104, ff.342-343v, with its contemporary decipherment ff.344-345; LAC e000875266-e000875269",
+   "date": "22 Sep 1759",
+   "year": 1759,
+   "country": "France",
+   "route": "Canada -> Versailles",
+   "language": "French",
+   "pages": 3,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "separate folio"
+    ],
+    "source": "Contemporary clear copy bound at ff.344-345 ('Copie de la lettre en chiffre de M. Querdisien Tremais ... 22 7bre 1759'), also in the LAC transcripts, reel C-2402 pp. 523-527 (found by Brice Dudout, PR 273).",
+    "partial": false
+   },
+   "length": {
+    "tokens": 564,
+    "distinct": 168,
+    "unit": "code groups",
+    "measured": false,
+    "file": "sept_cipher_aligned.tsv"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "LAC microfilm images e000875266-268",
+    "corrections": 0,
+    "image_quality": "poor",
+    "notes": "Aligned slot by slot with the clear copy by a Claude agent, 23 Nov 2026; estimated 5-8% of slots and 15-20% of the distinct numbers carry a digit error."
+   },
+   "read": "read"
+  }
+ ],
+ "system": {
+  "types": [
+   "syllabic",
+   "nomenclator"
+  ],
+  "summary": "Two-part numeric table (1 to about 700) of letters, syllables, words and names (115 M. Bigot, 209 Canada, 148 troupes), with homophones; words not worth coding in clear. A cipher given to Trémais alone with his instruction of 3 Feb 1759; the table is not found. In the September letter both homophones of most units are written, stacked or dashed.",
+  "symbol_kind": "digits",
+  "digit_groups": {
+   "width": "1-3",
+   "separation": "commas"
+  },
+  "distinct_symbols": 251,
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": true,
+   "max_per_vowel": "unknown",
+   "max_per_consonant": "unknown"
+  },
+  "nomenclator": {
+   "present": true,
+   "entries": "unknown",
+   "kinds": [
+    "syllables",
+    "common words",
+    "names"
+   ],
+   "unread_groups": "unknown"
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "random",
+  "word_division": "none",
+  "sibling_key": "Not the Vaudreuil/Montcalm tables of ANOM COL C11E 10 (sheets e001295272, 274, 276 all rejected).",
+  "notes": "Homophone classes come from the stacked pairs of the September letter."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "partial",
+   "where": "GitHub issue 810 (emgeorrk, 19 Nov 2026, Codex-assisted): partial decipherment of the November letter, 49 strong passages, 188-entry working key; Brice Dudout, PR 273 (5 Nov 2026): partial key from the September pair. No published reading.",
+   "found": "before attempt",
+   "used": true
+  },
+  "inputs": [
+   "images",
+   "transcription",
+   "cleartext context",
+   "known plaintext"
+  ],
+  "attack": "known plaintext",
+  "human_role": "Asked for catalogue entry 1392 to be solved.",
+  "tools": [
+   "curl (LAC image server)",
+   "Pillow crops",
+   "decode_nov.py",
+   "sept_align_build.py",
+   "Claude subagents for the two transcriptions",
+   "built-in browser (ANOM, BAnQ numérique)"
+  ],
+  "models": [
+   "claude-fable-5-2"
+  ],
+  "sessions": 1,
+  "first_date": "2026-11-23",
+  "last_date": "2026-11-23"
+ },
+ "solution": [
+  {
+   "date": "2026-11-23",
+   "kind": "literature search",
+   "what": "Read the catalogue entry, PR 273 and issue 810: a partial decipherment by an outside contributor already existed (about 15% of the cipher words by our count).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-23",
+   "kind": "access",
+   "what": "LAC images fetched by curl; looked for a larger rendition (LAC variants, ANOM IIIF under 50 path variants, Héritage F-reels): none online.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-23",
+   "kind": "sibling key",
+   "technique": [
+    "key matching"
+   ],
+   "what": "C11E 10 numerical sheets e001295272 and e001295276 compared with Trémais 98 il, 108 r, 115 M. Bigot: 98 rivière/comme, 108 tion/quoique, 115 guerre/eau. Every key file in the repository tested against 22 pairs.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-23",
+   "kind": "literature search",
+   "what": "Roy's dossier (RAPQ 1959-60) read on BAnQ numérique: prints the instruction that gave Trémais a cipher of his own, not the table, not this letter.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-23",
+   "kind": "hypothesis",
+   "what": "Stacked and dashed numbers in the September letter are the two homophones of one unit, written together.",
+   "result": "worked",
+   "technique": [
+    "key-structure hypothesis"
+   ]
+  },
+  {
+   "date": "2026-11-23",
+   "kind": "transcription",
+   "what": "Clear copy ff.344-345 read in full; September cipher aligned with it slot by slot (564 slots, 168 numbers with a value, 4 conflicts left).",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-23",
+   "kind": "transcription",
+   "what": "November letter transcribed independently (1,350 groups) and compared with issue 810: 58% exact agreement, 279 numbers undecidable.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-23",
+   "kind": "reading",
+   "technique": [
+    "plaintext matching"
+   ],
+   "what": "September key applied mechanically to November: 1,131 of 1,350 groups get a value (0.838); sense appears in long runs.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-23",
+   "kind": "reading",
+   "technique": [
+    "plaintext matching",
+    "contextual inference"
+   ],
+   "what": "Line-by-line reading with 40 values added or corrected from November (some taken from issue 810) and digits chosen among the bracket alternatives: 256 cipher words sure, 83 conjectural, 69 unread runs (reading.md).",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-23",
+   "kind": "control",
+   "technique": [
+    "statistical test",
+    "language-model scoring"
+   ],
+   "what": "Frozen September-only key (sha256 884d92f0...) applied to November with the first digit alternative everywhere: -2.424 log-probability per character (fr-1750-nospace) on 1,246 characters; 200 shuffled tables: best -2.617, median -3.247, none at or above the real key. Caveat: the September transcriber was given a guide list of values taken from issue 810.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-23",
+   "kind": "reading",
+   "technique": [
+    "contextual inference",
+    "plaintext matching"
+   ],
+   "what": "Retry of every unread run and conjectural word on new 6-8x crops with the extended key, by two Claude agents (268 places: 181 sure, 64 conjectural, 23 open). The image decided no digit; gains came from recurring misreads of September numbers (32 for 92, 192 for 132, 385 for 382, 296 for 394/294/236) and new values confirmed in two places (212 dans, 233 bien, 417 un, 473 n, 402 fort, 99 dont, 195 où). Reading now 357 sure cipher words, 92 conjectural, 25 unread runs.",
+   "result": "partial"
+  }
+ ],
+ "outcome": {
+  "validation": {
+   "date": "2026-11-23",
+   "verdict": "pass",
+   "notes": "Frozen September-only key against 200 shuffled tables on November: 0 of 200 reach it (control_frozen_key.out). No reader review by a person."
+  },
+  "class": "read in part",
+  "key": "partial",
+  "method": "key recovered based on adjacent plaintext",
+  "method_basis": "Values come from the letter of 22 Sept 1759 and its contemporary decipherment in the same volume, extended from the November letter by context.",
+  "contribution": [
+   "transcription",
+   "key recovered",
+   "key extended or corrected"
+  ],
+  "fraction_read": 0.756,
+  "fraction_read_method": "estimated",
+  "fraction_read_source": "count_reading.py on reading.md: 357 sure cipher words over an estimated 472 (357 sure + 92 conjectural + about 23 words in 67 unread groups); 0.951 with the conjectural words. The total is an estimate, not the README word measure.",
+  "codes_open": {
+   "open": "unknown",
+   "total": "unknown",
+   "tokens_open": 67
+  },
+  "verification": [
+   "historical consistency"
+  ],
+  "texts": [
+   {
+    "doc": "A",
+    "label": "ANOM, COL C11A 104, ff.346-347v",
+    "transcription": [
+     "nov_transcription_v2.tsv",
+     "ct.txt"
+    ],
+    "decryption": "reading.md",
+    "state": "read in part",
+    "summary": "Trémais tells the minister that M. Bigot, however reprehensible for his 'commerce immense' and the abuses that followed, cannot justly be accused of having alone caused Canada's ills and the prodigious rise of its expenses: in the posts the military is 'absolument despote' over works, stores, provisions and rations; governor and intendant were 'fantômes' governed by Péan, Mercier and their secretaries, backed by a man raised from butcher's boy (the munitionnaire by the sense); a portrait, apparently of Montcalm, ends 'personne n'a plus contribué que lui'.",
+    "language": "fr",
+    "reading": "reading.md",
+    "read_share": 0.756,
+    "translation": "reading_en.md",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude Fable 5.2 (a model reading, not a person)",
+     "date": "2026-11-23",
+     "note": "Read sentence by sentence against reading_en.md after the retry: the letter builds continuous French on f.346r and through most of ff.346v-347r; 25 short runs and 92 conjectural words remain, marked in place. No person has reviewed it."
+    }
+   },
+   {
+    "doc": "B",
+    "label": "ANOM, COL C11A 104, ff.342-343v (22 Sept 1759), the key source",
+    "transcription": [
+     "sept_cipher_aligned.tsv"
+    ],
+    "decryption": "sept_clear_copy.txt",
+    "state": "read",
+    "summary": "Trémais reports that the papers were sent to Trois-Rivières before he could use them and that he has only general talk to go on: Bigot's fortune made by trade, the troops' insatiable claims, Montcalm's demands, real but enormous consumption, no rolls, the soldier left to plunder. The text is the ministry's own decipherment, transcribed here; it supplied the key.",
+    "language": "fr",
+    "reading": "sept_clear_copy.txt",
+    "read_share": 1.0,
+    "reading_review": {
+     "grade": "A",
+     "by": "Claude Fable 5.2 (a model reading, not a person)",
+     "date": "2026-11-23",
+     "note": "The contemporary clear copy, read from the images; it is continuous French throughout."
+    },
+    "translation": "sept_clear_copy_en.md"
+   }
+  ],
+  "credits": [
+   {
+    "who": "emgeorrk",
+    "role": "prior solution",
+    "note": "first partial decipherment of the November letter: transcription of 1,327 groups, 188-entry working key, 49 strong passages; values taken from it are marked 'issue 810' in key_nov_extension.tsv",
+    "date": "2026-11-19",
+    "source": "GitHub issue 810 (Codex-assisted), kept in prior/"
+   },
+   {
+    "who": "dudout",
+    "role": "key or decipherment used",
+    "note": "found the contemporary decipherment of the September letter (ff.344-345, LAC reel C-2402 pp. 523-527), rejected the Vaudreuil table, built a partial key from the pair",
+    "date": "2026-11-05",
+    "source": "PR 273"
+   },
+   {
+    "who": "contemporary",
+    "role": "key or decipherment used",
+    "note": "ministry's clear copy of the letter of 22 Sept 1759, ANOM COL C11A 104 ff.344-345"
+   }
+  ],
+  "gaps": [
+   {
+    "item": "92 conjectural words across ff.346r-347v (a digit or a once-seen value not confirmed; LAC images cannot decide a digit)",
+    "blocker": "illegible"
+   },
+   {
+    "item": "25 unread runs, 67 groups (numbers with no value in the September pair, most of them seen once)",
+    "blocker": "no-key-material"
+   },
+   {
+    "item": "line ends of f.346v (40 of 53 lines) and f.347v, lost in the gutter",
+    "blocker": "illegible"
+   },
+   {
+    "item": "marginal notes of ff.346r and 346v (73 numbers, 62 of low confidence)",
+    "blocker": "illegible"
+   },
+   {
+    "item": "names by code number (480, 69?, 280); Trémais's table not found",
+    "blocker": "no-key-material"
+   }
+  ],
+  "key_file": [
+   "key.tsv"
+  ]
+ }
+}

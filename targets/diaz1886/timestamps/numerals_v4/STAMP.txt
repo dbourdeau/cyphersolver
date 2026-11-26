@@ -1,0 +1,9 @@
+LABEL: diaz1886_numerals_v4
+File: numerals_v4.tsv (in the folder above; byte for byte the contributor's file READING_diaz1460_pilot10_numerals_v4_2026-11-20_0554Z.tsv)
+SHA-256: 4f58bc562cdf30c36ca98f3ee865e9fcd7b9e2a2b1d614c8d27661c1e3728ae5
+RFC 3161, freetsa.org: status Granted, time Nov 20 05:54:46 2026 GMT
+RFC 3161, timestamp.digicert.com: status Granted, time Nov 20 05:54:47 2026 GMT
+RFC 3161, timestamp.sectigo.com: status Granted, time Nov 20 05:54:47 2026 GMT
+Verify DigiCert and Sectigo: openssl ts -verify -data ../../numerals_v4.tsv -in numerals_v4.tsv.<authority>.tsr -CAfile <a bundle of public root certificates>
+Verify FreeTSA: the same, with -CAfile and -untrusted set to FreeTSA's own root and signing certificates, as its site publishes them
+OpenTimestamps: none made
