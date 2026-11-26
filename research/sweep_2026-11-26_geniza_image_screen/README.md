@@ -77,6 +77,25 @@ sheet, so that figure is biased; of the four not shown (Or.1080 6.12, T-S K5.7, 
 three. The miss is **T-S AS 205.186**, a damaged fragment with a dotted alef-to-tet numeral cipher.
 This is a small sample, a screen at about 500 px a document, and many dismissals rest on PGP's description.
 
+## Follow-up: a letter sample and a catalogue-note pass (26 Nov 2026)
+
+**Letter sample (images).** 303 letters drawn from PGP's 11,439 (249 with an image) were screened on contact sheets with the
+same rotation rule. Control result: of the three known ciphers that sit inside letters, only T-S NS 70.1 (cipher over the
+whole verso) was flagged; ENA 4100.7b and T-S 13J18.19 (short passages inside an ordinary letter) were missed. A contact
+sheet cannot show a short embedded passage, so this method is not worth extending to the other ~11,000 letters. One new
+flag, **T-S NS J529 verso** (26490): large looped and hooked signs scattered over the leaf, no lines, no dividers, nothing
+readable in any of four orientations. Pen-trial or charakteres leaf (class B), not a lead.
+
+**Catalogue-note pass (descriptions, no images).** The 25-26 Nov word sweeps had covered cipher, code, symbol, secret and
+related terms over the whole dump and the `pgp-text` transcriptions. A wider wording search over letters only (gibberish,
+nonsense, string of letters, meaningless, puzzling, enigmatic, mysterious, unusual script, instead of letters, decipher,
+concealed, riddle and similar) gave 172 letters and 123 readable snippets. Nearly all are ordinary remarks ("difficult to
+decipher", "mysterious illness", "enigmatic Nagid"). Eight letters whose notes mention unreadable or odd jottings were opened
+in four orientations: T-S AS 170.278, T-S Ar.30.228 (verso jottings; PGP says the bottom lines copy the letter's opening),
+Moss. IV,21.2, T-S AS 148.43, ENA NS 75.6, Moss. VII,133.1 (all ordinary Hebrew or Arabic script), T-S 24.38 and ENA 3773.7
+(not opened beyond the description). **Nothing new.** The notes route is exhausted for the PGP dump; what remains is
+documents PGP does not hold (NLI, AIU, Friedberg) and passages no cataloguer noted.
+
 ## What is not covered
 
 - **Ciphers inside letters.** Three of the 13 known Geniza ciphers are letters with a cipher passage in them (ENA 4100.7b,
