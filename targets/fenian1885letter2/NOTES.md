@@ -130,6 +130,8 @@ decode; frozen and stamped 2026-11-25T23:37:20Z (blind2/FREEZE.txt, blind2/stamp
 - "Madame H—" (P1 top note) - read: H (or A); checked: image, decode (clear text, no number group); no effect on the figures.
 
 ## Remaining gaps
+
+- **Reading review (26 Nov 2026):** Malcolm McBratney read the decoded letter as sentences and graded it A. He reads R—s (68 —— 69, side 4 line 18) as "revolutionaries". That reading comes from the sense, because only R and S are written. He also notes that DEC (80 81 79) is the same person in all four places, and that the dots and dashes between the numbers are loose handwriting. DEC is still not identified, and the struck word on side 3 line 20 is still unread.
 - (a) Book prior art not checked: Devoy's Post Bag (O'Brien and Ryan, 1948-53), Short, The Dynamite War (1979), Whelehan, The Dynamiters (2012), Kenna, War in the Shadows (2014), Jenkins on F.F. Millen - blocker: needs-physical-access; no full text reachable from the sandbox; phrases for HathiTrust/Google Books are listed in PRIOR_ART.md. A historian may have read this simple alphabet in print without calling it a decipherment.
 - (b) Human check of the transcription and the key (a person comparing the groups with the image) - blocker: not-attempted; owed. The blind AI second reading is done (70/71).
 - (c) DEC (G02-G05), the man interviewed, not identified - blocker: open-codes; the letters are read; the referent (code name, initials or abbreviation) needs the literature or the other letters of the series.
