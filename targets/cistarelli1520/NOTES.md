@@ -1,7 +1,8 @@
 # Alfonso Cistarelli to the Este, 1520: Eger to Cardinal Ippolito, 25 July (catalogue 158, DECODE R1137), and Kraków to Duke Alfonso I, 14 Oct (catalogue 846, Vestigia V1908) — NOTES
 
-Attempted, not solved: closed unread on 2 Oct 2026; blocker outside the session (the only image does not settle the
-digits; no key exists). Written up in docs/cistarelli1520.html.
+Key recovered in part from the ciphertext, text not read (26 Nov 2026): Chimdindu Denalex Orakwue's steps-of-five table (issue #843, PR #847) gives a value
+to 675 of 708 tokens; several lines still give no prose, and the only image does not settle the digits. Closed unread on 2 Oct 2026 before his key.
+Written up in docs/cistarelli1520.html.
 
 Split on 14 Oct 2026 from `caprile1519` under the one-key rule (George Lasry, 14 Oct 2026): one entry per key. The old
 entry joined Cistarelli's letter with Giuliano Caprile's letters because they share an ASMo file (Ungheria b. 4) and the
