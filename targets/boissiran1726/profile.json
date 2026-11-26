@@ -1,0 +1,264 @@
+{
+ "schema_version": 1,
+ "target": "boissiran1726",
+ "title": "Three cipher letters of the Poussard family to M. de Boissiran, Bordeaux and Saintonge, July 1725 - May 1726 (catalogue 369, AD17 4 J 1524), read with the period key sheet of the bundle (contributed by Brice Dudout)",
+ "documents": [
+  {
+   "id": "boissiran-A",
+   "read": "read in part",
+   "shelfmark": "Archives départementales de la Charente-Maritime, fonds Boissiran, 4 J 1524, letter A, 3 pp. (photos 20261126_160923, _160935, _160941; address _160900)",
+   "date": "26 May 1726 (in cipher)",
+   "year": 1726,
+   "country": "France",
+   "route": "Poussard (unplaced) -> M. de Boissiran, conseiller à la table royale, Saintes",
+   "language": "French",
+   "cleartext_in_document": "none",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "partial": false
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Photographs taken in the AD17 reading room on 26 Nov 2026 by a volunteer of the Cercle généalogique d'Aunis (CGAunis), private study only: no image, crop or derivative distributed until the volunteer and the AD17 agree",
+    "image_quality": "good",
+    "notes": "Two blind passes (agents without the key) and a blind arbiter; see blind/."
+   },
+   "length": {
+    "tokens": 2018,
+    "unit": "symbols",
+    "measured": true,
+    "file": "transcription_A.txt"
+   }
+  },
+  {
+   "id": "boissiran-B",
+   "read": "read in part",
+   "shelfmark": "Archives départementales de la Charente-Maritime, fonds Boissiran, 4 J 1524, letter B, 2 pp. (photos 20261126_161214, _161231; address _161614)",
+   "date": "Bordeaux, 14 August 1725 (in cipher; pencil gloss 'a Bordeaux le ... aoust')",
+   "year": 1725,
+   "country": "France",
+   "route": "Poussard, Bordeaux -> her son, M. de Boissiran, at Boissiran",
+   "language": "French",
+   "cleartext_in_document": "none",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "partial": false
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Photographs taken in the AD17 reading room on 26 Nov 2026 by a volunteer of the Cercle généalogique d'Aunis (CGAunis), private study only: no image, crop or derivative distributed until the volunteer and the AD17 agree",
+    "image_quality": "good",
+    "notes": "Two blind passes (agents without the key) and a blind arbiter; see blind/."
+   },
+   "length": {
+    "tokens": 1063,
+    "unit": "symbols",
+    "measured": true,
+    "file": "transcription_B.txt"
+   }
+  },
+  {
+   "id": "boissiran-C",
+   "read": "not read",
+   "shelfmark": "Archives départementales de la Charente-Maritime, fonds Boissiran, 4 J 1524, letter C, 3 pp. (photos 20261126_161523, _161533, _161541; address _161345)",
+   "date": "Bordeaux, July 1725 (in cipher; pencil gloss 'a bordeaux le ... juillet')",
+   "year": 1725,
+   "country": "France",
+   "route": "Poussard, Bordeaux -> M. de Boissiran, at Boissiran near Royan",
+   "language": "French",
+   "cleartext_in_document": "none",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "partial": false
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Photographs taken in the AD17 reading room on 26 Nov 2026 by a volunteer of the Cercle généalogique d'Aunis (CGAunis), private study only: no image, crop or derivative distributed until the volunteer and the AD17 agree",
+    "image_quality": "fair",
+    "notes": "Two blind passes (agents without the key) and a blind arbiter; see blind/."
+   },
+   "length": {
+    "tokens": 2697,
+    "unit": "symbols",
+    "measured": true,
+    "file": "transcription_C.txt"
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "polyphonic"
+  ],
+  "summary": "Period key sheet in the bundle: each plaintext letter has one digit and each digit stands for two or three letters (0 a/x, 1 d/p, 2 f/r, 3 b/h, 4 m/y, 5 e/l, 6 c/g/u, 7 i/n, 8 q/s, 9 o/t); words separated by spaces or dots; dots over digits not used by the key as read. The same sheet carries a letter-for-letter substitution (not treated).",
+  "symbol_kind": "digits",
+  "homophones": {
+   "used": false
+  },
+  "nomenclator": {
+   "present": false
+  },
+  "nulls": {
+   "present": false
+  },
+  "word_division": "kept",
+  "diacritics": {
+   "used": false
+  },
+  "key_order": "random",
+  "distinct_symbols": 10
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "images",
+   "key from archive"
+  ],
+  "attack": "key from archive",
+  "human_role": "Brice Dudout set the protocol; a volunteer of the CGAunis photographed the bundle at the AD17; AI agents transcribed (two blind passes and a blind arbiter per letter, none of them shown the key), froze the key, ran the pre-registered measures and read.",
+  "models": [
+   "Claude Opus 5.5 (Anthropic), agents run by Brice Dudout"
+  ],
+  "first_date": "2026-11-26",
+  "last_date": "2026-11-27"
+ },
+ "solution": [
+  {
+   "kind": "key from source",
+   "what": "Key sheet ('mode d'emploi') of the same bundle, photo 20261126_162030: table 3 (plain letter -> digit) transcribed and frozen by SHA-256 before any decoding.",
+   "result": "worked",
+   "technique": [
+    "key matching"
+   ]
+  },
+  {
+   "kind": "transcription",
+   "what": "Letters A, B, C: two blind passes by agents without the key, blind arbiter (A 81 of 483 groups differed, B 36, C 116).",
+   "result": "worked",
+   "technique": [
+    "other"
+   ]
+  },
+  {
+   "kind": "control",
+   "what": "PREREG 1 on A p2.23-p3.08 (358 digits): share of groups segmenting into lexicon words, 200 permuted-key controls; 0.987 against 0.974, criterion >= 0.85 and >= best + 0.30 not met: the metric did not discriminate (2-3 letters per digit). Declared; portion burnt.",
+   "result": "failed",
+   "technique": [
+    "statistical test",
+    "language-model scoring"
+   ]
+  },
+  {
+   "kind": "control",
+   "what": "PREREG 2 on fresh portion A p1.01-p1.09 (40 groups of >= 4 digits), after a declared power check on the burnt portion (0.7255 vs 0.2745): exact lexicon form of >= 4 letters, 400 controls (200 permuted keys, 200 random keys of the same 2-3 letter structure); 0.85 against best 0.425 (mean 0.121); criterion >= 0.50 and >= best + 0.30 met.",
+   "result": "worked",
+   "technique": [
+    "statistical test",
+    "language-model scoring"
+   ]
+  },
+  {
+   "kind": "reading",
+   "what": "Letter chosen in each digit's set by sense; A read in full (0.877 sure, 0.943 with probable words), B first reading (0.889 sure); C decoded, not read (out-of-focus line starts).",
+   "result": "partial",
+   "technique": [
+    "contextual inference"
+   ]
+  }
+ ],
+ "outcome": {
+  "validation": {
+   "date": "2026-11-27",
+   "verdict": "pass",
+   "notes": "PREREG 2: 0.85 vs best of 400 controls 0.425 on held-out A p1.01-p1.09. PREREG 1 (different metric, A p2.23-p3.08) failed for lack of discrimination (0.987 vs 0.974) and is reported. The key is the period key sheet of the bundle."
+  },
+  "class": "read in part",
+  "key": "recovered",
+  "method": "read with known key",
+  "fraction_read": 0.881,
+  "fraction_read_method": "measured",
+  "fraction_read_unit": "words",
+  "fraction_read_source": "sure words over cipher words of A and B (427 + 225 of 487 + 253 = 0.881); probable {x}, supplied [x] and unread [...] are holes. C is not counted (decoded, not read).",
+  "first_break": true,
+  "verification": [
+   "key confirms",
+   "matched control",
+   "historical consistency"
+  ],
+  "provenance": "contributed",
+  "credits": [
+   {
+    "who": "cgaunis",
+    "role": "transcription",
+    "note": "Cercle généalogique d'Aunis (CGAunis): a volunteer photographed 4 J 1524 at the AD17 on 26 Nov 2026 ([name if she agrees]); images for private study, not distributed",
+    "date": "2026-11"
+   },
+   {
+    "who": "dudout",
+    "role": "solution",
+    "note": "key frozen from the bundle's key sheet, blind transcription, pre-registered measures, reading of A and B",
+    "date": "2026-11-27"
+   }
+  ],
+  "gaps": [
+   {
+    "item": "Letter C",
+    "blocker": "illegible",
+    "detail": "p. 1 left half (17 line starts) and p. 3 top (6 lines) out of focus on the photographs, p. 3 holed; sharp photographs asked for through the volunteer"
+   },
+   {
+    "item": "Probable words of A, holes of B",
+    "blocker": "not-attempted",
+    "detail": "blind sign check of the 3/7, 4/6/9 and 0/9 shapes on the photographs not yet done"
+   },
+   {
+    "item": "Names in A (p3.01, p3.05, Caux, Cauerne) and the identity of the Poussard writer(s)",
+    "blocker": "not-attempted",
+    "detail": "genealogy of the Boissiran and Poussard families not yet searched"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "boissiran-A",
+    "label": "Letter A, 26 May 1726, to M. de Boissiran at Saintes",
+    "transcription": "transcription_A.txt",
+    "decryption": "decryption_A.txt",
+    "reading": "reading_A.md",
+    "language": "fr",
+    "state": "read in part",
+    "summary": "427 of 487 cipher words sure (0.877); with probable words 0.943. A woman's complaint against a 'dangerous' hypocrite in Boissiran's house, then estate business: the metayer, the metairie, a miller who burnt a mill (2,000 livres).",
+    "translation": "translation_A.md"
+   },
+   {
+    "doc": "boissiran-B",
+    "label": "Letter B, Bordeaux, 14 August 1725, to her son",
+    "transcription": "transcription_B.txt",
+    "decryption": "decryption_B.txt",
+    "reading": "reading_B.md",
+    "language": "fr",
+    "state": "read in part",
+    "summary": "225 of 253 cipher words sure (0.889), first reading. A mother to her son: a ship to Marennes, a maidservant, cabbages and shoes, his procureur.",
+    "translation": "translation_B.md"
+   },
+   {
+    "doc": "boissiran-C",
+    "label": "Letter C, Bordeaux, July 1725",
+    "transcription": "transcription_C.txt",
+    "decryption": "decryption_C.txt",
+    "language": "fr",
+    "state": "decoded, not read",
+    "summary": "Decoded with the key; not read: line starts out of focus on the photographs."
+   }
+  ],
+  "key_file": "key.tsv"
+ }
+}
