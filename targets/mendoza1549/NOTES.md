@@ -216,3 +216,11 @@ the model when the sheets were built. "no comunique" (L12), "puerta", "abierta" 
 signs; "govierno" (L03) and "no" (L08) rest on example places and are probable: 126 of 154 (81.8%). Record, labelled
 transcription and marked reading: `dudout/README.md`. The files above are unchanged; the owners decide whether to
 adopt the labels.
+
+Before / after (integration of PR #968, 26 Nov 2026). The labels are a proposal and are **not adopted**: the counted
+share stays 122 of 154 words from the signs (79.2%, `reading_44r_marked.md`). If LcCompany / WAINUT adopt them, it
+becomes 126 of 154 (81.8%): 154 words, 24 marked (22 repairs, 2 probable), 4 code words. read_share and
+`fraction_read_source` move only then, with a solution step. Sheet 2311 (13 targets) stays out of `outcome.sign_check`
+until then; sheet 2511 (4 targets, under the 8-sign minimum) is in NOTES and a solution step only. On sheet 2511,
+control K3 was target X5 of sheet 2311, so its known answer rests partly on Brice's earlier answer. Not checked: the
+signs on the Estense image.

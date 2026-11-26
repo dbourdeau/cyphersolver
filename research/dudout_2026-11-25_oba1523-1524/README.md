@@ -1,6 +1,6 @@
 # Ordensbriefarchiv, Schoenberg ciphers of 1523 and 1524 (catalogue 553 and 556): existing contemporary decipherments
 
-Status: read in part (existing: contemporary interlinear decipherments, and a contemporary Aufloesung for 1524; Brice Dudout, 25 Nov 2026). OBA 25970: 91 sure + 7 probable of 112 words (87.5%), 14 unresolved; OBA 26859: read in full from its period Aufloesung.
+Status: read in part (existing: contemporary interlinear decipherments, and a contemporary Aufloesung for 1524; Brice Dudout, 25 Nov 2026). OBA 25970: 80.0% of words sure (88 sure, 8 probable, 14 unresolved, of 110 words); OBA 26859: read in full from its period Aufloesung.
 
 **Nothing here is a new decipherment.** Both letters were deciphered at the time, on the sheets themselves. What this folder adds: a transcription of the period glosses of OBA 25970 (never printed), the way that letter is laid out (columns of three), the 1524 key alphabet, and the observation that the 1523 and 1524 keys differ.
 
@@ -13,11 +13,11 @@ Fully in cipher, signed in clear. The finding aid notes no Aufloesung, but **eve
 
 Reading of the glosses (original spelling; {probable}, ‹unresolved›):
 
-> Ich hab euch zwir geschriben, mein ankunft het mich versehen, es wern euch diselben brif ankomen. Clingenbeck sagt mir aber, es sey nit, ich mus zu euch, vnd hab Franckreych zugesagt uber virzehen tag, so ich bey euch kom, nit bey euch zu verharren. ‹gerwegen› {schreybt} mir, wu ich bey euch komen sol. Mein ‹suersehen› ‹sea› ‹wer› ‹aahi› zu Nurnberg kam, ‹besten› {do} ich ‹heui› {antwort} und beschaydt warten {wil} {ich}, ‹go?ye› mein lang aussen bleyben so euch darzu {geraychen}, das ir euch ‹v?› ainmal armuts zu erweren habt, und ‹wer?o?n› ‹de?› ab man wenig an ‹dic?a?ht›, das ich ‹dennest› nit tod gewest. ‹datis› Nurnbergk freytags nach invocavit im {dreyundzwayntzigsten}.
+> Ich hab euch zwir geschriben, mein ankunft het mich versehen, es wern euch diselben brif ankomen. Clingenbeck sagt mir aber, es sey nit, ich mus zu euch, vnd hab Franckreych zugesagt uber virzehen tag, so ich bey euch kom, nit bey euch zu verharren. ‹gerwegen› {schreybt} mir, wu ich bey euch komen sol. Mein ‹suersehen› ‹sea› ‹wer› ‹aahi› zu Nurnberg kam, ‹besten› {do} ich ‹heui› {antwort} und beschaydt warten {wil} {ich}, ‹go?ye› mein lang aussen bleyben so euch darzu {geraychen}, das ir euch ‹v?› ainmal armuts zu {erweren} habt, und ‹wer?o?n› ‹de?› ab man wenig an ‹dic?a?ht›, das ich ‹dennest› nit tod gewest. ‹datis› Nurnbergk freytags nach invocavit im {dreyundzwayntzigsten}.
 
 English (sure parts): "I have written to you twice ... these same letters will have reached you. But Klingenbeck tells me it is not so, that I must come to you; and I have promised France, within fourteen days, when I come to you, not to stay with you. ... writes to me where I should come to you. ... [I] came to Nuremberg ... I will wait for your answer and decision ... that my long absence may serve you to that end, that you may for once defend yourself against poverty ... that I was not dead. Nuremberg, Friday after Invocavit, [15]23."
 
-Count (Daniel's rule, whole letter): 91 sure, 7 probable, 0 restored, 14 unresolved, of 112 words: 87.5% read by sense (81.3% sure). Read in part. The short tail in the right margin (end of the year) is not transcribed sign by sign.
+Count (Daniel's rule, whole letter): 88 sure, 8 probable, 0 restored, 14 unresolved, of 110 words: 80.0% sure (87.3% with the probable words). Corrected in integration review of PR #987, 26 Nov 2026: the words were recounted (110, not 112), and "erweren" is now marked probable, since the gloss gives "erwern" and one e is supplied. Read in part. The short tail in the right margin (end of the year) is not transcribed sign by sign.
 
 **Key check, failed.** One pre-registered test, run once: a key tallied from band 1 (86 cells) predicted the glosses of bands 2-5 (314 held-out cells) at **0.707**, against at best 0.201 for 200 shuffled keys. That **misses the 0.85 bar**. 13% of held-out signs never occur in band 1, and some of our glyph labels merge neighbouring shapes. So `key_oba25970.json` is a **working table, not a validated key**. The reading above rests on the period glosses, not on this table.
 

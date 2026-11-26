@@ -310,8 +310,17 @@
    "technique": [
     "other"
    ],
-   "what": "Two blind shape sheets answered by Brice Dudout (dudout/planche-2511, planche-2511b), each with its selection rule hashed before any thumbnail (91feba56..., 1fe966ee...) and hidden controls. Sheet 2511: K1 (w) missed because its twin shape was among the options, waived as a construction fault; K2, K3 passed. Sheet 2511b, built without twin options: all 3 controls passed. Result: the barless two-ring shape is w (95 tokens, o), the 'ox' shape is vt (45 tokens, s, unchanged), the looped small sign is N4 (22 tokens, m). Key unchanged. Applied to copies of the O5 readings, unknown letters 215 to 98, sure words 193 to 266 and 201 to 271, restored 3.4% and 2.6%, share read 0.850 and 0.824: a reading, not a new measurement; O5 stays failed. Shape-list additions for a future preregistration: dudout/SIGNS-ajout-2511.md.",
+   "what": "Two blind shape sheets answered by Brice Dudout (dudout/planche-2511, planche-2511b), each with its selection rule hashed before any thumbnail (91feba56..., 1fe966ee...) and hidden controls. Sheet 2511, group I (the barless two-ring shape, written here as ∞): 5 of 7 targets answered ∞, 2 of 7 w, and control K1 (a known w) answered ∞, so by the hashed rule (planche-2511/REGLE-SELECTION.md §0-§1) nothing from the sheet is integrated; K2, K3 passed. The 95 ∞ tokens were named w (o) by Brice Dudout's decision after the sheet (INTEGRATION-2511.md), from his remarks that the ∞ and w options are one shape; sheet 2511b did not ask that group again, so the naming is probable, not sure. Sheet 2511b, built without twin options, controls 3/3: the 'ox' shape is vt (4/4; 45 tokens, s, unchanged), the looped small sign is N4 (4/4; 22 tokens, m), and the one Piemont place is w. Key unchanged. Applied to copies of the O5 readings, unknown letters 215 to 98, sure words 193 to 266 and 201 to 271, restored 3.4% and 2.6%, share read 0.850 and 0.824: a reading, not a new measurement; O5 stays failed. Those sure counts take the 95 ∞ tokens and the 139 places settled by the arbitrating agent alone as sure, so they are upper bounds on the house count. Shape-list additions for a future preregistration: dudout/SIGNS-ajout-2511.md. (Step reworded at the integration of PR #983, 26 Nov 2026.)",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-26",
+   "kind": "verification",
+   "technique": [
+    "other"
+   ],
+   "what": "Integration of PR #983 (maintainers, AI agent): the review re-ran the decode of O5 with key.tsv on both merged transcriptions (215 and 98 unknown, as stated) and checked all 119 hashes. Owner decisions applied: the 95 ∞ tokens named w stay probable (the naming rests on the contributor's decision after sheet 2511, not on a sheet that met its rule); places settled between look-alike signs by the arbitrating agent are probable; the O2-O5 decodes and the two O5 readings (AI readers, no non-author reading_review) stay solution steps and do not enter outcome.texts. Target stays in progress; class and fraction unchanged.",
+   "result": "partial"
   }
  ],
  "outcome": {
@@ -350,6 +359,20 @@
     "role": "verification",
     "note": "one independent AI reader, blind on 9r L01-L16 only; no human palaeographer",
     "date": "2026-11-03"
+   },
+   {
+    "who": "dudout",
+    "role": "transcription",
+    "note": "blind transcriptions (with AI agents) of the 1547 letter, cc. 1r-2r, and of 12 Mar 1548, cc. 5r-8r (dudout/o2-2311 to o5-2511); held from DECODE until he agrees",
+    "date": "2026-11-25",
+    "source": "https://github.com/dbourdeau/cyphersolver/pull/983"
+   },
+   {
+    "who": "dudout",
+    "role": "verification",
+    "note": "four preregistered held-out tests of key.tsv (O2-O5, all failed on his bars) and two blind shape sheets (planche-2511, planche-2511b)",
+    "date": "2026-11-25",
+    "source": "https://github.com/dbourdeau/cyphersolver/pull/983"
    }
   ],
   "texts": [

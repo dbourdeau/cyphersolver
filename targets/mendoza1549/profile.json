@@ -170,6 +170,24 @@
    "kind": "verification",
    "what": "Decrypt audit, repair: outcome.texts[0].reading now names reading_44r_marked.md, which holds all 38 marks and with the marks resolved has the same letters as reading_44r.md; no mark added by hand, no wording changed. v2_score (es): reading_44r.md hole rate 0.0, reading_44r_marked.md 0.017.",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-23",
+   "kind": "verification",
+   "technique": [
+    "manual reconstruction"
+   ],
+   "what": "Blind sign sheet 2311 (dudout/sign_check_2311), Brice Dudout reader, sheet built and scored with Claude: the x and o' shape splits of c. 44r, rule hashed before the sheet (de323af5...), 13 targets, 2 controls passed. o' split 3 of 3 (small round = ga, flat = ta). x split, decoded with the committed sheet key: looped = de 5 of 5, round = no 4 of 4, X1 a third shape (x8): all 10 x answered blind agree with the alignment. Correction of 25 Nov: q01 (X7) and q12 (X8) had first been decoded as looped ('against'); with the key both are round. Four further x are example places whose form the model labelled when the sheet was built. Proposal, not adopted by the owners: 122 -> 126 of 154 words from the signs (79.2% -> 81.8%), govierno (L03) and no (L08) probable; read_share unchanged.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-25",
+   "kind": "verification",
+   "technique": [
+    "manual reconstruction"
+   ],
+   "what": "Blind sign sheet 2511 (dudout/sign_check_2511), Brice Dudout reader, built with Claude: rule hashed first (c2c8c5c5...), 4 targets, 3 controls passed (K3 was target X5 of sheet 2311, so its known answer rests partly on his earlier answer). Under the 8-sign minimum: NOTES and this step only, not outcome.sign_check. X7 and X8 asked again in tight frames: both round x (no), as on sheet 2311; Q04 closed dotted q' (transcription confirmed); Q13 g' (re-transcribed, di{-ga}ran, still repaired). The sheet was built to re-ask two places first thought 'against', a decoding slip; its answers stand as a second look. No change to the counted share (122 of 154); proposed share stays 126 of 154.",
+   "result": "worked"
   }
  ],
  "outcome": {

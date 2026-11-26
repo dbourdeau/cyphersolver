@@ -1,6 +1,6 @@
 # guarna1447 - reading of Nicolò Guarna to Francesco Sforza, Milan, 21 May 1447 (BnF ital. 1584, ff. 153r-154r)
 
-Read in part (5 Nov 2026). Counted by script on the lines below (cipher segments only; the clear frame of the letter is not counted): **852 words: 584 certain, 32 probable, 0 restored, 236 unresolved** (the unresolved count is an estimate, see below), so 616 = **72.3%** certain or probable. Under 95%: read in part. On 25 Nov 2026 "vostra" (H05) became certain after a blind sign sheet (583 certain, 33 probable before). Our working notes gave 862 words and 72.6%; the recount by script on this file, counting each word split at a line end once, gives the figures above.
+Read in part (5 Nov 2026). Counted by script on the lines below (cipher segments only; the clear frame of the letter is not counted): **852 words: 583 certain, 33 probable, 0 restored, 236 unresolved** (the unresolved count is an estimate, see below), so 583 = **68.4%** certain (the house measure, sure words only) and 616 = 72.3% certain or probable. Under 95%: read in part. On 25 Nov 2026 H05 was re-segmented after a blind sign sheet ("oe ot" read as one ot), which gives "vostra" whole; the record does not say that a person made that segmentation call, so "vostra" stays probable (integration, 26 Nov 2026). Our working notes gave 862 words and 72.6%; the recount by script on this file, counting each word split at a line end once, gives the figures above.
 
 Conventions (spelling of the cipher kept; 15th-century Lombard Italian):
 - a bare word is **certain** (given by key K3, clear sense);
@@ -15,7 +15,7 @@ The end of the letter (f. 153v from about V47b, and f. 154r) agrees word for wor
     H02   remediare a questi benedetti inconve-
     H03   -nienti de li quali
     H04   mostrando de {parere} [?3] servi{re} [?1]
-    H05   [?2] che ne [?2] vostra
+    H05   [?2] che ne [?2] {vostra}
     H06   [?1] {contento}
     H07   [?2] {come} mi trovo [?1] in questo mondo per respecto del spaccio
     H08   [?2] et {cum} non vedeva [?3] {che} {vostra} sperava da la S.V.

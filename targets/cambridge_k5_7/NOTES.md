@@ -2,7 +2,7 @@
 
 Four rows of signs survive on the recto of this Cairo Genizah fragment. Gideon Bohak identified the upper signs from the substitution alphabet of T-S K24.19. The first two columns, read vertically, give four alephs and the Hebrew divine name YHWH. The interior sequence and the small signs below it remain unexplained. The handwriting of a separate recipe book that uses this cipher has been assigned to the 11th century. K5.7 itself is undated. [Cambridge recto](https://images.lib.cam.ac.uk/iiif/MS-TS-K-00005-00007-000-00001.jp2/full/1200,/0/default.jpg) · [Bohak, pp. 13–15, figs. 2–3](https://albert.ias.edu/bitstreams/b463280e-28c4-4605-b811-75bfa57ddc38/download) · [Princeton Geniza Project 42030](https://geniza.princeton.edu/en/documents/42030/)
 
-Earlier repository sweeps describe the same fragment as magical characters and as an unchecked member of Bohak's cipher group. The reason to study it as a cipher target is the independently attested sign alphabet and its readable Hebrew border. Whether the interior encodes prose remains open. [Arabic sweep](../../research/sweep_2026-11-15_arabic/part_A.md) · [Hebrew sweep](../../research/sweep_2026-11_hebrew/README.md)
+Earlier repository sweeps describe the same fragment as magical characters and as an unchecked member of Bohak's cipher group. The reason to study it as a cipher target is the independently attested sign alphabet and its readable Hebrew border. Whether the interior encodes prose remains open. Catalogue entry 3757 is this fragment's interior. [Catalogue 3757](https://dbourdeau.github.io/cyphersolver/catalogue.html#3757) · [Arabic sweep](../../research/sweep_2026-11-15_arabic/part_A.md) · [Hebrew sweep](../../research/sweep_2026-11_hebrew/README.md)
 
 ## Transcription doubts
 

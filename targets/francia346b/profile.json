@@ -170,6 +170,16 @@
    "kind": "reading",
    "what": "Added working word-divided Italian drafts (r5638_reading.md, r5639_reading.md) and English drafts (r5638_en.md, r5639_en.md) alongside the unedited mechanical decode; all three records remain filed as decoded, not read; cipher words not counted (bare [...] marks span up to 66 decode letters, with length-weighted sure-word coverage around 48% on R5638 and 40% on R5639).",
    "result": "partial"
+  },
+  {
+   "date": "2026-11-25",
+   "kind": "verification",
+   "technique": [
+    "plaintext matching",
+    "statistical test"
+   ],
+   "what": "Held-out check of key.tsv by Brice Dudout (his report in a comment on PR #926, 25 Nov 2026): key.tsv and scripts/decode.py used unchanged on his own digit transcription of R5639 f. 220v rows 1-8 and f. 220r rows 21-22, scored against the clerk's interlinear decipherment of the same rows (369 letters, 81 words; protocol hashed before decoding, one measurement, 200 shuffled-key controls). Character agreement 0.867 against best shuffled control 0.233 (mean 0.136); word agreement 0.654; his pre-set criterion (>= 0.85 and >= best control + 0.30) met. With the PR's own transcription of the same rows: 0.824 / 0.543. Proposed key corrections from code/letter pairs: 25 = b (not f), 16 = u/v (not d), single-digit 2 = null (probable); 82 (s or z) and 96 left open. His digit transcription was made by one AI agent (Claude) and not checked by a person on the scans; his transcription, scripts and protocol file are not in the repository. Corrections not applied here: key.tsv and the decodes are unchanged and the records stay decoded, not read.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -210,6 +220,13 @@
     "note": "ciphertext-only 59-code key (frozen commit 681ed424, FROZEN.sha256), unedited mechanical decode (scripts/decode.py), Ceva mismatch control (scripts/test_ceva_mismatch.py), and working drafts r5638_reading.md / r5639_reading.md (decoded, not read; cipher words not counted)",
     "source": "https://github.com/prabal-rje/branicki-1757/tree/main/francia-346-full",
     "published": true
+   },
+   {
+    "who": "dudout",
+    "role": "verification",
+    "date": "2026-11-25",
+    "note": "held-out check of key.tsv against the clerk's interlinear on R5639 (character agreement 0.867 vs best shuffled 0.233) and proposed corrections 25 = b, 16 = u/v, 2 = null, not applied; his report, on an AI transcription (Claude) not checked by a person; his files are not in the repository",
+    "source": "https://github.com/dbourdeau/cyphersolver/pull/926"
    }
   ],
   "key_file": "key.tsv",
