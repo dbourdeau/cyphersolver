@@ -1,6 +1,7 @@
 # capilupi1545: Camillo Capilupi to Ferrante Gonzaga, catalogue 1565
 
 Status: in progress. Not yet written up: no site page or README row. Read in part, or not read, with escalation steps still open (see its status below, Remaining gaps and Escalation). The status below is the contributor's.
+Next step (integration review, 24 Nov 2026; no page written): the gaps are workable from the online Estense images. Settle the 26 doubtful words of cc. 15-16 (K as o/u, the Z9 sign, the open ring) on the scan, make the blind second read of c. 15r, c. 15v from v09 and c. 16r, transcribe cc. 49v-50 and re-read c. 49r with the system Y key of `../capilupi1546/`, then add `## Escalation` and `## Transcription doubts`.
 
 Worked 3 Nov 2026 by WAINUT with AI language-model agents viewing the images. No human palaeographer has checked it.
 

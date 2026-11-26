@@ -9,7 +9,7 @@ directed Capt Bryce to reply that you do not deem the removal expedient.
 Understand Col Moore is moving stores, perhaps under same orders.
 
 Genl Maury received message yesterday from Orleans that ENEMY WILL NOT ATTACK
-[?MOBILE] DIRECTLY BUT [?COMPEL] [?EVACUATION] BY OCCUPATION OF [?SELMA] and
+MOBILE DIRECTLY BUT COMPEL EVACUATION BY OCCUPATION OF [?SELMA] and
 [?MONTGOMERY]. He suggests that freest use be given citizens of steamboats and
 railroads to throw provisions into the city.
 

@@ -515,6 +515,51 @@
    ],
    "what": "Review corrections: the two lines (17 cipher words, 2 holes) are 'read' under the short-text floor of README Conventions (19 Nov 2026), recorded as floor_used, cipher_words 17, holes 2, so outcome.texts agrees with documents[]; the third agent's blind reading described exactly (528 first, 548 on a second look; 116x, 891/841 and the gutter group left open); the six-line comparison with the September reading gives its two exceptions and the one-digit rule for 1236, 209 and 820; the test plan's preface names the replaced test name.",
    "result": "partial"
+  },
+  {
+   "date": "2026-11-22",
+   "kind": "verification",
+   "technique": [
+    "key matching"
+   ],
+   "what": "Held-out test of code_table.tsv on Adams's despatches of 1810 (Andrew Beling, with AI agents; beling1810/). Plan and pass mark hashed before the run (agreement >= 0.80 and >= best of 100 shuffled tables + 0.30). 22 coded passages of Nos. 21, 23, 24, 25, 27 and 28 (NARA M35 reel 2, 3,083 groups, our first transcriptions) aligned with align.py, unchanged, against their independent plaintexts (Ford 3:469; the period decipherments on frames 156-159, 169-172, 178-179, 184). Coverage 0.922, agreement 0.730, shuffled best 0.125 (median 0.077): MISS by the mark set, though far from chance; strict read words 1,186 of 2,331 (0.509). Blind second transcriptions by helper agents agree with the first at 0.716 (No. 24) and 0.751 (No. 29); No. 24 rescored post hoc on its second transcription: 0.814. No. 29 has no witness and is not scored. The table is not changed.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-22",
+   "kind": "verification",
+   "technique": [
+    "key matching"
+   ],
+   "what": "Second round of the 1810 held-out test, decided after the first missed (beling1810/round2/PLAN2.md, hashed 23:15 EST before scoring; same pass mark; No. 24's post hoc 0.814 not counted). Fresh blind transcriptions by helper agents from the M35 reel 2 frames only (two each of Nos. 23, 25, 27, 28; one more each of Nos. 24 and 29); only groups the two readings agree on scored. Reader agreement: No. 23 0.902, No. 24 0.950, No. 25 0.945, No. 27 0.768, No. 28 0.257 (frame 182 washed out), No. 29 0.927. Run once: 2,718 agreed valued groups, agreement 0.853, shuffled best 0.128 (median 0.075): PASS; strict read words 1,386 of 2,317 (0.598). Caveats: a second round after a miss; all readers the same model; the filter keeps the clearer groups. Frame 167R: the group before 'ultimately' is 500 or 510 on four new readings, not 570. The table is not changed.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-23",
+   "kind": "verification",
+   "technique": [
+    "key matching"
+   ],
+   "what": "Corrections after a review of the 1810 package by a separate AI agent of ours (Claude Opus 5.5, 22-23 Nov 2026, not the builder) (wording only; no score rerun):\n- Cernovodeanu (Revue Roumaine d'Histoire 1998, p. 29) prints part of No. 25 (passage G); now cited where No. 25 was said not to be in print.\n- No. 21's two readings are not independent; the round-2 score without No. 21 is 0.854 on 2,686 groups.\n- The 167R note now says 'most likely our misreading', and that one crop reader names 570 as its main alternative.\n- The order of the second round is stated as resting on local file times.\n- The reviewer's post hoc figure is recorded as such: each fresh blind reading scored alone gives about 0.81.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-23",
+   "kind": "verification",
+   "technique": [
+    "other"
+   ],
+   "what": "Changes after the maintainers' review of the 1810 package (no score changed): rebased on main after the No. 85 work; the docs/_page_sources.json edit and the two frame 167R crops removed from the commits; the page leads with the registered miss (0.730) and the unfiltered 0.81 of each blind reading alone, then the 0.853 labelled as needing the agreement filter and a second round decided after the miss; the No. 29 decode and model reading taken out of NOTES, the page and the folder (no witness, not checked by a person); the reviewer named. heldout_1810.py rerun on both rounds: 0.730 on 3,083 groups and 0.853 on 2,718 agreed groups, as before.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-23",
+   "kind": "verification",
+   "technique": [
+    "other"
+   ],
+   "what": "Integration review of PR #885 (AI agent, for the maintainers; not a person): the three No. 85 texts decoded again from the M97 sheet transcription with a separate lookup (key_we028_no85.tsv agrees with the sheet on all 90 rows; the output equals the code-sheet blocks of the three decryption files), the readings read as sentences against Ford's clear text on each side, the word counts recounted (15 of 17, 19 of 23, 50 of 55). reading_review grade B recorded on the three texts. The film was not looked at in this pass; frame 0196 has not been checked by anyone but the contributor's agents.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -663,6 +708,12 @@
     "role": "solution",
     "date": "2026-11-21",
     "note": "No. 85 (27 May 1812): the two passages on frame 0197 that Ford printed as not decyphered, read with the surviving code sheet after a pre-registered check of the sheet against the clerk's decipherment of Nos. 85 and 74; second reading of the six bare lines of frame 0196; No. 74: the three groups the clerk marked as an error read as they stand (is-sue into P-russia). With AI agents; no person has checked it."
+   },
+   {
+    "who": "ajbeling",
+    "role": "verification",
+    "date": "2026-11-22",
+    "note": "Held-out test of code_table.tsv on Adams's despatches of 1810 (beling1810/, PR #904). Registered result a miss: agreement 0.730 against a mark of 0.80 (shuffled tables at most 0.125). After the miss: each fresh blind reading alone about 0.81 (post hoc, outside both plans); second round on the groups two blind readers agree on, 0.853. With AI agents; no person has checked it. No table value changed."
    }
   ],
   "texts": [
@@ -712,10 +763,17 @@
     "state": "read",
     "read_share": 0.882,
     "summary": "After reporting that the English negotiator Thornton has probably pledged his government's consent to the neutrality of Sweden, Adams adds in code that there is some uncertainty how far the neutral intentions and expectations of Sweden herself extend.",
-    "note": "21 Nov 2026 (Andrew Beling, with AI agents), recounted 22 Nov 2026 under README Conventions of 16 Nov 2026: 17 words, 15 read = 0.882, read under the short-text floor (README Conventions, 19 Nov 2026: under 40 cipher words, at most 2 holes); holes intention[s] and expectation[s] (the s supplied from the plural mark). 26 groups, 24 sure and 2 probable in we028_no85.tsv. No reading review recorded yet: for the reviewer.",
+    "note": "21 Nov 2026 (Andrew Beling, with AI agents), recounted 22 Nov 2026 under README Conventions of 16 Nov 2026: 17 words, 15 read = 0.882, read under the short-text floor (README Conventions, 19 Nov 2026: under 40 cipher words, at most 2 holes); holes intention[s] and expectation[s] (the s supplied from the plural mark). 26 groups, 24 sure and 2 probable in we028_no85.tsv. Reading review recorded at the integration of PR #885, 23 Nov 2026.",
     "floor_used": true,
     "cipher_words": 17,
-    "holes": 2
+    "holes": 2,
+    "reading_review": {
+     "grade": "B",
+     "by": "integration review of PR #885 (AI agent, for the maintainers); not a person",
+     "date": "2026-11-23",
+     "reader_kind": "model",
+     "note": "Decryption recomputed at integration: the 26 groups of no85_two_lines.txt looked up in the M97 sheet transcription (../morris1813/beling/key/codebook_M97_13_transcription.csv; key_we028_no85.tsv agrees with it on all 90 rows) give the code-sheet block of the decryption file group for group. Read as a sentence: one complete English sentence that fits the clear text on both sides; the only supplied letters are the two plural s. Count 15 of 17 confirmed. Grade B: syllable groups joined in the reading. The film was not looked at in this pass; the PR review read frame 0197 for this passage and found the same numbers, with the last group not decidable between 528 and 548 (counted read either way under the 14 Nov rule)."
+    }
    },
    {
     "doc": "no85-three-lines",
@@ -727,7 +785,14 @@
     "state": "read in part",
     "read_share": 0.826,
     "summary": "Adams's comment on Swedish neutrality: if the Regent's new proclamation on the Orders in Council shows what England means by neutrality, and Sweden's meaning of it is shown by her hope of being indemnified with Norway for the loss of Finland, the roots of that neutrality are not very deep.",
-    "note": "21 Nov 2026 (Andrew Beling, with AI agents): 23 words, 19 read = 0.826 (recounted 22 Nov 2026: los[s], with its s supplied, is a hole). Holes: los[s], [?expounded] (116x, last figure blotted; pound 1160 or plain 1138), [?in] (1626, not a number of the code), [?for] (9x, cut by the gutter). indemnified counts under the one-digit rule (1436 for 1426). No reading review recorded yet: for the reviewer."
+    "note": "21 Nov 2026 (Andrew Beling, with AI agents): 23 words, 19 read = 0.826 (recounted 22 Nov 2026: los[s], with its s supplied, is a hole). Holes: los[s], [?expounded] (116x, last figure blotted; pound 1160 or plain 1138), [?in] (1626, not a number of the code), [?for] (9x, cut by the gutter). indemnified counts under the one-digit rule (1436 for 1426). Reading review recorded at the integration of PR #885, 23 Nov 2026.",
+    "reading_review": {
+     "grade": "B",
+     "by": "integration review of PR #885 (AI agent, for the maintainers); not a person",
+     "date": "2026-11-23",
+     "reader_kind": "model",
+     "note": "Decryption recomputed at integration: the 35 groups of no85_three_lines.txt looked up in the M97 sheet transcription give the code-sheet block of the decryption file group for group (116x, 1626 and 9x have no value; 1436 is 'is', 891 'lose'). Read as a sentence: a clause that joins Ford's clear text before and after it into one sentence; the sense is carried by the read words (Swedish meaning, hope of being indemnified, Norway, loss of Finland), and the four holes ([?expounded], [?in], [?for], los[s]) are a verb and small words supplied from the sense. Count 19 of 23 confirmed; read in part. Grade B: syllable groups joined, four holes in one clause. The film was not looked at in this pass; the PR review read frame 0197 for this passage and found the same numbers, 1626 included."
+    }
    },
    {
     "doc": "no85-foot",
@@ -739,7 +804,14 @@
     "state": "read in part",
     "read_share": 0.909,
     "summary": "The end of the Swedish chargé's assurances to the Emperor Alexander: Finland is separated from the rest of Sweden by a wide gulph, and for its loss Sweden might hope to be indemnified eventually by the acquisition of Norway; the Emperor assured him he would have no objections and make no opposition.",
-    "note": "21 Nov 2026 (Andrew Beling, with AI agents): a second reading, with the code sheet, of the lines first read with the rebuilt table on 22 Sept 2026 (ford1812b_notes.md). 55 words, 50 read = 0.909 (recounted 22 Nov 2026: objection[s], with its s supplied, is a hole). Holes: [?extensive] and [?loss] (groups cut by the gutter), [?Sweden] (49, United States on the sheet), [?be] (1501, A on the sheet). gulph, province and indemnified count under the one-digit rule (1236, 209, 820). No reading review recorded yet: for the reviewer."
+    "note": "21 Nov 2026 (Andrew Beling, with AI agents): a second reading, with the code sheet, of the lines first read with the rebuilt table on 22 Sept 2026 (ford1812b_notes.md). 55 words, 50 read = 0.909 (recounted 22 Nov 2026: objection[s], with its s supplied, is a hole). Holes: [?extensive] and [?loss] (groups cut by the gutter), [?Sweden] (49, United States on the sheet), [?be] (1501, A on the sheet). gulph, province and indemnified count under the one-digit rule (1236, 209, 820). Reading review recorded at the integration of PR #885, 23 Nov 2026.",
+    "reading_review": {
+     "grade": "B",
+     "by": "integration review of PR #885 (AI agent, for the maintainers); not a person",
+     "date": "2026-11-23",
+     "reader_kind": "model",
+     "note": "Decryption recomputed at integration: the 75 groups of no85_foot.txt looked up in the M97 sheet transcription give the code-sheet block of the decryption file group for group (23x and 89x have no value; 1236 ground, 209 pres, 49 United States, 1501 A, 820 delegate as the sheet has them). Read as a sentence: it continues the sentence Ford prints to 'dominions' and runs coherently to its end (Finland separated by a wide gulph from the rest of Sweden; indemnity by the acquisition of Norway; the Emperor's assurance of no objection and no opposition). Count 50 of 55 confirmed; read in part. Grade B: syllable groups joined, three words on one-digit slips and four supplied from the sense. Frame 0196 was not looked at, in this pass or in the PR review: the five numbers that do not fit and the doubt on 352 rest on the contributor's transcriptions."
+    }
    }
   ],
   "key_file": [

@@ -310,3 +310,11 @@ readings against the images is owed before a site page.
 `ink_recipe_1779-08-09.md` (the 9 August 1779 recipe, its own entry in `outcome.texts`), `validation.tsv`,
 `signs/`, `evidence/`, `pass_a/`, `pass_b/`, `second_reading/`, `scripts/` (`build_reconciled.py`, `build_journal.py`,
 `build_validation.py`, `heldout_passB.py`), `profile.json`.
+
+## Sign check, 23 Nov 2026 (Brice Dudout, with Claude)
+
+A blind sign-shape sheet on the system B look-alike pairs (images 16, 17, 25; controls t, y, h passed) settled four
+probable words as certain in `second_reading/second_reading.tsv`: W0720 love, W0763 my, W0769 me, W0943 which. W0710
+stays probable: its first sign is m by shape, its r/s sign only by context. The r/s pair was answered as one form in
+this hand (W0961 seeing, W0966 last unchanged). Record, rule and answers: `second_reading/sign_check_2311/`. The counts
+above and `reconciled_transcription.tsv` are not rebuilt here (513 -> 517 certain of 1,041 once carried over).

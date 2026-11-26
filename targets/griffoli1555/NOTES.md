@@ -5,7 +5,7 @@ available resolution (2000 px, the IIIF maximum) and checked by script as descri
 checked the text. An independent AI language-model agent checked the work (`VERIFY.md`); the fixes made after that
 check are listed at the end of this file.
 
-Status: in progress (not yet written up). Read in part, 6 Nov 2026: 443 c. 315 and 451 c. 25r are read in part; the
+Status: in progress (not yet written up). Next step (24 Nov 2026 review): transcribe 451 c. 25v (about 19 lines, ASF PAD online), write Dudout's six readings into c. 315, parse the decoded runs, then recount. Read in part, 6 Nov 2026: 443 c. 315 and 451 c. 25r are read in part; the
 2 Feb letter (443 cc. 316v, 318r) is a transcription job covered by its contemporary decipherment and served as key
 source and held-out test; 451 c. 25v is not transcribed. No site page or README row; escalation steps remain open
 (see Remaining gaps and Escalation).

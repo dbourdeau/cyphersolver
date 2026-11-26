@@ -749,3 +749,17 @@ disputed letters of the 11 April lower telegram (last point below); nothing else
 - **Not re-run:** `rally_key/verification/run_verify.py` needs `/usr/share/dict/words`, absent here (its printed
   plaintexts equal ours); the key-search scripts need the Official Records text. The frozen hashes of the two helper
   transcriptions and of the test plan match the files; the order of events is by the contributor's record.
+
+## 24 Nov 2026 - three blind sign sheets on vol. 196 fr. 0018, 0065, 0071, 0064, 0056 (Brice Dudout, with Claude), `dudout/sign_check_2411/`
+The targets are 39 glyphs where the aided alignment's letter differs from the letter COME RETRIBUTION predicts. The
+rules were hashed before the thumbnails, and the controls passed 9/9. The key and the alignments are unchanged.
+
+- **Re-read as the key predicts:** 29 glyphs.
+- **Confirmed as the clerk's own divergence:** 8.
+- **Unresolved:** 2.
+- **Words no longer marked [?]** (read_measure and reading files): fr. 0018 22 -> 28 of 44; 0065 11 -> 15 of 18;
+  0071 9 -> 12 of 14; 0064 8 -> 9 of 13; 0056 (D. W. Adams) 19 -> 22 of 27. read_share is updated in `profile.json`.
+- States are left to the maintainer. No image is committed.
+- **States set at integration (owner's decision, 24 Nov 2026):** fr. 0071 is read by the short-text floor (14 cipher words,
+  2 holes: SELMA, MONTGOMERY; `floor_used` in `profile.json`). The other four stay read in part. The target class stays read in
+  part, as 12 documents are still read in part.

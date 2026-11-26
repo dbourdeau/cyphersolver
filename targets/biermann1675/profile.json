@@ -214,6 +214,13 @@
    "kind": "verification",
    "what": "Document A (23 March 1675, Meyercron) listed in outcome.texts with its own transcription (transcription_p104-105.txt), decipherment and reading (reading_1675-03-23_meyercron.md) and a new English translation (reading_1675-03-23_meyercron_en.md); decode.py rerun: 263 tokens, 262 resolved. The eleven Høeg letters of 2 Jan - 9 Feb read in this folder are still not in documents[] or outcome.texts.",
    "result": "partial"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "sibling key",
+   "technique": ["key matching"],
+   "what": "K55 applied unchanged to the letter to Gioë in England of 12 January 1675 (image 015, p. 12), contributed by Tomáš Pavuk (issue #720): decode.py gives 132 cipher tokens, 127 resolved; 44 of 49 words sure, five holes (123, 488, the open square, 31, an unwritten r), two one-digit slips of the copyist. The project reran the decode with its own decoder and read all 132 groups on the image. First of the Gioë letters to England; the others and Schröder are not attempted.",
+   "result": "partial"
   }
  ],
  "outcome": {
@@ -241,8 +248,14 @@
   ],
   "gaps": [
    {
-    "item": "letters under the image-55 key (Høeg, Gioë in England, Schröder, Meyercron from late January)",
-    "blocker": "not-attempted"
+    "item": "letters under the image-55 key (the other letters to Gioë in England, Schröder)",
+    "blocker": "not-attempted",
+    "detail": "The Gioë letter of 12 January 1675 is read in part (issue #720); its holes 123, 488, the open square and 31 need the other Gioë letters."
+   },
+   {
+    "item": "Gioë, 12 January 1675: codes 123 and 488, the open square, 31, and an r that is not written in par",
+    "blocker": "open-codes",
+    "detail": "44 of 49 words sure (reading_1675-01-12_gioe.md). new_values.tsv proposes values for three of them, not adopted in the reading; the other Gioë letters to England are the place to confirm them. Mirrors the line in NOTES, Remaining gaps (added at the merge of PR #934, 24 Nov 2026)."
    },
    {
     "item": "letters without a surviving key (Lilienkron, Gioë Moscow, Reetz, Lindenow, Klingenberg, Lincker, Meyercron 2 Jan, Høeg 21 June, Lente 21 June)",
@@ -253,7 +266,7 @@
     "blocker": "open-codes"
    }
   ],
-  "notes": "In progress. Read with the image-55 key: document A and eleven Høeg letters (2 Jan - 9 Feb 1675) in this folder, 26 further Høeg and Meyercrone letters by Brice Dudout (dudout/). fraction_read is measured on document A only. The eleven Høeg letters read here are not yet listed in documents[] or outcome.texts.",
+  "notes": "In progress. Read with the image-55 key: document A and eleven Høeg letters (2 Jan - 9 Feb 1675) in this folder, 26 further Høeg and Meyercrone letters by Brice Dudout (dudout/). fraction_read is measured on document A only. The eleven Høeg letters read here are not yet listed in documents[] or outcome.texts. The letter to Gioë in England of 12 January 1675 (Tomáš Pavuk, issue #720) is listed in outcome.texts as read in part; it is not in fraction_read.",
   "credits": [
    {
     "who": "contemporary",
@@ -273,9 +286,17 @@
     "role": "solution",
     "date": "2026-10-27",
     "note": "26 further letters (Høeg 13 Feb - 5 June, Meyercrone 16 Feb - 21 June 1675) read with K55, with transcriptions, decryptions, French readings and English translations (dudout/)"
+   },
+   {
+    "who": "pavuk",
+    "role": "solution",
+    "date": "2026-11-16",
+    "note": "the letter to Gioë in England of 12 January 1675 read in part with K55 (44 of 49 words), with transcription, decipherment, French reading and English translation; worked with OpenAI GPT-6 (Codex) and an independent review by Claude (Anthropic); issue #720",
+    "source": "https://github.com/dbourdeau/cyphersolver/issues/720"
    }
   ],
   "provenance": "mixed",
+  "key_file": "key.tsv",
   "texts": [
    {
     "doc": "A",
@@ -626,6 +647,20 @@
     "read_share": 0.997,
     "reading_review": {"grade": "A", "by": "Claude (session of 14 Nov 2026)", "date": "2026-11-14", "note": "Read as sentences on 14 Nov 2026: the French reading (1675-06-21_meyercrone_reading.md) builds coherent sentences from end to end; 2 code(s) left as ‹n› (1 of them with a contributor's gloss in braces), none breaking a sentence. The decryption is the raw decoder output (unspaced, sign 9 printed as {r|t|a}); rerun here with dudout/decode.py it reproduces byte for byte: 287 cipher tokens, 1 with no value, 2 corrected in the transcription (TOK=v). read_share is that token count (286/287), not a word count. The reading normalises spacing, accents and the r/t/a choice from context; its letters were compared with the decryption by script (96-100% of the reading's letters found in sequence). The English translation is the contributor's, complete in sense but lightly condensed in places."},
     "summary": "[The Grand Chancellor] thinks that the news I have since given you of the marriage between our princess and the {King of Sweden}, together with the article handed at the same time to Terlon, of which I sent you a copy, will have removed at the court where you are any umbrage it may have taken at what happened at The Hague. That is still how things stand here, and I see little likelihood of any con"
+   },
+   {
+    "doc": "kopibog-1675-01-12-gioe",
+    "label": "Copenhagen to Marcus Gioë (England), 12 January 1675 (image 015, p. 12; ends in clear on image 016, p. 12v), Tomáš Pavuk",
+    "transcription": "transcription_1675-01-12_gioe.txt",
+    "decryption": "decryption_1675-01-12_gioe.txt",
+    "reading": "reading_1675-01-12_gioe.md",
+    "translation": "reading_1675-01-12_gioe_en.md",
+    "language": "fr",
+    "state": "read in part",
+    "read_share": 0.898,
+    "note": "read_share is by words on the reading: 49 words in the cipher passage, five holes ([123], [488], [?par], [?il], [?affoiblissement]), 44 sure; the project recounted the same on issue #720. Two one-digit slips of the copyist (579 for 576, 477 for 577) count as read under the rule of 14 Nov 2026. decode.py on the transcription: 132 cipher tokens, 127 resolved by key.tsv. The values that new_values.tsv proposes for 123, the open square and 31 are not adopted and stay holes.",
+    "summary": "(Diplomatic) It is to be hoped that, with the States General doing what they can to satisfy [123], he will not want to provoke by such a resolution a new [488] that his Parliament would be slow to approve, since Parliament is apparently always readier to help weaken France than to see it grow. In clear: the Swedish ambassador's audience and visits, an order for Dutch ships to leave Swedish ports, the allies' withdrawal from Brisach to Strasbourg.",
+    "reading_review": {"grade": "B", "by": "integration review of PR #934 (AI agent, for the maintainers); not a person", "date": "2026-11-24", "note": "Read as sentences in reading_1675-01-12_gioe.md: one French sentence of 49 cipher words, coherent from end to end, with five holes marked in place (codes 123 and 488 with no value on the sheet, [?par], [?il], [?affoiblissement]) and two one-digit slips marked {+pa}s and {+pe}ine; 44 of 49 words sure (0.898), read in part. Graded B, not A, because the two codes with no value are the object and the key noun of the sentence. decode.py rerun on the transcription reproduces the decryption file (132 tokens, 127 resolved) and a second decoder written from key.tsv agrees on all 15 lines. Every word of the reading checked against the decryption. Image 015 compared with the transcription: all 15 lines at reduced scale, lines 4-6, 8-9 and 13 group by group at full size, no difference. The English translation follows the French with the same marks."}
    }
   ]
  }

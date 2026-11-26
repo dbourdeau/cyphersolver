@@ -1,0 +1,242 @@
+{
+ "schema_version": 1,
+ "target": "tsk2424",
+ "title": "Cairo Geniza leaf in an unidentified cursive script, Cambridge University Library T-S K24.24 (PGP 33913)",
+ "documents": [
+  {
+   "id": "tsk2424",
+   "shelfmark": "Cambridge University Library, Taylor-Schechter K24.24 (PGP 33913)",
+   "date": "unknown",
+   "country": "Egypt",
+   "route": "unknown",
+   "language": "unknown",
+   "cleartext_in_document": "none",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No edition or reading found (see conditions.prior_solution)."
+   },
+   "length": {
+    "tokens": 228,
+    "distinct": 42,
+    "unit": "symbols",
+    "measured": true,
+    "file": "cipher_tokens.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "https://images.lib.cam.ac.uk/iiif/MS-TS-K-00024-00024-000-00001.jp2",
+    "image_quality": "fair",
+    "notes": "Second attempt, 24 Nov 2026: sign-by-sign by-eye segmentation of the recto on the deskewed native image (viewed at 2x in windows of 5-8 signs, then re-checked at 0.9x with cuts drawn), 228 signs in 42 shape classes in 10 lines (18-30 per line) plus 5 stand-alone dot clusters; 178 signs graded likely, 15 firm, 35 doubtful. Replaces the automatic stroke-cluster stream of the first attempt (kept as transcription_auto.txt). Marginal marks at the right edge (a lighter, finer layer of arcs and small signs) and the verso are not in the token file. The check pass was not independent of the first (the same reader saw both)."
+   },
+   "read": "not read",
+   "year": "unknown"
+  }
+ ],
+ "system": {
+  "types": [
+   "undetermined"
+  ],
+  "summary": "10 lines of slanted brush cursive with dot dividers, one hand; system, language and direction not established.",
+  "symbol_kind": "symbols",
+  "distinct_symbols": "unknown",
+  "diacritics": {
+   "used": "unknown"
+  },
+  "homophones": {
+   "used": "unknown"
+  },
+  "nomenclator": {
+   "present": "unknown"
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "unknown",
+  "word_division": "separator symbol",
+  "doubled_letters": "unknown",
+  "sibling_key": "unknown",
+  "notes": "Recto: 10 lines of 25-33 stroke groups, dots between groups, long slanting strokes, ring-with-cross, zigzag and bar-and-stem signs; verso: plain Arabic. Not Bohak's ring-letter script by eye."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "No reading found: Princeton Geniza Project record read 24 Nov 2026 (no transcription, translation or bibliography; input by Alan Elbaum 2021); 25 Nov 2026 Geniza literature survey and thorough sweep (PGP dump, Bohak 2010, Cambridge Genizah blog, Elbaum 2022 Q&A) name no reading; web search 24 Nov 2026 finds no record; DECODE harvest in the repository has no entry. Bohak, Elbaum and Zinger not asked.",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "images"
+  ],
+  "attack": "ciphertext-only",
+  "human_role": "The user asked for an attempt on the two Cairo Geniza leaves picked by the 25 Nov 2026 sweeps; no human transcription or hint.",
+  "tools": [
+   "python",
+   "numpy",
+   "opencv",
+   "lang/ n-gram models"
+  ],
+  "models": [
+   "claude-sonnet-5-5"
+  ],
+  "sessions": 1,
+  "first_date": "2026-11-24",
+  "last_date": "2026-11-24"
+ },
+ "solution": [
+  {
+   "date": "2026-11-24",
+   "kind": "literature search",
+   "what": "PGP record 33913 (description, tags cipher/magic, no bibliography, one related document not opened), the 25 Nov 2026 Geniza sweeps and literature survey, web search for K24.24, DECODE harvest grep: no reading, not in Bohak's list (K24.19, K24.23, Misc.10.60, Misc.11.91, Misc.22.218, ENA 3211.1-2).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "access",
+   "what": "Fetched both CUDL IIIF images in region tiles at native size by curl (recto 3806 x 3664, verso 3865 x 3597; targets/tsk2424/fetch_images.py).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "transcription",
+   "what": "Looked at the recto at native size in bands and line strips: 10 text lines of about 28 pen-lift groups, slanted cursive, thick brush, dots between groups, long slanting strokes crossing lines, ragged marginal marks at the right edge; verso is plain Arabic script (about 9 lines, not transcribed). A sign-level hand transcription was not completed: the connected cursive could not be split into signs reliably by eye.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "transcription",
+   "what": "Automatic stroke-level token stream (glyphs.py): ink threshold, connected components, 10 lines by slope-corrected y-clustering, 30 shape clusters by k-means; 289 stroke tokens (25-33 per line, matching the 28-35 signs per line PGP-side sweep counted) and 95 dot-like marks, many of them paper specks.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "statistics",
+   "technique": [
+    "frequency analysis",
+    "repeat/pattern analysis",
+    "statistical test"
+   ],
+   "what": "Cluster-token statistics against 300 shuffles: IC 0.041 (uniform 0.033), entropy 4.67 of 4.91 bits, repeated bigrams 39 vs 44.3 expected, trigrams 4 vs 2.3, 4-grams 0 vs 0.1, H(next|prev) z -0.4: no structure beyond chance at this token level (the tokens are noisy strokes, so this does not test the text).",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "hypothesis",
+   "technique": [
+    "key-structure hypothesis"
+   ],
+   "what": "Compared the repertoire with Bohak's ring-letter family (T-S K24.19 recto viewed: upright ring and x/9/H signs, plain Hebrew words interspersed), with T-S NS J479 (viewed: upright ring-with-dot, P- and D-like signs), and with the tsas187240 glyph catalogue: no shape correspondence; K24.24 is a slanted brush cursive with zigzag, bar-and-stem, ring-with-cross and loop signs. Not a systematic sign-by-sign table (K24.24 has no sign-level transcription).",
+   "result": "ruled out"
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "hypothesis",
+   "technique": [
+    "contextual inference"
+   ],
+   "what": "Noted that the right ends of lines 6-9 carry runs of digit-like signs (6, 5, 8 shapes) and that ring-with-bar signs resemble theta: possible zimam (Greek/Coptic) numeral signs standing for Hebrew or Arabic letters, as in the keys on CUL Or.1080 J277 and Bodl. MS heb. f 102/28. Untested: no sign chart was obtained (the lib.cam.ac.uk figure URLs from the Cambridge blog returned the site home page).",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "solver",
+   "technique": [
+    "simulated annealing",
+    "language-model scoring"
+   ],
+   "what": "Added lang/ models he-tanakh (Hebrew Bible, Sefaria API, 22 consonants) and ja-from-arabic (ar-mamluk Arabic read through the Hebrew-letter mapping). Many-to-one monoalphabetic annealing of the 30 stroke clusters, no word breaks, both reading directions, 3 restarts x 2500 steps: real -2.84 / -2.72 (he), -2.66 / -2.70 (ja) per letter against shuffled nulls mean -2.80 / -2.61 (sd 0.06 / 0.05): z -0.5 / +1.3 (he), -1.0 / -1.8 (ja).",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "control",
+   "technique": [
+    "language-model scoring",
+    "statistical test"
+   ],
+   "what": "Same annealer on 10 stretches of Hebrew (resp. Arabic-as-Hebrew-letters) text of equal length enciphered by a random many-to-one map onto 30 classes: control means -2.59 (he) and -2.37 (ja), separation from the shuffled nulls z 3.3 and 4.6. The method detects a true merged monoalphabetic text only weakly at 30 classes; control text overlaps the model's training corpus, so the gap is an upper bound.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "transcription",
+   "what": "Preprocessing of the recto for sign-level reading: rotated by atan(0.02) = 1.15 degrees to make the lines horizontal (prep.py), background flattened (median 101) and contrast-stretched; line centres from the row ink profile (10 peaks, y 680-2828 native, 215-265 px apart); windows with a native-pixel ruler (win.py), ink components with ids (comps.py, not used in the end), gray and flattened versions. CUDL holds only two images of the leaf (recto, verso; image 3 does not exist). No raking-light or multispectral image offered.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "transcription",
+   "what": "Pass a: all ten lines segmented and transcribed by eye at 2x (1.8-2.4x), 5-8 signs per view, cut positions as native-pixel x ranges per sign (segments_a.json via seg.py; appended line by line). Signs are 100-250 px wide, so each line has 18-30 signs, not the 28-35 of the stroke count. Line 7 begins in a smeared, glare-damaged patch (x 250-575) read in the gray image with doubt. Long thin slashes (LT) and curved ascenders (LS) cross into the line above and are recorded as signs of the line where they start; a slash touching a ring is recorded as LT beside the ring, or as the joint class RS where the two are one stroke group.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "transcription",
+   "what": "Contact sheets per class (sheet.py) to review splits and merges: the open hook-bar HB and its closed form HC (second bar joined by a right stem) split on the sheet; the stem signs split into SB (left spur or arm), FS (curl bowl on the right, 5-like) and ST (plain stem with top flag); HK (hook with a dot) kept apart from HB because the dot is constant (15 of 15). 14 classes occur once or twice and may be merges or damage forms (ZL SH LV ZG LH WU LC SL BK TR GH ...).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "verification",
+   "what": "Check pass: lines 1 and 7 re-viewed at 0.9x with the cuts and labels drawn on the image (gray and flattened); no cut moved. The remaining lines were checked only through the class sheets. A fully independent second reading was NOT made (the same reader had seen pass a), so the grades are firm 15 / likely 178 / doubtful 35 on one reader.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "hypothesis",
+   "technique": [
+    "key-structure hypothesis",
+    "frequency analysis"
+   ],
+   "what": "Reading direction from layout: after removing the page tilt the right ends of the 10 lines align to a straight margin (sd 11 px about a line of slope 12.6 px per line, x 3140-3265) while the left ends are ragged (sd 75 px, x 255-518): the lines start at the right and run out at the left, so right to left, as in Arabic and Hebrew script. Not shown by stroke order (the brush strokes are thick and the order cannot be read off the image).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "statistics",
+   "technique": [
+    "frequency analysis",
+    "repeat/pattern analysis",
+    "statistical test"
+   ],
+   "what": "Sign statistics on transcription.txt (analysis.py, 300 shuffles): 228 signs, 42 classes, IC 0.0442, entropy 4.77 bits; repeated 2/3/4-grams 30/3/0 against shuffle means 28.5/1.8/0.1; H(next|prev) 2.449 against 2.642 (sd 0.046), z -4.1 (first attempt: z -0.4). Bigram structure is real: SB then WV 6 times, SB then HB 6, HB then SB 4, HB then SC 4; trigrams PI HB SB, SB HB SC, HB SB WV twice each. Page order, so the reverse in right-to-left reading.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "solver",
+   "technique": [
+    "simulated annealing",
+    "language-model scoring",
+    "statistical test"
+   ],
+   "what": "Many-to-one monoalphabetic annealing (attack.py, 8 restarts x 5000 steps, no word breaks, 20 controls) on the new 42-class tokens: he-tanakh real forward z 1.0 and reversed -0.6 against shuffled nulls, control separates at z 4.2; ja-from-arabic z 0.8 / 0.8 (control 4.1); ar-mamluk z 1.6 / -0.5 (control 5.5). No signal; 42 classes with 228 signs is too sparse for the method to separate even a true text (control z 4-5), so this is a null result about the method, not evidence about the leaf.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "hypothesis",
+   "technique": [
+    "key-structure hypothesis"
+   ],
+   "what": "Shape resemblance noted, not tested: several classes look like Hebrew semi-cursive letters (HC like bet, HK like he, PI like het or tav, Z7 like dalet or resh, RO like samekh, LS and LT like lamed ascenders), but a bet-like HB+HC at 14 percent of the signs and the SB/WV bigram do not fit plain Hebrew; the sign set may be a substitution over a Hebrew-shaped alphabet. The verso is Arabic script, so Judaeo-Arabic is the natural plaintext to try with the new tokens.",
+   "result": "partial"
+  }
+ ],
+ "outcome": {
+  "method": "not solved",
+  "method_basis": "No reading: the transcription is a first pass at shape-class level, the system is not identified, and the monoalphabetic language-model attacks scored at the level of shuffled controls.",
+  "contribution": [
+   "transcription"
+  ],
+  "class": "not read",
+  "fraction_read": 0,
+  "verification": [
+   "none"
+  ],
+  "key": "none",
+  "notes": "In progress. No sign-level transcription yet; the next step is a human or high-resolution per-sign contact-sheet transcription, then a sign-by-sign comparison with the zimam numeral chart.",
+  "gaps": []
+ }
+}
