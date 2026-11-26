@@ -1,6 +1,6 @@
 # Jean de Saint-Mauris to Ferrante Gonzaga, 1547-1548: cipher letters (Biblioteca Estense, Autografoteca Campori)
 
-Status: in progress (24 Nov 2026 review: no page yet. Next step: transcribe the letters of 1547 (cc. 1r-2r, with glosses) and 12 Mar 1548 (cc. 5r-8v, clear note on 5r) from the online Estense scans and read them with key_frozen.tsv, which also tests the post-test values; measured share 340/435 = 78.2% verbatim, below the bar.)
+Status: in progress (26 Nov 2026: no page yet. The letters of 1547 and 12 Mar 1548 are now transcribed blind and decoded with key.tsv by Brice Dudout with AI agents (PR #983, `dudout/`): four preregistered held-out tests, all failed on his bars; the O5 pages (cc. 6v-8r) read by two AI readers at 0.850 and 0.824 by sense, sure 0.700 and 0.693 after the shape sheets, upper bounds. These stay solution steps, not counted readings; see "Held-out tests O2-O5 and shape sheets" below. Measured share of the two counted letters 340/435 = 78.2% verbatim, below the bar.)
 
 Status, 3 Nov 2026: **read in part.** The table is a homophonic substitution: one sign for one letter, and a few signs
 for a doubled letter. Two letters are read in part; two are not transcribed. No contemporary decipherment of these
@@ -15,8 +15,8 @@ filled in from context; they are not "read".
 |---|---|---|---|---|---|---|---|---|---|
 | 10 Jan 1548 | `l2` | 3r-4r | **read in part** | `key.tsv` (built on this letter) | 256 | 208 (81.2%) | 238 (93.0%) | 4 | 14 |
 | 2 Aug 1548 | `l4` | 9r-9v | **read in part** (held out) | `key_frozen.tsv`, unchanged | 179 | 132 (73.7%) | 173 (96.6%) | 2 | 4 |
-| 1547 | | 1r-2r | not transcribed | | | | | | |
-| 12 Mar 1548 | | 5r-8v (cipher blocks) | not transcribed | | | | | | |
+| 1547 | `dudout/o2-2311`, `o3-2511` | 1r-2r | transcribed blind, decoded, not counted | `key.tsv` | | | | | |
+| 12 Mar 1548 | `dudout/o4-2511`, `o5-2511` | 5r-8r (cipher blocks; 8v has none) | transcribed blind, decoded, not counted | `key.tsv` | | | | | |
 
 `l2` and `l4` are the second and fourth letters of the file. Counts come from `scripts/check_marks.py`. It rebuilds each
 decryption from the transcription and the key, walks the French reading letter by letter and exits 1 on any unmarked
@@ -157,13 +157,15 @@ defensive league are checked only in outline. They must be verified before anyth
 - Holes: 14 in 10 Jan, 4 in 2 Aug. Signs with no value: `N19` (3 places), `L1` (1). The 2 Aug values set after the test
   (`N12`-`N18`, `N20`, `yg`, `Lo`) have not been tested on a further letter.
 - `x` against h, and 3v L08, on better crops or the full-size images.
-- Letters of 1547 (cc. 1r-2r, glosses on 1r, 1v and 2r) and of 12 Mar 1548 (cipher blocks on 5r-8v, with a clear note
-  in the margin of 5r): not transcribed. They are the natural next test of the table.
+- Letters of 1547 (cc. 1r-2r) and of 12 Mar 1548 (cc. 5r-8r): transcribed blind and decoded (PR #983), but the four
+  held-out tests failed and no reading of them is counted. Open: a preregistered test on another letter with
+  `dudout/SIGNS-ajout-2511.md` folded into its frozen shape list; group I (the two-ring shape, 95 tokens) re-asked on a
+  sheet without a twin option; a non-author review of the O5 readings.
 - cc. 12-21 not checked at full size.
 
 ## Escalation
 
-- [ ] siblings: the letters of 1547 (cc. 1r-2r) and 12 Mar 1548 (cc. 5r-8v) in the same file are online and not transcribed
+- [x] siblings: the letters of 1547 (cc. 1r-2r) and 12 Mar 1548 (cc. 5r-8r) transcribed blind and decoded with key.tsv (PR #983); held-out tests O2-O5 failed; not counted
 - [x] clear-pages: the reader's gloss over about six rows of c. 3r used as seeds (gloss_seeds.tsv)
 - [ ] known-keys: no other Saint-Mauris or Gonzaga table of 1547-1548 searched or tried
 - [x] print: prior art searched (see Prior art); none found
@@ -231,3 +233,32 @@ in the script, which is outside this folder. With the row read and nothing else 
 
 Not checked: the signs against the images, and whether any marked repair is right. The parent-class rule for the
 frozen values of `Lo`, `L1` and `N20` is still not recorded in a key file.
+
+## Held-out tests O2-O5 and shape sheets (Brice Dudout with AI agents, PR #983, integrated 26 Nov 2026)
+
+Files in `dudout/` (README, SHA256SUMS; all 119 hashes checked at the review). Each test was preregistered and frozen by
+SHA-256 before transcription and decoded once with `key.tsv` (b9e69238...e034), not `key_frozen.tsv`.
+
+- **O2** (1547, c. 1r): M 0.718 < 0.85, margin over the best of 200 controls 0.280 < 0.30. Failed.
+- **O3** (1547, cc. 1v-2r): M 0.784 < 0.85, margin 0.393. Failed on the 0.85 bar.
+- **O4** (12 Mar 1548, cc. 5r-6r): M 0.780 < 0.85, margin 0.365. Failed on the 0.85 bar.
+- **O5** (12 Mar 1548, cc. 6v-8r): two AI readers who saw only the decode read 0.850 and 0.826 by sense (< 0.95),
+  restored 0.092 and 0.074, margin 0.251 < 0.30. Failed. Both read the same continuous French (Scotland, Piedmont,
+  d'Andelot, Guyenne).
+- **c. 5r margin.** A clear note in the left margin of c. 5r, masked from the transcribers, is a period decipherment of
+  5r L01-L03. The O4 decode matches it word for word apart from spelling, a ct/e and one unresolved sign: an outside
+  check of the key on about 40 letters (`dudout/o4-2511/NOTE-MARGE-5r.md`; compared as text, not on the image).
+- **Shape sheets.** Sheet 2511, group I (the barless two-ring shape, ∞): 5 of 7 answered ∞, 2 of 7 w, and control K1
+  (a known w) answered ∞, so by the sheet's hashed rule nothing was integrated. Brice then named the 95 ∞ tokens w (o)
+  from his remarks that the two options are one shape (`INTEGRATION-2511.md`); sheet 2511b did not ask that group
+  again. Sheet 2511b (controls 3/3): 'ox' = vt (4/4), the looped small sign = N4 (4/4, value m), the Piemont place = w.
+  With these names, O5 sure words go 193 -> 266 of 380 (L1) and 201 -> 271 of 391 (L2), sure share 0.700 and 0.693;
+  read by sense 0.850 and 0.824.
+
+**How these count (owner decisions of 24-25 Nov, applied 26 Nov).** The 95 ∞ tokens named w stay **probable**: the
+naming is the contributor's decision after a sheet whose rule said not to integrate, and no later sheet re-asked it.
+Of the 250 O5 disputes, 139 were settled by the arbitrating agent alone; places settled between look-alike signs by an
+agent are probable. So 266 and 271 are upper bounds on the house count of sure words. The O5 readings are AI readings
+with no non-author review, and O2-O4 have decodes and lexical measures only. All of this stays in solution steps; none
+of it enters `outcome.texts`, and the target stays **in progress**. The transcriptions are held from DECODE until Brice
+agrees. Not checked: the Estense images, the A/B passes, the arbitration and the control runs.

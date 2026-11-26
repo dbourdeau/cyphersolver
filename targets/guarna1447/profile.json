@@ -35,7 +35,7 @@
     "by": "llm from images",
     "source": "Gallica microfilm btv1b100373864 (BnF; one crop of f. 153r on the site write-up, credited)",
     "image_quality": "poor",
-    "notes": "Microfilm; look-alike signs (h-like 4 / hk, sigma / o with a hook, t / T / z) not separated; a blind shape sheet is pending."
+    "notes": "Microfilm; look-alike signs (h-like 4 / hk, sigma / o with a hook, t / T / z, hs / h) not separated by the transcriber; a blind shape sheet of 23 Nov 2026 asked sigma / o with a hook and hk / 4 (sign_check_2311/); t / T / z and hs / h are not yet asked."
    }
   }
  ],
@@ -82,7 +82,7 @@
   "attack": "known plaintext",
   "first_date": "2026-11-05",
   "last_date": "2026-11-05",
-  "human_role": "Brice Dudout chose the target and set the rules (protocol and amendments hashed before each computation, one measurement per held-out block, thresholds fixed in advance). AI agents transcribed, rebuilt the key, measured, read and wrote up. No palaeographer checked the signs; a blind shape sheet is pending.",
+  "human_role": "Brice Dudout chose the target and set the rules (protocol and amendments hashed before each computation, one measurement per held-out block, thresholds fixed in advance). AI agents transcribed, rebuilt the key, measured, read and wrote up. No palaeographer checked the signs; Brice Dudout answered a blind shape sheet on two look-alike pairs (23 Nov 2026); two pairs are not yet asked.",
   "models": [
    "Claude Opus 5.5 (Anthropic), agents run by Brice Dudout"
   ]
@@ -135,6 +135,12 @@
    "technique": ["manual reconstruction"],
    "what": "Blind sign sheet on f. 153r (Gallica / BnF): five look-alike signs (sigma ot / oe; the right hook hk = r / 4 = i) shown one boxed sign at a time beside unlabelled examples from the same hand; two controls passed; rule written and hashed first (sign_check_2311/). Brice Dudout answered, Claude built the sheet and applied the rule. H05: one sign transcribed 'oe ot' is a single ot, so 'vostra' reads whole by K3 (probable -> certain; 583 -> 584 certain, 616 certain or probable unchanged). The three hook signs and H05's first oe confirm the transcription. K3 unchanged; no new measurement.",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-26",
+   "kind": "verification",
+   "what": "Integration of PR #967 (maintainers, AI agent). The sheet asked the shape of H05 token 13 (sigma, answered); that the tokens 'oe ot' are one sign, not two, is a segmentation call made on the image after the answers (the rule foresaw a relabel to 'ot ot'), and the record does not say that a person made it (the sheet was built and its rule applied by Claude). By the owner rule of 24-25 Nov an AI-settled look-alike place is probable, so 'vostra' is marked {vostra} again: 852 words, 583 certain, 33 probable, 236 unresolved (584/32 before this step, 583/33 before the sheet). fraction_read and read_share set to sure words only: 583/852 = 0.684 (0.723 certain or probable). The H02-H19 block as hashed on 5 Nov kept as transcription_frozen.txt (the file before 25 Nov, from git); the hash 95e803c0... was not reproduced from it, as the hashing form is not recorded. The sheet key (option order) is not committed. If Brice Dudout states that he made the segmentation call on the image, vostra becomes certain (584, 0.685).",
+   "result": "partial"
   }
  ],
  "outcome": {
@@ -146,9 +152,9 @@
    "transcription",
    "key recovered"
   ],
-  "fraction_read": 0.723,
+  "fraction_read": 0.684,
   "fraction_read_method": "measured",
-  "fraction_read_source": "Daniel's rule (certain + probable), counted by script on reading.md: 852 words, 584 certain, 32 probable, 0 restored, 236 unresolved (unresolved stretches estimated at length/5) = 616/852 = 72.3% (583 certain, 33 probable before the sign sheet of 23 Nov 2026).",
+  "fraction_read_source": "Sure words only, counted on reading.md: 852 words, 583 certain, 33 probable, 0 restored, 236 unresolved (unresolved stretches estimated at length/5): 583/852 = 68.4%; certain or probable 616/852 = 72.3% (the earlier figure, Daniel's rule). vostra (H05) stays probable: the segmentation call after the sign sheet of 23 Nov 2026 is not recorded as a person's (integration, 26 Nov 2026).",
   "verification": [
    "statistical test",
    "independent clear copy"
@@ -184,7 +190,7 @@
    {
     "item": "About 236 unresolved words (estimated), mostly 153r and 153v ll. 4-19",
     "blocker": "illegible",
-    "detail": "look-alike signs on the microfilm; a blind shape sheet is pending, then a finer re-transcription"
+    "detail": "look-alike signs on the microfilm; a blind shape sheet of 23 Nov 2026 asked two pairs (sigma / o with a hook, hk / 4); next a sheet on t / T / z and hs / h, then a finer re-transcription"
    },
    {
     "item": "No fresh held-out block to validate K3 (H and H' used)",
@@ -201,7 +207,7 @@
     "translation": "translation.md",
     "language": "it",
     "state": "read in part",
-    "read_share": 0.723,
+    "read_share": 0.684,
     "summary": "Guarna reports an audience with Duke Filippo Maria Visconti about Sforza's coming: the state in danger (enemies in the field, troops poorly provided, plague), 9,000 ducats, the gabelle and the troops at Cremona, then no more money for a long while; the Duke answered more openly than before and wants Sforza to come quickly.",
     "reading_review": {
      "grade": "B",

@@ -1,0 +1,137 @@
+# transcription_passA.txt — PREREG-O5, portion Q (lettre du 12 mars 1548), PASSE A, transcription aveugle des FORMES
+# Qui/quand : transcripteur aveugle A (sous-agent Claude Opus 5.5), 25 nov. 2026.
+# Fichiers ouverts : BRIEF-PASSE-O5.md, input/SIGNS.md, input/SHAPES-KEY-NAMES.md, input/crops/ (lignes entieres, _a, _b, overviews). Rien d'autre.
+# Methode : chaque ligne lue sur _a puis _b (x1,6), chevauchement reconcilie sur l'overview et la ligne entiere ; zooms PIL
+#   temporaires (tmp-A sur SPOF_2, effaces) pour les formes douteuses. 87 lignes : 6v L01-L28, 7r L01-L27, 7v L01-L24, 8r L01-L08.
+# Conventions de nommage retenues (formes seulement) :
+#   d   = petite boucle precedee d'un long trait oblique venant du haut a gauche ("\o").
+#   dd  = deux petites boucles fermees accolees, sans queue (forme "oo" / infini).
+#   +o  = croix droite simple suivie d'une petite boucle sur la ligne ; N13 = meme chose a haste haute recourbee vers le haut-droite.
+#   4o vs N17 : haste qui descend nettement sous la ligne (avec barre) = 4o, meme si l'anneau touche ; haste courte, anneau colle,
+#     long trait oblique venant du bas-gauche = N17. Frontiere incertaine (voir doutes).
+#   8 vs N15 : 8 a boucle superieure fermee / barre plate = 8 ; boucle superieure ouverte avec crochet ou trait qui la traverse = N15.
+#   n  = forme m/n a arceaux, derniere jambe libre (souvent avec amorce a gauche).
+#   12, 13 = chiffre 1 avec marque haute 2 / 3 ; xo, x3, mx2, mx3, 3o, 4o, 5o, 6o selon SIGNS.md.
+#   '.' seulement pour des points nets sur la ligne ; '.?' point faible ; petites taches ignorees ; ',' tel qu'ecrit (7r L19).
+# Formes t ajoutees (forme seulement) :
+#   t1  = petite boucle fermee isolee a hauteur de ligne avec une courte amorce (tique) en haut a gauche ; pas de long trait (pas d).
+#   t2  = courbe en c inverse (ouverte a gauche) dont le bas finit en crochet a gauche, enchainee a une petite boucle a droite ("ɔo").
+#   t3  = petite boucle fermee accolee a gauche d'un x (ou d'une croix oblique) ("ox").
+#   t4  = deux petites boucles sur la ligne reliees par un grand arc qui passe au-dessus (la gauche souvent en 6) ("6‿o" en arche).
+#   t5  = petit crochet a hauteur de ligne + petite boucle a droite, dont le trait descend loin vers le bas-gauche et finit en crochet ("yo").
+#   t6  = grand cercle ouvert enveloppant une petite boucle en forme de 2 (comme un 2 entoure) ; pas de longue queue descendante.
+#   t7  = MARQUE HAUTE : petit b / 6 sureleve, colle a sa base (jeton 6t7, 6v L11).
+#   t8  = haste courbe (c ouvert) coupee d'un trait qui se prolonge en boucle a droite, la haste descend et finit en crochet a gauche ("ty" / "6x").
+#   t9  = petite boucle fermee isolee (comme t1/N4) surmontee d'un point.
+#   t10 = alpha (a) surmonte d'un point, epaissi a gauche (6v L21).
+#   t11 = deux traits horizontaux courts superposes ("="), le superieur un peu crochu (6v L24).
+#   t12 = MARQUE HAUTE : petit trait vertical court sureleve a droite (apostrophe) (jeton 4t12, 6v L24).
+#   t13 = forme n (deux arceaux) dont la derniere jambe se ferme en petite boucle en haut a droite ("np").
+#   t14 = haltere O surmonte d'un point au-dessus de la barre.
+#   t16 = haste avec barre superieure recourbee vers le haut-droite et petit crochet a gauche, boucle a droite a mi-hauteur,
+#         longue descendante finissant en crochet a gauche (7r L10).
+#   t17 = croix a haste haute recourbee (comme N13) enchainee a droite a un alpha (boucle a queue) ("ta") (7r L12).
+#   t18 = croix dont la haste porte en haut une petite boucle fermee triangulaire (4 pose sur une croix), suivie d'une petite boucle sur la ligne (7r L24).
+#   t20 = d (boucle a long trait oblique) surmonte d'un point (7v L09).
+#   t21 = dd (deux boucles accolees) surmonte d'un point (7v L18).
+#   t22 = x surmonte d'un point (8r L08).
+#   (t15, t19 : numeros non utilises.)  t? = signe illisible ; t?_ = signe tache/barre (pate d'encre + trait oblique).
+# Incertitudes principales :
+#   - 4o / N17 (A a anneau) : nombreuses occurrences a la frontiere ; regle appliquee ci-dessus, mais certains N17 pourraient etre 4o et inversement.
+#   - 8 / N15 : distinction parfois tenue (boucle superieure plate vs crochet) ; 7r L03 fin et 6v L27 (tache) notes '?'.
+#   - dd vs t1 : dd = deux boucles accolees ; si la forme 'oo' n'est pas le 'dd' de la cle, elle reste coherente partout.
+#   - N2? (6v L14, 7r L16, 7v L20) : croix a haste haute recourbee + jambage n/i ("ti") ; N2 est decrit plus petit.
+#   - N10? (7v L16, deux fois) : grand signe a boucles multiples (croix, boucle, longue descendante bouclee, boucle montante).
+#   - 6v L14 et L15 : signes taches + trait oblique (t?_) apres W et apres t4 ; 7v L03 : signe sous une tache (t?).
+#   - 7r L14 '12?' (marque haute en forme de e) et '13?' ; 7r L22 '13?' ; 7v L16 '13' et 'x3' (marque a deux bosses).
+#   - 8r L01 '1?' : la marque haute eventuelle est peut-etre sous le masque blanc.
+#   - 7v L01 '4o?' (4 surcharge/epaissi) ; 7v L05 'xo?' (marque haute tachee) ; 7v L21 'mx2?' (marque haute comme un 1).
+#   - Points : 6v L15 (trois points), 7v L08, 7v L17 (nombreux points) transcrits ; points faibles notes '.?'.
+#   - Petites marques sans valeur ignorees : apostrophe apres W (6v L27, 7v L04), tiret entre mx2 et +o (7v L15), trait/tache entre dd et # (7v L22).
+6v L01: O x: 3o +o O W a N15 O d 4o xo / mx2 12 sq eee d n 12 x x: 3o
+6v L02: 4o 3o b dd x: 3o xo dd t1 sq 3o O D/ 4o z O 12 Le 4o t1 O # 3o
+6v L03: mx t1 sq O z x3 t2 O 8 12 O xo 4o z 3o O eee x: # fs
+6v L04: W eee x: N17 W dd a t3 x: O sq mx2 N13 4o sq W 12 t3 mx2
+6v L05: 12 n x: 3o mx2 12 +o a x3 3o O z xo dd N13 / 4o xo O 2 3o
+6v L06: N15 a O x: W dd a x: N17 +o 4o xo O 8 13 O W dd # mx2
+6v L07: 12 dd a 3o sq 12 N15 W a O d 8 & 4o xo O z 3o 4o +o a x3
+6v L08: 3o O mx2 Lo 4o O t6 W t5 d O xo 12 & d O t4 dd # 3o
+6v L09: x3 4o 8 12 O . a W t5 mx 12 dd a O x: 3o sq O d +o 12 t3
+6v L10: mx2 +o a xo 3o O t3 x3 dd N13 4o (
+6v L11: t6 W t5 dd x: 3o a x3 6t7 b mx3 a x3 3o xo dd 12 d t6 t4 N15 d
+6v L12: 12 a 3o W O 8 12 4o t8 x: mx2 xo dd x: 3o a # 5 O d N15 .
+6v L13: O mx2 12 W x3 dd sq 8 12 O W dd # & dd 12 W dd a 3o 4o # +o
+6v L14: d O N13 4o d N17 12 . O N2? 4o +o 12 x3 dd z 3o O W t?_ 4o
+6v L15: sq dd O t1 N3 x: 3o sq dd 12 d W O d . 4o . N17 . mx2? t4 t?_ +o
+6v L16: mx t8 mx2 d 3o a Le 4o t4 a fs 8 12 O W dd x: mx2 b n
+6v L17: a xo 3o 12 O x: a d mx2 N4 a Le mx2 x: (
+6v L18: t6 .? t9 a O x: 3o O x: z 8 12 a W t5 t3 O d O sq mx2 # 6
+6v L19: O x: 3o +o n 12 dd a d xo mx2 N13 mx 8 12 dd W N15 12 O
+6v L20: t3 8 mx2 x: +o O z t6 3o t13 W a O x: # O 2 4o x: sq
+6v L21: t10 a O +o t1 N3 x: 6 O 3o sq dd 12 d xo O 8 12 O xo dd
+6v L22: d x: O W a 4o N15 O x: 3o a & N3 Le mx mx2 N9 O d
+6v L23: +o 12 t8 mx2 t3 a O Lo mx a W O z 3o n N9 d 4o
+6v L24: t11 . N9 dd 12 d mx2 12 dd a d t3 dd # xo dd x: N17 O 6o 4t12
+6v L25: 8 12 a x: O W O t8 12 6o 5o O & W 3o xo dd x: x3 4o
+6v L26: +o O t4 t8 x z t3 O 12 d mx2 x: 3o +o O W O
+6v L27: 12 dd 12 W dd a d N15? a O x: mx 3o b mx2 12 dd d t13 8 W
+6v L28: O t1 O x: 3o 6 d t14 mx2 a xo 3o 4o d (
+7r L01: W O t3 N15 12 4o t8 t5 O 5o N13 4o x: 3o x3
+7r L02: dd t1 N6 O W dd x: +o a xo 6 N3 x3 xo a t3 W O +o a x3 6 D/
+7r L03: mx2 x: +o 4o t8 dd z 3o t3 mx2 # z 8 12 O t8 O d dd 6o N15?
+7r L04: 12 a # O t3 3o dd a 3o N17 x t6 d O z W N3 dd a x: N17 D/ O
+7r L05: O 12 W N11 a W t3 5o d 12 t6 x: 3o 8 12 O b 12 z 3o xo mx2
+7r L06: 12 t3 O +o 4o t8 O 12 d t3 z O sq mx2 d x 3o a dd x: 4o
+7r L07: 6 +o dd a t3 W n t8 O z +o a x3 3o sq d a # xo O z N5
+7r L08: 4o t4 O 3o a d mx2 d O x: 6 mx2 sq x d a t3 dd 12 W dd # t8
+7r L09: O 12 d z t1 n x: +o eee D/ O N18 mx2 x: +o d O t8 n xo
+7r L10: dd 12 d 3o O 3o 6 dd 5o 3o 4o t3 t16 dd a t3 t2 12 a 3o a dd 12 d
+7r L11: z mx2 N9 d O t3 . W O xo dd x: # O t3 3o t13 N15 W O t8
+7r L12: O t3 a W b a t3 3o t4 n t17 O Le 4o t4 mx2 a mx2 x:
+7r L13: 3o N15 mx2 a Le 4o W O 6 N3 d 3o n t3 dd x: +o a x3 3o # O
+7r L14: N9 12 O 12 d O 3o x: mx2 a n x: 3o 12? dd 5o W t3 13? b eee a
+7r L15: d O t3 mx2 xo d a b a xo O +o 4o t8 12 6o O 3o +o 4o t3
+7r L16: x t1 mx2 a t3 dd x: sq dd 12 d sq dd d 3o d W mx2 N2? dd N17 mx2 x:
+7r L17: xo O +o 12 +o a xo 3o D/ n x: +o 4o W dd 3o .? W 12 6o dd x: 3o
+7r L18: mx2 12 d O t3 3o O t1 N3 6o O Lo 4o d 8 5o O t8 O t3? +o
+7r L19: a xo 3o sq d a # x3 O z W 12 6o dd # 6 sq O d +o , Lo .
+7r L20: mx t14 N3 Lo 4o
+7r L21: W O 8 12 O W t8 O t3 b d mx2
+7r L22: x: xo dd a z +o a O x: 3o +o 4o N15 13? dd a d O t3 3o d 4o
+7r L23: +o 12 xo +o O t1 a Le mx2 x: t1 mx2 a t3 a O 3o a O x: z
+7r L24: 8 12 O W 4o 6 mx d t1 4o 5o n . & W t18 d mx2 t8 n d
+7r L25: N17 O x: 3o . (
+7r L26: t6 W x: O t3 3o x: dd 12 5o O W t8 4o 8 12 4o W xo dd x: 8
+7r L27: 12 O 8 12 a W t5 12 dd 5o t3 +o dd a N17 O x: 3o O x: +o d
+7v L01: O N13 4o? d W mx2 N17 12 O d t4 4o t1 t13 a t3 z dd x: 3o O x:
+7v L02: 3o d O z N17 d mx2 x: +o O x3 t1 mx2 a x: x3 3o O 8 12 O
+7v L03: z z x: 4o W O 12 d z xo dd 12 d O x: 3o z 12 t? t3 4o 3o 6
+7v L04: N3 12 3o O t3 b dd a z x: O 12 dd 5o W t8 O x: 3o a W
+7v L05: xo? O x: 3o 4o # +o d O mx2 xo dd x: +o a 3o a N3 # +o 4o
+7v L06: sq n a N11 t3 a mx2 12 n x: 6 8 12 O W dd # 5o O & Lo mx
+7v L07: mx2 12 dd a d +o O 4o 12 W N11 t8 4o sq a O +o t1 dd x: 3o
+7v L08: W O 8 12 O W 4 z +o a xo 3o 8 5o a W O t3 t9 4o . sq . W .
+7v L09: 12 . t20 t3 . 3o a t1 O sq W 12 t3 8 12 O 3o dd 12 3o 4o t8 mx2
+7v L10: b d eee x: x3 O N9 dd 12 d W mx2 d 4o sq 12 3o mx2 6 t6 dd
+7v L11: # 8 5o a W 4o x: n (
+7v L12: a W mx2 3o dd 12 t3 a dd 12 d t3 z O N17 mx2 d x: a t3 dd # z
+7v L13: +o O x3 t2 O 12 t9 mx2 t8 4o # t8 n N17 12 6o O Lo 4o N5 .
+7v L14: mx 3o x: n 4o x: xo dd a d 4o z mx x: t4 a O x: z d 4o
+7v L15: a # 3o O N17 d O W mx2 +o a x3 3o 4o N17 12 6o O Lo mx
+7v L16: x: 6o x3 4o 13 W N10? +o O N15 dd 12 d +o 4o mx2 12 W N10? 4o
+7v L17: # xo mx 8 5o O W . t14 12 . d . t3 . a W t8 O 12 d . t3 . mx2 3o
+7v L18: dd 12 Le 12 xo 4o t3 t21 a dd 12 d t3 sq mx2 N13 4o z +o dd x: 3o
+7v L19: W O +o a x3 3o N9 O 12 sq W O 4o t3 3o b dd d 6 a
+7v L20: N2? mx O 3o sq W 12 .? t3 +o mx x3 N17 8 5o O W dd # t8 12 6o
+7v L21: mx2? dd t3 3o O d t8 O mx2 t1 O t3 8 12 a W mx2 12 dd
+7v L22: a 3o +o b mx2 xo dd # 8 & 4o W x N17 mx2 t3 x3 dd 12 N17
+7v L23: x: O 4o t3 3o mx # xo O z 3o 4o b n t3 dd x: 3o dd 12 3o
+7v L24: O +o 4o t3 mx2 d t1 fs (
+8r L01: a O x: 3o 4o # +o t5 t1 dd x: t3 a O 1? d 8 12 4o W O d
+8r L02: dd 6o 4o # 12 N3 6o O b d eee # xo a t3 8 12 O N15 n d
+8r L03: x: eee +o a # 4o 3o n 12 W 3o d O z xo eee sq a 3o
+8r L04: t13 a Lo mx t3 O x: sq a O +o t1 dd # 3o sq dd 12 d
+8r L05: 6o x3 dd # +o 12 a d O x: 4o 12 b t5 t1 a Le 4o z xo
+8r L06: t2 x d N17 O t3 +o 4o b d dd t1 O x: 3o 8 12 O W
+8r L07: dd # 6o 12 4o 12 W 3o b eee d . a d O sq eee N13 4o
+8r L08: sq x d t1 12 W O 3o t5 t4 . t22 +o . (
