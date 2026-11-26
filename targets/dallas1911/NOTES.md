@@ -8,6 +8,8 @@ Status: in progress. Not written up: by the README read bar 91 of the 114 cipher
 period key card CMXV.16.1557.1 scan 4 (issue #520, 14 Nov 2026) confirmed the values that rested on row structure and
 context (67/114 = 58.8% before); the other 23 rest on emendations, one value not on the card (bk) or an illegible end,
 and the emendations can still be tested against other letters in the same key (see Remaining gaps), so the gaps are workable.
+Next step (write-up pass, 24 Nov 2026, still no page): search the CEHM catalogue (Fondo CMXV) for further letters marked
+"Clave: la de Dallas" and test the 22 emended or bk words on them; the Oct 2026 CEHM sweep hits hold no other letter in this key.
 
 ## Documents
 

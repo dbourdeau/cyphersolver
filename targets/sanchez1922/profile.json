@@ -137,6 +137,12 @@
    "kind": "verification",
    "what": "Integration check by the repository: check_marks.py reproduced (22 verbatim, 7 repaired, 3 holes of 32 words); own decoder from the rule (key 313, restart per word) gives the same decryption of all 11 runs; CEHM images 0001 and 0002 compared with the transcription, all 11 runs agree. Narváez 2015 not read by the integrating session. Class read in part (68.8%) stands.",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "verification",
+   "what": "Issue #942 (Andrew Beling): a slip in blue ink filed with the Wellington letter (DCXXI.6.588.1 image 0001) lists W01-W10 in order, with 'Mixteca Baja', 'Lic. ?ulas' (probably Julas) and 'Manuel Cortez'; it differs from the signs in those three places. Integration review: VAIA, YULAS, CORCU decoded again by hand; the slip opened and read the same way. Owner's decision: W08 YULAS counted read (23 of 32, 71.9%); the slip is not used as a gloss; W06 and W10 stay holes with Baja and Cortés offered. check_marks.py: 23 verbatim, 7 repaired, 2 holes.",
+   "result": "partial"
   }
  ],
  "outcome": {"validation": {"date": "2026-11-13", "verdict": "not applicable", "notes": "A Gronsfeld-type key (shift by position in the word) is not a letter-to-value table, so the token-by-token n-gram validation does not apply; the key is a published one (Narváez 2015) applied unchanged to a whole letter, with 177 of 185 letters of the identified words exact."}, 
@@ -147,9 +153,9 @@
   "contribution": [
    "transcription"
   ],
-  "fraction_read": 0.688,
+  "fraction_read": 0.719,
   "fraction_read_method": "measured",
-  "fraction_read_source": "32 cipher words of this letter: 22 verbatim, 7 repaired, 3 holes.",
+  "fraction_read_source": "32 cipher words of this letter: 23 verbatim, 7 repaired, 2 holes (W08 YULAS counted read on 24 Nov 2026, issue #942; 22 and 3 before).",
   "verification": [
    "independent verification",
    "key confirms",
@@ -177,6 +183,13 @@
     "note": "11 runs from the CEHM-Carso images",
     "date": "2026-11-12",
     "source": "PR #512 (dbourdeau/cyphersolver)"
+   },
+   {
+    "who": "ajbeling",
+    "role": "verification",
+    "note": "further reading: W08 YULAS shown exact from the signs and counted read; the slip filed with the Wellington letter (DCXXI.6.588.1 image 0001) found, with Baja and Cortés offered for W06 and W10",
+    "date": "2026-11-24",
+    "source": "issue #942 (dbourdeau/cyphersolver)"
    }
   ],
   "texts": [
@@ -189,15 +202,15 @@
     "translation": "translation_DCXXI.3.323.1.md",
     "language": "es",
     "state": "not prose",
-    "summary": "General Landeros has died in the district of Huejotzingo; the friends agree to group together to 'nombrar una junta'; a newspaper, 'El Látigo', is to be printed in neighbouring Tlaxcala; Figueroa had an incident in Veracruz; an act came from the Mixteca of Oaxaca; greetings from Miguel Gutiérrez Goitia, Manuel Márquez, Arturo Osorio, Rodolfo Urdapilleta, Francisco Machorro and a Lic. [?]; cover address Sr. Manuel [?], Plazuela Parral # 1, Puebla; signed F. Sánchez.",
-    "note": "Not prose: 11 runs (names, a place, a newspaper title and one three-word phrase) in a letter in clear Spanish, each given in its clear sentence with an English translation. Words: 32 cipher words, 22 verbatim from the signs (68.8%), 7 with a marked repair, 0 from a gloss, 3 holes (VAIA, YULAS, CORCU).",
+    "summary": "General Landeros has died in the district of Huejotzingo; the friends agree to group together to 'nombrar una junta'; a newspaper, 'El Látigo', is to be printed in neighbouring Tlaxcala; Figueroa had an incident in Veracruz; an act came from the Mixteca of Oaxaca; greetings from Miguel Gutiérrez Goitia, Manuel Márquez, Arturo Osorio, Rodolfo Urdapilleta, Francisco Machorro and a Lic. Yulas; cover address Sr. Manuel [?Cortés], Plazuela Parral # 1, Puebla; signed F. Sánchez.",
+    "note": "Not prose: 11 runs (names, a place, a newspaper title and one three-word phrase) in a letter in clear Spanish, each given in its clear sentence with an English translation. Words: 32 cipher words, 23 verbatim from the signs (71.9%), 7 with a marked repair, 0 from a gloss, 2 holes (VAIA, CORCU; W08 YULAS counted read on 24 Nov 2026, issue #942).",
     "reading_review": {
      "grade": "B",
      "by": "independent AI language-model agent (blind review)",
      "date": "2026-11-13",
      "note": "The key holds and the runs read in their clear sentences: 6 of 9 context sentences without holes, the other 3 with one hole each; 3 holes and 7 marked repairs in 32 cipher words."
     },
-    "read_share": 0.688
+    "read_share": 0.719
    }
   ],
   "key_file": [
@@ -208,17 +221,12 @@
    {
     "item": "W06 'ybld' (VAIA) in 'la Mixteca, [?], de Oaxaca'",
     "blocker": "too-short",
-    "detail": "One occurrence. The reviewer suggests 'Baja' (the Mixteca Baja of Oaxaca); with the third shift 2 instead of 3 the word gives VAJA. Offered as [?Baja], counted as a hole."
-   },
-   {
-    "item": "W08 'bvñdt' (YULAS), the name after 'Lic.'",
-    "blocker": "too-short",
-    "detail": "One occurrence; no single-shift change gives a name we can confirm."
+    "detail": "One occurrence. The reviewer suggests 'Baja' (the Mixteca Baja of Oaxaca); with the third shift 2 instead of 3 the word gives VAJA. Offered as [?Baja], counted as a hole. The slip filed with the Wellington letter (issue #942) has 'Mixteca Baja'; not used as a gloss."
    },
    {
     "item": "W10 'fpufv' (CORCU), the surname in the cover address",
     "blocker": "illegible",
-    "detail": "The pencil note at the foot of p. 2 that seems to decode this address ('Manuel Co/Ro z[a]...') is overwritten at the surname."
+    "detail": "The pencil note at the foot of p. 2 that seems to decode this address ('Manuel Co/Ro z[a]...') is overwritten at the surname. The slip filed with the Wellington letter (issue #942) has 'Manuel Cortez': [?Cortés] offered, still a hole."
    },
    {
     "item": "Pen strokes over letters in W07 (xf, uu, lw, ut)",

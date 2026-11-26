@@ -749,3 +749,44 @@ disputed letters of the 11 April lower telegram (last point below); nothing else
 - **Not re-run:** `rally_key/verification/run_verify.py` needs `/usr/share/dict/words`, absent here (its printed
   plaintexts equal ours); the key-search scripts need the Official Records text. The frozen hashes of the two helper
   transcriptions and of the test plan match the files; the order of events is by the contributor's record.
+
+## 24 Nov 2026 - three blind sign sheets on vol. 196 fr. 0018, 0065, 0071, 0064, 0056 (Brice Dudout, with Claude), `dudout/sign_check_2411/`
+The targets are 39 glyphs where the aided alignment's letter differs from the letter COME RETRIBUTION predicts. The
+rules were hashed before the thumbnails, and the controls passed 9/9. The key and the alignments are unchanged.
+
+- **Re-read as the key predicts:** 29 glyphs.
+- **Confirmed as the clerk's own divergence:** 8.
+- **Unresolved:** 2.
+- **Words no longer marked [?]** (read_measure and reading files): fr. 0018 22 -> 28 of 44; 0065 11 -> 15 of 18;
+  0071 9 -> 12 of 14; 0064 8 -> 9 of 13; 0056 (D. W. Adams) 19 -> 22 of 27. read_share is updated in `profile.json`.
+- States are left to the maintainer. No image is committed.
+- **States set at integration (owner's decision, 24 Nov 2026):** fr. 0071 is read by the short-text floor (14 cipher words,
+  2 holes: SELMA, MONTGOMERY; `floor_used` in `profile.json`). The other four stay read in part. The target class stays read in
+  part, as 12 documents are still read in part.
+
+## 25 Nov 2026 - blind sign sheets D and E on fr. 0018 (Brice Dudout, with Claude), `dudout/sign_check_2511d/`
+Sheet D continues sheet A on the Taylor to Beauregard telegram of 10 Feb 1865 (vol. 196 fr. 0018), groups 14-48.
+Groups 26-49 were segmented by eye for this sheet; the g23p5 box of sheet A was recomputed. The rule was hashed before
+any thumbnail was cut (`sheet-D-rule.md`, 4b0bc29d...; amendment 1 re-cropped two V examples before any answer). The key
+and the alignment are unchanged. Merged as PR #982; integrated 26 Nov 2026.
+
+- **Sheet D (12 targets, controls 3/3; in `outcome.sign_check`).** Re-read as the key predicts: 7 (F g29p2, g29p5,
+  g35p4; L g32p2, g37p1, g48p3; M g34p1). Confirmed as the clerk's own divergence: 4 (g14p2 I, g23p5 C, g27p2 G,
+  g31p1 R). g5p1: "none / other form", followed up on sheet E.
+- **Sheet E (3 targets, controls 3/3; under the 8-sign minimum, so here and in a solution step only).** g5p1, g17p5 and
+  g28p1 all Z. g5p1 is this clerk's Z written once with an irregular stroke; no new letter. The "TL" option on three
+  questions is g5p1 itself, so the Z call rests on the choice of Z over T and L. No word changes (BRIGADES stays marked
+  for g4p1).
+- **Before / after (owner rule of 25 Nov: a blind shape call may move read_share when NOTES and a step give the
+  counts).** Words without [?]: 28 -> 34 of 44 (MOBILE, THAN, SENT, EAST, BUT, FURLOUGHS unmarked; `owner-files.patch`
+  applied to the read_measure and reading files). Glyphs agreeing with the key: 185 -> 192 of 203 after D, 193 after E.
+  read_share 0.6364 -> 0.7727.
+- **Still marked (10):** AND, OF (g19p1), not on a sheet; BRIGADES (g4p1 F2); THEIR, MEN, VERY (clerk's divergences,
+  sheet A); RETURNING, LITTLE, SERVICE, QUICKER (clerk's divergences, sheet D). All read by sense.
+- **State set at integration (26 Nov 2026):** fr. 0018 "decoded, not read" -> **read in part** by the house bar: 44
+  cipher words, above the short-text floor, all read by sense in coherent sentences, 34 sure. Brice's "under 300 cipher
+  letters, no change to read" is his own rule and is not applied. 12 documents are now read in part (count from `profile.json`); the target class
+  stays read in part.
+- **Redactions (declared, not checked):** the committed `sheet-D-answers.json` (remark at q11) and `sheet-E-rule.md`
+  (the same remark quoted) are redacted; the original hashes are 61d312fe... and 12d17840... The glyphs on the NARA
+  frame and the new boxes for groups 26-49 were not checked by the integration review.

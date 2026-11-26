@@ -1,0 +1,80 @@
+# The sign 2 with a superscript in doc. 192: form seen at each of its 67 places (21 Nov 2026).
+# reading = the consonant the reading takes there (b = one of the 14 places of 192-repairs.tsv, c = the key's value).
+# Round 1: two Claude instances, each shown only the sign cut out of the image (x8), no reading, no key, no neighbours.
+#   Criterion written and hashed before the survey (sha256 c4488fdc...): from the top of the sign only,
+#   R = curved head as in a printed 2, Z = flat bar meeting the diagonal at a corner, D = doubtful.
+# Round 2: two further instances, each shown the boxed sign with the signs beside it for scale, no reading, no key.
+#   Criterion written after round 1 had been joined to the readings (sha256 7aeec299...), so not a first look:
+#   S = squat 2, lower than its neighbours, small hooked head, long base; T = tall z; D = doubtful.
+#   Bar set before round 2: rename a token only if both readers give S, and only if both give S at no more than 3 of
+#   the 53 places read c. Both gave S at 4, so no token is renamed.
+# The boxes were placed by two other instances that had the transcription and were told not to judge shape.
+# context = the output of decode.py (declared repairs applied) for three signs either side, the sign itself in <>.
+line	index	token	reading	round1_A	round1_B	round2_C	round2_D	context
+R01	28	2^5	c	Z	Z	T	D	g ni fi <ca> i a l
+R02	5	2^1	b	R	R	D	D	s t ri <bu> i re le
+R02	32	2^2	b	Z	D	S	S	re i n <bo> r go g
+R02	44	2^2	b	R	Z	S	S	no r di <bo> r bo na
+R02	46	2^2	b	R	R	S	S	di bo r <bo> na con =8
+R02	50	2^4	c	R	R	T	T	na con =8 <ce> n to la
+R02	55	2^4	c	Z	Z	T	T	to la n <ce>
+R03	18	2^5	c	D	D	D	D	i no da <ca> sa non sa
+R04	19	2^2	c	R	R	S	S	n pe ri <co> lo si fu
+R04	36	2^2	c	Z	Z	T	T	gg i di <co> c ta da
+R05	3	2^4	c	Z	Z	D	D	fe li <ce> me n te
+R07	36	2^2	c	Z	Z	D	T	=11 con la <co> pi a de
+R08	10	2^5	c	Z	D	T	D	g ni fi <ca> ti va de
+R09	2	2^4	c	Z	Z	T	T	ne <ce> ss a ri
+R09	26	2^4	c	R	R	S	D	per de li <ce> r ra di
+R09	41	2^2	c	Z	Z	D	D	de l #4 <co> l qua le
+R10	21	2^2	c	Z	Z	S	D	que s ta <co> sa mo le
+R11	18	2^5	c	Z	Z	T	T	da u n <ca> n to lo
+R11	39	2^2	b	R	R	S	S	no i n <bo> r go g
+R12	35	2^4	c	Z	Z	T	T	n te di <ce> n do mi
+R12	43	2^1	c	Z	Z	T	T	si e x <cu> sa no co
+R12	46	2^2	c	R	R	D	D	cu sa no <co> l di re
+R13	20	2^3	c	Z	Z	T	D	e x r <ci> to a n
+R14	21	2^2	c	Z	Z	T	T	n pe ri <co> lo ne per
+R15	11	2^2	c	Z	Z	S	D	u no a <co> ta da mo
+R15	24	2^1	c	D	D	D	D	h e x <cu> sa r si
+R15	37	2^2	c	Z	D	D	D	e qua l <co> sa de ll
+R17	3	2^3	c	Z	Z	T	T	con s <ci> i se li
+R17	36	2^3	c	Z	Z	T	D	le con s <ci> e n ti
+R20	51	2^1	c	Z	Z	T	D	a ss i <cu>
+R21	15	2^3	c	Z	Z	T	T	p ri n <ci> pe non de
+R21	25	2^4	c	R	R	S	S	ro più ri <ce> p t a
+R21	33	2^3	c	Z	Z	T	T	i ni mi <ci> lo ro
+R22	46	2^3	c	R	R	T	D	no che non <ci> e
+V02	10	2^5	b	Z	D	S	S	va i m <ba> r ca to
+V02	12	2^5	c	D	R	T	D	m ba r <ca> to e u
+V02	43	2^2	c	R	R	S	S	na ta le <co> x ne e
+V03	2	2^5	c	Z	Z	T	T	a <ca> le s et
+V03	42	2^5	b	Z	Z	S	S	ra i m <ba> r ca to
+V03	44	2^5	c	R	R	T	D	m ba r <ca> to i n
+V04	28	2^1	b	R	Z	S	S	s t ri <bu> i to e
+V05	6	2^2	c	D	D	D	D	di ta et <co> su ? ?
+V05	12	2^4	c	D	D	D	D	? no le <ce> se de r
+V05	18	2^1	c	Z	Z	T	T	r re se <cu> re et le
+V05	38	2^3	b	Z	Z	T	T	a da du <bi> ta re di
+V06	37	2^2	c	Z	Z	T	T	n ri s <co> n t ro
+V06	46	2^4	c	Z	Z	T	T	mi la =5 <ce> n to
+V07	3	2^4	c	Z	Z	T	T	la n <ce> et =14 mi
+V07	17	2^3	c	R	R	T	D	x e r <ci> to non e
+V07	30	2^4	c	Z	Z	T	T	si ne li <ce> n ti a
+V08	13	2^3	c	Z	Z	T	T	la i n <ci> a m pa
+V08	20	2^2	b	R	R	S	S	r na et <bo> r go g
+V09	19	2^4	b	R	R	S	S	? o li <be> ra me n
+V09	32	2^1	c	Z	Z	D	D	a l se <cu> ro et se
+V10	1	{2^3/t^3}	c	D	D	D	D	<ci> mo vo no
+V10	15	2^3	c	Z	Z	T	T	si no i <ci> ba tt e
+V10	16	2^5	b	R	R	S	S	no i ci <ba> tt e re
+V11	3	2^5	c	Z	Z	T	D	? r <ca> lo s pi
+V13	13	2^4	c	Z	D	D	D	con pi a <ce> re #2 do
+V13	19	2^2	c	Z	Z	T	T	do g ni <co> sa et SuaMaestà
+V14	2	2^4	c	R	R	S	S	li <ce> ru ti a
+V14	23	2^2	c	Z	Z	T	T	ne ga re <co> sa ne ss
+V15	9	2^1	b	Z	Z	S	S	i n ? <bu> o n ri
+V15	21	2^5	b	R	R	S	S	tanto tu r <ba> me n to
+V16	31	2^2	c	Z	Z	T	T	c te le <co> se i n
+V18	19	2^4	c	Z	Z	D	D	o li con <ce> da g ra
+V18	42	2^3	c	R	D	D	D	ll a fa <ci> li ta che

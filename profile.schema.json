@@ -218,6 +218,31 @@
             "note": {"type": "string"}
           }
         },
+        "sign_check": {
+          "type": "array",
+          "description": "Verification level 'AI decipherment, human-checked on a sample of signs' (method page, 18 Nov 2026). A person picked, blind, the shape they see for signs chosen by a rule written before the sheet: one boxed sign per question, options cut from the same document plus 'none / other shape', 'illegible' and 'not a sign', no gloss, reading, value or place shown, and known-answer controls mixed in. The signs are chosen because they are doubtful: a diagnostic, not a random sample. It checks sign shapes, not the key or the reading. It never changes class or state (class still follows the read bar); it may move read_share only where a blind human call on a glyph's shape removes a [?] mark, and then NOTES and the solution step give the read counts before and after (owner's rule, 25 Nov 2026). A sheet with fewer than 8 target signs does not get a sign_check record: it goes to NOTES and a solution step only. Not a human_check: a model may have built or scored the sheet, and model_roles says so. Minimum for the level: controls >= 2, all passed (an answer 'none / other' on a control is a failure); signs_checked >= 8 after removing answers a faulty thumbnail touched; the rule in NOTES dated before the answers.",
+          "items": {
+            "type": "object",
+            "required": ["date", "checker", "checker_kind", "model_roles", "signs_checked", "controls", "controls_passed", "rule"],
+            "properties": {
+              "date": {"type": "string", "description": "Date the answers were given."},
+              "checker": {"type": "string", "description": "The person who answered."},
+              "checker_kind": {"type": "string", "enum": ["project", "external"], "description": "project = a maintainer or a contributor of the reading; external = someone outside the project."},
+              "model_roles": {"type": "array", "items": {"type": "string", "enum": ["rule", "thumbnails", "sheet", "scoring", "remarks"]}, "description": "What a model did: wrote the selection rule, cut the thumbnails, built the sheet, scored the answers, interpreted free-text remarks. Empty when a person did all of it."},
+              "signs_checked": {"type": "integer", "minimum": 0, "description": "Target signs counted, controls not included, after removing answers a faulty thumbnail touched."},
+              "controls": {"type": "integer", "minimum": 0},
+              "controls_passed": {"type": "integer", "minimum": 0},
+              "as_transcribed": {"type": "integer", "minimum": 0, "description": "Signs the checker saw as transcribed."},
+              "corrected": {"type": "integer", "minimum": 0, "description": "Signs the answer corrected; the transcription or reading is recoded or marked."},
+              "unresolved": {"type": "integer", "minimum": 0, "description": "Answers 'none / other', 'illegible' or 'not a sign' that leave the sign open."},
+              "not_counted": {"type": "integer", "minimum": 0, "description": "Answers removed because a thumbnail was wrong."},
+              "rule": {"type": "string", "description": "Where the selection rule is written (NOTES section), with its date."},
+              "rule_hash": {"type": "string", "description": "SHA-256 of the rule, the targets and the controls, committed before the answers."},
+              "sheet_faults": {"type": "string", "description": "Every thumbnail or sheet error found afterwards."},
+              "note": {"type": "string"}
+            }
+          }
+        },
         "validation": {"type": "object", "required": ["date", "verdict"],
      "description": "Result of docs/_validate.py: the reading's n-gram score against two nulls, random keys of the same structure and the same key refitted to a shuffled ciphertext (the overfitting test).",
      "properties": {

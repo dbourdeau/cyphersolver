@@ -1,6 +1,38 @@
 {
  "keys": [
   {
+   "id": "k-humphreys1799",
+   "label": "David Humphreys's code, 1791-1801 (Boyd's Code No. 8?): one-part code of about 1,600 numbers, table rebuilt by Andrew Beling",
+   "kind": "rebuilt here",
+   "by": "Andrew Beling, with AI agents",
+   "year": 1799,
+   "note": "686 groups rebuilt from 3,368 pairs: the State Department clerks' decipherments of Humphreys's despatches (1791, 1800-01) and printed decoded texts; frozen and tested on No. 262 (129 of 135 groups). 994 the, 240 of, 1436 full stop. targets/humphreys1799/key/table_frozen_v1.tsv."
+  },
+  {
+   "id": "k-lopezmendez1819",
+   "label": "López Méndez to Bolívar, 1819: letters with digits above, partial table fitted to context (WAINUT)",
+   "kind": "rebuilt here",
+   "by": "WAINUT, with AI agents",
+   "year": 1819,
+   "note": "20 values from 70 signs, e.g. e1 b, e2 f, e3 l, e4 r, e5 t, e6 v, e7 y, l a, a n, m1 c, t3 s. Fitted to words suggested by the clear text (3 Nov 2026); consistency only, not a recovered key."
+  },
+  {
+   "id": "k-eaglepass1917",
+   "label": "Mexican embassy to the consuls, April 1917: reciprocal alphabet, the keyword TIRANO folded (recovered by Andrew Beling with AI agents)",
+   "kind": "rebuilt here",
+   "by": "Andrew Beling, with AI agents",
+   "year": 1917,
+   "note": "A-X, B-U, C-S, D-Q, E-P, F-M, G-L, I-Z, N-W, O-V, R-Y, T alone; TIRANOBCDEFGHJKLMPQSUVWXYZ folded through T. Recovered from the 246 cipher letters by simulated annealing (23 Nov 2026); the TIRANO construction found afterwards."
+  },
+  {
+   "id": "k-vittoria1686",
+   "label": "Vittoria Gonzaga's letters, 1686-1691: alphabet numbered in fives with neighbouring pairs swapped (rebuilt by WAINUT and Matthew Kennedy)",
+   "kind": "rebuilt here",
+   "by": "WAINUT; Matthew Kennedy",
+   "year": 1686,
+   "note": "a 10, b 5, c 20, d 15 ... t 85; o mostly 7, u/v 2, z 3; a stroke doubles a letter; thirteen code groups, five valued (104 che, 159 per, 13 et, 182 V.E., 109 Duca). Built by hand from cc. 3v and 4r by WAINUT (3 Nov 2026); completed by Matthew Kennedy (21-23 Nov 2026); code values graded after the fifth letter (24 Nov 2026)."
+  },
+  {
    "id": "k-fiedmond1779",
    "label": "Guiana code of 1779-1780 (Fiedmond): numerical nomenclator, key K-Guy1780c (rebuilt by Brice Dudout)",
    "kind": "rebuilt here",
@@ -23,6 +55,22 @@
    "by": "Andrew Beling",
    "year": 1797,
    "note": "Numerical code of about 1,600 groups for words, syllables and letters; 764 groups rebuilt from the State Department clerks' interlinear decipherments on 72 frames of NARA M30 rolls 4-8 (targets/king1797/key.tsv). The 723 groups frozen first were tested once on the held-out despatch No. 59: 0.946 of covered groups against 0.165 for the best of 200 shuffled keys. Eight values rest on the context of No. 29 alone."
+  },
+  {
+   "id": "k-delacroix1797",
+   "label": "French foreign ministry code of Delacroix's despatch No. 5, 1797 (draft marked F): partial table rebuilt by Andrew Beling",
+   "kind": "rebuilt here",
+   "by": "Andrew Beling",
+   "year": 1797,
+   "note": "Numerical code for words, syllables, letters and names, numbers 2 to 1198 in this letter; 297 numbers given a value by laying the ministry's clear draft of the despatch (Archives diplomatiques, 39CP/48 ff. 41r-42r) on the 653 groups of the American copy (targets/delacroix1797/beling2026/key/code_table_F_partial.tsv). 136 values are confirmed by two or more agreeing uses, 148 rest on one use in this letter, 13 are unsure. A table fitted on the first 568 groups predicted 36 of 43 values in the last 85 (shuffled keys at most 18). No table of this code is known and no second text in it."
+  },
+  {
+   "id": "k-barlow1700",
+   "label": "Paris legation code of 1811-1813 (the = 1700): partial key rebuilt by Andrew Beling",
+   "kind": "rebuilt here",
+   "by": "Andrew Beling",
+   "year": 1811,
+   "note": "Numerical code of words and syllables, numbers 7 to 1700; 623 values rebuilt from ten letters deciphered at the time (NARA M34 roll 16, the Library of Congress, a sale photograph), every source read again by two AI readers (targets/barlow1812/key.tsv). 290 values rest on one occurrence. Not validated by a held-out test; the statistical validation is underdetermined. No key sheet of this code is known."
   },
   {
    "id": "k-lee1813",
@@ -514,6 +562,30 @@
    "by": "cyphersolver",
    "year": 1797,
    "note": "Values taken from the clerks' interlinear decodes of Murray's 1797-98 despatches (NARA M42 reel 4) and Wagner's decode of the 18 May 1801 postscript; six checked on the frames (26 Oct 2026)."
+  },
+  {
+   "id": "k-dana1783",
+   "label": "Dana's cipher of October 1782: the three alphabets, recovered from despatch No. 23 by WAINUT",
+   "kind": "rebuilt here",
+   "by": "WAINUT",
+   "year": 1783,
+   "note": "Three alphabets of 27 signs (a to z and &) used in turn, a letter a number from 1 to 27; recovered from the eight cipher lines of No. 23 alone (27 Oct 2026) and written WIN in Lovell's convention. Brice Dudout broke the same alphabets independently the same day. They are the three columns of Dana's own table (k-dana1782-table). targets/dana1783/key.txt."
+  },
+  {
+   "id": "k-dana1782-table",
+   "label": "Francis Dana's cipher table of October 1782 (key word War)",
+   "kind": "contemporary key",
+   "by": "Francis Dana",
+   "year": 1782,
+   "note": "Dana's own sheet, Papers of the Continental Congress, item 89 vol. 2, p. 656, with a clerk's copy in item 109: three alphabet columns headed W, a, r and 78 words numbered 30 to 263, three numbers each; a number above 27 starts the key word again. Found after the break by Brice Dudout; the clerk's copy by Andrew Beling. The word list is transcribed in targets/dana1783/key.txt (a model's reading of the sheet)."
+  },
+  {
+   "id": "k-dana-no1",
+   "label": "Francis Dana's earlier key sheet \"No. 1\" (25 signs, words numbered 26 to 52)",
+   "kind": "contemporary key",
+   "by": "Francis Dana",
+   "year": null,
+   "note": "Papers of the Continental Congress, item 59 vol. 1, pp. 137-138: a 25-sign table (a to z without j and v, plus &) in three columns and a word list numbered 26 to 52. A different scheme from the table of October 1782 (targets/dana1783/NOTES.md, section 6)."
   },
   {
    "id": "k-mountflorence1801",
@@ -4857,6 +4929,14 @@
    "note": "A typed key sheet in the Francisco Leon de la Barra papers, tested both ways on the 1912 and 1913 telegrams of the same fonds: no Spanish. Date not established."
   },
   {
+   "id": "k-gondi1649",
+   "label": "Gondi's Tuscan letter cipher of 1649 (rebuilt here): digit vowels, consonants as a digit plus 0, barred signs and 2xx codes",
+   "kind": "rebuilt here",
+   "by": "WAINUT (AI agents)",
+   "year": 1649,
+   "note": "Read off the contemporary interlinear decipherment of lines L00-L06 of c. 1r, frozen, and tested on L07-L13 (139 of 148 units). Several signs stand for two letters; 5 8 unread, 273 from context. targets/gondi1649/key.tsv."
+  },
+  {
    "id": "k-riva-k3",
    "label": "The Riva table K3, 1721-1727 (rebuilt by Malcolm McBratney): syllabic numbers 1-95 with a nomenclator",
    "kind": "rebuilt here",
@@ -5054,6 +5134,14 @@
    "note": "Two-figure groups in alphabetical runs plus a second run, two code groups (67 Archiduque, 72 Principe de Darmstadt); built from 32 glossed words of 25067, frozen, 9 of 10 held-out words of 25069 right; groups 34 and 56 not attested by a gloss (key partial in those two)."
   },
   {
+   "id": "k-claudiamedici1646",
+   "label": "Claudia de' Medici's letter cipher to Piccolomini, 1646, key rebuilt from the glosses of inv. 24784 and 24796",
+   "kind": "rebuilt here",
+   "by": "WAINUT",
+   "year": 1646,
+   "note": "Simple substitution, 21 letter signs (two for i) and five code groups (18 Duca di Lorena, 34 S.A., 37 Re, 57 S.M.ta Catt., iio V.E.); 42 glossed words, frozen, 13 of 13 held-out words of 24786 agree in sense; agrees with Vlnas 2017 table 5 (from inv. 24790). targets/claudiamedici1646/key_frozen.tsv."
+  },
+  {
    "id": "k-juel1647",
    "label": "Peder Juel's 8-64 number table (letters to the chancellor, 1647-48), key rebuilt from glossed letters of 1648",
    "kind": "rebuilt here",
@@ -5136,6 +5224,15 @@
    "note": "Cipher = plain + 3, +1, +3, +3, +1, +3 ... over A-N, Ñ, O-Z, restarting at every word in the letter read here. Published by Narváez for the Wellington letter of the Félix Díaz fondo; named in clear in DCXXI.3.323.1 (\"haga uso de la 313\"). The key 103, which that letter says was dropped, was tried and gives no sense."
   },
   {
+   "id": "k-narvaez-argumedo",
+   "label": "Argumedo's two-digit letter table over the 27-letter Spanish alphabet, E=01 ... Z=23, A=34 ... D=37 (Narváez 2015)",
+   "kind": "scholar's key",
+   "by": "Roberto Narváez",
+   "year": 1921,
+   "found": 2015,
+   "note": "One two-digit number for each letter (E=01 ... N=10, Ñ=11, O=12 ... Z=23, A=34, B=35, C=36, D=37), used by Cristóbal Mateo Argumedo for names and key words inside letters in clear to Félix Díaz, Oct 1921 (CEHM-Carso DCXXI.3.244.1 and 3.250.2). Printed by Narváez, Documenta & Instrumenta 13 (2015), p. 122. Codes 24-33 do not occur in the two letters."
+  },
+  {
    "id": "k-clave-extra3",
    "label": "Clave Extra 3, two-figure groups of the Constitutionalist Army of the Northeast, 1914 (rebuilt from the pencil decipherment of LXVIII-1.14.1943.1)",
    "kind": "rebuilt here",
@@ -5184,6 +5281,14 @@
    "note": "A mixed nomenclator (numbers 10 to 114 and 241-242 with letter-syllable signs, homophones for letters, syllables and whole words). 74 groups for I 242,29: 66 matched with a contemporary clear text, 8 without a sure value (U01, 101, 114, 241, e, fo and the looped signs 28~ and 58~). Key partial; no key sheet of the series is known."
   },
   {
+   "id": "k-sarzana1477",
+   "label": "Sforza informer at Sarzana: homophonic key rebuilt from R5562",
+   "kind": "rebuilt here",
+   "by": "Daniel Bourdeau with Claude",
+   "year": 1478,
+   "note": "About 35 signs, one to three per letter; underlined rr4 = o, S = h; o-with-cross, 6 and 10 are nulls between doubled letters. Annealed from R5562 alone."
+  },
+  {
    "id": "k-qaysarani1350",
    "label": "Ibn al-Qaysarani's sign alphabet for the verses on Penn LJS 51 f. 106v",
    "kind": "rebuilt here",
@@ -5208,15 +5313,211 @@
    "note": "Numbers for letters, syllables, words and names, no alphabetical order. Indexed from the interlinear decipherment of the cipher passages of SHD GR A1 3457 pieces 179-180 (LAC copy, reel C-12578); conflicting values kept; two numbers with unsettled digits kept out; 52 further values from the 1756-1759 letters in the same code kept apart (key/W_sibling_values.tsv). Not the key sheet of the time."
   },
   {
+   "id": "k-butzbach1641",
+   "label": "Number key strip, Landgraf Philipp of Hesse-Butzbach's papers (HStAD D 4 Nr. 76/6)",
+   "kind": "archive key",
+   "by": "unknown hand, in the same file as the cipher sheet",
+   "year": null,
+   "note": "a=11 ... z=34 in alphabetical order (24 letters), on a small strip on view 11; 38 = o and 39 = u are not on it and were deduced from the sheet."
+  },
+  {
+   "id": "k-charlesv1554",
+   "label": "Charles V's French cipher to Simon Renard, 1549-54, as re-derived from Besançon Ms 1582 f. 2",
+   "kind": "rebuilt here",
+   "by": "cyphersolver (Brice Dudout)",
+   "year": 1554,
+   "note": "The cipher is Eva Pich-Ponce's (Cuadernos de Historia Moderna 49, 2024): numbers for letters, and for a syllable the letter before its consonant with a vowel mark. This table was re-derived from the decipherment on the leaf before her article was found and agrees with her structure; her table was compared (counts in the notes), not applied, and the re-derived key is partial (no, po, two double labels, rare signs). The project's statistical validation is underdetermined."
+  },
+  {
+   "id": "k-breant1673",
+   "label": "Louvois - Réveillon nomenclator, 1673-74 (rebuilt from the decipherments on Bréant's letters)",
+   "kind": "rebuilt here",
+   "by": "cyphersolver (Brice Dudout)",
+   "year": 1673,
+   "note": "Numerical syllabic nomenclator, groups 6-319, approximately alphabetical (a = 55 ... z = 316), with whole words, a few homophones and three name codes; 90 groups rebuilt from the contemporary interlinear decipherment of two letters (61 sure, 27 seen once, 2 inferred). Not independently tested: a pre-registered test on Louvois's letter of 19 Mar 1674 was not measurable (282 gloss letters, 300 required)."
+  },
+  {
    "id": "k-morier1808",
    "label": "Morier 1808 figure key: homophonic, figures 2-99 for letters, 62 figures",
    "kind": "rebuilt here",
    "by": "Brice Dudout, with an AI model, from the ciphertext alone",
    "year": 1808,
    "note": "Two to five figures a letter, u/v and i/j merged, a few 3-4 figure code words (8674 Persia). Annealed on two copies of one letter and frozen; two held-out tests. Not the page,word code of Jones's 1802 book."
+  },
+  {
+   "id": "k-gowna1920",
+   "label": "Gowna police telegram cipher key",
+   "kind": "rebuilt here",
+   "by": "Larry Beck",
+   "year": 1920,
+   "note": "Reciprocal table recovered from the damaged ciphertext using a dictionary and historically informed substitution design."
+  },
+  {
+   "id": "k-meza1901",
+   "label": "Meza Salinas to Bernardo Reyes cipher key",
+   "kind": "rebuilt here",
+   "by": "Anna Beck and Larry Beck",
+   "year": 1901,
+   "note": "Contributors report using the Spanish plain-text context of the same letter. A separate period decipherment attests three cipher slips."
+  },
+  {
+   "id": "k-piccolomini25054",
+   "label": "Piccolomini letter 25054 cipher key",
+   "kind": "rebuilt here",
+   "by": "Anna Beck and Larry Beck",
+   "year": null,
+   "note": "The number table draws on the period interlinear hints and Italian context. Its values were checked against a deciphered sibling."
+  },
+  {
+   "id": "k-dresdenj345",
+   "label": "Dresden cipher recipes cipher key",
+   "kind": "archive key",
+   "by": "Manuscript compiler",
+   "year": null,
+   "note": "The facing manuscript alphabet on f. 248v gives the sign values."
+  },
+  {
+   "id": "k-philadelphia10a132",
+   "label": "Latin conjuration in MS 10a 132 cipher key",
+   "kind": "rebuilt here",
+   "by": "Larry Beck, Mark Addis and Panos Archondakis",
+   "year": 1550,
+   "note": "A one-step Caesar shift over the 23-letter alphabet was identified from the ciphertext."
+  },
+  {
+   "id": "k-claver1497",
+   "label": "Juan Claver to the Catholic Monarchs cipher key",
+   "kind": "scholar's key",
+   "by": "Ivan Parisi",
+   "year": 1497,
+   "note": "Alberto Garvía García matched the symbols with Parisi’s published table for the Ferdinand–Escrivà correspondence."
+  },
+  {
+   "id": "k-lorenzana1432",
+   "label": "Bernardo d'Alamanno de' Medici's letter cipher, Lorenzana 1431-32 (25 signs), key rebuilt from the glosses of MAP V 140",
+   "kind": "rebuilt here",
+   "by": "Andrew Aymeloglu, with OpenAI Codex",
+   "year": 1431,
+   "note": "One sign for a letter, two for a, e, i, o and u; no code words. Twenty values from the decipherment written at the time over the letter of 8 December 1431 (MAP V, doc. 140), five from the letter of 17 April 1432 itself (targets/lorenzana1432/december-key.tsv, april-key.tsv)."
+  },
+  {
+   "id": "k-chateauneuf1691",
+   "label": "Châteauneuf's code at the Porte, 1691-94, rebuilt in part (KEY_v2, 183 numbers)",
+   "kind": "rebuilt here",
+   "by": "cyphersolver (Brice Dudout)",
+   "year": 1691,
+   "note": "A table of numbers from 3 to 368 for letters, syllables and words, used in the despatches of 1691-94 to the King and to Pontchartrain. Rebuilt by Brice Dudout's agents from the decipherment written at the time over the letter of 17 January 1694 (Archives nationales AE/B/I/381 f. 376), frozen as KEY_v1 and measured once on the letter of 21 September 1694 (f. 452): 0.830 of characters against a pre-registered bar of 0.85, a fail. KEY_v2 adds 14 values after the measure and is not validated (targets/chateauneuf1691/key.tsv)."
+  },
+  {
+   "id": "k-tomokiyo-castagneres1690",
+   "label": "Louis XIV to Castagnères at Constantinople, 1690: Tomokiyo's partial reconstruction",
+   "kind": "scholar's key",
+   "by": "Satoshi Tomokiyo",
+   "year": 1690,
+   "note": "The code of Louis XIV's letters of July and August 1690 to his ambassador at Constantinople, reconstructed in part on Cryptiana (louisxiv2); le = 195."
+  },
+  {
+   "id": "k-tremais1759",
+   "label": "Trémais's own cipher of 1759, rebuilt in part (about 220 numbers)",
+   "kind": "rebuilt here",
+   "by": "ministry of the Marine, for Querdisien Trémais",
+   "year": 1759,
+   "note": "A numeric table given to Trémais with his instruction of 3 February 1759; the table itself is not found. Rebuilt from his letter of 22 September 1759 and its contemporary decipherment, where he wrote both homophones of most units, and extended from the letter of 6 November (targets/tremais1759/key.tsv)."
+  },
+  {
+   "id": "k-edmondes1594",
+   "label": "Edmondes 1594 letter cipher: the alphabet shifted 7 places, with extra equivalents from shifts 8 and 10",
+   "kind": "rebuilt here",
+   "by": "Andrew Beling, with AI agents, from the printed cipher alone",
+   "year": 1594,
+   "note": "24-letter alphabet; base shift 7 (cipher a = plain h, m = t, x = e), extra equivalents for common letters from shifts 8 and 10, occasionally 11 and 20. Shifts (7, 8, 10) chosen on half the letters, frozen and tested on the other half (targets/edmondes1594/keys/frozen_key.json, key_table.tsv)."
+  },
+  {
+   "id": "k-gabbrielli-120",
+   "label": "Gabbrielli's key no. 120: Roberto Acciaioli's cipher, 1512-14",
+   "kind": "scholar's key",
+   "by": "Pietro Domenico Gabbrielli",
+   "year": 1512,
+   "note": "A nineteenth-century reconstruction from letters deciphered at the time, in his cipher alphabets of the Dieci di Balìa correspondence, vol. I (Archivio di Stato di Firenze; DECODE R5807): alphabet, syllabary with raised vowel figures, doubled consonants, 35 word signs, nulls and thirteen numbers. Transcribed in targets/acciaiuoli1513/gabbrielli-120.md."
+  },
+  {
+   "id": "k-gabbrielli-89",
+   "label": "Gabbrielli's key no. 89: Roberto Acciaioli, 1505-12",
+   "kind": "scholar's key",
+   "by": "Pietro Domenico Gabbrielli",
+   "year": 1505,
+   "note": "An earlier cipher of Acciaioli in the same volume; a different cipher from no. 120 (targets/acciaiuoli1513/NOTES.md)."
+  },
+  {
+   "id": "k-gabbrielli-111",
+   "label": "Gabbrielli's key no. 111: Roberto Acciaioli, 1511-12",
+   "kind": "scholar's key",
+   "by": "Pietro Domenico Gabbrielli",
+   "year": 1511,
+   "note": "Another cipher of Acciaioli in the same volume; a different cipher from no. 120 (targets/acciaiuoli1513/NOTES.md)."
+  },
+  {
+   "id": "k-dumas1776",
+   "label": "Dumas's key text of 1776: 13 printed lines of his 1775 preface to Vattel, Le Droit des gens",
+   "kind": "contemporary key",
+   "by": "C. W. F. Dumas",
+   "year": 1776,
+   "note": "Each number, 1 to 682, is the place of a character in the 13 lines; set out by Dumas with the line totals and the counting rule in his letter of 30 April 1776. The key text was re-established from the Committee's enciphering table by Satoshi Tomokiyo (Cryptiana, 2008-09). targets/dumas1777/key/key_positions.json."
+  },
+  {
+   "id": "k-neufville1779",
+   "label": "De Neufville-Baudouin numeric code, 1779-80 (rebuilt from de Neufville's drafts and glosses)",
+   "kind": "rebuilt here",
+   "by": "Andrew Beling, with AI agents, from de Neufville's drafts and glosses",
+   "year": 1779,
+   "note": "Numbers 1 to about 550 for letters, syllables, words and names, with homophones; the table does not survive. Rebuilt by majority vote over number-syllable pairs from the drafts pp.599-609 and the glosses pp.516-548 and 579 of NARA M332 roll 4; held-out tests 139/146, 64/65, 64/66 (targets/neufville1779/key/key_full_r4.json, key_entries.tsv)."
+  },
+  {
+   "id": "k-entick1776",
+   "label": "Entick's New Spelling Dictionary, London 1776, as the Lees' code book (page, column, Nth headword)",
+   "kind": "contemporary key",
+   "by": "John Entick (dictionary); used by Arthur, William and Richard Henry Lee",
+   "year": 1779,
+   "note": "A printed dictionary used as a book code; the book was identified by Burnett (1917) and Tomokiyo, the London 1776 printing (Dilly) and the rule of counting headword entries fixed in targets/lee1779 (court = 108a9 fits 1776, not 1773). Internet Archive scan bim_eighteenth-century_the-new-spelling-diction_entick-john_1776."
   }
  ],
  "links": [
+  {
+   "key": "k-humphreys1799",
+   "target": "humphreys1799",
+   "how": "rebuilt from",
+   "note": "frozen table read Nos. 188 and 214 and the April 1799 sentence in part; 224 of 281 cipher words sure"
+  },
+  {
+   "key": "k-neufville1779",
+   "target": "neufville1779",
+   "how": "rebuilt from",
+   "note": "rebuilt from de Neufville's plain drafts with the numbers written over them and his glosses on Baudouin's letters; applied to the bare passages pp.491-492 and 573: 25 of 38 coded words"
+  },
+  {
+   "key": "k-entick1776",
+   "target": "lee1779",
+   "how": "read unchanged",
+   "note": "every group looked up in the 1776 printing under the counting rule: 148 of 166 firm, 14 doubtful, 4 unread; the 1766, 1772, 1773 and 1781 printings do not fit"
+  },
+  {
+   "key": "k-lopezmendez1819",
+   "target": "lopezmendez1819",
+   "how": "rebuilt from",
+   "note": "fitted to the clear context of the letter's own 15 cipher words; 14 read, [?Maracaibo] a guess"
+  },
+  {
+   "key": "k-eaglepass1917",
+   "target": "eaglepass1917",
+   "how": "rebuilt from",
+   "note": "recovered from the telegram's own 246 letters; 26 of 37 words come out uncorrected, the rest carry sender's slips"
+  },
+  {
+   "key": "k-vittoria1686",
+   "target": "vittoria1686",
+   "how": "rebuilt from",
+   "note": "letter values rebuilt from the numbers of cc. 3v and 4r and their word divisions; the same values read all five letters; 379 of 422 cipher words sure"
+  },
   {
    "key": "k-fiedmond1779",
    "target": "fiedmond1779",
@@ -5228,6 +5529,18 @@
    "target": "king1797",
    "how": "rebuilt from",
    "note": "rebuilt by the contributor from the clerks' words over 13,603 groups of King's other despatches; applied to No. 29 of 13 Apr 1797, deciphered in part"
+  },
+  {
+   "key": "k-delacroix1797",
+   "target": "delacroix1797",
+   "how": "rebuilt from",
+   "note": "rebuilt by the contributor from the ministry's clear draft of the same despatch, found in Paris: 27 of 444 cipher words are holes (0.939); 296 rest only on values confirmed twice or more (0.667)"
+  },
+  {
+   "key": "k-barlow1700",
+   "target": "barlow1812",
+   "how": "rebuilt from",
+   "note": "rebuilt by the contributor from the decipherments of the time of ten other letters in the code, then applied to the two passages, which carry none: 47 of 60 coded words given by the key alone"
   },
   {
    "key": "k-lilienthal1665",
@@ -5564,6 +5877,18 @@
    "target": "mountflorence1801",
    "how": "rebuilt from",
    "note": "pattern words and the alphabetical order of the code"
+  },
+  {
+   "key": "k-dana1783",
+   "target": "dana1783",
+   "how": "rebuilt from",
+   "note": "the three alphabets recovered by WAINUT from the eight lines alone, by ranking all keys of period 3"
+  },
+  {
+   "key": "k-dana1782-table",
+   "target": "dana1783",
+   "how": "partial",
+   "note": "found after the break: its columns are the recovered alphabets and its list gives the three word numbers 31, 137 and 168; 29 is not in it"
   },
   {
    "key": "k-schoning1783",
@@ -8005,7 +8330,7 @@
    "key": "k-vaudreuil1757",
    "target": "vaudreuil1760",
    "how": "adapted",
-   "note": "Same volume as the key lead; 700 cells transcribed from the images and 33 corrected from the letter and the alphabetical sheet; reads 96.0% of the groups."
+   "note": "Same volume as the key lead; 700 cells transcribed from the images and 33 corrected from the letters and the alphabetical sheet; reads the four letters of the target (cat. 1388-1391, the three of April 1759 merged in on 25 Nov 2026): 7,499 of 7,632 groups, 96.0% of the 1760 letter's."
   },
   {
    "key": "k-tomokiyo-este",
@@ -8164,6 +8489,18 @@
    "note": "The block reversal was first found on frame 0039 by fitting this table (WAINUT, 27 Oct 2026): function-word share 0.353 against at most 0.297 for 20,000 random block orders; the later readings use the code sheet itself (k-we028)"
   },
   {
+   "key": "k-we028",
+   "target": "everett1825",
+   "how": "read unchanged",
+   "note": "Everett's Notes of a conversation with Mr Zea, Madrid, 25 Sep 1825: the sheet in its own numbering gives 821 of the 844 coded words of the six parts (1,201 groups), with the sheet's printed rules for the marks under the figures (24 Nov 2026)"
+  },
+  {
+   "key": "k-jqa1385",
+   "target": "everett1825",
+   "how": "read unchanged",
+   "note": "the first readings of 27 Oct 2026 (WAINUT, passages A to C: 347 of 355 groups valued; Brice Dudout, all the cipher, with an overlay of Everett's values) used this table unchanged; the reading of record uses the code sheet itself (k-we028)"
+  },
+  {
    "key": "k-mundic1912",
    "target": "mundic1912",
    "how": "rebuilt from",
@@ -8192,6 +8529,12 @@
    "target": "riva1722",
    "how": "rebuilt from",
    "note": "the table K2 was read off these glosses, then K3 corrected from context"
+  },
+  {
+   "key": "k-gondi1649",
+   "target": "gondi1649",
+   "how": "rebuilt from",
+   "note": "values read off the interlinear decipherment of L00-L06, frozen, tested on L07-L13; 99 of 101 sign-bearing words"
   },
   {
    "key": "k-riva-k3",
@@ -8320,6 +8663,12 @@
    "note": "rebuilt from the glossed sibling letter 25067, frozen, tested on 25069 and applied to the bare 25071"
   },
   {
+   "key": "k-claudiamedici1646",
+   "target": "claudiamedici1646",
+   "how": "rebuilt from",
+   "note": "rebuilt from the glossed sibling letters 24784 and 24796, frozen, tested on 24786 and applied unchanged to the bare 24793 and 24800"
+  },
+  {
    "key": "k-juel1647",
    "target": "juel1647",
    "how": "rebuilt from",
@@ -8392,6 +8741,12 @@
    "note": "applied unchanged, restarting at every word; the letter names the key in clear"
   },
   {
+   "key": "k-narvaez-argumedo",
+   "target": "argumedo1921",
+   "how": "read unchanged",
+   "note": "applied unchanged to the 25 runs Narváez did not print in 2015; on his 10 printed runs it gives 88 of 89 letters"
+  },
+    {
    "key": "k-clave-extra3",
    "target": "murguia1914",
    "how": "rebuilt from",
@@ -8422,6 +8777,12 @@
    "note": "rebuilt by the contributor from the contemporary clear texts of the sibling letters and applied to the bare I 242,29; 77 of 89 words sure"
   },
   {
+   "key": "k-sarzana1477",
+   "target": "sarzana1477",
+   "how": "rebuilt from",
+   "note": "annealed from R5562 and applied unchanged to R5572, R5573, R5575-R5577, R5586"
+  },
+  {
    "key": "k-qaysarani1350",
    "target": "qaysarani1350",
    "how": "rebuilt from",
@@ -8434,16 +8795,112 @@
    "note": "indexed from the decipherment written between the lines of the same pages; the reading is that decipherment, not a decoding with the index"
   },
   {
+   "key": "k-butzbach1641",
+   "target": "butzbach1641",
+   "how": "adapted",
+   "note": "strip applied to the whole sheet (667 of 682 numbers in 11-34); two extra values, 38 and 39, deduced from the sheet"
+  },
+  {
    "key": "k-weber-we025",
    "target": "crawford1814",
    "how": "read unchanged",
    "note": "the 156 rows for the numbers in this letter, cut from the transcription frozen for poinsett1813, applied unchanged with the code's printed marks; 283 of 292 groups read from the table, nine supplied from the sense"
   },
   {
+   "key": "k-charlesv1554",
+   "target": "charlesv1554",
+   "how": "rebuilt from",
+   "note": "re-derived by aligning two blind transcriptions with the contemporary decipherment written around the cipher; the decode was checked against the minute printed by Gachard (1882); 215 of 358 words sure"
+  },
+  {
+   "key": "k-breant1673",
+   "target": "breant1673",
+   "how": "rebuilt from",
+   "note": "rebuilt from the contemporary interlinear decipherment of both letters and checked word by word against it; the text is the decipherer's, not a new decipherment"
+  },
+  {
    "key": "k-morier1808",
    "target": "morier1808",
    "how": "rebuilt from",
    "note": "annealed from the ciphertext of IOR/L/PS/9/67/18 and /20 only, with no plaintext; the contemporary clear text in the margin of /19 was seen after the reading"
+  },
+  {
+   "key": "k-gowna1920",
+   "target": "gowna1920",
+   "how": "rebuilt from",
+   "note": "Reciprocal table recovered from the damaged ciphertext using a dictionary and historically informed substitution design."
+  },
+  {
+   "key": "k-meza1901",
+   "target": "meza1901",
+   "how": "rebuilt from",
+   "note": "Contributors report using the Spanish plain-text context of the same letter. A separate period decipherment attests three cipher slips."
+  },
+  {
+   "key": "k-piccolomini25054",
+   "target": "piccolomini25054",
+   "how": "rebuilt from",
+   "note": "The number table draws on the period interlinear hints and Italian context. Its values were checked against a deciphered sibling."
+  },
+  {
+   "key": "k-dresdenj345",
+   "target": "dresdenj345",
+   "how": "read unchanged",
+   "note": "The facing manuscript alphabet on f. 248v gives the sign values."
+  },
+  {
+   "key": "k-philadelphia10a132",
+   "target": "philadelphia10a132",
+   "how": "rebuilt from",
+   "note": "A one-step Caesar shift over the 23-letter alphabet was identified from the ciphertext."
+  },
+  {
+   "key": "k-claver1497",
+   "target": "claver1497",
+   "how": "read unchanged",
+   "note": "Alberto Garvía García matched the symbols with Parisi’s published table for the Ferdinand–Escrivà correspondence."
+  },
+  {
+   "key": "k-lorenzana1432",
+   "target": "lorenzana1432",
+   "how": "rebuilt from",
+   "note": "twenty values from the interlinear decipherment of the sibling letter MAP V 140 (8 Dec 1431), five from the April letter itself; the twenty tried on the glossed lines of MAP V 143 (9 Dec 1431)"
+  },
+  {
+   "key": "k-chateauneuf1691",
+   "target": "chateauneuf1691",
+   "how": "rebuilt from",
+   "note": "Key learnt from the decipherment of the time over the letter of 17 January 1694 in the same volume and applied to five pieces that carry none: 238 of 271 cipher words sure; the frozen key failed its held-out test (0.830 against 0.85)."
+  },
+  {
+   "key": "k-tremais1759",
+   "target": "tremais1759",
+   "how": "rebuilt from",
+   "note": "Values from the September pair give 84% of the November groups a value; about 60 more added or corrected from November."
+  },
+  {
+   "key": "k-edmondes1594",
+   "target": "edmondes1594",
+   "how": "rebuilt from",
+   "note": "recovered from the 651 printed cipher letters of HMC Salisbury IV pp. 559-560 alone; no decipherment or clear copy known"
+  },
+  {
+   "key": "k-gabbrielli-120",
+   "target": "acciaiuoli1513",
+   "how": "adapted",
+   "note": "1,774 of the 1,887 signs take its values; a few shapes and word signs were fixed on the cipher letter 190 and its clear copy 191 of the same day; 660 of 757 cipher words are the key's output"
+  },
+  {
+   "key": "k-pandolfini1514",
+   "target": "acciaiuoli1513",
+   "how": "partial",
+   "note": "Dudout's key v6 first opened the letter and showed the system; almost all of its values used here are also in Gabbrielli's no. 120"
+  },
+  {
+   "key": "k-dumas1776",
+   "target": "dumas1777",
+   "how": "read unchanged",
+   "note": "the key gives the reading's letter for 4,480 of the 4,503 numbers of the principal copies (one of them c written for k); tested first against the decipherer's letters on a page chosen in advance, 129 of 134"
   }
  ],
  "sources": [
@@ -8475,6 +8932,30 @@
  "source_links": [
   {
    "source": "s-cyphersolver",
+   "key": "k-humphreys1799"
+  },
+  {
+   "source": "s-cyphersolver",
+   "key": "k-neufville1779"
+  },
+  {
+   "source": "s-cyphersolver",
+   "key": "k-lopezmendez1819"
+  },
+  {
+   "source": "s-cyphersolver",
+   "key": "k-gondi1649"
+  },
+  {
+   "source": "s-cyphersolver",
+   "key": "k-eaglepass1917"
+  },
+  {
+   "source": "s-cyphersolver",
+   "key": "k-vittoria1686"
+  },
+  {
+   "source": "s-cyphersolver",
    "key": "k-fiedmond1779"
   },
   {
@@ -8484,6 +8965,14 @@
   {
    "source": "s-cyphersolver",
    "key": "k-king769"
+  },
+  {
+   "source": "s-cyphersolver",
+   "key": "k-barlow1700"
+  },
+  {
+   "source": "s-cyphersolver",
+   "key": "k-delacroix1797"
   },
   {
    "source": "s-cyphersolver",
@@ -8636,6 +9125,10 @@
   {
    "source": "s-cyphersolver",
    "key": "k-mountflorence1801"
+  },
+  {
+   "source": "s-cyphersolver",
+   "key": "k-dana1783"
   },
   {
    "source": "s-cyphersolver",
@@ -9783,6 +10276,10 @@
   },
   {
    "source": "s-cyphersolver",
+   "key": "k-claudiamedici1646"
+  },
+  {
+   "source": "s-cyphersolver",
    "key": "k-juel1647"
   },
   {
@@ -9827,6 +10324,10 @@
   },
   {
    "source": "s-cyphersolver",
+   "key": "k-sarzana1477"
+  },
+  {
+   "source": "s-cyphersolver",
    "key": "k-qaysarani1350"
   },
   {
@@ -9835,7 +10336,55 @@
   },
   {
    "source": "s-cyphersolver",
+   "key": "k-charlesv1554"
+  },
+  {
+   "source": "s-cyphersolver",
+   "key": "k-breant1673"
+  },
+  {
+   "source": "s-cyphersolver",
    "key": "k-morier1808"
+  },
+  {
+   "source": "s-cyphersolver",
+   "key": "k-gowna1920"
+  },
+  {
+   "source": "s-cyphersolver",
+   "key": "k-meza1901"
+  },
+  {
+   "source": "s-cyphersolver",
+   "key": "k-piccolomini25054"
+  },
+  {
+   "source": "s-cyphersolver",
+   "key": "k-philadelphia10a132"
+  },
+  {
+   "source": "s-cyphersolver",
+   "key": "k-lorenzana1432"
+  },
+  {
+   "source": "s-cyphersolver",
+   "key": "k-chateauneuf1691"
+  },
+  {
+   "source": "s-tomokiyo",
+   "key": "k-tomokiyo-castagneres1690"
+  },
+  {
+   "source": "s-cyphersolver",
+   "key": "k-tremais1759"
+  },
+  {
+   "source": "s-cyphersolver",
+   "key": "k-edmondes1594"
+  },
+  {
+   "source": "s-tomokiyo",
+   "key": "k-dumas1776"
   }
  ],
  "unlinked": {
@@ -9939,6 +10488,11 @@
   "gordonmudir1884": "Not read: no key reads the note. The one key tried, the Durham table SAD.250/1/81 (both Arabic columns, as read), does not fit and is recorded under tried."
  },
  "tried": [
+  {
+   "key": "k-narvaez-argumedo",
+   "target": "duhart1921",
+   "note": "Narváez's Argumedo number table does not fit: the Duhart runs are letters, a swap of five letter pairs"
+  },
   {
    "key": "k-guiana1757",
    "target": "fiedmond1779",
@@ -11130,9 +11684,64 @@
    "note": "applied directly and under shifts to the 1813 groups: no fit (NOTES section 2)"
   },
   {
+   "key": "k-dana-no1",
+   "target": "dana1783",
+   "note": "checked after the break: a different scheme, without 137 or 168, and its 29 and 31 (England, Holland) do not fit the sentence (NOTES section 6)"
+  },
+  {
    "key": "k-we028",
    "target": "king1797",
    "note": "the WE028 sheet in both block orders against King's key: 757 and 752 numbers in common, none with the same value, no constant offset (targets/king1797/NOTES.md)"
+  },
+  {
+   "key": "k-bouille1778-k6",
+   "target": "delacroix1797",
+   "note": "none of the 129 numbers present in both has the same value (24 Nov 2026; the copy of the key under damas1787: 0 of 131); within chance when scored on the text on 2 Nov 2026"
+  },
+  {
+   "key": "k-martinique1778-k507",
+   "target": "delacroix1797",
+   "note": "none of the 130 numbers present in both has the same value (24 Nov 2026); within chance on 2 Nov 2026"
+  },
+  {
+   "key": "k-windward1761",
+   "target": "delacroix1797",
+   "note": "none of the 50 numbers present in both has the same value (24 Nov 2026); within chance on 2 Nov 2026"
+  },
+  {
+   "key": "k-ennery1765",
+   "target": "delacroix1797",
+   "note": "none of the 209 numbers present in both has the same value (24 Nov 2026); within chance on 2 Nov 2026"
+  },
+  {
+   "key": "k-dudout-champigny1744-k5",
+   "target": "delacroix1797",
+   "note": "none of the 81 numbers present in both has the same value (24 Nov 2026); within chance on 2 Nov 2026"
+  },
+  {
+   "key": "k-we028",
+   "target": "barlow1812",
+   "note": "576 numbers in common, none with the same value; 584 of the 623 values are entries of the sheet, so the word list is of the same family, numbered differently (24 Nov 2026)"
+  },
+  {
+   "key": "k-weber-we025",
+   "target": "barlow1812",
+   "note": "the 419 rows held in the repository: 150 numbers in common, none with the same value (24 Nov 2026)"
+  },
+  {
+   "key": "k-armstrong972",
+   "target": "barlow1812",
+   "note": "218 numbers in common, none with the same value; there the = 972, here 1700 (24 Nov 2026)"
+  },
+  {
+   "key": "k-king769",
+   "target": "barlow1812",
+   "note": "269 numbers in common, none with the same value (24 Nov 2026)"
+  },
+  {
+   "key": "k-jqa1385",
+   "target": "barlow1812",
+   "note": "434 numbers in common, none with the same value; there the = 1385 and of = 1576, here 1700 and 631 (24 Nov 2026)"
   },
   {
    "key": "k-x15466",
@@ -11198,6 +11807,46 @@
    "key": "k-vaudreuil1757-272",
    "target": "montcalm1757w",
    "note": "the Marine table for Montcalm of 1758 (sheet e001295272): 0 of 281 shared numbers agree, against shuffled maxima of 3"
+  },
+  {
+   "key": "k-vaudreuil1757",
+   "target": "tremais1759",
+   "note": "Vaudreuil table, sheet 274: 0.063 against 0.229 for shuffled keys (Dudout, PR 273)"
+  },
+  {
+   "key": "k-tomokiyo-castagneres1690",
+   "target": "chateauneuf1691",
+   "note": "compared by the contributor: le is 195 there and 91 here, a different code"
+  },
+  {
+   "key": "k-vergier1696-lasry",
+   "target": "chateauneuf1691",
+   "note": "compared by number, 24 Nov 2026: le 196, que 259, de 133 there; le 91, que 333, de 138 here"
+  },
+  {
+   "key": "k-bazeries-1691",
+   "target": "chateauneuf1691",
+   "note": "compared by number, 24 Nov 2026: 91 Mon and 333 Di there; 91 le and 333 que here"
+  },
+  {
+   "key": "k-stowe166",
+   "target": "edmondes1594",
+   "note": "Edmondes's own sign alphabet in Stowe MS 166: a different cipher, compared and ruled out (keys/keys_tested.md)"
+  },
+  {
+   "key": "k-vaudreuil1757-272",
+   "target": "tremais1759",
+   "note": "sheet 272 has 98 rivière, 108 tion, 115 guerre; Trémais has 98 il, 108 r, 115 M. Bigot (23 Nov 2026)"
+  },
+  {
+   "key": "k-gabbrielli-89",
+   "target": "acciaiuoli1513",
+   "note": "checked for the open numbers 15, 26 and 47: a different cipher (20 Nov 2026)"
+  },
+  {
+   "key": "k-gabbrielli-111",
+   "target": "acciaiuoli1513",
+   "note": "checked for the open numbers 15, 26 and 47: a different cipher (20 Nov 2026)"
   }
  ]
 }

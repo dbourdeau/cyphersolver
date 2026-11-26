@@ -120,7 +120,9 @@ Verification of the pull request files, before the write-up.
 
 ## Prior art
 
-No edition or decipherment of these letters was found, and priority is not established. Checked on 11 Nov 2026: this repository (entry 1564 open, no target); the leaves (no decipherment); the Estense records; six web searches. Not checked: Archivio Gonzaga, Mantua, b. 1911; Archivio di Stato di Parma, Famiglia Rossi bb. 8-12; the Rossi di San Secondo archive (Lincei/Corsiniana), series I cart. 26; the Olschki volumes on the Gonzaga papers; the Guicciardini and Aretino correspondence editions.
+No edition or decipherment of these letters was found, and priority is not established. Checked on 11 Nov 2026: this repository (entry 1564 open, no target); the leaves (no decipherment); the Estense records; six web searches. Not checked: Archivio Gonzaga, Mantua, correspondence of Cardinal Ercole Gonzaga (E.LXI.2), b. 1906 for 1537 in the 1922 numbering (Luzio, *L'Archivio Gonzaga di Mantova* II, p. 337; b. 1911, named here before, is 1541); Archivio di Stato di Parma, Famiglia Rossi bb. 8-12; the Rossi di San Secondo archive (Lincei/Corsiniana), series I cart. 26; the Olschki volumes on the Gonzaga papers; the Guicciardini and Aretino correspondence editions.
+
+Busta corrected from 1911 to 1906 by Andrew Beling with AI agents (issue #896); checked against Luzio's p. 337 in the Accademia Nazionale Virgiliana's PDF on 24 Nov 2026 (integration review, an AI agent). Luzio p. 219 names Ercole's correspondence first among the places to look for Ferrante's documents; that is not evidence for these letters. The busta numbers are Luzio's of 1922; the archive's current inventory was not checked, and nobody here has seen either busta.
 
 ## Limits
 
@@ -138,7 +140,7 @@ No edition or decipherment of these letters was found, and priority is not estab
 - the unread places L05, L08, L17 (a name), L21, V02-V03, B12 (a place near Piadena), B16-B17 (73 units in all) - blocker: illegible; looked at again on the image on 12 Nov 2026 and left unread
 - the three signs without a value (A, the apostrophe mark, the bare tick) - blocker: too-short; two occurrences each
 - the l shape (sign D) has no blind confirmation, and the second look was not blind - blocker: illegible; the blind classifier put most l signs in the d class
-- prior art in the Archivio Gonzaga (Mantua, b. 1911), the Archivio di Stato di Parma (Famiglia Rossi bb. 8-12), the Rossi di San Secondo archive and the printed Gonzaga correspondence - blocker: needs-physical-access; not online as far as searched
+- prior art in the Archivio Gonzaga (Mantua, Ercole Gonzaga correspondence, b. 1906 for 1537 by Luzio's 1922 numbering; whether Rossi's letters to Ferrante are filed there is not known), the Archivio di Stato di Parma (Famiglia Rossi bb. 8-12), the Rossi di San Secondo archive and the printed Gonzaga correspondence - blocker: needs-physical-access; not online as far as searched
 
 ## Escalation
 

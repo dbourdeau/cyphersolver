@@ -1,0 +1,41 @@
+# barlow1812: open numbers against the order of the State Department sheet (WE028). Output of we028_structure.py; rule in we028_structure_plan.md
+# values in key.tsv: 623; found on the sheet: 584; anchors (grade P/C/D/W, one sheet entry): 571
+# control, each anchor left out: interpolated 47, right 43 (0.915); offsets differ 476 (one of the two candidates right in 167); one side 46 (right in 19); no anchor 2
+# control miss: 320 key "as", sheet order gives "ast"
+# control miss: 704 key "de", sheet order gives "demand"
+# control miss: 862 key "army", sheet order gives "same"
+# control miss: 1047 key "port", sheet order gives "bat"
+number	kind	anchor_below	anchor_above	sheet_entry_from_below	sheet_entry_from_above	proposal_from_sense	verdict
+815	offsets differ	812=ning (sheet 446)	818=no (sheet 352)	nity (sheet 449)	fix (sheet 349)	nity	no prediction; one candidate agrees
+1567	offsets differ	1564=journ (sheet 1434)	1568=know (sheet 64)	ise (sheet 1437)	quire (sheet 63)	k	no prediction
+1404	offsets differ	1403=ge (sheet 1205)	1405=great (sheet 1233)	ged (sheet 1206)	gre (sheet 1232)	gres	no prediction
+624	offsets differ	623=like (sheet 882)	625=live (sheet 885)	ling (sheet 883)	little (sheet 884)	little	no prediction; one candidate agrees
+706	offsets differ	705=den (sheet 823)	710=di (sheet 833)	dent (sheet 824)	des (sheet 829)	det	no prediction
+103	offsets differ	102=dispose (sheet 850)	105=done (sheet 797)	dist (sheet 851)	dom (sheet 795)	ti	no prediction
+163	offsets differ	156=yet (sheet 657)	168=, (sheet 1261)	your (sheet 664)	hat (sheet 1256)		no prediction
+531	interpolated	530=ap (sheet 675)	532=appear (sheet 677)	aph (sheet 676)	aph (sheet 676)	ard	differs
+537	offsets differ	535=ar (sheet 680)	538=are (sheet 684)	arch (sheet 682)	ard (sheet 683)	ard	no prediction; one candidate agrees
+# after the plan (descriptive): numbers seen only inside a word, against the sheet entries their nearest anchors give
+number	word	kind	sheet_entry_from_below	sheet_entry_from_above	in_the_word
+186	Spanish	offsets differ	sort	nxi	no
+200	system	offsets differ	wy	fact	no
+233	-; wants	offsets differ	ute	wa	yes
+286	system	offsets differ	state	sto	no
+485	think	offsets differ	thi	thirteen	yes
+504	Foreign	offsets differ	flou	forth	no
+519	wants	offsets differ	any	Dutch	no
+783	-	offsets differ	ral	rate	no
+799	river	offsets differ	rive	ged	yes
+814	Spanish	offsets differ	nish	five	yes
+816	think	offsets differ	nk	fla	yes
+843	Foreign	offsets differ	rel	rem	no
+892	privileges	offsets differ	vest	wd	no
+957	agreed	offsets differ	dol	eighty	no
+967	British	offsets differ	cant	C	no
+1083	signing	one side	exemp		no
+1109	Americans	offsets differ	gl	bring	no
+1170	Serurier	offsets differ	nice	trav	no
+1380	Serurier	offsets differ	ren	own	no
+1395	nature	offsets differ	narrow	navy	no
+1401	British	offsets differ	nearly	gal	no
+# in-word numbers: 21; a candidate entry stands in the word for 5; interpolated 0, of which in the word 0

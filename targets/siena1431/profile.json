@@ -300,7 +300,11 @@
       "historical consistency"
     ],
     "provenance": "contributed",
-    "credits": [
+    "sign_check": [
+   {"date": "2026-11-24", "checker": "Brice Dudout", "checker_kind": "project", "model_roles": ["rule", "thumbnails", "sheet", "scoring", "remarks"], "signs_checked": 9, "controls": 3, "controls_passed": 3, "as_transcribed": 0, "corrected": 8, "unresolved": 1, "not_counted": 0, "rule": "dudout/sign_check_2411a/sheet-2411a-rule.md (24 Nov 2026, before the thumbnails and the answers)", "rule_hash": "1a4d06d9504b4d2c14f710cec8665c60e763789edaf976d0c68961f9c6a6a087", "sheet_faults": "none found; for later sheets the boxes will include the attached round and ask 'sign alone / sign + round'", "note": "No. 24 (DECODE R4812 P2, images private). The merged 't' label: 5 plain + (o); 3 '+o' (key sign i), one of them decided on the image (probable); 1 cross with two dots, a form not on the key sheet (no value). Understood letters 1,815 / 2,279 (79.6%) unchanged; no word of the reading changes. Relabelled copy: dudout/sign_check_2411a/. Not a human_check: AI agents built and scored the sheet."},
+   {"date": "2026-11-24", "checker": "Brice Dudout", "checker_kind": "project", "model_roles": ["rule", "thumbnails", "sheet", "scoring", "remarks"], "signs_checked": 8, "controls": 3, "controls_passed": 3, "as_transcribed": 6, "corrected": 2, "unresolved": 0, "not_counted": 0, "rule": "dudout/sign_check_2411b/sheet-2411b-rule.md and sheet-2411b-rule-amendment.md (24 Nov 2026, before the thumbnails and the answers)", "rule_hash": "1a4d06d9504b4d2c14f710cec8665c60e763789edaf976d0c68961f9c6a6a087", "sheet_faults": "none found", "note": "No. 24 P2 (DECODE R4812, images private), key R4755 unchanged. The merged c label: 3 plain open c (h) and 5 c with a tongue (n); the reader asked whether they are one form; both merges break sure words (all n 26, all h 100), so two signs are kept. One plain c gives par che (our e), one would give vegho for vegno (vegno kept, n probable). Understood letters 1,815 of 2,279 (79.6%), unchanged. Not a human_check: AI agents built and scored the sheet."}
+  ],
+  "credits": [
       {
         "who": "lasry",
         "role": "solution",
@@ -312,7 +316,13 @@
         "who": "contemporary",
         "role": "key or decipherment used",
         "note": "key sheet ASSi Concistoro 2308 fasc. 1, DECODE R4755"
-      }
+      },
+   {
+    "who": "dudout",
+    "role": "verification",
+    "note": "blind sign-shape sheets on the merged 't' and 'c' labels of no. 24 (DECODE R4812 P2; Brice Dudout reader, sheets built and scored by AI agents; dudout/sign_check_2411a/ and dudout/sign_check_2411b/): the hand keeps +, +o, the o+t ligature and the footed t apart, and the plain c (h) and the tongued c (n) apart (merge rejected); reading and counts unchanged",
+    "date": "2026-11-24"
+   }
     ],
     "first_break": true,
     "notes": "Result by George Lasry (CTTS built-in cryptanalysis, refined by Claude Opus 5.5 and GPT-6 Astra, per his report of 17 Oct 2026), verified here. No. 6 93.4% of decrypted letters understood, no. 24 P2 72.7%, revised here to 79.6% (14 Oct); dorse of no. 24 decoded here in part. Verification by this project: blind transcription of 24 Sept decoded with the key, 69% (key read by eye) to 88-91% agreement.",

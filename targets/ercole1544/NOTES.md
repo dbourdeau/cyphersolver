@@ -2,6 +2,8 @@
 
 Status: in progress. Not yet written up: no site page or README row. Read in part, or not read, with escalation steps still open (see its status below, Remaining gaps and Escalation). The status below is the contributor's.
 
+Triage, 24 Nov 2026 (integration round, AI agent): not written up. The words in clean sentences are 19-23% per letter, far under the read bar, and most gaps are `not-attempted` with the material online (Estense IIIF). Next step: a fresh pass of c. 175r and G02-G07 with the frozen key, then the siblings cc. 88-92 and 93-98 against the table, then Murphy, Furlotti and Solmi for the codes [L^22] and [L^30]. The reading review of 3 Nov 2026 is by an agent working for the contributor; a page needs a review by someone outside that work.
+
 Status, 3 Nov 2026: key confirmed on a contemporary decipherment; neither letter is read. cc. 78r-79r and cc. 174r, 174v, 175v are read in part. c. 175r is decoded, not read. Of the seven letters of catalogue 1554, letter 2 (c. 114r) is read in part (Brice Dudout, 12 Nov 2026, last section) and six are decoded, not read (section below). Prior art is open: see below. Nothing here is claimed as new.
 
 Contributed by WAINUT. The work was done with AI language-model agents. An independent agent made the blind check and the final check named below.

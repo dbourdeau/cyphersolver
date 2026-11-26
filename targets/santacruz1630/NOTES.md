@@ -125,3 +125,31 @@ not recomputed.
 
 
 Placement of the marks (same day): the reading is the contributor's (Brice Dudout), so `reading.md` was put back as he gave it, with corrected header lines, and the marked text is the companion file `reading_marked.md`. Where this section says the marks are in `reading.md`, read `reading_marked.md`.
+
+
+## The held-out test of K6A: what these notes did not say (19 Nov 2026)
+
+Reviewing the first batch for the level "AI decipherment, human-checked on a sample of signs" (#789), Daniel Bourdeau found
+that the key condition is not met as filed. The contributor agrees. Four points were missing above or stated too favourably:
+
+1. **The pass is one word.** D.167 has 101 compared words. The bar of 0.75 asks for 75.75; K6A gets 76 (0.752), and the
+   previous key K5 gets 75 (0.743), which fails. "Met narrowly" (Caveats) understates it: one word decides the test.
+2. **The bar was lowered after failed tests, and these notes did not say so.** The first protocol for key A (C03, before
+   K5) required >= 0.90 of words on both held-out pairs; K5 got 0.842 (D.163) and 0.871 (D.175) and failed. The protocols
+   of C07 to C10 (keys C and C0, other letters of the fonds, mostly of 1635) used >= 0.85 of characters and >= 0.75 of words,
+   and those tests failed too (characters / words: C07 0.760 / 0.548, C08 0.738 / 0.562, C10 at the level of the controls). The K6A test (C11) took this
+   lower bar. Each bar was written before its own test, but the 0.85 / 0.75 bar came after the failure of C03 on key A.
+3. **26 values were added after the test.** After the K6A measurement, a working table of 26 further values drawn from the
+   EM alignment (local file, not in this folder) was used for the recount of 18 Nov 2026. None of these 26 values was tested
+   on a fresh passage. (The five values of `key_K6A_additions.tsv`, added by the decrypt audit, are another matter: each
+   cites its source.)
+4. **The freeze hash in the header of `key_K6A.tsv` matches nothing in this folder.** "SHA-256 f2836cd5..." is the hash of
+   the contributor's frozen working file `working/K6A_frozen.tsv`, which was never committed; `key_K6A.tsv` is a reformatted
+   export of it (columns token, value, n, total), so neither the file nor its data rows hash to that value. As committed,
+   the freeze cannot be checked.
+
+**Consequence.** santacruz1630 is withdrawn from the batch. No `sign_check` is recorded for it, although a blind sheet was
+answered on 18 Nov 2026 (sheet S: 2 controls of 2, 9 target signs counted after one faulty thumbnail): the level is not shown on a
+reading whose key test is this weak. To restore the key condition would need the frozen working file with a hash that
+verifies, and a new key test, its bar written first and not lower than what failed before, on a pair not yet opened.
+Nothing else in this folder (class, read share, reading) was changed here.

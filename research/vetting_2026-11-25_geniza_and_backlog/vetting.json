@@ -1,0 +1,129 @@
+{
+ "3849": {
+  "date": "2026-11-25",
+  "by": "Daniel Bourdeau; Claude Code session (Claude Sonnet 5.5), 25 Nov 2026",
+  "verdict": "open",
+  "seen": {
+   "kind": "scan",
+   "where": "National Archives Catalog, NARA RG 59 M97 roll 6 frame 233, https://catalog.archives.gov/medialz/dc-metro/rg-059/603720/M97/M97-006/M97-006-0233.jpg (4024 x 3576 px, viewed at 1600 px wide and checked against the sweep transcription), 25 Nov 2026.",
+   "extent": "One leaf, two pages: letter of Mexico, 30 October 1830, \"Dear Sir\", unsigned, about 30 lines. From the second paragraph on, numbers separated by full stops stand among plain English words (for example \"Some sharp sparring has 527 recently very polite and conciliatory\"), 55 numbers with values from 1 to 614 and 4 signs (open triangle, blotted triangle, X, flourish); endorsed \"Mr Butler / To J. S. M. / my private Cypher\".",
+   "cipher": "A numeric nomenclator written into a plain English letter: whole numbers for words and phrases, signs for further values, plain words kept for the rest. No decipherment is written over the numbers, in the margins or on the neighbouring frames, and no key is filed with the letter."
+  },
+  "prior_art": {
+   "decode": "decode_search.py, 25 Nov 2026: \"Butler\" 1 record (BL Egerton MS 2550 f 31, 1646-58, unrelated), \"Anthony Butler\" 0, \"O'Gorman\" 0, \"Mexico 1830\" 0 records for this item.",
+   "tomokiyo": "cryptiana.web.fc2.com/code/unsolved.htm fetched 25 Nov 2026 and grepped for Butler and Mexico: no hit.",
+   "lasry": "cryptiana.web.fc2.com/code/GL.htm (Lasry's decipherments) fetched 25 Nov 2026 and grepped for Butler and Mexico: no hit.",
+   "edition": "Bosch Garcia, Documentos de la relacion de Mexico con los Estados Unidos, vol. II (Butler), UNAM, read as PDFs at historicas.unam.mx (docs 1-250, 25 Nov 2026): the contents list for autumn 1830 has 29 Oct (Mexico to Tornel), 1 Nov, 5 Nov (Butler to the consul) and 13 Nov (Butler to Van Buren), no item of 30 Oct 1830, so this letter is not printed there. Butler's despatch of 1829-30 complains that two of his private letters in cipher were never acknowledged (doc. 2 of the Department of State volume).",
+   "literature": "Weber 1979 ch. 7 n. 31 and Narvaez 2019 p. 131 nn. 45-46 cite the letter and print no reading (sweep of 22 Nov 2026); a web search of 25 Nov 2026 on \"my private cypher\" Butler 1830 found no decipherment."
+  },
+  "key_check": "The State Department code of the period was tried in a frozen test by the sweep (22 Nov 2026) and missed three context probes; no number exceeds 614 against 65 percent above 660 in Butler's 1834 letters in that code, so it is a different code. No Butler private code is known.",
+  "key_held": "State Department code of the 1830s (1385 = the): tested by the sweep, not a match.",
+  "duplicates": "known.py \"Anthony Butler\" and \"M97\" (25 Nov 2026): only this lead and its sweep row; no catalogue entry or target holds the letter.",
+  "searches": [
+   {
+    "query": "decode_search.py Butler, Anthony Butler, O'Gorman, Mexico 1830",
+    "result": "No DECODE record of this letter; only an unrelated 1646 Egerton row."
+   },
+   {
+    "query": "Bosch Garcia Documentos vol. II (UNAM PDFs docs 1-250), search for 30 Oct 1830, cifra, cypher",
+    "result": "Letter not in the edition; cifra marks occur only in other despatches (docs of 1830-31) where the cipher passage is bracketed and not read here."
+   },
+   {
+    "query": "Cryptiana unsolved.htm and GL.htm text search for Butler, Mexico",
+    "result": "Not listed on either page."
+   },
+   {
+    "query": "web: Anthony Butler \"my private cypher\" 1830 Mexico decipher",
+    "result": "Only the Bosch Garcia PDFs, Cambridge Americas article on the mission and Weber/Narvaez notes; no reading."
+   }
+  ]
+ },
+ "3855": {
+  "date": "2026-11-25",
+  "by": "Daniel Bourdeau; Claude Code session (Claude Sonnet 5.5), 25 Nov 2026",
+  "verdict": "open",
+  "seen": {
+   "kind": "scan",
+   "where": "Cambridge Digital Library IIIF, https://images.lib.cam.ac.uk/iiif/MS-TS-K-00024-00037-000-00001.jp2 (native 5673 px wide) at 1800 px, recto, 25 Nov 2026; verso at 900 px.",
+   "extent": "One paper sheet: eight lines of 20 to 35 signs each, groups divided by dashes, the lower three lines inside a ruled and dashed frame, about 200 signs.",
+   "cipher": "An angular, hooked sign script, one hand, dash-divided groups, not Hebrew, Arabic or Coptic letters and not the ring-ended signs of the Bohak cipher (K24.19/23); no plaintext, gloss, key or transcription is written on or filed with the sheet."
+  },
+  "prior_art": {
+   "decode": "decode_search.py, 25 Nov 2026: Geniza, Genizah, Taylor-Schechter, Cairo, Judaeo-Arabic: 0 records each.",
+   "tomokiyo": "cryptiana unsolved.htm fetched 25 Nov 2026, grepped for Geniza, Genizah, Cambridge Univ: no hit.",
+   "lasry": "cryptiana GL.htm fetched 25 Nov 2026, grepped for Geniza and Cambridge Univ: no hit.",
+   "edition": "Princeton Geniza Project record 32699 (25 Nov 2026): description \"mysterious writing, might be mirror-image Hebrew, needs examination\", no transcription, no scholarship page (404), no footnote; the Bohak 2010 family list in research/sweep_2026-11-25_geniza_literature/README.md does not include it.",
+   "literature": "Web search 25 Nov 2026 on \"T-S K24.37\" with cipher and secret script: only PGP pages. The literature survey of 25 Nov 2026 judged it a possible mirror imprint; the sheet seen here is written in ink on this side in an invented alphabet, so the mirror idea does not fit."
+  },
+  "key_check": "No key is known. Bohak 2010 key (K24.19 ring letters) does not apply to the angular signs; T-S K24.24 is the nearest sheet from the same box and is itself unread.",
+  "duplicates": "known.py \"K24.37\", \"32699\" (25 Nov 2026): only this lead, its sweep row and the sweep READMEs; targets/tsk2437 is the owner's working target and is not part of this vetting. HELD: the owner catalogues K24.24 and K24.37, so this block is recorded but the lead is not promoted by this pass.",
+  "searches": [
+   {
+    "query": "decode_search.py Geniza, Genizah, Taylor-Schechter, Cairo, Judaeo-Arabic",
+    "result": "0 records for each."
+   },
+   {
+    "query": "PGP document 32699 and /scholarship/",
+    "result": "Description only; scholarship page 404."
+   },
+   {
+    "query": "web: \"T-S K24.37\" cipher secret script Bohak",
+    "result": "PGP and Cambridge pages only; no reading."
+   }
+  ]
+ },
+ "3856": {
+  "unvetted": "CUL Or.1080 6.12 (PGP 19773): four lines of fast cursive strokes on parchment seen at 1600 px; the script is not identified (shorthand, siyaq, numerals or an Indic or Ethiopic hand) so it is not shown to be a cipher; PGP says \"perhaps a shorthand or numerical notation\". Needs a palaeographer (Bohak, Elbaum) or comparison with Judaeo-Arabic shorthand and siyaq before it can be called open."
+ },
+ "3857": {
+  "unvetted": "T-S Ar.39.472 (PGP 20963): table of about 45 cells with red numbers, abjad headings, 4-3-2-1 numeral columns and non-word letter strings, seen in a native crop; it looks like a letter-divination (geomantic or zairja) table, not shown to be a cipher; PGP says accounts or calendrical reckoning are possible. Needs an Arabic magic-table specialist; do not offer as a cipher yet."
+ },
+ "3858": {
+  "unvetted": "CUL Or.1080 14.13 + 14.25 (PGP 31451, 31508): amulet; 14.13 has seven underlined lines of alif-like strokes mixed with eastern numerals, 14.25 has a diagram, ring-ended signs and strings; seen at 1400 px. The stroke-and-numeral lines read as abjad numbers or an amulet number series rather than as an encoded text; not shown to be a cipher. Needs the red instructions on 14.25 read and a wafq (magic square) check."
+ },
+ "3859": {
+  "date": "2026-11-25",
+  "by": "Daniel Bourdeau; Claude Code session (Claude Sonnet 5.5), 25 Nov 2026",
+  "verdict": "not_cipher",
+  "seen": {
+   "kind": "scan",
+   "where": "CUDL IIIF T-S K12.60 verso at 1572 x 2000 px, 25 Nov 2026; PGP record 41966.",
+   "extent": "Verso of a parchment legal fragment: a grid of about 20 ring-ended magical signs (charakteres), each with one small Hebrew letter beside it, loose marks below.",
+   "cipher": "A sign-to-letter table: each charakter carries a single gloss letter. There is no running ciphertext on the leaf, so it is key-type material for the ring-letter family of Bohak 2010 (T-S K24.19/23, K5.7), not a message."
+  },
+  "prior_art": {
+   "decode": "decode_search.py Geniza and Cairo, 25 Nov 2026: 0 records.",
+   "tomokiyo": "cryptiana unsolved.htm: no Geniza page.",
+   "lasry": "cryptiana GL.htm: no Geniza page.",
+   "edition": "PGP 41966 describes it as a probable Arabic legal document with magical ball-and-stick symbols on the verso; no scholarship page.",
+   "literature": "Bohak 2010 (Edicion de textos magicos, pp. 9-23) publishes the key to the ring-letter cipher; this table was not found cited."
+  },
+  "key_check": "A key candidate for the ring-letter family; to be compared with the Bohak key when T-S K5.7, ENA 3682.7 and ENA 3207.17 are attacked.",
+  "duplicates": "known.py \"K12.60\" (25 Nov 2026): only this lead and sweep READMEs.",
+  "closed": "A table of charakteres with gloss letters and no ciphertext: seen at 1572 px on the verso, ring-ended signs with a Hebrew letter each. It is filed as key material for the Bohak ring-letter family in research/sweep_2026-11-25_geniza_thorough/README.md, not as a catalogue target."
+ },
+ "2903": {
+  "unvetted": "CUL MS Add. 2255 f. 19v line 14 (CUDL image 40, seen at 2000 px): after \"samvat 1650 ... kalyanam astu\" a short run of about twelve signs, Devanagari digits and a cross (reads as 746 || 117 16 x 44 | 8), then the clear owner note; they are numerals, so the \"code\" may be the Jain numeral-name convention (anka-lipi) and not a cipher. Too short to count as a target on its own; needs an Indologist or a published Jain scribal-numeral table."
+ },
+ "2958": {
+  "unvetted": "Alcort D/0004: the marginal decipherment of the time is on the sheet, and the lead is being worked in issue #779 (two pre-registered key-sheet tests by Brice Dudout); the verdict follows that work (read in part, with the key rebuilt, rather than open). Not touched by this pass."
+ },
+ "2529": {
+  "unvetted": "Oxenstierna to Queen Christina, 30 July 1634: the printed edition (Handlingar rorande Skandinaviens historia del 30, 1849, p. 91, or AOSB I:12) is still not found online; archive.org lists 15 HSH volumes and none is del 30 (rechecked 25 Nov 2026). If the passages are printed in clear it closes as read."
+ },
+ "2901": {
+  "unvetted": "Durham HIL/65 Sudan Government telegrams: dictionary code words are real but it is a printed code-book system, so the lead needs the Sudan Government telegraph code from the Durham Sudan Archive or TNA FO 141 / WO 33 before it can be offered; no per-telegram extent has been tallied."
+ },
+ "3851": {
+  "unvetted": "BL Add. MS 21580 f. 198b: signature in secret characters named only in Wright's catalogue; BL digitisation not established by a search of 25 Nov 2026 and the leaf has not been seen. Next: search BL Digitised Manuscripts and Wright vol. 2 on archive.org at no. DCCXXIII."
+ },
+ "3852": {
+  "unvetted": "BL Add. MS 14471 (Gospels of 614/5): one line in a secret character on the colophon margin per Wright; the BL record is inconsistent with the lead's shelfmark and no digitisation was found on 25 Nov 2026; leaf not seen. Confirm the shelfmark on Wright vol. 1 no. LXXVII before any viewing."
+ },
+ "3853": {
+  "unvetted": "USJ MS 2/980 f. 161r (vHMML 505593): images need a vHMML sign-in with the owner's own account, so the leaf is not seen; it may be an alphabet table and not a text. Waits for a sign-in by the owner."
+ },
+ "3854": {
+  "unvetted": "ONB Cod. N.F. 303 (Ibn al-Arabi, Anqa mughrib): the secret-alphabet passage was not located in images 5-72 and is probably the author's own enigmatic letters, studied in Elmore 1999 (not opened). Lead is more likely closed as not a scribal cipher once Elmore is read."
+ }
+}
