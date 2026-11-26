@@ -122808,9 +122808,9 @@
    "shelfmark": "Bayerische Staatsbibliothek, Clm 6411, fol. 1r",
    "folio_note": "Three lines of large signs at the head of the opening recto; torn and faded near the upper right. Two lines in ordinary script immediately below.",
    "cls": "B",
-   "status": "Bischoff describes the three-line inscription as unsolved. Zironi identifies Greek- and Hebrew-like forms and proposes Latin letter correspondences. No continuous reading located.",
+   "status": "Bischoff describes the three-line inscription as unsolved. Zironi identifies Greek- and Hebrew-like forms and proposes Latin letter correspondences. No continuous reading located. Tested here 22 Nov 2026 (research/clm6411/): The third line ends with an upright and a chevron repeated in the same order. If each sign has a fixed reading of one or more letters, the plaintext must repeat a sequence at least two letters long. Neither copy of the ordinary-script note below contains such a repetition in any of the four spellings tested. The note could still be a clue to the meaning. The three cipher lines remain unread.",
    "why": "A ninth-century inscription with repeated distinctive signs and comparative alphabets in contemporary manuscript culture. The image is sufficient to prepare a diplomatic transcription.",
-   "verify": "Compare the sign inventory with the Mainz-region manuscripts discussed by Bischoff. Check the relation of the two lines below to the cryptogram and mark uncertain signs before assigning values.",
+   "verify": "Look for an independently labelled counterpart to a recurring sign, especially the mirrored bowls, among the manuscripts cited by Bischoff. A passage from the grammar on the reverse fits several repeated signs, but requires two missing positions and ends inside a word.",
    "importance": 3,
    "solvability": 2,
    "difficulty": 4,
@@ -122827,6 +122827,10 @@
     {
      "label": "Zironi, discussion and note 1",
      "href": "https://cris.unibo.it/retrieve/f93c2157-ab07-40f7-bc57-1cc2654ca6ba/Zironi%20-%20BFK.pdf"
+    },
+    {
+     "label": "Transcription, source comparisons and reproducible tests",
+     "href": "https://github.com/dbourdeau/cyphersolver/blob/main/research/clm6411/NOTES.md"
     }
    ],
    "seen": "image",
@@ -122868,7 +122872,11 @@
    },
    "ark": "",
    "scored": "vetted",
-   "repository": "bsb"
+   "repository": "bsb",
+   "known": "Nothing read. Tested and failed (research/clm6411/): the ordinary-script note below (Glauche's 'alocus ceroficon domus dominicus dei cella', four spellings) as a fixed-value or fixed-syllable copy of the three lines, ruled out by the repeated upright-chevron pair ending row 3; every 26-letter window of Isidore book I and the Vulgate in all eight row directions; 128 layouts allowing up to three lost signs at the torn right edge, which give one forced fit in Eutyches' Ars de uerbo (reverse of the leaf, ending inside 'odoraris', four signs all O) and seven word-internal hits in the Vulgate, none accepted.",
+   "open": "All three lines. Blocker: no independently labelled value for any sign; Bischoff's comparison manuscripts (Karlsruhe 340 p. 110 checked, no glosses; Vienna Cod. 2223 fols. 20r-21r, 56r, 72v not yet seen) are the next test.",
+   "as_of": "2026-11-22",
+   "outcome": "attempted, open"
   },
   {
    "id": 3906,

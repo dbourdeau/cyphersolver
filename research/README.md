@@ -468,6 +468,7 @@ Add a rule or an `OVERRIDE` entry in `_index.py` for these.
 
 | Folder | Rows | What it covers |
 |---|---|---|
+| [`clm6411/`](clm6411/) | &mdash; | Clm 6411, folio 1r · catalogue 3905 |
 | [`ctts/`](ctts/) | &mdash; | Gold-standard transcriptions with CTTS |
 | [`florentine_cipher_correspondence/`](florentine_cipher_correspondence/) | &mdash; | Two short private ciphers in letters to Niccolò Machiavelli |
 | [`gifford_throgmorton_1595/`](gifford_throgmorton_1595/) | &mdash; | William Gifford to Thomas Throgmorton, Brussels, 5/15 June 1595 |
