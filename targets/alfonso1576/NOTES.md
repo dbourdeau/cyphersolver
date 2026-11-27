@@ -1,6 +1,6 @@
 # alfonso1576: Alfonso II d'Este to the protonotary at Venice, 14 Apr 1576 (catalogue 1566)
 
-Status: in progress. Not yet written up: no site page or README row. Classed read (narrowly), so it is ready for the /writeup skill. The status below is the contributor's.
+Written up 4 Nov 2026 (`docs/alfonso1576.html`, README row, SOLVED_CATALOGUE and SOLVED_RANKING rows). Integration review, 27 Nov 2026 (AI agent, for the maintainers; not a person): `scripts/check_marks.py 76` rerun, 740 words, 737 read as sense (99.6%), 706 with no restored or changed letter (95.4%); `check_decryption.py` 63 lines, 0 differences; all 15 sentences read again against the decryption and the English. At the read bar. Catalogue 1566 narrowed to the 1559 letters the same day. The status below is the contributor's.
 
 Status: read (3 Nov 2026), by a narrow margin. Biblioteca Estense Universitaria, Modena, Autografoteca Campori, Lettera E, Este (d'), Alfonso II d'Este, duca di Ferrara, cc. 76-77.
 
@@ -90,6 +90,18 @@ The recipient is at Venice. A note at the foot of c. 77r, in a later hand, reads
 - [?puntino]; "a [?ti]", where sense wants the Pope; [?gagliarde], whose first sign and b are not explained; "cha", read as a dialect che - blocker: too-short; each occurs once or twice.
 - The docket of c. 77v - blocker: illegible; partly lost in the fold.
 - Prior art: ASMo Cifrario and ambassadors' series - blocker: needs-physical-access.
+
+## Transcription doubts
+
+Checked by the contributor on enlarged crops (3 Nov 2026) and against the key's decode; the 27 Nov integration review did not view the images again. Those that stay doubtful keep their mark in the reading.
+
+- [?puntino] (c. 76r l. 13) - read: puntino, doubtful; checked: image, decode; the signs give -in- where punto would fit; kept marked
+- [?zz] in dest<r>e[?zz]a (c. 76v l. 22) - read: destrezza; checked: image, decode; r absent, then two signs under ink; kept marked
+- [?ti] (c. 77r l. 11) - read: "a ti", doubtful; checked: image, decode; sense wants the Pope ("la ... sua paterna" follows), perhaps a shortened Sua Santita; kept marked
+- [?gagliarde] (c. 77r P2, above the line) - read: gagliarde, doubtful; checked: image, decode; signs give "pgafliarde", first sign and b unexplained; kept marked
+- first sign of <m>o<s>trare (c. 77r l. 9) - read: m; checked: image, decode, transcription; a clear looped tail (g = s) gives "sotrare"; the only one of 339 q-form tails against sense; restored and marked
+- plain tall l where sense wants r (8 sites) - read: r; checked: image, decode, transcription (independent verifier viewed 9 sites, 8 of this kind); restored and marked
+- blotted signs (nostr<i>, trovandos<i>, inqu<i>sitione, <V>i, ch<e>) - read: as marked; checked: image, decode; sign lost under ink; restored and marked
 
 ## Open checks
 
