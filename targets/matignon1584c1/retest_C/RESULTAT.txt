@@ -1,0 +1,7 @@
+read 287/374 signs = 76.7%  (lexicon: fr-1600-letters, mincount 20)
+200 shuffled keys: median 2.7%, max 34.5%
+
+# NOTE (ajoutée après l'exécution unique, 16/11) : M = 0,767 < 0,85 → ÉCHEC au seuil préenregistré (le second critère,
+# M ≥ max + 0,30 = 0,645, est tenu). Erreur de saisie constatée après coup : la ligne « 6 → p » de key_frozen.tsv a été
+# perdue par le filtre grep qui retirait « 6^ » ; key_C.tsv n'a donc pas de valeur pour 6. Recalcul post hoc, NON PROBANT,
+# avec 6 = p (key_read.tsv) : 273/374 = 73,0 %, témoins max 35,3 %. L'échec ne tient donc pas à cette omission.
