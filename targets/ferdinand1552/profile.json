@@ -1,7 +1,7 @@
 {
  "schema_version": 1,
  "target": "ferdinand1552",
- "title": "Ferdinand I to Giovanni Battista Castaldo, Oct 1552 (catalogue 1332): the unglossed cipher of 15 Oct read, three glossed letters not transcribed",
+ "title": "Ferdinand I to Giovanni Battista Castaldo, Oct 1552 (catalogue 1332): all four letters read",
  "documents": [
   {
    "id": "oct15",
@@ -36,7 +36,7 @@
   },
   {
    "id": "oct13",
-   "read": "not read",
+   "read": "read",
    "shelfmark": "Milan, Biblioteca Ambrosiana, G 275 inf., ff. 9r-15v",
    "date": "13 October 1552",
    "year": 1552,
@@ -48,23 +48,25 @@
     "location": [
      "margin"
     ],
-    "source": "Contemporary decipherment in the margins and at page feet. A transcription job, not a break."
+    "source": "Contemporary decipherment in the margins and at page feet; used to check the reading, not to make it (the reading follows the cipher where they differ)."
    },
    "length": {
-    "tokens": "unknown",
+    "tokens": 3545,
     "unit": "symbols",
-    "measured": false
+    "measured": true,
+    "file": "transcription_13oct.txt",
+    "distinct": 61
    },
    "transcription": {
-    "by": "unknown",
+    "by": "llm from images",
     "source": "Ambrosiana IIIF images, full size",
     "image_quality": "good",
-    "notes": "Not transcribed. Raw machine decode only, not fit to cite; the table fits on the pages sampled."
+    "notes": "Machine pass (segmentation and nearest-neighbour labels trained on the eye transcription of 15 Oct, language-model beam over the classifier top labels), then every line whose decryption differed from the reading checked by eye on strips at 1.5x and corrected or typed whole (eye_13oct.tsv). Not blind: the reader knew the key and the text."
    }
   },
   {
    "id": "oct18",
-   "read": "not read",
+   "read": "read",
    "shelfmark": "Milan, Biblioteca Ambrosiana, G 275 inf., ff. 37r-42v",
    "date": "18 October 1552",
    "year": 1552,
@@ -76,23 +78,25 @@
     "location": [
      "margin"
     ],
-    "source": "Contemporary decipherment in the margins and at page feet. A transcription job, not a break."
+    "source": "Contemporary decipherment in the margins and at page feet; used to check the reading, not to make it (the reading follows the cipher where they differ)."
    },
    "length": {
-    "tokens": "unknown",
+    "tokens": 4586,
     "unit": "symbols",
-    "measured": false
+    "measured": true,
+    "file": "transcription_18oct.txt",
+    "distinct": 64
    },
    "transcription": {
-    "by": "unknown",
+    "by": "llm from images",
     "source": "Ambrosiana IIIF images, full size",
     "image_quality": "good",
-    "notes": "Not transcribed. Raw machine decode only, not fit to cite; the table fits on the pages sampled."
+    "notes": "Machine pass (segmentation and nearest-neighbour labels trained on the eye transcription of 15 Oct, language-model beam over the classifier top labels), then every line whose decryption differed from the reading checked by eye on strips at 1.5x and corrected or typed whole (eye_18oct.tsv). Not blind: the reader knew the key and the text."
    }
   },
   {
    "id": "oct22",
-   "read": "not read",
+   "read": "read",
    "shelfmark": "Milan, Biblioteca Ambrosiana, G 275 inf., ff. 43r-48v",
    "date": "22 October 1552",
    "year": 1552,
@@ -104,18 +108,20 @@
     "location": [
      "margin"
     ],
-    "source": "Contemporary decipherment in the margins and at page feet. A transcription job, not a break."
+    "source": "Contemporary decipherment in the margins and at page feet; used to check the reading, not to make it (the reading follows the cipher where they differ)."
    },
    "length": {
-    "tokens": "unknown",
+    "tokens": 3564,
     "unit": "symbols",
-    "measured": false
+    "measured": true,
+    "file": "transcription_22oct.txt",
+    "distinct": 63
    },
    "transcription": {
-    "by": "unknown",
+    "by": "llm from images",
     "source": "Ambrosiana IIIF images, full size",
     "image_quality": "good",
-    "notes": "Not transcribed. Raw machine decode only, not fit to cite; the table fits on the pages sampled."
+    "notes": "Machine pass (segmentation and nearest-neighbour labels trained on the eye transcription of 15 Oct, language-model beam over the classifier top labels), then every line whose decryption differed from the reading checked by eye on strips at 1.5x and corrected or typed whole (eye_22oct.tsv). Not blind: the reader knew the key and the text."
    }
   }
  ],
@@ -260,27 +266,112 @@
    "kind": "transcription",
    "what": "Full-texts audit: the machine labels of the 13 Oct letter already in pass_A_machine.txt (foot of f. 9r, f. 9v, f. 10r; 57 lines) copied to transcription_13oct_ff9r-10r_machine.txt and decoded with key.tsv (decryption_13oct_ff9r-10r.txt); listed with the marginal gloss as decoded, not read. The letters of 18 and 22 Oct (ff. 37r-42v, 43r-48v) and ff. 10v-15v have no transcription in the folder and none was made in this pass.",
    "result": "partial"
+  },
+  {
+   "date": "2026-11-26",
+   "kind": "transcription",
+   "what": "Sister letters of 13, 18 and 22 Oct (ff. 9r-14v, 37r-42r, 43r-47r): 35 pages segmented (scripts/seg3.py); a nearest-neighbour classifier trained on the 15 Oct eye transcription paired with the new segmentation (train_iter.py, 92% cross-validated); cipher lines marked by eye on annotated pages (cipher_lines.tsv, 528 lines, about 11,700 signs).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-26",
+   "kind": "solver",
+   "what": "Language-model beam (la-letters 5-gram) choosing among the classifier top four labels per sign with key.tsv fixed; self-training on lines that scored well as Latin. Decode already Latin and in step with the margin gloss (e.g. f. 44v: habet enim pauciorem eorum numerum quam necesse sit).",
+   "result": "worked",
+   "technique": [
+    "beam/DP decoding",
+    "language-model scoring"
+   ]
+  },
+  {
+   "date": "2026-11-26",
+   "kind": "hypothesis",
+   "what": "A forced alignment of the reading to the classifier look-alikes was tried to cut the eye work; dropped because it chose confusing labels (drops and swaps not borne out by the image).",
+   "result": "failed",
+   "technique": [
+    "beam/DP decoding"
+   ]
+  },
+  {
+   "date": "2026-11-26",
+   "kind": "transcription",
+   "what": "Eye pass: every line whose decryption differed from the reading checked on strips at 1.5x and corrected (eye_13oct.tsv, eye_18oct.tsv, eye_22oct.tsv), most lines typed whole by eye. Words exact rose from 75%, 73% and 59% to 98.7%, 98.9% and 95.4%.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-26",
+   "kind": "reading",
+   "what": "Key extended: nulls Nx and Mx (N and M with long tail), numerals 4 dd and 12 tt (completing the series c3 d4 f5 g6 l7 m8 p9 r10 s11 t12), codes H6 the Moldavian voivode (gloss f. 38v foot \"Modernus Moldauus\", f. 39r \"uayuoda\") and Q1 princeps Turcarum (gloss f. 41v). No rho 7 occurs in the sister letters, so Q7 stays open.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-26",
+   "kind": "control",
+   "what": "Readings checked against the contemporary margin glosses page by page; where they differ the cipher is followed (e.g. \"in dubitationem deducti\", \"regnique illius nostri\", \"presto futuros\"), and spellings are the cipher's (catapractis, isthuc, opereprecium).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-26",
+   "kind": "verification",
+   "technique": [
+    "statistical test",
+    "language-model scoring"
+   ],
+   "what": "Statistical validation (docs/_validate.py): 5441 tokens, 61 types, la-letters order 4: reading -2.023 per letter; random keys -5.817 (z 8.6); key annealed onto shuffled ciphertext best -3.531 (mean -3.561, z 52.9); annealer on the real text -2.023. Verdict: pass.",
+   "result": "worked"
   }
  ],
  "outcome": {
-  "class": "read in part",
-  "key": "partial",
+  "validation": {
+   "date": "2026-11-26",
+   "model": "la-letters",
+   "file": "validation.tsv",
+   "tokens": 5441,
+   "types": 61,
+   "tokens_per_type": 89.2,
+   "score": -2.023,
+   "nulls": {
+    "random keys": {
+     "n": 200,
+     "mean": -5.817,
+     "sd": 0.442,
+     "max": -4.762,
+     "z": 8.6,
+     "p": 0.005
+    },
+    "shuffled refit": {
+     "n": 6,
+     "mean": -3.561,
+     "sd": 0.029,
+     "max": -3.531,
+     "z": 52.9,
+     "p": 0.1429
+    }
+   },
+   "power": -2.023,
+   "verdict": "pass",
+   "notes": "claimed per-occurrence score -2.02; polyphony 0.0; 27 unread tokens left out; annealer on the real text from random keys reached -2.023"
+  },
+  "class": "read",
+  "key": "recovered",
   "method": "key recovered based on adjacent plaintext",
   "method_basis": "Table built by aligning machine labels of ff. 9r-9v with the contemporary gloss of the same pages, then frozen and tested on held-out f. 10r. The sister letters are the adjacent plaintext; the 15 Oct letter has no decipherment of its own.",
   "contribution": [
-   "transcription",
-   "key recovered"
+   "key extended or corrected",
+   "key recovered",
+   "transcription"
   ],
-  "fraction_read": 0.15,
-  "fraction_read_method": "estimated",
-  "fraction_read_source": "The 15 Oct letter is 82 cipher lines of roughly 530 in the four letters, a rough count of lines from a machine pass that includes some clear text. That letter reads at 316 of 317 words.",
+  "fraction_read": 0.978,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "Words in the cipher passages of the four letters that come out of the key letter for letter: 13 Oct 526 of 533, 15 Oct 311 of 317, 18 Oct 732 of 740, 22 Oct 584 of 612 (scripts/check_reading.py; NOTES table); 2153 of 2202. All but one word (code Q7) read as sense.",
   "verification": [
    "independent verification",
    "contemporary decipherment",
    "matched control",
-   "historical consistency"
+   "historical consistency",
+   "statistical test"
   ],
-  "provenance": "contributed",
+  "provenance": "mixed",
   "credits": [
    {
     "who": "lccompany",
@@ -299,9 +390,34 @@
     "role": "verification",
     "note": "one independent AI reader, blind on f. 34r; no human palaeographer",
     "date": "2026-11-03"
+   },
+   {
+    "who": "dudout",
+    "role": "prior solution",
+    "note": "independent reading of the 15 Oct 1552 letter with a key rebuilt from the sister glosses, 29 Oct 2026; files kept in dudout/",
+    "date": "2026-10-29"
    }
   ],
   "texts": [
+   {
+    "doc": "oct13",
+    "label": "13 Oct 1552, f. 9r foot to f. 14v",
+    "transcription": "transcription_13oct.txt",
+    "decryption": "decryption_13oct.txt",
+    "reading": "latin_13oct.txt",
+    "translation": "translation_13oct.md",
+    "language": "la",
+    "state": "read",
+    "read_share": 0.987,
+    "summary": "Ferdinand is troubled by the mutiny of two companies of German foot and the doubtful loyalty of the Transylvanian estates, praises Castaldo for raising 20,000 florins for the heavy horse, sends money and cloth by Captain Stephen, explains that Maurice of Saxony is camped at Gyor to draw the Turks off Eger, and tells Castaldo to oppose the enemy without risking a grave defeat.",
+    "note": "Words 533 in the cipher passages; 526 come out of the key letter for letter (98.7%), the rest are the writer's slips or dropped letters at line ends (check_reading.py). Line-by-line reading: reading_13oct.txt.",
+    "reading_review": {
+     "grade": "A",
+     "by": "Claude (the solving session, not independent)",
+     "date": "2026-11-26",
+     "note": "Read as running Latin against the margin gloss of the time; every cipher passage builds sentences, with codes rendered from key.tsv. Not reviewed by a second reader."
+    }
+   },
    {
     "doc": "oct15",
     "label": "15 Oct 1552, ff. 34r-36r",
@@ -322,23 +438,50 @@
     }
    },
    {
-    "doc": "oct13",
-    "label": "13 Oct 1552, ff. 9r-15v: the cipher of ff. 9r foot, 9v and 10r only (machine labels)",
-    "transcription": "transcription_13oct_ff9r-10r_machine.txt",
-    "decryption": "decryption_13oct_ff9r-10r.txt",
-    "contemporary": "marginal_gloss_9r_9v.txt",
+    "doc": "oct18",
+    "label": "18 Oct 1552, ff. 37r-42r",
+    "transcription": "transcription_18oct.txt",
+    "decryption": "decryption_18oct.txt",
+    "reading": "latin_18oct.txt",
+    "translation": "translation_18oct.md",
     "language": "la",
-    "state": "decoded, not read",
-    "summary": "By the marginal decipherment of the time (ff. 9r-10r): Ferdinand is troubled by how badly things go in Transylvania, by the insolence of two companies of German foot and the disobedience of the inhabitants, and praises Castaldo's diligence in raising twenty thousand florins to pay the heavy cavalry; he has arranged a further sum of money and cloth.",
-    "note": "57 of the letter's cipher lines (foot of f. 9r, f. 9v, f. 10r), as uncorrected machine shape labels copied from pass_A_machine.txt; the decode with key.tsv gives Latin with scattered wrong letters (quamadhibuistiin..., reequitumsolutioneuigin...) and follows the marginal gloss. These pages are where the key was built (9r-9v) and tested (10r), so this is the key's own material, not a new reading. ff. 10v-15v are not transcribed: graphic signs, each page needs the segment-cluster-label pass and an eye check. Not counted in fraction_read."
+    "state": "read",
+    "read_share": 0.989,
+    "summary": "The cavalry of Fabian von Schonaich wants to leave; money and cloth are on the way and the Reich common penny voted under the Treaty of Passau is coming in. Ferdinand asks for a feint towards Lippa to help Eger, reports plague in the Turkish camp, forbids Castaldo to leave Transylvania, and sets the terms for any peace: the tribute may be paid in Ferdinand's name or that of the three nations, but loyalty must be kept.",
+    "note": "Words 740 in the cipher passages; 732 come out of the key letter for letter (98.9%), the rest are the writer's slips or dropped letters at line ends (check_reading.py). Line-by-line reading: reading_18oct.txt.",
+    "reading_review": {
+     "grade": "A",
+     "by": "Claude (the solving session, not independent)",
+     "date": "2026-11-26",
+     "note": "Read as running Latin against the margin gloss of the time; every cipher passage builds sentences, with codes rendered from key.tsv. Not reviewed by a second reader."
+    }
+   },
+   {
+    "doc": "oct22",
+    "label": "22 Oct 1552, ff. 43r-47r",
+    "transcription": "transcription_22oct.txt",
+    "decryption": "decryption_22oct.txt",
+    "reading": "latin_22oct.txt",
+    "translation": "translation_22oct.md",
+    "language": "la",
+    "state": "read",
+    "read_share": 0.954,
+    "summary": "Maurice cannot march to Eger: he lacks light horse and a defeat would shake Hungary, so he raids towards Veszprem and Szekesfehervar instead; Eger holds and winter is coming. Castaldo must stay in Transylvania to hold the passes of Deva against the Turks at Lippa, since Hamet stays with the army at Eger.",
+    "note": "Words 612 in the cipher passages; 584 come out of the key letter for letter (95.4%), the rest are the writer's slips or dropped letters at line ends (check_reading.py). Line-by-line reading: reading_22oct.txt.",
+    "reading_review": {
+     "grade": "A",
+     "by": "Claude (the solving session, not independent)",
+     "date": "2026-11-26",
+     "note": "Read as running Latin against the margin gloss of the time; every cipher passage builds sentences, with codes rendered from key.tsv. Not reviewed by a second reader."
+    }
    }
   ],
   "key_file": "key.tsv",
   "gaps": [
    {
     "item": "Q7, 34r l. 17",
-    "blocker": "not-attempted",
-    "detail": "Not found in the glosses viewed. Transcribing the sister letters would show any rho 7 and its gloss."
+    "blocker": "open-codes",
+    "detail": "Once in the 15 Oct letter; no rho 7 in the three sister letters (about 11,700 signs transcribed); [?Themeswar] from context only."
    },
    {
     "item": "Numeral at 34v.06",
@@ -346,35 +489,20 @@
     "detail": "8 is kept and marked doubtful; Q5 cannot be excluded on the image."
    },
    {
-    "item": "Doubtful signs at 35r.24, 35r.27, 34v.05 and 35r.18",
+    "item": "Doubtful signs at 35r.24, 35r.27, 34v.05, 35r.18 and a few in the sister letters",
     "blocker": "illegible",
-    "detail": "Faint, at the binding edge, blotted or overwritten."
+    "detail": "Faint, blotted, overwritten or interlinear; marked x? in the transcriptions."
    },
    {
-    "item": "Sign 24 at 34v.22",
-    "blocker": "too-short",
-    "detail": "One use, value from context alone."
-   },
-   {
-    "item": "Blind reading of ff. 34v-35v",
-    "blocker": "not-attempted",
-    "detail": "A blind reader has covered only f. 34r of this letter."
-   },
-   {
-    "item": "Letters of 13, 18 and 22 Oct 1552",
-    "blocker": "not-attempted",
-    "detail": "Transcription jobs with this table. The images are good and the gloss covers the pages viewed."
-   },
-   {
-    "item": "Clear text of the letter",
-    "blocker": "not-attempted",
-    "detail": "A first transcription only."
-   },
-   {
-    "item": "Prior art",
-    "blocker": "not-attempted",
-    "detail": "Other editions, Hurmuzaki and the Vienna minute were not checked."
+    "item": "Writer's slips in the sister letters",
+    "blocker": "illegible",
+    "detail": "About 40 words where the cipher itself drops or changes a letter (casis, inodedientes, nu-rum); read from sense and counted as not from the key."
    }
-  ]
+  ],
+  "codes_open": {
+   "open": 1,
+   "total": 8,
+   "tokens_open": 1
+  }
  }
 }

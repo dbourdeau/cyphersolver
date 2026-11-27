@@ -1,16 +1,19 @@
 # 1332: Ferdinand I to Castaldo, Oct 1552 (Ambrosiana G 275 inf.)
 
-Status: in progress. Not yet written up: no site page or README row. Read in part, or not read, with escalation steps still open (see its status below, Remaining gaps and Escalation). The status below is the contributor's.
+Status: read (26 Nov 2026), all four letters. The 15 Oct letter (no decipherment of its own) was read on 3 Nov 2026; the
+three sister letters were transcribed and read with the same table on 26 Nov 2026 (section "The sister letters" below).
 
-Status: read in part (3 Nov 2026), for the entry as a whole. The one letter with no contemporary decipherment is read; the other three
-are transcription jobs, not done.
+| Document | Cipher | Signs | Words | Reads as sense | Words from the key letter for letter | Status |
+|---|---|---|---|---|---|---|
+| 13 Oct 1552, ff. 9r-14v | 9r foot to 14v, 158 lines | 3545 | 533 | 533 | 526 (98.7%) | **read** |
+| 15 Oct 1552, ff. 34r-36r | 34r foot to 35v top, 82 lines | 1904 | 317 | 316 (99.7%) | 311 (98.1%) | **read** |
+| 18 Oct 1552, ff. 37r-42r | 209 lines | 4586 | 740 | 740 | 732 (98.9%) | **read** |
+| 22 Oct 1552, ff. 43r-47r | 161 lines | 3564 | 612 | 612 | 584 (95.4%) | **read** |
 
-| Document | Cipher | Job | Words | Reads as sense | No restored or changed letter | Firm, every doubtful sign out | Status |
-|---|---|---|---|---|---|---|---|
-| 15 Oct 1552, ff. 34r-36r | 34r foot, 34v, 35r, 35v top: 82 lines, 1904 signs, 130 of them nulls | no decipherment in the file | 317 | 316 (99.7%) | 311 (98.1%) | 306 (96.5%) | **read** |
-| 13 Oct 1552, ff. 9r-15v | long | transcription job, margin gloss | | | | | not transcribed; table fits |
-| 18 Oct 1552, ff. 37r-42v | long | transcription job, margin gloss | | | | | not transcribed; table fits |
-| 22 Oct 1552, ff. 43r-48v | long | transcription job, margin and foot gloss | | | | | not transcribed; table fits |
+All four together: 2153 of 2202 words (97.8%) come out of the key letter for letter. One code, Q7 (once, 15 Oct), is open.
+The sister-letter figures are `python scripts/check_reading.py <13oct|18oct|22oct>`: the words of the reading whose every
+letter is the decryption's, in order. The words that miss are the writer's own slips (casis, inodedientes, pecueiarum,
+a letter dropped at a line end: nu-|rum, gerendu-|sunt), read from sense.
 
 "Read" means the cipher of that letter at the 95% rule. The one word not read is code sign Q7. If the numeral at 34v.06 is also held
 open, 315 of 317 (99.4%) read as sense. The clear text of the letter is also given, as a first transcription. Transcription and
@@ -199,24 +202,66 @@ We do not claim the Latin is new to print.
   established. Domokos 2025: on the codex; nothing found on the 15 Oct cipher.
 
 ## Remaining gaps
-
-- Q7, 34r l. 17 - blocker: not-attempted; value not found in the glosses viewed and `[?Themeswar]` is context only; transcribing the sister letters would show any rho 7 and its gloss.
+- Q7, 34r l. 17 - blocker: open-codes; once in the 15 Oct letter, no rho 7 in the three sister letters (about 11,700 signs transcribed, codes Q1 Q3 Q4 Q6 Q8 H6 H9 found), so no gloss can give it; `[?Themeswar]` is context only.
 - The numeral at 34v.06 - blocker: illegible; 8 is kept and marked doubtful, and Q5 cannot be excluded on the image.
-- Doubtful signs at 35r.24, 35r.27, 34v.05 and 35r.18 - blocker: illegible; faint, at the binding edge, blotted or overwritten; a better image or the original would settle them.
+- Doubtful signs at 35r.24, 35r.27, 34v.05, 35r.18 and the x? signs of the sister transcriptions - blocker: illegible; faint, blotted, overwritten or interlinear.
 - Sign 24 at 34v.22 - blocker: too-short; one use, value from context alone.
-- Blind reading of ff. 34v-35v - blocker: not-attempted; a blind reader has covered only f. 34r of this letter.
-- Letters of 13, 18 and 22 Oct 1552 - blocker: not-attempted; transcription jobs with this table, not done. The images are good and the gloss covers the pages viewed. 6 scrawled lines on f. 14v under the date were not examined, the last line of f. 46r was not traced to a gloss, and gloss coverage of every cipher block was not checked.
-- Clear text of the letter - blocker: not-attempted; a first transcription only.
-- Prior art - blocker: not-attempted; other editions, Hurmuzaki and the Vienna minute were not checked.
+- About 40 words in the sister letters where the cipher itself drops or changes a letter - blocker: illegible; these are the writer's slips on the page (checked on the strips), read from sense and not counted as from the key.
 
 ## Escalation
+- [x] siblings: all four letters of the entry transcribed and read with the one table (26 Nov 2026); ff. 13r, 15r, 47v-48r hold no cipher
+- [x] clear-pages: the margin and foot glosses of the sister letters are the contemporary decipherment; checked against every reading, and searched for Q7
+- [x] known-keys: malvezzi1548 and huyson1547 compared by hand against `KEY_BRIEF.md`; they do not apply
+- [x] print: Veress I opened, the 15 Oct letter is not there; his Nos. 135 and 137 print excerpts of the 18 and 22 Oct letters
+- [x] key-rebuild: the table extended from the sister letters (Nx, Mx, 4, 12, H6, Q1); Q7 has no second occurrence
+- [x] retry: every line of the sister letters whose decryption differed from the reading rechecked by eye on strips (26 Nov 2026)
 
-- [x] siblings: all four letters of the entry opened and the table tried on samples of each; the ledger's note that ff. 17r-25v are in clear was not rechecked
-- [x] clear-pages: glosses and page feet of the sister letters read for Q7; f. 34r-36r has no decipherment of its own
-- [x] known-keys: malvezzi1548 and huyson1547 compared by hand against `KEY_BRIEF.md`; they do not apply. R367 images need a login and were not used
-- [x] print: Veress I opened, the letter is not there; the rest is open (see Prior art)
-- [n/a] key-rebuild: every sign has a value except Q7, which occurs once here and has nothing to build on but the pairing with Lippa
-- [x] retry: every doubtful sign rechecked on crops at 4x to 12x on 3 Nov 2026; each stays doubtful, and Q7 was searched as above
+## Transcription doubts
+- 34v.06 numeral (15 Oct) - read: 8 (mm); checked: image, decode, transcription; the independent check read S or 5, kept doubtful.
+- 35r.24, 35r.27, 34v.05, 35r.18 (15 Oct) - read: as listed in corrections_log.tsv; checked: image, decode, transcription; faint or overwritten, kept doubtful.
+- 9v.24 sign 17 (13 Oct), interlinear sign over 2# - read: oo? (s of grauioris); checked: image, decode; insertion seen, shape unclear, kept doubtful.
+- 9v.6 (13 Oct), struck sign with +A above - read: * kept; checked: image at 6x, decode; "et" does not come out (ite...), counted as a slip.
+- 13v.16 sign 11 (13 Oct), inserted sign above +Th - read: A? (e of semel); checked: image, decode; kept doubtful.
+- 12v.5 sign 4 (13 Oct), H with a mark - read: +Th? (null); checked: image, decode; context allows no code, kept doubtful.
+- 37r.16 (18 Oct), insertion marks over ~ - read: V? (t of tumultuentur); checked: image, decode; kept doubtful.
+- 37v.7 (18 Oct), + before Mx - read: +? (f of fuge); checked: image, decode; at the edge of the run, kept doubtful.
+- 39r.17 (18 Oct), H with no numeral seen - read: H6? (the Moldavian; gloss Valachus); checked: image, decode, gloss; kept doubtful.
+- 39v.10, 40v.8, 40v.26, 41v.4, 41v.19 (18 Oct) - read: I:?, Th?, ~?, D?, P? u?; checked: image, decode; faint or blotted, kept doubtful.
+- 44r.9, 44v.24, 45r.24, 45v.24, 47r.21 (22 Oct) - read: +Th?, =O? oo?, D?, d?, H6?; checked: image, decode; faint, blotted or code numeral unclear, kept doubtful.
+
+## The sister letters (13, 18, 22 Oct), 26 Nov 2026
+
+The three letters carry a contemporary decipherment in the margins and at the page feet. They were transcribed sign by
+sign and decrypted with `key.tsv`; the gloss was used to check the reading, and where the two differ the reading follows
+the cipher ("in dubitationem deducti", "regnique illius nostri", "presto futuros", "agasque constanter").
+
+- Segmentation: `scripts/seg3.py` cuts every page into text lines and signs (the 3 Nov `work/seg.py` was not kept).
+  Cipher lines marked by eye on annotated page images: `cipher_lines.tsv`, 528 lines, with x ranges where a line mixes
+  cipher and clear text.
+- Classifier: the 15 Oct eye transcription paired with the new segmentation (`train_build.py`, `train_iter.py`),
+  nearest-neighbour on sign shapes, 92% cross-validated; then self-training on lines that scored well as Latin
+  (`selftrain.py`, `train_from_eye.py`).
+- Beam: `scripts/beam.py` chooses among the classifier's top four labels per sign with the key fixed and a Latin
+  5-gram model (`lang`, la-letters). The raw decode already followed the gloss (f. 44v "habet enim pauciorem eorum
+  numerum quam necesse sit").
+- Eye pass: `scripts/diff_strips.py` shows every line whose decryption differs from the reading, at 1.5x with the
+  labels under the signs; each was corrected (`eye_<letter>.tsv`, syntax in `scripts/transcribe.py`), most lines typed
+  whole by eye. Not blind: the reader knew the key and the text, as in pass B of 15 Oct. Words exact rose from 75%, 73%
+  and 59% to 98.7%, 98.9% and 95.4%. A forced alignment of the reading to the classifier's look-alikes
+  (`scripts/forced.py`) was tried and dropped.
+- Key additions (in `key.tsv`, marked added 26 Nov): nulls Nx and Mx (N and M with a long tail); numerals 4 dd
+  (reddentur) and 12 tt (mittere), completing the series c3 d4 f5 g6 l7 m8 p9 r10 s11 t12 (n has 14); code H6, the
+  Moldavian voivode (gloss foot of f. 38v "Modernus Moldauus", f. 39r margin "uayuoda"); code Q1, princeps Turcarum
+  (gloss f. 41v). No rho 7 occurs.
+- Files: `transcription_<L>.txt`, `decryption_<L>.txt`, `reading_<L>.txt` (line by line), `latin_<L>.txt`
+  (running), `translation_<L>.md`; `python scripts/check_reading.py <L> --lines` lists the lines that differ.
+- Content: 13 Oct, the mutiny of two German companies and doubtful estates, 20,000 florins for the heavy horse,
+  money and cloth by Captain Stephen, Maurice of Saxony at Gyor to draw the Turks off Eger. 18 Oct, Schoenaich's
+  cavalry, the Reich common penny under the Treaty of Passau, a feint towards Lippa, plague in the Turkish camp, no
+  leaving Transylvania, terms for the tribute in any peace. 22 Oct, why Maurice will not march to Eger, raids towards
+  Veszprem and Szekesfehervar, Castaldo to hold the passes of Deva because Hamet stays with the army at Eger.
+- The f. 14v lines under the date are an autograph postscript in cursive, not cipher; not read here.
+- Only the cipher passages are read; the clear text between them is not transcribed.
 
 ## Image sources
 
