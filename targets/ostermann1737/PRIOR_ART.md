@@ -26,7 +26,7 @@ Verdict: **no key, decipherment, gloss or printed reading of this leaf found.** 
 
 [derived] That is ten days before this project's reading (key frozen 24 Nov 2026 10:55Z; Sectigo and FreeTSA stamps 24 Nov 11:01:35Z). **This entry is therefore not the first solution.** Our 24 Nov prior-art search covered Cyphersolver, DECODE, the Commons page and web searches but not Zenodo; that was a gap, and the paper was found on 27 Nov by a search for later work. It was not seen or used before or during our reading, so the two solutions are independent of each other.
 
-[unverified] The two keys and readings have not yet been compared sign by sign (the paper's PDF could not be read from the sandbox). Agreement would corroborate both; any difference should be listed here. Credit for the first solution goes to Prizmic; this entry stays as an independent second reading with its frozen files, controls and stamps.
+Credit for the first solution goes to Prizmic; this entry stays as an independent second reading with its frozen files, controls and stamps. The two keys were compared on 27 Nov (below).
 
 The checks were done with AI tools and no person checked each record by hand.
 

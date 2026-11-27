@@ -130,7 +130,7 @@ The names and the historical setting (Nadir's embassy to Constantinople, the Tur
 
 Flag: the SPbII RAN finding aid for f. 178 op. 3 (Astrakhan prikaznaya palata) lists 1739 rescripts to Kalushkin as "Шифр и дешифрант" and "Частично зашифрован, и дешифрант" (units 178-3-6, -7, -10): other documents, two years later, unpublished, with no key listed; whether they use the same alphabet is unknown [sourced through a fetch summary, unverified at page level].
 
-Not checked: the Astrakhan archive's virtual exhibition page and caption (unreachable: whether it prints a reading is unknown); Soboleva, Тайнопись в истории России / История шифровального дела в России, at page level; AVPRI f. 77 "Сношения России с Персией" (the Collegium's clear draft of this rescript should be there); HathiTrust and Google Books full text. For the prior-art sheet: "бденно смотрѣть и прилѣжно развѣдывать", "Абдулъ Бакы ханъ", "Калушкину" 1737.
+Not checked: the Astrakhan archive's virtual exhibition page and caption (unreachable; Prizmic's paper of 14 Nov 2026 quotes it as describing d. 11 as a cipher letter "с расшифровкой", with its decipherment, so a contemporary decipherment is reported in the file but has not been seen); Soboleva, Тайнопись в истории России / История шифровального дела в России, at page level; AVPRI f. 77 "Сношения России с Персией" (the Collegium's clear draft of this rescript should be there); HathiTrust and Google Books full text. For the prior-art sheet: "бденно смотрѣть и прилѣжно развѣдывать", "Абдулъ Бакы ханъ", "Калушкину" 1737.
 
 ## Catalogue corrections for 1247 (not edited here)
 
@@ -167,7 +167,7 @@ Checked by a model session for the project (an AI agent, not a person) on the pu
 - One illegible sign in line 16 (происходи[...]ъ, т by sense) - blocker: illegible; a blot on the thumbnail.
 - The text continues on an unimaged leaf after line 20 - blocker: needs-physical-access; only l. 21 is on Commons.
 - Weak key values: S29 ф and S32 щ (one training use each), S28 от (two uses, set by hand) - blocker: too-short.
-- Prior-art gaps: the exhibition caption, Soboleva at page level, AVPRI f. 77, the 1739 rescripts with "дешифрант" in SPbII RAN f. 178 op. 3 - blocker: needs-physical-access (unreachable from the sandbox, in print or not online).
+- Prior-art gaps: the exhibition caption (Prizmic's paper quotes the archive's 2017 exhibition describing d. 11 as "Шифрованное письмо с расшифровкой", a cipher letter with its decipherment: a contemporary decipherment is reported in the file, not seen by Prizmic or by us), Soboleva at page level, AVPRI f. 77, the 1739 rescripts with "дешифрант" in SPbII RAN f. 178 op. 3 - blocker: needs-physical-access (unreachable from the sandbox, in print or not online).
 
 Not a gap in the text, but open: the repository's statistical validation (`docs/_validate.py`) has not run, because `lang/` has no Russian model; a corpus and model would have to be added there.
 
@@ -234,7 +234,7 @@ Made here (24 Nov 2026): `transcription_l21.txt` (the 20 rows of `TRANSCRIPTION.
 
 [derived] That is ten days before this project's reading (key frozen 24 Nov 2026 10:55Z; Sectigo and FreeTSA stamps 24 Nov 11:01:35Z). **This entry is therefore not the first solution.** Our 24 Nov prior-art search covered Cyphersolver, DECODE, the Commons page and web searches but not Zenodo; that was a gap, and the paper was found on 27 Nov by a search for later work. It was not seen or used before or during our reading, so the two solutions are independent of each other.
 
-[unverified] The two keys and readings have not yet been compared sign by sign (the paper's PDF could not be read from the sandbox). Agreement would corroborate both; any difference should be listed here. Credit for the first solution goes to Prizmic; this entry stays as an independent second reading with its frozen files, controls and stamps.
+Credit for the first solution goes to Prizmic; this entry stays as an independent second reading with its frozen files, controls and stamps. The two keys were compared on 27 Nov (below).
 
 The checks were done with AI tools and no person checked each record by hand.
 
