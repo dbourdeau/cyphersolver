@@ -110,7 +110,9 @@ function updateSpineState() {
   let s = 0; for (const L of leaves) s += th[L.i] * L.t;
   SP.f = s / TOTAL;
   SP.right = SP.f > 0.5;
-  SP.open = smooth(0, 0.11, Math.min(SP.f, 1 - SP.f));
+  // fully flat by the time a board has turned (a board is BT / TOTAL = 8.9% of the thickness), so a
+  // leaf laid on the opened board never meets a board still tilted up at the hinge
+  SP.open = smooth(0, 0.8 * BT / TOTAL, Math.min(SP.f, 1 - SP.f));
 }
 const BULGE = 0.022;
 // outer surface of the spine at u (0 = front-board end, 1 = back-board end)
