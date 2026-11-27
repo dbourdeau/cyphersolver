@@ -79,7 +79,7 @@
    "homophonic",
    "nomenclator"
   ],
-  "summary": "System A (the whole file except fol. 290): numbers 40-199 stand for letters on a 24-cell table repeated every 24 (letter = table[n mod 24]; e.g. e = 52, 76, 100, 124, 148, 172), numbers from 200 up are a nomenclator (about 50 recovered: 622 Saarbrück, 290 Frankreich, 253 Kaiser, 282 Memorial, 807 Montecuccoli). Cipher passages are set in clear German text; groups are often written without separators but split unambiguously (1xx three digits, 4x-9x two). System H (fol. 290r-v, The Hague): one number per letter in alphabetical order (a 1, b 2, ... z 24) with a few codes (70 England, 180 Prince of Orange).",
+  "summary": "System A (the whole file except fol. 290): numbers 40-199 stand for letters on a 24-cell table repeated every 24 (letter = table[n mod 24]; e.g. e = 52, 76, 100, 124, 148, 172), numbers from 200 up are a nomenclator (about 50 recovered: 622 Saarbrück, 290 Frankreich, 253 Kaiser, 282 Memorial, 807 Montecuccoli). Cipher passages are set in clear German text; groups are often written without separators but split unambiguously (1xx three digits, 4x-9x two). System H (fol. 290r-v, The Hague): one number per letter in alphabetical order (a 1, b 2, ... z 24), 22 probably y, with a few codes (70 England, 180 Prince of Orange).",
   "symbol_kind": "digits",
   "distinct_symbols": "unknown",
   "homophones": {
@@ -101,7 +101,7 @@
    "used": false
   },
   "key_order": "partly alphabetical",
-  "notes": "Residue 6 of the A table is voted s by the glosses (one would expect x, rare); some nomenclator groups of fol. 293 have no value in key.tsv; the gloss of the original fol. 279r-v gives 464 548 Fürst Schwartzenberg and 744 Fürstenberg (and, tentatively, 330 Schweden?, 314 Spanien?). In system H, 15 is read n in nicht/sondern/genereux by the glosses (otherwise p) and 23 stands for x in expressen but in genugsamb too."
+  "notes": "Residue 6 of the A table is voted s by the glosses (one would expect x, rare); some nomenclator groups of fol. 293 have no value in key.tsv; the gloss of the original fol. 279r-v gives 464 548 Fürst Schwartzenberg and 744 Fürstenberg (and, tentatively, 330 Schweden?, 314 Spanien?). In system H, 15 is read n in nicht/sondern/genereux by the glosses (otherwise p) and 23 stands for x in expressen but in genugsamb too. In system H, 22 occurs three times, always after e (keyserlichen, beystehen, verzeyhen): most likely y, not a second i (a conjecture; key.tsv unchanged)."
  },
  "conditions": {
   "prior_solution": {
@@ -177,7 +177,7 @@
   {
    "date": "2026-11-27",
    "kind": "reading",
-   "what": "290r-v read with the glosses' help: 286 cipher words, 247 certain, 24 probable, 10 restored, 5 unresolved (recounted on the edited text: 246 certain, 27 probable, 8 restored, 5 unresolved). Copy fol. 293r-v (no decipherment) read in part with the key: 80 words, 56 certain, 10 probable, 2 restored, 12 unresolved (8 of them nomenclator codes).",
+   "what": "290r-v read with the glosses' help: 285 cipher words (one code one word), 246 certain (86.3 %), 26 probable, 9 restored, 4 unresolved; strict count 211/285 = 74.0 % (35 certain words containing a sign marked doubtful moved to probable). Earlier counts (286 words; 247/24/10/5, then 246/27/8/5) counted sondern twice and followed the gloss in places; the reading now follows the cipher (was, dies, darahn, innehmen, izige, Comendant, keyserlichen, Underthanen, sol). Copy fol. 293r-v (no decipherment) read in part with the key: 80 words, 56 certain, 10 probable, 2 restored, 12 unresolved (8 of them nomenclator codes), a count made before it was found to copy fol. 279r-281r.",
    "result": "partial"
   },
   {
@@ -187,6 +187,12 @@
     "plaintext matching"
    ],
    "what": "At Daniel Bourdeau's request, the copy fol. 293r-v compared with the glossed letter fol. 279r-v (not pre-registered): of 54 runs of three or more numbers noted on 279r-v, 41 recur identical and in order, 10 with one difference, 3 with two (controls: 0.08 in a shuffled stream, none in fol. 297). The copy is not a new text; the comparison corrects five places of reading_293 (Fürst Schwartzenberg, alle rahten, Metzische Sach, Fürstenberg, withdrawal of M[ajestät]).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-27",
+   "kind": "verification",
+   "what": "Regional literature read in open copies (Ruppersberg 1910, pp. 110-152; Köllner 1841, pp. 326-349; Klageschrift of 2/12 Mar 1674 in Mitteilungen des Historischen Vereins für die Saargegend 9, 1909, pp. 271-279; ADB; NDB): the count was arrested by the brigadier de Pilloy on Rochefort's written order and taken directly to Metz (not by Nancy), released through Count Tott; Homburg had been handed to the Elector of Trier in 1671, which identifies the 'Churfürst von Coblenz aus' of the Hague letter. No prior key, decipherment or edition found; Ruppersberg used letters at Koblenz ('Nassau-Saarbrückische Kriegssachen IX 10'), perhaps the old shelfmark of this file (not checked).",
    "result": "worked"
   }
  ],
@@ -199,9 +205,9 @@
    "transcription",
    "key recovered"
   ],
-  "fraction_read": 0.946,
+  "fraction_read": 0.827,
   "fraction_read_method": "measured",
-  "fraction_read_source": "decryption_290.txt: numbers with a letter value, 1,320 of 1,396 (pass arbitration left the rest illegible or without value). Share of words read as sense is lower, see fraction_coherent.",
+  "fraction_read_source": "Certain cipher words over all cipher words counted in the two texts: (246 + 56) / (285 + 80) = 0.827 (fol. 290r-v recounted on the edited text, 27 Nov 2026; fol. 293r-v l. 1-41 counted before it was found to copy fol. 279r-281r, not redone). On numbers with a letter value, decryption_290.txt gives 1,320 of 1,396 (0.946).",
   "verification": [
    "statistical test",
    "contemporary decipherment",
@@ -236,24 +242,19 @@
   ],
   "gaps": [
    {
-    "item": "nomenclator groups of fol. 293 (303, 314, 327, 330, two unknown) and Hague codes 160, 170, 273, 28-",
+    "item": "codes 273, 160 and 170 of the Hague letter, and the nomenclator groups of fol. 293 without value (303, 327 and two others; 330 Schweden? and 314 Spanien? from the gloss of fol. 279)",
     "blocker": "open-codes",
-    "detail": "no value in key.tsv; the gloss of the original fol. 279r-v gives, as far as read, 330 Schweden? and 314 Spanien?; other letters of Nr. 4683 not yet transcribed may gloss the rest"
+    "detail": "no gloss in the photographed letters gives them; other letters of Nr. 4683 not transcribed may"
    },
    {
-    "item": "the other received letters (fol. 160-161, 234-236, 247, 254, 265-266, 279-281, 312-316, 331-339)",
-    "blocker": "no-key-material",
-    "detail": "not counted here as documents: their decipherment of the time exists; only their glosses were used as key material"
-   },
-   {
-    "item": "rest of the copy fol. 293v-295r",
+    "item": "the illegible signs of 290r-v ([s]ondern, the word before 'Duc', [Bruder] [gefaßt], [Mez], [Rechtsgelehrter], [wenig], i[hrem], w[ü]rde, genereu[x])",
     "blocker": "illegible",
-    "detail": "not yet transcribed; it copies the glossed letter fol. 279r-281r number for number (checked on 279r-v against 293r-v l. 1-41), so its text is known from that gloss"
+    "detail": "left illegible after arbitration on the photographs; only a re-reading of the original can do better"
    },
    {
-    "item": "writer of the Hague letter (\"X X\")",
-    "blocker": "needs-physical-access",
-    "detail": "he calls the captive and the addressee his brothers; Walrad of Nassau-Usingen, a brother in Dutch service, is a hypothesis only"
+    "item": "the 26 probable words of 290r-v",
+    "blocker": "illegible",
+    "detail": "each rests on a sign corrected, doubtful or rare (list in reading_290.md); the gloss of the time gives their sense"
    }
   ],
   "texts": [
@@ -266,8 +267,8 @@
     "translation": "translation_290.md",
     "language": "de",
     "state": "read in part",
-    "read_share": 0.86,
-    "summary": "From The Hague, a brother of the captive count reports that the Prince of Orange and the imperial minister will write to Bournonville to reinforce Homburg; he praises the captive's resolution, says all who hold fiefs of Metz are concerned, mocks the letter of Rochefort (who had the count arrested) which confuses vassals and subjects, and expects peace with England within days (the Treaty of Westminster was signed on 19 Feb 1674)."
+    "read_share": 0.863,
+    "summary": "From The Hague, a brother of the captive count reports that the Prince of Orange and the imperial minister will write to Bournonville to reinforce Homburg, or to have the Elector (of Trier, who had held Homburg since 1671) do it from Koblenz; he praises the captive's resolution, says all who hold fiefs of Metz are concerned, mocks the letter of Rochefort (on whose written order the brigadier de Pilloy had the count arrested) which confuses vassals and subjects, and expects peace with England within days (the Treaty of Westminster was signed on 19 Feb 1674)."
    },
    {
     "doc": "lasaar-nsb2-4683-fol293-1674-01-23",
@@ -279,7 +280,7 @@
     "language": "de",
     "state": "read in part",
     "read_share": 0.7,
-    "summary": "A copy, number for number, of the letter fol. 279r-281r (Vienna, received 23 Jan 1674), whose text is known from its decipherment of the time: the writer answers Johann Ludwig's order of 18 Dec 1673 on the 'godless proceedings' at Saarbrücken; all advise denouncing the arrest to the Empress and the Empire, silence would be the greater prejudice; the only stated cause is the revers that was refused; he weighs bringing the case before the arbitration (at the Cologne peace talks), where some members favour the Emperor's party."
+    "summary": "A copy, number for number, of the letter fol. 279r-281r (Vienna, 14 Jan 1674, received 23 Jan 1674; the copy is dated 4 Jan, perhaps the same date in old style, a hypothesis), whose text is known from its decipherment of the time: the writer answers Johann Ludwig's order of 18 Dec 1673 on the 'godless proceedings' at Saarbrücken; all advise denouncing the arrest to the Empress and the Empire, silence would be the greater prejudice; the only stated cause is the revers that was refused; he weighs bringing the case before the arbitration (at the Cologne peace talks), where some members favour the Emperor's party."
    }
   ],
   "key_file": "key.tsv",
@@ -289,6 +290,6 @@
    "total": 61,
    "tokens_open": 13
   },
-  "fraction_coherent": 0.86
+  "fraction_coherent": 0.863
  }
 }
