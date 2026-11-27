@@ -67,7 +67,7 @@
    "published key"
   ],
   "attack": "ciphertext-only",
-  "human_role": "Brice Dudout set the protocol and approved each step; AI agents transcribed (two blind passes and a blind arbiter, none shown a key), wrote and hashed two pre-registrations, ran the measures and read; an independent hostile reader (agent) checked the transcription, key, reading and sources, and its corrections are applied.",
+  "human_role": "Brice Dudout set the protocol and approved each step; AI agents transcribed (two blind passes and a blind arbiter, none shown a key), wrote and hashed two pre-registrations, ran the measures and read; an independent hostile reader (agent) checked the transcription, key, reading and sources, and its corrections are applied; Brice Dudout then answered a blind digit-shape sheet on five doubtful numbers (rule hashed first, three hidden controls passed).",
   "models": [
    "Claude Opus 5.5 (Anthropic), agents run by Brice Dudout"
   ],
@@ -122,7 +122,7 @@
   },
   {
    "kind": "reading",
-   "what": "34 cipher words: 26 sure, 7 probable (one with a supplied letter), 1 unread; joined groups at line ends listed in NOTES.md; corrections of an independent hostile reading applied (ona probable, jaki for jak, Paprzycy sure).",
+   "what": "34 cipher words: 29 sure, 4 probable, 1 unread after a blind digit-shape sheet (was 26 / 7 / 1); joined groups at line ends listed in NOTES.md; corrections of an independent hostile reading applied (jaki for jak, Paprzycy sure).",
    "result": "partial",
    "technique": [
     "contextual inference"
@@ -146,10 +146,10 @@
   "class": "read in part",
   "key": "recovered",
   "method": "key recovered from ciphertext-only",
-  "fraction_read": 0.765,
+  "fraction_read": 0.853,
   "fraction_read_method": "measured",
   "fraction_read_unit": "words",
-  "fraction_read_source": "sure words over cipher words (26 of 34); probable {x}, supplied [x] and unread [...] are holes. With probable words 0.971. Short text (183 cipher letters): the 95 % / 300-character bar is not claimed.",
+  "fraction_read_source": "sure words over cipher words (29 of 34, after the blind digit-shape sheet); probable {x}, supplied [x] and unread [...] are holes. With probable words 0.971. Short text (183 cipher letters): the 95 % / 300-character bar is not claimed.",
   "first_break": false,
   "verification": [
    "matched control",
@@ -187,7 +187,7 @@
     "reading": "reading.md",
     "language": "pl",
     "state": "read in part",
-    "summary": "26 of 34 cipher words sure (0.765); with probable words 0.971. The camp resistance asks about a route for larger consignments; whether Jasia at Rajsko works in the service of the SS next to the Gärtnerei and has contact with the camp through Józek the gardener; it asks for the press and whether explosives are ready.",
+    "summary": "29 of 34 cipher words sure (0.853); with probable words 0.971. The camp resistance asks about a route for larger consignments; whether Jasia at Rajsko works in the service of the SS next to the Gärtnerei and has contact with the camp through Józek the gardener; it asks for the press and whether explosives are ready.",
     "translation": "translation.md",
     "cipher_markup": "**"
    }

@@ -23,21 +23,27 @@ Two blind passes by agents without any key (`blind/PASSE-A.md`, `blind/PASSE-B.m
    - The bigram model and lexicon come from the public part of Paszek's thesis (text not included).
 
 ## Joined groups
-- G8+G9 *ob|sługuje*, G10+G11 *SS|manów*, G13+G14 *budy|nku*, G24+G25 *lag|rem*, G28+G29 *[t]amtejsz(z)e|go*: each join falls at a line end or a « |? » boundary of the transcription; the joins are interpretation.
+- G8+G9 *ob|sługuje*, G10+G11 *SS|manów*, G13+G14 *budy|nku*, G24+G25 *lag|rem*, G28+G29 *tamtejsz(z)e|go*: each join falls at a line end or a « |? » boundary of the transcription; the joins are interpretation.
 
 ## Transcription doubts
-- G2 pos. 8 (5 against 15) - read: 15, word {większych}; checked: image (blind arbiter, an agent), transcription (two blind passes), decode; not on the enlarged image by a person, word stays probable.
+- G2 pos. 8 (5 against 15) - read: 5 written (i), c by sense, word {większych}; checked: image (blind arbiter, an agent; blind shape sheet by a person, 5 chosen), transcription (two blind passes), decode; word stays probable.
 - G3 pos. 8 (3 against 9, overwritten digit) - read: 9, word {przesyłek}; checked: image (blind arbiter, an agent), transcription (two blind passes), decode; word stays probable.
-- G28 pos. 1 (« ? »-shaped sign against 2/7) and the doubled 18 (one overwritten) - read: [t] supplied, one 18 dropped, word {[t]amtejszego}; checked: image (blind arbiter, an agent), transcription (two blind passes), decode.
-- G31 pos. 3 (15 against « 1,5 ») - read: {jaki} (« 1,5 » at least as likely; *jak* matched neither reading and was dropped); checked: image (blind arbiter, an agent), transcription (two blind passes), decode.
+- G28 pos. 1 (« ? »-shaped sign against 2/7) and the doubled 18 (one overwritten) - read: 2 (t), one 18 dropped, word {tamtejszego} (probable for the extra z); checked: image (blind arbiter, an agent; blind shape sheet by a person, 2 chosen), transcription (two blind passes), decode.
+- G31 pos. 3 (15 against « 1,5 ») - read: « 1,5 », word jaki (sure); checked: image (blind arbiter, an agent; blind shape sheet by a person, « 1, » with comma chosen, remark « 1,5 dans le cadre »), transcription (two blind passes), decode.
 - G33 pos. 4 (21 = ś; group cut at the margin) - read: {mieć}, from sense (ć does not occur in the first two stanzas, so the writer had no number for it); checked: image (blind arbiter, an agent), transcription (two blind passes), decode.
-- G38 pos. 9 (22 against 27) - read: 27, word {materjały}; checked: image (blind arbiter, an agent), transcription (two blind passes), decode.
+- G38 pos. 9 (22 against 27) - read: 27, word materjały (sure); checked: image (blind arbiter, an agent; blind shape sheet by a person, 27 chosen), transcription (two blind passes), decode.
 - G7 pos. 1 (17 against 18, overwritten) - read: 17 (*Rajsko*; 18 gives *zajsko*); checked: image (blind arbiter, an agent), transcription (two blind passes), decode, repeat G17.
-- G20 pos. 2 (12 against 17; passes A and B read 17, the arbiter 12) - read: {ona} (17 gives *ora*); checked: image (blind arbiter and hostile reviewer, agents), transcription (two blind passes), decode.
+- G20 pos. 2 (12 against 17; passes A and B read 17, the arbiter 12) - read: 12, word ona (sure; 17 gives *ora*); checked: image (blind arbiter and hostile reviewer, agents; blind shape sheet by a person, 12 chosen), transcription (two blind passes), decode.
 - G6 *twl* - read: unread [...]; checked: image (blind arbiter, an agent), transcription (two blind passes), decode.
 - 2/7, 1/7, 9/3, 1/4, 20/70, 23/73, 27/77 elsewhere - read: as retained in transcription.txt § DOUTES; checked: image (blind arbiter, an agent), decode, transcription (two blind passes); every alternative tried decodes to no Polish word.
 - G1 *paprzycy*: letters sure, identity not established (we affirm neither a person nor a place) - read: Paprzycy (sure); checked: image (blind arbiter, an agent), decode, transcription (two blind passes).
 - Clear text of point 6 (L1–L2), one word of point 9 (« prz‹?›bli‹?› ») and the signature - read: as transcribed, {doubtful}; checked: image (two blind passes and arbiter, low resolution), decode (not applicable: clear text).
+
+## Blind digit-shape sheet (27 Nov 2026)
+Brice Dudout answered a blind sheet: each doubtful number boxed in its line, options were clean shapes of the same hand cut from sure places, labelled « forme N », with three hidden controls (7, 27, 17). The selection rule was hashed before any thumbnail was cut (`blind/sheet-2711/REGLE-SELECTION.md`, SHA-256 6685162f…, in French). His answers are kept byte for byte (`blind/sheet-2711/reponses-auschwitz-gryps-2711.json`, SHA-256 cf2e6d32…), with the revealed key (`cle-revelee.json`) and `SHA256SUMS`. The thumbnails are not included (images under rights).
+- Controls: 3 of 3 recognised, so the sheet is conclusive under the rule.
+- Effect: *ona* (12), *jaki* (« 1,5 ») and *materjały* (27) become sure. *tamtejszego* is read with t (2) and stays probable (extra z). *większych* stays probable (5 confirmed; c by sense).
+- Count: 29 sure, 4 probable, 1 unread (was 26 / 7 / 1).
 
 ## Stanza 2 values
 - h28 (*łowczych*), ź29 (*zaraźliwem*), ó30 (*pióry*): from stanza 2 of the hymn; h and ó were first set from *wybuchowe* and *Józka* and then found at their rank. 19, 25, 29 never occur.
@@ -45,7 +51,7 @@ Two blind passes by agents without any key (`blind/PASSE-A.md`, `blind/PASSE-B.m
 ## Remaining gaps
 - Prior edition (Paczyńska 2013; Paszek 2025 §5.4) - blocker: needs-physical-access (book and full thesis not available online); the message is very probably edited there.
 - G6 *twl*, clear text of point 6, one word of point 9, signature - blocker: illegible (low-resolution reproduction).
-- Human check of the doubtful digits on the image - blocker: not-attempted (an independent hostile reading is under way).
+- Human check of the other doubtful digits (G3 pos. 8, G7 pos. 1 and the faint 2/7, 1/7, 9/3 doubts) - blocker: not-attempted (the blind sheet covered the five that decide words).
 
 ## Escalation
 - [x] siblings: none available to us (other grypsy of the same system: Paczyńska 2013, not seen).
@@ -53,7 +59,7 @@ Two blind passes by agents without any key (`blind/PASSE-A.md`, `blind/PASSE-B.m
 - [x] known-keys: Kłodziński's 1943 instruction (agrees for 1-7 only); hymn texts tried in PREREG 1 and 2; the church version (1838) gives the key.
 - [x] print: web search and public PDFs (Paszek 2025 to p. 141, WUJ free extract, museum pages), 26-27 Nov 2026; Paczyńska 2013 and Paszek §5.4 not accessible (see Remaining gaps).
 - [n/a] key-rebuild: key rebuilt from the song; it reads both halves.
-- [x] retry: every doubtful digit of transcription.txt § DOUTES retried with the key (alternatives decode to no Polish word except those adopted as probable). A person's check on the image is still open (Remaining gaps).
+- [x] retry: every doubtful digit of transcription.txt § DOUTES retried with the key (alternatives decode to no Polish word except those adopted as probable). A person checked five doubtful numbers on a blind sheet; the others are still open (Remaining gaps).
 
 ## Credits
-Brice Dudout set the protocol; Claude Opus agents (Anthropic) transcribed blind, arbitrated, wrote and ran both pre-registrations and read. AI decipherment, not yet checked by a person on the image. An independent hostile reading (agent) checked the transcription, key and reading against the images and sources; its corrections are applied. The checks « image » above are by the blind arbiter, an AI agent working from the screenshots; no person has checked the digits on the image yet.
+Brice Dudout set the protocol; Claude Opus agents (Anthropic) transcribed blind, arbitrated, wrote and ran both pre-registrations and read. AI decipherment; Brice Dudout checked five doubtful numbers on a blind shape sheet, not the other digits. An independent hostile reading (agent) checked the transcription, key and reading against the images and sources; its corrections are applied. The checks « image » above are by the blind arbiter, an AI agent working from the screenshots; no person has checked the digits on the image yet.
