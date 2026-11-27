@@ -14,10 +14,11 @@ Work by AI agents (Claude) for Brice Dudout. No image is reproduced: the Rigsark
    505 and 501 were the reserves named in our protocol of 11 Nov and never transcribed. The rule stopped at
    **505L + 505R + 501R = 315 tokens**; 437R and 481L were transcribed but never decoded (not burned).
 3. **Two blind passes** (`passA_BLIND.tsv`, `passB_BLIND.tsv`): two separate AI sub-agents, each with only the page
-   crops and `SHEET.md`, no key, no earlier file, neither seeing the other. On the portion they agree on 311 of 315
-   tokens (98.7%).
+   crops and `SHEET.md`, no key, no earlier file, neither seeing the other. On the portion they agree on 310 of 315
+   tokens (98.4%; maintainers' count at integration, 27 Nov 2026: this file first said 311, but on 505R line 21 A has
+   "MT 269" and B "PM 169", two tokens, so the 4 token rows of the adjudication cover 5 token positions).
 4. **Adjudication and freeze** (`ADDENDUM-1.md`, `ADJUDICATION.tsv`, `build_final.py`, `FINAL.tsv`;
-   `GEL-FINAL.sha256`, 21:01:30): the 4 token and 4 gloss differences were settled on the image by the coordinating
+   `GEL-FINAL.sha256`, 21:01:30): the 4 token rows (5 token positions) and 4 gloss differences were settled on the image by the coordinating
    agent, who knows key v7 (disclosed), before any decode. Both readers had left many tokens under a long gloss marked
    "no gloss"; the addendum joins every such run to the preceding glossed run of its page, so every token of the three
    pages and every gloss enter the score (an unglossed token can only cost).
@@ -62,6 +63,11 @@ Our reading of 30 Nov 1665, pp. 2-3 (PR #622, `dudout/reading/573.units.tsv`, 23
 (v7, McBratney), 163 alliance, 281 maistre, 310 nous (v5, McBratney). Sure words: **226 of 238 = 94.96%**, under 95%,
 so the letter stays **read in part**. By the folder's strict rule the six move N to E: S 173, E 49, N 16 (72.69% S, as
 before). No transcription was changed; the first reader's frozen files (for example the "15" of 528R.18) are untouched.
+
+18 Nov 2026, blind sign-form check (`573_recount_v7.md`, second section; 3 of 3 controls right): unit 114 is sure
+("persuadez"), unit 238 stays probable ("tous", decoded "tols"). Sure words: **227 of 238 = 95.38%**. This is a unit
+figure on our units: the class of the 30 Nov 1665 entry stays **read in part** (maintainer, 19 Nov 2026) until a
+recount by cipher words is at or above 95% and a reader other than the author has reviewed the reading.
 
 ## Files
 

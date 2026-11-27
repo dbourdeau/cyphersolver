@@ -48,5 +48,5 @@ control signs whose value is sure (574R HB in "arrestez", 573R04 X in "qu'il", 5
 | sure share (Daniel's 95% rule, sure words only) | 94.96% | **95.38%** (227/238) |
 | read by sense (sure + probable) | 97.90% | 97.90% |
 
-At or above 95% of sure words: on our units the letter of image 573 is **read**. The margin is one unit (95% of 238 = 226.1).
+227 of 238 units sure (95.38%), a unit figure, not a count by cipher words. The class stays **read in part** (maintainer, 19 Nov 2026) until a recount by cipher words is at or above 95% and a reader other than the author has reviewed the reading. The margin is one unit (95% of 238 = 226.1). (Wording changed by the maintainers at integration, 27 Nov 2026.)
 The folder's S/E/N figures are not recomputed here. No frozen transcription or key was changed.
