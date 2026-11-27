@@ -179,7 +179,7 @@
  "conditions": {
   "prior_solution": {
    "exists": "in archive",
-   "where": "Contemporary decipherments: 1623 margins (inv. 1079), 1634 glosses (inv. 1108), 1640 interlinear (inv. 1134 scans 605, 617), 1643 interlinear (inv. 1141 scans 886, 890). Not printed: Coolhaas GM I-II print none of the deciphered words; the purpose of the 1643 Vries voyage is printed in the Dagh-Register 1643-44. Cyphersolver issues/PRs/catalogue, DECODE (only 1564, Ramanacoil 1674), HistoCrypt papers: nothing on these ciphers.",
+   "where": "Contemporary decipherments: 1623 margins (inv. 1079), 1634 glosses (inv. 1108), 1640 interlinear (inv. 1134 scans 605, 617), 1643 interlinear (inv. 1141 scans 886, 890). Coolhaas GM I-II print none of the deciphered words, but Leupe 1858 (Reize van Maarten Gerritsz. Vries, introduction and note 2) prints the 1643 page 905 cipher passage with the meaning of its cipher words (found 27 Nov 2026, after reading; not used); Cheng 1995 vol. II p. 27 may print part of the 1623 letter (unverified); the purpose of the 1643 Vries voyage is printed in the Dagh-Register 1643-44. Cyphersolver issues/PRs/catalogue, DECODE (only 1564, Ramanacoil 1674), HistoCrypt papers: nothing on these ciphers.",
    "found": "after reading",
    "used": false
   },
@@ -197,11 +197,12 @@
   ],
   "models": [
    "claude-opus-5-5 (sessions of 26 Nov 2026 AEST)",
-   "Fable (isolated blind second readers 2 and 3, 26 Nov 2026 AEST; exact model id not recorded)"
+   "Fable (isolated blind second readers 2 and 3, 26 Nov 2026 AEST; exact model id not recorded)",
+   "GPT-6.2 Sol, GPT-6.2 Astra, Gemini 4 Carbon (non-Anthropic external blind readers of the 1623 pages via Perplexity, 26 Nov 2026; readings only)"
   ],
   "sessions": 2,
   "first_date": "2026-11-26",
-  "last_date": "2026-11-26"
+  "last_date": "2026-11-27"
  },
  "solution": [
   {
@@ -354,6 +355,24 @@
    "date": "2026-11-26",
    "kind": "access",
    "what": "Crop boxes of the filed-image crops recovered by multi-scale template matching against the NA IIIF full images (images/crops.tsv, scores 0.986-0.997); crops not filed; one region URL tested HTTP 200.",
+   "result": "worked",
+   "technique": [
+    "other"
+   ]
+  },
+  {
+   "date": "2026-11-27",
+   "kind": "verification",
+   "what": "Independent blind reading of 1080_0376/0380 by non-Anthropic models (GPT-6.2 Sol/Astra, Gemini 4 Carbon), images only, aligned by script with the frozen T1623: 0376 121/124 = 97.58% same value (3 gutter groups illegible to them, consistent with our inv. 1079 fills), 0380 127/127; dividers 26/26 and 23/23; no emendation; figure of record unchanged (blind_external_2026-11-26/ALIGNMENT.md).",
+   "result": "worked",
+   "technique": [
+    "other"
+   ]
+  },
+  {
+   "date": "2026-11-27",
+   "kind": "literature search",
+   "what": "Prior art from the external package (Coolhaas GM I 129-130, De Jonge 1870 V 22-24, Cheng 1995 II 27 unverified, Coen Bescheiden I/VII, de Leeuw 2000) and Leupe 1858 checked on archive.org OCR: Leupe prints the 1643 page 905 cipher passage and the meaning of its cipher words; 905.3 groups printed 89/6 against our 39/5 (OCR; not applied).",
    "result": "worked",
    "technique": [
     "other"

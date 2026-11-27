@@ -1,0 +1,58 @@
+# Independent Image-Only Reading: NL-HaNA_1.04.02_1080_0380
+Reader: Gemini 4 Carbon (`/root/visual_comparator`)
+Method: Strictly blind visual reading from `/tmp/voc26/0380-independent.jpg` (3092 x 4188 px) + 3x/6x local crops. Zero consultation of HTR, Claude, literature, 1079, or any text files.
+
+## 1. Page Confirmation & Physical Description
+- **Source raster read**: `/tmp/voc26/0380-independent.jpg` (3092 x 4188 RGB).
+- **Page identity confirmed**: Verso (left-hand page of bound VOC volume; fore-edge at left, tight binding gutter at right).
+- **Contents confirmed**:
+  1. **Upper half (same scribal hand as `1080_0376`)**: Concluding 15 lines of Dutch plaintext (`Nu d' Engelsen beginnen te gevoelen, dat ons desseijn op de Custe van China wel mocht succederen, Comen zij met het 26.e artijckel vant tractaet ... alleen om actie aen dien handel te behouden. —`), followed by **7 lines of dot-and-slash-delimited numerical cipher (C1–C7)**, followed by a 4-line closing paragraph (`Van dit Jaer hebben V.E. geene nagelen te verwachten ... ontrent 80 bhaer ...`) and dateline `Int fort Batavia . adij 25. decemb[er] 1623`.
+  2. **Lower half (different clerk's hand, plaintext only, no cipher)**: `Commissie voor Capitain Egger Janssen ... Pieter de Carpentier Gouverneur Generael wegen den staet der vereenigde nederlanden in Indien ...` (21 lines + catchword `van`).
+
+---
+
+## 2. Cipher Block Diplomatic Reading (C1–C7, Numbers & Separators Prioritized)
+
+### 2A. Exact Diplomatic Reading (As Written on Page)
+
+C1: /38.2./56.54.9.49.28.48./71.50/23.70.61.33.28.48./3.53.50/
+C2: /63.70.26.9.42.28.48./18.21.27.22./28.50/
+C3: /22.24.17.2.56.11.21.37/65.31.38.3.70.50.22/15.10.66.4.71.50/
+C4: /49.28.16.70.72./10.41.37.32./8.25:2.42.70.72.22./3.25.66.34.28.35.15/
+C5: /1.25.26.11.70./56.60.28.70./37.20.50.42.70.51.22./.
+C6: /32.10.66.27.22.17.41.8./42.44.53.15.28.48.22./49.25.2.65.28.48./
+C7: /50.43.32.71.2./7.25.3.41.8.10.32.28.2./ ————
+
+### 2B. Spaced Clause Stream with Inline Ambiguity Tags
+
+C1: / 38.2. / 56.54[14?].9.49.28.48. / 71.50 / 23.70.61.33.28.48. / 3.53.50[51?/56?] /
+C2: / 63.70.26.9.42.28.48. / 18.21.27.22. / 28.50 /
+C3: / 22.24.17.2.56.11.21.37 / 65.31.38.3.70.50.22 / 15.10.66.4.71.50 /
+C4: / 49.28.16.70.72. / 10.41.37.32. / 8.25:2.42.70.72.22. /[or 1]3.25.66.34.28.35.15[/ or .]
+C5: / 1.25.26.11.70. / 56.60.28.70. / 37.20.50.42.70.51.22. / .
+C6: / 32.10.66.27.22.17.41.8. / 42.44.53.15.28.48.22. / 49.25.2.65.28.48. /
+C7: / 50.43.32.71.2. / 7.25.3.41.8.10.32.28.2. / ————
+
+---
+
+## 3. Highlighted Ambiguities (Verified at 6x Magnification)
+
+1. **C4 mid-line (`...72.22./3.25...` vs `...72.22.13.25...`) — HIGH AMBIGUITY**:
+   - Immediately after `22.`, a short rightward-leaning diagonal stroke precedes `3.25.66` with no dot between that stroke and `3`.
+   - Its ~25–30° rightward slant matches the scribe's word-separator slashes `/` (cf. `/8.25` above-left and `/42.44` on C6, whereas digit `1` in `16`, `10`, `41`, `15` is nearly vertical), and every other `.22.` in this passage (C2, C5, C6) is immediately followed by `/`. However, because the stroke is shorter than average and sits close to `3`, `13.25` (with omitted `/`) is a strong graphic alternative to `/3.25`.
+
+2. **C1 right gutter (`/3.53.50/`) — MODERATE GUTTER AMBIGUITY**:
+   - After `28.48./`, the scribe crammed `3.53.50/` into the narrow margin before the binding fold.
+   - `3.` and `53.` are clear; the final crammed token shows the `ς`-curved `5` + a horizontally compressed oval `0` + diagonal `/` into the fold (`50/`, matching `.50/` right below on C2 and C3; minor gutter-compressed alternatives `51/` or `56/`).
+
+3. **C4 right gutter (`...34.28.35.15/`) — MODERATE GUTTER AMBIGUITY**:
+   - After `66.34.28.`, two small cramped numbers sit right against the binding fold: `35.` (`3` + `ς` + `.`) followed by `15` (`1` + `ς`) and a short `/` (or `.`) into the crease. Minor graphic alternatives on the cramped final token: `16` or `50`.
+
+4. **C1 token 4 (`54` vs `14`) — MINOR GRAPHIC AMBIGUITY**:
+   - The descender loop from `behouden` on the plaintext line above intersects the top of `56.54.`. At 3x zoom, the rightward `ς`-hook at the top of `5` is visible (`54`), though the intersecting loop makes `14` a minor visual alternative.
+
+5. **C4 colon separator (`8.25:2.42`)**:
+   - Double vertical dot `:` (instead of single period `.`) appears between `25` and `2`, just like `48:56` on `1080_0376` C5.
+
+6. **C2 (`27` in `18.21.27.22.`) & C6 (`27` in `66.27.22.`)**:
+   - The baseline tail of `2` rises nearly to touch the angled top of `7`, creating a tight `27` pair (identical to `27.` on `1080_0376` C6; not `25`). Note observed maximum code in `0380` is `72` (`70.72.` twice on C4) and minimum is `1` (`/1.25.` on C5).

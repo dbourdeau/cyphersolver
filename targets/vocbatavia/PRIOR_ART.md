@@ -104,3 +104,21 @@ DECODE (from trackB check 26 Nov 07:05 AEST by Chrome) | VOC, 1.04.02 ... | earl
   (inv. 1141 scans 0886, 0890), margins in 1623 (inv. 1079) and glosses in 1634 (inv. 1108). Each was opened only after the score it checks.
 - So we are NOT first to the content. The find is the key (KEY_v2, rebuilt from the 1634 glosses, run unchanged 1623-1643) and the two
   blind tests on unseen letters (1640 postscript, 1643 letter), with their controls and two independent blind second readings.
+
+## Update 27 Nov 2026 (AEST): external blind package and Leupe 1858
+The checks were done with AI tools and no person checked each record by hand. Sources: the non-Anthropic package report
+(`blind_external_2026-11-26/VOC-independent-reading-and-prior-art.md`, with its search logs) and one check of our own (Leupe OCR, below).
+
+| # | source | finding | quote (under 15 words) |
+|---|---|---|---|
+| U1 | Leupe, P. A., ed. 1858. *Reize van Maarten Gerritsz. Vries in 1643 ...* Amsterdam: Muller. Introduction (package: p. 6) and note (2). archive.org reizevanmaarten01siebgoog (OCR read 27 Nov 2026 00:2x UTC) | **CHANGES OUR 1643 VERDICT.** Leupe prints the cipher passage of the 23 Jan 1643 letter as it stands (letter-cipher words, XXI/IV, and the numbers of our runs 905.3, 905.9, 905.10) and, in note (2), the explanation of the cipher words: Tartarie(n), Goud en Zilver Eylanden, Oosten, Japan, noort. So the meaning of the page 905 cipher words has been in print since 1858 [sourced]. Our 1643 test did not use it (found after reading). His numbers agree with ours for 905.9 (11 9 16 10 2) and 905.10 (2 25 20 72 22); for 905.3 the OCR gives 24 89 17 30 16 6 50 20 against our frozen 24 39 17 30 16 5 50 20 (OCR or witness difference; to check on the page image; not applied) [measured on OCR] | "Verklaring der cijfers en letters in dezen brief voorkomende" |
+| U2 | Coolhaas GM I p. 129-130 (already row 2 above) | Confirmed by the package: the 1623 letter is Coolhaas no. III, old inv. 991 ff. 124-126 (copy ff. 61-63) = modern **1079**, not 1080; Coolhaas does not print the explanations or a key [sourced, package] | "de verklaring is in margine in patria bijgeschreven" |
+| U3 | De Jonge, J. K. J. 1870. *De opkomst van het Nederlandsch gezag in Oost-Indië* V, doc. V, pp. 22-24 | Prints a passage of the same 1623 letter about the English; not the cipher blocks or a key [sourced, package; not read by us] | n/a |
+| U4 | Cheng, Shaogang. 1995. *De VOC en Formosa 1624-1662*. Leiden dissertation, vol. II, appendix p. 27 (cited by Andrade, "Pride and Prejudice", Itinerario, n. 8, for this letter) | **[unverified]** whether p. 27 prints the cipher lines or their reading. Open check; on Malcolm's prior-art sheet (page image needed) | n/a |
+| U5 | Colenbrander/Coolhaas, *Jan Pietersz. Coen: Bescheiden* I and VII (public OCR) | no ciphertext, decipherment or key found; II-VI not checked [sourced, package] | n/a |
+| U6 | Dagh-Register (first vol. starts 1 Jan 1624); de Leeuw 2000 *Cryptology and Statecraft in the Dutch Republic* ch. 2 | no 1623 witness; no identification of this key [sourced, package] | n/a |
+| U7 | Dinnissen & Kopal 2021 (HistoCrypt), already above | Ramanacoil 1674: VOC 1292 ff. 544-563 (cipher and key), clear copies VOC 1298; no basis to equate with our system [sourced, package] | n/a |
+
+Revised verdicts: 1623: not first (contemporary margin reading in inv. 1079, reported by Coolhaas); a printed reading is not known, Cheng II p. 27
+open. 1643: **not first, in print since 1858** for the meaning of the page 905 cipher words (Leupe); the page 901/902/906 runs not checked in Leupe
+beyond this passage. Key: Leupe gives word meanings, not a number table; KEY_v2 as a table is still not found in print [as far as checked].
