@@ -10,7 +10,7 @@ three sister letters were transcribed and read with the same table on 26 Nov 202
 | 18 Oct 1552, ff. 37r-42r | 209 lines | 4586 | 740 | 740 | 732 (98.9%) | **read** |
 | 22 Oct 1552, ff. 43r-47r | 161 lines | 3564 | 612 | 612 | 584 (95.4%) | **read** |
 
-All four together: 2153 of 2202 words (97.8%) come out of the key letter for letter. One code, Q7 (once, 15 Oct), is open.
+All four together: 2153 of 2202 words (97.8%) come out of the key letter for letter. Code Q7 (once, 15 Oct) is valued Themeswar from a parallel in Ferdinand's own clear text (section "Q7: the parallel", 27 Nov 2026), not from a gloss; no code is left without a value.
 The sister-letter figures are `python scripts/check_reading.py <13oct|18oct|22oct>`: the words of the reading whose every
 letter is the decryption's, in order. The words that miss are the writer's own slips (casis, inodedientes, pecueiarum,
 a letter dropped at a line end: nu-|rum, gerendu-|sunt), read from sense.
@@ -162,6 +162,10 @@ further). The diversion fits V. Kanász's 2023 article in *Arrabona*, seen only 
 ran diversions in Transdanubia instead of marching to Eger. The gloss of f. 11r has him `ad Iaurinum nunc castrametatus`. The clear
 close concerns the Aldana inquiry and the death of Friar George (Martinuzzi).
 
+## Q7: the parallel, 27 Nov 2026
+
+The 13 Oct letter, two days earlier, says in clear on f. 10v (read on the image at full size, 26 Nov 2026): "Regnicolas ... tanto promptiores et alacriores nunc fore ad propulsandos pauculos illos Turcas, qui ad Lippam et Themeswarium remanserunt". The 15 Oct cipher, 34r l. 17: "Et credimus quod Turce illi ad [Q7] et [Q8 Lippam] relicti". The same Turks, the same two places, the same verb of being left behind; Q8 is Lippa by the gloss of f. 39v, so Q7 is Themeswar. The 30 Oct Moldavian paper in Veress (below) pairs the same places. Value from the writer's own parallel text, not from a decipherment: grade C in the reading.
+
 ## Q7: search of the glosses, 3 Nov 2026
 
 Q7 occurs once in this letter, 34r l. 17, paired with Lippa: `Turce illi ad [Q7] et [Q8] relicti`. Its value is **not found in the glosses
@@ -202,7 +206,7 @@ We do not claim the Latin is new to print.
   established. Domokos 2025: on the codex; nothing found on the 15 Oct cipher.
 
 ## Remaining gaps
-- Q7, 34r l. 17 - blocker: open-codes; once in the 15 Oct letter, no rho 7 in the three sister letters (about 11,700 signs transcribed, codes Q1 Q3 Q4 Q6 Q8 H6 H9 found), so no gloss can give it; `[?Themeswar]` is context only.
+- Q7, 34r l. 17, valued Themeswar from the parallel clear text of f. 10v - blocker: no-key-material; no gloss or key gives the sign itself (no rho 7 in the three sister letters, about 11,700 signs), so the value rests on the parallel.
 - The numeral at 34v.06 - blocker: illegible; 8 is kept and marked doubtful, and Q5 cannot be excluded on the image.
 - Doubtful signs at 35r.24, 35r.27, 34v.05, 35r.18 and the x? signs of the sister transcriptions - blocker: illegible; faint, blotted, overwritten or interlinear.
 - Sign 24 at 34v.22 - blocker: too-short; one use, value from context alone.
@@ -213,7 +217,7 @@ We do not claim the Latin is new to print.
 - [x] clear-pages: the margin and foot glosses of the sister letters are the contemporary decipherment; checked against every reading, and searched for Q7
 - [x] known-keys: malvezzi1548 and huyson1547 compared by hand against `KEY_BRIEF.md`; they do not apply
 - [x] print: Veress I opened, the 15 Oct letter is not there; his Nos. 135 and 137 print excerpts of the 18 and 22 Oct letters
-- [x] key-rebuild: the table extended from the sister letters (Nx, Mx, 4, 12, H6, Q1); Q7 has no second occurrence
+- [x] key-rebuild: the table extended from the sister letters (Nx, Mx, 4, 12, H6, Q1); Q7 has no second occurrence; valued from the parallel clear text of f. 10v (27 Nov 2026)
 - [x] retry: every line of the sister letters whose decryption differed from the reading rechecked by eye on strips (26 Nov 2026)
 
 ## Transcription doubts
