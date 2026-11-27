@@ -128,3 +128,11 @@ transcription error rate of the arbitrated file is not measured against an outsi
 
 **Files** (in `c175r_2711/`): the two passes, the arbitration (transcription, first choices, log, French notes),
 the decryption, the reading and the translation. Hashes in `SHA256SUMS`.
+
+**Blind shape plate (27 Nov 2026, evening; `c175r_2711/sign_check_2711/`).** Eleven doubtful signs and three hidden
+controls went on a blind shape plate for Brice Dudout. The rule was hashed before any thumbnail existed, and no image
+or thumbnail is included. Controls 3/3. Nine signs are settled and applied in `transcription_0175r_plate2711.txt`
+(first choices and decryption beside it). F09 `{b|h}` stays open: the remark says the two options looked the same.
+F26 `{h|t}` also stays open, because its t and h examples were faulty.
+Four probables become sure: **297 of 340 sure (87.4%)**, read by sense unchanged at 97.6%. Details, with two plate
+defects noted, are at the end of `reading_0175r.md` and in `results.tsv`.
