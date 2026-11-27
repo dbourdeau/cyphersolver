@@ -77,7 +77,7 @@ GENERATED = [
     r'<!-- lasry:start -->.*?<!-- lasry:end -->\n?',
     r'\n?<p class="outcome">.*?</p><!-- /outcome -->',
     r'\n?<p class="credits">.*?</p><!-- /credits -->', r'<!-- contrib:start -->.*?<!-- contrib:end -->\n?',
-    r'<link rel="stylesheet" href="pg-[a-z]+\.css[^"]*">\n?', r'\n?<p class="readjump">.*?</p><!-- /readjump -->',r'<!-- cite:start -->.*?<!-- cite:end -->\n?', r'<!-- social:start -->.*?<!-- social:end -->\n?',
+    r'<link rel="stylesheet" href="pg-[a-z0-9-]+\.css[^"]*">\n?', r'\n?<p class="readjump">.*?</p><!-- /readjump -->',r'<!-- cite:start -->.*?<!-- cite:end -->\n?', r'<!-- social:start -->.*?<!-- social:end -->\n?',
 ]
 
 def normalise(s):
@@ -1247,7 +1247,7 @@ def process(path):
     # versions, anchor for "Top", script
     s = re.sub(r'<link rel="stylesheet" href="style.css[^"]*">', f'<link rel="stylesheet" href="style.css?v={VERSION}">', s)
     if 'href="style.css' not in s: s = s.replace('</head>', f'<link rel="stylesheet" href="style.css?v={VERSION}">\n</head>', 1)
-    s = re.sub(r'<link rel="stylesheet" href="pg-[a-z]+\.css[^"]*">\n?', '', s)
+    s = re.sub(r'<link rel="stylesheet" href="pg-[a-z0-9-]+\.css[^"]*">\n?', '', s)
     if slug in PAGE_CSS:
         s = s.replace(f'<link rel="stylesheet" href="style.css?v={VERSION}">', f'<link rel="stylesheet" href="style.css?v={VERSION}">\n<link rel="stylesheet" href="pg-{slug}.css?v={PAGE_CSS[slug]}">', 1)
     # the tab icon: a wax seal with a key (favicon.svg, PNG fallbacks rendered from it)
