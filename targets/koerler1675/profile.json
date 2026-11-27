@@ -14,10 +14,10 @@
    "cleartext_in_document": "separate passages",
    "plaintext": {
     "location": [
-     "none"
+     "interlinear"
     ],
-    "source": "unknown: the file has not been seen; the finding aid says the text is partly ciphered.",
-    "partial": false
+    "source": "contemporary decipherment above the lines, per the archive's reply (Landesarchiv NRW Abt. Westfalen, ref. W2-2026-18182, 27 Nov 2026, reported by Brice Dudout in issue #1026), not seen here: the short cipher passages are 'mostly' deciphered; which passages, if any, lack it is unknown. The file is not digitised.",
+    "partial": true
    },
    "length": {
     "tokens": 0,
@@ -42,9 +42,9 @@
    "cleartext_in_document": "separate passages",
    "plaintext": {
     "location": [
-     "none"
+     "margin"
     ],
-    "source": "unknown: the file has not been seen; the finding aid says the letter is partly ciphered.",
+    "source": "contemporary plaintext of the cipher passage in the left margin of fol. 298r, per the archive's reply (Landesarchiv NRW Abt. Westfalen, ref. W2-2026-18182, 27 Nov 2026, reported by Brice Dudout in issue #1026), not seen here. The file is not digitised.",
     "partial": false
    },
    "length": {
@@ -84,9 +84,9 @@
  },
  "conditions": {
   "prior_solution": {
-   "exists": "unknown",
-   "where": "Erich Hüttenheim, Die Geheimschriften des Fürstbistums Münster unter Christoph Bernhard von Galen 1650-1678 (Münster 1974) covers this chancery's ciphers and may print the Körler key or decipherments; not seen. Nothing for the 1635 letter.",
-   "found": "not found",
+   "exists": "in archive",
+   "where": "Contemporary decipherments on the documents, per the archive's reply (Landesarchiv NRW Abt. Westfalen, ref. W2-2026-18182, 27 Nov 2026, reported by Brice Dudout in issue #1026), not seen here: Nr. 673 fol. 298r has the plaintext in the left margin; Nr. 3009's short cipher passages are mostly deciphered above the lines. Hüttenheim 1974 (Die Geheimschriften des Fürstbistums Münster unter Christoph Bernhard von Galen 1650-1678) still not seen. Neither decipherment has been seen or used here.",
+   "found": "during attempt",
    "used": false
   },
   "inputs": [
@@ -103,7 +103,7 @@
   ],
   "sessions": 1,
   "first_date": "2026-10-28",
-  "last_date": "2026-10-28"
+  "last_date": "2026-11-27"
  },
  "solution": [
   {
@@ -123,6 +123,12 @@
    "kind": "literature search",
    "what": "Web search on Körler, Galen and Münster ciphers: found Hüttenheim 1974, the monograph on Galen's ciphers 1650-1678; not online, not seen. No other edition or decipherment.",
    "result": "partial"
+  },
+  {
+   "date": "2026-11-27",
+   "kind": "access",
+   "what": "Brice Dudout asked LAV NRW Abt. Westfalen about B 001 Nr. 673 and Nr. 3009 (issue #1026). The archive replied (ref. W2-2026-18182) after looking at the originals: Nr. 673 fol. 298r carries the plaintext of its cipher passage in the left margin; Nr. 3009's short cipher passages are mostly deciphered above the lines at the time. Reproductions declined, no copies ordered. Recorded from the issue's summary; neither the email nor the documents seen here. Sibling Nr. 7801 not covered.",
+   "result": "partial"
   }
  ],
  "outcome": {
@@ -137,14 +143,19 @@
   ],
   "gaps": [
    {
-    "item": "A, B 001 Nr. 3009 (ciphered passages)",
-    "blocker": "needs-physical-access"
-   },
-   {
-    "item": "B, B 001 Nr. 673 (1635 letter)",
+    "item": "A, B 001 Nr. 3009: any cipher passage without a contemporary decipherment (the archive says 'mostly' deciphered; extent unknown)",
     "blocker": "needs-physical-access"
    }
   ],
-  "notes": "Not attempted on the ciphertext: neither file is digitised. Next: see Hüttenheim 1974; order B 001 Nr. 3009, 7801 and 673 from LAV NRW Abt. Westfalen; test the W 005 Nr. 499 a and 475 keys first."
+  "notes": "Not attempted on the ciphertext: neither file is digitised. 27 Nov 2026: per the archive's reply (issue #1026, not seen here) both files carry contemporary decipherments, Nr. 673 in the margin and Nr. 3009 mostly above the lines; reproductions declined. Open: any unglossed passage of Nr. 3009 (needs physical access); sibling Nr. 7801 not covered; Hüttenheim 1974 not seen.",
+  "credits": [
+   {
+    "who": "dudout",
+    "role": "identification",
+    "note": "asked LAV NRW Abt. Westfalen, whose reply (ref. W2-2026-18182) identifies contemporary decipherments on B 001 Nr. 673 (margin) and Nr. 3009 (mostly, above the lines)",
+    "date": "2026-11-27",
+    "source": "https://github.com/dbourdeau/cyphersolver/issues/1026"
+   }
+  ]
  }
 }
