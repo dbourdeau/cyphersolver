@@ -1,6 +1,7 @@
 # duben1764: C.W. von Düben's code letters to Gyldenstolpe and Lovisa Ulrika, 1764-1765
 
-Status: in progress
+Status: in progress (no write-up page yet: the target is not finished, see Remaining gaps; catalogue 1616 narrowed on
+27 Nov 2026 to the Chiffer n:o 1 letters with no period decipherment found; a page will be owed when the target is closed)
 
 Unsolved Catalogue no. 450. Riksarkivet, Kungliga arkiv, Drottning Lovisa Ulrika, Utgångna skrivelser,
 SE/RA/710003/02/008/b/K 259 ("Lovisa Ulrikas hemliga korr. m.m.", 1752-1773 spridda år), 223 images,
@@ -159,14 +160,20 @@ Marked on 16 Nov 2026: nothing. Both published texts are the clears of the time,
 Each line names its blocker (README Conventions; types in `docs/_check_writeup.py`). Rewritten 27 Nov 2026 at the merge of
 PR #759, from the sections below; nothing in it is new evidence.
 
-- System A, 6 Mar 1764 and 15 Nov 1765 (catalogue 1616) - blocker: needs-physical-access; the missing cipher part is in no
-  other leaf of this volume (another file, or lost). Both letters were deciphered at the time and key_c01 decodes both
-  (14 Nov section); strict counts, readings and English translations of both period decipherments were made on 14 Nov 2026
-  (0.998 and 1.000, `sysA_1616/`), and 102R-103R and the 15 Nov 1765 gloss were compared with the images. 100R is the end of
-  letter 96, not the rest of 6 Mar. Open: the cipher of 103L.08-103R.13 is not in the volume as far as checked; key_c01 is
-  partial (197 groups with a value; 58 of the 169 group types of 101R have none) and some values are mis-cut by the alignment
-  ("kie" = je, "limp", "sama", "ontje"); two group readings doubtful on the images (101 L09 last group 187 or 184; 96 L02 409
-  or 609); the writer "C. F." of 15 Nov 1765 is not identified.
+- System A, 6 Mar 1764, the cipher of 103L.08-103R.13 (304 of the 622 words of the clear) - blocker: needs-physical-access;
+  not in this volume as far as checked (102L ends mid-sentence with blank paper below; 100R is the end of letter 96, and 87,
+  90R and 104R each open a letter of their own), so it is in another file or lost. That part of the letter survives in its
+  clear only and is outside the strict count of 27 Nov 2026. Both letters of catalogue 1616 are otherwise read through their
+  decipherments of the time (14 Nov and 27 Nov 2026 sections; 321/321 and 359/360 cipher words).
+- System A, 15 Nov 1765, the writer "C. F.?" - blocker: needs-physical-access; the monogram does not identify him and no other
+  source in this volume names him, so it needs another source.
+- System A key (key_c01 and key_c02) - blocker: open-codes; both letters of catalogue 1616 read through their period
+  decipherments, only key values stay open. key_c01 gives 0.452 / 0.464 of their cipher words (sure groups only), 0.548 /
+  0.586 with the 38 values of `sysA_1616/close1616/key_c01_plus_1616.json`; key_c01 is partial (197 groups with a value)
+  and values recur that are not unanimous (448 on, 351 kie, 581 sama, 423 mes, 106 aj, 396 limp, 352 ontje, 397 lo, 494 so).
+  Not settled: 125R.13 (seven groups no gloss covers and the key does not read), 126.12 (533 and 212 no value), group 400
+  (dropped as empty in key_c01; key_c02 reads it "la"); two group readings doubtful on the images (101 L09 last group 187 or
+  184; 96 L02 409 or 609).
 - System B, 5 Oct and 31 Dec 1764 - blocker: open-codes; both letters are read through their clears, only key values stay
   open. Done for the two letters of the Chiffer n:o 2 folder (key rebuilt and tested on 12 Nov, re-tested and completed on
   13 Nov against the clear on 127-128; see the 12 and 13 Nov sections below). Open: the 12 key tokens with no value (dates,
@@ -545,3 +552,46 @@ No new measure; key_c02, the transcriptions and the frozen files are unchanged.
   `sysA_1616/blind_digit_sheet_1711/`. The page itself is not added, because it embeds image crops.
 - 15/4 May 1764 stays worded as read through its contemporary decipherment, not by the key: the 415 of 418 sure words are the
   words of the period clear, and key_c02 decodes about 0.80 of the clear's letters.
+
+## 27 Nov 2026: catalogue 1616, the two system A letters counted over cipher words (PR #1009, Brice Dudout's session, Claude Opus 5.5)
+
+Files in `sysA_1616/close1616/` (README there). No image committed; images 101-103 and 124-126 looked at for two checks only.
+
+- **What was done.** The 14 Nov counts (6 Mar 1764 0.998, 15 Nov 1765 1.000) counted the period decipherments over the whole
+  letters. This recount follows the later rules: cipher words only, sure words only, the decryption the unedited key output.
+  `scripts/strict_align.py` aligns the key values of the groups with the letters of the period decipherment (monotone dynamic
+  programming) and classes each word: sure (the key gives every letter), probable (a group gives other letters), restored (no
+  value or no group under part of the word), irresolved. Nothing is read by sense.
+- **6 Mar 1764** (101R-102L against the clear 102R.01-103L.08): 321 cipher words, all given by the key or the period clear:
+  1.000. key_c01 gives 154 (0.480), with the 38 added values 188 (0.586). The 304 words after 103L.08 are outside the count.
+- **15 Nov 1765** (C lines against the gloss): 360 cipher words (359 of the gloss and one irresolved stretch at 125R.13):
+  0.997. key_c01 gives 169 (0.469), with the additions 216 (0.600). The clear passages (about 250 words) are not counted.
+- **38 key values** imposed by the two letters (`key_c01_additions_1616.json`; `key_c01_plus_1616.json` is a new file,
+  key_c01.json is untouched): 29 new, 9 replacing key_c01 values that never match here. They come from the same two letters
+  they help to count, and 101R (the held-out page of the earlier key_c01 check) is among their sources: no held-out claim.
+- Annotated translations of both letters: `reading_1764-03-06_strict.md`, `reading_1765-11-15_strict.md`. 125L.13 `365?`
+  is 265 (et) on the image; the transcription file is left as filed.
+- Method for both letters: read from existing decipherment. By the key alone they are read in part.
+
+### Integration check (27 Nov 2026, PR #1009)
+
+`strict_align.py` re-run (key_c01 alone, then with the additions) and the tables rebuilt: both `strict_*.tsv` files
+byte-identical, counts as above. An independent decoder gives both decode files on all 80 lines. `key_c01_plus_1616.json`
+is key_c01 plus exactly the 38 values. Switching off the two stated conventions (de for d', y = i) removes 14 sure words. On
+image 125, lines 11, 13 and 14 of 125L agree with the transcription and the group at 125L.13 is 265. Not done: `make_tables.py`
+(it starts a subprocess) and a re-derivation of the 38 values with `local_fit.py`; 124R.06 checked only against the README.
+The four review points, settled here at the merge (the contributor's files are not changed):
+1. 12 sure words (6 Mar) and 5 (15 Nov) rest on a group marked `?`; in PR #759 such words count as probable. With sure groups
+   only, the key shares are **0.452 / 0.548 (6 Mar) and 0.464 / 0.586 (15 Nov)**, key_c01 alone / with the additions. The
+   figures 0.480 / 0.586 and 0.469 / 0.600 count those words.
+2. 37 of the 38 values equal key_c02 (none for 592). key_c02 was built partly from these same two letters (17 Nov section),
+   so that agreement is not independent evidence for the values.
+3. Group 400 is on the page (125L.11, 125L.14) and key_c02 reads it "la". The alignment drops it because key_c01 gives it an
+   empty value, so the four "la" words over it count as restored, not as words with no group in the cipher.
+4. "du bruit": the cipher is at 101R.14, the clear at 102R.12 (the close1616 README names only 102R.12).
+
+Catalogue 1616 at the merge: its two titled letters (6 Mar 1764, 15 Nov 1765) are read from existing decipherment and leave
+the entry. Its `needs` also named the other Chiffer n:o 1 letters (PR #759): 15/4 May 1764 is read through its clear, 20/31
+Aug 1764 is deciphered by its clear 116-117 with no strict count yet, 100R is the end of letter 96; 90R-93L and 104R-105L are
+read in part with no period decipherment found, and 87-89 is unread. So the entry is **narrowed**, not deleted, to 90R-93L,
+104R-105L and 87-89 (`"outcome": "attempted, open"`). No write-up page: the target is still in progress.
