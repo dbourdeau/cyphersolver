@@ -5522,11 +5522,43 @@
   },
   {
    "id": "k-ljs51-47r",
-   "label": "Sign alphabet of the f. 47r verse block, Penn LJS 51 (chain 47r.1)",
+   "label": "Sign alphabet of al-Jawlani's riddle cipher, Penn LJS 51 ff. 20r-20v and 47r",
    "kind": "rebuilt here",
    "by": "cyphersolver",
    "year": null,
-   "note": "By-eye key of the f. 47r block, rebuilt from the compiler's clear verses on f. 47v (corpus work, not written up). Same sign family as f. 48r, different key."
+   "note": "By-eye key of the f. 47r block, rebuilt from the compiler's clear riddle on ff. 47r-47v; the same key reads ff. 20r-20v, the riddle's first five verses, which a misbound quire separated from f. 47r (one cipher, 336 signs). Same sign family as f. 48r, different key."
+  },
+  {
+   "id": "k-ljs51-trees",
+   "label": "Tree script (qalam mushajjar) of Penn LJS 51 f. 63v",
+   "kind": "rebuilt here",
+   "by": "cyphersolver",
+   "year": null,
+   "note": "Each tree is one letter: branches on the viewer's right count the abjad word (1 abjd ... 8), branches on the left the letter's place in it; 78 of 79 trees fit. Decoded from the couplet in the margin and the red letters; the same rule is in Ibn al-Durayhim's Miftah al-kunuz (Mrayati et al. 1987, p. 335)."
+  },
+  {
+   "id": "k-ljs51-tashifi",
+   "label": "Tashifi alphabet of Penn LJS 51 ff. 14v-16v",
+   "kind": "rebuilt here",
+   "by": "cyphersolver",
+   "year": null,
+   "note": "One sign for each undotted Arabic letter shape, 15 classes, as the compiler describes on f. 14v; rebuilt by aligning 778 signs with his two poems on ff. 16v-17v (722 of 756 aligned signs in their class)."
+  },
+  {
+   "id": "k-ljs51-57v",
+   "label": "Sign alphabet of the f. 57v verses, Penn LJS 51",
+   "kind": "rebuilt here",
+   "by": "cyphersolver",
+   "year": null,
+   "note": "23 invented shapes for 23 letters, one letter per shape, rebuilt from the compiler's plaintext; the red letter over each of the 80 signs agrees with the key in every place."
+  },
+  {
+   "id": "k-ljs51corpus",
+   "label": "By-eye sign alphabets of the keyed ciphers in Penn LJS 51",
+   "kind": "rebuilt here",
+   "by": "cyphersolver",
+   "year": null,
+   "note": "One alphabet per cipher, never shared, each rebuilt from the compiler's own plaintext after the cipher (keys.tsv, keys_eye/ in targets/ljs51corpus). The tree script, the tashifi alphabet, the f. 57v alphabet and the riddle cipher have nodes of their own."
   }
  ],
  "links": [
@@ -8973,6 +9005,36 @@
    "target": "ljs51f48r",
    "how": "rebuilt from",
    "note": "recovered from the block itself by annealing; all 228 signs have a value"
+  },
+  {
+   "key": "k-ljs51corpus",
+   "target": "ljs51corpus",
+   "how": "rebuilt from",
+   "note": "one key per cipher, from the compiler's plaintext after each; 53 ciphers keyed at the write-up"
+  },
+  {
+   "key": "k-ljs51-trees",
+   "target": "ljs51corpus",
+   "how": "rebuilt from",
+   "note": "decoded from the couplet written in the margin of f. 63v and the red letter over each tree"
+  },
+  {
+   "key": "k-ljs51-tashifi",
+   "target": "ljs51corpus",
+   "how": "rebuilt from",
+   "note": "aligned with the compiler's two poems on ff. 16v-17v"
+  },
+  {
+   "key": "k-ljs51-57v",
+   "target": "ljs51corpus",
+   "how": "rebuilt from",
+   "note": "from the compiler's plaintext on ff. 57v-58r, checked against the red letters"
+  },
+  {
+   "key": "k-ljs51-47r",
+   "target": "ljs51corpus",
+   "how": "rebuilt from",
+   "note": "from the clear riddle on ff. 47r-47v; reads ff. 20r-20v and 47r"
   }
  ],
  "sources": [
@@ -10473,6 +10535,22 @@
   {
    "source": "s-cyphersolver",
    "key": "k-ljs51-47r"
+  },
+  {
+   "source": "s-cyphersolver",
+   "key": "k-ljs51-trees"
+  },
+  {
+   "source": "s-cyphersolver",
+   "key": "k-ljs51-tashifi"
+  },
+  {
+   "source": "s-cyphersolver",
+   "key": "k-ljs51-57v"
+  },
+  {
+   "source": "s-cyphersolver",
+   "key": "k-ljs51corpus"
   }
  ],
  "unlinked": {

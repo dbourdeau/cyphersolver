@@ -1,0 +1,31 @@
+# LJS 51 prior-art search (27 Nov 2026)
+
+Method: WebSearch (standard) and WebFetch, English and Arabic queries. No personal details used. Pages marked "not read" were blocked (403) or login-walled.
+
+## (1) LJS 51 itself
+- OPenn record https://openn.library.upenn.edu/Data/0001/html/ljs51.html, Penn catalogue https://find.library.upenn.edu/catalog/9958166863503681, Colenda https://colenda.library.upenn.edu/catalog/81431-p3br8mg9s: "Collection of alphabets and encoded correspondence", about 150 alphabets with Arabic transcriptions of the letters; compiler cites al-Jindi al-'Ala'i, Burhan al-Din al-Qudsi and Taqi al-Din Muhammad b. Ja'far al-Husayni as authorities for some alphabets; lacks beginning and end; 106 ff., naskh. Dated 14th-15th c. (catalogue 1400 / "14--"), "Syria?". Provenance: Christie's 1996, Sam Fogg, L. J. Schoenberg, gift to Penn 2015.
+- Digital Scriptorium DS738 https://search.digital-scriptorium.org/catalog/DS738 (read): physical description only (106 ff., 180x124 mm, 13 lines, catchwords, Arabic equivalents in red above some alphabets). No bibliography, no cipher description, no named compiler.
+- Bibliography given by Penn record: Transformation of Knowledge: Early Manuscripts from the Collection of Lawrence J. Schoenberg (London, Paul Holberton, 2006), p. 43 (not read).
+- Facsimile https://repository.upenn.edu/sims_ebooks/13 (403, not read; title seen in search); video orientation https://repository.upenn.edu/handle/20.500.14332/46870 (403, not read).
+- Voynich Ninja thread "LJS 51 Collection of alphabets and encoded correspondence", https://www.voynich.ninja/thread-4685.html (opening post 1 May 2025, 3 pages, 10 replies by MarcoP, Mark Knowles, Rafal, the OP). Only the opening post is visible without login: a glyph comparison of LJS 51 signs with EVA glyphs, credited to a Reddit original; no decipherment claim. A search snippet of the replies says the ciphers are simple substitutions with a word-separation symbol, shown as examples against poetic plaintext rather than cipher tables (forum opinion, replies not read).
+- No Penn blog post, article, edition, Wikipedia/Commons page or decipherment found. Query tried: LJS 51 with "alphabets and encoded correspondence", Schoenberg, blog, Lasry, Tomokiyo, DECODE.
+- Tomokiyo's Cryptiana, Lasry's pages, DECODE: nothing found via search (DECODE needs an account; search cannot see inside it). Check DECODE and cryptiana.web.fc2.com directly if wanted.
+
+## (2) Miftah al-kunuz fi hall (idah) al-marmuz
+- Attribution in modern literature: Ali b. Muhammad Ibn al-Durayhim (1312-1359/62), written c. 1350 ("Miftah al-Kunuz fi Idah al-Marmuz", "The Treasures Key in Deciphering Cryptograms"). Source https://muslimheritage.com/arab-origins-of-cryptology/ (read) and pdfcoffee listing of Arabic Origins of Cryptology Vol. 3 https://pdfcoffee.com/arabic-origins-of-cryptology-vol-3-pdf-free.html (snippet).
+- Edition: Mrayati, Meer Alam, at-Tayyan, Arabic Origins of Cryptology, Vol. 3 "Ibn ad-Durayhim's Treatise on Cryptanalysis" (analytical study plus Arabic text; Arabic edition 1987, English series from Arab Academy of Damascus / KACST). Manuscripts found in Suleymaniye Library, Istanbul (specific copy not stated in the pages read).
+- Conflict: one search result attributed the same title to "Ibrahim b. Muhammad Ibn Dunaynir (1187-1229)" citing a Mrayati edition; this looks like a mix-up. Vol. 4 of the series is Ibn Dunaynir's "Maqasid al-fusul al-mutarjima 'an hall al-tarjama" (https://pdfcoffee.com/arabic-origins-of-cryptolog-vol-4-pdf-free.html, snippet). Treat "Miftah al-kunuz" as Ibn al-Durayhim's; the ascription in LJS 51 f. 102v still needs checking against the page.
+- Wikipedia https://en.wikipedia.org/wiki/Ibn_al-Durayhim does not mention Miftah al-kunuz; it names "Maqasid al-fusul al-mutarjima 'an hall al-tarjama" (unpublished per that page) and eight cipher systems.
+- Name-alikes, not the cryptology work: Ibn Ghanim al-Maqdisi, "Hall al-rumuz wa-mafatih al-kunuz" (Sufi, d. 678 AH; Leipzig MyMSS https://mymssportal.dl.uni-leipzig.de/receive/MyMssWork_work_00001555); Hasan Tabasi, "Miftah al-kunuz fi al-rumuz" (Yazd, copy 1560; https://www.fihrist.org.uk/catalog/manuscript_195).
+- Al-Qalqashandi quotes Ibn al-Durayhim's cryptology in Subh al-a'sha (finished 1412).
+
+## (3) Kitab al-Ajwiba al-Shamiyya
+Nothing found. Queries: "الأجوبة الشامية كتاب". Only unrelated hits (Ibn Fahd al-Hilli, "Jawabat al-masa'il al-Shamiyya", a Shi'i legal work, unrelated to ciphers). No catalogue entry for a cipher-related title.
+
+## (4) Qalam mushajjar, qalam qummi, tashifi
+- The qalam-e mushajjar ("tree script") is named in Encyclopaedia Iranica https://www.iranicaonline.org/?p=7691 as one of the old secret alphabets listed in Malkam Khan's Persian Meftah al-romuz (1902). That is a later Persian source; Iranica was not shown to tie the term to Qalqashandi.
+- Standard study of Qalqashandi's cipher section: C. E. Bosworth, "The Section on Codes and Their Decipherment in Qalqashandi's Subh al-a'sha", Journal of Semitic Studies 8 (1963) 17-33, repr. in Medieval Arabic Culture and Administration (1982) no. XIII. Not read; search could not confirm that it names mushajjar, qummi or tashifi.
+- Nothing found for "qalam qummi" or "tashifi", nor for published decipherments of these scripts. Queries tried: Arabic string with al-Qalqashandi and the three terms; English with "tree script", "tashifi". Ibn 'Adlan, Ibn Dunaynir, al-Kindi, al-Nuwayri were not individually checked for these terms. Next step: Subh al-a'sha vol. 9 (cipher chapter) and Mrayati et al. vols. 1-6.
+
+## (5) Compiler identity
+Nothing found. Queries: Mamluk chancery secretary cipher correspondence with Ibn Fadl Allah al-'Umari, al-Jindi, al-Qudsi, "al-maqarr al-makhdumi al-'Ala'i", "Shihab al-Din al-mutarjim". Only context: Qalqashandi joined the chancery in 791/1389 under Badr al-Din Ibn Fadl Allah al-'Umari (d. 796/1394) as privy secretary (source https://ojs.ub.uni-konstanz.de/transmed/index.php/tmh/article/download/81/156/169, via search snippet). Al-Safadi and Ibn Hajar biographical works not searched in full text (not reachable by web search); no article on this circle's cipher correspondence found.

@@ -1,0 +1,831 @@
+{
+ "chain_id": "30v.7",
+ "label": "by-eye sign inventory and key test; no plaintext; the 30r.4 key is a by-eye key from the compiler's plaintext, not independently confirmed",
+ "signs": 81,
+ "letters": null,
+ "plaintext": null,
+ "cipher_lines": {
+  "30v07": "S1 S2 S3 S4 S5 | S6 S7 | S8 S6 S9 | S7 S6 S10",
+  "30v08": "| S2 S11 | S6 S7 | S11 S2 S11 S12 S7 S11 S13 |",
+  "30v09": "S8 S13 S4 | S11 S2 S13 S8 S11 S14 S3 | S15 S13 S7 S7",
+  "30v10": "| S12 S11 S15 S2 | S11 S2 S11 S8 S16 S11 S13",
+  "30v11": "| S4 S17 S4 | S15 S5 S8 S2 | S6 S18 S7 S6 | S11",
+  "30v12": "S7 | S14 S8 S4 | S11 S2 S11 S17 S10 S11",
+  "30v13": "S13 | S8 S4 S15 S19 S4 | S11 S7 S18 S11 |"
+ },
+ "cipher_lines_mnemonic": {
+  "30v07": "Hb Zg Nn Ch Dk | Ae Z3 | Tt Ae Am | Z3 Ae Six",
+  "30v08": "| Zg Cb | Ae Z3 | Cb Zg Cb W Z3 Cb // |",
+  "30v09": "Tt // Ch | Cb Zg // Tt Cb Kf Nn | Ay // Z3 Z3",
+  "30v10": "| W Cb Ay Zg | Cb Zg Cb Tt Te Cb //",
+  "30v11": "| Ch Kk Ch | Ay Dk Tt Zg | Ae Kx Z3 Ae | Cb",
+  "30v12": "Z3 | Kf Tt Ch | Cb Zg Cb Kk Six Cb",
+  "30v13": "// | Tt Ch Ay Ei Ch | Cb Z3 Kx Cb |"
+ },
+ "signs_per_line_by_eye": {
+  "30v07": 13,
+  "30v08": 11,
+  "30v09": 14,
+  "30v10": 11,
+  "30v11": 12,
+  "30v12": 10,
+  "30v13": 10
+ },
+ "shapes": [
+  {
+   "label": "S1",
+   "description": "long bowl curving down-left into a solid loop (ڡ / ﮩ-like)",
+   "crop": "output/ljs51/crops/eye_30v.7/z_R.png row 1, first sign"
+  },
+  {
+   "label": "S2",
+   "description": "zigzag M / N (three strokes, the left one rising)",
+   "crop": "output/ljs51/crops/eye_30v.7/z_R.png row 1, sign 2; row 2"
+  },
+  {
+   "label": "S3",
+   "description": "٩ (loop on a stem)",
+   "crop": "output/ljs51/crops/eye_30v.7/z_R.png row 1, sign 3; output/ljs51/crops/eye_30v.7/z_L.png row 3"
+  },
+  {
+   "label": "S4",
+   "description": "chevron <",
+   "crop": "output/ljs51/crops/eye_30v.7/z_R.png row 1, sign 4; rows 5-7"
+  },
+  {
+   "label": "S5",
+   "description": "d-hook: loop at the foot of a leaning stem",
+   "crop": "output/ljs51/crops/eye_30v.7/z_R.png row 1, sign 5; row 5"
+  },
+  {
+   "label": "S6",
+   "description": "ع-head over a flat base line (ﻊ lying, ـعـ)",
+   "crop": "output/ljs51/crops/eye_30v.7/z_R.png row 1 group 2; row 2; output/ljs51/crops/eye_30v.7/z_L.png row 1"
+  },
+  {
+   "label": "S7",
+   "description": "numeral 3 (ʒ)",
+   "crop": "output/ljs51/crops/eye_30v.7/z_R.png row 1; output/ljs51/crops/eye_30v.7/z_L.png rows 1-3, 5, 7"
+  },
+  {
+   "label": "S8",
+   "description": "ط-shape: a bowl with an upright stem",
+   "crop": "output/ljs51/crops/eye_30v.7/z_L.png row 1; output/ljs51/crops/eye_30v.7/z_R.png rows 3, 5-7"
+  },
+  {
+   "label": "S9",
+   "description": "Λ with a vertical stroke through its apex",
+   "crop": "output/ljs51/crops/eye_30v.7/z_L.png row 1"
+  },
+  {
+   "label": "S10",
+   "description": "tall 6 / б (a stem curving into a loop at the foot)",
+   "crop": "output/ljs51/crops/eye_30v.7/z_L.png row 1, last sign; row 6"
+  },
+  {
+   "label": "S11",
+   "description": "cup with horns and a ball under it (ٮ over a ring), the most frequent sign",
+   "crop": "output/ljs51/crops/eye_30v.7/z_L.png rows 2, 4, 6, 7; output/ljs51/crops/eye_30v.7/z_R.png rows 2-4"
+  },
+  {
+   "label": "S12",
+   "description": "small ш / س-teeth (three short prongs)",
+   "crop": "output/ljs51/crops/eye_30v.7/z_L.png row 2; output/ljs51/crops/eye_30v.7/z_R.png row 4"
+  },
+  {
+   "label": "S13",
+   "description": "double slanted stroke // (inside groups, a sign)",
+   "crop": "output/ljs51/crops/eye_30v.7/z_L.png rows 2-4; output/ljs51/crops/eye_30v.7/z_R.png rows 3, 7 (drawn thick in l.13)"
+  },
+  {
+   "label": "S14",
+   "description": "large kaf ک: a slanted stroke over a base, with a small ball",
+   "crop": "output/ljs51/crops/eye_30v.7/z_L.png row 3; output/ljs51/crops/eye_30v.7/z_R.png row 6"
+  },
+  {
+   "label": "S15",
+   "description": "ع with its tail curving down below the line",
+   "crop": "output/ljs51/crops/eye_30v.7/z_L.png row 3; output/ljs51/crops/eye_30v.7/z_R.png rows 4, 5, 7"
+  },
+  {
+   "label": "S16",
+   "description": "flat base with a short upright hooked stroke on it (ط lying)",
+   "crop": "output/ljs51/crops/eye_30v.7/z_L.png row 4"
+  },
+  {
+   "label": "S17",
+   "description": "small reversed s-hook",
+   "crop": "output/ljs51/crops/eye_30v.7/z_R.png row 5; output/ljs51/crops/eye_30v.7/z_L.png row 6"
+  },
+  {
+   "label": "S18",
+   "description": "bar with a V-cross rising from it",
+   "crop": "output/ljs51/crops/eye_30v.7/z_L.png rows 5, 7"
+  },
+  {
+   "label": "S19",
+   "description": "numeral ٨ (plain Λ)",
+   "crop": "output/ljs51/crops/eye_30v.7/z_R.png row 7"
+  }
+ ],
+ "inventory": [
+  {
+   "label": "S11",
+   "mnemonic": "Cb",
+   "description": "cup with horns and a ball under it (ٮ over a ring), the most frequent sign",
+   "crop": "output/ljs51/crops/eye_30v.7/z_L.png rows 2, 4, 6, 7; output/ljs51/crops/eye_30v.7/z_R.png rows 2-4",
+   "count": 16,
+   "frequency": 0.198
+  },
+  {
+   "label": "S7",
+   "mnemonic": "Z3",
+   "description": "numeral 3 (ʒ)",
+   "crop": "output/ljs51/crops/eye_30v.7/z_R.png row 1; output/ljs51/crops/eye_30v.7/z_L.png rows 1-3, 5, 7",
+   "count": 9,
+   "frequency": 0.111
+  },
+  {
+   "label": "S2",
+   "mnemonic": "Zg",
+   "description": "zigzag M / N (three strokes, the left one rising)",
+   "crop": "output/ljs51/crops/eye_30v.7/z_R.png row 1, sign 2; row 2",
+   "count": 8,
+   "frequency": 0.099
+  },
+  {
+   "label": "S4",
+   "mnemonic": "Ch",
+   "description": "chevron <",
+   "crop": "output/ljs51/crops/eye_30v.7/z_R.png row 1, sign 4; rows 5-7",
+   "count": 7,
+   "frequency": 0.086
+  },
+  {
+   "label": "S8",
+   "mnemonic": "Tt",
+   "description": "ط-shape: a bowl with an upright stem",
+   "crop": "output/ljs51/crops/eye_30v.7/z_L.png row 1; output/ljs51/crops/eye_30v.7/z_R.png rows 3, 5-7",
+   "count": 7,
+   "frequency": 0.086
+  },
+  {
+   "label": "S6",
+   "mnemonic": "Ae",
+   "description": "ع-head over a flat base line (ﻊ lying, ـعـ)",
+   "crop": "output/ljs51/crops/eye_30v.7/z_R.png row 1 group 2; row 2; output/ljs51/crops/eye_30v.7/z_L.png row 1",
+   "count": 6,
+   "frequency": 0.074
+  },
+  {
+   "label": "S13",
+   "mnemonic": "//",
+   "description": "double slanted stroke // (inside groups, a sign)",
+   "crop": "output/ljs51/crops/eye_30v.7/z_L.png rows 2-4; output/ljs51/crops/eye_30v.7/z_R.png rows 3, 7 (drawn thick in l.13)",
+   "count": 6,
+   "frequency": 0.074
+  },
+  {
+   "label": "S15",
+   "mnemonic": "Ay",
+   "description": "ع with its tail curving down below the line",
+   "crop": "output/ljs51/crops/eye_30v.7/z_L.png row 3; output/ljs51/crops/eye_30v.7/z_R.png rows 4, 5, 7",
+   "count": 4,
+   "frequency": 0.049
+  },
+  {
+   "label": "S3",
+   "mnemonic": "Nn",
+   "description": "٩ (loop on a stem)",
+   "crop": "output/ljs51/crops/eye_30v.7/z_R.png row 1, sign 3; output/ljs51/crops/eye_30v.7/z_L.png row 3",
+   "count": 2,
+   "frequency": 0.025
+  },
+  {
+   "label": "S5",
+   "mnemonic": "Dk",
+   "description": "d-hook: loop at the foot of a leaning stem",
+   "crop": "output/ljs51/crops/eye_30v.7/z_R.png row 1, sign 5; row 5",
+   "count": 2,
+   "frequency": 0.025
+  },
+  {
+   "label": "S10",
+   "mnemonic": "Six",
+   "description": "tall 6 / б (a stem curving into a loop at the foot)",
+   "crop": "output/ljs51/crops/eye_30v.7/z_L.png row 1, last sign; row 6",
+   "count": 2,
+   "frequency": 0.025
+  },
+  {
+   "label": "S12",
+   "mnemonic": "W",
+   "description": "small ш / س-teeth (three short prongs)",
+   "crop": "output/ljs51/crops/eye_30v.7/z_L.png row 2; output/ljs51/crops/eye_30v.7/z_R.png row 4",
+   "count": 2,
+   "frequency": 0.025
+  },
+  {
+   "label": "S14",
+   "mnemonic": "Kf",
+   "description": "large kaf ک: a slanted stroke over a base, with a small ball",
+   "crop": "output/ljs51/crops/eye_30v.7/z_L.png row 3; output/ljs51/crops/eye_30v.7/z_R.png row 6",
+   "count": 2,
+   "frequency": 0.025
+  },
+  {
+   "label": "S17",
+   "mnemonic": "Kk",
+   "description": "small reversed s-hook",
+   "crop": "output/ljs51/crops/eye_30v.7/z_R.png row 5; output/ljs51/crops/eye_30v.7/z_L.png row 6",
+   "count": 2,
+   "frequency": 0.025
+  },
+  {
+   "label": "S18",
+   "mnemonic": "Kx",
+   "description": "bar with a V-cross rising from it",
+   "crop": "output/ljs51/crops/eye_30v.7/z_L.png rows 5, 7",
+   "count": 2,
+   "frequency": 0.025
+  },
+  {
+   "label": "S1",
+   "mnemonic": "Hb",
+   "description": "long bowl curving down-left into a solid loop (ڡ / ﮩ-like)",
+   "crop": "output/ljs51/crops/eye_30v.7/z_R.png row 1, first sign",
+   "count": 1,
+   "frequency": 0.012
+  },
+  {
+   "label": "S9",
+   "mnemonic": "Am",
+   "description": "Λ with a vertical stroke through its apex",
+   "crop": "output/ljs51/crops/eye_30v.7/z_L.png row 1",
+   "count": 1,
+   "frequency": 0.012
+  },
+  {
+   "label": "S16",
+   "mnemonic": "Te",
+   "description": "flat base with a short upright hooked stroke on it (ط lying)",
+   "crop": "output/ljs51/crops/eye_30v.7/z_L.png row 4",
+   "count": 1,
+   "frequency": 0.012
+  },
+  {
+   "label": "S19",
+   "mnemonic": "Ei",
+   "description": "numeral ٨ (plain Λ)",
+   "crop": "output/ljs51/crops/eye_30v.7/z_R.png row 7",
+   "count": 1,
+   "frequency": 0.012
+  }
+ ],
+ "shapes_total": 19,
+ "singletons": [
+  "S1",
+  "S9",
+  "S16",
+  "S19"
+ ],
+ "dividers_total": 20,
+ "groups_total": 20,
+ "group_lengths": [
+  5,
+  2,
+  3,
+  3,
+  2,
+  2,
+  7,
+  3,
+  7,
+  4,
+  4,
+  7,
+  3,
+  4,
+  4,
+  2,
+  3,
+  7,
+  5,
+  4
+ ],
+ "groups": [
+  {
+   "group": 1,
+   "length": 5,
+   "lines": [
+    "30v07"
+   ],
+   "signs": [
+    "S1",
+    "S2",
+    "S3",
+    "S4",
+    "S5"
+   ],
+   "mnemonics": [
+    "Hb",
+    "Zg",
+    "Nn",
+    "Ch",
+    "Dk"
+   ],
+   "read_with_30r4_shared_values": "··تو·"
+  },
+  {
+   "group": 2,
+   "length": 2,
+   "lines": [
+    "30v07"
+   ],
+   "signs": [
+    "S6",
+    "S7"
+   ],
+   "mnemonics": [
+    "Ae",
+    "Z3"
+   ],
+   "read_with_30r4_shared_values": "سغ"
+  },
+  {
+   "group": 3,
+   "length": 3,
+   "lines": [
+    "30v07"
+   ],
+   "signs": [
+    "S8",
+    "S6",
+    "S9"
+   ],
+   "mnemonics": [
+    "Tt",
+    "Ae",
+    "Am"
+   ],
+   "read_with_30r4_shared_values": "·س·"
+  },
+  {
+   "group": 4,
+   "length": 3,
+   "lines": [
+    "30v07"
+   ],
+   "signs": [
+    "S7",
+    "S6",
+    "S10"
+   ],
+   "mnemonics": [
+    "Z3",
+    "Ae",
+    "Six"
+   ],
+   "read_with_30r4_shared_values": "غس·"
+  },
+  {
+   "group": 5,
+   "length": 2,
+   "lines": [
+    "30v08"
+   ],
+   "signs": [
+    "S2",
+    "S11"
+   ],
+   "mnemonics": [
+    "Zg",
+    "Cb"
+   ],
+   "read_with_30r4_shared_values": "··"
+  },
+  {
+   "group": 6,
+   "length": 2,
+   "lines": [
+    "30v08"
+   ],
+   "signs": [
+    "S6",
+    "S7"
+   ],
+   "mnemonics": [
+    "Ae",
+    "Z3"
+   ],
+   "read_with_30r4_shared_values": "سغ"
+  },
+  {
+   "group": 7,
+   "length": 7,
+   "lines": [
+    "30v08"
+   ],
+   "signs": [
+    "S11",
+    "S2",
+    "S11",
+    "S12",
+    "S7",
+    "S11",
+    "S13"
+   ],
+   "mnemonics": [
+    "Cb",
+    "Zg",
+    "Cb",
+    "W",
+    "Z3",
+    "Cb",
+    "//"
+   ],
+   "read_with_30r4_shared_values": "···جغ··"
+  },
+  {
+   "group": 8,
+   "length": 3,
+   "lines": [
+    "30v09"
+   ],
+   "signs": [
+    "S8",
+    "S13",
+    "S4"
+   ],
+   "mnemonics": [
+    "Tt",
+    "//",
+    "Ch"
+   ],
+   "read_with_30r4_shared_values": "··و"
+  },
+  {
+   "group": 9,
+   "length": 7,
+   "lines": [
+    "30v09"
+   ],
+   "signs": [
+    "S11",
+    "S2",
+    "S13",
+    "S8",
+    "S11",
+    "S14",
+    "S3"
+   ],
+   "mnemonics": [
+    "Cb",
+    "Zg",
+    "//",
+    "Tt",
+    "Cb",
+    "Kf",
+    "Nn"
+   ],
+   "read_with_30r4_shared_values": "·····بت"
+  },
+  {
+   "group": 10,
+   "length": 4,
+   "lines": [
+    "30v09"
+   ],
+   "signs": [
+    "S15",
+    "S13",
+    "S7",
+    "S7"
+   ],
+   "mnemonics": [
+    "Ay",
+    "//",
+    "Z3",
+    "Z3"
+   ],
+   "read_with_30r4_shared_values": "ه·غغ"
+  },
+  {
+   "group": 11,
+   "length": 4,
+   "lines": [
+    "30v10"
+   ],
+   "signs": [
+    "S12",
+    "S11",
+    "S15",
+    "S2"
+   ],
+   "mnemonics": [
+    "W",
+    "Cb",
+    "Ay",
+    "Zg"
+   ],
+   "read_with_30r4_shared_values": "ج·ه·"
+  },
+  {
+   "group": 12,
+   "length": 7,
+   "lines": [
+    "30v10"
+   ],
+   "signs": [
+    "S11",
+    "S2",
+    "S11",
+    "S8",
+    "S16",
+    "S11",
+    "S13"
+   ],
+   "mnemonics": [
+    "Cb",
+    "Zg",
+    "Cb",
+    "Tt",
+    "Te",
+    "Cb",
+    "//"
+   ],
+   "read_with_30r4_shared_values": "·······"
+  },
+  {
+   "group": 13,
+   "length": 3,
+   "lines": [
+    "30v11"
+   ],
+   "signs": [
+    "S4",
+    "S17",
+    "S4"
+   ],
+   "mnemonics": [
+    "Ch",
+    "Kk",
+    "Ch"
+   ],
+   "read_with_30r4_shared_values": "و·و"
+  },
+  {
+   "group": 14,
+   "length": 4,
+   "lines": [
+    "30v11"
+   ],
+   "signs": [
+    "S15",
+    "S5",
+    "S8",
+    "S2"
+   ],
+   "mnemonics": [
+    "Ay",
+    "Dk",
+    "Tt",
+    "Zg"
+   ],
+   "read_with_30r4_shared_values": "ه···"
+  },
+  {
+   "group": 15,
+   "length": 4,
+   "lines": [
+    "30v11"
+   ],
+   "signs": [
+    "S6",
+    "S18",
+    "S7",
+    "S6"
+   ],
+   "mnemonics": [
+    "Ae",
+    "Kx",
+    "Z3",
+    "Ae"
+   ],
+   "read_with_30r4_shared_values": "سمغس"
+  },
+  {
+   "group": 16,
+   "length": 2,
+   "lines": [
+    "30v11",
+    "30v12"
+   ],
+   "signs": [
+    "S11",
+    "S7"
+   ],
+   "mnemonics": [
+    "Cb",
+    "Z3"
+   ],
+   "read_with_30r4_shared_values": "·غ"
+  },
+  {
+   "group": 17,
+   "length": 3,
+   "lines": [
+    "30v12"
+   ],
+   "signs": [
+    "S14",
+    "S8",
+    "S4"
+   ],
+   "mnemonics": [
+    "Kf",
+    "Tt",
+    "Ch"
+   ],
+   "read_with_30r4_shared_values": "ب·و"
+  },
+  {
+   "group": 18,
+   "length": 7,
+   "lines": [
+    "30v12",
+    "30v13"
+   ],
+   "signs": [
+    "S11",
+    "S2",
+    "S11",
+    "S17",
+    "S10",
+    "S11",
+    "S13"
+   ],
+   "mnemonics": [
+    "Cb",
+    "Zg",
+    "Cb",
+    "Kk",
+    "Six",
+    "Cb",
+    "//"
+   ],
+   "read_with_30r4_shared_values": "·······"
+  },
+  {
+   "group": 19,
+   "length": 5,
+   "lines": [
+    "30v13"
+   ],
+   "signs": [
+    "S8",
+    "S4",
+    "S15",
+    "S19",
+    "S4"
+   ],
+   "mnemonics": [
+    "Tt",
+    "Ch",
+    "Ay",
+    "Ei",
+    "Ch"
+   ],
+   "read_with_30r4_shared_values": "·وهحو"
+  },
+  {
+   "group": 20,
+   "length": 4,
+   "lines": [
+    "30v13"
+   ],
+   "signs": [
+    "S11",
+    "S7",
+    "S18",
+    "S11"
+   ],
+   "mnemonics": [
+    "Cb",
+    "Z3",
+    "Kx",
+    "Cb"
+   ],
+   "read_with_30r4_shared_values": "·غم·"
+  }
+ ],
+ "key_test_30r4": {
+  "key_source": "keys_eye/30r.4.json (by-eye key from the compiler's plaintext, not independently confirmed)",
+  "shared_shapes": [
+   {
+    "label_30v7": "S4",
+    "mnemonic": "Ch",
+    "label_30r4": "S1",
+    "match": "same: chevron <",
+    "letter_in_30r4": "و",
+    "count_in_30v7": 7
+   },
+   {
+    "label_30v7": "S3",
+    "mnemonic": "Nn",
+    "label_30r4": "S15",
+    "match": "same: ٩",
+    "letter_in_30r4": "ت",
+    "count_in_30v7": 2
+   },
+   {
+    "label_30v7": "S6",
+    "mnemonic": "Ae",
+    "label_30r4": "S8",
+    "match": "same: ع-head on a flat base",
+    "letter_in_30r4": "س",
+    "count_in_30v7": 6
+   },
+   {
+    "label_30v7": "S7",
+    "mnemonic": "Z3",
+    "label_30r4": "S11",
+    "match": "same: numeral 3",
+    "letter_in_30r4": "غ",
+    "count_in_30v7": 9
+   },
+   {
+    "label_30v7": "S15",
+    "mnemonic": "Ay",
+    "label_30r4": "S6",
+    "match": "close: ع (30r.4 short with a curled tail; 30v.7 tail below the line)",
+    "letter_in_30r4": "ه",
+    "count_in_30v7": 4
+   },
+   {
+    "label_30v7": "S14",
+    "mnemonic": "Kf",
+    "label_30r4": "S9",
+    "match": "close: kaf ک (30v.7 adds a small ball)",
+    "letter_in_30r4": "ب",
+    "count_in_30v7": 2
+   },
+   {
+    "label_30v7": "S18",
+    "mnemonic": "Kx",
+    "label_30r4": "S13",
+    "match": "same: bar with a V-cross",
+    "letter_in_30r4": "م",
+    "count_in_30v7": 2
+   },
+   {
+    "label_30v7": "S19",
+    "mnemonic": "Ei",
+    "label_30r4": "S7",
+    "match": "same: numeral ٨",
+    "letter_in_30r4": "ح",
+    "count_in_30v7": 1
+   },
+   {
+    "label_30v7": "S12",
+    "mnemonic": "W",
+    "label_30r4": "S2",
+    "match": "close: small comb ш / ω (30r.4 rounded)",
+    "letter_in_30r4": "ج",
+    "count_in_30v7": 2
+   }
+  ],
+  "shapes_not_in_30r4": [
+   "S1",
+   "S2",
+   "S5",
+   "S8",
+   "S9",
+   "S10",
+   "S11",
+   "S13",
+   "S16",
+   "S17"
+  ],
+  "shared_occurrences": 35,
+  "shared_share": 0.432,
+  "decode_with_shared_values": [
+   "30v07  · · ت و · | س غ | · س · | غ س ·",
+   "30v08  | · · | س غ | · · · ج غ · · |",
+   "30v09  · · و | · · · · · ب ت | ه · غ غ",
+   "30v10  | ج · ه · | · · · · · · ·",
+   "30v11  | و · و | ه · · · | س م غ س | ·",
+   "30v12  غ | ب · و | · · · · · ·",
+   "30v13  · | · و ه ح و | · غ م · |"
+  ],
+  "result": "does not read. With the 30r.4 values the groups come out as ·· ت و ·, سغ, ·س·, غس· ... : no Arabic words. The 3-sign (9 times, second only to Cb) would be غ, which cannot be one of the commonest letters. The most frequent 30v.7 sign (Cb, 16 = 20%) and the third (Zg, 8) do not occur in 30r.4, and 30r.4's commonest signs (U = ا 24, Tr = ن 8, Th = ل 8) do not occur in 30v.7. The two blocks share nine sign shapes from the same stock (chevron, ٩, 3, two ع forms, kaf, ㅈ, ٨, small comb; 35 of the 81 signs) but not their values: 30v.7 is in a different alphabet, or the same stock of shapes reassigned."
+ },
+ "verdict": "no plaintext; inventory only. The 30r.4 key does not read it; no reading forced.",
+ "notes": [
+  "No solution follows the block on 30v or 31r (record). Read on plain 1.4x and 2x line crops of the master, right to left; 81 signs by eye (record by eye 81; segmenter 95, which split // signs and dividers).",
+  "// stands inside groups and is counted as a sign, as the record does.",
+  "19 shapes, one of them (Cb) at 20%: the profile of a simple substitution in which Cb would be ا (about one letter in five in these verses). Not tested further without a candidate text.",
+  "Structure, not a reading: three 7-sign groups have the same pattern X Y X _ _ X Z (Cb Zg Cb W Z3 Cb //, Cb Zg Cb Tt Te Cb //, Cb Zg Cb Kk Six Cb //), each closing a run; with Cb as ا this is the shape of rhyme words الا--اف (e.g. الاكناف, the word of the answer on 30v l.5, or الاطراف). Ae Z3 occurs twice as a two-sign word and Cb Z3 Kx Cb once. Not tested further here.",
+  "The group lengths can be matched against a candidate text if one is found (the second saj' piece announced on 30r l.1-3, 'for al-Ala'i', is the record's guess; not stated)."
+ ]
+}

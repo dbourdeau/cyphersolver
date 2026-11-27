@@ -1,0 +1,51 @@
+{
+ "chain_id": "14v.7",
+ "label": "by-eye key from the compiler's plaintext, not independently confirmed",
+ "status": "summary only: keyed earlier, not re-keyed by eye in this run",
+ "signs": 778,
+ "letters": 770,
+ "system": "tashifi (the compiler's own description, 14v l.2-6): one invented sign per undotted letter shape; 15 sign classes + a dotted-stem word divider",
+ "key": {
+  "S1": "ا",
+  "S2": "ب ت ث ن ي (ى)",
+  "S3": "ج ح خ",
+  "S4": "د ذ",
+  "S5": "ر ز",
+  "S6": "س ش",
+  "S7": "ص ض",
+  "S8": "ط ظ",
+  "S9": "ع غ",
+  "S10": "ف ق",
+  "S11": "ك",
+  "S12": "ل",
+  "S13": "م",
+  "S14": "ه (ة)",
+  "S15": "و"
+ },
+ "shapes_note": "drawings of the 15 classes in research/ljs51_pass/vet_tashifi.md section (2) table; one drawing per class in output/ljs51/crops/t_key_sheet.png",
+ "measures": {
+  "signs_total": 778,
+  "signs_segmentation_vet": 766,
+  "letters_total": 770,
+  "words": 185,
+  "groups": 185,
+  "aligned_identical_class": 722,
+  "class_mismatches": 34,
+  "surplus_glyphs": 28,
+  "dropped_letters": 14,
+  "consistency_skeleton_class": 0.955,
+  "pilot_rasm_purity": 0.936,
+  "pilot_control_rasm": 0.243,
+  "note": "class-level figures (a tashifi sign IS a skeleton class, so letter-level consistency does not apply); from the segmentation-based alignment, not a hand-keyed sign-by-sign transcription"
+ },
+ "red_check": null,
+ "verdict": "key consistent at skeleton-class level: 15 sign classes = 15 undotted skeleton classes, 722 of 756 aligned signs in their class (95.5%); the whole plaintext (two poems, 16v l.7-13 and 17r l.4-17v l.4) is enciphered, first sign on the first letter and last sign (16v l.6) on the last.",
+ "sources": [
+  "research/ljs51_pass/vet_tashifi.md (the key, the class table, the alignment figures)",
+  "targets/ljs51corpus/keys/f14v_tashifi.json (pilot cluster key, 778 signs, rasm purity 93.6% vs 24.3% shuffled)",
+  "chains_0030_0053.jsonl record 14v.7 (re-read words: قويم, للملك, ظله, قلايد, قاصديه)"
+ ],
+ "notes": [
+  "Not re-transcribed in this run, by instruction: the open items are those of vet_tashifi.md section (4): a hand pass over the 34 mismatches and 28 surplus glyphs, hamza (no sign) and lam-alif (lam + alif, two signs, few cases)."
+ ]
+}
