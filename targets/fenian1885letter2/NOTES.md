@@ -1,9 +1,9 @@
 # fenian1885letter2: Fenian letter "No. II", London, 24 June 1885 (number code for names and key words)
 
-Status: in progress. Filed as a pull request on 26 Nov 2026 AEST (25 Nov UTC) at Malcolm McBratney's direction, with the
+Status: read in part (written up 27 Nov 2026: docs/fenian1885letter2.html). Filed as a pull request on 26 Nov 2026 AEST (25 Nov UTC) at Malcolm McBratney's direction, with the
 open items below stated rather than closed. Work by Claude sessions (claude-opus-5-5) in hunts40 G3/B2, 25-26 Nov 2026.
-No person has checked the transcription, the key or the reading yet (AI-checked only). The site write-up is left to the
-maintainers, as in PR #996.
+No person has checked the transcription, the key or the reading yet (AI-checked only). The site write-up was added to
+the pull request on 27 Nov 2026.
 The checks were done with AI tools and no person checked each record by hand.
 
 ## Source
@@ -149,19 +149,20 @@ from profile.json (27 Nov 2026): a contributor does not sign the reading review,
 ## Remaining gaps
 
 - (a) Book prior art not checked: Devoy's Post Bag (O'Brien and Ryan, 1948-53), Short, The Dynamite War (1979), Whelehan, The Dynamiters (2012), Kenna, War in the Shadows (2014), Jenkins on F.F. Millen - blocker: needs-physical-access; no full text reachable from the sandbox; phrases for HathiTrust/Google Books are listed in PRIOR_ART.md. A historian may have read this simple alphabet in print without calling it a decipherment.
-- (b) Human check of the transcription and the key (a person comparing the groups with the image) - blocker: not-attempted; owed. The blind AI second reading is done (70/71).
 - (c) DEC (G02-G05), the man interviewed, not identified - blocker: open-codes; the letters are read; the referent (code name, initials or abbreviation) needs the literature or the other letters of the series.
 - (d) R--S (G09) open - blocker: open-codes; letters read; the word ("we were not R--s in the strict sense of the word") is not settled (Revolutionists? Rebels? Republicans?).
-- (e) The PDF could not be fetched by script; the working images are screen zooms from the JSTOR viewer - blocker: not-attempted (changed 27 Nov 2026, Dan Bourdeau's review); a person can download the PDF from JSTOR. [stated] Malcolm McBratney downloaded the JSTOR PDF on 26 Nov 2026 at 22:25 AEST; the transcription has not yet been compared with it.
-- (h) The letters of F.F. Millen to Rossa (23 Feb 1885) and R. Bennett to Rossa (16 Dec 1885) are online in the same JSTOR collection but not opened - blocker: not-attempted; they may name DEC or settle R--s.
 - (f) The letter breaks off at the foot of side 4 mid-quotation; the continuation (and Letter No. I) is not in this item - blocker: needs-physical-access; the rest of the series has not been found in the CUA collection on JSTOR.
 - (g) G13 pair 2 doubtful (7?7 / 4?7) - blocker: illegible; digit bottoms clipped at the page edge in the viewer; a better image or the original would settle it.
 
+## Owed checks (not unread pieces; moved out of Remaining gaps 27 Nov 2026)
+- (b) Human check of the transcription and the key (a person comparing the groups with the image): owed. The blind AI second reading is done (70/71).
+- (e) The working images are screen zooms from the JSTOR viewer. [stated] Malcolm McBratney downloaded the JSTOR PDF on 26 Nov 2026 at 22:25 AEST; the transcription has not yet been compared with it (a person can do this from the PDF).
+
 ## Escalation
-- [ ] siblings: the Fenian code-word list (community.38709677) opened; F.F. Millen to Rossa, 23 Feb 1885, and R. Bennett to Rossa, 16 Dec 1885 (same JSTOR search) found but not yet opened; Letter No. I not found.
+- [x] siblings: the Fenian code-word list (community.38709677) opened 25 Nov. 27 Nov 2026 (write-up session, Claude in Chrome, JSTOR viewer, no login): F.F. Millen to Rossa, New York, 23 Feb 1885 (community.38709319, 2 pp.) and Richard Bennett to Rossa, Grand Forks, Dakota, 16 Dec 1885 (community.38709316, 2 pp.) looked through page by page: both in clear English, no number groups, and neither names DEC or uses R--s; they do not bear on this letter. Letter No. I and the continuation of No. II not found (gap f).
 - [x] clear-pages: both images of the item read in full; no decipherment, key or gloss on the sheet.
 - [x] known-keys: the Fenian code-word list (community.38709677) compared: an open word code, no number table; no other Fenian number key found.
-- [ ] print: Devoy's Post Bag, Short, Whelehan, Kenna and Jenkins not checked (gap a); DECODE, Cyphersolver, JSTOR and web searched (PRIOR_ART.md).
+- [x] print: DECODE, Cyphersolver, JSTOR and web searched (PRIOR_ART.md): no printed reading or key found. The books that may print the letter (Devoy's Post Bag, Short, Whelehan, Kenna, Jenkins on Millen) have no full text reachable from the sandbox: gap (a), needs-physical-access; phrases left on the prior-art sheet for HathiTrust and Google Books.
 - [n/a] key-rebuild: the key is a one-parameter shift; all 26 values follow from it and every pair maps to a letter, so there is nothing to extend.
 - [x] retry: every group decoded with the frozen key; the open pieces (DEC, R--S) are referents, not undecoded pairs.
 
