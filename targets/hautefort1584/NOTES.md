@@ -2,8 +2,9 @@
 
 Status: in progress
 
-**Read in part** (16 Nov 2026). Reading review is the contributor's own, preliminary (grade B): **no person has checked the
-work**, and no second reader has seen it. The pre-registered test on f. 160v failed (0.787 < 0.85, the contributor's own
+**Read in part** (16 Nov 2026). Reading review of ff. 161r, 160v and 207v: integration review of PR #711 (AI agent for the
+maintainers, 27 Nov 2026, grade B), replacing the contributor's own; **no person has checked the work**, and no second
+transcriber has read these leaves. The pre-registered test on f. 160v failed (0.787 < 0.85, the contributor's own
 pre-registered bar of >= 0.85 and >= best of 200 shuffled keys + 0.30); the test on f. 207v (second hand) passed the same bar
 (0.879 vs 0.536). Images: Source gallica.bnf.fr / BnF.
 
@@ -73,6 +74,13 @@ protocol/lot15-sent-files.sha256. Method: key rebuilt from the adjacent cipher p
   probable 10, supplied 3, unread 8 (73 words, after marking {venir}, where v = qui is read as i, and leaving the code 15 in
 "que le ‹15› personnaige" unread): strict 0.712, sure + probable 0.85 → **read in part**. Fable's reading of the training pages
   (Calignon, Ségur's journey to Germany, the Infanta of Spain) is unvalidated and not claimed here.
+
+## Transcription doubts
+
+Listed at integration (27 Nov 2026) from the contributor's transcription headers and readings; the maintainers checked about 110 signs of view 167 and 250 of f. 207v on the image on 16 Nov, not these doubts one by one.
+- ∂ with curved head against ∂ with flat head (first hand: f. 160v ll. 1-3, 11; second hand: f. 207v) - read: curved head m (D), flat head s (S) in the first hand, e in the second-hand key; checked: image, decode; arbitrated on enlarged crops by the contributor (`f160/read_final.txt` header, also ẟ with crossed head against ∂ on ll. 4, 7, 12), but the decode wants s where m is read on f. 160v (plum, emperance) and m where e is read on f. 207v (compagnie, demeurer, Monsieur): open, a reading rule to fix on glossed occurrences.
+- the cross `+`, `+e`, `+m` (second hand: ff. 207r, 208r, 208v, 209r in `f207-209/transcription_fable.txt`; f. 207v written `+` throughout) - read: g, frozen in the key; e or m by sense; checked: image, decode, transcription; Fable did not tell the crosses apart by shape (`f207-209/GLYPHS-hand2.md`: `+e` 11 and `+m` 4 are context codes), the frozen g gives "apres" on f. 207v only if read a, and the transcription of f. 207r in issue #999 (larrycbeck) has one `+` where Fable has `4`, `+e`, `+` and `+m`: open, perhaps two or three shapes, to be sorted on larger crops.
+- code 15 (f. 161r ll. 4, 6, 8, 9; f. 160v; f. 207v l. 1 "que le ‹15› personnaige") - read: unread, value open (perhaps l); checked: image, decode; the shape is not in doubt, the value is: issue #999 proposes "dit", which fits f. 207v l. 1 and, on f. 207r, "le ‹15› Calignon" and "du ‹15› Esdiguieres"; a lead to test, not a value.
 
 ## Remaining gaps
 

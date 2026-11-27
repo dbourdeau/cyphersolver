@@ -21,6 +21,7 @@ The hashes listed in PREREG*.sha256 and B_/C_/H_*.sha256 match the committed fil
 - The lexicon files named in the sidecars (`lex/fr-1520s-diplomatic.txt`, `lex/fr-henri4.txt`, `lex/lexique-fr-cyphersolver.json`)
   and the crops and images (`crops/*`, `fable2/crops/*`, `src/*.png`) are not committed, so their hashes cannot be checked here.
 PREREG-v4 (key_main1_v4.json, measure_v4.py) was never run; those two files are not committed.
+`D_f161v_pass1.txt` (named in `D_f161v.sha256`), the stopped 287-sign first pass of portion D (f. 161v), is not committed either (line added by the maintainers at integration, 27 Nov 2026).
 
 Timeline (file modification times, 16 Nov 2026, CET; by the contributor's record):
 
