@@ -77,7 +77,7 @@
 <h2 id="what-it-is"><span class="num">01</span> What this project is</h2>
 <p>Cyphersolver is an open ledger of historical ciphers. The ciphers are worked on with AI models. The ledger is also an informal benchmark of what those models can do with them.</p>
 <p>People run the AI models: the project&rsquo;s maintainers and outside contributors.</p>
-<p>The ledger holds 929 target records. 498 are the project&rsquo;s own work, 360 were contributed from outside, and 71 are mixed.</p>
+<p>The ledger holds 930 target records. 499 are the project&rsquo;s own work, 360 were contributed from outside, and 71 are mixed.</p>
 <p>The ledger is not a critical edition. Its results have not been peer-reviewed in the academic sense.</p>
 <p>Words used on this page:</p>
 <ul>
@@ -105,7 +105,7 @@
 <p>Every image on the site is to be credited to its source: holder, shelfmark, folio, and the route to it (Gallica, DECODE, an archive&rsquo;s viewer, IIIF, an edition). That is the README&rsquo;s rule. It is not checked page by page.</p>
 <p>Images remain under their holders&rsquo; terms. Text is under CC BY 4.0, code under MIT.</p>
 <p>Since 28 October 2026, a document enters the <a href="catalogue.html">catalogue</a> only when its record shows two things. The ciphertext was seen on an image. The usual places for an earlier decipherment were searched: DECODE, Satoshi Tomokiyo&rsquo;s lists, the printed calendar or edition, and the literature. Older entries did not go through this list.</p>
-<p>A record can say whether a reading existed before the project&rsquo;s. 864 of 929 records answer. 505 record an earlier reading, complete or partial. In 78 of these it came to light only after the project&rsquo;s reading.</p>
+<p>A record can say whether a reading existed before the project&rsquo;s. 865 of 930 records answer. 505 record an earlier reading, complete or partial. In 78 of these it came to light only after the project&rsquo;s reading.</p>
 <p>The write-up checker asks that an earlier reading in print, online, unpublished or partial be credited in the record. 270 of the 312 records concerned do so. An earlier solution that was never published is shown in full only with its author&rsquo;s agreement.</p>
 
 <h2 id="transcription"><span class="num">04</span> Transcription</h2>
@@ -113,13 +113,13 @@
 <table>
 <thead><tr><th>Transcribed by</th><th>Documents</th></tr></thead>
 <tbody>
-<tr><td>an AI model, from the images</td><td>1,946</td></tr>
+<tr><td>an AI model, from the images</td><td>1,947</td></tr>
 <tr><td>several sources combined</td><td>259</td></tr>
 <tr><td>DECODE</td><td>154</td></tr>
 <tr><td>a printed edition</td><td>114</td></tr>
 <tr><td>a person working for the project</td><td>11</td></tr>
 <tr><td>other, or not stated</td><td>71</td></tr>
-<tr><td><b>All documents</b></td><td><b>2,555</b></td></tr>
+<tr><td><b>All documents</b></td><td><b>2,556</b></td></tr>
 </tbody>
 </table>
 <p>There is no systematic double blind transcription. The notes of some targets compare two transcriptions; the project publishes no overall rate of agreement.</p>
@@ -133,12 +133,12 @@
 <tbody>
 <tr><td>key recovered here by cryptanalysis: from the ciphertext alone, from a plaintext found elsewhere, or from a plaintext next to the cipher</td><td>377</td></tr>
 <tr><td>a key or decipherment that already existed, applied here</td><td>357</td></tr>
-<tr><td>neither key nor text obtained (<code translate="no">not solved</code>)</td><td>142</td></tr>
+<tr><td>neither key nor text obtained (<code translate="no">not solved</code>)</td><td>143</td></tr>
 <tr><td>not a cipher, or the document could not be reached</td><td>53</td></tr>
-<tr><td><b>All records</b></td><td><b>929</b></td></tr>
+<tr><td><b>All records</b></td><td><b>930</b></td></tr>
 </tbody>
 </table>
-<p>A negative result is to come with a <b>matched control</b>: a synthetic text of the same length, alphabet and cipher design that the same solver does recover. That is the README&rsquo;s rule. It is not checked: 21 of the 142 <code translate="no">not solved</code> records list a matched control.</p>
+<p>A negative result is to come with a <b>matched control</b>: a synthetic text of the same length, alphabet and cipher design that the same solver does recover. That is the README&rsquo;s rule. It is not checked: 21 of the 143 <code translate="no">not solved</code> records list a matched control.</p>
 <p>A <b>held-out test</b> means finding the key without looking at part of the text, then trying the key on that part. No rule of the project requires it. Some contributors do it and describe it in the target&rsquo;s notes.</p>
 <p>In the protocol some contributors follow, a key found by cryptanalysis is found <b>on part of the text only</b>. The rest is not analysed and serves as validation. The steps are: choose the held-out portion before any work on it; freeze the key with a SHA-256 hash; then decrypt the held-out portion once, with no change to the key. The test passes when the share of letters that make sense reaches 0.85 and beats the best of 200 shuffled keys by at least 0.30. The notes of these targets give the hash, the portion and the score, including when the test fails.</p>
 
