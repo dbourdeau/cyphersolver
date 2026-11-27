@@ -426,6 +426,44 @@
    ],
    "what": "Pass 4 controls (CONTROL_P4.txt), after the decode: 5,000 key shuffles at seeds 20261112 and 7, 0/5000 on every text and rim (lowest z 4.5, S2-05); real key on ciphertext shuffled across word slots, 5,000 per seed, real text ranked 1 of 5001 on every text and rim (lowest z 3.5, S2-05). The checks were done with AI tools and no person checked each record by hand.",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-27",
+   "kind": "transcription",
+   "technique": [
+    "manual reconstruction"
+   ],
+   "what": "Pass 5 (pass5/), Dan Bourdeau's point 4 on PR #957: the 51 Dl@ words pass 4 left (ff. 4r 12, 4v 15, H1r 2, H4 10, H2 11, H3 1) looked at on the images against the leaf's looped forms (pass5/DL_CHECK_P5.tsv): 30 us kept, 15 changed to X@ (is), 6 unresolved and kept. New transcriptions, never decoded before, not blind (the reader knew the key leaf and earlier decodes): signs inside the circles of second-series nos. 2-12, ff. 52r-53r (S2_INNER_v5.txt, 9 parts); the four figures of f. 54r (F054R_v5.txt, 7 parts); f. 97r and f. 97v rings, square words and label (F097_v5.txt, 7 parts). Ordinary-script labels, Greek letters and drawn characters listed, not decoded. Doubts in DOUBTS_P5.md. The checks were done with AI tools and no person checked each record by hand.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-27",
+   "kind": "hypothesis",
+   "technique": [
+    "key-structure hypothesis"
+   ],
+   "what": "Pass 5 frozen before decoding (pass5/FREEZE_P5.txt, 2026-11-27T04:47:36Z, md5 and sha256 of 19 files): KEY_V5.tsv (byte copy of KEY_V4.tsv), decoder (byte copy of decode_p4.py), RULES_V5.md, DOUBTS_P5.md, DL_CHECK_P5.tsv, eleven transcriptions. Stamped 04:47:37Z (RFC 3161 Sectigo and FreeTSA 04:47:37 GMT, manifest 0d1d0dc8..., OpenTimestamps submitted). The checks were done with AI tools and no person checked each record by hand.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-27",
+   "kind": "reading",
+   "technique": [
+    "beam/DP decoding",
+    "contextual inference"
+   ],
+   "what": "Pass 5: one decode (run started 04:47:43Z; DECODE_P5.txt, variant without C4/C5 identical on the new texts), counted in sure words per part by the house rule, variant spellings of names counted as holes (SCORE_P5.tsv; TAGS_P5.tsv 162 words). ff. 52r-53r inside the circles 21/63 = 33.33% (2 of 9 parts over 65%); f. 54r 28/42 = 66.67% (3 of 7 parts over: saluator; salua me deus athanatos sanctus et fortis sanctus 8/9; hoc in tuis uestimentis ... noua nomina mulierum tactis uestibus ueniet 10/13); f. 97r-v 24/42 = 57.14% (2 of 7 over: lucas iohans mathias marcus 3/4; michael gabriel raphael uriel 4/4). After the Dl@ changes: TRAIN f4r 103/138, f4v 131/165, H2 79/126 = 62.70% (still under 65%), H3 11/15. Not held out, one tagger, no separate judge. The checks were done with AI tools and no person checked each record by hand.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-27",
+   "kind": "control",
+   "technique": [
+    "statistical test",
+    "language-model scoring"
+   ],
+   "what": "Pass 5 controls (pass5/CONTROL_P5.txt, after the decode, about 22 min): 5,000 key shuffles at seeds 20261112 and 7, and the real key on ciphertext shuffled across word slots, 5,000 per seed. Every section (TRAIN f4r, f4v, H1r, H2, H3, H4, S1, S2, ff. 52r-53r inside the circles, f. 54r, f. 97r-v) 0/5000 in both controls at both seeds, real text ranked 1 of 5001 (new sections z 5.5-10.5 key, 9.3-15.5 ciphertext). Short parts that do not stand apart from shuffles: S2i-05, S2i-07h, S2i-07v, S2i-08, S2i-10, S2i-11, F54-B-in, F54-D, F97r-in, F97v-in, F97v-sq (the four archangels' names, z 0.4-0.9). Old rim S2-05 rank 2 of 5001 at seed 20261112 in the ciphertext control. No held-out test. The checks were done with AI tools and no person checked each record by hand.",
+   "result": "partial"
   }
  ],
  "outcome": {
@@ -471,10 +509,10 @@
     "basis": "KEY.tsv from ff. 4r-4v against ff. 101r-102r; separate judge 747/1,138 letters; 113 of 225 words read as sense; decoded, not read"
    },
    {
-    "label": "Passes 2-4: decoded with the volume's own key leaf f. 99r",
+    "label": "Passes 2-5: decoded with the volume's own key leaf f. 99r",
     "method": "read with known key",
     "extent": "partial",
-    "basis": "keyleaf/, pass3/, pass4/: the leaf's table, corrected in pass 4 (Tk@ = ru); pass 4 sure words per text in pass4/SCORE_P4.tsv (S1 rims 385/474, H2 61.90% under the contributor's 65% line); every text decoded, not read"
+    "basis": "keyleaf/, pass3/, pass4/, pass5/: the leaf's table, corrected in pass 4 (Tk@ = ru); sure words per text in pass4/SCORE_P4.tsv and pass5/SCORE_P5.tsv (S1 rims 385/474, H2 62.70% under the contributor's 65% line; pass 5 adds ff. 52r-53r inside the circles 21/63, f. 54r 28/42, f. 97r-v 24/42); every text decoded, not read"
    }
   ],
   "contribution": [
