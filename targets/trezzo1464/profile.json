@@ -200,6 +200,15 @@
    ],
    "what": "f. 392 decoded with key_full_v1.json (top values, decode392_keytop.txt) and refined by it-cinquecento score with the key as prior (refine.py, lambda 3, decode392_refined.txt): Italian fragments that fit the context ('restitutione', 'quali hanno effecto', 'desiderio essere', 'alcuno che', 'la S.V.', 'amici', 'nella'), no sentence holds. Decoded, not read; no strict count made.",
    "result": "partial"
+  },
+  {
+   "date": "2026-11-25",
+   "kind": "verification",
+   "technique": [
+    "manual reconstruction"
+   ],
+   "what": "Sign plate trezzo1464-2511 (dudout/sign_check_2511/, PR #994): Brice Dudout chose blind, for ten boxed signs of f. 392 (Gallica view 393), the closest of the shapes cut elsewhere in the same hand (view 393 and f. 283r, view 284), no value or reading shown; rule REGLE-SELECTION.md with scripts/items.json hashed before the vignettes and the answers (sha256 5e54bd8f..., items e14ddd83...); controls 3 of 3 (392.11 #1 t, 392.11 #7 oto, 392.13 #19 qa). c392.txt confirmed at 7 places (p7 at 392.06 #26 and 392.07 #15, hr at 392.10 #27 and 392.13 #21, 4e at 392.04 #3 and 392.06 #20, long r at 392.10 #20); delta-u, not delta-tilde, at 392.07 #10 and 392.09 #14; 392.10 #14 answered 'none / other shape' with no remark, so c392's L^a there is doubtful (the description 'an L with a caret above' is the model's, not the reader's). Proposed recoding in dudout/c392-planche-2511.patch, not applied to c392.txt (arya1515's transcription). With h = qu where the next signs spell quest-/quell-, five new fragments, all probable as they rest on sense: electione, questo, (c)ontent-, quelle, quella; fragments 8 -> 13 of roughly 120 words, no sentence. f. 392 stays decoded, not read; class and method unchanged. Integration review of PR #994 matched the 9 hashes, read every answer through the key and checked the places in c392.txt; Gallica views and the contributor's own transcription not checked. Model roles not stated by the contributor; recorded from the files.",
+   "result": "partial"
   }
  ],
  "outcome": {
@@ -215,6 +224,30 @@
    "none"
   ],
   "provenance": "contributed",
+  "sign_check": [
+   {
+    "date": "2026-11-25",
+    "checker": "Brice Dudout",
+    "checker_kind": "project",
+    "model_roles": [
+     "rule",
+     "thumbnails",
+     "sheet",
+     "scoring",
+     "remarks"
+    ],
+    "signs_checked": 10,
+    "controls": 3,
+    "controls_passed": 3,
+    "as_transcribed": 7,
+    "corrected": 2,
+    "unresolved": 1,
+    "not_counted": 0,
+    "rule": "dudout/sign_check_2511/REGLE-SELECTION.md with scripts/items.json (English rendering RULE-2511.md), 25 Nov 2026, before the vignettes and the answers",
+    "rule_hash": "5e54bd8f5251abe1023aacd0e0e1f3f2ba1e52b1266708db7ee1f687800db556",
+    "note": "f. 392, the places where c392.txt and the contributor's own transcription differ and the shape decides a word: a diagnostic, not a sample. Corrected = delta-tilde -> delta-u at 392.07 #10 and 392.09 #14, proposed in dudout/c392-planche-2511.patch, not applied; unresolved = 392.10 #14 ('none / other shape', no remark; the 'L with a caret' description is the model's). The hashed rule numbers places on the contributor's own transcription; on line 13 the c392 places are #21 (T3 hr) and #19 (control qa). Rule and answers in one commit. Model roles not stated by the contributor; recorded from the files: the PR is signed 'Brice Dudout (with Claude)', so all five roles are listed, the conservative reading. No image."
+   }
+  ],
   "notes": "Status in progress. f. 392 decoded, not read (Italian fragments, no sentence). Key partial: the alignment fits at the level of a 40 %-noise control; the transcription labels lump shapes the key distinguishes. Open: re-transcription with finer sign distinctions; the DECODE Trezzo key sheet (R5329-R5344, login) and Cerioni 1970 untested.",
   "credits": [
    {
