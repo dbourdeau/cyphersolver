@@ -1191,6 +1191,18 @@ cd richelieu && pip install requests && python build_ngrams.py && python solve.p
   own notes applied, had 218 of 224 signs right. Correcting the boxes in CTTS changed no reading, and the last six
   fixes all came from checking doubts the first pass had itself flagged. `_check_writeup.py` requires the section on
   readings whose page is first built from 21 Nov 2026 and warns on older ones (audit section S).
+- **Held-out tests are frozen and published before they are measured (27 Nov 2026).** A key is tested on a passage it
+  was not built from only when the order "frozen, then measured" can be checked from the repository, not from the
+  contributor's record alone. The protocol, key, transcription and held-out passage are frozen in
+  `targets/<target>/verification/MANIFEST_vN.sha256`; the freeze reaches GitHub (a pushed commit that stays in
+  `main`'s history, an RFC 3161 stamp of the manifest, or its hash in an issue comment) before
+  `tools/holdout/measure.py` runs, which refuses otherwise; the result `RESULT_vN.json` records the manifest's hash and
+  commit and the scripts' hashes, and is committed at once. A measured passage is burnt: a corrected key is tested on a
+  new passage with a new manifest. `python tools/holdout/check.py` must print `result: valid`. The metric is fixed in the
+  protocol; prefer the per-group metric where a reference exists. A pass shows that the key's assignment is far from
+  random on that passage, not that every value or the transcription is right. Tests made before this date are not
+  re-scored; their pages say that the order rests on the contributor's record. Scheme and code adapted from Brice
+  Dudout's method kit (26 Nov 2026, MIT); steps in [`tools/holdout/README.md`](tools/holdout/README.md).
 - **Outcome method.** Every target is classed by how its text was obtained, in George Lasry's categories (email of
   21 Sept 2026) plus one for complete existing decipherments: *key recovered from ciphertext-only*; *key recovered
   based on plaintext from external sources* (an edition, a calendar, a copy elsewhere); *key recovered based on adjacent

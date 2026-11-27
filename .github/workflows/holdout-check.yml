@@ -1,0 +1,47 @@
+# Held-out tests are frozen and published before they are measured (README Conventions, 27 Nov 2026): run the tests
+# of tools/holdout/ and check every held-out result (frozen files unchanged, freeze earlier than the result).
+# Read-only. Not a required check, so the path filter cannot block a pull request.
+name: Held-out check
+
+on:
+  pull_request:
+    paths:
+      - 'tools/holdout/**'
+      - 'targets/**/PROTOCOL*.json'
+      - 'targets/**/RESULT*.json'
+      - 'targets/**/MANIFEST*.sha256'
+      - 'targets/**/*.tsr'
+  push:
+    branches: [main]
+    paths:
+      - 'tools/holdout/**'
+      - 'targets/**/PROTOCOL*.json'
+      - 'targets/**/RESULT*.json'
+      - 'targets/**/MANIFEST*.sha256'
+      - 'targets/**/*.tsr'
+
+permissions:
+  contents: read
+
+jobs:
+  holdout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Tests
+        run: |
+          git config --global user.name ci
+          git config --global user.email ci@example.invalid
+          python tools/holdout/test_holdout.py
+
+      - name: Check held-out results
+        env:
+          PYTHONUTF8: '1'
+        run: python tools/holdout/check.py
