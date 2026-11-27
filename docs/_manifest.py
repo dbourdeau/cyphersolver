@@ -141,8 +141,8 @@ PAGES = [
     dict(slug='walsingham1572', label='Walsingham to Burghley 1573', year='1573', y=1573.05, place='Paris &rarr; London', st='stuck', stt='too short, no key', title='Walsingham to Burghley, 20 January 1572/3', blurb='A letter-book copy in clear English with one ciphered place name of six symbols. With the one group in Burghley&rsquo;s reply there are twelve symbols in all, too few to recover a key, and several Channel ports fit; the group is not deciphered.', quote='a Gentleman of [9] departed hence to 2 1 &#8984; &epsilon; 9 4 with intention to imbarke there', rights='British Library (images via DECODE; details reproduced with credit)'),
     dict(slug='alfonso1576', label='Alfonso II d&rsquo;Este to Venice 1576', year='1576', y=1576.29, place='Ferrara &rarr; Venice', st='solved', stt='ciphertext-only break',
          title='Alfonso II d&rsquo;Este to his agent at Venice, 14 April 1576',
-         blurb='A two-leaf cipher letter of the duke of Ferrara to his agent at Venice, with no decipherment on the leaf. WAINUT recovered the substitution by quadgram search on period Italian, no crib, and read 737 of 740 words, narrowly over the bar.',
-         quote='&ldquo;&hellip;il quale non fu mai a soldo nostro&hellip;&rdquo; (he was never in Este pay)',
+         blurb='A two-leaf cipher letter of the duke of Ferrara to his agent at Venice, with no decipherment on the leaf. WAINUT recovered the substitution by quadgram search on period Italian, no crib: 737 of 740 words read as sense, and 706 (95.4%) carry no restored or changed letter, three words over the bar.',
+         quote='&ldquo;&hellip;ne manco e mai stato a nostro stipendio&hellip;&rdquo; (nor has he ever been in our pay)',
          rights='Letter: Biblioteca Estense Universitaria, Modena, Autografoteca Campori, Lettera E; reading by WAINUT'),
     dict(slug='delcarretto1576', label='Del Carretto to his agents 1576', year='1576', y=1576.67, place='Regensburg &rarr; Milan', st='solved', stt='key from the ciphertext',
          title='Alfonso II del Carretto to his agents in Milan, Regensburg, 2 September 1576',
@@ -3749,7 +3749,7 @@ IMAGES['hatzfeldt1641'] = None
 IMAGES['olivares1626'] = None
 IMAGES['nassau1620'] = None
 IMAGES['siguenza1554'] = None
-IMAGES['alfonso1576'] = None
+IMAGES['alfonso1576'] = ('alfonso1576_lead.jpg', 'The opening of c. 76r: the clear salutation, then the cipher, 14 April 1576', 'Biblioteca Estense Universitaria, Modena, Autografoteca Campori, Lettera E, Este (d&rsquo;), Alfonso II d&rsquo;Este, c. 76r (lines 1-5), via the Lodovico Media Library (CC BY-NC-SA)')
 IMAGES['marignano1546'] = None
 IMAGES['desnoyers1659'] = ('desnoyers1659_note.jpg', 'The whole note, with the gloss above the cipher groups', 'Biblioth&egrave;que nationale de France, Fran&ccedil;ais 13020 f. 297, via Gallica')
 IMAGES['buda1490'] = None
