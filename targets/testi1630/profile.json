@@ -279,10 +279,10 @@
  },
  "conditions": {
   "prior_solution": {
-   "exists": "in archive",
-   "where": "Later clear copies at c. 15 and c. 22 of Lettera T cover c. 13-14 and c. 23r; the writer could read this cipher. For the other letters nothing is settled: Doglio's edition (1967), the Reggio Emilia inventory, the 1843 Memorie and Raviola (2014) were not opened (3 Nov 2026).",
-   "found": "before attempt",
-   "used": true
+   "exists": "in print",
+   "where": "Later clear copies at c. 15 and c. 22 of Lettera T cover c. 13-14 and c. 23r; the writer could read this cipher. All seven 1630 letters are printed in clear: M. Parenti, Lettere inedite di Fulvio Testi, Memorie di religione, di morale e di letteratura, ser. II, XIII (1842) and XV (1843), and M. L. Doglio, Fulvio Testi, Lettere, vol. 1 (Laterza 1967), nos. 205-207, 210, 211, 213, 216 (found 17 Nov 2026, after the reading; see dudout/README.md). The 1636 letter and the Forni and Ottonelli letters are not in Doglio. Nothing in the readings was taken from the print (integration review of PR #752, 27 Nov 2026).",
+   "found": "after reading",
+   "used": false
   },
   "inputs": [
    "images",
@@ -379,12 +379,19 @@
    "kind": "verification",
    "what": "Decrypt audit (research/decrypt_audit): 116 of 719 words flagged in six texts. Cause found in the audit script, not the records: the key row for p has the sign code '#', which the audit parser skips as a comment line; line labels were tokenised as signs on two texts; clear words inside cipher lines counted as reading-only. Own check: key.tsv with all 20 rows reproduces the eight decryption files letter for letter, and every letter of the eight readings that the signs do not give is inside square brackets (23 places). No file of the key, transcriptions or readings changed.",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-17",
+   "kind": "literature search",
+   "what": "Prior-art check by Brice Dudout's side (PR #752): Doglio, Lettere vol. 1 (1967), opened in the Internet Archive OCR (SHA-256 157a93f4...d72f56); the seven 1630 letters are printed in clear as nos. 205-207, 210, 211, 213, 216, from Parenti 1842-43. dudout/compare_doglio.py: 93.2-99.7% of the cipher letters of each decryption found in order in its printed letter, 23.1-60.7% for the best other letter. The print settles four doubtful words (compiangiamo, Roli et, così, all'Interprete), not adopted in the reading files. The 1636 letter is not in Doglio; Parenti not opened. Rerun by the maintainers' integration review (27 Nov 2026): output identical.",
+   "result": "worked"
   }
  ],
  "outcome": {
   "class": "read in part",
   "key": "recovered",
   "method": "key recovered based on adjacent plaintext",
+  "first_break": false,
   "method_basis": "Key built by aligning the cipher of c. 23r with c. 22, a later clear copy in the same file; not by cryptanalysis. Tested on held-out c. 13r against c. 15r.",
   "contribution": [
    "transcription",
@@ -402,6 +409,24 @@
   ],
   "provenance": "contributed",
   "credits": [
+   {
+    "who": "parenti",
+    "role": "prior solution",
+    "note": "Lettere inedite di Fulvio Testi, in Memorie di religione, di morale e di letteratura, ser. II, XIII (1842) and XV (1843): the seven 1630 letters in clear (not opened here; known through Doglio's index)",
+    "date": "1842-1843"
+   },
+   {
+    "who": "doglio",
+    "role": "prior solution",
+    "note": "Fulvio Testi, Lettere, vol. 1 (Bari, Laterza 1967), nos. 205-207, 210, 211, 213, 216: the seven 1630 letters in clear; compared with the decryptions by Brice Dudout's side, 17 Nov 2026",
+    "date": "1967"
+   },
+   {
+    "who": "dudout",
+    "role": "pointer",
+    "note": "found the 1630 letters in Doglio 1967 and Parenti 1843 and compared WAINUT's decryptions with the print (93-99.7% of cipher letters in order, controls 23-61%); four doubtful words settled by the print; see dudout/README.md",
+    "date": "2026-11-17"
+   },
    {
     "who": "lccompany",
     "role": "solution",
@@ -460,6 +485,7 @@
     "detail": "Need a palaeographer and a historian."
    }
   ],
+  "notes": "first_break false for the seven 1630 letters: printed in clear by M. Parenti (Memorie di religione, di morale e di letteratura, ser. II, XIII 1842 and XV 1843) and M. L. Doglio (Lettere, vol. 1, 1967), found 17 Nov 2026 after the reading and not used for it. cc. 73-74 (1636) stays apart: not in Doglio, Parenti not opened, so whether it was printed is not known. The class does not change through PR #752; it follows the sure-word counts, settled at the write-up.",
   "texts": [
    {
     "doc": "c7r",
@@ -571,7 +597,7 @@
     "state": "read",
     "read_share": 0.955,
     "summary": "French and Savoyard troops enter Modenese land while their envoys are still in the city. The duke will show his front and hold the main strongholds. Postscripts: His Majesty must attend to Italy; 200,000 scudi have reached the legate at Bologna, and Cardinal Antonio Barberini is expected there.",
-    "note": "Words 154: A 153, B 147, C 136. Read, provisional: no margin on B, and C is 88.3%."
+    "note": "Words 154: A 153, B 147, C 136. Read, provisional: no margin on B, and C is 88.3%. Not in Doglio and Parenti not opened, so first_break false (set for the seven 1630 letters, printed in clear in 1842-43 and 1967) is not known to hold for this letter."
    }
   ],
   "key_file": "key.tsv",
