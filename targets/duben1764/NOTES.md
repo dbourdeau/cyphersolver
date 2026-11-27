@@ -197,7 +197,9 @@ PR #759, from the sections below; nothing in it is new evidence.
   the 30 conjectured values and on 252, 355, 360, 405; the 30 Jan clear on 94-95 is not its decipherment.
 - Chiffer n:o 1, 20/31 Aug 1764 (cipher 112L, 114R, 115, 112R top) - blocker: not-attempted; workable from the files in the
   folder. The contemporary decipherment 116-117 is transcribed twice and key_c02 was tested on it (FAIL at the 0.85 bar,
-  `sysA_1616/aug1764/`). Open: no strict count, translation or summary of the letter through its clear.
+  `sysA_1616/aug1764/`). English translation of the clear made from its transcription at the PR #1022 integration (27 Nov
+  2026, `sysA_1616/aug1764/translation_116-117_en.md`; no image check). Open: no strict count or summary of the letter through
+  its clear.
 - Chiffer n:o 1, 87-89 - blocker: not-attempted; workable from the online images. Not system A (key_c01 and key_c02 give no
   French on 87L; other hand); no clear identified (94-95 may belong to it); the tables at 218-220 are range-checked only.
 - Other clear pages of the volume - blocker: not-attempted. Read them for any that is a true decipherment (no compositional
