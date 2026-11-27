@@ -115,12 +115,12 @@
    "known plaintext"
   ],
   "attack": "archive decipherment",
-  "human_role": "Brice Dudout obtained the images (offered by the archive), chose the target and set the rules (protocol hashed before each single measurement). Claude Opus 5.5 agents transcribed, rebuilt the keys, wrote and ran the protocols, read and wrote up. No human read the reading.",
+  "human_role": "Brice Dudout obtained the images (offered by the archive), chose the target and set the rules (protocol hashed before each single measurement). Claude Opus 5.5 agents transcribed, rebuilt the keys, wrote and ran the protocols, read and wrote up. Brice Dudout answered one blind shape plate on 12 doubtful signs of fol. 290r-v and 293r (3 hidden controls passed, rule hashed beforehand, review/plate_2711/); otherwise no human read the reading.",
   "models": [
    "Claude Opus 5.5 (Anthropic), agents run by Brice Dudout (transcription, key, protocols, measurement, reading, write-up)"
   ],
   "first_date": "2026-11-26",
-  "last_date": "2026-11-27"
+  "last_date": "2026-11-28"
  },
  "solution": [
   {
@@ -181,6 +181,12 @@
    "result": "partial"
   },
   {
+   "date": "2026-11-28",
+   "kind": "verification",
+   "what": "Blind shape review by Brice Dudout (plate saarbruecken4683-2711: 12 targets, 3 hidden controls passed 3/3, selection rule and integration criteria hashed beforehand, review/plate_2711/). Applied by the rule: the mark before 'Duc' is an H in clear (word leaves the count); würde and Marquis certain; M[e]z read {Maz} and Rechtsgeleh[r]te[r] read {Rechtsgelehrten}, both probable; [s]ondern and {Sach} unchanged; 293 writes 253 and 184 (copying slips against 283/284 of the original). 290r-v now 284 words, 248 certain (87.3 %), 27 probable, 6 restored, 3 unresolved; strict 213/284 = 75.0 %.",
+   "result": "worked"
+  },
+  {
    "date": "2026-11-27",
    "kind": "verification",
    "technique": [
@@ -205,9 +211,9 @@
    "transcription",
    "key recovered"
   ],
-  "fraction_read": 0.827,
+  "fraction_read": 0.835,
   "fraction_read_method": "measured",
-  "fraction_read_source": "Certain cipher words over all cipher words counted in the two texts: (246 + 56) / (285 + 80) = 0.827 (fol. 290r-v recounted on the edited text, 27 Nov 2026; fol. 293r-v l. 1-41 counted before it was found to copy fol. 279r-281r, not redone). On numbers with a letter value, decryption_290.txt gives 1,320 of 1,396 (0.946).",
+  "fraction_read_source": "Certain cipher words over all cipher words counted in the two texts: (248 + 56) / (284 + 80) = 0.835 (fol. 290r-v recounted on the edited text after the blind shape plate, 28 Nov 2026; fol. 293r-v l. 1-41 counted before it was found to copy fol. 279r-281r, not redone). On numbers with a letter value, decryption_290.txt gives 1,320 of 1,396 (0.946).",
   "verification": [
    "statistical test",
    "contemporary decipherment",
@@ -247,12 +253,12 @@
     "detail": "no gloss in the photographed letters gives them; other letters of Nr. 4683 not transcribed may"
    },
    {
-    "item": "the illegible signs of 290r-v ([s]ondern, the word before 'Duc', [Bruder] [gefaßt], [Mez], [Rechtsgelehrter], [wenig], i[hrem], w[ü]rde, genereu[x])",
+    "item": "the illegible signs of 290r-v ([s]ondern, [Bruder] [gefaßt], [wenig], i[hrem], genereu[x]; after the blind shape plate of 28 Nov 2026)",
     "blocker": "illegible",
     "detail": "left illegible after arbitration on the photographs; only a re-reading of the original can do better"
    },
    {
-    "item": "the 26 probable words of 290r-v",
+    "item": "the 27 probable words of 290r-v",
     "blocker": "illegible",
     "detail": "each rests on a sign corrected, doubtful or rare (list in reading_290.md); the gloss of the time gives their sense"
    }
@@ -267,7 +273,7 @@
     "translation": "translation_290.md",
     "language": "de",
     "state": "read in part",
-    "read_share": 0.863,
+    "read_share": 0.873,
     "summary": "From The Hague, a brother of the captive count reports that the Prince of Orange and the imperial minister will write to Bournonville to reinforce Homburg, or to have the Elector (of Trier, who had held Homburg since 1671) do it from Koblenz; he praises the captive's resolution, says all who hold fiefs of Metz are concerned, mocks the letter of Rochefort (on whose written order the brigadier de Pilloy had the count arrested) which confuses vassals and subjects, and expects peace with England within days (the Treaty of Westminster was signed on 19 Feb 1674)."
    },
    {
@@ -290,6 +296,6 @@
    "total": 61,
    "tokens_open": 13
   },
-  "fraction_coherent": 0.863
+  "fraction_coherent": 0.873
  }
 }

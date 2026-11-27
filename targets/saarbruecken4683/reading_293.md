@@ -12,7 +12,7 @@ They come from the number-for-number match with the glossed original, not from t
 - "aller Arten" (293r l. 16) reads *alle rahten* (raten).
 - "418" (293r l. 30) is a misreading of 148 (= e): 40 76 48 154 51 77 56 148 *Metzische*, then *Sach*.
 - 744 (293r l. 30) = *Fürstenberg* in the gloss of the original (745 is Fürstenberg elsewhere in the file).
-- The restoration "M[ajestät]" (293r l. 17) is withdrawn: the original has 283 *Kaÿserin* and 284 *Reich*. Our transcription of the copy has 253 (Kaiser) and 184 (m); whether the copy writes 253 or 283, 184 or 284 is to be checked on the image.
+- The restoration "M[ajestät]" (293r l. 17) is withdrawn: the original has 283 *Kaÿserin* and 284 *Reich*. The copy writes **253** (Kaiser) and **184** (m), as transcribed. This was settled by the blind shape review (relecture aveugle sur forme, Brice Dudout, planche saarbruecken4683-2711; see reading_290.md and `review/plate_2711/`). These are two copying slips against the original, a 5 for an 8 and a 1 for a 2. The text above prints the original's words.
 - The heading of the copy carries *Wien* in cipher (62 58 52 49), with "d. 4ten Jan." and an uncertain year (1673?); the original is signed on 14 Jan 1674, its place of writing not checked.
 - Not used in the text above, as tentative: for 330 and 314, unresolved in the copy, the glosses of the original give, as far as we read them, *Schweden?* and *Spanien?*; for 326 171, *Frantzösische*.
 - Other differences (fortgesezete : fortgesetzet, fouirten : fovirten) are spelling variants between cipher and gloss.
