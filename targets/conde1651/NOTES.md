@@ -1,5 +1,16 @@
 # conde1651 — Condé to Armand du Lau du Chambon, Aug–Sep 1651 (AD Dordogne 2 E 1841/18; catalogue 1213)
 
+Status: in progress — the reading is finished, the write-up is owed (27 Nov 2026). Catalogue 1213 is finished as a whole: the
+bundle 2 E 1841/18 was photographed in full (46 frames) and its only cipher is these five letters, already deciphered by
+Brianson (typescript and key in the bundle; read here with his key, outcome "read with known key"); the 1652 letters are in
+clear, and the Roman-numeral name table is another system with no ciphertext here, filed apart as research/leads.json 3937.
+This work adds something Brianson's unpublished typescript and 1983 summary do not give: the key validated on a held-out page,
+a sign-level transcription, English translations, and a list of places where the cipher reads differently from him (division,
+entretienne, Bordeaux for his ?/1, avec for his ?/9 ...), with new credits (Brice Dudout, Catherine Schunck). So it takes the
+`/writeup` route, not "no write-up" (that is for a target found solved with nothing added). Entry 1213 leaves catalogue.json
+with the write-up, listed under "Read or resolved here, and removed". Before the page: the reading_review of each letter, and
+the open question of the image conditions (section below: AI analysis of the photographs was not agreed by anyone).
+
 Source: Archives départementales de la Dordogne, 2 E 1841/18 (du Lau du Chambon papers). Photographs taken in Nov 2026 for the project by the Société historique et archéologique du Périgord (Catherine Schunck, SHAP). Images are not distributed and no crop is included; cite « AD Dordogne, 2 E 1841/18 ». Frame numbers (P1370NNN) are the photographer's.
 
 ## Images: who took them and on what conditions (CONTRIBUTING, "Conditions of use of the images")
