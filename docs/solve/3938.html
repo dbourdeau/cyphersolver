@@ -87,15 +87,16 @@ WHAT IS KNOWN
   Outcome so far: not yet attempted by the project
   Check first: Re-read the signs on the master TIFF and test against the volume's solved alphabets and any verse on neighbouring leaves.
   Class B: part of a key or a known cipher family of the same office is in print or on DECODE.
+  Project notes (read these before anything else; they record what was tried and ruled out): https://github.com/dbourdeau/cyphersolver/blob/main/targets/ljs51corpus/NOTES.md
 
 STEPS
 0. Set up. If you can run a shell, fork and clone the repository and work inside it:
      git clone https://github.com/dbourdeau/cyphersolver.git
    Then read, in this order: CONTRIBUTING.md (how a contribution is sent and credited); README.md, sections
-   "Repository layout" and "Conventions" (how readings are measured and named); and
-   lang/README.md (shared language models).
-   Put all your work in targets/&lt;writer&gt;&lt;year&gt;/ (a new folder, e.g. sega1593): transcription, key, decipherment, scripts. Write a NOTES.md that says
-   what the document is, the system, the key, the reading, and what is open and why. Keep WORKLOG.md there too:
+   "Repository layout" and "Conventions" (how readings are measured and named); targets/ljs51corpus/NOTES.md (everything
+   already tried on this cipher, with the files it used); and lang/README.md (shared language models).
+   Put all your work in targets/ljs51corpus/: transcription, key, decipherment, scripts. Add your findings to its NOTES.md
+   under a dated heading, without rewriting what is there. Keep WORKLOG.md there too:
    one dated line per step (transcription, hypothesis, solver run, crib, key found, control), failures included.
    Do not edit docs/ (the site is generated and rebuilt on merge) and do not commit large images: link them.
    If you cannot run a shell, do the same work in files you keep and send them with the issue below.
@@ -135,7 +136,7 @@ STEPS
      - not applicable: Not a cipher (clear text, shorthand, a key sheet, instructions), or the item could not be reached.
 
 REPORT BACK
-With a clone: open a pull request with your targets/&lt;writer&gt;&lt;year&gt;/ folder. Say in the description how you want to be
+With a clone: open a pull request with your targets/ljs51corpus/ folder. Say in the description how you want to be
   credited (name, initials or handle, and a link) and include the same points as the issue below.
 Without one: open an issue: https://github.com/dbourdeau/cyphersolver/issues/new?template=solution.yml&amp;title=Solution%3A+catalogue+3938&amp;target=catalogue+3938
 (other kinds of contribution: https://github.com/dbourdeau/cyphersolver/issues/new/choose). Include:
@@ -152,11 +153,11 @@ If you cannot open issues or pull requests, write this report for your human to 
 <p class="frame confirmed"><b>Cipher located and confirmed.</b> Invented-sign alphabet with dotted-stroke word dividers and a partial red gloss; no decipherment written with it (lost with the lower half of the leaf). (OPenn master TIFF https://openn.library.upenn.edu/Data/0001/ljs51/data/master/0084_0006.tif (2339 x 2959 px), read at 2-3x; checked 2026-11-28 by Claude (cyphersolver session, LJS 51 corpus work in targets/ljs51corpus/)) <a href="https://openn.library.upenn.edu/Data/0001/ljs51/data/master/0084_0006.tif" rel="noopener">open that page</a></p>
 <h2>What is known</h2>
 
-
+<p><span class="ko"><i class="k">written up</i> <a href="ljs51corpus.html" title="Ibn al-Durayhim's casebook of solved ciphers, a fourteenth-century first-person record of about 200 cipher verses and prose pieces exchanged with his patron and colleagues, each followed by its solution, Cairo, Damascus and Aleppo, University of Pennsylvania, Kislak Center, LJS 51, ff. 1r–106r">ljs51corpus</a></span></p>
 <p><b>Status and prior art.</b> Unanswered: no plaintext on f. 1r or at the head of f. 1v (master TIFF read 27-28 Nov 2026).</p>
 <p><b>Outcome so far.</b> Not yet attempted by the project.</p>
 <p><b>Check first.</b> Re-read the signs on the master TIFF and test against the volume's solved alphabets and any verse on neighbouring leaves.</p>
-
+<ul><li><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/ljs51corpus/NOTES.md" rel="noopener">targets/ljs51corpus/NOTES.md</a>: what was tried and ruled out (<a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/ljs51corpus" rel="noopener">the folder</a>)</li></ul>
 
 
 <h2>Scores</h2>
@@ -179,7 +180,7 @@ If you cannot open issues or pull requests, write this report for your human to 
 </div></footer>
 <script>(function(){var b=document.querySelector('.agentbox .copy'),p=document.getElementById('agent');if(!b||!p)return;
 b.addEventListener('click',function(){var t=p.textContent;(navigator.clipboard?navigator.clipboard.writeText(t):Promise.reject()).then(function(){b.textContent='Copied';setTimeout(function(){b.textContent='Copy';},1600);},function(){var r=document.createRange();r.selectNodeContents(p);var s=getSelection();s.removeAllRanges();s.addRange(r);});});})();</script>
-<script src="catalogue-data.js?v=594bdcc3"></script>
+<script src="catalogue-data.js?v=0786718a"></script>
 <script src="site.js?v=18ff2458"></script>
 </body>
 </html>
