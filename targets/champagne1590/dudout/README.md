@@ -1,6 +1,6 @@
 # champagne1590 (dudout/): blind shape plates on the places where the two readers of no. 25 disagree
 
-Status: read in part (cipher words 41 of 46 sure, was 40; no. 25 21 of 22 = 95.5%, no. 24 18 of 21, no. 60 2 of 3; proposed, not applied to the profile figures).
+Status: read in part (cipher words 42 of 46 sure, was 40; no. 25 21 of 22 = 95.5%, no. 24 19 of 21 = 90.5% with Paris from an open, not blind, look (see "Open look at [?Paris]"), no. 60 2 of 3; proposed, not applied to the profile figures). Strictly blind count: 41 of 46.
 
 This folder adds one check to the work of Michael Brackx (key no. 25 and the reading of no. 25, issue #96) and of
 Andrew Beling (nos. 24 and 60, and a second reading of no. 25, PR #422). None of their files is changed. The key, the
@@ -75,9 +75,9 @@ Sure / {probable} / [restored] / ‹unresolved›, by words:
 | letter | cipher words | sure | {probable} | [restored] | ‹unresolved› | share sure |
 |---|---|---|---|---|---|---|
 | no. 25 | 22 | **21** (was 20: the l. 34 run now ends "du Roy") | 0 | 0 | 1 (the isolated figure 3) | **95.5%** |
-| no. 24 | 21 | 18 | 1 ([?Paris], margin figure) | 2 (lu[y], au[o]it) | 0 | 85.7% (T3 not applied) |
+| no. 24 | 21 | 19 (18 blind + Paris, open look) | 0 | 2 (lu[y], au[o]it) | 0 | 90.5% (85.7% blind only; T3 not applied) |
 | no. 60 | 3 | 2 | 1 (Launan, gloss Launay) | 0 | 0 | 66.7% |
-| all | 46 | **41** | 2 | 2 | 1 | **0.891** (was 0.870) |
+| all | 46 | **42** (41 blind) | 1 | 2 | 1 | **0.913** (0.891 blind only; was 0.870) |
 
 As before, "l'union" (58 on the page for 56) is counted read as the encipherer's slip. The three letters are read as
 sentences over their whole text (no. 25 alone has 892 words), well over 300 characters.
@@ -88,6 +88,20 @@ commerce, puissance), one hole of Brackx is closed as probable ({Ruelle}), and t
 
 Class: read in part, unchanged. No. 25 passes 95% on its cipher words, but no. 24 and no. 60 do not. We did not change
 `fraction_read` or the `read_share` values in `profile.json`: that is for the maintainer to decide.
+
+## Open look at [?Paris] (28 Nov 2026)
+
+A fourth plate (plate d, 11 questions) asked again about the second sign of "Lbm" (no. 24, l. 12, f. 83). It failed
+one of its three hidden controls (the q of "quoy" has a looped tail that looks like a g, and one q example was a g:
+our design fault), so by its own rule nothing from plate d is used. Its blind answer here was b.
+
+After that, Brice looked at the word openly, with the line in context and examples of v and b from the same hand. He
+reads **v**: a v touching a looped stroke that comes down from the line above. The join makes it look like a b, but
+the stroke is broken where a b's bowl would be continuous. So "L v m" = lviij = Paris on the key sheet.
+
+This is an open look, not a blind one, and it reverses the blind answer, so we count it separately: Paris is sure in
+the main figures above (no. 24 19 of 21), and the strictly blind count stays 41 of 46. The maintainer may prefer the
+blind figure.
 
 ## Still open
 
