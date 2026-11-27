@@ -163,6 +163,8 @@ No key test was run because no key hypothesis applies to the letters. A names-on
 ### Use elsewhere
 This list could be the name key for any 1651–1652 cipher letter from Condé's network in Saintonge and Guyenne: du Lau, Marsin, Baltazar, Viole, du Daugnon, Tarente, Lenet's papers, or the déchiffrement tables at Chantilly (leads.json 1846, Ms 1876). In such letters, names would appear as numbers 17–186 and plaintext numbers as the capitals A–Z. None of the letters in this bundle uses it: the 1652 letters here are in clear.
 
+Filed as a lead of its own by the maintainers at the integration of PR #937 (27 Nov 2026, one key per entry): research/leads.json 3937, from `research/dudout_leads_2026-11-27_conde1651/`. Not vetted and not in the catalogue.
+
 ## Not done
 No reading_review recorded (left to the reviewer). No image or crop in this folder. Brianson's papers at the SHD (GR 1KT 211 / 1 Kmi 62) not seen.
 
