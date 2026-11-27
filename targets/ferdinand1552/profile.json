@@ -319,6 +319,18 @@
    ],
    "what": "Statistical validation (docs/_validate.py): 5441 tokens, 61 types, la-letters order 4: reading -2.023 per letter; random keys -5.817 (z 8.6); key annealed onto shuffled ciphertext best -3.531 (mean -3.561, z 52.9); annealer on the real text -2.023. Verdict: pass.",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-27",
+   "kind": "reading",
+   "what": "Q7 valued Themeswar from a parallel: the clear text of the 13 Oct letter, f. 10v: \"ad propulsandos pauculos illos Turcas, qui ad Lippam et Themeswarium remanserunt\", against the 15 Oct cipher, 34r l. 17: \"Turce illi ad [Q7] et [Q8 Lippam] relicti\". Same Turks, same two places, same verb; Q8 is Lippa by the gloss of f. 39v.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-27",
+   "kind": "verification",
+   "what": "Blind check of the sister-letter transcription: 12 random lines (273 signs) transcribed by a separate AI agent from the images and sign names only; signs agree 258/273 (94.5%), decrypted letters 255/260 (98.1%); every letter difference makes the blind text non-Latin (verify_sister/).",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -363,7 +375,7 @@
   ],
   "fraction_read": 0.978,
   "fraction_read_method": "measured",
-  "fraction_read_source": "Words in the cipher passages of the four letters that come out of the key letter for letter: 13 Oct 526 of 533, 15 Oct 311 of 317, 18 Oct 732 of 740, 22 Oct 584 of 612 (scripts/check_reading.py; NOTES table); 2153 of 2202. All but one word (code Q7) read as sense.",
+  "fraction_read_source": "Words in the cipher passages of the four letters that come out of the key letter for letter: 13 Oct 526 of 533, 15 Oct 311 of 317, 18 Oct 732 of 740, 22 Oct 584 of 612 (scripts/check_reading.py; NOTES table); 2153 of 2202. Every word reads as sense, Q7 as Themeswar from a parallel.",
   "verification": [
    "independent verification",
    "contemporary decipherment",
@@ -415,7 +427,7 @@
      "grade": "A",
      "by": "Claude (the solving session, not independent)",
      "date": "2026-11-26",
-     "note": "Read as running Latin against the margin gloss of the time; every cipher passage builds sentences, with codes rendered from key.tsv. Not reviewed by a second reader."
+     "note": "Read as running Latin against the margin gloss of the time; every cipher passage builds sentences, with codes rendered from key.tsv. Not reviewed by a second reader. Blind transcription check of a 12-line sample by a separate AI agent, 27 Nov 2026: 98.1% of decrypted letters agree (verify_sister/)."
     }
    },
    {
@@ -429,7 +441,7 @@
     "state": "read",
     "read_share": 0.997,
     "summary": "Ferdinand would have liked a demonstration towards Lippa to draw the Ottoman army off Eger and to support Maurice of Saxony. He sends money and cloth, tells Castaldo to hold soldiers and subjects to their duty, and expects the enemy to be drawn off or driven off by winter.",
-    "note": "Words 317: 316 read as sense, 311 with no restored or changed letter, 306 with every doubtful sign out as well. One code word, Q7, is open.",
+    "note": "Words 317: 316 read as sense, 311 with no restored or changed letter, 306 with every doubtful sign out as well. Code word Q7 is valued Themeswar from the parallel clear text of the 13 Oct letter (f. 10v), not from a gloss.",
     "reading_review": {
      "grade": "A",
      "by": "AI language-model agent (for WAINUT; a model reading, not a person), independent of the solver",
@@ -453,7 +465,7 @@
      "grade": "A",
      "by": "Claude (the solving session, not independent)",
      "date": "2026-11-26",
-     "note": "Read as running Latin against the margin gloss of the time; every cipher passage builds sentences, with codes rendered from key.tsv. Not reviewed by a second reader."
+     "note": "Read as running Latin against the margin gloss of the time; every cipher passage builds sentences, with codes rendered from key.tsv. Not reviewed by a second reader. Blind transcription check of a 12-line sample by a separate AI agent, 27 Nov 2026: 98.1% of decrypted letters agree (verify_sister/)."
     }
    },
    {
@@ -472,16 +484,16 @@
      "grade": "A",
      "by": "Claude (the solving session, not independent)",
      "date": "2026-11-26",
-     "note": "Read as running Latin against the margin gloss of the time; every cipher passage builds sentences, with codes rendered from key.tsv. Not reviewed by a second reader."
+     "note": "Read as running Latin against the margin gloss of the time; every cipher passage builds sentences, with codes rendered from key.tsv. Not reviewed by a second reader. Blind transcription check of a 12-line sample by a separate AI agent, 27 Nov 2026: 98.1% of decrypted letters agree (verify_sister/)."
     }
    }
   ],
   "key_file": "key.tsv",
   "gaps": [
    {
-    "item": "Q7, 34r l. 17",
-    "blocker": "open-codes",
-    "detail": "Once in the 15 Oct letter; no rho 7 in the three sister letters (about 11,700 signs transcribed); [?Themeswar] from context only."
+    "item": "Q7, 34r l. 17 (valued Themeswar from a parallel)",
+    "blocker": "no-key-material",
+    "detail": "No gloss or key gives the sign; the value rests on the 13 Oct clear text, f. 10v, \"pauculos illos Turcas, qui ad Lippam et Themeswarium remanserunt\", against \"Turce illi ad [Q7] et [Q8 Lippam] relicti\"."
    },
    {
     "item": "Numeral at 34v.06",
@@ -500,9 +512,9 @@
    }
   ],
   "codes_open": {
-   "open": 1,
+   "open": 0,
    "total": 8,
-   "tokens_open": 1
+   "tokens_open": 0
   }
  }
 }
