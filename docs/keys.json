@@ -5431,6 +5431,22 @@
    "by": "John Entick (dictionary); used by Arthur, William and Richard Henry Lee",
    "year": 1779,
    "note": "A printed dictionary used as a book code; the book was identified by Burnett (1917) and Tomokiyo, the London 1776 printing (Dilly) and the rule of counting headword entries fixed in targets/lee1779 (court = 108a9 fits 1776, not 1773). Internet Archive scan bim_eighteenth-century_the-new-spelling-diction_entick-john_1776."
+  },
+  {
+   "id": "k-vocbatavia-a",
+   "label": "VOC Batavia number cipher, system A (KEY_v2), 1623-1643: rebuilt from the 1634 glosses",
+   "kind": "rebuilt here",
+   "by": "Malcolm McBratney, with AI agents (Claude)",
+   "year": 1634,
+   "note": "Homophonic numbers 1 to about 74; 47 values from the glossed cipher words of the 20 Feb 1634 letter (NA 1.04.02 inv. 1108) and 13 set from the 1623 context, agreeing with the 1623 margin decipherment. Frozen 25 Nov 2026 and applied unchanged to the 1640 postscript (9/11) and the 1643 letter (59/86 groups); 0 of 5,000 shuffles (targets/vocbatavia/key/KEY_v2.tsv)."
+  },
+  {
+   "id": "k-vocbatavia-b",
+   "label": "VOC Batavia mixed letter cipher, system B (KEY_B_v1), 1640-1643: values from contemporary glosses",
+   "kind": "rebuilt here",
+   "by": "Malcolm McBratney, with AI agents (Claude)",
+   "year": 1643,
+   "note": "Letters and numbers each standing for a plain letter, for names, places and goods; Roman numerals XXI and IV as code words. Built only from the interlinear glosses of 1640 and 1643; no held-out test passed (LC_KEY_v1 5/13 on the 1640 letter words) (targets/vocbatavia/key/KEY_B_v1.tsv)."
   }
  ],
  "links": [
@@ -8698,7 +8714,7 @@
    "how": "read unchanged",
    "note": "applied unchanged to the 25 runs Narváez did not print in 2015; on his 10 printed runs it gives 88 of 89 letters"
   },
-    {
+  {
    "key": "k-clave-extra3",
    "target": "murguia1914",
    "how": "rebuilt from",
@@ -8817,6 +8833,18 @@
    "target": "dumas1777",
    "how": "read unchanged",
    "note": "the key gives the reading's letter for 4,480 of the 4,503 numbers of the principal copies (one of them c written for k); tested first against the decipherer's letters on a page chosen in advance, 129 of 134"
+  },
+  {
+   "key": "k-vocbatavia-a",
+   "target": "vocbatavia",
+   "how": "rebuilt from",
+   "note": "rebuilt from the 1634 glosses and the 1623 context; deciphers 53 of 54 cipher words of 1623 and the system-A words of 1640 and 1643"
+  },
+  {
+   "key": "k-vocbatavia-b",
+   "target": "vocbatavia",
+   "how": "partial",
+   "note": "gloss values only; the B words count as holes"
   }
  ],
  "sources": [
@@ -10285,6 +10313,14 @@
   {
    "source": "s-tomokiyo",
    "key": "k-dumas1776"
+  },
+  {
+   "source": "s-cyphersolver",
+   "key": "k-vocbatavia-a"
+  },
+  {
+   "source": "s-cyphersolver",
+   "key": "k-vocbatavia-b"
   }
  ],
  "unlinked": {

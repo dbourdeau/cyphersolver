@@ -1,6 +1,6 @@
 # vocbatavia: the VOC Batavia number cipher, 1623-1643 (one key, four letters)
 
-Status: in progress. Bulk drop prepared 26 Nov 2026 AEST (25 Nov UTC) by a Claude session (claude-opus-5-5) in hunts40 G3/M4;
+Status: read in part (written up 27 Nov 2026: docs/vocbatavia.html). Bulk drop prepared 26 Nov 2026 AEST (25 Nov UTC) by a Claude session (claude-opus-5-5) in hunts40 G3/M4;
 filed as one pull request on 26 Nov 2026 AEST at Malcolm McBratney's direction. Two independent blind second readings (AI) added before filing.
 No person has checked the transcriptions, keys or readings yet (AI-checked only).
 The checks were done with AI tools and no person checked each record by hand.
@@ -73,8 +73,10 @@ Per-letter arithmetic is in letters/<letter>/RESULT*.md and the *_output.txt fil
 - 1640 postscript: 16 letter-cipher (system B) words (13 in the frozen transcription + 'k bd. p.', see emendations to make) - blocker: open-codes; LC_KEY_v1 test failed (5/13); the 617 interlinear gloss is only partly legible at the NA image resolution.
 - 1643 letter: 27 of 86 number groups uncovered - blocker: open-codes; 12 are isolated system-B signs the frozen rule cannot score; run 905.3 is system B ('eylanden' in the gloss).
 - System B key (KEY_B_v1) - blocker: open-codes; Built from glosses only; no held-out unglossed B passage scored yet.
-- 7 Mar 1643 letter (inv. 1141 near scan 876) - blocker: not-attempted; Only a glossed copy found; key evidence only.
-- Human check (a person comparing the transcription with the image and applying the key by hand) - blocker: not-attempted; Owed for every letter. Blind second readings by isolated AI readers are done for 1640 and 1643 (below), and for 1623 by non-Anthropic readers (27 Nov 2026, below).
+
+## Owed checks (not unread pieces; moved out of Remaining gaps 27 Nov 2026)
+- Human check (a person comparing the transcription with the image and applying the key by hand) - Owed for every letter. Blind second readings by isolated AI readers are done for 1640 and 1643 (below), and for 1623 by non-Anthropic readers (27 Nov 2026, below).
+- 7 Mar 1643 letter (inv. 1141 near scan 876): a further letter of the series; only a glossed copy was found, so it is key evidence, not an unread piece of these four texts. Not transcribed (see Escalation, siblings).
 
 ## Blind second readings (added 26 Nov 2026 AEST, before filing)
 Isolated Claude subagents (Fable model), images only; never saw our transcription, keys, decode, glosses or results. Frozen and stamped before alignment.
@@ -89,6 +91,9 @@ Notes: letters/1640/readers/ALIGNMENT_reader2.md, letters/1643/readers/ALIGNMENT
 The 1623 readers are non-Anthropic models (GPT-6.2 Sol, GPT-6.2 Astra, Gemini 4 Carbon; Perplexity run by Malcolm McBratney, 26 Nov 2026),
 images of 1080_0376/0380 only, independent of our transcription. No emendation proposed; the 1623 first pass 59.26% (below 65%) is unchanged.
 
+## Statistical test (27 Nov 2026)
+- `python docs/_validate.py vocbatavia --write` on validation.tsv (the 1623 letter, 276 numbers, read with the same key as scripts/house_count.py; model nl-modern, the Gutenberg Dutch corpus fetched from the gutenberg.pglaf.org mirror because gutenberg.org answered 503): reading -2.914 per letter; random keys -6.457 (sd 0.299, z 11.8); shuffled refit -3.588 (sd 0.146, max -3.445); annealer power -3.193; verdict **pass**. Recorded in profile.json outcome.validation. The nl-1600 period model needs a DBNL build and was not available.
+
 ## Prior-art caveats (27 Nov 2026; PRIOR_ART.md, update section)
 - 1623: Coolhaas (GM I p. 129) reports that the explanation was written in the margin "in patria"; his witness is old inv. 991 = 1079.
   Cheng 1995 vol. II p. 27 (cited for this letter by Andrade) is unverified: it may print the passage. Open.
@@ -96,15 +101,15 @@ images of 1080_0376/0380 only, independent of our transcription. No emendation p
   (Tartarien, gold and silver islands, Japan, noort). Found after our reading; not used. The 1643 page 905 content is therefore not first.
 
 ## Escalation
-- [x] siblings: the 1623, 1634, 1640 and 1643 letters of the same series worked; leaves next to the cipher opened (inv. 1134 scans 570-617; inv. 1141 scans 886-908); DECODE has only record 1564 (1674, other system).
+- [x] siblings: the 1623, 1634, 1640 and 1643 letters of the same series worked; leaves next to the cipher opened (inv. 1134 scans 570-617; inv. 1141 scans 886-908); DECODE has only record 1564 (1674, other system). The 7 Mar 1643 letter (inv. 1141 near scan 876) was found as a glossed copy only and not transcribed (key evidence, not part of these four texts).
 - [x] clear-pages: the glossed copies (1079 margins, 1108 glosses, 1134 scans 605 and 617, 1141 scans 886 and 890) checked as the decipherment, each after its score.
 - [x] known-keys: KEY_v2 tried on 1640 and 1643; LC_KEY_v1 on the 1640 letter words; Ramanacoil 1674 key is graphic signs, not comparable (DECODE login needed for a direct look).
 - [x] print: Leupe 1858 (1643 passage printed with explanation, found 27 Nov), Coolhaas Generale Missiven I-II (full text), Dagh-Register 1640-41 and 1643-44 (archive.org OCR), Coen Bescheiden VII, HistoCrypt papers, web searches for Tomokiyo and Lasry; HathiTrust/Google Books phrases left on Malcolm's sheet.
-- [ ] key-rebuild: system B not yet extended beyond the gloss values (no annealing or EM run).
-- [ ] retry: unread system-B groups not yet retried with KEY_B_v1 and regraded.
+- [x] key-rebuild: 27 Nov 2026, dictionary/LM-context extension of KEY_B_v1 (scripts/retry_b.py, letters/RETRY_B_2026-11-27.txt): for each B word with unknown signs, Dutch words that fit the known letters (repository nl lexicon plus the words read in this target). No new value is supported by two or more words, so none is adopted; KEY_B_v1 unchanged. Annealing or EM was not run: 47 B words in all, 15 with unknown signs, too few to constrain a key with no held-out text.
+- [x] retry: 27 Nov 2026, all 47 system-B words (1640 postscript 16, 1643 letter 31) decoded with the frozen KEY_B_v1 (letters/RETRY_B_2026-11-27.txt): 32 fully valued. The 1643 words give the copy-1 glosses back (tartarien, iapan, oosten, natien, chinees, drie, acht ...), but KEY_B_v1 was built from those glosses, so they are not a test. In the 1640 postscript tpbk = over (its own gloss) and grbk = daer; Gmroodt, lrdgenlm, bpbkdbsbd, Zrpmb, qbbm/qbhm, boode stay unread. Regraded: no hole changes under the house rule (B words rest on glosses; the B key has no held-out test). Figures of record and house count unchanged.
 
 ## Transcription doubts
-- 39 and 5 (1643 copy 2, 905.3 groups 2 and 6) - read: 39, 5; Leupe 1858 OCR prints 89 and 6 for this run; check his page image and the witness he used; not applied.
+- 39 and 5 (1643 copy 2, 905.3 groups 2 and 6) - read: 39, 5; checked: image, decode (39 = y, 5 = d in system B: 'eylanden', the copy-1 gloss), transcription (blind reader 3 agrees on both; only 902.4 group 3 differs); Leupe 1858 OCR prints 89 and 6 for this run; his page image and witness not checked; not applied.
 - 61 (1643 copy 2, 901.4 group 2) - read: 61; checked: image, decode (rycx, copy 1 gloss 'rijcx'); could be 01.
 - 10 (1643 copy 2, 902.4 group 3) - read: 10; checked: image, decode (n?aow under KEY_v2; 'ton..' under KEY_B), copy 1 (writes 16), independent transcription (reader 3 reads 16); KEY_B reading 'tonnen' supports 16. Frozen value kept in the figure of record.
 - 74 (1643 copy 2, 901.1 group 7) - read: 74; checked: image, copy 1 (writes 70), decode (advisen needs e = 70).

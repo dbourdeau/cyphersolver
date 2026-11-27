@@ -16259,6 +16259,45 @@
   },
   "argumedo1921": {
    "skip": "No DECODE record for CEHM-Carso DCXXI.3.244.1 or 3.250.2 (known.py on the DECODE harvest dumps, 25 Nov 2026: no hit for Argumedo or DCXXI); nothing on DECODE to correct. The contributed transcription is held until Brice Dudout agrees to its being sent."
+  },
+  "vocbatavia": {
+   "writeup": "https://dbourdeau.github.io/cyphersolver/vocbatavia.html",
+   "cite": "Malcolm McBratney, with AI agents (Claude), PR #996 (26-27 Nov 2026); W. Ph. Coolhaas (ed.), Generale Missiven I (1960) p. 129 and II (1964) pp. 101, 194; P. A. Leupe (ed.), Reize van Maarten Gerritsz. Vries in 1643 (1858).",
+   "records": {},
+   "new_records": [
+    {
+     "shelfmark": "Nationaal Archief, The Hague, VOC 1.04.02 inv. 1080 scans 376, 380, 486; inv. 1079 scans 129, 133, 263",
+     "what": "Governor-General De Carpentier and Council, Batavia, to the Heren XVII, 25 Dec 1623 (with resolution of 2 Oct 1623): three cipher blocks (homophonic number cipher, Dutch) among clear text; inv. 1079 has the contemporary decipherment in the margin (Coolhaas GM I p. 129: 'de verklaring is in margine in patria bijgeschreven'). Key rebuilt from the 1634 glosses (targets/vocbatavia/key/KEY_v2.tsv); 53 of 54 cipher words read. No DECODE record found. Suggested as a new DECODE record; proposed status Decrypted.",
+     "transcription": [
+      "targets/vocbatavia/letters/1623_1634/T1623_transcription.txt"
+     ],
+     "sent": false
+    },
+    {
+     "shelfmark": "Nationaal Archief, The Hague, VOC 1.04.02 inv. 1108 scans 1154-1155; inv. 1111 scan 564",
+     "what": "Governor-General Brouwer and Council, Batavia, to the Heren XVII, 20 Feb 1634: 14 cipher passages (35 words, same number cipher), each glossed in the margin; the source of the key. Suggested as a new DECODE record (cipher with contemporary decipherment); proposed status Decrypted.",
+     "transcription": [
+      "targets/vocbatavia/letters/1623_1634/T1634_transcription.txt"
+     ],
+     "sent": false
+    },
+    {
+     "shelfmark": "Nationaal Archief, The Hague, VOC 1.04.02 inv. 1134 scans 583 (no gloss) and 617 (interlinear decipherment); body cipher on scans 570 and 605",
+     "what": "Van Diemen and Council, Batavia, to the Heren XVII, 9 Sep 1640 (sent by the English ship Caesar, Coolhaas GM II p. 101): a cipher postscript in the number cipher (9 of 11 words deciphered with KEY_v2) and 16 words of a second, mixed letter cipher, not read. Suggested as a new DECODE record; proposed status Partially decrypted.",
+     "transcription": [
+      "targets/vocbatavia/letters/1640/transcriptions/T1640_transcription.txt"
+     ],
+     "sent": false
+    },
+    {
+     "shelfmark": "Nationaal Archief, The Hague, VOC 1.04.02 inv. 1141 scans 897-908 (copy 2, cipher on 901, 902, 905, 906) and 881-893 (copy 1, interlinear decipherment on 886, 890)",
+     "what": "Van Diemen and Council, Batavia, to the Heren XVII, 23 Jan 1643 (by the English ship Ulysses, Coolhaas GM II p. 194): number cipher and a mixed letter cipher with Roman-numeral code words (XXI silver, IV gold); page 905 is the plan of the Vries voyage to Tartary, printed with its meaning by Leupe 1858. 11 of 55 cipher words read as sure words; the rest rests on the copy-1 gloss. Suggested as a new DECODE record; proposed status Partially decrypted.",
+     "transcription": [
+      "targets/vocbatavia/letters/1643/T1643_transcription.txt"
+     ],
+     "sent": false
+    }
+   ]
   }
  }
 }

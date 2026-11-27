@@ -383,9 +383,25 @@
    "kind": "reading",
    "what": "Review response (Dan Bourdeau, PR #996): house count by script (scripts/house_count.py), cipher words only, sure words only: 1623 53/54 (read), 1634 35/35 (key source, read from glosses), 1640 postscript 9/27, 1643 11/55 (read in part); class read in part; fraction_read 0.956 (key coverage) replaced by the read share 73/136; primary method key recovered based on adjacent plaintext; provenance contributed.",
    "result": "partial"
-  }
+  },
+  {
+   "date": "2026-11-27",
+   "kind": "solver",
+   "what": "Escalation retry and key-rebuild for system B (scripts/retry_b.py, letters/RETRY_B_2026-11-27.txt): all 47 B words (1640 postscript 16, 1643 letter 31) decoded with the frozen KEY_B_v1, 32 fully valued; the 1643 words return the glosses KEY_B_v1 was built from (not a test); 1640 tpbk = over (own gloss), grbk = daer, six 1640 words stay unread. Dictionary/LM-context extension: no new value supported by two or more words, none adopted. House count and figures of record unchanged.",
+   "result": "failed",
+   "technique": [
+    "other"
+   ]
+  },
+  {
+   "date": "2026-11-27",
+   "kind": "reading",
+   "what": "Write-up session: the human check and the 7 Mar 1643 glossed copy moved from outcome.gaps to NOTES 'Owed checks' (they are not unread pieces of the four texts); site page docs/vocbatavia.html written from NOTES.md and profile.json.",
+   "result": "worked"
+  },
+  {"date": "2026-11-27", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 276 tokens, 57 types, nl-modern order 4: reading -2.914 per letter; random keys -6.457 (z 11.8); key annealed onto shuffled ciphertext best -3.445 (mean -3.588, z 4.6); annealer on the real text -3.193. Verdict: pass.", "result": "worked"}
  ],
- "outcome": {
+ "outcome": {"validation": {"date": "2026-11-27", "model": "nl-modern", "file": "validation.tsv", "tokens": 276, "types": 57, "tokens_per_type": 4.84, "score": -2.914, "nulls": {"random keys": {"n": 200, "mean": -6.457, "sd": 0.299, "max": -5.527, "z": 11.8, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -3.588, "sd": 0.146, "max": -3.445, "z": 4.6, "p": 0.1429}}, "power": -3.193, "verdict": "pass", "notes": "claimed per-occurrence score -2.914; polyphony 0.0; 0 unread tokens left out; annealer on the real text from random keys reached -3.193"}, 
   "class": "read in part",
   "key": "partial",
   "method": "key recovered based on adjacent plaintext",
@@ -411,12 +427,8 @@
     "extent": "partial"
    }
   ],
-  "verification": [
-   "matched control",
-   "contemporary decipherment",
-   "historical consistency"
-  ],
-  "method_basis": "Figures of record: 1640 postscript 9/11 tokens = 81.82%; 1643 59/86 groups = 68.60% (DP word rule frozen in advance); 1623 32/54 = 59.26% (below bar). Key shuffles 0/5,000 at seeds 20261112 and 7 for all three; matched ciphertext-shuffle control 0/5,000 at both seeds for 1643. Contemporary interlinear decipherments agree where checked (after the scores). System B read only from glosses. docs/_validate.py not run. The 65% figures above are test evidence for the key; they do not decide the class. Read shares (house count, cipher words only, sure words only; scripts/house_count.py, 27 Nov 2026): 1623 53/54 = 0.981; 1634 35/35 (key source, every word glossed); 1640 postscript 9/27 = 0.333; 1643 11/55 = 0.200. The earlier fraction_read 0.956 (608/636 system-A groups with a KEY_v2 value) was key coverage, not a read share, and is withdrawn. Blind second readings (isolated AI readers, images only, frozen and stamped before alignment): 1640 postscript 56/57 = 98.25% of number groups agree (only difference the blotted group, reader '57?', matching the scan 617 gloss); 1643 85/86 = 98.84% (one disagreement, 902.4 group 3: 10 vs 16, a listed doubt; 3 extra reader numbers are signs frozen inside letter-cipher words). Figures of record unchanged. No person has checked any reading.",
+  "verification": ["matched control", "contemporary decipherment", "historical consistency", "statistical test"],
+  "method_basis": "Figures of record: 1640 postscript 9/11 tokens = 81.82%; 1643 59/86 groups = 68.60% (DP word rule frozen in advance); 1623 32/54 = 59.26% (below bar). Key shuffles 0/5,000 at seeds 20261112 and 7 for all three; matched ciphertext-shuffle control 0/5,000 at both seeds for 1643. Contemporary interlinear decipherments agree where checked (after the scores). System B read only from glosses. The 65% figures above are test evidence for the key; they do not decide the class. Read shares (house count, cipher words only, sure words only; scripts/house_count.py, 27 Nov 2026): 1623 53/54 = 0.981; 1634 35/35 (key source, every word glossed); 1640 postscript 9/27 = 0.333; 1643 11/55 = 0.200. The earlier fraction_read 0.956 (608/636 system-A groups with a KEY_v2 value) was key coverage, not a read share, and is withdrawn. Blind second readings (isolated AI readers, images only, frozen and stamped before alignment): 1640 postscript 56/57 = 98.25% of number groups agree (only difference the blotted group, reader '57?', matching the scan 617 gloss); 1643 85/86 = 98.84% (one disagreement, 902.4 group 3: 10 vs 16, a listed doubt; 3 extra reader numbers are signs frozen inside letter-cipher words). Figures of record unchanged. No person has checked any reading.",
   "credits": [
    {
     "who": "contemporary",
@@ -456,16 +468,6 @@
     "item": "System B key (KEY_B_v1)",
     "blocker": "open-codes",
     "detail": "Built from glosses only; no held-out unglossed B passage scored yet."
-   },
-   {
-    "item": "7 Mar 1643 letter (inv. 1141 near scan 876)",
-    "blocker": "not-attempted",
-    "detail": "Only a glossed copy found; key evidence only."
-   },
-   {
-    "item": "Human check (a person comparing the transcription with the image and applying the key by hand)",
-    "blocker": "not-attempted",
-    "detail": "Owed for every letter; no person has checked the transcriptions, keys or readings. Blind second readings by isolated AI readers are done for 1640 (56/57 groups) and 1643 (85/86); 1623 has none."
    }
   ],
   "texts": [

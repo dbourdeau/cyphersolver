@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<base href="../">
+<title>The VOC number cipher of Batavia, 1623–1643 — read it further</title>
+<meta name="description" content="A cipher read in part (53.7%), with its open gaps and instructions for an AI agent to take it further.">
+<link rel="stylesheet" href="style.css?v=572104d3">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+</head>
+<body id="top" class="pg-solve pg-further1">
+<header class="nav"><a class="skip" href="#content">Skip to content</a><div class="in">
+  <a class="brand" href="index.html"><span class="glyph">972</span><span>Cyphersolver</span></a>
+  <button class="navtoggle" type="button" aria-expanded="false" aria-controls="sitemenu"><span></span><span></span><span></span><i>Menu</i></button>
+  <nav id="sitemenu" class="links" aria-label="Site">
+    <details class="menu"><summary>Write-ups <svg width="10" height="7" viewBox="0 0 10 7" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></summary>
+      <div class="panel wp"><div class="foot"><a class="all" href="writeups.html">All write-ups, with filters &rarr;</a><a href="findings.html">All findings, newest first</a><a href="writeups.html#src=notes">Results only in the notes</a></div></div></details>
+    <details class="menu"><summary>Explore <svg width="10" height="7" viewBox="0 0 10 7" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></summary>
+      <div class="panel ex"><div class="grp"><h4>Start here</h4><ul><li><a href="highlights.html"><b>Highlights</b><span class="d">Twenty favourites: the funny, the historic, the ingenious, the hardest</span></a></li><li><a href="top25.html"><b>Top 25 unsolved ciphers</b><span class="d">Twenty-five ciphers with no accepted reading, ranked</span></a></li></ul></div><div class="grp"><h4>Maps and patterns</h4><ul><li><a href="atlas.html"><b>Atlas</b><span class="d">Every letter drawn on the map, five centuries of it</span></a></li><li><a href="key-evolution.html"><b>How keys changed</b><span class="d">Kinds of key, their signs and their size, 1400 to 1950</span></a></li><li><a href="keys.html"><b>Key web</b><span class="d">Which key opened which letter</span></a></li></ul></div><div class="grp"><h4>Try and take part</h4><ul><li><a href="secret.html"><b>Write a secret letter</b><span class="d">Seal a message in a real historical cipher</span></a></li><li><a href="contribute.html"><b>Contribute</b><span class="d">Send a solution, a new cipher or a check of a reading</span></a></li></ul></div><div class="grp"><h4>Reference</h4><ul><li><a href="glossary.html"><b>Glossary</b><span class="d">How each cipher was solved, and the terms used</span></a></li><li><a href="corrections.html"><b>Corrections</b><span class="d">What was published and then corrected or withdrawn</span></a></li><li><a href="method.html"><b>Method and review</b><span class="d">How a reading is made, checked and graded, and by whom</span></a></li></ul></div><div class="foot"><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">The code and the working notes on GitHub &#8599;</a></div></div></details>
+    <span class="navlab">Help</span>
+    <a class="navcat" href="catalogue.html">Catalogue<span class="sticker" aria-hidden="true"><span><b>Help<br>Solve!</b></span></span></a>
+    <a class="navcat" href="further.html" aria-current="page">Read further<span class="sticker alt" aria-hidden="true"><span><b>Finish<br>It!</b></span></span></a>
+    <a class="navcat" href="archives.html">To the archive<span class="sticker arc" aria-hidden="true"><span><b>Go<br>Look!</b></span></span></a>
+    <a href="contributors.html">Contributors</a>
+    <button class="searchbtn" type="button" aria-label="Search the site" aria-keyshortcuts="/ Control+K"><svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><circle cx="6.8" cy="6.8" r="5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M10.5 10.5L15 15" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg><span>Search</span><kbd>/</kbd></button>
+    <button class="theme" type="button" aria-label="Switch between dark and light" title="Dark / light"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.2" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M8 1.8a6.2 6.2 0 0 1 0 12.4z" fill="currentColor"/></svg></button>
+  </nav>
+</div><span id="content" tabindex="-1"></span></header>
+<div class="search" id="search" hidden>
+  <div class="sbox" role="dialog" aria-modal="true" aria-label="Search the site">
+    <form class="sform" role="search" onsubmit="return false">
+      <svg width="18" height="18" viewBox="0 0 16 16" aria-hidden="true"><circle cx="6.8" cy="6.8" r="5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M10.5 10.5L15 15" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+      <input type="search" id="sq" placeholder="Search names, places, shelfmarks, words of the cipher&hellip;" autocomplete="off" spellcheck="false" aria-label="Search" aria-controls="sres">
+      <button type="button" class="sclose" aria-label="Close search">Esc</button>
+    </form>
+    <div class="sres" id="sres" role="listbox" aria-label="Results"></div>
+    <div class="shint"><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> move</span><span><kbd>&crarr;</kbd> open</span><span><kbd>Esc</kbd> close</span><span class="sn" id="sn"></span></div>
+  </div>
+</div>
+
+<section class="hero">
+  <p class="kicker"><a href="further.html">Read further</a> · read 53.7% · key from adjacent plaintext &middot; partial</p>
+  <h1>The VOC number cipher of Batavia, 1623&ndash;1643</h1>
+  <p class="sub">Four letters of the Governor-General and Council at Batavia to the Heren XVII (Nationaal Archief, VOC 1.04.02) hide cargoes, ships and plans in a homophonic number cipher, and in 1640 and 1643 also in a second, mixed letter-and-number cipher. The number key was rebuilt from the glosses of the 1634 letter, frozen, and tested on a postscript of 1640 and a letter of 1643 (81.82% and 68.60% on the first pass; 0 of 5,000 shuffles reach them). Read in part: 73 of 136 cipher words are sure; nearly all words of the second system rest on contemporary glosses only. The 1643 passage on the voyage to Tartary was printed with its meaning by Leupe in 1858. Contributed by Malcolm McBratney, with AI agents; the checks were done with AI tools and no person checked each record by hand.</p>
+  <dl class="facts">
+    <dt>Date</dt><dd>1623&ndash;1643</dd>
+    <dt>Read now</dt><dd>53.7% of the cipher tokens give sense</dd>
+    <dt>Write-up</dt><dd><a href="vocbatavia.html">vocbatavia.html</a></dd>
+    <dt>Files</dt><dd><a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/vocbatavia" rel="noopener">targets/vocbatavia</a></dd>
+    <dt>Open gaps</dt><dd><span class="gap w">code groups open ×4</span></dd>
+  </dl>
+</section>
+
+<main>
+<h2>Hand this page to your AI agent</h2>
+<p>Give your agent (Claude, ChatGPT or any assistant that can open web pages) this address and ask it to do the task on the page:</p>
+<p class="urlline">https://dbourdeau.github.io/cyphersolver/further/vocbatavia.html</p>
+<p>Or copy the block below into the chat. It is the whole task: the reading, every open gap, what has been tried, the steps, and how to report back.</p>
+<div class="agentbox"><span class="sticker alt" aria-hidden="true"><span><b>Finish<br>It!</b><small>give this to your agent</small></span></span><button type="button" class="copy">Copy</button><pre id="agent">TASK: take a partial decipherment further: The VOC number cipher of Batavia, 1623–1643
+This page: https://dbourdeau.github.io/cyphersolver/further/vocbatavia.html
+
+You are helping a public research project finish reading historical cipher letters. This one is read in part:
+the key works, but some pieces are still open. Your job is to close one or more of the open gaps below.
+
+THE READING
+  Write-up:   https://dbourdeau.github.io/cyphersolver/vocbatavia.html (read it first: how the text was read, the key, the reading)
+  Date:       1623–1643
+  Outcome:    key from adjacent plaintext · partial
+  Read now:   53.7% of the deciphered cipher tokens give sense (pieces below may be untouched)
+  Files:      https://github.com/dbourdeau/cyphersolver/tree/main/targets/vocbatavia (NOTES.md, key, transcription, reading, scripts)
+
+OPEN GAPS (from NOTES.md, "## Remaining gaps")
+  1. [open-codes: doable now] 1623 letter: read, 53 of 54 cipher words; the one hole is kolden read konden (26 = l taken as a slip); the first pass (59.26%) is key-test evidence only; 13 numbers set from context after the first pass - blocker: open-codes; Reading exists in the 1079 margins; values set post hoc in SECOND_PASS_values.tsv.
+  2. [open-codes: doable now] 1640 postscript: 16 letter-cipher (system B) words (13 in the frozen transcription + 'k bd. p.', see emendations to make) - blocker: open-codes; LC_KEY_v1 test failed (5/13); the 617 interlinear gloss is only partly legible at the NA image resolution.
+  3. [open-codes: doable now] 1643 letter: 27 of 86 number groups uncovered - blocker: open-codes; 12 are isolated system-B signs the frozen rule cannot score; run 905.3 is system B ('eylanden' in the gloss).
+  4. [open-codes: doable now] System B key (KEY_B_v1) - blocker: open-codes; Built from glosses only; no held-out unglossed B passage scored yet.
+
+ALREADY TRIED (from NOTES.md, "## Escalation")
+  [x] siblings: the 1623, 1634, 1640 and 1643 letters of the same series worked; leaves next to the cipher opened (inv. 1134 scans 570-617; inv. 1141 scans 886-908); DECODE has only record 1564 (1674, other system). The 7 Mar 1643 letter (inv. 1141 near scan 876) was found as a glossed copy only and not transcribed (key evidence, not part of these four texts).
+  [x] clear-pages: the glossed copies (1079 margins, 1108 glosses, 1134 scans 605 and 617, 1141 scans 886 and 890) checked as the decipherment, each after its score.
+  [x] known-keys: KEY_v2 tried on 1640 and 1643; LC_KEY_v1 on the 1640 letter words; Ramanacoil 1674 key is graphic signs, not comparable (DECODE login needed for a direct look).
+  [x] print: Leupe 1858 (1643 passage printed with explanation, found 27 Nov), Coolhaas Generale Missiven I-II (full text), Dagh-Register 1640-41 and 1643-44 (archive.org OCR), Coen Bescheiden VII, HistoCrypt papers, web searches for Tomokiyo and Lasry; HathiTrust/Google Books phrases left on Malcolm's sheet.
+  [x] key-rebuild: 27 Nov 2026, dictionary/LM-context extension of KEY_B_v1 (scripts/retry_b.py, letters/RETRY_B_2026-11-27.txt): for each B word with unknown signs, Dutch words that fit the known letters (repository nl lexicon plus the words read in this target). No new value is supported by two or more words, so none is adopted; KEY_B_v1 unchanged. Annealing or EM was not run: 47 B words in all, 15 with unknown signs, too few to constrain a key with no held-out text.
+  [x] retry: 27 Nov 2026, all 47 system-B words (1640 postscript 16, 1643 letter 31) decoded with the frozen KEY_B_v1 (letters/RETRY_B_2026-11-27.txt): 32 fully valued. The 1643 words give the copy-1 glosses back (tartarien, iapan, oosten, natien, chinees, drie, acht ...), but KEY_B_v1 was built from those glosses, so they are not a test. In the 1640 postscript tpbk = over (its own gloss) and grbk = daer; Gmroodt, lrdgenlm, bpbkdbsbd, Zrpmb, qbbm/qbhm, boode stay unread. Regraded: no hole changes under the house rule (B words rest on glosses; the B key has no held-out test). Figures of record and house count unchanged.
+
+STEPS
+0. Set up. If you can run a shell, fork and clone the repository and work inside it:
+     git clone https://github.com/dbourdeau/cyphersolver.git
+   Then read, in this order: CONTRIBUTING.md (how a contribution is sent and credited); README.md, sections
+   "Repository layout" and "Conventions" (how readings are measured and named); targets/vocbatavia/NOTES.md in full, and the
+   key, transcription and reading files it names; lang/README.md (shared language models).
+   Work in targets/vocbatavia/. Add your findings to NOTES.md under a dated heading without rewriting what is there, and
+   update the "## Remaining gaps" line of every gap you close. Keep WORKLOG.md there: one dated line per step
+   (hypothesis, value tried, solver run, crib, control), failures included. Do not edit docs/ (the site is generated).
+   If you cannot run a shell, fetch the files from the links above and keep your work in files you send with the issue.
+1. Pick a gap. Start with the ones marked "doable now" (open-codes, not-attempted, left-open): the images and the key
+   are online, so they need only work. A gap marked "needs a new source" (no-key-material, too-short, illegible,
+   needs-physical-access) can be closed only by something new: a key
+   or a deciphered sibling found elsewhere, a better image, a printed edition or calendar, a photograph from the archive.
+   For those, search for that material first, and say where you looked even when you find nothing.
+2. Start from the existing key and transcription in the folder. Do not rebuild the key from scratch, and do not
+   re-read parts that are already read unless you find an error in them.
+3. For a code group or sign value: list every place the group occurs, show how each reads with the value you propose,
+   and say what still does not fit. For a passage: re-read it at the image and give the folio and line. For a missing
+   letter or leaf: say where it is held and how it can be reached.
+4. Measure again. Apply the key to the whole text, write the reading file, and count the share of cipher tokens that
+   give sense (not an estimate). The reading is "complete" only when (1) at least 95% of its cipher tokens give sense;
+   (2) no gap is left untried; (3) every letter in it is covered; (4) what stays open is scattered code groups or names,
+   or pieces blocked from outside. Otherwise it stays "partial": say which gaps are still open and why.
+5. Be honest. Mark every uncertain word with [?], leave unread groups as their numbers or signs, and never fill a gap
+   with a plausible guess. A gap retried and still open, with what was ruled out, is worth reporting.
+
+REPORT BACK
+With a clone: open a pull request with your changes to targets/vocbatavia/. Say in the description which gaps you worked on,
+  the share read before and after, and how you want to be credited (name, initials or handle, and a link).
+Without one: open an issue: https://github.com/dbourdeau/cyphersolver/issues/new?template=further-reading.yml&amp;title=Further+reading%3A+vocbatavia&amp;page=vocbatavia.html
+  Give the write-up, the gap you worked on (its line in Remaining gaps, or the code group, folio and line), what you
+  propose, the evidence (every occurrence, the images or sources), the share read before and after, your step log,
+  and the tools and AI model you used.
+If you cannot open issues or pull requests, write this report for your human to send. Credit goes to the person who sends it.</pre></div>
+
+<h2>Open gaps</h2>
+<p><span class="gap w">gold</span> can be done now: the images and the key are online, it needs only work. <span class="gap">grey</span> needs a new source first: a key, a better scan, an edition or the archive.</p>
+<ul class="gaplist"><li><span class="gap w">code groups open</span> 1623 letter: read, 53 of 54 cipher words; the one hole is kolden read konden (26 = l taken as a slip); the first pass (59.26%) is key-test evidence only; 13 numbers set from context after the first pass - blocker: open-codes; Reading exists in the 1079 margins; values set post hoc in SECOND_PASS_values.tsv.</li><li><span class="gap w">code groups open</span> 1640 postscript: 16 letter-cipher (system B) words (13 in the frozen transcription + 'k bd. p.', see emendations to make) - blocker: open-codes; LC_KEY_v1 test failed (5/13); the 617 interlinear gloss is only partly legible at the NA image resolution.</li><li><span class="gap w">code groups open</span> 1643 letter: 27 of 86 number groups uncovered - blocker: open-codes; 12 are isolated system-B signs the frozen rule cannot score; run 905.3 is system B ('eylanden' in the gloss).</li><li><span class="gap w">code groups open</span> System B key (KEY_B_v1) - blocker: open-codes; Built from glosses only; no held-out unglossed B passage scored yet.</li></ul>
+<h2>Already tried</h2><ul class="esc"><li>&#9745; <b>siblings</b> the 1623, 1634, 1640 and 1643 letters of the same series worked; leaves next to the cipher opened (inv. 1134 scans 570-617; inv. 1141 scans 886-908); DECODE has only record 1564 (1674, other system). The 7 Mar 1643 letter (inv. 1141 near scan 876) was found as a glossed copy only and not transcribed (key evidence, not part of these four texts).</li><li>&#9745; <b>clear-pages</b> the glossed copies (1079 margins, 1108 glosses, 1134 scans 605 and 617, 1141 scans 886 and 890) checked as the decipherment, each after its score.</li><li>&#9745; <b>known-keys</b> KEY_v2 tried on 1640 and 1643; LC_KEY_v1 on the 1640 letter words; Ramanacoil 1674 key is graphic signs, not comparable (DECODE login needed for a direct look).</li><li>&#9745; <b>print</b> Leupe 1858 (1643 passage printed with explanation, found 27 Nov), Coolhaas Generale Missiven I-II (full text), Dagh-Register 1640-41 and 1643-44 (archive.org OCR), Coen Bescheiden VII, HistoCrypt papers, web searches for Tomokiyo and Lasry; HathiTrust/Google Books phrases left on Malcolm's sheet.</li><li>&#9745; <b>key-rebuild</b> 27 Nov 2026, dictionary/LM-context extension of KEY_B_v1 (scripts/retry_b.py, letters/RETRY_B_2026-11-27.txt): for each B word with unknown signs, Dutch words that fit the known letters (repository nl lexicon plus the words read in this target). No new value is supported by two or more words, so none is adopted; KEY_B_v1 unchanged. Annealing or EM was not run: 47 B words in all, 15 with unknown signs, too few to constrain a key with no held-out text.</li><li>&#9745; <b>retry</b> 27 Nov 2026, all 47 system-B words (1640 postscript 16, 1643 letter 31) decoded with the frozen KEY_B_v1 (letters/RETRY_B_2026-11-27.txt): 32 fully valued. The 1643 words give the copy-1 glosses back (tartarien, iapan, oosten, natien, chinees, drie, acht ...), but KEY_B_v1 was built from those glosses, so they are not a test. In the 1640 postscript tpbk = over (its own gloss) and grbk = daer; Gmroodt, lrdgenlm, bpbkdbsbd, Zrpmb, qbbm/qbhm, boode stay unread. Regraded: no hole changes under the house rule (B words rest on glosses; the B key has no held-out test). Figures of record and house count unchanged.</li></ul>
+
+
+<h2>Send a result</h2>
+<p>One closed gap counts: a code group valued, a passage re-read, a key or clear copy found elsewhere. It is credited to you on the write-up.</p>
+<div class="btns"><a class="primary" href="https://github.com/dbourdeau/cyphersolver/issues/new?template=further-reading.yml&amp;title=Further+reading%3A+vocbatavia&amp;page=vocbatavia.html" rel="noopener">Open a further-reading issue</a><a href="https://github.com/dbourdeau/cyphersolver/issues/new/choose" rel="noopener">Other kinds of report</a><a href="contribute.html#further">How credit works</a><a href="further.html">&larr; All partial readings</a></div>
+</main>
+
+<footer><div class="in">
+  <span>Daniel Bourdeau, September 2026 &middot; Text released under CC BY 4.0</span>
+  <nav aria-label="Footer"><a href="index.html">Overview</a><a href="method.html">Method and review</a><a href="corrections.html">Corrections</a><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">Code &#8599;</a><a href="contribute.html#email">Contact &#9993;</a><a href="feed.xml">Feed</a><a href="further/vocbatavia.html#top">Top &uarr;</a></nav>
+</div></footer>
+<script>(function(){var b=document.querySelector('.agentbox .copy'),p=document.getElementById('agent');if(!b||!p)return;b.addEventListener('click',function(){var t=p.textContent;(navigator.clipboard?navigator.clipboard.writeText(t):Promise.reject()).then(function(){b.textContent='Copied';setTimeout(function(){b.textContent='Copy';},1600);},function(){var r=document.createRange();r.selectNodeContents(p);var s=getSelection();s.removeAllRanges();s.addRange(r);});});})();</script>
+<script src="site.js?v=572104d3"></script>
+</body>
+</html>
