@@ -264,6 +264,7 @@ the cipher ("in dubitationem deducti", "regnique illius nostri", "presto futuros
   cavalry, the Reich common penny under the Treaty of Passau, a feint towards Lippa, plague in the Turkish camp, no
   leaving Transylvania, terms for the tribute in any peace. 22 Oct, why Maurice will not march to Eger, raids towards
   Veszprem and Szekesfehervar, Castaldo to hold the passes of Deva because Hamet stays with the army at Eger.
+- Blind check, 27 Nov 2026 (`verify_sister/`): 12 random lines (273 signs) transcribed by a separate AI agent from the images and the sign names only. Signs agree 258 of 273 (94.5%); decrypted letters 255 of 260 (98.1%). In the four lines that differ the blind reading is not Latin (limieris, regnichla, sinidtr, a stray cc) and ours is; no word of the reading changes.
 - The f. 14v lines under the date are an autograph postscript in cursive, not cipher; not read here.
 - Only the cipher passages are read; the clear text between them is not transcribed.
 
