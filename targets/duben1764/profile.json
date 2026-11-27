@@ -202,7 +202,7 @@
     "location": [
      "none"
     ],
-    "source": "No contemporary decipherment found (the clear 106R-107L belongs to the other letter of the same date, 105R-108L). Never transcribed before (Payne's inventory lists image 104 from a thumbnail only). Read in part with key_c02 unchanged (531 of 558 groups known), no new measure: 233 sure + 43 probable of about 291 words, sure 0.801, sure + probable 0.948 (sysA_1616/letter104/). 18 Nov 2026, after a blind digit-form check by Brice Dudout (4/4 controls): 235 sure + 41 probable, sure 0.808, sure + probable 0.948 (reading_104R-105L_key_c02_tagged_plate1711.txt; none of the four values 252, 355, 360, 405 occurs in this letter, so the 26 Nov review leaves the count unchanged). Panin's assurances that the Empress means to restore the King's authority and remedy the Swedish constitution; Düben doubts them."
+    "source": "No contemporary decipherment found (the clear 106R-107L belongs to the other letter of the same date, 105R-108L). Never transcribed before (Payne's inventory lists image 104 from a thumbnail only). Read in part with key_c02 unchanged (531 of 558 groups known), no new measure: 233 sure + 43 probable of about 291 words, sure 0.801, sure + probable 0.948 (sysA_1616/letter104/). 18 Nov 2026, after a blind digit-form check by Brice Dudout (4/4 controls): 235 sure + 41 probable, sure 0.808, sure + probable 0.948 (reading_104R-105L_key_c02_tagged_plate1711.txt; none of the four values 252, 355, 360, 405 occurs in this letter, so the 26 Nov review leaves the count unchanged). 27 Nov 2026: five unresolved spans read through the period clears of other system A letters (479 occasion, 434 mettre, 287 afin, 259 entretenir, 439 ministère; clear_values_2711.tsv), words probable, none sure: 239 sure + 46 probable of about 295, sure 0.810, sure + probable 0.966 (reading_104R-105L_key_c02_tagged_clears2711.txt). Panin's assurances that the Empress means to restore the King's authority and remedy the Swedish constitution; Düben doubts them."
    },
    "length": {
     "tokens": 558,
@@ -925,6 +925,15 @@
   },
   {
    "date": "2026-11-27",
+   "kind": "reading",
+   "technique": [
+    "plaintext matching"
+   ],
+   "what": "104R-105L: five unresolved spans read through the period decipherments of other system A letters, where the same group, often in the same group sequence, is deciphered at the time: 179.479 cette occasion (May 1764 107R16), 555.434 re-mettre (May 1764 106L07), 107.287 afin (May 1764 107R16), 259.614.372 entretenir (letter 101 L06; 15 June 1764 109L.11), 401.439 le Ministère (letter 101 L13; 15 June 1764 108R.03; letter 96 gives 439 'op', so contested). key_c02, the transcriptions and the hashed files unchanged; no new measure. The words are probable, not sure (the values are absent from key_c02 or differ there): 239 sure + 46 probable + 10 unresolved of about 295 words, sure 0.810, sure + probable 0.966 (sysA_1616/letter104/reading_104R-105L_key_c02_tagged_clears2711.txt, clear_values_2711.tsv).",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-27",
    "kind": "verification",
    "technique": [
     "plaintext matching",
@@ -1159,13 +1168,13 @@
      "sysA_1616/letter104/decode_104R-105L_key_c02.txt",
      "sysA_1616/letter104/decode_104R-105L_key_c02_plus_conjectures.txt"
     ],
-    "reading": "sysA_1616/letter104/reading_104R-105L_key_c02_tagged_plate1711.txt",
+    "reading": "sysA_1616/letter104/reading_104R-105L_key_c02_tagged_clears2711.txt",
     "translation": "sysA_1616/letter104/README.md",
     "state": "read in part",
-    "read_share": 0.808,
+    "read_share": 0.81,
     "language": "fr",
     "summary": "Düben reports Panin's assurances that the Empress will act with the King to restore his authority and remedy the faulty Swedish constitution, notes a fear of a total revolution in Sweden behind them, and says the course that gives the King most security must come before the Empress's friendship if her promises are slow.",
-    "note": "key_c02 unchanged (531 of 558 groups known); no new measure and no period clear for this letter. Strict count (count_words.py, after the blind digit-form check of 18 Nov): 235 sure + 41 probable + 15 unresolved of about 291 words: sure 0.808, sure + probable 0.948. Most probable words rest on a group absent from key_c02 or on a doubtful group; 105L05-105L07 blotted and overwritten. Transcriptions by AI agents (two blind passes), not checked by a palaeographer.",
+    "note": "key_c02 unchanged (531 of 558 groups known); no new measure and no period clear for this letter. Strict count (count_words.py, after the blind digit-form check of 18 Nov): 235 sure + 41 probable + 15 unresolved of about 291 words: sure 0.808, sure + probable 0.948. 27 Nov 2026: five unresolved spans read through the period clears of other system A letters (clear_values_2711.tsv); the new words are probable, none sure: 239 sure + 46 probable + 10 unresolved of about 295 words: sure 0.810, sure + probable 0.966. Most probable words rest on a group absent from key_c02 or on a doubtful group; 105L05-105L07 blotted and overwritten. Transcriptions by AI agents (two blind passes), not checked by a palaeographer.",
     "reading_review": {
      "grade": "B",
      "by": "integration review of PR #759 (AI agent, for the maintainers); not a person",

@@ -12,6 +12,8 @@ No new measure was made; key_c02 is unchanged (SHA-256 `1813621c87e8...`).
 | `decode_104R-105L_key_c02.txt` | decode with key_c02 unchanged (key_c02 knows 531 of the 558 groups, 95.2 %) |
 | `decode_104R-105L_key_c02_plus_conjectures.txt` | the same with the conjectured values of `../letter90/check_c02/conjectures_key_c02.json` in braces (not part of the key) |
 | `reading_104R-105L_key_c02_tagged.txt` | strict tagged reading: sure / {probable} / ‹n› unresolved |
+| `reading_104R-105L_key_c02_tagged_clears2711.txt` | 27 Nov 2026: the same, with five unresolved spans read through the period clears of other letters (words probable) |
+| `clear_values_2711.tsv` | 27 Nov 2026: the period evidence for those groups |
 
 ## Identity and prior state
 - Chiffer n:o 1, system A: same hand, same "mon cher Comte" opening as the other St Petersburg letters of the file; key_c02 decodes French from the
@@ -52,3 +54,26 @@ confirmed, but "soutien" also rests on the blotted 357/448, so it stays probable
 ## 26 Nov 2026 (review of PR #759)
 None of the four sense values now counted probable in 90R-93L (252, 355, 360, 405) occurs in this letter, so the count above
 is unchanged. The blind digit sheet of 17 Nov, with the answers and their SHA-256, is in `../blind_digit_sheet_1711/`.
+
+## 27 Nov 2026: five unresolved spans read through the period clears of other letters (Brice Dudout's session, Claude Opus 5.5)
+New file `reading_104R-105L_key_c02_tagged_clears2711.txt`; evidence in `clear_values_2711.tsv`. key_c02, the transcriptions, the
+18 Nov reading and every hashed file are unchanged; no new measure.
+The groups were compared with what the period decipherments of the other system A letters give for the same group, often in the
+same group sequence: 179.479 "cette occasion" (May 1764, 107R16), 555.434 "re-mettre" (May 1764, 106L07), 107.287 "afin" (May 1764,
+107R16), 259.614.372 "entretenir" (letter 101 L06; 15 June 1764, 109L.11), 401.439 "le Ministère" (letter 101 L13; 15 June 1764,
+108R.03). Each value also fits the place of the group in the one-part code. In letter 96, 439 stands for "op" in "d'opérer", so
+439 is contested (2 clears against 1).
+- 104R01 "Cette ‹1›" -> "Cette {occasion}"; 104R03 "et ‹1› nos affaires" -> "et {mettre} nos affaires".
+- 105L05 "‹8› dans" -> "‹5› {afin} d'{entretenir} le {ministère} d'ici dans" (d', le, d'ici are key_c02 values). The sentence reads
+  "...de ramener peu à peu ‹...› membres ‹...› afin d'entretenir le ministère d'ici dans l'idée que le roi ne cherche et ne s'attend
+  à d'autre soutien qu'à celui de la Russie". 105L05 g1-g8 stay unresolved (blotted and struck).
+
+**The new words are probable, not sure.** They are read from the cipher through the period clears, not from the sense alone, but
+479, 434, 287, 259 and 439 are absent from key_c02 or have another value there. Putting them in the key would need a new key
+tested on a clear not yet used, and Chiffer n:o 1 has none left.
+**Count: 239 sure + 46 probable + 10 unresolved of about 295 words: sure 0.810, sure + probable 0.966** (was 0.808 / 0.948).
+
+## Translation update (27 Nov 2026)
+"[Panin gave me] on this occasion the strongest assurances..." (104R01; the letter opens with "Cette occasion"); "...and to put our affairs on a solid and lasting footing"
+(104R03); "...of bringing round, little by little, [some] members [...], so as to keep the ministry here in the idea that the King
+seeks and expects no other support than that of Russia" (105L04-105L07).
