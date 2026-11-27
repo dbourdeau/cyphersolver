@@ -54,6 +54,9 @@ transcription; the README's look-alike limit is 3%.
 | f. 260r | 197 | 0.761 | 40.5% | decoded, not read |
 | f. 260v | 275 | 0.851 | 34.5% | decoded, not read |
 
+Since 25 Nov 2026 (blind shape plates, below): f. 260r 198 words, 0.764; f. 260v 279 words, 0.866; multi-valued letters
+39.4% / 33.8% after the S and d splits of 25 Oct.
+
 Brackx's own figures (#90): 75.4% / 85.3% read as sense; crib agreement 89.3% (f. 245v) and 83.2% (f. 245r); corpus-word
 coverage 79.2% / 80.7% against shuffled-key controls of 27-46% / 31-49% (label value sets reassigned, sizes kept). Where
 his reading departs from the decoder it always takes another value of the same label: 12 of 970 letters on f. 260r,
@@ -75,7 +78,8 @@ et de biens*.
 
 - multi-valued labels on f. 260r-v (39.4% / 33.8% of letters after the S and d splits) - blocker: no-key-material; all ten multi-valued labels split-tested by shape on the full-size images (issues #95, #99): S and d split, the other eight do not; only a contemporary decipherment of f. 260 or another letter in this key would settle the remaining choices
 - open runs: f. 260r r. 1-2 (the places after *en son*), r. 5-11, r. 13-14, r. 17, r. 19-24; f. 260v v. 3 (the day in April), v. 4, v. 8-9, v. 12-18, v. 23, v. 27 - blocker: not-attempted; retry after the label split
-- Π (`P`) taken as a null where *affaire(s)* needs *ff* (v. 25, v. 27); two signs after *n'oze* in crib 2 - blocker: not-attempted; image check
+- two sign shapes not in the label legend, given values by sense only (blind plates of 25 Nov 2026, `blind_check/label_corrections.md`): a ϙ with two bars (proposed `Q2B` = q; r. 23 r3, v. 13 r14, v. 26 r18, v. 3 r20) and a stem with a triangular flag (proposed `FF` = ff; v. 25 r2, v. 27 r2, v. 9 r2, r35); the words stay doubtful - blocker: no-key-material; neither shape is in Tomokiyo's table or on f. 245
+- two signs after *n'oze* in crib 2 - blocker: not-attempted; image check
 
 ## Escalation
 
@@ -130,6 +134,19 @@ reading needs a value that the sign's label lacks, is the sign mislabelled? Cont
 
 The two new shapes also occur at v. 3 r20 (labelled t2; with q, *[?quinse]* d'auril) and v. 9 r2, r35 (labelled v; *[?effect]*,
 *[?affin]*). f. 260r 0.761 -> 0.764, f. 260v 0.851 -> 0.866 (v10); look-alike share unchanged; both pages stay *decoded, not read*.
+
+Integration of PR #992 (27 Nov 2026):
+- Counts (v10, recounted): f. 260r 62 -> 61 holes, 197 -> 198 of 259 words read; f. 260v 48 -> 43 holes, 275 of 323 -> 279
+  of 322 words read (*la [?] [?]* -> *la guerre* joins two holes into one word).
+- The readings now drop five [?] marks that Brackx's transcription and decode still carry under the old labels. His files are
+  not edited; the place, old label, new label and plate answer are listed in `blind_check/label_corrections.md`, with
+  `Q2B` and `FF` as proposed labels that have no key value.
+- `z` has four values in the key (u / v / h / m), so at the four `z` places the plate settles the shape and u is chosen among
+  the four by sense, as elsewhere in this reading. The `blind_check/README.md` sentence "each with a single value" carries a
+  note; the plate A rule says the same and is hashed, so it is left as filed. The count stands.
+- Plate A (10 target signs, controls 3 of 3) is in `outcome.sign_check`; plate B (5 target signs, controls 3 of 3) is in
+  NOTES and its solution step only. Controls 6 of 6 in all. Rules, keys and answers came in one commit, so their order rests
+  on the reader's record. Not checked in the review: the signs on the Gallica canvases.
 
 ## Log
 

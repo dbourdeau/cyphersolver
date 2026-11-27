@@ -29,6 +29,10 @@ Brackx already split-tested the multi-valued labels by shape (issues #95, #99). 
 the reading needs a value that the sign's label does not have (9 read q, 3/z3 read u, z read h, P read ff), is the sign
 mislabelled? The options are different signs of the table, each with a single value.
 
+(Note added at the merge of PR #992: not every option has a single value. `z` is u / v / h / m in the key, so at the four
+`z` places the plate settles the shape and u is chosen among the four values by sense, as elsewhere in this reading. The
+count stands. The plate A rule says the same and is hashed, so it is left as filed. See `label_corrections.md`.)
+
 ## Plate A (13 questions)
 
 Controls: 3 of 3 as expected. Results:
