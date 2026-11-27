@@ -20,7 +20,7 @@ const leaves = [];
 for (let k = 0; k < N; k++) leaves.push({ front: pages[2*k], back: pages[2*k+1] });
 
 // ---- dimensions (text-block height = 1) -------------------------------------------------
-const W = 0.777, H = 1.0;          // text block
+const W = 0.69, H = 1.0;           // text block (the leaf's proportion in the photographs)
 const OV = 0.014;                  // board overhang beyond the text block
 const BT = 0.014;                  // board thickness
 const PAGES_T = 0.13;              // thickness of the 110 paper leaves together
@@ -86,24 +86,19 @@ function dropTex(id, mirrored) {
   const key = id + (mirrored ? ':m' : ''); const t = texCache.get(key);
   if (t) { t.dispose(); texCache.delete(key); }
 }
-// Page edges: one line per leaf, uneven in tone. Laid along v (caps) or u (side walls);
-// texture coordinates are in model units, so 0.6 units of height hold all 512 lines.
-function edgeTexture(alongU) {
-  const c = document.createElement('canvas'); c.width = alongU ? 512 : 8; c.height = alongU ? 8 : 512;
-  const g = c.getContext('2d');
-  for (let k = 0; k < 512; k++) {
-    const v = 172 + Math.random() * 34 - (Math.random() < 0.12 ? 38 : 0);
-    g.fillStyle = `rgb(${v},${v * 0.9 | 0},${v * 0.72 | 0})`;
-    alongU ? g.fillRect(k, 0, 1, 8) : g.fillRect(0, 511 - k, 8, 1);
-  }
-  const t = new THREE.CanvasTexture(c); t.colorSpace = THREE.SRGBColorSpace;
-  t.wrapS = t.wrapT = THREE.RepeatWrapping; t.anisotropy = maxAniso;
+// Page edges: one line per leaf, its colour taken from the edges of the stacked leaves that
+// show beside each page in the photographs (edge_u.png / edge_v.png, 512 samples). Texture
+// coordinates are in model units, so 0.6 units of thickness hold all 512 lines.
+function edgeTexture(file, alongU) {
+  const t = loader.load(file);
+  t.colorSpace = THREE.SRGBColorSpace; t.wrapS = t.wrapT = THREE.RepeatWrapping; t.anisotropy = maxAniso;
+  alongU ? t.repeat.set(1 / 0.6, 1) : t.repeat.set(1, 1 / 0.6);
   return t;
 }
-const capMat = new THREE.MeshStandardMaterial({ map: edgeTexture(false), roughness: 0.95 });
-capMat.map.repeat.set(1, 1 / 0.6);
-const wallMat = new THREE.MeshStandardMaterial({ map: edgeTexture(true), roughness: 0.95 });
-wallMat.map.repeat.set(1 / 0.6, 1);
+const capMat = new THREE.MeshStandardMaterial({ map: edgeTexture('edge_v.png', false), roughness: 0.95 });
+const wallMat = new THREE.MeshStandardMaterial({ map: edgeTexture('edge_u.png', true), roughness: 0.95 });
+// the photographed edges were lit head-on; side faces here get less light, so lift them back to that tone
+capMat.color.setScalar(1.5); wallMat.color.setScalar(1.5);
 const boardEdgeMat = new THREE.MeshStandardMaterial({ color: 0x4a3426, roughness: 0.8 });
 
 // ---- the spine ------------------------------------------------------------------------------------
@@ -260,7 +255,7 @@ function undress(L) {
 // ---- the two piles of resting leaves, as solids shaped like the fan of leaves ---------------------
 // Built from the leaves themselves: rows are sampled leaves, each following its own curve, so
 // the lines on the head, tail and fore-edge bend with the pages. v counts leaves (one line each).
-const plainMat = new THREE.MeshStandardMaterial({ color: 0xb9a582, roughness: 0.95, side: THREE.DoubleSide });
+const plainMat = new THREE.MeshStandardMaterial({ color: 0x807668, roughness: 0.95, side: THREE.DoubleSide });
 capMat.side = wallMat.side = THREE.DoubleSide;
 const ROWS = 20;
 const RX = Array.from({ length: ROWS + 1 }, () => new Float32Array(NU + 1));
