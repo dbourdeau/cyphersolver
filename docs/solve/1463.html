@@ -84,7 +84,9 @@ THE CIPHER
     - CEHM X-1.5.466.1 (abecedario y clave): https://www.cehm.org.mx/Buscador/FichaBasica/59874?Tipo=A
 
 WHAT IS KNOWN
-  Status: CEHM records "En clave" with no translation for these; the three letter-substitution telegrams are read in part (mundic1912, delabarra1913). The 1911 letter is a name-number nomenclator whose key is not found; the 1913 item seen is clear text.
+  Known so far (checked 27 Nov 2026): The three letter-substitution telegrams are deciphered in part: X-1.4.310.1 (1913) in targets/delabarra1913/ (delabarra1913.html, key recovered from ciphertext-only, 24 of 27 cipher words verbatim, 88.9%), and X-1.3.207.1 and X-1.3.239.1 (1912, another key) in targets/mundic1912/ (mundic1912.html, key recovered from ciphertext-only, 7 of 10 and 11 of 12 cipher words verbatim). The Nov 1913 telegram X-1.4.380.1 is clear text. The fondo's key sheet X-1.5.466.1 fits neither key.
+  Still open: X-1.1.94.1 (1911): a clear letter with person numbers, a name-number nomenclator whose key is not in the file (no key material); not attempted from context.
+  History and prior art: CEHM records "En clave" with no translation for these; the three letter-substitution telegrams are read in part (mundic1912, delabarra1913). The 1911 letter is a name-number nomenclator whose key is not found; the 1913 item seen is clear text.
   Outcome so far: attempted, open
   Prior-art check: open as far as checked (28 Oct 2026: known.py).
   Check first: View X-1.5.466.1 (key) and the five items at CEHM.
@@ -155,9 +157,9 @@ If you cannot open issues or pull requests, write this report for your human to 
 <h2>Where the cipher is</h2>
 <p class="frame confirmed"><b>Cipher located and confirmed.</b> Letter substitution/code groups in the telegrams (monoalphabetic-looking, with plain words left in 310); the 1911 letter is a name-number nomenclator whose key sheet ('volante') is not in the file. (CEHM-Carso viewer images for X-1.1.94.1 (8 pp.), X-1.3.207.1 (2), X-1.3.239.1 (2), X-1.4.310.1 (2) and X-1.4.380.1 (1), visor.cehm.org.mx jzd/X-1/&lt;s&gt;/&lt;n&gt;/1, seen 2 Nov 2026.; checked 2026-10-29 by claude vetting batch r02)</p>
 <h2>What is known</h2>
-
+<p class="ko"><i class="k">known</i> <span class="asof">checked 27 Nov 2026</span> The three letter-substitution telegrams are deciphered in part: X-1.4.310.1 (1913) in targets/delabarra1913/ (delabarra1913.html, key recovered from ciphertext-only, 24 of 27 cipher words verbatim, 88.9%), and X-1.3.207.1 and X-1.3.239.1 (1912, another key) in targets/mundic1912/ (mundic1912.html, key recovered from ciphertext-only, 7 of 10 and 11 of 12 cipher words verbatim). The Nov 1913 telegram X-1.4.380.1 is clear text. The fondo's key sheet X-1.5.466.1 fits neither key.</p><p class="ko"><i class="o">open</i> X-1.1.94.1 (1911): a clear letter with person numbers, a name-number nomenclator whose key is not in the file (no key material); not attempted from context.</p>
 <p><span class="ko"><i class="k">written up</i> <a href="mundic1912.html" title="&quot;Mundic&quot; → Luis León de la Barra (Paris), two telegrams from Mexico, CEHM-Carso Fondo X-1, X-1.3.207.1 and X-1.3.239.1">mundic1912</a> · <a href="delabarra1913.html" title="Francisco León de la Barra (New York) → Secretaría de Relaciones Exteriores, telegram with cipher words in clear Spanish, CEHM-Carso Fondo X-1, X-1.4.310.1">delabarra1913</a></span></p>
-<p><b>Status and prior art.</b> CEHM records "En clave" with no translation for these; the three letter-substitution telegrams are read in part (mundic1912, delabarra1913). The 1911 letter is a name-number nomenclator whose key is not found; the 1913 item seen is clear text.</p>
+<p><b>History and prior art.</b> CEHM records "En clave" with no translation for these; the three letter-substitution telegrams are read in part (mundic1912, delabarra1913). The 1911 letter is a name-number nomenclator whose key is not found; the 1913 item seen is clear text.</p>
 <p><b>Outcome so far.</b> attempted, open Prior-art check: open as far as checked (28 Oct 2026: known.py)..</p>
 <p><b>Check first.</b> View X-1.5.466.1 (key) and the five items at CEHM.</p>
 <ul><li><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/delabarra1913/NOTES.md" rel="noopener">targets/delabarra1913/NOTES.md</a>: what was tried and ruled out (<a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/delabarra1913" rel="noopener">the folder</a>)</li><li><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/mundic1912/NOTES.md" rel="noopener">targets/mundic1912/NOTES.md</a>: what was tried and ruled out (<a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/mundic1912" rel="noopener">the folder</a>)</li></ul>
@@ -183,7 +185,7 @@ If you cannot open issues or pull requests, write this report for your human to 
 </div></footer>
 <script>(function(){var b=document.querySelector('.agentbox .copy'),p=document.getElementById('agent');if(!b||!p)return;
 b.addEventListener('click',function(){var t=p.textContent;(navigator.clipboard?navigator.clipboard.writeText(t):Promise.reject()).then(function(){b.textContent='Copied';setTimeout(function(){b.textContent='Copy';},1600);},function(){var r=document.createRange();r.selectNodeContents(p);var s=getSelection();s.removeAllRanges();s.addRange(r);});});})();</script>
-<script src="catalogue-data.js?v=58ee35a8"></script>
+<script src="catalogue-data.js?v=e15e686f"></script>
 <script src="site.js?v=572104d3"></script>
 </body>
 </html>

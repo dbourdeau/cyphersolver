@@ -82,7 +82,9 @@ THE CIPHER
     - DigitArq PT/TT/CAM/M15: https://digitarq.arquivos.pt/documentDetails/70a181c91c944a74bed573252735928b
 
 WHAT IS KNOWN
-  Status: 27 Oct 2026 (WAINUT, PR #105; targets/hintze1903/): the telegram of 11 May 1903 (Monte Estoril → Paris) was read from the decode of the time on the form and is written up; pairing gave 24 values of a code ordered alphabetically within page blocks. This April telegram (29 groups) has no decode; only one group has a value.
+  Known so far (checked 27 Nov 2026): The sibling telegram of 11 May 1903 (Monte Estoril to Paris, m0003) is read from the decode of the time on the form and written up in targets/hintze1903 (hintze1903.html, read in part as a target, 26 of 54 groups given a word, 48.1%; WAINUT, PR #105). Pairing it with its decode gave 24 values of Hintze Ribeiro's code, ordered alphabetically within page blocks. This April telegram (m0001, Lisbon to Naples, 29 groups) has no decode; 1 of its 29 groups (41285) has a value.
+  Still open: m0001, 28 of 29 groups: blocked, no key material (no decode in the file, the code book not found; the page model of the code brackets the groups but fixes none). The codes of carlos1903, sabugosa1910, manuel1910 and lima1909 share no group with it.
+  History and prior art: 27 Oct 2026 (WAINUT, PR #105; targets/hintze1903/): the telegram of 11 May 1903 (Monte Estoril → Paris) was read from the decode of the time on the form and is written up; pairing gave 24 values of a code ordered alphabetically within page blocks. This April telegram (29 groups) has no decode; only one group has a value.
   Outcome so far: attempted, open
   Prior-art check: open (checked 26 Oct 2026: known.py (repo, DECODE, Cryptoole: no hit), web search).
   Check first: View the scans.
@@ -152,9 +154,9 @@ If you cannot open issues or pull requests, write this report for your human to 
 <h2>Where the cipher is</h2>
 <p class="frame confirmed"><b>Cipher located and confirmed.</b> M15 m0001 (PT-TT-CAM-M15_m0001.jpg; unit has 4 files): Telegram form addressed 'S. Maj.te la Reine de Portugal, a/bord du yacht Amelia, Naples', stamped URGENZA / Naples; body is 5-digit numeric code groups (about 6 lines visible, e.g. 80272 32840 65354), signed Hintze Ribeiro. No decode on the page. Portuguese/French service text. (checked 2026-10-30 by an LLM on the page) <a href="https://digitarq.arquivos.pt/fileViewer/70a181c91c944a74bed573252735928b?isRepresentation=false&amp;selectedFile=77220803&amp;fileType=IMAGE" rel="noopener">open that page</a></p>
 <h2>What is known</h2>
-
+<p class="ko"><i class="k">known</i> <span class="asof">checked 27 Nov 2026</span> The sibling telegram of 11 May 1903 (Monte Estoril to Paris, m0003) is read from the decode of the time on the form and written up in targets/hintze1903 (hintze1903.html, read in part as a target, 26 of 54 groups given a word, 48.1%; WAINUT, PR #105). Pairing it with its decode gave 24 values of Hintze Ribeiro's code, ordered alphabetically within page blocks. This April telegram (m0001, Lisbon to Naples, 29 groups) has no decode; 1 of its 29 groups (41285) has a value.</p><p class="ko"><i class="o">open</i> m0001, 28 of 29 groups: blocked, no key material (no decode in the file, the code book not found; the page model of the code brackets the groups but fixes none). The codes of carlos1903, sabugosa1910, manuel1910 and lima1909 share no group with it.</p>
 <p><span class="ko"><i class="k">written up</i> <a href="hintze1903.html" title="Ernesto Hintze Ribeiro → Queen Amélie, two code telegrams (Lisbon → Naples, yacht Amélia, 23 Apr 1903; Monte Estoril → Paris, Hotel Bristol, 11 May 1903), ANTT Documentos de D. Carlos, D. Amélia e D. Manuel II, maço 15 (PT/TT/CAM/M15) images m0001–m0004">hintze1903</a></span></p>
-<p><b>Status and prior art.</b> 27 Oct 2026 (WAINUT, PR #105; targets/hintze1903/): the telegram of 11 May 1903 (Monte Estoril → Paris) was read from the decode of the time on the form and is written up; pairing gave 24 values of a code ordered alphabetically within page blocks. This April telegram (29 groups) has no decode; only one group has a value.</p>
+<p><b>History and prior art.</b> 27 Oct 2026 (WAINUT, PR #105; targets/hintze1903/): the telegram of 11 May 1903 (Monte Estoril → Paris) was read from the decode of the time on the form and is written up; pairing gave 24 values of a code ordered alphabetically within page blocks. This April telegram (29 groups) has no decode; only one group has a value.</p>
 <p><b>Outcome so far.</b> attempted, open Prior-art check: open (checked 26 Oct 2026: known.py (repo, DECODE, Cryptoole: no hit), web search)..</p>
 <p><b>Check first.</b> View the scans.</p>
 <ul><li><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/hintze1903/NOTES.md" rel="noopener">targets/hintze1903/NOTES.md</a>: what was tried and ruled out (<a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/hintze1903" rel="noopener">the folder</a>)</li></ul>
@@ -180,7 +182,7 @@ If you cannot open issues or pull requests, write this report for your human to 
 </div></footer>
 <script>(function(){var b=document.querySelector('.agentbox .copy'),p=document.getElementById('agent');if(!b||!p)return;
 b.addEventListener('click',function(){var t=p.textContent;(navigator.clipboard?navigator.clipboard.writeText(t):Promise.reject()).then(function(){b.textContent='Copied';setTimeout(function(){b.textContent='Copy';},1600);},function(){var r=document.createRange();r.selectNodeContents(p);var s=getSelection();s.removeAllRanges();s.addRange(r);});});})();</script>
-<script src="catalogue-data.js?v=58ee35a8"></script>
+<script src="catalogue-data.js?v=e15e686f"></script>
 <script src="site.js?v=572104d3"></script>
 </body>
 </html>

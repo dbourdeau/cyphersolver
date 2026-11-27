@@ -85,12 +85,15 @@ THE CIPHER
     - Fryxell, Handlingar rörande Sverges historia 1 (1836): https://archive.org/details/handlingarrrand01fryxgoog
 
 WHAT IS KNOWN
-  Status: Narrowed 12 Nov 2026 to the p. 6 entry: a short run (30 numbers, 3-32, codes 86 and 208) with no glossed sibling seen; too short for a ciphertext-only attack. The other two sets of the register are read in part (juel1647, vibejuel1649).
+  Known so far (checked 27 Nov 2026): targets/juel1647/ (juel1647.html, read in part, key recovered based on adjacent plaintext): the p. 5 entries in the 8-64 table read in part, 17 of 37 = 45.9% with codes as holes; the p. 115 entry in Vibe's old cipher moved to targets/vibejuel1649/ (vibejuel1649.html, read in part, 76.7%). The p. 6 entry was tested against Vibe's old cipher and new alphabet, the 8-64 table with shifts and plain rank ciphers: none gives Danish.
+  Still open: p. 6, to Hannibal Sehested, 20 Nov 1647: 30 numbers (3-32, codes 86 and 208); blocker: too short for a ciphertext-only attack, no glossed sibling seen.
+  History and prior art: Narrowed 12 Nov 2026 to the p. 6 entry: a short run (30 numbers, 3-32, codes 86 and 208) with no glossed sibling seen; too short for a ciphertext-only attack. The other two sets of the register are read in part (juel1647, vibejuel1649).
   Outcome so far: attempted, open
   Prior-art check: open (checked 11 Nov 2026: DECODE, Tomokiyo list, Fryxell 1836 opened, web)
   Check first: Build the 8-64 table from the glossed originals of 1648-49 (unit 261575, images 115-135) and read p. 5; test the same table shifted on the 3-32 and 1-32 sets (they may be the same alphabet with another start). Check whether the letters of 20 Nov 1647 and 2 Sep 1648 survive among the originals.
   Class A: a sibling letter with a decipherment is in the same volume or series, so matching it is the first move.
   Project notes (read these before anything else; they record what was tried and ruled out): https://github.com/dbourdeau/cyphersolver/blob/main/targets/juel1647/NOTES.md
+  Project notes (read these before anything else; they record what was tried and ruled out): https://github.com/dbourdeau/cyphersolver/blob/main/targets/vibejuel1649/NOTES.md
 
 STEPS
 0. Set up. If you can run a shell, fork and clone the repository and work inside it:
@@ -155,12 +158,12 @@ If you cannot open issues or pull requests, write this report for your human to 
 <h2>Where the cipher is</h2>
 <p class="frame confirmed"><b>Cipher located and confirmed.</b> Black-and-white microfilm of a narrow bound register. Danish summaries in a secretary hand; inside them dotted runs of one- and two-digit numbers with occasional three-digit numbers and a few signs. Nothing is written over the numbers and the wide outer column is empty beside them. (Arkivalieronline epid 19852819, unit 261585: images 1-94 each at 400 px; images 5, 6 and 61 as full-size crops (api.rigsarkivet.dk/ao/v1/images/48964105, 48964106, 48964161); checked 2026-11-11 by claude cloud sweep 11 Nov tkua_paging_4)</p>
 <h2>What is known</h2>
-
+<p class="ko"><i class="k">known</i> <span class="asof">checked 27 Nov 2026</span> targets/juel1647/ (juel1647.html, read in part, key recovered based on adjacent plaintext): the p. 5 entries in the 8-64 table read in part, 17 of 37 = 45.9% with codes as holes; the p. 115 entry in Vibe's old cipher moved to targets/vibejuel1649/ (vibejuel1649.html, read in part, 76.7%). The p. 6 entry was tested against Vibe's old cipher and new alphabet, the 8-64 table with shifts and plain rank ciphers: none gives Danish.</p><p class="ko"><i class="o">open</i> p. 6, to Hannibal Sehested, 20 Nov 1647: 30 numbers (3-32, codes 86 and 208); blocker: too short for a ciphertext-only attack, no glossed sibling seen.</p>
 <p><span class="ko"><i class="k">written up</i> <a href="juel1647.html" title="Peder Juel (Stockholm) → King Christian IV and → the chancellor Christen Thomesen Sehested, entries of the register of his outgoing letters, Rigsarkivet, TKUA, Speciel del, Sverige, Ekstraktprotokol 1647–49, Arkivalieronline unit 261585, p. 5">juel1647</a></span></p>
-<p><b>Status and prior art.</b> Narrowed 12 Nov 2026 to the p. 6 entry: a short run (30 numbers, 3-32, codes 86 and 208) with no glossed sibling seen; too short for a ciphertext-only attack. The other two sets of the register are read in part (juel1647, vibejuel1649).</p>
+<p><b>History and prior art.</b> Narrowed 12 Nov 2026 to the p. 6 entry: a short run (30 numbers, 3-32, codes 86 and 208) with no glossed sibling seen; too short for a ciphertext-only attack. The other two sets of the register are read in part (juel1647, vibejuel1649).</p>
 <p><b>Outcome so far.</b> attempted, open Prior-art check: open (checked 11 Nov 2026: DECODE, Tomokiyo list, Fryxell 1836 opened, web).</p>
 <p><b>Check first.</b> Build the 8-64 table from the glossed originals of 1648-49 (unit 261575, images 115-135) and read p. 5; test the same table shifted on the 3-32 and 1-32 sets (they may be the same alphabet with another start). Check whether the letters of 20 Nov 1647 and 2 Sep 1648 survive among the originals.</p>
-<ul><li><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/juel1647/NOTES.md" rel="noopener">targets/juel1647/NOTES.md</a>: what was tried and ruled out (<a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/juel1647" rel="noopener">the folder</a>)</li></ul>
+<ul><li><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/juel1647/NOTES.md" rel="noopener">targets/juel1647/NOTES.md</a>: what was tried and ruled out (<a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/juel1647" rel="noopener">the folder</a>)</li><li><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/vibejuel1649/NOTES.md" rel="noopener">targets/vibejuel1649/NOTES.md</a>: what was tried and ruled out (<a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/vibejuel1649" rel="noopener">the folder</a>)</li></ul>
 
 
 <h2>Scores</h2>
@@ -183,7 +186,7 @@ If you cannot open issues or pull requests, write this report for your human to 
 </div></footer>
 <script>(function(){var b=document.querySelector('.agentbox .copy'),p=document.getElementById('agent');if(!b||!p)return;
 b.addEventListener('click',function(){var t=p.textContent;(navigator.clipboard?navigator.clipboard.writeText(t):Promise.reject()).then(function(){b.textContent='Copied';setTimeout(function(){b.textContent='Copy';},1600);},function(){var r=document.createRange();r.selectNodeContents(p);var s=getSelection();s.removeAllRanges();s.addRange(r);});});})();</script>
-<script src="catalogue-data.js?v=58ee35a8"></script>
+<script src="catalogue-data.js?v=e15e686f"></script>
 <script src="site.js?v=572104d3"></script>
 </body>
 </html>

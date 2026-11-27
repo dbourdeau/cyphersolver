@@ -82,12 +82,15 @@ THE CIPHER
     - NARA catalogue file unit: https://catalog.archives.gov/id/23890756
 
 WHAT IS KNOWN
-  Status: Historian's source file; may be copies of known Union route-cipher and Confederate Vigenère material, or may include messages never read. Not digitised. Distinct from the RG 107 Eckert ledgers and the Greenhow items already catalogued. 27 Oct 2026 (targets/civilwar1862/): attempted; RG 457 file unit 9122 (container 100, College Park), no scope note, no digital objects; possibly copies of material held elsewhere. Whether it holds any unread cipher is unknown.
+  Known so far (checked 27 Nov 2026): 27 Oct 2026 (targets/civilwar1862, Status: no write-up, offline only): the RG 457 historian's file 9122 (naId 23890756, container 100, College Park) located; no scope note, no digital objects. Nothing transcribed; whether it holds any unread cipher is unknown.
+  Still open: The whole file: blocked, needs physical access (NARA copy request). On receipt, compare any ciphertext with the Union route books (targets/eckert1862, union1864) and the three known Confederate Vigenère keys; the Official Records print most Union cipher telegrams in clear.
+  History and prior art: Historian's source file; may be copies of known Union route-cipher and Confederate Vigenère material, or may include messages never read. Not digitised. Distinct from the RG 107 Eckert ledgers and the Greenhow items already catalogued. 27 Oct 2026 (targets/civilwar1862/): attempted; RG 457 file unit 9122 (container 100, College Park), no scope note, no digital objects; possibly copies of material held elsewhere. Whether it holds any unread cipher is unknown.
   Outcome so far: attempted, open: blocked, the RG 457 historian's file 9122 (naId 23890756) is not digitised (27 Oct 2026, targets/civilwar1862/)
   Prior-art check: open (checked 27 Oct 2026: repo known.py, nara_military + nara_catalog READMEs; no published reading found)
   Check first: Order item 9122; compare any ciphertext with the Union route books and the three Confederate keys.
   Class C: no key and no deciphered sibling is known, so expect a ciphertext-only attack.
   Project notes (read these before anything else; they record what was tried and ruled out): https://github.com/dbourdeau/cyphersolver/blob/main/targets/civilwar1862/NOTES.md
+  Project notes (read these before anything else; they record what was tried and ruled out): https://github.com/dbourdeau/cyphersolver/blob/main/targets/eckert1862/NOTES.md
 
 STEPS
 0. Set up. If you can run a shell, fork and clone the repository and work inside it:
@@ -153,12 +156,12 @@ If you cannot open issues or pull requests, write this report for your human to 
 <p class="frame unconfirmed"><b>Cipher location not yet confirmed.</b> No one has yet confirmed the cipher on a specific page or frame. The location comes from the written description of the document, not from a page.</p>
 <div class="callout"><p><strong>First step: obtain the document.</strong> The ciphertext is not online. Ask the archive to digitise it, or photograph it in the reading room, and send the images in.</p></div>
 <h2>What is known</h2>
+<p class="ko"><i class="k">known</i> <span class="asof">checked 27 Nov 2026</span> 27 Oct 2026 (targets/civilwar1862, Status: no write-up, offline only): the RG 457 historian's file 9122 (naId 23890756, container 100, College Park) located; no scope note, no digital objects. Nothing transcribed; whether it holds any unread cipher is unknown.</p><p class="ko"><i class="o">open</i> The whole file: blocked, needs physical access (NARA copy request). On receipt, compare any ciphertext with the Union route books (targets/eckert1862, union1864) and the three known Confederate Vigenère keys; the Official Records print most Union cipher telegrams in clear.</p>
 
-
-<p><b>Status and prior art.</b> Historian's source file; may be copies of known Union route-cipher and Confederate Vigenère material, or may include messages never read. Not digitised. Distinct from the RG 107 Eckert ledgers and the Greenhow items already catalogued. 27 Oct 2026 (targets/civilwar1862/): attempted; RG 457 file unit 9122 (container 100, College Park), no scope note, no digital objects; possibly copies of material held elsewhere. Whether it holds any unread cipher is unknown.</p>
+<p><b>History and prior art.</b> Historian's source file; may be copies of known Union route-cipher and Confederate Vigenère material, or may include messages never read. Not digitised. Distinct from the RG 107 Eckert ledgers and the Greenhow items already catalogued. 27 Oct 2026 (targets/civilwar1862/): attempted; RG 457 file unit 9122 (container 100, College Park), no scope note, no digital objects; possibly copies of material held elsewhere. Whether it holds any unread cipher is unknown.</p>
 <p><b>Outcome so far.</b> attempted, open: blocked, the RG 457 historian's file 9122 (naId 23890756) is not digitised (27 Oct 2026, targets/civilwar1862/) Prior-art check: open (checked 27 Oct 2026: repo known.py, nara_military + nara_catalog READMEs; no published reading found).</p>
 <p><b>Check first.</b> Order item 9122; compare any ciphertext with the Union route books and the three Confederate keys.</p>
-<ul><li><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/civilwar1862/NOTES.md" rel="noopener">targets/civilwar1862/NOTES.md</a>: what was tried and ruled out (<a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/civilwar1862" rel="noopener">the folder</a>)</li></ul>
+<ul><li><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/civilwar1862/NOTES.md" rel="noopener">targets/civilwar1862/NOTES.md</a>: what was tried and ruled out (<a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/civilwar1862" rel="noopener">the folder</a>)</li><li><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/eckert1862/NOTES.md" rel="noopener">targets/eckert1862/NOTES.md</a>: what was tried and ruled out (<a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/eckert1862" rel="noopener">the folder</a>)</li></ul>
 
 
 <h2>Scores</h2>
@@ -181,7 +184,7 @@ If you cannot open issues or pull requests, write this report for your human to 
 </div></footer>
 <script>(function(){var b=document.querySelector('.agentbox .copy'),p=document.getElementById('agent');if(!b||!p)return;
 b.addEventListener('click',function(){var t=p.textContent;(navigator.clipboard?navigator.clipboard.writeText(t):Promise.reject()).then(function(){b.textContent='Copied';setTimeout(function(){b.textContent='Copy';},1600);},function(){var r=document.createRange();r.selectNodeContents(p);var s=getSelection();s.removeAllRanges();s.addRange(r);});});})();</script>
-<script src="catalogue-data.js?v=58ee35a8"></script>
+<script src="catalogue-data.js?v=e15e686f"></script>
 <script src="site.js?v=572104d3"></script>
 </body>
 </html>

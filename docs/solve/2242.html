@@ -87,7 +87,9 @@ THE CIPHER
     - image 153: https://sok.riksarkivet.se/bildvisning/R0003653_00153
 
 WHAT IS KNOWN
-  Status: Catalogue: "Beskickningshandlingar", despatches from Stockholm to Constantinople. Cipher seen at thumbnail size. Narrowed 13 Nov 2026: images 81 right and 82 left (Lit. B, a bare Latin letter signed Ibrahim Effendi) are on hopken1740, read in part with that folder's key; the glossed passages (images 56, 98, 112, 153) and the other pages are not worked.
+  Known so far (checked 27 Nov 2026): Images 81 right and 82 left (Lit. B, a bare Latin letter signed Ibrahim Effendi, 494 groups, 169 cipher words) are in targets/hopken1740/ (WAINUT, 12 Nov 2026), read in part with that folder's key_1741.tsv unchanged: 113 of 169 words verbatim from the signs (66.9%), 74.6% with marked changes. Nothing else in the volume was worked.
+  Still open: The glossed number passages on images 56, 98, 112 and 153 (seen at thumbnail size) and any other cipher in the 278 images: not attempted.
+  History and prior art: Catalogue: "Beskickningshandlingar", despatches from Stockholm to Constantinople. Cipher seen at thumbnail size. Narrowed 13 Nov 2026: images 81 right and 82 left (Lit. B, a bare Latin letter signed Ibrahim Effendi) are on hopken1740, read in part with that folder's key; the glossed passages (images 56, 98, 112, 153) and the other pages are not worked.
   Outcome so far: attempted, open
   Prior-art check: open as far as checked (4 Nov 2026: known.py on the shelfmark and the correspondents found nothing; not on DECODE as far as the Nordic dump goes; no web search hit for a decipherment; Tomokiyo and Lasry not searched for this item)
   Check first: View images 56, 98, 112, 153 at full size.
@@ -96,6 +98,7 @@ WHAT IS KNOWN
   Project notes (read these before anything else; they record what was tried and ruled out): https://github.com/dbourdeau/cyphersolver/blob/main/targets/gramont1529/NOTES.md
   Project notes (read these before anything else; they record what was tried and ruled out): https://github.com/dbourdeau/cyphersolver/blob/main/targets/vasto1527/NOTES.md
   Project notes (read these before anything else; they record what was tried and ruled out): https://github.com/dbourdeau/cyphersolver/blob/main/targets/hopken1739/NOTES.md
+  Project notes (read these before anything else; they record what was tried and ruled out): https://github.com/dbourdeau/cyphersolver/blob/main/targets/hopken1740/NOTES.md
 
 STEPS
 0. Set up. If you can run a shell, fork and clone the repository and work inside it:
@@ -160,12 +163,12 @@ If you cannot open issues or pull requests, write this report for your human to 
 <h2>Where the cipher is</h2>
 <p class="frame confirmed"><b>Cipher located and confirmed.</b> Image 81 at 2200 px: "Doupplette", "Lit. B", then lines of four-digit groups ("1361 1128 1222 1655 1372 1337 1849 1011 1177 1024 1866 ...") with no interlinear writing and no gloss; 79-85 look the same at 700 px. A second, small-number letter cipher (1-26, colon-separated) on 56 carries a Swedish decipherment over each run ("skicka nu från Cochim", "Pashan", "trodde mig wäl wara"), so that letter is read. (Riksarkivet IIIF R0003653 (Diplomatica Turcica SE/RA/2119/2119.1/I/9/29, Beskickningshandlingar 1736-1746): every 8th image of 278 at 360 px; images 56, 98, 112, 153 at 1200 px; 79-85 at 700 px; 81 and 153 at 2200 px with crops; viewed 6 Nov 2026; checked 2026-11-06 by claude leads review batch n05)</p>
 <h2>What is known</h2>
+<p class="ko"><i class="k">known</i> <span class="asof">checked 27 Nov 2026</span> Images 81 right and 82 left (Lit. B, a bare Latin letter signed Ibrahim Effendi, 494 groups, 169 cipher words) are in targets/hopken1740/ (WAINUT, 12 Nov 2026), read in part with that folder's key_1741.tsv unchanged: 113 of 169 words verbatim from the signs (66.9%), 74.6% with marked changes. Nothing else in the volume was worked.</p><p class="ko"><i class="o">open</i> The glossed number passages on images 56, 98, 112 and 153 (seen at thumbnail size) and any other cipher in the 278 images: not attempted.</p>
 
-
-<p><b>Status and prior art.</b> Catalogue: "Beskickningshandlingar", despatches from Stockholm to Constantinople. Cipher seen at thumbnail size. Narrowed 13 Nov 2026: images 81 right and 82 left (Lit. B, a bare Latin letter signed Ibrahim Effendi) are on hopken1740, read in part with that folder's key; the glossed passages (images 56, 98, 112, 153) and the other pages are not worked.</p>
+<p><b>History and prior art.</b> Catalogue: "Beskickningshandlingar", despatches from Stockholm to Constantinople. Cipher seen at thumbnail size. Narrowed 13 Nov 2026: images 81 right and 82 left (Lit. B, a bare Latin letter signed Ibrahim Effendi) are on hopken1740, read in part with that folder's key; the glossed passages (images 56, 98, 112, 153) and the other pages are not worked.</p>
 <p><b>Outcome so far.</b> attempted, open Prior-art check: open as far as checked (4 Nov 2026: known.py on the shelfmark and the correspondents found nothing; not on DECODE as far as the Nordic dump goes; no web search hit for a decipherment; Tomokiyo and Lasry not searched for this item).</p>
 <p><b>Check first.</b> View images 56, 98, 112, 153 at full size.</p>
-<ul><li><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/esp318/NOTES.md" rel="noopener">targets/esp318/NOTES.md</a>: what was tried and ruled out (<a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/esp318" rel="noopener">the folder</a>)</li><li><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/gramont1529/NOTES.md" rel="noopener">targets/gramont1529/NOTES.md</a>: what was tried and ruled out (<a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/gramont1529" rel="noopener">the folder</a>)</li><li><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/vasto1527/NOTES.md" rel="noopener">targets/vasto1527/NOTES.md</a>: what was tried and ruled out (<a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/vasto1527" rel="noopener">the folder</a>)</li><li><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/hopken1739/NOTES.md" rel="noopener">targets/hopken1739/NOTES.md</a>: what was tried and ruled out (<a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/hopken1739" rel="noopener">the folder</a>)</li></ul>
+<ul><li><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/esp318/NOTES.md" rel="noopener">targets/esp318/NOTES.md</a>: what was tried and ruled out (<a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/esp318" rel="noopener">the folder</a>)</li><li><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/gramont1529/NOTES.md" rel="noopener">targets/gramont1529/NOTES.md</a>: what was tried and ruled out (<a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/gramont1529" rel="noopener">the folder</a>)</li><li><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/vasto1527/NOTES.md" rel="noopener">targets/vasto1527/NOTES.md</a>: what was tried and ruled out (<a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/vasto1527" rel="noopener">the folder</a>)</li><li><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/hopken1739/NOTES.md" rel="noopener">targets/hopken1739/NOTES.md</a>: what was tried and ruled out (<a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/hopken1739" rel="noopener">the folder</a>)</li><li><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/hopken1740/NOTES.md" rel="noopener">targets/hopken1740/NOTES.md</a>: what was tried and ruled out (<a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/hopken1740" rel="noopener">the folder</a>)</li></ul>
 
 
 <h2>Scores</h2>
@@ -188,7 +191,7 @@ If you cannot open issues or pull requests, write this report for your human to 
 </div></footer>
 <script>(function(){var b=document.querySelector('.agentbox .copy'),p=document.getElementById('agent');if(!b||!p)return;
 b.addEventListener('click',function(){var t=p.textContent;(navigator.clipboard?navigator.clipboard.writeText(t):Promise.reject()).then(function(){b.textContent='Copied';setTimeout(function(){b.textContent='Copy';},1600);},function(){var r=document.createRange();r.selectNodeContents(p);var s=getSelection();s.removeAllRanges();s.addRange(r);});});})();</script>
-<script src="catalogue-data.js?v=58ee35a8"></script>
+<script src="catalogue-data.js?v=e15e686f"></script>
 <script src="site.js?v=572104d3"></script>
 </body>
 </html>
