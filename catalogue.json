@@ -6422,7 +6422,9 @@
    "ark": "",
    "scored": "sweep",
    "outcome": "attempted, open",
-   "as_of": "2026-10-27",
+   "known": "targets/carlos1903 (WAINUT, 27 Oct 2026; read in part, written up as carlos1903.html): of the three code telegrams in M12, the two with decodes of the time (m0054 and m0058, decodes on m0060 and m0058) are read from existing decipherment. This entry's telegram, m0056 (47 items, Lisbon to Tlemcen, 4 Mar 1903), has no decode; one inferred value (58215 com) recurs; the codebook was not found.",
+   "open": "m0056, 47 items: unread. Blocker: no key material (no decode in M12, the two decodes give only a handful of values, the code is not alphabetical, the codebook not found).",
+   "as_of": "2026-11-27",
    "access": "online",
    "access_note": "online (backfilled 28 Oct 2026 from the entry: ...grams, 1 card; 'alguns documentos estão escritos em cifra'; scans online 27 Oct 2026 (WAINUT, PR #105; targets/carlos1903/): the uni...)",
    "frame_check": {
@@ -7120,7 +7122,10 @@
    "access": "archive",
    "access_note": "not online (backfilled 28 Oct 2026 from the entry: ...searched); not in repo (known.py Deboli, Popiel: no hits). No scan album found on agadd2 for this signature; may be on szukajw...)",
    "repository": "agad",
-   "outcome": "attempted, open"
+   "outcome": "attempted, open",
+   "known": "targets/deboli1786 (Brice Dudout, 10 Nov 2026; read in part, deboli1786.html): the first page of the despatch of 12 Sep 1786 (scan 146 right, table 3865) is read in part with key K3, learnt on pairs of cipher pieces and the clears of AKP 269: 196 of 219 groups read by sense (89.5%), 17 restored and 6 unresolved; K3 not validated (0.645 on a held-out page against 0.85, controls at most 0.020). ZbPop 2 is sorted piece by piece by opening group; keys ZbPop 444 and 451 transcribed (444 is the older Polish code, read in part for 1787 in targets/deboli1787 under entry 416); none of the keys seen is table 3865.",
+   "open": "The rest of the 12 Sep 1786 despatch (scan 147) and the other pieces of ZbPop 2 in tables 3865, 9933 and 12282 and in the old Polish code, unread: K3 is partial and the unread pieces are kept unopened as held-out material for a next key (more clear/cipher pairs from AKP 269 needed). On the page read: 6 unresolved groups (774, 3527, 77x, 1039, 2036a, 279).",
+   "as_of": "2026-11-27"
   },
   {
    "id": 416,
@@ -9125,7 +9130,7 @@
    "prior_art": "partial: 37 letters to Høeg and Meyercron read with key K55 (Dudout, Europe chiffrée; targets/biermann1675); image 109 viewed 2 Nov 2026 with no decipherment on the leaf",
    "ark": "",
    "scored": "vetted",
-   "as_of": "2026-11-12",
+   "as_of": "2026-11-27",
    "access": "online",
    "access_note": "online (backfilled 28 Oct 2026 from the entry: seen: image)",
    "vetting": {
@@ -9164,10 +9169,11 @@
     ]
    },
    "restored_from": "removed_2026-11-02 #465",
-   "open": "Letters to Lilienkron, Gioë, Schröder, Reetz, Lindenow, Lincker and Lente, in other number families (targets/biermann1675); the Klingenberg letters are read in part in targets/klingenberg1675/ and no longer belong to this entry.",
+   "known": "Under key K55 (image 55 of the TKUA 'Chiffer' volume), outside this entry: every letter to Høeg and Meyercrone is read (targets/biermann1675 and Brice Dudout). Inside this entry: the Gioë letter of 12 Jan 1675 is read in part with K55 (44 of 49 words sure; Tomáš Pavuk, issue #720, targets/biermann1675). Lindenow: key rebuilt from adjacent plaintext on the letter of 22 Feb 1675, read in part (54 of 84 cipher words plain, 64.3%); 11 and 18 Jan and 12 Apr decoded, not read (Tomáš Pavuk, issue #679, targets/lindenow1675, in progress, no page). Klingenberg: key rebuilt from the ciphertext, eleven letters read in part (3,648 of 4,709 tokens, 77.5%; Malcolm McBratney, targets/klingenberg1675, klingenberg1675.html).",
+   "open": "Letters to Lilienkron (German, numbers 14-707 with the signs Δ θ), Reetz, Lincker, Lente, Gioë in Moscow, Meyercrone of 2 Jan and Høeg of 21 June: no key found, not attempted. Gioë in England (other letters) and Schröder: K55 family, not yet tested; the 12 Jan Gioë letter has codes 123 and 488, an open square and 31 open. Lindenow: 11 and 18 Jan and 12 Apr decoded but not read (56 groups without value), 22 Feb has 25 marked words; the draft and Lindenow's reports (TKUA, paper only) not seen. Klingenberg: read in part, open word codes and sixteen key-building letters with no count of record; no longer counted in this entry's open work.",
    "needs": "Whether these are key lookups: the chancery key volume has further keys naming these envoys (images 145-147, 305-308), not fully applied. May be more than one key; split when known. Klingenberg: done in part (targets/klingenberg1675/).",
    "repository": "rigsarkivet",
-   "outcome": "attempted, open: the Klingenberg letters read in part (targets/klingenberg1675/, 12 Nov 2026); the other families (Lilienkron, Gioë, Reetz, Lindenow, Lincker, Lente) not read"
+   "outcome": "attempted, open: the Klingenberg letters (targets/klingenberg1675/, 12 Nov 2026), the Lindenow letter of 22 Feb (targets/lindenow1675/, 16 Nov 2026) and the Gioë letter of 12 Jan (targets/biermann1675/) read in part; the other families (Lilienkron, Reetz, Lincker, Lente) not read"
   },
   {
    "id": 467,
@@ -15303,6 +15309,9 @@
    "ark": "",
    "scored": "sweep",
    "outcome": "attempted, open: blocked, not digitised (HStA Dresden 11237 Loc. 10932/09; to order) (26 Oct 2026, targets/august1733/)",
+   "known": "targets/august1733 (26 Oct 2026): attempted; the file (HStA Dresden 11237 Loc. 10932/09) is not digitised; only the Archivportal-D record ('Enthält auch: Verschlüsselte Berichte') is online. No page (Status: no write-up).",
+   "open": "The whole file, unseen. Blocker: needs physical access (order from HStA Dresden). The Saxon cabinet key volumes Loc. 03233/01-07 and 03234/01-07 not seen either.",
+   "as_of": "2026-11-27",
    "access": "archive",
    "access_note": "not online (backfilled 28 Oct 2026 from the entry: ...iod: 10026 Geheimes Kabinett Loc. 03233/01-07, 03234/01-07. Not digitised. 26 Oct 2026 (targets/august1733/): attempted; not digitise...)",
    "vetting": {
@@ -17080,6 +17089,9 @@
    "ark": "",
    "scored": "sweep",
    "outcome": "attempted, open: closed unread: the telegram is not located and no full 1867 State Department codebook is available (27 Oct 2026, targets/vienna1873/)",
+   "known": "targets/vienna1873 (27 Oct 2026): attempted and closed unread. Weber, Masked Dispatches pp. 106, 131 (Haswell to Fish, 8 Jul 1873) gives no date, sender or archive item for the telegram; the full 1867 State Department codebook was not found online. No page (Status: no write-up).",
+   "open": "The telegram itself: not located. Blocker: needs NARA RG 59 telegrams / M46 Despatches from Austria and the Fish Papers reel 95 (LC). The full 1867 codebook: not online as far as found.",
+   "as_of": "2026-11-27",
    "frame_check": {
     "result": "not_found",
     "href": "https://www.govinfo.gov/content/pkg/GOVPUB-D-PURL-gpo52790/pdf/GOVPUB-D-PURL-gpo52790.pdf",
@@ -17729,6 +17741,9 @@
    "ark": "",
    "scored": "sweep",
    "outcome": "attempted, open: blocked, the RG 457 file unit (naId 23891396) is not digitised and its contents are unknown (27 Oct 2026, targets/ccr1944/)",
+   "known": "targets/ccr1944 (27 Oct 2026): attempted; NARA catalog API shows a file unit (naId 23891396) of loose sheets, container 164, College Park, no scope note and no digital objects. 'CCR' may be the US Army side rather than GC&CS (unverified). No printed mention found. No page (Status: no write-up).",
+   "open": "The whole file, contents unknown. Blocker: needs physical access (RG 457 file unit not digitised).",
+   "as_of": "2026-11-27",
    "access": "archive",
    "access_note": "not online (backfilled 28 Oct 2026 from the entry: One file unit; size unknown; not digitised. Catalogue title names it as a file of unsolved problems ke...)",
    "repository": "nara"
@@ -18179,6 +18194,9 @@
     "by": "claude frame check 06"
    },
    "outcome": "attempted, open",
+   "known": "Letter traffic (columnar transposition, a key per telegram): two telegrams deciphered in part with keys recovered from the ciphertext, targets/lejava1921 (9 of 21 words, 42.9%) and targets/voikov1921 (63 of 105 words, 60.0%); targets/voikov1921b decoded, not read, and targets/stomoniakov1921 unbroken (both in progress). Figure traffic: two messages in a digit-pair table with a square transposition, Krassin Nr 451 and Lutowinoff Nr 523 (M316 roll 43), deciphered in part by Harumi-Matsuba (targets/krassin1921, krassin1921.html, 87.2% of cipher words). The four-figure tables (Kopp, Nr 417; targets/kopp1921, kopp1921.html) and the five-figure traffic and the Karakhan table (targets/karakhan1921, in progress): no group value recovered.",
+   "open": "The figure traffic, the core of this entry: the four-figure tables and the five-figure traffic, no group value recovered (targets/kopp1921, targets/karakhan1921). The rest of the letter traffic (voikov1921b, stomoniakov1921) and the unread words of lejava1921 and voikov1921. Not checked: GC&CS HW 12 (1921) for the Soviet side, RG 457 6707N (MI-8 copies), Auswärtiges Amt files for the German side.",
+   "as_of": "2026-11-27",
    "vetting": {
     "date": "2026-11-02",
     "by": "claude vetting batch L04",
@@ -21339,7 +21357,10 @@
    "access": "online",
    "access_note": "online (backfilled 28 Oct 2026 from the entry: 3 items; images online PARES hits (27 Oct 2026, \"carta cifrada\"/\"cifrada\"). PARES...)",
    "repository": "ahnob",
-   "outcome": "attempted, open"
+   "outcome": "attempted, open",
+   "known": "D.107 (Ludovico Ridolfi, Rome 8 May 1646) is deciphered in part with a key recovered from the ciphertext by Brice Dudout (targets/ridolfi1646, ridolfi1646.html; 396 of 431 words, 91.9% by the read bar; 5 nomenclator codes open) and has left this entry. Brice Dudout's notes on the Ronquillo items, not checked here: D.102-106 are Spanish letters of Ronquillo in other systems than D.107; D.104 has its decipherment of the time in D.105; D.106 is a cipher table that does not fit D.107; the 1645 Frías key does not read D.104.",
+   "open": "The two Ronquillo items (AHNOB OSUNA C.3456, D.102-106), not worked here: test D.106 as the key of the Ronquillo letters and read D.104 against its decipherment of the time in D.105.",
+   "as_of": "2026-11-27"
   },
   {
    "id": 749,
@@ -25354,6 +25375,9 @@
    "ark": "",
    "scored": "sweep",
    "outcome": "attempted, open",
+   "known": "targets/cistarelli1520 (joined to catalogue 158, same two-digit cipher as R1137; cistarelli1520.html): line 7 of V1908 transcribed; the earlier R1137 anneal key gives fragments only. 26 Nov 2026: Chimdindu Denalex Orakwue's step-of-five key (issue #843, PR #847) gives a value to 675 of 708 tokens over the two stored transcriptions (R1137 and V1908), a coverage of tokens, not a reading share; several lines give no prose; text not read (profile class: not read).",
+   "open": "V1908 (14 Oct 1520), Kraków to Alfonso I: not read. Line 7 decoded with the step-of-five key but not read as prose; about six cipher lines at the foot (lines 28-34) lost in the dark bands of the photocopy. Blocker: needs physical access (only a photograph of an old photocopy is online; Brice Dudout asked ASMo for the original, 28 Oct 2026).",
+   "as_of": "2026-11-27",
    "frame_check": {
     "result": "confirmed",
     "href": "https://www.vestigia.hu/viewer?open=1908",
@@ -42556,7 +42580,10 @@
     "verdict": "open"
    },
    "repository": "ambrosiana",
-   "outcome": "attempted, open"
+   "outcome": "attempted, open",
+   "known": "targets/ambrosiana118 (9 Nov 2026, ambrosiana118.html; not read): only the heading word 'mfnpflrfp' is enciphered, by a vowel shift (a>b, e>f, i>l, o>p, u>x); the 16-line poem below is plain Latin. Undone, the word reads ?-e-n-o-e-i-?-e-o (seventh glyph r or x); no Latin or Italian name results; a full-alphabet Caesar shift gives no word either.",
+   "open": "The heading word: first and seventh glyphs and the word itself. Blocker: illegible (minim-ambiguous glyphs; the 1513-px IIIF image is the only copy). The poem and its author not identified in other manuscripts.",
+   "as_of": "2026-11-27"
   },
   {
    "id": 1348,
@@ -47635,7 +47662,10 @@
     ]
    },
    "repository": "agncol",
-   "outcome": "attempted, open"
+   "outcome": "attempted, open",
+   "known": "targets/leticia1932 (Brice Dudout, PR #269; read in part, leticia1932.html): the 17 alphabetic cipher telegrams of GARV..2.2.4 (9-27 Sept 1932) are read with the Sección I weekday key of GARV..1.1.4 (read with known key; 787 cipher words, 759 certain and 24 probable, 99.5%; 4 words unresolved) and have left this entry.",
+   "open": "The numeric telegram No. 143 (GARV..2.2.4 f. 151, about 160 numbers): another system. Blocker: no key material (no key known). The cipher telegrams of GARV..2.2.1, 2.3.1, 2.3.2 and 2.4.1: not worked (the 1932 Presidency key in GARV..2.2.1 ff. 6v-10 and the translations filed with them make them a key lookup).",
+   "as_of": "2026-11-27"
   },
   {
    "id": 1527,
@@ -50503,7 +50533,7 @@
    "prior_art": "existing: contemporary decipherments of both letters, the interlinear gloss of 15 Nov 1765 (images 124R-126, viewed 2 Nov 2026; complete, running ahead of the cipher) and the clear 102R-103R of 6 Mar 1764 (shown by key_c01, PR #566, 14 Nov 2026); Frederick II letter of 3 Mar 1765 printed in PC 24 no. 15458 (Dudout)",
    "ark": "",
    "scored": "vetted",
-   "as_of": "2026-10-27",
+   "as_of": "2026-11-27",
    "access": "online",
    "access_note": "online (backfilled 28 Oct 2026 from the entry: seen: image)",
    "vetting": {
@@ -50547,6 +50577,7 @@
     "note": "Scope: the 6 Mar 1764 letter and the 11 unglossed lines of 15 Nov 1765; the glossed lines of 15 Nov 1765 already have a decipherment on the leaf. Narrowed 27 Nov 2026 to 90R-93L, 104R-105L and 87-89: their ciphertext is seen and transcribed from the IIIF images A0073297_00087-00093 and _00104-00105 (targets/duben1764/sysA_1616/letter90/, letter104/; NOTES 17 Nov 2026); no decipherment of the time was found for them in the volume."
    },
    "restored_from": "removed_2026-11-02 #450",
+   "known": "targets/duben1764 (Brice Dudout, in progress, no page): key_c01 and key_c02 rebuilt on system A of Chiffer n:o 1 against the decipherments of the time and checked on held-out letters. Read from existing decipherment and removed from this entry (27 Nov 2026, PR #1009): 6 Mar 1764 and 15 Nov 1765 (321 of 321 and 359 of 360 cipher words). Also read through their clears: 15/4 May 1764 (105R-108L; 415 of 418 words sure) and 20/31 Aug 1764 (clear 116-117); 15 June 1764 (108R-109L) read through its decipherment (337 of 342 words sure). 100R is the end of letter 96.",
    "open": "90R-93L: 641 sure + 93 probable of about 858 words with key_c02 (sure 0.747), no period clear (the 30 Jan clear on 94-95 is not it). 104R-105L (15 May 1764, a second letter of that date): 235 sure + 41 probable of about 291 words (sure 0.808), no period clear. Both rest on key_c02 values read by sense and on conjectured values for missing groups. 87-89: not system A (key_c01 and key_c02 give no French on 87L; other hand), no clear identified, unread.",
    "needs": "For 90R-93L and 104R-105L: a decipherment of the time, or the open key_c02 values confirmed in another clear. For 87-89: its key (the tables at 218-220 are range-checked only) or its clear (94-95 may belong to it).",
    "repository": "riksarkivet",
@@ -67357,7 +67388,10 @@
     ]
    },
    "repository": "riksarkivet",
-   "outcome": "attempted, open"
+   "outcome": "attempted, open",
+   "known": "Image 147 (Lit. A, a French memorandum with a French gloss) and its glossed continuation on images 148-149 are on targets/hopken1740 (read in part, hopken1740.html), where image 147 was the held-out test of the 1741 key (read, the contemporary gloss checked against the frozen key). Nothing else in the volume is worked.",
+   "open": "The other glossed second-code runs of I/9/26 (images 8, 54, 100, 240 and 286): not worked; they carry interlinear plaintext, so a key lookup that should also confirm or refute the context values of hopken1740's key.",
+   "as_of": "2026-11-27"
   },
   {
    "id": 2248,
@@ -72433,7 +72467,10 @@
     "verdict": "open"
    },
    "repository": "soa-zamrsk",
-   "outcome": "attempted, open"
+   "outcome": "attempted, open",
+   "known": "targets/piccolomini1646 (WAINUT, 6 Nov 2026; piccolomini1646.html): both letters decoded with Vlnas's published key (vowels a e i o u = 1 3 5 7 9) but not read: 76 of 116 words (65.5%) of inv. 24874 and 32 of 50 (64.0%) of inv. 24876 decode verbatim, from a photographed microfilm-reader screen; 24874 builds 2 of 6 cipher sentences, 24876 1 of 3.",
+   "open": "Both letters: holes of 27 words (24874, mostly L01-L03) and 12 (24876), about 15 unresolved signs, s/5 and g/q/9 homographs; writer and dates not identified. Blocker: illegible on the photographs (a clean scan from SOA Zámrsk is the way forward, not ordered).",
+   "as_of": "2026-11-27"
   },
   {
    "id": 2360,
@@ -90538,7 +90575,10 @@
    "ark": "",
    "scored": "vetted",
    "repository": "tna",
-   "outcome": "attempted, open"
+   "outcome": "attempted, open",
+   "known": "targets/gordonmudir1884 (14 Nov 2026, gordonmudir1884.html; closed from the evidence, not read): transcribed (119 groups, 26 distinct values, digits 1-9 in a 7 x 6 grid); the two Arabic columns of the Durham table SAD.250/1/81, as read, do not read it; a letter-substitution attack with controls and crib dragging on the closing groups find nothing. Palmer's covering letter (SAD.250/1/549, 15 Nov 1886) says Khalil Ibrahim of Dongola 'has the key'.",
+   "open": "The whole note. Blocker: no key material (Khalil Ibrahim's key not known to survive). Not digitised comparison material: TNA PRO 30/57/4/75-109 at Kew and Durham SAD.101/15 (needs physical access); a human Arabic reader for the groups and clear words; a better image of SAD.250/1/81.",
+   "as_of": "2026-11-27"
   },
   {
    "id": 2941,
