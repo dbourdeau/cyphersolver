@@ -11,7 +11,7 @@ The checks were done with AI tools and no person checked each record by hand.
 | 25 Dec 1623 (+ resolution 2 Oct 1623) | 1080_0376/0380/0486; 1079_0129/0133/0263 | training (key test) | 32/54 tokens = 59.26% (below 65%) | key shuffles 0/5,000 at seeds 20261112 and 7 |
 | 20 Feb 1634 | 1108_1154-1155; 1111_0564 | key source (glosses) | not scored (glossed) | n/a |
 | 9 Sep 1640, postscript | 1134_0583 (base), 0617 (glossed) | blind test 1 | 9/11 tokens = 81.82% | key shuffles 0/5,000 both seeds (max 3) |
-| 9 Sep 1640, LC words | 1134_0583 | LC test (key from 1643 glosses) | 5/13 words = 38.46% FAIL | key shuffles 9/5,000 and 12/5,000; letter shuffles 96/5,000 and 118/5,000 |
+| 9 Sep 1640, LC words | 1134_0583 | LC test (key from 1643 glosses) | 5/13 words = 38.46% FAIL (v2 transcription, 16 words: 7/16 = 43.75%, not of record) | key shuffles 9/5,000 and 12/5,000; letter shuffles 96/5,000 and 118/5,000 |
 | 23 Jan 1643 | 1141_0901/0902/0905/0906 (copy 2, base), 0886/0890 (copy 1, glossed) | blind test 2 | 59/86 groups = 68.60% (DP word rule) | key shuffles 0/5,000 both; ciphertext shuffles 0/5,000 both (rank 1 of 5,001) |
 | 9 Sep 1640, body | 1134_0570 (base), 0605 (glossed) | found 25 Nov 21:19 UTC; system B | not scored | n/a |
 
@@ -61,16 +61,21 @@ Per-letter arithmetic is in letters/<letter>/RESULT*.md and the *_output.txt fil
 - Class "read in part"; primary method "key recovered based on adjacent plaintext" (the 1634 glosses); provenance
   "contributed", credit mcbratney. Reading reviews are left for the maintainer: a contributor does not sign them.
 
-## Emendations to make (27 Nov 2026; frozen files not edited)
-- 1640 postscript: after "Amsterdam" the image shows the letter-cipher words "k bd. p." (reader 2: "te Bd. p."); the frozen
-  transcription skips them, so the postscript has 16 letter-cipher words, not 13 (Dan Bourdeau, review of PR #996; reader 2).
-- 1640 postscript: the last letter-cipher word but one is "qbhm" (reader 2 and the image), not "qbbm" as transcribed.
-- Both affect only system-B words (holes either way); no figure of record changes. Counted already in the house count above.
+## Emendations made (27 Nov 2026 UTC): 1640 postscript transcription version 2
+- Made as a new frozen version, letters/1640/v2_2026-11-27/ (v1 files untouched): FREEZE_v2.txt 2026-11-27 04:23:58 UTC,
+  T1640_transcription_v2.txt md5 77202d0359683d472985ec0412581f79; stamped (Sectigo 04:23:59Z, FreeTSA 04:24:00Z).
+- E1: after "Amsterdam" the image shows the letter-cipher words "k bd. p." (reader 2: "te Bd. p."); v1 skipped them, so the
+  postscript has 16 letter-cipher words, not 13 (Dan Bourdeau, review of PR #996; reader 2).
+- E2: the last letter-cipher word but one is "qbhm" (reader 2 and the image), not "qbbm".
+- One re-decode with the frozen LC_KEY_v1 (RESULT_v2.md): 7/16 words = 43.75% (k -> r and bd -> en added; four of the seven are
+  single letters); letters keyed 45/60 = 75.00% (v1 43/56 = 76.79%); key shuffles 9/5,000 and 12/5,000, letter shuffles
+  235/5,000 and 230/5,000. Under the 65% line; not the figure of record. Number tokens identical (11 = 11), so 9/11 stands.
+- Figures of record unchanged: LC 5/13 = 38.46% (v1 first pass). House count unchanged (all 16 already counted as holes).
 
 ## Remaining gaps
 
 - 1623 letter: read, 53 of 54 cipher words; the one hole is kolden read konden (26 = l taken as a slip); the first pass (59.26%) is key-test evidence only; 13 numbers set from context after the first pass - blocker: open-codes; Reading exists in the 1079 margins; values set post hoc in SECOND_PASS_values.tsv.
-- 1640 postscript: 16 letter-cipher (system B) words (13 in the frozen transcription + 'k bd. p.', see emendations to make) - blocker: open-codes; LC_KEY_v1 test failed (5/13); the 617 interlinear gloss is only partly legible at the NA image resolution.
+- 1640 postscript: 16 letter-cipher (system B) words (13 in the v1 transcription + 'k bd. p.' in v2, see emendations made) - blocker: open-codes; LC_KEY_v1 test failed (5/13); the 617 interlinear gloss is only partly legible at the NA image resolution.
 - 1643 letter: 27 of 86 number groups uncovered - blocker: open-codes; 12 are isolated system-B signs the frozen rule cannot score; run 905.3 is system B ('eylanden' in the gloss).
 - System B key (KEY_B_v1) - blocker: open-codes; Built from glosses only; no held-out unglossed B passage scored yet.
 

@@ -115,7 +115,7 @@
 <li><b>1640 postscript</b> (scan 583): 9 of 11 system-A words (81.82%). Key shuffles: 0 of 5,000 at seeds 20261112 and 7 reach the real score.</li>
 <li><b>1643 letter</b> (copy 2): 59 of 86 number groups covered by dictionary words (68.60%), under a word-division rule frozen before the decode. Key shuffles 0 of 5,000 at both seeds; ciphertext shuffles under the real key 0 of 5,000 at both seeds (rank 1 of 5,001). The glossed copy 1, opened after the score, agrees for 10 of 12 checkable runs.</li>
 </ul>
-<p>A letter key for system B built from the 1643 glosses (LC_KEY_v1) failed its test on the 1640 letter words: 5 of 13 (38.46%). On 27 November 2026 every B word (47 in all) was decoded again with the gloss-built KEY_B_v1: 32 take a value for every sign, but the 1643 ones only give back the glosses the key was built from, and no new value is supported by two or more words. No B word moved from hole to read.</p>
+<p>A letter key for system B built from the 1643 glosses (LC_KEY_v1) failed its test on the 1640 letter words: 5 of 13 (38.46%). A corrected transcription (version 2, 27 November 2026: three words <i>k bd. p.</i> added after &ldquo;Amsterdam&rdquo; and <i>qbhm</i> for <i>qbbm</i>, as Dan Bourdeau pointed out) decoded once with the same key gives 7 of 16 (43.75%), four of them single letters; still under the 65% line, and the first pass stays the figure of record. On 27 November 2026 every B word (47 in all) was decoded again with the gloss-built KEY_B_v1: 32 take a value for every sign, but the 1643 ones only give back the glosses the key was built from, and no new value is supported by two or more words. No B word moved from hole to read.</p>
 <p>The repository&rsquo;s statistical test (<code translate="no">docs/_validate.py</code>, Dutch letter model, the 1623 letter, 276 numbers) gives a pass: the reading scores &minus;2.914 per letter against &minus;6.457 for random keys and &minus;3.588 for keys refitted to shuffled text.</p>
 <p>Blind second readings, by AI readers who saw only the images: the 1640 postscript 56 of 57 numbers agree, the 1643 letter 85 of 86, and the 1623 blocks A and B 121 of 124 and 127 of 127 (non-Anthropic models, run by Malcolm McBratney). The transcriber had KEY_v2 in view while transcribing 1640 and 1643; this is disclosed in the method files.</p>
 
@@ -124,7 +124,7 @@
 <ul>
 <li><b>1623</b>: 53 of 54 cipher words. The one hole is <i>kolden</i>, read <i>konden</i> (26 = l taken as a slip; the margin has <i>conden</i>).</li>
 <li><b>1634</b>: 35 of 35, but this is the key source: every word is glossed, so it is not a test.</li>
-<li><b>1640 postscript</b>: 9 of 27. <i>?rieuen</i> and the blotted group rest on the scan 617 gloss; all 16 B words are open (13 in the transcription and three more, <i>k bd. p.</i>, after &ldquo;Amsterdam&rdquo; that the image shows).</li>
+<li><b>1640 postscript</b>: 9 of 27. <i>?rieuen</i> and the blotted group rest on the scan 617 gloss; all 16 B words are open (13 in the first transcription and three more, <i>k bd. p.</i>, after &ldquo;Amsterdam&rdquo; that the image shows, added in transcription version 2).</li>
 <li><b>1643</b>: 11 of 55. Every B word, the numerals XXI and IV, <i>d&rsquo;advisen</i> (74 has no key value; copy 1 writes 70) and several partly keyed number runs are holes.</li>
 <li>Over the three letters, 73 of 136 cipher words (1634 left out). The extent is partial.</li>
 <li>Doubtful signs in 1643 copy 2: 61 in 901.4 (could be 01); 10 in 902.4 (copy 1 and the blind reader have 16; <i>tonnen</i> under B supports 16); 74 in 901.1 (copy 1 has 70); 39 and 5 in 905.3 (Leupe&rsquo;s printed text, by OCR, has 89 and 6; his page image was not checked). In 1640: the blotted group (the gloss gives 57) and 12 (gloss b).</li>
@@ -365,8 +365,8 @@ het | dubbel | deser | copien | ?rieuen | gaet | handen | uanden | schipper | o?
 
 ## Reading in context (cipher words in [ ]; LC = letter-cipher words, not read)
 [Het] [dubbel] [deser], neven verscheijde [copien] van [brieven], [gaet] in [handen] [vanden] [schipper] des schips den Caesar
-LC &#x27;ctld. Gmroodt.&#x27; [om] [door] Cornelis Sybertsen pastijbacker op den nieuwen dijck tot Amsterdam LC &#x27;b.g. tpbk. lrdgenlm.&#x27;
-te worden gelieft LC &#x27;grbk. nad. m bpbkdbsbd.&#x27; bij LC &#x27;Zrpmb.&#x27; van LC &#x27;qbbm boode&#x27;.
+LC &#x27;ctld. Gmroodt.&#x27; [om] [door] Cornelis Sybertsen pastijbacker op den nieuwen dijck tot Amsterdam LC &#x27;k bd. p. b.g. tpbk. lrdgenlm.&#x27;
+te worden gelieft LC &#x27;grbk. nad. m bpbkdbsbd.&#x27; bij LC &#x27;Zrpmb.&#x27; van LC &#x27;qbhm boode&#x27;.
 
 Post hoc (after the score, from the 617 gloss; does not change the figure of record): 12 = b (&#x27;brieuen&#x27;), blotted group = 57 = m (&#x27;om&#x27;).
 
@@ -381,8 +381,8 @@ het | dubbel | deser | copien | ?rieuen | gaet | handen | uanden | schipper | o?
 
 ## Reading in context (cipher words in [ ]; LC = letter-cipher words, not read)
 [Het] [dubbel] [deser], neven verscheijde [copien] van [brieven], [gaet] in [handen] [vanden] [schipper] des schips den Caesar
-LC &#x27;ctld. Gmroodt.&#x27; [om] [door] Cornelis Sybertsen pastijbacker op den nieuwen dijck tot Amsterdam LC &#x27;b.g. tpbk. lrdgenlm.&#x27;
-te worden gelieft LC &#x27;grbk. nad. m bpbkdbsbd.&#x27; bij LC &#x27;Zrpmb.&#x27; van LC &#x27;qbbm boode&#x27;.
+LC &#x27;ctld. Gmroodt.&#x27; [om] [door] Cornelis Sybertsen pastijbacker op den nieuwen dijck tot Amsterdam LC &#x27;k bd. p. b.g. tpbk. lrdgenlm.&#x27;
+te worden gelieft LC &#x27;grbk. nad. m bpbkdbsbd.&#x27; bij LC &#x27;Zrpmb.&#x27; van LC &#x27;qbhm boode&#x27;.
 
 Post hoc (after the score, from the 617 gloss; does not change the figure of record): 12 = b (&#x27;brieuen&#x27;), blotted group = 57 = m (&#x27;om&#x27;).
 
