@@ -29,3 +29,14 @@ Verdict: **no key, decipherment, gloss or printed reading of this leaf found.** 
 [unverified] The two keys and readings have not yet been compared sign by sign (the paper's PDF could not be read from the sandbox). Agreement would corroborate both; any difference should be listed here. Credit for the first solution goes to Prizmic; this entry stays as an independent second reading with its frozen files, controls and stamps.
 
 The checks were done with AI tools and no person checked each record by hand.
+
+## Key comparison with Prizmic (27 Nov 2026)
+
+[derived] Prizmic's paper (Zenodo 10.5281/zenodo.24234135, v1, 14 Nov 2026) was read on 27 Nov and compared with our frozen KEY.tsv, TRANSCRIPTION.tsv and DECODE.txt (hashes unchanged). His sign labels differ from ours, so the mapping was made by aligning his raw sign-by-sign decode with our 787 transcribed tokens (same sign count on 14 of 20 lines, within one on the rest) [measured].
+
+- [derived] Same system (monoalphabetic substitution, invented signs and digits, word division kept, final ъ). 29 of our 31 letter signs have the same value in both keys. Differences: S28 (2 tokens) ours ѿ "от", his у ("у себя", "управить"); S22 ours ю, his key и/й (his text prints ю in 3 of its 5 places).
+- [derived] He merges look-alike pairs we keep apart (S01/S02, S08/S09, S30/S31, S27/S28), has two м signs where we have one, and treats our S26 as the conjunction и inside a line and as a hyphen-like continuation mark at line ends; he reads our S33 as и in 3 of 5 places. We read S26 and S33 as non-letter marks.
+- [derived] About 20 of 787 sign tokens (2.5%) are read differently, in 16 places; most come from S26/S33. Examples: L01 "иного" (ours) against "и того"; L15 "разведыъа" (ours) against "разведывать" (his is the better sense there). None changes the content of the rescript.
+- [unverified] Neither reading has been checked by a Russian reader or against the archive's decipherment (GAAO f. 394, op. 1 dop., d. 11). Credit for the first solution stays with Prizmic; the comparison corroborates both solutions.
+
+The checks were done with AI tools and no person checked each record by hand.
