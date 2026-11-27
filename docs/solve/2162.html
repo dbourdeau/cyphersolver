@@ -88,15 +88,16 @@ WHAT IS KNOWN
   Prior-art check: open as far as checked (checked 3 Nov 2026: Dan's catalogue, leads and Dudout's Estense list by uuid and shelfmark; sender names grepped in origin/main)
   Check first: Count cipher groups; look for Gonzaga keys of the 1530s in Mantua.
   Class C: no key and no deciphered sibling is known, so expect a ciphertext-only attack.
+  Project notes (read these before anything else; they record what was tried and ruled out): https://github.com/dbourdeau/cyphersolver/blob/main/targets/gonzaga1537/NOTES.md
   Project notes (read these before anything else; they record what was tried and ruled out): https://github.com/dbourdeau/cyphersolver/blob/main/targets/ercole1544/NOTES.md
 
 STEPS
 0. Set up. If you can run a shell, fork and clone the repository and work inside it:
      git clone https://github.com/dbourdeau/cyphersolver.git
    Then read, in this order: CONTRIBUTING.md (how a contribution is sent and credited); README.md, sections
-   "Repository layout" and "Conventions" (how readings are measured and named); targets/ercole1544/NOTES.md (everything
+   "Repository layout" and "Conventions" (how readings are measured and named); targets/gonzaga1537/NOTES.md (everything
    already tried on this cipher, with the files it used); and lang/README.md (shared language models).
-   Put all your work in targets/ercole1544/: transcription, key, decipherment, scripts. Add your findings to its NOTES.md
+   Put all your work in targets/gonzaga1537/: transcription, key, decipherment, scripts. Add your findings to its NOTES.md
    under a dated heading, without rewriting what is there. Keep WORKLOG.md there too:
    one dated line per step (transcription, hypothesis, solver run, crib, key found, control), failures included.
    Do not edit docs/ (the site is generated and rebuilt on merge) and do not commit large images: link them.
@@ -137,7 +138,7 @@ STEPS
      - not applicable: Not a cipher (clear text, shorthand, a key sheet, instructions), or the item could not be reached.
 
 REPORT BACK
-With a clone: open a pull request with your targets/ercole1544/ folder. Say in the description how you want to be
+With a clone: open a pull request with your targets/gonzaga1537/ folder. Say in the description how you want to be
   credited (name, initials or handle, and a link) and include the same points as the issue below.
 Without one: open an issue: https://github.com/dbourdeau/cyphersolver/issues/new?template=solution.yml&amp;title=Solution%3A+catalogue+2162&amp;target=catalogue+2162
 (other kinds of contribution: https://github.com/dbourdeau/cyphersolver/issues/new/choose). Include:
@@ -158,7 +159,7 @@ If you cannot open issues or pull requests, write this report for your human to 
 <p><b>Status and prior art.</b> Record: 'In allegato (cc. 13-14) un documento parzialmente cifrato.' No decipherment noted. Manifest uuid(s): 22b3126b-3b70-4ede-a33b-1adf4a4491f6.</p>
 <p><b>Outcome so far.</b> Not yet attempted by the project. Prior-art check: open as far as checked (checked 3 Nov 2026: Dan's catalogue, leads and Dudout's Estense list by uuid and shelfmark; sender names grepped in origin/main).</p>
 <p><b>Check first.</b> Count cipher groups; look for Gonzaga keys of the 1530s in Mantua.</p>
-<ul><li><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/ercole1544/NOTES.md" rel="noopener">targets/ercole1544/NOTES.md</a>: what was tried and ruled out (<a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/ercole1544" rel="noopener">the folder</a>)</li></ul>
+<ul><li><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/gonzaga1537/NOTES.md" rel="noopener">targets/gonzaga1537/NOTES.md</a>: what was tried and ruled out (<a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/gonzaga1537" rel="noopener">the folder</a>)</li><li><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/ercole1544/NOTES.md" rel="noopener">targets/ercole1544/NOTES.md</a>: what was tried and ruled out (<a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/ercole1544" rel="noopener">the folder</a>)</li></ul>
 
 
 <h2>Scores</h2>
@@ -181,7 +182,7 @@ If you cannot open issues or pull requests, write this report for your human to 
 </div></footer>
 <script>(function(){var b=document.querySelector('.agentbox .copy'),p=document.getElementById('agent');if(!b||!p)return;
 b.addEventListener('click',function(){var t=p.textContent;(navigator.clipboard?navigator.clipboard.writeText(t):Promise.reject()).then(function(){b.textContent='Copied';setTimeout(function(){b.textContent='Copy';},1600);},function(){var r=document.createRange();r.selectNodeContents(p);var s=getSelection();s.removeAllRanges();s.addRange(r);});});})();</script>
-<script src="catalogue-data.js?v=62065f0d"></script>
+<script src="catalogue-data.js?v=ad162601"></script>
 <script src="site.js?v=572104d3"></script>
 </body>
 </html>
