@@ -30,12 +30,14 @@ is not enciphered here.
 
 ولينه الاعطاف واسعه الا[كناف] وطي[ب]ها مباح علي انها [ت]جافاها اهل ا[ل]صلاح تزور اذا جن الليل وترحل عند الصباح
 ترميها القسي وتطعنها الاسنه وهي معدوده من نعيم اهل الجنه وج[مع]ها يستر بالظهور وافتراشها بعقد جايز غير محذور يحمد
-منه[ا] ما يذم في المذاهب وظهرها اوطا ظهر للراكبان جم[ا]لها ربها جملته
+منه[ا] ما يذم في المذاهب وظهرها اوطا ظهر للراكبان جملها ربها جملته
 
 ## Notes
 
-- Emendations: الاكانف (ن and ا swapped), وطيها, تتجافاها (one ت written twice), اصلاح, وجهها, منه, جملها. The ل of
+- Emendations: الاكانف (ن and ا swapped), وطيها, تتجافاها (one ت written twice), اصلاح, وجهها, منه. جملها is not
+  emended: the clear copy on f. 21r has جمّلها with a shadda (re-read on the image, 27 Nov 2026), not the record's جمالها. The ل of
   اصلاح may be a slip or a correction (NOTES.md, Transcription doubts).
 - Where the cipher and the 20r.8 record of the clear copy differ, the cipher is followed: ترميها (record توهمها),
-  القسي (record العسى[?]), يحمد (record وخمد[?]).
+  القسي (record العسى[?]), يحمد (record وخمد[?]). Re-read on the f. 21r image (27 Nov 2026, a model's reading at 2-4x):
+  the clear copy itself has ترميها and تحمد (same skeleton as يحمد, dots differ), and an undotted letter in العسي/القسي.
 - Alif maqsura is written ي (علي), as in the cipher.
