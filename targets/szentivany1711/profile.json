@@ -1,0 +1,162 @@
+{
+ "schema_version": 1,
+ "target": "szentivany1711",
+ "title": "János Szent-Ivány to Ferenc Rákóczi II, Munkács, 14 May 1711",
+ "documents": [
+  {
+   "id": "17",
+   "read": "read in part",
+   "shelfmark": "MNL OL G 15, Caps. H, Fasc. 240, ff. 112–113",
+   "date": "14 May 1711",
+   "year": 1711,
+   "country": "Hungary",
+   "language": "Hungarian",
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "Editors reported the four passages unread."
+   },
+   "length": {
+    "tokens": 56,
+    "unit": "code groups",
+    "measured": true,
+    "file": "transcription.txt"
+   },
+   "transcription": {
+    "by": "published",
+    "source": "transcription.txt",
+    "notes": "Printed p. 1109 checked visually, including underlining of individual digits."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "homophonic",
+   "nomenclator"
+  ],
+  "summary": "First digit and mark select the value.",
+  "symbol_kind": "digits",
+  "distinct_symbols": 51,
+  "diacritics": {
+   "used": true
+  },
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": true
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "alphabetical"
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "unknown",
+   "where": "Document 17 explicitly described as undeciphered in the edition."
+  },
+  "inputs": [
+   "published key",
+   "transcription",
+   "cleartext context"
+  ],
+  "attack": "sibling key",
+  "human_role": "Selected target and proposed the R619 test.",
+  "models": [
+   "GPT-6 (Codex)"
+  ]
+ },
+ "solution": [
+  {
+   "date": "2026-11-23",
+   "kind": "transcription",
+   "what": "Checked four marked runs against printed p. 1109.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-23",
+   "kind": "key from source",
+   "what": "No direct matches in the named table D2585 of R619.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-23",
+   "kind": "sibling key",
+   "what": "Transferred the letter and digraph rows on p. 1120 across all four passages.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-23",
+   "kind": "reading",
+   "what": "Kept tentative readings separate from the mechanical output.",
+   "result": "partial"
+  }
+ ],
+ "outcome": {
+  "method": "read after matching with key from external sources",
+  "method_basis": "The later dispatch supplies independently glossed sign classes.",
+  "contribution": [
+   "transcription"
+  ],
+  "verification": [
+   "key confirms",
+   "historical consistency"
+  ],
+  "key": "partial",
+  "fraction_read": 0.9285714285714286,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "52 of 56 groups receive alphabet or digraph values in decryption.txt; excludes bracketed suggestions and unresolved tokens. Measures assignments only.",
+  "gaps": [
+   {
+    "item": "Underlined 333, underlined 410, plain 214",
+    "blocker": "no-key-material"
+   },
+   {
+    "item": "Semicolon after 515 and plain 300",
+    "blocker": "needs-physical-access"
+   },
+   {
+    "item": "Final vowel, passage 3",
+    "blocker": "too-short"
+   }
+  ],
+  "credits": [
+   {
+    "who": "contemporary",
+    "role": "key or decipherment used",
+    "note": "Rákóczi chancery decipherment of document 24."
+   },
+   {
+    "who": "bankuti",
+    "role": "transcription"
+   },
+   {
+    "who": "meszaros",
+    "role": "transcription"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "17",
+    "transcription": "transcription.txt",
+    "decryption": "decryption.txt",
+    "reading": "reading.md",
+    "translation": "translation.md",
+    "language": "hu",
+    "state": "read in part",
+    "summary": "Szent-Ivány explains his restraint and asks the prince to send men to encourage the garrison.",
+    "reading_review": {
+     "grade": "B",
+     "by": "Codex",
+     "date": "2026-11-23",
+     "note": "Three passages form recognizable Hungarian with marked supplies. The proposed third word differs at two letters."
+    }
+   }
+  ],
+  "key_file": "decode.py",
+  "class": "read in part"
+ }
+}

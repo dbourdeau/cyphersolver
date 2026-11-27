@@ -2,13 +2,13 @@
 
 1 soldiers [?]; now they are the first to murmur
 2 and lose hope that Your Majesty will provide for it.
-3 Since your letters of the [?] [?] of April I have heard nothing
+3 Since your letters of the [?] [?fifteenth] of April I have heard nothing
 4 of [?your] commands [?] and of the remedy [?that it] [?] pleases
 5 to give to it. I most humbly beg Your Majesty
 6 to send us word of his intention. The Rochelais have as
 7 their design to keep the sea always until a fleet stronger
 8 than theirs forces them to disarm, and for [?]
-9 [?] [?] [?] all their passports, [?so] that the
+9 [?effect] [?] [?] all their passports, [?so] that the
 10 sea captains have the means to keep themselves
 11 from all they can [?take by piracy].
 12 [?I was forgetting] to tell Your Majesty a thing [?] of very great
@@ -19,11 +19,11 @@
 17 benefit that [?could] be drawn from the salt, [?] tacitly [?] [?] this
 18 to the owners of the salt [?] [?] to [?] carry to La Rochelle, and to
 19 deprive us of all hope of being [?any more] relieved in future,
-20 because by this means the Rochelais establish the [?levy] [?of the] du-
+20 because by this means the Rochelais establish the levy of the du-
 21 -ty of passport in their town, and draw to themselves the merchants, both
 22 foreign and French, from which they will receive no little
-23 profit. [?] little means to make the [?] [?]. It will be
-24 very necessary for the service of Your Majesty and the good of [?your]
+23 profit. [?] little means to make war. It will be
+24 very necessary for the service of Your Majesty and the good of your
 25 [?affairs] that he himself in his council have this remedied, and
 26 considering the [?consequence] and the intrigues [?that] [?there] will be in this
 27 [?affair], to make [?] [?] the said permission, forbid-

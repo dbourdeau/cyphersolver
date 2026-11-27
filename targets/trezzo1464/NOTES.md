@@ -77,6 +77,8 @@ The labels in the transcriptions describe shapes; one label can cover more than 
 - f. 392 reads in fragments only - blocker: none outside; workable. The transcription labels lump shapes that the key
   distinguishes (`p`, `q`, `pz`, `o~`), so the key is noisy. Next pass: re-transcribe 283r-284r and 392 with a sign
   inventory drawn from the alignment (where one label aligns with two values, look at the shapes), re-run, re-decode.
+  Sign plate 2511 (25 Nov 2026, below) adds two labels to split: delta-u from delta-tilde (39 delta-tilde tokens on
+  283r-284r, 5 on f. 392, two of them seen as delta-u), and the "L with a caret" form at 392.10 #14.
 - The DECODE Trezzo key sheet (one of R5329-R5344) is untested - blocker: needs a DECODE login (the user's).
 - Cerioni 1970's Trezzo table is unopened - blocker: print, not online.
 - The short cipher run on 284r.10-11 (translated "deposicione ha facta el cancelliere de miss. [?] Caldora") is not in
@@ -91,3 +93,43 @@ The labels in the transcriptions describe shapes; one label can cover more than 
 - [x] print: no printed volume of the *Dispacci* for 1464 (vetting of 11 Nov 2026 and this session)
 - [x] key-rebuild: soft-EM alignment of the whole sibling letter against its translation (key_full_v1.json)
 - [ ] retry: re-transcription with finer sign distinctions, then re-alignment
+
+## Sign plate 2511 (Brice Dudout, 25 Nov 2026, PR #994)
+
+Files: `dudout/` (`READING-2511.md`, `c392-planche-2511.patch`, `sign_check_2511/`, `SHA256SUMS-2511`). No image is
+committed. Credit for the key and the transcriptions stays with arya1515 (Arya Sanketbhai Patel, #648).
+
+A blind shape plate made from Gallica view 393 (f. 392), with options cut from view 393 and f. 283r (view 284): for each
+boxed sign Brice Dudout chose the closest shape, with no value or reading shown. The ten targets are places where
+`c392.txt` and the contributor's own transcription (not in the repository) differ and the shape decides a word, so this
+is a diagnostic, not a sample. The rule (`REGLE-SELECTION.md`, English `RULE-2511.md`) and the frames
+(`scripts/items.json`) were hashed before the vignettes and the answers (sha256 5e54bd8f..., items e14ddd83...; date
+line 25 Nov 2026 22:38 CET, 12 minutes before the answers' export). Rule and answers are in one commit, so the order
+rests on the contributor's record and that date line.
+
+- **Controls** 3 of 3 (392.11 #1 t, 392.11 #7 oto, 392.13 #19 qa).
+- **As in c392 (7):** p7 at 392.06 #26 and 392.07 #15 (kept apart from pz); hr at 392.10 #27 and 392.13 #21; 4e at
+  392.04 #3 and 392.06 #20; long r at 392.10 #20.
+- **Corrected (2):** delta-u, not delta-tilde, at 392.07 #10 and 392.09 #14. delta-u aligns with "on", delta-tilde
+  with "or", so the delta-tilde label lumps two shapes.
+- **Unresolved (1):** 392.10 #14 was answered "none / other shape" with no remark. c392's L^a there is doubtful.
+- **Recorded** as `outcome.sign_check` (10 targets, controls 3 of 3) and a solution step of 25 Nov 2026. Model roles not
+  stated by the contributor; recorded from the files (the PR is signed "Brice Dudout (with Claude)", so all five roles
+  are listed).
+- **Not applied:** `c392-planche-2511.patch` (392.07 #10 and 392.09 #14 delta-tilde -> delta-u; 392.10 #14
+  L^a -> L^a?). `c392.txt` is arya1515's transcription and is unchanged.
+- **Fragments of f. 392:** with the key's top values and h = qu where the next signs spell quest-/quell-, five new
+  fragments, all {probable} because they rest on sense: electione, questo, (c)ontent-, quelle, quella. With the 8 of
+  "Results" that makes 13, of roughly 120 words. Confirmed: restitucione, desiderio essere, -creto. No sentence holds:
+  f. 392 stays **decoded, not read**; class and method unchanged.
+
+Corrections to the contributor's files (made here, not in his files):
+1. T10: the description "an L with a caret above" (in `results.tsv`, `READING-2511.md` and the PR text) is the model's
+   look at the image, not the reader's: the reader answered "none / other shape" with no remark.
+2. The hashed rule numbers places on the contributor's own transcription; `RULE-2511.md` and `READING-2511.md` call them
+   c392 places. They agree except on line 13: in `c392.txt` the `hr` asked as T3 is 392.13 #21 (#20 is `h`), and the
+   control `qa` is #19, not #18.
+3. `READING-2511.md`, "the other δ~ of c392 (5 on f. 392 ...)": c392 has 5 δ~ on f. 392 in all, including the two
+   seen as δ^u, so 3 others.
+
+Not checked by the project: the boxed signs against the Gallica views, and the contributor's own transcription.

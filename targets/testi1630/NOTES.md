@@ -250,6 +250,9 @@ could divide the words worked through this leaf. Whose they are, and whether oth
 
 We do not claim that any of this reading is new. Nothing found shows these letters printed, and nothing shows they are not.
 
+Superseded on 17 Nov 2026 for the seven 1630 letters: they are printed in clear by Parenti (1842-43) and Doglio (1967); see
+"Prior art found in print" at the end. The list below is the search of 3 Nov as it stood.
+
 - Collision: no target folder and no commit naming these documents in origin/main of the cyphersolver clone, rechecked at head
   47a53b8a2 on 3 Nov. The catalogue entry came from the Estense sweep merged on 29 Oct.
 - Maria Luisa Doglio's edition exists: Fulvio Testi, *Lettere*, 3 vols (1609-33, 1634-37, 1638-46), Bari, Laterza, 1967, Scrittori
@@ -297,23 +300,22 @@ every transcription and was not done. Nothing remains unexplained.
 
 ## Remaining gaps
 
-- Rest of c. 13r, c. 13v and the cipher of c. 14r - blocker: not-attempted; the images are good and c. 15 covers them, so this is a transcription job.
+- Rest of c. 13r, c. 13v and the cipher of c. 14r - blocker: not-attempted; workable: the images are good, the later clear copy c. 15 covers them, and the whole letter is printed as Doglio no. 210 (Parenti 1843), so this is a transcription job with two outside texts to check it against.
 - c. 53 (22 Jul 1634, to Forni) - blocker: no-key-material; a separate key; annealing on a rough copy gave no Italian; a full-resolution copy is the next step.
 - c. 54 and c. 72 (1634, 1636, Forni) - blocker: not-attempted; they may share the c. 53 table.
 - c. 4 and cc. 5-6 (1642, 1647, Ottonelli) - blocker: not-attempted; digits and letters, not this system by eye.
-- c. 7r l. 14 `[?compiamo]` - blocker: too-short; signs certain, sense not; a slip for compatiamo or compiagniamo would fit; neither is adopted.
-- c. 9v l. 8 `[?roliet]` - blocker: too-short; signs certain; perhaps a name followed by et; neither c. 15 nor c. 22 mentions it.
-- c. 16v l. 2 `[?coni]` and c. 74r `[?prometterci]` - blocker: too-short; each occurs once; signs read, sense not settled.
+- c. 7r l. 14 `[?compiamo]`, c. 9v l. 8 `[?roliet]`, c. 16v l. 2 `[?coni]` and the clear `[?Inviato predetto]` (c. 16v) - blocker: not-attempted; settled by the print found on 17 Nov, after the reading: Doglio has compiangiamo, "Roli et", così and all'Interprete (`dudout/README.md`). The reading files are not changed (the print was not used for the reading), so the marks stay; adopting the four words would make them read from existing decipherment, to be decided at the write-up.
+- c. 74r `[?prometterci]` - blocker: too-short; occurs once; signs read, sense not settled; the 1636 letter is not in Doglio and Parenti was not opened.
 - c. 16v: whose son is meant depends on the doubtful clear word before "la speranza" - blocker: not-attempted; needs a palaeographer on the clear hand.
 - "Sua Eccellenza" (c. 11r), Carnevale (c. 23r), Genuino (c. 9r), S. M. (c. 74r) not identified - blocker: not-attempted; a historian's question.
-- Clear passages are a first transcription, especially `[?Feudo]` (c. 9r), `[?Inviato predetto]` (c. 16v) and the place names of c. 73r - blocker: not-attempted.
+- Clear passages are a first transcription, especially `[?Feudo]` (c. 9r; "del fune" in the Doglio OCR, not checked on the printed page), "viene registrata publicamente" (c. 9r; Doglio's OCR has "se ne ragiona publicamente") and the place names of c. 73r - blocker: not-attempted.
 
 ## Escalation
 
 - [x] siblings: all 13 letters of the entry located; neighbouring leaves of Lettera T opened (list above); the 1636 letter tested against the 1630 key and read
 - [x] clear-pages: c. 15 and c. 22 are later clear copies, used for the held-out test and for the key
 - [x] known-keys: c. 53 has other shapes, so this key does not apply to it; a grep of the repository's target notes found no Modenese key of this period; the Modena and Reggio cipher papers were not seen
-- [x] print: searched and not settled; Doglio, Raviola, the 1843 Memorie and the Reggio inventory were not opened (see Prior art)
+- [x] print: Doglio, *Lettere* vol. 1 (1967) opened on 17 Nov 2026 by Brice Dudout's side (Internet Archive OCR): the seven 1630 letters are printed in clear (nos. 205-207, 210, 211, 213, 216, from Parenti 1842-43), agreeing with the decryptions on 93.2-99.7% of cipher letters in order; the 1636 letter is not in Doglio. Not opened: Parenti 1842-43 itself, Raviola 2014, the Reggio inventory
 - [n/a] key-rebuild: every one of the 20 values is in use and the table is complete; c. 53 needs a new copy, not a rebuild
 - [x] retry: the doubtful words were rechecked on enlarged crops; each stays doubtful in sense
 
@@ -351,3 +353,24 @@ from info.json, not the manifest.
 `key.tsv`; `transcription_<doc>.txt`, `decryption_<doc>.txt`, `reading_<doc>.md`, `translation_<doc>.md` for cc07r, cc09, cc11r, cc16, cc20,
 cc23r, cc73-74 and cc13r lines 1-8; `retranscription_log.tsv`, `retranscription_log_1636.tsv`, `retranscription_log_c7r.tsv`; `VERIFY.md`,
 `FINAL_VERIFY.md`, the independent checks, unchanged; `scripts/`. The images and working files are not in this folder.
+
+## Prior art found in print (Brice Dudout, 17 Nov 2026)
+
+All seven 1630 letters read here are printed in clear, cipher passages included, in M. Parenti's *Lettere inedite di Fulvio
+Testi* (*Memorie di religione, di morale e di letteratura*, ser. II, XIII, 1842, and XV, 1843) and again in M. L. Doglio's
+edition, *Lettere*, vol. 1 (Laterza 1967), nos. 205-207, 210, 211, 213 and 216, which is online with OCR at the Internet Archive
+(236TestiLettere1Si254). The decryptions agree with the printed letters on 93-99.7% of cipher letters, against 23-61% for the
+best wrong letter. So for c. 7r, cc. 9, c. 11r, c. 13r (the whole letter, no. 210), cc. 16, cc. 20 and c. 23r the reading is
+existing at edition level. The print settles [?compiamo] (compiangiamo), [?roliet] (Roli et), [?coni] (così) and the clear
+[?Inviato predetto] (all'Interprete). The 1636 letter and the Forni and Ottonelli letters are not in Doglio. Details, table and
+script: `dudout/README.md`, `dudout/compare_doglio.py`, `dudout/doglio_comparison.tsv`.
+
+Integration check of PR #752 (27 Nov 2026, AI agent for the maintainers): the vol. 1 OCR from the Internet Archive has the
+SHA-256 quoted in the script, and `compare_doglio.py` gives `doglio_comparison.tsv` line for line (93.2-99.7% of cipher letters
+in order, 23.1-60.7% for the best wrong letter). How it is recorded:
+- The print is prior art found after the reading, not a crib: `prior_solution.found` = after reading, `used` = false (nothing
+  in WAINUT's readings was taken from it). The method stays "key recovered based on adjacent plaintext" (key from c. 22).
+- `first_break` is false for the seven 1630 letters. cc. 73-74 (1636) stays apart: it is not in Doglio and Parenti was not
+  opened, so whether it was ever printed is not known.
+- The class does not change through this pull request; it follows the sure-word counts, settled at the write-up.
+- Not checked: Parenti itself, and the two clear-text doubts on the printed page (only the OCR was compared).

@@ -1,0 +1,5 @@
+# ADDENDUM 1 to PREREG (17 Nov 2026), written after both blind passes, before any decode of the portion
+1. Portion reached by the rule: 505L (15 tokens) + 505R (209) + 501R (91) = 315 tokens >= 300; 437R and 481L are NOT in the portion (transcribed by both readers, never decoded, not burned).
+2. Token agreement A/B on the portion: 505L 15/15, 505R 205/209, 501R 91/91 (sign-for-sign after dropping '~'). Four token and four gloss differences adjudicated on the image: ADJUDICATION.tsv.
+3. Gloss-run rule (both readers split runs where they thought a gloss started or stopped, and left many tokens under a long gloss marked '-'): FINAL.tsv takes pass A's rows with the adjudications, and every '-' row is joined to the preceding glossed row of the same page (to the following one if none precedes). So every token of the three pages enters P and every gloss enters R; a token that truly has no gloss now costs the score (conservative). Applied mechanically by build_final.py.
+4. Scores of pass A alone and pass B alone (same join rule, no adjudication) are reported, not decisive.

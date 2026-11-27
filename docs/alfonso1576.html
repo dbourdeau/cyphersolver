@@ -76,14 +76,15 @@
   <dt>How it was deciphered</dt><dd>A quadgram search on period Italian with no crib; 8 of 10 restarts reached the same solution. No decipherment stands on the leaves.</dd>
   <dt>What it says</dt><dd>The duke tells his agent how to handle a man who fears stricter proceedings: he was never in Este pay, Ferrara cannot shelter him, and he is to get fifty scudi. A second hand turns to oils and almonds, a Roman complaint and the prisoners of Rovigo.</dd>
   <dt>Still open</dt><dd>&ldquo;Read&rdquo; rests on three words of margin: 706 of 740 words (95.4%) have no restored or changed letter, against a bar of 703. No human palaeographer checked it: AI agents transcribed and read the letter from the images, and an independent AI verifier checked a sample of the signs (VERIFY.md).</dd>
-  <dt>Credit</dt><dd>WAINUT (an AI company) transcribed the signs, broke the key and read the letter with AI agents viewing the images.</dd>
+  <dt>Credit</dt><dd>WAINUT transcribed the signs, broke the key and read the letter with AI language-model agents viewing the images.</dd>
 </dl>
 </div>
 
 <h2 id="the-cipher"><span class="num">01</span> The cipher</h2>
+<figure data-credit="Biblioteca Estense Universitaria, Modena, Autografoteca Campori, Lettera E, Este (d&rsquo;), Alfonso II d&rsquo;Este, c. 76r (lines 1-5), via the Lodovico Media Library (CC BY-NC-SA)"><img src="alfonso1576_lead.jpg" alt="The first five lines of c. 76r: the clear salutation, then unbroken lines of cipher in Latin letter forms" loading="lazy"><figcaption>The opening of c. 76r: the salutation <i>R.do Mons.r nostro Car.mo</i> in clear, then the cipher. With the nulls dropped, the first line gives <i>vedessimo quanto ci scriveste con la lettera vo-</i>, the start of &ldquo;we saw what you wrote to us in your letter&rdquo;.</figcaption></figure>
 <figure class="creveal" data-src="reveal/alfonso1576.json"></figure>
 <p>The sign alphabet is Latin letter forms in a secretary hand, so the cipher looks like nonsense Latin script. The first hand runs to c. 77r line 6 with nulls on 8.4% of signs; the second takes over at line 7 and writes the postscript with nulls on 1.2%, dropping or shortening letters. The table runs in blocks: a&ndash;d map to z u t s, e&ndash;h to a b c d, and q&ndash;t to e f g h.</p>
-<p>The first version of the transcription wrote one shape for cipher <em>q</em> and cipher <em>g</em>. That was wrong: the hand writes two signs, a looped-tail <em>g</em> (= <em>s</em>) and a straight-tailed <em>q</em> (= <em>m</em>). All 339 such signs were re-read by tail on enlarged crops, in order, before any comparison with values given by sense, so no value in the decryption is chosen by sense.</p>
+<p>The first version of the transcription wrote one shape for cipher <em>q</em> and cipher <em>g</em>. That was wrong: the hand writes two signs, a looped-tail <em>g</em> (= <em>s</em>) and a straight-tailed <em>q</em> (= <em>m</em>). All 339 such signs were re-read by tail on enlarged crops, in order, before any comparison with values given by sense, so no value in the decryption is chosen by sense. The reader already knew the decryption, so this pass was not language-blind; an independent sealed test agreed on 54 of 54 signs (37 on lines the verifier chose, 17 on others). One tail, the first sign of <em>mostrare</em> at c. 77r line 9, is a clear loop and goes against sense; it is marked in the reading.</p>
 
 <h2 id="the-reading"><span class="num">02</span> The reading</h2>
 <p>Of 740 words, 737 (99.6%) read as sense, and 706 (95.4%) have no restored or changed letter. The first hand gives 535 of 557 (96.1%) and the second hand with the postscript 171 of 183 (93.4%). The contributor offers to call it a partial reading if more margin than three words is wanted. The key was tested on its own split, which was not set up in advance: &minus;10.17 per letter against a best of &minus;13.38 for 200 shuffled tables, reproduced at &minus;10.18 against &minus;13.56 for 500. The standard validator was not run. The Italian and an English translation are under Full texts.</p>
@@ -480,18 +481,18 @@ Left as written and marked: [?puntino], where punto would fit but the signs have
 <!-- replay:end -->
 <h2 id="sources"><span class="num">04</span> Sources</h2>
 <ul>
-<li>Biblioteca Estense Universitaria, Modena, Autografoteca Campori, Lettera E, cc. 76&ndash;77 (IIIF; CC BY-NC-SA; images not reproduced).</li>
+<li>Biblioteca Estense Universitaria, Modena, Autografoteca Campori, Lettera E, cc. 76&ndash;77, via the Lodovico Media Library (IIIF manifest <code>edl-jarvis.cultura.gov.it/meta/iiif/898fdfe5-96b1-4b6f-bdc2-a71cd72af1f6/manifest</code>; CC BY-NC-SA). The crop in section 01 is from c. 76r.</li>
 </ul>
 <p class="muted">Working files: <a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/alfonso1576">targets/alfonso1576/</a> in the repository.</p>
 <!-- cite:start -->
 <details class="cite" id="cite"><summary>Cite this page</summary>
-<p class="citetext">WAINUT, Brice Dudout and Daniel Bourdeau, “Alfonso II d’Este to his agent at Venice, 14 April 1576”, Cyphersolver, posted 4 November 2026, updated 7 November 2026, repository commit b66f6b2dee, https://cyphersolver.com/alfonso1576.html.</p>
-<p class="citebtns"><button type="button" data-copy="WAINUT, Brice Dudout and Daniel Bourdeau, “Alfonso II d’Este to his agent at Venice, 14 April 1576”, Cyphersolver, posted 4 November 2026, updated 7 November 2026, repository commit b66f6b2dee, https://cyphersolver.com/alfonso1576.html.">Copy citation</button><button type="button" data-copy="@misc{cyphersolver-alfonso1576,
+<p class="citetext">WAINUT, Brice Dudout and Daniel Bourdeau, “Alfonso II d’Este to his agent at Venice, 14 April 1576”, Cyphersolver, posted 4 November 2026, updated 7 November 2026, repository commit d03586e435, https://cyphersolver.com/alfonso1576.html.</p>
+<p class="citebtns"><button type="button" data-copy="WAINUT, Brice Dudout and Daniel Bourdeau, “Alfonso II d’Este to his agent at Venice, 14 April 1576”, Cyphersolver, posted 4 November 2026, updated 7 November 2026, repository commit d03586e435, https://cyphersolver.com/alfonso1576.html.">Copy citation</button><button type="button" data-copy="@misc{cyphersolver-alfonso1576,
   author = {WAINUT and Brice Dudout and Daniel Bourdeau},
   title = {Alfonso II d’Este to his agent at Venice, 14 April 1576},
   year = {2026},
   howpublished = {Cyphersolver},
-  note = {posted 4 November 2026, updated 7 November 2026, repository commit b66f6b2dee},
+  note = {posted 4 November 2026, updated 7 November 2026, repository commit d03586e435},
   url = {https://cyphersolver.com/alfonso1576.html}
 }">Copy BibTeX</button></p>
 </details>

@@ -1,0 +1,694 @@
+{
+ "_about": "Values that the alignment of the two system A letters of catalogue 1616 (6 Mar 1764, 101R-102L; 15 Nov 1765, 124R-126) with their decipherments of the time imposes on key_c01. key_c01.json (SHA-256 3fcecea8...) is not changed: this file is read beside it by scripts/strict_align.py. Rule (scripts/local_fit.py, then by hand): the group has no value in key_c01, or its key_c01 value equals its witness letters nowhere in the two letters; it occurs at least twice; one and the same value makes it take exactly those letters at every occurrence when each occurrence is re-aligned between the nearest groups that key_c01 gives exactly; the value lowers the alignment cost; the alphabetical place in the one-part code is noted. Values from one occurrence only are not added (they change no count). Not added although fitted: 259 (entre: fits both 6 Mar places and the alphabetical place, but key_c01's 'ond' comes from letter 96 and key_c02 of PR #759 keeps it), 279 (fai: fits both 15 Nov places, but key_c02 keeps 'e'), 488 (on / ont: the three places disagree), 546 (que: 'manqueroit' at 101R.07 wants 'quer'). Words that rest on these values are counted apart from the words key_c01 gives (sure_add in scripts/strict_align.py). Compared afterwards with key_c02 (PR #759, open, not merged; built by another alignment of four letters): 37 of these 38 values are the same; key_c02 has no value for 592.",
+ "values": {
+  "108": {
+   "value": "a",
+   "key_c01": null,
+   "kind": "new",
+   "occurrences": 2,
+   "where": [
+    "1764-03-06 101R.10",
+    "1765-11-15 125L.08"
+   ],
+   "letters": [
+    "1764-03-06",
+    "1765-11-15"
+   ],
+   "window_cost_gain": 0.65,
+   "alphabetical_place": "fits between its valued neighbours",
+   "key_c02_PR759": "a"
+  },
+  "110": {
+   "value": "ad",
+   "key_c01": null,
+   "kind": "new",
+   "occurrences": 2,
+   "where": [
+    "1764-03-06 101R.15",
+    "1765-11-15 124R.11"
+   ],
+   "letters": [
+    "1764-03-06",
+    "1765-11-15"
+   ],
+   "window_cost_gain": 1.65,
+   "alphabetical_place": "fits between its valued neighbours",
+   "key_c02_PR759": "ad"
+  },
+  "114": {
+   "value": "affaire",
+   "key_c01": "saff",
+   "kind": "replaces key_c01 value",
+   "occurrences": 3,
+   "where": [
+    "1764-03-06 102L.01",
+    "1764-03-06 102L.08",
+    "1765-11-15 125L.10"
+   ],
+   "letters": [
+    "1764-03-06",
+    "1765-11-15"
+   ],
+   "window_cost_gain": 15.8,
+   "alphabetical_place": "fits between its valued neighbours",
+   "key_c02_PR759": "affaire",
+   "note": "key_c01 'saff' is a mis-cut: affaire+s at 102L.01 and 102L.08 ('affaires'), 'une affaire' at 125L.10"
+  },
+  "115": {
+   "value": "ag",
+   "key_c01": null,
+   "kind": "new",
+   "occurrences": 3,
+   "where": [
+    "1765-11-15 125L.05",
+    "1765-11-15 125L.08",
+    "1765-11-15 125R.05"
+   ],
+   "letters": [
+    "1765-11-15"
+   ],
+   "window_cost_gain": 2.5,
+   "alphabetical_place": "fits between its valued neighbours",
+   "key_c02_PR759": "ag"
+  },
+  "179": {
+   "value": "cette",
+   "key_c01": "qu",
+   "kind": "replaces key_c01 value",
+   "occurrences": 2,
+   "where": [
+    "1764-03-06 102L.05",
+    "1765-11-15 126.12"
+   ],
+   "letters": [
+    "1764-03-06",
+    "1765-11-15"
+   ],
+   "window_cost_gain": 8.8,
+   "alphabetical_place": "fits between its valued neighbours",
+   "key_c02_PR759": "cette",
+   "note": "key_c01 'qu' never matches here; 102L.05 'cette', 126.12 'cette Princesse'"
+  },
+  "181": {
+   "value": "com",
+   "key_c01": null,
+   "kind": "new",
+   "occurrences": 2,
+   "where": [
+    "1765-11-15 125R.08",
+    "1765-11-15 125R.16"
+   ],
+   "letters": [
+    "1765-11-15"
+   ],
+   "window_cost_gain": 2.1,
+   "alphabetical_place": "just before 182 = co; 'com' after 'co' would be strict order (a small inversion, like 178 ce / 179 cette after 177 cu)",
+   "key_c02_PR759": "com"
+  },
+  "183": {
+   "value": "com",
+   "key_c01": "con",
+   "kind": "replaces key_c01 value",
+   "occurrences": 5,
+   "where": [
+    "1764-03-06 101R.04",
+    "1764-03-06 102L.08",
+    "1764-03-06 102L.17",
+    "1765-11-15 125L.07",
+    "1765-11-15 125L.10"
+   ],
+   "letters": [
+    "1764-03-06",
+    "1765-11-15"
+   ],
+   "window_cost_gain": 7.5,
+   "alphabetical_place": "fits between its valued neighbours",
+   "key_c02_PR759": "com",
+   "note": "key_c01 'con' (184 = con) never matches here: com- at all five places (commencat, comme, comment, compromettre, comme)"
+  },
+  "187": {
+   "value": "contr",
+   "key_c01": null,
+   "kind": "new",
+   "occurrences": 2,
+   "where": [
+    "1765-11-15 124R.12",
+    "1765-11-15 126.11"
+   ],
+   "letters": [
+    "1765-11-15"
+   ],
+   "window_cost_gain": 2.7,
+   "alphabetical_place": "fits between its valued neighbours",
+   "key_c02_PR759": "contr"
+  },
+  "190": {
+   "value": "cour",
+   "key_c01": null,
+   "kind": "new",
+   "occurrences": 5,
+   "where": [
+    "1764-03-06 101R.10",
+    "1764-03-06 101R.14",
+    "1764-03-06 102L.10",
+    "1765-11-15 125L.09",
+    "1765-11-15 125L.14"
+   ],
+   "letters": [
+    "1764-03-06",
+    "1765-11-15"
+   ],
+   "window_cost_gain": 1.6,
+   "alphabetical_place": "fits between its valued neighbours",
+   "key_c02_PR759": "cour"
+  },
+  "215": {
+   "value": "dans",
+   "key_c01": "en",
+   "kind": "replaces key_c01 value",
+   "occurrences": 2,
+   "where": [
+    "1764-03-06 101R.11",
+    "1765-11-15 124R.08"
+   ],
+   "letters": [
+    "1764-03-06",
+    "1765-11-15"
+   ],
+   "window_cost_gain": 7.0,
+   "alphabetical_place": "fits between its valued neighbours",
+   "key_c02_PR759": "dans",
+   "note": "key_c01 'en' never matches here: both witnesses read 'dans' (changement dans la forme; dans mes precedentes); alphabetical place between 214 da and 218 de"
+  },
+  "241": {
+   "value": "e",
+   "key_c01": null,
+   "kind": "new",
+   "occurrences": 2,
+   "where": [
+    "1765-11-15 124R.13",
+    "1765-11-15 125L.06"
+   ],
+   "letters": [
+    "1765-11-15"
+   ],
+   "window_cost_gain": 1.5,
+   "alphabetical_place": "fits between its valued neighbours",
+   "key_c02_PR759": "e"
+  },
+  "244": {
+   "value": "e",
+   "key_c01": null,
+   "kind": "new",
+   "occurrences": 3,
+   "where": [
+    "1764-03-06 101R.03",
+    "1765-11-15 125L.07",
+    "1765-11-15 125L.13"
+   ],
+   "letters": [
+    "1764-03-06",
+    "1765-11-15"
+   ],
+   "window_cost_gain": 2.25,
+   "alphabetical_place": "fits between its valued neighbours",
+   "key_c02_PR759": "e"
+  },
+  "247": {
+   "value": "ec",
+   "key_c01": null,
+   "kind": "new",
+   "occurrences": 2,
+   "where": [
+    "1764-03-06 102L.12",
+    "1765-11-15 124R.08"
+   ],
+   "letters": [
+    "1764-03-06",
+    "1765-11-15"
+   ],
+   "window_cost_gain": 1.8,
+   "alphabetical_place": "fits between its valued neighbours",
+   "key_c02_PR759": "ec"
+  },
+  "258": {
+   "value": "ent",
+   "key_c01": null,
+   "kind": "new",
+   "occurrences": 3,
+   "where": [
+    "1764-03-06 102L.01",
+    "1764-03-06 102L.06",
+    "1765-11-15 124R.14"
+   ],
+   "letters": [
+    "1764-03-06",
+    "1765-11-15"
+   ],
+   "window_cost_gain": 3.15,
+   "alphabetical_place": "fits between its valued neighbours",
+   "key_c02_PR759": "ent"
+  },
+  "305": {
+   "value": "ge",
+   "key_c01": null,
+   "kind": "new",
+   "occurrences": 6,
+   "where": [
+    "1764-03-06 101R.11",
+    "1764-03-06 102L.09",
+    "1764-03-06 102L.15",
+    "1765-11-15 124R.10",
+    "1765-11-15 125L.01",
+    "1765-11-15 125L.10"
+   ],
+   "letters": [
+    "1764-03-06",
+    "1765-11-15"
+   ],
+   "window_cost_gain": 5.25,
+   "alphabetical_place": "fits between its valued neighbours",
+   "key_c02_PR759": "ge"
+  },
+  "341": {
+   "value": "hon",
+   "key_c01": null,
+   "kind": "new",
+   "occurrences": 2,
+   "where": [
+    "1765-11-15 124R.07",
+    "1765-11-15 126.07"
+   ],
+   "letters": [
+    "1765-11-15"
+   ],
+   "window_cost_gain": 1.95,
+   "alphabetical_place": "fits between its valued neighbours",
+   "key_c02_PR759": "hon"
+  },
+  "365": {
+   "value": "int",
+   "key_c01": null,
+   "kind": "new",
+   "occurrences": 5,
+   "where": [
+    "1764-03-06 102L.04",
+    "1764-03-06 102L.10",
+    "1764-03-06 102L.15",
+    "1765-11-15 125L.13",
+    "1765-11-15 125R.11"
+   ],
+   "letters": [
+    "1764-03-06",
+    "1765-11-15"
+   ],
+   "window_cost_gain": 1.45,
+   "alphabetical_place": "after 361 = in, before 367 = rets (of 'interets'): fits",
+   "key_c02_PR759": "int",
+   "note": "6 Mar l'introduction, point, interpretation; 15 Nov 125R.11 'Saint' (581 sa + 365 int; the gloss writes 'St'). The fifth place, 125L.13, is transcribed '365?': on the image (A0073297_00125, left page) the first digit is a 2 crossed by the scribe's stroke, i.e. 265 = et, as the gloss reads; the transcription is left as filed"
+  },
+  "372": {
+   "value": "ir",
+   "key_c01": "ita",
+   "kind": "replaces key_c01 value",
+   "occurrences": 6,
+   "where": [
+    "1764-03-06 101R.06",
+    "1764-03-06 101R.15",
+    "1764-03-06 102L.03",
+    "1764-03-06 102L.12",
+    "1764-03-06 102L.13",
+    "1765-11-15 125L.12"
+   ],
+   "letters": [
+    "1764-03-06",
+    "1765-11-15"
+   ],
+   "window_cost_gain": 14.85,
+   "alphabetical_place": "fits between its valued neighbours",
+   "key_c02_PR759": "ir",
+   "note": "key_c01 'ita' never matches here: 'ir' at all six places (entretenir, prevenir, desireroit, ...)"
+  },
+  "409": {
+   "value": "les",
+   "key_c01": "ac",
+   "kind": "replaces key_c01 value",
+   "occurrences": 2,
+   "where": [
+    "1765-11-15 124R.13",
+    "1765-11-15 126.11"
+   ],
+   "letters": [
+    "1765-11-15"
+   ],
+   "window_cost_gain": 7.0,
+   "alphabetical_place": "after 408 = lu and before 411 = ler; 403 = les is a homophone; 408 'lu' is the doubtful neighbour",
+   "key_c02_PR759": "les",
+   "note": "key_c01 'ac' never matches here: 'Les Suites' (124R.13), 'les vuës' (126.11)"
+  },
+  "425": {
+   "value": "man",
+   "key_c01": null,
+   "kind": "new",
+   "occurrences": 2,
+   "where": [
+    "1764-03-06 101R.07",
+    "1764-03-06 101R.08"
+   ],
+   "letters": [
+    "1764-03-06"
+   ],
+   "window_cost_gain": 2.1,
+   "alphabetical_place": "after 424 = me: 'man' would sit before 'me' in strict order",
+   "key_c02_PR759": "man"
+  },
+  "427": {
+   "value": "mais",
+   "key_c01": null,
+   "kind": "new",
+   "occurrences": 2,
+   "where": [
+    "1765-11-15 125L.07",
+    "1765-11-15 126.08"
+   ],
+   "letters": [
+    "1765-11-15"
+   ],
+   "window_cost_gain": 2.4,
+   "alphabetical_place": "after 424 = me and 426 = jeste (of 'majeste'): 'mais' would sit before them in strict order",
+   "key_c02_PR759": "mais"
+  },
+  "451": {
+   "value": "na",
+   "key_c01": null,
+   "kind": "new",
+   "occurrences": 2,
+   "where": [
+    "1764-03-06 101R.14",
+    "1765-11-15 126.08"
+   ],
+   "letters": [
+    "1764-03-06",
+    "1765-11-15"
+   ],
+   "window_cost_gain": 1.8,
+   "alphabetical_place": "fits between its valued neighbours",
+   "key_c02_PR759": "na"
+  },
+  "455": {
+   "value": "nu",
+   "key_c01": "nuiro",
+   "kind": "replaces key_c01 value",
+   "occurrences": 3,
+   "where": [
+    "1764-03-06 101R.02",
+    "1764-03-06 102L.06",
+    "1765-11-15 126.11"
+   ],
+   "letters": [
+    "1764-03-06",
+    "1765-11-15"
+   ],
+   "window_cost_gain": 12.85,
+   "alphabetical_place": "fits between its valued neighbours",
+   "key_c02_PR759": "nu",
+   "note": "key_c01 'nuiro' is a mis-cut: prevenû, continue, ..."
+  },
+  "464": {
+   "value": "non",
+   "key_c01": null,
+   "kind": "new",
+   "occurrences": 2,
+   "where": [
+    "1765-11-15 125L.02",
+    "1765-11-15 125L.06"
+   ],
+   "letters": [
+    "1765-11-15"
+   ],
+   "window_cost_gain": 2.1,
+   "alphabetical_place": "after 455 = nu: 'non' would sit before 'nu' in strict order",
+   "key_c02_PR759": "non"
+  },
+  "465": {
+   "value": "nord",
+   "key_c01": null,
+   "kind": "new",
+   "occurrences": 2,
+   "where": [
+    "1765-11-15 125L.12",
+    "1765-11-15 126.11"
+   ],
+   "letters": [
+    "1765-11-15"
+   ],
+   "window_cost_gain": 2.4,
+   "alphabetical_place": "fits between its valued neighbours",
+   "key_c02_PR759": "nord"
+  },
+  "472": {
+   "value": "nt",
+   "key_c01": null,
+   "kind": "new",
+   "occurrences": 6,
+   "where": [
+    "1764-03-06 101R.06",
+    "1764-03-06 102L.14",
+    "1765-11-15 125L.01",
+    "1765-11-15 125L.10",
+    "1765-11-15 125R.04",
+    "1765-11-15 126.08"
+   ],
+   "letters": [
+    "1764-03-06",
+    "1765-11-15"
+   ],
+   "window_cost_gain": 4.95,
+   "alphabetical_place": "fits between its valued neighbours",
+   "key_c02_PR759": "nt"
+  },
+  "489": {
+   "value": "op",
+   "key_c01": null,
+   "kind": "new",
+   "occurrences": 2,
+   "where": [
+    "1765-11-15 124R.11",
+    "1765-11-15 125L.09"
+   ],
+   "letters": [
+    "1765-11-15"
+   ],
+   "window_cost_gain": 1.8,
+   "alphabetical_place": "fits between its valued neighbours",
+   "key_c02_PR759": "op"
+  },
+  "507": {
+   "value": "po",
+   "key_c01": null,
+   "kind": "new",
+   "occurrences": 11,
+   "where": [
+    "1764-03-06 102L.07",
+    "1764-03-06 102L.10",
+    "1765-11-15 124R.10",
+    "1765-11-15 124R.12",
+    "1765-11-15 124R.14",
+    "1765-11-15 125L.09",
+    "1765-11-15 125R.08",
+    "1765-11-15 125R.11",
+    "1765-11-15 126.07",
+    "1765-11-15 126.10",
+    "1765-11-15 126.12"
+   ],
+   "letters": [
+    "1764-03-06",
+    "1765-11-15"
+   ],
+   "window_cost_gain": 6.75,
+   "alphabetical_place": "fits between its valued neighbours",
+   "key_c02_PR759": "po"
+  },
+  "541": {
+   "value": "qui",
+   "key_c01": "ett",
+   "kind": "replaces key_c01 value",
+   "occurrences": 3,
+   "where": [
+    "1764-03-06 101R.14",
+    "1765-11-15 125L.14",
+    "1765-11-15 125R.02"
+   ],
+   "letters": [
+    "1764-03-06",
+    "1765-11-15"
+   ],
+   "window_cost_gain": 10.5,
+   "alphabetical_place": "before 545 = quel: 'qui' would sit after 'quel' in strict order",
+   "key_c02_PR759": "qui",
+   "note": "key_c01 'ett' never matches here: 'qui' at all three places"
+  },
+  "590": {
+   "value": "svede",
+   "key_c01": null,
+   "kind": "new",
+   "occurrences": 3,
+   "where": [
+    "1764-03-06 101R.15",
+    "1764-03-06 102L.05",
+    "1764-03-06 102L.08"
+   ],
+   "letters": [
+    "1764-03-06"
+   ],
+   "window_cost_gain": 1.5,
+   "alphabetical_place": "between 587 = ses and 591 = so; 'svede' would sit after 'su' in strict order",
+   "key_c02_PR759": "svede"
+  },
+  "592": {
+   "value": "soi",
+   "key_c01": null,
+   "kind": "new",
+   "occurrences": 2,
+   "where": [
+    "1764-03-06 101R.03",
+    "1764-03-06 102L.09"
+   ],
+   "letters": [
+    "1764-03-06"
+   ],
+   "window_cost_gain": 2.1,
+   "alphabetical_place": "fits between its valued neighbours",
+   "key_c02_PR759": null
+  },
+  "595": {
+   "value": "sur",
+   "key_c01": "uran",
+   "kind": "replaces key_c01 value",
+   "occurrences": 4,
+   "where": [
+    "1764-03-06 101R.05",
+    "1764-03-06 101R.12",
+    "1764-03-06 102L.05",
+    "1764-03-06 102L.08"
+   ],
+   "letters": [
+    "1764-03-06"
+   ],
+   "window_cost_gain": 9.15,
+   "alphabetical_place": "fits between its valued neighbours",
+   "key_c02_PR759": "sur",
+   "note": "key_c01 'uran' is a mis-cut: sur at all four places"
+  },
+  "602": {
+   "value": "ste",
+   "key_c01": null,
+   "kind": "new",
+   "occurrences": 3,
+   "where": [
+    "1765-11-15 125R.09",
+    "1765-11-15 126.10",
+    "1765-11-15 126.13"
+   ],
+   "letters": [
+    "1765-11-15"
+   ],
+   "window_cost_gain": 3.15,
+   "alphabetical_place": "fits between its valued neighbours",
+   "key_c02_PR759": "ste"
+  },
+  "614": {
+   "value": "ten",
+   "key_c01": null,
+   "kind": "new",
+   "occurrences": 3,
+   "where": [
+    "1765-11-15 125L.15",
+    "1765-11-15 125R.14",
+    "1765-11-15 126.10"
+   ],
+   "letters": [
+    "1765-11-15"
+   ],
+   "window_cost_gain": 3.15,
+   "alphabetical_place": "fits between its valued neighbours",
+   "key_c02_PR759": "ten"
+  },
+  "627": {
+   "value": "tra",
+   "key_c01": null,
+   "kind": "new",
+   "occurrences": 4,
+   "where": [
+    "1764-03-06 101R.14",
+    "1765-11-15 125L.11",
+    "1765-11-15 125L.12",
+    "1765-11-15 126.11"
+   ],
+   "letters": [
+    "1764-03-06",
+    "1765-11-15"
+   ],
+   "window_cost_gain": 2.15,
+   "alphabetical_place": "fits between its valued neighbours",
+   "key_c02_PR759": "tra"
+  },
+  "635": {
+   "value": "u",
+   "key_c01": null,
+   "kind": "new",
+   "occurrences": 2,
+   "where": [
+    "1764-03-06 101R.06",
+    "1765-11-15 124R.07"
+   ],
+   "letters": [
+    "1764-03-06",
+    "1765-11-15"
+   ],
+   "window_cost_gain": 1.5,
+   "alphabetical_place": "fits between its valued neighbours",
+   "key_c02_PR759": "u"
+  },
+  "644": {
+   "value": "ul",
+   "key_c01": null,
+   "kind": "new",
+   "occurrences": 2,
+   "where": [
+    "1765-11-15 125L.06",
+    "1765-11-15 125L.09"
+   ],
+   "letters": [
+    "1765-11-15"
+   ],
+   "window_cost_gain": 1.8,
+   "alphabetical_place": "fits between its valued neighbours",
+   "key_c02_PR759": "ul"
+  },
+  "647": {
+   "value": "une",
+   "key_c01": null,
+   "kind": "new",
+   "occurrences": 9,
+   "where": [
+    "1764-03-06 101R.05",
+    "1764-03-06 101R.14",
+    "1764-03-06 102L.02",
+    "1764-03-06 102L.13",
+    "1764-03-06 102L.15",
+    "1765-11-15 125L.02",
+    "1765-11-15 125L.08",
+    "1765-11-15 125L.09",
+    "1765-11-15 125R.09"
+   ],
+   "letters": [
+    "1764-03-06",
+    "1765-11-15"
+   ],
+   "window_cost_gain": 7.6,
+   "alphabetical_place": "fits between its valued neighbours",
+   "key_c02_PR759": "une"
+  }
+ }
+}

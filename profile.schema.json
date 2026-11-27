@@ -189,6 +189,7 @@
     "fraction_read_source": {"type": "string", "description": "File(s) and unit counted, e.g. 'reading.txt: cipher tokens, [..]/? counted unread'."},
     "codes_open": {"type": "object", "description": "Nomenclator/code groups still without a value, counted separately from fraction_read (field practice calls a letter deciphered with scattered code gaps).",
      "properties": {"open": {"type": "integer", "minimum": 0}, "total": {"type": "integer", "minimum": 0}, "tokens_open": {"type": "integer", "minimum": 0}}},
+    "fraction_read_unit": {"type": "string", "enum": ["tokens", "words"], "description": "What fraction_read counts: tokens (cipher signs or letters given a value; the default) or words (cipher words read as sure). The site chip names the unit, so a word share is not shown as a sign share (26 Nov 2026)."},
     "fraction_read": {"type": "number", "minimum": 0, "maximum": 1, "description": "Share of enciphered tokens given a value (unit: cipher tokens; see fraction_read_method)."},
     "fraction_coherent": {"type": "number", "minimum": 0, "maximum": 1, "description": "Share of the enciphered text whose reading makes sense, when it differs materially from fraction_read (e.g. a complete key over a noisy transcription)."},
     "grades": {"type": "object", "properties": {"H": {"type": "integer"}, "C": {"type": "integer"}, "M": {"type": "integer"}, "I": {"type": "integer"}},

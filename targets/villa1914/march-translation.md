@@ -1,0 +1,1 @@
+Regarding the Bauch matter, please state, if questioned, that the man was released in Ciudad Juárez and that his whereabouts are unknown. It is also advisable that his imprisonment and release be officially on record, in case of what might happen. Gen. Francisco Villa.

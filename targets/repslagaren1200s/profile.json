@@ -1,0 +1,122 @@
+{
+  "schema_version": 1,
+  "target": "repslagaren1200s",
+  "title": "The Repslagaren cattle bone, Lund (catalogue 3890)",
+  "documents": [
+    {
+      "id": "B",
+      "shelfmark": "Kulturen, KM 61277:331, face B",
+      "date": "13th century, archaeological context",
+      "year": "unknown",
+      "country": "Denmark (medieval Lund, Scania)",
+      "language": "unknown",
+      "cleartext_in_document": "none",
+      "plaintext": {
+        "location": [
+          "none"
+        ],
+        "source": "A has ordinary runes but no established sense."
+      },
+      "length": {
+        "tokens": 10,
+        "distinct": 10,
+        "unit": "symbols",
+        "measured": false
+      },
+      "transcription": {
+        "by": "mixed",
+        "source": "Jansson drawing in Nordby p. 289, Larsen photographs and Runor",
+        "image_quality": "good",
+        "notes": "Distinct whole shapes. Partial graphic identifications are published."
+      },
+      "read": "not read"
+    }
+  ],
+  "system": {
+    "types": [
+      "undetermined"
+    ],
+    "summary": "Branch counting and shared-staff runes are possible. The uniform paired count fails at B07.",
+    "symbol_kind": "symbols",
+    "distinct_symbols": 10,
+    "diacritics": {
+      "used": "unknown"
+    },
+    "homophones": {
+      "used": "unknown"
+    },
+    "nomenclator": {
+      "present": "unknown"
+    },
+    "nulls": {
+      "present": "unknown"
+    },
+    "key_order": "unknown"
+  },
+  "conditions": {
+    "prior_solution": {
+      "exists": "unknown",
+      "where": "No full reading located. See NOTES.md.",
+      "found": "not found",
+      "used": false
+    },
+    "inputs": [
+      "images",
+      "transcription",
+      "crib"
+    ],
+    "attack": "crib",
+    "human_role": "Selected catalogue 3890 and supplied the project brief.",
+    "models": [
+      "OpenAI Codex (GPT-6)"
+    ],
+    "tools": [
+      "PyMuPDF",
+      "Python",
+      "web search"
+    ]
+  },
+  "solution": [
+    {
+      "kind": "transcription",
+      "what": "Compared the two photographs with the drawing and aligned both ten-sign lines.",
+      "result": "worked"
+    },
+    {
+      "kind": "crib",
+      "technique": [
+        "repeat/pattern analysis"
+      ],
+      "what": "Tested direct and reversed whole-sign substitution against face A.",
+      "result": "ruled out"
+    },
+    {
+      "kind": "control",
+      "what": "Recovered synthetic ten-rune branch text among candidate sequences.",
+      "result": "worked"
+    },
+    {
+      "kind": "hypothesis",
+      "technique": [
+        "key-structure hypothesis"
+      ],
+      "what": "Tested uniform positive branch coordinates. B07 has one branch.",
+      "result": "ruled out"
+    }
+  ],
+  "outcome": {
+    "class": "not read",
+    "method": "not solved",
+    "method_basis": "No key recovered. The ten B positions have no established word.",
+    "verification": [
+      "none"
+    ],
+    "texts": [
+      {
+        "doc": "B",
+        "transcription": "transcription.tsv",
+        "note": "reading.txt records position placeholders only. No sentence reading or decryption is available."
+      }
+    ]
+  }
+}

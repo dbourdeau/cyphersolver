@@ -6,10 +6,11 @@ Status: read in part (key recovered from external plaintext: the ministry's clea
 plaintext from external sources"). Class: read in part. Key: partial. Owner's decision of 23 Nov 2026 on PR #884. The
 ministry's clear draft of the despatch survives in Paris (Archives diplomatiques, CP États-Unis vol. 48, ff. 41r-42r);
 Andrew Beling, with AI agents, found it, laid it on Brackx's 653 groups and built a partial table of the code
-(`beling2026/`). Read share 0.939 (27 holes; 444 cipher words by the contributor's script, 442 by our reviewer's count,
-415 of 442). Strict share 0.667: 296 of 444 words rest only on values confirmed by two or more agreeing uses; 121 words
-rest on at least one of the 148 single-use values and count as probable (`strict_share.py`). See "Integration of PR
-#884" and "Write-up steps, 24 Nov 2026" below.
+(`beling2026/`). Read share 0.948 since 25 Nov 2026 (23 holes; 444 cipher words by the contributor's script, 442 by our
+reviewer's count, 419 of 442), after Brice Dudout's look at four doubtful digits on the film (sign plate 2511, PR #990);
+0.939 and 27 holes before. Strict share 0.671: 298 of 444 words rest only on values confirmed by two or more agreeing
+uses; 123 words rest on at least one of the 148 single-use values and count as probable (`strict_share.py`). See
+"Integration of PR #884", "Write-up steps, 24 Nov 2026" and "Sign plate 2511" below.
 
 The sections from "What the numbers show" to "Second round" record the ciphertext-only attempt of 2 Nov 2026, which
 established no value: what they say about the meaning of groups is hypothesis, and most of it is now replaced by the
@@ -122,12 +123,13 @@ spot checked by the contributor; the CADN article is still unseen.)
 
 ## Remaining gaps
 
-27 words of the reading are holes (29 marked groups), and 121 more words are probable only.
+23 words of the reading are holes (25 marked groups), and 123 more words are probable only (since sign plate 2511,
+25 Nov 2026; 27 holes, 29 marked groups and 121 probable before).
 
-- 8 places where a digit change to Brackx's transcription is proposed (257 three times, 108, 808, 1024, 381, 327) - blocker: illegible; blotted or doubtful digits on the film, three blind AI readers each, only 898, 1034 and 527 supported by two or more; none applied until a person has looked at NARA M30 roll 4 frames 0244-0245
+- 4 places where a digit change to Brackx's transcription is still proposed (257 three times, 1024) - blocker: illegible; a person (Brice Dudout, sign plate 2511, controls 3 of 3) read 7 at all three 257 places, as Brackx wrote it, so they stay holes: the plate settles the shape, not the value, and "ai" for 257 is found only at these three places; token 413 was read 1084, which is not in the table, so the hole stays. The other four proposals (108, 808, 327, 381) were read by the same look and applied (see "Sign plate 2511")
 - 17 groups with an unsure (class C) value: 383, 496, 526, 571, 1122, 1126, 347 - blocker: no-key-material; each stands for different draft letters at different places, and only this one letter in the code is known
 - 4 groups whose table value differs from the draft's letters (175 ses/se, 855 pres/pre, 355 iez/es, once ez, 20 ay/ai) - blocker: no-key-material; the draft is the minute, not the copy that was enciphered, and the sent wording is not held
-- the 148 single-use values, on which 121 words of the reading rest - blocker: no-key-material; untested outside this letter, and no second text in this code is known: none on NARA frames 0236-0252, none among the targets, catalogue and leads searched again on 24 Nov 2026 (the only French diplomatic texts of these years there, `astrea1799`, Rozier to Talleyrand 1798, and catalogue 521, Rivals to Sieyès 1798, are not online), none in 39CP/48 (paged in full by the contributor); 39CP/47 was spot checked by the contributor only
+- the 148 single-use values, on which 123 words of the reading rest (121 before 25 Nov 2026) - blocker: no-key-material; untested outside this letter, and no second text in this code is known: none on NARA frames 0236-0252, none among the targets, catalogue and leads searched again on 24 Nov 2026 (the only French diplomatic texts of these years there, `astrea1799`, Rozier to Talleyrand 1798, and catalogue 521, Rivals to Sieyès 1798, are not online), none in 39CP/48 (paged in full by the contributor); 39CP/47 was spot checked by the contributor only
 - the received No. 5 or a deciphered copy in CADN 519PO/1 art. 1 - blocker: needs-physical-access; the article is not digitised as far as found
 
 Open lead, not an unread piece: 39CP/47 (January to June 1797, 938 images online) has not been paged in full for a text
@@ -138,18 +140,20 @@ accept, and that is the owner's to accept, not a session's ("Write-up steps" bel
 
 ## Transcription doubts
 
-The digits are Brackx's (`ciphertext.txt`), unchanged. The doubts below are the contributor's, each read blind on the
+The digits are Brackx's (`ciphertext.txt`), unchanged; since 25 Nov 2026 four of them carry a correction from a
+person's look on the film, kept as a separate layer in `ciphertext_corrections.tsv` (108 -> 100, 808 -> 898,
+327 -> 527, 381 -> 361; "Sign plate 2511" below). The doubts below are the contributor's, each read blind on the
 film (NARA M30 roll 4, frames 0244-0245) by three AI readers. Brackx's issue #122 lists several of the same places
 (808, 1024, 381, 108, 1105) among the readings he checked twice at full resolution when he transcribed; since then no
 person has looked at the film for them, and the project only at 300 and 1105 (below). Full list with the readers' answers: `beling2026/proposals/transcription_corrections.tsv` and
 `beling2026/README.md`, "Transcription doubts".
 
-- 808 (245 left, line 12, 8th group) - read: 898 with "80" written above (3 of 3 readers); checked: image, decode (898 = con four times; le-con); proposed, not applied
-- 1024 (245 left, line 13, 1st) - read: 1034 (2 of 3; the third 1084); checked: image, decode (1033, 1035 = e; pri-e); proposed, not applied
-- 327 (245 left, line 25, 8th) - read: 527 (2 of 3; the third 327); checked: image, decode (527 = d three times); proposed, not applied
-- 257 at three places where the text has "ai" (244 right line 11, 9th; line 17, 6th; 245 left line 15, 4th) - read: 257 by most readers; checked: image, decode; unresolved: the clerk wrote 257 for 251, or the code has something not understood
-- 108 (244 right, line 19, 1st) - read: 108 or 128, no reader 100; checked: image, decode; unresolved, the text wants "sur" (100)
-- 381 (245 left, line 25, 11th) - read: 381 (3 of 3, blotted); checked: image, decode; unresolved, the text wants "del" (361)
+- 808 (245 left, line 12, 8th group) - read: 898 with "80" written above (3 of 3 readers); checked: image, decode (898 = con four times; le-con); read 898 by a person (plate 2511); applied
+- 1024 (245 left, line 13, 1st) - read: 1034 (2 of 3; the third 1084); checked: image, decode (1033, 1035 = e; pri-e); read 1084 by a person (plate 2511), not in the table; unresolved, hole kept
+- 327 (245 left, line 25, 8th) - read: 527 (2 of 3; the third 327); checked: image, decode (527 = d three times); read 527 by a person (plate 2511); applied
+- 257 at three places where the text has "ai" (244 right line 11, 9th; line 17, 6th; 245 left line 15, 4th) - read: 257 by most readers, and 257 by a person at all three (plate 2511); checked: image, decode; unresolved: the clerk wrote 257 for 251, or the code has something not understood
+- 108 (244 right, line 19, 1st) - read: 108 or 128, no reader 100; read 100 by a person (plate 2511, both digits asked); checked: image, decode; applied (sur)
+- 381 (245 left, line 25, 11th) - read: 381 (3 of 3, blotted); read 361 by a person (plate 2511); checked: image, decode; applied (del)
 - 383 (244 right, line 7, 3rd) - read: 383 (one second choice 363); checked: image, decode; unresolved, the text wants "de la" (363)
 - 300 (244 right, line 5, 10th) and 1105 (245 left, line 20, 1st) - read: 300 or 308 (308 by two of the contributor's readers), and 1105, 1185 or 1195; checked: image, decode; seen in passing by the contributor; looked at again on the frames at twice their size on 24 Nov 2026 (an AI reading for the maintainers, not a person): the last digit of 300 has the same looped form as the last digit of 630 two groups on, and the third digit of 1105 is a filled loop over show-through; each number occurs once, so the decode gives the draft's letters (the l of fédéral; France) under any of these readings and cannot decide; unresolved, Brackx's digits kept
 
@@ -160,11 +164,11 @@ person has looked at the film for them, and the project only at 300 and 1105 (be
 - [x] known-keys: seven French numeric keys in the repo tried, all within chance; 24 Nov 2026, the table compared number by number with every key file under `targets/` (`key_compare.py`): the seven French keys agree on 0 of their 39 to 209 shared numbers, and no file of the 174 compared agrees on more than 3
 - [x] print: Turner 1904, web searches; Schnakenbourg 2026 paywalled; Nasatir and Monell not seen; 24 Nov 2026, four web searches on the draft's wording, on King's No. 53 and on the ministry's cipher: no printed or quoted text of No. 5 and no table
 - [x] key-rebuild: 2 Nov annealers and hand phrase matching gave no key; 21 Nov the contributor's table from the draft: 297 numbers, 136 confirmed by two or more uses
-- [x] retry: 24 Nov 2026, the table applied again to all 653 groups and compared with the reading by `docs/_replay.py` (`replay.py`): no difference that the reading leaves unmarked; every group already has a table value, so the 29 marked groups need a person on the film or a second text in the code, not another run
+- [x] retry: 24 Nov 2026, the table applied again to all 653 groups and compared with the reading by `docs/_replay.py` (`replay.py`): no difference that the reading leaves unmarked; every group already has a table value, so the 29 marked groups need a person on the film or a second text in the code, not another run; 25 Nov 2026, a person's look (sign plate 2511) settled four of them, and the replay rerun with those digits leaves 22 marked words and none unmarked
 
 ## Files
 
-`ciphertext.txt` (Brackx's transcription), `cribs.tsv` (unverified hypotheses of 2 Nov, superseded by the table),
+`ciphertext.txt` (Brackx's transcription), `ciphertext_corrections.tsv` (four digits read by a person on sign plate 2511, a layer over Brackx's), `dudout/` (Brice Dudout's sign plate 2511, PR #990), `cribs.tsv` (unverified hypotheses of 2 Nov, superseded by the table),
 `solver/` (scripts; the Turner text, model tables and logs are in the untracked local `.work/delacroix1797/`), `img/`
 (NARA frames 0243-0245, not to be committed), `beling2026/` (the contribution of PR #884: draft transcription,
 alignment, partial table, decryption, reading, translation, tests), `strict_share.py` (the strict share),
@@ -199,7 +203,7 @@ rest on the 148 single-use values count as probable, with a strict share beside 
   person's transcription (issue #122, where he lists the doubtful readings he checked twice); the draft was read only
   by AI agents (two readers and a third that merged them), and no person has read it; the eight digit proposals rest
   on the contributor's AI readers; no person has compared the reading with the film.
-- **Read share.** 27 words carry a mark: 0.939 (444 cipher words by `beling2026/scripts/make_reading.py`, 442 by our
+- **Read share** (at that date; 0.948 since 25 Nov 2026, "Sign plate 2511"). 27 words carry a mark: 0.939 (444 cipher words by `beling2026/scripts/make_reading.py`, 442 by our
   reviewer's count, 415 of 442). The reading is the draft laid on the groups, so this share is circular by design: it
   says how consistently the table gives the draft.
 - **Strict share** (`python strict_share.py`, same word division and marking rule as `make_reading.py`): 296 of 444
@@ -263,3 +267,38 @@ at the film or on a second text in this code, and no second text is known. One l
   transcription and Beling's draft transcription, table and decryption are not sent before they agree.
 - **Image.** The page's crop is cut from NARA frame 0244 (right page, heading and first five lines). No image of the
   Paris draft is used.
+
+## Sign plate 2511 (Brice Dudout, 25 Nov 2026, PR #990)
+
+The person's look at the film that the eight digit proposals waited for. Brice Dudout answered a blind shape plate
+made from NARA M30 roll 4 frames 0244 right and 0245 left (`dudout/sign_check_2511/`): each doubtful digit boxed on
+its line and enlarged, options cut from clear digits of the same hand, no reading, value or meaning shown, three
+hidden controls. The rule (`REGLE-SELECTION.md`, English `RULE-2511.md`, sha256 0bc3ef05...51ed58) was hashed before
+the vignettes and the answers, and says which outcomes are applied: only a change whose corrected group already
+carries the draft's letters in the table.
+
+- **Controls** 3 of 3. **Read:** 808 -> 898, 327 -> 527, 381 -> 361, 108 -> 100 (both digits asked); 257 as written at
+  all three places; 1024 -> 1084. 9 target digits: 5 corrected against Brackx, 4 as transcribed. Recorded as
+  `outcome.sign_check`. Model roles not stated by the contributor; recorded from the files (the PR is signed "Brice
+  Dudout (with Claude)", so all five roles are listed).
+- **Applied** (the plate's patch, `dudout/delacroix1797-planche-2511.patch`): the four groups 898, 527, 361, 100 in
+  `beling2026/key/alignment_by_group.txt`, and their four lines removed from
+  `beling2026/proposals/transcription_corrections.tsv`. Brackx's `ciphertext.txt` is not changed; the four digits are
+  recorded as a correction from this look in the new `ciphertext_corrections.tsv`, which `replay.py` and
+  `mk_validation.py` apply, so that the transcription and the alignment agree.
+- **Counts before -> after** (`python strict_share.py`): holes 27 -> 23 (marked groups 29 -> 25, proposal places
+  8 -> 4); sure 296 -> 298; probable 121 -> 123; read share 0.939 -> 0.948 (419 of 442 on the reviewer's count);
+  strict share 0.667 -> 0.671. Words that leave the holes: [sur] tout, le[çon], [d]'envoyer, [dél]ai. The filed
+  reading file (`beling2026/readings/reading_1797-07-13.md`, the contributor's) still marks these four places.
+- **Key replay** rerun (`python docs/_replay.py delacroix1797`): 418 of 441 words exact (94.8%; 414 before), 22 marked,
+  no unmarked difference. The statistical validation of 24 Nov 2026 was not rerun (`validation.tsv` unchanged).
+- **257.** The three places stay holes, as the contributor's rule has it. The plate settles the shape (a 7), not the
+  value: "ai" for 257 is found only at these three places, whose reading was in doubt, so counting it would take the
+  value from the sense. Counting it would give 422 of 444 = 0.950. A sign check does not change a class.
+- **Token 413** read 1084 (the third reader's choice), neither Brackx's 1024 nor the proposed 1034; 1084 is not in the
+  table, so the hole stays.
+- **Class** stays read in part: 421 of 444, and 95% needs 422.
+- **Not checked:** the digits on the film frames (the plate's crops are not filed). The option order was fixed in the
+  rule, not shuffled; the chosen option was the first on 6 of 12 questions, including 4 of the 5 digits behind the
+  changes, while the controls passed at other positions. Rule, key and answers are in one commit, so the order of
+  events rests on the contributor's record.

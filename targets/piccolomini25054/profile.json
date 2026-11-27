@@ -1,0 +1,147 @@
+{
+ "schema_version": 1,
+ "target": "piccolomini25054",
+ "title": "A partially deciphered letter in the Piccolomini archive",
+ "documents": [
+  {
+   "id": "25054",
+   "shelfmark": "SOA Zámrsk, RA Piccolominiů, inv. 25054",
+   "year": "unknown",
+   "country": "unknown",
+   "language": "Italian",
+   "read": "read in part",
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "interlinear"
+    ]
+   },
+   "length": {
+    "tokens": 157,
+    "unit": "code groups",
+    "measured": false,
+    "file": "physical-lines.md"
+   },
+   "transcription": {
+    "by": "mixed",
+    "source": "https://github.com/dbourdeau/cyphersolver/issues/790"
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "monoalphabetic"
+  ],
+  "summary": "The number table draws on the period interlinear hints and Italian context. Its values were checked against a deciphered sibling.",
+  "symbol_kind": "digits",
+  "distinct_symbols": "unknown",
+  "diacritics": {
+   "used": "unknown"
+  },
+  "homophones": {
+   "used": false
+  },
+  "nomenclator": {
+   "present": false
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "unknown"
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "unknown"
+  },
+  "inputs": [
+   "images",
+   "transcription"
+  ],
+  "attack": "known plaintext",
+  "human_role": "The contributors supplied their transcription, key and reading.",
+  "models": [
+   "ChatGPT"
+  ]
+ },
+ "solution": [
+  {
+   "kind": "reading",
+   "what": "The number table draws on the period interlinear hints and Italian context. Its values were checked against a deciphered sibling.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-21",
+   "kind": "verification",
+   "what": "Filed the issue evidence and checked the line replay against the submitted transcription and key.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-26",
+   "kind": "verification",
+   "what": "Page review: the page now gives the 17-value key with a worked example, the English text up front, and the extent measured on signs (157 of 157 signs valued; number 51 does not occur) apart from the word share (25 of 32 cipher words sure, seven doubtful). The word share is stated in words, not tokens. The cipher-reveal passage was given word divisions from the reading. Image observations, the title Baron Engfurt, the sibling 25040 comparison and the date remain unchecked here.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "class": "read in part",
+  "key": "partial",
+  "method": "key recovered based on adjacent plaintext",
+  "method_basis": "The number table draws on the period interlinear hints and Italian context. Its values were checked against a deciphered sibling.",
+  "contribution": [
+   "transcription",
+   "key recovered"
+  ],
+  "fraction_read": 0.78125,
+  "fraction_read_method": "estimated",
+  "fraction_read_unit": "words",
+  "fraction_read_source": "25 of 32 cipher words sure; 157 of 157 signs valued (all 157 signs have a value in the 17-value key). See NOTES.md.",
+  "verification": [
+   "key confirms"
+  ],
+  "provenance": "contributed",
+  "credits": [
+   {
+    "who": "annabeck",
+    "role": "solution",
+    "source": "https://github.com/dbourdeau/cyphersolver/issues/790"
+   },
+   {
+    "who": "beck",
+    "role": "solution",
+    "source": "https://github.com/dbourdeau/cyphersolver/issues/790"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "25054",
+    "transcription": "physical-lines.md",
+    "decryption": "literal.tsv",
+    "state": "read in part",
+    "summary": "An officer writes in Italian, with numbers for some words, about a conversation in which he was reassured of the addressee's return. He quotes the reply that the enemy values only Piccolomini among their generals, and asks to be told if the addressee is assigned to return there.",
+    "label": "Letter with cipher on frame 453",
+    "reading": "reading.md",
+    "read_share": 0.78125,
+    "translation": "translation.md",
+    "language": "it",
+    "reading_review": {
+     "grade": "B",
+     "by": "Codex independent claims review, Piccolomini and Dresden",
+     "date": "2026-11-21",
+     "note": "The Italian and English were compared and all 15 runs replayed. The result is coherent in passages, with seven holes and a doubtful title in clear text. Image observations follow the contributors and the earlier review."
+    }
+   }
+  ],
+  "key_file": "key.tsv",
+  "gaps": [
+   {
+    "item": "seven cipher words and uncertain clear title S.A.",
+    "blocker": "illegible"
+   }
+  ],
+  "validation": {
+   "date": "2026-11-21",
+   "verdict": "not applicable",
+   "notes": "The project has the submitted sibling control with the period interlinear reading visible, not a blinded holdout with a comparable statistical control."
+  }
+ }
+}

@@ -555,4 +555,18 @@ read. No image or derivative is filed (LASA licence).
   S letters 1961 -> 2024 of 2438.
 - **Controls.** Sheet A: 2 valid controls, both passed (C2 was boxed on the wrong sign). Sheet B: 2 valid, both passed.
   Sheet C: 3/3 passed. Recorded as `outcome.sign_check`.
-- **Next.** An eye check of the extension family by family, the two badly boxed targets of sheet B, then view 245.
+- **25 Nov 2026: sheets D and E (PR #988).** Same folder, same reader, sheets built and scored by Claude.
+  - **Sheet D (g/q/y, 12 targets, controls 3/3).** 11 targets seen as a different form (9 g->q, one of them y->q;
+    2 q->g); L26 "urdsdhyif" y as transcribed. 10 words read sure, among them the two badly boxed places of sheet B
+    (L18 asked again gives mochte; L26 stays as transcribed). "comen" (judge "komen", c for k) is {probable}.
+    Recorded as `outcome.sign_check`.
+  - **Sheet E (last g/q places, 4 targets, controls 3/3).** L40 and both letters of L7 q, L22 g as transcribed. 2 words
+    read sure. Under the schema minimum of 8 signs, so here and in a solution step only, not in `outcome.sign_check`.
+    Its three controls are places the same reader re-read on sheet D: they show he sees the same sign the same way
+    twice, not a reading of a sign whose form was never in doubt.
+  - **Counts of view 244, before -> after.** Sure: 206 -> 216 (D) -> 218 (E) of 432 (50.5%). With {probable}:
+    246 -> 257 -> 259 (60.0%). S letters 2024 -> 2035 -> 2038 of 2438. g and q stay two signs.
+  - The figure of record (77.4%, views 244-245) and the class are unchanged: No. 29 stays decoded, not read.
+  - Rule, key and answers are in one commit, so their order rests on the contributor's record. The key files were
+    redacted before publication; the original hash is given for sheet D only. Not checked: the glyphs on view 244.
+- **Next.** An eye check of the extension family by family, then view 245.

@@ -1,0 +1,14 @@
+# Corrections to ciphertext.txt from a person's look at the film (sign plate 2511, Brice Dudout, 25 Nov 2026, PR #990).
+# ciphertext.txt stays Michael Brackx's transcription as he gave it; this file is a separate layer on top of it.
+# token_index: 0-based place among the 653 groups of ciphertext.txt (the token_index of
+# beling2026/proposals/transcription_corrections.tsv). Applied in beling2026/key/alignment_by_group.txt by the
+# plate's patch (dudout/delacroix1797-planche-2511.patch), and by replay.py and mk_validation.py when they read
+# ciphertext.txt, so that the transcription and the alignment agree.
+# Plate: dudout/sign_check_2511/ (rule REGLE-SELECTION.md, sha256 0bc3ef05...51ed58; controls 3 of 3).
+# The person also read 257 at tokens 139, 213 and 438 (as Brackx wrote them) and 1084 at token 413 (Brackx 1024;
+# 1084 is not in the table, so it is not applied and the hole stays). Not checked by the project on the film.
+token_index	frame	line	group	brackx	corrected	read_by
+233	244 right	19	1	108	100	Brice Dudout, plate 2511, T4a and T4b
+408	245 left	12	8	808	898	Brice Dudout, plate 2511, T5
+552	245 left	25	8	327	527	Brice Dudout, plate 2511, T7
+555	245 left	25	11	381	361	Brice Dudout, plate 2511, T8

@@ -440,15 +440,48 @@ def integrity_problems(slug, heads=None):
     if m: probs.append('damaged character entity near "' + re.sub(r'\s+', ' ', text[max(0, m.start() - 25):m.end() + 15]) + '"')
     return probs
 
+def reveal_problems(slug):
+    """A "watch it decipher" file whose words are not spaced: no word starts, no clear word dividers, and values that are
+    not whole words (cipher-reveal.js then prints the passage as one unbroken run; 26 Nov 2026)."""
+    f = HERE / 'reveal' / f'{slug}.json'
+    if not f.is_file(): return []
+    try: skip = json.loads(read(HERE / '_explore_skip.json') or '{}')
+    except ValueError: skip = {}
+    if slug in skip.get('reveal', {}): return []
+    try: d = json.loads(read(f) or '{}')
+    except ValueError: return []
+    toks = d.get('tokens') if isinstance(d, dict) else None
+    if not toks: return []
+    if any(t.get('w') for t in toks): return []
+    plain = [t for t in toks if t.get('cls') == 'plain' and t.get('p') is not None]
+    if sum(1 for t in plain if not str(t['p']).strip() or str(t['p']).strip() == '·') >= 3: return []
+    vals = [str(t.get('p') or '') for t in toks if t.get('cls') != 'null' and str(t.get('p') or '').strip()]
+    if vals and sum(len(v) for v in vals) / len(vals) >= 3.5: return []
+    return [f'reveal/{slug}.json has no word starts, so the letters run together: python docs/_reveal_words.py {slug} "<spaced reading>"']
+
+def summary_problems(slug, rows=None):
+    """A text summary left as the template ('..., <folder or document id>.'): say what the text is about."""
+    out = []
+    for f in _page_folders(slug, rows):
+        try: prof = json.loads(read(tdir(f) / 'profile.json') or '{}')
+        except ValueError: continue
+        for t in (prof.get('outcome') or {}).get('texts') or []:
+            sm, doc = str(t.get('summary') or '').strip().rstrip('.'), t.get('doc')
+            ids = doc if isinstance(doc, list) else [doc]
+            if any(i and sm.endswith(', ' + str(i)) for i in ids) or sm.endswith(', ' + f):
+                out.append(f'{f}: text summary is the template ("{sm[-40:]}"): say what the text is about')
+    return out
+
 def gate_violations():
     """The checks that must not get worse: {check: {slug: [problems]}}."""
     pages = manifest()[0]
     heads, titles = page_heads(), manifest_titles()
-    out = {'heads': {}, 'links': {}, 'integrity': {}}
+    out = {'heads': {}, 'links': {}, 'integrity': {}, 'reveal': {}, 'summary': {}}
     for s in sorted(pages):
         if s in SURVEYS or s not in heads: continue
         for check, fn in (('heads', lambda: head_problems(s, heads, titles)), ('links', lambda: link_problems(s, heads)),
-                          ('integrity', lambda: integrity_problems(s, heads))):
+                          ('integrity', lambda: integrity_problems(s, heads)), ('reveal', lambda: reveal_problems(s)),
+                          ('summary', lambda: summary_problems(s))):
             pr = fn()
             if pr: out[check][s] = pr
     return out
@@ -732,6 +765,8 @@ def check_slug(slug):
         item(prob is None, prob or 'every image names its source (data-credit) and the page shows a snip of the cipher')
     item((HERE / 'reveal' / f'{slug}.json').exists() or slug in skip.get('reveal', {}),
          f'a "watch it decipher" file docs/reveal/{slug}.json, or the reason there is none in docs/_explore_skip.json "reveal"')
+    for prob in reveal_problems(slug) + summary_problems(slug):
+        item(False, prob, warn=True)
     # the explore data (skill step 2a): nudges only, since many targets have no named key or no known route
     try: kw = json.loads(read(HERE / 'keys.json') or '{}')
     except ValueError: kw = {}
