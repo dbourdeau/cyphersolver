@@ -1,0 +1,98 @@
+# gonzaga1537: Federico II Gonzaga's Piedmont intelligence enclosure to Ferrante Gonzaga, 6 May 1537 (Modena, Biblioteca Estense Universitaria, Autografoteca Campori, Gonzaga Federico II, sfasc. II, cc. 12r-15v; catalogue 2162)
+
+Status: partial (`read_share = 0.820`, 219 sure cipher words and 48 holes of 267 cipher word tokens under `word_audit_2162.py` and `research/reading_audit/v10_relabel.py` with `clear_markup=⟨⟩`; key recovered based on adjacent plaintext — specifically the inline clear Italian passages on `c. 13r`, such as L04 `⟨considerando⟩` next to `ri34 = sia`, combined with ciphertext-side cryptanalysis of the directional `i`-digraph alphabet, with no surviving key sheet, sibling ciphertext, or contemporary decipherment). Coherent, historically anchored 16th-century Italian across both recto (`c. 13r`) and verso (`c. 13v`), produced by Gemini 4 Carbon (Google DeepMind, orchestrating Gemini 4 Neon and Hydrogen worker agents; compute and PRs via `@tttzqw`) with pre-PR adversarial verification via OpenAI Codex (`gpt-6.2-astra`).
+
+Lead: catalogue **2162**, found in the Biblioteca Estense (Lodovico) sweep (`research/wainut_leads_2026-11-03/`, WAINUT) and vetted 4 Nov 2026 (original lead Class C). No images are included in the repository; all eight canvases (`cc. 12r-15v`, native 2976-3094 x 4088-4128 px) are online via the open-access Estense IIIF manifest `https://edl-jarvis.cultura.gov.it/meta/iiif/22b3126b-3b70-4ede-a33b-1adf4a4491f6/manifest` (Lodovico record `https://lodovico.medialibrary.it/media/schedadl.aspx?id=22b3126b-3b70-4ede-a33b-1adf4a4491f6`).
+
+## Documents
+
+Modena, Biblioteca Estense Universitaria, *Autografoteca Campori*, Lettera G, *Gonzaga, Federico II, duca di Mantova*, sfasc. II, cc. 12-15:
+- **c. 12r**: clear Italian covering letter from Duke Federico II Gonzaga to his brother Ferrante Gonzaga, Viceroy of Sicily, dated *"Da Mantoua agli .vj. de Maggio M.D.XXXVII"* (autograph postscript and signature *"Bono frate El Duca di Mantova"*). Explicitly introduces the cipher enclosure as *"copia d'auisi ch' ho di uerso Piamonte qual gli mando allegata"* (transcribed in full in `gonzaga2162_diplomatic.txt`).
+- **c. 13r-13v**: two-page secret intelligence sheet in the same Mantuan chancery hand (30 lines: 24 lines in two headed sections on `c. 13r`, 6 continuation lines plus closing flourish on `c. 13v`; `265` non-clear word/code tokens in `transcription_13r_13v.txt` — `264` whitespace-separated non-clear chunks with L17 `&4.27.` split into `&4` + `.27.` — comprising `1,459` glyph characters excluding punctuation/braces, `1,509` raw non-space characters, and `964` letter-word sign tokens in `validate_2162.py`, interleaved with short clear Italian phrases). Zero interlinear or marginal decipherment.
+- **c. 12v, 14r-15r**: blank (the far-left gutter of `c. 14r` overlaps ~80 px with the right margin of `c. 13v` L27-L29, confirming no characters were lost in the fold).
+- **c. 15v**: outer address to Ferrante Gonzaga, Prince of Molfetta and Viceroy of Sicily, with contemporary receipt docket *"22 maij 1537 / Del S.or Duca di .6. di maggio"*.
+
+## The system and the key (`key_gonzaga1537.tsv`)
+
+The cipher is a **word-spaced directional `i`-digraph and homophonic substitution system combined with a two-digit and underlined-`L` nomenclator** (`43` recovered digraph and singleton sign values — `21` digraphs + `22` singletons — plus `30 = che`, giving `44` recovered entries total). Standard monoalphabetic and homophonic solvers fail on `c. 13r-13v` because the letter `i` (~30% of cipher characters) acts as a directional prefix/suffix operator changing a base symbol `X` into distinct `Xi` and `iX` digraphs:
+
+| Base symbol | Bare `X` | Suffix `Xi` | Prefix `iX` | Witness examples on `c. 13r-13v` |
+|---|---|---|---|---|
+| `r` | `e` | `s` | — | `di4rrisiégi` = `maestro`, `ip4ri4&r` = `casale`, `rilixril4sir` = `spiegate` |
+| `d` | — | `m` | `f` | `dix&4agi` = `milano`, `id4ér` = `fare`, `idgiésitifi4` = `fortuna` |
+| `l` | `l` | `p` | `g` | `li4ig4six` = `passati`, `liéxdigi` = `primo`, `oxrigiilfi4` = `bisogna` |
+| `g` | `t` | `o` | `ss` | `rg` = `et`, `ugiarfgb` = `honesto`, `gi` = `o`, `rigré7` = `essere`, `idtiigx` = `fussi`, `li4ig4six` = `passati` |
+| `f` | `s` | `n` | — | `tirfipgitib` = `uescouo`, `ipgif4` = `cosa`, `ipgifi` = `con` |
+| `s` | `f` | `t` | — | `sgiésirzz4` = `fortezza`, `sxgié` = `fior`, `rigi&ic4six` = `soldati` |
+| `p` | — | `r` | `c` | `pibzogi` = `rotto`, `lirpiriba4` = `persona`, `ipux` = `chi` |
+| `c` | — | `l` | `d` | `94cixsix4` = `malitia`, `ci4` = `la`, `icr` = `de`, `icrzogi` = `detto` |
+| `4` | `a` | — | `l` | `4&` = `al`, `u4` = `ha`, `icri4r` = `dele`, `mtiri4b` = `quelo` |
+| `e` / `é` | `r` | — | `d` (`ie`) | `ipgifisié4éxgi` = `contrario`, `digifiiegi` = `mondo`, `tirieré&b` = `uederlo` |
+| `a` | `n` | `m` | — | `dix&4agi` = `milano`, `fiba` = `non`, `utigiaigi` = `huomo` |
+| `z` | `u` | `zo` = `tt` | `iz` = `gg` | `sirfizsigi` = `tenuto`, `ribrilirzob` = `sospetto`, `zz` = `zz` |
+| `b` | `o` | — | `e` (final) / `nn` (medial) | `ubdigi` = `homo`, `lipigidirzoib` = `promette`, `ipéxic4é4ibgi` = `cridaranno`, `icgiib4` = `donna` |
+
+Additional singletons and homophones: `x, 3 = i`; `4, n = a`; `r, 7 = e`; `o, 8 = b`; `& = l`; `u = h` (once `l` in L28 `ultimo`); `h, ti = u/v`; `m = q`; `9 = m`. Characters `i`, `p`, `c`, `d`, `t` never stand alone in the recovered key.
+
+Post-review refinement: the earlier disputed value `ig = g` is removed. With `ig = ss` throughout, `L12 idtiigx` decodes directly as `fussi` (hypothetical *"if ... were"*), `L18 li4ig4six` decodes directly as `passati` (*"erano passati al {L2?} a bandere spiegate"*, troops going over with banners unfurled), and `L21 4tirésixigr` decodes directly as northern Italian `auertisse` (*avertisce*). The sole remaining exception is `L05 igb = ho`, marked as a hole in `reading_13r_13v.md`.
+
+Nomenclators and two-digit codes: `30 = che` (10× standalone plus `30& = che'l` on L13, verified across every occurrence including a scribal self-correction to `30` on L27). Proper-noun nomenclators `{L2}` (4×), `{L9}` (2×), `{L30}` (3×), `{L36}` (1×), `[46]` (2×), and `[82]` (1×), together with six provisional candidate-null two-digit groups (`[23]`, `[24]`, `[27]` 2×, `[28]`, `[29]`/`zg`, `[31]`), `[53]` (2×, candidate *non*), and the abbreviated cipher token `e4,s.{ar}` (L21), remain open without an archival key sheet. Whether the six two-digit groups are true nulls or short word/modifier codes cannot be established from this single sheet (`system.nulls` is therefore recorded as `unknown`).
+
+## Validation (`validate_2162.py`, `validation.txt`)
+
+Three checks document the key:
+1. **Strict zero-choice 1-value key test on the fitted key (zero silent drops, zero target lexicon boosts, identical deterministic decoder for real text and controls):** On the 230 letter-words (`964` sign tokens, `41` active sign types) of the unedited blind transcription `transcription_13r_13v.txt`, scored under an order-5 early-Italian spaced `DenseLM` (`gonzaga1537` and `rossi1537` excluded from training) and unboosted `lang/lexicons/it.json.gz`. Because `key_gonzaga1537.tsv` was fitted to this sheet, the shuffles measure how strongly the fitted key outperforms random permutations of its own sign alphabet and token stream rather than testing a separately held-out key:
+   - Real text: `LM/char = -2.1500`, exact Italian lexicon hit = `182/230 (79.1%)`, length >= 4 hit = `86/121 (71.1%)`.
+   - 200 shuffled keys: `LM/char = -5.6568 ± 0.3741` (`max = -4.5033`, **z = +9.37**, `p = 0.0050`); all-word **z = +14.64**; length >= 4 **z = +46.40**.
+   - 200 shuffled token streams: `LM/char = -4.7492 ± 0.0602` (`max = -4.5959`, **z = +43.14**, `p = 0.0050`); all-word **z = +33.09**; length >= 4 **z = +47.04**.
+   - Negative-control gate: replacing `key_gonzaga1537.tsv` with an all-`'e'` or all-`'a'` constant key produces `DECISION: FAIL` and exits with status `1`.
+2. **Recto-to-verso cross-folio transfer check (zero lexicon, zero LM):** Taking 11 retrospectively selected words from the recto (`L04-L23`) yields 28 consistent symbol values. Applying those 28 values by longest-match substitution alone to the verso (`L25-L30`) recovers connected Italian without edits (`fare cosa buona`, `insidiato del primo al`, `de buona fortuna altramente potrebe parere charo lo maestro`).
+3. **Matched-length synthetic control (`targets/rossi1537/reading_A.md`, 212 prose words):** Adversarial audit showed that an earlier synthetic run (`94.9%`) had included `rossi1537` in LM training and boosted target words (removing both dropped that solver run to `141/214 = 65.9%`), and that an interim script had read `rossi1537/decryption_A.txt` (`T/K/S/R` rows) instead of segmented Italian prose. `validate_2162.py` now reads `212` genuine segmented Italian prose words directly from `targets/rossi1537/reading_A.md` (stripping folio tags, brackets, and clear quotes), excludes `rossi1537` from LM training, and removes all target boosts, yielding **`207/212 (97.6%)` exact words and `965/979 (98.6%)` characters** under full-coverage digraph parsing. As noted in the audit, synthetic controls test the decoder on its own key rather than measuring accuracy on Gonzaga.
+
+## Decryption, reading, and extent (`decryption_13r_13v.txt`, `reading_13r_13v.md`, `translation_13r_13v.md`)
+
+- **Unedited decryption (`decrypt_13r_13v.py` -> `decryption_13r_13v.txt`):** Applies all 44 recovered entries of `key_gonzaga1537.tsv` (`43` digraphs/singletons + `30=che`) directly to `transcription_13r_13v.txt` with zero dictionary lookup and zero manual edits. Of `265` non-clear tokens, `178` letter-words admit a unique full-coverage parse, `43` admit a boundary-ambiguous exact parse (emitted as `|a/b|`), `11` are `30`/`30&` (`che`/`che'l`), `10` fall back with explicit `[c]` markers for scribal slips, and `23` are open numeric, underlined-`L`, or abbreviated codes.
+- **Reading and hole audit (`reading_13r_13v.md`, `holes_13r_13v.md`, `word_audit_2162.py`):** Every open code, provisional candidate null, contextual hypothesis, rare allograph, and scribal emendation is explicitly bracketed. Excluding inline clear Italian (`clear_markup=⟨⟩`), `word_audit_2162.py` and `research/reading_audit/v10_relabel.py` measure **219 sure cipher words and 48 holes of 267 cipher word tokens (`read_share = 0.820`)**. Even counting only the 22 open codes/candidate nulls yields `91.8%`, below the 95% threshold, so the document's extent is **partial**.
+- **Sentence check (`docs/_check_reading.py`):** Reports shape `reading` and `hole_rate = 0.141` (`10/22` clean sentences = `0.455`, lowered by authentic 1537 Mantuan forms absent from the modern/Tuscan lexicon such as `el`, `fa'`, `delo`, `bela`, `malla`, `cornache`, `cridaranno`, `drietro`, `Edim`, `Iovio`, and by keeping every numeric code explicitly bracketed).
+- **Adversarial review (19 Nov and 26 Nov 2026):** Pre-PR audit via OpenAI Codex (`gpt-6.2-astra`) against the public Estense IIIF manifest (tile comparison MAD < 1 RGB level against local scans) verified the break across both recto and verso, recommended `passati` (L18) and `fussi` (L12) over the disputed `ig = g` value, flagged L04-L06 (`vero è`, `natura`) and L19 surrender wording for brackets in both reading and translation, corrected the Hesdin date to 13-14 April 1537, identified the `rossi1537` synthetic-control extraction bug (`decryption_A.txt` -> `reading_A.md`), aligned `outcome.method` with the inline clear Italian passages, and corrected Bernardino Castellari's death date. Because the reading and translation were authored by this session and not independently re-read by a human maintainer, `reading_review` is recorded as non-independent (`grade: "B"`, `independent: false`), pending maintainer review.
+
+## Transcription doubts
+
+- `s4filaxagi` (c. 13r, L01) - read: `[?Fasgnino]`; checked: image, decode; heading addressee has a boundary-ambiguous parse (`|fanlnino/fasgnino|`) and uncertain initial `s4`/`ip4` (possible garbled *Cagnino* or agent name); kept bracketed as a hole.
+- `icrftb394gb` (c. 13r, L03) - read: `[?destimato]`; checked: image, decode; medial bare `t` (`des[t]oimato`) has no standalone key value and may be a scribal slip or miscopied digraph for *destimato* / *discostumato*; kept bracketed as a hole.
+- `uiro e` (c. 13r, L04) - read: `[?vero] [?è]`; checked: image, decode; `uiro` decodes mechanically as `h[i]eb` and `e` as `r`, requiring substantial emendation (`tireb r`); kept bracketed as two holes.
+- `igb` (c. 13r, L05) - read: `[ho]`; checked: image, decode; `ig` is `ss` everywhere else (`sso`), making this the sole place where the strokes function as `h` (possible cramped `ug` or `ub`); kept bracketed as a hole.
+- `fiirsibp 4` (c. 13r, L05) - read: `[?natura]`; checked: image, decode; split garbled token (`n[i]eto[p] a`) with smeared medial strokes where *natura* would expect `finsihpi4`; kept bracketed as a hole.
+- `zg` (c. 13r, L08) - read: `[29]`; checked: image, decode; visually resembles `zg` (`ut`) or a curved two-digit `29` before `fortuna`; kept bracketed as an open code / provisional null.
+- `fix ri,érri4` (c. 13r, L19) - read: `[?si] [?è] [resa]`; checked: image, decode; `fix` decodes mechanically as `ni` and `ri,` has a distinct comma-like mark before `érri4` (`|reel/resa|`), leaving the exact surrender wording uncertain; kept bracketed as three holes.
+- `e4,s.{ar}` (c. 13r, L21) - read: `[?raccomandatione]`; checked: image, decode; abbreviated cipher token with comma, dot, and raised `ar` after clear `⟨domandando alcune lre⟩ de`; exact expansion cannot be confirmed without a key sheet; kept bracketed as a hole.
+- `tirizxbér` and `tibigir` (c. 13v, L27) - read: `[peggiore]` and `[posse]`; checked: image, decode; both show initial `t` where *peggiore* and *posse* require `l` (`li = p`), either a scribal slip or a hooked `l`/`t` hand shape; both kept bracketed as holes.
+- `tiusixdigi` (c. 13v, L28) - read: `[ultimo]`; checked: image, decode; medial `u` (`h` elsewhere -> `uhtimo`) stands where *ultimo* requires `l` (possible `u`/`&` stroke confusion); kept bracketed as a hole.
+
+## Historical verification (late April - 6 May 1537)
+
+- **Fall of Hesdin (`la fortezza de Edim`, L19):** During Francis I's spring 1537 Artois campaign, the town and castle of Hesdin (*Edim*) capitulated to the French on **13-14 April 1537**, confirmed by Francis I's own letter 55 of 14 April 1537 (*xiiij*) to Henry VIII in David Potter's edition (*Lettres de François Ier, 1537*, p. 21) and an IRHT manuscript record dating the capture to 13 April. News reaching northern Italy in late April or early May fits the 6 May 1537 forwarding date of `c. 12r`.
+- **Named historical figures decoded in plain letters (full-name expansions below are contextual historical identifications of the shorter manuscript references):**
+  - *Il vescovo de Casale* (L14) / *il vescovo dela Barba* (L20): contextually identified as Bernardino Castellari, called Bernardino della Barba (birth year uncertain; d. 27 June 1546, *Dizionario Biografico degli Italiani*), Bishop of Casale Monferrato (the capital of Monferrato, awarded to Federico II Gonzaga by Charles V on 3 Nov 1536).
+  - *el Speciano* (L15): contextually identified as Giovanni Battista Speciano (1490-1544), Imperial *Capitano di Giustizia* and Ducal Senator of Milan.
+  - *Il Iovio* (L21): contextually identified as Paolo Giovio (1483-1552), Bishop of Nocera and historian, close correspondent of the Gonzaga brothers and Alfonso d'Avalos.
+- **Voice attribution:** The 6 May 1537 date belongs to Federico II's covering letter (`c. 12r`), which describes `c. 13r-13v` as a copy of news from Piedmont. Although written in Federico II's Mantuan chancery hand and cipher, first-person statements inside the enclosure (*"ch'io non ho parlato di sopra senza raggione"*, *"Me l'ha detto il vescovo dela Barba in secreto"*) reflect the copied Piedmont informant rather than necessarily Federico II himself.
+
+## Prior work (checked 4 Nov and 19 Nov 2026)
+
+No prior decipherment, printed edition, or 1536-1538 archival key was found in live DECODE queries (`Federico` = 0 hits; `Ferrante` = `R1188`, 1548 Madrid imperial key; `Mantova` = 32 records in 1395 and 1540-1699), `cyphersolver_repo` targets and `keys.json` (`rossi1537`, `gonzaga1542`, `ercole1544`, `capilupi1545/46`, `gonzaga1549`, `muzio1550`, `caracciolo1537`), Tomokiyo's Cryptiana (`italian.htm`), Modena Estense *Campori* neighbour checks (16 adjacent 1530-1538 Federico II letters in `sfasc. I-II`, all clear), or web/literature searches on Federico II and Ferrante Gonzaga in May 1537. Archival key sheets in ASMn *Archivio Gonzaga* (e.g., *E.I.2*) are not digitised online.
+
+## Remaining gaps
+
+- **Open proper-noun nomenclators (13 occurrences across 6 codes):** `{L2}` (4×), `{L9}` (2×), `{L30}` (3×), `{L36}` (1×), `[46]` (2×), and `[82]` (1×) - blocker: `open-codes` / `needs-physical-access` (identifying the referents with certainty requires an extant 1537 Mantuan key sheet or companion letters in ASMn *Archivio Gonzaga*, not online).
+- **Open two-digit codes and provisional candidate nulls (9 occurrences across 7 codes):** `[23]`, `[24]`, `[27]` (2×), `[28]`, `[29]` (`zg`), `[31]`, and `[53]` (2×, candidate *non*) - blocker: `open-codes` / `needs-physical-access`.
+- **Uncertain words and scribal slips (26 words):** L01 `[?Fasgnino]`, L03 `[?destimato]`, L04-L05 `[?vero] [?è]` / `[?natura]`, L19 `[?si] [?è] [resa]`, L21 `[?raccomandatione]` (`e4,s.{ar}`), L23 `[?parte]`, plus 17 crop-checked scribal slips/allographs catalogued in `holes_13r_13v.md` - blocker: `no-key-material` (needs a human palaeographer's check on the Modena scan and/or another letter in the same 1537 Gonzaga key).
+
+## Escalation
+
+- [x] siblings: all 16 neighbouring 1530-1538 Federico II Gonzaga letters in Modena Estense *Autografoteca Campori* (`sfasc. I-II`) inspected via Lodovico; all clear, zero same-key siblings online.
+- [x] clear-pages: `c. 12r` covering letter and `c. 15v` address/docket transcribed in full (`gonzaga2162_diplomatic.txt`); `c. 12v`, `c. 14r-15r` verified blank (`c. 14r` gutter overlap checked).
+- [x] known-keys: live DECODE sweeps (`Federico`, `Ferrante`, `Mantova`), all `cyphersolver_repo` Italian/Gonzaga target keys (`rossi1537`, `gonzaga1542`, `ercole1544`, `capilupi1545/46`, `gonzaga1549`, `muzio1550`), and Cryptiana checked; no matching 1537 key exists online.
+- [x] print: literature and edition searches for Federico II -> Ferrante Gonzaga (6 May 1537) and Piedmont *avvisi* negative; David Potter's 1537 Francis I edition (letter 55) and Treccani *Dizionario Biografico degli Italiani* (Bernardino Castellari, d. 27 June 1546) checked for historical corroboration.
+- [x] key-rebuild: directional `i`-digraph + homophonic key (`43` signs + `30=che`) rebuilt using inline clear passages plus ciphertext-side analysis, verified by recto-to-verso transfer and 200-shuffle controls (`validate_2162.py`).
+- [x] retry: pre-PR adversarial audits completed 19 Nov and 26 Nov 2026 (`gpt-6.2-astra`); `ig = g` removed, `passati` (L18) and `fussi` (L12) adopted, Hesdin dated to 13-14 April 1537, genuine `rossi1537/reading_A.md` synthetic control recorded (`207/212 = 97.6%`), method/counts/nulls/biography reconciled, and all 48 remaining holes bracketed in `reading_13r_13v.md` and `holes_13r_13v.md`.
