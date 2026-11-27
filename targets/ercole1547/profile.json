@@ -214,9 +214,54 @@
    "what": "reading.md and translation.md made from the decode, nothing emended: 98 words, 10 holes (8 no-sense words, 2 code signs) and 11 one-letter slip words; read share 77/98 = 0.786 counting slips as holes (88/98 = 0.898 without). Line 4 end to line 5 start unread.",
    "result": "partial"
   },
-  {"date": "2026-11-24", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 286 tokens, 74 types, it-cinquecento order 4: reading -1.985 per letter; random keys -3.253 (z 10.6); key annealed onto shuffled ciphertext best -2.309 (mean -2.327, z 33.2); annealer on the real text -2.271. Verdict: pass.", "result": "worked"}
+  {
+   "date": "2026-11-24",
+   "kind": "verification",
+   "technique": [
+    "statistical test",
+    "language-model scoring"
+   ],
+   "what": "Statistical validation (docs/_validate.py): 286 tokens, 74 types, it-cinquecento order 4: reading -1.985 per letter; random keys -3.253 (z 10.6); key annealed onto shuffled ciphertext best -2.309 (mean -2.327, z 33.2); annealer on the real text -2.271. Verdict: pass.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-27",
+   "kind": "reading",
+   "what": "Reading review withdrawn: outcome.texts[0].reading_review was signed by the contributor's own session (Claude Opus 5.5, grade B, independent false). A contributor does not sign the reading review; the maintainer records it at merge (Dan Bourdeau, review of PR #997). Our error, the same as on fenian1885letter2, caught by our own audit. Class, read share (0.786) and figures unchanged.",
+   "result": "partial"
+  }
  ],
- "outcome": {"validation": {"date": "2026-11-24", "model": "it-cinquecento", "file": "validation.tsv", "tokens": 286, "types": 74, "tokens_per_type": 3.86, "score": -1.985, "nulls": {"random keys": {"n": 200, "mean": -3.253, "sd": 0.12, "max": -2.984, "z": 10.6, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -2.327, "sd": 0.01, "max": -2.309, "z": 33.2, "p": 0.1429}}, "power": -2.271, "verdict": "pass", "notes": "claimed per-occurrence score -1.985; polyphony 0.0; 3 unread tokens left out; annealer on the real text from random keys reached -2.271"}, 
+ "outcome": {
+  "validation": {
+   "date": "2026-11-24",
+   "model": "it-cinquecento",
+   "file": "validation.tsv",
+   "tokens": 286,
+   "types": 74,
+   "tokens_per_type": 3.86,
+   "score": -1.985,
+   "nulls": {
+    "random keys": {
+     "n": 200,
+     "mean": -3.253,
+     "sd": 0.12,
+     "max": -2.984,
+     "z": 10.6,
+     "p": 0.005
+    },
+    "shuffled refit": {
+     "n": 6,
+     "mean": -2.327,
+     "sd": 0.01,
+     "max": -2.309,
+     "z": 33.2,
+     "p": 0.1429
+    }
+   },
+   "power": -2.271,
+   "verdict": "pass",
+   "notes": "claimed per-occurrence score -1.985; polyphony 0.0; 3 unread tokens left out; annealer on the real text from random keys reached -2.271"
+  },
   "class": "read in part",
   "key": "partial",
   "method": "key recovered from ciphertext-only",
@@ -229,7 +274,9 @@
   "fraction_read": 0.786,
   "fraction_read_method": "measured",
   "fraction_read_source": "reading.md: 77 of 98 words read as sense, counting as holes the 8 no-sense words, the 2 code signs and the 11 one-letter slip words; 88/98 = 0.898 if the slips are counted as read. Strict judge by letters: 388/435 = 0.892 (judge/judge.tsv).",
-  "verification": ["statistical test"],
+  "verification": [
+   "statistical test"
+  ],
   "first_break": true,
   "provenance": "contributed",
   "credits": [
@@ -303,15 +350,8 @@
     "language": "it",
     "state": "read in part",
     "read_share": 0.786,
-    "reading_review": {
-     "grade": "B",
-     "by": "Claude Opus 5.5, the session that assembled this folder (a model; not independent of the reading and translation it made)",
-     "reader_kind": "model",
-     "independent": false,
-     "date": "2026-11-24",
-     "note": "Read as sentences in reading.md: one long period on the Genoa rising and the Emperor's (code sign) likely response, coherent except the stretch from line 4 end to line 5 start. 98 words, 10 holes and 11 one-letter slips, all counted as holes. Raw: the slips are left as decoded."
-    },
-    "summary": "Ercole II tells Claudio that, since he will hear what has newly happened at Genoa, he is to learn all he can about the causes of the rising and how a person in code (probably the Emperor) means to punish it and settle the city, which, being Spain's ladder into Italy, he will not let fall to the French; he is to use extraordinary diligence."
+    "summary": "Ercole II tells Claudio that, since he will hear what has newly happened at Genoa, he is to learn all he can about the causes of the rising and how a person in code (probably the Emperor) means to punish it and settle the city, which, being Spain's ladder into Italy, he will not let fall to the French; he is to use extraordinary diligence.",
+    "note": "No reading review is recorded by the contributor; the maintainer records it at merge. A reading_review signed by our own assembling session (Claude Opus 5.5, grade B, independent false, 24 Nov 2026) was withdrawn on 27 Nov 2026 (our error, the same as on PR #997, caught by our own audit). Its content stays in NOTES.md under \"Reader's notes\". The checks were done with AI tools and no person checked each record by hand."
    }
   ],
   "key_file": "KEY.tsv",
