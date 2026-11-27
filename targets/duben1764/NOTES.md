@@ -156,32 +156,51 @@ Marked on 16 Nov 2026: nothing. Both published texts are the clears of the time,
 
 ## Remaining gaps
 
-- System A (6 Mar 1764, 15 Nov 1765): both letters were deciphered at the time and key_c01 decodes both (14 Nov section). Done
-  on 14 Nov 2026 (last section): strict word counts, readings and English translations of both period decipherments, and their
-  `outcome.texts` entries. Open, all workable: comparing the clear pages 102R-103R with their images; locating the cipher
-  of the rest of the 6 Mar clear (103L.08 on: 100R-101L is a candidate); key_c01 is partial (197 groups with a value; 58 of the
-  169 group types of 101R have none) and some values are mis-cut by the alignment ("kie" = je, "limp", "sama", "ontje");
-  two group readings doubtful on the images (101 L09 last group 187 or 184; 96 L02 409 or 609). Identify the writer "C. F." of
-  15 Nov 1765.
-  *14 Nov 2026 (third contribution): strict counts and translations made (0.998 and 1.000, `sysA_1616/`); 100R is the end of letter 96,
-  not the rest of 6 Mar, and the cipher of 103L.08-103R.13 is not in the volume as far as checked (outside blocker).*
-- System B: done for the two letters of the Chiffer n:o 2 folder (key rebuilt and tested on 12 Nov, re-tested and
-  completed on 13 Nov against the clear on 127-128; see the 12 and 13 Nov sections below). Open: the 12 key tokens with no
-  value (dates, 236, 339, 55, 234) and the single-occurrence values of key c04, which no further text tests.
-- Chiffer n:o 1, 15 June 1764 (108R-110R): done through its clear 109R-110L (14 Nov, PR #582; strict 337 of 342 words). Open,
-  workable: the end of the cipher on 110R is not in the frozen transcription; 74 groups differ between the two passes.
-- The other letters of Chiffer n:o 1 (inventory in `dudout/system_a/INVENTORY_chiffer1.md`), workable from the online images:
-  15 May 1764 (104R or 105R-108L; clear 106R-107L; 105R-108L has a raw key_c01 decode since 14 Nov 2026, decoded, not read:
-  the clear is not transcribed and the transcription is one preliminary pass), 20/31 Aug 1764 (110R-115; clear 116-117), 100R (perhaps the rest of
-  6 Mar; *14 Nov 2026: it is the end of letter 96, see the last section*), and the two without an identified clear, 87-89 (value profile unlike system A) and 90R-93L (94-95, a clear
-  letter of 30 Jan, may belong to one of them).
-- Read the other clear pages for any that is a true decipherment (no compositional corrections).
+Each line names its blocker (README Conventions; types in `docs/_check_writeup.py`). Rewritten 27 Nov 2026 at the merge of
+PR #759, from the sections below; nothing in it is new evidence.
+
+- System A, 6 Mar 1764 and 15 Nov 1765 (catalogue 1616) - blocker: needs-physical-access; the missing cipher part is in no
+  other leaf of this volume (another file, or lost). Both letters were deciphered at the time and key_c01 decodes both
+  (14 Nov section); strict counts, readings and English translations of both period decipherments were made on 14 Nov 2026
+  (0.998 and 1.000, `sysA_1616/`), and 102R-103R and the 15 Nov 1765 gloss were compared with the images. 100R is the end of
+  letter 96, not the rest of 6 Mar. Open: the cipher of 103L.08-103R.13 is not in the volume as far as checked; key_c01 is
+  partial (197 groups with a value; 58 of the 169 group types of 101R have none) and some values are mis-cut by the alignment
+  ("kie" = je, "limp", "sama", "ontje"); two group readings doubtful on the images (101 L09 last group 187 or 184; 96 L02 409
+  or 609); the writer "C. F." of 15 Nov 1765 is not identified.
+- System B, 5 Oct and 31 Dec 1764 - blocker: open-codes; both letters are read through their clears, only key values stay
+  open. Done for the two letters of the Chiffer n:o 2 folder (key rebuilt and tested on 12 Nov, re-tested and completed on
+  13 Nov against the clear on 127-128; see the 12 and 13 Nov sections below). Open: the 12 key tokens with no value (dates,
+  236, 339, 55, 234) and the single-occurrence values of key c04, which no further text tests.
+- Chiffer n:o 1, 15 June 1764 (108R-110R) - blocker: not-attempted; workable from the online images. Done through its clear
+  109R-110L (14 Nov, PR #582; strict 337 of 342 words). Open: the end of the cipher on 110R is not in the frozen
+  transcription; 74 groups differ between the two passes.
+- Chiffer n:o 1, 15/4 May 1764 (105R, 106L, 107R, 108L line 1) - blocker: open-codes; the text is read, only key values and
+  doubtful groups stay open. Done through its contemporary decipherment 106R-107L (17 Nov, `sysA_1616/may1764/`; 415 of 418
+  words sure, 0.993), after key_c02 passed its pre-registered test there. Open: 58 cipher groups stay marked doubtful;
+  key_c02 decodes about 0.80 of the clear's letters.
+- Chiffer n:o 1, 104R-105L (15 May 1764, a second letter of that date) - blocker: open-codes; the letter reads, and the
+  missing key values are still workable from the other system A letters. Read in part with key_c02, no period clear found
+  (`sysA_1616/letter104/`; 235 sure + 41 probable of about 291 words, sure 0.808). Open: words on groups absent from key_c02
+  (e.g. 429, 539, 603) or on doubtful groups; 105L05-105L07 blotted and overwritten.
+- Chiffer n:o 1, 90R-93L (undated) - blocker: open-codes; the letter reads, and the open values are still workable (a period
+  clear would settle most of them). Read in part with key_c02, no period clear found (`sysA_1616/letter90/check_c02/`; 641
+  sure and 93 probable of about 858 words, sure 0.747). Open: words on values read by sense here and never met in a clear, on
+  the 30 conjectured values and on 252, 355, 360, 405; the 30 Jan clear on 94-95 is not its decipherment.
+- Chiffer n:o 1, 20/31 Aug 1764 (cipher 112L, 114R, 115, 112R top) - blocker: not-attempted; workable from the files in the
+  folder. The contemporary decipherment 116-117 is transcribed twice and key_c02 was tested on it (FAIL at the 0.85 bar,
+  `sysA_1616/aug1764/`). Open: no strict count, translation or summary of the letter through its clear.
+- Chiffer n:o 1, 87-89 - blocker: not-attempted; workable from the online images. Not system A (key_c01 and key_c02 give no
+  French on 87L; other hand); no clear identified (94-95 may belong to it); the tables at 218-220 are range-checked only.
+- Other clear pages of the volume - blocker: not-attempted. Read them for any that is a true decipherment (no compositional
+  corrections).
 
 ## Escalation
 
 - Siblings: the clear pages filed with the ciphers are decipherments for 96 (97R-99L), 6 Mar 1764 (102R-103R), 5 Oct
   1764 (120) and 31 Dec 1764 (127-128); the earlier "no fit" for 6 Mar and 5 Oct is withdrawn. 109R-110L is the decipherment of
-  15 June 1764 (PR #582). The other clear pages (106R-107L, 116-117, 94-95) are not yet checked.
+  15 June 1764 (PR #582). The other clear pages (106R-107L, 116-117, 94-95) are not yet checked. *27 Nov 2026 (merge of
+  PR #759): since then 106R-107L was shown to be the decipherment of 15/4 May 1764 and 116-117 that of 20/31 Aug 1764
+  (17 Nov sections); 94-95 is not the decipherment of 90R-93L; whether it belongs to 87-89 is open.*
 - Known keys: the three tables at 218-220 were checked by value range only; a group-by-group test is
   still to do once some values are known.
 - Print: no edition found (web search 26 Oct 2026); check Svenska Akademiens Handlingar 29 and the
@@ -458,3 +477,71 @@ and the parallel reading files were not merged.
   clear. State: decoded, not read. No control was run; this is not a test of the key.
 - `documents[]`: the 5 Oct 1764 document still said "not read ... does not fit the cipher in order", withdrawn on
   12 Nov; corrected.
+
+## 17 Nov 2026 (Brice Dudout, Europe chiffrée; Claude agent): Chiffer n:o 1, the letter on 90R-93L
+
+Files in `sysA_1616/letter90/` (README there). Images: Riksarkivet IIIF A0073297_00087-00095, _00104-00107, _00112-00117
+at full size (fetched by curl on 27 Oct, re-read 17 Nov).
+
+- **90R-93L is a system A letter without a contemporary decipherment found.** Transcribed twice (1,585 groups of 100 or
+  above; 36 disagreements settled on the image; the scribe writes 3 open, so 370/420/580 are 373/423/583). key_c01,
+  unchanged, knows 80 % of the groups and the decode is French from the first line ("il seroit difficile, mon cher Comte,
+  de ..."). The 30 Jan clear on 94-95 is not its decipherment.
+- **Read in part** (Daniel's rule): 349 sure + 32 probable words of about 876, read share about 0.44. Content: Düben
+  defends his zeal for Her Majesty's service, says he gave the Empress the assurances of the King's friendship and pressed
+  her, that "the unhappy turn of affairs" prevented success ("it is assuredly not my fault"), that Panin doubts the
+  sincerity of the Swedish court and its predilection for one party, that the election of the Marshal of the Diet made the
+  same ideas useless, and the Empress acts in concert with the King [of Prussia]. Summary and limits in the README.
+  No new key value is frozen and no measure was run (no clear).
+- **87L-89R is not system A** (key_c01 gives no French on 87L; other hand). Whether 94-95 is its clear is open.
+- **No interlinear decipherment** on 87-93, 104-107 or 112-115; the decipherments of this file are separate clear pages.
+
+Next: complete the key on 90R-93L, freeze it, and test it once on a letter with a clear never used (20/31 Aug 1764,
+110R-115 with the clear 116-117), with the bar written down first.
+
+## 17 Nov 2026 (later): key_c02 and the one test on 20/31 Aug 1764 (Brice Dudout's session, Claude Opus 5.5)
+Files: `sysA_1616/keyc02/` (key, change log, scripts, README) and `sysA_1616/aug1764/` (PREREG, transcriptions, measure, README).
+- **key_c02**: 324 groups, 306 with a value (key_c01 217 / 197), SHA-256 1813621c87e8...; built by a monotone alignment of
+  the four system A letters with a clear (letter 96 + 100R, 6 Mar 1764, 15 June 1764, 15 Nov 1765), 48 values read by sense
+  in 90R-93L and checked against the alphabetical order of this one-part code, and 16 single-occurrence values; every
+  change in `key_c02_changes.json`. Frozen in a PREREG before any transcription or decode of the August letter.
+- **20/31 Aug 1764** (111R clear opening; cipher 112L + top of 112R + 114R + 115, 1,019 groups; contemporary clear 116-117,
+  2,279 letters): never transcribed or measured before. Two transcription passes (second blind). Pre-registered bar CA >= 0.85
+  and >= controls max + 0.30. Result: **CA 0.831 vs controls max 0.078: FAIL** (misses 0.85 by 0.019). Portion burnt.
+  After the result: the text runs 112L -> 114R -> 115 -> 112R (the six lines on 112R end the decipherment); the PREREG fixed
+  the binding order. In the text order the same key gives 0.938 (not a test). 114R-115 is part of this letter.
+- **90R-93L** with key_c02: 94 % of groups known (80 % with key_c01); strict reading 698 sure + 23 probable of about 895
+  words (0.78): still "read in part". `sysA_1616/letter90/reading_90R-93L_key_c02_tagged.txt`, `decode_90R-93L_key_c02.txt`.
+Next: a test of key_c02 needs a new held-out letter with a clear (15 May 1764, 105R-108L / clear 106R-107L, Payne's
+preliminary transcription), with the reading order fixed in the PREREG.
+
+## 17 Nov 2026 (evening): key_c02, unchanged, passes a second pre-registered test on 15/4 May 1764 (Brice Dudout's session, Claude Opus 5.5)
+Files: `sysA_1616/may1764/` (PREREG-C02b, transcriptions, measure, reading, README).
+- **Reading order fixed first, from material evidence only** (the clear was not read): 105R has the date "ce 15/4 de May 1764"
+  and "Mon cher Comte"; that header shows through, mirrored, on 106L (same leaf); the first number line of 107R shows through on
+  108L (same leaf); 108L ends the letter (one number line, a clear paragraph, the subscription). Order 105R, 106L, 107R, 108L
+  line 1. PREREG-C02b pushed (62abb40f6) before any transcription; transcriptions frozen and pushed (c21ae6291) before the measure.
+- **Prior state**: Payne (PR #185) had transcribed this cipher once and compared it only with the tables 218-220; the clear
+  106R-107L had never been transcribed; no key had been applied to these pages. Two new passes (second blind; 32 substantive
+  differences settled on zooms); Payne's file not used.
+- **Result, run once**: 835 groups, key coverage 92.7 %, clear 1,900 letters (r 2.275, precondition 1.8-2.8 met).
+  **CA 0.916 against 200 permuted-key controls max 0.077: PASS** (bar 0.85 and controls + 0.30). M 0.803; page-wise CA 0.916.
+  Portion burnt. The August FAIL stands; key_c02 now has one failed and one passed held-out test.
+- **15/4 May 1764 read** through its contemporary decipherment: 418 words, 415 sure, 3 probable: 0.993 (method: existing
+  decipherment). English translation and summary in `sysA_1616/may1764/reading_1764-05-15.md` (Panin's assurances, Catherine held
+  back by Frederick II, Saldern and Stakejeff, pressing Panin if the Diet is called early).
+- Still open in Chiffer n:o 1: 104R-105L (another letter, not transcribed), 87-89, and 90R-93L (strict 0.78 with key_c02).
+
+## 26 Nov 2026: review points of PR #759 (Brice Dudout's session, Claude Opus 5.5)
+
+No new measure; key_c02, the transcriptions and the frozen files are unchanged.
+- **90R-93L**: four key_c02 values had been counted as confirmed by a period clear, though the clears give as many or more
+  mismatching emissions as matches (252 eil 2/4, 355 ig 2/2, 360 jo 1/4, 405 leursma 1/2). The words on them are now probable:
+  **641 sure + 93 probable of about 858 words (sure 0.747; sure + probable 0.855): read in part**
+  (`sysA_1616/letter90/check_c02/`). None of the four occurs in 104R-105L, whose count is unchanged (0.808 / 0.948).
+- `sysA_1616/letter90/reading_90R-93L_key_c02_tagged.txt` is marked superseded. It counted the sense values as sure on the
+  ground that key_c02 had passed on 20/31 Aug 1764; that test failed.
+- The blind digit sheet of 17 Nov (23 questions, 4 controls), with the answers as exported and their SHA-256, is in
+  `sysA_1616/blind_digit_sheet_1711/`. The page itself is not added, because it embeds image crops.
+- 15/4 May 1764 stays worded as read through its contemporary decipherment, not by the key: the 415 of 418 sure words are the
+  words of the period clear, and key_c02 decodes about 0.80 of the clear's letters.

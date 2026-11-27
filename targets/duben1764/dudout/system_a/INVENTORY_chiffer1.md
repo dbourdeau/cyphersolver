@@ -7,8 +7,8 @@ Riksarkivet K 259, IIIF A0073297 (image numbers = scan numbers). "Clear" = conte
 | Images | Letter | Groups (est.) | Clear | Status |
 |---|---|---|---|---|
 | 85-86 | Swedish clear "Nyheter från Finland", headed "Chiffer n:o 1" | - | - | clear text |
-| 87L-89R | undated cipher letter, ~5 pages | ~1,500 | not identified (94-95?) | not transcribed; frequent groups 609, 302, 448, 552, 212, 330 differ from system A: system to be checked |
-| 90R-93L | cipher letter beginning 96.70.171 ("chiffer n:o 1" at the foot of 90R) | ~1,500 | not identified; 94-95 is a clear letter "Ecrit le 30me de Janv: arrivé le 13 de Fevr." (Empress, Orlov, Poniatowski, Panin) that may be its decipherment | not transcribed |
+| 87L-89R | undated cipher letter, ~5 pages | ~1,500 | not identified (94-95?) | not transcribed; frequent groups 609, 302, 448, 552, 212, 330 differ from system A. 17 Nov 2026: key_c01 gives no French on 87L (sysA_1616/letter90/): not system A |
+| 90R-93L | cipher letter beginning 96.70.171 ("chiffer n:o 1" at the foot of 90R) | ~1,500 | none found; 94-95 (30 Jan) does not follow the decode | 17 Nov 2026: system A, transcribed twice (1,585 groups), read in part with key_c01 (~44 %), sysA_1616/letter90/; with key_c02 strict 0.78 |
 | 94-95 | clear, 30 Jan [1764]; signed "ce 30 de Janv." | - | - | candidate clear for 87-89 or 90-93 |
 | 96-97L | letter 15.73.100.347.503.401.107.536, early 1764 | 658 | 97R-99L | training letter of key_c01 (PR #566) |
 | 100R | cipher, 13 lines, pencil "6 Mars 1764"? at the head, ends 96 + flourish | ~240 | the part of 102R-103R after 103L.08? (NOTES candidate) | not transcribed |
@@ -16,7 +16,7 @@ Riksarkivet K 259, IIIF A0073297 (image numbers = scan numbers). "Clear" = conte
 | 104R | "ce 15 de May 1764", "Mon cher Comte" (faint), 179.479.409... | ~300 (+105L ~300) | 106R? (see next row) | not transcribed; 105L ends a letter (Swedish note below it) |
 | 105R-106L, 107R, 108L | "ce 15/4 de May 1764", "Mon cher Comte", 66.74.100.347... | 870 (Payne, preliminary) | 106R + 107L ("Till chifferbrevet av den 15/4 maj 1764": "J'ai reçu ... vos deux lettres du 10 de May et du 22 d'Avril ...") | Payne transcription (one pass); which of 104R / 105R the clear belongs to is to settle |
 | 108R-109L, 110R (part) | **15 June 1764, "N:o 1 or 4", St Petersbourg** | 539 + ~110 | 109R + 110L | **this PR: key_c01 pre-registered test 0.383 vs 0.057 (pass); read through its clear** |
-| 110R-111R, 112-115 | 20/31 Aug 1764 ("Votre lettre du 3 de ce mois ...", 111R) with cipher passages; 113 signed "Düben" (NOTES) | not counted | 116-117 ("Till chifferbrevet av 20/31 aug. 1764") | not transcribed |
+| 111R-115 | 20/31 Aug 1764 ("Votre lettre du 3 de ce mois ...", 111R in clear; cipher 112L + top of 112R + 114R + 115, text order 112L, 114R, 115, 112R; clear resumes 112R-113L, signed "Düben") | 1,019 | 116-117 ("Till chifferbrevet av 20/31 aug. 1764") | 17 Nov 2026: transcribed twice; key_c02 pre-registered test CA 0.831 vs 0.078, FAIL at 0.85 (sysA_1616/aug1764/); portion burnt |
 
 Not yet looked at closely: 112-115, 117. Payne's inventory.csv (payne2026/) lists the same pages from thumbnails.
 Next held-out candidates with a clear: 20/31 Aug 1764 (clear 116), 15 May 1764 (clear 106R), 100R (if it is the 6 Mar continuation).
