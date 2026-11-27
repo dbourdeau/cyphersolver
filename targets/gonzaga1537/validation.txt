@@ -1,0 +1,28 @@
+# Statistical & Structural Validation — Modena Estense Campori, Gonzaga Federico II, cc. 13r-13v (catalogue 2162)
+# Script: validate_2162.py (seed=2162, n_ctrl=200)
+# Inputs: transcription_13r_13v.txt (unedited blind transcription) + key_gonzaga1537.tsv (ig=g removed; L12=fussi, L18=passati)
+# Model: DenseLM order=5, early-Italian spaced trained on 421,947 chars of pre-1650 repo Italian (gonzaga1537 & rossi1537 excluded); lexicon lang/lexicons/it.json.gz (zero target boosts)
+
+=== 1. STRICT ZERO-CHOICE 1-VALUE KEY TEST ON FITTED KEY (ZERO SILENT DROPS, IDENTICAL DECODER FOR REAL & CONTROLS) ===
+cipher_words=230, sign_tokens=964, active_sign_types=41
+REAL: LM/char=-2.1500 | IT_WORDS exact hit=182/230 (79.1%) | len>=4 hit=86/121 (71.1%)
+200 shuffled keys    : LM/char mean=-5.6568 sd=0.3741 max=-4.5033 | z=+9.37 | >=real=0/200 (p=0.0050)
+                       All-word hit mean=12.7% sd=4.5% max=26.5% | z=+14.64 | >=real=0/200 (p=0.0050)
+                       Len>=4 hit   mean=1.3% sd=1.5% max=7.8% | z=+46.40 | >=real=0/200 (p=0.0050)
+200 shuffled streams : LM/char mean=-4.7492 sd=0.0602 max=-4.5959 | z=+43.14 | >=real=0/200 (p=0.0050)
+                       All-word hit mean=17.7% sd=1.9% max=23.0% | z=+33.09 | >=real=0/200 (p=0.0050)
+                       Len>=4 hit   mean=3.1% sd=1.4% max=7.3% | z=+47.04 | >=real=0/200 (p=0.0050)
+
+=== 2. RECTO-TO-VERSO CROSS-FOLIO TRANSFER CHECK (ZERO LEXICON, ZERO LM; 11 RETROSPECTIVELY SELECTED RECTO WORDS) ===
+Source: 11 recto words -> 28 consistent sign values (longest-match, zero lexicon):
+  L25: certa cosa e non li stere homo 30 crs[c]i usrerlo mai
+  L26: fare cosa buona
+  L27: el {L30} e in [m]usao us[z]iore crs[c]ito 30 uoss[i]e stere huonss[i] del
+  L28: mon[i]ro insidiato del primo al uhtimo ha biso[i][l]no
+  L29: de buona fortuna altramente potrebe parere charo lo
+  L30: maestro
+
+=== 3. LEAK-FREE MATCHED-LENGTH SYNTHETIC CONTROL (rossi1537/reading_A.md PROSE WORDS; rossi1537 EXCLUDED FROM LM, ZERO TARGET BOOSTS) ===
+Full-coverage digraph key decode on 212 genuine rossi1537/reading_A.md plaintext words: 207/212 exact words (97.6%), 965/979 chars (98.6%).
+
+DECISION: PASS (z_keys=+9.37 p=0.0050, z_streams=+43.14 p=0.0050; both satisfy z_lm >= 5.0 and p <= 0.01).

@@ -187,15 +187,19 @@ PR #759, from the sections below; nothing in it is new evidence.
   key_c02 decodes about 0.80 of the clear's letters.
 - Chiffer n:o 1, 104R-105L (15 May 1764, a second letter of that date) - blocker: open-codes; the letter reads, and the
   missing key values are still workable from the other system A letters. Read in part with key_c02, no period clear found
-  (`sysA_1616/letter104/`; 235 sure + 41 probable of about 291 words, sure 0.808). Open: words on groups absent from key_c02
-  (e.g. 429, 539, 603) or on doubtful groups; 105L05-105L07 blotted and overwritten.
+  (`sysA_1616/letter104/`; 235 sure + 41 probable of about 291 words, sure 0.808; 27 Nov 2026, five spans read through the
+  period clears of other letters: 239 sure + 46 probable of about 295, sure 0.810, sure + probable 0.966). Open: words on groups
+  absent from key_c02 (e.g. 429, 539, 603, and the five values of 27 Nov) or on doubtful groups; 105L05 g1-g8 and 105L07
+  blotted and overwritten.
 - Chiffer n:o 1, 90R-93L (undated) - blocker: open-codes; the letter reads, and the open values are still workable (a period
   clear would settle most of them). Read in part with key_c02, no period clear found (`sysA_1616/letter90/check_c02/`; 641
   sure and 93 probable of about 858 words, sure 0.747). Open: words on values read by sense here and never met in a clear, on
   the 30 conjectured values and on 252, 355, 360, 405; the 30 Jan clear on 94-95 is not its decipherment.
 - Chiffer n:o 1, 20/31 Aug 1764 (cipher 112L, 114R, 115, 112R top) - blocker: not-attempted; workable from the files in the
   folder. The contemporary decipherment 116-117 is transcribed twice and key_c02 was tested on it (FAIL at the 0.85 bar,
-  `sysA_1616/aug1764/`). Open: no strict count, translation or summary of the letter through its clear.
+  `sysA_1616/aug1764/`). English translation of the clear made from its transcription at the PR #1022 integration (27 Nov
+  2026, `sysA_1616/aug1764/translation_116-117_en.md`; no image check). Open: no strict count or summary of the letter through
+  its clear.
 - Chiffer n:o 1, 87-89 - blocker: not-attempted; workable from the online images. Not system A (key_c01 and key_c02 give no
   French on 87L; other hand); no clear identified (94-95 may belong to it); the tables at 218-220 are range-checked only.
 - Other clear pages of the volume - blocker: not-attempted. Read them for any that is a true decipherment (no compositional
@@ -595,3 +599,16 @@ the entry. Its `needs` also named the other Chiffer n:o 1 letters (PR #759): 15/
 Aug 1764 is deciphered by its clear 116-117 with no strict count yet, 100R is the end of letter 96; 90R-93L and 104R-105L are
 read in part with no period decipherment found, and 87-89 is unread. So the entry is **narrowed**, not deleted, to 90R-93L,
 104R-105L and 87-89 (`"outcome": "attempted, open"`). No write-up page: the target is still in progress.
+
+## 27 Nov 2026: 104R-105L, five unresolved spans read through the period clears of other letters (Brice Dudout's session, Claude Opus 5.5)
+
+key_c02, the transcriptions and every hashed file are unchanged; no new measure. Five groups that the 18 Nov reading left
+unresolved are deciphered at the time in other system A letters, often in the same group sequence: 179.479 "cette occasion"
+(May 1764, 107R16), 555.434 "re-mettre" (106L07), 107.287 "afin" (107R16), 259.614.372 "entretenir" (letter 101 L06; 15 June
+1764, 109L.11), 401.439 "le Ministère" (letter 101 L13; 15 June 1764, 108R.03; letter 96 L10 gives 439 "op", so 439 is
+contested). Each value fits the group's place in the one-part code. 105L05 now reads "afin d'entretenir le ministère d'ici
+dans l'idée que le roi ne cherche et ne s'attend à d'autre soutien qu'à celui de la Russie".
+The new words are probable, not sure: the values are absent from key_c02 or differ there, and a new key would need a test on a
+clear not yet used, of which Chiffer n:o 1 has none left. Count (`count_words.py`): 239 sure + 46 probable + 10 unresolved of
+about 295 words, sure 0.810, sure + probable 0.966. Files: `sysA_1616/letter104/reading_104R-105L_key_c02_tagged_clears2711.txt`,
+`clear_values_2711.tsv`, README section of 27 Nov.

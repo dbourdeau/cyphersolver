@@ -202,7 +202,7 @@
     "location": [
      "none"
     ],
-    "source": "No contemporary decipherment found (the clear 106R-107L belongs to the other letter of the same date, 105R-108L). Never transcribed before (Payne's inventory lists image 104 from a thumbnail only). Read in part with key_c02 unchanged (531 of 558 groups known), no new measure: 233 sure + 43 probable of about 291 words, sure 0.801, sure + probable 0.948 (sysA_1616/letter104/). 18 Nov 2026, after a blind digit-form check by Brice Dudout (4/4 controls): 235 sure + 41 probable, sure 0.808, sure + probable 0.948 (reading_104R-105L_key_c02_tagged_plate1711.txt; none of the four values 252, 355, 360, 405 occurs in this letter, so the 26 Nov review leaves the count unchanged). Panin's assurances that the Empress means to restore the King's authority and remedy the Swedish constitution; Düben doubts them."
+    "source": "No contemporary decipherment found (the clear 106R-107L belongs to the other letter of the same date, 105R-108L). Never transcribed before (Payne's inventory lists image 104 from a thumbnail only). Read in part with key_c02 unchanged (531 of 558 groups known), no new measure: 233 sure + 43 probable of about 291 words, sure 0.801, sure + probable 0.948 (sysA_1616/letter104/). 18 Nov 2026, after a blind digit-form check by Brice Dudout (4/4 controls): 235 sure + 41 probable, sure 0.808, sure + probable 0.948 (reading_104R-105L_key_c02_tagged_plate1711.txt; none of the four values 252, 355, 360, 405 occurs in this letter, so the 26 Nov review leaves the count unchanged). 27 Nov 2026: five unresolved spans read through the period clears of other system A letters (479 occasion, 434 mettre, 287 afin, 259 entretenir, 439 ministère; clear_values_2711.tsv), words probable, none sure: 239 sure + 46 probable of about 295, sure 0.810, sure + probable 0.966 (reading_104R-105L_key_c02_tagged_clears2711.txt). Panin's assurances that the Empress means to restore the King's authority and remedy the Swedish constitution; Düben doubts them."
    },
    "length": {
     "tokens": 558,
@@ -925,12 +925,30 @@
   },
   {
    "date": "2026-11-27",
+   "kind": "reading",
+   "technique": [
+    "plaintext matching"
+   ],
+   "what": "104R-105L: five unresolved spans read through the period decipherments of other system A letters, where the same group, often in the same group sequence, is deciphered at the time: 179.479 cette occasion (May 1764 107R16), 555.434 re-mettre (May 1764 106L07), 107.287 afin (May 1764 107R16), 259.614.372 entretenir (letter 101 L06; 15 June 1764 109L.11), 401.439 le Ministère (letter 101 L13; 15 June 1764 108R.03; letter 96 gives 439 'op', so contested). key_c02, the transcriptions and the hashed files unchanged; no new measure. The words are probable, not sure (the values are absent from key_c02 or differ there): 239 sure + 46 probable + 10 unresolved of about 295 words, sure 0.810, sure + probable 0.966 (sysA_1616/letter104/reading_104R-105L_key_c02_tagged_clears2711.txt, clear_values_2711.tsv).",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-27",
    "kind": "verification",
    "technique": [
     "plaintext matching",
     "beam/DP decoding"
    ],
    "what": "Catalogue 1616 (PR #1009, Brice Dudout): the two system A letters with a decipherment of the time recounted over cipher words only, word by word, by a monotone dynamic-programming alignment of the key values with the period decipherment (strict_align.py; nothing read by sense). 6 Mar 1764: 321 cipher words, key_c01 gives 154, with 38 values imposed by the two letters 188; 15 Nov 1765: 360 words, 169 and 216. With the words on groups marked '?' left out the key shares are 0.452/0.548 and 0.464/0.586. The 38 values (key_c01_plus_1616.json, a new file; key_c01.json untouched) come from the same two letters they help to count: no held-out claim and no new measure. 37 of them equal key_c02, which was itself built partly from these two letters, so that agreement is not independent. Re-run in the integration review: both strict_*.tsv byte-identical.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-27",
+   "kind": "verification",
+   "technique": [
+    "plaintext matching"
+   ],
+   "what": "Integration review of PR #1022 (AI agent, for the maintainers): count_words.py re-run on the 18 Nov file (235 + 41 + 15 of 291) and on the new 104R-105L reading (239 sure + 46 probable + 10 unresolved of 295; sure 0.810, 0.966 with probable); the new file differs from the 18 Nov one in three lines; the 105L05 groups match the transcription and the key_c02 decode departs only at the five tagged places; every cited group sequence and clear word found at the cited line. 104R-105L stays read in part (only sure words count). Also recorded: reading_reviews for the 15/4 May 1764 text (A) and the 20/31 Aug 1764 text (B), and an English translation of the Aug 1764 clear 116-117 made from its transcription (translation_116-117_en.md); no image checked, no strict count of the Aug clear.",
    "result": "worked"
   }
  ],
@@ -1029,7 +1047,13 @@
     "read_share": 0.993,
     "language": "fr",
     "summary": "Düben thanks Gyldenstolpe for his letters, says the Russian court does not share the hopes held in Stockholm and thinks Their Majesties are being misled, reports Panin's assurances and that Catherine is held back by Frederick II, mentions Saldern and Stakejeff, and plans to press Panin if the Diet is called early.",
-    "note": "Read through its contemporary decipherment 106R-107L (clear transcribed twice, 1,900 letters): 418 words, 415 sure, 3 probable (0.993); method for this letter: read from existing decipherment. That the clear deciphers this cipher is shown by the second pre-registered test of key_c02, unchanged (17 Nov 2026; CA 0.916 vs 200 permuted-key controls max 0.077; sysA_1616/may1764/). The 415 sure words are the words of the period clear, not the key's output: key_c02 decodes about 0.80 of the clear's letters (M 0.803). Cipher in two new passes (835 groups of 100 or above; 58 stay marked doubtful). The 14 Nov raw key_c01 decode of Payne's preliminary transcription (tx/d1764-05_key_c01.txt) is kept for the record and is superseded."
+    "note": "Read through its contemporary decipherment 106R-107L (clear transcribed twice, 1,900 letters): 418 words, 415 sure, 3 probable (0.993); method for this letter: read from existing decipherment. That the clear deciphers this cipher is shown by the second pre-registered test of key_c02, unchanged (17 Nov 2026; CA 0.916 vs 200 permuted-key controls max 0.077; sysA_1616/may1764/). The 415 sure words are the words of the period clear, not the key's output: key_c02 decodes about 0.80 of the clear's letters (M 0.803). Cipher in two new passes (835 groups of 100 or above; 58 stay marked doubtful). The 14 Nov raw key_c01 decode of Payne's preliminary transcription (tx/d1764-05_key_c01.txt) is kept for the record and is superseded.",
+    "reading_review": {
+     "grade": "A",
+     "by": "integration review of PR #1022 (AI agent, for the maintainers); not a person",
+     "date": "2026-11-27",
+     "note": "Read from the files only, no image check: the clear 106R-107L as transcribed (transcr/may1764_clear_106R-107L.txt) reads as French sentences throughout, and the English translation in reading_1764-05-15.md was compared with it line by line and follows it. The strict count there (415 sure of 418, 0.993) was not recounted. That the clear deciphers this cipher rests on the pre-registered key_c02 test in may1764/README.md (CA 0.916 vs controls max 0.077), not re-run."
+    }
    },
    {
     "doc": "Schuck-143-fragments",
@@ -1159,18 +1183,18 @@
      "sysA_1616/letter104/decode_104R-105L_key_c02.txt",
      "sysA_1616/letter104/decode_104R-105L_key_c02_plus_conjectures.txt"
     ],
-    "reading": "sysA_1616/letter104/reading_104R-105L_key_c02_tagged_plate1711.txt",
+    "reading": "sysA_1616/letter104/reading_104R-105L_key_c02_tagged_clears2711.txt",
     "translation": "sysA_1616/letter104/README.md",
     "state": "read in part",
-    "read_share": 0.808,
+    "read_share": 0.810,
     "language": "fr",
     "summary": "Düben reports Panin's assurances that the Empress will act with the King to restore his authority and remedy the faulty Swedish constitution, notes a fear of a total revolution in Sweden behind them, and says the course that gives the King most security must come before the Empress's friendship if her promises are slow.",
-    "note": "key_c02 unchanged (531 of 558 groups known); no new measure and no period clear for this letter. Strict count (count_words.py, after the blind digit-form check of 18 Nov): 235 sure + 41 probable + 15 unresolved of about 291 words: sure 0.808, sure + probable 0.948. Most probable words rest on a group absent from key_c02 or on a doubtful group; 105L05-105L07 blotted and overwritten. Transcriptions by AI agents (two blind passes), not checked by a palaeographer.",
+    "note": "key_c02 unchanged (531 of 558 groups known); no new measure and no period clear for this letter. Strict count (count_words.py, after the blind digit-form check of 18 Nov): 235 sure + 41 probable + 15 unresolved of about 291 words: sure 0.808, sure + probable 0.948. 27 Nov 2026: five unresolved spans read through the period clears of other system A letters (clear_values_2711.tsv); the new words are probable, none sure: 239 sure + 46 probable + 10 unresolved of about 295 words: sure 0.810, sure + probable 0.966. Most probable words rest on a group absent from key_c02 or on a doubtful group; 105L05-105L07 blotted and overwritten. Transcriptions by AI agents (two blind passes), not checked by a palaeographer.",
     "reading_review": {
      "grade": "B",
-     "by": "integration review of PR #759 (AI agent, for the maintainers); not a person",
+     "by": "integration review of PR #1022 (AI agent, for the maintainers); not a person",
      "date": "2026-11-27",
-     "note": "Recounted with count_words.py on the PR's files: 104R-105L 235 sure + 41 probable of 291 (0.808), read in part. Plaintext builds French sentences; words on key_c02 values read by sense in another letter and not met in a clear are probable."
+     "note": "Recounted with count_words.py on reading_104R-105L_key_c02_tagged_clears2711.txt: 239 sure + 46 probable + 10 unresolved of about 295 words (sure 0.810); read in part. The five new values (479, 434, 287, 259, 439) are checked against the period clears of 107L, 106R, L101, 109R; probable, 439 contested by L096. 105L05 now builds a French sentence; g1-g7 blotted, unresolved."
     }
    },
    {
@@ -1205,7 +1229,14 @@
     "state": "read in part",
     "language": "fr",
     "summary": "Not yet summarised: the clear 116-117 opens 'Je n'ai jamais osé garantir la sincérité des dispositions de Sa Majesté l'Impératrice' and the cipher ends with Düben's thanks and respectful attachment.",
-    "note": "The cipher passage is deciphered by the contemporary clear 116-117 (transcribed twice, 40 lines, 2,279 letters), but no strict count, translation or summary of it has been made, so it stays 'read in part' here. key_c02 failed its one pre-registered test on this letter (CA 0.831 vs controls max 0.078, bar 0.85) because the PREREG bound the binding order 112L, 112R, 114R, 115; the text runs 112L, 114R, 115, 112R, and in that order the same key gives 0.938 (after the result, not a test). The clear opening on 111R and the end on 112R-113L are in clear in the original."
+    "note": "The cipher passage is deciphered by the contemporary clear 116-117 (transcribed twice, 40 lines, 2,279 letters), but no strict count or summary of it has been made, so it stays 'read in part' here. English translation made from the transcribed clear at the PR #1022 integration review (27 Nov 2026). key_c02 failed its one pre-registered test on this letter (CA 0.831 vs controls max 0.078, bar 0.85) because the PREREG bound the binding order 112L, 112R, 114R, 115; the text runs 112L, 114R, 115, 112R, and in that order the same key gives 0.938 (after the result, not a test). The clear opening on 111R and the end on 112R-113L are in clear in the original.",
+    "translation": "sysA_1616/aug1764/translation_116-117_en.md",
+    "reading_review": {
+     "grade": "B",
+     "by": "integration review of PR #1022 (AI agent, for the maintainers); not a person",
+     "date": "2026-11-27",
+     "note": "Read from the files only, no image check: the clear 116-117 as transcribed (aug1764_clear_116-117.txt, two passes) reads as French sentences throughout, and an English translation was made from it at this review (translation_116-117_en.md). Grade B, not A: no strict word count has been made, the cipher was not decoded again, and the link between cipher and clear rests on a key_c02 test that failed its pre-registered bar (0.831 at 0.85) and passed only in the page order fixed after the result (0.938)."
+    }
    }
   ],
   "key_file": [

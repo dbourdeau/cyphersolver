@@ -1,0 +1,293 @@
+{
+ "schema_version": 1,
+ "target": "gonzaga1537",
+ "title": "Federico II Gonzaga's enclosed Piedmont intelligence dispatch to Ferrante Gonzaga, 6 May 1537 (Modena, Biblioteca Estense Universitaria, Autografoteca Campori, Gonzaga Federico II, sfasc. II, cc. 13r-13v; catalogue 2162)",
+ "documents": [
+  {
+   "id": "beu-campori-gonzaga-1537-c13",
+   "read": "read in part",
+   "shelfmark": "Biblioteca Estense Universitaria, Modena, Autografoteca Campori, Lettera G, Gonzaga, Federico II, duca di Mantova, sfasc. II, cc. 12-15 (cipher enclosure cc. 13r-13v; catalogue 2162)",
+   "date": "6 May 1537 (covering letter c. 12r; received 22 May 1537 c. 15v)",
+   "year": 1537,
+   "country": "Mantua",
+   "route": "Federico II Gonzaga (Mantua) -> Ferrante Gonzaga, Viceroy of Sicily (Messina)",
+   "places": {
+    "from": "Mantua",
+    "to": "Messina"
+   },
+   "language": "Italian",
+   "pages": 2,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No contemporary decipherment on cc. 12r-15v and no prior edition or key found in DECODE, Cryptiana, Modena Estense Campori neighbour letters, or literature (checked 4 Nov and 19 Nov 2026)."
+   },
+   "length": {
+    "tokens": 265,
+    "distinct": 56,
+    "unit": "mixed",
+    "measured": true,
+    "file": "transcription_13r_13v.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Estense IIIF manifest 22b3126b-3b70-4ede-a33b-1adf4a4491f6 (cc. 12r-15v stitched at native 2976-3094 x 4088-4128 px)",
+    "corrections": 0,
+    "image_quality": "good",
+    "notes": "Blind high-resolution diplomatic and clean transcription of c. 12r, c. 13r-13v (30 lines: 265 non-clear word/code tokens; 1,459 glyph chars excluding punctuation/braces, 1,509 raw non-space chars), and c. 15v; c. 14r gutter overlap verified. Unedited blind transcription preserved in transcription_13r_13v.txt; scribal slips and doubts noted in reading_13r_13v.md and NOTES.md."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "homophonic",
+   "polygraphic",
+   "nomenclator"
+  ],
+  "summary": "Word-spaced directional i-digraph and homophonic substitution on lowercase Latin letters, digits, and looped '&' (where 'i' acts as a prefix/suffix modifier turning X into distinct Xi and iX digraphs; 43 recovered signs plus 30=che, 44 entries total), paired with two-digit codes (including 6 provisional candidate nulls) and underlined-L superscript nomenclators.",
+  "symbol_kind": "digits and letters",
+  "digit_groups": {
+   "width": "2",
+   "separation": "spaces"
+  },
+  "distinct_symbols": 56,
+  "diacritics": {
+   "used": true,
+   "note": "Acute stroke on 'é' (homophone of 'e' = r); underlined capital 'L' with superscript numerals ({L2}, {L9}, {L30}, {L36}) for proper-noun nomenclators; flanking dots on some two-digit groups (.23., .27., .31., .46.)."
+  },
+  "homophones": {
+   "used": true,
+   "max_per_vowel": 3,
+   "max_per_consonant": 3
+  },
+  "nomenclator": {
+   "present": true,
+   "entries": 14,
+   "kinds": [
+    "common words",
+    "names",
+    "places",
+    "titles"
+   ],
+   "unread_groups": 13
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "word_division": "kept",
+  "doubled_letters": "special sign (zo=tt, zz=zz, iz=gg, ig=ss, medial ib=nn)",
+  "key_order": "unknown"
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "No contemporary decipherment on cc. 12r-15v and no prior edition or 1536-1538 key found in live DECODE queries (Federico, Ferrante, Mantova), Cryptiana, cyphersolver_repo targets/keys, or 16 adjacent Modena Estense Campori Federico II letters (checked 4 Nov and 19 Nov 2026).",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "images",
+   "cleartext context"
+  ],
+  "attack": "crib",
+  "human_role": "WAINUT found the lead in the Biblioteca Estense sweep (3 Nov 2026). On 19-26 Nov 2026, Gemini 4 Carbon (via @tttzqw) stitched the native IIIF scans, transcribed cc. 12r-15v blindly, recovered the directional i-digraph cipher using inline clear passages together with ciphertext-side analysis, ran 200-shuffle controls, and applied pre-PR adversarial audit fixes from OpenAI Codex (gpt-6.2-astra). No human palaeographer has checked the full transcription yet.",
+  "tools": [
+   "native IIIF tile stitcher",
+   "mechanical full-coverage digraph decoder (decrypt_13r_13v.py)",
+   "Italian 5-gram LM, 200-shuffle controls, recto-to-verso transfer, and rossi1537/reading_A.md synthetic control (validate_2162.py)",
+   "programmatic cipher-word auditor (word_audit_2162.py)"
+  ],
+  "models": [
+   "Gemini 4 Carbon (Google DeepMind), orchestrating Gemini 4 Neon and Hydrogen worker agents; compute and PRs via @tttzqw",
+   "OpenAI Codex (gpt-6.2-astra, pre-PR adversarial verification)"
+  ],
+  "first_date": "2026-11-19",
+  "last_date": "2026-11-26"
+ },
+ "solution": [
+  {
+   "date": "2026-11-19",
+   "kind": "literature search",
+   "what": "Live DECODE sweeps (Federico, Ferrante, Mantova), Cryptiana, cyphersolver_repo keys, and 16 adjacent Modena Estense Campori Federico II letters (sfasc. I-II, all clear) confirmed no surviving 1536-1538 key and no prior edition online.",
+   "result": "ruled out"
+  },
+  {
+   "date": "2026-11-19",
+   "kind": "transcription",
+   "what": "Stitched all 8 native IIIF canvases (cc. 12r-15v, 2976-3094 x 4088-4128 px) and produced blind diplomatic and clean transcriptions of c. 12r, c. 13r-13v (30 lines: 265 non-clear tokens; 1,459 glyph chars excluding punctuation/braces, 1,509 raw non-space chars), and c. 15v; verified c. 14r gutter overlap.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-19",
+   "kind": "hypothesis",
+   "technique": [
+    "frequency analysis",
+    "key-structure hypothesis"
+   ],
+   "what": "Monoalphabetic and plain homophonic substitution hypotheses failed; character distribution (i = 29.7% of cipher characters) revealed a directional i-digraph modifier architecture (X vs Xi vs iX) paired with doubled-letter digraphs (zo=tt, zz=zz, iz=gg, ig=ss, ib=e/nn) and 30=che.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-19",
+   "kind": "solver",
+   "technique": [
+    "crib testing",
+    "repeat/pattern analysis",
+    "language-model scoring",
+    "beam/DP decoding",
+    "manual reconstruction"
+   ],
+   "what": "Recovered 43 directional digraph and singleton values (21 digraphs + 22 singletons) plus 30=che (44 entries total) using inline clear Italian passages (e.g., L04 considerando next to ri34=sia) together with ciphertext-side analysis, decoding connected 1537 Italian on both recto (c. 13r) and verso (c. 13v) referencing il vescovo de Casale / dela Barba, el Speciano, Il Iovio, Milan, and the fortress of Hesdin (Edim).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-26",
+   "kind": "verification",
+   "technique": [
+    "statistical test",
+    "language-model scoring"
+   ],
+   "what": "Strict zero-choice 1-value deterministic key test on the fitted key (validate_2162.py, zero silent drops, zero target lexicon boosts, ig=g removed): 230 letter-words (964 sign tokens) LM/char -2.1500 (z=+9.37 vs 200 shuffled keys, z=+43.14 vs 200 shuffled streams; exact IT_WORDS hit 182/230 = 79.1%, len>=4 86/121 = 71.1%, z=+46.40 / +47.04); leak-free rossi1537/reading_A.md prose-word synthetic control 207/212 (97.6%) exact words, 965/979 (98.6%) chars; negative controls FAIL (exit=1) on all-'e' and all-'a' constant keys.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-26",
+   "kind": "verification",
+   "what": "Pre-PR adversarial audits (OpenAI Codex gpt-6.2-astra, 19 Nov and 26 Nov 2026) verified the Estense IIIF manifest and live tile match (MAD < 1 RGB level), ran zero-lexicon recto-to-verso transfer (11 retrospectively selected recto words -> 28 signs -> verso L25-L30), removed disputed ig=g in favor of passati (L18) and fussi (L12), corrected Hesdin capture date to 13-14 April 1537 and Bernardino Castellari's death date to 27 June 1546, fixed the rossi1537 synthetic control to read segmented prose from reading_A.md, aligned outcome.method to adjacent plaintext, and flagged L04-L06 and L19 for explicit brackets.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-19",
+   "kind": "reading",
+   "what": "Unedited full-coverage mechanical decryption (decryption_13r_13v.txt) and strict cipher-words-only reading audit (word_audit_2162.py & v10_relabel.py, clear_markup=⟨⟩): 219/267 sure cipher words (0.820, 48 holes: 13 open proper-noun nomenclators, 9 open two-digit codes/provisional candidate nulls, 9 uncertain/contextual words, 17 scribal slips) -> read in part.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-27",
+   "kind": "verification",
+   "technique": [
+    "manual reconstruction"
+   ],
+   "what": "Integration review of PR #1019 (AI agent, for the maintainers): an independent tiler over key_gonzaga1537.tsv reproduced decryption_13r_13v.txt on all 30 lines with the same 43 ambiguous parses; sure words recounted 219/267 (0.820); c. 13r L01-L07 compared with the Estense IIIF image and matched, except L02/L03 lizh, which the leaf shows as li3b (already bracketed [più], count unchanged, added to Transcription doubts). Gap blockers set to one outside type each. Not checked: c. 13r L08-L24 and c. 13v against the image, the validation figures, the Potter and DBI citations.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-27",
+   "kind": "verification",
+   "technique": [
+    "manual reconstruction"
+   ],
+   "what": "Write-up escalation check (AI agent): c. 13r compared with the Estense IIIF canvas at 1400 px and full-size crops. L02/L03 show li3b, which the key decodes as pio (period form of più), so those two holes are workable; L04 'uiro e' may be clear Italian 'uero è' rather than cipher; c. 13r L08-L24 and c. 13v still not compared with the image. Write-up held, Status set to in progress pending a transcription re-check.",
+   "result": "partial"
+  }
+ ],
+ "outcome": {
+  "class": "read in part",
+  "key": "partial",
+  "method": "key recovered based on adjacent plaintext",
+  "method_basis": "Inline clear Italian phrases interspersed on c. 13r (e.g., L04 'considerando' beside 'ri34 = sia') provided adjacent plaintext context alongside ciphertext-side cryptanalysis of the directional i-digraph and homophonic alphabet (43 signs plus 30=che), with no surviving key sheet, sibling ciphertext, or contemporary decipherment.",
+  "contribution": [
+   "transcription",
+   "key recovered"
+  ],
+  "verification": [
+   "statistical test",
+   "historical consistency",
+   "independent verification"
+  ],
+  "validation": {
+   "date": "2026-11-26",
+   "verdict": "pass",
+   "file": "validation.txt",
+   "tokens": 964,
+   "types": 41,
+   "score": -2.15,
+   "nulls": {
+    "shuffled_keys": {
+     "n": 200,
+     "mean": -5.6568,
+     "sd": 0.3741,
+     "max": -4.5033,
+     "z": 9.37,
+     "p": 0.005
+    },
+    "shuffled_streams": {
+     "n": 200,
+     "mean": -4.7492,
+     "sd": 0.0602,
+     "max": -4.5959,
+     "z": 43.14,
+     "p": 0.005
+    }
+   },
+   "notes": "Strict zero-choice 1-value key test on the fitted key with dynamic PASS/FAIL exit gate on transcription_13r_13v.txt (validate_2162.py -> validation.txt; verified FAIL exit=1 on both all-'e' and all-'a' constant keys; zero silent drops, zero target lexicon boosts, ig=g removed, gonzaga1537 and rossi1537 excluded from 5-gram Italian LM): 230 letter-words (964 sign tokens) LM/char -2.1500 (z=+9.37 vs 200 shuffled keys, z=+43.14 vs 200 shuffled streams, p=0.0050; IT_WORDS hit 182/230 = 79.1%, len>=4 86/121 = 71.1%). Also includes zero-lexicon recto-to-verso transfer (11 retrospectively selected recto words -> 28 signs -> verso L25-L30) and a leak-free synthetic control on 212 genuine segmented Italian prose words from targets/rossi1537/reading_A.md (207/212 = 97.6% exact words, 965/979 = 98.6% chars; earlier blind solver audit corrected original 94.9% to 141/214 = 65.9% without leakage/boosts, documented in NOTES.md)."
+  },
+  "fraction_read": 0.82,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "reading_13r_13v.md (word_audit_2162.py & v10_relabel.py, clear_markup=⟨⟩): 219 of 267 cipher word tokens sure under key_gonzaga1537.tsv (0.820, 48 holes: 13 open proper-noun nomenclators, 9 open numeric codes/provisional candidate nulls, 9 contextual/uncertain words, 17 scribal slips).",
+  "codes_open": {
+   "open": 13,
+   "total": 14,
+   "tokens_open": 23
+  },
+  "provenance": "contributed",
+  "credits": [
+   {
+    "who": "lccompany",
+    "role": "new cipher",
+    "note": "found catalogue 2162 in the Biblioteca Estense (Lodovico) sweep (research/wainut_leads_2026-11-03/)",
+    "date": "2026-11-03"
+   },
+   {
+    "who": "gemini4carbon",
+    "role": "solution",
+    "note": "Gemini 4 Carbon (Google DeepMind), orchestrating Gemini 4 Neon and Hydrogen worker agents, with pre-PR adversarial verification via OpenAI Codex (gpt-6.2-astra); compute and PRs via @tttzqw",
+    "date": "2026-11-26"
+   }
+  ],
+  "key_file": "key_gonzaga1537.tsv",
+  "gaps": [
+   {
+    "item": "Open proper-noun nomenclators (13 tokens across 6 codes: {L2}, {L9}, {L30}, {L36}, [46], [82])",
+    "blocker": "needs-physical-access",
+    "detail": "Open codes (the letter reads around them). Identifying the referents needs a 1537 Mantuan key sheet or companion letters in ASMn Archivio Gonzaga, which are not online."
+   },
+   {
+    "item": "Open two-digit codes and provisional candidate nulls (9 tokens across 7 codes: [23], [24], [27], [28], [29/zg], [31], [53])",
+    "blocker": "needs-physical-access",
+    "detail": "[53] fits non in both occurrences (L06, L22); the other six two-digit groups are provisional candidate nulls or short modifiers. None can be proved without the key sheet or a sibling letter in ASMn Archivio Gonzaga, not online."
+   },
+   {
+    "item": "Uncertain words, abbreviated token e4,s.{ar}, and 17 scribal slips/allographs (26 words total)",
+    "blocker": "illegible",
+    "detail": "All 48 holes are bracketed in reading_13r_13v.md and listed in holes_13r_13v.md. The doubtful shapes were checked on the online Estense scans (about 3000 px), which are the best images there are, and stay doubtful there; another letter in the same 1537 key would settle them."
+   }
+  ],
+  "texts": [
+   {
+    "doc": "beu-campori-gonzaga-1537-c13",
+    "label": "c. 13r-13v (catalogue 2162, Piedmont intelligence enclosure in Federico II Gonzaga's letter of 6 May 1537)",
+    "transcription": "transcription_13r_13v.txt",
+    "decryption": "decryption_13r_13v.txt",
+    "reading": "reading_13r_13v.md",
+    "translation": "translation_13r_13v.md",
+    "language": "it",
+    "state": "read in part",
+    "read_share": 0.82,
+    "clear_markup": "⟨⟩",
+    "summary": "A two-section secret Piedmont intelligence sheet copied in Mantua and enclosed in Federico II Gonzaga's 6 May 1537 letter to Ferrante Gonzaga: Section 1 criticises an unnamed figure [46] for reckless, vain conduct and notes that the Bishop of Casale (contextually Bernardino Castellari, called della Barba) is held under suspicion through Speciano (contextually Giovanni Battista Speciano); Section 2 reports troops passing over to {L2?} with banners unfurled, the surrender of the fortress of Hesdin (Edim, 13-14 April 1537), Giovio's (contextually Paolo Giovio's) warning to {L30?}, and public opinion in Milan that {L30?} stands in the worst possible credit.",
+    "reading_review": {
+     "grade": "B",
+     "by": "integration review of PR #1019 (AI agent, for the maintainers); not a person",
+     "reader_kind": "model",
+     "independent": true,
+     "date": "2026-11-27",
+     "note": "Decryption reproduced from key_gonzaga1537.tsv on the transcription (30/30 lines, 43 ambiguous parses resolved to the only Italian word or bracketed); 219/267 sure cipher words (0.820), read in part; c. 13r L01-L07 compared with the Estense IIIF image, one shape difference (lizh/li3b, bracketed in the reading)."
+    }
+   }
+  ],
+  "notes": "Substantially deciphered using inline clear Italian passages plus ciphertext-side cryptanalysis (43 signs + 30=che; 219/267 = 82.0% sure cipher words under key_gonzaga1537.tsv, clear_markup=⟨⟩, 48 holes -> partial extent under the 95% threshold). No surviving key sheet or contemporary decipherment."
+ }
+}

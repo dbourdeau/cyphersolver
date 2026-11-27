@@ -48,7 +48,7 @@
 </div>
 
 <section class="hero solve">
-  <p class="kicker"><a href="catalogue.html">Unsolved Catalogue</a> · no. 1213 · class B · priority 5.6 · open</p>
+  <p class="kicker"><a href="catalogue.html">Unsolved Catalogue</a> · no. 1213 · class B · priority 5.6 · in progress</p>
   <h1>Armand du Lau du Chambon's papers: ciphered correspondence of Louis II de Bourbon, prince de Condé (Fronde)</h1>
   <p class="sub">Condé's cipher in the 1651-52 Fronde campaigns.</p>
   <dl class="facts">
@@ -62,6 +62,7 @@
 </section>
 
 <main>
+<div class="callout blue"><p><strong>In progress here.</strong> <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/conde1651/NOTES.md" rel="noopener">targets/conde1651</a> is working on this cipher (status: in progress — the reading is finished, the write-up is owed (27 Nov 2026). Catalogue 1213 is finished as a whole: the). Read its NOTES.md before you start, and hand it to your agent with this page: it records what was transcribed, tried and ruled out, and the next step.</p></div>
 <h2>Hand this page to your AI agent</h2>
 <p>Give your agent (Claude, ChatGPT or any assistant that can open web pages) this address and ask it to do the task on the page:</p>
 <p class="urlline">https://cyphersolver.com/solve/1213.html</p>
@@ -70,6 +71,10 @@
 This page: https://cyphersolver.com/solve/1213.html
 
 You are helping a public research project read historical cipher letters that nobody has read yet.
+
+START HERE: the project is already working on this cipher. Read these notes before anything else and
+build on them; they record what was transcribed, tried and ruled out, and the next step:
+  https://github.com/dbourdeau/cyphersolver/blob/main/targets/conde1651/NOTES.md  (status: in progress — the reading is finished, the write-up is owed (27 Nov 2026). Catalogue 1213 is finished as a whole: the)
 
 THE CIPHER
   Title:          Armand du Lau du Chambon's papers: ciphered correspondence of Louis II de Bourbon, prince de Condé (Fronde)
@@ -84,19 +89,20 @@ THE CIPHER
 
 WHAT IS KNOWN
   Status: Departmental inventory: 'correspondance chiffrée de Louis de Bourbon, prince de Condé'. SHD GR 1KT 211 (Brianson papers) holds five ciphered Condé letters of 1651 with transcription and method: a possible key, so class B. Not on DECODE. Checked 28 Oct 2026: Checked 28 Oct 2026: AD Dordogne 2 E 1841-18 inventory says 'correspondance chiffrée de Condé' 1651-52, no images on page. SHD GR 1KT 211 (Papiers Brianson) lists five ciphered Condé letters of 1651 'accompagnées de la transcription et de la méthode de décryptage' (photocopies, cf. 1 Kmi 62): a likely key/crib, not online. Printed-edition check, 28 Oct 2026: Not found in the printed edition checked. No match: the entry is an inventory line ('correspondance chiffrée') with no letter-level data; Lenet's Mémoires and Aumale's Histoire des princes de Condé t. VI not grepped (nothing specific to search for) Sibling lead: Lasry, 'Armand de Bourbon's Poly-Homophonic Cipher - 1649' (HistoCrypt), Conti's Fronde cipher in BnF fr. 3584; test whether the Dordogne ciphers use the same system. Printed prior art (reported by Brice Dudout, issue #478, 12 Nov 2026; the article's existence and place were confirmed from the issue contents, but its text could not be fetched from the project's cloud environment and was not read here): Gen. Arnaud de Brianson, 'Sur cinq lettres chiffrées du prince de Condé (1651)', Bulletin de la Société historique et archéologique du Périgord, 1983, 4e livraison (BSHAP_1983-4.pdf at docs.shap.fr, from p. 280). By the report it gives a letter-by-letter summary of the deciphered content of the five letters (5 Aug to 4 Sept 1651), a description of the system (semi-ordered nomenclator with a homophonic alphabet, five series of two-digit codes, about 500 values of which 160 used; proper names uncertain) and a specimen, but not the key table or the full plaintext. The entry stays open for the full reading; whether the summary counts as a deciphered text is for whoever opens the article. Update 14 Nov 2026 (issue #478, Brice Dudout's second comment): he has no decipherment of his own and has not seen the letters; only the printed prior art is his report. By the passages he quotes from the PDF's text layer, Brianson gives, 'après décryptement', a letter-by-letter summary of the five letters (5-6 Aug, 13 Aug, 17 Aug, 25-27 Aug, 3-4 Sept 1651; codes 96 = probably the comte du Dognon, 97 = 'très certainement le conseiller Laisné'), two verbatim phrases of the 17 Aug letter, and the system (homophonic alphabet, five series of two-digit groups, about 500 values of which 160 used, proper names still uncertain); no key table and no full plaintext. The PDF (docs.shap.fr) and its Wayback copy did not answer from the project's cloud environment on 14 Nov 2026, so the quotations are unchecked here. The full transcription is presumably in the Brianson papers (SHD GR 1KT 211 / 1 Kmi 62). Read in print as a summary, by his report; the entry stays open for the ciphertext and a full reading.
-  Outcome so far: not yet attempted by the project
+  Outcome so far: In progress here, in targets/conde1651/.
   Prior-art check: open (checked 28 Oct 2026: known.py ledgers+DECODE, web searches on the names/cipher, Calames/FranceArchives notice; no published decipherment found; cryptiana and HistoCrypt not searched in depth) Printed edition: not found in the printed edition checked (No match: the entry is an inventory line ('correspondance chiffrée') with no letter-level data; Lenet's Mémoires and Aumale's Histoire des princes de Condé t. VI not grepped (nothing specific to search for)). Brianson, BSHAP 1983-4 (summary of the deciphered content; see status).
   Check first: Request SHD 1 Kmi 62 and Dordogne images.
   Class B: part of a key or a known cipher family of the same office is in print or on DECODE.
+  Project notes (read these before anything else; they record what was tried and ruled out): https://github.com/dbourdeau/cyphersolver/blob/main/targets/conde1651/NOTES.md
 
 STEPS
 0. Set up. If you can run a shell, fork and clone the repository and work inside it:
      git clone https://github.com/dbourdeau/cyphersolver.git
    Then read, in this order: CONTRIBUTING.md (how a contribution is sent and credited); README.md, sections
-   "Repository layout" and "Conventions" (how readings are measured and named); and
-   lang/README.md (shared language models).
-   Put all your work in targets/&lt;writer&gt;&lt;year&gt;/ (a new folder, e.g. sega1593): transcription, key, decipherment, scripts. Write a NOTES.md that says
-   what the document is, the system, the key, the reading, and what is open and why. Keep WORKLOG.md there too:
+   "Repository layout" and "Conventions" (how readings are measured and named); targets/conde1651/NOTES.md (everything
+   already tried on this cipher, with the files it used); and lang/README.md (shared language models).
+   Put all your work in targets/conde1651/: transcription, key, decipherment, scripts. Add your findings to its NOTES.md
+   under a dated heading, without rewriting what is there. Keep WORKLOG.md there too:
    one dated line per step (transcription, hypothesis, solver run, crib, key found, control), failures included.
    Do not edit docs/ (the site is generated and rebuilt on merge) and do not commit large images: link them.
    If you cannot run a shell, do the same work in files you keep and send them with the issue below.
@@ -136,7 +142,7 @@ STEPS
      - not applicable: Not a cipher (clear text, shorthand, a key sheet, instructions), or the item could not be reached.
 
 REPORT BACK
-With a clone: open a pull request with your targets/&lt;writer&gt;&lt;year&gt;/ folder. Say in the description how you want to be
+With a clone: open a pull request with your targets/conde1651/ folder. Say in the description how you want to be
   credited (name, initials or handle, and a link) and include the same points as the issue below.
 Without one: open an issue: https://github.com/dbourdeau/cyphersolver/issues/new?template=solution.yml&amp;title=Solution%3A+catalogue+1213&amp;target=catalogue+1213
 (other kinds of contribution: https://github.com/dbourdeau/cyphersolver/issues/new/choose). Include:
@@ -156,9 +162,9 @@ If you cannot open issues or pull requests, write this report for your human to 
 
 
 <p><b>Status and prior art.</b> Departmental inventory: 'correspondance chiffrée de Louis de Bourbon, prince de Condé'. SHD GR 1KT 211 (Brianson papers) holds five ciphered Condé letters of 1651 with transcription and method: a possible key, so class B. Not on DECODE. Checked 28 Oct 2026: Checked 28 Oct 2026: AD Dordogne 2 E 1841-18 inventory says 'correspondance chiffrée de Condé' 1651-52, no images on page. SHD GR 1KT 211 (Papiers Brianson) lists five ciphered Condé letters of 1651 'accompagnées de la transcription et de la méthode de décryptage' (photocopies, cf. 1 Kmi 62): a likely key/crib, not online. Printed-edition check, 28 Oct 2026: Not found in the printed edition checked. No match: the entry is an inventory line ('correspondance chiffrée') with no letter-level data; Lenet's Mémoires and Aumale's Histoire des princes de Condé t. VI not grepped (nothing specific to search for) Sibling lead: Lasry, 'Armand de Bourbon's Poly-Homophonic Cipher - 1649' (HistoCrypt), Conti's Fronde cipher in BnF fr. 3584; test whether the Dordogne ciphers use the same system. Printed prior art (reported by Brice Dudout, issue #478, 12 Nov 2026; the article's existence and place were confirmed from the issue contents, but its text could not be fetched from the project's cloud environment and was not read here): Gen. Arnaud de Brianson, 'Sur cinq lettres chiffrées du prince de Condé (1651)', Bulletin de la Société historique et archéologique du Périgord, 1983, 4e livraison (BSHAP_1983-4.pdf at docs.shap.fr, from p. 280). By the report it gives a letter-by-letter summary of the deciphered content of the five letters (5 Aug to 4 Sept 1651), a description of the system (semi-ordered nomenclator with a homophonic alphabet, five series of two-digit codes, about 500 values of which 160 used; proper names uncertain) and a specimen, but not the key table or the full plaintext. The entry stays open for the full reading; whether the summary counts as a deciphered text is for whoever opens the article. Update 14 Nov 2026 (issue #478, Brice Dudout's second comment): he has no decipherment of his own and has not seen the letters; only the printed prior art is his report. By the passages he quotes from the PDF's text layer, Brianson gives, 'après décryptement', a letter-by-letter summary of the five letters (5-6 Aug, 13 Aug, 17 Aug, 25-27 Aug, 3-4 Sept 1651; codes 96 = probably the comte du Dognon, 97 = 'très certainement le conseiller Laisné'), two verbatim phrases of the 17 Aug letter, and the system (homophonic alphabet, five series of two-digit groups, about 500 values of which 160 used, proper names still uncertain); no key table and no full plaintext. The PDF (docs.shap.fr) and its Wayback copy did not answer from the project's cloud environment on 14 Nov 2026, so the quotations are unchecked here. The full transcription is presumably in the Brianson papers (SHD GR 1KT 211 / 1 Kmi 62). Read in print as a summary, by his report; the entry stays open for the ciphertext and a full reading.</p>
-<p><b>Outcome so far.</b> Not yet attempted by the project. Prior-art check: open (checked 28 Oct 2026: known.py ledgers+DECODE, web searches on the names/cipher, Calames/FranceArchives notice; no published decipherment found; cryptiana and HistoCrypt not searched in depth) Printed edition: not found in the printed edition checked (No match: the entry is an inventory line ('correspondance chiffrée') with no letter-level data; Lenet's Mémoires and Aumale's Histoire des princes de Condé t. VI not grepped (nothing specific to search for)). Brianson, BSHAP 1983-4 (summary of the deciphered content; see status)..</p>
+<p><b>Outcome so far.</b> In progress here, in targets/conde1651/. Prior-art check: open (checked 28 Oct 2026: known.py ledgers+DECODE, web searches on the names/cipher, Calames/FranceArchives notice; no published decipherment found; cryptiana and HistoCrypt not searched in depth) Printed edition: not found in the printed edition checked (No match: the entry is an inventory line ('correspondance chiffrée') with no letter-level data; Lenet's Mémoires and Aumale's Histoire des princes de Condé t. VI not grepped (nothing specific to search for)). Brianson, BSHAP 1983-4 (summary of the deciphered content; see status)..</p>
 <p><b>Check first.</b> Request SHD 1 Kmi 62 and Dordogne images.</p>
-
+<ul><li><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/conde1651/NOTES.md" rel="noopener">targets/conde1651/NOTES.md</a>: what was tried and ruled out (<a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/conde1651" rel="noopener">the folder</a>)</li></ul>
 
 
 <h2>Scores</h2>
@@ -181,7 +187,7 @@ If you cannot open issues or pull requests, write this report for your human to 
 </div></footer>
 <script>(function(){var b=document.querySelector('.agentbox .copy'),p=document.getElementById('agent');if(!b||!p)return;
 b.addEventListener('click',function(){var t=p.textContent;(navigator.clipboard?navigator.clipboard.writeText(t):Promise.reject()).then(function(){b.textContent='Copied';setTimeout(function(){b.textContent='Copy';},1600);},function(){var r=document.createRange();r.selectNodeContents(p);var s=getSelection();s.removeAllRanges();s.addRange(r);});});})();</script>
-<script src="catalogue-data.js?v=62065f0d"></script>
+<script src="catalogue-data.js?v=0330d3f5"></script>
 <script src="site.js?v=572104d3"></script>
 </body>
 </html>
