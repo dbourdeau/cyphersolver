@@ -45,9 +45,9 @@
    "date": "received 23 Jan 1674",
    "year": 1674,
    "country": "Germany",
-   "route": "unnamed correspondent -> Count Johann Ludwig of Nassau-Ottweiler (copy)",
+   "route": "\"Johann Melchior ...\" -> Count Johann Ludwig of Nassau-Ottweiler (copy of the letter fol. 279r-281r)",
    "places": {
-    "from": "unknown",
+    "from": "Vienna",
     "to": "Ottweiler"
    },
    "language": "German",
@@ -57,7 +57,7 @@
     "location": [
      "none"
     ],
-    "source": "this copy carries no decipherment",
+    "source": "this copy carries no decipherment, but it copies number for number the letter fol. 279r-281r, whose decipherment of the time is between its lines",
     "partial": false
    },
    "length": {
@@ -101,12 +101,12 @@
    "used": false
   },
   "key_order": "partly alphabetical",
-  "notes": "Residue 6 of the A table is voted s by the glosses (one would expect x, rare); 6 nomenclator groups of fol. 293 have no value. In system H, 15 is read n in nicht/sondern/genereux by the glosses (otherwise p) and 23 stands for x in expressen but in genugsamb too."
+  "notes": "Residue 6 of the A table is voted s by the glosses (one would expect x, rare); some nomenclator groups of fol. 293 have no value in key.tsv; the gloss of the original fol. 279r-v gives 464 548 Fürst Schwartzenberg and 744 Fürstenberg (and, tentatively, 330 Schweden?, 314 Spanien?). In system H, 15 is read n in nicht/sondern/genereux by the glosses (otherwise p) and 23 stands for x in expressen but in genugsamb too."
  },
  "conditions": {
   "prior_solution": {
    "exists": "in archive",
-   "where": "Most received letters of the file carry the decipherment of the recipient's chancery between the lines, and the outgoing letters have their clear-text drafts; the copy fol. 293 has none. Not in the catalogue, the leads, DECODE, nor in print as far as searched (26-27 Nov 2026).",
+   "where": "Most received letters of the file carry the decipherment of the recipient's chancery between the lines, and the outgoing letters have their clear-text drafts; the copy fol. 293 has none, but it is a number-for-number copy of the glossed letter fol. 279r-281r, so its text is known. Not in the catalogue, the leads, DECODE, nor in print as far as searched (26-27 Nov 2026).",
    "found": "before attempt",
    "used": true
   },
@@ -177,8 +177,17 @@
   {
    "date": "2026-11-27",
    "kind": "reading",
-   "what": "290r-v read with the glosses' help: 286 cipher words, 247 certain, 24 probable, 10 restored, 5 unresolved. Copy fol. 293r-v (no decipherment) read in part: 80 words, 56 certain, 10 probable, 2 restored, 12 unresolved (8 of them nomenclator codes).",
+   "what": "290r-v read with the glosses' help: 286 cipher words, 247 certain, 24 probable, 10 restored, 5 unresolved (recounted on the edited text: 246 certain, 27 probable, 8 restored, 5 unresolved). Copy fol. 293r-v (no decipherment) read in part with the key: 80 words, 56 certain, 10 probable, 2 restored, 12 unresolved (8 of them nomenclator codes).",
    "result": "partial"
+  },
+  {
+   "date": "2026-11-27",
+   "kind": "verification",
+   "technique": [
+    "plaintext matching"
+   ],
+   "what": "At Daniel Bourdeau's request, the copy fol. 293r-v compared with the glossed letter fol. 279r-v (not pre-registered): of 54 runs of three or more numbers noted on 279r-v, 41 recur identical and in order, 10 with one difference, 3 with two (controls: 0.08 in a shuffled stream, none in fol. 297). The copy is not a new text; the comparison corrects five places of reading_293 (Fürst Schwartzenberg, alle rahten, Metzische Sach, Fürstenberg, withdrawal of M[ajestät]).",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -221,15 +230,15 @@
    {
     "who": "dudout",
     "role": "solution",
-    "note": "transcription; key of system A rebuilt from the decipherments of the time as a 24-cell table and tested on held-out drafts; key of the Hague letter; two letters read in part and translated; with AI agents",
+    "note": "transcription; key of system A rebuilt from the decipherments of the time as a 24-cell table and tested on held-out drafts; key of the Hague letter; the Hague letter read in part and translated; the copy fol. 293 read with the key and found to copy the glossed letter fol. 279r-281r; with AI agents",
     "date": "2026-11-27"
    }
   ],
   "gaps": [
    {
-    "item": "nomenclator groups of fol. 293 (303, 314, 327, 330, 418, two unknown) and Hague codes 160, 170, 273, 28-",
+    "item": "nomenclator groups of fol. 293 (303, 314, 327, 330, two unknown) and Hague codes 160, 170, 273, 28-",
     "blocker": "open-codes",
-    "detail": "no gloss in the file for these groups; other letters of Nr. 4683 not yet transcribed may gloss them"
+    "detail": "no value in key.tsv; the gloss of the original fol. 279r-v gives, as far as read, 330 Schweden? and 314 Spanien?; other letters of Nr. 4683 not yet transcribed may gloss the rest"
    },
    {
     "item": "the other received letters (fol. 160-161, 234-236, 247, 254, 265-266, 279-281, 312-316, 331-339)",
@@ -239,7 +248,7 @@
    {
     "item": "rest of the copy fol. 293v-295r",
     "blocker": "illegible",
-    "detail": "not yet transcribed; the copy may duplicate the glossed letter fol. 279r-281r (same date of receipt), to be checked"
+    "detail": "not yet transcribed; it copies the glossed letter fol. 279r-281r number for number (checked on 279r-v against 293r-v l. 1-41), so its text is known from that gloss"
    },
    {
     "item": "writer of the Hague letter (\"X X\")",
@@ -257,12 +266,12 @@
     "translation": "translation_290.md",
     "language": "de",
     "state": "read in part",
-    "read_share": 0.864,
-    "summary": "From The Hague, a brother of the captive count reports that the Prince of Orange and the imperial minister will write to Bournonville to reinforce Homburg; he praises the captive's resolution, says all who hold fiefs of Metz are concerned, mocks Rochefort's letter which confuses vassals and subjects, and expects peace with England within days (the Treaty of Westminster was signed on 19 Feb 1674)."
+    "read_share": 0.86,
+    "summary": "From The Hague, a brother of the captive count reports that the Prince of Orange and the imperial minister will write to Bournonville to reinforce Homburg; he praises the captive's resolution, says all who hold fiefs of Metz are concerned, mocks the letter of Rochefort (who had the count arrested) which confuses vassals and subjects, and expects peace with England within days (the Treaty of Westminster was signed on 19 Feb 1674)."
    },
    {
     "doc": "lasaar-nsb2-4683-fol293-1674-01-23",
-    "label": "Copy of a letter received 23 Jan 1674, fol. 293r-v (first 41 lines)",
+    "label": "Copy (fol. 293r-v, first 41 lines) of the glossed letter fol. 279r-281r, received 23 Jan 1674",
     "transcription": "transcription_293.txt",
     "decryption": "decryption_293.txt",
     "reading": "reading_293.md",
@@ -270,7 +279,7 @@
     "language": "de",
     "state": "read in part",
     "read_share": 0.7,
-    "summary": "A correspondent answers Johann Ludwig's order of 18 Dec 1673 on the 'godless proceedings' at Saarbrücken: the arrest is to be denounced to the Emperor, silence would be the greater prejudice; the only stated cause is the revers that was refused; he weighs bringing the case before the arbitration (at the Cologne peace talks), where some members favour the Emperor's party."
+    "summary": "A copy, number for number, of the letter fol. 279r-281r (Vienna, received 23 Jan 1674), whose text is known from its decipherment of the time: the writer answers Johann Ludwig's order of 18 Dec 1673 on the 'godless proceedings' at Saarbrücken; all advise denouncing the arrest to the Empress and the Empire, silence would be the greater prejudice; the only stated cause is the revers that was refused; he weighs bringing the case before the arbitration (at the Cologne peace talks), where some members favour the Emperor's party."
    }
   ],
   "key_file": "key.tsv",
@@ -280,6 +289,6 @@
    "total": 61,
    "tokens_open": 13
   },
-  "fraction_coherent": 0.864
+  "fraction_coherent": 0.86
  }
 }
