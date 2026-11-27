@@ -68,6 +68,7 @@ Three checks document the key:
 - `e4,s.{ar}` (c. 13r, L21) - read: `[?raccomandatione]`; checked: image, decode; abbreviated cipher token with comma, dot, and raised `ar` after clear `⟨domandando alcune lre⟩ de`; exact expansion cannot be confirmed without a key sheet; kept bracketed as a hole.
 - `tirizxbér` and `tibigir` (c. 13v, L27) - read: `[peggiore]` and `[posse]`; checked: image, decode; both show initial `t` where *peggiore* and *posse* require `l` (`li = p`), either a scribal slip or a hooked `l`/`t` hand shape; both kept bracketed as holes.
 - `tiusixdigi` (c. 13v, L28) - read: `[ultimo]`; checked: image, decode; medial `u` (`h` elsewhere -> `uhtimo`) stands where *ultimo* requires `l` (possible `u`/`&` stroke confusion); kept bracketed as a hole.
+- `lizh` (c. 13r, L02 and L03) - read: `[più]`; checked: image (integration review of PR #1019, 27 Nov 2026), decode; the leaf shows `li3b`, as catalogue 2162's vetting also reads it, not `lizh`. The key row `h = u` serves only this word. The reading already brackets `[più]`, so the count does not change.
 
 ## Historical verification (late April - 6 May 1537)
 
@@ -82,11 +83,13 @@ Three checks document the key:
 
 No prior decipherment, printed edition, or 1536-1538 archival key was found in live DECODE queries (`Federico` = 0 hits; `Ferrante` = `R1188`, 1548 Madrid imperial key; `Mantova` = 32 records in 1395 and 1540-1699), `cyphersolver_repo` targets and `keys.json` (`rossi1537`, `gonzaga1542`, `ercole1544`, `capilupi1545/46`, `gonzaga1549`, `muzio1550`, `caracciolo1537`), Tomokiyo's Cryptiana (`italian.htm`), Modena Estense *Campori* neighbour checks (16 adjacent 1530-1538 Federico II letters in `sfasc. I-II`, all clear), or web/literature searches on Federico II and Ferrante Gonzaga in May 1537. Archival key sheets in ASMn *Archivio Gonzaga* (e.g., *E.I.2*) are not digitised online.
 
+Compared at the PR #1019 merge: `targets/mantua1524` (catalogue 2368, Federico II Gonzaga's chancery papers of 1524, read in part) is a homophonic cipher with a boxed person sign; like this key it joins some letter pairs into single units, but its values differ (there 9 = a, 4 = h, 8 = r, 7 = c, x = n; here 9 = m, 4 = a, 8 = b, 7 = e, x = i) and has no directional `i` device, so it is a different key.
+
 ## Remaining gaps
 
-- **Open proper-noun nomenclators (13 occurrences across 6 codes):** `{L2}` (4×), `{L9}` (2×), `{L30}` (3×), `{L36}` (1×), `[46]` (2×), and `[82]` (1×) - blocker: `open-codes` / `needs-physical-access` (identifying the referents with certainty requires an extant 1537 Mantuan key sheet or companion letters in ASMn *Archivio Gonzaga*, not online).
-- **Open two-digit codes and provisional candidate nulls (9 occurrences across 7 codes):** `[23]`, `[24]`, `[27]` (2×), `[28]`, `[29]` (`zg`), `[31]`, and `[53]` (2×, candidate *non*) - blocker: `open-codes` / `needs-physical-access`.
-- **Uncertain words and scribal slips (26 words):** L01 `[?Fasgnino]`, L03 `[?destimato]`, L04-L05 `[?vero] [?è]` / `[?natura]`, L19 `[?si] [?è] [resa]`, L21 `[?raccomandatione]` (`e4,s.{ar}`), L23 `[?parte]`, plus 17 crop-checked scribal slips/allographs catalogued in `holes_13r_13v.md` - blocker: `no-key-material` (needs a human palaeographer's check on the Modena scan and/or another letter in the same 1537 Gonzaga key).
+- **Open proper-noun nomenclators (13 occurrences across 6 codes):** `{L2}` (4×), `{L9}` (2×), `{L30}` (3×), `{L36}` (1×), `[46]` (2×), and `[82]` (1×) - blocker: needs-physical-access; open codes, the letter reads around them; identifying the referents needs an extant 1537 Mantuan key sheet or companion letters in ASMn *Archivio Gonzaga*, not online.
+- **Open two-digit codes and provisional candidate nulls (9 occurrences across 7 codes):** `[23]`, `[24]`, `[27]` (2×), `[28]`, `[29]` (`zg`), `[31]`, and `[53]` (2×, candidate *non*) - blocker: needs-physical-access; the same key sheet or a sibling letter in ASMn *Archivio Gonzaga* would settle them, and neither is online.
+- **Uncertain words and scribal slips (26 words):** L01 `[?Fasgnino]`, L03 `[?destimato]`, L04-L05 `[?vero] [?è]` / `[?natura]`, L19 `[?si] [?è] [resa]`, L21 `[?raccomandatione]` (`e4,s.{ar}`), L23 `[?parte]`, plus 17 crop-checked scribal slips/allographs catalogued in `holes_13r_13v.md` - blocker: illegible; the doubtful shapes were checked on the online Estense scans (about 3000 px), the best images there are, and stay doubtful there; another letter in the same 1537 Gonzaga key would settle them. (Changed at the PR #1019 merge from `no-key-material`: the scans are online at full size, so a further check of them is not an outside blocker.)
 
 ## Escalation
 

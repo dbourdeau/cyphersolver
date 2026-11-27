@@ -163,6 +163,15 @@
    "kind": "reading",
    "what": "Unedited full-coverage mechanical decryption (decryption_13r_13v.txt) and strict cipher-words-only reading audit (word_audit_2162.py & v10_relabel.py, clear_markup=⟨⟩): 219/267 sure cipher words (0.820, 48 holes: 13 open proper-noun nomenclators, 9 open two-digit codes/provisional candidate nulls, 9 uncertain/contextual words, 17 scribal slips) -> read in part.",
    "result": "partial"
+  },
+  {
+   "date": "2026-11-27",
+   "kind": "verification",
+   "technique": [
+    "manual reconstruction"
+   ],
+   "what": "Integration review of PR #1019 (AI agent, for the maintainers): an independent tiler over key_gonzaga1537.tsv reproduced decryption_13r_13v.txt on all 30 lines with the same 43 ambiguous parses; sure words recounted 219/267 (0.820); c. 13r L01-L07 compared with the Estense IIIF image and matched, except L02/L03 lizh, which the leaf shows as li3b (already bracketed [più], count unchanged, added to Transcription doubts). Gap blockers set to one outside type each. Not checked: c. 13r L08-L24 and c. 13v against the image, the validation figures, the Potter and DBI citations.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -233,18 +242,18 @@
   "gaps": [
    {
     "item": "Open proper-noun nomenclators (13 tokens across 6 codes: {L2}, {L9}, {L30}, {L36}, [46], [82])",
-    "blocker": "open-codes",
-    "detail": "No surviving 1536-1538 Federico II <-> Ferrante Gonzaga key sheet or same-key sibling letter is online (ASMn Archivio Gonzaga cifrari require physical archive access)."
+    "blocker": "needs-physical-access",
+    "detail": "Open codes (the letter reads around them). Identifying the referents needs a 1537 Mantuan key sheet or companion letters in ASMn Archivio Gonzaga, which are not online."
    },
    {
     "item": "Open two-digit codes and provisional candidate nulls (9 tokens across 7 codes: [23], [24], [27], [28], [29/zg], [31], [53])",
-    "blocker": "open-codes",
-    "detail": "[53] fits non in both occurrences (L06, L22) and the remaining six two-digit groups are provisional candidate nulls or short modifiers; none can be proved without an external key sheet or sibling text."
+    "blocker": "needs-physical-access",
+    "detail": "[53] fits non in both occurrences (L06, L22); the other six two-digit groups are provisional candidate nulls or short modifiers. None can be proved without the key sheet or a sibling letter in ASMn Archivio Gonzaga, not online."
    },
    {
     "item": "Uncertain words, abbreviated token e4,s.{ar}, and 17 scribal slips/allographs (26 words total)",
-    "blocker": "no-key-material",
-    "detail": "All 48 holes are explicitly bracketed in reading_13r_13v.md and catalogued in holes_13r_13v.md; needs a human palaeographer's check on the Modena scan and/or another letter in the same 1537 key."
+    "blocker": "illegible",
+    "detail": "All 48 holes are bracketed in reading_13r_13v.md and listed in holes_13r_13v.md. The doubtful shapes were checked on the online Estense scans (about 3000 px), which are the best images there are, and stay doubtful there; another letter in the same 1537 key would settle them."
    }
   ],
   "texts": [
@@ -262,11 +271,11 @@
     "summary": "A two-section secret Piedmont intelligence sheet copied in Mantua and enclosed in Federico II Gonzaga's 6 May 1537 letter to Ferrante Gonzaga: Section 1 criticises an unnamed figure [46] for reckless, vain conduct and notes that the Bishop of Casale (contextually Bernardino Castellari, called della Barba) is held under suspicion through Speciano (contextually Giovanni Battista Speciano); Section 2 reports troops passing over to {L2?} with banners unfurled, the surrender of the fortress of Hesdin (Edim, 13-14 April 1537), Giovio's (contextually Paolo Giovio's) warning to {L30?}, and public opinion in Milan that {L30?} stands in the worst possible credit.",
     "reading_review": {
      "grade": "B",
-     "by": "Gemini 4 Carbon, author session (a model; not independent of the reading and translation; adversarial audit fixes from OpenAI Codex gpt-6.2-astra applied; maintainer review pending)",
+     "by": "integration review of PR #1019 (AI agent, for the maintainers); not a person",
      "reader_kind": "model",
-     "independent": false,
-     "date": "2026-11-26",
-     "note": "Author-session verification incorporating OpenAI Codex (gpt-6.2-astra) audit fixes against the public Estense IIIF manifest: ig=g removed in favor of passati (L18) and fussi (L12), Hesdin capture dated to 13-14 April 1537, Castellari biography corrected, genuine rossi1537/reading_A.md synthetic control verified (207/212 = 97.6%), and all 48 holes explicitly bracketed (219/267 sure cipher words = 0.820, under 0.95 -> read in part). Independent maintainer review pending."
+     "independent": true,
+     "date": "2026-11-27",
+     "note": "Decryption reproduced from key_gonzaga1537.tsv on the transcription (30/30 lines, 43 ambiguous parses resolved to the only Italian word or bracketed); 219/267 sure cipher words (0.820), read in part; c. 13r L01-L07 compared with the Estense IIIF image, one shape difference (lizh/li3b, bracketed in the reading)."
     }
    }
   ],
