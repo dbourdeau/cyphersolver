@@ -229,6 +229,32 @@
    "kind": "reading",
    "what": "Reading review withdrawn: outcome.texts[0].reading_review was signed by the contributor's own session (Claude Opus 5.5, grade B, independent false). A contributor does not sign the reading review; the maintainer records it at merge (Dan Bourdeau, review of PR #997). Our error, the same as on fenian1885letter2, caught by our own audit. Class, read share (0.786) and figures unchanged.",
    "result": "partial"
+  },
+  {
+   "date": "2026-11-28",
+   "kind": "transcription",
+   "technique": [
+    "other",
+    "key-structure hypothesis",
+    "crib testing"
+   ],
+   "what": "Image check of the 12 transcription doubts, the line 4-5 stretch, 'icciate', 'arirui' and S09 (Dan Bourdeau's review of PR #933, 27 Nov 2026). The ten native-resolution Estense IIIF crops of FETCH_LOG.txt fetched again (one plain GET each, 2026-11-27T23:16Z; all md5 match the log), cropped and read by Claude Opus 5.5 (a model that had seen the decode; not blind). Settled with no change of value: 5 doubts (l.2 ^/, l.3 S06, l.4 ^/ and the dot, l.6 S17^-). Kept as doubtful: 6. Changes found: l.2 crossed 6 = S09^- ('facciate'); l.4 L without its raised mark ('prosuntione'); l.4 and l.5 the 7 stands over the y, S17 S11^7 ('questo', 'sto'); l.7 S18? is an n joined to the pi (S02, 'estraordinaria'). The peaked A/Λ sign of l.2 and l.7 is one sign (probably c/z), kept under its first-pass labels. S09 is one sign in two lengths; the crossed 6 is separate. 'del Flisco' tried: the image gives s + y-with-7 (s-to), not s-co; not applied. Dotted-bar rule tried as a rule test: the 12 dotted bars are all doubles; the undotted bars read consonant + i in 4 of 4 checkable uses (ogni x2, italia, diligentia) and give no sense at the line 4 end; not applied (key change). Details in NOTES.md, Transcription doubts.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-28",
+   "kind": "reading",
+   "technique": [
+    "other"
+   ],
+   "what": "Second pass: TRANSCRIPTION_v2.tsv (the 5 image-supported changes, 7 tokens) frozen in FREEZE_v2.txt (md5 a33f4c97d0b2c5a0ca361b6290051eba, 2026-11-27T23:23:36Z) and decoded once with the first-pass key KEY.tsv, unchanged (sha256 6fb733eb...), by decode_v2.py -> DECODE_v2.txt; reading_v2.md. House count (scripts/house_count.py): 80 of 97 cipher words read, 17 holes, 0.825 (79/97 = 0.814 without 'prosuntione'). The first pass stays the figure of record (76/97 = 0.784). Still read in part.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-28",
+   "kind": "reading",
+   "what": "reading.md corrected after Dan Bourdeau's review of PR #933: 'sia anco' -> 'si anco' (the decode gives 'si anco'); 'per che [?arirui]' -> 'per [?chearirui]' ('che' is part of the hole word chiarirvi, not a sure word). Read share recounted by scripts/house_count.py: 76/97 = 0.784 (was 77/98 = 0.786, our error); cipher_words 97 and holes 21 added to outcome.texts[0].",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -271,9 +297,9 @@
    "key recovered",
    "catalogue correction"
   ],
-  "fraction_read": 0.786,
+  "fraction_read": 0.784,
   "fraction_read_method": "measured",
-  "fraction_read_source": "reading.md: 77 of 98 words read as sense, counting as holes the 8 no-sense words, the 2 code signs and the 11 one-letter slip words; 88/98 = 0.898 if the slips are counted as read. Strict judge by letters: 388/435 = 0.892 (judge/judge.tsv).",
+  "fraction_read_source": "reading.md, counted by scripts/house_count.py: 76 of 97 cipher words read as sense (21 holes: the 8 no-sense words, the 2 code signs and the 11 one-letter slip words), first pass of record. Corrected 28 Nov 2026 from 77/98 after Dan Bourdeau's review of PR #933 ('che' in 'per che [?arirui]' is part of the hole word chiarirvi; 'si anco', not 'sia anco'). Second pass (TRANSCRIPTION_v2.tsv, same key, reading_v2.md): 80/97 = 0.825, not the figure of record. Strict judge by letters, first pass: 388/435 = 0.892 (judge/judge.tsv).",
   "verification": [
    "statistical test"
   ],
@@ -301,9 +327,9 @@
   ],
   "gaps": [
    {
-    "item": "Line 4 end to line 5 start ('de quesot delill sot ? rit diare'), about 23 letters",
-    "blocker": "illegible",
-    "detail": "read as written in one pass; two of the proposed emendations fall here (S17^7 S11 -> questo; S02^^ S11 -> rimediare) and need the signs re-read on the image by a second reader"
+    "item": "Line 4 end to line 5 start: first pass 'de quesot delill sot ? rit diare'; second pass 'de questo [?delill] [?sto] [?] [?rit] [?diare]'",
+    "blocker": "no-key-material",
+    "detail": "every sign re-checked on the image on 28 Nov 2026 and legible; with the frozen key the signs give no sense; 'del Flisco' and the dotted-bar rule were tried and do not give it (the syllable is drawn s + y-with-7, s-to, not s-co); S12^- and S02^^ have one use each"
    },
    {
     "item": "Code sign S01^4s, twice (a person; the Emperor fits the sense)",
@@ -316,14 +342,19 @@
     "detail": "one use; 'et' or 'da' would fit"
    },
    {
-    "item": "11 proposed emendations (SOLVE_LOG.md), not applied; 'icciate' (facciate) and 'arirui' (chiarirvi) unread",
-    "blocker": "illegible",
-    "detail": "single reader, single pass; the decode suggests a different reading of the sign in each place; a second transcription from the image is needed before any is applied"
+    "item": "'arirui' (l.8), the hole word [?chearirui] (the sense wants chiarirvi)",
+    "blocker": "no-key-material",
+    "detail": "signs clear on the image and as transcribed; the d's cross is drawn upright here, unlike the other seven 'che', and may be a separate mark ('chi'); one use"
    },
    {
-    "item": "S09 mixes two signs (figure 6 = i and a b/f-like sign = f)",
-    "blocker": "illegible",
-    "detail": "not separated at transcription; 'de i rancesi' wants the second as F"
+    "item": "One-letter slips left as decoded: essre, impertanza, circo, essende, italla, rancesi, oi, le, dillgentia (perosuntione and estraoodinaria were transcription errors, set right in the second pass; 'icciate' reads 'facciate' in the second pass)",
+    "blocker": "no-key-material",
+    "detail": "the image shows the transcribed signs; 'italla' and 'dillgentia' would read 'italia', 'diligentia' under the dotted-bar rule (bar without a dot = consonant + i, 4 of 4 checkable uses), a key change not applied"
+   },
+   {
+    "item": "'de i rancesi' (l.7), where the sense wants 'de Francesi'",
+    "blocker": "no-key-material",
+    "detail": "the image shows the plain 6/b sign S09, which reads i elsewhere; S09 is one sign drawn in two lengths, not two signs; the crossed 6 (S09^-) is a separate sign, 'fa'; no sign in the passage gives F"
    },
    {
     "item": "Weak key values: raised 9 (o or a), raised 2 (o, one use), S02^^ (ri, one use), S10 under a bar (ni)",
@@ -349,9 +380,11 @@
     "translation": "translation.md",
     "language": "it",
     "state": "read in part",
-    "read_share": 0.786,
+    "read_share": 0.784,
     "summary": "Ercole II tells Claudio that, since he will hear what has newly happened at Genoa, he is to learn all he can about the causes of the rising and how a person in code (probably the Emperor) means to punish it and settle the city, which, being Spain's ladder into Italy, he will not let fall to the French; he is to use extraordinary diligence.",
-    "note": "No reading review is recorded by the contributor; the maintainer records it at merge. A reading_review signed by our own assembling session (Claude Opus 5.5, grade B, independent false, 24 Nov 2026) was withdrawn on 27 Nov 2026 (our error, the same as on PR #997, caught by our own audit). Its content stays in NOTES.md under \"Reader's notes\". The checks were done with AI tools and no person checked each record by hand."
+    "note": "No reading review is recorded by the contributor; the maintainer records it at merge. A reading_review signed by our own assembling session (Claude Opus 5.5, grade B, independent false, 24 Nov 2026) was withdrawn on 27 Nov 2026 (our error, the same as on PR #997, caught by our own audit). Its content stays in NOTES.md under \"Reader's notes\". The checks were done with AI tools and no person checked each record by hand. Read share 76/97 = 0.784 (scripts/house_count.py; corrected 28 Nov 2026 from 77/98, our error). Second pass, 28 Nov 2026: doubts re-checked on the image, TRANSCRIPTION_v2.tsv frozen (FREEZE_v2.txt) and decoded once with the same KEY.tsv (DECODE_v2.txt, reading_v2.md): 80/97 = 0.825, recorded beside the first pass, which stays the figure of record.",
+    "cipher_words": 97,
+    "holes": 21
    }
   ],
   "key_file": "KEY.tsv",
