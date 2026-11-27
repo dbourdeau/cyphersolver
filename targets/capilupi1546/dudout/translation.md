@@ -6,7 +6,7 @@ The marks follow the Italian: {probable}, [restored], ‹unresolved›. Identifi
 
 ## 02r (Civitavecchia, 17 May)
 
-The letter of the Count of Reggio was, and still is, in the hands of Salviati, {not} of his secretary. ‹ao› I worked so {that} he agreed to let me read it, but he would not let me take a copy of it. He said he did not want to be a cause of scandal, and that {Your Excellency} must be content to know what it [contains]. He begs you with all his heart ‹a› never to let it appear that you learned of this through him. As the said letter is short, I {almost} learned it by heart in the one time I read it; I send it to you as it remained in my memory. I hold for certain that there are not three words different from the original; I know well that the sense is exactly its own, [without] any alteration.
+The letter of the Count of Reggio was, and still is, in the hands of Salviati, {not} of his secretary. ‹ao› I worked so {that} he agreed to let me read it, but he would not let me take a copy of it. He said he did not want to be a cause of scandal, and that {Your Excellency} must be content to know what it contains. He begs you with all his heart ‹a› never to let it appear that you learned of this through him. As the said letter is short, I almost learned it by heart in the one time I read it; I send it to you as it remained in my memory. I hold for certain that there are not three words different from the original; I know well that the sense is exactly its own, without any alteration.
 
 ## 04r (Rome, 10 May)
 

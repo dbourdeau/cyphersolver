@@ -23,20 +23,22 @@ The reading and the count were made by Claude Opus 5.5 via the API on 12 Nov 202
 
 | Folio | Words | Sure | Probable | Restored | Unresolved | Sure + probable |
 |---|---|---|---|---|---|---|
-| 02r | 128 | 118 | 6 | 2 | 2 | 96.9 % |
+| 02r | 128 | 122 | 4 | 0 | 2 | 98.4 % |
 | 04r | 118 | 114 | 3 | 1 | 0 | 99.2 % |
 | 05r | 148 | 130 | 9 | 8 | 1 | 93.9 % |
 | 05v | 10 | 8 | 2 | 0 | 0 | 100 % |
 | 06r | 144 | 129 | 11 | 3 | 1 | 97.2 % |
 | 06v | 102 | 92 | 5 | 5 | 0 | 95.1 % |
 | 07r | 42 | 40 | 1 | 1 | 0 | 97.6 % |
-| Total | 692 | 631 | 37 | 20 | 4 | 96.5 % (strict 91.2 %) |
+| Total | 692 | 635 | 35 | 18 | 4 | 96.8 % (strict 91.8 %) |
+
+02r was recoded on 25 Nov 2026 (sign sheets C and R of 18 Nov, sign plate 2511 of 25 Nov, and the rule that the writer's own clear interlinear correction is read; see PROPOSAL-2511.md). The two interlinear digits "5 1" of *suplica* were checked blind on plate 2511c (26 Nov 2026, controls 3 of 3): answered 5 and 1. The other folios are not recoded here: their figures are those of 12 Nov 2026.
 
 By document:
 
 | Document | Sure + probable | Status |
 |---|---|---|
-| 02r | 96.9 % | read |
+| 02r | 98.4 % (strict 122/128 = 95.3 %) | read |
 | 04r | 99.2 % | read |
 | 05r-05v | 149/158 = 94.3 % | read in part |
 | 06r-07r | 278/288 = 96.5 % | read |
@@ -45,7 +47,7 @@ The percentages flatter the text: about half of the sure words are function word
 
 ## 02r (letter of Civitavecchia, 17 May)
 
-La letra del conte di Rhegio era e anchor in poter di Salviati, {non} del secretario suo. ‹ao› Ho fato tal opera {che} egli si è contentato di lasciarmela legger, ma non ha voluto lasciarmene pigliar copia, dicendo che non vorebe eser cagione di scandalo, che {V. Ecel.} si ha da contentar da saper quel che [contiene]. La {suplica} con tuto il core ‹a› non voglia mai mostrar di haver intesa questa cosa per mezo suo. Per eser {la} deta letra breve, io l'ho {quasi} imparata a mente in una volta ch'io l'ho leta; gliela mando nela maniera che mi è rimasa nela memoria. Tengo per certo che non vi siano tre parole diferenti dal originale; so ben certo che il sentimento è a punto d'esso, [senza] alteratione alcuna.
+La letra del conte di Rhegio era e anchor in poter di Salviati, {non} del secretario suo. ‹ao› Ho fato tal opera {che} egli si è contentato di lasciarmela legger, ma non ha voluto lasciarmene pigliar copia, dicendo che non vorebe eser cagione di scandalo, che {V. Ecel.} si ha da contentar da saper quel che contiene. La suplica con tuto il core ‹as› non voglia mai mostrar di haver intesa questa cosa per mezo suo. Per eser {la} deta letra breve, io l'ho quasi imparata a mente in una volta ch'io l'ho leta; gliela mando nela maniera che mi è rimasa nela memoria. Tengo per certo che non vi siano tre parole diferenti dal originale; so ben certo che il sentimento è a punto d'esso, senza alteratione alcuna.
 
 Summary: The Count of Reggio's letter is in Salviati's hands. Salviati let Capilupi read it but refused a copy, and begs Ferrante never to reveal he knows of it. Capilupi learned the short letter by heart at one reading and sends it from memory, sure the sense is exact.
 

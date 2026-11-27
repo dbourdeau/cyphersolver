@@ -342,6 +342,27 @@
    "what": "Full-texts audit: the frozen system Y key (dudout/KEY-1555.json, longest code first) applied to the system X transcriptions of 03r and 09r with the marks dropped: no Italian word run on either page (e.g. 03r line 1 'rrmenidlisdagl ama', 09r line 1 'pelrrsnuioa euo oinaisr'). System X is not system Y with marks. No decryption of 03r or 09r exists or can be produced: no key.",
    "result": "ruled out",
    "technique": ["key matching"]
+  },
+  {
+   "date": "2026-11-25",
+   "kind": "verification",
+   "what": "Sign plate 2511 (NOTES, Sign plate 2511, 25 Nov 2026): three doubtful signs of 02r and 06r with three hidden controls, answered blind by the contributor Brice Dudout; rule dudout/sign_check_2511/REGLE-SELECTION.md (SHA-256 6d068c06...9486) hashed before any thumbnail; AI model (Claude Opus 5.5) for rule, thumbnails, plate and scoring. Controls 3 of 3. quasi (02r line 10, digit 14, [6/0]) answered 0: sure once recoded; Io (06r line 9) answered 1, as transcribed, stays probable; the first sign of 02r line 8 is two doubtful signs 6? 5? (remark of the checker), giving 'as': unresolved. Three targets, under the eight of outcome.sign_check, so recorded here and in NOTES, not there. Recoding of 02r proposed in dudout/capilupi1546-planche-2511.patch, not applied; the interlinear '5 1' of suplica were then checked blind on plate 2511c (26 Nov 2026).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-26",
+   "kind": "verification",
+   "what": "Sign plate 2511c (NOTES, Sign plate 2511c, 26 Nov 2026), asked in the review of #984: the two digits '5 1' written above 02r line 7 over the blotted sign of suplica, read until then by the model only, put blind to the contributor Brice Dudout against shapes 1, 5 and 7 from sure words of 02r, with three hidden controls (a sure 1, 5 and 7 of the same hand); rule dudout/sign_check_2511c/REGLE-SELECTION.md (SHA-256 97902e90...2748) hashed before any thumbnail; AI model (Claude Opus 5.5) for rule, thumbnails, plate and scoring. Controls 3 of 3; answered 5 and 1, as transcribed: suplica sure once 02r is recoded (dudout/capilupi1546-planche-2511.patch, not applied), which would give 02r 122 of 128 sure (95.3 %). Two targets, under the eight of outcome.sign_check, so recorded here.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-26",
+   "kind": "verification",
+   "technique": [
+    "manual reconstruction"
+   ],
+   "what": "Integration of PR #984: the contributor's patch dudout/capilupi1546-planche-2511.patch applied (02r recoded in transcription_02r.txt, decryption.txt, reading.md and translation.md; the review's decoder, longest code first with KEY-1555.json, gives the patched 02r line exactly). Counts of 02r, sure of 128: 118 (12 Nov) -> 120 after sheets C and R (contiene, sheet R q09; senza, sheet C q05) -> 121 after plate 2511 (quasi, q06 answered 0) -> 122 after the interlinear rule and plate 2511c (suplica, '5 1' confirmed blind, controls 3 of 3). 02r: 122 sure, 4 probable, 0 restored, 2 unresolved = 95.3 % sure (read_share 0.922 -> 0.953). System Y with 02r alone recoded: 635 of 692 sure = 91.8 % (0.912 -> 0.918). The class of 02r stays read in part: every gain comes from sign checks and the interlinear rule, and a sign check does not change a class. The other folios keep the 12 Nov figures; their sheet C and R corrections are in the contributor's local copies only.",
+   "result": "partial"
   }
  ],
  "outcome": {
@@ -419,10 +440,10 @@
     "detail": "no human palaeographer has checked either"
    }
   ],
-  "notes": "Two letters of Ippolito Capilupi in two cipher systems. System Y (02r, 04r, 05r, 05v, 06r, 06v, 07r) read with a key proposed by Claude Fable 5.2 and measured on the held-out folio 05r. 668 of 692 words sure or probable (96.5 %), strict 91.2 %; 05r+05v 94.3 %, read in part. System X (03r, 09r, about 1,400 of 5,773 transcribed digits) not attacked. Same system as Camillo Capilupi's c. 48 and c. 49r (capilupi1545); not the homophonic alphabet of Camillo's 8 May 1545 letter there.",
-  "fraction_read": 0.912,
+  "notes": "Two letters of Ippolito Capilupi in two cipher systems. System Y (02r, 04r, 05r, 05v, 06r, 06v, 07r) read with a key proposed by Claude Fable 5.2 and measured on the held-out folio 05r. 670 of 692 words sure or probable (96.8 %), strict 91.8 % since 02r was recoded (PR #984; 668, 96.5 % and 91.2 % before); 05r+05v 94.3 %, read in part. System X (03r, 09r, about 1,400 of 5,773 transcribed digits) not attacked. Same system as Camillo Capilupi's c. 48 and c. 49r (capilupi1545); not the homophonic alphabet of Camillo's 8 May 1545 letter there.",
+  "fraction_read": 0.918,
   "fraction_read_method": "measured",
-  "fraction_read_source": "dudout/reading.md, by words, system Y folios only: 692 words, 631 sure = 91.2 % (strict, README rule: probable, restored and unresolved words are holes). The contributor's own figure counts the 37 probable words as read: 668/692 = 96.5 %. System X (03r, 09r) not attacked and not counted.",
+  "fraction_read_source": "Since the patch of PR #984 (02r recoded, the other folios as of 12 Nov 2026): dudout/reading.md, 692 words, 635 sure = 91.8 % strict (635 + 35 probable = 96.8 %). Before: dudout/reading.md, by words, system Y folios only: 692 words, 631 sure = 91.2 % (strict, README rule: probable, restored and unresolved words are holes). The contributor's own figure counts the 37 probable words as read: 668/692 = 96.5 %. System X (03r, 09r) not attacked and not counted.",
   "key_file": "dudout/key.txt",
   "texts": [
    {
@@ -434,13 +455,13 @@
     "translation": "dudout/translation.md",
     "language": "it",
     "state": "read in part",
-    "read_share": 0.922,
+    "read_share": 0.953,
     "summary": "The Count of Reggio's letter is in Salviati's hands. Salviati let Capilupi read it but refused a copy, and begs Ferrante never to show he knows of it. Capilupi learned the short letter by heart at one reading and sends it from memory, sure of the sense.",
     "reading_review": {
      "grade": "A",
      "by": "Claude Opus 5.5 (API), for Brice Dudout",
      "date": "2026-11-12",
-     "note": "read as sentences by Claude Opus 5.5 (API), 12 Nov 2026; no human review Integration check 13 Nov 2026: strict share (sure only) 118/128 = 92.2 %; the contributor's sure + probable figure was 96.9 %."
+     "note": "read as sentences by Claude Opus 5.5 (API), 12 Nov 2026; no human review Integration check 13 Nov 2026: strict share (sure only) 118/128 = 92.2 %; the contributor's sure + probable figure was 96.9 %. Since the patch of PR #984 (sheets C and R, plates 2511 and 2511c, the interlinear rule): 122/128 = 95.3 % sure, 4 probable, 2 unresolved; the class stays read in part, because a sign check does not change a class."
     }
    },
    {

@@ -1,9 +1,9 @@
 # capilupi1546: Ippolito Capilupi to Ferrante Gonzaga, two cipher letters of May [1546], system Y read with a substitution of 1-2 digit codes (Estense, Autografoteca Campori, cc. 80a-80h; catalogue 1555)
 
-Status: in progress (Brice Dudout, 12 Nov 2026; integration check 13 Nov 2026). System Y is read in part (strict share 91.2 %), several steps are untried, and no write-up page has been made.
+Status: in progress (Brice Dudout, 12 Nov 2026; integration check 13 Nov 2026). System Y is read in part (strict share 91.8 % since 02r was recoded at the merge of PR #984; 91.2 % before), several steps are untried, and no write-up page has been made.
 
-- **System Y** (the cursive hand: images 02r, 04r, 05r, 05v, 06r, 06v, 07r) is read in part. Strict share (README rule, sure words only): 631 of 692 = **91.2 %**. The contributor's own figure counts the 37 probable words as read: 668/692 = 96.5 %.
-- **By document, strict:** 02r 92.2 %, 04r 96.6 %, 05r-05v 87.3 %, 06r-07r 90.6 %. Only 04r (118 words) reaches the 95 % bar.
+- **System Y** (the cursive hand: images 02r, 04r, 05r, 05v, 06r, 06v, 07r) is read in part. Strict share (README rule, sure words only): 635 of 692 = **91.8 %** with 02r recoded (PR #984, 26 Nov 2026); 631 of 692 = 91.2 % before. The contributor's own figure counts the probable words as read: 670/692 = 96.8 % (668/692 = 96.5 % before).
+- **By document, strict:** 02r 95.3 % (122/128 since PR #984; 92.2 % before), 04r 96.6 %, 05r-05v 87.3 %, 06r-07r 90.6 %. 04r (118 words) reaches the 95 % bar and is read. 02r is over it in sure words, but stays read in part: every gain on 02r comes from sign checks and the interlinear rule, and a sign check does not change a class (see Integration of PR #984).
 - **System X** (images 03r and 09r, about 1,400 digits) is a different hand and system and is not attacked.
 - **The key** was proposed by Claude Fable 5.2, frozen, and passed one preregistered measure on the held-out folio 05r: M = 0.7962 against 200 controls (max 0.175). The frozen key and the measure's lexicon were added in PR #521; the hash, M and the controls were re-run and checked on 13 Nov 2026 (second integration check below).
 - **No human palaeographer** has checked the transcription or the reading as a whole. On 18 Nov 2026 the contributor, Brice Dudout, answered two blind sheets of 20 doubtful digits (sheets C and R, 4 controls of 4); see Sign checks, 18 Nov 2026. The checker is the contributor, not an independent reader.
@@ -116,7 +116,7 @@ By document:
 | 05r-05v | 149/158 = 94.3 % | read in part |
 | 06r-07r | 278/288 = 96.5 % | read |
 
-That table is the contributor's (sure + probable). Strict (sure only), recounted at integration: 02r 118/128 = 92.2 % (read in part), 04r 114/118 = 96.6 % (read), 05r-05v 138/158 = 87.3 % (read in part), 06r-07r 261/288 = 90.6 % (read in part), total 631/692 = 91.2 %.
+That table is the contributor's (sure + probable) as of 12 Nov 2026; `dudout/reading.md` now has 02r at 122 sure, 4 probable, 0 restored, 2 unresolved (98.4 %), after the patch of PR #984. Strict (sure only), recounted at integration: 02r 118/128 = 92.2 % (read in part; 122/128 = 95.3 % since PR #984, still read in part), 04r 114/118 = 96.6 % (read), 05r-05v 138/158 = 87.3 % (read in part), 06r-07r 261/288 = 90.6 % (read in part), total 631/692 = 91.2 %.
 
 - 05v (10 words) is the end of the 05r passage.
 - 07r (about 180 letters) is too short to count alone, so it is counted with 06r-06v.
@@ -157,6 +157,7 @@ PR #521 adds `dudout/KEY-1555.json`, `dudout/lexicon_1555.txt` and `dudout/HASHE
 
 - **System X (03r, 09r).** Blocker: too-short. About 1,400 digits in another system; the glosses are partial and not alignable. A table or a clear copy would open it.
 - **'mm' for t or l (code 11), and 'mignor' for 'signor'.** Closed on 18 Nov 2026: transcription errors, not a key gap (Sign checks, 18 Nov 2026). The committed transcriptions are not yet recoded; see there.
+- **02r over the bar in sure words (122/128 = 95.3 %) but read in part.** Blocker: none outside; the gains come from sign checks, which do not change a class. The 4 probable ({non}, {che}, {V. Ecel.}, {la}) and 2 unresolved words (‹ao›, ‹as›) stay open.
 - **05r under the bar (93.9 %).** Blocker: illegible. It has 8 restored words to check on the image.
 - **The key on capilupi1545 c. 48 and c. 49r.** Blocker: not-attempted as a reading. A quick test at integration shows the key gives Italian runs on their first-pass digits (see Integration check), but they were part of the build set and the transcription is a first pass. To be read properly, on a re-transcription.
 - **Date (1545 or 1546).** Blocker: needs-physical-access. The docket year conflicts with the content.
@@ -219,7 +220,7 @@ The full-texts check asks for a decryption file for images 03r and 09r. None exi
 
 ## Sign checks, 18 Nov 2026 (sheets C and R)
 
-Level sought: "AI decipherment, human-checked on a sample of signs" (`outcome.sign_check`). It checks how digits are written, not the key or the reading, and it changes neither the class nor the read share.
+Level sought: "AI decipherment, human-checked on a sample of signs" (`outcome.sign_check`). It checks how digits are written, not the key or the reading, and it does not change the class. (This sentence of 18 Nov also said it does not change the read share; since the owner's rule of 25 Nov 2026 a blind call on a sign's shape may move the read share, with the counts before and after, and on 02r it did at the merge of PR #984.)
 
 **Who did what.** The checker is Brice Dudout, the contributor of this reading (a project member, not an independent reader). He answered each question blind: one boxed digit on its line, two or three digit shapes cut from sure words of the same hand, plus "none / other shape", "illegible" and "not a sign"; no value, gloss, word or place was shown. An AI model (Claude Opus 5.5) wrote the selection rules, chose the digits by those rules, cut the thumbnails, built the sheets and scored the answers. The answer key (which option is which shape, and the thumbnail boxes) stays private; its content for each question is written out in the results tables below. No image or thumbnail is committed.
 
@@ -235,3 +236,43 @@ Results question by question: `sign_check/sheet-C-results.tsv`, `sign_check/shee
 - **One disagreement on record.** At 'imperammor' (05r line 7) the integration check of 13 Nov saw two short 1-shaped strokes. The blind answer (sheet C, q08) chose 5 among 7, 5 and 1. Both readings of the image are recorded; a second reader would settle it.
 - **Not yet done.** The page rule says that what an answer contradicts is recoded or marked in the reading first. The 16 corrections are applied in our local copies (not committed); `dudout/transcription_*.txt`, `dudout/decryption.txt` and `dudout/reading.md` here are unchanged, so the figures above (631 of 692 sure, 91.2 %) still describe the committed files. On the corrected local copy the count is 647 sure, 31 probable, 10 restored, 4 unresolved of 692 (93.5 % sure; 05r-05v 90.5 %): still read in part. Recoding the committed files is a separate step.
 - **Limits.** One checker, inside the project. Two controls per sheet show little on their own. The digits were chosen because they were doubtful: a diagnostic, not a sample of the text. No person has audited the model's part.
+
+## Sign plate 2511, 25 Nov 2026 (three targets: a solution step, not `outcome.sign_check`)
+
+The same checker (Brice Dudout, the contributor) answered a third blind plate on 25 Nov 2026, built the same way as sheets C and R (one boxed digit, shapes cut from sure words of the same hand, no value, word or place shown; an AI model, Claude Opus 5.5, wrote the rule, cut the thumbnails, built the plate and scored it). It has three targets and three hidden controls, under the eight targets that `outcome.sign_check` asks for, so it is recorded here and as a solution step (25 Nov 2026), not as a sign check. Rule `dudout/sign_check_2511/REGLE-SELECTION.md`, SHA-256 6d068c0634909e0b9f340a0d5de4790c3413218717dd435368809f4124059486, hashed before any thumbnail; one amendment before the answers re-cropped two boxes (`AVENANT-CADRES.md`, 6b3e97ef...bca4). Answers `dudout/sign_check_2511/answers-2511-capilupi.json` (exported 2026-11-25 09:44 UTC); meaning per question in `dudout/sign_check_2511/results.tsv`.
+
+- Controls: 3 of 3 (a 6 of *imparata*, a 0 of *io*, a 1 of *ho*, 02r line 10).
+- *quasi* (02r line 10, digit 14, [6/0]): answered 0; the key then gives *quasi*.
+- *{Io}* (06r line 9, digit 23): answered 1, as transcribed; stays probable.
+- 02r line 8, first sign: "none / other shape", with the checker's remark that it is several signs, probably a 5 on the right; on the image, two doubtful signs `6? 5?`, giving "as", not a word. The word stays unresolved (‹as›); no value is taken from the sense.
+
+**suplica (02r line 7).** A sign is blotted out and "5 1" is written above it in the same hand. On 25 Nov 2026 the contributor decided that a clear interlinear correction by the writer is read in place of the sign it corrects. The two digits were read by the model, not by the checker, and on sheet C this hand's 1 turned out to be a 5 or a 7 at five places. They were put on a blind plate on 26 Nov 2026 (plate 2511c, below): confirmed 5 and 1.
+
+**Not applied here** (written by the contributor before the merge; applied at the merge of PR #984, see Integration of PR #984). The recoding of 02r (sheets C and R, plate 2511, the interlinear rule) is proposed in `dudout/capilupi1546-planche-2511.patch` (see `dudout/PROPOSAL-2511.md`); the committed transcription, decryption and reading were unchanged at that point. With the patch, 02r would have 122 sure of 128 (95.3 %), 4 probable, 2 unresolved; whether its class moves is the maintainer's decision. The other folios still carry the sheet C and R corrections only in the contributor's local copies; recoding them is left for later.
+
+## Sign plate 2511c, 26 Nov 2026 (the interlinear "5 1" of *suplica*; a solution step, not `outcome.sign_check`)
+
+Asked in the review of #984. Same checker and method as plate 2511. Two targets, the two digits written above 02r line 7 over the blotted sign of *suplica*, and three hidden controls (a sure 1 of 02r line 7, a sure 5 and a sure 7 of 02r line 8); options: shapes 1, 5 and 7, two examples each cut from sure words of 02r lines 7-8, plus "none / other shape", "impossible to tell", "illegible", "not a sign". Rule `dudout/sign_check_2511c/REGLE-SELECTION.md`, SHA-256 97902e90a2c87152c3debc557ce9df0a8bc59c094e694441d6846d884d112748, hashed before any thumbnail; no amendment. Answers `dudout/sign_check_2511c/answers-2511c-capilupi.json` (exported 2026-11-26 21:21 UTC, SHA-256 32461327...7ee6); meaning per question in `dudout/sign_check_2511c/results.tsv`.
+
+- Controls: 3 of 3.
+- First interlinear digit: answered 5; second: answered 1, as transcribed. The checker remarked of both that they are written above another line; the boxes are those two interlinear digits (checked on the image).
+- *suplica* is sure once 02r is recoded (patch). Two targets only: under the eight of `outcome.sign_check`, so a solution step (26 Nov 2026).
+
+## Integration of PR #984 (maintainers, at the merge)
+
+- **Patch applied.** `dudout/capilupi1546-planche-2511.patch`, taken from the committed blob, applied to
+  `dudout/transcription_02r.txt`, `decryption.txt`, `reading.md` and `translation.md`. The review's own decoder (longest
+  code first, `KEY-1555.json`) gives the patched 02r line of `decryption.txt` exactly; the 13 hashes of
+  `SHA256SUMS-2511` match.
+- **Counts of 02r before -> after**, sure of 128 words: 118 (12 Nov) -> 120 after sheets C and R (contiene, sheet R q09;
+  senza, sheet C q05) -> 121 after plate 2511 (quasi, q06 answered 0) -> 122 after the interlinear rule and plate 2511c
+  (suplica, "5 1" confirmed blind, controls 3 of 3). After: 122 sure, 4 probable, 0 restored, 2 unresolved = 95.3 % sure
+  (`read_share` 0.922 -> 0.953). System Y with 02r alone recoded: 635 of 692 sure = 91.8 % (`fraction_read`
+  0.912 -> 0.918). Recorded as a solution step.
+- **Class.** 02r stays **read in part**, with the new count noted: a sign check does not change a class, and every
+  gain on 02r comes from sign checks and the interlinear rule.
+- **No `outcome.sign_check`.** Plates 2511 (3 targets) and 2511c (2 targets) are under the eight the schema asks for.
+- **Not checked:** the Estense images (cc. 80a-80h) and the plates' private option keys; the controls of plates 2511
+  and 2511c are scored from `results.tsv` only. Rule and answers of plate 2511c are in one commit, so the order rests
+  on the contributor's record. The other folios keep the 12 Nov figures; their sheet C and R corrections are in the
+  contributor's local copies only.
