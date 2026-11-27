@@ -149,11 +149,10 @@ function climb(delta) {
   climbCache.set(key, r); return r;
 }
 const P0 = { x: 0, y: 0 };
-// fills xs/ys (NU+1 points) for leaf i at turn t; dir is the turning direction (curl)
-function leafProfile(i, t, dir, xs, ys, drop = 0) {
+// fills xs/ys (NU+1 points) for leaf i at turn t; k bends the free edge (+: towards the left pile)
+function leafProfile(i, t, k, xs, ys, drop = 0) {
   const a0 = attach(i, P0), x0 = a0.x, y0 = a0.y;
   const cl = climb(hL(i) - drop - y0), cr = climb(hR(i) - drop - y0);
-  const k = 0.75 * Math.sin(Math.PI * t) * dir;          // the free edge lags behind the motion
   const ds = W / NU;
   let x = x0, y = y0; xs[0] = x; ys[0] = y;
   for (let j = 1; j <= NU; j++) {
@@ -181,8 +180,25 @@ function makeLeafGeometry() {
 const pageMat = side => new THREE.MeshStandardMaterial({ color: 0xffffff, roughness: 0.88, side,
   polygonOffset: true, polygonOffsetFactor: -1, polygonOffsetUnits: -1 });
 const XS = new Float32Array(NU + 1), YS = new Float32Array(NU + 1);
+// How a turning leaf bends. Positive k swings the free edge towards the left-hand pile.
+//  lift:    the hand raises the free edge first, so early in a turn the edge leads the leaf
+//  air:     in flight the edge trails the motion, the more the faster the leaf moves
+//  gravity: a leaning leaf sags towards the side it leans to (none upright or lying flat)
+function bendOf(L) {
+  const t = L.t, s = Math.sin(Math.PI * t);
+  const v = Math.max(-1, Math.min(1, L.w / VMAX));
+  const air = 0.8 * v * s;
+  const gravity = 0.2 * Math.sin(2 * Math.PI * t);
+  let lift = 0;
+  if (L.dragging) lift = -0.35 * Math.sign(L.dragT - L.dragFrom) * s;
+  else if (L.anim && L.anim.lift) {
+    const span = Math.abs(L.anim.to - L.anim.from) || 1, p = Math.abs(t - L.anim.from) / span;
+    lift = -0.55 * Math.sign(L.anim.to - L.anim.from) * s * Math.max(0, 1 - 2.2 * p);
+  }
+  return air + gravity + lift;
+}
 function shapePaper(L) {
-  leafProfile(L.i, L.t, L.dir, XS, YS);
+  leafProfile(L.i, L.t, bendOf(L), XS, YS);
   const p = L.geo.attributes.position.array;
   for (let i = 0; i <= NU; i++) for (let j = 0; j < 2; j++) {
     const v = (i*2 + j) * 3; p[v] = XS[i]; p[v+1] = YS[i]; p[v+2] = j === 0 ? -H/2 : H/2;
@@ -225,7 +241,7 @@ function shapeBoard(L) {
 
 for (let i = 0; i < N; i++) {
   const L = leaves[i];
-  Object.assign(L, { i, t: 0, dir: 1, anim: null, board: isBoard(i) });
+  Object.assign(L, { i, t: 0, w: 0, anim: null, board: isBoard(i) });
   if (L.board) {
     L.group = makeBoard(L);
     L.frontMat.map = tex(L.front.id, false); L.backMat.map = tex(L.back.id, false);
@@ -275,7 +291,7 @@ function setPile(m, top, bottom, t) {
   // row 0 = bottom leaf, row `rows` = top leaf (lowered so the drawn top leaf lies on it)
   for (let r = 0; r <= rows; r++) {
     const k = Math.round(n * r / rows), i = bottom + (top < bottom ? -k : k);
-    leafProfile(i, t, 1, RX[r], RY[r], D * 0.6 + (r === 0 ? D * 0.4 : 0));
+    leafProfile(i, t, 0, RX[r], RY[r], D * 0.6 + (r === 0 ? D * 0.4 : 0));
     RV[r] = k * D;
   }
   const pos = [], uv = [], groups = [[], [], []];
@@ -347,6 +363,14 @@ function refresh() {
   for (let i = 1; i < N - 1; i++) if (!moving(leaves[i]) && leaves[i].t === 0) { lTop = i; break; }
   for (let i = N - 2; i >= 1; i--) if (!moving(leaves[i]) && leaves[i].t === 1) { rTop = i; break; }
   for (const L of leaves) if (!L.board) L.group.visible = moving(L) || L.i === lTop || L.i === rTop;
+  // A turning leaf lies only one leaf's thickness above the leaf it uncovers, and the two meet
+  // at the gutter: bias it harder towards the camera so the leaf beneath never shows through
+  // while it is being lifted (or laid down). A moving leaf is always above both piles.
+  for (const L of leaves) {
+    if (L.board) continue;
+    const bias = moving(L) ? -8 : -1;
+    for (const m of [L.frontMat, L.backMat]) { m.polygonOffsetFactor = bias; m.polygonOffsetUnits = bias * 4; }
+  }
   for (const L of leaves) {
     if (L.board) continue;
     if (Math.abs(L.i - current) <= 3 || L.group.visible) dress(L);
@@ -363,18 +387,35 @@ function reshapeAll() {
   shapeSpine();
 }
 
-const ease = x => x < 0.5 ? 4*x*x*x : 1 - Math.pow(-2*x + 2, 3) / 2;
-function turn(L, to) {
+// Turning is simulated: each leaf has a turn position t (0 left, 1 right) and a speed w (turns per
+// second). It accelerates gently, is held to a top speed, and slows as it nears where it will lie,
+// so a page lifts, travels and settles instead of following a fixed curve. A full turn takes ~1.7 s.
+const VMAX = 0.85, VMAX_BOARD = 0.6, ACC = 2.6, GAIN = 5;
+function stepLeaf(L, dt) {
+  const fast = !!(L.anim && L.anim.fast);
+  const target = L.dragging ? L.dragT : L.anim.to;
+  const vmax = L.dragging ? 1.6 : (L.board ? VMAX_BOARD : VMAX) * (fast ? 2.6 : 1);
+  const acc = L.dragging ? 12 : ACC * (fast ? 3 : 1);
+  const gain = L.dragging ? 10 : GAIN;
+  const want = Math.max(-vmax, Math.min(vmax, (target - L.t) * gain));
+  L.w += Math.max(-acc * dt, Math.min(acc * dt, want - L.w));
+  L.t += L.w * dt;
+  if (L.t <= 0 || L.t >= 1) { L.t = Math.min(1, Math.max(0, L.t)); L.w = 0; }
+  if (!L.dragging && Math.abs(target - L.t) < 0.002 && Math.abs(L.w) < 0.1) {
+    L.t = target; L.w = 0; L.anim = null; return true;          // settled
+  }
+  return false;
+}
+function turn(L, to, fast = false) {
   if (goal(L) === to) return;
-  L.dir = to > L.t ? 1 : -1;
-  L.anim = { from: L.t, to, start: performance.now(), dur: (L.board ? 1150 : 950) * Math.max(0.25, Math.abs(to - L.t)) };
+  L.anim = { from: L.t, to, fast, lift: true };
   refresh(); dirty = true;
 }
-function forward() { const L = leaves.find(L => goal(L) === 0); if (L) turn(L, 1); }
-function backward() { for (let i = N - 1; i >= 0; i--) if (goal(leaves[i]) === 1) return turn(leaves[i], 0); }
+function forward(fast = false) { const L = leaves.find(L => goal(L) === 0); if (L) turn(L, 1, fast); }
+function backward(fast = false) { for (let i = N - 1; i >= 0; i--) if (goal(leaves[i]) === 1) return turn(leaves[i], 0, fast); }
 let jumpTimer = null;
 function setOpening(c) {
-  for (const L of leaves) { L.anim = null; L.t = L.i < c ? 1 : 0; }
+  for (const L of leaves) { L.anim = null; L.w = 0; L.t = L.i < c ? 1 : 0; }
   refresh(); dirty = true;
 }
 function goTo(target) {
@@ -384,7 +425,7 @@ function goTo(target) {
   jumpTimer = setInterval(() => {
     const c = turnedCount();
     if (c === target) return clearInterval(jumpTimer);
-    c < target ? forward() : backward();
+    c < target ? forward(true) : backward(true);
   }, 110);
 }
 
@@ -399,7 +440,7 @@ function updateUI() {
   if (document.activeElement !== slider) slider.value = c;
   $('fwd').disabled = c >= N; $('back').disabled = c <= 0;
 }
-$('fwd').onclick = forward; $('back').onclick = backward;
+$('fwd').onclick = () => forward(); $('back').onclick = () => backward();
 slider.oninput = () => goTo(+slider.value);
 addEventListener('keydown', e => {
   if (e.key === 'ArrowLeft') { forward(); e.preventDefault(); }
@@ -430,7 +471,7 @@ el.addEventListener('pointerdown', e => {
   const top = L.t === 0 ? leaves.find(l => goal(l) === 0) : [...leaves].reverse().find(l => goal(l) === 1);
   if (top !== L) return;                                   // only the top leaf of a pile can be lifted
   drag = { L, x0, t0: L.t, sx: e.clientX, sy: e.clientY, moved: false, id: e.pointerId };
-  L.dragging = true; refresh(); dirty = true;
+  L.dragging = true; L.dragFrom = L.dragT = L.t; L.w = 0; refresh(); dirty = true;
   el.setPointerCapture(e.pointerId);
   e.stopImmediatePropagation();
 }, true);
@@ -440,15 +481,16 @@ el.addEventListener('pointermove', e => {
   const x = worldX(e); if (x === null) return;
   const span = 2 * Math.max(Math.abs(drag.x0), 0.25);
   const t = Math.min(1, Math.max(0, drag.t0 + (x - drag.x0) / span));
-  drag.L.dir = t >= drag.L.t ? 1 : -1; drag.L.t = t; dirty = true;
+  drag.L.dragT = t; dirty = true;
   e.stopImmediatePropagation();
 }, true);
 function endDrag(e) {
   if (!drag || e.pointerId !== drag.id) return;
-  const L = drag.L, to = drag.moved ? (L.t > 0.5 ? 1 : 0) : (drag.t0 > 0.5 ? 0 : 1);
-  if (!drag.moved) L.dir = to > L.t ? 1 : -1;
+  const L = drag.L;
+  // a flick counts: where the leaf is heading decides which way it falls
+  const to = drag.moved ? (L.dragT + L.w * 0.25 > 0.5 ? 1 : 0) : (drag.t0 > 0.5 ? 0 : 1);
   drag = null; L.dragging = false;
-  L.anim = { from: L.t, to, start: performance.now(), dur: 950 * Math.max(0.25, Math.abs(to - L.t)) };
+  L.anim = { from: L.t, to, fast: false, lift: !(Math.abs(L.t - (1 - to)) > 0.02) };
   refresh(); dirty = true;
   e.stopImmediatePropagation();
 }
@@ -473,7 +515,7 @@ function resize() {
 }
 new ResizeObserver(resize).observe(host === document.body ? document.documentElement : host);
 resize(); resetView();
-window.__b = { camera, controls, goTo, setOpening };   // for inspection from the console
+window.__b = { camera, controls, goTo, setOpening, leaves, refresh, markDirty: () => { dirty = true; } };   // for inspection from the console
 
 // opening to start at (?open=N: N leaves already turned)
 const OPEN = Math.max(0, Math.min(N, parseInt(params.get('open') || '0', 10) || 0));
@@ -483,15 +525,17 @@ book.position.x = OPEN === 0 ? W / 2 : OPEN === N ? -W / 2 : 0;
 // ---- loop ---------------------------------------------------------------------------------------------
 let onScreen = true;
 new IntersectionObserver(es => { onScreen = es[0].isIntersecting; }).observe(el);
+let last = performance.now();
 function frame(now) {
   requestAnimationFrame(frame);
+  // fixed small steps, so a turn takes the same time on a slow machine as on a fast one
+  const elapsed = Math.min(0.25, Math.max(0, (now - last) / 1000)); last = now;
   if (!onScreen) return;
   let settled = false;
+  const steps = Math.max(1, Math.ceil(elapsed / 0.008)), dt = elapsed / steps;
   for (const L of leaves) {
-    if (!L.anim || L.dragging) continue;
-    const a = L.anim, x = Math.min(1, (now - a.start) / a.dur);
-    L.t = a.from + (a.to - a.from) * ease(x);
-    if (x >= 1) { L.t = a.to; L.anim = null; settled = true; }
+    if (!L.anim && !L.dragging) continue;
+    for (let k = 0; k < steps && (L.anim || L.dragging); k++) if (stepLeaf(L, dt)) settled = true;
     dirty = true;
   }
   if (settled) refresh();
