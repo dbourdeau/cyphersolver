@@ -73,6 +73,7 @@ GENERATED = [
     r'<meta name="(?:date|last-modified)"[^>]*>', r'<link rel="(?:icon|apple-touch-icon)"[^>]*>',
     r'\n?<!-- bnx -->.*?<!-- /bnx -->', r' data-bnx="1"', r'<span class="fth">.*?</span><!-- /fth -->',
     r'<!-- cattop:start -->.*?<!-- cattop:end -->\n?',
+    r'(?<=<span data-ib=")\w+">[\d,]+(?=</span>)',      # iceberg.html: the live counts (iceberg_counts)
     r'<!-- press:start -->.*?<!-- press:end -->\n?', r'<!-- help:start -->.*?<!-- help:end -->\n?', r'<!-- browse:start -->.*?<!-- browse:end -->\n?', r' data-mirror',
     r'<!-- lasry:start -->.*?<!-- lasry:end -->\n?',
     r'\n?<p class="outcome">.*?</p><!-- /outcome -->',
@@ -457,7 +458,8 @@ GROUPS = [(M.KEY[m], M.LABEL[m][0].upper() + M.LABEL[m][1:], 'm-' + M.KEY[m], (l
 # the Explore menu: the pages that are not write-ups (slug, label, one line)
 EXPLORE_GROUPS = [
     ('Start here', [('highlights', 'Highlights', 'Twenty favourites: the funny, the historic, the ingenious, the hardest'),
-                    ('top25', 'Top 25 unsolved ciphers', 'Twenty-five ciphers with no accepted reading, ranked')]),
+                    ('top25', 'Top 25 unsolved ciphers', 'Twenty-five ciphers with no accepted reading, ranked'),
+                    ('iceberg', 'The cipher iceberg', 'From Caesar at the tip to the letters no one has read, in 3D')]),
     ('Maps and patterns', [('atlas', 'Atlas', 'Every letter drawn on the map, five centuries of it'),
                            ('key-evolution', 'How keys changed', 'Kinds of key, their signs and their size, 1400 to 1950'),
                            ('keys', 'Key web', 'Which key opened which letter')]),
@@ -636,6 +638,12 @@ def readme_notes():
     for slug in sorted(slugs - seen_pages - set(SURVEYS)):
         print(f'  note: {slug}.html has no README row')
     return notes
+
+def iceberg_counts(s):
+    """iceberg.html: the write-up and open-catalogue counts in its last tier and closing line."""
+    import _catalogue_page as C
+    n = {'open': sum(1 for e in C.DATA['entries'] if C.is_open(e)), 'pages': sum(1 for p_ in PAGES if p_['slug'] not in SURVEYS)}
+    return re.sub(r'<span data-ib="(\w+)">[\d,]+</span>', lambda m: f'<span data-ib="{m.group(1)}">{n[m.group(1)]:,}</span>' if m.group(1) in n else m.group(0), s)
 
 def readme_glance():
     """Rewrite the "At a glance" counts in ../README.md from its own Results tables and ../catalogue.json."""
@@ -993,7 +1001,7 @@ def browse_html():
 # The larger of them keep their rules in a sheet of their own, docs/pg-<slug>.css, linked after style.css on that page
 # alone (slug -> a hash of the file); the rest, and pg-solve, stay in style.css.
 PAGE_CSS = {f.stem[3:]: hashlib.sha1(f.read_bytes().replace(b'\r\n', b'\n')).hexdigest()[:8] for f in sorted(HERE.glob('pg-*.css'))}
-PAGE_STYLED = {'archives', 'atlas', 'catalogue', 'further', 'goldbar', 'highlights', 'huangxing', 'keys', 'key-evolution', 'roosevelt', 'secret', 'sunintercepts', 'sunyatsen'}
+PAGE_STYLED = {'archives', 'atlas', 'catalogue', 'further', 'goldbar', 'highlights', 'huangxing', 'keys', 'key-evolution', 'roosevelt', 'secret', 'sunintercepts', 'sunyatsen', 'iceberg'}
 SHARED_INLINE = ('.why', '.w-yes', '.w-no', '.w-lang', '.w-otp', '.w-short', '.w-fake', '.w-open', '.item', '.item h3', '.item .meta2', '.ct', '.callout', '.callout h3', '.tw')
 
 def credit_figures(s):
@@ -1254,13 +1262,15 @@ def process(path):
     s = re.sub(r'<link rel="(?:icon|apple-touch-icon)"[^>]*>\n?', '', s)
     s = s.replace('</head>', ICONS + '</head>', 1)
     # page scripts carry a hash of their own content, so an edit reaches browsers without a VERSION bump
-    s = re.sub(r'<script src="(secret|cipher-reveal|atlas|archmap|catmap|herovid|catalogue-data)\.js(?:\?[^"]*)?"',
+    s = re.sub(r'<script src="(secret|cipher-reveal|atlas|archmap|catmap|herovid|catalogue-data|iceberg)\.js(?:\?[^"]*)?"',
                lambda m: f'<script src="{m.group(1)}.js?v={hashlib.sha1((HERE / (m.group(1) + ".js")).read_bytes().replace(b"\r\n", b"\n")).hexdigest()[:8]}"', s)
     s = re.sub(r'<script src="site.js[^"]*"></script>\s*', '', s)
     s = s.replace('</body>', f'<script src="site.js?v={VERSION}"></script>\n</body>', 1)
     s = re.sub(r'<body(?![^>]*id=)', '<body id="top"', s, count=1)
     if slug in PAGE_STYLED and f'pg-{slug}' not in s.split('</head>')[-1][:200]:
         s = re.sub(r'<body([^>]*?)(?: class="([^"]*)")?>', lambda m: f'<body{m.group(1)} class="{(m.group(2) + " " if m.group(2) else "")}pg-{slug}">', s, count=1)
+    if slug == 'iceberg':
+        s = iceberg_counts(s)
     if slug == 'findings':
         s = list_findings(s)
     if slug == 'index':

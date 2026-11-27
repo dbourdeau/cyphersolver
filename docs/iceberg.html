@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The cipher iceberg — how deep historical cryptography goes</title>
+<meta name="description" content="An interactive iceberg of historical cryptography: from Caesar and Enigma at the tip, down through the black chambers and the nomenclators, to the letters and scripts that no one has read yet." data-full="An interactive iceberg of historical cryptography: from Caesar and Enigma at the tip, down through the black chambers and the nomenclators, to the letters and scripts that no one has read yet. Every entry with its sources.">
+<link rel="stylesheet" href="style.css?v=18ff2458">
+<link rel="stylesheet" href="pg-iceberg.css?v=c99746cf">
+<meta name="date" content="2026-11-27">
+<meta name="last-modified" content="2026-11-27">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<!-- social:start -->
+<link rel="canonical" href="https://cyphersolver.com/iceberg.html">
+<link rel="alternate" type="application/atom+xml" title="Cyphersolver: new write-ups" href="https://cyphersolver.com/feed.xml">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Cyphersolver">
+<meta property="og:url" content="https://cyphersolver.com/iceberg.html">
+<meta property="og:title" content="The cipher iceberg — how deep historical cryptography goes">
+<meta property="og:description" content="An interactive iceberg of historical cryptography: from Caesar and Enigma at the tip, down through the black chambers and the nomenclators, to the letters and scripts that no one has read yet.">
+<meta property="og:image" content="https://cyphersolver.com/hero_poster.png">
+<meta name="twitter:card" content="summary_large_image">
+<!-- social:end -->
+</head>
+<body id="top" class="pg-iceberg">
+<header class="nav"><a class="skip" href="#content">Skip to content</a><div class="in">
+  <a class="brand" href="index.html"><span class="glyph">972</span><span>Cyphersolver</span></a>
+  <button class="navtoggle" type="button" aria-expanded="false" aria-controls="sitemenu"><span></span><span></span><span></span><i>Menu</i></button>
+  <nav id="sitemenu" class="links" aria-label="Site">
+    <details class="menu"><summary>Write-ups <svg width="10" height="7" viewBox="0 0 10 7" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></summary>
+      <div class="panel wp"><div class="foot"><a class="all" href="writeups.html">All write-ups, with filters &rarr;</a><a href="findings.html">All findings, newest first</a><a href="writeups.html#src=notes">Results only in the notes</a></div></div></details>
+    <details class="menu"><summary class="active">Explore <svg width="10" height="7" viewBox="0 0 10 7" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></summary>
+      <div class="panel ex"><div class="grp"><h4>Start here</h4><ul><li><a href="highlights.html"><b>Highlights</b><span class="d">Twenty favourites: the funny, the historic, the ingenious, the hardest</span></a></li><li><a href="top25.html"><b>Top 25 unsolved ciphers</b><span class="d">Twenty-five ciphers with no accepted reading, ranked</span></a></li><li><a href="iceberg.html" aria-current="page"><b>The cipher iceberg</b><span class="d">From Caesar at the tip to the letters no one has read, in 3D</span></a></li></ul></div><div class="grp"><h4>Maps and patterns</h4><ul><li><a href="atlas.html"><b>Atlas</b><span class="d">Every letter drawn on the map, five centuries of it</span></a></li><li><a href="key-evolution.html"><b>How keys changed</b><span class="d">Kinds of key, their signs and their size, 1400 to 1950</span></a></li><li><a href="keys.html"><b>Key web</b><span class="d">Which key opened which letter</span></a></li></ul></div><div class="grp"><h4>Try and take part</h4><ul><li><a href="secret.html"><b>Write a secret letter</b><span class="d">Seal a message in a real historical cipher</span></a></li><li><a href="contribute.html"><b>Contribute</b><span class="d">Send a solution, a new cipher or a check of a reading</span></a></li></ul></div><div class="grp"><h4>Reference</h4><ul><li><a href="glossary.html"><b>Glossary</b><span class="d">How each cipher was solved, and the terms used</span></a></li><li><a href="corrections.html"><b>Corrections</b><span class="d">What was published and then corrected or withdrawn</span></a></li><li><a href="method.html"><b>Method and review</b><span class="d">How a reading is made, checked and graded, and by whom</span></a></li></ul></div><div class="foot"><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">The code and the working notes on GitHub &#8599;</a></div></div></details>
+    <span class="navlab">Help</span>
+    <a class="navcat" href="catalogue.html">Catalogue<span class="sticker" aria-hidden="true"><span><b>Help<br>Solve!</b></span></span></a>
+    <a class="navcat" href="further.html">Read further<span class="sticker alt" aria-hidden="true"><span><b>Finish<br>It!</b></span></span></a>
+    <a class="navcat" href="archives.html">To the archive<span class="sticker arc" aria-hidden="true"><span><b>Go<br>Look!</b></span></span></a>
+    <a href="contributors.html">Contributors</a>
+    <button class="searchbtn" type="button" aria-label="Search the site" aria-keyshortcuts="/ Control+K"><svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><circle cx="6.8" cy="6.8" r="5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M10.5 10.5L15 15" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg><span>Search</span><kbd>/</kbd></button>
+    <button class="theme" type="button" aria-label="Switch between dark and light" title="Dark / light"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.2" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M8 1.8a6.2 6.2 0 0 1 0 12.4z" fill="currentColor"/></svg></button>
+  </nav>
+</div><span id="content" tabindex="-1"></span></header>
+<div class="search" id="search" hidden>
+  <div class="sbox" role="dialog" aria-modal="true" aria-label="Search the site">
+    <form class="sform" role="search" onsubmit="return false">
+      <svg width="18" height="18" viewBox="0 0 16 16" aria-hidden="true"><circle cx="6.8" cy="6.8" r="5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M10.5 10.5L15 15" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+      <input type="search" id="sq" placeholder="Search names, places, shelfmarks, words of the cipher&hellip;" autocomplete="off" spellcheck="false" aria-label="Search" aria-controls="sres">
+      <button type="button" class="sclose" aria-label="Close search">Esc</button>
+    </form>
+    <div class="sres" id="sres" role="listbox" aria-label="Results"></div>
+    <div class="shint"><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> move</span><span><kbd>&crarr;</kbd> open</span><span><kbd>Esc</kbd> close</span><span class="sn" id="sn"></span></div>
+  </div>
+</div>
+
+<div class="ib-stage" id="ib-stage" aria-hidden="true">
+  <canvas id="ib-canvas"></canvas>
+  <div class="ib-labels" id="ib-labels"></div>
+  <svg class="ib-leads" id="ib-leads"></svg>
+  <div class="ib-vignette"></div>
+</div>
+
+<div class="ib-hud" id="ib-hud" hidden>
+  <nav class="ib-gauge" aria-label="Tiers of the iceberg">
+    <div class="ib-gauge-line"><i id="ib-gauge-fill"></i></div>
+    <ol id="ib-gauge-list"></ol>
+    <p class="ib-depth"><b id="ib-depth">0</b> m</p>
+  </nav>
+  <button type="button" class="ib-btn ib-sound" id="ib-sound" aria-pressed="false" title="Sound is made live in the browser, nothing is downloaded">
+    <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 6h3l4-3v10l-4-3H2z" fill="currentColor"/><path class="ib-wave" d="M11 5.5c1 .8 1 4.2 0 5M12.8 3.8c2 1.8 2 6.6 0 8.4" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+    <span>Sound</span></button>
+  <button type="button" class="ib-btn ib-listbtn" id="ib-listbtn">Show as a list</button>
+  <p class="ib-slideno" aria-hidden="true"><span id="ib-slideno">1</span></p>
+</div>
+
+<div class="ib-track" id="ib-track">
+
+<section class="ib-ch ib-intro" id="top-of-berg" data-y="12">
+  <div class="ib-say">
+    <p class="ib-k">Historical cryptography</p>
+    <h1>The cipher iceberg</h1>
+    <p class="ib-l">Everyone has heard of a few ciphers. Under them lie five centuries of secret letters, the people who broke them, and thousands of letters that no one has read yet.</p>
+    <p class="ib-hint" aria-hidden="true">Scroll to dive <span>&darr;</span></p>
+  </div>
+</section>
+
+<section class="ib-ch ib-break" id="tip" data-y="6">
+  <div class="ib-say">
+    <p class="ib-l ib-big">This is the tip.</p>
+    <p class="ib-l">Caesar, Enigma, the Zodiac, the Voynich manuscript: the ciphers everyone has heard of are the part above water. About nine tenths of an iceberg is under it, because ice is about nine tenths as dense as sea water.</p>
+    <p class="ib-l">Under the tip are five centuries of diplomatic letters, black chambers that opened the post of whole capitals, and thousands of letters that have never been read. The deeper you go, the fewer people have been there. Click anything on the ice to read what is down there, with its sources.</p>
+  </div>
+</section>
+
+<section class="ib-ch ib-tier" id="tier-1" data-tier="1" data-name="Above the water" data-y0="9" data-y1="1">
+  <div class="ib-say">
+    <p class="ib-k">Tier 1 &middot; Above the water</p>
+    <h2 id="everyone-has-heard-of-these" class="ib-h">Everyone has heard of these</h2>
+    <p class="ib-l">Seven ciphers from films, true-crime documentaries and school projects. Each one has a second story under it.</p>
+  </div>
+  <ul class="ib-items">
+    <li id="ib-caesar"><details><summary><b>The Caesar cipher</b> <span class="yr">1st century BC</span></summary><div class="ib-body">
+      <p>Suetonius says Julius Caesar wrote confidential letters by putting each letter three places further down the alphabet, D for A. Less often told: Augustus used a shift of one and did not wrap around, writing AA for X.</p>
+      <p class="ib-src">Suetonius, <i>Divus Julius</i> 56.6 and <i>Divus Augustus</i> 88; David Kahn, <i>The Codebreakers</i> (1967), ch. 2.</p>
+      <p class="ib-site"><a href="secret.html">On this site: seal your own letter in a real historical cipher</a></p></div></details></li>
+    <li id="ib-enigma"><details><summary><b>Enigma</b> <span class="yr">1932&ndash;1945</span></summary><div class="ib-body">
+      <p>Bletchley Park gets the credit, but the Polish Cipher Bureau broke Enigma first. In December 1932 Marian Rejewski worked out the wiring of the rotors with permutation theory and documents a German spy had sold to France. Poland handed its methods and replica machines to Britain and France at Pyry in July 1939, five weeks before the invasion.</p>
+      <p class="ib-src">Marian Rejewski, &ldquo;How Polish mathematicians deciphered the Enigma&rdquo;, <i>Annals of the History of Computing</i> 3 (1981); Kahn, <i>Seizing the Enigma</i> (1991).</p></div></details></li>
+    <li id="ib-zodiac"><details><summary><b>The Zodiac Killer&rsquo;s ciphers</b> <span class="yr">1969&ndash;2020</span></summary><div class="ib-body">
+      <p>The 408-symbol cipher was read within days in August 1969 by a schoolteacher, Donald Harden, and his wife Bettye. The 340-symbol cipher held out for 51 years, until David Oranchak, Sam Blake and Jarl Van Eycke solved it in December 2020. It was a homophonic substitution whose text had been written out in diagonal steps, which is why ordinary solvers failed.</p>
+      <p class="ib-src">FBI San Francisco statement, 11 December 2020; David Oranchak&rsquo;s announcement of the solution, December 2020.</p></div></details></li>
+    <li id="ib-mary"><details><summary><b>Mary, Queen of Scots</b> <span class="yr">1586</span></summary><div class="ib-body">
+      <p>Walsingham&rsquo;s decipherer Thomas Phelippes read the cipher letters smuggled to Mary in beer barrels, including her reply approving the Babington plot, and added a forged postscript asking for the names of the conspirators. Her cipher was a nomenclator: an alphabet with extra signs for common words and names. She was executed in February 1587.</p>
+      <p class="ib-src">John Guy, <i>My Heart Is My Own</i> (2004); Kahn, <i>The Codebreakers</i>, ch. 4.</p>
+      <p class="ib-site"><a href="hamilton1569.html">On this site: Mary&rsquo;s cipher letter to Archbishop Hamilton, 1569</a></p></div></details></li>
+    <li id="ib-voynich"><details><summary><b>The Voynich manuscript</b> <span class="yr">c. 1404&ndash;1438</span></summary><div class="ib-body">
+      <p>The vellum was radiocarbon-dated at the University of Arizona in 2009 to between 1404 and 1438, which, with a letter about the book from 1665 or 1666, makes it very unlikely that Voynich himself forged it in the 1910s. Its text behaves like a language in some tests and unlike any language in others. No proposed reading has been accepted.</p>
+      <p class="ib-src">Beinecke Library, Yale, MS 408; René Zandbergen, <i>voynich.nu</i>.</p>
+      <p class="ib-site"><a href="voynich.html">On this site: statistical tests on the Voynich text</a></p></div></details></li>
+    <li id="ib-codetalkers"><details><summary><b>The Navajo code talkers</b> <span class="yr">1942&ndash;1945</span></summary><div class="ib-body">
+      <p>About four hundred Navajo Marines passed messages in the Pacific in a code built on their language, and it was never broken. They were not the first. In October 1918, Choctaw soldiers of the 36th Division were already passing orders by field telephone in the Meuse-Argonne.</p>
+      <p class="ib-src">National WWII Museum; U.S. Army Center of Military History; William C. Meadows, <i>The Comanche Code Talkers of World War II</i> (2002).</p></div></details></li>
+    <li id="ib-kryptos"><details><summary><b>Kryptos</b> <span class="yr">1990&ndash;</span></summary><div class="ib-body">
+      <p>Jim Sanborn&rsquo;s sculpture at CIA headquarters has four sections. The first three were solved in the 1990s. In September 2025 two writers found the plaintext of the fourth among Sanborn&rsquo;s papers at the Smithsonian. Sanborn says they did not decipher it, and in November 2025 his Kryptos archive sold at auction for $962,500. The answer has not been published.</p>
+      <p class="ib-src">Bruce Schneier, &ldquo;Part Four of the Kryptos Sculpture&rdquo; (October 2025); RR Auction, sale of November 2025.</p>
+      <p class="ib-site"><a href="top25.html">On this site: the top 25 unsolved ciphers</a></p></div></details></li>
+  </ul>
+</section>
+
+<section class="ib-ch ib-tier" id="tier-2" data-tier="2" data-name="At the waterline" data-y0="1" data-y1="-15">
+  <div class="ib-say">
+    <p class="ib-k">Tier 2 &middot; At the waterline</p>
+    <h2 id="the-documentary-layer" class="ib-h">The documentary layer</h2>
+    <p class="ib-l">A telegram that helped bring America into a war, a pamphlet about buried gold, a note to a young woman that nobody can read. Famous among people who watch history documentaries, and often told wrongly.</p>
+  </div>
+  <ul class="ib-items">
+    <li id="ib-vigenere"><details><summary><b>&ldquo;The indecipherable cipher&rdquo;</b> <span class="yr">1553</span></summary><div class="ib-body">
+      <p>The cipher named after Blaise de Vigenère was published by Giovan Battista Bellaso in 1553, with an easy-to-remember key word. Vigenère&rsquo;s own invention, in 1586, was the stronger autokey. Charles Babbage broke the repeating-key cipher around 1854 but never published, and Friedrich Kasiski published a general method in 1863.</p>
+      <p class="ib-src">Bellaso, <i>La cifra del Sig. Giovan Battista Bellaso</i> (1553); Vigenère, <i>Traicté des chiffres</i> (1586); Kahn, ch. 4 and 6.</p></div></details></li>
+    <li id="ib-zimmermann"><details><summary><b>The Zimmermann telegram</b> <span class="yr">1917</span></summary><div class="ib-body">
+      <p>Germany offered Mexico an alliance against the United States. In Room 40 of the British Admiralty, Nigel de Grey and William Montgomery read it. To hide that Britain was reading American cables, they obtained the copy re-sent in an older code from Washington to Mexico City and showed the Americans that one. The United States entered the war that April.</p>
+      <p class="ib-src">Thomas Boghardt, <i>The Zimmermann Telegram</i> (2012); Kahn, ch. 9.</p>
+      <p class="ib-site"><a href="bernstorff1917.html">On this site: Bernstorff&rsquo;s telegram No. 205, 1917</a></p></div></details></li>
+    <li id="ib-beale"><details><summary><b>The Beale papers</b> <span class="yr">1885</span></summary><div class="ib-body">
+      <p>A Virginia pamphlet printed three number ciphers said to give the place of buried gold. The second reads if each number stands for the first letter of that word in the Declaration of Independence. The other two have never been read. Decoded the same way, the first gives strings like ABFDEFGHIIJKLMMNOHPP, which most cryptanalysts take as the mark of a hoax.</p>
+      <p class="ib-src">James J. Gillogly, &ldquo;The Beale Cipher: A Dissenting Opinion&rdquo;, <i>Cryptologia</i> 4 (1980).</p>
+      <p class="ib-site"><a href="top25.html">On this site: the top 25 unsolved ciphers</a></p></div></details></li>
+    <li id="ib-dorabella"><details><summary><b>The Dorabella cipher</b> <span class="yr">1897</span></summary><div class="ib-body">
+      <p>Edward Elgar sent 87 little semicircles in three lines to Dora Penny, the &ldquo;Dorabella&rdquo; of his Enigma Variations, on 14 July 1897. She never read them, and nobody has since. Elgar was a keen amateur cryptographer, so it may well be a real cipher, perhaps with a private joke in it.</p>
+      <p class="ib-src">Mrs Richard Powell (Dora Penny), <i>Edward Elgar: Memories of a Variation</i> (1937).</p>
+      <p class="ib-site"><a href="dorabella.html">On this site: the Dorabella cipher, attempted</a></p></div></details></li>
+    <li id="ib-adfgvx"><details><summary><b>ADFGVX</b> <span class="yr">1918</span></summary><div class="ib-body">
+      <p>Only six letters, chosen because they sound unalike in Morse. Each letter of the message became a pair of them, and the pairs were then shuffled by a key word. The French cryptanalyst Georges Painvin broke a key of early June 1918 after weeks of work in which, Kahn says, he lost some fifteen kilos. The message showed where Ludendorff would attack next.</p>
+      <p class="ib-src">Kahn, ch. 10; Lasry, Niebel, Kopal, Wacker, &ldquo;Deciphering ADFGVX messages from the Eastern Front of World War I&rdquo;, <i>Cryptologia</i> 41 (2017).</p>
+      <p class="ib-site"><a href="adfgvx.html">On this site: twenty-two garbled ADFGVX messages of November 1918</a></p></div></details></li>
+    <li id="ib-playfair"><details><summary><b>The Playfair cipher</b> <span class="yr">1854</span></summary><div class="ib-body">
+      <p>Invented by Charles Wheatstone and named after his friend Lyon Playfair, who promoted it. It enciphers letters two at a time from a 5&times;5 square, which flattens the letter counts that break simple ciphers. The British used it in the Boer War and the First World War.</p>
+      <p class="ib-src">Kahn, ch. 6.</p></div></details></li>
+    <li id="ib-scytale"><details><summary><b>The scytale</b> <span class="yr">5th century BC?</span></summary><div class="ib-body">
+      <p>Every textbook calls the Spartan baton the first cipher device: wind a strip round a rod, write along it, unwind. The earliest sources only mention a message stick. The use as a cipher is first described centuries later, and Thomas Kelly argued that the cipher story may be a later invention.</p>
+      <p class="ib-src">Thomas Kelly, &ldquo;The Myth of the Skytale&rdquo;, <i>Cryptologia</i> 22 (1998).</p></div></details></li>
+    <li id="ib-pigpen"><details><summary><b>Pigpen</b> <span class="yr">1587</span></summary><div class="ib-body">
+      <p>The grid alphabet sold as the &ldquo;Freemasons&rsquo; cipher&rdquo; was in use long before eighteenth-century lodges took it up. In 1587 a servant of Walsingham wrote from the fleet sent to relieve Sluys in a three-grid pigpen.</p>
+      <p class="ib-src">British Library, Harley MS 287 ff. 39&ndash;40.</p>
+      <p class="ib-site"><a href="needham1587.html">On this site: Francis Needham to Walsingham, 1587</a></p></div></details></li>
+  </ul>
+</section>
+
+<section class="ib-ch ib-tier" id="tier-3" data-tier="3" data-name="Shallow water" data-y0="-15" data-y1="-32">
+  <div class="ib-say">
+    <p class="ib-k">Tier 3 &middot; Shallow water</p>
+    <h2 id="where-the-enthusiasts-swim" class="ib-h">Where the enthusiasts swim</h2>
+    <p class="ib-l">The inventors, the first codebreaking manuals and the people who read other people&rsquo;s post. Popular books on cryptography usually get this far.</p>
+  </div>
+  <ul class="ib-items">
+    <li id="ib-alkindi"><details><summary><b>Al-Kindi and frequency analysis</b> <span class="yr">9th century</span></summary><div class="ib-body">
+      <p>The oldest known description of how to break a cipher by counting letters is in the Baghdad philosopher al-Kindi&rsquo;s <i>Risāla fī istikhrāj al-muʿammā</i>, &ldquo;On deciphering cryptographic messages&rdquo;. The treatise was found in the Süleymaniye library in Istanbul and published in 1987.</p>
+      <p class="ib-src">M. Mrayati, Y. Meer Alam, M. H. at-Tayyan, <i>Arabic Origins of Cryptology</i>, vol. 1 (2003).</p></div></details></li>
+    <li id="ib-alberti"><details><summary><b>Alberti&rsquo;s cipher disk</b> <span class="yr">1466&ndash;67</span></summary><div class="ib-body">
+      <p>The architect Leon Battista Alberti described two concentric disks of letters. Turning the inner one every few words changed the cipher alphabet, which is the first polyalphabetic cipher in the West. He also put the numbers 1 to 4 on the disk and used them for code words, then enciphered them with the rest: the first enciphered code.</p>
+      <p class="ib-src">Alberti, <i>De componendis cifris</i> (1466&ndash;67); Kahn, ch. 4.</p></div></details></li>
+    <li id="ib-trithemius"><details><summary><b>Trithemius&rsquo;s angels</b> <span class="yr">1499&ndash;1606</span></summary><div class="ib-body">
+      <p>The abbot Johannes Trithemius wrote the first printed book on cryptography, the <i>Polygraphia</i> (1518). His <i>Steganographia</i> looked like a manual for sending messages by summoning spirits, and it was put on the Index. In 1996 and 1998 Thomas Ernst and Jim Reeds showed that the number tables of its third book are themselves enciphered messages.</p>
+      <p class="ib-src">Jim Reeds, &ldquo;Solved: The Ciphers in Book III of Trithemius&rsquo;s Steganographia&rdquo;, <i>Cryptologia</i> 22 (1998); Thomas Ernst, <i>Daphnis</i> 25 (1996).</p></div></details></li>
+    <li id="ib-greatcipher"><details><summary><b>The Great Cipher of Louis XIV</b> <span class="yr">1680s&ndash;1890s</span></summary><div class="ib-body">
+      <p>Antoine and Bonaventure Rossignol built a code of about 587 numbers for syllables, with traps such as a number that cancels the one before it. Nobody could read the letters written in it for two hundred years, until Étienne Bazeries broke it in the 1890s. His claim that one letter names the Man in the Iron Mask is not accepted by historians.</p>
+      <p class="ib-src">Kahn, ch. 5; Bazeries, <i>Les Chiffres secrets dévoilés</i> (1901).</p></div></details></li>
+    <li id="ib-copiale"><details><summary><b>The Copiale cipher</b> <span class="yr">18th century</span></summary><div class="ib-body">
+      <p>A 105-page bound book with about 75,000 handwritten characters, abstract signs mixed with Roman and Greek letters. In 2011 Kevin Knight, Beáta Megyesi and Christiane Schaefer found that the plain Roman letters only marked the breaks between words, while the accented letters and the signs spelled German: the initiation ritual of the Oculists, a secret society whose new members had a hair plucked from their eyebrow as a mock eye operation.</p>
+      <p class="ib-src">Knight, Megyesi and Schaefer, &ldquo;The Copiale Cipher&rdquo;, <i>Proceedings of the 4th Workshop on Building and Using Comparable Corpora</i>, ACL (2011).</p></div></details></li>
+    <li id="ib-vienna"><details><summary><b>The black chamber of Vienna</b> <span class="yr">18th century</span></summary><div class="ib-body">
+      <p>In Vienna the post for the embassies went first to the Geheime Kabinets-Kanzlei. The bags arrived at seven in the morning. The letters were opened, copied, resealed and back in the post by about half past nine, and the copies were deciphered at leisure.</p>
+      <p class="ib-src">Kahn, ch. 5.</p></div></details></li>
+    <li id="ib-friedman"><details><summary><b>Elizebeth Smith Friedman</b> <span class="yr">1920s&ndash;1940s</span></summary><div class="ib-body">
+      <p>She broke the codes of Prohibition rum-runners for the Coast Guard. In the Second World War her unit read the Enigma traffic of German spy networks in South America, while J. Edgar Hoover&rsquo;s FBI took the public credit. Her part was secret until long after her death.</p>
+      <p class="ib-src">Jason Fagone, <i>The Woman Who Smashed Codes</i> (2017).</p></div></details></li>
+    <li id="ib-wheel"><details><summary><b>Jefferson&rsquo;s wheel cypher</b> <span class="yr">c. 1795</span></summary><div class="ib-body">
+      <p>Thomas Jefferson described a stack of 36 wooden disks, each with a shuffled alphabet on its rim. The idea was forgotten, reinvented by Étienne Bazeries in 1891, and adopted by the U.S. Army as the M-94 in 1922, more than a century after Jefferson.</p>
+      <p class="ib-src">Kahn, ch. 7; Library of Congress, Jefferson Papers.</p>
+      <p class="ib-site"><a href="jefferson1787.html">On this site: Jefferson&rsquo;s Code No. 11, 1786&ndash;1791</a></p></div></details></li>
+    <li id="ib-venona"><details><summary><b>Venona</b> <span class="yr">1943&ndash;1980</span></summary><div class="ib-body">
+      <p>A one-time pad is unbreakable if each page is used once. In 1942 a Soviet factory under wartime pressure printed some pages twice. U.S. Army codebreakers, starting in 1943, used the repeats to read parts of about three thousand messages, which exposed Klaus Fuchs, the Rosenbergs and the Cambridge spies. The programme stayed secret until 1995.</p>
+      <p class="ib-src">Robert L. Benson, <i>The Venona Story</i>, NSA Center for Cryptologic History (2001).</p></div></details></li>
+  </ul>
+</section>
+
+<section class="ib-ch ib-tier" id="tier-4" data-tier="4" data-name="Deep water" data-y0="-32" data-y1="-50">
+  <div class="ib-say">
+    <p class="ib-k">Tier 4 &middot; Deep water</p>
+    <h2 id="the-cipher-that-ran-europe" class="ib-h">The cipher that ran Europe</h2>
+    <p class="ib-l">For about four hundred years, kings, popes and ambassadors used one kind of cipher. Hardly anyone outside the field knows its name: the nomenclator.</p>
+  </div>
+  <ul class="ib-items">
+    <li id="ib-nomenclator"><details><summary><b>The nomenclator</b> <span class="yr">c. 1400&ndash;1850</span></summary><div class="ib-body">
+      <p>A cipher alphabet, often with several signs for each common letter, joined to a list of code signs for names, places and frequent words: the Pope might be 22, the King of Spain a triangle. Nearly every enciphered letter in Europe&rsquo;s archives from these centuries uses one. Each ambassador usually had his own, and a lost key can leave a whole embassy&rsquo;s letters unread.</p>
+      <p class="ib-src">Kahn, ch. 3; Beáta Megyesi et al., &ldquo;Historical Cryptology&rdquo;, ch. 3 of Bernhard Esslinger, <i>Learning and Experiencing Cryptography with CrypTool and SageMath</i> (2023).</p>
+      <p class="ib-site"><a href="key-evolution.html">On this site: how cipher keys changed, 1400 to 1949</a></p></div></details></li>
+    <li id="ib-mantua"><details><summary><b>The first homophones</b> <span class="yr">1401</span></summary><div class="ib-body">
+      <p>The oldest known key that gives several signs to the same letter was made in Mantua in 1401 for correspondence with one Simeone de Crema. Each vowel has extra signs, so that counting letters no longer gives the vowels away. Codebreaking by frequency must already have been a threat in Italy by then.</p>
+      <p class="ib-src">Aloys Meister, <i>Die Anfänge der modernen diplomatischen Geheimschrift</i> (1902); Kahn, ch. 3.</p>
+      <p class="ib-site"><a href="mutiliana1428.html">On this site: Forlì to Gianfrancesco Gonzaga, 1428</a></p></div></details></li>
+    <li id="ib-soro"><details><summary><b>Giovanni Soro of Venice</b> <span class="yr">1506&ndash;1544</span></summary><div class="ib-body">
+      <p>Venice appointed Soro cipher secretary in 1506, and he is often called the first great Western cryptanalyst. He read the ciphers of Milan, the Empire and the Pope. Venice kept its cipher secretaries in the Doge&rsquo;s Palace and trained their successors there.</p>
+      <p class="ib-src">Kahn, ch. 3; Paolo Preto, <i>I servizi segreti di Venezia</i> (1994).</p></div></details></li>
+    <li id="ib-viete"><details><summary><b>Viète and the sorcery complaint</b> <span class="yr">1590</span></summary><div class="ib-body">
+      <p>François Viète, one of the founders of algebra, read Spanish cipher letters for Henri IV. When Philip II found out, he complained to the Pope that the French could only have done it by black magic. The Pope&rsquo;s own cipher office had been reading Spanish letters too, and nothing came of it.</p>
+      <p class="ib-src">Kahn, ch. 4.</p></div></details></li>
+    <li id="ib-rossignol"><details><summary><b>Rossignol at Réalmont</b> <span class="yr">1628</span></summary><div class="ib-body">
+      <p>During the siege of the Huguenot town of Réalmont, a young mathematician, Antoine Rossignol, deciphered an intercepted letter the same day. It said the town was out of munitions. The town surrendered and Richelieu took Rossignol into his service. He and his son founded the French tradition of state cryptology.</p>
+      <p class="ib-src">Kahn, ch. 5.</p>
+      <p class="ib-site"><a href="richelieu.html">On this site: Cardinal Richelieu to Rancé, 1629</a></p></div></details></li>
+    <li id="ib-wallis"><details><summary><b>John Wallis</b> <span class="yr">1643&ndash;1703</span></summary><div class="ib-body">
+      <p>The Oxford mathematician who gave us the symbol &infin; deciphered intercepted letters for Parliament from 1643, and later for William III. When Leibniz asked for Hanoverians to be trained, Wallis held back, so as not to let the art leave England.</p>
+      <p class="ib-src">Philip Beeley and Christoph Scriba (eds.), <i>The Correspondence of John Wallis</i> (2003&ndash;); Kahn, ch. 5.</p></div></details></li>
+    <li id="ib-deciphering"><details><summary><b>England&rsquo;s Deciphering Branch</b> <span class="yr">1716&ndash;1844</span></summary><div class="ib-body">
+      <p>For more than a century the decipherers to the King were the Willes family. Edward Willes became Bishop of Bath and Wells and kept the work, and so did his sons. The branch was closed in 1844 after it came out that the post office had opened the letters of the Italian exile Giuseppe Mazzini.</p>
+      <p class="ib-src">Kenneth Ellis, <i>The Post Office in the Eighteenth Century</i> (1958).</p></div></details></li>
+    <li id="ib-argenti"><details><summary><b>The Argenti, papal cipher secretaries</b> <span class="yr">c. 1590&ndash;1605</span></summary><div class="ib-body">
+      <p>Giovanni Battista Argenti and his nephew Matteo made the Pope&rsquo;s ciphers in the late sixteenth century. Matteo left a long manual describing papal practice: alphabets mixed by a key word, nulls, and code words for the names of popes and princes.</p>
+      <p class="ib-src">Aloys Meister, <i>Die Geheimschrift im Dienste der päpstlichen Kurie</i> (1906); Kahn, ch. 3.</p>
+      <p class="ib-site"><a href="vatican.html">On this site: Cardinal Farnese to the nuncio Poggio, 1542</a></p></div></details></li>
+    <li id="ib-scovell"><details><summary><b>The Great Paris Cipher</b> <span class="yr">1811&ndash;1813</span></summary><div class="ib-body">
+      <p>Napoleon&rsquo;s armies in Spain used a code of about 1,400 numbers. George Scovell, an officer on Wellington&rsquo;s staff, rebuilt it from captured letters, and by the end of 1812 Wellington could read the letters between King Joseph and his marshals.</p>
+      <p class="ib-src">Mark Urban, <i>The Man Who Broke Napoleon&rsquo;s Codes</i> (2001).</p>
+      <p class="ib-site"><a href="napoleon.html">On this site: King Joseph to Napoleon, December 1812</a></p></div></details></li>
+  </ul>
+</section>
+
+<section class="ib-ch ib-tier" id="tier-5" data-tier="5" data-name="The abyss" data-y0="-50" data-y1="-68">
+  <div class="ib-say">
+    <p class="ib-k">Tier 5 &middot; The abyss</p>
+    <h2 id="where-the-archives-are" class="ib-h">Where the archives are</h2>
+    <p class="ib-l">Letters sealed in the sixteenth century are still being read for the first time, some of them in this decade. The work is slow: find the letter, transcribe every sign, then rebuild a key that no one has seen for four hundred years.</p>
+  </div>
+  <ul class="ib-items">
+    <li id="ib-unread"><details><summary><b>The unread letters</b> <span class="yr">today</span></summary><div class="ib-body">
+      <p>Nobody knows how many enciphered letters lie in Simancas, the Vatican, Venice, Vienna, Paris and London, because nobody has counted them. Many were never deciphered, or their decipherment is lost. The DECODE database, built up at Uppsala since the late 2010s, is the first attempt to gather them, with images and keys.</p>
+      <p class="ib-src">Megyesi et al., &ldquo;Decryption of historical manuscripts: the DECODE project&rdquo;, <i>Cryptologia</i> 44 (2020).</p>
+      <p class="ib-site"><a href="catalogue.html">On this site: the catalogue of open ciphers</a></p></div></details></li>
+    <li id="ib-marylost"><details><summary><b>Mary Stuart&rsquo;s lost letters</b> <span class="yr">2023</span></summary><div class="ib-body">
+      <p>In the Bibliothèque nationale de France, George Lasry, Norbert Biermann and Satoshi Tomokiyo found 57 cipher letters filed as Italian documents. They were Mary&rsquo;s letters from captivity to the French ambassador Castelnau, 1578&ndash;1584. A computer search recovered the key, and hand work did the rest.</p>
+      <p class="ib-src">Lasry, Biermann, Tomokiyo, &ldquo;Deciphering Mary Stuart&rsquo;s lost letters from 1578&ndash;1584&rdquo;, <i>Cryptologia</i> 47 (2023).</p></div></details></li>
+    <li id="ib-charlesv"><details><summary><b>Charles V&rsquo;s letter to Saint-Mauris</b> <span class="yr">1547 / 2022</span></summary><div class="ib-body">
+      <p>A cipher letter of the Emperor to his ambassador in France had sat in the Bibliothèque Stanislas in Nancy. In 2022 Cécile Pierrot and the historian Camille Desenclos deciphered it. It mentions rumours of a plot to murder Charles.</p>
+      <p class="ib-src">Inria and CNRS press release, 23 November 2022.</p></div></details></li>
+    <li id="ib-ljs51"><details><summary><b>A lost solution, found again</b> <span class="yr">c. 1330&ndash;1370 / 2026</span></summary><div class="ib-body">
+      <p>Penn LJS 51 is a Mamluk secretary&rsquo;s own account of the cipher verses he traded with colleagues: a message in an alphabet made up for the occasion, then his solution. On the last page, Ibn al-Qabāqibī&rsquo;s seven lines of 22 signs stand without one, because the book breaks off. This site rebuilt the key from five red letters, a repeated word and the metre: two love verses, one damaged word unread.</p>
+      <p class="ib-src">University of Pennsylvania, Kislak Center, LJS 51, f. 106v (OPenn); corrections by Alan Elbaum, 23 November 2026.</p>
+      <p class="ib-site"><a href="qaysarani1350.html">On this site: Ibn al-Qabāqibī&rsquo;s cipher verses, the full write-up</a></p></div></details></li>
+    <li id="ib-cryptiana"><details><summary><b>Cryptiana</b> <span class="yr">2000s&ndash;</span></summary><div class="ib-body">
+      <p>Satoshi Tomokiyo&rsquo;s website is one person&rsquo;s reference work of hundreds of historical keys and decipherments, from Renaissance Italy to the American Revolution. On it, &ldquo;undeciphered&rdquo; means that no decipherment of the time survives, not that nobody has read the letter.</p>
+      <p class="ib-src">Satoshi Tomokiyo, <i>Cryptiana: Articles on Historical Cryptography</i>.</p></div></details></li>
+    <li id="ib-metaheur"><details><summary><b>Hill-climbing the past</b> <span class="yr">2018</span></summary><div class="ib-body">
+      <p>Ciphertext-only attacks now use search methods such as hill-climbing and simulated annealing: guess a key, score the decryption against a language model, change the key slightly, keep what scores better. George Lasry&rsquo;s thesis set this out for transposition ciphers, ADFGVX, the Hagelin M-209, the Chaocipher, Enigma and Playfair. The same approach read the Mary Stuart letters.</p>
+      <p class="ib-src">George Lasry, <i>A Methodology for the Cryptanalysis of Classical Ciphers with Search Metaheuristics</i>, Kassel University Press (2018).</p>
+      <p class="ib-site"><a href="glossary.html">On this site: how each cipher was solved, and the terms used</a></p></div></details></li>
+    <li id="ib-chaocipher"><details><summary><b>The Chaocipher</b> <span class="yr">1918&ndash;2010</span></summary><div class="ib-body">
+      <p>John F. Byrne, a friend of James Joyce, built a cipher device in a cigar box and tried for decades to sell it to the U.S. Navy and State Department, publishing challenge texts no one could break. His family gave the device to the National Cryptologic Museum, and Moshe Rubin published how it worked in 2010.</p>
+      <p class="ib-src">Moshe Rubin, &ldquo;Chaocipher Revealed: The Algorithm&rdquo; (2010); John F. Byrne, <i>Silent Years</i> (1953).</p></div></details></li>
+    <li id="ib-telegraph"><details><summary><b>Telegraph codebooks</b> <span class="yr">1870s&ndash;1930s</span></summary><div class="ib-body">
+      <p>Telegrams were charged by the word, so merchants bought codebooks in which one word stood for a whole phrase. The wool dealer Frank Primrose sent his agent the code word BAY; it arrived as BUY, and the purchases that followed cost him a large sum. In <i>Primrose v. Western Union</i> (1894) the Supreme Court held the company was liable only for the cost of the telegram.</p>
+      <p class="ib-src"><i>Primrose v. Western Union Telegraph Co.</i>, 154 U.S. 1 (1894).</p>
+      <p class="ib-site"><a href="sunyatsen.html">On this site: the Swatow telegram to Sun Yat-sen, 1916</a></p></div></details></li>
+    <li id="ib-confederate"><details><summary><b>The Confederacy&rsquo;s Vigenère</b> <span class="yr">1861&ndash;1865</span></summary><div class="ib-body">
+      <p>The South used the Vigenère cipher with a handful of key phrases, among them MANCHESTER BLUFF, COMPLETE VICTORY and COME RETRIBUTION, and often left the word breaks in. Union telegraphers read much of it.</p>
+      <p class="ib-src">Kahn, ch. 7.</p>
+      <p class="ib-site"><a href="johnston1863.html">On this site: Johnston to Seddon during the siege of Vicksburg, 1863</a></p></div></details></li>
+  </ul>
+</section>
+
+<section class="ib-ch ib-tier" id="tier-6" data-tier="6" data-name="The trench" data-y0="-68" data-y1="-88">
+  <div class="ib-say">
+    <p class="ib-k">Tier 6 &middot; The trench</p>
+    <h2 id="older-than-the-codebooks" class="ib-h">Older than the codebooks</h2>
+    <p class="ib-l">Tombs, clay tablets, scripture, poems and swords. The first secret writing is older than the word &ldquo;cipher&rdquo;, and much of it was not hiding anything from enemies.</p>
+  </div>
+  <ul class="ib-items">
+    <li id="ib-khnumhotep"><details><summary><b>The tomb of Khnumhotep II</b> <span class="yr">c. 1900 BC</span></summary><div class="ib-body">
+      <p>In a tomb at Beni Hasan in Egypt, a scribe wrote part of the inscription with unusual hieroglyphs in place of the ordinary ones. It was meant to impress, not to hide anything, but Kahn calls it the first deliberate transformation of writing, where the history of cryptology begins.</p>
+      <p class="ib-src">Kahn, ch. 2.</p></div></details></li>
+    <li id="ib-glaze"><details><summary><b>A potter&rsquo;s secret recipe</b> <span class="yr">c. 1500 BC</span></summary><div class="ib-body">
+      <p>A small cuneiform tablet from Seleucia on the Tigris gives a formula for pottery glaze. The scribe wrote the signs in their rarest sound values, apparently to keep a trade secret from rivals.</p>
+      <p class="ib-src">Kahn, ch. 2.</p></div></details></li>
+    <li id="ib-atbash"><details><summary><b>Atbash in the Book of Jeremiah</b> <span class="yr">6th century BC</span></summary><div class="ib-body">
+      <p>Atbash swaps the first letter of the Hebrew alphabet with the last, the second with the second-to-last, and so on. In Jeremiah, &ldquo;Sheshach&rdquo; (25:26, 51:41) is Babel written in Atbash, and &ldquo;Leb Kamai&rdquo; (51:1) is Kasdim, the Chaldeans.</p>
+      <p class="ib-src">Kahn, ch. 2; standard commentaries on Jeremiah.</p></div></details></li>
+    <li id="ib-kamasutra"><details><summary><b>Secret writing in the Kama Sutra</b> <span class="yr">c. 3rd century</span></summary><div class="ib-body">
+      <p>Vatsyayana&rsquo;s list of the 64 arts includes <i>mlecchita-vikalpa</i>, the art of secret writing. A later commentator describes a substitution in which letters are swapped in pairs.</p>
+      <p class="ib-src">Kahn, ch. 2.</p></div></details></li>
+    <li id="ib-mamluk"><details><summary><b>Ciphers of the Mamluk chancery</b> <span class="yr">14th century</span></summary><div class="ib-body">
+      <p>Ibn ad-Durayhim (1312&ndash;1361) wrote a treatise with tables of letter frequency and a worked example of breaking a cipher. It survives because al-Qalqashandi copied it into his chancery manual in 1412. Secretaries of the period also wrote love poems in cipher and set them to each other as puzzles, like the leaf of Penn LJS 51 drifting in the abyss.</p>
+      <p class="ib-src">Mrayati, Meer Alam, at-Tayyan, <i>Arabic Origins of Cryptology</i>, vol. 2&ndash;3; al-Qalqashandi, <i>Ṣubḥ al-aʿshā</i>.</p>
+      <p class="ib-site"><a href="qaysarani1350.html">On this site: Ibn al-Qabāqibī&rsquo;s cipher verses, about 1330&ndash;1370</a></p></div></details></li>
+    <li id="ib-benedict"><details><summary><b>An antipope&rsquo;s cipher letters</b> <span class="yr">1399&ndash;1403</span></summary><div class="ib-body">
+      <p>During the Great Schism, Benedict XIII, the Avignon pope, wrote to his confidant in Barcelona in cipher. Aloys Meister reported the letters in 1906 without a decipherment. A Barcelona canon, Puig y Puig, deciphered and printed them in 1920, and the book was then largely forgotten.</p>
+      <p class="ib-src">Sebastián Puig y Puig, <i>Pedro de Luna, último papa de Aviñón</i> (1920).</p>
+      <p class="ib-site"><a href="benedict1399.html">On this site: Benedict XIII&rsquo;s cipher letters to Francesc Climent</a></p></div></details></li>
+    <li id="ib-equatorie"><details><summary><b>Chaucer&rsquo;s cipher?</b> <span class="yr">1393</span></summary><div class="ib-body">
+      <p>A Middle English treatise on an astronomical instrument, the <i>Equatorie of the Planetis</i>, has short passages in a cipher alphabet. In 1955 Derek Price attributed it to Chaucer, which would make them Chaucer&rsquo;s ciphers. Kari Anne Rand has since argued convincingly that the author was the monk John Westwyk.</p>
+      <p class="ib-src">Kari Anne Rand, &ldquo;The authorship of The Equatorie of the Planetis revisited&rdquo;, <i>Studia Neophilologica</i> 87 (2015); Cambridge, Peterhouse MS 75.I.</p></div></details></li>
+    <li id="ib-lingua"><details><summary><b>Hildegard&rsquo;s unknown language</b> <span class="yr">12th century</span></summary><div class="ib-body">
+      <p>Hildegard of Bingen wrote down a <i>Lingua ignota</i> of about a thousand invented words, with its own alphabet of 23 letters. It is not a cipher, but it is one of the oldest constructed languages and secret alphabets known, and its purpose is still debated.</p>
+      <p class="ib-src">Sarah Higley, <i>Hildegard of Bingen&rsquo;s Unknown Language</i> (2007).</p></div></details></li>
+    <li id="ib-witham"><details><summary><b>The sword inscriptions</b> <span class="yr">c. 1250&ndash;1330</span></summary><div class="ib-body">
+      <p>Medieval swords sometimes carry strings of letters inlaid in the blade that spell no word, like the eighteen gold letters on the River Witham sword in the British Museum. They are often read as the first letters of the words of a prayer. None has a sure reading.</p>
+      <p class="ib-src">British Museum, 1858,1116.4.</p>
+      <p class="ib-site"><a href="witham1250.html">On this site: the River Witham sword inscription, attempted</a></p></div></details></li>
+    <li id="ib-rok"><details><summary><b>Cipher runes</b> <span class="yr">c. 800</span></summary><div class="ib-body">
+      <p>The Rök runestone in Sweden carries the longest runic inscription known, and parts of it are in cipher runes: runes replaced by their position in the rune row, and passages written in an older alphabet.</p>
+      <p class="ib-src">Rundata, Ög 136; Per Holmberg et al., &ldquo;The Rök Runestone and the End of the World&rdquo;, <i>Futhark</i> 9&ndash;10 (2020).</p>
+      <p class="ib-site"><a href="rok800.html">On this site: the cipher runes of the Rök stone</a></p></div></details></li>
+  </ul>
+</section>
+
+<section class="ib-ch ib-tier" id="tier-7" data-tier="7" data-name="The bottom" data-y0="-88" data-y1="-112">
+  <div class="ib-say">
+    <p class="ib-k">Tier 7 &middot; The bottom</p>
+    <h2 id="what-nobody-has-read" class="ib-h">What nobody has read</h2>
+    <p class="ib-l">Writing systems whose language is lost, books in unknown scripts, and the letters in archives that no one has read yet. Some may never be read. One of them was, in 2022.</p>
+  </div>
+  <ul class="ib-items">
+    <li id="ib-lineara"><details><summary><b>Linear A</b> <span class="yr">c. 1800&ndash;1450 BC</span></summary><div class="ib-body">
+      <p>The Minoan script of Crete. Many signs can be sounded out with the values of the later Linear B, so the texts can be pronounced roughly, but the language behind them is unknown.</p>
+      <p class="ib-src">John Younger, <i>Linear A Texts in Phonetic Transcription</i>; Ester Salgarella, <i>Aegean Linear Script(s)</i> (2020).</p></div></details></li>
+    <li id="ib-indus"><details><summary><b>The Indus script</b> <span class="yr">c. 2600&ndash;1900 BC</span></summary><div class="ib-body">
+      <p>Several thousand inscribed seals and objects, most of them only about five signs long. There is no bilingual text and no agreement on the language, and some scholars have argued that the signs are not writing at all.</p>
+      <p class="ib-src">Asko Parpola, <i>Deciphering the Indus Script</i> (1994); Farmer, Sproat and Witzel, <i>EJVS</i> 11 (2004).</p></div></details></li>
+    <li id="ib-rongorongo"><details><summary><b>Rongorongo</b> <span class="yr">15th century?</span></summary><div class="ib-body">
+      <p>About two dozen inscribed wooden objects from Rapa Nui (Easter Island). In 2024 radiocarbon dating put the wood of one tablet in the fifteenth century, before European contact, which supports an independent invention of writing on the island.</p>
+      <p class="ib-src">Silvia Ferrara et al., &ldquo;The invention of writing on Rapa Nui&rdquo;, <i>Scientific Reports</i> 14 (2024).</p></div></details></li>
+    <li id="ib-phaistos"><details><summary><b>The Phaistos disc</b> <span class="yr">c. 1700 BC?</span></summary><div class="ib-body">
+      <p>A clay disc from Crete with about 240 signs stamped in a spiral, found in 1908: some of the earliest printing with movable stamps. There is only one such text, which is probably too little ever to read it.</p>
+      <p class="ib-src">Yves Duhoux, <i>Le disque de Phaestos</i> (1977).</p></div></details></li>
+    <li id="ib-rohonc"><details><summary><b>The Rohonc Codex</b> <span class="yr">surfaced 1838</span></summary><div class="ib-body">
+      <p>A book of 448 pages in an unknown script, with pictures, given to the Hungarian Academy of Sciences in 1838. Many readings have been proposed and none accepted, and its date and origin are disputed.</p>
+      <p class="ib-src">Benedek Láng, &ldquo;Why Don&rsquo;t We Decipher an Outdated Cipher System? The Codex of Rohonc&rdquo;, <i>Cryptologia</i> 34 (2010).</p></div></details></li>
+    <li id="ib-elamite"><details><summary><b>Linear Elamite, read</b> <span class="yr">2022</span></summary><div class="ib-body">
+      <p>For a century this script of ancient Iran was counted among the undeciphered. In 2022 François Desset and colleagues published a decipherment built on silver vessels with royal names. Not every detail is accepted, but it shows that &ldquo;undeciphered&rdquo; can end.</p>
+      <p class="ib-src">Desset, Tabibzadeh, Kervran, Basello, Marchesi, &ldquo;The Decipherment of Linear Elamite Writing&rdquo;, <i>Zeitschrift für Assyriologie</i> 112 (2022).</p></div></details></li>
+    <li id="ib-open"><details><summary><b>The letters no one has read yet</b> <span class="yr">now</span></summary><div class="ib-body">
+      <p>This site keeps a ledger of historical cipher letters and what became of them: <span data-ib="pages">689</span> write-ups so far, and <span data-ib="open">2,204</span> vetted ciphers in the catalogue still open. Each glowing point on the sea floor is one of them, waiting in an archive for a reader.</p>
+      <p class="ib-src">The catalogue on this site, built from DECODE, Cryptiana, archive catalogues and our own sweeps.</p>
+      <p class="ib-site"><a href="catalogue.html">On this site: pick an open cipher from the catalogue</a></p></div></details></li>
+  </ul>
+</section>
+
+<section class="ib-ch ib-end" id="questions" data-y="-128">
+  <div class="ib-say">
+    <p class="ib-l ib-big">Any questions?</p>
+    <p class="ib-l">Better: any keys? <b><span data-ib="open">2,204</span></b> ciphers in our catalogue are still open, and most of them have never been read by anyone since they were sealed.</p>
+    <p class="ib-cta"><a class="ib-go" href="catalogue.html">Open the catalogue</a><a href="top25.html">Top 25 unsolved</a><a href="secret.html">Write a secret letter</a><a href="contribute.html">Contribute</a></p>
+  </div>
+</section>
+
+</div>
+
+<aside class="ib-card" id="ib-card" role="dialog" aria-modal="false" aria-labelledby="ib-card-t" hidden>
+  <button type="button" class="ib-x" id="ib-card-x" aria-label="Close">&times;</button>
+  <p class="ib-card-k" id="ib-card-k"></p>
+  <h3 id="ib-card-t"></h3>
+  <div id="ib-card-b"></div>
+  <p class="ib-card-nav"><button type="button" id="ib-prev">&larr; Shallower</button><button type="button" id="ib-next">Deeper &rarr;</button></p>
+</aside>
+
+<main>
+<section class="hero ib-after">
+  <p class="kicker">About this page</p>
+  <h2 id="how-the-iceberg-was-drawn">How the iceberg was drawn</h2>
+  <p class="meta">Daniel Bourdeau &middot; posted <time datetime="2026-11-27">27 November 2026</time></p>
+</section>
+<p>An &ldquo;iceberg&rdquo; is an internet picture that ranks the parts of a subject by how far into it you have to go before you meet them. This one ranks fifty-nine stories of secret writing. The tier of each is a judgement, not a measurement. Roughly, the tip is what a general audience knows from film and television, the waterline is what history documentaries cover, shallow water is the ground of popular books such as Simon Singh&rsquo;s <i>The Code Book</i>, deep water is David Kahn&rsquo;s <i>The Codebreakers</i> and the specialist literature, and the abyss is current research in the archives. The trench and the bottom are ordered by age and by how little is known, not by obscurity alone.</p>
+<p>Every entry names its sources. Dates are those of the cipher or the event, not of its solution, except where both are given. The scene takes its shape from &ldquo;The Last Boring Slide&rdquo;, an interactive three.js talk built with Claude, in which a red line breaks out of a chart and runs through the world; here it runs down the ice. The leaf drifting in the abyss is f. 106v of Penn LJS 51, read on this site; its image is from the University of Pennsylvania, Kislak Center, via OPenn (public domain). It is drawn with <a href="https://threejs.org/" rel="noopener">three.js</a>, and the sound is made live in the browser with the Web Audio API. The page works without either: <button type="button" class="ib-inline" data-ib-list>show the iceberg as a list</button>.</p>
+<h2 id="sources">Sources</h2>
+<ul class="ib-bib">
+  <li>David Kahn, <i>The Codebreakers: The Story of Secret Writing</i> (1967; revised 1996). The backbone of tiers 2 to 4 and 6.</li>
+  <li>Simon Singh, <i>The Code Book</i> (1999).</li>
+  <li>Klaus Schmeh, <i>Codeknacker gegen Codemacher</i> (3rd ed. 2014), and <i>Cipher Mysteries</i> by Nick Pelling, for the unsolved cases.</li>
+  <li>Beáta Megyesi et al., &ldquo;Decryption of historical manuscripts: the DECODE project&rdquo;, <i>Cryptologia</i> 44 (2020).</li>
+  <li>George Lasry, Norbert Biermann and Satoshi Tomokiyo, &ldquo;Deciphering Mary Stuart&rsquo;s lost letters from 1578&ndash;1584&rdquo;, <i>Cryptologia</i> 47 (2023).</li>
+  <li>M. Mrayati, Y. Meer Alam and M. H. at-Tayyan, <i>Arabic Origins of Cryptology</i> (2003&ndash;).</li>
+  <li>Aloys Meister, <i>Die Anfänge der modernen diplomatischen Geheimschrift</i> (1902) and <i>Die Geheimschrift im Dienste der päpstlichen Kurie</i> (1906).</li>
+  <li>Satoshi Tomokiyo, <i>Cryptiana</i>; the write-ups on this site, linked from the entries.</li>
+  <li>The other sources are given under each entry.</li>
+</ul>
+</main>
+<footer><div class="in">
+  <span>Daniel Bourdeau, September 2026 &middot; Text released under CC BY 4.0</span>
+  <nav aria-label="Footer"><a href="index.html">Overview</a><a href="method.html">Method and review</a><a href="corrections.html">Corrections</a><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">Code &#8599;</a><a href="contribute.html#email">Contact &#9993;</a><a href="feed.xml">Feed</a><a href="#top">Top &uarr;</a></nav>
+</div></footer>
+<script src="iceberg.js?v=bff96b29" type="module"></script>
+<script src="site.js?v=18ff2458"></script>
+</body>
+</html>
