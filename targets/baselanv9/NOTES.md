@@ -1,6 +1,6 @@
 # baselanv9: Clavicula Salomonis and Septem sigilla planetarum in a secret alphabet, Basel UB, UBH AN V 9 (17th century)
 
-Status: in progress. Contributed by pull request, not yet written up (pass 2 with the volume's key leaf added 25 Nov 2026 in `keyleaf/`, scored by a separate judge the same day; see "Pass 2" below; pass 3 added the same day in `pass3/`: H1 re-read, not held out, 399/405 = 98.5% judged, a fresh held-out passage H4 389/415 = 93.7% judged, 11 second-series rims 486/521 = 93.3% judged with one rim under the 65% line, see "Pass 3" below; the first pass stays the figure of record), and a new target: the volume is in neither `catalogue.json` nor `research/leads.json`. The key was recovered from cipher ff. 4r-4v aligned with the volume's own clear copy, frozen, and used for one decode of three held-out passages. A separate strict judge finds 747 of 1,138 decoded letters in words that read as sense (65.6%: H1 62.4%, below the contributor's own 65% line; H2 67.0%; H3 69.6%), and the decode reproduces 988 of 1,231 letters of the clear copy (80.3%). Counted in words, 113 of 225 read as sense (0.502) and no sentence is clean, so each passage is "decoded, not read" and the target is filed not read: key recovered from adjacent plaintext, text not read. The volume's own key leaf, viewed only after the decode, agrees on 46 of the 52 values it covers. The page, ledgers, DECODE queue entry and any catalogue or lead entry are left to the maintainers.
+Status: in progress. Contributed by pull request, not yet written up (pass 2 with the volume's key leaf added 25 Nov 2026 in `keyleaf/`, scored by a separate judge the same day; see "Pass 2" below; pass 3 added the same day in `pass3/`: H1 re-read, not held out, 399/405 = 98.5% judged, a fresh held-out passage H4 389/415 = 93.7% judged, 11 second-series rims 486/521 = 93.3% judged with one rim under the 65% line, see "Pass 3" below; pass 4 added 27 Nov 2026 in `pass4/` for Dan Bourdeau's re-review: Tk@ = ru, the nasal-dot rule on the rims, 16 rim words Dl@ -> X@ on the image, counted in sure words per text: S1 rims 385/474 (pass 2 366/472), 53 of 62 rims over 65%, H2 61.90% under, see "Pass 4" below; the first pass stays the figure of record), and a new target: the volume is in neither `catalogue.json` nor `research/leads.json`. The key was recovered from cipher ff. 4r-4v aligned with the volume's own clear copy, frozen, and used for one decode of three held-out passages. A separate strict judge finds 747 of 1,138 decoded letters in words that read as sense (65.6%: H1 62.4%, below the contributor's own 65% line; H2 67.0%; H3 69.6%), and the decode reproduces 988 of 1,231 letters of the clear copy (80.3%). Counted in words, 113 of 225 read as sense (0.502) and no sentence is clean, so each passage is "decoded, not read" and the target is filed not read: key recovered from adjacent plaintext, text not read. The volume's own key leaf, viewed only after the decode, agrees on 46 of the 52 values it covers. The page, ledgers, DECODE queue entry and any catalogue or lead entry are left to the maintainers.
 
 Contributed by Malcolm McBratney (Brisbane), working with Claude (Anthropic): Claude Opus 5.5 the solver session, the separate strict judge and the assembly of this folder; pass 3 (`pass3/`) transcribed, decoded and assembled by Claude Fable 5.2, its judge's model not recorded.
 
@@ -410,6 +410,76 @@ What the rims say, from the decode and unchecked [unverified]: use-captions ("ho
 
 Class and outcome: unchanged. `docs/_check_reading.py` and the other repo checkers were not run on pass 3 (the contributor's sessions do not run repo scripts), so no "read" or "read in part" wording is claimed for any pass 3 unit, and `profile.json`'s outcome block is as pass 2 left it. Whether pass 3 changes the target's class is left to the maintainers.
 
+## Pass 4: Dan Bourdeau's re-review of pass 2 (a separate result, read with known key)
+
+Answers Dan Bourdeau's review of 25 Nov 2026 on PR #957 (head 57aae52, pass 2). Pass 1 stays the figure of record. Passes 2 and 3 are unchanged. Pass 4 (`pass4/`) has its own figures and was counted by this agent alone: no separate judge and no person has checked it. Done by Claude Opus 5.5 on 27 Nov 2026. The checks were done with AI tools and no person checked each record by hand.
+
+**Sequence** [measured: `pass4/FREEZE_P4.txt`, `pass4/stamps/STAMP_LOG.txt`, file times]:
+1. Key v4, transcription v4, rules, Dl@ evidence and decoder frozen at 2026-11-27T03:29:51Z.
+2. Freeze stamped at 03:29:56Z: RFC 3161 Sectigo 03:29:56 GMT and FreeTSA 03:29:57 GMT, manifest sha256 3d4db9c3...; OpenTimestamps submitted.
+3. One decode at 03:30:08Z (`DECODE_P4.txt`), plus the declared variant without C4/C5 (`DECODE_P4_noC45.txt`).
+4. Tags and count after the decode (`TAGS_P4.tsv`, `WORDS_P4.tsv`, `SCORE_P4.tsv`), then controls (`CONTROL_P4.txt`).
+
+### What changed, point by point (`pass4/RULES_V4.md`)
+
+1. **`Tk@` = ru** (Dan's point 1). On f. 99r the label reads "ru", in the same letter forms as "rum" beside it (`pass4/crops/f099r_ru_rum.jpg`). `KEY_LEAF.tsv` and `KEY_V3.tsv` had re: this was our misreading of the leaf. `KEY_V4.tsv` differs from `KEY_V3.tsv` in this row only [measured].
+   - No transcription has a bare `Tk@`. Dan's 11 words are all written `Tk^@` (f. 4r 5, f. 4v 4, pass 2's f. 15r 2) [measured].
+   - Pass 3's mark-order rule C1 already reads `Tk^@` as the leaf's rum sign. Pass 4 keeps C1, so all 9 of them on the training leaves now come out with -rum: hebraeorum, rerum, creaturarum, secretorum (three times), torum, and the holes p[?]iloeophorum and magicirum [measured: pass-4 decode of every `Tk^@` word].
+2. **Nasal dot after the vowel of a two-letter sign** (Dan's point 2). This is pass 3's rule C2, unchanged. Pass 4 applies it for the first time to the 62 first-series rims and the training leaves.
+   - It gives obedient (S1-013, 015, 016, 096), uenient (S1-096), surgens (f. 4r L11), ruebant (f. 4r L14), fiebant (f. 4r L19) and the like.
+   - It does harm in one place. The four "infernales" (S1-013, 015, 016, 030) become infenrales: there the dot under `6r` stands for the n after the whole sign. All four are counted as holes.
+3. **`Dl@` checked on the image** (Dan's point 3; `pass4/DL_CHECK.tsv`). All 34 rim words written with `Dl@` were looked at again on the unwraps [measured: DL_CHECK.tsv]:
+   - 16 show the leaf's "is" sign (an x whose right arm sweeps up into a big loop) and are now `X@`. Where `X Dl@` had been written, the x and the loop are one sign. These give timebis, peribis, uideris, eris (three times), mortis (S1-073), dominantis, uinculis, periculis, iouis, and the holes tinebis, mobtis, mabris, sanguuinis. Reference crops: `crops/S1-019_sanguinis_end.jpg`, `crops/S1-027_timebis_end.jpg`.
+   - 16 show the leaf's "us" sign (a delta whose ascender curls into a small loop) and stay: spiritus, omnibus, deus, aduersus, securus, gratus, fortunatus, iesus, usus, uestibus ...
+   - 2 are unresolved and stay as written: S1-012, a big loop round a delta-like sign (`crops/S1-012_word5.jpg`), and S1-079, under an ink blot (`crops/S1-079_tus_*.jpg`).
+   - The leaf's five looped forms are in `crops/f099r_looped_as_es_is_os_us.jpg`. The value of `Dl@` stays us.
+   - Not looked at again: the 12 `Dl@` words of H1r and H4, and the 39 of the training leaves, H2 and H3 (Remaining gaps).
+4. **Second series ff. 52r-54r, f. 97r-v, signs inside the circles** (Dan's point 4): not transcribed in pass 4 (Remaining gaps). Pass 3 had already transcribed and decoded second-series rims nos. 2-12 (ff. 52r-53r). Pass 4 decodes them again with the corrected transcription.
+5. **Count in sure words per text** (Dan's point 5). Cipher words only. A word with a slip, a transposition or a `[?]` is a hole, and a lone `[?]` is a hole word. Where a pass-4 word is the same as the pass-2 decode at the same place, the pass-2 separate judge's tag is used. Every other word (330) was tagged by this agent after the decode; the 64 holes among them are listed with reasons in `pass4/TAGS_P4.tsv`.
+
+### Pass-4 figures: sure words / cipher words, holes (`pass4/SCORE_P4.tsv`) [measured]
+
+| text | held out in pass 4? | pass 4 | holes | 65% line | pass 2, separate judge's tags (Dan's count) |
+|---|---|---|---|---|---|
+| TRAIN f. 4r | no (training) | 102/138 = 73.91% | 36 | over | 98/141 |
+| TRAIN f. 4v | no (training) | 126/165 = 76.36% | 39 | over | 128/171 |
+| H1r f. 15r l. 1-12 (pass 3 re-read) | no | 69/75 = 92.00% | 6 | over | (pass 2 H1 42/79) |
+| H2 f. 159r | no | 78/126 = 61.90% | 48 | **under** | 83/138 |
+| H3 f. 34r rims 3-4 | no | 10/15 = 66.67% | 5 | over | 10/15 |
+| H4 f. 25r l. 1-12 | no (first decoded in pass 3) | 73/89 = 82.02% | 16 | over | - |
+| S1, 62 first-series rims (each its own text) | no | 385/474 = 81.22% over the 62 | 89 | 53 of 62 rims over, 9 under | 366/472 = 77.54%; 49 of 62 over |
+| S2, 11 second-series rims | no | 85/96 = 88.54% over the 11 | 11 | 10 of 11 over, S2-05 under | - |
+
+The pass-2 word units are as the pass-2 judge split them. Pass 4 joins a word broken with "=" into one word and counts a lone `[?]` as a hole word. The S1 total of 474 is Dan's 472 plus the two lone `[?]` of S1-014 and S1-030.
+
+**Rims with 2 holes or fewer (short-text floor, README Conventions):** S1 50 of 62 (pass 2: 46 of 62 by Dan's count); S2 11 of 11. Every rim has fewer than 40 cipher words, so the floor can apply to each. S2-05 (caraton amen mathoi, 3 words, 2 holes) meets the floor but is under our own 65% line. No rim is claimed as read here: a read rim also needs its reading and translation reviewed, which pass 4 does not do.
+
+**Under our 65% line in pass 4:**
+- H2 61.90%.
+- Rims S1-014 50.00%, S1-016 57.14%, S1-025 33.33%, S1-030 62.50%, S1-032 50.00%, S1-039 50.00%, S1-052 57.14%, S1-081 55.56%, S1-082 57.14%.
+- Rim S2-05 33.33%.
+
+Not pooled to hide them.
+
+**Without C4 and C5** (the two rules not on the leaf; `DECODE_P4_noC45.txt`) [derived: the 13 lines that differ, with the same tags]:
+- H1r 62/75 = 82.67%: christiana, parte and five ch~ri become holes.
+- S1 384/474 = 81.01%: morte in S1-099 becomes a hole.
+- S2 84/96 = 87.50%: ch~ri in S2-02 becomes a hole.
+- Other texts unchanged.
+
+**Controls** [measured: `pass4/CONTROL_P4.txt`; same Latin 4-gram statistic as pass 3; 20 min 45 s run]:
+- (a) 5,000 key shuffles at each of seeds 20261112 and 7 (the 73 single-sign values of `KEY_V4.tsv` permuted): no shuffled key scored as well as the real key on any text or any rim, 0/5000 at both seeds. The lowest z is 4.5 (S2-05); H3 has z 6.8-6.9; the other sections have z 9.9-13.9.
+- (b) The same decoder with the real key, on each text's signs shuffled across its word slots, 5,000 per seed: the real text ranks 1 of 5001 on every text and every rim at both seeds. The lowest z is 3.5 (S2-05).
+- There is no held-out test in pass 4 (see Limits).
+
+**Limits.**
+- No text is held out in pass 4: every one was decoded before, and the reader had seen those decodes.
+- The tags are one agent's: no separate judge, no person.
+- The 16 `Dl@` changes rest on one reader's look at 0.8x-2x unwraps.
+- The training leaves, H2 and H3 keep pass 2's transcription; inner dots are not recorded there.
+- Every text stays "decoded, not read".
+
+
 ## Remaining gaps
 
 - Holes in the three decoded passages of the first pass, 112 of 225 words (H1 42 of 77, H2 63 of 133, H3 7 of 15) - blocker: not-attempted; key faults the judge's errors show (the sign 1 where the sense wants a; r or rr for te or i; irr for Xri; c for h; final t as n). Pass 2 (`keyleaf/`) applies the key leaf to the same transcriptions; the transcription faults behind several of these (1 for a) are not re-read. Pass 3 (`pass3/`) re-read H1 only (399/405 = 98.5% judged, not held out); H2 and H3 are not re-read.
@@ -422,6 +492,11 @@ Class and outcome: unchanged. `docs/_check_reading.py` and the other repo checke
 - The rest of the volume's cipher text, ff. 3r-96v and ff. 158r-162r, apart from the passages transcribed here - blocker: not-attempted; the clear copy ff. 101r-155r and 166r-170r gives the same text per the catalogue.
 - Inner dots (`*`) were not recorded on the first-pass leaves, so the two-dot sign there runs on the declared fallback of the pass-2 decoder - blocker: not-attempted; a re-transcription of those leaves with the dots would remove the fallback.
 - Prior art in print: Skinner and Rankine 2008, Mathers 1889, Boudet's census - blocker: needs-physical-access; not opened; web searches found no mention of a Basel cipher copy.
+- Pass 4 (27 Nov 2026), Dan Bourdeau's point 4: the second-series figures on f. 54r, the two magic-mirror figures f. 97r-v and the signs inside the circles of both series are still not transcribed, so no reference crop of a new sign label exists for them - blocker: not-attempted (time in the pass-4 session); images already fetched (`keyleaf/IMAGE_FETCH.tsv`: canvases 111, 201, 202).
+- Pass 4: the 12 `Dl@` words of H1r and H4 and the 39 of ff. 4r, 4v, 159r and 34r were not looked at again on the image, and two rim words (S1-012, a big loop round a delta-like sign; S1-079, under an ink blot) stay unresolved - blocker: not-attempted for the 51; S1-079 illegible.
+- Pass 4 units under the 65% line: H2 61.90%; rims S1-014, S1-016, S1-025, S1-030, S1-032, S1-039, S1-052, S1-081, S1-082, S2-05 - blocker: not-attempted; most holes are pass-2 transcription faults not re-read (H2, the training leaves and the first-series rims keep pass 2's transcription), plus rule C2 turning infernales into infenrales four times.
+- Pass 4 was counted by one agent (tags in `pass4/TAGS_P4.tsv`) with no separate judge and no person; no pass-4 text is held out - blocker: not-attempted.
+- Leaf sign "unt" (delta with a division sign) is not in the key tables (Dan Bourdeau, not blocking) - blocker: not-attempted; pass 3 called it a compound of Dl + Dv; no row added.
 
 ## Transcription doubts
 
@@ -443,7 +518,7 @@ The 8 signs transcribed `?` on the first pass, looked at on the full-size images
 - [x] known-keys: the volume's own key leaf, transcribed into `keyleaf/KEY_LEAF.tsv` and applied in pass 2
 - [x] print: no edition or study of this cipher found (`PRIOR_ART.md`); Skinner and Rankine, Mathers and Boudet's census not opened
 - [x] key-rebuild: done as pass 2 with the key leaf (`keyleaf/`), frozen and stamped before one decode; reported apart from the first pass of record
-- [ ] retry: in part. The 8 `?` signs were looked at (7 now labelled); the 62 inscribed first-series pentacle rims were transcribed and decoded; pass 2 was scored by a separate judge (25 Nov 2026); pass 3 (25 Nov 2026) re-read H1 with inner dots recorded, decoded a fresh held-out passage (H4, f. 25r) and the 11 inscribed rims of second-series nos. 2-12, and was scored by a separate judge; the figures on f. 54r, f. 97r-v, the texts inside the circles, and a re-transcription of ff. 4r, 4v, 159r and 34r with inner dots remain
+- [ ] retry: in part. The 8 `?` signs were looked at (7 now labelled); the 62 inscribed first-series pentacle rims were transcribed and decoded; pass 2 was scored by a separate judge (25 Nov 2026); pass 3 (25 Nov 2026) re-read H1 with inner dots recorded, decoded a fresh held-out passage (H4, f. 25r) and the 11 inscribed rims of second-series nos. 2-12, and was scored by a separate judge; the figures on f. 54r, f. 97r-v, the texts inside the circles, and a re-transcription of ff. 4r, 4v, 159r and 34r with inner dots remain; pass 4 (27 Nov 2026) corrected Tk@ = ru on the leaf, applied the nasal-dot rule to every text, re-looked at all 34 rim words written Dl@ (16 changed to X@), froze, stamped, decoded once and counted in sure words per text; f. 54r, f. 97r-v and the circle signs are still open
 
 ## Files
 

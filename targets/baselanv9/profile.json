@@ -379,6 +379,53 @@
    "kind": "verification",
    "what": "Time-stamp of the pass 3 working folder (pass3/stamps/, label basel-p3-25Nov): manifest of 37 files, sha256 4836e731..., RFC 3161 Sectigo and FreeTSA both granted 08:08:04 UTC on the first try, OpenTimestamps submitted and pending. The stamp is later than the decode and the judging.",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-27",
+   "kind": "verification",
+   "technique": [
+    "key matching"
+   ],
+   "what": "Pass 4 (pass4/), Dan Bourdeau's re-review of pass 2 (PR #957, 25 Nov 2026): the key leaf f. 99r looked at again; the label over the tack with a big loop reads ru, in the same letter forms as rum beside it (pass4/crops/f099r_ru_rum.jpg); KEY_LEAF.tsv and KEY_V3.tsv had re (our misreading). KEY_V4.tsv changes that row only. No transcription has a bare Tk@; Dan's 11 words are written Tk^@ and come out -rum under pass 3's rule C1. The checks were done with AI tools and no person checked each record by hand.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-27",
+   "kind": "transcription",
+   "technique": [
+    "manual reconstruction"
+   ],
+   "what": "Pass 4: all 34 rim words transcribed with Dl@ looked at again on the pass-2 unwraps against the leaf's five looped forms (pass4/DL_CHECK.tsv, crops/): 16 show the leaf's is sign and become X@ (where X Dl@ was written, x and loop are one sign), 16 show the us sign and stay, 2 unresolved (S1-012, S1-079). The 51 Dl@ words of H1r, H4, ff. 4r, 4v, 159r, 34r not looked at again. The checks were done with AI tools and no person checked each record by hand.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-27",
+   "kind": "hypothesis",
+   "technique": [
+    "key-structure hypothesis"
+   ],
+   "what": "Pass 4 frozen before decoding (pass4/FREEZE_P4.txt, 2026-11-27T03:29:51Z): KEY_V4.tsv, RULES_V4.md (K1 Tk@ = ru; C2 nasal dot after the vowel of a two-letter sign, pass 3's rule unchanged, now applied to every text; T1 16 Dl@ -> X@), DL_CHECK.tsv, eight transcriptions, decoder (pass 3's, with a switch NO_C45), crops. Stamped 03:29:56Z (RFC 3161 Sectigo 03:29:56 GMT, FreeTSA 03:29:57 GMT, manifest 3d4db9c3..., OpenTimestamps submitted). The checks were done with AI tools and no person checked each record by hand.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-27",
+   "kind": "reading",
+   "technique": [
+    "beam/DP decoding",
+    "contextual inference"
+   ],
+   "what": "Pass 4: one decode at 03:30:08Z (DECODE_P4.txt; variant without C4/C5 DECODE_P4_noC45.txt), then counted in sure words per text, cipher words only (SCORE_P4.tsv): the pass-2 separate judge's tag where the word is the same as pass 2 at the same place, else this agent's tag (TAGS_P4.tsv, 330 words, 64 holes). TRAIN f4r 102/138, f4v 126/165, H1r 69/75 = 92.00%, H2 78/126 = 61.90% (under 65%), H3 10/15, H4 73/89 = 82.02%; S1 62 rims 385/474 (pass 2 by Dan's count 366/472), 53 of 62 over 65%, 50 of 62 with 2 holes or fewer (pass 2 46); S2 11 rims 85/96, S2-05 under. Not held out; one tagger, no separate judge. C2 helped obedient, uenient, surgens, ruebant, fiebant and harmed infernales (4 holes). The checks were done with AI tools and no person checked each record by hand.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-27",
+   "kind": "control",
+   "technique": [
+    "statistical test",
+    "language-model scoring"
+   ],
+   "what": "Pass 4 controls (CONTROL_P4.txt), after the decode: 5,000 key shuffles at seeds 20261112 and 7, 0/5000 on every text and rim (lowest z 4.5, S2-05); real key on ciphertext shuffled across word slots, 5,000 per seed, real text ranked 1 of 5001 on every text and rim (lowest z 3.5, S2-05). The checks were done with AI tools and no person checked each record by hand.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -416,6 +463,20 @@
   "key": "partial",
   "method": "key recovered based on adjacent plaintext",
   "method_basis": "The key was recovered from cipher ff. 4r-4v aligned word by word with the volume's own clear copy (ff. 101r-102r), frozen, and then used for one decode of three held-out passages (a strict judge finds 747 of 1,138 letters in words that read as sense; the decode reproduces 80.3% of the clear copy's letters); the volume's key leaf f. 99r, viewed only afterwards, agrees on 46 of 52 values. The decode does not yet read as sentences.",
+  "parts": [
+   {
+    "label": "Pass 1 (figure of record): key recovered from the volume's clear copy, three held-out passages decoded",
+    "method": "key recovered based on adjacent plaintext",
+    "extent": "partial",
+    "basis": "KEY.tsv from ff. 4r-4v against ff. 101r-102r; separate judge 747/1,138 letters; 113 of 225 words read as sense; decoded, not read"
+   },
+   {
+    "label": "Passes 2-4: decoded with the volume's own key leaf f. 99r",
+    "method": "read with known key",
+    "extent": "partial",
+    "basis": "keyleaf/, pass3/, pass4/: the leaf's table, corrected in pass 4 (Tk@ = ru); pass 4 sure words per text in pass4/SCORE_P4.tsv (S1 rims 385/474, H2 61.90% under the contributor's 65% line); every text decoded, not read"
+   }
+  ],
   "contribution": [
    "transcription",
    "key recovered"
@@ -537,6 +598,84 @@
     "read_share": 0.533,
     "summary": "The rim inscriptions of two pentacles: the bearer will fear neither the devil nor phantoms, and will not perish in arms. Contents from the volume's clear copy (f. 123r); the decode has a hole where 'non' stands in pentacle 4.",
     "note": "Strict judge 48/69 letters = 69.6%; 8 of 15 words read as sense; no clean sentence (0 of 2)."
+   },
+   {
+    "doc": "anv9",
+    "label": "Pass 4: H1r, f. 15r lines 1-12 (pass 3 re-read; not held out)",
+    "transcription": "pass4/tx/f015r_H1r.txt",
+    "decryption": "pass4/DECODE_P4.txt",
+    "language": "la",
+    "state": "decoded, not read",
+    "read_share": 0.92,
+    "cipher_words": 75,
+    "holes": 6,
+    "floor_used": false,
+    "note": "69 of 75 cipher words sure (92.00%), 6 holes; one agent's tags; without C4/C5 62/75. Under 95%."
+   },
+   {
+    "doc": "anv9",
+    "label": "Pass 4: H2, f. 159r, Sigillum Iovis (pass 2 transcription)",
+    "transcription": "pass4/tx/f159r.txt",
+    "decryption": "pass4/DECODE_P4.txt",
+    "language": "la",
+    "state": "decoded, not read",
+    "read_share": 0.619,
+    "cipher_words": 126,
+    "holes": 48,
+    "floor_used": false,
+    "note": "78 of 126 cipher words sure (61.90%), 48 holes: UNDER the contributor's 65% line. Pass 2 by the separate judge's tags 83 of 138."
+   },
+   {
+    "doc": "anv9",
+    "label": "Pass 4: H3, f. 34r rims of pentacles 3 and 4",
+    "transcription": "pass4/tx/f034r_p34.txt",
+    "decryption": "pass4/DECODE_P4.txt",
+    "language": "la",
+    "state": "decoded, not read",
+    "read_share": 0.6667,
+    "cipher_words": 15,
+    "holes": 5,
+    "floor_used": false,
+    "note": "10 of 15 cipher words sure (66.67%), 5 holes; over 2 holes, so the short-text floor does not hold."
+   },
+   {
+    "doc": "anv9",
+    "label": "Pass 4: H4, f. 25r lines 1-12 (first decoded in pass 3)",
+    "transcription": "pass4/tx/f025r_H4.txt",
+    "decryption": "pass4/DECODE_P4.txt",
+    "language": "la",
+    "state": "decoded, not read",
+    "read_share": 0.8202,
+    "cipher_words": 89,
+    "holes": 16,
+    "floor_used": false,
+    "note": "73 of 89 cipher words sure (82.02%), 16 holes; lines 9-10 do not read."
+   },
+   {
+    "doc": "anv9",
+    "label": "Pass 4: 62 first-series pentacle rims, ff. 35r-51r (each rim its own text)",
+    "transcription": "pass4/tx/PENT_S1_v4.txt",
+    "decryption": "pass4/DECODE_P4.txt",
+    "language": "la",
+    "state": "decoded, not read",
+    "read_share": 0.8122,
+    "cipher_words": 474,
+    "holes": 89,
+    "floor_used": false,
+    "note": "385 of 474 cipher words sure over the 62 rims (pass 2 by the separate judge's tags, Dan Bourdeau's count: 366 of 472); per rim in pass4/SCORE_P4.tsv: 53 of 62 rims at or over 65%, 9 under (S1-014, 016, 025, 030, 032, 039, 052, 081, 082); 50 of 62 with 2 holes or fewer (short-text floor would hold); no rim claimed as read (no reading review or translation in pass 4)."
+   },
+   {
+    "doc": "anv9",
+    "label": "Pass 4: 11 second-series pentacle rims, ff. 52r-53r (each rim its own text)",
+    "transcription": "pass4/tx/PENT_S2_v4.txt",
+    "decryption": "pass4/DECODE_P4.txt",
+    "language": "la",
+    "state": "decoded, not read",
+    "read_share": 0.8854,
+    "cipher_words": 96,
+    "holes": 11,
+    "floor_used": false,
+    "note": "85 of 96 cipher words sure over the 11 rims; 10 of 11 at or over 65%, S2-05 (caraton amen mathoi) 1 of 3 under; all 11 with 2 holes or fewer; no rim claimed as read."
    }
   ],
   "key_file": "KEY.tsv",
