@@ -5080,6 +5080,9 @@
    "ark": "",
    "scored": "sweep",
    "outcome": "attempted, open: blocked, too short without the key; the 1640 Simancas Estado Inglaterra papers are not on PARES (27 Oct 2026)",
+   "known": "Looked at only, no target folder. Viewed 25 Oct 2026 on the KHA scans: a clear Spanish letter recalling Velada to Flanders with two short cipher runs (about 20 and 25 groups of figures, signs and syllables), no decipherment, nothing on the dorse, no print found. 27 Oct 2026: judged too short to break without the key.",
+   "open": "Both cipher runs (about 45 groups): blocked, too short for a ciphertext-only break; they need the 1640 Velada/Malvezzi cipher from Simancas, Estado, Inglaterra, which is not on PARES. DECODE is not recorded as searched for that key.",
+   "as_of": "2026-11-27",
    "access": "archive",
    "vetting": {
     "date": "2026-11-02",
@@ -6705,7 +6708,9 @@
    "ark": "",
    "scored": "sweep",
    "outcome": "attempted, open",
-   "as_of": "2026-10-27",
+   "known": "The sibling telegram of 11 May 1903 (Monte Estoril to Paris, m0003) is read from the decode of the time on the form and written up in targets/hintze1903 (hintze1903.html, read in part as a target, 26 of 54 groups given a word, 48.1%; WAINUT, PR #105). Pairing it with its decode gave 24 values of Hintze Ribeiro's code, ordered alphabetically within page blocks. This April telegram (m0001, Lisbon to Naples, 29 groups) has no decode; 1 of its 29 groups (41285) has a value.",
+   "open": "m0001, 28 of 29 groups: blocked, no key material (no decode in the file, the code book not found; the page model of the code brackets the groups but fixes none). The codes of carlos1903, sabugosa1910, manuel1910 and lima1909 share no group with it.",
+   "as_of": "2026-11-27",
    "access": "online",
    "access_note": "online (backfilled 28 Oct 2026 from the entry: ...15; two telegrams, 'os documentos estão escritos em cifra'; scans online 27 Oct 2026 (WAINUT, PR #105; targets/hintze1903/): the tel...)",
    "frame_check": {
@@ -7142,7 +7147,10 @@
    "access": "archive",
    "access_note": "not online (backfilled 28 Oct 2026 from the entry: ...searched); not in repo (known.py Deboli, Popiel: no hits). No scan album found on agadd2 for this signature; may be on szukajw...)",
    "repository": "agad",
-   "outcome": "attempted, open"
+   "outcome": "attempted, open",
+   "known": "The 14 pieces in the older Polish code (key of the time ZbPop 444) are deciphered in part in targets/deboli1787 (deboli1787.html, read in part, Brice Dudout: 5,755 of 7,036 words read by sense, 81.8%; the key reads 0.837 on a held-out 1788 pair, under the 0.90 threshold). Systems sorted from the opening groups of ZbPop 3: code 444 = 22 pieces, table 9933 = 19, table 3865 = 14, table 12282 = 3, the 1789-91 code (leading 4000) = 3, mostly clear = 3. A partial key K3 for table 3865 was rebuilt from 1786 pairs in targets/deboli1786 (catalogue 415; 0.645 on a held-out page); Brice Dudout reports a second held-out round for 3865 at 0.598 (issue #363, 9 Nov 2026, not checked by the project). The clear texts of the time for most 1787 despatches are in AGAD AKP 269.",
+   "open": "The pieces in table 9933 (19), table 3865 (14), table 12282 (3, with one Gołuchowski letter) and the 1789-91 code (3): no key of the time found (AGAD 453/454 checked). For 3865 the partial K3 of targets/deboli1786 exists, and the ZbPop 3 pieces are kept unopened as held-out material; for 9933 the 9 May 1788 despatch and its French clear (ZbPop 417 k. 113-114, see targets/deboli1788) are a pair to start from. The other pieces in code 444 (39, 45-47, 49-51; 56 reserved as a control) are not read, though the key is in hand. In the 14 read pieces, 1,281 words are unresolved (open codes, misread digits, four torn places in the key).",
+   "as_of": "2026-11-27"
   },
   {
    "id": 422,
@@ -12313,7 +12321,6 @@
    "prior_art": "in print: Fain; Houssaye (Dudout, 27 Oct 2026; not verified here)",
    "ark": "",
    "scored": "sweep",
-   "as_of": "2026-11-12",
    "access": "archive",
    "access_note": "FranceArchives record has no viewer and no \"numérisé\" note; check the AN/ANOM site before ordering (checked 28 Oct 2026); 7 Nov 2026: served on microfilm at Pierrefitte (volunteer's visit); still no public images",
    "vetting": {
@@ -12338,7 +12345,10 @@
     "key_in_volume": "No key table, but decipherments of the time in the same carton and the same key: no. 130 (interlinear) and no. 170 with no. 171 (from the volunteer's visit of 7 Nov 2026, not checked here). A partial key was rebuilt from them (targets/caulaincourt1814/key/key_partial.tsv) and tested on no. 131: firm values for 28% of the groups, no sentence."
    },
    "repository": "an",
-   "outcome": "attempted, open: no. 131 transcribed from a volunteer's photographs and not read; partial key only (12 Nov 2026, targets/caulaincourt1814/)"
+   "outcome": "attempted, open: no. 131 transcribed from a volunteer's photographs and not read; partial key only (12 Nov 2026, targets/caulaincourt1814/)",
+   "known": "targets/caulaincourt1814 (Status: in progress, no page): Jean-Loko's photographs of the AF/IV/1676 microfilm (7 Nov 2026, not checked here) of nos. 130, 131, 170 and 171 were transcribed. Nos. 130 and 170 are read from their decipherments of the time (that of no. 130 breaks off), and from them a partial key was rebuilt (581 numbers aligned, 108 with a firm value). No. 131 (25 Feb 1814, 465 groups, no decipherment) is not read: the key gives firm values for 132 of its 465 groups (28.4%) and no sentence. Fain and Houssaye print the plain texts (Brice Dudout, 27 Oct 2026, not verified here).",
+   "open": "No. 131, the whole cipher (465 groups): the key is too thin; more decipherments in the same key are in the carton (169bis, 179, 185, 187 interlinear; pairs 161-169 and 173-177; f. 885 of no. 130), needs physical access (microfilm at Pierrefitte). No. 172 (6 Mar 1814, from f. 977) and nos. 191-192: not photographed, needs physical access; Fain, appendix no. 29, is a candidate clear text for no. 172. Every transcription is unverified: the photographs are only on the contributor's phone. Houssaye's 'fonds France, 668' clear copies (La Courneuve) not checked.",
+   "as_of": "2026-11-27"
   },
   {
    "id": 535,
@@ -16059,6 +16069,9 @@
    "ark": "",
    "scored": "sweep",
    "outcome": "attempted, open: blocked, B 001 Nr. 3009 and Nr. 673 are not digitised; Hüttenheim 1974 not yet seen (28 Oct 2026, targets/koerler1675/)",
+   "known": "28 Oct 2026 (targets/koerler1675, Status: no write-up, offline only): B 001 Nr. 3009 and Nr. 673 have no digital objects, so nothing was transcribed or attacked. Sibling B 001 Nr. 7801 (Körler's 1674 Vienna reports, cover name Dorotheus Diethrichs) found, not digitised. Key volumes W 005 Nr. 499 a (ca. 1658-59) and Nr. 475 (1689) inventoried and imaged; none dated to 1634-35 or 1674-75.",
+   "open": "Both items whole: Nr. 3009 (Körler's ciphered passages, 1675) and Nr. 673 (the 1635 letter): blocked, needs physical access (LAV NRW Abt. Westfalen, not digitised). Hüttenheim 1974 not seen; it may give the Körler key or a reading.",
+   "as_of": "2026-11-27",
    "frame_check": {
     "result": "not_found",
     "href": "https://www.archivportal-d.de/item/BX66KFGZFY5RNRPORTK6NPRW3GD4QHKY",
@@ -17314,7 +17327,9 @@
    "access": "online",
    "access_note": "NARA catalogue file digitised (naId 27158076: 1324 images; naId 27133946: 796 images; naId 27140577: 839 images; naId 27128808: 798 images) (checked 28 Oct 2026)",
    "outcome": "attempted, open",
-   "as_of": "2026-11-02",
+   "known": "2 Nov 2026 (targets/stockholm1918, stockholm1918.html, not read): the telegrams transcribed, 938 groups in four numeric systems, none deciphered (0 groups read). Ruled out: 13040, 5950, 26040, the 18470 family, 12444, 1777, 2310, slider no. 1 and Bernstorff's 1917 code. Heads decoded with the Dreinummerheft (Mendelsohn 1937): Nr. 923-925 of about 2 July and Nr. 1010-1015 of 26-27 July 1918. The Ludendorff and legation telegrams of the same batches were split off as targets/ludendorff1918.",
+   "open": "All four systems, 938 groups: blocked, no key material (no code book or skeleton reached; too few repeats for a ciphertext-only attack). w752, the last 47 of 120 groups: missing from both American copies. Any MI-8 or Room 40 decode (RG 165 MID 10xxx, RG 457, TNA HW 7): needs physical access. The Berlin drafts by number in the Politisches Archiv: not asked for. FRUS 1918 not checked page by page.",
+   "as_of": "2026-11-27",
    "frame_check": {
     "result": "confirmed",
     "href": "https://catalog.archives.gov/medialive/76/1580/27158076/content/dc-metro/rg-059/M367/M367_Box_4_122-175/M367_Roll141/M367_Roll141-1256.jpg",
@@ -17789,6 +17804,9 @@
    "ark": "",
    "scored": "sweep",
    "outcome": "attempted, open: blocked, the RG 457 historian's file 9122 (naId 23890756) is not digitised (27 Oct 2026, targets/civilwar1862/)",
+   "known": "27 Oct 2026 (targets/civilwar1862, Status: no write-up, offline only): the RG 457 historian's file 9122 (naId 23890756, container 100, College Park) located; no scope note, no digital objects. Nothing transcribed; whether it holds any unread cipher is unknown.",
+   "open": "The whole file: blocked, needs physical access (NARA copy request). On receipt, compare any ciphertext with the Union route books (targets/eckert1862, union1864) and the three known Confederate Vigenère keys; the Official Records print most Union cipher telegrams in clear.",
+   "as_of": "2026-11-27",
    "access": "archive",
    "access_note": "not online (backfilled 28 Oct 2026 from the entry: Size unknown; not digitised. Historian's source file; may be copies of known Union rout...)",
    "repository": "nara"
@@ -18212,6 +18230,9 @@
    "ark": "",
    "scored": "sweep",
    "outcome": "attempted, open: blocked, RG 457 NR 4458 (naId 2811219) is not digitised (27 Oct 2026, targets/censorship1917/)",
+   "known": "27 Oct 2026 (targets/censorship1917, Status: no write-up, offline only): RG 457 NR 4458 (naId 2811219, container 1393, College Park) located; no digital objects, extent not given. Nothing transcribed; whether it holds unread cipher at all is unknown.",
+   "open": "The whole file: blocked, needs physical access (NARA copy request). On receipt, set aside items with contemporary solutions (Witzke, von Igel) and list the rest.",
+   "as_of": "2026-11-27",
    "access": "archive",
    "access_note": "not online (backfilled 28 Oct 2026 from the entry: Size unknown; not digitised. MI-8 / censorship file on codes and ciphers found in suspe...)",
    "repository": "nara"
@@ -21371,7 +21392,10 @@
     "by": "claude frame check p02"
    },
    "repository": "ags",
-   "outcome": "attempted, open"
+   "outcome": "attempted, open",
+   "known": "PARES title screening only (27 Oct 2026). Narrowed 14 Nov 2026 from eight items to six: EST,LEG,1410,77 and 1410,135 (1577) were matched by Brice Dudout to their contemporary decipherments 1410,111 and 1410,110 (PR #593; targets/idiaquez1577/donjuan/; the pairing was not seen on the images by the checking session). Nothing done on the six left; no target folder.",
+   "open": "Six items, none opened on the images: EST,LEG,1381,143 and 180 (1551); EST,LEG,1418,47, 50 and 81 (1585) and 1418,82 (duplicate for Juan de Idiáquez). For each: whether a decipherment is filed with it, the sender and the system. Prior art not searched beyond title screening.",
+   "as_of": "2026-11-27"
   },
   {
    "id": 754,
@@ -37367,6 +37391,9 @@
    "access_note": "online (set 4 Nov 2026 from vetting.seen, scan: SLUB IIIF, manifest https://iiif.slub-dresden.de/iiif/2/479379637/manifest.json (digital.slub-dresden.de itsel)",
    "repository": "slub",
    "outcome": "attempted, open",
+   "known": "targets/dresdenj345 (dresdenj345.html, read in part; Larry Beck and Sonny Panesar, read with the known alphabet on f. 248v): the two recipes on ff. 249r and 249v are read, 305 of 310 words sure (98%); over ff. 249r, 249v and 250r, 1,463 of 1,470 signs carry a value. The four lines opening f. 250r are filed as a fragment of a third text, decoded, not read.",
+   "open": "The cipher leaves after the four lines of f. 250r, up to Bl. 274 (extent not counted): not transcribed; the alphabet of f. 248v is in hand, so no outside blocker is recorded. The first sign of f. 250r: illegible.",
+   "as_of": "2026-11-27",
    "writeup": "dresdenj345.html"
   },
   {
@@ -43727,7 +43754,10 @@
    "access": "online",
    "access_note": "Portal to Texas History IIIF images answer curl (14 Nov 2026; an earlier robot check blocked the cloud)",
    "repository": "unidentified",
-   "outcome": "attempted, open"
+   "outcome": "attempted, open",
+   "known": "14 Nov 2026 (targets/sinclair1923, Status: no write-up, not read; Brice Dudout, PR #592): the four telegrams transcribed in full and compared word by word with the Portal images at integration (no human check); 168 words in the three coded telegrams, 89 of them code words, 0 decoded (the 79 clear words are 47%). 23 commercial code books on archive.org screened against a 90% coverage criterion, none fits (best 6 of 67 words for 1923-24 and 6 of 12 for 1922). Three of the 1923 words occur together only in the 1901 Berne official vocabulary (HathiTrust full-text search). Two code names in metapth1891648 are glossed in pencil (H. F. Sinclair, E. R. Kemp).",
+   "open": "89 code words: blocked, no key material in reach. Not screened: ABC 6th ed. (1920), Western Union Universal, Marconi International (1919), Wright's Codigo brasileiro universal (1902), Peterson, Lombard, Scott's, and the Berne vocabulary itself; a private Sinclair code is possible. Three typing overstrikes in metapth1891736: illegible at 1500 px. The rest of MS 1052 beyond the Portal tag not searched.",
+   "as_of": "2026-11-27"
   },
   {
    "id": 1445,
@@ -48448,7 +48478,10 @@
     "verdict": "open"
    },
    "repository": "estense",
-   "outcome": "attempted, open"
+   "outcome": "attempted, open",
+   "known": "Narrowed 14 Nov 2026: the letters of 4 Aug 1548 and 24 Nov 1551 (two) are read in part in targets/gonzaga1549 (gonzaga1549.html, read in part; WAINUT's table for the Imperial Cipher of 1544-1554, recovered from the contemporary decipherments and frozen: c. 10r 75 of 80 words, c. 26r 75 of 91, c. 28r D-E 56 of 66), and those of 23 May 1547 and 8 Mar 1549 are covered by their contemporary decipherments (c. 11, c. 14r). The three letters left here (25 Jun 1546, 14 Mar 1553, the one catalogued 16 Jun 1563) were decoded there from one rough blind pass and are not read. The 1563 letter opens 'El Principe' and is addressed to Ferrante, who died in 1557, so it is earlier than January 1556 (WAINUT). targets/philip1546 (Status: in progress, 8 Nov 2026, no profile) holds the image access route and early notes only.",
+   "open": "25 Jun 1546 (sfasc. II cc. 5-6), 14 Mar 1553 (sfasc. I cc. 35-40) and the letter catalogued 16 Jun 1563 (sfasc. II cc. 24-25): decoded, not read; each needs a sign-by-sign pass in a named sign set; no outside blocker (Estense images open). For 14 Mar 1553 the Spanish sheet on cc. 37r-38r and the Italian summary on c. 36 serve as cribs. Also in the same cipher and not transcribed: sfasc. I cc. 15-17 (cipher with a clear slip) and cc. 32-34 (Monzón, 6 Oct 1552) (Brice Dudout, issue #615).",
+   "as_of": "2026-11-27"
   },
   {
    "id": 1563,
@@ -59436,7 +59469,10 @@
    },
    "access": "online",
    "repository": "bhmm",
-   "outcome": "attempted, open"
+   "outcome": "attempted, open",
+   "known": "I 242,29 (20 May 1610, ff. 53 and 60) is deciphered in part in targets/anover1610 (anover1610.html, read in part; Alberto Garvía García, issue #499): key rebuilt from the clear texts of the siblings I 242,33, 42, 47 and 48, 77 of 89 words sure (86.5%); key partial (targets/anover1610/key.tsv); the transcription was not compared with the images by the project. The three other leaves have no transcription.",
+   "open": "The three other cipher leaves (Hispana idBib 58438217, 58438218, 58678720): not transcribed; no outside blocker recorded. Brice Dudout names unglossed I 242,35, 59 and 60 and the glossed I 243,18 in the same table family; which of them are these three is not mapped. Codes still open in the key: U01, 101, 114, 241, e, fo; further glossed siblings (I 242,66 and others listed under verify) may give them.",
+   "as_of": "2026-11-27"
   },
   {
    "id": 1989,
@@ -67321,7 +67357,10 @@
     ]
    },
    "repository": "riksarkivet",
-   "outcome": "attempted, open"
+   "outcome": "attempted, open",
+   "known": "Read in part in targets/hopken1740 (hopken1740.html, read in part; key recovered from the contemporary Swedish decipherment of the despatch of 15/26 Jan 1740): images 49 and 50 left, a letter of the comte de Castellane, 79 of 94 words verbatim (84.0%); Höpken and Carlson's reply with its continuation on images 50 right to 54, 900 of 997 words (90.3%). The continuation (1,961 groups) was transcribed and read by Tommy Marshment-Howell (lccompany), integrated 16 Nov 2026; his human check covers 8 of 157 rows.",
+   "open": "Image 8 (glossed Swedish runs), image 93 (bare pages), image 135 (partly glossed) and any other cipher in the 430 images: not transcribed; no outside blocker (images online, key_1741.tsv in hopken1740). In the Castellane exchange: open codes (about 20 values in the continuation guessed from sense, three groups unread) and no second reader of the continuation. A possible clear copy of Castellane's letter in the Nantes Constantinople series not checked.",
+   "as_of": "2026-11-27"
   },
   {
    "id": 2249,
@@ -79841,7 +79880,10 @@
    "ark": "",
    "scored": "vetted",
    "repository": "gelders",
-   "outcome": "attempted, open"
+   "outcome": "attempted, open",
+   "known": "The other cipher pieces of the volume (scans 715-819: the Elector's four pieces and Waldeck's letters of 7 and 14 Sept 1655) are read in part in targets/friedrichwilhelm1655 (friedrichwilhelm1655.html, read in part; simple number-for-letter key recovered from adjacent plaintext, 396 of 456 cipher words verbatim, 86.8%). Scans 723-724, the letter of 17 Aug 1655, are in a different large-number code and were not treated.",
+   "open": "Scans 723-724, the letter of 17 Aug 1655: not transcribed or attempted; no outside blocker recorded (scans online). Test whether the numbers up to four digits form a nomenclator over letters, and try the simple key of the volume on the letters mixed in.",
+   "as_of": "2026-11-27"
   },
   {
    "id": 2541,
@@ -90548,6 +90590,9 @@
    "cls": "C",
    "status": "Attempted 16 Nov 2026 and closed from the evidence, not read (write-up: sachau218.html). Seen 16 Nov 2026 on the SBB digitisation (PPN618589309, image 467 = f. 231r, 2048 x 2853 px): four underlined lines above the Karshuni instructions of lines 5-9; no gloss or key on the leaf or on ff. 230v and 231v. Sachau 1899 no. 188 describes 'vier Zeilen in einer Chiffreschrift, bestehend aus Ziffern, Buchstaben und willkürlich erfundenen Zeichen' and gives no reading. Attempt by Brice Dudout (with Claude Opus 5.5), 16 Nov 2026, PR #706 comment: transcribed twice at 3x and 2x, 59 signs of 26 shapes in about 13 groups (not the 120-160 signs estimated at vetting; the apparent lamadh-alaph ligatures at the end of line 4 are ascenders of line 5); an abjad key frozen in advance (numerals = letter values, red dot = x10) fails (rank 12 of 201 against shuffled keys, no whole word); none of the alphabets on Sachau 116 f. 1r matches; the Syriac atbash table of Sachau 93 f. 75 not tested; Sachau 221 f. 20b is a different ('tree') script and a separate lead. Language (Karshuni or Syriac) and nature not settled: the lines may be a table for reckoning a sick person's recovery, like the instructions below them, rather than a cipher.",
    "outcome": "attempted, open",
+   "known": "16 Nov 2026 (targets/sachau218, sachau218.html, not read; Brice Dudout with Claude Opus 5.5): 59 signs of 26 shapes in about 13 groups transcribed twice from the SBB image, none given a value. One key frozen in advance (abjad numerals, red dot = x10) is not supported (rank 12 of 201 against shuffled keys, no whole word); a matched control shows the same test ranks the true key first in only 8% of trials at this length, so it is not ruled out either. The alphabets on Sachau 116 f. 1r do not match.",
+   "open": "The whole text (59 signs): too short for a test with power; a second text in the same system is needed. Not attempted: a Serto/Karshuni reader to re-check the 26 shapes; whether the lines are a prognostic table rather than a cipher; the Syriac atbash of Sachau 93 f. 75 and the alphabets of Bardesanes, Simon and Narsai. Tomokiyo, Lasry and the Syriac literature not searched.",
+   "as_of": "2026-11-27",
    "why": "A short private cipher in a Tur Abdin miscellany; possibly Karshuni Arabic, which would make it one of very few Garshuni ciphers on record.",
    "importance": 1,
    "solvability": 2,
