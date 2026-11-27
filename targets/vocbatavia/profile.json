@@ -1,0 +1,529 @@
+{
+ "schema_version": 1,
+ "target": "vocbatavia",
+ "title": "VOC Batavia letters to the Heren XVII, 1623-1643 (NA 1.04.02): one homophonic number cipher (KEY_v2) and a second mixed letter/number system; two blind tests passed, read in part",
+ "documents": [
+  {
+   "id": "voc_1623-12-25",
+   "read": "read",
+   "shelfmark": "The Hague, Nationaal Archief, 1.04.02 (VOC), inv. 1080 scans 376, 380, 486 (base); inv. 1079 scans 129, 133, 263 (copies with marginal decipherment)",
+   "date": "25 Dec 1623",
+   "year": 1623,
+   "country": "Netherlands",
+   "route": "Governor-General De Carpentier and Council, Batavia, to the Heren XVII",
+   "places": {
+    "from": "Batavia",
+    "to": "Amsterdam"
+   },
+   "language": "Dutch",
+   "pages": 3,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "margin"
+    ],
+    "partial": false,
+    "source": "Marginal decipherment in inv. 1079 scans 129 and 133 (made in the Netherlands, 1624); Coolhaas GM I p. 129-130 notes it but prints no deciphered text."
+   },
+   "length": {
+    "tokens": 276,
+    "distinct": 61,
+    "unit": "mixed",
+    "measured": true,
+    "file": "letters/1623_1634/T1623_transcription.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "NA scans",
+    "image_quality": "good",
+    "notes": "Frozen 18:07:33 UTC 25 Nov 2026 (FREEZE_1623.txt). Second transcription of block B 127/127 groups, not blind. Length measured with docs/_check_profile.py --measure --digits --drop-first (276 tokens, 61 distinct)."
+   }
+  },
+  {
+   "id": "voc_1634-02-20",
+   "read": "read",
+   "shelfmark": "The Hague, Nationaal Archief, 1.04.02 (VOC), inv. 1108 scans 1154-1155; inv. 1111 scan 564",
+   "date": "20 Feb 1634",
+   "year": 1634,
+   "country": "Netherlands",
+   "route": "Governor-General Brouwer and Council, Batavia, to the Heren XVII",
+   "places": {
+    "from": "Batavia",
+    "to": "Amsterdam"
+   },
+   "language": "Dutch",
+   "pages": 2,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "interlinear",
+     "margin"
+    ],
+    "partial": false,
+    "source": "Contemporary margin glosses a-o in inv. 1108 scans 1154-1155; the key KEY_v2 was rebuilt from them."
+   },
+   "length": {
+    "tokens": 217,
+    "distinct": 47,
+    "unit": "mixed",
+    "measured": true,
+    "file": "letters/1623_1634/T1634_transcription.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "NA scans",
+    "image_quality": "good",
+    "notes": "Frozen 18:04:38 UTC 25 Nov 2026 (FREEZE_1634.txt). Length measured with docs/_check_profile.py --measure --digits --drop-first (217 tokens, 47 distinct)."
+   }
+  },
+  {
+   "id": "voc_1640-09-09_postscript",
+   "read": "read in part",
+   "shelfmark": "The Hague, Nationaal Archief, 1.04.02 (VOC), inv. 1134, scan 583 (base, no gloss) and scan 617 (copy with interlinear decipherment); KA 1043 fol. 235-253, copy fol. 255v-270",
+   "date": "9 Sep 1640",
+   "year": 1640,
+   "country": "Netherlands",
+   "route": "Governor-General Antonio van Diemen and Council, Batavia, to the Heren XVII",
+   "places": {
+    "from": "Batavia",
+    "to": "Amsterdam"
+   },
+   "language": "Dutch",
+   "pages": 1,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "interlinear",
+     "printed edition"
+    ],
+    "partial": true,
+    "source": "Interlinear letter-by-letter decipherment in the second copy (inv. 1134 scan 617), seen only after the score was fixed. Coolhaas, Generale Missiven II pp. 101-108 prints the letter in extracts but stops before the cipher postscript."
+   },
+   "length": {
+    "tokens": 57,
+    "distinct": 31,
+    "unit": "mixed",
+    "measured": true,
+    "file": "letters/1640/transcriptions/T1640_transcription.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "NA IIIF full image via the GLOBALISE IIIF manifest of inv. 1134",
+    "image_quality": "good",
+    "notes": "Frozen 20:58:51 UTC 25 Nov 2026 (md5 9b68d68b). Second pass from separate crops 57/57 groups; not blind (same transcriber). One group ink-blotted (0). Counted by run_blind.py, not by the repository measure. distinct not measured exactly; given as an estimate. Paths in this folder: letters/1640/transcriptions/. Length measured with docs/_check_profile.py --measure --digits --drop-first (57 tokens, 31 distinct)."
+   }
+  },
+  {
+   "id": "voc_1643-01-23",
+   "read": "read in part",
+   "shelfmark": "The Hague, Nationaal Archief, 1.04.02 (VOC), inv. 1141 scans 897-908 (copy 2, no gloss, base; cipher on 901, 902, 905, 906) and 881-893 (copy 1, interlinear decipherment, 886, 890); KA 1050 unfoliated after fol. 383, copy fol. 384-389",
+   "date": "23 Jan 1643",
+   "year": 1643,
+   "country": "Netherlands",
+   "route": "Governor-General Antonio van Diemen and Council, Batavia, to the Heren XVII, by the English ship Ulysses",
+   "places": {
+    "from": "Batavia",
+    "to": "Amsterdam"
+   },
+   "language": "Dutch",
+   "pages": 4,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "interlinear",
+     "printed edition"
+    ],
+    "partial": true,
+    "source": "Interlinear decipherment in copy 1 (inv. 1141 scans 886, 890), opened after the score. Coolhaas GM II pp. 194-195 prints only clear passages (Van Twist, a China junk)."
+   },
+   "length": {
+    "tokens": 95,
+    "distinct": 48,
+    "unit": "mixed",
+    "measured": true,
+    "file": "letters/1643/T1643_transcription.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "NA IIIF max images via the GLOBALISE manifest of inv. 1141",
+    "image_quality": "good",
+    "notes": "Frozen 21:13:20 UTC 25 Nov 2026 (FREEZE_T1643.txt, sha256 bca33dfa). 86 number groups in 21 runs counted by run_1643.py; letter-cipher words excluded by rule. No second transcription yet. Length measured with docs/_check_profile.py --measure --digits --drop-first (95 tokens, 48 distinct). The measure counts 95 because it includes 9 digit-bearing tokens outside the number runs (clear 1642, 1644, 4 3/4 and letter-cipher words with digits); the scored number groups are 86."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "homophonic",
+   "nomenclator",
+   "other"
+  ],
+  "summary": "System A: homophonic substitution on numbers 1 to about 74 among clear Dutch, the same table in 1623, 1634, 1640 and 1643 (KEY_v2). System B: a mixed table where letters and numbers both stand for plain letters (a number in B does not have its A value), used for names, places, goods and amounts; Roman numerals as code words (XXI silver, IV gold).",
+  "symbol_kind": "digits and letters",
+  "distinct_symbols": 30,
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": true
+  },
+  "nulls": {
+   "present": false
+  },
+  "key_order": "random",
+  "word_division": "kept",
+  "notes": "Word division: kept with / in 1623-1640 copies; the 1643 copy 2 writes / between every number (a DP word rule was frozen before decoding). distinct_symbols approximate."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "in archive",
+   "where": "Contemporary decipherments: 1623 margins (inv. 1079), 1634 glosses (inv. 1108), 1640 interlinear (inv. 1134 scans 605, 617), 1643 interlinear (inv. 1141 scans 886, 890). Coolhaas GM I-II print none of the deciphered words, but Leupe 1858 (Reize van Maarten Gerritsz. Vries, introduction and note 2) prints the 1643 page 905 cipher passage with the meaning of its cipher words (found 27 Nov 2026, after reading; not used); Cheng 1995 vol. II p. 27 may print part of the 1623 letter (unverified); the purpose of the 1643 Vries voyage is printed in the Dagh-Register 1643-44. Cyphersolver issues/PRs/catalogue, DECODE (only 1564, Ramanacoil 1674), HistoCrypt papers: nothing on these ciphers.",
+   "found": "after reading",
+   "used": false
+  },
+  "inputs": [
+   "images",
+   "sibling key",
+   "cleartext context"
+  ],
+  "attack": "sibling key",
+  "human_role": "Malcolm McBratney set the rules (keys frozen before test letters, selection by frozen rule, transcription frozen before one decode, 65% bar, 5,000-key shuffles at two seeds, matched ciphertext-shuffle control) and directed the hunt; Claude sessions found the letters, transcribed, decoded and checked. No person has checked the transcriptions, keys or readings yet.",
+  "tools": [
+   "own Python (score.py, run_blind.py, run_1643.py, run_lc.py)",
+   "shuffled-key and shuffled-ciphertext controls, 5,000 each, seeds 20261112 and 7, Dutch VOC HTR wordlist (37,386 types)",
+   "GLOBALISE HTR v2 detectors, NA IIIF images"
+  ],
+  "models": [
+   "claude-opus-5-5 (sessions of 26 Nov 2026 AEST)",
+   "Fable (isolated blind second readers 2 and 3, 26 Nov 2026 AEST; exact model id not recorded)",
+   "GPT-6.2 Sol, GPT-6.2 Astra, Gemini 4 Carbon (non-Anthropic external blind readers of the 1623 pages via Perplexity, 26 Nov 2026; readings only)"
+  ],
+  "sessions": 2,
+  "first_date": "2026-11-26",
+  "last_date": "2026-11-27"
+ },
+ "solution": [
+  {
+   "date": "2026-11-26",
+   "kind": "literature search",
+   "what": "Coolhaas GM I-II full-text grep (1,676 pages) for cipher notes: only 25 Dec 1623 and 7 Mar 1643 marked.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-26",
+   "kind": "access",
+   "what": "Blind HTR detector over NA 1.04.02 inv. 1070-1145 (values never printed, masked triage): cipher found in 1623, 1634 copies (training), 9 Sep 1640 (inv. 1134), Jan 1643 and Mar 1643 (inv. 1141).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-26",
+   "kind": "hypothesis",
+   "what": "Selection rule frozen (20:35:18 UTC); 9 Sep 1640 chosen as first non-training candidate; base copy 583 chosen from illegible thumbnails.",
+   "result": "worked",
+   "technique": [
+    "key-structure hypothesis"
+   ]
+  },
+  {
+   "date": "2026-11-26",
+   "kind": "transcription",
+   "what": "Scan 583 transcribed from the full image and frozen with method, decoder, scorer and key (20:58:51 UTC); second pass 57/57 groups.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-26",
+   "kind": "sibling key",
+   "technique": [
+    "manual reconstruction"
+   ],
+   "what": "Decoded once with KEY_v2 (frozen 20:10:20 UTC from the 1634 glosses and 1623 context). Coverage 55/57 = 96.49%; 9/11 tokens = 81.82% in the wordlist.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-26",
+   "kind": "control",
+   "what": "5,000 shuffled keys at seed 20261112: 0 >= 9 (max 3); 5,000 at seed 7: 0 >= 9 (max 3).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-26",
+   "kind": "verification",
+   "what": "After the score: the interlinear decipherment in scan 617 agrees where legible; gives 12 = b and the blotted group 57 = m.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-26",
+   "kind": "hypothesis",
+   "what": "Reserve sibling Jan 1643 (inv. 1141 scan 901): unglossed copy writes '/' between every number group, so the frozen sign convention cannot segment words; mixed with a letter code. Not scored. Superseded later the same day: a DP word rule was frozen and the letter scored (below).",
+   "result": "failed",
+   "technique": [
+    "key-structure hypothesis"
+   ]
+  },
+  {
+   "date": "2026-11-26",
+   "kind": "transcription",
+   "what": "1643 copy 2 (inv. 1141 scans 901, 902, 905, 906) transcribed from max images; method with a dynamic-programming word rule frozen 21:09:15 UTC, transcription 21:13:20 UTC; both stamped (RFC 3161).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-26",
+   "kind": "sibling key",
+   "what": "1643 decoded once with KEY_v2: coverage 82/86 = 95.35%; 59/86 groups = 68.60% covered by dictionary words.",
+   "result": "worked",
+   "technique": [
+    "beam/DP decoding",
+    "key matching"
+   ]
+  },
+  {
+   "date": "2026-11-26",
+   "kind": "control",
+   "what": "1643: 5,000 shuffled keys at seed 20261112 and 7: 0 >= 59 (max 48, 45); 5,000 shuffled ciphertexts (matched control) at each seed: 0 >= 59 (max 54, 55).",
+   "result": "worked",
+   "technique": [
+    "statistical test"
+   ]
+  },
+  {
+   "date": "2026-11-26",
+   "kind": "verification",
+   "what": "1643 copy 1 interlinear gloss opened after the stamp: agrees on 10 of 12 checkable runs; 'voor' vs gloss 'naer'; '24 39 17 30 16 5 50 20' glossed 'eylanden' (system B).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-26",
+   "kind": "crib",
+   "what": "LC_KEY_v1 (12 letters) built from 1643 glosses (Tartarien, Chinees, natien, Japan, oosten, acht ...), frozen 21:16:17 UTC.",
+   "result": "worked",
+   "technique": [
+    "crib testing",
+    "contextual inference"
+   ]
+  },
+  {
+   "date": "2026-11-26",
+   "kind": "solver",
+   "what": "LC_KEY_v1 applied once to the 13 letter-cipher words of 1640: 5/13 = 38.46%; key shuffles 9/5,000 and 12/5,000; letter shuffles 96/5,000 and 118/5,000. Fails the bar.",
+   "result": "failed",
+   "technique": [
+    "key matching"
+   ]
+  },
+  {
+   "date": "2026-11-26",
+   "kind": "access",
+   "what": "HTR detectors over inv. 1146-1200 (83 pages flagged, masked triage: none cipher) and an LC-string detector over 1070-1200 (new: cipher in the body of the 1640 letter, inv. 1134 scans 570 and 605).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-26",
+   "kind": "hypothesis",
+   "what": "System B identified from glosses: numbers in B have other values (2 = t, 12 = o, 16 = n, 24 = e ...), mixed with letters; KEY_B_v1 frozen 21:20:27 UTC. No held-out test.",
+   "result": "worked",
+   "technique": [
+    "key-structure hypothesis"
+   ]
+  },
+  {
+   "date": "2026-11-26",
+   "kind": "literature search",
+   "what": "HistoCrypt (Ramanacoil 1674), Dagh-Register 1640-41 and 1643-44 OCR, GM II pp. 194-195, Cyphersolver issues/PRs/catalogue: no print of the deciphered words.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-26",
+   "kind": "transcription",
+   "what": "Blind second transcription of the 1640 postscript (1134_0583) by an isolated reader (Fable), crops only, frozen 2026-11-25T21:30:51Z and stamped (manifest 3ab07449...). Aligned by script with the frozen transcription: 56/57 number groups = 98.25%; only difference the blotted group (frozen 0, reader '57?', matching the 617 gloss).",
+   "result": "worked",
+   "technique": [
+    "other"
+   ]
+  },
+  {
+   "date": "2026-11-26",
+   "kind": "transcription",
+   "what": "Blind second transcription of the 23 Jan 1643 letter (1141_0901/0902/0905/0906) by an isolated reader (Fable), images only, frozen 2026-11-25T21:44:49Z and stamped (manifest 03a82213...). Aligned by script: 85/86 frozen number groups = 98.84%; 902.4 group 3 frozen 10 vs reader 16 (listed doubt); 3 extra reader numbers are signs frozen as letter-cipher. Figure of record unchanged.",
+   "result": "worked",
+   "technique": [
+    "other"
+   ]
+  },
+  {
+   "date": "2026-11-26",
+   "kind": "access",
+   "what": "Crop boxes of the filed-image crops recovered by multi-scale template matching against the NA IIIF full images (images/crops.tsv, scores 0.986-0.997); crops not filed; one region URL tested HTTP 200.",
+   "result": "worked",
+   "technique": [
+    "other"
+   ]
+  },
+  {
+   "date": "2026-11-27",
+   "kind": "verification",
+   "what": "Independent blind reading of 1080_0376/0380 by non-Anthropic models (GPT-6.2 Sol/Astra, Gemini 4 Carbon), images only, aligned by script with the frozen T1623: 0376 121/124 = 97.58% same value (3 gutter groups illegible to them, consistent with our inv. 1079 fills), 0380 127/127; dividers 26/26 and 23/23; no emendation; figure of record unchanged (blind_external_2026-11-26/ALIGNMENT.md).",
+   "result": "worked",
+   "technique": [
+    "other"
+   ]
+  },
+  {
+   "date": "2026-11-27",
+   "kind": "literature search",
+   "what": "Prior art from the external package (Coolhaas GM I 129-130, De Jonge 1870 V 22-24, Cheng 1995 II 27 unverified, Coen Bescheiden I/VII, de Leeuw 2000) and Leupe 1858 checked on archive.org OCR: Leupe prints the 1643 page 905 cipher passage and the meaning of its cipher words; 905.3 groups printed 89/6 against our 39/5 (OCR; not applied).",
+   "result": "worked",
+   "technique": [
+    "other"
+   ]
+  },
+  {
+   "date": "2026-11-27",
+   "kind": "reading",
+   "what": "Review response (Dan Bourdeau, PR #996): house count by script (scripts/house_count.py), cipher words only, sure words only: 1623 53/54 (read), 1634 35/35 (key source, read from glosses), 1640 postscript 9/27, 1643 11/55 (read in part); class read in part; fraction_read 0.956 (key coverage) replaced by the read share 73/136; primary method key recovered based on adjacent plaintext; provenance contributed.",
+   "result": "partial"
+  }
+ ],
+ "outcome": {
+  "class": "read in part",
+  "key": "partial",
+  "method": "key recovered based on adjacent plaintext",
+  "parts": [
+   {
+    "label": "1640 postscript, system A",
+    "method": "read after matching with key from external sources",
+    "extent": "partial"
+   },
+   {
+    "label": "1643 letter, system A",
+    "method": "read after matching with key from external sources",
+    "extent": "partial"
+   },
+   {
+    "label": "number key KEY_v2",
+    "method": "key recovered based on adjacent plaintext",
+    "extent": "partial"
+   },
+   {
+    "label": "system B words (1640, 1643)",
+    "method": "read from existing decipherment",
+    "extent": "partial"
+   }
+  ],
+  "verification": [
+   "matched control",
+   "contemporary decipherment",
+   "historical consistency"
+  ],
+  "method_basis": "Figures of record: 1640 postscript 9/11 tokens = 81.82%; 1643 59/86 groups = 68.60% (DP word rule frozen in advance); 1623 32/54 = 59.26% (below bar). Key shuffles 0/5,000 at seeds 20261112 and 7 for all three; matched ciphertext-shuffle control 0/5,000 at both seeds for 1643. Contemporary interlinear decipherments agree where checked (after the scores). System B read only from glosses. docs/_validate.py not run. The 65% figures above are test evidence for the key; they do not decide the class. Read shares (house count, cipher words only, sure words only; scripts/house_count.py, 27 Nov 2026): 1623 53/54 = 0.981; 1634 35/35 (key source, every word glossed); 1640 postscript 9/27 = 0.333; 1643 11/55 = 0.200. The earlier fraction_read 0.956 (608/636 system-A groups with a KEY_v2 value) was key coverage, not a read share, and is withdrawn. Blind second readings (isolated AI readers, images only, frozen and stamped before alignment): 1640 postscript 56/57 = 98.25% of number groups agree (only difference the blotted group, reader '57?', matching the scan 617 gloss); 1643 85/86 = 98.84% (one disagreement, 902.4 group 3: 10 vs 16, a listed doubt; 3 extra reader numbers are signs frozen inside letter-cipher words). Figures of record unchanged. No person has checked any reading.",
+  "credits": [
+   {
+    "who": "contemporary",
+    "role": "key or decipherment used",
+    "note": "1634 margin glosses (inv. 1108) gave KEY_v2; 1640/1643 interlinear glosses gave KEY_B_v1 and LC_KEY_v1",
+    "date": "1634"
+   },
+   {
+    "who": "mcbratney",
+    "role": "new cipher with solution",
+    "note": "VOC Batavia number cipher, letters of 1623, 1634, 1640 and 1643 (NA 1.04.02): found, transcribed, key rebuilt from the 1634 glosses and applied, with AI agents (Claude); PR #996",
+    "date": "2026-11-26",
+    "source": "https://github.com/dbourdeau/cyphersolver/pull/996"
+   }
+  ],
+  "fraction_read": 0.537,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "scripts/house_count.py on the reading, decode and transcription files: cipher words read as sure, 1623 53/54 + 1640 postscript 9/27 + 1643 11/55 = 73/136; the 1634 key source (35/35, read from its glosses) left out. Per-text shares are in texts[]; this pooled figure is for the schema only.",
+  "provenance": "contributed",
+  "gaps": [
+   {
+    "item": "1623 letter: read, 53 of 54 cipher words; one hole, kolden read konden (26 = l taken as a slip); first pass 59.26% is key-test evidence only",
+    "blocker": "open-codes",
+    "detail": "Reading exists in the 1079 margins; values set post hoc in SECOND_PASS_values.tsv."
+   },
+   {
+    "item": "1640 postscript: 16 letter-cipher (system B) words (13 in the frozen transcription + k bd. p.)",
+    "blocker": "open-codes",
+    "detail": "LC_KEY_v1 test failed (5/13); the 617 interlinear gloss is only partly legible at the NA image resolution."
+   },
+   {
+    "item": "1643 letter: 27 of 86 number groups uncovered",
+    "blocker": "open-codes",
+    "detail": "12 are isolated system-B signs the frozen rule cannot score; run 905.3 is system B ('eylanden' in the gloss)."
+   },
+   {
+    "item": "System B key (KEY_B_v1)",
+    "blocker": "open-codes",
+    "detail": "Built from glosses only; no held-out unglossed B passage scored yet."
+   },
+   {
+    "item": "7 Mar 1643 letter (inv. 1141 near scan 876)",
+    "blocker": "not-attempted",
+    "detail": "Only a glossed copy found; key evidence only."
+   },
+   {
+    "item": "Human check (a person comparing the transcription with the image and applying the key by hand)",
+    "blocker": "not-attempted",
+    "detail": "Owed for every letter; no person has checked the transcriptions, keys or readings. Blind second readings by isolated AI readers are done for 1640 (56/57 groups) and 1643 (85/86); 1623 has none."
+   }
+  ],
+  "texts": [
+   {
+    "doc": "voc_1623-12-25",
+    "transcription": "letters/1623_1634/T1623_transcription.txt",
+    "decryption": "letters/1623_1634/decode_1623_firstpass.tsv",
+    "reading": "letters/1623_1634/RESULT_trackB.md",
+    "state": "read",
+    "cipher_words": 54,
+    "holes": 1,
+    "read_share": 0.981,
+    "translation": "letters/1623_1634/ENGLISH.md",
+    "language": "nl",
+    "summary": "Dispatch of the yacht de Hase; pepper, mace and nutmeg loaded in the Wapen and Leyden; fleet to Manila.",
+    "note": "House count, 27 Nov 2026 (Dan Bourdeau, review of PR #996): cipher words only, sure words only, counted by scripts/house_count.py. 53 of 54 cipher words (A 25/26, B 23/23, C 5/5). The one hole is kolden, read konden (EMENDATIONS.md 2). The 13 values set from context after the first pass agree word for word with the contemporary decipherment in the inv. 1079 margins. The 65% first-pass test figure (59.26%) is key evidence and does not decide the state. Reading review owed (the maintainer records it). The checks were done with AI tools and no person checked each record by hand.\""
+   },
+   {
+    "doc": "voc_1634-02-20",
+    "transcription": "letters/1623_1634/T1634_transcription.txt",
+    "decryption": "letters/1623_1634/T1634_transcription.txt",
+    "translation": "letters/1623_1634/ENGLISH.md",
+    "language": "nl",
+    "summary": "Manila galleon silver at Espiritu Santo; Japan trade goods (cloths, damasks, camlets).",
+    "state": "read",
+    "cipher_words": 35,
+    "holes": 0,
+    "read_share": 1.0,
+    "note": "House count, 27 Nov 2026 (Dan Bourdeau, review of PR #996): cipher words only, sure words only, counted by scripts/house_count.py. 35 of 35: the key source. Every cipher word is glossed in the margin of inv. 1108 and the key built from the glosses gives every letter (10 words spelled differently from the gloss, e.g. enbocadero for embarcadero, are kept as enciphered). Read from the existing decipherment, not a test of the key. Reading review owed (the maintainer records it). The checks were done with AI tools and no person checked each record by hand.\""
+   },
+   {
+    "doc": "voc_1640-09-09_postscript",
+    "transcription": "letters/1640/transcriptions/T1640_transcription.txt",
+    "decryption": "letters/1640/decryptions/decode_1640_firstpass.tsv",
+    "reading": "letters/1640/readings/reading.md",
+    "state": "read in part",
+    "cipher_words": 27,
+    "holes": 18,
+    "read_share": 0.333,
+    "translation": "letters/1640/readings/reading.md",
+    "language": "nl",
+    "summary": "The duplicate goes by the English ship Caesar, to be delivered through Cornelis Sybertsen, pastry-baker, Amsterdam.",
+    "note": "House count, 27 Nov 2026 (Dan Bourdeau, review of PR #996): cipher words only, sure words only, counted by scripts/house_count.py. 9 of 27: 11 system-A words, 9 given by KEY_v2 (?rieuen and the blotted o? rest on the 617 gloss, holes); 16 letter-cipher words, all holes (LC_KEY_v1 failed its test): 13 in the frozen transcription plus k bd. p. after Amsterdam, which the image and reader 2 show and the transcription skips (NOTES, emendations to make). Builds sentences with holes. Reading review owed (the maintainer records it). The checks were done with AI tools and no person checked each record by hand.\""
+   },
+   {
+    "doc": "voc_1643-01-23",
+    "transcription": "letters/1643/T1643_transcription.txt",
+    "decryption": "letters/1643/decode_1643_firstpass.tsv",
+    "reading": "letters/1643/RESULT_1643.md",
+    "state": "read in part",
+    "cipher_words": 55,
+    "holes": 44,
+    "read_share": 0.2,
+    "translation": "letters/1643/ENGLISH.md",
+    "language": "nl",
+    "summary": "Japan trade hopes; Vries voyage to Tartary and the gold and silver islands east of Japan.",
+    "note": "House count, 27 Nov 2026 (Dan Bourdeau, review of PR #996): cipher words only, sure words only, counted by scripts/house_count.py. 11 of 55 (uyt, geven, negotie, rycx, ontseyt, ses, winst, tonnen, voor, Japan, noort). Holes: d'advisen (74 has no key value), every letter-cipher word (gloss only), the code numerals XXI and IV, and isolated or partly keyed number runs. Word division of the mixed letter and number runs is ours: each <letter word> and each number run counts as one word, so a mixed run such as <crf> 21 <d> (Japan) counts as three; merging such runs gives fewer words, still 11 read. voor is given by the key; copy 1 glosses naer. Builds sentences with holes. Reading review owed (the maintainer records it). The checks were done with AI tools and no person checked each record by hand.\""
+   }
+  ]
+ }
+}

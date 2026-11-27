@@ -1,0 +1,116 @@
+# Independent Image-Only Reading: NL-HaNA_1.04.02_1080_0376
+Reader: Gemini 4 Carbon (`/root/visual_comparator`)
+Method: Strictly blind visual reading from `/tmp/voc26/0376.jpg` (3092 x 4188 px) + 3x/6x local crops. Zero consultation of HTR, Claude, literature, 1079, or any text files.
+
+## 1. Page Confirmation & Physical Description
+- **Source raster read**: `/tmp/voc26/0376.jpg` (3092 x 4188 RGB).
+- **Page identity confirmed**: Verso (left-hand page of bound VOC volume; fore-edge at left, tight binding gutter at right). Same scribal hand and cipher system as the upper missive on `1080_0380` (dated Batavia, 25 December 1623).
+- **Structure of page**:
+  - **Plaintext Part I (L01–L09)**: Two short paragraphs on pepper shipments from Atchijn/Jambij (`Middelburch`) and Coromandel (`'t Jacht Medenblick`) / Suratten.
+  - **Embedded Cipher Block (L10–L17, Cipher Lines C1–C8)**: 8 lines of dot-and-slash-delimited numerical cipher (1–2 digit codes, observed range `2`–`71`), with:
+    1. A **left-margin cipher insertion** (`x 35.15.28/15.41.8.70.=`) keyed by `x` and `=` to the exact insertion point after `70.` and before `30.71.48 /` on C2 (L11).
+    2. An **inline plaintext opener** on C3 (L12): `Sijn van meeninge ` followed immediately by cipher.
+    3. **Right-gutter clipping** on C3, C5, C6, and C7 where the tight binding fold cuts into the rightmost characters.
+  - **Plaintext Part II (L18–L52 + catchword)**: Four paragraphs on disputes with the English East India Company over common defense, Moluccas/Amboina/Banda/Paliacatta, the blockade/trade of Bantam, and the 1622 common-costs settlement (`ƒ 3568.11.12` [alt `3563.11.12`]), ending with catchword `hebben`.
+
+---
+
+## 2. Cipher Block Diplomatic & Spliced Reading (Lines L10–L17 / C1–C8)
+
+### 2A. Diplomatic Line-by-Line Cipher Reading (As Written on Page)
+
+Left margin at C2: `x 35.15.28/15.41.8.70.=`
+
+C1 (L10): 31.38.28.52./.42.10.63.71.48./2.9.28.52./8.70.22/31.
+C2 (L11): 71.52.56.51.70.41/47.18.50./65.71.2.6.70.^x=30.71.48/
+C3 (L12): Sijn van meeninge 56.38.9.41.8.32/65.71/37.10.15[gutter-clipped]
+C4 (L13): 70/7.28.56/18.57.30.23.70/10.42.44.53.15.71.50/
+C5 (L14): 48.9./2.28.65.71.51.35.18.48:56/56.70/3.71.50.4[gutter-clipped]
+C6 (L15): 71.48/25.19.62/65.9.2.42.52.28./50.43.41.27./[3? gutter-clipped]
+C7 (L16): 43.25/8.10.71.15.22./50.17.28.56./31.20.23.63.2[8? gutter-clipped]
+C8 (L17): 2./4.25.26.40.70.50./
+
+### 2B. Spliced Cipher Stream (Marginal Insertion Placed at `^x=`)
+
+C1: 31.38.28.52. / .42.10.63.71.48. / 2.9.28.52. / 8.70.22 / 31.
+C2: 71.52.56.51.70.41 / 47.18.50. / 65.71.2.6.70. [INSERT: 35.15.28 / 15.41.8.70.] 30.71.48 /
+C3: [Plaintext: Sijn van meeninge] 56.38.9.41.8.32 / 65.71 / 37.10.15[.?]
+C4: 70 / 7.28.56 / 18.57.30.23.70 / 10.42.44.53.15.71.50 /
+C5: 48.9. / 2.28.65.71.51.35.18.48:56 / 56.70 / 3.71.50.4[x?]
+C6: 71.48 / 25.19.62 / 65.9.2.42.52.28. / 50.43.41.27. / [3?]
+C7: 43.25 / 8.10.71.15.22. / 50.17.28.56. / 31.20.23.63.2[8?]
+C8: 2. / 4.25.26.40.70.50. /
+
+---
+
+## 3. Cipher Paleographic Details & Highlighted Ambiguities
+
+1. **C2 (`70.^x=30.71.48/`) — RESOLVED AT 6x ZOOM (NOT `20` OVERWRITTEN BY `30`)**:
+   - At 1x–2x scale, the characters between `70.` and `.71.48/` strongly resemble `20` overwritten with `30`.
+   - At 6x magnification, the lower-left double stroke is unmistakably the **double-hyphen insertion sign `=`**, paired with the superscript `x` above the dot (`^x=`), matching the exact framing symbols `x ... =` of the left-margin addition `x 35.15.28/15.41.8.70.=`. The following number is cleanly `30` (`30.71.48/`).
+   - Note also that no `/` is written at the start or end of the marginal insertion (`70.` + `35.15.28/15.41.8.70.` + `30.71.48/`), so a word separator at one or both splice boundaries may be implicit.
+
+2. **Right-Gutter Clipping (C3, C5, C6, C7) — HIGH AMBIGUITY IN BINDING FOLD**:
+   - **C1 end (`/31.`)**: Complete; small stray ink speck between tops of `3` and `1`, clear period after `1` before fold.
+   - **C2 end (`48 /`)**: Complete; clear `/` before fold.
+   - **C3 end (`37.10.15[...]`)**: `1` followed by the `ς`-curved stem and right top hook of `5` (`15`), clipped on its right edge by the fold (minor graphic alternatives `16`/`18`/`19`, but ductus matches `5` in `50` directly below). A trailing `.` or `/` (connecting to `70/` at C4 start) may lie inside the fold.
+   - **C4 end (`71.50/`)**: Complete; `/` visible right at the fold.
+   - **C5 end (`3.71.50.4[...]`)**: After `50.`, the left diagonal and horizontal crossbar of `4` are clearly visible entering the fold! Either single-digit `4.`/`4/` or a two-digit `4[0-9]` whose second digit is hidden in the binding before `71.48/` on C6. Also note the colon `:` in `48:56` mid-line on C5.
+   - **C6 end (`50.43.41.27. / [3?]`)**: After `/`, right on the paper crease, two small curved strokes (`3`, `2`, or `5`?) peek out from the binding before `43.25/` on C7.
+   - **C7 end (`31.20.23.63.2[8?]`)**: After `63.`, a full `2` is visible followed immediately on the fold by a vertical/looped stroke (`28`, `26`, `25`, `21`, or `2.`) before C8 starts `2. /`.
+
+3. **Scribe's Digit Ductus in `1080` (`5` vs `7` vs `6`)**:
+   - `5` is written as a single `ς`-like vertical curve with a rightward top hook (`52`, `35`, `15`, `56`, `51`, `50`, `65`, `57`, `53`, `25`).
+   - `7` is written as a simple `)`-shaped or `>`-shaped curved stroke sloping down-left (`71`, `70`, `47`, `37`, `57`, `27`, `17`, `7`).
+   - `6` has a small closed lower loop with anarching top stroke (`63`, `56`, `65`, `6`, `26`, `62`).
+
+---
+
+## 4. Full-Page Surrounding Dutch Plaintext Reading (Lines L01–L09 & L18–L52)
+
+L01: Van Atchijn, en Jambij, zijn alle uijre verwachtende niet min als
+L02: 500 lasten peper, Soo [ofte Pr?] Middelburch ofte een minder schip, tot
+L03: dit desel[ve] sal comen wesen, zijn als noch onseker, Sijnde dit sal [alt: Sullen dit jaer]
+L04: al wesen dat wij [alt: van] V.E. aengaen desen Jaere sullen connen
+L05: toesenden. ————
+L06: Van Coromandel hebben V.E. te verwachten 't Jacht Medenblick
+L07: t'welck In decemb[er] van daer soude vertrecken , Van Suratten
+L08: hoopen t'samen [interlined/corrected] tijdelijck groot schip, ofte twee matige gesonden
+L09: zullen worden. ————
+[L10–L17: Cipher Block C1–C8 above]
+L18: In alle poincten van accoort. leggen hier [alt: niet] met d' Engelsen overhoop
+L19: t'sedert [alt: t'is eene cwestie] van haerder zijden geobserveert, als alleen
+L20: de gemeijne vruntschap. ————
+L21: Op malitieuse gewoonte [alt: gronden] achten, hebben zij haer vande gemeene defensie
+L22: met opgesetten voordacht int Generael ontlast, De handel
+L23: van Mollucques, Amboijna, Banda, en Palleacatte, hebben
+L24: t'eenemael verlaeten, ende haer uijt de last bij dit selve gedragen
+L25: in de proffijten soeck vallen, Bantams besettinge trecken
+L26: haer niet alleen niet aen, maer hebben met geweld van schijnreden
+L27: ons willen dwingen haer toe te staen tot Bantam alleen voor
+L28: beijde de Compagnien te mogen gaen handelen ————
+L29: Tot noch toe hebben met redenen wederhouden, Ende is de
+L30: saecke soo verre gecomen, dat zij onse waersch[ouwingen] met de mont
+L31: beginnen te tergen, Ende te vragen zoo zij onderleijden na
+L32: Bantam alleen te gaen, ofte wij haer met gewelt van
+L33: Wapenen souden tegen staen, Wij hebben haer geantwoort
+L34: dat d'een sonder d'ander, ofte sonder gemeen consent niet
+L35: vermocht na Bantam te gaen, alsoo het een gemeene saecke
+L36: was, daer de liberteijt van d'een soo wel als van d'ander
+L37: gelegen most — Tot noch toe is de saecke dus blijven
+L38: steecken, bij gebreck van Cappitael achten wij dat zij noch
+L39: na Bantam niet en gaen, Maer soo eerst middelen becomen
+L40: Ende onderstonden alleen derwaerts te gaen, zullen zij onse
+L41: Mogelijck met dadelijckheijt tergen, soo dan geene redenen noch
+L42: behoorlijcke Insinuatien haer connen weerhouden, Off datter
+L43: geen middel wech gevonden zij, om door haer den handel (sonder
+L44: U.E. preijuditie) te doen ondersoecken, wat sal ons dan
+L45: anders resteren als protest — . Ende soo dant protest
+L46: niet en helpt, zullen wij het moeten op geven, off haer gewelt
+L47: met gewelt moeten wederhouden, Wat Exclamatien Ende
+L48: moijten daer dan op volgen zullen, mach men wel dencken —
+L49: Op d'afrekeninge vande gemeene lasten, Ende oncosten vande fortrecken [alt: schepen]
+L50: vanden Jaere 1622. Inde Mollucq[ue]s. Amboijna. en Banda, hebben
+L51: d'Engelsen van haere restanten In voorss[chreven] quartieren suijver gefourneert
+L52: ƒ 3568.11.12 [alt: 3563.11.12] — pro rato vande somme
+Catchword (bottom right): hebben

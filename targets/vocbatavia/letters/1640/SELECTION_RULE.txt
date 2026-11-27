@@ -1,0 +1,14 @@
+SELECTION RULE (written before any candidate cipher beyond 1623/1634 was viewed)
+
+Candidate pool:
+ (a) every letter in Coolhaas, Generale Missiven I (1610-1638) and II (1639-1655) that the edition marks as written partly
+     in cipher (cijferschrift, cursief = cijfer, verklaring in margine), from a full-text grep of all downloaded page HTML;
+ (b) every page in GLOBALISE HTR of NA 1.04.02 inv. 1070-1145 that the blind detector (scripts/detect.py, values never printed)
+     flags and that masked context shows to be number cipher in running text (not bale numbers, dates, prices, soundings).
+Exclusions: the Batavia letter of 25 Dec 1623 with the resolution of 2 Oct 1623 (all copies), and the Batavia letter of
+ 20 Feb 1634 (all copies). These are training only.
+Rule: the test letter is the FIRST candidate in date order after 25 Dec 1623 that is not excluded. If its cipher cannot be
+ located on NA scans, take the next. If more than one copy exists, the base copy is a copy with no margin gloss; a glossed
+ copy is opened only after the score is fixed. The printed edition text of the test letter (Coolhaas italics) is not read
+ before the score is fixed.
+Also tested if found: every later candidate in the pool, each scored separately, in date order (no cherry-picking).
