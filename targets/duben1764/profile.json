@@ -867,6 +867,61 @@
    ],
    "what": "90R-93L re-read with key_c02: 698 sure + 23 probable of about 895 words (strict 0.78; 0.435 with key_c01); still read in part (sysA_1616/letter90/reading_90R-93L_key_c02_tagged.txt).",
    "result": "partial"
+  },
+  {
+   "date": "2026-11-17",
+   "kind": "control",
+   "technique": [
+    "plaintext matching",
+    "statistical test"
+   ],
+   "what": "Second pre-registered test of key_c02, unchanged, on the 15/4 May 1764 letter (105R, 106L, 107R, 108L line 1; 835 groups of 100 or above, two new transcription passes, the second blind) against its contemporary clear 106R-107L (1,900 letters, transcribed twice). Reading order fixed in PREREG-C02b from show-through and the opening/subscription before any transcription; transcriptions frozen in Amendment 1 before the measure. CA 0.916 vs 200 permuted-key controls max 0.077; bar CA >= 0.85 and >= controls max + 0.30: pass. M 0.803 (controls max 0.075). Portion burnt (sysA_1616/may1764/).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-17",
+   "kind": "reading",
+   "technique": [
+    "plaintext matching"
+   ],
+   "what": "15/4 May 1764 read through its contemporary decipherment 106R-107L: 418 words, 415 sure, 3 probable (0.993); English translation and summary in sysA_1616/may1764/reading_1764-05-15.md. Method for this letter: read from existing decipherment; key_c02 decodes about 0.80 of the clear's letters (M 0.803).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-17",
+   "kind": "reading",
+   "technique": [
+    "contextual inference"
+   ],
+   "what": "104R-105L (15 May 1764, no contemporary decipherment found, never transcribed before): two blind transcriptions by two sub-agents, 12 substantive differences settled on zooms (558 groups of 100 or above); decoded with key_c02 unchanged (531 of 558 groups known) and read in part with no new measure: 233 sure + 43 probable of about 291 words (sure 0.801, sure + probable 0.948); sysA_1616/letter104/.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-17",
+   "kind": "reading",
+   "technique": [
+    "contextual inference"
+   ],
+   "what": "90R-93L strict recount with key_c02 unchanged, after it passed on 15/4 May 1764: words resting on the 13 key_c02 values read by sense in this letter and never met in a period clear, or on 30 conjectured values for missing groups (kept apart, not in the key), count as probable; groups 393 -> 323 and 930 -> 233 re-read on the image. 651 sure + 81 probable of about 860 words (sure 0.757, sure + probable 0.851): read in part (sysA_1616/letter90/check_c02/).",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-18",
+   "kind": "verification",
+   "technique": [
+    "other"
+   ],
+   "what": "Blind digit-form check by Brice Dudout (sheet of 17 Nov, 23 questions, 4 controls, all 4 controls right; answers and SHA-256 in sysA_1616/blind_digit_sheet_1711/) applied to the readings: 90R-93L 654 sure + 80 probable of about 858 (sure 0.762); 104R-105L 235 sure + 41 probable of about 291 (sure 0.808, sure + probable 0.948); 9 of 19 target forms in 90R-93L went against the sense and those words stay probable. The answer-key and page hashes were first written on 26 Nov and the files are not committed, so the order of sheet and answers rests on the contributor's statement; no class depends on it.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-26",
+   "kind": "reading",
+   "technique": [
+    "contextual inference"
+   ],
+   "what": "90R-93L recount (review of PR #759): the words resting on four key_c02 values met in a period clear with as many or more mismatches as matches (252 eil 2/4, 355 ig 2/2, 360 jo 1/4, 405 leursma 1/2; check_c02/sense_values_vs_period_clears.tsv) are now probable: 641 sure + 93 probable of about 858 words (sure 0.747, sure + probable 0.855), still read in part. None of the four occurs in 104R-105L, whose count is unchanged. The 17 Nov tagged reading (strict 0.78, which had counted the sense values as sure) is marked superseded.",
+   "result": "partial"
   }
  ],
  "outcome": {
@@ -945,12 +1000,19 @@
   "texts": [
    {
     "doc": "K259-1764-05",
-    "label": "Chiffer n:o 1, 15/4 May 1764 (105R-108L): preliminary transcription and raw key_c01 decode; not read",
-    "transcription": "payne2026/may1764_cipher.txt",
-    "state": "decoded, not read",
-    "note": "Mechanical decode shown for checking, not a reading: key_c01 (built on letter 96 only), unchanged, run on Payne's preliminary one-pass transcription on 14 Nov 2026 gives a value to 615 of the 838 groups of 100 or more (0.734); French syllables and words come out (105R.01 'jai ra avoi ec ... con no is sama n', 105R.07 'quel jai ap pri s le ... s ap pa re on ce s', 106L.12 'se on ti ment s') but no sentence holds. Not tested against a clear: the contemporary clear on 106R-107L ('Till chifferbrevet av den 15/4 maj 1764') is not transcribed in the repository, and which of the two letters of 15 May (104R or 105R) it belongs to is not settled. Blocker: none outside; workable from the online images.",
-    "decryption": "tx/d1764-05_key_c01.txt",
-    "language": "fr"
+    "label": "System A, 15/4 May 1764, Düben to 'Mon cher Comte' (105R, 106L, 107R, 108L line 1): contemporary decipherment on 106R-107L, shown by key_c02",
+    "transcription": "sysA_1616/may1764/transcr/may1764_cipher_merged.txt",
+    "decryption": [
+     "sysA_1616/may1764/outputs/measure_result_full.txt",
+     "tx/d1764-05_key_c01.txt"
+    ],
+    "reading": "sysA_1616/may1764/reading_1764-05-15.md",
+    "translation": "sysA_1616/may1764/reading_1764-05-15.md",
+    "state": "read",
+    "read_share": 0.993,
+    "language": "fr",
+    "summary": "Düben thanks Gyldenstolpe for his letters, says the Russian court does not share the hopes held in Stockholm and thinks Their Majesties are being misled, reports Panin's assurances and that Catherine is held back by Frederick II, mentions Saldern and Stakejeff, and plans to press Panin if the Diet is called early.",
+    "note": "Read through its contemporary decipherment 106R-107L (clear transcribed twice, 1,900 letters): 418 words, 415 sure, 3 probable (0.993); method for this letter: read from existing decipherment. That the clear deciphers this cipher is shown by the second pre-registered test of key_c02, unchanged (17 Nov 2026; CA 0.916 vs 200 permuted-key controls max 0.077; sysA_1616/may1764/). The 415 sure words are the words of the period clear, not the key's output: key_c02 decodes about 0.80 of the clear's letters (M 0.803). Cipher in two new passes (835 groups of 100 or above; 58 stay marked doubtful). The 14 Nov raw key_c01 decode of Payne's preliminary transcription (tx/d1764-05_key_c01.txt) is kept for the record and is superseded."
    },
    {
     "doc": "Schuck-143-fragments",
@@ -1065,6 +1127,62 @@
      "date": "2026-11-15",
      "note": "The letter (clear passages and the interlinear gloss) read as French sentences against the English translation: it holds together and the translation follows it. Compared with the image (IIIF A0073297_00125): 125R.08-11, gloss 'Comme l'Imperatrice ... le 30 de ce mois' and the three number lines 125R.09C-11C, agree with tx/g1765-11-15.txt group for group."
     }
+   },
+   {
+    "doc": "K259-1764-05-15-104R",
+    "label": "System A, 15 May 1764, Düben to 'Mon cher Comte' (104R-105L): no contemporary decipherment found; read in part with key_c02",
+    "transcription": "sysA_1616/letter104/c104R-105L_merged.txt",
+    "decryption": [
+     "sysA_1616/letter104/decode_104R-105L_key_c02.txt",
+     "sysA_1616/letter104/decode_104R-105L_key_c02_plus_conjectures.txt"
+    ],
+    "reading": "sysA_1616/letter104/reading_104R-105L_key_c02_tagged_plate1711.txt",
+    "translation": "sysA_1616/letter104/README.md",
+    "state": "read in part",
+    "read_share": 0.808,
+    "language": "fr",
+    "summary": "Düben reports Panin's assurances that the Empress will act with the King to restore his authority and remedy the faulty Swedish constitution, notes a fear of a total revolution in Sweden behind them, and says the course that gives the King most security must come before the Empress's friendship if her promises are slow.",
+    "note": "key_c02 unchanged (531 of 558 groups known); no new measure and no period clear for this letter. Strict count (count_words.py, after the blind digit-form check of 18 Nov): 235 sure + 41 probable + 15 unresolved of about 291 words: sure 0.808, sure + probable 0.948. Most probable words rest on a group absent from key_c02 or on a doubtful group; 105L05-105L07 blotted and overwritten. Transcriptions by AI agents (two blind passes), not checked by a palaeographer.",
+    "reading_review": {
+     "grade": "B",
+     "by": "integration review of PR #759 (AI agent, for the maintainers); not a person",
+     "date": "2026-11-27",
+     "note": "Recounted with count_words.py on the PR's files: 104R-105L 235 sure + 41 probable of 291 (0.808), read in part. Plaintext builds French sentences; words on key_c02 values read by sense in another letter and not met in a clear are probable."
+    }
+   },
+   {
+    "doc": "K259-chiffer1-90R-93L",
+    "label": "System A, undated letter, Düben to 'mon cher Comte' (90R-93L): no contemporary decipherment found; read in part with key_c02",
+    "transcription": "sysA_1616/letter90/c90R-93L_merged.txt",
+    "decryption": [
+     "sysA_1616/letter90/check_c02/decode_90R-93L_key_c02_reread.txt",
+     "sysA_1616/letter90/check_c02/decode_90R-93L_key_c02_plus_conjectures.txt",
+     "sysA_1616/letter90/decode_90R-93L_key_c01.txt"
+    ],
+    "reading": "sysA_1616/letter90/check_c02/reading_90R-93L_key_c02_strict_plate1711.txt",
+    "translation": "sysA_1616/letter90/README.md",
+    "state": "read in part",
+    "read_share": 0.747,
+    "language": "fr",
+    "summary": "Düben defends his zeal in the Queen's service, says he gave the Empress the King's assurances of friendship and pressed her, blames the unhappy turn of affairs for the failure, reports that Panin doubts the sincerity of the Swedish court and its leaning to one party, and that the Empress acts in concert with the King of Prussia.",
+    "note": "key_c02 unchanged (94% of groups known); about 48 of its values were read by sense in this letter, and no period clear checks this letter. Strict count (count_words.py, 26 Nov 2026): 641 sure + 93 probable + 124 unresolved of about 858 words: sure 0.747, sure + probable 0.855. Words on the 13 sense values never met in a clear, on 30 conjectured values (kept apart, not in the key) and on four sense values the period clears contradict as often as they confirm (252, 355, 360, 405) count as probable. Earlier counts (key_c01 0.435; key_c02 tagged 0.78, superseded) are in the README. Transcriptions by one reader in two passes, not checked by a palaeographer.",
+    "reading_review": {
+     "grade": "B",
+     "by": "integration review of PR #759 (AI agent, for the maintainers); not a person",
+     "date": "2026-11-27",
+     "note": "Recounted with count_words.py on the PR's files: 90R-93L 641 sure + 93 probable of 858 (0.747; 0.855 with probable), read in part. Plaintext builds French sentences; the four disputed sense values are probable; words on key_c02 values read by sense in this letter and not met in a clear are probable."
+    }
+   },
+   {
+    "doc": "K259-1764-08-20",
+    "label": "System A, 20/31 Aug 1764, Düben to 'Mon tres cher Comte' (cipher 112L, 114R, 115, 112R top): contemporary decipherment on 116-117; key_c02 failed its test here",
+    "transcription": "sysA_1616/aug1764/transcr/aug1764_cipher_merged.txt",
+    "decryption": "sysA_1616/aug1764/outputs/measure_result_full.txt",
+    "reading": "sysA_1616/aug1764/transcr/aug1764_clear_116-117.txt",
+    "state": "read in part",
+    "language": "fr",
+    "summary": "Not yet summarised: the clear 116-117 opens 'Je n'ai jamais osé garantir la sincérité des dispositions de Sa Majesté l'Impératrice' and the cipher ends with Düben's thanks and respectful attachment.",
+    "note": "The cipher passage is deciphered by the contemporary clear 116-117 (transcribed twice, 40 lines, 2,279 letters), but no strict count, translation or summary of it has been made, so it stays 'read in part' here. key_c02 failed its one pre-registered test on this letter (CA 0.831 vs controls max 0.078, bar 0.85) because the PREREG bound the binding order 112L, 112R, 114R, 115; the text runs 112L, 114R, 115, 112R, and in that order the same key gives 0.938 (after the result, not a test). The clear opening on 111R and the end on 112R-113L are in clear in the original."
    }
   ],
   "key_file": [
