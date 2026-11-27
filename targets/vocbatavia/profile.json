@@ -399,11 +399,72 @@
    "what": "Write-up session: the human check and the 7 Mar 1643 glossed copy moved from outcome.gaps to NOTES 'Owed checks' (they are not unread pieces of the four texts); site page docs/vocbatavia.html written from NOTES.md and profile.json.",
    "result": "worked"
   },
-  {"date": "2026-11-27", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 276 tokens, 57 types, nl-modern order 4: reading -2.914 per letter; random keys -6.457 (z 11.8); key annealed onto shuffled ciphertext best -3.445 (mean -3.588, z 4.6); annealer on the real text -3.193. Verdict: pass.", "result": "worked"},
-  {"date": "2026-11-27", "kind": "transcription", "what": "1640 postscript transcription version 2 (letters/1640/v2_2026-11-27/T1640_transcription_v2.txt), frozen 2026-11-27 04:23:58 UTC, md5 77202d0359683d472985ec0412581f79, stamped (Sectigo 04:23:59Z, FreeTSA 04:24:00Z, manifest sha256 30c6f3b7...). Two emendations from Dan Bourdeau's review of PR #996 and blind reader 2: E1 letter-cipher words 'k bd. p.' inserted after 'Amsterdam' (v1 skipped them; LC words 13 -> 16); E2 'qbbm' -> 'qbhm'. Number tokens unchanged (11 = 11, identical). v1 (md5 9b68d68b...) stays the figure of record.", "result": "worked"},
-  {"date": "2026-11-27", "kind": "solver", "technique": ["key matching"], "what": "One re-decode of the 16 v2 letter-cipher words with the frozen LC_KEY_v1 (md5 a718f1df..., unchanged) and run_lc.py (md5 dccab8d2..., unchanged): 7/16 = 43.75% words accepted (adds k -> r, a single letter, and bd -> en); letters keyed 45/60 = 75.00% (v1 43/56 = 76.79%); qbhm -> ?e?t. Key shuffles >= 7: 9/5,000 (seed 20261112), 12/5,000 (seed 7); letter shuffles 235/5,000 and 230/5,000. Still under the 65% line and controls not clear. Not the figure of record: v1 first pass 5/13 = 38.46% stands (letters/1640/v2_2026-11-27/RESULT_v2.md).", "result": "failed"}
+  {
+   "date": "2026-11-27",
+   "kind": "verification",
+   "technique": [
+    "statistical test",
+    "language-model scoring"
+   ],
+   "what": "Statistical validation (docs/_validate.py): 276 tokens, 57 types, nl-modern order 4: reading -2.914 per letter; random keys -6.457 (z 11.8); key annealed onto shuffled ciphertext best -3.445 (mean -3.588, z 4.6); annealer on the real text -3.193. Verdict: pass.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-27",
+   "kind": "transcription",
+   "what": "1640 postscript transcription version 2 (letters/1640/v2_2026-11-27/T1640_transcription_v2.txt), frozen 2026-11-27 04:23:58 UTC, md5 77202d0359683d472985ec0412581f79, stamped (Sectigo 04:23:59Z, FreeTSA 04:24:00Z, manifest sha256 30c6f3b7...). Two emendations from Dan Bourdeau's review of PR #996 and blind reader 2: E1 letter-cipher words 'k bd. p.' inserted after 'Amsterdam' (v1 skipped them; LC words 13 -> 16); E2 'qbbm' -> 'qbhm'. Number tokens unchanged (11 = 11, identical). v1 (md5 9b68d68b...) stays the figure of record.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-27",
+   "kind": "solver",
+   "technique": [
+    "key matching"
+   ],
+   "what": "One re-decode of the 16 v2 letter-cipher words with the frozen LC_KEY_v1 (md5 a718f1df..., unchanged) and run_lc.py (md5 dccab8d2..., unchanged): 7/16 = 43.75% words accepted (adds k -> r, a single letter, and bd -> en); letters keyed 45/60 = 75.00% (v1 43/56 = 76.79%); qbhm -> ?e?t. Key shuffles >= 7: 9/5,000 (seed 20261112), 12/5,000 (seed 7); letter shuffles 235/5,000 and 230/5,000. Still under the 65% line and controls not clear. Not the figure of record: v1 first pass 5/13 = 38.46% stands (letters/1640/v2_2026-11-27/RESULT_v2.md).",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-27",
+   "kind": "literature search",
+   "technique": [
+    "other"
+   ],
+   "what": "Leupe 1858 page image read at full size (p. 6, archive.org reizevanmaarten01siebgoog image n16): the 905.3 run is printed \"24, 39, 17, 30, 16, 5, 50, 20\", and 905.9 (11 9 16 10 2) and 905.10 (2 25 20 72 22) match too: 18 of 18 numbers agree with our frozen transcription. The OCR's 89/6 were OCR reading errors, not a witness difference. Prior-art verdict (meaning in print since 1858) unchanged.",
+   "result": "worked"
+  }
  ],
- "outcome": {"validation": {"date": "2026-11-27", "model": "nl-modern", "file": "validation.tsv", "tokens": 276, "types": 57, "tokens_per_type": 4.84, "score": -2.914, "nulls": {"random keys": {"n": 200, "mean": -6.457, "sd": 0.299, "max": -5.527, "z": 11.8, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -3.588, "sd": 0.146, "max": -3.445, "z": 4.6, "p": 0.1429}}, "power": -3.193, "verdict": "pass", "notes": "claimed per-occurrence score -2.914; polyphony 0.0; 0 unread tokens left out; annealer on the real text from random keys reached -3.193"}, 
+ "outcome": {
+  "validation": {
+   "date": "2026-11-27",
+   "model": "nl-modern",
+   "file": "validation.tsv",
+   "tokens": 276,
+   "types": 57,
+   "tokens_per_type": 4.84,
+   "score": -2.914,
+   "nulls": {
+    "random keys": {
+     "n": 200,
+     "mean": -6.457,
+     "sd": 0.299,
+     "max": -5.527,
+     "z": 11.8,
+     "p": 0.005
+    },
+    "shuffled refit": {
+     "n": 6,
+     "mean": -3.588,
+     "sd": 0.146,
+     "max": -3.445,
+     "z": 4.6,
+     "p": 0.1429
+    }
+   },
+   "power": -3.193,
+   "verdict": "pass",
+   "notes": "claimed per-occurrence score -2.914; polyphony 0.0; 0 unread tokens left out; annealer on the real text from random keys reached -3.193"
+  },
   "class": "read in part",
   "key": "partial",
   "method": "key recovered based on adjacent plaintext",
@@ -429,7 +490,12 @@
     "extent": "partial"
    }
   ],
-  "verification": ["matched control", "contemporary decipherment", "historical consistency", "statistical test"],
+  "verification": [
+   "matched control",
+   "contemporary decipherment",
+   "historical consistency",
+   "statistical test"
+  ],
   "method_basis": "Figures of record: 1640 postscript 9/11 tokens = 81.82%; 1643 59/86 groups = 68.60% (DP word rule frozen in advance); 1623 32/54 = 59.26% (below bar). Key shuffles 0/5,000 at seeds 20261112 and 7 for all three; matched ciphertext-shuffle control 0/5,000 at both seeds for 1643. Contemporary interlinear decipherments agree where checked (after the scores). System B read only from glosses. The 65% figures above are test evidence for the key; they do not decide the class. Read shares (house count, cipher words only, sure words only; scripts/house_count.py, 27 Nov 2026): 1623 53/54 = 0.981; 1634 35/35 (key source, every word glossed); 1640 postscript 9/27 = 0.333; 1643 11/55 = 0.200. The earlier fraction_read 0.956 (608/636 system-A groups with a KEY_v2 value) was key coverage, not a read share, and is withdrawn. Blind second readings (isolated AI readers, images only, frozen and stamped before alignment): 1640 postscript 56/57 = 98.25% of number groups agree (only difference the blotted group, reader '57?', matching the scan 617 gloss); 1643 85/86 = 98.84% (one disagreement, 902.4 group 3: 10 vs 16, a listed doubt; 3 extra reader numbers are signs frozen inside letter-cipher words). Figures of record unchanged. No person has checked any reading.",
   "credits": [
    {
