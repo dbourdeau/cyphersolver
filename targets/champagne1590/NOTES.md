@@ -293,3 +293,16 @@ words, cities and provinces has had no second reader.
 ## 23 Oct 2026: no document reads (translation wave)
 - Nos. 24, 25, 60: the repository holds a table of 10 short cipher runs, 6 of them with codes that have no key value or unread; no. 78: its one cipher group is unread. Both entries are **decoded, not read**; class not read, method not solved, fraction 0.
 - Remaining gap: the code groups with no key value - blocker: no-key-material.
+
+## 27 Nov 2026: blind shape plates on the disputed places (Brice Dudout, `dudout/`)
+
+Ten places where Brackx and Beling disagree, each decided by one sign, went on blind shape plates for Brice Dudout
+(three plates, three hidden controls each; rule, boxes and integration rule hashed before any thumbnail; no image
+included). Plates a and b each failed one control (both r controls had a look-alike in this hand) and serve only as a
+restriction; plate c passed 3 of 3. Where a, b and c agree: the l. 34 run of no. 25 ends in a barred 9, "il se defie du
+Roy" (Beling), not barred 39 (La Noue); in the clear text Gonnesse, {Ruelle}, d'Auvergne, commerce and puissance
+(all Beling). Proposed count over cipher words: no. 25 21 of 22 (0.955), all 41 of 46 (0.891); the figures above are
+left unchanged. Flagged and not applied: no. 24 l. 9, the first digit of "36/56" was answered 3 on all three plates,
+which gives "Budouic" against both readers; a third reader should look. Still open: flatteries/platines (l. 8) and
+treuvons/croions (l. 27). Details: `dudout/README.md`, `dudout/sign_check_2511/results.tsv`, and the reading with the
+six places applied, `dudout/n25_reading_plate2511.md`.
