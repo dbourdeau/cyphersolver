@@ -5,7 +5,7 @@
  "documents": [
   {
    "id": "voc_1623-12-25",
-   "read": "read in part",
+   "read": "read",
    "shelfmark": "The Hague, Nationaal Archief, 1.04.02 (VOC), inv. 1080 scans 376, 380, 486 (base); inv. 1079 scans 129, 133, 263 (copies with marginal decipherment)",
    "date": "25 Dec 1623",
    "year": 1623,
@@ -377,12 +377,18 @@
    "technique": [
     "other"
    ]
+  },
+  {
+   "date": "2026-11-27",
+   "kind": "reading",
+   "what": "Review response (Dan Bourdeau, PR #996): house count by script (scripts/house_count.py), cipher words only, sure words only: 1623 53/54 (read), 1634 35/35 (key source, read from glosses), 1640 postscript 9/27, 1643 11/55 (read in part); class read in part; fraction_read 0.956 (key coverage) replaced by the read share 73/136; primary method key recovered based on adjacent plaintext; provenance contributed.",
+   "result": "partial"
   }
  ],
  "outcome": {
-  "class": "not read",
+  "class": "read in part",
   "key": "partial",
-  "method": "read after matching with key from external sources",
+  "method": "key recovered based on adjacent plaintext",
   "parts": [
    {
     "label": "1640 postscript, system A",
@@ -410,25 +416,34 @@
    "contemporary decipherment",
    "historical consistency"
   ],
-  "method_basis": "Figures of record: 1640 postscript 9/11 tokens = 81.82%; 1643 59/86 groups = 68.60% (DP word rule frozen in advance); 1623 32/54 = 59.26% (below bar). Key shuffles 0/5,000 at seeds 20261112 and 7 for all three; matched ciphertext-shuffle control 0/5,000 at both seeds for 1643. Contemporary interlinear decipherments agree where checked (after the scores). System B read only from glosses. docs/_validate.py not run. fraction_read = system-A groups given a KEY_v2 value on the first passes: (254 + 217 + 55 + 82) / (276 + 217 + 57 + 86) = 608/636 = 0.956 (1623, 1634, 1640 postscript, 1643; 1634 is the key source). Blind second readings (isolated AI readers, images only, frozen and stamped before alignment): 1640 postscript 56/57 = 98.25% of number groups agree (only difference the blotted group, reader '57?', matching the scan 617 gloss); 1643 85/86 = 98.84% (one disagreement, 902.4 group 3: 10 vs 16, a listed doubt; 3 extra reader numbers are signs frozen inside letter-cipher words). Figures of record unchanged. No person has checked any reading.",
+  "method_basis": "Figures of record: 1640 postscript 9/11 tokens = 81.82%; 1643 59/86 groups = 68.60% (DP word rule frozen in advance); 1623 32/54 = 59.26% (below bar). Key shuffles 0/5,000 at seeds 20261112 and 7 for all three; matched ciphertext-shuffle control 0/5,000 at both seeds for 1643. Contemporary interlinear decipherments agree where checked (after the scores). System B read only from glosses. docs/_validate.py not run. The 65% figures above are test evidence for the key; they do not decide the class. Read shares (house count, cipher words only, sure words only; scripts/house_count.py, 27 Nov 2026): 1623 53/54 = 0.981; 1634 35/35 (key source, every word glossed); 1640 postscript 9/27 = 0.333; 1643 11/55 = 0.200. The earlier fraction_read 0.956 (608/636 system-A groups with a KEY_v2 value) was key coverage, not a read share, and is withdrawn. Blind second readings (isolated AI readers, images only, frozen and stamped before alignment): 1640 postscript 56/57 = 98.25% of number groups agree (only difference the blotted group, reader '57?', matching the scan 617 gloss); 1643 85/86 = 98.84% (one disagreement, 902.4 group 3: 10 vs 16, a listed doubt; 3 extra reader numbers are signs frozen inside letter-cipher words). Figures of record unchanged. No person has checked any reading.",
   "credits": [
    {
     "who": "contemporary",
     "role": "key or decipherment used",
     "note": "1634 margin glosses (inv. 1108) gave KEY_v2; 1640/1643 interlinear glosses gave KEY_B_v1 and LC_KEY_v1",
     "date": "1634"
+   },
+   {
+    "who": "mcbratney",
+    "role": "new cipher with solution",
+    "note": "VOC Batavia number cipher, letters of 1623, 1634, 1640 and 1643 (NA 1.04.02): found, transcribed, key rebuilt from the 1634 glosses and applied, with AI agents (Claude); PR #996",
+    "date": "2026-11-26",
+    "source": "https://github.com/dbourdeau/cyphersolver/pull/996"
    }
   ],
-  "fraction_read": 0.956,
+  "fraction_read": 0.537,
   "fraction_read_method": "measured",
+  "fraction_read_source": "scripts/house_count.py on the reading, decode and transcription files: cipher words read as sure, 1623 53/54 + 1640 postscript 9/27 + 1643 11/55 = 73/136; the 1634 key source (35/35, read from its glosses) left out. Per-text shares are in texts[]; this pooled figure is for the schema only.",
+  "provenance": "contributed",
   "gaps": [
    {
-    "item": "1623 letter: first pass below the 65% bar (59.26%); 13 numbers set only from context",
+    "item": "1623 letter: read, 53 of 54 cipher words; one hole, kolden read konden (26 = l taken as a slip); first pass 59.26% is key-test evidence only",
     "blocker": "open-codes",
     "detail": "Reading exists in the 1079 margins; values set post hoc in SECOND_PASS_values.tsv."
    },
    {
-    "item": "1640 postscript: 13 letter-cipher (system B) words",
+    "item": "1640 postscript: 16 letter-cipher (system B) words (13 in the frozen transcription + k bd. p.)",
     "blocker": "open-codes",
     "detail": "LC_KEY_v1 test failed (5/13); the 617 interlinear gloss is only partly legible at the NA image resolution."
    },
@@ -459,39 +474,55 @@
     "transcription": "letters/1623_1634/T1623_transcription.txt",
     "decryption": "letters/1623_1634/decode_1623_firstpass.tsv",
     "reading": "letters/1623_1634/RESULT_trackB.md",
-    "state": "decoded, not read",
+    "state": "read",
+    "cipher_words": 54,
+    "holes": 1,
+    "read_share": 0.981,
     "translation": "letters/1623_1634/ENGLISH.md",
+    "language": "nl",
     "summary": "Dispatch of the yacht de Hase; pepper, mace and nutmeg loaded in the Wapen and Leyden; fleet to Manila.",
-    "note": "Marked \"decoded, not read\" on 26 Nov 2026: no person has yet read the decryption as sentences (Reading check, PR #996)."
+    "note": "House count, 27 Nov 2026 (Dan Bourdeau, review of PR #996): cipher words only, sure words only, counted by scripts/house_count.py. 53 of 54 cipher words (A 25/26, B 23/23, C 5/5). The one hole is kolden, read konden (EMENDATIONS.md 2). The 13 values set from context after the first pass agree word for word with the contemporary decipherment in the inv. 1079 margins. The 65% first-pass test figure (59.26%) is key evidence and does not decide the state. Reading review owed (the maintainer records it). The checks were done with AI tools and no person checked each record by hand.\""
    },
    {
     "doc": "voc_1634-02-20",
     "transcription": "letters/1623_1634/T1634_transcription.txt",
     "decryption": "letters/1623_1634/T1634_transcription.txt",
     "translation": "letters/1623_1634/ENGLISH.md",
+    "language": "nl",
     "summary": "Manila galleon silver at Espiritu Santo; Japan trade goods (cloths, damasks, camlets).",
-    "state": "decoded, not read",
-    "note": "Marked \"decoded, not read\" on 26 Nov 2026: no person has yet read the decryption as sentences (Reading check, PR #996)."
+    "state": "read",
+    "cipher_words": 35,
+    "holes": 0,
+    "read_share": 1.0,
+    "note": "House count, 27 Nov 2026 (Dan Bourdeau, review of PR #996): cipher words only, sure words only, counted by scripts/house_count.py. 35 of 35: the key source. Every cipher word is glossed in the margin of inv. 1108 and the key built from the glosses gives every letter (10 words spelled differently from the gloss, e.g. enbocadero for embarcadero, are kept as enciphered). Read from the existing decipherment, not a test of the key. Reading review owed (the maintainer records it). The checks were done with AI tools and no person checked each record by hand.\""
    },
    {
     "doc": "voc_1640-09-09_postscript",
     "transcription": "letters/1640/transcriptions/T1640_transcription.txt",
     "decryption": "letters/1640/decryptions/decode_1640_firstpass.tsv",
     "reading": "letters/1640/readings/reading.md",
-    "state": "decoded, not read",
+    "state": "read in part",
+    "cipher_words": 27,
+    "holes": 18,
+    "read_share": 0.333,
     "translation": "letters/1640/readings/reading.md",
+    "language": "nl",
     "summary": "The duplicate goes by the English ship Caesar, to be delivered through Cornelis Sybertsen, pastry-baker, Amsterdam.",
-    "note": "Marked \"decoded, not read\" on 26 Nov 2026: no person has yet read the decryption as sentences (Reading check, PR #996)."
+    "note": "House count, 27 Nov 2026 (Dan Bourdeau, review of PR #996): cipher words only, sure words only, counted by scripts/house_count.py. 9 of 27: 11 system-A words, 9 given by KEY_v2 (?rieuen and the blotted o? rest on the 617 gloss, holes); 16 letter-cipher words, all holes (LC_KEY_v1 failed its test): 13 in the frozen transcription plus k bd. p. after Amsterdam, which the image and reader 2 show and the transcription skips (NOTES, emendations to make). Builds sentences with holes. Reading review owed (the maintainer records it). The checks were done with AI tools and no person checked each record by hand.\""
    },
    {
     "doc": "voc_1643-01-23",
     "transcription": "letters/1643/T1643_transcription.txt",
     "decryption": "letters/1643/decode_1643_firstpass.tsv",
     "reading": "letters/1643/RESULT_1643.md",
-    "state": "decoded, not read",
+    "state": "read in part",
+    "cipher_words": 55,
+    "holes": 44,
+    "read_share": 0.2,
     "translation": "letters/1643/ENGLISH.md",
+    "language": "nl",
     "summary": "Japan trade hopes; Vries voyage to Tartary and the gold and silver islands east of Japan.",
-    "note": "Marked \"decoded, not read\" on 26 Nov 2026: no person has yet read the decryption as sentences (Reading check, PR #996)."
+    "note": "House count, 27 Nov 2026 (Dan Bourdeau, review of PR #996): cipher words only, sure words only, counted by scripts/house_count.py. 11 of 55 (uyt, geven, negotie, rycx, ontseyt, ses, winst, tonnen, voor, Japan, noort). Holes: d'advisen (74 has no key value), every letter-cipher word (gloss only), the code numerals XXI and IV, and isolated or partly keyed number runs. Word division of the mixed letter and number runs is ours: each <letter word> and each number run counts as one word, so a mixed run such as <crf> 21 <d> (Japan) counts as three; merging such runs gives fewer words, still 11 read. voor is given by the key; copy 1 glosses naer. Builds sentences with holes. Reading review owed (the maintainer records it). The checks were done with AI tools and no person checked each record by hand.\""
    }
   ]
  }

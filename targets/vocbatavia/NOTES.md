@@ -3,6 +3,7 @@
 Status: in progress. Bulk drop prepared 26 Nov 2026 AEST (25 Nov UTC) by a Claude session (claude-opus-5-5) in hunts40 G3/M4;
 filed as one pull request on 26 Nov 2026 AEST at Malcolm McBratney's direction. Two independent blind second readings (AI) added before filing.
 No person has checked the transcriptions, keys or readings yet (AI-checked only).
+The checks were done with AI tools and no person checked each record by hand.
 
 ## Documents (all Nationaal Archief, 1.04.02 VOC; Governor-General and Council, Batavia, to the Heren XVII)
 | letter | inv. / scans | role | figure of record | controls |
@@ -40,11 +41,36 @@ Per-letter arithmetic is in letters/<letter>/RESULT*.md and the *_output.txt fil
 - 1640: 12 = b and blotted group = 57, both from the 617 gloss.
 - 1643: copy 2 '74' is '70' in copy 1 (copy variant or misreading); '2 28 6 ...' copy 1 may write '12 28 6 ...'.
 
+## Reading state and house count (27 Nov 2026, Dan Bourdeau's review of PR #996)
+- [measured] Rule: cipher words only, sure words only (`python -I scripts/house_count.py`, run from this folder; it lists
+  every hole and why). A word is read when the key gives every letter and nothing is supplied or emended. Words resting on
+  a gloss alone (system B, the code numerals, numbers with no key value) are holes.
+| text | cipher words | holes | read share | state | Dan's rough count |
+|---|---|---|---|---|---|
+| 1623 (A 26, B 23, C 5) | 54 | 1 (kolden, read konden) | 0.981 | read | read in full |
+| 1634 (key source) | 35 | 0 | 1.000 | read (from its glosses) | not counted |
+| 1640 postscript | 27 | 18 | 0.333 | read in part | about 9 of 27 |
+| 1643 | 55 | 44 | 0.200 | read in part | about 12 of some 50 |
+- Where we differ from Dan [derived]: 1623 has one hole by the strict rule (the emended konden), still over 95%. 1643: we
+  count d'advisen as a hole (74 has no key value; copy 1 writes 70), and we count each letter word and each number run as
+  one word, so mixed runs such as <crf> 21 <d> (Japan) count as several words; voor is counted read (the key gives it)
+  although copy 1 glosses naer. 1634 is the key source: every word glossed, so its 1.000 is not a test of the key.
+- The 65% figures of record (59.26%, 81.82%, 68.60%) stay as test evidence for the key (method_basis); they do not decide
+  the state. The earlier fraction_read 0.956 was key coverage (608/636 groups with a value) and is withdrawn; fraction_read
+  is now 73/136 = 0.537 (1623 + 1640 + 1643; 1634 left out).
+- Class "read in part"; primary method "key recovered based on adjacent plaintext" (the 1634 glosses); provenance
+  "contributed", credit mcbratney. Reading reviews are left for the maintainer: a contributor does not sign them.
+
+## Emendations to make (27 Nov 2026; frozen files not edited)
+- 1640 postscript: after "Amsterdam" the image shows the letter-cipher words "k bd. p." (reader 2: "te Bd. p."); the frozen
+  transcription skips them, so the postscript has 16 letter-cipher words, not 13 (Dan Bourdeau, review of PR #996; reader 2).
+- 1640 postscript: the last letter-cipher word but one is "qbhm" (reader 2 and the image), not "qbbm" as transcribed.
+- Both affect only system-B words (holes either way); no figure of record changes. Counted already in the house count above.
+
 ## Remaining gaps
 
-- **Reading state (26 Nov 2026):** all four texts are now marked "decoded, not read" and the outcome class is "not read". The key and the per-letter figures are unchanged. No person has yet read the decryptions as sentences, which the Reading check needs (a reading_review graded A or B). The class can go back to "read in part" once a reader has read and graded them.
-- 1623 letter: first pass below the 65% bar (59.26%); 13 numbers set only from context - blocker: open-codes; Reading exists in the 1079 margins; values set post hoc in SECOND_PASS_values.tsv.
-- 1640 postscript: 13 letter-cipher (system B) words - blocker: open-codes; LC_KEY_v1 test failed (5/13); the 617 interlinear gloss is only partly legible at the NA image resolution.
+- 1623 letter: read, 53 of 54 cipher words; the one hole is kolden read konden (26 = l taken as a slip); the first pass (59.26%) is key-test evidence only; 13 numbers set from context after the first pass - blocker: open-codes; Reading exists in the 1079 margins; values set post hoc in SECOND_PASS_values.tsv.
+- 1640 postscript: 16 letter-cipher (system B) words (13 in the frozen transcription + 'k bd. p.', see emendations to make) - blocker: open-codes; LC_KEY_v1 test failed (5/13); the 617 interlinear gloss is only partly legible at the NA image resolution.
 - 1643 letter: 27 of 86 number groups uncovered - blocker: open-codes; 12 are isolated system-B signs the frozen rule cannot score; run 905.3 is system B ('eylanden' in the gloss).
 - System B key (KEY_B_v1) - blocker: open-codes; Built from glosses only; no held-out unglossed B passage scored yet.
 - 7 Mar 1643 letter (inv. 1141 near scan 876) - blocker: not-attempted; Only a glossed copy found; key evidence only.
@@ -95,6 +121,9 @@ images of 1080_0376/0380 only, independent of our transcription. No emendation p
 - 1134_0605 gloss ('Tonnen', 'Tayel', 'vijftich') seen before any B test was frozen.
 
 ## Record note
+- Scripts: run_1643.py, run_lc.py, run_blind.py and blind_external_2026-11-26/align_external.py read absolute working paths
+  (/home/claude/...) and an unfiled word list module (trackB/scripts, the 37,386-type VOC HTR list); they do not run from a
+  checkout as they stand. scripts/house_count.py uses paths relative to this folder.
 - RUN_RECORD.tsv was written at the end of the session from the command outputs, freeze files and stamp logs (not row by row as each step ran);
   rows at 21:18:00 and 21:20:57 are approximate to the minute. Effort is not exposed on this surface.
 
