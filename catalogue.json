@@ -9617,6 +9617,9 @@
    "ark": "",
    "scored": "sweep",
    "outcome": "attempted, open",
+   "known": "targets/comenius1655 (written up, docs/comenius1655.html; class already solved, read from existing decipherment): the 4 Aug 1655 sentence is read from the decipherment printed by Szilágyi 1890 and Patera 1892, with the key rebuilt and found to agree with the Rákóczi table of MHH XXIII p. 740 (29 of 32 cipher signs read; the word (iyy) open). The 24 May 1655 passage, the item of this entry, does not decipher with that table, with shifts, with keyword ciphers or as a simple substitution of Latin (annealing with a matched control): 0 of its 56 signs read. The 22 Jul letter's secret text is an invisible-ink page and the 6 Sept passages are printed only in clear.",
+   "open": "The 24 May 1655 passage (50 letters and the numbers 7, 865, 73): no key material; the original (MNL OL E 190) is needed for the readings and any key, and no image of it was reached (frame check of 2 Nov 2026). Also open in the folder: the word (iyy) of 4 Aug (too short), the washed-out invisible-ink page of 22 Jul (illegible), the ciphertext of the 6 Sept passages (on the original only).",
+   "as_of": "2026-11-27",
    "frame_check": {
     "result": "unreachable",
     "href": "https://adatbazisokonline.mnl.gov.hu/adatbazis/e-190-archivum-familiae-rakoczi-(rakoczi-missilisek)",
@@ -19917,7 +19920,10 @@
     "verdict": "open"
    },
    "repository": "nara",
-   "outcome": "attempted, open"
+   "outcome": "attempted, open",
+   "known": "targets/flak1940 (written up, docs/flak1940.html; class read, 15,074 of 15,174 letters, 99.3%): the keys and messages of twenty-one days, 17 May 1940 (Harumi-Matsuba, issue #364), 4 June (Harumi-Matsuba; Brice Dudout, PR #435) and nineteen days by Jacob Houtrouw (issue #602: 9 April first message, 2, 6, 8, 9, 10, 11, 12, 13, 14, 15, 16, 20, 21, 23, 24, 26, 29 May, 1 June). Each day has its own key; the rule linking the key to the indicator group is not known.",
+   "open": "3 May (frames 1100-1105), the second message of 9 April (frames 1120-1121) and 28 May (frames 905-906): two sealed attempts each with the clear copies as cribs found no key (no key material so far). Any other day of the reel not among the twenty-one.",
+   "as_of": "2026-11-27"
   },
   {
    "id": 705,
@@ -26435,9 +26441,10 @@
    "access": "online",
    "ark": "",
    "scored": "vetted",
-   "known": "targets/francia346: 22 records decoded with the Ceva key, not read (partial readings, every record 'decoded, not read'; status in progress). targets/francia346b: R5634, R5638, R5639 decoded with a key from the ciphertext, not read (status in progress); the clerk's interlinear decipherment stands on R5634 and R5639. Both by prabal-rje. Nothing here for the other 37 records.",
-   "open": "The 17 records in other signs (R5667, R5668, R5672-R5686), not attempted; the 10 records in another cipher (R5660-R5666, R5669-R5671), no decode; R5627-R5633, R5641, R5644 not filed in this repository; no reading of any record yet.",
-   "as_of": "2026-11-26",
+   "outcome": "attempted, open",
+   "known": "targets/francia346: 22 records decoded with the published Ceva key and the ceva1632 ledger, class not read (93.8% of 10,919 code tokens show a value, 639 tokens open; every record 'decoded, not read'; status in progress). targets/francia346b: R5634, R5638, R5639 decoded with a key recovered from the ciphertext, class not read (status in progress); the clerk's interlinear decipherment stands on R5634 and R5639. Both by prabal-rje. R5625 (f. 147) is a letter in clear. Nothing here for the other 36 records.",
+   "open": "The 17 records in other signs (R5667, R5668, R5672-R5686), not attempted; the 10 records in another cipher (R5660-R5666, R5669-R5671), no decode; R5627-R5633, R5641, R5644 not filed in this repository; no reading of any record yet (francia346: 639 code tokens with no value, four pages that do not decode and three records with few read digits; francia346b: working drafts only).",
+   "as_of": "2026-11-27",
    "vetting_note": "DECODE R5625 record page is public (WebFetch: ASV_i1025_SdS_Francia_346_1, status N/A, 9 pages, two thumbnails, no attachments, 'Available Documents: Paper') but the page images need a DECODE login, so I could not see whether R5625-R5686 are ciphertext, key sheets or clear copies. Web searches (Lasry Francia 346 / Ceva key, Barberini Ceva cipher) found no publication of these letters; known.py shows only targets/ceva1632 (R74-R84) and bagno1652 NOTES. Needs a logged-in look at a few images and a test of the ceva1632 key.",
    "vetting": {
     "date": "2026-11-02",
@@ -44385,7 +44392,10 @@
     "verdict": "open"
    },
    "repository": "cehm",
-   "outcome": "attempted, open"
+   "outcome": "attempted, open",
+   "known": "Read: CMXV.15.1420.3-6 and 15.1430.3-3 with the Hernández key card (targets/hernandez1911, written up; class read, 14 of 14 cipher words; 1430.3-3 also carries a pencil decipherment of the time). Read in part: 18.1770.2-4 with the signer's key card (targets/mexico1911, written up; 59 of 65 letters, 90.8%); 15.1432.1-4 and 16.1561.7-13 with the Clave G.A. card (targets/mccarty1911, written up; 39 of 41 words, 95.1%), with 17.1695.1-2 read from the decipherment of the time and 1695.2-2 decoded, not read; 16.1551.3-4, 16.1561.3-13, 16.1561.5-13 and 16.1569.3-10 with a turning grille (targets/nuevaclave1911, written up; 64 of 77 words sure, 83%); 18.1777.1-6 (targets/duron1911, written up; 15 of 19 words, 78.9%, key not validated); 31.3092.3-6 and 34.3344.1 (targets/villa1914, status in progress, no page; 17 of 18 and 7 of 10 coded words under the contributor's preferred readings). In targets/duron1911/siblings, not filed as targets: 15.1420.5-6 read in part with the Hernández card (10 of 19 words); 15.1420.6-6, 15.1432.3-4 and 15.1447.1-3 decoded, not read. 16.1561.4-13 was deciphered at the time and 16.1561.10-13 is clear text (typed in CMXV.18.1795.1, entry 66).",
+   "open": "14.1354.1 (one 45-number telegram) and 18.1770.1-4 (numeric code groups): viewed only, not attempted. 17.1648.2-3 (pencil note 'No se entiende'): not read; the page of 1795.1 that would cover 27 April is missing from the scans. 15.1420.6-6, 15.1432.3-4, 15.1447.1-3 and 17.1695.2-2: decoded, not read. 16.1561.12-13 (listed by the CEHM as partly read): not worked here. 1914: 35.3433.1-2 and 35.3492.2-3 (two-digit system like villa1914, online, not transcribed) and 35.3464.1 (plain-word code telegram), not attempted. The unread words of the read-in-part telegrams above. The CEHM images are online; no outside blocker is recorded for these.",
+   "as_of": "2026-11-27"
   },
   {
    "id": 1463,
@@ -44511,7 +44521,10 @@
     "verdict": "open"
    },
    "repository": "cehm",
-   "outcome": "attempted, open"
+   "outcome": "attempted, open",
+   "known": "All four written up. Read: LXVIII-1.7.890.1, order of Dec 1913 to Saucedo (targets/gonzalez1913; class read, 59 of 61 coded words, simple substitution recovered from the ciphertext) and 14.1943.1, Murguía, 16 Mar 1914 (targets/murguia1914; class read, 99 of 104 words, from the pencil decipherment of the time, Clave Extra 3). Read in part with Clave Extra 3: 17.2435.1, Fuentes Dávila, 13 Jun 1914 (targets/fuentes1914; 11 of 13 coded words) and 23.3165.1, Carranza on Villa and Saltillo (targets/carranza1914; 52 of 61 coded words).",
+   "open": "LXVIII-1.2.56.1 and 2.75.1 (1913, other systems): opened, do not read with the gonzalez1913 key or with Clave Extra 3; 2.75.1 (about 190 two-digit groups) not attacked ciphertext-only. 8.957.1-2 (Matamoros, Dec 1913): the image route returned 404. The 'clave alpha-32' (23.3148.1) is not on the scan. The unread words of fuentes1914 and carranza1914.",
+   "as_of": "2026-11-27"
   },
   {
    "id": 1467,
@@ -44592,6 +44605,9 @@
    "difficulty": 1,
    "score_note": "Scored from the CEHM online catalogue record during the Oct 2026 Mexico sweep (research/latam_mexico/); not viewed",
    "outcome": "attempted, open",
+   "known": "targets/rubio1913 (written up, docs/rubio1913.html; class read, 67 of 67 cipher words, Brice Dudout): three telegrams in Clave núm. 109 (DLXXIII.1.30.16-49, 2.41.9-41, 2.41.13-41), read with the printed key sheet 1.28.14-23 and validated on the contemporary pair 2.41.18-41 / 1.29.9-30.",
+   "open": "The other 'en clave' pieces, which use other tables (rubio1913 NOTES: these tables are not in the file): an alphabetical numerical syllabary 1-255 for the traffic with Téllez and the División del Bravo (the draft 1.30.17-49 carries a pencil interlinear decipherment), a two-figure code (1.30.5-49, 1.30.27-49), a presidential code (1.31.29-30, 2.41.17-41, 2.41.19-41) and a 'Clave nº 99' (2.41.1-41). The rest of the listed pieces (1.29.11-30, 1.29.12-30, 1.30.15-49, 1.32.3-41, 1.32.5-41, 1.32.6-41, 1.32.21-41, 2.41.22-41, 2.41.23-41, 2.41.39-41 to 41-41) not attempted here.",
+   "as_of": "2026-11-27",
    "verify": "View the key sheets (1.28.8-23, 1.28.14-23, 1.29.15-30) and one telegram (1.30.17-49) at CEHM.",
    "links": [
     {
@@ -54865,6 +54881,10 @@
    "access_note": "online (set 4 Nov 2026 from vetting.seen, scan: https://sok.riksarkivet.se/bildvisning/R0003582_00163 and _00260 (Diplomatica Turcica SE/RA/2119/2119.1/I/9/21)",
    "ark": "",
    "scored": "vetted",
+   "outcome": "attempted, open",
+   "known": "Two folders work glossed pages of this volume; no bare despatch of the volume is read. targets/hopken1740 (written up, docs/hopken1740.html; class read in part): the despatch of 15/26 Jan 1740, images 321-342 (two copies; 321-333 glossed, 334-342 bare), transcribed from the Swedish decipherment of the time, 3,411 of 3,450 groups in confident words; its second-code key reads in part three bare documents in other volumes (I/9/27, I/9/29; 1,092 of 1,260 words, 86.7%), outside this entry. targets/hopken1739 (status in progress, no page; WAINUT): the first code, rebuilt as a 184-group list from the glosses of images 255-257 and 260, read in part from the gloss (316 words, 58.9% on confirmed key values); the bare postscript of image 263 decoded, not read.",
+   "open": "The bare cipher pages of the volume (the survey lists about images 18, 34, 50, 115-196, 244-293 and 389-470 besides the glossed ones above), not attempted: the hopken1739 first-code key and the hopken1740 second-code key have not been tried on them. The postscript of image 263 (15 groups not in the key). The volume is online (R0003582); no outside blocker is recorded.",
+   "as_of": "2026-11-27",
    "vetting": {
     "date": "2026-11-02",
     "by": "claude fleet vetting",
@@ -73878,6 +73898,10 @@
    ],
    "source": "ASF Mediceo avanti il Principato (MAP) images, whole-filza paging pass 2 (CXXXVII docs 571-1058), Nov 2026",
    "score_note": "Scored from the images viewed during the second MAP paging pass, 6 Nov 2026 (research/sweep_2026-11_asf_map_paging_2/)",
+   "outcome": "attempted, open",
+   "known": "targets/corsi1513 (status in progress, no page; Malcolm McBratney): the key was built from the contemporary decipherment at the foot of doc. 627 (c. 635r) and extended by the syllabary rule and by context. Docs 620, 623 and 633 are decoded with it, class not read: strict shares of letter units read as sense 74.7% (620), 55.4% (623) and 74.2% (633), but only 3 of 16 sentences of 620 and 1 of 13 of 633 clean. Doc 622 is a copy of 623 (integration check of 16 Nov 2026).",
+   "open": "Readings of docs 620, 623 and 633: suspected key or sign-label errors, codes 22, 24, 27 and #161 without a sure value, the shapes NEW1, NEW2 and z of 633 without values; not attempted yet, no outside blocker. Copies 621, 622 and 628 not collated. The prior-art search is not done. An independent test of the key needs a second keyed letter with its own decipherment.",
+   "as_of": "2026-11-27",
    "access_note": "scans public on the ASF MAP site, no login, curl works: /map/ricerca/ricerca-su-filza/?f=<filza>&d=<doc> and IIIF /iipsrv/iipsrv.fcgi?IIIF=/data/iip-data/asfi/mediceo_avanti_principato/00100137/A000NNNN.ptif (about 1272 px max); image id = 132517 + position - 1 for filza CXXXVII",
    "seen": "image",
    "needs_archive_scan": "no",
@@ -116662,7 +116686,11 @@
     ]
    },
    "repository": "unidentified",
-   "scored": "vetted"
+   "scored": "vetted",
+   "outcome": "attempted, open",
+   "known": "targets/cambridge_k5_7 (no page; class not read, method not solved): the border reads with Bohak's sign alphabet from T-S K24.19 (four alephs and YHWH, prior work). The interior was transcribed with a register of the lower marks (30 of 98 cells clear, 35 tentative, 33 unclassified) and tested: a model with one complete Hebrew alphabet per row needs at least eight cell substitutions, and the tested grid routes and second substitutions did not recover the seven-consonant sequence of T-S Misc.22.218. No interior plaintext recovered.",
+   "open": "The rule of the interior and its language and purpose: a reading must explain the repeated upper consonants, account for the lower marks and predict interior cells beyond the shared opening of rows 2 and 4. No outside blocker recorded.",
+   "as_of": "2026-11-27"
   },
   {
    "id": 3760,
@@ -121810,7 +121838,11 @@
    },
    "ark": "",
    "scored": "vetted",
-   "repository": "unidentified"
+   "repository": "unidentified",
+   "outcome": "attempted, open",
+   "known": "targets/repslagaren1200s (no page; class not read, method not solved): face B transcribed as ten whole forms; three carry published rune values (æ, r, a). Face A (tutaþorere) is ruled out as a crib under a fixed one-to-one substitution of whole forms in either order, and a uniform branch-count (two-coordinate) rule fails on B07. No word established, 0 of 10 positions in sense. Searches of Runor, Cryptiana and DECODE found no clear copy, key or deciphered parallel.",
+   "open": "All ten positions of face B. A dated parallel giving one of the compound signs an ordinary-rune gloss would be needed to test component readings; faint cuts on B02 and B08 need better lighting.",
+   "as_of": "2026-11-27"
   },
   {
    "id": 3891,
