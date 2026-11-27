@@ -29,12 +29,12 @@ Two blind passes per letter by two AI agents that had not seen the key sheet, th
 The lexicon (`LEXIQUE-FR-EARLY.txt`, 49,486 forms) is ours and not committed; `measure.py` and `measure2.py` read it from our working tree.
 
 ## Reading
-Rule: sure = the key gives the word from the transcription as it stands (choosing within each digit's set is the reading); probable `{x}` = one or two digits differ from the transcription; supplied `[x]`; unread `‹…›` (`‹… n›` = n words).
+Rule: sure = the key gives the word from the transcription as it stands (choosing within each digit's set is the reading), or with a digit settled on the image by a blind sign plate with all controls right; probable `{x}` = one or two digits differ from the transcription, or a reading by sense not yet checked by a reader; supplied `[x]`; unread `‹…›` (`‹… n›` = n words).
 | Doc | Words | Sure | Probable | Supplied | Unread | Sure share |
 |---|---|---|---|---|---|---|
 | A | 487 | 427 | 30 | 2 | 28 | 0.877 |
-| B | 254 | 224 | 5 | 3 | 22 | 0.882 |
-Read in part. On three portions of letter A over 300 characters, the share read by sense (sure + probable + supplied) is 0.991, 0.960 and 0.975; on the whole letter 0.943.
+| B | 256 | 228 | 13 | 3 | 12 | 0.891 |
+Read in part. On three portions of letter A over 300 characters, the share read by sense (sure + probable + supplied) is 0.991, 0.960 and 0.975; on the whole letter 0.943. Letter B, after the blind sign plate of 27 Nov 2026 (`blind/planche-2711/ANSWERS.md`: 3/3 controls, 4 digits settled on the image, croire, liure, quinse, iours) and five readings by sense kept probable (auiourdhuy, croiois, a dix sols, a toy, touiour): 0.953 by sense on the whole letter (244/256).
 
 ## Content and context
 - **A** (26 May 1726, to M. de Boissiran, address « [conseiller ?] à la table royalle, à Saintes »; what the « table royale » of Saintes was is not known to us). The writer, who signs « votre très humble servante Poussard », denounces a woman she does not name, « hipocrite », « une femme si dangereuse », who repeats outside what happens in the house (« le logis »), went « dimanche dernier » to speak to two gentlemen, and boasts of her power over Boissiran's mind; the writer keeps to her room, speaks of « mes pauure enfans » and writes « je {j'abandonneray} jamais mon sang » (verb probable). Then estate business: the metayer wants the terms of the metairie and whether to mow the meadows, two calves; « {Son} pere », recently dead (probably the metayer's father), had stood « {caution} » for a miller who set fire to a mill, a loss of 2,000 livres.
@@ -53,7 +53,8 @@ Read in part. On three portions of letter A over 300 characters, the share read 
 
 ## Remaining gaps
 - Letter C, line starts of p. 1 (left half, 17 lines) and p. 3 (top, 6 lines) - blocker: illegible; out of focus on the photographs and p. 3 is holed; sharp photographs asked for through the volunteer.
-- Probable words of A (30) and holes of B (22) - blocker: not-attempted; a blind sign check of the 3/7, 4/6/9 and 0/9 shapes on the photographs is open and workable.
+- Probable words of A (30) - blocker: not-attempted; a blind sign check of the 3/7, 4/6/9 and 0/9 shapes on the photographs is open and workable.
+- Holes of B (12) - blocker: illegible; the blind plate of 27 Nov settled 4 of 5 target digits; p2.06 g3 `[8/3]89` answered 8 (barred and struck through on the image) gives no word. The five probable readings by sense of B (auiourdhuy, croiois, a dix sols, a toy, touiour) wait for a reader's check.
 - Names in A (p3.01, p3.05, Caux, Cauerne) and the identity of the Poussard writer(s) - blocker: not-attempted; genealogy not yet established. Leads (web, 27 Nov 2026, not checked on sources): a logis de Boissirand at Saint-Sulpice-de-Royan, lived in by a Samuel Robert until his death in 1740, bought in 1741 by André Bréjon, sieur de Grandchamp (Musée du patrimoine du Pays royannais inventory); the catalogue title « Robert de Boissiran » fits a Robert family; a noble Poussard family is attested in Saintonge, with no link found to the writer.
 - Table 1 of the key sheet (letter cipher) and the short line of photo 162013 - blocker: not-attempted; outside these three letters.
 
@@ -63,4 +64,4 @@ Read in part. On three portions of letter A over 300 characters, the share read 
 - [x] known-keys: the period key sheet of the bundle, applied unchanged.
 - [x] print: no edition found (web search, 26 Nov 2026).
 - [n/a] key-rebuild: the key is the period sheet; it decodes all three letters.
-- [ ] retry: the probable words of A and the holes of B on the enlarged images (open, see Remaining gaps).
+- [ ] retry: the probable words of A on the enlarged images (open); B done by the blind plate of 27 Nov 2026 (`blind/planche-2711/`), 12 holes left (see Remaining gaps).
