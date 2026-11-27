@@ -303,3 +303,7 @@ body.pg-catalogue details.archlist > summary{cursor:pointer;font-family:var(--ui
   body.pg-catalogue td.item img.th{width:4.6rem;height:3.4rem}
   body.pg-catalogue .tlb{height:3.6rem;gap:1px}
 }
+/* 27 Nov 2026: the list opens on ciphers not yet attempted here; this line says how many are hidden and shows them */
+body.pg-catalogue .dfnote{flex-basis:100%;font:var(--fs-sm) var(--ui);color:var(--muted)}
+body.pg-catalogue .dfnote[hidden]{display:none}
+body.pg-catalogue .dfnote .chip{margin-left:.35rem}

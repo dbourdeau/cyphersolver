@@ -545,20 +545,23 @@ def short_name(n):
 def summary_html(E, keys, n_gone, prs):
     """The strip under the title: what is open, what a desk can do, what needs an archive, what has left."""
     day = fmt_day(datetime.date.today().isoformat())
-    n_try = sum(in_view(k, 'try') for k in keys)
-    n_arch = sum(in_view(k, 'archive') for k in keys)
-    n_unc = len(E) - n_try - n_arch
+    n_try_all = sum(in_view(k, 'try') for k in keys)
+    n_arch_all = sum(in_view(k, 'archive') for k in keys)
+    n_unc = len(E) - n_try_all - n_arch_all
+    # the list opens on ciphers nobody has attempted here (default status filter, 27 Nov 2026): the two view tiles count those
+    n_try = sum(in_view(k, 'try') and k['status'] == 'new' for k in keys)
+    n_arch = sum(in_view(k, 'archive') and k['status'] == 'new' for k in keys)
     n_prog = sum(1 for e in E if progress(e))
     tiles = [('all', '', len(E), 'open ciphers', f'{sum(e["counted"] for e in E)} counted targets, the rest noted'),
-             ('try', '', n_try, 'to try from a desk', 'online, or the key material at hand'),
-             ('archive', '', n_arch, 'need an archive first', 'not online: a scan or a photograph comes first'),
+             ('try', 'new', n_try, 'to try from a desk', 'not yet attempted; online, or the key material at hand'),
+             ('archive', 'new', n_arch, 'need an archive first', 'not yet attempted; a scan or a photograph comes first'),
              ('all', 'progress', n_prog, 'in progress here', 'a target folder is working on them'),
              ('gone', '', n_gone, 'have left the catalogue', 'deciphered, explained or found in print')]
-    t = ''.join(f'<a class="tile t-{v}{" t-prog" if st else ""}" href="#v={v}{"&status=" + st if st else ""}" data-go="{v}"{f' data-status="{st}"' if st else ""}>'
+    t = ''.join(f'<a class="tile t-{v}{" t-prog" if st == "progress" else ""}" href="#v={v}{"&status=" + st if st else ""}" data-go="{v}"{f' data-status="{st}"' if st else ""}>'
                 f'<b>{n}</b><span>{lab}</span><small>{sub}</small></a>' for v, st, n, lab, sub in tiles)
-    bar = (f'<div class="sbar" role="img" aria-label="{n_try} to try from a desk, {n_arch} need an archive, {n_unc} with access not yet checked">'
-           f'<i class="b-try" style="flex:{n_try}"></i><i class="b-arch" style="flex:{n_arch}"></i><i class="b-unc" style="flex:{n_unc}"></i></div>'
-           f'<p class="skey"><span class="k-try">{n_try} from a desk</span><span class="k-arch">{n_arch} need an archive</span>'
+    bar = (f'<div class="sbar" role="img" aria-label="{n_try_all} to try from a desk, {n_arch_all} need an archive, {n_unc} with access not yet checked">'
+           f'<i class="b-try" style="flex:{n_try_all}"></i><i class="b-arch" style="flex:{n_arch_all}"></i><i class="b-unc" style="flex:{n_unc}"></i></div>'
+           f'<p class="skey"><span class="k-try">{n_try_all} from a desk</span><span class="k-arch">{n_arch_all} need an archive</span>'
            f'<span class="k-unc">{n_unc} access not yet checked</span></p>')
     pr_li = ''.join(f'<li><a href="{esc(r["url"])}" rel="noopener">#{r["number"]}</a> {esc(r["title"])} '
                     f'<span class="d">{esc((r.get("author") or {}).get("login", ""))}, updated {fmt_day(r["updatedAt"][:10])}</span></li>' for r in prs)
@@ -567,22 +570,6 @@ def summary_html(E, keys, n_gone, prs):
     return (f'<div class="stand" id="status">\n<div class="tiles">{t}</div>\n{bar}\n'
             f'<div class="asof">Counts as of {day}. Locally vetted entries were last checked by hand on {fmt_day(AS_OF)} or later. '
             f'Before starting, read the entry&rsquo;s page and the work still in review: {prl}</div>\n</div>')
-
-
-def featured_html(E, keys, n=10):
-    """The strip above the list: the highest-priority desk-ready ciphers that have a picture, each a card."""
-    pool = sorted(((e, entry_image(e)) for e, k in zip(E, keys) if in_view(k, 'try') and priority(e) >= 0), key=lambda x: (-priority(x[0]), x[0]['id']))
-    pick = [(e, g) for e, g in pool if g][:n]
-    if len(pick) < 4: return ''
-    def card(e, g):
-        r = RP.info(RP.of(e))
-        return (f'<a class="fc" href="{entry_href(e)}"><span class="fi"><img src="{g[0]}" alt="" loading="lazy"></span>'
-                f'<span class="fm"><b>{priority(e):.1f}</b><span>{esc(year_label(e))}</span><span class="badge {e["cls"]}">{e["cls"]}</span></span>'
-                f'<span class="ft">{esc(e["title"])}</span><span class="fa">{esc(r.get("short") or r["name"])} · no. {e["id"]}</span></a>')
-    return (f'<h2 id="start">{len(pick)} to start with</h2>\n'
-            f'<p class="vdesc">The highest-priority ciphers that can be tried from a desk and already have a page photographed here. '
-            f'Each picture is a crop from the work on that cipher or on a piece of the same series; its source is credited on the linked pages.</p>\n'
-            f'<div class="fstrip">{"".join(card(e, g) for e, g in pick)}</div>\n')
 
 
 # archive towns the gazetteer does not have, [lat, lon] (approximate, for a ring on the map)
@@ -702,11 +689,12 @@ function counts(){var c={},ks={};chips.forEach(function(b){c[b.dataset.facet+'|'
  chips.forEach(function(b){var on=(state.f[b.dataset.facet]||[]).indexOf(b.dataset.val)>=0,n=c[b.dataset.facet+'|'+b.dataset.val];b.setAttribute('aria-pressed',on?'true':'false');b.querySelector('.n').textContent=n;b.classList.toggle('z',!n&&!on);});}
 function labels(){dds.forEach(function(d){var ks=(d.dataset.dd||'').split(' '),on=[];ks.forEach(function(k){(state.f[k]||[]).forEach(function(v){var b=d.querySelector('.chip[data-facet="'+k+'"][data-val="'+v+'"]');if(b)on.push(b.firstChild.textContent);});});
  d.querySelector('.dv').textContent=on.length?(on.length>2?on.length+' chosen':on.join(', ')):'';d.classList.toggle('act',on.length>0);});}
-function save(){var p=[];for(var k in state.f)if(state.f[k].length)p.push(k+'='+state.f[k].map(encodeURIComponent).join(','));if(state.yr)p.push('yr='+state.yr[0]+'-'+(state.yr[1]+9));if(state.q)p.push('q='+encodeURIComponent(state.q));if(p.length||state.v!=='try')p.unshift('v='+state.v);
+function dflt(){var a=state.f.status;return !!a&&a.length===1&&a[0]==='new';}
+function save(){var p=[];for(var k in state.f)if(state.f[k].length&&!(k==='status'&&dflt()))p.push(k+'='+state.f[k].map(encodeURIComponent).join(','));if(!(state.f.status&&state.f.status.length)&&state.v!=='gone')p.push('status=all');if(state.yr)p.push('yr='+state.yr[0]+'-'+(state.yr[1]+9));if(state.q)p.push('q='+encodeURIComponent(state.q));if(p.length||state.v!=='try')p.unshift('v='+state.v);
  try{history.replaceState(null,'',p.length?'#'+p.join('&'):location.pathname);}catch(x){}}
 // a link with filters and no view (writeups.html sends #lang=french) opens on all open entries, as before the views
-function load(){var h=location.hash.slice(1),sv=0;if(h==='ww1-challenges'){state.f.source=['ww1'];return;}if(h==='gone'){state.v='gone';return;}if(h.indexOf('=')<0)return;h.split('&').forEach(function(kv){var i=kv.indexOf('=');if(i<1)return;var k=kv.slice(0,i),v=decodeURIComponent(kv.slice(i+1));
- if(k==='q'){state.q=v.toLowerCase();qi.value=v;}else if(k==='yr'){var ym=/^(\d{4})-(\d{4})$/.exec(v);if(ym)state.yr=[Math.floor(ym[1]/10)*10,Math.floor(ym[2]/10)*10];}else if(k==='v'){if(D.views[v]){state.v=v;sv=1;}}else state.f[k]=v.split(',').filter(Boolean);});if(!sv)state.v='all';}
+function load(){var h=location.hash.slice(1),sv=0,sa=0;if(h==='ww1-challenges'){state.f.source=['ww1'];return;}if(h==='gone'){state.v='gone';return;}if(h.indexOf('=')<0){state.f.status=['new'];return;}h.split('&').forEach(function(kv){var i=kv.indexOf('=');if(i<1)return;var k=kv.slice(0,i),v=decodeURIComponent(kv.slice(i+1));
+ if(k==='q'){state.q=v.toLowerCase();qi.value=v;}else if(k==='yr'){var ym=/^(\d{4})-(\d{4})$/.exec(v);if(ym)state.yr=[Math.floor(ym[1]/10)*10,Math.floor(ym[2]/10)*10];}else if(k==='v'){if(D.views[v]){state.v=v;sv=1;}}else if(k==='status'&&v==='all'){sa=1;}else{state.f[k]=v.split(',').filter(Boolean);if(k==='status')sa=1;}});if(!sv)state.v='all';if(!sa)state.f.status=['new'];}
 var SK={year:'y',title:'t',importance:'i',solvability:'so',difficulty:'df',cls:'c'};
 function key(e){var s=state.sort;if(s==='prio')return e.i==null?null:prio(e);if(s==='cls')return e.c||null;if(s==='title')return e.t;var k=e[SK[s]];return s==='year'?+k:k;}
 function sorter(a,b){var x=key(a),y=key(b);if(x==null||y==null)return Number(x==null)-Number(y==null)||a.id-b.id;if(x<y)return -1*state.dir;if(x>y)return 1*state.dir;return a.id-b.id;}
@@ -751,6 +739,8 @@ function render(keep){
  tb.innerHTML=h||'<tr><td colspan="5" class="none">Nothing matches. <button type="button" class="chip" data-act="clear">clear the filters</button></td></tr>';more.innerHTML=m;
  var msrt=document.getElementById('msort');if(msrt)msrt.value=state.sort;
  document.getElementById('count').textContent=(L.length===base?base:L.length+' of '+base)+' ciphers';
+ var dn=document.getElementById('dfnote');if(dn){var hid=dflt()?E.filter(function(e){return inView(e,v)&&match(e,'status');}).length-L.length:0;
+  dn.hidden=!(hid>0);dn.innerHTML=hid>0?'Not yet attempted here only: '+hid+' already attempted or in progress are hidden. <button type="button" class="chip" data-act="allstatus">show them</button>':'';}
  clr.hidden=!(nf||state.q);clr.textContent=nf?'clear '+nf+' filter'+(nf>1?'s':''):'clear search';
  counts();labels();timeline();if(!keep)save();changed();
  document.getElementById('v_imp').textContent=state.w.imp.toFixed(2);document.getElementById('v_sol').textContent=state.w.sol.toFixed(2);document.getElementById('v_eas').textContent=state.w.eas.toFixed(2);
@@ -807,7 +797,8 @@ clr.addEventListener('click',function(){wipe();reset();render();});
 document.getElementById('wreset').addEventListener('click',function(){state.sort='prio';state.dir=-1;state.w={imp:D.weights.importance,sol:D.weights.solvability,eas:D.weights.ease};document.getElementById('w_imp').value=state.w.imp*100;document.getElementById('w_sol').value=state.w.sol*100;document.getElementById('w_eas').value=state.w.eas*100;render();});
 var qm=/[?&]q=([^&#]+)/.exec(location.search);if(qm){var qv=decodeURIComponent(qm[1].replace(/\+/g,' '));qi.value=qv;state.q=qv.trim().toLowerCase();}
 // the header: a random desk-ready cipher, and the tile numbers counting up once
-var deal=document.getElementById('deal');if(deal)deal.addEventListener('click',function(){var L=E.filter(function(e){return inView(e,'try');}),e=L[Math.floor(Math.random()*L.length)];if(e)location.href=e.h||'solve/'+e.id+'.html';});
+var dn0=document.getElementById('dfnote');if(dn0)dn0.addEventListener('click',function(ev){if(ev.target.closest('button')){delete state.f.status;reset();render();}});
+var deal=document.getElementById('deal');if(deal)deal.addEventListener('click',function(){var L=E.filter(function(e){return inView(e,'try')&&e.f.status==='new';}),e=L[Math.floor(Math.random()*L.length)];if(e)location.href=e.h||'solve/'+e.id+'.html';});
 if(!matchMedia('(prefers-reduced-motion: reduce)').matches)[].forEach.call(document.querySelectorAll('.tiles .tile b'),function(b){var n=+b.textContent;if(!n)return;
  var t0=Date.now(),iv=setInterval(function(){var p=Math.min(1,(Date.now()-t0)/800);b.textContent=Math.round(n*(1-Math.pow(1-p,3)));if(p>=1)clearInterval(iv);},16);b.textContent='0';});
 if(hm&&G[hm[1]])state.v='gone';else load();
@@ -859,7 +850,7 @@ def build_html():
                          ensure_ascii=False, separators=(',', ':')).replace('</', '<\\/')
     n_all, n_img = len(E), sum(1 for e in E if seen_image(e))
     years = [e['year'] for e in E if e['year']]
-    first = sorted((e for e, k in zip(E, keys) if in_view(k, 'try')), key=lambda e: (-priority(e), e['id']))[:30]
+    first = sorted((e for e, k in zip(E, keys) if in_view(k, 'try') and k['status'] == 'new'), key=lambda e: (-priority(e), e['id']))[:30]
     prs = open_prs()
     tabs = ''.join(f'<a role="tab" href="#v={v}" data-v="{v}" aria-selected="{"true" if v == "try" else "false"}">{lab} <span class="n">'
                    f'{sum(in_view(k, v) for k in keys) if v != "gone" else len(gone)}</span></a>' for v, lab, _ in VIEWS)
@@ -886,7 +877,7 @@ def build_html():
 
 <main>
 <div id="hashnote" hidden></div>
-{featured_html(E, keys)}<h2 id="list">The ciphers</h2>
+<h2 id="list">The ciphers</h2>
 <div class="cbar" id="cbar">
 <nav class="views jsonly" role="tablist" aria-label="Which ciphers">{tabs}</nav>
 <p class="vdesc" id="vdesc">{VIEWS[0][2]}</p>
@@ -913,6 +904,7 @@ def build_html():
     <label>ease <input type="range" id="w_eas" min="0" max="100" value="{int(W['ease']*100)}"><span class="wv" id="v_eas"></span></label>
     <button type="button" class="chip" id="wreset">default weights</button></span></div>''', 'source seen frame counted')}
   <span class="count" id="count" aria-live="polite"></span>
+  <span class="dfnote" id="dfnote" hidden></span>
   <button type="button" class="chip clear" id="reset" hidden>clear filters</button>
 </div>
 </div>
