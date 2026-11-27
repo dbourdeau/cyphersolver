@@ -59,6 +59,12 @@ for line in open(B / 'key/alignment_by_group.txt', encoding='utf-8'):
         n += 1
 groups = [int(x) for l in open(HERE / 'ciphertext.txt', encoding='utf-8')
           if l.strip() and not l.startswith('#') and not l.startswith('frame') for x in l.split()]
+for l in open(HERE / 'ciphertext_corrections.tsv', encoding='utf-8'):   # a person's look, plate 2511 (25 Nov 2026)
+    f = l.rstrip('\n').split('\t')
+    if l.startswith('#') or f[0] == 'token_index':
+        continue
+    assert groups[int(f[0])] == int(f[4]), f
+    groups[int(f[0])] = int(f[5])
 assert [g for g, _ in rows] == groups, 'the alignment does not follow ciphertext.txt'
 out = ['# model: fr-modern',
        '# source: ciphertext.txt + beling2026/key/alignment_by_group.txt (mk_validation.py)',

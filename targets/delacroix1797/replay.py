@@ -1,7 +1,7 @@
 """Adapter for docs/_replay.py: the contributor's partial table applied to Brackx's 653 groups, against the reading.
 
 key            beling2026/key/code_table_F_partial.tsv
-transcription  ciphertext.txt (Michael Brackx, digits unchanged)
+transcription  ciphertext.txt (Michael Brackx, digits unchanged) with ciphertext_corrections.tsv (a person's look, 25 Nov 2026)
 reading        beling2026/readings/reading_1797-07-13.md
 
 How a group's value is taken (24 Nov 2026):
@@ -9,8 +9,9 @@ How a group's value is taken (24 Nov 2026):
   has at that place, so that the word on it comes out as marked, as in the reading (one # alone lets the aligner
   slide a bracketed letter onto an equal letter beside it, and three words then show as unmarked that are not);
   the unknown signs 411 and 802 and the null 469 carry no letters and are passed over;
-- at the eight places where a digit change is proposed, the number keeps the table's main value on Brackx's digit
-  (257 al, 327 que, 1024 ap), not the value the draft wants there;
+- at the places where a digit change is still proposed (four since 25 Nov 2026: 257 three times and 1024), the number keeps
+  the table's main value on Brackx's digit (257 al, 1024 ap), not the value the draft wants there; the four digits a
+  person read on sign plate 2511 (ciphertext_corrections.tsv) replace Brackx's at their places;
 - where the table lists more than one value for a number (column all_values: 39 re and rez, 350 au and aux, 1015
   consul and consuls), the listed value that the hand alignment (beling2026/key/alignment_by_group.txt) has at that
   place is taken; a value the table does not list is never taken. This uses the alignment to choose between the
@@ -62,6 +63,11 @@ def mechanical():
                 align.append((int(g), '' if v in ('0', '.', '?') else v.split('!')[0]))
     groups = [int(x) for l in open(os.path.join(HERE, 'ciphertext.txt'), encoding='utf-8')
               if l.strip() and not l.startswith('#') and not l.startswith('frame') for x in l.split()]
+    for r in csv.DictReader((l for l in open(os.path.join(HERE, 'ciphertext_corrections.tsv'), encoding='utf-8')
+                             if not l.startswith('#')), delimiter='\t'):   # a person's look, plate 2511
+        i = int(r['token_index'])
+        assert groups[i] == int(r['brackx']), r
+        groups[i] = int(r['corrected'])
     assert [g for g, _ in align] == groups, 'the alignment does not follow ciphertext.txt group for group'
     word = []
     for i, (g, lets) in enumerate(align):
