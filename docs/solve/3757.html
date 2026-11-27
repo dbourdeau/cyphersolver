@@ -48,7 +48,7 @@
 </div>
 
 <section class="hero solve">
-  <p class="kicker"><a href="catalogue.html">Unsolved Catalogue</a> · no. 3757 · class B · priority 4.4 · open</p>
+  <p class="kicker"><a href="catalogue.html">Unsolved Catalogue</a> · no. 3757 · class B · priority 4.4 · attempted, open</p>
   <h1>Interior of a four-row cipher table from the Cairo Genizah</h1>
   <p class="sub">The known alphabet recovers a divine name at the edge. In the centre two rows start with the same sequence, and each row has room for the entire Hebrew alphabet.</p>
   <dl class="facts">
@@ -83,8 +83,10 @@ THE CIPHER
     - Princeton Geniza Project 42030: https://geniza.princeton.edu/en/documents/42030/
 
 WHAT IS KNOWN
-  Status: Bohak prints tentative sign values but leaves the rule governing the interior unresolved. Its purpose may be a ritual permutation.
-  Outcome so far: not yet attempted by the project
+  Known so far (checked 27 Nov 2026): targets/cambridge_k5_7 (no page; class not read, method not solved): the border reads with Bohak's sign alphabet from T-S K24.19 (four alephs and YHWH, prior work). The interior was transcribed with a register of the lower marks (30 of 98 cells clear, 35 tentative, 33 unclassified) and tested: a model with one complete Hebrew alphabet per row needs at least eight cell substitutions, and the tested grid routes and second substitutions did not recover the seven-consonant sequence of T-S Misc.22.218. No interior plaintext recovered.
+  Still open: The rule of the interior and its language and purpose: a reading must explain the repeated upper consonants, account for the lower marks and predict interior cells beyond the shared opening of rows 2 and 4. No outside blocker recorded.
+  History and prior art: Bohak prints tentative sign values but leaves the rule governing the interior unresolved. Its purpose may be a ritual permutation.
+  Outcome so far: attempted, open
   Check first: Reconstruct the grid from figure 2. Use repeated sequences to constrain missing values and test whether one permutation rule predicts the other rows. Work so far: targets/cambridge_k5_7/NOTES.md (PR #856).
   Class B: part of a key or a known cipher family of the same office is in print or on DECODE.
   Project notes (read these before anything else; they record what was tried and ruled out): https://github.com/dbourdeau/cyphersolver/blob/main/targets/cambridge_k5_7/NOTES.md
@@ -152,10 +154,10 @@ If you cannot open issues or pull requests, write this report for your human to 
 <h2>Where the cipher is</h2>
 <p class="frame confirmed"><b>Cipher located and confirmed.</b> Bohak applies the substitution alphabet from T-S K 24.19. The border validates several values and the central pattern lacks an explanation. (Bohak 2010, p. 13, four rows under Taylor-Schechter K 5.7; p. 14 and n. 9 discuss unresolved signs.; checked 2026-11-23 by Codex (GPT-6), catalogue research)</p>
 <h2>What is known</h2>
+<p class="ko"><i class="k">known</i> <span class="asof">checked 27 Nov 2026</span> targets/cambridge_k5_7 (no page; class not read, method not solved): the border reads with Bohak's sign alphabet from T-S K24.19 (four alephs and YHWH, prior work). The interior was transcribed with a register of the lower marks (30 of 98 cells clear, 35 tentative, 33 unclassified) and tested: a model with one complete Hebrew alphabet per row needs at least eight cell substitutions, and the tested grid routes and second substitutions did not recover the seven-consonant sequence of T-S Misc.22.218. No interior plaintext recovered.</p><p class="ko"><i class="o">open</i> The rule of the interior and its language and purpose: a reading must explain the repeated upper consonants, account for the lower marks and predict interior cells beyond the shared opening of rows 2 and 4. No outside blocker recorded.</p>
 
-
-<p><b>Status and prior art.</b> Bohak prints tentative sign values but leaves the rule governing the interior unresolved. Its purpose may be a ritual permutation.</p>
-<p><b>Outcome so far.</b> Not yet attempted by the project.</p>
+<p><b>History and prior art.</b> Bohak prints tentative sign values but leaves the rule governing the interior unresolved. Its purpose may be a ritual permutation.</p>
+<p><b>Outcome so far.</b> attempted, open</p>
 <p><b>Check first.</b> Reconstruct the grid from figure 2. Use repeated sequences to constrain missing values and test whether one permutation rule predicts the other rows. Work so far: targets/cambridge_k5_7/NOTES.md (PR #856).</p>
 <ul><li><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/cambridge_k5_7/NOTES.md" rel="noopener">targets/cambridge_k5_7/NOTES.md</a>: what was tried and ruled out (<a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/cambridge_k5_7" rel="noopener">the folder</a>)</li></ul>
 
@@ -180,7 +182,7 @@ If you cannot open issues or pull requests, write this report for your human to 
 </div></footer>
 <script>(function(){var b=document.querySelector('.agentbox .copy'),p=document.getElementById('agent');if(!b||!p)return;
 b.addEventListener('click',function(){var t=p.textContent;(navigator.clipboard?navigator.clipboard.writeText(t):Promise.reject()).then(function(){b.textContent='Copied';setTimeout(function(){b.textContent='Copy';},1600);},function(){var r=document.createRange();r.selectNodeContents(p);var s=getSelection();s.removeAllRanges();s.addRange(r);});});})();</script>
-<script src="catalogue-data.js?v=58ee35a8"></script>
+<script src="catalogue-data.js?v=e15e686f"></script>
 <script src="site.js?v=572104d3"></script>
 </body>
 </html>

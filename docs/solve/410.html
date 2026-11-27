@@ -82,7 +82,9 @@ THE CIPHER
     - DigitArq PT/TT/CAM/M14: https://digitarq.arquivos.pt/documentDetails/a71061e2ccac4d0db94101fcb8dfa192
 
 WHAT IS KNOWN
-  Status: 27 Oct 2026 (WAINUT, PR #105; targets/sabugosa1910/): the unit holds telegrams of 13 May 1903, 24 Apr 1904 and 21 and 24 May 1910. The last three were read from decodes of the time in the same unit (m0008, m0005+m0004, m0009) and are written up; pairing gave 52 values of a one-part code. This one (m0014, 43 groups) has no decode; 6 groups have a value.
+  Known so far (checked 27 Nov 2026): The unit's other telegrams (24 Apr 1904, 21 and 24 May 1910) are read from decodes of the time in targets/sabugosa1910/ (sabugosa1910.html, read in part, read from existing decipherment); pairing them gave 52 values of Sabugosa's alphabetical one-part code. In this telegram (m0014, 43 groups) 6 groups have a value from those decodes.
+  Still open: m0014, 13 May 1903: 37 of 43 groups have no value; blocker: no key material (no decode in the unit, codebook not found, the alphabetical bounds do not fix a word).
+  History and prior art: 27 Oct 2026 (WAINUT, PR #105; targets/sabugosa1910/): the unit holds telegrams of 13 May 1903, 24 Apr 1904 and 21 and 24 May 1910. The last three were read from decodes of the time in the same unit (m0008, m0005+m0004, m0009) and are written up; pairing gave 52 values of a one-part code. This one (m0014, 43 groups) has no decode; 6 groups have a value.
   Outcome so far: attempted, open
   Prior-art check: open (checked 26 Oct 2026: known.py (repo, DECODE, Cryptoole: no hit), web search).
   Check first: View the scans.
@@ -152,9 +154,9 @@ If you cannot open issues or pull requests, write this report for your human to 
 <h2>Where the cipher is</h2>
 <p class="frame confirmed"><b>Cipher located and confirmed.</b> M14 m0014 (viewer has 17 files): French-style telegram form on blue paper, 'S PARIS LISBOA 42 - 52 - 13 - 5 - 20 - HSR - AMPLIATION', then 5 lines of 5-digit code groups (23400 19482 20922 4978 12248 ...). No decipherment on the page. Language of text: numeric code. (checked 2026-10-30 by an LLM on the page) <a href="https://digitarq.arquivos.pt/fileViewer/a71061e2ccac4d0db94101fcb8dfa192?isRepresentation=false&amp;selectedFile=77220758&amp;fileType=IMAGE" rel="noopener">open that page</a></p>
 <h2>What is known</h2>
-
+<p class="ko"><i class="k">known</i> <span class="asof">checked 27 Nov 2026</span> The unit's other telegrams (24 Apr 1904, 21 and 24 May 1910) are read from decodes of the time in targets/sabugosa1910/ (sabugosa1910.html, read in part, read from existing decipherment); pairing them gave 52 values of Sabugosa's alphabetical one-part code. In this telegram (m0014, 43 groups) 6 groups have a value from those decodes.</p><p class="ko"><i class="o">open</i> m0014, 13 May 1903: 37 of 43 groups have no value; blocker: no key material (no decode in the unit, codebook not found, the alphabetical bounds do not fix a word).</p>
 <p><span class="ko"><i class="k">written up</i> <a href="sabugosa1910.html" title="Count of Sabugosa (Lisbon; London) → Queen Amélie, four code telegrams, ANTT Documentos de D. Carlos, D. Amélia e D. Manuel II, maço 14, PT/TT/CAM/M14">sabugosa1910</a></span></p>
-<p><b>Status and prior art.</b> 27 Oct 2026 (WAINUT, PR #105; targets/sabugosa1910/): the unit holds telegrams of 13 May 1903, 24 Apr 1904 and 21 and 24 May 1910. The last three were read from decodes of the time in the same unit (m0008, m0005+m0004, m0009) and are written up; pairing gave 52 values of a one-part code. This one (m0014, 43 groups) has no decode; 6 groups have a value.</p>
+<p><b>History and prior art.</b> 27 Oct 2026 (WAINUT, PR #105; targets/sabugosa1910/): the unit holds telegrams of 13 May 1903, 24 Apr 1904 and 21 and 24 May 1910. The last three were read from decodes of the time in the same unit (m0008, m0005+m0004, m0009) and are written up; pairing gave 52 values of a one-part code. This one (m0014, 43 groups) has no decode; 6 groups have a value.</p>
 <p><b>Outcome so far.</b> attempted, open Prior-art check: open (checked 26 Oct 2026: known.py (repo, DECODE, Cryptoole: no hit), web search)..</p>
 <p><b>Check first.</b> View the scans.</p>
 <ul><li><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/sabugosa1910/NOTES.md" rel="noopener">targets/sabugosa1910/NOTES.md</a>: what was tried and ruled out (<a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/sabugosa1910" rel="noopener">the folder</a>)</li></ul>
@@ -180,7 +182,7 @@ If you cannot open issues or pull requests, write this report for your human to 
 </div></footer>
 <script>(function(){var b=document.querySelector('.agentbox .copy'),p=document.getElementById('agent');if(!b||!p)return;
 b.addEventListener('click',function(){var t=p.textContent;(navigator.clipboard?navigator.clipboard.writeText(t):Promise.reject()).then(function(){b.textContent='Copied';setTimeout(function(){b.textContent='Copy';},1600);},function(){var r=document.createRange();r.selectNodeContents(p);var s=getSelection();s.removeAllRanges();s.addRange(r);});});})();</script>
-<script src="catalogue-data.js?v=58ee35a8"></script>
+<script src="catalogue-data.js?v=e15e686f"></script>
 <script src="site.js?v=572104d3"></script>
 </body>
 </html>
