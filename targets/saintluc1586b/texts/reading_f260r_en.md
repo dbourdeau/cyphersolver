@@ -1,6 +1,6 @@
 # f. 260r: English (Michael Brackx, issue #90), same holes as the reading
 
-1 arrived [?yesterday] at Oléron, and this morning [?has] [?come]
+1 arrived yesterday at Oléron, and this morning [?has] [?come]
 2 to his [?] [?] [?], where he had the [?pleasure] of seeing beaten
 3 our shallops with his galliots, and with some
 4 cannon-shots from our fort. I believe he will not make
