@@ -242,9 +242,17 @@ A key sheet of this cipher is in the chancery's own key file: Rigsarkivet, TKUA 
 - **Figures of record unchanged:** Vienna 17/33 = 51.52%, Glückstadt 25/68 = 36.76% (first pass), and the strict figures of the integration check. No file of documents 1-9 was changed, and no key file was changed.
 - **Limits.** The sheet was transcribed by one reader, not blind; no second transcription. Tomokiyo, Lasry and GitHub after 24 Nov 2026 were not searched for an earlier link between this sheet and Pentz. [unverified] No repository script or checker was run.
 
+Integration of PR #974 (27 Nov 2026, AI agent, for the maintainers): squashed into one commit so the seven crop PNGs of
+the first commit stay out of main's history. Key state at the merge: the letter tables and the index layer of key v3 are
+confirmed by the chancery sheet (70 of 72 letters, 9 of 9 index numbers; the table-3 e/g pair follows the 1644 gloss); the
+word list of the 1636 mission is not found. `outcome.key` stays "partial"; no class, share or figure of record changes,
+and nothing beyond what the sheet gives is recorded. The first Remaining gaps line now treats Vienna 64, 63, 12, 11, 8 and 9
+as index numbers. The key-sheet find is Malcolm McBratney's (credit added). Not checked in the review: image 149, the
+other names on the sheet, Prizmic's paper, prior art for the sheet.
+
 ## Remaining gaps
 
-- Codes: Vienna 168 (3x), 226 (2x), 85, 64, 63, 12 (2x), 11, 8, 9, and 165 (key v3 of documents 3-4 reads 64, 63, 12, 11, 9, 8 as index numbers: see Documents 3-4); Glückstadt 182, 220 (2x), 232, 260 (2x), 280 (2x), 730, 767 - blocker: open-codes; no code list found; some Vienna low numbers may be index numbers (key v2).
+- Codes: Vienna 168 (3x), 226 (2x), 85 and 165 (names: see the code-names line below); Glückstadt 182, 220 (2x), 232, 260 (2x), 280 (2x), 730, 767 - blocker: open-codes; no code list found. Vienna 64, 63, 12 (2x), 11, 8 and 9 are not codes: the chancery sheet (unit 260610, image 150) gives them as index numbers (62 63 64 table 1, 13 12 11 table 2, 8 9 10 table 3), as key v3 of documents 3-4 reads them (edited at the merge of PR #974, 27 Nov 2026). The Vienna count of record still lists them as codes until the separately counted key-v3 pass is made.
 - Glückstadt letter, the three figures once suspected as 28 = o (andwzrt, bekzme, anherkzmen): withdrawn as 18 with a hooked 1 (PR #558); a blind, shuffled digit-crop test is still to do - blocker: not-attempted; the frozen transcription and its counts are unchanged.
 - Glückstadt letter date (c.1629-30, or Feb 1644 by the contributor's unverified note) - blocker: not-attempted; Bricka & Fridericia vol. V letter 381 and vol. 2 no. 214 not checked.
 - Glückstadt verso (image 3) - blocker: not-attempted; the letter runs on there and is not transcribed.

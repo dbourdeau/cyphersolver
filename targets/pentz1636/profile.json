@@ -548,7 +548,8 @@
    ],
    "what": "Archival key sheet found for this cipher: Rigsarkivet, TKUA Almindelig del 3 nr. 112 'Chiffer', unit 260610, image 150 (sister sheet image 149); linked to Pentz by Malcolm McBratney with Claude. Transcribed in full (72 letter values, 9 index numbers, 3 rule lines, 174 names; one reader, not blind) and compared value by value (keysheet_260610_150/COMPARISON.tsv): all 38 values of key v1 agree; Brice Dudout's key v3 agrees in 9 of 9 index numbers and 70 of 72 letters, the two differences being e/g in table 3 (sheet e 33, g 35; Dudout's glossed g 33, e 35 is the row of sheet 149). Sheet rule: 65-80 and numbers above 247 are nulls (sheet 149: above 178); Dudout's 251 = null fits, his 301 = the Archbishop breaks it. No new letter reading: Mark Vladimir Prizmic (Zenodo 10.5281/zenodo.24212497) had read every Vienna letter run with key v3. The sheet's names (168 Rubens, 226 Minden, 165 Hanse towns' envoy, 85 King of France) do not fit Prizmic's values from the sense (168 Bremen, 226 Frieden, 165 the English ambassador); conflict noted, not resolved. No figure of record and no key file changed.",
    "result": "partial"
-  }
+  },
+  {"date": "2026-11-27", "kind": "verification", "technique": ["other"], "what": "Integration review of PR #974 (AI agent, for the maintainers): the seven crops re-cut from image 48691625 with make_crops.py came out pixel-identical to crops.tsv; PR squashed so the PNGs of its first commit stay out of main's history. Key state recorded at the merge: letter tables and index layer of key v3 confirmed by the chancery sheet (70/72 letters, 9/9 index numbers), word list of the 1636 mission not found; outcome.key stays partial. Vienna 64, 63, 12, 11, 8, 9 moved from the code gap to index numbers, as the sheet gives them. No class, share, figure of record or key file changed. Not checked: image 149, the other names, Prizmic's paper, prior art for the sheet.", "result": "partial"}
  ],
  "outcome": {
   "class": "read in part",
@@ -579,6 +580,7 @@
   },
   "provenance": "contributed",
   "credits": [
+   {"who": "mcbratney", "role": "identification", "note": "found the chancery key sheet of this cipher (Rigsarkivet TKUA Almindelig del 3 nr. 112 'Chiffer', unit 260610, image 150), transcribed it and compared it with keys v1 and v3, with Claude; PR #974", "date": "2026-11-25", "source": "https://github.com/dbourdeau/cyphersolver/pull/974"},
    {
     "who": "mcbratney",
     "role": "solution",
@@ -606,9 +608,9 @@
   ],
   "gaps": [
    {
-    "item": "Code numbers: Vienna 168 (3x), 226 (2x), 85, 64, 63, 12 (2x), 11, 8, 9, and 165 (missed by the transcription); Glückstadt 182, 220 (2x), 232, 260 (2x), 280 (2x), 730, 767",
+    "item": "Code numbers: Vienna 168 (3x), 226 (2x), 85 and 165 (missed by the transcription; names, see the key-sheet entry); Vienna 64, 63, 12 (2x), 11, 8, 9 are index numbers on the chancery sheet (unit 260610, image 150), not codes; Glückstadt 182, 220 (2x), 232, 260 (2x), 280 (2x), 730, 767",
     "blocker": "open-codes",
-    "detail": "no code list found; some Vienna low numbers may be index numbers (key v2), not codes"
+    "detail": "no code list found; the low Vienna numbers are index numbers on the chancery sheet (edited at the merge of PR #974, 27 Nov 2026)"
    },
    {
     "item": "Glückstadt letter: the three figures once suspected as 28 = o",
