@@ -366,7 +366,8 @@
       "what": "Write-up: the two doubtful single-use numbers 300 and 1105 looked at on the NARA frames at twice their size (an AI reading). Not settled: the last digit of 300 has the same looped form as the last digit of 630 beside it; the third digit of 1105 is a filled loop over show-through. Brackx's digits kept.",
       "result": "partial"
     },
-    {"date": "2026-11-24", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 622 tokens, 285 types, fr-modern order 4: reading -1.938 per letter; random keys -2.514 (z 10.1); key annealed onto shuffled ciphertext best -1.927 (mean -1.935, z -0.3); annealer on the real text -1.911. Verdict: underdetermined.", "result": "partial"}
+    {"date": "2026-11-24", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 622 tokens, 285 types, fr-modern order 4: reading -1.938 per letter; random keys -2.514 (z 10.1); key annealed onto shuffled ciphertext best -1.927 (mean -1.935, z -0.3); annealer on the real text -1.911. Verdict: underdetermined.", "result": "partial"},
+    {"date": "2026-11-25", "kind": "verification", "technique": ["manual reconstruction"], "what": "Sign plate 2511 (dudout/sign_check_2511/, PR #990): Brice Dudout looked at the eight proposed digit changes on a blind shape plate of NARA M30 roll 4 frames 0244-0245 (each doubtful digit boxed, options cut from clear digits of the same hand, no reading or value shown); rule REGLE-SELECTION.md hashed before the answers (sha256 0bc3ef05...51ed58), option order fixed in the rule, not shuffled; controls 3 of 3. Read: 108 -> 100, 808 -> 898, 327 -> 527, 381 -> 361 (applied by the plate's patch to beling2026/key/alignment_by_group.txt, removed from the proposals file, and recorded for ciphertext.txt in ciphertext_corrections.tsv); 257 read 7 at all three places (as written; kept as holes, since the value 'ai' rests only on these places); token 413 read 1084 (not in the table; hole kept). Counts before -> after by strict_share.py: holes 27 -> 23, sure 296 -> 298, probable 121 -> 123, read share 0.939 -> 0.948, strict 0.667 -> 0.671 (of 444; 419 of 442 on the reviewer's count). Key replay rerun (replay.py reads ciphertext_corrections.tsv): 418 of 441 words exact (94.8%), 22 marked, no unmarked difference. The statistical validation of 24 Nov was not rerun. Class stays read in part (422 of 444 needed). Integration review of PR #990 scored the plate from its key and answers and matched the 9 hashes; the digits on the film were not checked by the project.", "result": "partial"}
    ],
   "outcome": {"validation": {"date": "2026-11-24", "model": "fr-modern", "file": "validation.tsv", "tokens": 622, "types": 285, "tokens_per_type": 2.18, "score": -1.938, "nulls": {"random keys": {"n": 200, "mean": -2.514, "sd": 0.057, "max": -2.341, "z": 10.1, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -1.935, "sd": 0.007, "max": -1.927, "z": -0.3, "p": 0.5714}}, "power": -1.911, "verdict": "underdetermined", "notes": "claimed per-occurrence score -1.908; polyphony 0.077; 31 unread tokens left out; annealer on the real text from random keys reached -1.911"}, 
     "method": "key recovered based on plaintext from external sources",
@@ -389,12 +390,15 @@
       "none"
     ],
     "provenance": "contributed",
+    "sign_check": [
+      {"date": "2026-11-25", "checker": "Brice Dudout", "checker_kind": "project", "model_roles": ["rule", "thumbnails", "sheet", "scoring", "remarks"], "signs_checked": 9, "controls": 3, "controls_passed": 3, "as_transcribed": 4, "corrected": 5, "unresolved": 0, "not_counted": 0, "rule": "dudout/sign_check_2511/REGLE-SELECTION.md (English rendering RULE-2511.md), hashed before the answers", "rule_hash": "0bc3ef0552aa8f97a5dbf1224953fd1ace64132fb88861d0bccbb70d3751ed58", "note": "Sign plate 2511 (PR #990), NARA M30 roll 4 frames 0244-0245: the eight proposed digit changes, 9 target digits. Corrected against Brackx: 108 -> 100 (T4a), 808 -> 898, 1024 -> 1084, 327 -> 527, 381 -> 361; as written: 257 at three places and the second digit of 100. Four applied (27 -> 23 holes, 0.939 -> 0.948); 1084 not in the table, not applied. Option order fixed in the rule, not shuffled. Rule, key and answers in one commit. Model roles not stated by the contributor; recorded from the files: the PR is signed 'Brice Dudout (with Claude)', so all five roles are listed, the conservative reading."}
+    ],
     "class": "read in part",
     "key": "partial",
     "key_file": "beling2026/key/code_table_F_partial.tsv",
-    "fraction_read": 0.939,
+    "fraction_read": 0.948,
     "fraction_read_method": "measured",
-    "fraction_read_source": "beling2026/readings/reading_1797-07-13.md: cipher words with a [..] mark counted as holes, 27 holes; 444 words by beling2026/scripts/make_reading.py, 442 by the round-4 reviewer's token count (415 of 442), 0.939 either way. Strict share beside it (owner, 23 Nov 2026: words resting on the 148 single-use values count as probable): 296 of 444 words rest only on values confirmed by two or more agreeing uses, 0.667; 121 words are probable; strict_share.py. Key replay of 24 Nov 2026 (docs/_replay.py): 414 of 441 words exact by the tool's division, which does not divide at hyphens, 0.939.",
+    "fraction_read_source": "Since 25 Nov 2026 (sign plate 2511, PR #990): strict_share.py on the alignment with the four digits a person read applied, 23 holes of 444, 298 sure + 123 probable = 0.948 (419 of 442 on the reviewer's count), strict share 0.671; the filed reading file still marks the four places, and the key replay gives 418 of 441 words exact (94.8%). Before: beling2026/readings/reading_1797-07-13.md: cipher words with a [..] mark counted as holes, 27 holes; 444 words by beling2026/scripts/make_reading.py, 442 by the round-4 reviewer's token count (415 of 442), 0.939 either way. Strict share beside it (owner, 23 Nov 2026: words resting on the 148 single-use values count as probable): 296 of 444 words rest only on values confirmed by two or more agreeing uses, 0.667; 121 words are probable; strict_share.py. Key replay of 24 Nov 2026 (docs/_replay.py): 414 of 441 words exact by the tool's division, which does not divide at hyphens, 0.939.",
     "verification": ["independent clear copy"],
     "texts": [
       {
@@ -406,9 +410,9 @@
         "contemporary": "beling2026/transcriptions/clear_draft_ff41r-42r.md",
         "state": "read in part",
         "language": "fr",
-        "read_share": 0.939,
+        "read_share": 0.948,
         "cipher_words": 444,
-        "holes": 27,
+        "holes": 23,
         "summary": "Delacroix tells Létombe that the consuls at New York and Boston have sent him President Adams's speech at the opening of the extraordinary session, that he hopes the President does not mean to go to extremes, and that the Directory's position is in his despatch of 29 prairial. He asks for prompt detail on Congress, and orders that consuls keep political matter out of clear despatches, pass it to the agents charged with politics or put it in cipher, since what has already been intercepted must serve as a lesson.",
         "reading_review": {
           "grade": "B",
@@ -416,14 +420,14 @@
           "date": "2026-11-24",
           "note": "Read beling2026/readings/reading_1797-07-13.md in full as sentences, with the opening lines of the filed decryption beside it: coherent French in every sentence, 27 marked holes, each a short word or part of a word that the sentence carries. Grade B because the words are the ministry's draft laid on the groups (circular by design) and 121 further words rest on single-use values; the strict share is 0.667. The draft was not seen on the archive's images and no person has checked it."
         },
-        "note": "Read in part: 0.939 is under the 95% bar. The text is the ministry's draft laid on Brackx's digits by a hand alignment; a clause of the draft (est arrivé à Paris, il y a quinze jours: Il) has no groups in the copy and is not counted. The 'contemporary' file is the clear draft, a separate document in Paris, not a decipherment of the copy."
+        "note": "Read in part: 0.948 (23 holes of 444, since sign plate 2511 of 25 Nov 2026; 0.939 and 27 holes before) is under the 95% bar. The text is the ministry's draft laid on Brackx's digits by a hand alignment; a clause of the draft (est arrivé à Paris, il y a quinze jours: Il) has no groups in the copy and is not counted. The 'contemporary' file is the clear draft, a separate document in Paris, not a decipherment of the copy."
       }
     ],
     "gaps": [
       {
-        "item": "8 places where a digit change to Brackx's transcription is proposed (257 three times, 108, 808, 1024, 381, 327)",
+        "item": "4 places where a digit change to Brackx's transcription is still proposed (257 three times, 1024); the other four (108, 808, 327, 381) were read by a person on 25 Nov 2026 and applied",
         "blocker": "illegible",
-        "detail": "blotted or doubtful digits on the film; three blind AI readers each, only 898, 1034 and 527 supported by two or more; not applied until a person has looked at NARA M30 roll 4 frames 0244-0245"
+        "detail": "blotted or doubtful digits on the film. Brice Dudout looked on a blind shape plate (sign plate 2511, PR #990, controls 3 of 3): 108 read 100, 808 read 898, 327 read 527, 381 read 361, applied (27 -> 23 holes, 0.939 -> 0.948; ciphertext_corrections.tsv); 257 read 7 at all three places, as Brackx wrote it, so those stay holes: the plate settles the shape, not the value, and 'ai' for 257 is found only at these three places; token 413 read 1084 (Brackx 1024, proposed 1034), which is not in the table, so the hole stays"
       },
       {
         "item": "17 groups with an unsure (class C) value: 383, 496, 526, 571, 1122, 1126, 347",
@@ -436,7 +440,7 @@
         "detail": "the draft is the minute, not the copy that was enciphered; the sent wording is not held"
       },
       {
-        "item": "the 148 single-use values (121 words of the reading rest on at least one)",
+        "item": "the 148 single-use values (123 words of the reading rest on at least one since 25 Nov 2026; 121 before)",
         "blocker": "no-key-material",
         "detail": "untested outside this letter; no second text in this code is known: none on NARA frames 0236-0252, none among the targets, catalogue and leads (searched again 24 Nov 2026; astrea1799 and catalogue 521 are not online), none in 39CP/48 (paged in full by the contributor); 39CP/47 (938 images online) was spot checked by the contributor only and is an open lead, not paged here because the archive's viewer asks the reader to accept its conditions of reuse"
       },
@@ -461,6 +465,13 @@
         "date": "2026-11-21",
         "note": "found the ministry's clear draft (CP États-Unis vol. 48, ff. 41r-42r), the test, the partial table, the reading; with AI agents",
         "source": "https://github.com/dbourdeau/cyphersolver/pull/884"
+      },
+      {
+        "who": "dudout",
+        "role": "verification",
+        "date": "2026-11-25",
+        "note": "a person's look at the eight doubtful digits on the film, on a blind shape plate (sign plate 2511, controls 3 of 3): four digits read and applied, 27 -> 23 holes, 0.939 -> 0.948",
+        "source": "https://github.com/dbourdeau/cyphersolver/pull/990"
       }
     ]
   }
