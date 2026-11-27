@@ -36,6 +36,13 @@ Rule: sure = the key gives the word from the transcription as it stands (choosin
 | B | 256 | 228 | 13 | 3 | 12 | 0.891 |
 Read in part. On three portions of letter A over 300 characters, the share read by sense (sure + probable + supplied) is 0.991, 0.960 and 0.975; on the whole letter 0.943. Letter B, after the blind sign plate of 27 Nov 2026 (`blind/planche-2711/ANSWERS.md`: 3/3 controls, 4 digits settled on the image, croire, liure, quinse, iours) and five readings by sense kept probable (auiourdhuy, croiois, a dix sols, a toy, touiour): 0.953 by sense on the whole letter (244/256).
 
+## Solution step: blind sign plate on letter B (27 Nov 2026)
+Rule hashed before any vignette (`blind/planche-2711/REGLE-SELECTION.md`, 033239a3…), answers by Brice Dudout copied byte
+for byte, 3/3 controls (`blind/planche-2711/ANSWERS.md`). Letter B counts:
+- before the plate: 254 words, 224 sure, 5 probable, 3 supplied, 22 unread (0.882 sure, 0.913 by sense);
+- the plate alone (4 digits settled: croire, liure, quinse, iours; p2.06 [8/3] answered 8, no word): 254 / 228 / 5 / 3 / 18 (0.898 sure);
+- with the five readings by sense kept probable, no digit changed: 256 / 228 / 13 / 3 / 12 (0.891 sure, 0.953 by sense).
+
 ## Content and context
 - **A** (26 May 1726, to M. de Boissiran, address « [conseiller ?] à la table royalle, à Saintes »; what the « table royale » of Saintes was is not known to us). The writer, who signs « votre très humble servante Poussard », denounces a woman she does not name, « hipocrite », « une femme si dangereuse », who repeats outside what happens in the house (« le logis »), went « dimanche dernier » to speak to two gentlemen, and boasts of her power over Boissiran's mind; the writer keeps to her room, speaks of « mes pauure enfans » and writes « je {j'abandonneray} jamais mon sang » (verb probable). Then estate business: the metayer wants the terms of the metairie and whether to mow the meadows, two calves; « {Son} pere », recently dead (probably the metayer's father), had stood « {caution} » for a miller who set fire to a mill, a loss of 2,000 livres.
 - **B** (Bordeaux, 14 Aug 1725): the writer calls him « mon cher fils », « mon cher ami », « mon bon amy » and signs « ta chere et {sincere} amie, Poussard »; she also speaks of « mon fils » in the third person and of « la Poussard » (« elle estoit fort en colere de ta lettre »), and letter C has « adieu mon cher petit mari ». The relation between writer and addressee (mother and son, wife and husband, or other) is **not established**. Contents: a passage by ship to Marennes, a maidservant, cabbages and shoes, a letter from his procureur, his cordonnier, and anger at his letter.
@@ -54,7 +61,9 @@ Read in part. On three portions of letter A over 300 characters, the share read 
 ## Remaining gaps
 - Letter C, line starts of p. 1 (left half, 17 lines) and p. 3 (top, 6 lines) - blocker: illegible; out of focus on the photographs and p. 3 is holed; sharp photographs asked for through the volunteer.
 - Probable words of A (30) - blocker: not-attempted; a blind sign check of the 3/7, 4/6/9 and 0/9 shapes on the photographs is open and workable.
-- Holes of B (12) - blocker: illegible; the blind plate of 27 Nov settled 4 of 5 target digits; p2.06 g3 `[8/3]89` answered 8 (barred and struck through on the image) gives no word. The five probable readings by sense of B (auiourdhuy, croiois, a dix sols, a toy, touiour) wait for a reader's check.
+- Hole of B at p2.06 g3 `[8/3]89` - blocker: illegible; the only hole of B on the blind plate of 27 Nov, answered 8 (barred and struck through on the image), which gives no word.
+- The other 11 holes of B - blocker: not-attempted; they were not on the plate and are not yet checked on the photographs.
+- The five readings by sense of B kept probable (auiourdhuy, croiois, a dix sols, a toy, touiour) - blocker: not-attempted; no digit changed, waiting for a reader's check.
 - Names in A (p3.01, p3.05, Caux, Cauerne) and the identity of the Poussard writer(s) - blocker: not-attempted; genealogy not yet established. Leads (web, 27 Nov 2026, not checked on sources): a logis de Boissirand at Saint-Sulpice-de-Royan, lived in by a Samuel Robert until his death in 1740, bought in 1741 by André Bréjon, sieur de Grandchamp (Musée du patrimoine du Pays royannais inventory); the catalogue title « Robert de Boissiran » fits a Robert family; a noble Poussard family is attested in Saintonge, with no link found to the writer.
 - Table 1 of the key sheet (letter cipher) and the short line of photo 162013 - blocker: not-attempted; outside these three letters.
 
