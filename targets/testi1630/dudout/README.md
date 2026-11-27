@@ -1,4 +1,4 @@
-Status: read (existing at edition level for the 1630 letters: all seven are printed in clear, Parenti 1843 and Doglio 1967; checked by Brice Dudout's agents, 17 Nov 2026). The 1636 letter and the Forni and Ottonelli letters are not printed there and stay as in NOTES.md.
+Prior-art check: the readings of the 1630 letters exist at edition level (all seven are printed in clear, Parenti 1843 and Doglio 1967; checked by Brice Dudout's agents, 17 Nov 2026). The 1636 letter and the Forni and Ottonelli letters are not printed there and stay as in NOTES.md.
 
 # testi1630: the 1630 letters are printed (prior art check, 17 Nov 2026)
 
