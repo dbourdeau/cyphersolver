@@ -1,0 +1,19 @@
+{
+  "name": "sirdar1909 (cat. 2907) H1 - Sudan Government letter alphabet 1908-09, key from HIL/64/402=403 and HIL/64/239=118, held out HIL/64/240=119 and HIL/64/214=62",
+  "manifest": "MANIFEST_v1.sha256",
+  "key": "key_v1.tsv",
+  "holdout": "holdout_v1.txt",
+  "reference": "reference_v1.txt",
+  "metric": "char",
+  "threshold": 0.85,
+  "margin": 0.30,
+  "controls": 200,
+  "seed": 2907,
+  "result": "RESULT_v1.json",
+  "notes": [
+    "Key built only on build_v1.txt (HIL/64/402=403, 3 Jan 1909; HIL/64/239 sheet 1 = HIL/64/118, 30 Nov 1908). HIL/64/240, 119, 214, 61, 62 were not read by the key builder; they were transcribed blind by two independent passes (transcription_passeA.md, transcription_passeB.md) and merged by arbitrate_v1.py: a letter is kept only when both passes give the same certain letter, else '?'.",
+    "Held-out: 301 cipher signs in 3 runs (240-A 25, 240-B 41, 214 235), 28 of them '?'. Reference: clear copy words matched by context only; for 214 the run starts after 'for life stop' and its end is off the sheet, so the reference is the first 235 letters of the clear copy from 'Two of these'.",
+    "Risk declared before measuring: 214 is of 26 Sept 1908 and may use another alphabet than Nov 1908-Jan 1909; a fail would then say that, not that the 1909 reading is wrong. One measurement only; per-run scores may be reported as non-decisive information.",
+    "Target passage (HIL/64/400, 40 letters) is not part of the test; it is read with key_v1 plus values marked probable in NOTES."
+  ]
+}
