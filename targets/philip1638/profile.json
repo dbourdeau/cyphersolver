@@ -1,0 +1,184 @@
+{
+ "schema_version": 1,
+ "target": "philip1638",
+ "title": "Philip IV to the Count of Siruela, ambassador at Genoa, 20 November 1638 (catalogue 841): despatch entirely in cipher on the negotiation with Genoa",
+ "documents": [
+  {
+   "id": "ags-3594-312",
+   "read": "read in part",
+   "shelfmark": "AGS, EST,LEG,3594,312 (PARES 3588323), images 01-03",
+   "date": "20 Nov 1638",
+   "year": 1638,
+   "country": "Spain",
+   "route": "Madrid -> Genoa",
+   "places": {
+    "from": "Madrid",
+    "to": "Genoa"
+   },
+   "language": "Spanish",
+   "pages": 4,
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No clear copy known; only the address is in clear; consulta 3594,311 paraphrases a few passages."
+   },
+   "length": {
+    "tokens": 1818,
+    "unit": "symbols",
+    "measured": true,
+    "file": "transcription.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "PARES images",
+    "image_quality": "fair",
+    "notes": "Hand of the royal chancery (ℰ, ꝓ, tall long-s, underlined sigla)."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "syllabic",
+   "homophonic",
+   "nomenclator"
+  ],
+  "summary": "the Genoa embassy cipher of 1638 (family of genes1638, key K3): vowels 16-20, syllabic series of five numbers, disguised syllables, single letters and a nomenclator of three-digit codes and underlined sigla",
+  "symbol_kind": "digits and letters",
+  "distinct_symbols": 193,
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": true,
+   "kinds": [
+    "syllables",
+    "common words",
+    "titles",
+    "names"
+   ]
+  },
+  "nulls": {
+   "present": true
+  },
+  "key_order": "random",
+  "word_division": "none",
+  "diacritics": {
+   "used": true
+  }
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "Catalogue 841 open; no clear copy in EST,LEG,3594-3595 (checked 28 Oct and 27 Nov 2026).",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "images",
+   "known plaintext"
+  ],
+  "attack": "known plaintext",
+  "first_date": "2026-10-28",
+  "last_date": "2026-11-27",
+  "human_role": "Brice Dudout chose the target and set the rules (frozen key before validation, one held-out test, codes counted only through period clears); AI agents transcribed, rebuilt the key, aligned the codes and wrote the notes.",
+  "models": [
+   "Claude Opus 5.5 (Anthropic), agents run by Brice Dudout"
+  ]
+ },
+ "solution": [
+  {
+   "date": "2026-10-28",
+   "kind": "crib",
+   "technique": [
+    "plaintext matching",
+    "manual reconstruction"
+   ],
+   "what": "Key rebuilt on declared pairs of the same chancery hand (3594,149/148, 158/157, 160/159, 151/150, 3595,308/309).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-28",
+   "kind": "control",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "K3h and K3j failed their held-out tests (0.694/0.569 and 0.788/0.612).",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-28",
+   "kind": "control",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "K3k held-out test 3594,151 img 3 vs clear 150: 0.888 chars / 0.812 words (normalised) vs control p99 0.313 / 0.161.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-28",
+   "kind": "reading",
+   "technique": [
+    "contextual inference"
+   ],
+   "what": "312 read line by line with K3k: about 87-88 % by sense; the nomenclator limits.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-27",
+   "kind": "crib",
+   "technique": [
+    "plaintext matching"
+   ],
+   "what": "Codes of 312 looked up in the other letters of the cipher that have a contemporary clear (3594,143-169 incl. 164 fetched, 3595,308/309): 12 codes found, 5 sense values confirmed, 191 contradicted (nomenclator_alignments.tsv).",
+   "result": "partial"
+  }
+ ],
+ "outcome": {
+  "class": "read in part",
+  "key": "recovered",
+  "method": "key recovered based on plaintext from external sources",
+  "method_basis": "Key rebuilt from other letters of the same cipher with their contemporary clear copies, validated on a held-out pair; nomenclator codes read through period clears of sibling letters.",
+  "contribution": [
+   "transcription",
+   "key recovered",
+   "key extended or corrected"
+  ],
+  "fraction_read": 0.857,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "884 words: 758 sure, 42 probable, 38 restored, 46 unresolved (reading.md, 27 Nov 2026); sure + probable 0.905.",
+  "first_break": true,
+  "verification": [
+   "matched control",
+   "historical consistency"
+  ],
+  "credits": [
+   {
+    "who": "dudout",
+    "role": "solution",
+    "note": "transcription, key K3k validated on a held-out pair, reading in part, nomenclator codes through period clears",
+    "date": "2026-11-27"
+   }
+  ],
+  "gaps": [
+   {
+    "item": "32 nomenclator codes without attestation (mostly the royal voice: vuestra, vos, Génova, embajador)",
+    "blocker": "open-codes"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "ags-3594-312",
+    "label": "Philip IV to the Count of Siruela, Madrid, 20 Nov 1638 (AGS EST,LEG,3594,312)",
+    "transcription": "transcription.txt",
+    "reading": "reading.md",
+    "language": "es",
+    "state": "read in part",
+    "summary": "After the French fleet tried to take galleys out of the port of Genoa, Philip IV tells his ambassador how to thank the Republic and press his need of ports and passes for the State of Milan, with more galleys for Naples, Sicily, Genoa and Sardinia, the exchange of prisoners and the port of Finale."
+   }
+  ],
+  "key_file": "key_K3k.tsv",
+  "provenance": "contributed"
+ }
+}
