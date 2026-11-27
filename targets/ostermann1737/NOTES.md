@@ -130,7 +130,7 @@ The names and the historical setting (Nadir's embassy to Constantinople, the Tur
 
 Flag: the SPbII RAN finding aid for f. 178 op. 3 (Astrakhan prikaznaya palata) lists 1739 rescripts to Kalushkin as "Шифр и дешифрант" and "Частично зашифрован, и дешифрант" (units 178-3-6, -7, -10): other documents, two years later, unpublished, with no key listed; whether they use the same alphabet is unknown [sourced through a fetch summary, unverified at page level].
 
-Not checked: the Astrakhan archive's virtual exhibition page and caption (unreachable: whether it prints a reading is unknown); Soboleva, Тайнопись в истории России / История шифровального дела в России, at page level; AVPRI f. 77 "Сношения России с Персией" (the Collegium's clear draft of this rescript should be there); HathiTrust and Google Books full text. For the prior-art sheet: "бденно смотрѣть и прилѣжно развѣдывать", "Абдулъ Бакы ханъ", "Калушкину" 1737.
+Not checked: the Astrakhan archive's virtual exhibition page and caption (unreachable; Prizmic's paper of 14 Nov 2026 quotes it as describing d. 11 as a cipher letter "с расшифровкой", with its decipherment, so a contemporary decipherment is reported in the file but has not been seen); Soboleva, Тайнопись в истории России / История шифровального дела в России, at page level; AVPRI f. 77 "Сношения России с Персией" (the Collegium's clear draft of this rescript should be there); HathiTrust and Google Books full text. For the prior-art sheet: "бденно смотрѣть и прилѣжно развѣдывать", "Абдулъ Бакы ханъ", "Калушкину" 1737.
 
 ## Catalogue corrections for 1247 (not edited here)
 
@@ -167,7 +167,7 @@ Checked by a model session for the project (an AI agent, not a person) on the pu
 - One illegible sign in line 16 (происходи[...]ъ, т by sense) - blocker: illegible; a blot on the thumbnail.
 - The text continues on an unimaged leaf after line 20 - blocker: needs-physical-access; only l. 21 is on Commons.
 - Weak key values: S29 ф and S32 щ (one training use each), S28 от (two uses, set by hand) - blocker: too-short.
-- Prior-art gaps: the exhibition caption, Soboleva at page level, AVPRI f. 77, the 1739 rescripts with "дешифрант" in SPbII RAN f. 178 op. 3 - blocker: needs-physical-access (unreachable from the sandbox, in print or not online).
+- Prior-art gaps: the exhibition caption (Prizmic's paper quotes the archive's 2017 exhibition describing d. 11 as "Шифрованное письмо с расшифровкой", a cipher letter with its decipherment: a contemporary decipherment is reported in the file, not seen by Prizmic or by us), Soboleva at page level, AVPRI f. 77, the 1739 rescripts with "дешифрант" in SPbII RAN f. 178 op. 3 - blocker: needs-physical-access (unreachable from the sandbox, in print or not online).
 
 Not a gap in the text, but open: the repository's statistical validation (`docs/_validate.py`) has not run, because `lang/` has no Russian model; a corpus and model would have to be added there.
 
@@ -226,3 +226,25 @@ Made here (24 Nov 2026): `transcription_l21.txt` (the 20 rows of `TRANSCRIPTION.
 - The held-out block is 148 letters on the same leaf as the training lines, and was seen as an image before the key was frozen.
 - The judge was a model session scoring sense by its own lights.
 - The reading, the translation and the historical setting are unchecked.
+
+
+## Later prior art (27 Nov 2026): an earlier independent solution exists
+
+[sourced] Mark Vladimir Prizmic (Anaheim, CA) published "An independent solution of Vice-Chancellor A. I. Ostermann's cipher rescript to I. P. Kalushkin, Russian resident in Persia, 17 April 1737" as a Zenodo working paper on **14 Nov 2026** (v1, CC BY 4.0, https://doi.org/10.5281/zenodo.24234135). Its record says it works from the public web image, identifies a monoalphabetic substitution with a few homophones and a line-end continuation mark, gives the key and reads all 144 cipher words; it discloses AI assistance (Claude) and says the archive's file includes a decipherment the author has not seen.
+
+[derived] That is ten days before this project's reading (key frozen 24 Nov 2026 10:55Z; Sectigo and FreeTSA stamps 24 Nov 11:01:35Z). **This entry is therefore not the first solution.** Our 24 Nov prior-art search covered Cyphersolver, DECODE, the Commons page and web searches but not Zenodo; that was a gap, and the paper was found on 27 Nov by a search for later work. It was not seen or used before or during our reading, so the two solutions are independent of each other.
+
+Credit for the first solution goes to Prizmic; this entry stays as an independent second reading with its frozen files, controls and stamps. The two keys were compared on 27 Nov (below).
+
+The checks were done with AI tools and no person checked each record by hand.
+
+## Key comparison with Prizmic (27 Nov 2026)
+
+[derived] Prizmic's paper (Zenodo 10.5281/zenodo.24234135, v1, 14 Nov 2026) was read on 27 Nov and compared with our frozen KEY.tsv, TRANSCRIPTION.tsv and DECODE.txt (hashes unchanged). His sign labels differ from ours, so the mapping was made by aligning his raw sign-by-sign decode with our 787 transcribed tokens (same sign count on 14 of 20 lines, within one on the rest) [measured].
+
+- [derived] Same system (monoalphabetic substitution, invented signs and digits, word division kept, final ъ). 29 of our 31 letter signs have the same value in both keys. Differences: S28 (2 tokens) ours ѿ "от", his у ("у себя", "управить"); S22 ours ю, his key и/й (his text prints ю in 3 of its 5 places).
+- [derived] He merges look-alike pairs we keep apart (S01/S02, S08/S09, S30/S31, S27/S28), has two м signs where we have one, and treats our S26 as the conjunction и inside a line and as a hyphen-like continuation mark at line ends; he reads our S33 as и in 3 of 5 places. We read S26 and S33 as non-letter marks.
+- [derived] About 20 of 787 sign tokens (2.5%) are read differently, in 16 places; most come from S26/S33. Examples: L01 "иного" (ours) against "и того"; L15 "разведыъа" (ours) against "разведывать" (his is the better sense there). None changes the content of the rescript.
+- [unverified] Neither reading has been checked by a Russian reader or against the archive's decipherment (GAAO f. 394, op. 1 dop., d. 11). Credit for the first solution stays with Prizmic; the comparison corroborates both solutions.
+
+The checks were done with AI tools and no person checked each record by hand.

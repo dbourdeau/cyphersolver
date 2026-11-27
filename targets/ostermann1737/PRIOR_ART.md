@@ -18,3 +18,25 @@ Verdict: **no key, decipherment, gloss or printed reading of this leaf found.** 
 8. Soboleva, Тайнопись в истории России / История шифровального дела в России: not opened in full text (not online to this sandbox). General histories; search snippets show nothing on Kalushkin or Persia. **Not checked at page level.**
 9. Cryptiana/Tomokiyo, Lasry, Turner (NoAutopilot/cipher-lab), Dudout: nothing surfaced in the searches above; the Nov 2026 vetting block in catalogue.json records the same. Not re-fetched site by site.
 10. Not searchable here: AVPRI f. 77 "Сношения России с Персией" (the Collegium's clear draft of this rescript should be there), HathiTrust and Google Books full text. For Malcolm's prior-art sheet: "бденно смотрѣть и прилѣжно развѣдывать", "Абдулъ Бакы ханъ", "Калушкину" 1737.
+
+
+## Later prior art (27 Nov 2026): an earlier independent solution exists
+
+[sourced] Mark Vladimir Prizmic (Anaheim, CA) published "An independent solution of Vice-Chancellor A. I. Ostermann's cipher rescript to I. P. Kalushkin, Russian resident in Persia, 17 April 1737" as a Zenodo working paper on **14 Nov 2026** (v1, CC BY 4.0, https://doi.org/10.5281/zenodo.24234135). Its record says it works from the public web image, identifies a monoalphabetic substitution with a few homophones and a line-end continuation mark, gives the key and reads all 144 cipher words; it discloses AI assistance (Claude) and says the archive's file includes a decipherment the author has not seen.
+
+[derived] That is ten days before this project's reading (key frozen 24 Nov 2026 10:55Z; Sectigo and FreeTSA stamps 24 Nov 11:01:35Z). **This entry is therefore not the first solution.** Our 24 Nov prior-art search covered Cyphersolver, DECODE, the Commons page and web searches but not Zenodo; that was a gap, and the paper was found on 27 Nov by a search for later work. It was not seen or used before or during our reading, so the two solutions are independent of each other.
+
+Credit for the first solution goes to Prizmic; this entry stays as an independent second reading with its frozen files, controls and stamps. The two keys were compared on 27 Nov (below).
+
+The checks were done with AI tools and no person checked each record by hand.
+
+## Key comparison with Prizmic (27 Nov 2026)
+
+[derived] Prizmic's paper (Zenodo 10.5281/zenodo.24234135, v1, 14 Nov 2026) was read on 27 Nov and compared with our frozen KEY.tsv, TRANSCRIPTION.tsv and DECODE.txt (hashes unchanged). His sign labels differ from ours, so the mapping was made by aligning his raw sign-by-sign decode with our 787 transcribed tokens (same sign count on 14 of 20 lines, within one on the rest) [measured].
+
+- [derived] Same system (monoalphabetic substitution, invented signs and digits, word division kept, final ъ). 29 of our 31 letter signs have the same value in both keys. Differences: S28 (2 tokens) ours ѿ "от", his у ("у себя", "управить"); S22 ours ю, his key и/й (his text prints ю in 3 of its 5 places).
+- [derived] He merges look-alike pairs we keep apart (S01/S02, S08/S09, S30/S31, S27/S28), has two м signs where we have one, and treats our S26 as the conjunction и inside a line and as a hyphen-like continuation mark at line ends; he reads our S33 as и in 3 of 5 places. We read S26 and S33 as non-letter marks.
+- [derived] About 20 of 787 sign tokens (2.5%) are read differently, in 16 places; most come from S26/S33. Examples: L01 "иного" (ours) against "и того"; L15 "разведыъа" (ours) against "разведывать" (his is the better sense there). None changes the content of the rescript.
+- [unverified] Neither reading has been checked by a Russian reader or against the archive's decipherment (GAAO f. 394, op. 1 dop., d. 11). Credit for the first solution stays with Prizmic; the comparison corroborates both solutions.
+
+The checks were done with AI tools and no person checked each record by hand.
