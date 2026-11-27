@@ -133,6 +133,12 @@
    ],
    "what": "Codes of 312 looked up in the other letters of the cipher that have a contemporary clear (3594,143-169 incl. 164 fetched, 3595,308/309): 12 codes found, 5 sense values confirmed, 191 contradicted (nomenclator_alignments.tsv).",
    "result": "partial"
+  },
+  {
+   "date": "2026-11-27",
+   "kind": "reading",
+   "what": "Recount after review (#1024): decryption.txt made with key_K3k_read.tsv (decode.py, unedited; 116 of 1,818 tokens without a value); 138 sure words resting on values added after the test made probable; 43 unmarked departures from the key marked as holes. 868 words: 742 sure before, 561 after (0.855 to 0.646).",
+   "result": "partial"
   }
  ],
  "outcome": {
@@ -145,9 +151,9 @@
    "key recovered",
    "key extended or corrected"
   ],
-  "fraction_read": 0.857,
+  "fraction_read": 0.646,
   "fraction_read_method": "measured",
-  "fraction_read_source": "884 words: 758 sure, 42 probable, 38 restored, 46 unresolved (reading.md, 27 Nov 2026); sure + probable 0.905.",
+  "fraction_read_source": "868 words: 561 sure, 180 probable, 81 restored, 46 unresolved (reading.md, count_words.py, recount of 27 Nov 2026 after review on #1024: words resting on values added to the key after the test counted probable, departures from the key marked); sure + probable 0.854.",
   "first_break": true,
   "verification": [
    "matched control",
@@ -165,6 +171,16 @@
    {
     "item": "32 nomenclator codes without attestation (mostly the royal voice: vuestra, vos, Génova, embajador)",
     "blocker": "open-codes"
+   },
+   {
+    "item": "180 probable words, 138 of them resting on values added to the key after the held-out test (87 = que, 0 = a, 4, 22, 2, 7, n, m = p)",
+    "blocker": "no-key-material",
+    "detail": "making them sure needs a new key with these values, tested on a clear not used yet"
+   },
+   {
+    "item": "31 of the 33 transcription doubts of 11 Nov 2026 not checked on the image",
+    "blocker": "not-attempted",
+    "detail": "NOTES.md '## Transcription doubts'; the PARES images are 963 px wide"
    }
   ],
   "texts": [
@@ -172,13 +188,18 @@
     "doc": "ags-3594-312",
     "label": "Philip IV to the Count of Siruela, Madrid, 20 Nov 1638 (AGS EST,LEG,3594,312)",
     "transcription": "transcription.txt",
+    "decryption": "decryption.txt",
     "reading": "reading.md",
+    "translation": "translation.md",
     "language": "es",
     "state": "read in part",
-    "summary": "After the French fleet tried to take galleys out of the port of Genoa, Philip IV tells his ambassador how to thank the Republic and press his need of ports and passes for the State of Milan, with more galleys for Naples, Sicily, Genoa and Sardinia, the exchange of prisoners and the port of Finale."
+    "summary": "After the French fleet tried to take galleys out of the port of Genoa, Philip IV tells his ambassador how to thank the Republic and press his need of ports and passes for the State of Milan, with more galleys for Naples, Sicily, Genoa and Sardinia, the exchange of prisoners and the port of Finale.",
+    "read_share": 0.646,
+    "cipher_words": 868,
+    "holes": 307
    }
   ],
-  "key_file": "key_K3k.tsv",
+  "key_file": "key_K3k_read.tsv",
   "provenance": "contributed"
  }
 }
