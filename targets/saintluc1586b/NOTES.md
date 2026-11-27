@@ -116,6 +116,21 @@ The `S` split changes one word of the decode (r. 23 *dosame* to *dommage*, as in
 f. 260r 40.5% to 39.4%, f. 260v 34.5% to 33.8%. f. 245 uses none of the new labels; crib agreements unchanged.
 Both pages stay *decoded, not read*.
 
+## Blind shape plates (Brice Dudout, 25 Nov 2026)
+
+Two blind plates on the Gallica images (rules, answer keys and answers in `blind_check/`, with SHA-256). The question: where the
+reading needs a value that the sign's label lacks, is the sign mislabelled? Controls 3 of 3 on each plate.
+
+| places | label | answer | effect |
+|---|---|---|---|
+| v. 20 r42, r46, v. 23 r32, v. 24 r47 | 3 / z3 (m) | ʒ `z` (u), 4 of 4 | *leuee*, *du*, *guerre*, *uos* read |
+| r. 1 r7 | z (read m by the decoder) | `zc` (h) | *hier* read |
+| r. 23 r3, v. 13 r14, v. 26 r18 | 9 (n/m/g) | a ϙ with two bars, 3 of 3 (plate B) | proposed `Q2B` = q, by sense; words stay doubtful |
+| v. 25 r2, v. 27 r2 | P (null) | a stem with a triangular flag, 2 of 2 (plate B) | proposed `FF` = ff, by sense; words stay doubtful |
+
+The two new shapes also occur at v. 3 r20 (labelled t2; with q, *[?quinse]* d'auril) and v. 9 r2, r35 (labelled v; *[?effect]*,
+*[?affin]*). f. 260r 0.761 -> 0.764, f. 260v 0.851 -> 0.866 (v10); look-alike share unchanged; both pages stay *decoded, not read*.
+
 ## Log
 
 - 22-23 Oct 2026: Brackx, issue #90 (solution post and reply of 23 Oct with the reading, English, line-by-line decode and
@@ -124,3 +139,5 @@ Both pages stay *decoded, not read*.
   ledgers and DECODE note (no DECODE record known).
 - 23 Oct 2026: Brackx's shape test of ϙ, ʒ, б, ρ (issue #95): none splits; recorded above.
 - 25 Oct 2026: shape test of the remaining six labels (issue #99): `S` and `d` split; look-alike share 39.4% / 33.8%.
+- 25 Nov 2026: blind shape plates A and B (Brice Dudout, `blind_check/`): leuee, du, guerre, uos, hier read; two shapes not in
+  the legend confirmed (two-barred ϙ, flagged stem), proposed Q2B = q and FF = ff by sense only. 0.764 / 0.866.

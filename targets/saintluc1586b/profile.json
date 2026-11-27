@@ -91,12 +91,12 @@
   },
   "inputs": ["images", "published key", "crib"],
   "attack": "published key",
-  "human_role": "Michael Brackx, working with Claude Code (Claude Opus 5.5), transcribed f. 245r-v and f. 260r-v sign by sign, corrected Tomokiyo's table on the f. 245 margin decipherments, decoded f. 260 with a beam search under a French model and built a reading line by line with English (issue #90). In this repository: measurement against the read bar, the look-alike grading, the target record and write-up.",
+  "human_role": "Michael Brackx, working with Claude Code (Claude Opus 5.5), transcribed f. 245r-v and f. 260r-v sign by sign, corrected Tomokiyo's table on the f. 245 margin decipherments, decoded f. 260 with a beam search under a French model and built a reading line by line with English (issue #90). In this repository: measurement against the read bar, the look-alike grading, the target record and write-up; two blind shape plates answered by Brice Dudout (25 Nov 2026), built and scored with Claude Code (Claude Opus 5.5).",
   "tools": ["Brackx's align.py, cover.py and crib scorer (not in the repository)", "research/reading_audit/v10_relabel.py (read share)"],
   "models": ["claude-opus-5-5"],
   "sessions": "unknown",
   "first_date": "2026-10-22",
-  "last_date": "2026-10-24"
+  "last_date": "2026-11-25"
  },
  "solution": [
   {"date": "2026-10-22", "kind": "key from source", "technique": ["key matching"], "what": "Tomokiyo's 'St. Luc's Cipher' table (cryptiana henryiii) encoded as labels with values; nulls and the word signs kept (Brackx, #90).", "result": "partial"},
@@ -107,7 +107,9 @@
   {"date": "2026-10-24", "kind": "verification", "technique": ["statistical test"], "what": "Read bar applied (v10_relabel.measure): f. 260r 0.761 and f. 260v 0.851 of words read as sense. Letters on multi-valued labels are 40.5% / 34.5% of the text, over the 3% look-alike limit, so both pages are graded decoded, not read whatever their share; the readings are kept as partial readings with English.", "result": "partial"},
   {"date": "2026-10-24", "kind": "verification", "technique": ["other"], "what": "Method restored: key obtained by Tomokiyo's published St. Luc table, corrected on the f. 245r-v margin decipherments (read with known key); text not read, class stays not read. The 22-24 Oct reading audit had set the method to not solved because the class was not read; George Lasry (24 Oct 2026) separates the two.", "result": "partial"},
   {"date": "2026-10-23", "kind": "verification", "technique": ["other"], "what": "Brackx (issue #95) re-located every token of the four largest multi-valued labels on the full-size images by template matching and cut contact sheets by decoded value: ϙ 9 (126 n, 12 m, 12 g), ʒ z (117 u, 15 m, 5 h), б 6 (161 s, 32 y), ρ p (125 i, 17 r). No label splits by shape; only part of each minority value located cleanly. Look-alike share unchanged at 40.5% / 34.5%.", "result": "failed"},
-  {"date": "2026-10-25", "kind": "verification", "technique": ["other"], "what": "Brackx (issue #99) split-tested the remaining six multi-valued labels on the f. 260 images: S splits (§§ = mm, long s = s; r. 23 dosame -> dommage) and d splits (hooked arch = l, ∂ = c); f, t/tb, pi, y do not. Look-alike share 40.5% -> 39.4% (f. 260r), 34.5% -> 33.8% (f. 260v); both pages stay decoded, not read.", "result": "partial"}
+  {"date": "2026-10-25", "kind": "verification", "technique": ["other"], "what": "Brackx (issue #99) split-tested the remaining six multi-valued labels on the f. 260 images: S splits (§§ = mm, long s = s; r. 23 dosame -> dommage) and d splits (hooked arch = l, ∂ = c); f, t/tb, pi, y do not. Look-alike share 40.5% -> 39.4% (f. 260r), 34.5% -> 33.8% (f. 260v); both pages stay decoded, not read.", "result": "partial"},
+  {"date": "2026-11-25", "kind": "verification", "technique": ["other"], "what": "Blind shape plate A (blind_check/, Brice Dudout, 13 boxed signs, 3 hidden controls passed): at places where the reading needs a value the label lacks, the reviewer chose among distinct signs of the table. ʒ at v. 20 r42, r46, v. 23 r32, v. 24 r47 matched z (u) and r. 1 r7 matched zc (h): leuee, du, guerre, uos and hier read with the plate. At the three 9-read-q places and the two P-read-ff places he saw a shape not offered (a q with two bars; a stem with a triangular flag). f. 260r 0.761 -> 0.764, f. 260v 0.851 -> 0.866 (v10).", "result": "partial"},
+  {"date": "2026-11-25", "kind": "verification", "technique": ["other"], "what": "Blind shape plate B (blind_check/, 8 boxed signs, 3 hidden controls passed), with every plausible shape of the table plus the two shapes described on plate A: 3 of 3 9-read-q targets chose the two-barred ϙ (one answer with a remark that one distractor showed two different signs, the chosen value being single, kept) and 2 of 2 P-read-ff targets chose the flagged stem. The two shapes are stable; proposed labels Q2B = q and FF = ff, values by sense only, so the words stay doubtful. v. 3 [?quinse] and v. 9 [?effect] added as doubtful words. Read shares unchanged (0.764 / 0.866); both pages stay decoded, not read.", "result": "partial"}
  ],
  "outcome": {
   "class": "not read",
@@ -117,7 +119,7 @@
   "contribution": ["transcription", "key extended or corrected", "decipherment with ambiguous key"],
   "fraction_read": 0.0,
   "fraction_read_method": "measured",
-  "fraction_read_source": "24 Oct 2026: texts/reading_f260r.md 0.761 and reading_f260v.md 0.851 of words read as sense (v10), but both decoded, not read under the look-alike limit, so nothing counts as read.",
+  "fraction_read_source": "25 Nov 2026 (after the blind shape plates): texts/reading_f260r.md 0.764 and reading_f260v.md 0.866 of words read as sense (v10; 0.761 / 0.851 on 24 Oct), but both decoded, not read under the look-alike limit, so nothing counts as read.",
   "codes_open": {"open": 0, "total": 8, "tokens_open": 0},
   "grades": "unknown",
   "verification": ["contemporary decipherment", "matched control"],
@@ -130,7 +132,8 @@
   "gaps": [
    {"item": "multi-valued labels on f. 260r-v (z, 9/9q, S, f, p, 6, y, d, t/tb, pi): 40.5% of the letters on f. 260r, 34.5% on f. 260v", "blocker": "no-key-material", "detail": "all ten multi-valued labels split-tested by shape on the full-size images (Brackx, issues #95 and #99): S (mm / s) and d (l / c) split, the other eight do not; look-alike share now 39.4% / 33.8%. Only a contemporary decipherment of f. 260 or another letter in this key would settle the remaining choices"},
    {"item": "open runs: r. 1-2 (places after en son), r. 5-11, r. 13-14, r. 17, r. 19-24; v. 3 (the day in April), v. 4, v. 8-9, v. 12-18, v. 23, v. 27", "blocker": "not-attempted", "detail": "to be retried after the label split; one [?] per unread word or group in texts/reading_f260r.md, reading_f260v.md"},
-   {"item": "Π (P) as null where affaire(s) needs ff (v. 25, v. 27); two signs after n'oze in crib 2", "blocker": "not-attempted", "detail": "image check of the sign shapes"}
+   {"item": "two sign shapes not in the label legend, given values by sense only: a ϙ with two bars across the stem (proposed `Q2B` = q, 4 tokens: r. 23 r3, v. 13 r14, v. 26 r18, v. 3 r20; all now labelled 9 or t2) and a stem with a triangular flag (proposed `FF` = ff, 4 tokens: v. 25 r2, v. 27 r2, v. 9 r2, v. 9 r35; labelled P or v)", "blocker": "no-key-material", "detail": "both shapes confirmed on the blind plates of 25 Nov 2026 (blind_check/): 3 of 3 targets answered Q2B, 2 of 2 answered FF, controls 6 of 6. The values q and ff come from the sense of the words only (consequence, quand, ce qu'il, quinse; affaires, affaire, effect, affin): Tomokiyo's table has neither shape and f. 245 does not use them, so these words stay doubtful. A sign at v. 9 r14 (labelled 9, ϙ with a bar) may be a fifth Q2B; not on a plate"},
+   {"item": "two signs after n'oze in crib 2", "blocker": "not-attempted", "detail": "image check of the sign shapes"}
   ],
   "notes": "New item, not in the catalogue or on DECODE as far as found. Contributed by Michael Brackx, issue #90. Separate from saintluc1586 (f. 43, another table, George Lasry's key).",
   "key_file": "brackx2026/key_r3.json",
@@ -145,8 +148,8 @@
     "language": "fr",
     "state": "decoded, not read",
     "summary": "St. Luc to Henri III from Brouage, June 1586: a Rochelais commander has come to Oléron and watched his galliots attack the Brouage shallops; the Rochelais try to block the harbour with ships loaded with stone, one of six score tons, and the garrison has taken one of them.",
-    "read_share": 0.761,
-    "note": "24 Oct 2026: 76.1% of the words of texts/reading_f260r.md read as sense (v10), and 40.5% of the letters fall on multi-valued labels (3% look-alike limit): decoded, not read. Brackx's reading is kept as a partial reading."
+    "read_share": 0.764,
+    "note": "25 Nov 2026: 76.4% of the words of texts/reading_f260r.md read as sense (v10; 76.1% before the blind shape plate of 25 Nov, dudout/), and 39.4% of the letters fall on multi-valued labels (3% look-alike limit): decoded, not read. Brackx's reading is kept as a partial reading."
    },
    {
     "doc": "f260v",
@@ -158,8 +161,8 @@
     "language": "fr",
     "state": "decoded, not read",
     "summary": "The garrison is unpaid and losing hope, with no word of the King's commands since April; La Rochelle means to keep the sea and sell passports to its captains; St. Luc protests that the council has let the tax-farmers of the grand parti buy salt at La Rochelle and asks that French merchants be forbidden to take salt there on pain of confiscation.",
-    "read_share": 0.851,
-    "note": "24 Oct 2026: 85.1% of the words of texts/reading_f260v.md read as sense (v10), and 34.5% of the letters fall on multi-valued labels (3% look-alike limit): decoded, not read. Brackx's reading is kept as a partial reading."
+    "read_share": 0.866,
+    "note": "25 Nov 2026: 86.6% of the words of texts/reading_f260v.md read as sense (v10; 85.1% before the blind shape plate of 25 Nov, dudout/), and 33.8% of the letters fall on multi-valued labels (3% look-alike limit): decoded, not read. Brackx's reading is kept as a partial reading."
    }
   ]
  }

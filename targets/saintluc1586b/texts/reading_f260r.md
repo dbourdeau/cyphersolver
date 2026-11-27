@@ -2,7 +2,7 @@
 
 ## Notation: the writer's own spelling (u/v and i/j one sign each); `[?]` one unread word or group, `[?word]` doubtful, `[word]` supplied. Line numbers are the leaf's lines.
 
-1 arriua [?hier] en Olleron, et a ce matin [?est] [?venu]
+1 arriua hier en Olleron, et a ce matin [?est] [?venu]
 2 en son [?] [?] [?], ou il a eu le [?plaisir] de uoir batre
 3 nos chalupes auec ses galliotes, et de quelques
 4 canonades de nostre fort. Ie croy il n'y fera pas
