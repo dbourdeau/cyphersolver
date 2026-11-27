@@ -1,0 +1,31 @@
+112L03 replace p1: 144 | p2: 644
+112L05 replace p1: [del:40] | p2: [del:10?]
+112L09 replace p1: 558? | p2: 538?
+112L09 replace p1: 401 | p2: 431
+112L09 replace p1: 221 | p2: 224?
+112L11 replace p1: 249 | p2: 849?
+112L13 replace p1: 740 732 [del:73] | p2: +740 +732 [del:+73]
+#diffs 7 p1 tokens 291
+112R01 replace p1: 547 | p2: -547
+112R02 replace p1: [del:4?] 196 | p2: [del:4?]196?
+112R02 replace p1: 117 | p2: 147
+112R03 replace p1: 355? | p2: 555
+112R04 replace p1: 609 | p2: 689
+#diffs 5 p1 tokens 134
+114R09 replace p1: 307 | p2: 507
+114R09 replace p1: 233 | p2: 833?
+114R12 replace p1: 391 | p2: 591
+#diffs 3 p1 tokens 327
+115.03 replace p1: 403? | p2: 603?
+115.03 replace p1: [del:503?] | p2: ???
+115.04 replace p1: 340 | p2: 540?
+115.05 replace p1: 378 | p2: 578
+115.09 replace p1: 149 | p2: 144
+115.12 replace p1: 328 | p2: 528
+115.12 replace p1: 518 | p2: 512
+115.14 replace p1: [del:45] 555 | p2: [del:45?]555?
+#diffs 8 p1 tokens 327
+# Arbitration on 2x zooms of the full-size images (17 Nov 2026), kept reading:
+# 112L03 144? | 112L05 struck group, irrelevant | 112L09 538? (5 overwritten), 431, 221? | 112L11 849? (looped 8/2 form) | 112L13 '+' signs kept out
+# 112R02 147 | 112R03 355? | 112R04 689 | 114R09 307, 833? | 114R12 391? | 115.03 683? (both passes differ; tall 6, looped 8) | 115.04 540 | 115.05 578
+# 115.09 144 | 115.12 528, 512? | 115.14 struck 45, 555 kept
