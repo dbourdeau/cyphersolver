@@ -508,3 +508,19 @@ Six passages of the dispatch of 14 March 1553 also have a Spanish witness on 37r
 - [x] key-rebuild: reading 1 extended by hand to 277 sign names; reading 2 rebuilt from the contemporary decipherments and extended on 14 Nov
 - [ ] retry, 14 Nov 2026: the open differences and the unresolved lines of reading 1 are to be reread on the image with both tables in view; not done in the round of the fold
 - [x] retry: c.60r block 1 unread signs, c.60r block 2, c.30r and c.50r retried with the extended table; WAINUT reread ten lines at zoom after its independent check
+
+## Philip's three unread letters (catalogue 1561): a double-blind transcription and one pre-registered test, 27 November 2026
+
+Brice Dudout, with AI agents. Full write-up: [dudout_philip1561/README.md](dudout_philip1561/README.md).
+
+**Transcription.** Two blind readers transcribed each letter in the atlas sign names of this entry, without key, values or clear text. A third agent then arbitrated their differences. Agreement before arbitration was 0.892 for 1546, 0.765 for 1553 and 0.712 for "1563". Everything was frozen by hash.
+
+**Test.** WAINUT's `wainut/key.tsv` was applied unchanged, through a crosswalk of names frozen beforehand, in one pre-registered test.
+
+- **14 March 1553.** The held-out paragraphs 4–6 were scored against Beling's transcription of the Spanish enclosure cc. 37r–38r. They need 176 edits for 865 letters (CER 0.20). WAINUT's earlier single pass needed 621, and the best of 2,000 controls (key shuffles and order shuffles) needed 608. The key is confirmed on this letter, and the enclosure follows the cipher almost letter for letter.
+- **Reading of 1553.** The letter is read in part: 333 of 550 words are sure (60.5%), and the rest are restored from the enclosure. The reading is in [reading_1553.md](dudout_philip1561/reading_1553.md), with an English translation in [translation_1553_en.md](dudout_philip1561/translation_1553_en.md).
+- **25 June 1546 and the letter catalogued 1563.** The pre-registered test (lexicon coverage) failed against the key-shuffle controls. The likely cause is that shuffles move the long code values onto frequent signs. Both letters stay decoded, not read.
+
+**Credits.** WAINUT is credited for the key, the first decoding and the dating of the letter catalogued 1563 to before 1556. Andrew Beling is credited for identifying the enclosure.
+
+**Catalogue entry 1561** cannot be closed.
