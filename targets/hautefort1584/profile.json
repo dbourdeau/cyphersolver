@@ -37,13 +37,13 @@
   {
    "id": "fr15568-f207-209",
    "read": "read in part",
-   "shelfmark": "BnF fr. 15568 ff. 207r-209r (Gallica btv1b9063927n, views 215-217; Source gallica.bnf.fr / BnF)",
+   "shelfmark": "BnF fr. 15568 ff. 207r-209v (Gallica btv1b9063927n, views 215-218; f. 209v, view 218 left, has nine more cipher lines; Source gallica.bnf.fr / BnF)",
    "date": "1584",
    "year": 1584,
    "country": "France",
    "route": "unknown (Hautefort side per Tomokiyo) -> Pomponne de Bellièvre",
    "language": "French",
-   "pages": 5,
+   "pages": 6,
    "cleartext_in_document": "interspersed",
    "plaintext": {
     "location": [
@@ -165,6 +165,12 @@
    "kind": "verification",
    "what": "Blind f. 207v ll. 1-11 (318 signs), PREREG-main2.md at the contributor's pre-registered bar (>= 0.85 and >= best of 200 shuffled + 0.30), key and metric frozen by SHA-256 before the leaf was cropped: 0.879 vs 0.536. Passed.",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-27",
+   "kind": "verification",
+   "what": "Second reading contributed (PR #1015, Larry Beck with ChatGPT; files in beck/): key fitted on f. 207r, no SHA-256 freeze; its 61 values equal the key posted in the issue #999 body on 26 Nov 18:31, before he posted f. 207v. Integration comparison (AI agent for the maintainers, not a person): on Brice Dudout's blind f. 207v ll. 1-11 transcription (318 signs) his key and the frozen key_hand2 give the same value on 302 of 318 signs (16 differences: + a against g 5, codes 15/17/& unvalued in his key 7, v 2, hm 1, A 1); the two transcriptions agree on 0.892 / 0.947 / 0.917 of signs (f. 207r / f. 207v ll. 1-11 / f. 208r); key_hand2 reproduces 281 of 298 of his aligned accepted words. His f. 207v l. 5 signs 16-31 are clear writing ('Je vous diray ...', view 216) written as cipher. Gallica view 218 left is f. 209v with nine more cipher lines (209r ends 'pl', 209v begins 'us'), correcting the project's earlier statement that the letter ends on f. 209r. Both keys are AI work and his words are fitted: no sure word added, read share and class unchanged.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -213,9 +219,14 @@
     "detail": "Untranscribed or transcribed once; workable with the present key."
    },
    {
-    "item": "fr. 15568 ff. 207r, 208r, 208v, 209r (second hand)",
+    "item": "fr. 15568 ff. 207r-209r (second hand) beyond f. 207v ll. 1-11",
     "blocker": "not-attempted",
-    "detail": "Only Fable's single training pass exists; a checked transcription and reading are workable."
+    "detail": "ff. 207r and 208r have two transcriptions (Claude Fable 5.2 for Brice Dudout; Larry Beck with ChatGPT, PR #1015), f. 207v ll. 12-25 one (Beck), ff. 208v and 209r one (Fable); no key frozen and tested on them beyond f. 207v ll. 1-11. A checked transcription and reading are workable."
+   },
+   {
+    "item": "fr. 15568 f. 209v (view 218 left), nine cipher lines, the end of the letter",
+    "blocker": "not-attempted",
+    "detail": "Untranscribed; f. 209r ends 'pl' and f. 209v begins 'us'. Workable from the Gallica image with the present key."
    },
    {
     "item": "interlined glosses on ff. 158, 160, 161",
@@ -353,6 +364,13 @@
     "note": "Key corrected on f. 158r; blind tests on f. 161r (passed the earlier thresholds) and f. 160v (pre-registered test failed); readings of ff. 158r, 160v, 161r (Claude for Brice Dudout). Second hand: key proposed by Claude Fable 5.2, blind test on f. 207v passed (0.879 vs 0.536).",
     "date": "2026-11-16",
     "source": "this folder"
+   },
+   {
+    "who": "beck",
+    "role": "transcription",
+    "note": "PR #1015, Larry Beck with ChatGPT (GPT-6.2 per the issue #999 body; his README says ChatGPT), from his photographs and the Gallica images: second transcription of fr. 15568 ff. 207r and 208r and the only one of f. 207v ll. 12-25; continuous French and English reading of ff. 207r-209r (208v-209r on Brice Dudout's transcription and key); comparison with the frozen key_hand2",
+    "date": "2026-11-27",
+    "source": "https://github.com/dbourdeau/cyphersolver/pull/1015"
    }
   ]
  }
