@@ -33,7 +33,7 @@ The three plates:
 
 Rule of plate c, written before its answers: a target counts only if its answer on c is conclusive (one value, no remark
 against it) and equal to the conclusive answers of a and b. Plates a and b can only restrict, never add. A reading
-against both readers (T3) is flagged and not applied without a second look.
+against both readers (T3) is read as an encipherer's slip, 36 for 56 (see T3 below).
 
 Each folder holds the rule (`REGLE-SELECTION.md`, in French) and its hash file, the frozen `scripts/boxes.py` (box
 coordinates on the full-resolution Gallica pages), the answers as exported with their hash, and the answer key revealed
@@ -56,9 +56,11 @@ Six places are settled. In every case the answer agrees with Beling:
 | T10 | no. 25 l. 49, initial | misericorde | puissance | p / p / p | yes |
 
 Not counted:
-- **T3** (no. 24 l. 9, "36" or "56" in "de Ludouic"): **3** on all three plates. 36 = b gives "Budouic", against both
-  readers. This is flagged as an alternative, not applied. A second look by a third reader is needed. If it held,
-  no. 24 would go from 18 to 17 of 21.
+- **T3** (no. 24 l. 9, "36" or "56" in "de Ludouic"): **3** on all four plates (a, b, c and d), and Brice confirms
+  a clear 3 on an open look. So the figure on the page is 36, not 56 as both readers transcribed it. 36 = b would give
+  "Budouic", which is not a word; 56 = L gives "Ludouic". We read this as an encipherer's slip (36 written for 56) and
+  keep "Ludouic" as read, the same way "l'union" (58 on the page for 56) is already counted. The count does not change
+  (no. 24 stays 19 of 21; 41 of 46 strictly blind). Only the transcription note changes: 36 on the page, not 56.
 - **T5** (no. 25 l. 8, flatteries / platines): plate a "none, capital H", then pl on b and c. Not counted (a not
   conclusive). Beling himself withdrew "platines". Open.
 - **T7** (no. 25 l. 27, treuvons / croions): c on all three, but plate a had a remark ("not really the same as form 1"),
@@ -75,7 +77,7 @@ Sure / {probable} / [restored] / ‹unresolved›, by words:
 | letter | cipher words | sure | {probable} | [restored] | ‹unresolved› | share sure |
 |---|---|---|---|---|---|---|
 | no. 25 | 22 | **21** (was 20: the l. 34 run now ends "du Roy") | 0 | 0 | 1 (the isolated figure 3) | **95.5%** |
-| no. 24 | 21 | 19 (18 blind + Paris, open look) | 0 | 2 (lu[y], au[o]it) | 0 | 90.5% (85.7% blind only; T3 not applied) |
+| no. 24 | 21 | 19 (18 blind + Paris, open look) | 0 | 2 (lu[y], au[o]it) | 0 | 90.5% (85.7% blind only; Ludouic read, 36 for 56) |
 | no. 60 | 3 | 2 | 1 (Launan, gloss Launay) | 0 | 0 | 66.7% |
 | all | 46 | **42** (41 blind) | 1 | 2 | 1 | **0.913** (0.891 blind only; was 0.870) |
 
@@ -105,6 +107,5 @@ blind figure.
 
 ## Still open
 
-- T3 "Budouic" against "Ludouic" (above).
 - T5 and T7, and the ~25 other word differences of no. 25.
 - Michael Brackx has not been asked about l. 34. The plates agree with Beling and with the independent verifier.
