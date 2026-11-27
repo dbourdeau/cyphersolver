@@ -226,3 +226,14 @@ Made here (24 Nov 2026): `transcription_l21.txt` (the 20 rows of `TRANSCRIPTION.
 - The held-out block is 148 letters on the same leaf as the training lines, and was seen as an image before the key was frozen.
 - The judge was a model session scoring sense by its own lights.
 - The reading, the translation and the historical setting are unchecked.
+
+
+## Later prior art (27 Nov 2026): an earlier independent solution exists
+
+[sourced] Mark Vladimir Prizmic (Anaheim, CA) published "An independent solution of Vice-Chancellor A. I. Ostermann's cipher rescript to I. P. Kalushkin, Russian resident in Persia, 17 April 1737" as a Zenodo working paper on **14 Nov 2026** (v1, CC BY 4.0, https://doi.org/10.5281/zenodo.24234135). Its record says it works from the public web image, identifies a monoalphabetic substitution with a few homophones and a line-end continuation mark, gives the key and reads all 144 cipher words; it discloses AI assistance (Claude) and says the archive's file includes a decipherment the author has not seen.
+
+[derived] That is ten days before this project's reading (key frozen 24 Nov 2026 10:55Z; Sectigo and FreeTSA stamps 24 Nov 11:01:35Z). **This entry is therefore not the first solution.** Our 24 Nov prior-art search covered Cyphersolver, DECODE, the Commons page and web searches but not Zenodo; that was a gap, and the paper was found on 27 Nov by a search for later work. It was not seen or used before or during our reading, so the two solutions are independent of each other.
+
+[unverified] The two keys and readings have not yet been compared sign by sign (the paper's PDF could not be read from the sandbox). Agreement would corroborate both; any difference should be listed here. Credit for the first solution goes to Prizmic; this entry stays as an independent second reading with its frozen files, controls and stamps.
+
+The checks were done with AI tools and no person checked each record by hand.
