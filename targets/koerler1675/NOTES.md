@@ -1,6 +1,22 @@
 # Körler's Vienna reports 1674-75 and the 1635 Lower Rhine letter, Fürstbistum Münster (Unsolved Catalogue no. 609)
 
-Status: no write-up. Blocked on access: B 001 Nr. 3009 and Nr. 673 are not digitised.
+Status: no write-up. Blocked on access: B 001 Nr. 3009 and Nr. 673 are not digitised. Per the archive's reply of
+27 Nov 2026 (below) both files carry contemporary decipherments; only an unknown remainder of Nr. 3009 may lack one.
+
+## Archive reply, 27 Nov 2026 (issue #1026)
+
+Brice Dudout asked the Landesarchiv NRW, Abteilung Westfalen, and reported its reply in issue #1026 (credit: Brice
+Dudout, identification). Dr Thomas Reich replied on 27 Nov 2026 (ref. W2-2026-18182) after looking at the originals:
+
+- **B 001 Nr. 673** (1635, fol. 298r, munitions, Dingden/Rhede): the cipher passage carries its plaintext in the
+  left margin.
+- **B 001 Nr. 3009** (Körler, Vienna 1674-75): short ciphered passages, mostly deciphered above the lines at the time.
+- Reproductions declined: the archive sees no open problem. No copies ordered (archive request ar-956 closed).
+- The digitised keys W 005 Nr. 475 and 499 a are not affected.
+
+This is per the archive's reply, not seen here: only the issue's summary of the email is in hand, and neither file is
+digitised. The reply does not cover the sibling B 001 Nr. 7801. Catalogue 609 is narrowed to any unglossed passage of
+Nr. 3009.
 
 Nothing below rests on a sight of the ciphertext. The two digitised Münster key volumes named in the catalogue
 entry were downloaded and inventoried; neither carries a key dated to either target.
@@ -70,9 +86,11 @@ expected to fit, but should be tried if A's numbers look like it.
 
 ## Remaining gaps
 
-- A (B 001 Nr. 3009), the ciphered passages: needs-physical-access. Not digitised; nothing to count or transcribe.
-- B (B 001 Nr. 673), the 1635 letter: needs-physical-access. Not digitised; no key of 1634-35 is known in the
-  digitised volumes.
+- A (B 001 Nr. 3009), any cipher passage without a contemporary decipherment: needs-physical-access. The archive
+  says the passages are "mostly" deciphered above the lines; which, if any, are not is unknown. Not digitised;
+  reproductions declined (27 Nov 2026).
+- B (B 001 Nr. 673), the 1635 letter: no longer a gap. Its plaintext is in the margin per the archive's reply of
+  27 Nov 2026, not seen here.
 
 ## Escalation
 
@@ -83,3 +101,6 @@ expected to fit, but should be tried if A's numbers look like it.
 - Print: Hüttenheim 1974 is the decisive check (prior reading and key). Get it through interlibrary loan before
   ordering scans.
 - Next: (1) Hüttenheim 1974; (2) copy order to LAV NRW Abt. Westfalen for B 001 Nr. 3009, 7801 and 673.
+- 27 Nov 2026: the archive checked Nr. 673 and Nr. 3009 and found contemporary decipherments on both (issue #1026);
+  it declined reproductions, and the project does not order copies. Step (2) is closed for those two files. What
+  remains is Nr. 3009's unglossed remainder, if any (physical access), Nr. 7801 (not covered) and Hüttenheim 1974.
