@@ -101,13 +101,13 @@
   {
    "date": "2026-11-27",
    "kind": "reading",
-   "what": "Key v1 applied to the 40 letters of HIL/64/400: 'kindly wire me any remarks you may have to make', 10 of 10 words as sense, 5 sure and 5 probable; under the 300-character length of the read bar.",
+   "what": "Key v1 applied to the 40 letters of HIL/64/400 (decryption_400.txt, unedited): 'kindly wire me any remarks you may have to make', 5 of 10 words sure, 5 probable; 10 cipher words, 5 holes (the five probable words); a text under 40 cipher words has the short-text floor (at most 2 holes), so with 5 it is read in part by the floor.",
    "result": "partial"
   }
  ],
  "outcome": {
   "class": "read in part",
-  "key": "recovered",
+  "key": "partial",
   "method": "key recovered based on plaintext from external sources",
   "method_basis": "Alphabet learnt from two cipher/clear pairs of the same file and the same weeks, then applied to the bare passage.",
   "contribution": [
@@ -124,9 +124,9 @@
    "file": "verification/RESULT_v1.json",
    "notes": "Pre-registered held-out test under the #1014 convention: 0.3051 vs best control 0.2237, bar 0.85, not validated. The Sept 1908 telegram (235 of the 301 signs) is in another alphabet; the two Nov 1908 runs (66 signs) score 0.75 and 0.81. Passage burnt."
   },
-  "fraction_read": 1.0,
+  "fraction_read": 0.5,
   "fraction_read_method": "measured",
-  "fraction_read_source": "reading_400.md: 10 of 10 words as sense (5 sure, 5 probable) in 40 letters",
+  "fraction_read_source": "reading_400.md: 5 of 10 cipher words sure (5 probable, counted as holes); only sure words count as read",
   "provenance": "contributed",
   "credits": [
    {
@@ -134,6 +134,12 @@
     "role": "solution",
     "note": "alphabet rebuilt from the 1908-09 pairs, held-out test (not validated), short reading of HIL/64/400",
     "date": "2026-11-27"
+   },
+   {
+    "who": "bourdeau",
+    "role": "new cipher",
+    "note": "catalogue 2907, found and first transcribed by the wave 16 Durham sweep (research/sweep_2026-11-15_wave16_durham), as agreed under #969",
+    "date": "2026-11-15"
    }
   ],
   "key_file": "verification/key_v1.tsv",
@@ -142,20 +148,39 @@
     "doc": "hil64-400",
     "label": "HIL/64/400, Sirdar to Herbert, 9 Jan 1909, eight groups",
     "transcription": "transcription_400.txt",
-    "decryption": "reading_400.md",
+    "decryption": "decryption_400.txt",
     "reading": "reading_400.md",
     "language": "en",
     "state": "read in part",
-    "read_share": 1.0,
+    "read_share": 0.5,
     "summary": "Wingate forwards the widow's request that the son of the late Colonel Hassan Bey Tewfik be admitted to the Military School, and asks Herbert to wire any remarks he may have.",
-    "reading_review": {
-     "grade": "A",
-     "by": "Brice Dudout (with Claude)",
-     "date": "2026-11-27",
-     "note": "one English sentence, ten words; short reading under the length of the read bar; key not validated by the held-out test"
-    }
+    "cipher_words": 10,
+    "holes": 5,
+    "note": "Short text: 10 cipher words, 5 holes (the five probable words); a text under 40 cipher words has the short-text floor (at most 2 holes), so with 5 it is read in part by the floor. Holes: {kindly}, {any} (g read as n), {wire}, {remarks} (the 4-shaped x taken as r), {have} (z = v not in the key)."
    }
   ],
-  "notes": "Short reading (40 letters), under the 300-character length of the read bar. Credit: the wave 16 Durham sweep of this repository found and first transcribed the eight groups and listed the cipher/clear pairs used for the key. No image included (Durham's reuse terms not checked)."
+  "notes": "Short reading (40 letters, 10 cipher words): 10 cipher words, 5 holes (the five probable words); a text under 40 cipher words has the short-text floor (at most 2 holes), so with 5 it is read in part by the floor. Credit: the wave 16 Durham sweep of this repository found and first transcribed the eight groups and listed the cipher/clear pairs used for the key. No image included (Durham's reuse terms not checked).",
+  "gaps": [
+   {
+    "item": "{kindly}, {any}: the letter read g stands for n (n is q in the key; g and q are hard to tell apart in these hands)",
+    "blocker": "illegible",
+    "detail": "a person checking the last letter of group 3 on the image, or a further cipher/clear pair of the same alphabet, would settle it"
+   },
+   {
+    "item": "{wire}, {remarks}: the 4-shaped letter taken as x (= r)",
+    "blocker": "illegible",
+    "detail": "both blind passes read x; no clear copy of HIL/64/400 to confirm it"
+   },
+   {
+    "item": "{have}: cipher z has no value in key v1 (nor i, n)",
+    "blocker": "no-key-material",
+    "detail": "z does not occur in the two training pairs; v from sense only"
+   },
+   {
+    "item": "the key is not validated (held-out test v1 failed, 0.3051 vs bar 0.85; the passage is burnt)",
+    "blocker": "no-key-material",
+    "detail": "a new test needs another cipher/clear pair of the Nov 1908 - Jan 1909 alphabet; none other found in HIL/64-65"
+   }
+  ]
  }
 }
