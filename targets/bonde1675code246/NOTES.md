@@ -16,7 +16,7 @@ The draft key built from the gloss is **not validated** (0.66 resubstitution aft
 
 One letter in cipher filling image 113 right (33 lines of numbers) and running on to image 114 left (32 lines). It
 opens `Herr Cantzlirådet` (pencil, letter by letter over the first numbers, and the ink gloss) and ends, in the gloss
-of 114 left line 4, `willigheet. Carolus Bonde Paris d. 18 Novembris` (first read `13`; see The date) with `1675` on line 5. The last cipher line of
+of 114 left line 4, `willigheet. Carolus Bonde Paris d. 1x Novembris` (the second digit is probably 8, not settled; first read `13`; see The date) with `1675` on line 5. The last cipher line of
 114 left is `18/28` (in figures) and `50.77.34.42.22.16.112.55.149`, which a later pencil hand wrote out letter by
 letter as `Novembris`, followed by `1675` in clear.
 
@@ -89,6 +89,11 @@ is a 3 here. 114 left is unchanged from pass 3.
 **113 right lines L19-L33 (301 numbers) are kept aside** and are not in this folder: they were set apart as a held-out
 test portion before any key was built, transcribed by two blind sub-agents and an arbiter, frozen by SHA-256, and
 never decoded (the test was not run, see "The draft key"). They stay available for a future test.
+Correction (27 Nov 2026, after Daniel's review of #647): `build_key3.py` (and `cv_estimate.py`, which reuses it) puts the
+gloss text written over the held-out lines 21-33 (G21-G33, read by the sub-agents) into the text the training numbers are
+aligned to, since that gloss is the clear of 114 left. The held-out numbers themselves were never opened or decoded, but
+"the held-out numbers and their gloss were not opened", as earlier versions said, is not exact: their gloss was read and
+used. The clear of the held-out numbers lies in the middle of the gloss (about G10-G19), which is also in that text.
 
 ## The period gloss and its reading
 
@@ -148,7 +153,7 @@ cannot express. Both are hypotheses for whoever takes the key further; the draft
 **Held-out test not run: cross-validation on the training lines (17 Nov 2026).** Before freezing a key and a protocol
 for the one test on 113 right L19-L33, we estimated what a key of this code scores on lines it was not fitted on, using
 the training lines only (scripts/cv_estimate.py; same voting and metric as build_key3.py, pass-4 numbers; the held-out
-numbers and their gloss were not opened). Fitted on 113 right L01-L09 + 114 left and scored on L10-L18: **0.674**
+numbers were not opened). Fitted on 113 right L01-L09 + 114 left and scored on L10-L18: **0.674**
 (0.707 with unseen values filled from Fable's table); the reverse fold: **0.650** (0.665). The best of 50 shuffled keys
 scores 0.27-0.28. These figures are optimistic (the starting draft key was itself fitted on all training lines), and
 even the resubstitution of 113 right, the part read from the better gloss, is 0.754. A held-out score of 0.85 is
@@ -157,7 +162,7 @@ does not follow the cipher) and the number readings, not from missing values. **
 held-out numbers stay unused** for a later attempt with a metric that allows for this, or a better key. The decode does
 beat the shuffled keys by some 0.4, which shows that the system is right; it does not validate the key.
 
-## The date: 18/28 November 1675 (cipher and gloss agree)
+## The date: 18/28 November 1675 (cipher); the gloss date probably 18, not settled
 
 The cipher's last line on 114 left begins with the date in figures, written as a fraction: `18` over `28` (read so by
 both pass-3 readers; one saw `18` above, separated by a stroke). The gloss signature on 114 left line 4 reads
@@ -168,12 +173,13 @@ context, 3 of 3 control digits right), the upper number of the fraction is `18`:
 **18/28 Novembris**, while the gloss gives **d. 13 Novembris**. Either the letter was drafted on the 13th and enciphered
 or sent on the 18th, or the gloss writer slipped. We do not settle which. (Issue #629.)
 
-**18 Nov 2026: settled.** Daniel asked (#647) whether the gloss's upper second digit is 3 or 8. On a second blind digit-form check
-(Brice Dudout, 17 Nov 2026 evening: the digit framed alone, the neighbouring gloss masked, reference 3s and 8s taken from the cipher of
-the same page for want of other 3s or 8s by the gloss hand; 1 of 1 control right) the digit looks like the **8**. The gloss reads
-`d. 18 Novembris` (18/28 if the lower `23` is likewise `28`), like the cipher: there is no date disagreement, and the letter is dated
-**18/28 November 1675** (Old Style / New Style). The frozen pass transcriptions keep their first reading (`13`); only this note and the
-profile change.
+**Gloss date: probably 18 (not settled).** Daniel asked (#647) whether the gloss's upper second digit is 3 or 8. On a second blind
+digit-form check (Brice Dudout, 17 Nov 2026 evening: the digit framed alone, the neighbouring gloss masked, reference 3s and 8s taken
+from the cipher of the same page for want of other 3s or 8s by the gloss hand; 1 of 1 control right) the digit looked like the **8**.
+Daniel, looking again (#647, 18 Nov), sees a small open-topped digit closer to a 3 than to the closed 8 of the cipher's `18`, with a
+second figure squeezed in beneath. One blind check with one control and reference digits from the cipher hand does not settle it: the
+gloss date is **probably 18 (not settled)**, possibly 13. The letter is dated by the cipher's own `18/28`, which is enough for the
+title. The frozen pass transcriptions keep their first reading (`13`).
 
 ## Prior art
 
@@ -196,4 +202,4 @@ found. The reading is the chancery's own decipherment of the time, so this is no
 - The draft key is untested; 113 right L19-L33 are kept aside for one test. Resubstitution is stuck near 0.66 with
   the present gloss reading (Fable's key included); a better reading of G21-G33 would help more than a new key.
 - The block table and the doubled-letter cells (Fable's hypotheses) are unchecked against new text.
-- The recipient (Hoghusen?) is open. (The date question is settled: 18/28 Nov 1675, see The date.)
+- The recipient (Hoghusen?) is open. The gloss date is probably 18, not settled (the cipher's 18/28 dates the letter; see The date).
