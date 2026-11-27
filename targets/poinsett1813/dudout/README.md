@@ -8,7 +8,7 @@ Contribution by Brice Dudout. Daniel's files in the parent folder are unchanged.
 
 Historical Society of Pennsylvania, Joel R. Poinsett Papers (Gilpin collection), vol. 1, folder 10: Poinsett to the
 Secretary of State, Buenos Aires, 29 June 1811, p. 2. Two lines in code (19 groups) carry the plain text written over the
-groups. Read from research photographs taken at the HSP; the photographs are not published here.
+groups. Read from study photographs that the HSP staff took and sent on 3 Nov 2026; the photographs are not published here.
 
     They have informed ^ me that some arms° are on the way from the U States at private contract
     1121 713 1348 210^ 1178 284 973 204 514 531 1355 305 310 1355 98 1215 752 236 1179
