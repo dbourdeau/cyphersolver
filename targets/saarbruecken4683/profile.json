@@ -1,0 +1,285 @@
+{
+ "schema_version": 1,
+ "target": "saarbruecken4683",
+ "title": "Captivity of Count Gustav Adolf of Nassau-Saarbrücken, 1673-74 (Landesarchiv Saarland, Nassau-Saarbrücken II Nr. 4683): the numeric cipher of the Nassau correspondence rebuilt from the decipherments of the time as a 24-cell table and tested on held-out drafts; a letter from The Hague in a second system; read in part",
+ "documents": [
+  {
+   "id": "lasaar-nsb2-4683-fol290-1674-02-12",
+   "read": "read in part",
+   "shelfmark": "Saarbrücken, Landesarchiv Saarland, Nassau-Saarbrücken II Nr. 4683, fol. 290r-290v",
+   "date": "2/12 Feb 1674",
+   "year": 1674,
+   "country": "Netherlands",
+   "route": "a brother of Gustav Adolf and of the addressee, signing \"X X\" -> probably Count Johann Ludwig of Nassau-Ottweiler",
+   "places": {
+    "from": "The Hague",
+    "to": "Ottweiler"
+   },
+   "language": "German",
+   "pages": 2,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "interlinear"
+    ],
+    "source": "interlinear decipherment of the time over almost every cipher group",
+    "partial": true
+   },
+   "length": {
+    "tokens": 1396,
+    "unit": "mixed",
+    "measured": true,
+    "file": "transcription_290.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "photographs supplied by the Landesarchiv Saarland, 26 Nov 2026 (6096 x 4745 px); not reproduced",
+    "image_quality": "good",
+    "notes": "Two blind passes by Claude Opus 5.5 agents, 66 disagreements settled on the image (49 settled, 7 left illegible); clear words of pass A put in place (9 lines in approximate order, marked)."
+   }
+  },
+  {
+   "id": "lasaar-nsb2-4683-fol293-1674-01-23",
+   "read": "read in part",
+   "shelfmark": "Saarbrücken, Landesarchiv Saarland, Nassau-Saarbrücken II Nr. 4683, fol. 293r-293v (lines 1-41)",
+   "date": "received 23 Jan 1674",
+   "year": 1674,
+   "country": "Germany",
+   "route": "unnamed correspondent -> Count Johann Ludwig of Nassau-Ottweiler (copy)",
+   "places": {
+    "from": "unknown",
+    "to": "Ottweiler"
+   },
+   "language": "German",
+   "pages": 2,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "this copy carries no decipherment",
+    "partial": false
+   },
+   "length": {
+    "tokens": 465,
+    "unit": "mixed",
+    "measured": true,
+    "file": "transcription_293.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "photographs supplied by the Landesarchiv Saarland, 26 Nov 2026; not reproduced",
+    "image_quality": "good",
+    "notes": "Two passes by one Claude Opus 5.5 agent (the second not fully independent), 8 disagreements, 6 settled on the image; clear text transcribed once."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "homophonic",
+   "nomenclator"
+  ],
+  "summary": "System A (the whole file except fol. 290): numbers 40-199 stand for letters on a 24-cell table repeated every 24 (letter = table[n mod 24]; e.g. e = 52, 76, 100, 124, 148, 172), numbers from 200 up are a nomenclator (about 50 recovered: 622 Saarbrück, 290 Frankreich, 253 Kaiser, 282 Memorial, 807 Montecuccoli). Cipher passages are set in clear German text; groups are often written without separators but split unambiguously (1xx three digits, 4x-9x two). System H (fol. 290r-v, The Hague): one number per letter in alphabetical order (a 1, b 2, ... z 24) with a few codes (70 England, 180 Prince of Orange).",
+  "symbol_kind": "digits",
+  "distinct_symbols": "unknown",
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": true,
+   "kinds": [
+    "names",
+    "places",
+    "common words"
+   ]
+  },
+  "nulls": {
+   "present": false
+  },
+  "word_division": "none",
+  "diacritics": {
+   "used": false
+  },
+  "key_order": "partly alphabetical",
+  "notes": "Residue 6 of the A table is voted s by the glosses (one would expect x, rare); 6 nomenclator groups of fol. 293 have no value. In system H, 15 is read n in nicht/sondern/genereux by the glosses (otherwise p) and 23 stands for x in expressen but in genugsamb too."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "in archive",
+   "where": "Most received letters of the file carry the decipherment of the recipient's chancery between the lines, and the outgoing letters have their clear-text drafts; the copy fol. 293 has none. Not in the catalogue, the leads, DECODE, nor in print as far as searched (26-27 Nov 2026).",
+   "found": "before attempt",
+   "used": true
+  },
+  "inputs": [
+   "images",
+   "known plaintext"
+  ],
+  "attack": "archive decipherment",
+  "human_role": "Brice Dudout obtained the images (offered by the archive), chose the target and set the rules (protocol hashed before each single measurement). Claude Opus 5.5 agents transcribed, rebuilt the keys, wrote and ran the protocols, read and wrote up. No human read the reading.",
+  "models": [
+   "Claude Opus 5.5 (Anthropic), agents run by Brice Dudout (transcription, key, protocols, measurement, reading, write-up)"
+  ],
+  "first_date": "2026-11-26",
+  "last_date": "2026-11-27"
+ },
+ "solution": [
+  {
+   "date": "2026-11-26",
+   "kind": "transcription",
+   "what": "Inventory of the 47 double pages; number-letter pairs taken from the interlinear decipherments and concept margins of 34 pages (2,439 letter pairs, 110 code pairs).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-26",
+   "kind": "key from source",
+   "technique": [
+    "plaintext matching"
+   ],
+   "what": "Key K: majority value per number from the pairs.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-27",
+   "kind": "verification",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "Test 1 (hashed beforehand): K on the outgoing letter fol. 297r-v against its draft fol. 298r-v: 0.707 vs best of 200 permuted keys 0.327; bar 0.85 not met (the draft is not verbatim).",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-27",
+   "kind": "key from source",
+   "technique": [
+    "key-structure hypothesis"
+   ],
+   "what": "Homophones congruent mod 24 noticed after test 1: key reduced to a 24-cell table.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-27",
+   "kind": "verification",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "Test 3 (hashed beforehand, threshold justified by a key-free measurement on the burnt pair): 24-cell table on held-out margin blocks of the drafts fol. 318r-v and glossed groups of fol. 336r/321r (346 numbers): 0.815 vs bar 0.664 and best of 200 permuted tables 0.330.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-27",
+   "kind": "verification",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "Letter from The Hague: key learnt on the glosses of 290r, tested on those of 290v: 0.948 vs best of 200 permuted keys 0.301.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-27",
+   "kind": "reading",
+   "what": "290r-v read with the glosses' help: 286 cipher words, 247 certain, 24 probable, 10 restored, 5 unresolved. Copy fol. 293r-v (no decipherment) read in part: 80 words, 56 certain, 10 probable, 2 restored, 12 unresolved (8 of them nomenclator codes).",
+   "result": "partial"
+  }
+ ],
+ "outcome": {
+  "class": "read in part",
+  "key": "partial",
+  "method": "key recovered based on adjacent plaintext",
+  "method_basis": "The key of system A was rebuilt from the decipherments of the time written between the lines of the received letters and from the clear-text drafts of the outgoing ones, reduced to a 24-cell table, and tested on cipher blocks and glossed groups not used to build it; the key of the Hague letter was learnt from the glosses of its recto and tested on those of its verso.",
+  "contribution": [
+   "transcription",
+   "key recovered"
+  ],
+  "fraction_read": 0.946,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "decryption_290.txt: numbers with a letter value, 1,320 of 1,396 (pass arbitration left the rest illegible or without value). Share of words read as sense is lower, see fraction_coherent.",
+  "verification": [
+   "statistical test",
+   "contemporary decipherment",
+   "historical consistency"
+  ],
+  "validation": {
+   "date": "2026-11-27",
+   "verdict": "pass",
+   "file": "validation.txt",
+   "notes": "Contributor's pre-registered tests (not docs/_validate.py). System A: test 1 failed (0.707 < 0.85), test 3 passed (0.815, bar 0.664, best control 0.330). System H: 0.948 vs 0.301. Deviations declared in validation.txt."
+  },
+  "provenance": "contributed",
+  "credits": [
+   {
+    "who": "contemporary",
+    "role": "key or decipherment used",
+    "note": "the interlinear decipherments of the Nassau-Ottweiler chancery on the letters received in 1673-74 and the clear-text drafts of the outgoing letters, in Nassau-Saarbrücken II Nr. 4683",
+    "date": "1673-1674"
+   },
+   {
+    "who": "lasaar",
+    "role": "pointer",
+    "note": "pointed out the file Nassau-Saarbrücken II Nr. 4683 and supplied its photographs (Dr David Schnur, 26 Nov 2026)",
+    "date": "2026-11-26"
+   },
+   {
+    "who": "dudout",
+    "role": "solution",
+    "note": "transcription; key of system A rebuilt from the decipherments of the time as a 24-cell table and tested on held-out drafts; key of the Hague letter; two letters read in part and translated; with AI agents",
+    "date": "2026-11-27"
+   }
+  ],
+  "gaps": [
+   {
+    "item": "nomenclator groups of fol. 293 (303, 314, 327, 330, 418, two unknown) and Hague codes 160, 170, 273, 28-",
+    "blocker": "open-codes",
+    "detail": "no gloss in the file for these groups; other letters of Nr. 4683 not yet transcribed may gloss them"
+   },
+   {
+    "item": "the other received letters (fol. 160-161, 234-236, 247, 254, 265-266, 279-281, 312-316, 331-339)",
+    "blocker": "no-key-material",
+    "detail": "not counted here as documents: their decipherment of the time exists; only their glosses were used as key material"
+   },
+   {
+    "item": "rest of the copy fol. 293v-295r",
+    "blocker": "illegible",
+    "detail": "not yet transcribed; the copy may duplicate the glossed letter fol. 279r-281r (same date of receipt), to be checked"
+   },
+   {
+    "item": "writer of the Hague letter (\"X X\")",
+    "blocker": "needs-physical-access",
+    "detail": "he calls the captive and the addressee his brothers; Walrad of Nassau-Usingen, a brother in Dutch service, is a hypothesis only"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "lasaar-nsb2-4683-fol290-1674-02-12",
+    "label": "Letter from The Hague, 2/12 Feb 1674, fol. 290r-v",
+    "transcription": "transcription_290.txt",
+    "decryption": "decryption_290.txt",
+    "reading": "reading_290.md",
+    "translation": "translation_290.md",
+    "language": "de",
+    "state": "read in part",
+    "read_share": 0.864,
+    "summary": "From The Hague, a brother of the captive count reports that the Prince of Orange and the imperial minister will write to Bournonville to reinforce Homburg; he praises the captive's resolution, says all who hold fiefs of Metz are concerned, mocks Rochefort's letter which confuses vassals and subjects, and expects peace with England within days (the Treaty of Westminster was signed on 19 Feb 1674)."
+   },
+   {
+    "doc": "lasaar-nsb2-4683-fol293-1674-01-23",
+    "label": "Copy of a letter received 23 Jan 1674, fol. 293r-v (first 41 lines)",
+    "transcription": "transcription_293.txt",
+    "decryption": "decryption_293.txt",
+    "reading": "reading_293.md",
+    "translation": "translation_293.md",
+    "language": "de",
+    "state": "read in part",
+    "read_share": 0.7,
+    "summary": "A correspondent answers Johann Ludwig's order of 18 Dec 1673 on the 'godless proceedings' at Saarbrücken: the arrest is to be denounced to the Emperor, silence would be the greater prejudice; the only stated cause is the revers that was refused; he weighs bringing the case before the arbitration (at the Cologne peace talks), where some members favour the Emperor's party."
+   }
+  ],
+  "key_file": "key.tsv",
+  "notes": "Images: supplied by the Landesarchiv Saarland, which allows their online publication with the credit line \"Landesarchiv Saarland, Nassau-Saarbrücken II Nr. 4683, fol. ...\"; none is committed here, only their SHA-256 (frozen/IMAGES-SHA256SUMS.txt). The key is reusable (key.tsv) for the other letters of the file.",
+  "codes_open": {
+   "open": 11,
+   "total": 61,
+   "tokens_open": 13
+  },
+  "fraction_coherent": 0.864
+ }
+}
