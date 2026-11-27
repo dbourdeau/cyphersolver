@@ -5431,6 +5431,14 @@
    "by": "John Entick (dictionary); used by Arthur, William and Richard Henry Lee",
    "year": 1779,
    "note": "A printed dictionary used as a book code; the book was identified by Burnett (1917) and Tomokiyo, the London 1776 printing (Dilly) and the rule of counting headword entries fixed in targets/lee1779 (court = 108a9 fits 1776, not 1773). Internet Archive scan bim_eighteenth-century_the-new-spelling-diction_entick-john_1776."
+  },
+  {
+   "id": "k-fenian1885",
+   "label": "Fenian letter No. II number alphabet, 1885: one shifted alphabet over 60-85 (A = 77, J = 60)",
+   "kind": "rebuilt here",
+   "by": "Malcolm McBratney, with AI agents (Claude)",
+   "year": 1885,
+   "note": "Two-digit numbers for letters, letter n written 60 + (n + 16) mod 26. Recovered from the ciphertext with the crib IRISH WORLD (x-y-x repeat); checked on WOLFE TONE, CANADA, RUS-A and OUR NAT-E L-D; 0 of 5,000 random keys and shuffles reach it (targets/fenian1885letter2/key/KEY.tsv)."
   }
  ],
  "links": [
@@ -8698,7 +8706,7 @@
    "how": "read unchanged",
    "note": "applied unchanged to the 25 runs Narváez did not print in 2015; on his 10 printed runs it gives 88 of 89 letters"
   },
-    {
+  {
    "key": "k-clave-extra3",
    "target": "murguia1914",
    "how": "rebuilt from",
@@ -8817,6 +8825,12 @@
    "target": "dumas1777",
    "how": "read unchanged",
    "note": "the key gives the reading's letter for 4,480 of the 4,503 numbers of the principal copies (one of them c written for k); tested first against the decipherer's letters on a page chosen in advance, 129 of 134"
+  },
+  {
+   "key": "k-fenian1885",
+   "target": "fenian1885letter2",
+   "how": "rebuilt from",
+   "note": "recovered from the ciphertext alone; gives the letters of 67 of 71 pairs"
   }
  ],
  "sources": [
@@ -10285,6 +10299,10 @@
   {
    "source": "s-tomokiyo",
    "key": "k-dumas1776"
+  },
+  {
+   "source": "s-cyphersolver",
+   "key": "k-fenian1885"
   }
  ],
  "unlinked": {
