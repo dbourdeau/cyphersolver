@@ -4,7 +4,9 @@ Status: read
 Outcome: key recovered from ciphertext-only (blind annealing; the plaintext match came after), 27 Nov 2026. The block
 enciphers the first 232 of the 293 letters of the riddle written in clear on f. 21r l.7 - 21v l.2; aligned, 220 of its
 228 signs (96.5%) take the key; the rest are scribal slips or
-the three places where the cipher corrects the record of the clear copy. Every sign has a value.
+places where the project's record misread the clear copy (re-read on the f. 21r image, see below). Every sign has a value.
+Scope (after Brice Dudout's review, 27 Nov 2026): the witness is probably a 15th-century copy; the compiler broke the
+riddle's other copy (20r.8) himself and wrote its plaintext on f. 21r, so this is not the first break of the text.
 
 Source folder: the corpus work in the main checkout, `targets/ljs51corpus/` (`solve_48r/`, chain records 48r.8, 47r.1
 and 20r.8, `translation_0006_0053.md` section 20r.8, `NOTES.md`). Copied here: `REPORT.md` (the result and method),
@@ -22,15 +24,17 @@ block (chain 47r.1) use other keys; the riddle's other encipherment, chain 20r.8
   `https://openn.library.upenn.edu/Data/0001/ljs51/data/master/0084_0100.tif`). 19 lines of invented signs, groups of
   2-8 signs between dotted-stem dividers.
 - Heading on 48r l.7: one word, first read وابعها [?] (chain record 48r.8: ورابعها "and the fourth of them" or واتبعها
-  "and he followed it with" possible); the corpus recheck of 28 Nov 2026 gives ورابعها ("and the fourth of them"). No
+  "and he followed it with" possible); the corpus recheck of 27 Nov 2026 gives ورابعها ("and the fourth of them"). No
   plaintext stands after the block, and the sender is not named. The corpus notes think a leaf was probably lost after
   f. 48 (not checked here).
 - The remark on 49r that a cipher "was not solved except after much toil" belongs to the short block 49r l.1-4 (chain
-  49r.1, answered by the verses on 49r l.6-7), per the corpus recheck of 28 Nov 2026; not to this block.
+  49r.1, answered by the verses on 49r l.6-7), per the corpus recheck of 27 Nov 2026; not to this block.
 - Dating: the corpus notes put the correspondence of the volume c. 1325-1360 (al-Mutarjim active in Damascus before
-  725/1325 and still there in 745/1344-45; Ibn al-Durayhim, d. 762/1361, praised in it). Penn dates the manuscript
-  "14--" (as recorded for the sibling `qaysarani1350`). The compiler is probably Ibn al-Durayhim: supported, not proven
-  (`ljs51corpus/identity_ibn_durayhim.md`).
+  725/1325 and still there in 745/1344-45; Ibn al-Durayhim, d. 762/1361, praised in it). Penn's record: "Possibly written in Syria, in the 15th century", date "14--"
+  (`ljs51corpus/prior_art_2.md`). So the ciphertext read here is probably in a 15th-century copy; the swapped, dropped and
+  doubled signs fit a copyist (Dudout). As a document it is not clearly older than Siena 1413. The compiler may be Ibn
+  al-Durayhim (`ljs51corpus/identity_ibn_durayhim.md`: supported, not proven); against: Penn names no one, the volume lacks
+  beginning and end, and he is praised in it. The page says "a secretary of Ibn al-Durayhim's Damascus circle" is safer.
 
 ## The plaintext
 
@@ -64,7 +68,7 @@ because the alignment scored the clear copy's العسي, so `key.json` here set
 5. 2x-3x re-read of every flagged position on the masters (`recheck_2x.md`): five transcription errors, six misplaced
    dividers corrected (229 -> 228 signs).
 6. Found a second time in the corpus recheck by a group-length search over the book's passages (43 of 49 groups;
-   corpus NOTES, 28 Nov 2026).
+   corpus NOTES, 27 Nov 2026).
 7. Rule-out (`ruleout.txt`): the decoded block against all 206 plaintexts of the book: 20r.8 95.2%, next best 22.3%
    (22r.1), median 9.2%.
 
@@ -75,8 +79,14 @@ itself is self-consistency.
 
 - ترميها where the 20r.8 record reads توهمها; يحمد منها where it reads وخمد منها; القسي "the bows" where it reads
   العسى[?] (with وتطعنها الاسنه "the spears" after it). اوطا ظهر confirmed.
+- Re-read on the f. 21r master (0084_0046, crops at 2-4x, 27 Nov 2026, model's reading; asked for by Dudout): the clear
+  copy has ترميها (two dots over the first letter, ر, two dots under the tooth) as the cipher; تحمد (two dots above, no و),
+  same skeleton as the cipher's يحمد; العسي/القسي with an undotted head after al-, which the cipher's ق settles; جمّلها with
+  a shadda (not جمالها), as the cipher. So the record misread the clear copy; the cipher does not correct the clear copy
+  except by settling the undotted ق. Qaws al-naddāf (cotton-carder's bow) + quilting needles would fit القسي (Dudout);
+  an Arabist should confirm.
 - Scribal slips in the cipher: الاكانف (ن and ا swapped), وطيها (ب dropped), تتجافاها (TH written twice), اصلاح (ل
-  dropped, or a correction: see doubts), وجهها for وجمعها, منه ما for منها ما, جملها for جمالها.
+  dropped, or a correction: see doubts), وجهها for وجمعها, منه ما for منها ما. جملها is not a slip (clear copy جمّلها).
 
 ## Transcription doubts
 - TT (48r l.12, the ص of اصلاح) - read: ص; checked: image (2x), decode; it carries a hooked ascender the TT of 48v l.1
@@ -103,18 +113,42 @@ translation of 20r.8, cut to the enciphered part, with the three places the ciph
 
 ## Prior work
 
-No study of LJS 51 found (corpus prior-art notes; the sibling's vetting of 15 Nov 2026: Penn TEI, Digital Scriptorium,
+The compiler's own break: he solved the riddle's other encipherment (20r.8) "quickly because of its ease" (21r l.6) and
+wrote the plaintext on f. 21r; Penn's record says the letters are "accompanied by transcriptions". So the plaintext of this
+block was never lost, and `first_break` is "unpublished prior". Medieval worked solutions of the same type: Ibn
+al-Durayhim's Miftāḥ al-kunūz, two ciphers of devised symbols solved from frequencies (Mrayati, Meer Alam, al-Tayyan,
+Arabic Origins of Cryptology vol. 3, p. 33, pp. 101-124; cited by Dudout, not seen). Penn cites Transformation of
+Knowledge (2006), p. 43, for the manuscript (not reachable, `ljs51corpus/prior_art_2.md`).
+
+No study of the ciphers of LJS 51 found (corpus prior-art notes; the sibling's vetting of 15 Nov 2026: Penn TEI, Digital Scriptorium,
 DECODE, Tomokiyo, Lasry's list, web). DECODE has no record of the manuscript.
 
+## Review by Brice Dudout (email, 27 Nov 2026)
+
+- Independent re-run with his own 4-gram model (same five OpenITI texts as ar-mamluk) and annealer: 7 of 11 restarts
+  reach the riddle (about -2.10 per sign); shuffled ciphertext, best of 12 restarts -3.18, no sense.
+- No leak: none of 14 distinctive phrases of the riddle in the five source texts; 0.7% of its 12-grams occur there.
+- Length: 228 signs = 4-7x the unicity distance of a simple substitution in Arabic.
+- Narrowing asked for and made on the page: 15th-c. copy; compiler's prior break; Miftāḥ worked examples; plaintext in
+  the codex said in the summary; attribution softened; Transformation of Knowledge cited; dates fixed (28 -> 27 Nov).
+- Statistics: the _validate shuffled-refit null had n = 6 and started one restart from the final key. Rerun blind vs
+  blind (`null_blind.json`, same annealer as _validate.py, all restarts from random keys): real best of 20 -2.658;
+  shuffled n = 60 (best of 2 each) mean -2.992, sd 0.075, max -2.856; z 4.5, p = 1/61.
+- Still owed: an Arabist's reading (Alan Elbaum asked for f. 106v); Brice offered to rerun nulls or check f. 21r.
+
 ## Remaining gaps
+- reader: no Arabist has checked the transcription, the reading or the f. 21r re-read; the A grade is a model's.
+- the heading ورابعها "the fourth of them" against 20r l.7 "the third of the ciphered pieces": two runs, or read
+  واتبعها; not settled.
+- للراكبان (dual -ān after li-) in both copies; جملته (21v l.1 جمّلها ربها جملته وازادها نعمته) left untranslated.
 - none for the block: every sign has a value; the 8 signs that do not take the letter of the clear copy as recorded are
-  scribal slips or the three places where the cipher corrects the record (ترميها, يحمد, القسي).
+  scribal slips or places where the record misread the clear copy (ترميها, تحمد/يحمد, القسي undotted).
 - the ل of اصلاح (48r l.12): slip or correction, not settled (see Transcription doubts); does not affect the reading.
 
 ## Escalation
 - [x] siblings: the f. 47r key tried (does not fit); 49r verses and the 47r riddle and answer verses tested
 - [x] clear-pages: the clear riddle on f. 21r l.7 - 21v l.2 is the plaintext
 - [x] known-keys: 47r.1 key tried
-- [n/a] print: no edition or study of LJS 51 found
+- [n/a] print: no edition or study of the ciphers of LJS 51 found (Transformation of Knowledge 2006 p. 43 not reachable)
 - [n/a] key-rebuild: the key is complete; all 228 signs have a value
 - [x] retry: every flagged position re-read at 2-3x (recheck_2x.md)

@@ -7,7 +7,7 @@
    "id": "f48r-48v",
    "read": "read",
    "shelfmark": "University of Pennsylvania, Kislak Center, LJS 51, f. 48r l.8 - 48v l.13 (OPenn images 0084_0100, 0084_0101)",
-   "date": "correspondence of the volume about 1325-1360 (this project's dating in the corpus notes); Penn dates the manuscript \"14--\"",
+   "date": "correspondence of the volume about 1325-1360 (this project's dating from internal evidence); the witness is probably a 15th-century copy: Penn's record \"Possibly written in Syria, in the 15th century\", date \"14--\"",
    "year": 1340,
    "country": "Syria or Egypt",
    "route": "unnamed sender -> the unnamed compiler",
@@ -64,10 +64,10 @@
  },
  "conditions": {
   "prior_solution": {
-   "exists": "no",
-   "where": "No study of LJS 51 found (corpus prior-art notes; the sibling target's catalogue vetting of 15 Nov 2026: Penn TEI, Digital Scriptorium, DECODE, Tomokiyo, Lasry's list, web). DECODE has no record of the manuscript. The compiler gives the riddle in clear on f. 21r but writes no solution after this block.",
-   "found": "not found",
-   "used": false
+   "exists": "in archive",
+   "where": "In the same codex: the compiler broke the riddle's other encipherment (chain 20r.8, ff. 20r-21r) himself, \"quickly because of its ease\" (21r l.6), and wrote the plaintext in clear on f. 21r l.7 - 21v l.2. No study of the ciphers of LJS 51 found (Penn TEI, Digital Scriptorium, DECODE, Tomokiyo, Lasry's list, web); Penn cites Transformation of Knowledge (2006), p. 43, for the manuscript (not seen). DECODE has no record of it.",
+   "found": "after reading",
+   "used": true
   },
   "inputs": [
    "images"
@@ -167,6 +167,35 @@
    ],
    "what": "Statistical validation (docs/_validate.py): 228 tokens, 27 types, ar-mamluk order 4: reading -2.627 per letter; random keys -5.236 (z 5.5); key annealed onto shuffled ciphertext best -2.841 (mean -2.911, z 5.5); annealer on the real text -2.715. Verdict: pass.",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-27",
+   "kind": "verification",
+   "technique": [
+    "plaintext matching"
+   ],
+   "what": "Re-read on the f. 21r master (0084_0046, crops at 2-4x, after Brice Dudout's review) the clear-copy words where the record and the cipher differ: the clear copy has tarmiha (as the cipher, record tawahhumuha), tuhmad with two dots above (same skeleton as the cipher's yuhmad, record wa-khamad), an undotted letter after al- in al-qisi/al-'asi (the cipher's qaf settles it), and jammalaha with a shadda (as the cipher, record jamaluha, so not a slip). The record misread the clear copy; the cipher corrects it only by settling the undotted qaf.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-27",
+   "kind": "control",
+   "technique": [
+    "statistical test",
+    "simulated annealing"
+   ],
+   "what": "Blind-vs-blind null (null_blind.json; the docs/_validate.py annealer, 4,675 steps, every restart from a random key): best of 20 runs on the real signs -2.658; 60 shuffles of the signs, best of 2 restarts each, mean -2.992, sd 0.075, max -2.856; z 4.5, p = 1/61. Replaces the n = 6 shuffled refit, which started one restart from the final key.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-27",
+   "kind": "verification",
+   "technique": [
+    "simulated annealing",
+    "language-model scoring"
+   ],
+   "what": "Independent re-run by Brice Dudout, with none of this project's code: his own 4-gram model from the same five OpenITI texts and his own annealer reached the riddle in 7 of 11 restarts (about -2.10 per sign); shuffled ciphertext, best of 12 restarts -3.18, no sense. None of 14 distinctive phrases of the riddle occurs in the five source texts; 0.7% of its 12-grams do.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -198,7 +227,7 @@
    },
    "power": -2.715,
    "verdict": "pass",
-   "notes": "claimed per-occurrence score -2.627; polyphony 0.0; 0 unread tokens left out; annealer on the real text from random keys reached -2.715"
+   "notes": "claimed per-occurrence score -2.627; polyphony 0.0; 0 unread tokens left out; annealer on the real text from random keys reached -2.715; blind-vs-blind rerun (null_blind.json): shuffled n = 60, mean -2.992, max -2.856; real blind best -2.658, z 4.5, p = 1/61"
   },
   "class": "read",
   "key": "recovered",
@@ -208,16 +237,17 @@
    "transcription",
    "key recovered"
   ],
-  "first_break": true,
+  "first_break": "unpublished prior",
   "fraction_read": 1.0,
   "fraction_read_method": "measured",
-  "fraction_read_source": "transcription.txt decoded with key.json (decode.py): all 228 cipher signs have a value; 220 of them give the letter of the clear copy as recorded (verify_v2.py); the other 8 are scribal slips (emended in reading.md) or the three places where the cipher corrects the record; unit cipher signs",
+  "fraction_read_source": "transcription.txt decoded with key.json (decode.py): all 228 cipher signs have a value; 220 of them give the letter of the clear copy as recorded (verify_v2.py); the other 8 are scribal slips (emended in reading.md) or places where the record misread the clear copy; unit cipher signs",
   "verification": [
    "independent clear copy",
    "key confirms",
-   "statistical test"
+   "statistical test",
+   "independent verification"
   ],
-  "notes": "The block enciphers part of the riddle (to جملته), not all of it; the rest of the clear text is not enciphered here. The cipher corrects the 20r.8 record of the clear copy in three places: ترميها (record توهمها), يحمد (record وخمد[?]), القسي (record العسى[?]).",
+  "notes": "The block enciphers part of the riddle (to جملته), not all of it. The witness is probably a 15th-century copy of a letter of about 1325-1360. Not the first break of the text: the compiler broke the riddle's other encipherment (20r.8) and wrote the plaintext on f. 21r. Re-read on the f. 21r image, the clear copy has ترميها, تحمد and جمّلها where the 20r.8 record has توهمها, وخمد[?] and جمالها; the cipher's ق settles the undotted letter of القسي. The 220/228 count is against the record.",
   "key_file": "key.json",
   "texts": [
    {
@@ -234,9 +264,16 @@
      "by": "Claude (write-up session, a model's review, not a person's)",
      "reader_kind": "model",
      "date": "2026-11-27",
-     "note": "Read as sentences against the clear copy on f. 21r (chain 20r.8) and its translation: every rhymed-prose clause builds; the seven slips are emended in [ ] from the clear copy, and three places follow the cipher against the record of the clear copy."
+     "note": "Read as sentences against the clear copy on f. 21r (chain 20r.8) and its translation: every rhymed-prose clause builds; the seven slips are emended in [ ] from the clear copy, and three places follow the cipher against the record of the clear copy. Re-checked 27 Nov 2026 against the f. 21r image after Brice Dudout's review: the record misread ترميها, تحمد and جمّلها; the jammalaha emendation dropped. No Arabist has checked the reading yet."
     },
     "summary": "The first part of a riddle in rhymed prose, the third of al-Jawlānī's test pieces, which the compiler writes in clear on f. 21r: something soft of sides and wide of flanks that visits at night and leaves at dawn, counted among the bliss of Paradise and spread out 'by a permitted contract'. The compiler gives the answer as the raised couches (furush marfūʿa) of Sūrat al-Wāqiʿa. The enciphered copy stops at جملته."
+   }
+  ],
+  "credits": [
+   {
+    "who": "dudout",
+    "role": "verification",
+    "note": "Review of the page by email, 27 Nov 2026: an independent re-run of the blind break with his own model and annealer, a leak check of the language model, and the narrowing of the claim (15th-century copy, the compiler's own break, Miftah worked examples, attribution, prior citation, statistics, the f. 21r check)."
    }
   ]
  }

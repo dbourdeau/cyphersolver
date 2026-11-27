@@ -9,11 +9,13 @@ are not in the 20r.8 translation. Rhymed prose, not verse.
 > spearheads (al-asinna) pierce it, yet it is counted among the bliss of the people of Paradise. Its gathering is
 > covered by the backs (or: by appearing, bi-l-ẓuhūr), and spreading it out (iftirāshuhā) is by a permitted contract,
 > not forbidden; of it is praised (yuḥmad) † what is blamed in the schools of law. Its back is the most trodden
-> [awṭaʾ] back [ẓahr] for the two riders; its beauty [jamāluhā]: its lord made it complete (jammalahu?, written جملته).
+> [awṭaʾ] back [ẓahr] for the two riders; its Lord adorned it (jammalahā, جمّلها) ... (جملته, not translated).
 
 † ترميها القسي and يحمد are the cipher's readings; the 20r.8 record of the clear copy has توهمها العسى[?] ("[People]
 imagine it [al-ʿasā [?]: not translated]") and وخمد[?] (not translated). The 20r.8 translation marks awṭaʾ, ẓahr and
-jamāluhā as doubtful in the clear copy; the cipher confirms اوطا ظهر.
+jamāluhā as doubtful in the clear copy; the cipher confirms اوطا ظهر. Re-read on the f. 21r image (27 Nov 2026): the
+clear copy has جمّلها with a shadda, not جمالها, and the cipher agrees (جملها); it also has ترميها and تحمد, so the record
+misread those two words. للراكبان (dual -ān after a preposition, classical -ayn) is in both copies and is not explained.
 
 The translation notes on 20r.8: a riddle (lughz) in rhymed prose, the third of al-Jawlānī's test pieces; the compiler
 gives the answer as the raised couches (furush marfūʿa) of Sūrat al-Wāqiʿa (Q 56:34). The text plays on the bed and the

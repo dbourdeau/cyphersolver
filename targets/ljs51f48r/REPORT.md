@@ -1,4 +1,4 @@
-# LJS 51 ff. 48r l.8 - 48v l.13: deciphered (28 Nov 2026)
+# LJS 51 ff. 48r l.8 - 48v l.13: deciphered (27 Nov 2026)
 
 Status: key recovered from ciphertext only, then confirmed against a plaintext elsewhere in the volume.
 
@@ -45,7 +45,7 @@ encipherments of the same riddle; 20r.8 should now be re-keyed with this text.
 ## Earlier attempt (same day, sub-agent): 47r key; riddle verses 1-5; 49r verses; answer verses: all ruled out
 (see the files align_*.py, control_align.py, lm47.py).
 
-## 2x re-read on the master (28 Nov 2026; `recheck_2x.md`, `transcription_v2.txt`, `verify_v2.py`)
+## 2x re-read on the master (27 Nov 2026; `recheck_2x.md`, `transcription_v2.txt`, `verify_v2.py`)
 
 Every flagged position was re-read at 2-3x. Five were transcription errors (an extra W on 48v l.2, a missed SW on
 48v l.10, HK for SW on 48v l.12, a phantom W on 48v l.13, and the SW over a divider on 48v l.10); six dividers were

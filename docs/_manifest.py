@@ -38,7 +38,7 @@ PAGES = [
          rights='Text only; no free image of the inlay found'),
     dict(slug='ljs51f48r', label='Al-Jawlānī&rsquo;s riddle in cipher', year='c. 1325&ndash;60', y=1340, place='Syria or Egypt', st='read', stt='read',
          title='Al-Jawlānī&rsquo;s riddle in cipher, about 1325&ndash;1360 (Penn LJS 51, f. 48r)',
-         blurb='Nineteen lines of invented signs on ff. 48r&ndash;48v of a Mamluk book of ciphers (University of Pennsylvania, LJS 51) stand with no solution after them. The key was recovered from the signs alone, by annealing with an Arabic letter model of the period. The text is the first part of a rhymed-prose riddle that the compiler writes in clear on f. 21r: 220 of the 228 signs give its letters, and the cipher corrects the clear copy in three places.',
+         blurb='Nineteen lines of invented signs on ff. 48r&ndash;48v of a Mamluk book of ciphers (University of Pennsylvania, LJS 51) stand with no solution after them. The key was recovered from the signs alone, by annealing with an Arabic letter model of the period. The text is the first part of a rhymed-prose riddle that the compiler writes in clear on f. 21r: 220 of the 228 signs give its letters. The surviving copy is probably of the 15th century, and the compiler had broken the riddle himself.',
          quote='It visits when night falls and departs at morning',
          rights='Images: University of Pennsylvania Libraries, LJS 51, public domain, via OPenn'),
     dict(slug='qaysarani1350', label='Ibn al-Qabāqibī, cipher verses', year='c. 1330&ndash;70', y=1350, place='Syria or Egypt', st='read', stt='read',
