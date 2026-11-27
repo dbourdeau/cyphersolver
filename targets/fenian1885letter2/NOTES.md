@@ -4,6 +4,7 @@ Status: in progress. Filed as a pull request on 26 Nov 2026 AEST (25 Nov UTC) at
 open items below stated rather than closed. Work by Claude sessions (claude-opus-5-5) in hunts40 G3/B2, 25-26 Nov 2026.
 No person has checked the transcription, the key or the reading yet (AI-checked only). The site write-up is left to the
 maintainers, as in PR #996.
+The checks were done with AI tools and no person checked each record by hand.
 
 ## Source
 - [sourced] "Letter, no recipient and author given, June 24, 1885", Fenian Brotherhood Collection, The Catholic University
@@ -87,6 +88,17 @@ The full text, line by line, is in READING.txt. English, so no translation is ne
   by the key with nothing supplied and no doubt = Wolfe, Tone, secret, Irish, World, our = 6 (DEC x4 is fully given as
   letters but its referent is unknown); 6/18 = 33% by that count. The writer's own abbreviations make most words holes
   under the strict rule. Class: read in part.
+- House count, 27 Nov 2026 [measured] (Dan Bourdeau's review of PR #997: count an abbreviation as read only where its
+  expansion is certain). Rule used: cipher words only (18, the words in ⟦ ⟧ in READING.txt); a word is read when the key
+  gives every letter from a clean pair with nothing supplied, or when it is the writer's dash abbreviation and the
+  written letters with the clear context allow only one word (Rus-a Russia, Pat--s Patriots, nat-e native, l-d land).
+  Holes: DEC x4 (letters given, referent and expansion unknown), or-- (OR written, expansion ours: organisation or
+  order), R--s (open), Aut[ono]my (emended: written AUTNONMY), C[a]nada (pair 2 doubtful). **10 of 18 read, 8 holes,
+  read share 0.556.** `python -I scripts/house_count.py READING.txt` prints the list and
+  "cipher_words 18 read 10 holes 8 read_share 0.556". The short-text floor applies (under 40 cipher words) but is not
+  met (8 holes against a limit of 2): read in part. fraction_read in profile.json is now this word share; the pair share
+  67/71 = 0.944 is key coverage and stays in method_basis only. The checks were done with AI tools and no person checked
+  each record by hand.
 - G11 emendation: written 77 71 70 64 65 64 63 75 = AUT N O N MY; AUTONOMY needs 65 64 65 (O N O). The blind second reader
   also reads 64 65 64, so it is likely the writer's slip, not our misreading. Counted as 3 unclean pairs.
 - G13 pair 2 doubtful: read 7?7 (first reader) and 4?7 (blind reader, alt 77); 47 is outside 60-85; CANADA needs 77 (A).
@@ -129,14 +141,19 @@ decode; frozen and stamped 2026-11-25T23:37:20Z (blind2/FREEZE.txt, blind2/stamp
 - struck word (P3.20) - read: not read; checked: image, decode (clear text, no number group); no effect on the figures.
 - "Madame H—" (P1 top note) - read: H (or A); checked: image, decode (clear text, no number group); no effect on the figures.
 
+## Reader's notes (26 Nov 2026)
+Malcolm McBratney read the decoded letter as sentences. The grade he gave is withdrawn
+from profile.json (27 Nov 2026): a contributor does not sign the reading review, the maintainer records it at merge
+(Dan Bourdeau, review of PR #997; our error). His notes stand: he reads R—s (68 —— 69, side 4 line 18) as "revolutionaries". That reading comes from the sense, because only R and S are written. He also notes that DEC (80 81 79) is the same person in all four places, and that the dots and dashes between the numbers are loose handwriting. DEC is still not identified, and the struck word on side 3 line 20 cannot be read (Malcolm looked at the image, 26 Nov 2026).
+
 ## Remaining gaps
 
-- **Reading review (26 Nov 2026):** Malcolm McBratney read the decoded letter as sentences and graded it A. He reads R—s (68 —— 69, side 4 line 18) as "revolutionaries". That reading comes from the sense, because only R and S are written. He also notes that DEC (80 81 79) is the same person in all four places, and that the dots and dashes between the numbers are loose handwriting. DEC is still not identified, and the struck word on side 3 line 20 cannot be read (Malcolm looked at the image, 26 Nov 2026).
 - (a) Book prior art not checked: Devoy's Post Bag (O'Brien and Ryan, 1948-53), Short, The Dynamite War (1979), Whelehan, The Dynamiters (2012), Kenna, War in the Shadows (2014), Jenkins on F.F. Millen - blocker: needs-physical-access; no full text reachable from the sandbox; phrases for HathiTrust/Google Books are listed in PRIOR_ART.md. A historian may have read this simple alphabet in print without calling it a decipherment.
 - (b) Human check of the transcription and the key (a person comparing the groups with the image) - blocker: not-attempted; owed. The blind AI second reading is done (70/71).
 - (c) DEC (G02-G05), the man interviewed, not identified - blocker: open-codes; the letters are read; the referent (code name, initials or abbreviation) needs the literature or the other letters of the series.
 - (d) R--S (G09) open - blocker: open-codes; letters read; the word ("we were not R--s in the strict sense of the word") is not settled (Revolutionists? Rebels? Republicans?).
-- (e) The PDF could not be fetched by script; the working images are screen zooms from the JSTOR viewer - blocker: needs-physical-access; a person can download the PDF from JSTOR, or ask the CUA archive for images.
+- (e) The PDF could not be fetched by script; the working images are screen zooms from the JSTOR viewer - blocker: not-attempted (changed 27 Nov 2026, Dan Bourdeau's review); a person can download the PDF from JSTOR. [stated] Malcolm McBratney downloaded the JSTOR PDF on 26 Nov 2026 at 22:25 AEST; the transcription has not yet been compared with it.
+- (h) The letters of F.F. Millen to Rossa (23 Feb 1885) and R. Bennett to Rossa (16 Dec 1885) are online in the same JSTOR collection but not opened - blocker: not-attempted; they may name DEC or settle R--s.
 - (f) The letter breaks off at the foot of side 4 mid-quotation; the continuation (and Letter No. I) is not in this item - blocker: needs-physical-access; the rest of the series has not been found in the CUA collection on JSTOR.
 - (g) G13 pair 2 doubtful (7?7 / 4?7) - blocker: illegible; digit bottoms clipped at the page edge in the viewer; a better image or the original would settle it.
 

@@ -162,6 +162,12 @@
    ],
    "what": "Statistical validation (docs/_validate.py): 70 tokens, 18 types, en-modern order 4: reading -3.559 per letter; Verdict: too short.",
    "result": "partial"
+  },
+  {
+   "date": "2026-11-27",
+   "kind": "reading",
+   "what": "Review response (Dan Bourdeau, PR #997): reading_review signed by the contributor withdrawn; house count of the cipher words by script (scripts/house_count.py): 18 cipher words, 8 holes, read share 0.556 (abbreviations read only where the expansion is certain); short-text floor not met; fraction_read changed from the pair share 0.944 to the word share.",
+   "result": "partial"
   }
  ],
  "outcome": {
@@ -184,9 +190,10 @@
    "matched control",
    "historical consistency"
   ],
-  "method_basis": "Key recovered from the ciphertext with the crib IRISH WORLD (pattern x-y-x), one parameter for all 26 values; checked on WOLFE TONE, CANADA, RUS-A, PAT--S, OUR NAT-E L-D, which were not used to build it. Figures of record (first pass, measured): pairs 67/71 = 94.4%; groups with an identified meaning 8/13 = 61.5%, UNDER the project's own 65% line, failed at group level (G02-G05 DEC, one unidentified person, and G09 R--S). G11 emended (AUTNONMY written, AUTONOMY read; 3 pairs). G13 pair 2 doubtful. Exposure: the first transcriber saw the key pattern before the freeze. Blind AI second reading 70/71 = 98.59% of pairs agree, with an extra 64 at the end of G07. Controls: 0/5,000 random keys and 0/5,000 shuffled ciphertexts at seeds 20261112 and 7; other 25 shifts 0. fraction_read = clean pairs / pairs = 67/71. No person has checked it.",
-  "fraction_read": 0.944,
+  "method_basis": "Key recovered from the ciphertext with the crib IRISH WORLD (pattern x-y-x), one parameter for all 26 values; checked on WOLFE TONE, CANADA, RUS-A, PAT--S, OUR NAT-E L-D, which were not used to build it. Figures of record (first pass, measured): pairs 67/71 = 94.4%; groups with an identified meaning 8/13 = 61.5%, UNDER the project's own 65% line, failed at group level (G02-G05 DEC, one unidentified person, and G09 R--S). G11 emended (AUTNONMY written, AUTONOMY read; 3 pairs). G13 pair 2 doubtful. Exposure: the first transcriber saw the key pattern before the freeze. Blind AI second reading 70/71 = 98.59% of pairs agree, with an extra 64 at the end of G07. Controls: 0/5,000 random keys and 0/5,000 shuffled ciphertexts at seeds 20261112 and 7; other 25 shifts 0. Pair share 67/71 = 0.944 (key coverage, not the read share); fraction_read is the word share 10/18 (27 Nov 2026). No person has checked it.",
+  "fraction_read": 0.556,
   "fraction_read_method": "measured",
+  "fraction_read_source": "READING.txt: cipher words in ⟦ ⟧, 10 of 18 read (house count, scripts/house_count.py); the pair share 67/71 = 0.944 is in method_basis, not here",
   "first_break": true,
   "contribution": [
    "transcription",
@@ -223,9 +230,14 @@
     "detail": "Letters read; word not settled."
    },
    {
+    "item": "Sibling letters to Rossa: F.F. Millen, 23 Feb 1885, and R. Bennett, 16 Dec 1885 (JSTOR, same collection)",
+    "blocker": "not-attempted",
+    "detail": "Online but not opened; they may name DEC or settle R--s."
+   },
+   {
     "item": "PDF not fetchable by script; working images are viewer screen zooms",
-    "blocker": "needs-physical-access",
-    "detail": "A person can download the PDF from JSTOR or ask the CUA archive."
+    "blocker": "not-attempted",
+    "detail": "A person can download the PDF from JSTOR; Malcolm McBratney downloaded it on 26 Nov 2026 at 22:25 AEST, and the transcription has not yet been compared with it."
    },
    {
     "item": "Letter breaks off at the foot of side 4; continuation and Letter No. I not in this item",
@@ -248,13 +260,12 @@
     "language": "en",
     "state": "read in part",
     "cipher_markup": "⟦⟧",
+    "cipher_words": 18,
+    "holes": 8,
+    "read_share": 0.556,
+    "floor_used": false,
     "summary": "The writer reports from London that his mission succeeded: with 'the Infant' he met a man written DEC, put the advantages to Russia of an understanding, said the whole Irish World was with them, and was asked whether a diversion in Canada was feasible. The letter breaks off.",
-    "reading_review": {
-     "grade": "A",
-     "by": "Malcolm McBratney",
-     "date": "2026-11-26",
-     "note": "Read the whole decoded letter as sentences (emailed reading, 26 Nov 2026) and graded it A. His notes: Russia and Canada confirmed; DEC (80 81 79) is the same person in all four places, the dots and dashes between the numbers being loose handwriting; R--s read as 'revolutionaries' (sense, not code: only R and S are written); 'autonomy of our native land'. DEC not identified. A person read the reading; he did not re-check the transcription digit by digit against the images."
-    }
+    "note": "House count, 27 Nov 2026 (Dan Bourdeau's review of PR #997): cipher words only, 18; a word counts as read when the key gives every letter from a clean pair with nothing supplied, or when it is the writer's dash abbreviation and its expansion is certain (Rus-a, Pat--s, nat-e, l-d). Holes 8: DEC x4 (letters given, referent unknown), or-- (expansion not certain), R--s (open), Aut[ono]my (emended), C[a]nada (doubtful pair). 10 of 18 = 0.556, counted by scripts/house_count.py on READING.txt. Under 40 cipher words, so the short-text floor applies, but 8 holes is over its limit of 2: read in part, floor not met (floor_used false). The strictest count (no abbreviation as read) is 6 of 18. No reading review is recorded by the contributor; the maintainer records it. The checks were done with AI tools and no person checked each record by hand."
    }
   ]
  }
