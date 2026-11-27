@@ -572,22 +572,6 @@ def summary_html(E, keys, n_gone, prs):
             f'Before starting, read the entry&rsquo;s page and the work still in review: {prl}</div>\n</div>')
 
 
-def featured_html(E, keys, n=10):
-    """The strip above the list: the highest-priority desk-ready ciphers that have a picture, each a card."""
-    pool = sorted(((e, entry_image(e)) for e, k in zip(E, keys) if in_view(k, 'try') and k['status'] == 'new' and priority(e) >= 0), key=lambda x: (-priority(x[0]), x[0]['id']))
-    pick = [(e, g) for e, g in pool if g][:n]
-    if len(pick) < 4: return ''
-    def card(e, g):
-        r = RP.info(RP.of(e))
-        return (f'<a class="fc" href="{entry_href(e)}"><span class="fi"><img src="{g[0]}" alt="" loading="lazy"></span>'
-                f'<span class="fm"><b>{priority(e):.1f}</b><span>{esc(year_label(e))}</span><span class="badge {e["cls"]}">{e["cls"]}</span></span>'
-                f'<span class="ft">{esc(e["title"])}</span><span class="fa">{esc(r.get("short") or r["name"])} · no. {e["id"]}</span></a>')
-    return (f'<h2 id="start">{len(pick)} to start with</h2>\n'
-            f'<p class="vdesc">The highest-priority ciphers that can be tried from a desk, that nobody has attempted here yet, and already have a page photographed here. '
-            f'Each picture is a crop from the work on that cipher or on a piece of the same series; its source is credited on the linked pages.</p>\n'
-            f'<div class="fstrip">{"".join(card(e, g) for e, g in pick)}</div>\n')
-
-
 # archive towns the gazetteer does not have, [lat, lon] (approximate, for a ring on the map)
 MAP_TOWNS = {'College Park, Maryland': [38.99, -76.94], 'Santiago': [-33.45, -70.67], 'Kraków': [50.06, 19.94], 'Nepomuk': [49.49, 13.58],
              'Arnhem': [51.98, 5.91], 'Zámrsk': [50.00, 16.13], 'Cluj-Napoca': [46.77, 23.59], 'Aarau': [47.39, 8.05],
@@ -893,7 +877,7 @@ def build_html():
 
 <main>
 <div id="hashnote" hidden></div>
-{featured_html(E, keys)}<h2 id="list">The ciphers</h2>
+<h2 id="list">The ciphers</h2>
 <div class="cbar" id="cbar">
 <nav class="views jsonly" role="tablist" aria-label="Which ciphers">{tabs}</nav>
 <p class="vdesc" id="vdesc">{VIEWS[0][2]}</p>
