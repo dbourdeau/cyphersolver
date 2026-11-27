@@ -265,10 +265,38 @@ Latino Giovenale, to declare for the Emperor if it is refused; Pier Luigi Farnes
 alliance "se verifie clerement"; Venice expected to follow the Pope; the King "s'amuse en Picardie"; the Venice
 ambassadors working on Alessandro Vitelli. **The slip f. 9bis is a contemporary decipherment of the f. 9v passage**,
 and the reading, made first, matches it almost word for word.
+## 25 Nov 2026 - R4234, blind shape sheets rome1536-2511 and -2511b (Brice Dudout)
+
+Files in `dudout/` (PR #991): the two selection rules (French, hashed before the thumbnails were cut;
+`REGLE-SELECTION.md` SHA-256 db28edb9..., `REGLE-SELECTION-b.md` bf9965e6...), the answer files, the keys from
+option to sign and `RESULTS.md`. One reader, Brice Dudout; a model wrote the rules, cut the thumbnails, built the
+sheets and scored them. Images: Gallica native scans of fr. 3053 (views 32-36), not committed. Rule, keys and
+answers came in one commit, so the order of rule and answers rests on his record.
+
+- Sheet a (rome1536-2511): 8 target signs, 3 hidden controls, 3 of 3 passed (`fe` = ET, `+` = A+, the big looped
+  ꭓ of "toutes" = Tx). Corrected 5: Q2 Nx (*ennemi*), Q3 Of and Q4 Up (*debvoit*), Q7 FF (*offres*), Q8 Up (*au
+  dire*). Unresolved 3: Q1 and Q5 answered with the remark "Meme signe ?", Q6 answered "none / other" (the two 4
+  exemplars differ). Recorded in `outcome.sign_check`.
+- Sheet b (rome1536-2511b): 3 target signs (Q1, Q5, Q6 again), 2 hidden controls, 2 of 2 passed (D and 27 = R of
+  "induire"). Under 8 targets, so NOTES and a solution step only. Q1 Gh (*argent*, applied), Q5 D5 (*congnoisse*
+  not applied), Q6 C4 (*en parler a autre* not applied). Control K3 (the G of "seigneur", f16r L3) was dropped
+  after the rule was hashed and before the sheet was built, because that G is drawn like the slanted D.
+- **The G option had no control.** K3 was the only control on Gh, and the same place drew "Meme signe ?" on sheet a.
+  So *argent* rests on one control, on the D5 side (K1). It is kept as read: it is the reader's blind call and the
+  sense agrees ("s'en accorder par argent avec l'Empereur"). A dropped control could go into a short amendment
+  hashed before the answers.
+- Two word divisions, no sheet, signs as transcribed in pass 5: f16v L7 "par talladie(?) [?] l'intention [?]" ->
+  "part a la di{-e}stribution des benefices" (7 as B, as in "benefices"); f18r L17 "il y a de ma[n]iere(?)" ->
+  "il y va de ma vie". Both are the pass-5 direct decode letter for letter (checked in the integration review).
+- Counts (`research/reading_audit/v2_score.py`, fr, explicit holes): before 74 holes, 1,182 of 1,256 words read
+  (0.941); after 66 holes, 1,190 of 1,256 (0.947). R4234 stays read in part, under the 0.95 bar.
+- `pass5/R4234_en.md` brought in line at the seven places (money, enemy, the saying of, should put together, offers,
+  the distribution, my life).
+- Not checked in the review: the signs on the Gallica scans.
 
 ## Remaining gaps
 - fr. 3071 no. 4 (read 23 Oct 2026, b34): five short cipher spots on f. 9r (l. 10 middle, ll. 16-17 after *messire Latin*, ll. 27-28 seven signs, the word before *puissance*, the l. 8 name group) and single doubtful words of the clear text - blocker: illegible; blot and odd signs on the Gallica scan, the slip f. 9bis covers f. 9v only
-- residue inside read lines, about 5 % of letters (R4233 passages 3, 4, 5, 7, 8, 9 ~100 letters; R4234 f16r L1/L3/L16/L24, f16v L2-3/L7/L9/L21/L27, f17r L4-5/L21/L23/L27/L30-31, f17v L14/L20, f18r L15-17; R4235 P7 L5 and two signs in passage B; R4238 ~45 letters; R4239 f35r L06/L24/L32, f35v L08; R4240 13 letters; R4247 ~40 letters) - blocker: illegible; ink legible on the Gallica native scans, but the sign runs are ambiguous (7 = N/B, 4 = C/R, Of/Up) and no clear copy or gloss covers them
+- residue inside read lines, about 5 % of letters (R4233 passages 3, 4, 5, 7, 8, 9 ~100 letters; R4234 f16r L1/L3/L16/L24, f16v L2-3/L7/L9/L21/L27, f17r L4-5/L21/L23/L27/L30-31, f17v L14/L20, f18r L15-17, of which f16r L1, f16v L2/L7/L27 and f18r L17 were narrowed on 25 Nov 2026, R4234 0.947 of words; R4235 P7 L5 and two signs in passage B; R4238 ~45 letters; R4239 f35r L06/L24/L32, f35v L08; R4240 13 letters; R4247 ~40 letters) - blocker: illegible; ink legible on the Gallica native scans, but the sign runs are ambiguous (7 = N/B, 4 = C/R, Of/Up) and no clear copy or gloss covers them
 - R4239 short cipher runs in f36r L01-L06 and f35v L27-L31, and f38v L4 end, L8 end and the margin block (whose interlinear does not fit the signs) - blocker: illegible; not transcribed or not resolved in pass 5, no clear copy for them
 - proper names (the Sienese gentleman "For[?]", the count "Mer[?]le", Christofle's surname and two German captains in R4238, "Cesane", "Palmier") - blocker: no-key-material; spelled in cipher but the letters do not settle to a known name
 - R4239 f38r L06-L07 - blocker: illegible; doubtful in the contemporary clear copy itself
