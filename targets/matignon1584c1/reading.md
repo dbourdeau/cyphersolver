@@ -86,3 +86,10 @@ The unresolved words cluster in f. 151r ll. 1-4, 10-22 and f. 151v ll. 1-6, 10-2
 
 Grade B (coherent but raw; normalised above), by the contributor's own reader (Claude Opus 5.5 for Brice Dudout),
 16 Nov 2026. Not an independent review: a second reader should check it before merge.
+
+## Integration note (27 Nov 2026)
+
+Counted by whole words (a word with any {}, [], ‹› or ? is a hole), the letter has 689 words: sure 373, probable 84,
+restored 2, unresolved 230. The strict share is **373/689 = 0.541**, and this is now the `read_share` in profile.json.
+The 377/693 above comes from `scripts/count_marked.py`, which splits a word with a restored letter (e.g. *compa[g]nies*)
+and counts the outer pieces as sure. Still read in part. See NOTES.md, "Integration review of PR #709".

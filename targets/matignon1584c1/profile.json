@@ -36,7 +36,7 @@
   },
   {
    "id": "f24",
-   "read": "read in part",
+   "read": "not read",
    "shelfmark": "BnF fr. 15567 f. 24r (Gallica btv1b90639282, view 29 right; folio label 30/24). Images: Source gallica.bnf.fr / BnF",
    "date": "Jan-Mar 1584",
    "year": 1584,
@@ -217,6 +217,12 @@
    "kind": "verification",
    "what": "Test E2, a re-test of the same key after the development changes above: key_D.tsv (sha256 eb00fd85...3404, unchanged). Portion fr. 3255 f. 85r cipher ll. 1-16 (456 signs), under the same PREREG-E / PREREG-E2 freeze and the same single run as E1: 205/456 signs (45.0%) in sense runs; 200 shuffled keys median 0.0%, max 42.5%. Both bars fail. The leaf carries a period interlinear decipherment (existing), not used in the test; its hand has sign forms the key does not cover.",
    "result": "failed"
+  },
+  {
+   "date": "2026-11-27",
+   "kind": "verification",
+   "what": "Integration review of PR #709: strict share of ff. 151r-152r recounted by whole words (a space-separated word with any {}, [], angle bracket or ? counts as a hole) on texts/reading_marked.txt: sure 373, probable 84, restored 2, unresolved 230 of 689 words, strict 373/689 = 0.541 (filed 377/693 = 0.544: scripts/count_marked.py splits a word with a restored letter, e.g. compa[g]nies, and counts the outer pieces as sure words). The same rule gives E1 44/83 and f. 24 38/93, as filed. Class unchanged.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -226,6 +232,7 @@
   "verification": [
    "matched control"
   ],
+  "provenance": "contributed",
   "key": "partial",
   "credits": [
    {
@@ -233,6 +240,13 @@
     "role": "key or decipherment used",
     "note": "Matignon's Cipher-1 table (reconstructed from fr. 15567 ff. 24, 54), and the attribution of fr. 15568 f. 151 to it",
     "source": "https://cryptiana.web.fc2.com/code/henryiii.htm"
+   },
+   {
+    "who": "dudout",
+    "role": "solution",
+    "note": "transcription, key extension and reading of ff. 151r-152r and f. 24; tests A, C, D, E1, E2 (Claude Opus 5.5 for Brice Dudout)",
+    "date": "2026-11-17",
+    "source": "this folder"
    }
   ],
   "contribution": [
@@ -248,13 +262,13 @@
     "translation": "reading.md",
     "state": "read in part",
     "language": "fr",
-    "read_share": 0.544,
+    "read_share": 0.541,
     "summary": "Report from Marshal Matignon's side (1584, docket f. 153) on Huguenot moves in Guyenne: the king of Navarre's men gaining a foothold in the province and refusing to give back the towns of surety, the writer's loyalty to the king alone, La Rochefoucauld's arrival beside the king of Navarre, and the king of Navarre's claim that Henri III allowed him to build at Le Boucau, at the mouth of the Adour below Bayonne.",
     "reading_review": {
      "grade": "B",
-     "by": "contributor's own (Claude Opus 5.5 for Brice Dudout)",
-     "date": "2026-11-17",
-     "note": "Not independent; no person has checked the work. Strict rule (sure words only): 377/693 = 0.544; sure + probable + restored 463/693 = 0.668 (given once). 23 sure words that differed from the decode re-marked probable."
+     "by": "integration review of PR #709 (AI agent, for the maintainers); not a person",
+     "date": "2026-11-27",
+     "note": "Read as sentences against texts/decryption.txt: the legible passages (service to the king alone, the Huguenots and the towns of surety, La Rochefoucauld beside the king of Navarre, Le Boucau) build sentences; long runs unresolved (230 words). Strict whole-word share 373/689 = 0.541, read in part. Key passed one of five pre-registered tests (A 0.876); C, D, E1, E2 failed the 0.85 bar."
     }
    },
    {
@@ -292,8 +306,8 @@
    },
    {
     "item": "fr. 15567 f. 54 (decoded, not read, strict 0.530) and fr. 3255 f. 85 (period interlinear decipherment, not transcribed here)",
-    "blocker": "no-key-material",
-    "detail": "tests E1 (0.743) and E2 (0.450) fail the 0.85 bar and no fresh portion is left; files in siblings/"
+    "blocker": "not-attempted",
+    "detail": "no fresh portion left for a key test (E1 0.743 and E2 0.450 fail the 0.85 bar; files in siblings/); f. 85 has a period decipherment over almost every line, to be transcribed, and f. 54 has period glosses over two lines and some words"
    }
   ]
  }

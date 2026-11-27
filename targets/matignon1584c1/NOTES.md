@@ -1,6 +1,6 @@
 # Matignon's Cipher-1, 1584: BnF fr. 15568 ff. 151r-152r (catalogue 2840) and fr. 15567 f. 24 (catalogue 2838)
 
-Status: in progress. ff. 151r-152r are read in part (strict share 0.544). f. 24 is decoded, not read (0.409). The
+Status: in progress. ff. 151r-152r are read in part (strict share 0.541, 373/689 whole words). f. 24 is decoded, not read (0.409). The
 siblings fr. 15567 f. 54 (decoded, not read, 0.530) and fr. 3255 f. 85 (already deciphered interlinearly in the
 period) were tested on 17 Nov 2026 and fail the bar (see Remaining gaps). **No person has checked this work.** The
 transcriptions, arbitrations, readings and reviews were made by Claude Opus 5.5 (Claude Code) for Brice Dudout.
@@ -16,7 +16,8 @@ transcriptions, arbitrations, readings and reviews were made by Claude Opus 5.5 
   The glosses agree with the key wherever they can be compared. The one over □ suggests □ = *ue* or *ne*, giving
   "tient a[ue]c d'eux" (?) on f. 151r l. 3. This does not fit the other four occurrences of □ (f. 151r l. 17
   twice, f. 151v ll. 2, 13), so □ stays open in `key.tsv`. `plaintext.location` is now `interlinear`, partial.
-- **read_share by the strict rule** (sure words only): 0.544 (377/693). Sure + probable + restored: 0.668, given once.
+- **read_share by the strict rule** (sure words only): 0.544 (377/693); corrected at integration (27 Nov) to 0.541
+  (373/689, whole words; see "Integration review of PR #709" below). Sure + probable + restored: 0.668, given once.
   23 "sure" words that differed from the decode (*lailer* -> laisser, *siuand* -> si quand, *paieste* -> majesté …)
   are now marked {probable} in `texts/reading_marked.txt` (`reading.md`, Strict counts).
 - **Frozen key and measure scripts committed**: `holdout/key_frozen.tsv` (sha256 913f766d…461b, as in PREREG-B),
@@ -72,11 +73,26 @@ Adour below Bayonne); the inhabitants of Bayonne; "soubz peine"; "faisant sembla
 - `key.tsv` = key_C + 6 = p, used for the reading. Plain 6 reads p or m by context (prendre, province / me semble,
   mande, maison, Majesté): an unresolved homophone or two shapes we do not separate.
 - Reading (`reading.md`, `texts/reading_marked.txt`): first count sure 395, probable 61, restored 3, unresolved 230 of 689 words, 66.6% by sense; recounted 17 Nov
-  (strict rule): sure 377, probable 84, restored 2, unresolved 230 of 693, strict 0.544 → **read in part**. ⊖ + # + read as *le roy de Navarre* (probable).
+  (strict rule): sure 377, probable 84, restored 2, unresolved 230 of 693, strict 0.544; by whole words (27 Nov): sure
+  373 of 689, strict 0.541 → **read in part**. ⊖ + # + read as *le roy de Navarre* (probable).
 
 ## Open
-- Second, independent reader for the reading_review (current: contributor's own, grade B, preliminary).
+- Second, independent reader for the reading_review (current: integration review of PR #709, an AI agent, grade B;
+  no person has checked the work).
 - 6 p/m, ſ with filled loop (Pr), □, 4 with stem (q or u), the group + # +.
+
+## Transcription doubts
+
+Listed at integration (27 Nov 2026) from the doubts this file already states (Key, Open, Remaining gaps). None of them
+is recorded as checked sign by sign on the enlarged scans, so each stays open.
+
+- 6 / 6^ (ff. 151r-v) - read: 6^ = p; plain 6 = p or m by context (prendre, province / me semble, mande, Majesté); checked: decode only, no enlarged-scan check recorded; open, a shape atlas of 6 / 6^ is needed
+- ſt / ſ, and ſ with a filled loop "Pr" (ff. 151r-v) - read: ſſ = t; Pr not valued; checked: decode only, no enlarged-scan check recorded; open (2 tokens of Pr in portion A)
+- ρ / ꝩ (ρ-like sign against looped f, ff. 151r-v) - read: ρ-like = b; checked: decode only, no enlarged-scan check recorded; listed as a confusable pair
+- e / ʒ (e against the z-like 3, ff. 151r-v) - read: by the key; checked: decode only, no enlarged-scan check recorded; listed as a confusable pair
+- □ (f. 151r ll. 3, 17 twice; f. 151v ll. 2, 13) - read: not valued; checked: decode and the period gloss over f. 151r l. 3 ("a ue" or "a ne"), no enlarged-scan check recorded; the gloss value does not fit the other four occurrences, open
+- 4 with a long stem (ff. 151r-v) - read: q (development guess); checked: decode only, no enlarged-scan check recorded; the held-out text suggests u/v, open
+- the group + # + after ⊖ (ff. 151r-v) - read: de Navarre (probable, never spelled out); checked: decode only, no enlarged-scan check recorded; open
 
 ## Remaining gaps
 
@@ -94,7 +110,8 @@ Adour below Bayonne); the inhabitants of Bayonne; "soubz peine"; "faisant sembla
   0.743 (200 controls: max 0.347), decoded, not read (strict share 0.530, 44/83). Tomokiyo built his table partly
   from f. 54, so this test is not fully independent. fr. 3255 f. 85r ll. 1-16, 456 signs: 0.450 (max 0.425). The
   leaf carries a period interlinear decipherment (existing), and it is in another hand with sign forms absent from
-  the key. Blocker: no fresh portion is left. Files: `siblings/` (see "Sibling tests E1 and E2" below).
+  the key. No fresh portion is left for a key test. Blocker: not attempted (f. 85 can be read from its period
+  decipherment, which is not transcribed; f. 54 has period glosses over two lines and some words). Files: `siblings/` (see "Sibling tests E1 and E2" below).
 
 ## Sibling tests E1 and E2 (17 Nov 2026)
 
@@ -117,6 +134,22 @@ gives `siblings/mesure/E1_decoded.txt` byte for byte (the same for E2); `measure
 RESULTAT figures. Freeze order on the working disk (file times, CET; they are not proof): PREREG-E 13:21; passes 13:36
 and 13:46; arbitrated portions 13:59:11; PREREG-E2 13:59:26; decoded files and RESULTAT 13:59:34-39. The f. 85
 interlinear decipherment is recorded as that leaf's plaintext in `profile.json`. It is not transcribed here.
+
+## Integration review of PR #709 (27 Nov 2026)
+
+- Strict share of ff. 151r-152r recounted by whole words on `texts/reading_marked.txt`: a space-separated word with
+  any {}, [], ‹› or ? counts as a hole. Sure 373, probable 84, restored 2, unresolved 230 of 689 words: **373/689 =
+  0.541** (sure + probable + restored 459/689 = 0.666). The filed 377/693 = 0.544 comes from `scripts/count_marked.py`,
+  whose pattern splits a word with a restored letter (e.g. *compa[g]nies*) into pieces and counts the outer pieces as
+  sure words. The same whole-word rule gives E1 44/83 = 0.530 and f. 24 38/93 = 0.409, as filed. The class does not
+  change. `reading.md` keeps the contributor's table; `profile.json` carries 0.541.
+- `outcome.provenance` set to `contributed`, with Brice Dudout's `solution` credit.
+- The gap for fr. 15567 f. 54 and fr. 3255 f. 85 changed from no key material to not attempted: both leaves carry
+  period glosses, f. 85 over almost every line.
+- Document `f24` set to not read in `profile.json`, as its text entry says (decoded, not read).
+- The reading_review signed by the contributor's side is replaced by one from this integration review (an AI agent,
+  not a person).
+- "## Transcription doubts" added from the doubts this file states; none is checked on the enlarged scans yet.
 
 ## Escalation
 
