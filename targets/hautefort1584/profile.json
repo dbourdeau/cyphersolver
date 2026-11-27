@@ -1,0 +1,359 @@
+{
+ "schema_version": 1,
+ "target": "hautefort1584",
+ "title": "Hautefort (Jean de Bellièvre?) to Pomponne de Bellièvre, Grenoble, March 1584: Hautefort's Cipher, BnF fr. 15567 ff. 158-161 (and fr. 15568 ff. 207-209 in another hand)",
+ "documents": [
+  {
+   "id": "f158-161",
+   "read": "read in part",
+   "shelfmark": "BnF fr. 15567 ff. 158r-161v (Gallica btv1b90639282, views 164-168; Source gallica.bnf.fr / BnF)",
+   "date": "March 1584",
+   "year": 1584,
+   "country": "France",
+   "route": "Hautefort, Grenoble -> Pomponne de Bellièvre",
+   "language": "French",
+   "pages": 7,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "interlinear"
+    ],
+    "source": "Contemporary interlined decipherment of a few words on ff. 158, 160, 161 (Tomokiyo used it for his table); no full decipherment.",
+    "partial": true
+   },
+   "length": {
+    "tokens": 325,
+    "unit": "symbols",
+    "measured": true,
+    "file": "f161/read_final.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Claude (Opus 5.5) for Brice Dudout, 16 Nov 2026, from the Gallica images (Source gallica.bnf.fr / BnF): f. 158r ll. 1-20 one pass (f158/read1.txt); f. 161r ll. 1-14 and f. 160v ll. 1-15 two passes on different crops, reconciled on the image (f161/, f160/); f. 161v one pass (kept in the contributor's folder, not measured: 287 signs).",
+    "image_quality": "good",
+    "notes": "Two blind portions measured (f. 161r ll. 1-14, 325 signs; f. 160v ll. 1-15, 330 signs), glossed signs removed; the rest of ff. 158v-161v is not fully transcribed. Folio corrections: catalogue 2839 is fr. 15567 ff. 158-161 (not fr. 15568); f. 162 is Maygnieulx's Cipher (Tomokiyo); catalogue 2841 runs to f. 209r, in another hand. Measured length given for f. 161r ll. 1-14; f. 160v ll. 1-15 adds 330 signs (f160/read_final.txt)."
+   }
+  },
+  {
+   "id": "fr15568-f207-209",
+   "read": "read in part",
+   "shelfmark": "BnF fr. 15568 ff. 207r-209r (Gallica btv1b9063927n, views 215-217; Source gallica.bnf.fr / BnF)",
+   "date": "1584",
+   "year": 1584,
+   "country": "France",
+   "route": "unknown (Hautefort side per Tomokiyo) -> Pomponne de Bellièvre",
+   "language": "French",
+   "pages": 5,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "None known.",
+    "partial": false
+   },
+   "length": {
+    "tokens": 318,
+    "unit": "symbols",
+    "measured": true,
+    "file": "f207v/read_final.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "ff. 207r, 208r, 208v, 209r: Claude Fable 5.2 (API run for Brice Dudout, 16 Nov 2026), one pass from Gallica crops (f207-209/transcription_fable.txt, sign codes f207-209/GLYPHS-hand2.md); f. 207v ll. 1-11: Claude (Opus 5.5), two passes after the key was frozen (f207v/).",
+    "image_quality": "good",
+    "notes": "f. 207v was kept blind (never sent to Fable) and measured once. The training transcription is a single LLM pass (≈ 3,000 signs, 67 doubtful readings listed by the model)."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "homophonic",
+   "nomenclator"
+  ],
+  "summary": "Tomokiyo's 'Hautefort's Cipher': a homophonic substitution of graphic signs (2-4 per frequent letter), a few code signs (12 = vous, 20 = nous, X° = par, B = que, 14/15/17 open) and nulls.",
+  "symbol_kind": "symbols",
+  "distinct_symbols": "unknown",
+  "diacritics": {
+   "used": "unknown"
+  },
+  "homophones": {
+   "used": true,
+   "max_per_vowel": "unknown",
+   "max_per_consonant": "unknown"
+  },
+  "nomenclator": {
+   "present": true,
+   "kinds": [
+    "common words"
+   ],
+   "unread_groups": 5
+  },
+  "nulls": {
+   "present": true
+  },
+  "key_order": "unknown",
+  "word_division": "none",
+  "doubled_letters": "unknown",
+  "sibling_key": "Tomokiyo, cryptiana henryiii.htm, table henryiii_Hautefort.png",
+  "notes": "Same cipher as the first hand (about 40 signs keep their value: Fable's sign map f207-209/SIGN-MAP.tsv), with hand-specific usage or corrections: c = l, G = a, th = i, v = qui; + mostly g (some e/m by sense); new signs ^! = g, O2 = m."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "partial",
+   "where": "Tomokiyo's partial table only (cryptiana henryiii.htm); no reading printed",
+   "found": "before attempt",
+   "used": true
+  },
+  "inputs": [
+   "images",
+   "published key"
+  ],
+  "attack": "published key",
+  "human_role": "Brice Dudout directed; transcription, key correction and reading by Claude under a preregistered single measurement. Second hand: key proposed by Claude Fable 5.2 (one API run), frozen and measured by Claude Opus.",
+  "tools": [
+   "measure.py (lexical coverage, 200 shuffled-key controls)",
+   "measure_main2.py (measure_v4 generalised to x|y values; 200 shuffled-key controls)"
+  ],
+  "models": [
+   "Claude Opus 5.5",
+   "Claude Fable 5.2"
+  ],
+  "sessions": 2,
+  "first_date": "2026-11-16",
+  "last_date": "2026-11-17"
+ },
+ "solution": [
+  {
+   "date": "2026-11-16",
+   "kind": "access",
+   "what": "Folio-to-view map checked; Hautefort letter = fr. 15567 ff. 158-161 (f. 162 is Maygnieulx's Cipher per Tomokiyo).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "sibling key",
+   "what": "Tomokiyo's table corrected on f. 158r (∂ m/s by head shape, barred/plain q = e/t, ɷ = o, ſ = n); key frozen by SHA-256 with the PREREG.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "verification",
+   "what": "Blind f. 161r ll. 1-14 (325 signs), PREREG v2 with thresholds set by the contributor (0.40, +0.20): 0.519 vs best shuffled 0.246. Passes those thresholds, NOT the contributor's pre-registered bar.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "verification",
+   "what": "Blind f. 160v ll. 1-15 (330 signs), PREREG v3 at the contributor's pre-registered bar (>= 0.85 and >= best of 200 shuffled + 0.30): 0.787 vs 0.505. Failed.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "verification",
+   "what": "Last fresh leaf f. 161v: PREREG v4 frozen (∂ = m|s resolved by the lexicon, same rule for controls), but only 287 measurable signs (< 300): not measured. No fresh portion of >= 300 signs is left in this hand.",
+   "result": "ruled out"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "sibling key",
+   "what": "Second hand (fr. 15568 ff. 207r, 208r, 208v, 209r): Opus failed (one pass of 18 lines, degenerate annealing); one Claude Fable 5.2 run transcribed the four pages and proposed key_hand2.json (first-hand table plus corrections). f. 207v never sent.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "verification",
+   "what": "Blind f. 207v ll. 1-11 (318 signs), PREREG-main2.md at the contributor's pre-registered bar (>= 0.85 and >= best of 200 shuffled + 0.30), key and metric frozen by SHA-256 before the leaf was cropped: 0.879 vs 0.536. Passed.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "method": "read with known key",
+  "method_basis": "Tomokiyo's published partial table, corrected on f. 158r and f. 160r (first hand); the pre-registered test on f. 160v failed (0.787 < 0.85, the contributor's own bar), the one on f. 207v (second hand) passed it (0.879 vs 0.536). Read in part on the readings.",
+  "parts": [
+   {
+    "label": "f. 161r ll. 1-14",
+    "records": "BnF fr. 15567 f. 161r",
+    "method": "read with known key",
+    "extent": "partial",
+    "basis": "key_hand1.json, preregistered measurement MESURE-B-f161r.json"
+   },
+   {
+    "label": "f. 160v ll. 1-15",
+    "records": "BnF fr. 15567 f. 160v",
+    "method": "read with known key",
+    "extent": "partial",
+    "basis": "key_hand1_v3.json, preregistered measurement MESURE-C-f160v.json (failed the contributor's pre-registered bar)"
+   },
+   {
+    "label": "f. 207v ll. 1-11",
+    "records": "BnF fr. 15568 f. 207v",
+    "method": "key recovered based on adjacent plaintext",
+    "extent": "partial",
+    "basis": "key_hand2.json (Claude Fable 5.2, rebuilt from the adjacent cipher pages ff. 207r, 208r-209r and the first-hand key), preregistered measurement MESURE-main2-f207v.json (passed the contributor's bar)"
+   }
+  ],
+  "contribution": [
+   "transcription",
+   "key extended or corrected"
+  ],
+  "class": "read in part",
+  "fraction_read": "unknown",
+  "fraction_read_method": "unknown",
+  "fraction_read_source": "unknown",
+  "key": "partial",
+  "codes_open": {
+   "open": 5,
+   "tokens_open": "unknown"
+  },
+  "gaps": [
+   {
+    "item": "ff. 158v-161v beyond the measured lines (f. 158r ll. 21-24, f. 160r, f. 160v l. 16-end, f. 161r l. 15-end, f. 161v)",
+    "blocker": "not-attempted",
+    "detail": "Untranscribed or transcribed once; workable with the present key."
+   },
+   {
+    "item": "fr. 15568 ff. 207r, 208r, 208v, 209r (second hand)",
+    "blocker": "not-attempted",
+    "detail": "Only Fable's single training pass exists; a checked transcription and reading are workable."
+   },
+   {
+    "item": "interlined glosses on ff. 158, 160, 161",
+    "blocker": "not-attempted",
+    "detail": "Masked in the measured portions; to be transcribed as partial plaintext."
+   },
+   {
+    "item": "codes 14, 15, 17, signs C2, f2 (first hand); 14, 16, 7o, DD, &, * and the head nomenclator (second hand)",
+    "blocker": "open-codes",
+    "detail": "15 precedes 'esdiguieres' and '-e intelligence' (perhaps l); to be tried against the glosses and the unread pages."
+   },
+   {
+    "item": "the two ∂ forms (m, s)",
+    "blocker": "not-attempted",
+    "detail": "A reading rule to be fixed on glossed occurrences, not an illegible scan; most probable words on f. 160v are m read for s."
+   },
+   {
+    "item": "the cross + in the second hand (g, sometimes e/m)",
+    "blocker": "not-attempted",
+    "detail": "May be two or three shapes; to be sorted on larger crops."
+   }
+  ],
+  "grades": "unknown",
+  "verification": [
+   "matched control"
+  ],
+  "provenance": "contributed",
+  "notes": "Brice Dudout's session (Claude), 16-17 Nov 2026. Status: in progress. Reading reviews of ff. 161r, 160v and 207v by the integration review of PR #711 (AI agent, 27 Nov 2026; grade B), replacing the contributor's own; no person has checked the work. Blind tests: B 0.519 vs 0.246 (contributor's earlier thresholds 0.40/+0.20), C 0.787 vs 0.505 (pre-registered test failed), D not measurable (287 signs), H (second hand, f. 207v) 0.879 vs 0.536 (passed). Strict read shares (sure words): 0.711, 0.649, 0.712. The freeze order rests on file times in the contributor's folder (protocol/README.md): by the contributor's record. Both transcription passes of each portion are by the same agent. Images: Source gallica.bnf.fr / BnF. ff. 207r, 208r-209r are training material (single LLM pass), read only in Fable's unvalidated draft.",
+  "texts": [
+   {
+    "doc": "f158-161",
+    "label": "fr. 15567 f. 161r ll. 1-14, March 1584",
+    "transcription": [
+     "f161/read1.txt",
+     "f161/read2.txt"
+    ],
+    "decryption": [
+     "f161/read_final.txt"
+    ],
+    "summary": "Hautefort reports from Grenoble on Lesdiguières' estrangement, suspicion of the Huguenots and the threat of Spain and the Duke of Savoy in Dauphiné.",
+    "language": "fr",
+    "reading": "f161/reading_en.md",
+    "translation": "f161/reading_en.md",
+    "reading_review": {
+     "grade": "B",
+     "by": "integration review of PR #711 (AI agent, for the maintainers); not a person",
+     "date": "2026-11-27",
+     "note": "Read as sentences against f161/read_final.txt and f161/reading_en.md: Lesdiguières estranged, suspicion of the Huguenots, the Spaniard and the Duke of Savoy are in the decode and build sentences; holes at codes 15 and 17, C2, f2 and several runs without sure sense, more in ll. 1-5 and 12. Strict share 64/90 = 0.711, read in part. Not a second transcription; the images were checked in part on 16 Nov (about 110 signs of view 167); no person has checked the work."
+    },
+    "read_share": 0.711,
+    "state": "read in part"
+   },
+   {
+    "doc": "f158-161",
+    "label": "fr. 15567 f. 160v ll. 1-15, March 1584",
+    "transcription": [
+     "f160/read1.txt",
+     "f160/read2.txt"
+    ],
+    "decryption": [
+     "f160/read_final.txt"
+    ],
+    "summary": "Hautefort on a person's anger at having had no answer from the Duke of Savoy, and hopes of his own early return.",
+    "language": "fr",
+    "reading": "f160/reading_en.md",
+    "translation": "f160/reading_en.md",
+    "reading_review": {
+     "grade": "B",
+     "by": "integration review of PR #711 (AI agent, for the maintainers); not a person",
+     "date": "2026-11-27",
+     "note": "Read as sentences against f160/read_final.txt and f160/reading_en.md: the anger at no answer from the Duke of Savoy and the hope of an early return build sentences; most probables are the ∂ forms read m where sense wants s (plum, emperance), and runs such as 'ecrementement', 'abutreil', 'iaumonalte' have no sure sense. Strict share 50/77 = 0.649, read in part. The pre-registered test on this leaf failed (0.787 < 0.85). No person has checked the work."
+    },
+    "read_share": 0.649,
+    "state": "read in part"
+   },
+   {
+    "doc": "fr15568-f207-209",
+    "label": "fr. 15568 f. 207v ll. 1-11, 1584 (second hand)",
+    "transcription": [
+     "f207v/read1.txt",
+     "f207v/read2.txt"
+    ],
+    "decryption": [
+     "f207v/read_final.txt"
+    ],
+    "summary": "An envoy of 'son Altesse' (Savoy), the sieur Alexandre, spends a day with Lesdiguières and, after promises and adjurations, delivers a charge from the Duke.",
+    "language": "fr",
+    "reading": "f207v/reading_en.md",
+    "translation": "f207v/reading_en.md",
+    "reading_review": {
+     "grade": "B",
+     "by": "integration review of PR #711 (AI agent, for the maintainers); not a person",
+     "date": "2026-11-27",
+     "note": "Read as sentences against f207v/read_final.txt and the key_hand2 decode: the envoy Alexandre, Lesdiguières and a charge from son Altesse are in the decode; holes at the name after 'Monsieur de', code 15 and the sign &; probables from the ∂ e/m forms. Strict share 52/73 = 0.712, read in part. A second transcription of f. 207r (issue #999, larrycbeck) agrees with Fable's on 92-96% of 662 sign positions after label mapping. No person has checked the work."
+    },
+    "read_share": 0.712,
+    "state": "read in part"
+   },
+   {
+    "doc": "f158-161",
+    "label": "fr. 15567 f. 158r ll. 1-20, March 1584 (training material)",
+    "transcription": [
+     "f158/read1.txt"
+    ],
+    "decryption": [
+     "f158/decryption.txt"
+    ],
+    "summary": "Maugiron in good health; fear at the coming of Montpensier; someone has withdrawn from the château Dauphin not to return.",
+    "language": "fr",
+    "state": "decoded, not read",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude (Opus 5.5), contributor's own",
+     "date": "2026-11-17",
+     "note": "Mechanical decode of a single-pass training transcription; only the phrases quoted in NOTES.md are claimed."
+    }
+   }
+  ],
+  "key_file": [
+   "key_hand1.json",
+   "key_hand1_v3.json",
+   "key_hand2.json"
+  ],
+  "credits": [
+   {
+    "who": "tomokiyo",
+    "role": "key or decipherment used",
+    "note": "Partial 'Hautefort's Cipher' table (cryptiana henryiii.htm), used as the starting key.",
+    "date": "unknown",
+    "source": "https://cryptiana.web.fc2.com/code/henryiii.htm"
+   },
+   {
+    "who": "dudout",
+    "role": "solution",
+    "note": "Key corrected on f. 158r; blind tests on f. 161r (passed the earlier thresholds) and f. 160v (pre-registered test failed); readings of ff. 158r, 160v, 161r (Claude for Brice Dudout). Second hand: key proposed by Claude Fable 5.2, blind test on f. 207v passed (0.879 vs 0.536).",
+    "date": "2026-11-16",
+    "source": "this folder"
+   }
+  ]
+ }
+}
