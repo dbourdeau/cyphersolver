@@ -25,22 +25,8 @@ tiers.forEach(t => t.lis.forEach((li, i) => items.push({
 })));
 const openN = (() => { const e = $('[data-ib="open"]'); return e ? parseInt(e.textContent.replace(/\D/g, ''), 10) || 1000 : 1000; })();
 
-/* ------------------------------------------------------------------ list mode */
-const LIST_KEY = 'ib-list';
-function goList(on) {
-  try { on ? localStorage.setItem(LIST_KEY, '1') : localStorage.removeItem(LIST_KEY); } catch (e) {}
-  location.reload();
-}
-$$('[data-ib-list]').forEach(b => b.addEventListener('click', () => goList(true)));
-let wantList = false;
-try { wantList = localStorage.getItem(LIST_KEY) === '1'; } catch (e) {}
+try { localStorage.removeItem('ib-list'); } catch (e) {}   // the list switch was removed on 27 Nov 2026; forget a stored choice
 main: {
-if (wantList) {                            // stop here: the page stays a plain list
-  $$('[data-ib-list]').forEach(b => { b.textContent = 'show the iceberg in 3D again'; b.onclick = () => goList(false); });
-  const back = document.createElement('p'); back.innerHTML = '<button type="button" class="ib-inline">Show the iceberg in 3D</button>';
-  back.firstChild.onclick = () => goList(false); $('.ib-intro .ib-say').appendChild(back);
-  break main;
-}
 
 /* ------------------------------------------------------------------ renderer */
 const canvas = $('#ib-canvas');
@@ -661,7 +647,6 @@ function scrollToU(u) { scrollTo({ top: yOfU(u), behavior: REDUCE ? 'auto' : 'sm
 const gl = $('#ib-gauge-list');
 tiers.forEach(t => { const li = document.createElement('li'); li.innerHTML = `<a href="#${t.sec.id}">${t.name}</a>`;
   li.firstChild.addEventListener('click', e => { e.preventDefault(); scrollToU(t.k + 0.5); }); gl.appendChild(li); t.g = li; });
-$('#ib-listbtn').onclick = () => goList(true);
 
 /* kinetic text: split the big lines into words, reveal each block as it arrives */
 $$('.ib-big').forEach(p => { if (p.children.length) return; p.innerHTML = p.textContent.split(' ').map((w, i) => `<span class="w" style="transition-delay:${i * 90}ms">${w}</span>`).join(' '); });
