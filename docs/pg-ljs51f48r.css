@@ -1,3 +1,5 @@
 /* f. 48r cipher write-up (ljs51f48r): the whole of LJS 51 as a 3D book, in an iframe (ljs51-book/, 27 Nov 2026) */
-.book3d iframe{display:block;width:100%;aspect-ratio:4/3;border:0;border-radius:var(--radius);background:#14110e}
-@media (max-width:640px){.book3d iframe{aspect-ratio:3/4}}
+.book3d{width:min(1500px,96vw);max-width:none;margin-left:calc(50% - min(750px,48vw));margin-right:0}
+.book3d iframe{display:block;width:100%;height:min(88vh,1000px);aspect-ratio:auto;border:0;border-radius:var(--radius);background:#14110e}
+.book3d figcaption{max-width:70ch;margin-left:auto;margin-right:auto}
+@media (max-width:640px){.book3d{width:100vw;margin-left:calc(50% - 50vw)}.book3d iframe{height:80vh;border-radius:0}}

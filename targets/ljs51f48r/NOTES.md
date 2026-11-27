@@ -118,3 +118,14 @@ DECODE, Tomokiyo, Lasry's list, web). DECODE has no record of the manuscript.
 - [n/a] print: no edition or study of LJS 51 found
 - [n/a] key-rebuild: the key is complete; all 228 signs have a value
 - [x] retry: every flagged position re-read at 2-3x (recheck_2x.md)
+
+## Correction from the corpus work (27 Nov 2026; `targets/ljs51corpus/`, keys_eye/REPORT.md)
+
+The volume's write-up (`docs/ljs51corpus.html`) found that quire 3 (ff. 13-20) is bound out of place. Consequences here:
+the cipher on ff. 20r-20v (chain 20r.8) is not another copy of this riddle but the first five verses of al-Jawlani's
+eight-verse riddle, continued on f. 47r (one cipher, keys_eye/20r.8+47r.1.json); and the five cipher lines at the top of
+f. 21r (62 signs) are the END of this block, read with this key unchanged (62 signs = 62 letters, 58 of 59 repeated-shape
+occurrences on one letter; keys_eye/20r.8+47r.1.json, block_21r_1_5). So f. 21r once followed f. 48v, and the clear prose
+on 21r l.7 ff. is this block's own solution. The 21r lines are not added to this folder's transcription, key or counts.
+The page (sections 02 and 04, glance) says so; "the third of al-Jawlani's test pieces" is dropped from the summary.
+

@@ -211,3 +211,63 @@ words exactly. Interlinear "variants" on the page are enciphered text in 6r.11 (
 - 11v.11: 42 signs, 10 dividers (not 14); سره; rows are segmenter l.10-12 + one sign on l.13.
 - 12r.8: 82 signs (not 98), 20 dividers; لا لاني بحت (not لا ابتخت), نجب, القايل (not القابر), دلايل; answered yes.
 - 12v.8: 41 signs, 9 dividers (not 12). 12v.11: 33 signs, 9 dividers (not 11). 1r.2: 79 signs, 18 dividers, rows are segmenter l.2-7; the red ض is a flat stroke at 3x.
+
+## ff. 25r-36v
+
+By-eye key from the compiler's plaintext, not independently confirmed. Plain 1-2x line crops of the master (no segmenter boxes;
+`output/ljs51/crops/eye_<chain_id>/`), zooms on line ends and look-alike pairs; signs counted by eye; where the cipher spells a word
+differently from the record, the key is built on the text as enciphered and the fit against the record's wording is kept in the JSON
+(`fit_against_record_wording`). Signs drawn as Arabic letters are sorted by shape. 31r.2 was done earlier (row above). No chain here has a red gloss.
+
+| chain | signs | letters | aligned pairs | shapes | singletons | consistency letter / skeleton | red agreement | verdict |
+|---|---|---|---|---|---|---|---|---|
+| 25r.4 | 84 | 84 | 84 | 20 | 5 | 98.7% / 100.0% (79 occ.) | n/a | consistent; needs اليك for the record's لك |
+| 25v.4 | 72 | 73 | 72 | 24 | 10 | 100.0% / 100.0% (62 occ.) | n/a | consistent; cipher has بان for ان; انشب in 3 signs; word-initial ي shape |
+| 26r.1 | 74 | 75 | 74 | 19 | 3 | 100.0% / 100.0% (71 occ.) | n/a | consistent; ه of وآخره not written |
+| 26r.12 | 81 | 81 | 81 | 19 | 4 | 100.0% / 100.0% (77 occ.) | n/a | consistent; last words ابوابه العرب (record الوابه); numeral shapes, plain substitution |
+| 26v.11 | 79 | 79 | 79 | 20 | 5 | 100.0% / 100.0% (74 occ.) | n/a | consistent; record text confirmed |
+| 27r.10 | 23 | 23 | 23 | 14 | 9 | 100.0% / 100.0% (14 occ.) | n/a | consistent; شويخ confirmed |
+| 27v.3 | 71 | 72 | 71 | 19 | 6 | 100.0% / 100.0% (65 occ.) | n/a | consistent; 71 signs, not 77 (no surplus); hamza of حماء not written |
+| 28r.2 | 70 | 71 | 70 | 22 | 7 | 96.8% / 96.8% (63 occ.) | n/a | partly consistent: breaks in ه (three shapes, one also ن, one also ت); يجري for جرى |
+| 28v.1 | 69 | 69 | 69 | 21 | 7 | 100.0% / 100.0% (62 occ.) | n/a | consistent; عندنا for عندي; يوماك confirmed |
+| 29r.4 | 55 | 55 | 55 | 19 | 6 | 98.0% / 98.0% (49 occ.) | n/a | consistent but one sign writes ث (ثم) and ش (تنشرح): the compiler's ثم/تم note |
+| 29v.2 | 76 | 76 | 76 | 21 | 6 | 98.6% / 98.6% (70 occ.) | n/a | consistent; كالحاظ; second تغازل has the م sign for ت |
+| 30r.4 | 111 | 111 | 111 | 25 | 6 | 100.0% / 100.0% (105 occ.) | n/a | consistent; فانبعثت as enciphered; ق two shapes |
+| 30v.7 | 81 | - | - | 19 | 4 | - | n/a | no plaintext: inventory only (`30v.7.json`); the 30r.4 key does not read it |
+| 31r.11 | 56 | 56 | 56 | 16 | 5 | 100.0% / 100.0% (51 occ.) | n/a | consistent; 31r l.14 sign is the inserted ا of the first عادوا |
+| 31v.11 | 90 | 90 | 90 | 25 | 11 | 98.7% / 100.0% (79 occ.) | n/a | consistent; margin column reads bottom to top and goes inside فهل on 32r l.3; الى ورده |
+| 32v.3 | 76 | 76 | 76 | 21 | 6 | 100.0% / 100.0% (70 occ.) | n/a | consistent; ٩٩ is one sign (س); الخدود, فبهم as enciphered |
+| 33r.4 | 88 | 90 | 88 | 24 | 8 | 96.3% / 96.3% (80 occ.) | n/a | partly consistent: الحاجري's six signs do not fit the key; منكور without م |
+| 33v.6 | 44 | 45 | 44 | 19 | 8 | 100.0% / 100.0% (36 occ.) | n/a | consistent; علمك (record عملك); ب of مقابلي not written |
+| 33v.12 | 51 | 51 | 51 | 17 | 8 | 97.7% / 100.0% (43 occ.) | n/a | consistent; السلاليم (record السلالم); the 2 on 34r l.1 is a sign |
+| 34r.8 | 77 | 77 | 77 | 18 | 5 | 97.2% / 98.6% (72 occ.) | n/a | consistent, two single breaks (ي in سيأها, ع in عملك) |
+| 34v.6 | 84 | 83 | 83 | 21 | 4 | 97.5% / 100.0% (80 occ.) | n/a | consistent; احييت (record اجبت), بمنيف (record ينيف); margin sign = ي of يكتب |
+| 35r.6 | 82 | 81 | 80 | 27 | 10 | 98.6% / 100.0% (71 occ.) | n/a | partly consistent: homophones for ب, ن, س; false start (2 signs) before خبير; // is ا |
+| 35v.8 | 71 | 71 | 71 | 23 | 11 | 98.3% / 98.3% (60 occ.) | n/a | consistent once read from the cipher: اي من ... كم رمز ... ما حل بان تذكرني ما حلا; fits all the compiler's remarks |
+| 36r.11 | 74 | 75 | 74 | 18 | 4 | 95.7% / 98.6% (70 occ.) | n/a | partly consistent: the long-sin sign writes ن, ب and ش; غ of غيرك not written; keyed once on 36v |
+
+### 30v.7 against the 30r.4 key
+
+30v.7 (no plaintext): 81 signs, 19 shapes, 20 groups (lengths 5 2 3 3 2 2 7 3 7 4 4 7 3 4 4 2 3 7 5 4); commonest Cb (cup with a ball, 16),
+3 (9), zigzag (8), chevron and ط-shape (7 each). Nine shapes are shared with 30r.4 (chevron, ٩, 3, ع on a flat base, ع with a tail, kaf, ㅈ,
+٨, small comb; 35 of the 81 signs), but with the 30r.4 values the groups give no Arabic words (سغ, ·س·, غس·, سمغس ...), the 3-sign would
+be غ though it is the second commonest sign, and the two commonest 30v.7 signs do not occur in 30r.4 at all (nor 30r.4's U = ا, ∇ = ن, ٣ = ل
+in 30v.7). Same stock of shapes, different alphabet. Structure only: three 7-sign groups have the pattern X Y X _ _ X // with Cb as X (Cb
+as ا would give rhyme words of the shape الا--اف/ال-ا-ا-); not tested further. No reading forced.
+
+### Record errors found (chains_*.jsonl not edited)
+
+- 25r.4: لك is اليك (cipher 4 signs). 25v.4: 72 signs (not 75); the cipher has بان for ان.
+- 26r.12: the last word is ابوابه العرب, not الوابه [?] (العرب is the overflow under 26v l.9); 81 letters, 81 signs, no two-numeral letters.
+- 26r.1: 74 signs = record. 26v.11: 79 signs (not 80). 27r.10: 23 signs (not 24). 27v.3: 71 signs (not 77); no surplus signs.
+- 28r.2: the cipher has يجري for جرى and drops the ب of بالله. 28v.1: عندنا (cipher; clear text compatible), not عندي.
+- 29v.2: كالحاظ, not كلحاظ; the thin strokes on l.5 are ك (with a dot), not doubtful signs; 76 signs (not 75).
+- 30r.4: فانبعثت in the cipher; the record's plaintext has 110 letters, not 109; 111 signs (not 112).
+- 31r.11: 56 signs (not 59). 31v.11: the margin column reads bottom to top and belongs inside فهل on 32r l.3, not after l.4; الىورده in the clear text is الى ورده, not الورده.
+- 32v.3: الخدود (not الخد) and فبهم (not فهم); 76 signs: each doubled ٩٩ is one sign.
+- 33r.4: 88 signs (not 89); الحاجري not matched (open). 33v.6: علمك, not عملك; 44 signs (not 43). 33v.12: السلاليم, not السلالم.
+- 34v.6: احييت, not اجبت; بمنيف, not ينيف [?].
+- 35r.6: 82 signs (not 85); the // strokes are ا; two abandoned signs at the end of l.6.
+- 35v.8: the plaintext is اي من لطراز ملك مصر حلا كم رمز مترجم اتاه حلا / تشريفك لي لمر عيشي حلا ما حل بان تذكرني ما حلا
+  (record: يا ... كم [?] من ... ما حل بازدكرن ملحلا); the small 4 on l.9 is an inserted ا and counts (71 signs).
+- 36r.11: غ of غيرك not written in the cipher (record text otherwise confirmed).

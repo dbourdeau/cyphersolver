@@ -165,8 +165,8 @@ leaf and in Ṣafadī (editors' note p. 309). Penn/Christie's/Schoenberg descrip
 ## Write-up state (28 Nov 2026)
 
 Counts at the write-up (`texts/stats.json`, from `chains_all.json` and `keys_eye/` as copied at the final build): 207
-ciphers (211 chain records, less the two merges and the two ciphers with pages of their own), 15,208 signs by eye; the
-compiler answers 200 in full (14,837 signs, 97.6%), 3 in part, 4 not at all. Sign counts come from the key files where
+ciphers (211 chain records, less the two merges and the two ciphers with pages of their own), 15,200 signs by eye; the
+compiler answers 200 in full (14,829 signs, 97.6%), 3 in part, 4 not at all. Sign counts come from the key files where
 a chain is keyed (most record totals were segmenter counts), and 30v.7 is the recheck's 81. A chain that the record
 called answered in part but whose by-eye key aligns at least 95% of its signs with the plaintext is counted as answered
 in full (2r.4, 4v.8, 7r.5, 7v.12, 10v.1, 11r.10, 12r.8). The decryption files follow the plaintext as enciphered (from
@@ -187,7 +187,7 @@ seven ciphers stay open, each blocked from outside (below). The 30v.7 test with 
 - [x] clear-pages: every clear passage of ff. 1r-106v read on the masters for the chain records; the open ciphers have none that fits
 - [x] known-keys: no two ciphers share an alphabet (keys_eye/REPORT.md); the 47r key tried on 48r.8 (no), the 30r.4 key tried on 30v.7 (nine shared shapes, does not read it)
 - [x] print: Mrayati et al. vols. 1-2, Mir 'Alam 2018, Qalqashandi, Safadi, Penn/Schoenberg/Digital Scriptorium (prior_art_2.md): no edition or decipherment of LJS 51
-- [x] key-rebuild: by-eye keys from the compiler's plaintext for 53 ciphers; 3v.12 tested as a simple substitution (chance level)
+- [x] key-rebuild: by-eye keys from the compiler's plaintext for 63 ciphers; 3v.12 tested as a simple substitution (chance level)
 - [x] retry: the unanswered chains rechecked on the masters (recheck_unanswered.jsonl, chains_missed.jsonl): 46v.11, 48r.8 and 49r.1 answered, 12v.8/12v.11 lost their candidates
 
 ## Transcription doubts
