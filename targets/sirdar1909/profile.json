@@ -1,0 +1,161 @@
+{
+ "schema_version": 1,
+ "target": "sirdar1909",
+ "title": "Sirdar (Wingate, Khartoum) to Herbert (Cairo), 9 January 1909: eight cipher groups at the end of a clear telegram (Durham HIL/64/400, catalogue 2907)",
+ "documents": [
+  {
+   "id": "hil64-400",
+   "read": "read in part",
+   "shelfmark": "Durham University Library, Abbas Hilmi II papers, HIL/64/400 (unit HIL/64/1-1011, frame 68 of 234, bottom right form)",
+   "date": "9 Jan 1909",
+   "year": 1909,
+   "country": "Sudan",
+   "route": "Sirdar (Sir Reginald Wingate) -> Herbert",
+   "places": {
+    "from": "Khartoum",
+    "to": "Cairo"
+   },
+   "language": "English",
+   "pages": 1,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "none: no decode on the form, no clear copy in HIL/64-65 (wave 16 sweep)"
+   },
+   "length": {
+    "tokens": 40,
+    "distinct": 17,
+    "unit": "letters",
+    "measured": true,
+    "file": "transcription_400.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Durham IIIF, native-resolution regions",
+    "image_quality": "good",
+    "notes": "One pass with the key in hand and two blind passes by separate AI agents that never saw the key; they agree except group 3 last letter (g or [g/q]) and the first letter of group 4 (e or [e/c])."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "monoalphabetic"
+  ],
+  "summary": "Simple letter substitution of the Sudan Government telegrams, Nov 1908 - Jan 1909: words run together, regrouped in fives, a null at each end of a run (V ... v), set inside clear English. Partly reciprocal. HIL/64/214 (Sept 1908) is in another alphabet.",
+  "symbol_kind": "letters",
+  "homophones": {
+   "used": false
+  },
+  "nomenclator": {
+   "present": false
+  },
+  "nulls": {
+   "present": true
+  },
+  "word_division": "none",
+  "sibling_key": "cipher/clear pairs of the same file: HIL/64/402 = 403 (3 Jan 1909) and HIL/64/239-240 = 118-119 (30 Nov 1908)",
+  "distinct_symbols": 17,
+  "diacritics": {
+   "used": false
+  },
+  "key_order": "random"
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "No decode on the form; no clear copy in HIL/64 or HIL/65 (wave 16 sweep, all 546 frames); no reading in this repository, issues or pull requests; checked 27 Nov 2026.",
+   "found": "before attempt",
+   "used": false
+  },
+  "inputs": [
+   "images",
+   "sibling key",
+   "known plaintext"
+  ],
+  "attack": "sibling key",
+  "human_role": "Brice Dudout set the rules (key built on named pairs only, held-out passage transcribed blind, manifest frozen and its hash posted in issue #1023 before one measurement). AI agents transcribed, built the key, measured and read.",
+  "models": [
+   "Claude Opus 5.5 (Anthropic), agents run by Brice Dudout"
+  ],
+  "first_date": "2026-11-27",
+  "last_date": "2026-11-27"
+ },
+ "solution": [
+  {
+   "date": "2026-11-27",
+   "kind": "key from source",
+   "what": "Alphabet rebuilt from HIL/64/402 = 403 and HIL/64/239 sheet 1 = 118 (verification/build_v1.txt, key_v1.tsv).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-27",
+   "kind": "verification",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "Held-out test v1 (tools/holdout, manifest a9259625..., hash in issue #1023 before the run) on HIL/64/240 = 119 and HIL/64/214 = 62, 301 signs: char 0.3051 vs best of 200 shuffled controls 0.2237, z = 5.03. Per run (information only): 240 0.75 and 0.81, 214 0.17 (another alphabet, a risk declared in the protocol).",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-27",
+   "kind": "reading",
+   "what": "Key v1 applied to the 40 letters of HIL/64/400: 'kindly wire me any remarks you may have to make', 10 of 10 words as sense, 5 sure and 5 probable; under the 300-character length of the read bar.",
+   "result": "partial"
+  }
+ ],
+ "outcome": {
+  "class": "read in part",
+  "key": "recovered",
+  "method": "key recovered based on plaintext from external sources",
+  "method_basis": "Alphabet learnt from two cipher/clear pairs of the same file and the same weeks, then applied to the bare passage.",
+  "contribution": [
+   "transcription",
+   "key recovered"
+  ],
+  "verification": [
+   "statistical test",
+   "historical consistency"
+  ],
+  "validation": {
+   "date": "2026-11-27",
+   "verdict": "fail",
+   "file": "verification/RESULT_v1.json",
+   "notes": "Pre-registered held-out test under the #1014 convention: 0.3051 vs best control 0.2237, bar 0.85, not validated. The Sept 1908 telegram (235 of the 301 signs) is in another alphabet; the two Nov 1908 runs (66 signs) score 0.75 and 0.81. Passage burnt."
+  },
+  "fraction_read": 1.0,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "reading_400.md: 10 of 10 words as sense (5 sure, 5 probable) in 40 letters",
+  "provenance": "contributed",
+  "credits": [
+   {
+    "who": "dudout",
+    "role": "solution",
+    "note": "alphabet rebuilt from the 1908-09 pairs, held-out test (not validated), short reading of HIL/64/400",
+    "date": "2026-11-27"
+   }
+  ],
+  "key_file": "verification/key_v1.tsv",
+  "texts": [
+   {
+    "doc": "hil64-400",
+    "label": "HIL/64/400, Sirdar to Herbert, 9 Jan 1909, eight groups",
+    "transcription": "transcription_400.txt",
+    "decryption": "reading_400.md",
+    "reading": "reading_400.md",
+    "language": "en",
+    "state": "read in part",
+    "read_share": 1.0,
+    "summary": "Wingate forwards the widow's request that the son of the late Colonel Hassan Bey Tewfik be admitted to the Military School, and asks Herbert to wire any remarks he may have.",
+    "reading_review": {
+     "grade": "A",
+     "by": "Brice Dudout (with Claude)",
+     "date": "2026-11-27",
+     "note": "one English sentence, ten words; short reading under the length of the read bar; key not validated by the held-out test"
+    }
+   }
+  ],
+  "notes": "Short reading (40 letters), under the 300-character length of the read bar. Credit: the wave 16 Durham sweep of this repository found and first transcribed the eight groups and listed the cipher/clear pairs used for the key. No image included (Durham's reuse terms not checked)."
+ }
+}
