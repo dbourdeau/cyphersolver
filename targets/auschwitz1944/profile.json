@@ -58,7 +58,8 @@
  "conditions": {
   "prior_solution": {
    "exists": "in print",
-   "found": "not found",
+   "where": "I. Paczyńska (ed.), Grypsy z Konzentrationslager Auschwitz Józefa Cyrankiewicza i Stanisława Kłodzińskiego (Kraków, WUJ, 2013), p. 439, prints this gryps decoded; L. Sadzikowska, Identität und Fremdheit (V&R unipress 2022, open access, DOI 10.14220/9783737015165), p. 120 and note 240, quotes point 8 in German with that reference. Pointed out by Daniel Bourdeau in the review of #1010, 27 Nov 2026. p. 439 not seen by us.",
+   "found": "after reading",
    "used": false
   },
   "inputs": [
@@ -135,6 +136,24 @@
    "technique": [
     "key matching"
    ]
+  },
+  {
+   "date": "2026-11-27",
+   "kind": "literature search",
+   "what": "After the reading: the print (Paczyńska 2013 p. 439, quoted by Sadzikowska 2022 p. 120 n. 240), pointed out by Daniel Bourdeau, gives TWL = Truppenwirtschaftslager for G6, Paprzyca as a surname (Ludwik Paprzyca, a released prisoner) and 'what contact can she have with you'. Not used for the reading; points 7 and 9 not compared (p. 439 not seen).",
+   "result": "worked",
+   "technique": [
+    "other"
+   ]
+  },
+  {
+   "date": "2026-11-27",
+   "kind": "reading",
+   "what": "G6 twl (2-7-22) decodes t-w-l with nothing supplied and is the abbreviation TWL (Truppenwirtschaftslager) of the print, so it counts as read. 34 cipher words: before 29 sure, 4 probable, 1 unread (5 holes, 0.853); after 30 sure, 4 probable, 0 unread (4 holes, 0.882). Under 40 cipher words, so the short-text floor applies (at most 2 holes): with 4 holes, read in part.",
+   "result": "partial",
+   "technique": [
+    "contextual inference"
+   ]
   }
  ],
  "outcome": {
@@ -146,10 +165,10 @@
   "class": "read in part",
   "key": "recovered",
   "method": "key recovered from ciphertext-only",
-  "fraction_read": 0.853,
+  "fraction_read": 0.882,
   "fraction_read_method": "measured",
   "fraction_read_unit": "words",
-  "fraction_read_source": "sure words over cipher words (29 of 34, after the blind digit-shape sheet); probable {x}, supplied [x] and unread [...] are holes. With probable words 0.971. Short text (183 cipher letters): the 95 % / 300-character bar is not claimed.",
+  "fraction_read_source": "sure words over cipher words (30 of 34, after the blind digit-shape sheet and TWL); probable {x}, supplied [x] and unread [...] are holes (4). Short text (34 cipher words): the short-text floor allows at most 2 holes, so it is read in part under the floor. With probable words 1.0.",
   "first_break": false,
   "verification": [
    "matched control",
@@ -162,18 +181,29 @@
    {
     "who": "dudout",
     "role": "solution",
-    "note": "blind transcription, two pre-registrations (first failed), key from the church hymn, reading; independent of the very probable printed edition and decipherment (Paczyńska 2013), not checked",
+    "note": "blind transcription, two pre-registrations (first failed), key from the church hymn, reading; made before the printed decoding (Paczyńska 2013 p. 439) was found, not used",
+    "date": "2026-11-27"
+   },
+   {
+    "who": "bourdeau",
+    "role": "pointer",
+    "note": "the print: Paczyńska 2013 p. 439, quoted by Sadzikowska 2022 p. 120 n. 240 (TWL, Paprzyca, the sense of 'jaki może mieć kontakt z wami')",
     "date": "2026-11-27"
    }
   ],
   "gaps": [
    {
-    "item": "Prior edition",
+    "item": "Comparison with the printed decoding of points 7 and 9",
     "blocker": "needs-physical-access",
-    "detail": "Paczyńska 2013 (WUJ) and Paszek 2025 §5.4 not seen; the message is very probably edited there"
+    "detail": "Paczyńska 2013 p. 439 and Paszek 2025 §5.4 not seen"
    },
    {
-    "item": "G6 'twl', clear text of point 6, one word of point 9, signature",
+    "item": "Four probable words: większych, przesyłek, tamtejszego, mieć",
+    "blocker": "illegible",
+    "detail": "doubtful or overwritten digits on a low-resolution reproduction; ć has no number in the key"
+   },
+   {
+    "item": "Clear text of point 6, one word of point 9, signature",
     "blocker": "illegible",
     "detail": "low-resolution reproduction only; no human check on the image yet"
    }
@@ -187,9 +217,14 @@
     "reading": "reading.md",
     "language": "pl",
     "state": "read in part",
-    "summary": "29 of 34 cipher words sure (0.853); with probable words 0.971. The camp resistance asks about a route for larger consignments; whether Jasia at Rajsko works in the service of the SS next to the Gärtnerei and has contact with the camp through Józek the gardener; it asks for the press and whether explosives are ready.",
+    "summary": "30 of 34 cipher words sure (0.882), 4 holes, read in part under the short-text floor (at most 2 holes); with probable words 1.0. The camp resistance asks about Paprzyca's route for larger consignments; whether Jasia of the TWL at Rajsko works in the service of the SS next to the Gärtnerei and has contact with the camp through Józek the gardener, and what contact she can have with them; it asks for the press and whether explosives are ready.",
     "translation": "translation.md",
-    "cipher_markup": "**"
+    "cipher_markup": "**",
+    "read_share": 0.882,
+    "cipher_words": 34,
+    "holes": 4,
+    "floor_used": false,
+    "note": "Short text: 34 cipher words, 4 holes (four probable words); the short-text floor (fewer than 40 cipher words: at most 2 holes) does not hold, so read in part."
    }
   ],
   "key_file": "key.tsv"

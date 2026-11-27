@@ -4,8 +4,19 @@ Source: Auschwitz-Birkenau State Museum, « A fragment of a secret message sent 
 
 Polish clear text with about thirty words written as runs of numbers 1–30 (points 7 to 9); signed (signature not read).
 
-## Prior art (probable, not checked)
-This message very probably appears in I. Paczyńska (ed.), *Grypsy z Konzentrationslager Auschwitz Józefa Cyrankiewicza i Stanisława Kłodzińskiego* (Kraków, WUJ, 2013), which edits and decodes the clandestine letters of Cyrankiewicz and Kłodziński; A. Paszek's thesis (*Komunikowanie się w warunkach ekstremalnych…*, UPJPII Kraków, 2025, §5.4 p. 170) decodes at least one message of this system. Neither was available to us (the public PDF of the thesis stops at p. 141; the free WUJ extract covers neither the key table nor this message). Our reading is independent. Kłodziński's instruction of 16 Jan 1943 (Paczyńska pp. 33–34, gryps no. 49, quoted by Paszek p. 127) reads in full: « Nazwiska i ważne rzeczy szyfrem: „Kto się w opiekę podda Pany swemu” itd. a więc: k= 1, t=2, o=3, s=4, i=5, ę=6, w=7, o=3, p=9, i=10, e=11, k=1, ę=6, p=9, itd. cały alfabet, bez szcz, cz, rz, itd. » **The key of this 1944 message differs from it** (p=8, e=9, not p=9, e=11). Either the system was simplified into a compact table between 1943 and 1944 (Cyrankiewicz, 23 Jan 1944: « zrobić alfabet z odnośnymi cyframi », Paszek p. 127), or the quotation is imprecise; neither is shown.
+## Prior solution (found after the attempt, not used)
+The message is printed, decoded, in I. Paczyńska (ed.), *Grypsy z Konzentrationslager Auschwitz Józefa Cyrankiewicza i
+Stanisława Kłodzińskiego* (Kraków, WUJ, 2013), p. 439. L. Sadzikowska, *Identität und Fremdheit* (V&R unipress 2022, open
+access, DOI 10.14220/9783737015165), p. 120 and note 240, quotes point 8 in German with that reference ("Jasia aus dem
+TWL [Truppenwirtschaftslager] Rajsko", the Gärtnerei, Józek the gardener), and attributes the message to Cyrankiewicz
+and Kłodziński. Both were pointed out by Daniel Bourdeau in his review of #1010 (27 Nov 2026), after our reading was
+made; neither was used for it. We have not seen p. 439 itself, so Paczyńska's readings of points 7 and 9 are not
+compared with ours. From Sadzikowska (p. 120), as reported in that review: G6 *twl* is TWL, Truppenwirtschaftslager;
+*Paprzycy* is a surname, Ludwik Paprzyca, a released prisoner; and "jaki może mieć kontakt z wami" is taken as "what
+contact can she have with you".
+
+## Prior art searched before the reading
+Before the print was found, we noted that this message very probably appears in I. Paczyńska (ed.), *Grypsy z Konzentrationslager Auschwitz Józefa Cyrankiewicza i Stanisława Kłodzińskiego* (Kraków, WUJ, 2013), which edits and decodes the clandestine letters of Cyrankiewicz and Kłodziński; A. Paszek's thesis (*Komunikowanie się w warunkach ekstremalnych…*, UPJPII Kraków, 2025, §5.4 p. 170) decodes at least one message of this system. Neither was available to us (the public PDF of the thesis stops at p. 141; the free WUJ extract covers neither the key table nor this message). Our reading was made without either. Kłodziński's instruction of 16 Jan 1943 (Paczyńska pp. 33–34, gryps no. 49, quoted by Paszek p. 127) reads in full: « Nazwiska i ważne rzeczy szyfrem: „Kto się w opiekę podda Pany swemu” itd. a więc: k= 1, t=2, o=3, s=4, i=5, ę=6, w=7, o=3, p=9, i=10, e=11, k=1, ę=6, p=9, itd. cały alfabet, bez szcz, cz, rz, itd. » **The key of this 1944 message differs from it** (p=8, e=9, not p=9, e=11). Either the system was simplified into a compact table between 1943 and 1944 (Cyrankiewicz, 23 Jan 1944: « zrobić alfabet z odnośnymi cyframi », Paszek p. 127), or the quotation is imprecise; neither is shown.
 
 Signature: it looks like « Stakło », Kłodziński's pseudonym, which signs the gryps of 6 Sept 1944 (Piper, *Dzieje Najnowsze* LI, 2019, 3, pp. 216-218); not established.
 
@@ -34,9 +45,9 @@ Two blind passes by agents without any key (`blind/PASSE-A.md`, `blind/PASSE-B.m
 - G38 pos. 9 (22 against 27) - read: 27, word materjały (sure); checked: image (blind arbiter, an agent; blind shape sheet by a person, 27 chosen), transcription (two blind passes), decode.
 - G7 pos. 1 (17 against 18, overwritten) - read: 17 (*Rajsko*; 18 gives *zajsko*); checked: image (blind arbiter, an agent), transcription (two blind passes), decode, repeat G17.
 - G20 pos. 2 (12 against 17; passes A and B read 17, the arbiter 12) - read: 12, word ona (sure; 17 gives *ora*); checked: image (blind arbiter and hostile reviewer, agents; blind shape sheet by a person, 12 chosen), transcription (two blind passes), decode.
-- G6 *twl* - read: unread [...]; checked: image (blind arbiter, an agent), transcription (two blind passes), decode.
+- G6 *twl* - read: TWL (sure); checked: image (blind arbiter, an agent), transcription (two blind passes), decode, edition (Sadzikowska 2022 p. 120, quoting Paczyńska 2013 p. 439: "aus dem TWL [Truppenwirtschaftslager] Rajsko"); the three numbers 2-7-22 give t-w-l with nothing supplied.
 - 2/7, 1/7, 9/3, 1/4, 20/70, 23/73, 27/77 elsewhere - read: as retained in transcription.txt § DOUTES; checked: image (blind arbiter, an agent), decode, transcription (two blind passes); every alternative tried decodes to no Polish word.
-- G1 *paprzycy*: letters sure, identity not established (we affirm neither a person nor a place) - read: Paprzycy (sure); checked: image (blind arbiter, an agent), decode, transcription (two blind passes).
+- G1 *paprzycy* - read: Paprzycy (sure), genitive of the surname Paprzyca; checked: image (blind arbiter, an agent), decode, transcription (two blind passes); Sadzikowska 2022 p. 120 names Ludwik Paprzyca, a released prisoner (not identified by us).
 - Clear text of point 6 (L1–L2), one word of point 9 (« prz‹?›bli‹?› ») and the signature - read: as transcribed, {doubtful}; checked: image (two blind passes and arbiter, low resolution), decode (not applicable: clear text).
 
 ## Blind digit-shape sheet (27 Nov 2026)
@@ -45,19 +56,27 @@ Brice Dudout answered a blind sheet: each doubtful number boxed in its line, opt
 - Effect: *ona* (12), *jaki* (« 1,5 ») and *materjały* (27) become sure. *tamtejszego* is read with t (2) and stays probable (extra z). *większych* stays probable (5 confirmed; c by sense).
 - Count: 29 sure, 4 probable, 1 unread (was 26 / 7 / 1).
 
+## TWL (27 Nov 2026)
+G6 *twl* (2-7-22) decodes to t-w-l with nothing supplied; it was counted unread because we did not know the word. The
+edition (Sadzikowska 2022, p. 120 and note 240, quoting Paczyńska 2013, p. 439) gives TWL, Truppenwirtschaftslager.
+Counts on the 34 cipher words: before, 29 sure, 4 probable, 1 unread (5 holes, 0.853); after, 30 sure, 4 probable,
+0 unread (4 holes, 0.882). The text has fewer than 40 cipher words, so the short-text floor applies (README Conventions,
+19 Nov 2026: at most 2 holes); with 4 holes the message stays read in part under the floor.
+
 ## Stanza 2 values
 - h28 (*łowczych*), ź29 (*zaraźliwem*), ó30 (*pióry*): from stanza 2 of the hymn; h and ó were first set from *wybuchowe* and *Józka* and then found at their rank. 19, 25, 29 never occur.
 
 ## Remaining gaps
-- Prior edition (Paczyńska 2013; Paszek 2025 §5.4) - blocker: needs-physical-access (book and full thesis not available online); the message is very probably edited there.
-- G6 *twl*, clear text of point 6, one word of point 9, signature - blocker: illegible (low-resolution reproduction).
+- Comparison with the printed decoding of points 7 and 9 (Paczyńska 2013, p. 439; Paszek 2025 §5.4) - blocker: needs-physical-access; the book and the full thesis are not available to us online.
+- Four probable words ({większych}, {przesyłek}, {tamtejszego}, {mieć}) - blocker: illegible; doubtful or overwritten digits on a low-resolution reproduction, and ć has no number in the key.
+- Clear text of point 6, one word of point 9, signature - blocker: illegible (low-resolution reproduction).
 - Human check of the other doubtful digits (G3 pos. 8, G7 pos. 1 and the faint 2/7, 1/7, 9/3 doubts) - blocker: not-attempted (the blind sheet covered the five that decide words).
 
 ## Escalation
 - [x] siblings: none available to us (other grypsy of the same system: Paczyńska 2013, not seen).
 - [x] clear-pages: the clear Polish around the cipher words agrees with the decode (« uskutecznić ewentualnie … przesyłek », « Czy macie już u siebie przygotowane … materjały wybuchowe »).
 - [x] known-keys: Kłodziński's 1943 instruction (agrees for 1-7 only); hymn texts tried in PREREG 1 and 2; the church version (1838) gives the key.
-- [x] print: web search and public PDFs (Paszek 2025 to p. 141, WUJ free extract, museum pages), 26-27 Nov 2026; Paczyńska 2013 and Paszek §5.4 not accessible (see Remaining gaps).
+- [x] print: web search and public PDFs (Paszek 2025 to p. 141, WUJ free extract, museum pages), 26-27 Nov 2026, found no reading; after the reading, Daniel Bourdeau found the print (Paczyńska 2013 p. 439, quoted by Sadzikowska 2022 p. 120 n. 240); p. 439 not seen (see Remaining gaps).
 - [n/a] key-rebuild: key rebuilt from the song; it reads both halves.
 - [x] retry: every doubtful digit of transcription.txt § DOUTES retried with the key (alternatives decode to no Polish word except those adopted as probable). A person checked five doubtful numbers on a blind sheet; the others are still open (Remaining gaps).
 
