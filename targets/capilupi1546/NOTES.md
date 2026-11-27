@@ -235,3 +235,24 @@ Results question by question: `sign_check/sheet-C-results.tsv`, `sign_check/shee
 - **One disagreement on record.** At 'imperammor' (05r line 7) the integration check of 13 Nov saw two short 1-shaped strokes. The blind answer (sheet C, q08) chose 5 among 7, 5 and 1. Both readings of the image are recorded; a second reader would settle it.
 - **Not yet done.** The page rule says that what an answer contradicts is recoded or marked in the reading first. The 16 corrections are applied in our local copies (not committed); `dudout/transcription_*.txt`, `dudout/decryption.txt` and `dudout/reading.md` here are unchanged, so the figures above (631 of 692 sure, 91.2 %) still describe the committed files. On the corrected local copy the count is 647 sure, 31 probable, 10 restored, 4 unresolved of 692 (93.5 % sure; 05r-05v 90.5 %): still read in part. Recoding the committed files is a separate step.
 - **Limits.** One checker, inside the project. Two controls per sheet show little on their own. The digits were chosen because they were doubtful: a diagnostic, not a sample of the text. No person has audited the model's part.
+
+## Sign plate 2511, 25 Nov 2026 (three targets: a solution step, not `outcome.sign_check`)
+
+The same checker (Brice Dudout, the contributor) answered a third blind plate on 25 Nov 2026, built the same way as sheets C and R (one boxed digit, shapes cut from sure words of the same hand, no value, word or place shown; an AI model, Claude Opus 5.5, wrote the rule, cut the thumbnails, built the plate and scored it). It has three targets and three hidden controls, under the eight targets that `outcome.sign_check` asks for, so it is recorded here and as a solution step (25 Nov 2026), not as a sign check. Rule `dudout/sign_check_2511/REGLE-SELECTION.md`, SHA-256 6d068c0634909e0b9f340a0d5de4790c3413218717dd435368809f4124059486, hashed before any thumbnail; one amendment before the answers re-cropped two boxes (`AVENANT-CADRES.md`, 6b3e97ef...bca4). Answers `dudout/sign_check_2511/answers-2511-capilupi.json` (exported 2026-11-25 09:44 UTC); meaning per question in `dudout/sign_check_2511/results.tsv`.
+
+- Controls: 3 of 3 (a 6 of *imparata*, a 0 of *io*, a 1 of *ho*, 02r line 10).
+- *quasi* (02r line 10, digit 14, [6/0]): answered 0; the key then gives *quasi*.
+- *{Io}* (06r line 9, digit 23): answered 1, as transcribed; stays probable.
+- 02r line 8, first sign: "none / other shape", with the checker's remark that it is several signs, probably a 5 on the right; on the image, two doubtful signs `6? 5?`, giving "as", not a word. The word stays unresolved (‹as›); no value is taken from the sense.
+
+**suplica (02r line 7).** A sign is blotted out and "5 1" is written above it in the same hand. On 25 Nov 2026 the contributor decided that a clear interlinear correction by the writer is read in place of the sign it corrects. The two digits were read by the model, not by the checker, and on sheet C this hand's 1 turned out to be a 5 or a 7 at five places. They were put on a blind plate on 26 Nov 2026 (plate 2511c, below): confirmed 5 and 1.
+
+**Not applied here.** The recoding of 02r (sheets C and R, plate 2511, the interlinear rule) is proposed in `dudout/capilupi1546-planche-2511.patch` (see `dudout/PROPOSAL-2511.md`); the committed transcription, decryption and reading are unchanged. With the patch, 02r would have 122 sure of 128 (95.3 %), 4 probable, 2 unresolved; whether its class moves is the maintainer's decision. The other folios still carry the sheet C and R corrections only in the contributor's local copies; recoding them is left for later.
+
+## Sign plate 2511c, 26 Nov 2026 (the interlinear "5 1" of *suplica*; a solution step, not `outcome.sign_check`)
+
+Asked in the review of #984. Same checker and method as plate 2511. Two targets, the two digits written above 02r line 7 over the blotted sign of *suplica*, and three hidden controls (a sure 1 of 02r line 7, a sure 5 and a sure 7 of 02r line 8); options: shapes 1, 5 and 7, two examples each cut from sure words of 02r lines 7-8, plus "none / other shape", "impossible to tell", "illegible", "not a sign". Rule `dudout/sign_check_2511c/REGLE-SELECTION.md`, SHA-256 97902e90a2c87152c3debc557ce9df0a8bc59c094e694441d6846d884d112748, hashed before any thumbnail; no amendment. Answers `dudout/sign_check_2511c/answers-2511c-capilupi.json` (exported 2026-11-26 21:21 UTC, SHA-256 32461327...7ee6); meaning per question in `dudout/sign_check_2511c/results.tsv`.
+
+- Controls: 3 of 3.
+- First interlinear digit: answered 5; second: answered 1, as transcribed. The checker remarked of both that they are written above another line; the boxes are those two interlinear digits (checked on the image).
+- *suplica* is sure once 02r is recoded (patch). Two targets only: under the eight of `outcome.sign_check`, so a solution step (26 Nov 2026).
