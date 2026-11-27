@@ -181,6 +181,15 @@
    ],
    "what": "Write-up escalation check (AI agent): c. 13r compared with the Estense IIIF canvas at 1400 px and full-size crops. L02/L03 show li3b, which the key decodes as pio (period form of più), so those two holes are workable; L04 'uiro e' may be clear Italian 'uero è' rather than cipher; c. 13r L08-L24 and c. 13v still not compared with the image. Write-up held, Status set to in progress pending a transcription re-check.",
    "result": "partial"
+  },
+  {
+   "date": "2026-11-27",
+   "kind": "transcription",
+   "technique": [
+    "manual reconstruction"
+   ],
+   "what": "Image re-check (AI model, Claude, for the maintainers; not blind, no person): c. 13r L01-L24 and c. 13v L25-L30 compared line by line with the full-size Estense IIIF canvases (nine 1500-px regions each, stitched), with close crops of the 17 bracketed slips and the flagged places. 12 corrections written as a separate layer (recheck/corrections.tsv, recheck/transcription_13r_13v_recheck.txt; the contributor's files unchanged): L02/L03 lizh->li3b (pio), L04 uiro e->clear uero e, L05 fiirsibp 4->fiirsibpi4, L10 gg->9 (demostrato), L11 ei->ti (quele), L13 d->é (respetto), L16 +->4 (Al), L19 ri,->r, (è), L23 omitted c restored (essendo), L27 t->l twice (peggiore; posse still a hole). His decoder and key re-run unchanged (recheck/decryption_13r_13v_recheck.txt). Read share by the README rule (v10_relabel, clear_markup ⟨⟩): before 219 sure / 48 holes / 267 = 0.820; after 221 sure / 46 holes / 267 = 0.828, with 10 of the holes probable (AI-settled look-alike signs; 0.865 if granted). The other 14 doubtful words show on the scan as transcribed (writer's slips or unvalued shapes), and the 22 open codes have no key sheet or sibling online.",
+   "result": "partial"
   }
  ],
  "outcome": {
@@ -260,9 +269,9 @@
     "detail": "[53] fits non in both occurrences (L06, L22); the other six two-digit groups are provisional candidate nulls or short modifiers. None can be proved without the key sheet or a sibling letter in ASMn Archivio Gonzaga, not online."
    },
    {
-    "item": "Uncertain words, abbreviated token e4,s.{ar}, and 17 scribal slips/allographs (26 words total)",
+    "item": "Uncertain words, abbreviated token e4,s.{ar}, and scribal slips/allographs (24 words after the 27 Nov 2026 image re-check: 14 confirmed on the scan as written, 10 probable)",
     "blocker": "illegible",
-    "detail": "All 48 holes are bracketed in reading_13r_13v.md and listed in holes_13r_13v.md. The doubtful shapes were checked on the online Estense scans (about 3000 px), which are the best images there are, and stay doubtful there; another letter in the same 1537 key would settle them."
+    "detail": "Checked line by line on the full-size online Estense scans on 27 Nov 2026 (recheck/corrections.tsv, AI model only). The 14 show on the leaf as transcribed (the writer's slips or unvalued shapes), so only another letter in the same 1537 key would settle them; the 10 probable words, settled by an AI between look-alike signs, need a blind human sign check."
    }
   ],
   "texts": [
