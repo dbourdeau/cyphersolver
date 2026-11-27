@@ -54,7 +54,7 @@
 </div>
 <section class="hero">
 <div class="hero-ms" aria-hidden="true" style="--fl:1;--fd:1"><img src="vocbatavia_1643_905.jpg" width="1100" height="361" decoding="async" alt=""></div><!-- /hero-ms -->
-  <div class="cipherstrip" translate="no">15 10 66 4 71 50 / 49 28 16 70 72<br>sacken peper (sacks of pepper)<br>9, 10, 18 = a &middot; 28, 70, 71 = e &middot; 2, 48, 50 = n</div>
+  <div class="cipherstrip" translate="no">15 10 66 4 71 50 / 49 28 16 70 72<br>sacken peper (sacks of pepper; 4 read as k, an emendation)<br>9, 10, 18 = a &middot; 28, 70, 71 = e &middot; 2, 48, 50 = n</div>
   <p class="kicker">Batavia &rarr; the Heren XVII, Amsterdam &middot; homophonic number cipher and a mixed letter cipher, Dutch &middot; 1623&ndash;1643</p>
   <h1>The VOC number cipher of Batavia, 1623&ndash;1643</h1>
 <p class="readjump"><a href="#texts">Go to the full text &darr;</a></p><!-- /readjump -->
@@ -94,7 +94,7 @@
 </figure>
 
 <h2 id="the-cipher"><span class="num">02</span> Two systems</h2>
-<p><b>System A</b> is a homophonic substitution on numbers from 1 to about 74, set among clear Dutch words. A common letter has two to four numbers (a = 9, 10, 18; e = 28, 70, 71; n = 2, 48, 50 in the passage above). In the copies of 1623 to 1640 a stroke divides the words; copy 2 of 1643 writes a stroke between every number, so its word division is lost. The same table is used in all four letters.</p>
+<p><b>System A</b> is a homophonic substitution on numbers from 1 to about 74, set among clear Dutch words. A common letter has two to four numbers (a = 9, 10, 18; e = 28, 70, 71; n = 2, 48, 50 in KEY_v2). In the copies of 1623 to 1640 a stroke divides the words; copy 2 of 1643 writes a stroke between every number, so its word division is lost. The same table is used in all four letters.</p>
 <p><b>System B</b> appears in 1640 and 1643. Letters and numbers both stand for plain letters (r = a, d = n, m = t, b = e; in B, 2 = t, 12 = o, 16 = n, 24 = e), and a number in B does not have its A value. It is used for names, places, goods and amounts: <i>mrkmrkcbd</i> = Tartarien, <i>crfrd</i> = Japan, 2.12.16.16.24.16 = tonnen. The Roman numerals XXI and IV are code words for silver and gold. The B values were built from the contemporary glosses only (key/KEY_B_v1.tsv and key/LC_KEY_v1.tsv).</p>
 <p>How a reader of the time told an A run from a B run is not known.</p>
 
@@ -109,7 +109,7 @@
 <p><b>1643, scans 901&ndash;902.</b> The advices from Japan give great hope of good trade, with the prospect that the Chinese and the other nations, except the Company, will be refused that kingdom; amounts given in <i>tonnen</i>. The system-A words read are <i>uyt, geven, negotie, rycx, ontseyt, ses, winst, tonnen, voor</i>; the rest comes from the gloss.</p>
 
 <h2 id="method"><span class="num">04</span> Method and tests</h2>
-<p>The 1634 letter has every cipher word explained in the margin (inv. 1108). Those glosses gave 47 number values. The frozen 1634 key decoded the 1623 letter into Dutch, but its first pass, 32 of 54 cipher words found in a word list (59.26%), is under the project&rsquo;s own 65% line. Thirteen values were then set from the 1623 context; the 1623 margins in inv. 1079 agree with them word for word. With those, KEY_v2 has 60 numbers. It was frozen on 25 November 2026 at 20:10 UTC and not changed afterwards.</p>
+<p>The 1634 letter has every cipher word explained in the margin (inv. 1108). Those glosses gave 47 number values. The frozen 1634 key decoded the 1623 letter into Dutch, but its first pass, 32 of 54 cipher words found in a word list (59.26%), is under the project&rsquo;s own 65% line. Thirteen values were then set from the 1623 context; the 1623 margins in inv. 1079, checked after decoding, agree with the decode word for word except for one word (conden, see below). With those, KEY_v2 has 60 numbers. It was frozen on 25 November 2026 at 20:10 UTC and not changed afterwards.</p>
 <p>KEY_v2 was then applied to two letters not used to build it:</p>
 <ul>
 <li><b>1640 postscript</b> (scan 583): 9 of 11 system-A words (81.82%). Key shuffles: 0 of 5,000 at seeds 20261112 and 7 reach the real score.</li>
@@ -523,7 +523,7 @@ Count: agree 10 (incl. &#x27;probably&#x27; winst) of 12 checkable; 2 disagree.
 <h2 id="sources"><span class="num">07</span> Sources</h2>
 <ul>
 <li>Nationaal Archief, The Hague, VOC 1.04.02, inv. 1079, 1080, 1108, 1111, 1134, 1141; scans through the NA IIIF service (region boxes in <code translate="no">targets/vocbatavia/images/crops.tsv</code>).</li>
-<li>W. Ph. Coolhaas (ed.), <i>Generale Missiven van Gouverneurs-Generaal en Raden aan Heren XVII</i>, vol. I (1960) p. 129&ndash;130 and vol. II (1964) pp. 101&ndash;108, 194&ndash;199, Huygens Instituut online.</li>
+<li>W. Ph. Coolhaas (ed.), <i>Generale Missiven van Gouverneurs-Generaal en Raden aan Heren XVII</i>, vol. I (1960) p. 129&ndash;130 and vol. II (1964) pp. 101&ndash;108, 194&ndash;195, Huygens Instituut online.</li>
 <li>P. A. Leupe (ed.), <i>Reize van Maarten Gerritsz. Vries in 1643</i> (Amsterdam, 1858), introduction and note 2, via the Internet Archive (OCR).</li>
 <li>Shaogang Cheng, <i>De VOC en Formosa 1624&ndash;1662</i> (Leiden, 1995), vol. II p. 27: not seen.</li>
 <li>Prior-art notes with quotations: <code translate="no">targets/vocbatavia/PRIOR_ART.md</code>.</li>
