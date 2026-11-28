@@ -1,0 +1,192 @@
+{
+ "schema_version": 1,
+ "target": "sirdar1909",
+ "title": "Sirdar (Wingate, Khartoum) to Herbert (Cairo), 9 January 1909: eight cipher groups at the end of a clear telegram (Durham HIL/64/400, catalogue 2907)",
+ "documents": [
+  {
+   "id": "hil64-400",
+   "read": "read in part",
+   "shelfmark": "Durham University Library, Abbas Hilmi II papers, HIL/64/400 (unit HIL/64/1-1011, frame 68 of 234, bottom right form)",
+   "date": "9 Jan 1909",
+   "year": 1909,
+   "country": "Sudan",
+   "route": "Sirdar (Sir Reginald Wingate) -> Herbert",
+   "places": {
+    "from": "Khartoum",
+    "to": "Cairo"
+   },
+   "language": "English",
+   "pages": 1,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "none: no decode on the form, no clear copy in HIL/64-65 (wave 16 sweep)"
+   },
+   "length": {
+    "tokens": 40,
+    "distinct": 17,
+    "unit": "letters",
+    "measured": true,
+    "file": "transcription_400.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Durham IIIF, native-resolution regions",
+    "image_quality": "good",
+    "notes": "One pass with the key in hand and two blind passes by separate AI agents that never saw the key; they agree except group 3 last letter (g or [g/q]) and the first letter of group 4 (e or [e/c])."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "monoalphabetic"
+  ],
+  "summary": "Simple letter substitution of the Sudan Government telegrams, Nov 1908 - Jan 1909: words run together, regrouped in fives, a null at each end of a run (V ... v), set inside clear English. Partly reciprocal. HIL/64/214 (Sept 1908) is in another alphabet.",
+  "symbol_kind": "letters",
+  "homophones": {
+   "used": false
+  },
+  "nomenclator": {
+   "present": false
+  },
+  "nulls": {
+   "present": true
+  },
+  "word_division": "none",
+  "sibling_key": "cipher/clear pairs of the same file: HIL/64/402 = 403 (3 Jan 1909) and HIL/64/239-240 = 118-119 (30 Nov 1908)",
+  "distinct_symbols": 17,
+  "diacritics": {
+   "used": false
+  },
+  "key_order": "random"
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "No decode on the form; no clear copy in HIL/64 or HIL/65 (wave 16 sweep, all 546 frames); no reading in this repository, issues or pull requests; checked 27 Nov 2026.",
+   "found": "before attempt",
+   "used": false
+  },
+  "inputs": [
+   "images",
+   "sibling key",
+   "known plaintext"
+  ],
+  "attack": "sibling key",
+  "human_role": "Brice Dudout set the rules (key built on named pairs only, held-out passage transcribed blind, manifest frozen and its hash posted in issue #1023 before one measurement). AI agents transcribed, built the key, measured and read.",
+  "models": [
+   "Claude Opus 5.5 (Anthropic), agents run by Brice Dudout"
+  ],
+  "first_date": "2026-11-27",
+  "last_date": "2026-11-27"
+ },
+ "solution": [
+  {
+   "date": "2026-11-27",
+   "kind": "key from source",
+   "what": "Alphabet rebuilt from HIL/64/402 = 403 and HIL/64/239 sheet 1 = 118 (verification/build_v1.txt, key_v1.tsv).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-27",
+   "kind": "verification",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "Held-out test v1 (tools/holdout, manifest a9259625..., hash in issue #1023 before the run) on HIL/64/240 = 119 and HIL/64/214 = 62, 301 signs: char 0.3051 vs best of 200 shuffled controls 0.2237, z = 5.03. Per run (information only): 240 0.75 and 0.81, 214 0.17 (another alphabet, a risk declared in the protocol).",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-27",
+   "kind": "reading",
+   "what": "Key v1 applied to the 40 letters of HIL/64/400 (decryption_400.txt, unedited): 'kindly wire me any remarks you may have to make', 5 of 10 words sure, 5 probable; 10 cipher words, 5 holes (the five probable words); a text under 40 cipher words has the short-text floor (at most 2 holes), so with 5 it is read in part by the floor.",
+   "result": "partial"
+  }
+ ],
+ "outcome": {
+  "class": "read in part",
+  "key": "partial",
+  "method": "key recovered based on plaintext from external sources",
+  "method_basis": "Alphabet learnt from two cipher/clear pairs of the same file and the same weeks, then applied to the bare passage.",
+  "contribution": [
+   "transcription",
+   "key recovered"
+  ],
+  "verification": [
+   "statistical test",
+   "historical consistency"
+  ],
+  "validation": {
+   "date": "2026-11-27",
+   "verdict": "fail",
+   "file": "verification/RESULT_v1.json",
+   "notes": "Pre-registered held-out test under the #1014 convention: 0.3051 vs best control 0.2237, bar 0.85, not validated. The Sept 1908 telegram (235 of the 301 signs) is in another alphabet; the two Nov 1908 runs (66 signs) score 0.75 and 0.81. Passage burnt."
+  },
+  "fraction_read": 0.5,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "reading_400.md: 5 of 10 cipher words sure (5 probable, counted as holes); only sure words count as read",
+  "provenance": "contributed",
+  "credits": [
+   {
+    "who": "dudout",
+    "role": "solution",
+    "note": "alphabet rebuilt from the 1908-09 pairs, held-out test (not validated), short reading of HIL/64/400",
+    "date": "2026-11-27"
+   },
+   {
+    "who": "bourdeau",
+    "role": "new cipher",
+    "note": "catalogue 2907, found and first transcribed by the wave 16 Durham sweep (research/sweep_2026-11-15_wave16_durham), as agreed under #969",
+    "date": "2026-11-15"
+   }
+  ],
+  "key_file": "verification/key_v1.tsv",
+  "texts": [
+   {
+    "doc": "hil64-400",
+    "label": "HIL/64/400, Sirdar to Herbert, 9 Jan 1909, eight groups",
+    "transcription": "transcription_400.txt",
+    "decryption": "decryption_400.txt",
+    "reading": "reading_400.md",
+    "language": "en",
+    "state": "read in part",
+    "read_share": 0.5,
+    "summary": "Wingate forwards the widow's request that the son of the late Colonel Hassan Bey Tewfik be admitted to the Military School, and asks Herbert to wire any remarks he may have.",
+    "cipher_words": 10,
+    "holes": 5,
+    "note": "Short text: 10 cipher words, 5 holes (the five probable words); a text under 40 cipher words has the short-text floor (at most 2 holes), so with 5 it is read in part by the floor. Holes: {kindly}, {any} (g read as n), {wire}, {remarks} (the 4-shaped x taken as r), {have} (z = v not in the key).",
+    "reading_review": {
+     "grade": "B",
+     "by": "integration review of PR #1025 (AI agent, for the maintainers); not a person",
+     "date": "2026-11-28",
+     "note": "one English sentence of ten words, 5 sure and 5 probable (g read as n twice, the 4-shaped x twice, z = v once); read_share 0.50, short-text floor not met (5 holes); groups 2, 4, 5 and 8 checked on the Durham image in round 13; key not validated by held-out test v1"
+    }
+   }
+  ],
+  "notes": "Short reading (40 letters, 10 cipher words): 10 cipher words, 5 holes (the five probable words); a text under 40 cipher words has the short-text floor (at most 2 holes), so with 5 it is read in part by the floor. Credit: the wave 16 Durham sweep of this repository found and first transcribed the eight groups and listed the cipher/clear pairs used for the key. No image included (Durham's reuse terms not checked).",
+  "gaps": [
+   {
+    "item": "{kindly}, {any}: the letter read g stands for n (n is q in the key; g and q are hard to tell apart in these hands)",
+    "blocker": "illegible",
+    "detail": "a person checking the last letter of group 3 on the image, or a further cipher/clear pair of the same alphabet, would settle it"
+   },
+   {
+    "item": "{wire}, {remarks}: the 4-shaped letter taken as x (= r)",
+    "blocker": "illegible",
+    "detail": "both blind passes read x; no clear copy of HIL/64/400 to confirm it"
+   },
+   {
+    "item": "{have}: cipher z has no value in key v1 (nor i, n)",
+    "blocker": "no-key-material",
+    "detail": "z does not occur in the two training pairs; v from sense only"
+   },
+   {
+    "item": "the key is not validated (held-out test v1 failed, 0.3051 vs bar 0.85; the passage is burnt)",
+    "blocker": "no-key-material",
+    "detail": "a new test needs another cipher/clear pair of the Nov 1908 - Jan 1909 alphabet; none other found in HIL/64-65"
+   }
+  ]
+ }
+}
