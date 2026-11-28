@@ -65,7 +65,7 @@
   },
   {
    "id": "Lomenie-1595-02-24",
-   "read": "not read",
+   "read": "read in part",
    "shelfmark": "Mémoires et correspondance vol. 6 pp. 179-181; original not located",
    "date": "24 Feb 1595",
    "year": 1595,
@@ -340,7 +340,7 @@
   ],
   "sessions": 2,
   "first_date": "2026-10-25",
-  "last_date": "2026-11-12"
+  "last_date": "2026-11-27"
  },
  "solution": [
   {
@@ -519,6 +519,42 @@
    "kind": "verification",
    "what": "Full-texts audit: the seven documents that are not read (Loménie 1595, Duplessis 1597, 1597-98 and 1599, Rohan 1599 and 1611-12, unsigned 1612) listed in outcome.texts with their transcriptions and the pre-registered mechanical decodes already in beling/results (mechanical.txt, round2_mechanical.txt), state decoded, not read. No new decode was run and no file changed.",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-27",
+   "kind": "crib",
+   "technique": [
+    "crib testing",
+    "key-structure hypothesis"
+   ],
+   "what": "Shawn Grening (grening/): Loménie 1595 from Andrew Beling's two cribs (step 8). With 10 read as one figure, 810 62 110 4 is seven figures for 'de Camor' and 810 44 109 27 32 10 is eleven for 'de Bretaigne' (the king's spelling in CVI). They give a 2, b 4, c 6, d 8, e 10: one figure 1-10 per letter, two letters per group, the alphabet folded onto the ten figures (a-e 2-10 even, f-l 1-9 odd, m n 1 2, o-s 10-2 even, t-z 9-1 odd). 13 of the 15 passages then encode exactly to the printed figures (158 letters): province de Bretaigne, de Camor, les despesches, de Vennes, ville de seureté de Bretaigne, la necessité, d'edicts, l'assamblée de Saumur, Bearn, la messe, de Boisdauphin, le marquis de Belisle. L8 'du roy' is doubtful (print has 8, the rule gives y = 3, y occurs nowhere else); L15 reads '[...] querelles'. Each figure stands for two or three letters; f, x, z are inferred.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-27",
+   "kind": "verification",
+   "technique": [
+    "statistical test",
+    "language-model scoring"
+   ],
+   "what": "grening/scripts/test_key.py, written after the reading (not pre-registered). Letter trigrams from the vol. 6 OCR with CVI, CVII and the table of contents cut out. The twelve crib letters fixed; the other ten by the folded-alphabet rule or at random: on the passages the cribs do not touch (130 figures) the rule scores -2.045 per figure against 2,000 random keys (mean -2.282, sd 0.060, best -2.106), beating 2,000 of 2,000, z = 3.9.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-27",
+   "kind": "solver",
+   "technique": [
+    "simulated annealing",
+    "language-model scoring"
+   ],
+   "what": "grening/scripts/test_key.py --anneal: twelve annealing runs from random keys on all fifteen passages, no cribs. They reach -1.947 to -2.080 per figure (1-4 letters per figure) and -1.985 to -2.087 (2-3 letters); the pattern key scores -2.050, and no run agrees with it on more than 10 of 18 attested letters. On 163 figures a letter model cannot pick out a polyphonic key: the cribs are needed. docs/_validate.py does not apply (polyphonic).",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-27",
+   "kind": "control",
+   "what": "The same split and key on Duplessis's figures of Jan 1597 (duplessis1597.txt): no words, three bare 0 figures, too many 5s. Looked at, not scored. The key is Loménie's, not Duplessis's.",
+   "result": "ruled out"
   }
  ],
  "outcome": {
@@ -533,14 +569,24 @@
   "provenance": "mixed",
   "gaps": [
    {
-    "item": "Lomenie 1595 figures (95 groups)",
-    "blocker": "no-key-material",
-    "detail": "Neither the Rohan 1594 key nor Dudout's folded 1593 key fits (pre-registered, 11 Nov 2026). Cribs from the editors' note and the king's cipher letter CVI of the same day give 'de Camor' and probably 'de Bretagne'; the original of CVI or of Lomenie's letter would give the key."
+    "item": "Lomenie 1595, L8: 87 410 8 ('du ro' then 8)",
+    "blocker": "needs-physical-access",
+    "detail": "'du roy' fits, but the print has 8 where the folded-alphabet rule gives y = 3, and y occurs nowhere else in the letter. The manuscript would show whether the figure is 3 or 8."
+   },
+   {
+    "item": "Lomenie 1595, L15: 100 76 before 'querelles'",
+    "blocker": "too-short",
+    "detail": "100 holds the only 0 that is not part of a 10; perhaps a name figure like the 98 and 99 in the clear text. Two groups, one occurrence."
+   },
+   {
+    "item": "Lomenie 1595 name figures in the clear text (3, 11, 14, 16, 25, 26, 98, 99) and the letters f, x, z",
+    "blocker": "open-codes",
+    "detail": "The name figures are a separate list the letter key says nothing about. f, x and z do not occur; their values are inferred from the pattern."
    },
    {
     "item": "Duplessis's own figures 1595-99 (about 240 groups)",
     "blocker": "no-key-material",
-    "detail": "To his wife and to Cargroy; name codes 81 63, 153 63, 33; few x10 codes, probably not Lomenie's table. Structure only (12 Nov 2026)."
+    "detail": "To his wife and to Cargroy; name codes 81 63, 153 63, 33; few x10 codes, probably not Lomenie's table. Structure only (12 Nov 2026). 27 Nov 2026: Loménie's letter key gives no words on the Jan 1597 figures (looked at, not scored)."
    },
    {
     "item": "Rohan 1597 figures",
@@ -563,8 +609,8 @@
     "detail": "44 occurs only at the end of P1 and P2; values probable."
    }
   ],
-  "notes": "1593 part read via Dudout's key; 1595-98 open. 11-12 Nov 2026 (Andrew Beling, beling/): vols. 7-12 searched and their figures transcribed (six new documents); the Rohan 1594 key fits Mme de Rohan's 1597 letters but not her 1611-12 ones; Dudout's folded key does not fit 1595-97; the 1595-99 Duplessis/Lomenie figures stay unread. 12 Nov 2026 integration check: all tests re-run and reproduced (corpus hash matches); strict read share 0.182 (contributor's 0.247 counts name-code letters and inferred values); the Rohan 1594 key 'fits' Rohan 1597 on a small sample where only 'le roy' and 'Madame' read without inference.",
-  "method_basis": "1593 Du Maurier/Serviez figures (93 groups) read with the key Brice Dudout published for them (27 Oct 2026), applied to this project's transcription; the 1595-98 figures, a different system, remain not read.",
+  "notes": "1593 part read via Dudout's key; 1595-98 open. 11-12 Nov 2026 (Andrew Beling, beling/): vols. 7-12 searched and their figures transcribed (six new documents); the Rohan 1594 key fits Mme de Rohan's 1597 letters but not her 1611-12 ones; Dudout's folded key does not fit 1595-97; the 1595-99 Duplessis/Lomenie figures stay unread. 12 Nov 2026 integration check: all tests re-run and reproduced (corpus hash matches); strict read share 0.182 (contributor's 0.247 counts name-code letters and inferred values); the Rohan 1594 key 'fits' Rohan 1597 on a small sample where only 'le roy' and 'Madame' read without inference. 27 Nov 2026 (Shawn Grening, grening/): Lomenie 1595 read in part with a ten-figure folded letter key built from Beling's two cribs; 13 of 15 passages exact.",
+  "method_basis": "1593 Du Maurier/Serviez figures (93 groups) read with the key Brice Dudout published for them (27 Oct 2026), applied to this project's transcription; Loménie's letter of 1595 read in part (27 Nov 2026) with a ten-figure letter key built from two cribs taken from the clear text beside it and the king's letter of the same day; Duplessis's own 1595-99 figures remain not read.",
   "credits": [
    {
     "who": "dudout",
@@ -578,9 +624,22 @@
     "role": "verification",
     "date": "2026-11-11",
     "note": "Pre-registered tests of the folded 1593 key (does not fit 1595-97) and of the Rohan 1594 key on Mme de Rohan's 1597 letters (fits) and 1611-12 letters (does not fit); vols. 7-12 figures transcribed; cribs for Lomenie 1595 (beling/)."
+   },
+   {
+    "who": "grening",
+    "role": "solution",
+    "date": "2026-11-27",
+    "note": "Loménie 24 Feb 1595: ten-figure folded letter key from Beling's two cribs; 13 of 15 passages exact (grening/)."
+   },
+   {
+    "who": "ajbeling",
+    "role": "pointer",
+    "date": "2026-11-12",
+    "note": "The two cribs for Loménie 1595, 'de Camor' and 'de Bretagne' (NOTES step 8), from which the key was built.",
+    "source": "https://github.com/dbourdeau/cyphersolver/pull/449"
    }
   ],
-  "fraction_read": 0.182,
+  "fraction_read": 0.354,
   "texts": [
    {
     "doc": "DuMaurier-1593-06",
@@ -630,13 +689,19 @@
    },
    {
     "doc": "Lomenie-1595-02-24",
-    "label": "Loménie to Duplessis-Mornay, 24 Feb 1595: cipher runs L1 onward (and D runs, Duplessis to his wife, vol. 6 CIX)",
+    "label": "Loménie to Duplessis-Mornay, 24 Feb 1595: cipher runs L1-L15 (the D run, Duplessis to his wife, vol. 6 CIX, is not read)",
     "transcription": "lomenie1595.txt",
-    "decryption": "beling/results/mechanical.txt",
+    "decryption": "grening/lomenie1595_decryption.txt",
+    "reading": "grening/lomenie1595_reading.md",
+    "translation": "grening/lomenie1595_reading.md",
     "language": "fr",
-    "state": "decoded, not read",
-    "summary": "Not read. Figures inside a clear letter; the clear words around each run are in the transcription.",
-    "note": "The decryption is the pre-registered mechanical test, not a reading: sections T1_folded_on_A (Dudout's 1593 key) and extra_rohan_on_A (Rohan 1594 key) of beling/results/mechanical.txt, lines L and D. Neither key gives words (L1 '[84] td da [610] ut x te ad [32] t'). Blocker: no key material."
+    "state": "read in part",
+    "cipher_markup": "**",
+    "read_share": 0.943,
+    "cipher_words": 35,
+    "holes": 2,
+    "summary": "Loménie, the king's secretary, answers Duplessis-Mornay on the day Henri IV wrote to him in cipher about the same affair (vol. 6 CVI): the sieur de Camor's offer in Brittany, for which he may be promised a town of surety there. The cipher also hides news from court: the need of the king's affairs, edicts sent for verification, the assembly of Saumur, the deputies of Béarn come about the mass, and the expected submission of Boisdauphin and the marquis de Belle-Île.",
+    "note": "Key grening/key_lomenie1595.tsv (27 Nov 2026, Shawn Grening, from Andrew Beling's cribs). 33 of 35 cipher words by the contributor's count of the bold words; the two holes are [?roy] (L8: the print has 8 where the rule gives y = 3) and the unread 100 76 before 'querelles' (L15), counted as one word, an estimate. Each figure stands for two or three letters, so the decryption file lists the letters each figure allows and the reading chooses among them. The reading holds the French sentences and the English translation in one file. Under the short-text floor (fewer than 40 cipher words, 2 holes) the entry could be 'read'; it is left 'read in part' for the reviewer. No reading_review yet. The D run on the last line of lomenie1595.txt is Duplessis's own cipher and is not read."
    },
    {
     "doc": "Duplessis-1597-01",
@@ -693,6 +758,6 @@
    }
   ],
   "fraction_read_method": "measured",
-  "fraction_read_source": "12 Nov 2026 integration recount, strict (README read bar: guessed, inferred and name-code letter values are holes): 534 code groups in all (1593: 93; Lomenie 1595: 95; Duplessis Jan 1597: 90; Rohan 1597: 50; Duplessis 1597-98: 79; Duplessis 1599: 30; Rohan 1599: 4; Rohan 1611-12: 84; unsigned 1612: 9). Read as sense: the 93 groups of 1593 (Dudout's key) and 4 of the 50 Rohan 1597 groups, the key's own values with no inference (10 = le roy in R10, R13, R15; 11 = Madame in R12); 97/534 = 0.182. The other Rohan 1597 groups that take a value are letters of names that read only with the inferred values 672, 134, 160, 38 (R2, R7, R19), the word-code half of 'le [672]' (R5, R8), or single figures that Beling's own table says are name codes (R3, R4, R6, R11, R14, R16, R17, R18). The contributor's own figure, 0.247 (132/534: every group that takes a value, 39 of the 50 Rohan 1597 groups), is not a read share. Before: 93/278 = 0.335, before vols. 7-12 were transcribed."
+  "fraction_read_source": "12 Nov 2026 integration recount, strict (README read bar: guessed, inferred and name-code letter values are holes): 534 code groups in all (1593: 93; Lomenie 1595: 95; Duplessis Jan 1597: 90; Rohan 1597: 50; Duplessis 1597-98: 79; Duplessis 1599: 30; Rohan 1599: 4; Rohan 1611-12: 84; unsigned 1612: 9). Read as sense: the 93 groups of 1593 (Dudout's key) and 4 of the 50 Rohan 1597 groups, the key's own values with no inference (10 = le roy in R10, R13, R15; 11 = Madame in R12); 97/534 = 0.182. The other Rohan 1597 groups that take a value are letters of names that read only with the inferred values 672, 134, 160, 38 (R2, R7, R19), the word-code half of 'le [672]' (R5, R8), or single figures that Beling's own table says are name codes (R3, R4, R6, R11, R14, R16, R17, R18). The contributor's own figure, 0.247 (132/534: every group that takes a value, 39 of the 50 Rohan 1597 groups), is not a read share. Before: 93/278 = 0.335, before vols. 7-12 were transcribed. 27 Nov 2026 (grening/): Lomenie 1595 adds 92 of its 95 groups (not the last group of L8, nor 100 and 76 of L15): 189/534 = 0.354, the contributor's count, to be recounted at integration."
  }
 }
