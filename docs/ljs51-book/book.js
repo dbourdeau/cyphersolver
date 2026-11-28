@@ -14,26 +14,36 @@ const params = new URLSearchParams(location.search);
 const EMBED = params.has('embed');
 if (EMBED) document.body.classList.add('embed');
 const pages = await (await fetch('pages.json')).json();   // 225 images; the last is the spine
+const cutMeshes = await (await fetch('leaf-meshes.json')).json();
 const spineImg = pages.pop();
 const N = pages.length / 2;                                // 112 leaves; 0 and N-1 are the boards
 const leaves = [];
 for (let k = 0; k < N; k++) leaves.push({ front: pages[2*k], back: pages[2*k+1] });
 
 // ---- dimensions (text-block height = 1) -------------------------------------------------
-const W = 0.69, H = 1.0;           // text block (the leaf's proportion in the photographs)
-const OV = 0.014;                  // board overhang beyond the text block
-const BT = 0.014;                  // board thickness
-const PAGES_T = 0.13;              // thickness of the 110 paper leaves together
+const W = 124/180, H = 1;          // Penn's catalogue dimensions, in units of leaf height
+const BOARD_H = H;                 // the bound volume is 180 x 135 mm
+const BT = .020;                   // approximate board thickness from the end view at 9.95 s
+const PAGES_T = .108;              // thickness of the 110 paper leaves together
 const D = PAGES_T / (N - 2);
 const NU = 48;                     // segments across a leaf
-const WB = W + OV;                 // board width
+const WB = 135/180;                 // board width
 const isBoard = i => i === 0 || i === N - 1;
 const th = leaves.map((_, i) => isBoard(i) ? BT : D);
 const pre = [0]; for (let i = 0; i < N; i++) pre.push(pre[i] + th[i]);   // pre[i] = sum th[0..i-1]
 const TOTAL = pre[N];
 const hL = i => TOTAL - pre[i];    // top of leaf i in the left-hand pile
 const hR = i => pre[i + 1];        // top of leaf i in the right-hand pile
-const uOf = i => (pre[i] + th[i] / 2) / TOTAL;   // where leaf i is sewn along the spine (0 = front board)
+const sewing = th.map((width,i) => (pre[i]+width/2)/TOTAL);
+// Penn's collation. Folded sheets in each gathering share a sewing station.
+// The degree of bunching is inferred; the endleaves keep their own positions.
+let gatheringStart = 3;
+for (const count of [2,10,8,8,10,4,6,10,10,10,10,10,8]) {
+  const centre = (pre[gatheringStart]+pre[gatheringStart+count])/(2*TOTAL);
+  for (let i=gatheringStart;i<gatheringStart+count;i++) sewing[i] += .42*(centre-sewing[i]);
+  gatheringStart += count;
+}
+const uOf = i => sewing[i];   // where leaf i is sewn along the spine (0 = front board)
 
 // ---- renderer ------------------------------------------------------------------------------
 const host = document.getElementById('book3d') || document.body;
@@ -86,19 +96,52 @@ function dropTex(id, mirrored) {
   const key = id + (mirrored ? ':m' : ''); const t = texCache.get(key);
   if (t) { t.dispose(); texCache.delete(key); }
 }
-// Page edges: one line per leaf, its colour taken from the edges of the stacked leaves that
-// show beside each page in the photographs (edge_u.png / edge_v.png, 512 samples). Texture
-// coordinates are in model units, so 0.6 units of thickness hold all 512 lines.
-function edgeTexture(file, alongU) {
-  const t = loader.load(file);
-  t.colorSpace = THREE.SRGBColorSpace; t.wrapS = t.wrapT = THREE.RepeatWrapping; t.anisotropy = maxAniso;
-  alongU ? t.repeat.set(1 / 0.6, 1) : t.repeat.set(1, 1 / 0.6);
-  return t;
+// Keep the base texture until its registered master crop is ready. Only the
+// visible faces at reading distance and the moving leaf need large textures.
+const details = new Map();
+let detailView = '';
+function updateDetails() {
+  const close = camera.position.distanceTo(controls.target) < 1.9 ||
+    renderer.domElement.height / (2*Math.tan(camera.fov*Math.PI/360)*camera.position.distanceTo(controls.target)) > 1080;
+  const active = leaves.filter(L => L.i >= 3 && L.i <= 108 && moving(L));
+  const key = close ? [current,...active.map(L=>L.i)].join(',') : 'off';
+  if (key === detailView) return;
+  detailView = key;
+  const wanted = new Map();
+  function want(L, back) {
+    if (!L?.dressed || L.i < 3 || L.i > 108) return;
+    const id = (back ? L.back : L.front).id;
+    wanted.set(id, {mat:back ? L.backMat : L.frontMat, base:tex(id,back)});
+  }
+  if (close) {
+    for (const L of active.slice(-2)) { want(L,false); want(L,true); }
+    want(leaves[current],false);
+    want(leaves[current-1],true);
+  }
+  for (const [id, entry] of details) if (!wanted.has(id)) {
+    if (entry.mat.map === entry.texture) entry.mat.map = entry.base;
+    entry.texture.dispose(); details.delete(id);
+  }
+  for (const [id, entry] of wanted) if (!details.has(id)) {
+    const texture = loader.load(`detail/${id}.jpg`, () => {
+      if (details.get(id) === entry && entry.mat.map === entry.base) entry.mat.map = texture;
+    }, undefined, () => { if (details.get(id) === entry) { details.delete(id); texture.dispose(); } });
+    texture.colorSpace = entry.base.colorSpace;
+    texture.anisotropy = maxAniso; texture.channel = entry.base.channel;
+    texture.wrapS = entry.base.wrapS; texture.repeat.copy(entry.base.repeat); texture.offset.copy(entry.base.offset);
+    entry.texture = texture; details.set(id,entry);
+  }
 }
-const capMat = new THREE.MeshStandardMaterial({ map: edgeTexture('edge_v.png', false), roughness: 0.95 });
-const wallMat = new THREE.MeshStandardMaterial({ map: edgeTexture('edge_u.png', true), roughness: 0.95 });
-// the photographed edges were lit head-on; side faces here get less light, so lift them back to that tone
-capMat.color.setScalar(1.5); wallMat.color.setScalar(1.5);
+
+// U follows physical leaf depth on every wall and rim, including during turns.
+function stackMaterial(right) {
+  const photo = loader.load(`stack-${right ? 'right' : 'left'}.jpg`);
+  photo.colorSpace = THREE.SRGBColorSpace;
+  photo.anisotropy = maxAniso;
+  if (right) { photo.repeat.x = -1; photo.offset.x = 1; }
+  return new THREE.MeshBasicMaterial({ map: photo, side: THREE.DoubleSide, toneMapped: false });
+}
+const stackMats = [stackMaterial(false),stackMaterial(true)];
 const boardEdgeMat = new THREE.MeshStandardMaterial({ color: 0x4a3426, roughness: 0.8 });
 
 // ---- the spine ------------------------------------------------------------------------------------
@@ -150,7 +193,7 @@ function climb(delta) {
 }
 const P0 = { x: 0, y: 0 };
 // fills xs/ys (NU+1 points) for leaf i at turn t; k bends the free edge (+: towards the left pile)
-function leafProfile(i, t, k, xs, ys, drop = 0) {
+function leafProfile(i, t, k, xs, ys, drop = 0, calibrated = true) {
   const a0 = attach(i, P0), x0 = a0.x, y0 = a0.y;
   const cl = climb(hL(i) - drop - y0), cr = climb(hR(i) - drop - y0);
   const ds = W / NU;
@@ -162,56 +205,222 @@ function leafProfile(i, t, k, xs, ys, drop = 0) {
     x += Math.cos(phi) * ds; y += Math.sin(phi) * ds;
     xs[j] = x; ys[j] = y;
   }
+  if (calibrated) {
+    const correction = (1-t)*fanFit[0]*((N-2-i)/(N-3)) + t*fanFit[1]*((i-1)/(N-3));
+    for (let j=1;j<=NU;j++) xs[j] += correction*smooth(0,1,j/NU);
+  }
+}
+
+const fanFit = [0,0];
+// At mid-height the exposed stacks occupy these fractions of a leaf width
+// in the paired master photographs at 1r, 41r, and 106v.
+function fitPiles() {
+  const opened = SP.f*TOTAL;
+  const cut = Math.max(1,Math.min(N-2,1+(opened-BT)/D));
+  const f = (cut-1)/(N-3);
+  const sample = (front,middle,later,rear) => f<.38
+    ? front+(middle-front)*f/.38 : f<.64 ? middle+(later-middle)*(f-.38)/.26 : later+(rear-later)*(f-.64)/.36;
+  for (const t of [0,1]) {
+    const bottom = t ? 1 : N-2;
+    const share = t ? f : 1-f;
+    if (share < .025) { fanFit[t]=0; continue; }
+    const i = Math.round(cut);
+    leafProfile(bottom,t,0,XS,YS,0,false);
+    const edge=XS[NU];
+    leafProfile(i,t,0,XS,YS,0,false);
+    const width = W*(t ? sample(0,.066,.112,.109) : sample(.064,.078,.052,0));
+    fanFit[t]=Math.max(-.04,Math.min(.04,((t ? -width : width)-(XS[NU]-edge))/share));
+  }
 }
 
 // ---- paper leaves -----------------------------------------------------------------------------------
+// Each damaged leaf has one physical mesh for turning, shadow casting and picking.
+function makeCutGeometry(cut) {
+  const g = new THREE.BufferGeometry(), frontUV = [], backUV = [];
+  for (const [x, y, bx, by] of cut.vertices) {
+    frontUV.push(x / 450, 1 - y / 650);
+    backUV.push(bx / 450, 1 - by / 650);
+  }
+  g.setIndex(cut.indices);
+  g.setAttribute('position', new THREE.Float32BufferAttribute(new Float32Array(cut.vertices.length * 3), 3));
+  g.setAttribute('uv', new THREE.Float32BufferAttribute(frontUV, 2));
+  if (cut.coveredUV) {
+    const photoUV = cut.coveredFace > 0 ? frontUV.slice() : backUV;
+    for (const [v, x, y] of cut.coveredUV) {
+      photoUV[2*v] = x / 450;
+      photoUV[2*v+1] = 1 - y / 650;
+    }
+    if (cut.coveredFace > 0) g.setAttribute('uv2', new THREE.Float32BufferAttribute(photoUV, 2));
+  }
+  g.setAttribute('uv1', new THREE.Float32BufferAttribute(backUV, 2));
+  return g;
+}
 function makeLeafGeometry() {
   const g = new THREE.BufferGeometry();
-  const pos = new Float32Array((NU + 1) * 2 * 3), uv = new Float32Array((NU + 1) * 2 * 2), idx = [];
-  for (let i = 0; i <= NU; i++) for (let j = 0; j < 2; j++) {
-    const v = i * 2 + j; uv[v*2] = 1 - i / NU; uv[v*2+1] = j === 0 ? 1 : 0;
+  const rows = 16, stride = rows+1, uv = [], idx = [];
+  const pos = new Float32Array((NU+1)*stride*3);
+  for (let i=0; i<=NU; i++) for (let j=0; j<=rows; j++) {
+    uv.push(1-i/NU, 1-j/rows);
+    if (i<NU && j<rows) {
+      const a=i*stride+j, b=a+stride;
+      idx.push(a,b,a+1,b,b+1,a+1);
+    }
   }
-  for (let i = 0; i < NU; i++) { const a = i*2, b = a + 2, c = a + 1, d = a + 3; idx.push(a, b, c, b, d, c); }
+  const perimeter = [];
+  for (let i=0; i<=NU; i++) perimeter.push(i*stride);
+  for (let j=1; j<=rows; j++) perimeter.push(NU*stride+j);
+  for (let i=NU-1; i>=0; i--) perimeter.push(i*stride+rows);
+  for (let j=rows-1; j>0; j--) perimeter.push(j);
+  g.userData.borders = [perimeter];
   g.setIndex(idx);
   g.setAttribute('position', new THREE.BufferAttribute(pos, 3));
-  g.setAttribute('uv', new THREE.BufferAttribute(uv, 2));
+  g.setAttribute('uv', new THREE.Float32BufferAttribute(uv, 2));
   return g;
 }
 const pageMat = side => new THREE.MeshStandardMaterial({ color: 0xffffff, roughness: 0.88, side,
-  polygonOffset: true, polygonOffsetFactor: -1, polygonOffsetUnits: -1 });
+  polygonOffset: true, polygonOffsetFactor: 0, polygonOffsetUnits: -1 });
 const XS = new Float32Array(NU + 1), YS = new Float32Array(NU + 1);
-// How a turning leaf bends. Positive k swings the free edge towards the left-hand pile.
-//  lift:    the hand raises the free edge first, so early in a turn the edge leads the leaf
-//  air:     in flight the edge trails the motion, the more the faster the leaf moves
-//  gravity: a leaning leaf sags towards the side it leans to (none upright or lying flat)
-function bendOf(L) {
-  const t = L.t, s = Math.sin(Math.PI * t);
-  const v = Math.max(-1, Math.min(1, L.w / VMAX));
-  const air = 0.8 * v * s;
-  const gravity = 0.2 * Math.sin(2 * Math.PI * t);
-  let lift = 0;
-  if (L.dragging) lift = -0.35 * Math.sign(L.dragT - L.dragFrom) * s;
-  else if (L.anim && L.anim.lift) {
-    const span = Math.abs(L.anim.to - L.anim.from) || 1, p = Math.abs(t - L.anim.from) / span;
-    lift = -0.55 * Math.sign(L.anim.to - L.anim.from) * s * Math.max(0, 1 - 2.2 * p);
+// Each visible sheet has a narrow fore-edge and head/tail, even where the
+// simplified pile stops. Join resting rows along the fan, and carry only
+// the thickness of the individual sheet when it lifts.
+function makeRim(L) {
+  const ends = [], headTail = [], uv = [], indices = [];
+  const faceUV = L.geo.attributes.uv;
+  const loops = L.cut?.borders ?? L.geo.userData.borders;
+  const depth = (N-2-L.i)/(N-3);
+  for (const loop of loops) for (let k = 0; k < loop.length; k++) {
+    const a = loop[k], b = loop[(k+1)%loop.length];
+    const alongHead = Math.abs(faceUV.getX(b)-faceUV.getX(a)) > Math.abs(faceUV.getY(b)-faceUV.getY(a));
+    const start = ends.length;
+    for (const v of [a,b]) {
+      const along = alongHead ? .15+.69*(1-faceUV.getX(v)) : faceUV.getY(v);
+      ends.push(v, v);
+      headTail.push(alongHead);
+      uv.push(depth, along, depth+1/(N-2), along);
+    }
+    indices.push(start,start+1,start+2,start+2,start+1,start+3);
   }
-  return air + gravity + lift;
+  const g = new THREE.BufferGeometry();
+  g.setAttribute('position', new THREE.Float32BufferAttribute(new Float32Array(ends.length*3),3));
+  g.setAttribute('uv', new THREE.Float32BufferAttribute(uv,2));
+  g.setIndex(indices);
+  const mesh = new THREE.Mesh(g, stackMats[0]);
+  mesh.receiveShadow = true;
+  mesh.userData.ends = ends;
+  mesh.userData.headTail = headTail;
+  return mesh;
 }
+
+const lowerX = new Float32Array(NU+1), lowerY = new Float32Array(NU+1);
+function shapeRim(L) {
+  const side = L.t < .5 ? 0 : 1;
+  L.rim.material = stackMats[side];
+  const below = L.i + (side ? -1 : 1);
+  const adjacent = leaves[below];
+  const join = !moving(L) && !adjacent.board && !moving(adjacent) && adjacent.t === side;
+  if (join) leafProfile(below, side, 0, lowerX, lowerY);
+  const g = L.rim.geometry, dst = g.attributes.position.array;
+  const src = L.geo.attributes.position.array, uv = L.geo.attributes.uv;
+  const ends = L.rim.userData.ends;
+  for (let k=0; k<ends.length; k+=2) {
+    const v=ends[k], column=(1-uv.getX(v))*NU;
+    const i=Math.min(NU-1,Math.floor(column)), f=column-i;
+    const x=src[3*v], y=src[3*v+1], z=src[3*v+2];
+    const dx=XS[i+1]-XS[i], dy=YS[i+1]-YS[i];
+    const normal=(side ? D : -D)/Math.hypot(dx,dy);
+    dst[k*3]=x; dst[k*3+1]=y; dst[k*3+2]=z;
+    // At the free edge the next sheet extends beyond this one. Leave that
+    // photographed sliver exposed; only the head and tail follow the fan.
+    dst[k*3+3]=join && L.rim.userData.headTail[k/2]
+      ? lowerX[i]+f*(lowerX[i+1]-lowerX[i]) : x+dy*normal;
+    dst[k*3+4]=join ? lowerY[i]+f*(lowerY[i+1]-lowerY[i]) : y-dx*normal;
+    dst[k*3+5]=z;
+  }
+  g.attributes.position.needsUpdate=true;
+  g.computeVertexNormals(); g.computeBoundingSphere();
+}
+
+// Low-frequency cockling is inferred, unlike the traced tears and creases.
+function paperUndulation(L) {
+  const uv = L.geo.attributes.uv, wave = new Float32Array(uv.count);
+  const phase = L.i * 2.39996;
+  for (let v=0; v<uv.count; v++) {
+    const x=1-uv.getX(v), z=1-uv.getY(v);
+    const broad = Math.sin(7.8*z + 2.5*x + phase + .8*Math.sin(3*x-phase));
+    const diagonal = Math.sin(5.4*x - 4.3*z + phase*.63);
+    const short = Math.sin(15*z + 3*x + phase*1.37);
+    wave[v] = x*x*(3-2*x) * (.57*broad + .29*diagonal + .14*short);
+  }
+  return wave;
+}
+
 function shapePaper(L) {
-  leafProfile(L.i, L.t, bendOf(L), XS, YS);
+  leafProfile(L.i, L.t, 0.75 * Math.sin(Math.PI * L.t) * L.dir, XS, YS);
   const p = L.geo.attributes.position.array;
-  for (let i = 0; i <= NU; i++) for (let j = 0; j < 2; j++) {
-    const v = (i*2 + j) * 3; p[v] = XS[i]; p[v+1] = YS[i]; p[v+2] = j === 0 ? -H/2 : H/2;
+  const uv = L.geo.attributes.uv.array;
+  const flight = Math.sin(Math.PI * L.t);
+  const free = L.exposed ? (moving(L) ? 1 : .045+.955*contact[L.t]) : .045;
+  const resting = (1-2*L.t) * free * (1-flight) * .0038;
+  const airborne = flight * .010;
+  function ripple(v) {
+    const x = 1-uv[2*v];
+    return resting * (x*x*(3-2*x) + L.wave[v]) + airborne * L.wave[v];
+  }
+  for (let v = 0; v < uv.length / 2; v++) {
+    const column = (1 - uv[2*v]) * NU;
+    const i = Math.min(NU - 1, Math.floor(column)), f = column - i;
+    const dx=XS[i+1]-XS[i], dy=YS[i+1]-YS[i];
+    const height=ripple(v)/Math.hypot(dx,dy);
+    p[3*v] = XS[i] + f*dx + height*dy;
+    p[3*v+1] = YS[i] + f*dy - height*dx;
+    p[3*v+2] = (.5 - uv[2*v+1]) * H;
+  }
+  const upward = L.t < .5 ? 1 : -1;
+  // The pile presses buried relief flat. On the exposed face a ridge
+  // can stand proud; the opposite face shows the corresponding hollow.
+  function freedom(sign) {
+    const resting = sign === upward ? free : .055;
+    return resting + (1 - resting) * flight;
+  }
+  function place(v, column, z, height) {
+    const i = Math.min(NU - 1, Math.floor(column)), f = column - i;
+    const dx = XS[i+1] - XS[i], dy = YS[i+1] - YS[i];
+    const normalScale = (height + ripple(v)) / Math.hypot(dx, dy);
+    p[3*v] = XS[i] + f * dx + dy * normalScale;
+    p[3*v+1] = YS[i] + f * dy - dx * normalScale;
+    p[3*v+2] = z;
+  }
+  if (L.cut?.creases) {
+    for (const [v, height] of L.cut.creases) {
+      place(v, (1 - uv[2*v]) * NU, p[3*v+2], height * H / 650 * freedom(Math.sign(height)));
+    }
+  }
+  if (L.cut?.flap) {
+    const [nx, ny] = L.cut.foldDirection;
+    for (const [v, signedDistance] of L.cut.flap) {
+      const sign = Math.sign(signedDistance), distance = Math.abs(signedDistance);
+      // Bend the first five scan pixels around the hinge, then rotate the
+      // rest as one flap. Arc length stays constant as the corner rises.
+      const angle = (.30 + .48 * flight) * freedom(sign);
+      const shoulder = Math.min(distance, 5), tail = distance - shoulder;
+      const turn = angle * shoulder / 5, radius = 5 / angle;
+      const shift = radius * Math.sin(turn) + tail * Math.cos(turn) - distance;
+      const height = radius * (1 - Math.cos(turn)) + tail * Math.sin(turn);
+      const u = uv[2*v] + nx * shift / 450;
+      const z = p[3*v+2] + ny * shift * H / 650;
+      place(v, Math.max(0, Math.min(NU, (1-u)*NU)), z, sign * height * H / 650);
+    }
   }
   L.geo.attributes.position.needsUpdate = true;
   L.geo.computeVertexNormals(); L.geo.computeBoundingSphere();
+  shapeRim(L);
 }
 
 // ---- boards: rigid, hinged on the ends of the spine ---------------------------------------------------
 // Local frame: hinge at the origin, board towards -x, its "front" image on y = 0, "back" on y = -BT.
 // The front board's origin is its outer face (the cover); the back board's is its inner face.
 function makeBoard(L) {
-  const g = new THREE.Group(), bh = H + 2 * OV;
+  const g = new THREE.Group(), bh = BOARD_H;
   const box = new THREE.Mesh(new THREE.BoxGeometry(WB, BT * 0.96, bh), boardEdgeMat);
   box.position.set(-WB / 2, -BT / 2, 0); box.castShadow = box.receiveShadow = true;
   const topG = new THREE.PlaneGeometry(WB, bh); topG.rotateX(-Math.PI / 2);
@@ -241,20 +450,23 @@ function shapeBoard(L) {
 
 for (let i = 0; i < N; i++) {
   const L = leaves[i];
-  Object.assign(L, { i, t: 0, w: 0, anim: null, board: isBoard(i) });
+  Object.assign(L, { i, t: 0, dir: 1, anim: null, board: isBoard(i) });
   if (L.board) {
     L.group = makeBoard(L);
     L.frontMat.map = tex(L.front.id, false); L.backMat.map = tex(L.back.id, false);
     L.dressed = true;
     L.shape = () => shapeBoard(L);
   } else {
-    L.geo = makeLeafGeometry();
+    L.cut = cutMeshes[L.front.id];
+    L.geo = L.cut ? makeCutGeometry(L.cut) : makeLeafGeometry();
     L.frontMat = pageMat(THREE.FrontSide); L.frontMat.shadowSide = THREE.DoubleSide;
     L.backMat = pageMat(THREE.BackSide);
     const f = new THREE.Mesh(L.geo, L.frontMat), b = new THREE.Mesh(L.geo, L.backMat);
     f.castShadow = true; f.receiveShadow = b.receiveShadow = true;
     f.userData.leaf = b.userData.leaf = L; L.pick = [f, b];
-    L.group = new THREE.Group(); L.group.add(f, b); L.group.visible = false;
+    L.wave = paperUndulation(L);
+    L.rim = makeRim(L);
+    L.group = new THREE.Group(); L.group.add(f, b, L.rim); L.group.visible = false;
     L.shape = () => shapePaper(L);
   }
   book.add(L.group);
@@ -262,6 +474,11 @@ for (let i = 0; i < N; i++) {
 function dress(L) {
   if (L.dressed) return;
   L.frontMat.map = tex(L.front.id, false); L.backMat.map = tex(L.back.id, true);
+  if (L.cut) {
+    if (L.cut.coveredFace > 0) L.frontMat.map.channel = 2;
+    L.backMat.map.channel = 1;
+    L.backMat.map.wrapS = THREE.ClampToEdgeWrapping;
+  }
   L.frontMat.needsUpdate = L.backMat.needsUpdate = true; L.dressed = true;
 }
 function undress(L) {
@@ -274,16 +491,15 @@ function undress(L) {
 // Built from the leaves themselves: rows are sampled leaves, each following its own curve, so
 // the lines on the head, tail and fore-edge bend with the pages. v counts leaves (one line each).
 const plainMat = new THREE.MeshStandardMaterial({ color: 0x807668, roughness: 0.95, side: THREE.DoubleSide });
-capMat.side = wallMat.side = THREE.DoubleSide;
 const ROWS = 20;
 const RX = Array.from({ length: ROWS + 1 }, () => new Float32Array(NU + 1));
 const RY = Array.from({ length: ROWS + 1 }, () => new Float32Array(NU + 1));
 const RV = new Float32Array(ROWS + 1);
-function makePile() {
-  const m = new THREE.Mesh(new THREE.BufferGeometry(), [capMat, wallMat, plainMat]);
+function makePile(side) {
+  const m = new THREE.Mesh(new THREE.BufferGeometry(), [stackMats[side], stackMats[side], plainMat]);
   m.castShadow = m.receiveShadow = true; book.add(m); return m;
 }
-const pileL = makePile(), pileR = makePile();
+const pileL = makePile(0), pileR = makePile(1);
 function setPile(m, top, bottom, t) {
   if (top === null || (t === 0 ? top > bottom : top < bottom)) { m.visible = false; return; }
   m.visible = true;
@@ -292,7 +508,8 @@ function setPile(m, top, bottom, t) {
   for (let r = 0; r <= rows; r++) {
     const k = Math.round(n * r / rows), i = bottom + (top < bottom ? -k : k);
     leafProfile(i, t, 0, RX[r], RY[r], D * 0.6 + (r === 0 ? D * 0.4 : 0));
-    RV[r] = k * D;
+    // Anchor the texture to the physical leaves as the exposed pile shrinks.
+    RV[r] = (N - 2 - i) / (N - 3);
   }
   const pos = [], uv = [], groups = [[], [], []];
   const z0 = -(H - 0.006) / 2, z1 = -z0;
@@ -303,13 +520,14 @@ function setPile(m, top, bottom, t) {
   };
   for (let r = 0; r < rows; r++) for (let j = 0; j < NU; j++) for (const z of [z0, z1]) {
     // head and tail: lines along each leaf
-    quad(0, [RX[r][j], RY[r][j], z, RX[r][j], RV[r]], [RX[r][j+1], RY[r][j+1], z, RX[r][j+1], RV[r]],
-            [RX[r+1][j], RY[r+1][j], z, RX[r+1][j], RV[r+1]], [RX[r+1][j+1], RY[r+1][j+1], z, RX[r+1][j+1], RV[r+1]]);
+    const v0 = .15 + .69*j/NU, v1 = .15 + .69*(j+1)/NU;
+    quad(0, [RX[r][j], RY[r][j], z, RV[r], v0], [RX[r][j+1], RY[r][j+1], z, RV[r], v1],
+            [RX[r+1][j], RY[r+1][j], z, RV[r+1], v0], [RX[r+1][j+1], RY[r+1][j+1], z, RV[r+1], v1]);
   }
   for (let r = 0; r < rows; r++) for (const j of [0, NU]) {
     // fore-edge (j = NU) and the sewn edge (j = 0)
-    quad(1, [RX[r][j], RY[r][j], z0, RV[r], 0], [RX[r+1][j], RY[r+1][j], z0, RV[r+1], 0],
-            [RX[r][j], RY[r][j], z1, RV[r], 1], [RX[r+1][j], RY[r+1][j], z1, RV[r+1], 1]);
+    quad(1, [RX[r][j], RY[r][j], z0, RV[r], 1], [RX[r+1][j], RY[r+1][j], z0, RV[r+1], 1],
+            [RX[r][j], RY[r][j], z1, RV[r], 0], [RX[r+1][j], RY[r+1][j], z1, RV[r+1], 0]);
   }
   for (const r of [0, rows]) for (let j = 0; j < NU; j++) {
     quad(2, [RX[r][j], RY[r][j], z0, 0, 0], [RX[r][j+1], RY[r][j+1], z0, 0, 0],
@@ -342,7 +560,7 @@ const spineGeo = (() => {
 const spine = new THREE.Mesh(spineGeo, new THREE.MeshStandardMaterial({ map: tex(spineImg.id, false), roughness: 0.75, side: THREE.DoubleSide }));
 spine.castShadow = true; spine.receiveShadow = true; book.add(spine);
 function shapeSpine() {
-  const p = spineGeo.attributes.position.array, z = H / 2 + OV, q = { x: 0, y: 0 };
+  const p = spineGeo.attributes.position.array, z = BOARD_H / 2, q = { x: 0, y: 0 };
   for (let i = 0; i <= NS; i++) {
     spinePoint(i / NS, q);
     for (let j = 0; j < 2; j++) { const v = (i*2 + j) * 3; p[v] = q.x; p[v+1] = Math.max(q.y, 0.0003); p[v+2] = j === 0 ? -z : z; }
@@ -353,24 +571,32 @@ function shapeSpine() {
 
 // ---- state -----------------------------------------------------------------------------------------
 const goal = L => L.anim ? L.anim.to : L.t;
-const moving = L => !!L.anim || !!L.dragging;
+const moving = L => !!L.dragging || !!L.anim;
 const turnedCount = () => leaves.reduce((n, L) => n + (goal(L) > 0.5 ? 1 : 0), 0);
 let current = 0, lTop = null, rTop = null;
 
 function refresh() {
   current = turnedCount();
-  lTop = null; rTop = null;
-  for (let i = 1; i < N - 1; i++) if (!moving(leaves[i]) && leaves[i].t === 0) { lTop = i; break; }
-  for (let i = N - 2; i >= 1; i--) if (!moving(leaves[i]) && leaves[i].t === 1) { rTop = i; break; }
-  for (const L of leaves) if (!L.board) L.group.visible = moving(L) || L.i === lTop || L.i === rTop;
-  // A turning leaf lies only one leaf's thickness above the leaf it uncovers, and the two meet
-  // at the gutter: bias it harder towards the camera so the leaf beneath never shows through
-  // while it is being lifted (or laid down). A moving leaf is always above both piles.
-  for (const L of leaves) {
-    if (L.board) continue;
-    const bias = moving(L) ? -8 : -1;
-    for (const m of [L.frontMat, L.backMat]) { m.polygonOffsetFactor = bias; m.polygonOffsetUnits = bias * 4; }
+  for (const L of leaves) if (!L.board) {
+    L.group.visible = moving(L);
+    L.exposed = moving(L);
   }
+  // Draw successive real leaves through the openings. Only an intact resting
+  // sheet can hide the solid pile, including during a multi-leaf turn.
+  function reveal(t, start, step) {
+    let exposed = t === 0 ? goal(leaves[0]) === 1 : goal(leaves[N-1]) === 0;
+    for (let i = start; i > 0 && i < N-1; i += step) {
+      const L = leaves[i];
+      if (moving(L) || L.t !== t) continue;
+      L.group.visible = true;
+      L.exposed = exposed;
+      exposed = false;
+      if (!L.cut) return i;
+    }
+    return null;
+  }
+  lTop = reveal(0, 1, 1);
+  rTop = reveal(1, N-2, -1);
   for (const L of leaves) {
     if (L.board) continue;
     if (Math.abs(L.i - current) <= 3 || L.group.visible) dress(L);
@@ -378,44 +604,38 @@ function refresh() {
   }
   updateUI();
 }
+// A pile stays compressed while another leaf is still in contact with it.
+// Release its relief progressively rather than instantly on pointer-down.
+const contact = [1,1];
+function updateContact() {
+  contact.fill(1);
+  for (const L of leaves) if (moving(L)) {
+    for (const t of [0,1]) contact[t]=Math.min(contact[t],smooth(.008,.12,Math.abs(L.t-t)));
+  }
+}
 // everything that depends on the spine is reshaped together
 function reshapeAll() {
   updateSpineState();
+  fitPiles();
+  updateContact();
   for (const L of leaves) if (L.board || L.group.visible) L.shape();
   setPile(pileL, lTop, N - 2, 0);
   setPile(pileR, rTop, 1, 1);
   shapeSpine();
 }
 
-// Turning is simulated: each leaf has a turn position t (0 left, 1 right) and a speed w (turns per
-// second). It accelerates gently, is held to a top speed, and slows as it nears where it will lie,
-// so a page lifts, travels and settles instead of following a fixed curve. A full turn takes ~1.7 s.
-const VMAX = 0.85, VMAX_BOARD = 0.6, ACC = 2.6, GAIN = 5;
-function stepLeaf(L, dt) {
-  const fast = !!(L.anim && L.anim.fast);
-  const target = L.dragging ? L.dragT : L.anim.to;
-  const vmax = L.dragging ? 1.6 : (L.board ? VMAX_BOARD : VMAX) * (fast ? 2.6 : 1);
-  const acc = L.dragging ? 12 : ACC * (fast ? 3 : 1);
-  const gain = L.dragging ? 10 : GAIN;
-  const want = Math.max(-vmax, Math.min(vmax, (target - L.t) * gain));
-  L.w += Math.max(-acc * dt, Math.min(acc * dt, want - L.w));
-  L.t += L.w * dt;
-  if (L.t <= 0 || L.t >= 1) { L.t = Math.min(1, Math.max(0, L.t)); L.w = 0; }
-  if (!L.dragging && Math.abs(target - L.t) < 0.002 && Math.abs(L.w) < 0.1) {
-    L.t = target; L.w = 0; L.anim = null; return true;          // settled
-  }
-  return false;
-}
-function turn(L, to, fast = false) {
+const ease = x => x < 0.5 ? 4*x*x*x : 1 - Math.pow(-2*x + 2, 3) / 2;
+function turn(L, to) {
   if (goal(L) === to) return;
-  L.anim = { from: L.t, to, fast, lift: true };
+  L.dir = to > L.t ? 1 : -1;
+  L.anim = { from: L.t, to, start: performance.now(), dur: (L.board ? 1150 : 950) * Math.max(0.25, Math.abs(to - L.t)) };
   refresh(); dirty = true;
 }
-function forward(fast = false) { const L = leaves.find(L => goal(L) === 0); if (L) turn(L, 1, fast); }
-function backward(fast = false) { for (let i = N - 1; i >= 0; i--) if (goal(leaves[i]) === 1) return turn(leaves[i], 0, fast); }
+function forward() { const L = leaves.find(L => goal(L) === 0); if (L) turn(L, 1); }
+function backward() { for (let i = N - 1; i >= 0; i--) if (goal(leaves[i]) === 1) return turn(leaves[i], 0); }
 let jumpTimer = null;
 function setOpening(c) {
-  for (const L of leaves) { L.anim = null; L.w = 0; L.t = L.i < c ? 1 : 0; }
+  for (const L of leaves) { L.anim = null; L.t = L.i < c ? 1 : 0; }
   refresh(); dirty = true;
 }
 function goTo(target) {
@@ -425,7 +645,7 @@ function goTo(target) {
   jumpTimer = setInterval(() => {
     const c = turnedCount();
     if (c === target) return clearInterval(jumpTimer);
-    c < target ? forward(true) : backward(true);
+    c < target ? forward() : backward();
   }, 110);
 }
 
@@ -440,7 +660,7 @@ function updateUI() {
   if (document.activeElement !== slider) slider.value = c;
   $('fwd').disabled = c >= N; $('back').disabled = c <= 0;
 }
-$('fwd').onclick = () => forward(); $('back').onclick = () => backward();
+$('fwd').onclick = forward; $('back').onclick = backward;
 slider.oninput = () => goTo(+slider.value);
 addEventListener('keydown', e => {
   if (e.key === 'ArrowLeft') { forward(); e.preventDefault(); }
@@ -471,7 +691,7 @@ el.addEventListener('pointerdown', e => {
   const top = L.t === 0 ? leaves.find(l => goal(l) === 0) : [...leaves].reverse().find(l => goal(l) === 1);
   if (top !== L) return;                                   // only the top leaf of a pile can be lifted
   drag = { L, x0, t0: L.t, sx: e.clientX, sy: e.clientY, moved: false, id: e.pointerId };
-  L.dragging = true; L.dragFrom = L.dragT = L.t; L.w = 0; refresh(); dirty = true;
+  L.dragging = true; refresh(); dirty = true;
   el.setPointerCapture(e.pointerId);
   e.stopImmediatePropagation();
 }, true);
@@ -481,16 +701,15 @@ el.addEventListener('pointermove', e => {
   const x = worldX(e); if (x === null) return;
   const span = 2 * Math.max(Math.abs(drag.x0), 0.25);
   const t = Math.min(1, Math.max(0, drag.t0 + (x - drag.x0) / span));
-  drag.L.dragT = t; dirty = true;
+  drag.L.dir = t >= drag.L.t ? 1 : -1; drag.L.t = t; dirty = true;
   e.stopImmediatePropagation();
 }, true);
 function endDrag(e) {
   if (!drag || e.pointerId !== drag.id) return;
-  const L = drag.L;
-  // a flick counts: where the leaf is heading decides which way it falls
-  const to = drag.moved ? (L.dragT + L.w * 0.25 > 0.5 ? 1 : 0) : (drag.t0 > 0.5 ? 0 : 1);
+  const L = drag.L, to = drag.moved ? (L.t > 0.5 ? 1 : 0) : (drag.t0 > 0.5 ? 0 : 1);
+  if (!drag.moved) L.dir = to > L.t ? 1 : -1;
   drag = null; L.dragging = false;
-  L.anim = { from: L.t, to, fast: false, lift: !(Math.abs(L.t - (1 - to)) > 0.02) };
+  L.anim = { from: L.t, to, start: performance.now(), dur: 950 * Math.max(0.25, Math.abs(to - L.t)) };
   refresh(); dirty = true;
   e.stopImmediatePropagation();
 }
@@ -525,17 +744,15 @@ book.position.x = OPEN === 0 ? W / 2 : OPEN === N ? -W / 2 : 0;
 // ---- loop ---------------------------------------------------------------------------------------------
 let onScreen = true;
 new IntersectionObserver(es => { onScreen = es[0].isIntersecting; }).observe(el);
-let last = performance.now();
 function frame(now) {
   requestAnimationFrame(frame);
-  // fixed small steps, so a turn takes the same time on a slow machine as on a fast one
-  const elapsed = Math.min(0.25, Math.max(0, (now - last) / 1000)); last = now;
   if (!onScreen) return;
   let settled = false;
-  const steps = Math.max(1, Math.ceil(elapsed / 0.008)), dt = elapsed / steps;
   for (const L of leaves) {
-    if (!L.anim && !L.dragging) continue;
-    for (let k = 0; k < steps && (L.anim || L.dragging); k++) if (stepLeaf(L, dt)) settled = true;
+    if (!L.anim || L.dragging) continue;
+    const a = L.anim, x = Math.min(1, (now - a.start) / a.dur);
+    L.t = a.from + (a.to - a.from) * ease(x);
+    if (x >= 1) { L.t = a.to; L.anim = null; settled = true; }
     dirty = true;
   }
   if (settled) refresh();
@@ -543,6 +760,7 @@ function frame(now) {
   const c = turnedCount(), goalX = c === 0 ? W / 2 : c === N ? -W / 2 : 0;
   book.position.x += (goalX - book.position.x) * 0.08;
   controls.update();
+  updateDetails();
   renderer.render(scene, camera);
 }
 requestAnimationFrame(frame);
