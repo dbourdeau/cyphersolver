@@ -1,0 +1,7 @@
+# ercole1547: SECOND PASS reading (v2) of the cipher passage, c. 16v, cipher lines 1 to 8 (not the figure of record)
+
+<!-- Made from DECODE_v2.txt: the second-pass transcription TRANSCRIPTION_v2.tsv (frozen in FREEZE_v2.txt, 28 Nov 2026) decoded once with the first-pass key KEY.tsv, unchanged. The first pass (DECODE.txt, reading.md) stays the figure of record. No letter of the v2 decode is changed. Same marks as reading.md: word* = a one-letter slip left as decoded; [?word] = letters with no sense, left as decoded; [?L4s] = the code sign S01^4s; [?] = the sign S12^-. Every marked word is a hole. The words that differ from reading.md are listed in NOTES.md, "Second pass (v2)". Word division and punctuation are the reader's (a model, Claude Opus 5.5); spelling is the decode's. -->
+
+## c. 16v, cipher lines 1 to 8, second pass
+
+perche uoi intenderete quello che e nouamente successo in genoua, per essre* la cosa della grande impertanza* che e, uolemo che facciate ogni opera per intendere quello piu che potrete si circo* le cause de tale motiuo, si anco como sia [?L4s] per castigare le prosuntione de questo [?delill] [?sto] [?] [?rit] [?diare] alle cose di quella citate; la quale essende* la scala de spagna in italla*, e da credere che [?L4s] sia per fare ogni cosa per non la lassare andare in mano dei rancesi*. oi* che usati le* dillgentia* estraordinaria per [?chearirui] intieramente del tutto.
