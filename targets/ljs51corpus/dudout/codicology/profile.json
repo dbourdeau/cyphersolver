@@ -1,0 +1,30 @@
+{
+ "schema_version": 1,
+ "target": "ljs51corpus",
+ "title": "Penn LJS 51: quire joins, catchwords and quire signatures checked on the images (24 joins, two readings)",
+ "conditions": {
+  "prior_solution": {
+   "exists": "yes",
+   "where": "targets/ljs51corpus/identity_readings.md §10, NOTES.md, keys_eye/REPORT.md (D. Bourdeau): quire 3 misbound, 21r after 48v, joins 12v→? and 28v→49r still to check",
+   "found": "found",
+   "used": true
+  },
+  "inputs": ["images"],
+  "attack": "none",
+  "first_date": "2026-11-28",
+  "last_date": "2026-11-28",
+  "human_role": "Brice Dudout set the rules (join list and criteria frozen before the images were fetched, blind second reading); an AI agent read the images and wrote up.",
+  "models": ["Claude Opus 5.5 (Anthropic), agent run by Brice Dudout"]
+ },
+ "solution": [
+  {
+   "date": "2026-11-28",
+   "kind": "verification",
+   "technique": ["contextual inference", "other"],
+   "what": "24 joins (12 present quire boundaries, 6 joins of the Bourdeau model, 6 controls) read twice, the second reading blind on anonymised crops; quire signatures read on the first rectos.",
+   "result": "28v→29r continuous by catchword (so 28v→49r ruled out); signatures 10 (46r) and 11 (48r, trimmed) besides 3-7 (49r-89r) give quire 10 = 46 + 13-20 + 47; breaks inside Penn's q5 at 30v→31r (30v.7 ran on to a lost page) and 36v→37r; 12v→? open",
+   "credit": "dudout",
+   "role": "verification"
+  }
+ ]
+}
