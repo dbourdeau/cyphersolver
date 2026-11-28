@@ -48,7 +48,7 @@
 </div>
 
 <section class="hero solve">
-  <p class="kicker"><a href="catalogue.html">Unsolved Catalogue</a> · no. 2160 · class B · priority 4.0 · open</p>
+  <p class="kicker"><a href="catalogue.html">Unsolved Catalogue</a> · no. 2160 · class B · priority 4.0 · in progress</p>
   <h1>Ercole II d'Este → 'secretario domino Claudio', letter partly in cipher</h1>
   <p class="sub">An earlier Este cipher to the same secretary; possibly the same family as the 1559 letters.</p>
   <dl class="facts">
@@ -62,6 +62,7 @@
 </section>
 
 <main>
+<div class="callout blue"><p><strong>In progress here.</strong> <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/ercole1547/NOTES.md" rel="noopener">targets/ercole1547</a> is working on this cipher (status: in progress. Contributed by pull request, not yet written up: the key was recovered from cipher lines 1-6 alone, frozen, and used for one decode of all 8 cipher lines (strict judge 388 of 435 letters, 89.2%; held-out lines 7-8 81 of 92, 88.0%). By the README read bar, counted in words, 76 of 97 words read as sense (0.784, `scripts/house_count.py`) with the one-letter slips counted as holes, so the target is filed read in part. A second pass (28 Nov 2026: every transcription doubt re-checked on the image, v2 transcription frozen, one decode with the same key) gives 80 of 97 (0.825); it is recorded beside the first pass, which stays the figure of record. The page, ledgers, DECODE queue and catalogue edit are left to the maintainers.). Read its NOTES.md before you start, and hand it to your agent with this page: it records what was transcribed, tried and ruled out, and the next step.</p></div>
 <h2>Hand this page to your AI agent</h2>
 <p>Give your agent (Claude, ChatGPT or any assistant that can open web pages) this address and ask it to do the task on the page:</p>
 <p class="urlline">https://cyphersolver.com/solve/2160.html</p>
@@ -70,6 +71,10 @@
 This page: https://cyphersolver.com/solve/2160.html
 
 You are helping a public research project read historical cipher letters that nobody has read yet.
+
+START HERE: the project is already working on this cipher. Read these notes before anything else and
+build on them; they record what was transcribed, tried and ruled out, and the next step:
+  https://github.com/dbourdeau/cyphersolver/blob/main/targets/ercole1547/NOTES.md  (status: in progress. Contributed by pull request, not yet written up: the key was recovered from cipher lines 1-6 alone, frozen, and used for one decode of all 8 cipher lines (strict judge 388 of 435 letters, 89.2%; held-out lines 7-8 81 of 92, 88.0%). By the README read bar, counted in words, 76 of 97 words read as sense (0.784, `scripts/house_count.py`) with the one-letter slips counted as holes, so the target is filed read in part. A second pass (28 Nov 2026: every transcription doubt re-checked on the image, v2 transcription frozen, one decode with the same key) gives 80 of 97 (0.825); it is recorded beside the first pass, which stays the figure of record. The page, ledgers, DECODE queue and catalogue edit are left to the maintainers.)
 
 THE CIPHER
   Title:          Ercole II d'Este → 'secretario domino Claudio', letter partly in cipher
@@ -84,19 +89,20 @@ THE CIPHER
 
 WHAT IS KNOWN
   Status: Record: 'Il destinatario è indicato come: secretario [...] domino Claudio[...]. Lettera in parte cifrata.' No decipherment noted. Manifest uuid(s): 89e1bdc6-a46d-4627-9770-efbd17e544fb.
-  Outcome so far: not yet attempted by the project
+  Outcome so far: In progress here, in targets/ercole1547/.
   Prior-art check: open as far as checked (checked 3 Nov 2026: Dan's catalogue, leads and Dudout's Estense list by uuid and shelfmark; sender names grepped in origin/main)
   Check first: Measure the cipher amount at full resolution.
   Class B: part of a key or a known cipher family of the same office is in print or on DECODE.
+  Project notes (read these before anything else; they record what was tried and ruled out): https://github.com/dbourdeau/cyphersolver/blob/main/targets/ercole1547/NOTES.md
 
 STEPS
 0. Set up. If you can run a shell, fork and clone the repository and work inside it:
      git clone https://github.com/dbourdeau/cyphersolver.git
    Then read, in this order: CONTRIBUTING.md (how a contribution is sent and credited); README.md, sections
-   "Repository layout" and "Conventions" (how readings are measured and named); and
-   lang/README.md (shared language models).
-   Put all your work in targets/&lt;writer&gt;&lt;year&gt;/ (a new folder, e.g. sega1593): transcription, key, decipherment, scripts. Write a NOTES.md that says
-   what the document is, the system, the key, the reading, and what is open and why. Keep WORKLOG.md there too:
+   "Repository layout" and "Conventions" (how readings are measured and named); targets/ercole1547/NOTES.md (everything
+   already tried on this cipher, with the files it used); and lang/README.md (shared language models).
+   Put all your work in targets/ercole1547/: transcription, key, decipherment, scripts. Add your findings to its NOTES.md
+   under a dated heading, without rewriting what is there. Keep WORKLOG.md there too:
    one dated line per step (transcription, hypothesis, solver run, crib, key found, control), failures included.
    Do not edit docs/ (the site is generated and rebuilt on merge) and do not commit large images: link them.
    If you cannot run a shell, do the same work in files you keep and send them with the issue below.
@@ -136,7 +142,7 @@ STEPS
      - not applicable: Not a cipher (clear text, shorthand, a key sheet, instructions), or the item could not be reached.
 
 REPORT BACK
-With a clone: open a pull request with your targets/&lt;writer&gt;&lt;year&gt;/ folder. Say in the description how you want to be
+With a clone: open a pull request with your targets/ercole1547/ folder. Say in the description how you want to be
   credited (name, initials or handle, and a link) and include the same points as the issue below.
 Without one: open an issue: https://github.com/dbourdeau/cyphersolver/issues/new?template=solution.yml&amp;title=Solution%3A+catalogue+2160&amp;target=catalogue+2160
 (other kinds of contribution: https://github.com/dbourdeau/cyphersolver/issues/new/choose). Include:
@@ -155,9 +161,9 @@ If you cannot open issues or pull requests, write this report for your human to 
 
 
 <p><b>Status and prior art.</b> Record: 'Il destinatario è indicato come: secretario [...] domino Claudio[...]. Lettera in parte cifrata.' No decipherment noted. Manifest uuid(s): 89e1bdc6-a46d-4627-9770-efbd17e544fb.</p>
-<p><b>Outcome so far.</b> Not yet attempted by the project. Prior-art check: open as far as checked (checked 3 Nov 2026: Dan's catalogue, leads and Dudout's Estense list by uuid and shelfmark; sender names grepped in origin/main).</p>
+<p><b>Outcome so far.</b> In progress here, in targets/ercole1547/. Prior-art check: open as far as checked (checked 3 Nov 2026: Dan's catalogue, leads and Dudout's Estense list by uuid and shelfmark; sender names grepped in origin/main).</p>
 <p><b>Check first.</b> Measure the cipher amount at full resolution.</p>
-
+<ul><li><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/ercole1547/NOTES.md" rel="noopener">targets/ercole1547/NOTES.md</a>: what was tried and ruled out (<a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/ercole1547" rel="noopener">the folder</a>)</li></ul>
 
 
 <h2>Scores</h2>
@@ -180,7 +186,7 @@ If you cannot open issues or pull requests, write this report for your human to 
 </div></footer>
 <script>(function(){var b=document.querySelector('.agentbox .copy'),p=document.getElementById('agent');if(!b||!p)return;
 b.addEventListener('click',function(){var t=p.textContent;(navigator.clipboard?navigator.clipboard.writeText(t):Promise.reject()).then(function(){b.textContent='Copied';setTimeout(function(){b.textContent='Copy';},1600);},function(){var r=document.createRange();r.selectNodeContents(p);var s=getSelection();s.removeAllRanges();s.addRange(r);});});})();</script>
-<script src="catalogue-data.js?v=1689672a"></script>
+<script src="catalogue-data.js?v=81ed5a4a"></script>
 <script src="site.js?v=18ff2458"></script>
 </body>
 </html>

@@ -48,7 +48,7 @@
 </div>
 
 <section class="hero solve">
-  <p class="kicker"><a href="catalogue.html">Unsolved Catalogue</a> · no. 2907 · class A · priority 5.5 · open</p>
+  <p class="kicker"><a href="catalogue.html">Unsolved Catalogue</a> · no. 2907 · class A · priority 5.5 · in progress</p>
   <h1>Sirdar (Khartoum) to Herbert (Cairo), telegram ending in eight five-letter cipher groups</h1>
   <p class="sub">A bare cipher passage, the Sirdar's own comment on a quoted request. The same file holds cipher/clear pairs of the same traffic and weeks (HIL/64/402 = 403, 3 Jan 1909; HIL/64/239-240 = 118-119, 30 Nov 1908; HIL/64/214 = 61-62, 26 Sept 1908), simple substitution regrouped in fives, so the alphabet can probably be rebuilt from them and applied.</p>
   <dl class="facts">
@@ -62,6 +62,7 @@
 </section>
 
 <main>
+<div class="callout blue"><p><strong>In progress here.</strong> <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/sirdar1909/NOTES.md" rel="noopener">targets/sirdar1909</a> is working on this cipher (status: in progress. Read in part (5 of 10 cipher words sure, 0.50, by the short-text floor); the write-up page is not yet written and the Escalation `print` step is still open (set 28 Nov 2026 at the merge of PR #1025).). Read its NOTES.md before you start, and hand it to your agent with this page: it records what was transcribed, tried and ruled out, and the next step.</p></div>
 <h2>Hand this page to your AI agent</h2>
 <p>Give your agent (Claude, ChatGPT or any assistant that can open web pages) this address and ask it to do the task on the page:</p>
 <p class="urlline">https://cyphersolver.com/solve/2907.html</p>
@@ -70,6 +71,10 @@
 This page: https://cyphersolver.com/solve/2907.html
 
 You are helping a public research project read historical cipher letters that nobody has read yet.
+
+START HERE: the project is already working on this cipher. Read these notes before anything else and
+build on them; they record what was transcribed, tried and ruled out, and the next step:
+  https://github.com/dbourdeau/cyphersolver/blob/main/targets/sirdar1909/NOTES.md  (status: in progress. Read in part (5 of 10 cipher words sure, 0.50, by the short-text floor); the write-up page is not yet written and the Escalation `print` step is still open (set 28 Nov 2026 at the merge of PR #1025).)
 
 THE CIPHER
   Title:          Sirdar (Khartoum) to Herbert (Cairo), telegram ending in eight five-letter cipher groups
@@ -84,18 +89,19 @@ THE CIPHER
 
 WHAT IS KNOWN
   Status: 15 Nov 2026: cipher seen on the image (1,500-px IIIF region). All 546 frames of HIL/64 and HIL/65 looked at for a clear copy (same number, date, word count or wording): none found. Prior art not searched. HIL/66 onwards not opened.
-  Outcome so far: not yet attempted by the project
+  Outcome so far: In progress here, in targets/sirdar1909/.
   Check first: Collate the 8 groups from a full-resolution region; rebuild the alphabet from the 1908-09 pairs and test it; search the Sudan Archive (Wingate papers) for the telegram.
   Class A: a sibling letter with a decipherment is in the same volume or series, so matching it is the first move.
+  Project notes (read these before anything else; they record what was tried and ruled out): https://github.com/dbourdeau/cyphersolver/blob/main/targets/sirdar1909/NOTES.md
 
 STEPS
 0. Set up. If you can run a shell, fork and clone the repository and work inside it:
      git clone https://github.com/dbourdeau/cyphersolver.git
    Then read, in this order: CONTRIBUTING.md (how a contribution is sent and credited); README.md, sections
-   "Repository layout" and "Conventions" (how readings are measured and named); and
-   lang/README.md (shared language models).
-   Put all your work in targets/&lt;writer&gt;&lt;year&gt;/ (a new folder, e.g. sega1593): transcription, key, decipherment, scripts. Write a NOTES.md that says
-   what the document is, the system, the key, the reading, and what is open and why. Keep WORKLOG.md there too:
+   "Repository layout" and "Conventions" (how readings are measured and named); targets/sirdar1909/NOTES.md (everything
+   already tried on this cipher, with the files it used); and lang/README.md (shared language models).
+   Put all your work in targets/sirdar1909/: transcription, key, decipherment, scripts. Add your findings to its NOTES.md
+   under a dated heading, without rewriting what is there. Keep WORKLOG.md there too:
    one dated line per step (transcription, hypothesis, solver run, crib, key found, control), failures included.
    Do not edit docs/ (the site is generated and rebuilt on merge) and do not commit large images: link them.
    If you cannot run a shell, do the same work in files you keep and send them with the issue below.
@@ -135,7 +141,7 @@ STEPS
      - not applicable: Not a cipher (clear text, shorthand, a key sheet, instructions), or the item could not be reached.
 
 REPORT BACK
-With a clone: open a pull request with your targets/&lt;writer&gt;&lt;year&gt;/ folder. Say in the description how you want to be
+With a clone: open a pull request with your targets/sirdar1909/ folder. Say in the description how you want to be
   credited (name, initials or handle, and a link) and include the same points as the issue below.
 Without one: open an issue: https://github.com/dbourdeau/cyphersolver/issues/new?template=solution.yml&amp;title=Solution%3A+catalogue+2907&amp;target=catalogue+2907
 (other kinds of contribution: https://github.com/dbourdeau/cyphersolver/issues/new/choose). Include:
@@ -154,9 +160,9 @@ If you cannot open issues or pull requests, write this report for your human to 
 
 
 <p><b>Status and prior art.</b> 15 Nov 2026: cipher seen on the image (1,500-px IIIF region). All 546 frames of HIL/64 and HIL/65 looked at for a clear copy (same number, date, word count or wording): none found. Prior art not searched. HIL/66 onwards not opened.</p>
-<p><b>Outcome so far.</b> Not yet attempted by the project.</p>
+<p><b>Outcome so far.</b> In progress here, in targets/sirdar1909/.</p>
 <p><b>Check first.</b> Collate the 8 groups from a full-resolution region; rebuild the alphabet from the 1908-09 pairs and test it; search the Sudan Archive (Wingate papers) for the telegram.</p>
-
+<ul><li><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/sirdar1909/NOTES.md" rel="noopener">targets/sirdar1909/NOTES.md</a>: what was tried and ruled out (<a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/sirdar1909" rel="noopener">the folder</a>)</li></ul>
 
 
 <h2>Scores</h2>
@@ -179,7 +185,7 @@ If you cannot open issues or pull requests, write this report for your human to 
 </div></footer>
 <script>(function(){var b=document.querySelector('.agentbox .copy'),p=document.getElementById('agent');if(!b||!p)return;
 b.addEventListener('click',function(){var t=p.textContent;(navigator.clipboard?navigator.clipboard.writeText(t):Promise.reject()).then(function(){b.textContent='Copied';setTimeout(function(){b.textContent='Copy';},1600);},function(){var r=document.createRange();r.selectNodeContents(p);var s=getSelection();s.removeAllRanges();s.addRange(r);});});})();</script>
-<script src="catalogue-data.js?v=1689672a"></script>
+<script src="catalogue-data.js?v=81ed5a4a"></script>
 <script src="site.js?v=18ff2458"></script>
 </body>
 </html>

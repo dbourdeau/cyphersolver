@@ -48,7 +48,7 @@
 </div>
 
 <section class="hero solve">
-  <p class="kicker"><a href="catalogue.html">Unsolved Catalogue</a> · no. 2162 · class C · priority 5.0 · in progress</p>
+  <p class="kicker"><a href="catalogue.html">Unsolved Catalogue</a> · no. 2162 · class C · priority 5.0 · attempted, open</p>
   <h1>Federico II Gonzaga, duke of Mantua → Ferrante Gonzaga, with an enclosure partly in cipher</h1>
   <p class="sub">A Mantuan ducal cipher of 1537, when Ferrante was viceroy of Sicily.</p>
   <dl class="facts">
@@ -62,7 +62,6 @@
 </section>
 
 <main>
-<div class="callout blue"><p><strong>In progress here.</strong> <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/gonzaga1537/NOTES.md" rel="noopener">targets/gonzaga1537</a> is working on this cipher (status: in progress (27 Nov 2026: not written up yet. Pieces of the 48 holes are workable from the online Estense scans: c. 13r L02/L03 `lizh` is `li3b` on the leaf, which the key decodes as `pio` (period form of *più*); c. 13r L04 `uiro e` may be clear Italian *uero è* in the plain hand rather than cipher; c. 13r L08-L24 and all of c. 13v have not been compared with the image. Next step: re-check the transcription of c. 13r L01-L30 against the IIIF canvases (`.../73bcd847-3cc8-46c4-89d8-572438763b8e` and `.../78a73966-7232-4e7a-af55-356d10d844de`), above all the 17 bracketed scribal slips, correct the transcription, re-run the decoder and the counts, then write up.)). Read its NOTES.md before you start, and hand it to your agent with this page: it records what was transcribed, tried and ruled out, and the next step.</p></div>
 <h2>Hand this page to your AI agent</h2>
 <p>Give your agent (Claude, ChatGPT or any assistant that can open web pages) this address and ask it to do the task on the page:</p>
 <p class="urlline">https://cyphersolver.com/solve/2162.html</p>
@@ -71,10 +70,6 @@
 This page: https://cyphersolver.com/solve/2162.html
 
 You are helping a public research project read historical cipher letters that nobody has read yet.
-
-START HERE: the project is already working on this cipher. Read these notes before anything else and
-build on them; they record what was transcribed, tried and ruled out, and the next step:
-  https://github.com/dbourdeau/cyphersolver/blob/main/targets/gonzaga1537/NOTES.md  (status: in progress (27 Nov 2026: not written up yet. Pieces of the 48 holes are workable from the online Estense scans: c. 13r L02/L03 `lizh` is `li3b` on the leaf, which the key decodes as `pio` (period form of *più*); c. 13r L04 `uiro e` may be clear Italian *uero è* in the plain hand rather than cipher; c. 13r L08-L24 and all of c. 13v have not been compared with the image. Next step: re-check the transcription of c. 13r L01-L30 against the IIIF canvases (`.../73bcd847-3cc8-46c4-89d8-572438763b8e` and `.../78a73966-7232-4e7a-af55-356d10d844de`), above all the 17 bracketed scribal slips, correct the transcription, re-run the decoder and the counts, then write up.))
 
 THE CIPHER
   Title:          Federico II Gonzaga, duke of Mantua → Ferrante Gonzaga, with an enclosure partly in cipher
@@ -88,13 +83,16 @@ THE CIPHER
     - Federico II 6 May 1537 IIIF manifest: https://edl-jarvis.cultura.gov.it/meta/iiif/22b3126b-3b70-4ede-a33b-1adf4a4491f6/manifest
 
 WHAT IS KNOWN
-  Status: Record: 'In allegato (cc. 13-14) un documento parzialmente cifrato.' No decipherment noted. Manifest uuid(s): 22b3126b-3b70-4ede-a33b-1adf4a4491f6.
-  Outcome so far: In progress here, in targets/gonzaga1537/.
+  Known so far (checked 28 Nov 2026): The c. 13r-13v enclosure deciphered in part with the key the contributor recovered from its clear passages (contributed via tttzqw, PR #1019): 221 of 267 cipher words sure (0.828) in the image re-check layer of 27 Nov 2026, 10 more probable; Piedmont news of spring 1537, the fall of Hesdin, the Bishop of Casale, Giovio (gonzaga1537.html).
+  Still open: 22 open code tokens (nomenclator {L2}, {L9}, {L30}, {L36}, 46, 82; two-digit 23, 24, 27, 28, 29, 31, 53): blocker, no key sheet or same-key sibling online (ASMn Archivio Gonzaga). 14 words the scan shows as written (slips or unvalued shapes) and 10 probable words that need a blind human sign check. cc. 12v and 14r-15r are blank.
+  History and prior art: Record: 'In allegato (cc. 13-14) un documento parzialmente cifrato.' No decipherment noted. Manifest uuid(s): 22b3126b-3b70-4ede-a33b-1adf4a4491f6.
+  Outcome so far: attempted, open
   Prior-art check: open as far as checked (checked 3 Nov 2026: Dan's catalogue, leads and Dudout's Estense list by uuid and shelfmark; sender names grepped in origin/main)
   Check first: Count cipher groups; look for Gonzaga keys of the 1530s in Mantua.
   Class C: no key and no deciphered sibling is known, so expect a ciphertext-only attack.
   Project notes (read these before anything else; they record what was tried and ruled out): https://github.com/dbourdeau/cyphersolver/blob/main/targets/gonzaga1537/NOTES.md
   Project notes (read these before anything else; they record what was tried and ruled out): https://github.com/dbourdeau/cyphersolver/blob/main/targets/ercole1544/NOTES.md
+  Related write-up: https://cyphersolver.com/gonzaga1537.html
 
 STEPS
 0. Set up. If you can run a shell, fork and clone the repository and work inside it:
@@ -159,13 +157,13 @@ If you cannot open issues or pull requests, write this report for your human to 
 <h2>Where the cipher is</h2>
 <p class="frame confirmed"><b>Cipher located and confirmed.</b> Groups of small Latin letters and digits (ipux, xel, li3b, ugidigi, 30) run on with clear Italian words ('Acciochè ella comprendi, ch'io no ho parlato di sopra senza raggione'), and two section headings are themselves cipher ('4l 54fila xagi'). No decipherment: enlarged crops show none above the lines, and none is in the margins or on cc. 14-15. (Estense IIIF manifest 22b3126b-3b70-4ede-a33b-1adf4a4491f6: all 8 canvases (cc. 12r-15v) viewed 4 Nov 2026; enlarged crops of the top of 13r and 13v and the foot of 12r; checked 2026-11-04 by claude leads review batch b68)</p>
 <h2>What is known</h2>
-
-
-<p><b>Status and prior art.</b> Record: 'In allegato (cc. 13-14) un documento parzialmente cifrato.' No decipherment noted. Manifest uuid(s): 22b3126b-3b70-4ede-a33b-1adf4a4491f6.</p>
-<p><b>Outcome so far.</b> In progress here, in targets/gonzaga1537/. Prior-art check: open as far as checked (checked 3 Nov 2026: Dan's catalogue, leads and Dudout's Estense list by uuid and shelfmark; sender names grepped in origin/main).</p>
+<p class="ko"><i class="k">known</i> <span class="asof">checked 28 Nov 2026</span> The c. 13r-13v enclosure deciphered in part with the key the contributor recovered from its clear passages (contributed via tttzqw, PR #1019): 221 of 267 cipher words sure (0.828) in the image re-check layer of 27 Nov 2026, 10 more probable; Piedmont news of spring 1537, the fall of Hesdin, the Bishop of Casale, Giovio (gonzaga1537.html).</p><p class="ko"><i class="o">open</i> 22 open code tokens (nomenclator {L2}, {L9}, {L30}, {L36}, 46, 82; two-digit 23, 24, 27, 28, 29, 31, 53): blocker, no key sheet or same-key sibling online (ASMn Archivio Gonzaga). 14 words the scan shows as written (slips or unvalued shapes) and 10 probable words that need a blind human sign check. cc. 12v and 14r-15r are blank.</p>
+<p><span class="ko"><i class="k">written up</i> <a href="gonzaga1537.html" title="Federico II Gonzaga (Mantua) → Ferrante Gonzaga, viceroy of Sicily, enclosure of news from Piedmont, Biblioteca Estense, Autografoteca Campori, Lettera G, Gonzaga Federico II, sfasc. II, cc. 13r-13v">gonzaga1537</a></span></p>
+<p><b>History and prior art.</b> Record: 'In allegato (cc. 13-14) un documento parzialmente cifrato.' No decipherment noted. Manifest uuid(s): 22b3126b-3b70-4ede-a33b-1adf4a4491f6.</p>
+<p><b>Outcome so far.</b> attempted, open Prior-art check: open as far as checked (checked 3 Nov 2026: Dan's catalogue, leads and Dudout's Estense list by uuid and shelfmark; sender names grepped in origin/main).</p>
 <p><b>Check first.</b> Count cipher groups; look for Gonzaga keys of the 1530s in Mantua.</p>
 <ul><li><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/gonzaga1537/NOTES.md" rel="noopener">targets/gonzaga1537/NOTES.md</a>: what was tried and ruled out (<a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/gonzaga1537" rel="noopener">the folder</a>)</li><li><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/ercole1544/NOTES.md" rel="noopener">targets/ercole1544/NOTES.md</a>: what was tried and ruled out (<a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/ercole1544" rel="noopener">the folder</a>)</li></ul>
-
+<p>Related write-up: <a href="gonzaga1537.html">gonzaga1537.html</a></p>
 
 <h2>Scores</h2>
 <dl class="facts">
@@ -187,7 +185,7 @@ If you cannot open issues or pull requests, write this report for your human to 
 </div></footer>
 <script>(function(){var b=document.querySelector('.agentbox .copy'),p=document.getElementById('agent');if(!b||!p)return;
 b.addEventListener('click',function(){var t=p.textContent;(navigator.clipboard?navigator.clipboard.writeText(t):Promise.reject()).then(function(){b.textContent='Copied';setTimeout(function(){b.textContent='Copy';},1600);},function(){var r=document.createRange();r.selectNodeContents(p);var s=getSelection();s.removeAllRanges();s.addRange(r);});});})();</script>
-<script src="catalogue-data.js?v=1689672a"></script>
+<script src="catalogue-data.js?v=81ed5a4a"></script>
 <script src="site.js?v=18ff2458"></script>
 </body>
 </html>
