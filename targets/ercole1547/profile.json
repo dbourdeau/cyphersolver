@@ -255,6 +255,12 @@
    "kind": "reading",
    "what": "reading.md corrected after Dan Bourdeau's review of PR #933: 'sia anco' -> 'si anco' (the decode gives 'si anco'); 'per che [?arirui]' -> 'per [?chearirui]' ('che' is part of the hole word chiarirvi, not a sure word). Read share recounted by scripts/house_count.py: 76/97 = 0.784 (was 77/98 = 0.786, our error); cipher_words 97 and holes 21 added to outcome.texts[0].",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-28",
+   "kind": "verification",
+   "what": "Integration review of PR #933 (AI agent, for the maintainers; not a person), grade B: read as sentences, one period on the Genoa rising of Jan 1547; Claudio to learn its causes and how a person in code (probably the Emperor) means to punish it and keep Genoa, Spain's ladder into Italy, from the French. 76 of 97 sure words (first pass of record); second frozen pass on the image 80 of 97 (0.825), not the figure of record. Unread stretch l.4 end to l.5 start. Doubts 1, 9, 12, the l.4 end and 'icciate' checked on the Estense image by the reviewer; FREEZE_v2.txt hashes match. Brice Dudout's grade-B review (27 Nov 2026) recorded as the reading_review, share corrected from 0.786 to 0.784.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -381,8 +387,14 @@
     "language": "it",
     "state": "read in part",
     "read_share": 0.784,
+    "reading_review": {
+     "grade": "B",
+     "by": "B. Dudout (review assisted by Claude, claude-opus-5-5)",
+     "date": "2026-11-27",
+     "note": "KEY.tsv re-implemented independently: all 8 lines decode letter for letter as DECODE.txt. Marks, figures and the code sign L4s checked against the 16v cipher region (Estense IIIF); base-sign identities not all checkable at that resolution. Held-out lines 7-8 read as Italian continuing lines 5-6 (one-letter slips; 'arirui' unread). B: single transcriber, a six-word unread stretch in lines 4-5, person sign and S12^- unresolved. [Recorded at the integration of PR #933 from the reviewer's comment on the PR thread (27 Nov 2026, 22:48 UTC), made on head 13618b55cd before the second pass. The reviewer is not the author of the reading. The comment's share 'read in part at 0.786' is corrected to 76/97 = 0.784, the first pass of record.]"
+    },
     "summary": "Ercole II tells Claudio that, since he will hear what has newly happened at Genoa, he is to learn all he can about the causes of the rising and how a person in code (probably the Emperor) means to punish it and settle the city, which, being Spain's ladder into Italy, he will not let fall to the French; he is to use extraordinary diligence.",
-    "note": "No reading review is recorded by the contributor; the maintainer records it at merge. A reading_review signed by our own assembling session (Claude Opus 5.5, grade B, independent false, 24 Nov 2026) was withdrawn on 27 Nov 2026 (our error, the same as on PR #997, caught by our own audit). Its content stays in NOTES.md under \"Reader's notes\". The checks were done with AI tools and no person checked each record by hand. Read share 76/97 = 0.784 (scripts/house_count.py; corrected 28 Nov 2026 from 77/98, our error). Second pass, 28 Nov 2026: doubts re-checked on the image, TRANSCRIPTION_v2.tsv frozen (FREEZE_v2.txt) and decoded once with the same KEY.tsv (DECODE_v2.txt, reading_v2.md): 80/97 = 0.825, recorded beside the first pass, which stays the figure of record.",
+    "note": "No reading review is recorded by the contributor; the maintainer records it at merge. A reading_review signed by our own assembling session (Claude Opus 5.5, grade B, independent false, 24 Nov 2026) was withdrawn on 27 Nov 2026 (our error, the same as on PR #997, caught by our own audit). Its content stays in NOTES.md under \"Reader's notes\". The checks were done with AI tools and no person checked each record by hand. Read share 76/97 = 0.784 (scripts/house_count.py; corrected 28 Nov 2026 from 77/98, our error). Second pass, 28 Nov 2026: doubts re-checked on the image, TRANSCRIPTION_v2.tsv frozen (FREEZE_v2.txt) and decoded once with the same KEY.tsv (DECODE_v2.txt, reading_v2.md): 80/97 = 0.825, recorded beside the first pass, which stays the figure of record. Reading review recorded at the merge (28 Nov 2026): Brice Dudout's grade-B review from the PR thread, with its share corrected from 0.786 to 0.784; the integration review (AI agent) is in the solution steps and in NOTES.md.",
     "cipher_words": 97,
     "holes": 21
    }
