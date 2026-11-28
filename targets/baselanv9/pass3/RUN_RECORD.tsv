@@ -1,0 +1,10 @@
+utc	step	tool	settings	seeds	inputs	outputs	result
+2026-11-25T07:39:03Z	0 open	bash	found prior pass 2 in wt-basel/targets/baselanv9/keyleaf (pushed 57aae52dd, judged 03:43Z); this job is therefore a third pass, named pass 3	-	-	-	opened
+2026-11-25T07:44:41Z	1 split	manual	SPLIT_P3.md: H1r re-read (not held out); H4 = f.25r lines 1-12, fresh	-	-	81a07fba0e4c39a1	written before fetch
+2026-11-25T07:55:17Z	2 transcription H1r, H4, S2 rims	manual from IIIF full-size crops and own unwraps	see DOUBTS_P3.md	-	c033, c053 (md5 f8db1404), c107, c109	tx/*.txt	H1r 12 lines, H4 12 lines, 11 rims
+2026-11-25T07:55:17Z	3 freeze	md5sum+sha256sum+date -u	FREEZE_P3.txt	-	-	5a16f2a8734892bd	frozen before decode
+2026-11-25T07:55:25Z	4 ONE decode	scripts/run_decode.py	KEY_V3 + RULES_V3, no emendation	-	frozen files	76f334c53450a421 DECODE_P3.txt	see file
+2026-11-25T08:02:48Z	5 own strict count + clear-copy match	scripts/score_p3.py	pass-2 judge rules; solver own count, not a separate judge	-	DECODE_P3.txt	fa0b2f47b7e576e6 SCORE_P3.tsv	H1r 394/405; H4 379/415; S2 468/521
+2026-11-25T08:02:49Z	6 shuffle control	scripts/control_p3.py	73 token values permuted, own la 4-gram, 5000 keys	20261112, 7	frozen files	5d18be0f43a39991 CONTROL_P3.txt	see file
+2026-11-25T08:03:26Z	7 prior-art look, rim formulas	WebSearch x2 + WebFetch x1	phrases: sigillavit Salomon / portavit Adam in fronte; Qui hoc signum ... in crusta panis / die Iovis; fetched brewminate.com reprint of BL blog 18 Jul 2019 (Drieshen)	-	-	PRIOR_ART_P3.md	no hit for the Basel wording; genre parallel only (pseudo-Solomonic amulet seals with Hoc signum captions)
+2026-11-25T08:04:12Z	8 RESULT.md written	Write	-	-	-	02206d3320ee8aef RESULT.md	read back below

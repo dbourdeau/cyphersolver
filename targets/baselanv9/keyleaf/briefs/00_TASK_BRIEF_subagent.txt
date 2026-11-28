@@ -1,0 +1,16 @@
+Brief given to this subagent (claude-opus-5-5, session https://claude.ai/code/session_01P5UF3myhVjFtgU9vTMj1qn), verbatim, saved 25 Nov 2026 before work began:
+
+Restart of a stopped task; check for partial work first in /home/claude/keyless/round40c/basel_anv9/ (any pass2/ or keyleaf/ folder) and continue rather than duplicate.
+
+Follow-up for Cyphersolver PR #957 (baselanv9: Basel UB, UBH AN V 9, Clavicula Salomonis in a secret alphabet). Worktree /home/claude/wt-basel, branch baselANV9-adjacent (head 70da39b43), target folder targets/baselanv9. Working folder /home/claude/keyless/round40c/basel_anv9/ (KEY.tsv, tx/, DECODE.txt, work/keyleaf_vs_key.tsv, FETCH_LOG.txt with e-manuscripta image URLs, DOI 10.7891/e-manuscripta-185551).
+
+Dan Bourdeau asked before merging:
+1. Add the full decode with the volume's own key leaf (f. 99r, Danish; German translation f. 98r) as a separate result classed "read with known key", and read the ~112 pentacle inscriptions that have no clear counterpart.
+2. In NOTES.md ## Transcription doubts: look at each of the 8 unidentified signs on the image and write what it shows. Any change is a second pass with its own figure; the first pass stays the figure of record.
+Not blocking: drop placeholder '?'=i in any second pass; he squashes the rename.
+
+Rules (load Skill anthropic-skills:cipher-find-pipeline and follow it): RUN_RECORD.tsv in a new keyleaf/ folder from the first step (utc via `date -u +%FT%TZ` in the same command, actor, model_id claude-opus-5-5, effort not exposed, session https://claude.ai/code/session_01P5UF3myhVjFtgU9vTMj1qn, settings, hashes, result). Save briefs before use. Transcribe from full-size images (plain GET, no bot-check bypass). Freeze (hash other files, never itself), stamp at once with /home/claude/stamps/stamp.sh, and commit+push the freeze BEFORE decoding new text. KEY_LEAF.tsv from the leaf only; decode once; separate judge (brief saved; judge sees only brief + decode) scoring S/E/N per inscription; per-inscription figures, full arithmetic; shuffle seeds 20261112 and 7 for any figure claimed. 65% line binds; no flattering pools. Full references or INCOMPLETE. State plainly no person has checked it. No reading_review blocks of our own. Never call an exposed figure held-out.
+Commits on baselANV9-adjacent in /home/claude/wt-basel, author Malcolm McBratney <mmcbratney@mcbrat.com>, explicit paths, no git add -A, no force push, messages ending:
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+Claude-Session: https://claude.ai/code/session_01P5UF3myhVjFtgU9vTMj1qn
+Run PYTHONUTF8=1 _check_profile/_check_terms/_check_reading/_check_writeup on baselanv9 (use a checkout with upstream main pulled today). Push: `git -c gc.auto=0 -c push.negotiate=true push origin baselANV9-adjacent`. No GitHub comments, emails, sign-ins. Report: what was read, per-inscription figures, the 8 signs, check lines, new head sha, and a draft 5-line pointer reply to Dan (text only).

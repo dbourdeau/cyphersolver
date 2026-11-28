@@ -1,0 +1,56 @@
+# DL_CHECK_P5: the 51 words of the training leaves, H1r, H2, H3 and H4 that pass 4 still wrote with Dl@ (looped sign read "us"), looked at again on the image for pass 5 (Dan Bourdeau, PR #957 review of 25 Nov 2026, point 3, carried on from the rims in pass4/DL_CHECK.tsv).
+# Reference shapes (key leaf f. 99r, pass4/crops/f099r_looped_as_es_is_os_us.jpg): us = a round delta whose ascender curls back into a small loop at its top; is = an x whose right arm sweeps up into a big loop that arches over and comes down on the right. Where the transcription had "X Dl@" and the image shows the x and the loop as one sign, the pair becomes X@ (as in pass 4 for the rims).
+# Images: f. 4r canvas 11, f. 15r canvas 33, f. 25r canvas 53, f. 34r canvas 71 and f. 159r canvas 325 at IIIF full size (keyleaf/IMAGE_FETCH.tsv); f. 4v canvas 12 at 2000 px (img/p2000). Line strips and word crops made by pass5/scripts/linestrips.py and pcrop.py; f. 15r and f. 25r from the pass-3 line crops; f. 34r from keyleaf/work/signs8/8_f034r_p4_unwrap.jpg.
+# Looked at by Claude Opus 5.5, 27 Nov 2026, after every earlier decode had been seen (not blind; the sense of the word was known while looking). Verdict 'unresolved' = the shape could not be told at the resolution available; the word stays as written. The checks were done with AI tools and no person checked each record by hand.
+text	line	word_pass4	shape_seen	verdict	word_pass5
+TRAIN f4r	L01	9 X 7 D2 Dl@	round delta, small loop at the top of the ascender	us kept	9 X 7 D2 Dl@
+TRAIN f4r	L07	6s Bx^ 4 X" Dl@	x with two dots, then a separate round delta with a looped ascender	us kept	6s Bx^ 4 X" Dl@
+TRAIN f4r	L08	Ds 6^ Pe Dl@	round delta, small top loop	us kept	Ds 6^ Pe Dl@
+TRAIN f4r	L11	Ds^ Pe Dl@	round delta, small top loop	us kept	Ds^ Pe Dl@
+TRAIN f4r	L12	6 1 Ds Cl Dl@	round delta, small top loop	us kept	6 1 Ds Cl Dl@
+TRAIN f4r	L12	Pe Lm 1 Cs X 3 Dl@	round delta after the three, small top loop	us kept	Pe Lm 1 Cs X 3 Dl@
+TRAIN f4r	L15	Hk X 6_ Ds D1 Dl@	pointed x-like inner stroke, big loop arching over to the right	changed	Hk X 6_ Ds D1 X@
+TRAIN f4r	L16	Oe Cs Lm Dl@	loop sign after the circle; a separate lambda not clearly seen	unresolved	Oe Cs Lm Dl@
+TRAIN f4r	L17	Ds^ Pe Bx Tk X Dl@	the x and the big loop are one sign	changed	Ds^ Pe Bx Tk X@
+TRAIN f4r	L17	6 ? Dl@	reversed-e joined to a loop; not clear	unresolved	6 ? Dl@
+TRAIN f4r	L18	2 Dl 7 Ds Dl@	round delta, small top loop	us kept	2 Dl 7 Ds Dl@
+TRAIN f4r	L18	Oe^m Cs Dl@	an x whose right arm sweeps up into a big loop	changed	Oe^m Cs X@
+TRAIN f4v	L05	Oei 1 Dl@	round delta, small top loop	us kept	Oei 1 Dl@
+TRAIN f4v	L07	2 Lm_ Dl@	round delta, small top loop	us kept	2 Lm_ Dl@
+TRAIN f4v	L08	Oc Lm 1 Dl 6r X Dl@	the x and the big loop are one sign	changed	Oc Lm 1 Dl 6r X@
+TRAIN f4v	L09	2 6 X Dl@	the x and the big loop are one sign	changed	2 6 X@
+TRAIN f4v	L10	Lm 7 X 6_ Dl@	x-like start inside a big loop after the dotted six	changed	Lm 7 X 6_ X@
+TRAIN f4v	L10	6 X Dl@	the x and the big loop are one sign	changed	6 X@
+TRAIN f4v	L11	Oc Bx Tk Dl@	round delta, tall ascender curling left	us kept	Oc Bx Tk Dl@
+TRAIN f4v	L13	6r X Dl@	the x and the big loop are one sign	changed	6r X@
+TRAIN f4v	L15	Lm 5 6r 6s" Dl@	round delta, small top loop	us kept	Lm 5 6r 6s" Dl@
+TRAIN f4v	L16	9 Dl 6r X Dl@	the x and the big loop are one sign	changed	9 Dl 6r X@
+TRAIN f4v	L17	Bx^ 4 X 1 Dl@	round delta, small top loop	us kept	Bx^ 4 X 1 Dl@
+TRAIN f4v	L21	6 Rt Pe 6 Lb Dl@	round delta, ascender curling left	us kept	6 Rt Pe 6 Lb Dl@
+TRAIN f4v	L23	8 7 Lm Dl 3 Dl@	round delta, small top loop	us kept	8 7 Lm Dl 3 Dl@
+TRAIN f4v	L23	Tk D1 Pe Bx_ Dl@	round delta, tall looped ascender	us kept	Tk D1 Pe Bx_ Dl@
+TRAIN f4v	L24	6s 6 Pe D2 7 X Dl@	x, then a separate round delta with a looped ascender	us kept	6s 6 Pe D2 7 X Dl@
+H1r	L04	3 6 Dl@	round delta, small top loop	us kept	3 6 Dl@
+H1r	L09	6s X Ds Dl@	loop sign with a round inner bowl	us kept	6s X Ds Dl@
+H4	L03	X 6 5b D2 Dl@	round delta, small top loop	us kept	X 6 5b D2 Dl@
+H4	L03	6 X Dl@	x, then a separate round delta looping back over itself	us kept	6 X Dl@
+H4	L08	6 X Dl@	the same	us kept	6 X Dl@
+H4	L08	3 6 Dl@	round delta, small top loop	us kept	3 6 Dl@
+H4	L08	3 6 Dl@	round delta, small top loop	us kept	3 6 Dl@
+H4	L09	6 Rt D2 7 ? Dl@	round delta, small top loop	us kept	6 Rt D2 7 ? Dl@
+H4	L09	3 6 Dl@	round delta, small top loop	us kept	3 6 Dl@
+H4	L09	Cs 6 Dl@	round delta, small top loop	us kept	Cs 6 Dl@
+H4	L10	6 X Dl@	x, then a separate round delta looping back over itself	us kept	6 X Dl@
+H4	L11	6 X Dl@	the same	us kept	6 X Dl@
+H2	L02	6s Cd Dl@	an x inside a big loop arching over to the right	changed	6s Cd X@
+H2	L02	4 Dl D1 6r Dl@	an x inside a big loop arching over to the right	changed	4 Dl D1 6r X@
+H2	L03	8 6 Dl" Dl 7 X Dl@	the x and the big loop are one sign	changed	8 6 Dl" Dl 7 X@
+H2	L03	6s X 8 Dl@	round delta, ascender curling left	us kept	6s X 8 Dl@
+H2	L04	9 Tk Bx_ Ds D1 5b X 8 X Dl@	end of the word not clear (six-like stroke, no big loop seen)	unresolved	9 Tk Bx_ Ds D1 5b X 8 X Dl@
+H2	L06	6s Lm_ 1 8 6r 3 Bx Ds D2 7 X Dl@	the x and the big loop are one sign	changed	6s Lm_ 1 8 6r 3 Bx Ds D2 7 X@
+H2	L07	Lm 1 Pe Dl@	small loop sign; not clear at this size	unresolved	Lm 1 Pe Dl@
+H2	L08	6s X 5_ 1 1 X Dl@	loop sign after the x; bowl and arch both possible	unresolved	6s X 5_ 1 1 X Dl@
+H2	L10	X Bx Cs X Dl@	the x and the big loop are one sign	changed	X Bx Cs X@
+H2	L21	Bx^ 4 X 1 Dl@	round delta, small top loop	us kept	Bx^ 4 X 1 Dl@
+H2	L22	Ds D1 Dl@	loop sign with an inner stroke; not clear	unresolved	Ds D1 Dl@
+H3	P4	Lm Tk^ Dl@	dotted tack, then an x inside a big loop	changed	Lm Tk^ X@
