@@ -1,6 +1,6 @@
 # Duplessis-Mornay circle: undeciphered figures printed in the 1824 *Mémoires et correspondance*
 
-Status: in progress (1593 figures read with Brice Dudout's key, 27 Oct 2026; 1595-98 figures open; vols. 7-12 searched and two more keys tested, 11-12 Nov 2026, Andrew Beling, `beling/`)
+Status: in progress (1593 figures read with Brice Dudout's key, 27 Oct 2026; Loménie 1595 and Duplessis to Cargroy Jan 1597 read in part with two ten-figure letter keys, 27-28 Nov 2026, Shawn Grening, `grening/`; Duplessis's figures to his wife open; vols. 7-12 searched and two more keys tested, 11-12 Nov 2026, Andrew Beling, `beling/`)
 
 Opened 25 Oct 2026. Found while checking whether Archives nationales 402AP/13 (catalogue 365, "lettres chiffrées"
 of the Mornay family) was already in print. It is not, but the printed edition itself carries unread cipher.
@@ -23,9 +23,9 @@ figures were unread in 1824.
 | 5, CCI, pp. 471-475 | Du Maurier → Duplessis, "mardi .. juin 1593" (= Tuesday 20 July 1593, Dudout) | bare figures, 6 passages, 72 groups; **read 27 Oct 2026 (Dudout key)** |
 | 5, pp. 487-488 | J. de Serviez → Duplessis, 6 Jul 1593 | bare figures, 2 passages, 21 groups, same system; **read 27 Oct 2026** |
 | 6, LVI, pp. 82-85 | Catherine de Parthenay (Mme de Rohan) → Mme Duplessis, Paris 30 Jul 1594 | figures printed **with** decipherment above; a ready key (syllabic/homophonic, e.g. 158 = re, 162 = Sa, 49 = n) |
-| 6, CVII, pp. 179-181 | Loménie → Duplessis, Paris 24 Feb 1595 | bare figures, different system (many groups x10: 610, 810, 910), plus small numbers as name codes (3, 11, 16, 25, 26, 98, 99) |
+| 6, CVII, pp. 179-181 | Loménie → Duplessis, Paris 24 Feb 1595 | bare figures, different system (many groups x10: 610, 810, 910), plus small numbers as name codes (3, 11, 16, 25, 26, 98, 99); **read in part 27 Nov 2026 (`grening/`, step 9)** |
 | 6, CIX | Duplessis → his wife, 1595 | short bare run |
-| 7, LXVI-LXVII, CXLI and others | Duplessis, Jan-Oct 1597 | bare figures |
+| 7, LXVI-LXVII, CXLI and others | Duplessis, Jan-Oct 1597 | bare figures; **LXVI (to Cargroy, C1-C8) read in part 28 Nov 2026 (`grening/`, step 10)** |
 | 8, p. ~507 | Duplessis, 14 Apr 1598 | short run |
 | 7, LXXXII p. 169 and CXLI pp. 306-307 | Mme de Rohan → Mme Duplessis, 27 Feb and 4 Aug 1597 | bare figures, 50 groups; Rohan 1594 key fits (11 Nov 2026) |
 | 7, pp. 335, 347; 8, pp. 197, 261, 307 | Duplessis → his wife, Sep 1597-Apr 1598 | bare figures, 79 groups, transcribed 11 Nov 2026 |
@@ -119,6 +119,44 @@ Context cribs:
    - `beling/transcription/repo/` holds unchanged copies of `lomenie1595.txt`, `duplessis1597.txt` and
      `ciphertext.txt`, frozen by sha256 for the tests.
 
+9. **27 Nov 2026, Shawn Grening (`grening/`), from Beling's two cribs (step 8).** Not pre-registered.
+   - With 10 read as one figure, 810 62 110 4 is seven figures for "de Camor" and 810 44 109 27 32 10 is eleven for
+     "de Bretaigne" (the king's spelling in CVI). They give a 2, b 4, c 6, d 8, e 10: **one figure 1-10 per letter,
+     two letters per group** (810 = d e), and the alphabet folded onto the ten figures: a-e on 2 4 6 8 10, f g h i l
+     on 1 3 5 7 9, m n on 1 2, o-s on 10 8 6 4 2, t u x y z on 9 7 5 3 1. The x10 groups are a letter plus e or o,
+     not word codes. Each figure stands for two or three letters. Key in `grening/key_lomenie1595.tsv`.
+   - **13 of the 15 passages encode exactly to the printed figures** (158 letters, `grening/lomenie1595_decryption.txt`):
+     L1 "province de Bretaigne", L2 and L4 "de Camor", L3 "les despesches", L5 "de Vennes", L6 "ville de seureté de
+     Bretaigne", L7 "la necessité", L9 "d'edicts", L10 "l'assamblée de Saumur", L11 "Bearn", L12 "la messe",
+     L13 "de Boisdauphin", L14 "le marquis de Belisle". Reading and translation in `grening/lomenie1595_reading.md`.
+   - L8 "du [?roy]": d u r o certain, then the print has 8 where the rule gives y = 3; y occurs nowhere else.
+     L15 "[...] querelles": 100 76 not read. f, x, z do not occur and are inferred. Name figures not read.
+   - Tests written afterwards (`grening/scripts/test_key.py`, `grening/results/test_key.txt`): with the crib letters
+     fixed, the rule beats 2,000 of 2,000 random fillings of the other ten letters on the passages the cribs do not
+     touch (z = 3.9). Annealing from random keys with no cribs does not find the key and reaches higher letter
+     scores than it: the cribs are needed, and a letter model alone does not decide.
+   - Duplessis's figures of Jan 1597: the key gives no words (looked at, not scored).
+
+10. **28 Nov 2026, Shawn Grening (`grening/README_1597.md`).** Duplessis to Cargroy, 19 Jan 1597 (C1-C8). Not
+    pre-registered.
+   - Hypothesis after step 9: the same method with another table, the alphabet in order, ten letters to a round.
+     That leaves ten keys. **a = 7** (a 7, b 8, c 9, d 10, e 1, f 2 ...) gives words; the other nine do not
+     (letter-model score -2.222 per figure against -2.753 to -3.128). No crib. Key in
+     `grening/key_duplessis1597.tsv`.
+   - **6 of the 8 passages encode exactly to the printed figures** (132 of 155 figures,
+     `grening/duplessis1597_decryption.txt`): C2 "un prisonnier de qualité", C3 "pour signal une eguillete bleue au
+     pourpoint ou a la mandille", C4 "vos gens de Poitou dient", C6 "Courbejoliere", C7 "ruine sur sa maison",
+     C8 "Monbarot". Both men are named in clear elsewhere in vol. 7. Reading and translation in
+     `grening/duplessis1597_reading.md`.
+   - An odd number of letters is filled with a final e, so the last group is 11 (C2, C3, C6). "5. 10." is printed as
+     two groups, not 510 (C3, C4).
+   - C1 "du [?parti] [?contraire]": "du part" and "contrai" exact, with 11 where "parti" wants 5. C5 not read.
+     f, h, x, y, z inferred.
+   - Tests written afterwards (`grening/scripts/test_key_1597.py`, `grening/results/test_key_1597.txt`): with the
+     letters of the two names fixed, the rule beats 2,000 of 2,000 random fillings of the other ten letters on C2,
+     C3, C4, C7 (z = 2.2). Annealing with no cribs: 5 of 24 runs score a little above the key with other tables.
+   - It is not Loménie's table shifted, and the letter to his wife (W1-W3) is a third system.
+
 ## Integration check (12 Nov 2026)
 
 - Re-run: hash lists check; the vol. 6 OCR from archive.org (`mmoiresetcorre06morn_djvu.txt`) has the sha256 stated in
@@ -163,8 +201,11 @@ printed clear text, and gave one figure for both letters.
 
 ## Remaining gaps
 
-- Loménie 1595 (95 groups): unread; neither the Rohan 1594 key nor Dudout's folded 1593 key fits (steps 5, 7). Cribs from the editors' note and the king's cipher letter CVI (step 8) give "de Camor" and probably "de Bretagne" - blocker: no-key-material; the original of CVI or of Loménie's letter would give the key
-- Duplessis's own figures, 1595-99 (to his wife and to Cargroy; about 240 groups incl. the name codes 81 63, 153 63, 33): unread, few x10 codes, probably a different table from Loménie's - blocker: no-key-material
+- Loménie 1595, L8 (87 410 8): "du ro" then 8; "du roy" fits but the rule gives y = 3 and y occurs nowhere else (step 9) - blocker: needs-physical-access; the manuscript would show whether the figure is 3 or 8
+- Loménie 1595, L15: 100 76 before "querelles" unread; 100 holds the only 0 that is not part of a 10, perhaps a name figure like 98 and 99 - blocker: too-short
+- Loménie 1595 name figures in the clear text (3, 11, 14, 16, 25, 26, 98, 99), and the letters f, x, z, which do not occur and are inferred from the pattern - blocker: open-codes
+- Duplessis to Cargroy Jan 1597, C1 (119 where "parti" wants 5; "contrai" without ending) and C5 (75 87 95 66, no word with the key) (step 10) - blocker: needs-physical-access; the manuscript would show whether the print's figures are right
+- Duplessis's figures to his wife, Jan 1597 (W1-W3) and Sep 1597-1599 (about 130 groups incl. the name codes 81 63, 153 63, 33): unread, another system (40, 80, 132, letters printed among the figures) - blocker: no-key-material
 - Rohan 1597 (vol. 7 LXXXII, CXLI; 50 groups): the 1594 key fits; 672, 134, 160 inferred and not seen again; 38 seen once more (1599) and not supported by the pre-registered test; runs R1 and R18 not read - blocker: too-short
 - Rohan 1611-12 (vol. 11; 84 groups) and the unsigned 1612 letter (9 groups): a different table, unread - blocker: no-key-material
 - Serviez S1, *l'entreprinse*: a letter the writer left out of the cipher (the figures give *lenteprinse*: no r, and no group missing, step 6) - blocker: needs-physical-access; every sign that is there is read, and the missing letter cannot be recovered from any file here. The checker offers no blocker type for letters left out; this is the nearest.
@@ -176,9 +217,20 @@ printed clear text, and gave one figure for both letters.
 - [n/a] clear-pages: printed edition; the editors printed decipherments only where they had them (vol. 6 Rohan 1594). The king's cipher letter of 24 Feb 1595 (vol. 6 CVI) is printed in clear and covers the same affair as Loménie's (step 8).
 - [x] known-keys: Rohan 1594 key fits Rohan 1597 (step 7), not Rohan 1611-12 (step 8); on 1595-98 Duplessis/Loménie neither the Rohan key (step 5) nor the folded 1593 key (step 7) fits.
 - [ ] print: originals possibly AN 402AP/13 (requested 25 Oct 2026) and the Mornay papers (Nantes BM Dugast-Matifeux DM2/92-94, Institut / BnF); in particular Loménie's letter and the king's cipher letter CVI of 24 Feb 1595.
-- [ ] key-rebuild: structural look at the 1595-99 figures and two cribs (step 8); no key.
+- [x] key-rebuild: Loménie 1595 letter key rebuilt from the two cribs (step 9); Duplessis to Cargroy Jan 1597 key found among ten ordered tables (step 10); his figures to his wife still without a key.
 - [ ] retry: after the print step.
 
 ## 14 Nov 2026 full-texts audit
 
 Seven documents of `documents[]` had no entry in `outcome.texts`: Loménie 1595, Duplessis Jan 1597, Duplessis 1597-98, Duplessis 1599, Rohan 1599, Rohan 1611-12 and the unsigned letter of 1612. All are unread. Their transcriptions were in the folder (`lomenie1595.txt`, `duplessis1597.txt`, rows M of `beling/transcription/v7v8_figures.tsv`, rows D, R20-R62 and U of `beling/transcription/v9v12_figures.tsv`), and so were mechanical decodes with the two known keys (`beling/results/mechanical.txt`, `beling/results/round2_mechanical.txt`, the pre-registered tests of 11-12 Nov 2026). Each is now listed with those two files and state `decoded, not read`; each note names the section of the result file that holds its lines and says that neither key gives words. Nothing was decoded again and no count changed.
+
+## Transcription doubts (Loménie 1595, 27 Nov 2026)
+
+- 8 (L8, last figure, p. 180) - read: 8; checked: image, decode; the print is a clear 8, the decode wants 3 for "du roy". Left as printed; the word is marked doubtful.
+- 100 (L15, first group, p. 181) - read: 100; checked: image, decode; clear on the print, and no letter value fits a bare 0. Left as printed; not read.
+- 10 10 810 (L10, across the line break on p. 180) - read: 10. / 10 810.; checked: image, decode; the print has no stop after the second 10, and the figures read "l'assamblée de" either way.
+- 119 (C1, fourth group, vol. 7 p. 124) - read: 119; checked: image, decode; clear on the print, the decode wants 59 for "parti c". Left as printed; the word is marked doubtful.
+- 5 10 (C3 and C4, vol. 7 p. 125) - read: 5. 10.; checked: image, decode; printed as two groups in both places, and the figures read the same either way.
+
+The groups of C1-C8 in `duplessis1597.txt` were compared with the page images of vol. 7 pp. 124-126 and agree.
+The other groups of `lomenie1595.txt` were compared with the page images of pp. 179-181 and agree.

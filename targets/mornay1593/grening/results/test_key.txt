@@ -1,0 +1,36 @@
+# python3 -I scripts/test_key.py <vol. 6 OCR> --anneal ; then the same with --shape. 27 Nov 2026.
+# vol. 6 OCR text sha256 204906c76677ba3a5186e87dc4cd713015c8536d8edfe433a6b8ce6c33125574 (archive.org mmoiresetcorre06morn full text, as fetched 27 Nov 2026)
+model: letter trigrams from 19704 lines of vol. 6 (CVI, CVII and the table of contents left out)
+Test 1: held-out passages, 130 figures; crib letters fixed, the other ten by rule or at random
+  pattern key      -2.045 per figure
+  2000 random keys -2.282 mean, 0.060 sd, best -2.106
+  pattern key beats 2000 of 2000; z = 3.9
+Test 2: annealing from random keys on all passages, no cribs (12 runs, 6000 steps, 1-4 letters per figure)
+  pattern key -2.050 per figure
+  run  3  -1.947  agrees with the pattern key on  4 of 18 attested letters
+  run  8  -1.987  agrees with the pattern key on  6 of 18 attested letters
+  run 10  -1.996  agrees with the pattern key on  8 of 18 attested letters
+  run  7  -2.004  agrees with the pattern key on  8 of 18 attested letters
+  run  5  -2.018  agrees with the pattern key on  8 of 18 attested letters
+  run  1  -2.024  agrees with the pattern key on  8 of 18 attested letters
+  run  9  -2.034  agrees with the pattern key on  3 of 18 attested letters
+  run  2  -2.035  agrees with the pattern key on  1 of 18 attested letters
+  run  6  -2.043  agrees with the pattern key on  5 of 18 attested letters
+  run 11  -2.046  agrees with the pattern key on  3 of 18 attested letters
+  run  4  -2.047  agrees with the pattern key on  7 of 18 attested letters
+  run 12  -2.080  agrees with the pattern key on  5 of 18 attested letters
+
+Test 2: annealing from random keys on all passages, no cribs (12 runs, 6000 steps, 2-3 letters per figure)
+  pattern key -2.050 per figure
+  run  5  -1.985  agrees with the pattern key on  6 of 18 attested letters
+  run  7  -1.985  agrees with the pattern key on 10 of 18 attested letters
+  run  2  -2.011  agrees with the pattern key on  5 of 18 attested letters
+  run  3  -2.014  agrees with the pattern key on 10 of 18 attested letters
+  run 11  -2.016  agrees with the pattern key on  4 of 18 attested letters
+  run  6  -2.029  agrees with the pattern key on  3 of 18 attested letters
+  run  8  -2.034  agrees with the pattern key on  7 of 18 attested letters
+  run 12  -2.051  agrees with the pattern key on  7 of 18 attested letters
+  run  9  -2.058  agrees with the pattern key on  6 of 18 attested letters
+  run  4  -2.072  agrees with the pattern key on  5 of 18 attested letters
+  run  1  -2.087  agrees with the pattern key on  4 of 18 attested letters
+  run 10  -2.087  agrees with the pattern key on  3 of 18 attested letters
