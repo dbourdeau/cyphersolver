@@ -17,12 +17,22 @@ Fifteen rows got two readings:
 A row is settled only if A and B pick the same option and the cipher count does not contradict it. Three rows that
 errata.md had already settled (7, 47, 48) were put to reader B as controls. All three were answered correctly.
 
+**Pass 2** used the same protocol. The list was frozen first, then reader A's answers, then a *new* blind reader B.
+- 8 more rows were posed: 42, 57, 63, 88, 110, 112, 127, and 123 (not found on the 2343 px image).
+- Controls: rows 29 and 39, 2/2 correct.
+- Answer to the objection that reader A set the options: for rows 4, 78 and 127, reader B got a wider crop *without
+  coordinates*, had to find and describe the sign itself, and only then answered.
+
 ## Result (`errata_c_recheck.tsv`)
 - Settled **a** (the record misread the page), 8 rows: 4 (last word only), 8, 11, 28, 36, 85, 96, 102.
-- Settled **b** (the page has the record's form), 6 rows: 19, 20, 45 (تطيف), 74 (علمت), 78 (مص), 113.
-- Still **c**: row 75 (the two readers agree that the tooth has no dot of its own, which does not decide between ن and
-  ي; the cipher has ن), and the other 28 rows, which were not re-read in this pass.
-- Rows 4 and 78 are fragile: reader B gave a low-confidence answer.
+- Settled **b** (the page has the record's form), 9 rows: 19, 20, 42 (ونظر), 45 (تطيف), 63 (مروت), 74 (علمت),
+  110 (فيقتصك), 112 (درنحوا), 113.
+- Still **c** after a re-read, 5 rows:
+  - 57, 88 and 127: the two readers disagree.
+  - 75: the tooth has no dot of its own (the cipher has ن).
+  - 78: demoted in pass 2. On the wide crop neither reader could exclude a stroke before the loop.
+- Not re-read, or word not found on the 2343 px image: 21 rows. They stay c.
+- Row 4 is fragile. In pass 2 the blind reader found the word itself and saw the closed letter again, with low confidence.
 
 Points that differ from errata.md's notes:
 - Row 45: the page *does* show two dots over the first tooth of the interlinear word, i.e. تطيف, as in the cipher.
@@ -33,8 +43,8 @@ Points that differ from errata.md's notes:
 
 ## Limits
 - The images are 2343 px JPEGs, not the masters.
-- Reader A wrote the options and the crop coordinates, so reader B's independence is about what is seen, not about
-  where to look.
-- 28 rows were not re-read in the time available.
+- In pass 1 reader A wrote the options and the crop coordinates. Pass 2 tested free location on 3 rows: one row held
+  (4), two did not (78, 127).
+- 21 rows were not re-read, or their word was not found on the image.
 
 Images: University of Pennsylvania, LJS 51, OPenn (Public Domain Mark 1.0).

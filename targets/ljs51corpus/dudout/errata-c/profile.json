@@ -13,7 +13,7 @@
    "technique": [
     "plaintext matching"
    ],
-   "what": "15 of the 43 c rows of errata.md (Bourdeau) re-read from the Penn IIIF 2343 px images. Reader A was Claude Opus 5.5 (not blind), using crop + sign count and sign values from keys_eye. Reader B was Claude Opus (blind), with the crop only and shape options. A row is settled only if the two readings agree. Controls: 3/3 correct on rows already settled. Result: 8 rows to a, 6 to b, 1 still c; 28 not re-read. Rows 4 and 78 are fragile (reader B low confidence). Descriptive, not a validation.",
+   "what": "Two passes over the 43 c rows of errata.md (Bourdeau), using the Penn IIIF 2343 px images. 23 rows re-read. Reader A was Claude Opus 5.5 (not blind), using crop + sign count and sign values from keys_eye. Reader B was a new blind Claude Opus reader at each pass, with crop and shape options; in pass 2 it also had to locate the word itself on wider crops for 3 rows. A row is settled only if the two readings agree. Controls: 5/5 correct. Result: 8 rows to a, 9 to b, 5 still c after re-reading, 21 not re-read. Descriptive, not a validation.",
    "result": "partial",
    "by": "dudout"
   }
