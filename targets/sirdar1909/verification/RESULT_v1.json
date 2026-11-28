@@ -1,0 +1,55 @@
+{
+ "tool": "cyphersolver-holdout/1",
+ "dry_run": false,
+ "protocol": "PROTOCOL_v1.json",
+ "name": "sirdar1909 (cat. 2907) H1 - Sudan Government letter alphabet 1908-09, key from HIL/64/402=403 and HIL/64/239=118, held out HIL/64/240=119 and HIL/64/214=62",
+ "measured_at": "2026-11-27T12:30:16Z",
+ "manifest": "MANIFEST_v1.sha256",
+ "manifest_sha256": "a9259625e324fbb71b62a30cdb539d205924ce711ad488f30b64f02c0aafbccc",
+ "frozen_files": {
+  "PROTOCOL_v1.json": "36f40547e79431eadbc53a4f78bd6716767701fb45367c687f8b3779936de600",
+  "PREREG_v1.md": "5aefe632e2be9ae2b8c4d224fbde2b8a2795f0714c19647c24c9eee512113d3b",
+  "key_v1.tsv": "5e7992775bbc5bc4fc71fb814f7319f55295f827d85725254688807f871e1e59",
+  "holdout_v1.txt": "d65bec2b0de47e6f2edf9a8fbc26e0bfb4a5fdce62a263bb8e48c3a72aa347b0",
+  "reference_v1.txt": "a413aa53703e7d5a3c54b2ec9961079cb74f7b150b41b3d92bfc4233895d9db8",
+  "build_v1.txt": "0fe931c32160e47e3bd1b904cfd69a686630176943e30ecd83e022d6df6568d9",
+  "passage_2907_v1.txt": "2422913e3c444bdcc206d861b64d2b355db2d469f8ff1ca99c3c864c670a55b9",
+  "transcription_passeA.md": "4282f1b33bd9675c3a3b487897b99957f051118745a8acd79b931194871423e0",
+  "transcription_passeB.md": "895979de37079b29660feb9837bfa3a57b3e2bdb03a79f927060832a32b9dc28",
+  "arbitrate_v1.py": "3a89a72638c41b0cfe19b855342dfdcf50dff8d1f95cc3188dd6f920521b00e9"
+ },
+ "git": {
+  "manifest_commit": "6bf50659752c22dc1067c083e2d19fa25abdb4c7",
+  "manifest_commit_on_remote": [],
+  "issue_comment": "https://github.com/dbourdeau/cyphersolver/issues/1023",
+  "rfc3161": null,
+  "head_at_measure": "6bf50659752c22dc1067c083e2d19fa25abdb4c7"
+ },
+ "script_sha256": {
+  "measure.py": "ab658a5519e3c36bbde73d112c31498e59c8d6bea967ed58eb7dfcbf19a0909d",
+  "freeze.py": "5fd653a05a3a87cd55f93f83cc7f25ca02f2652916ddbc9d0557c726e40e7626",
+  "gitstate.py": "99094c8d463e0b25c3d21243be68a3e2e5d9633e2f83b31d3c170021ad0058bf"
+ },
+ "python": "3.9.6",
+ "metric": "char",
+ "groups": 301,
+ "coverage": 0.8738,
+ "score": 0.3051,
+ "controls": {
+  "n": 200,
+  "seed": 2907,
+  "best": 0.2237,
+  "p95": 0.1763,
+  "mean": 0.1115,
+  "sd": 0.0385,
+  "at_or_above_real": 0
+ },
+ "p_empirical": 0.005,
+ "z": 5.03,
+ "criterion": {
+  "threshold": 0.85,
+  "margin": 0.3,
+  "bar": 0.85
+ },
+ "verdict": "NOT VALIDATED"
+}
