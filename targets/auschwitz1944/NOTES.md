@@ -1,5 +1,7 @@
 # auschwitz1944 — Clandestine message (gryps) from the Auschwitz camp resistance, 4 September 1944
 
+Status: no write-up (printed decoding found after our attempt: Paczyńska 2013 p. 439; recorded as read from existing decipherment, perwich1670 precedent; owner 27 Nov 2026).
+
 Source: Auschwitz-Birkenau State Museum, « A fragment of a secret message sent from Auschwitz » (4 Sept. 1944), consulted on Google Arts & Culture: https://artsandculture.google.com/asset/a-fragment-of-a-secret-message-sent-from-auschwitz/CgGwLMf2NO_MsA (no shelfmark given). **No image, crop or derivative is included or linked here**: screenshots were used for private study only. No snip, portrait or reveal can be made for a write-up page for that reason.
 
 Polish clear text with about thirty words written as runs of numbers 1–30 (points 7 to 9); signed (signature not read).
@@ -82,3 +84,9 @@ Counts on the 34 cipher words: before, 29 sure, 4 probable, 1 unread (5 holes, 0
 
 ## Credits
 Brice Dudout set the protocol; Claude Opus agents (Anthropic) transcribed blind, arbitrated, wrote and ran both pre-registrations and read. AI decipherment; Brice Dudout checked five doubtful numbers on a blind shape sheet, not the other digits. An independent hostile reading (agent) checked the transcription, key and reading against the images and sources; its corrections are applied. The checks « image » above are by the blind arbiter, an AI agent working from the screenshots; no person has checked the digits on the image yet.
+
+Added at the merge of PR #1010 (28 Nov 2026): the message is held and published by the Auschwitz-Birkenau State Museum
+(Google Arts & Culture page above), whose description gives the date. The printed decoding is in I. Paczyńska's edition
+(2013, p. 439); L. Sadzikowska (2022, p. 120 n. 240) quotes point 8 with that reference. Both were found after the
+attempt and not used for it; TWL, Paprzyca and the sense of point 8 were taken from Sadzikowska afterwards. Credited in
+`profile.json` (`paczynska` prior solution, `sadzikowska` pointer, `auschwitzmuseum` identification).

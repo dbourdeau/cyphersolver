@@ -154,6 +154,15 @@
    "technique": [
     "contextual inference"
    ]
+  },
+  {
+   "date": "2026-11-28",
+   "kind": "literature search",
+   "what": "Outcome method changed at the merge of PR #1010 from 'key recovered from ciphertext-only' to 'read from existing decipherment': the printed decoding (Paczyńska 2013 p. 439, cited by Sadzikowska 2022 p. 120 n. 240, open access) was found after the attempt and was not used for it; perwich1670 precedent (owner, 27 Nov 2026). Class stays read in part (30 of 34 sure, 0.882); first_break stays false; no write-up page.",
+   "result": "worked",
+   "technique": [
+    "other"
+   ]
   }
  ],
  "outcome": {
@@ -164,7 +173,8 @@
   },
   "class": "read in part",
   "key": "recovered",
-  "method": "key recovered from ciphertext-only",
+  "method": "read from existing decipherment",
+  "method_basis": "Key rebuilt from the hymn before the printed decoding was found (Paczyńska 2013 p. 439, via Sadzikowska 2022); recorded under the existing decipherment, perwich1670 precedent (owner, 27 Nov 2026).",
   "fraction_read": 0.882,
   "fraction_read_method": "measured",
   "fraction_read_unit": "words",
@@ -189,6 +199,26 @@
     "role": "pointer",
     "note": "the print: Paczyńska 2013 p. 439, quoted by Sadzikowska 2022 p. 120 n. 240 (TWL, Paprzyca, the sense of 'jaki może mieć kontakt z wami')",
     "date": "2026-11-27"
+   },
+   {
+    "who": "paczynska",
+    "role": "prior solution",
+    "note": "her edition prints this gryps decoded, p. 439; found after our attempt, not used; p. 439 not seen",
+    "date": "2013",
+    "source": "I. Paczyńska (ed.), Grypsy z Konzentrationslager Auschwitz Józefa Cyrankiewicza i Stanisława Kłodzińskiego (Kraków, WUJ, 2013), p. 439"
+   },
+   {
+    "who": "sadzikowska",
+    "role": "pointer",
+    "note": "quotes point 8 in German with the p. 439 reference; TWL, Paprzyca and the sense of point 8 taken from it after the reading",
+    "date": "2022",
+    "source": "L. Sadzikowska, Identität und Fremdheit (V&R unipress 2022, open access), p. 120 and note 240, DOI 10.14220/9783737015165"
+   },
+   {
+    "who": "auschwitzmuseum",
+    "role": "identification",
+    "note": "holds the message and publishes it on Google Arts & Culture; its description gives the date, 4 September 1944",
+    "source": "https://artsandculture.google.com/asset/a-fragment-of-a-secret-message-sent-from-auschwitz/CgGwLMf2NO_MsA"
    }
   ],
   "gaps": [
@@ -224,7 +254,13 @@
     "cipher_words": 34,
     "holes": 4,
     "floor_used": false,
-    "note": "Short text: 34 cipher words, 4 holes (four probable words); the short-text floor (fewer than 40 cipher words: at most 2 holes) does not hold, so read in part."
+    "note": "Short text: 34 cipher words, 4 holes (four probable words); the short-text floor (fewer than 40 cipher words: at most 2 holes) does not hold, so read in part.",
+    "reading_review": {
+     "grade": "B",
+     "by": "integration review of PR #1010 (AI agent, for the maintainers); not a person",
+     "date": "2026-11-28",
+     "note": "Decryption reproduced exactly from key.tsv; key re-derived from the 1838 hymn text; Polish reads as sentences; point 8 agrees with the printed decoding (Paczyńska 2013 p. 439, as quoted by Sadzikowska 2022 p. 120 n. 240); 30/34 sure with TWL, short-text floor not met (4 holes), read in part; p. 439 itself not seen."
+    }
    }
   ],
   "key_file": "key.tsv"
