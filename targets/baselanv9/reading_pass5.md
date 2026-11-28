@@ -2,12 +2,12 @@
 
 <!-- Made on 28 Nov 2026 by Claude Opus 5.5 for Dan Bourdeau's review of 27 Nov 2026 on PR #957 (point 3), from `pass5/WORDS_P5.tsv` (every word with its tag) and `pass5/DECODE_P5.txt` (the one decode of pass 5). No letter of the decode is changed and none is supplied. The checks were done with AI tools and no person checked each reading by hand. -->
 <!-- Marks: a word with no mark is tagged sure in `pass5/WORDS_P5.tsv`. [?word] = a word tagged hole (slip, transposition, no sense, a sign with no value inside, or a variant spelling of a name), with its decoded letters after the question mark; a sign with no key value inside it is shown as ?. A lone [?] = a sign group with no value, counted as one hole word. ~ is the bar of an abbreviation, shown and not expanded (ch~ri, n~, dni~). -->
-<!-- ⟨...⟩ = a word broken at a line end in the decode (= in DECODE_P5.txt), joined here. The pass-5 scorer (`pass5/scripts/score_p5.py`) left these 12 joined words (H1r 2, H2 7, H4 3) out of WORDS_P5.tsv and SCORE_P5.tsv, so they are not in the figures below or in profile.json. Their tags inside ⟨⟩ are this file's own, made after the decode by one agent. -->
+<!-- ⟨...⟩ = a word broken at a line end in the decode (= in DECODE_P5.txt), joined here. The pass-5 scorer (`pass5/scripts/score_p5.py`) left these 12 joined words (H1r 2, H2 7, H4 3) out of WORDS_P5.tsv and SCORE_P5.tsv, so they are not in that file's figures; the section headers of H1r, H2 and H4 and profile.json give the counts with them (set at the merge of PR #957, 28 Nov 2026), the SCORE_P5.tsv figures in brackets. Their tags inside ⟨⟩ are this file's own, made after the decode by one agent. -->
 <!-- Word division and spelling are the decode's (u for v, i for j). Lines follow the manuscript; rims are read clockwise from the top. Each section is its own text, with its own count from `pass5/SCORE_P5.tsv` and the state set by the README read bar (95% of cipher words sure, or for fewer than 40 cipher words at most 2 holes or 5%); "read in part" where the sure words build sentences with holes; "decoded, not read" where they do not. The reader knew the key leaf, the clear copy of H1r-H3 and the earlier decodes; nothing here is blind. The signs inside the circles of ff. 52r-53r, the figures of f. 54r and f. 97r-v were first transcribed in pass 5. -->
 
 ## H1r. f. 15r, lines 1-12, conjurations
 
-<!-- 69/75 = 92.00% sure, 6 holes; state: read in part -->
+<!-- 71/77 = 92.21% sure, 6 holes, with the 2 words broken at a line end (SCORE_P5.tsv, before that fix: 69/75 = 92.00%); state: read in part -->
 
 et per omnia documenta quae~ in fide christiana sunt  
 instituta et per [?sactorum] agmina quae~ agni ⟨immaculati⟩  
@@ -24,7 +24,7 @@ figurationem ch~ri in monte tabor per [?atundi=]
 
 ## H2. f. 159r, the seal of Jupiter (Sigillum Iovis)
 
-<!-- 79/126 = 62.70% sure, 47 holes; state: read in part -->
+<!-- 81/133 = 60.90% sure, 52 holes, with the 7 words broken at a line end (SCORE_P5.tsv, before that fix: 79/126 = 62.70%, 47 holes); state: read in part -->
 
 [?sigillu] ioui  
 fit ex op~imi anglico stanno habens in  
@@ -59,7 +59,7 @@ qui hoc signum portat n~ peribit in armis
 
 ## H4. f. 25r, lines 1-12, a conjuration
 
-<!-- 73/89 = 82.02% sure, 16 holes; state: read in part -->
+<!-- 75/92 = 81.52% sure, 17 holes, with the 3 words broken at a line end (SCORE_P5.tsv, before that fix: 73/89 = 82.02%, 16 holes); state: read in part -->
 
 post hac [?sugit] et aperit brachia sua ac si  
 uellet amplexari [?aere] dicendo [?]  

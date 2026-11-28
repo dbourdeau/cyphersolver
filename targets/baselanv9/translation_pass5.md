@@ -5,7 +5,7 @@
 
 ## H1r. f. 15r, lines 1-12, conjurations
 
-<!-- 69/75 = 92.00% sure, 6 holes; state: read in part -->
+<!-- 71/77 = 92.21% sure, 6 holes, with the 2 words broken at a line end (SCORE_P5.tsv, before that fix: 69/75 = 92.00%); state: read in part -->
 
 And by all the teachings which are instituted in the Christian faith, and by the [?] hosts which follow the footsteps of the immaculate Lamb, and by all the saints whom God chose before the foundations of the world were laid, and [?] their merits, who are in joy and grace with God.
 
@@ -15,7 +15,7 @@ I adjure you, [?], in whatever part of the world [?], by the Annunciation of Chr
 
 ## H2. f. 159r, the seal of Jupiter (Sigillum Iovis)
 
-<!-- 79/126 = 62.70% sure, 47 holes; state: read in part -->
+<!-- 81/133 = 60.90% sure, 52 holes, with the 7 words broken at a line end (SCORE_P5.tsv, before that fix: 79/126 = 62.70%, 47 holes); state: read in part -->
 
 [?] of Jupiter.
 
@@ -33,7 +33,7 @@ Pentacle 4: Whoever carries this sign will not perish in arms.
 
 ## H4. f. 25r, lines 1-12, a conjuration
 
-<!-- 73/89 = 82.02% sure, 16 holes; state: read in part -->
+<!-- 75/92 = 81.52% sure, 17 holes, with the 3 words broken at a line end (SCORE_P5.tsv, before that fix: 73/89 = 82.02%, 16 holes); state: read in part -->
 
 After this [?] and opens his arms as if he wished to embrace [?], saying [?]: By [?] [?] of the book and by all its virtues, [?] twisted [?] misshapen, but in [?] gentle form may you come to us; and by the name and in the name Adonai Sabaoth [?] Eloi Sadai, Iod He Vau Aleph, Tetragrammaton [?] of him, [?] who is the God of hosts, God [?], God [?] [?] [?], who dwells above [?] [?], and his seat is in heaven; by the name of him who spoke and they were made, and made all things stand, and he himself rules over all things, and
 

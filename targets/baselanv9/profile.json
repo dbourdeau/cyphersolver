@@ -473,6 +473,15 @@
    ],
    "what": "Dan Bourdeau's review of 27 Nov 2026 on PR #957, points 1-3: each pass-5 text, rim and part given its own outcome.texts entry from pass5/SCORE_P5.tsv (cipher_words, holes, read_share, floor_used), state set from its count: 72 read (52 of them only by the short-text floor), 21 read in part, 7 decoded, not read; class 'read in part'. Pass-1 and pass-4 entries dropped from outcome.texts (pass 5 is the latest for every passage; their figures stay in NOTES.md). reading_pass4.md, reading_pass5.md (holes marked [?word]) and translation_pass4.md, translation_pass5.md (holes [?]) made from WORDS_P4/P5.tsv; no frozen file and no figure changed. Found while doing it: the pass-4/5 scorers leave out 12 words broken at a line end (H1r 2, H2 7, H4 3); shown in the readings, not counted. No reading review recorded. The checks were done with AI tools and no person checked each record by hand.",
    "result": "partial"
+  },
+  {
+   "date": "2026-11-28",
+   "kind": "verification",
+   "technique": [
+    "manual reconstruction"
+   ],
+   "what": "Maintainers' integration of PR #957: the 12 words broken at a line end that the pass-5 scorer left out were added to the counts of H1r, H2 and H4 in outcome.texts, from the tags the contributor shows in reading_pass5.md: H1r 69/75 -> 71/77 (92.21%), H2 79/126 -> 81/133 (60.90%, 52 holes), H4 73/89 -> 75/92 (81.52%, 17 holes); the angle-bracket words were checked against those tags in reading_pass5.md (H1r immaculati, circumcisionem sure; H2 adhibenda, librum sure, five holes; H4 uirtutes, mansueta sure, t?rar a hole). The frozen SCORE_P5.tsv and WORDS_P5.tsv are not changed. No state changes. Done by an AI agent for the maintainers.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -605,7 +614,7 @@
    {
     "item": "12 words broken at a line end in H1r (2), H2 (7) and H4 (3) are left out of WORDS_P4/P5 and SCORE_P4/P5",
     "blocker": "not-attempted",
-    "detail": "found 28 Nov 2026 while making reading_pass4.md and reading_pass5.md: the pass-4 and pass-5 scorers join a word broken with '=' but do not count the joined word unless it is broken again; the frozen SCORE files and the figures are left as they are; the words are shown in the readings in angle brackets with our own tags (side count: H1r 71/77, H2 81/133, H4 75/92), and the states do not change"
+    "detail": "found 28 Nov 2026 while making reading_pass4.md and reading_pass5.md: the pass-4 and pass-5 scorers join a word broken with '=' but do not count the joined word unless it is broken again; the frozen SCORE files are left as they are; the words are shown in the readings in angle brackets with the contributor's own tags; since the merge of PR #957 (28 Nov 2026) outcome.texts carries the side counts, H1r 71/77, H2 81/133, H4 75/92, and the states do not change"
    },
    {
     "item": "Pass-5 parts read only by the short-text floor with half or more of their words holes: S2-05 1/3, S2i-07v 1/2, S2i-11 1/2, F54-A-in 1/3, F97r-lab 1/2, F97v-in 2/4",
@@ -848,12 +857,12 @@
     "translation": "translation_pass5.md",
     "language": "la",
     "state": "read in part",
-    "read_share": 0.92,
-    "cipher_words": 75,
+    "read_share": 0.9221,
+    "cipher_words": 77,
     "holes": 6,
     "floor_used": false,
     "summary": "The end of one conjuration and the beginning of the next ('Alia coniuratio') in the Clavicula Salomonis: the spirits are adjured by the teachings of the faith, the saints, and the life of Christ (Annunciation, coming, Nativity, circumcision, fast, Transfiguration on Mount Tabor).",
-    "note": "Pass 5, pass5/SCORE_P5.tsv: 69 of 75 cipher words sure (92.00%), 6 holes; one agent's tags, no separate judge, no person. Under 95% and not within the floor; the sure words build sentences with holes. 2 words broken at a line end (immaculati, circumcisionem, both sure on our own look) are left out of the count by the pass-5 scorer; with them 71/77 = 92.21% (side count, not the figure)."
+    "note": "Pass 5, 71 of 77 cipher words sure (92.21%), 6 holes, counted with the 2 words broken at a line end (immaculati, circumcisionem, both sure on the contributor's look after the decode) that the pass-5 scorer left out; the frozen pass5/SCORE_P5.tsv and WORDS_P5.tsv predate that fix and give 69 of 75 (92.00%). One agent's tags, no separate judge, no person. Under 95% and not within the floor; the sure words build sentences with holes. Count set to the contributor's side count at the merge of PR #957 (28 Nov 2026)."
    },
    {
     "doc": "anv9",
@@ -865,12 +874,12 @@
     "translation": "translation_pass5.md",
     "language": "la",
     "state": "read in part",
-    "read_share": 0.627,
-    "cipher_words": 126,
-    "holes": 47,
+    "read_share": 0.609,
+    "cipher_words": 133,
+    "holes": 52,
     "floor_used": false,
     "summary": "The instructions for the seal of Jupiter in the Septem sigilla planetarum: made of English tin, cast and stamped on a day of Jupiter, kept in a cloth; carried, it wins favour with all men, and its bearer obtains his wish and is free of fear.",
-    "note": "Pass 5, pass5/SCORE_P5.tsv: 79 of 126 cipher words sure (62.70%), 47 holes; one agent's tags, no separate judge, no person. Under 95% and not within the floor; the sure words build sentences with holes. 7 words broken at a line end (adhibenda and librum sure, iuupiten, iupitet, signillum, miratbilitet, negotius holes, on our own look) are left out of the count by the pass-5 scorer; with them 81/133 = 60.90% (side count, not the figure)."
+    "note": "Pass 5, 81 of 133 cipher words sure (60.90%), 52 holes, counted with the 7 words broken at a line end (adhibenda and librum sure; iuupiten, iupitet, signillum, miratbilitet, negotius holes, on the contributor's look after the decode) that the pass-5 scorer left out; the frozen pass5/SCORE_P5.tsv and WORDS_P5.tsv predate that fix and give 79 of 126 (62.70%). One agent's tags, no separate judge, no person. Under 95% and not within the floor; the sure words build sentences with holes. Count set to the contributor's side count at the merge of PR #957 (28 Nov 2026)."
    },
    {
     "doc": "anv9",
@@ -899,12 +908,12 @@
     "translation": "translation_pass5.md",
     "language": "la",
     "state": "read in part",
-    "read_share": 0.8202,
-    "cipher_words": 89,
-    "holes": 16,
+    "read_share": 0.8152,
+    "cipher_words": 92,
+    "holes": 17,
     "floor_used": false,
     "summary": "A conjuration: the operator opens his arms as if to embrace, and calls the spirits to come in gentle form by the divine names (Adonai Sabaoth, Eloi, Sadai, Tetragrammaton) and by him who spoke and all things were made.",
-    "note": "Pass 5, pass5/SCORE_P5.tsv: 73 of 89 cipher words sure (82.02%), 16 holes; one agent's tags, no separate judge, no person. Under 95% and not within the floor; the sure words build sentences with holes. 3 words broken at a line end (uirtutes and mansueta sure, t?rar a hole, on our own look) are left out of the count by the pass-5 scorer; with them 75/92 = 81.52% (side count, not the figure)."
+    "note": "Pass 5, 75 of 92 cipher words sure (81.52%), 17 holes, counted with the 3 words broken at a line end (uirtutes and mansueta sure, t?rar a hole, on the contributor's look after the decode) that the pass-5 scorer left out; the frozen pass5/SCORE_P5.tsv and WORDS_P5.tsv predate that fix and give 73 of 89 (82.02%). One agent's tags, no separate judge, no person. Under 95% and not within the floor; the sure words build sentences with holes. Count set to the contributor's side count at the merge of PR #957 (28 Nov 2026)."
    },
    {
     "doc": "anv9",
