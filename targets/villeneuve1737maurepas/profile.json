@@ -1,0 +1,200 @@
+{
+  "schema_version": 1,
+  "target": "villeneuve1737maurepas",
+  "title": "Villeneuve (Constantinople) to Maurepas, 18 Feb and 2 Apr 1737: the two undeciphered cipher letters of Archives nationales AE/B/I/414 (catalogue 538), read in part with a key from the volume's own period decipherments (contributed by Brice Dudout)",
+  "documents": [
+    {
+      "id": "T1",
+      "read": "read in part",
+      "shelfmark": "Archives nationales, AE/B/I/414 (images 0060-0062)",
+      "date": "18 Feb 1737",
+      "year": 1737,
+      "country": "Ottoman Empire",
+      "route": "Louis-Sauveur, marquis de Villeneuve (Constantinople) -> Jean-Frédéric Phélypeaux, comte de Maurepas",
+      "language": "French",
+      "cleartext_in_document": "interspersed",
+      "plaintext": {
+        "location": [
+          "none"
+        ],
+        "source": "AN inventory: '[Lettre chiffrée] - Lettre non déchiffrée'; no decipherment on the pages. Read with key K2 from the period decipherments of the letters of 9 and 29 Jul 1737 in the same volume."
+      },
+      "length": {
+        "tokens": 350,
+        "unit": "code groups",
+        "measured": true,
+        "file": "transcription.txt"
+      },
+      "transcription": {
+        "by": "llm from images",
+        "source": "Archives nationales reproduction (private JPEG, not distributed)",
+        "image_quality": "good",
+        "notes": "Two blind passes (A, B) and a blind arbiter on 62 places; see blind/."
+      }
+    },
+    {
+      "id": "T2",
+      "read": "read in part",
+      "shelfmark": "Archives nationales, AE/B/I/414 (images 0092-0096)",
+      "date": "2 Apr 1737",
+      "year": 1737,
+      "country": "Ottoman Empire",
+      "route": "Louis-Sauveur, marquis de Villeneuve (Constantinople) -> Jean-Frédéric Phélypeaux, comte de Maurepas",
+      "language": "French",
+      "cleartext_in_document": "interspersed",
+      "plaintext": {
+        "location": [
+          "none"
+        ],
+        "source": "AN inventory: '[Lettre partiellement chiffrée, non transcrite]'; no decipherment on the pages. Read with key K2 from the period decipherments of the letters of 9 and 29 Jul 1737 in the same volume."
+      },
+      "length": {
+        "tokens": 1194,
+        "unit": "code groups",
+        "measured": true,
+        "file": "transcription.txt"
+      },
+      "transcription": {
+        "by": "llm from images",
+        "source": "Archives nationales reproduction (private JPEG, not distributed)",
+        "image_quality": "good",
+        "notes": "Two blind passes (A, B) and a blind arbiter on 62 places; see blind/."
+      }
+    }
+  ],
+  "system": {
+    "types": [
+      "code"
+    ],
+    "summary": "Numeric nomenclator 1-499: letters with homophones, many syllables, some words; 318 frequent, used as a null. Not the Villeneuve -> Otter key of 1737 (targets/villeneuve1737).",
+    "symbol_kind": "digits",
+    "homophones": {
+      "used": true
+    },
+    "nomenclator": {
+      "present": true
+    },
+    "nulls": {
+      "present": true
+    },
+    "word_division": "none",
+    "distinct_symbols": 322,
+    "diacritics": {
+      "used": false
+    },
+    "key_order": "unknown"
+  },
+  "conditions": {
+    "prior_solution": {
+      "exists": "no",
+      "where": "Inventory FRAN_IR_057640 marks both pieces as not deciphered / not transcribed; no edition found (Vandal 1887 checked); the period decipherments of 9 and 29 Jul 1737 (same volume) were used as key source only.",
+      "found": "not found",
+      "used": false
+    },
+    "inputs": [
+      "images",
+      "known plaintext"
+    ],
+    "attack": "known plaintext",
+    "human_role": "Brice Dudout ordered and paid the reproduction (Archives nationales) and set the protocol; AI agents transcribed (blind passes, arbiter, gloss re-reading), built the key, measured and read.",
+    "models": [
+      "Claude Opus 5.5 (Anthropic), agents run by Brice Dudout"
+    ],
+    "first_date": "2026-11-20",
+    "last_date": "2026-11-23"
+  },
+  "solution": [
+    {
+      "kind": "transcription",
+      "what": "Glossed letters of 9 and 29 Jul 1737 transcribed with their interlinear decipherment; the two undeciphered letters transcribed in two blind passes plus a blind arbiter.",
+      "result": "worked"
+    },
+    {
+      "kind": "solver",
+      "technique": [
+        "plaintext matching"
+      ],
+      "what": "Key K1 fitted on the training glosses (coordinate ascent on edit distance, hard-EM, manual curation), frozen; pre-registered held-out test on frames 0200-0202: 0.661 vs best of 200 controls 0.263, below the 0.85 bar (fail).",
+      "result": "partial"
+    },
+    {
+      "kind": "reading",
+      "technique": [
+        "key matching"
+      ],
+      "what": "Both letters decoded with K2 (all glossed frames), frozen before decoding; counted by the rule of #728.",
+      "result": "partial"
+    },
+    {
+      "date": "2026-11-23",
+      "kind": "verification",
+      "what": "Blind sign sheet V on nine doubtful digits (three controls, 3 of 3), chosen by a rule with a written integration clause, hashed before the thumbnails (sign_check/sheet-V-rule.md). Brice Dudout answered; an AI model wrote the rule, cut the thumbnails, built the sheet and scored it. All nine targets confirmed the shape that makes the word. Sure words T1 106 -> 108 of 255, T2 348 -> 355 of 841 (0.415 -> 0.422).",
+      "result": "partial"
+    }
+  ],
+  "outcome": {
+    "validation": {
+      "date": "2026-11-23",
+      "verdict": "fail",
+      "notes": "Pre-registered held-out test on frames 0200-0202 (598 groups): 0.661, best of 200 shuffled-key controls 0.263; criterion >= 0.85 and >= control + 0.30 -> not met (absolute bar). Portion burnt; key not validated at the standard bar."
+    },
+    "class": "read in part",
+    "key": "partial",
+    "method": "key recovered based on adjacent plaintext",
+    "fraction_read": 0.422,
+    "fraction_read_method": "measured",
+    "fraction_read_source": "rule of #728: 463 sure words of 1,096 cipher words (T1 108/255, T2 355/841; reading.md, count728_detail.txt), after the blind sign check of 23 Nov 2026 (106/255 and 348/838 before it); weak values, absent codes and gutter losses are holes.",
+    "first_break": true,
+    "verification": [
+      "historical consistency"
+    ],
+    "provenance": "contributed",
+    "credits": [
+      {
+        "who": "dudout",
+        "role": "solution",
+        "note": "Reproduction ordered from the Archives nationales; key from the volume's period decipherments; two undeciphered letters read in part",
+        "date": "2026-11-23"
+      }
+    ],
+    "gaps": [
+      {
+        "item": "unresolved code groups",
+        "blocker": "open-codes",
+        "detail": "234 target groups use codes absent from the glossed witnesses; 99 key values weak"
+      },
+      {
+        "item": "gutter losses",
+        "blocker": "illegible",
+        "detail": "line ends lost in the binding on 0061 L, 0062 L, 0093-0096 L"
+      },
+      {
+        "item": "validation",
+        "blocker": "needs-physical-access",
+        "detail": "other glossed 1737 letters of AE/B/I/414 not ordered"
+      }
+    ],
+    "texts": [
+      {
+        "doc": "T1",
+        "label": "T1, 18 Feb 1737",
+        "transcription": "transcription.txt",
+        "decryption": "decryption.txt",
+        "reading": "reading.md",
+        "language": "fr",
+        "state": "read in part",
+        "summary": "108 of 255 cipher words sure."
+      },
+      {
+        "doc": "T2",
+        "label": "T2, 2 Apr 1737",
+        "transcription": "transcription.txt",
+        "decryption": "decryption.txt",
+        "reading": "reading.md",
+        "language": "fr",
+        "state": "read in part",
+        "summary": "355 of 841 cipher words sure."
+      }
+    ]
+  }
+}

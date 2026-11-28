@@ -1,0 +1,8 @@
+# PREREG-2 — villeneuve-1737 — reading key K2 and counting rule (before decoding T1/T2)
+Date: 2026-11-23. Written after the single measure (prereg/MEASURE-RESULT.json: K1 0.661 vs best control 0.263 -> FAIL at the 0.85 bar; the held-out frames 0200-0202 are burnt for measuring) and BEFORE any decoding of the targets.
+
+- K2 = key/KEY-K2-frozen.tsv: same fitting procedure as K1, run on ALL glossed witness frames (0197-0202, 0230-0231), seeded with K1 and with the curated values (key/curated-codes.txt) kept fixed. Not separately validated (no fresh glossed portion remains).
+- Status per code: S (supported) if, in the Viterbi alignment of all witness glosses, the value agrees in >= 2 occurrences and in at least half of them, or if the value was curated from repeated words and the code occurs >= 3 times in the witnesses; otherwise W (weak).
+- Targets decoded with K2 from the merged blind transcription (transcr/merged_cipher.json), T1 = frames 0060-0062, T2 = frames 0092-0096.
+- Counting (rule #728): unit = cipher word (the cipher groups that make one plaintext word, segmented on the decoded text). A word is SURE only if every group in it is in K2 with status S, the transcription of each group is agreed by both passes or settled 'sure' by the arbiter, and the word reads as a French word without emendation. Words with a W code, a code absent from K2, an uncertain group, a gutter loss, or needing emendation/context to fix a value are holes (probable {x}, restored [x], unresolved ‹…›). Fraction read = sure words / cipher words. Texts < 40 cipher words: "read" only with <= 2 holes.
+- Values fixed only from target context are holes and are not added to the key.
