@@ -38,3 +38,42 @@ Doubtful letters were re-read on the scans by Brice Dudout in blind panels befor
 ## Remaining gaps
 
 - Codes marked doubtful (status "douteux") or unread ([?]) in `decryption.txt` / `reading.md`.
+
+## Read share with sure codes only (18 Nov 2026)
+
+Rule applied as written in PR #728 (owner's decision of 16 Nov 2026, README Conventions "The read share counts cipher words only"): sure only; a probable, inferred or unread unit is a hole. A Chinese telegram is wholly in cipher, and its unit here is the code: one four-figure code is one character, so
+the share is counted in codes, not words (a word is one or two characters; no word count is made). Counted from the
+status column of `decryption.txt`: `ok` and `confirmé:…` are sure; `douteux` (doubtful, the `{x}` of `reading.md`) and
+`illisible` are holes.
+
+| telegram | codes | sure | share | holes | state |
+|---|---|---|---|---|---|
+| 0091a | 20 | 18 | 0.900 | 2 douteux | read (floor) |
+| 0095a | 20 | 18 | 0.900 | 2 douteux | read (floor) |
+| 0115b | 55 | 41 | 0.745 | 13 douteux, 1 illisible | read in part |
+| 0130b | 24 | 24 | 1.000 | — | read |
+| 0131b | 20 | 19 | 0.950 | 1 douteux | read |
+| 0144a | 15 | 12 | 0.800 | 3 douteux | read in part |
+| 0145 | 47 | 43 | 0.915 | 4 douteux | read in part |
+| 0152b | 25 | 23 | 0.920 | 2 douteux | read (floor) |
+| 0160a | 40 | 35 | 0.875 | 5 douteux | read in part |
+
+**233 of 266 codes sure (87.6%)**; 7 of 9 telegrams under the bar, so the target goes **read -> read
+in part**. Before, the doubtful codes were counted as read. Many telegrams are short: one doubtful code puts a
+telegram of under 20 codes below 95%. The codes marked `douteux` are counted as they stand; none was re-read on the
+scans for this count. Counted by a script on
+`decryption.txt`; `v10_relabel.py` does not measure Chinese readings.
+
+## Floor for short texts (19 Nov 2026)
+
+README rule of 19 Nov 2026 (owner's decision): a document of fewer than 40 cipher words is read when its holes are at most 5% of its cipher words or at most 2 words, whichever allows more; never for 40 words or more; for Chinese telegraphic codes one code is one word. Applied to the counts of 18 Nov above, nothing recounted, for the documents under 95%:
+
+- 0091a: 20 codes, 2 holes -> **read** (floor used)
+- 0095a: 20 codes, 2 holes -> **read** (floor used)
+- 0152b: 25 codes, 2 holes -> **read** (floor used)
+- 0115b: 55 codes, 14 holes -> stays read in part (40 or more)
+- 0144a: 15 codes, 3 holes -> stays read in part (more than 2 holes)
+- 0145: 47 codes, 4 holes -> stays read in part (40 or more)
+- 0160a: 40 codes, 5 holes -> stays read in part (40 or more)
+
+The class stays **read in part**.

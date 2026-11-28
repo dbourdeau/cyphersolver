@@ -33,3 +33,33 @@ Doubtful letters were re-read on the scans by Brice Dudout in blind panels befor
 ## Remaining gaps
 
 - Codes marked doubtful (status "douteux") or unread ([?]) in `decryption.txt` / `reading.md`.
+
+## Read share with sure codes only (18 Nov 2026)
+
+Rule applied as written in PR #728 (owner's decision of 16 Nov 2026, README Conventions "The read share counts cipher words only"): sure only; a probable, inferred or unread unit is a hole. A Chinese telegram is wholly in cipher, and its unit here is the code: one four-figure code is one character, so
+the share is counted in codes, not words (a word is one or two characters; no word count is made). Counted from the
+status column of `decryption.txt`: `ok` and `confirmé:…` are sure; `douteux` (doubtful, the `{x}` of `reading.md`) and
+`illisible` are holes.
+
+| telegram | codes | sure | share | holes | state |
+|---|---|---|---|---|---|
+| 0104a | 20 | 19 | 0.950 | 1 douteux | read |
+| 0182 | 32 | 28 | 0.875 | 3 douteux, 1 illisible | read in part |
+| 0185 | 5 | 4 | 0.800 | 1 douteux | read (floor) |
+| 0186 | 20 | 16 | 0.800 | 4 douteux | read in part |
+
+**67 of 77 codes sure (87.0%)**; 3 of 4 telegrams under the bar, so the target goes **read -> read
+in part**. Before, the doubtful codes were counted as read. Many telegrams are short: one doubtful code puts a
+telegram of under 20 codes below 95%. The codes marked `douteux` are counted as they stand; none was re-read on the
+scans for this count. Counted by a script on
+`decryption.txt`; `v10_relabel.py` does not measure Chinese readings.
+
+## Floor for short texts (19 Nov 2026)
+
+README rule of 19 Nov 2026 (owner's decision): a document of fewer than 40 cipher words is read when its holes are at most 5% of its cipher words or at most 2 words, whichever allows more; never for 40 words or more; for Chinese telegraphic codes one code is one word. Applied to the counts of 18 Nov above, nothing recounted, for the documents under 95%:
+
+- 0185: 5 codes, 1 hole -> **read** (floor used)
+- 0182: 32 codes, 4 holes -> stays read in part (more than 2 holes)
+- 0186: 20 codes, 4 holes -> stays read in part (more than 2 holes)
+
+The class stays **read in part**.

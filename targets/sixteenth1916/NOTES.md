@@ -35,3 +35,35 @@ Doubtful letters were re-read on the scans by Brice Dudout in blind panels befor
 ## Remaining gaps
 
 - Codes marked doubtful (status "douteux") or unread ([?]) in `decryption.txt` / `reading.md`.
+
+## Read share with sure codes only (18 Nov 2026)
+
+Rule applied as written in PR #728 (owner's decision of 16 Nov 2026, README Conventions "The read share counts cipher words only"): sure only; a probable, inferred or unread unit is a hole. A Chinese telegram is wholly in cipher, and its unit here is the code: one four-figure code is one character, so
+the share is counted in codes, not words (a word is one or two characters; no word count is made). Counted from the
+status column of `decryption.txt`: `ok` and `confirmé:…` are sure; `douteux` (doubtful, the `{x}` of `reading.md`) and
+`illisible` are holes.
+
+| telegram | codes | sure | share | holes | state |
+|---|---|---|---|---|---|
+| 0590 | 25 | 24 | 0.960 | 1 douteux | read |
+| 0592 | 29 | 27 | 0.931 | 2 douteux | read (floor) |
+| 0603 | 25 | 24 | 0.960 | 1 douteux | read |
+| 0616 | 45 | 32 | 0.711 | 13 douteux | read in part |
+| 0629a | 7 | 7 | 1.000 | — | read |
+| 0629b | 37 | 31 | 0.838 | 6 douteux | read in part |
+
+**145 of 168 codes sure (86.3%)**; 3 of 6 telegrams under the bar, so the target goes **read -> read
+in part**. Before, the doubtful codes were counted as read. Many telegrams are short: one doubtful code puts a
+telegram of under 20 codes below 95%. The codes marked `douteux` are counted as they stand; none was re-read on the
+scans for this count. Counted by a script on
+`decryption.txt`; `v10_relabel.py` does not measure Chinese readings.
+
+## Floor for short texts (19 Nov 2026)
+
+README rule of 19 Nov 2026 (owner's decision): a document of fewer than 40 cipher words is read when its holes are at most 5% of its cipher words or at most 2 words, whichever allows more; never for 40 words or more; for Chinese telegraphic codes one code is one word. Applied to the counts of 18 Nov above, nothing recounted, for the documents under 95%:
+
+- 0592: 29 codes, 2 holes -> **read** (floor used)
+- 0616: 45 codes, 13 holes -> stays read in part (40 or more)
+- 0629b: 37 codes, 6 holes -> stays read in part (more than 2 holes)
+
+The class stays **read in part**.

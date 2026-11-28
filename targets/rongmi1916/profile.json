@@ -5,7 +5,7 @@
  "documents": [
   {
    "id": "rongmi-1916",
-   "read": "read",
+   "read": "read in part",
    "shelfmark": "JACAR B03050089200, B03050089300, B03050089400, B03050089500, B03050089900 (特定人ノ発受郵便物取調): N11, N12, N14, N19b, N21, N28, N36, V4B, N02, N08, N19a, N24, N25, V4D (prefix 1369 1378 = 容密)",
    "date": "8 June - c. 30 June 1916",
    "year": 1916,
@@ -182,10 +182,11 @@
    "kind": "verification",
    "what": "Project, dating check for the split of numeric1916 (Dan Bourdeau's condition): Dudout's public commits (bdudout/wenmi, UTC) put the 容密 key on 19 Oct 2026 10:11 UTC; Cryptiana's mingmi section (undated; page 'first posted 18 September 2026, last modified 24 October 2026'; Wenmi cites it as 23 Oct 2026) credits the key formulas to Dudout and adds the reading as a renumbered 明密 book. Recovery predates the section; no priority for the project. Wayback holds only a 2 Oct 2026 capture. See NOTES.md, 'Dating and credit'.",
    "result": "worked"
-  }
+  },
+  {"date": "2026-11-18", "kind": "verification", "what": "Read share recounted with sure codes only (README rule of PR #728) from the status column of decryption.txt: 1198 of 1306 codes (0.917); 6 of 14 telegrams under 95%; class read -> read in part.", "result": "partial"}
  ],
  "outcome": {"validation": {"date": "2026-11-05", "verdict": "not applicable", "notes": "plaintext is Chinese telegraph code numbers, no Chinese letter model in lang; the contributor's verify.py random-key and digit-shuffle nulls were rerun here instead on 2026-10-20 (see solution steps)"}, 
-  "class": "read",
+  "class": "read in part",
   "key": "recovered",
   "method": "key recovered from ciphertext-only",
   "method_basis": "Key search scored with a telegraph-code language model, without cribs or plaintext; only the form dates served as checks (key.md, NOTES.md).",
@@ -193,9 +194,9 @@
    "transcription",
    "key recovered"
   ],
-  "fraction_read": 0.959,
+  "fraction_read": 0.917,
   "fraction_read_method": "measured",
-  "fraction_read_source": "Daniel's rule on reading.md: 1198 certain + 55 probable of 1306 groups (48 unresolved, 6 illegible).",
+  "fraction_read_source": "Sure codes only (18 Nov 2026): 1198 of 1306 codes marked ok (or confirmed) in decryption.txt; doubtful and illegible codes are holes; 6 of 14 telegrams under 95%. Before: probable (doubtful) codes counted as read.",
   "verification": [
    "historical consistency",
    "key confirms",
@@ -243,15 +244,16 @@
     "reading": "reading.md",
     "translation": "translation.md",
     "language": "zh",
-    "state": "read",
-    "read_share": 0.959,
+    "state": "read in part",
+    "read_share": 0.917,
     "summary": "Zhang Xiaozhun and Huang Xing in Tokyo, the Yin Ruli-Huang Fu-Ge Jing'en group in Shanghai: about 10,000 rifles, mountain guns and machine guns bought in Japan for Zhejiang (Governor Lü Gongwang), payment before 30 June, a one-million loan and tobacco taxes as security; Japan will not lend to Beijing before North and South are unified; \"no legal solution without armed force\"; the meeting at Tang's house; late June, Duan back to three delegates per province.",
     "reading_review": {
      "grade": "B",
      "by": "Claude Opus 5.5 (for Brice Dudout)",
      "date": "2026-11-04",
      "note": "Read as sentences 4 Nov 2026 (Chinese, classical telegraphic): the fourteen telegrams hold as sentences (arms for Zhejiang, loans and tobacco taxes as security, Japan will not lend to Beijing before unification, the meeting at Tang's house, the 1912 Provisional Constitution) except N36 (about 15 unresolved in 58) and V4B (about 15 in 265), which read in outline. 1,306 groups, 95.9% certain or probable: read, grade B."
-    }
+    },
+    "note": "18 Nov 2026, sure codes only: 1198 of 1306 codes \"ok\" in decryption.txt (91.7%); codes marked doubtful (douteux, {x} in reading.md) or illegible are holes. Counted over all the telegrams of this entry."
    }
   ],
   "key_file": "key.md",

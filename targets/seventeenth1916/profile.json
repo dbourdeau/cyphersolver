@@ -5,7 +5,7 @@
  "documents": [
   {
    "id": "0591",
-   "read": "read",
+   "read": "read in part",
    "shelfmark": "JACAR B03050088500 (Gaimushō 1.6.1.4-2-1-2, 特定人ノ発受郵便物取調), frame/label 0591",
    "date": "17 April 1916",
    "year": 1916,
@@ -37,7 +37,7 @@
   },
   {
    "id": "0593",
-   "read": "read",
+   "read": "read in part",
    "shelfmark": "JACAR B03050088500 (Gaimushō 1.6.1.4-2-1-2, 特定人ノ発受郵便物取調), frame/label 0593",
    "date": "18 April 1916",
    "year": 1916,
@@ -69,7 +69,7 @@
   },
   {
    "id": "0601a",
-   "read": "read",
+   "read": "read in part",
    "shelfmark": "JACAR B03050088500 (Gaimushō 1.6.1.4-2-1-2, 特定人ノ発受郵便物取調), frame/label 0601a",
    "date": "18 April 1916",
    "year": 1916,
@@ -101,7 +101,7 @@
   },
   {
    "id": "0608a",
-   "read": "read",
+   "read": "read in part",
    "shelfmark": "JACAR B03050088600 (Gaimushō 1.6.1.4-2-1-2, 特定人ノ発受郵便物取調), frame/label 0608a",
    "date": "20 April 1916",
    "year": 1916,
@@ -195,15 +195,17 @@
    ],
    "what": "Chinese text punctuated and translated; doubtful codes marked.",
    "result": "worked"
-  }
+  },
+  {"date": "2026-11-18", "kind": "verification", "what": "Read share recounted with sure codes only (README rule of PR #728) from the status column of decryption.txt: 69 of 97 codes (0.711); 4 of 4 telegrams under 95%; class read -> read in part.", "result": "partial"},
+  {"date": "2026-11-19", "kind": "verification", "what": "Floor for short texts (README, 19 Nov 2026: under 40 codes, at most 2 holes) applied to the 18 Nov counts: no document qualifies; class stays read in part.", "result": "partial"}
  ],
  "outcome": {"validation": {"date": "2026-10-27", "verdict": "not applicable", "notes": "Chinese plaintext through the telegraph code: the letter n-gram test cannot run on Chinese characters; the readings were checked by sense"}, 
-  "class": "read",
+  "class": "read in part",
   "key": "recovered",
   "method": "key recovered from ciphertext-only",
-  "fraction_read": 1.0,
+  "fraction_read": 0.711,
   "fraction_read_method": "measured",
-  "fraction_read_source": "97 of 97 codes give a character (doubtful codes counted as read; see decryption.txt).",
+  "fraction_read_source": "Sure codes only (18 Nov 2026): 69 of 97 codes marked ok (or confirmed) in decryption.txt; doubtful and illegible codes are holes; 4 of 4 telegrams under 95%. Before: probable (doubtful) codes counted as read. Floor for short texts (README, 19 Nov 2026): no document qualifies; 0591 (15/24), 0593 (9/18), 0601a (24/30), 0608a (21/25) stay under the bar, so the class stays read in part.",
   "first_break": true,
   "verification": [
    "historical consistency"
@@ -233,13 +235,20 @@
     "reading": "reading.md",
     "translation": "translation.md",
     "language": "zh",
-    "state": "read",
+    "state": "read in part",
     "summary": "Shanghai → “Rosamonde”, April 1916; clear indicator “Seventeenth”. Condenser of the Swatow family: consonants rotated, vowel order i u a e o. Table recovered in October 2026.",
-    "reading_review": {"grade": "B", "by": "Claude Opus 5.5 (PR review on merge)", "date": "2026-10-27", "note": "4 telegrams, 28 of 97 codes doubtful; 0601a and 0608a build sense (Shaanxi should wait; send funds), but 0591 and 0593 are mostly doubtful fragments ({鄂}{乳}{廹}; {姣}{宋}{瓀}{襾}{借}{碼}) and the translation of both is largely gaps."}
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude Opus 5.5 (PR review on merge)",
+     "date": "2026-10-27",
+     "note": "4 telegrams, 28 of 97 codes doubtful; 0601a and 0608a build sense (Shaanxi should wait; send funds), but 0591 and 0593 are mostly doubtful fragments ({鄂}{乳}{廹}; {姣}{宋}{瓀}{襾}{借}{碼}) and the translation of both is largely gaps."
+    },
+    "read_share": 0.625,
+    "note": "18 Nov 2026, sure codes only: 15 of 24 codes \"ok\" in decryption.txt (62.5%); codes marked doubtful (douteux, {x} in reading.md) or illegible are holes."
    },
-   {"doc": "0593", "label": "0593, 18 April 1916: in the table's shared files", "transcription": "transcription.txt", "decryption": "decryption.txt", "reading": "reading.md", "translation": "translation.md", "language": "zh", "state": "read", "summary": "Telegram 0593 of 18 April 1916 (Shanghai (035) → Rosamonde (12/11 words) [Seventeenth]); its text is in the shared files with the other telegrams of the table.", "reading_review": {"grade": "B", "by": "Claude Opus 5.5 (PR review on merge)", "date": "2026-10-27", "note": "4 telegrams, 28 of 97 codes doubtful; 0601a and 0608a build sense (Shaanxi should wait; send funds), but 0591 and 0593 are mostly doubtful fragments ({鄂}{乳}{廹}; {姣}{宋}{瓀}{襾}{借}{碼}) and the translation of both is largely gaps."}},
-   {"doc": "0601a", "label": "0601a, 18 April 1916: in the table's shared files", "transcription": "transcription.txt", "decryption": "decryption.txt", "reading": "reading.md", "translation": "translation.md", "language": "zh", "state": "read", "summary": "Telegram 0601a of 18 April 1916 (Tokyo (中山) → Yulangsie, 31 Rue du Consulat, Shanghai (18 words)); its text is in the shared files with the other telegrams of the table.", "reading_review": {"grade": "B", "by": "Claude Opus 5.5 (PR review on merge)", "date": "2026-10-27", "note": "4 telegrams, 28 of 97 codes doubtful; 0601a and 0608a build sense (Shaanxi should wait; send funds), but 0591 and 0593 are mostly doubtful fragments ({鄂}{乳}{廹}; {姣}{宋}{瓀}{襾}{借}{碼}) and the translation of both is largely gaps."}},
-   {"doc": "0608a", "label": "0608a, 20 April 1916: in the table's shared files", "transcription": "transcription.txt", "decryption": "decryption.txt", "reading": "reading.md", "translation": "translation.md", "language": "zh", "state": "read", "summary": "Telegram 0608a of 20 April 1916 (Shanghai (027) → Rosamonde (15/14 words) [Seventeenth]); its text is in the shared files with the other telegrams of the table.", "reading_review": {"grade": "B", "by": "Claude Opus 5.5 (PR review on merge)", "date": "2026-10-27", "note": "4 telegrams, 28 of 97 codes doubtful; 0601a and 0608a build sense (Shaanxi should wait; send funds), but 0591 and 0593 are mostly doubtful fragments ({鄂}{乳}{廹}; {姣}{宋}{瓀}{襾}{借}{碼}) and the translation of both is largely gaps."}}
+   {"doc": "0593", "label": "0593, 18 April 1916: in the table's shared files", "transcription": "transcription.txt", "decryption": "decryption.txt", "reading": "reading.md", "translation": "translation.md", "language": "zh", "state": "read in part", "summary": "Telegram 0593 of 18 April 1916 (Shanghai (035) → Rosamonde (12/11 words) [Seventeenth]); its text is in the shared files with the other telegrams of the table.", "reading_review": {"grade": "B", "by": "Claude Opus 5.5 (PR review on merge)", "date": "2026-10-27", "note": "4 telegrams, 28 of 97 codes doubtful; 0601a and 0608a build sense (Shaanxi should wait; send funds), but 0591 and 0593 are mostly doubtful fragments ({鄂}{乳}{廹}; {姣}{宋}{瓀}{襾}{借}{碼}) and the translation of both is largely gaps."}, "read_share": 0.5, "note": "18 Nov 2026, sure codes only: 9 of 18 codes \"ok\" in decryption.txt (50.0%); codes marked doubtful (douteux, {x} in reading.md) or illegible are holes."},
+   {"doc": "0601a", "label": "0601a, 18 April 1916: in the table's shared files", "transcription": "transcription.txt", "decryption": "decryption.txt", "reading": "reading.md", "translation": "translation.md", "language": "zh", "state": "read in part", "summary": "Telegram 0601a of 18 April 1916 (Tokyo (中山) → Yulangsie, 31 Rue du Consulat, Shanghai (18 words)); its text is in the shared files with the other telegrams of the table.", "reading_review": {"grade": "B", "by": "Claude Opus 5.5 (PR review on merge)", "date": "2026-10-27", "note": "4 telegrams, 28 of 97 codes doubtful; 0601a and 0608a build sense (Shaanxi should wait; send funds), but 0591 and 0593 are mostly doubtful fragments ({鄂}{乳}{廹}; {姣}{宋}{瓀}{襾}{借}{碼}) and the translation of both is largely gaps."}, "read_share": 0.8, "note": "18 Nov 2026, sure codes only: 24 of 30 codes \"ok\" in decryption.txt (80.0%); codes marked doubtful (douteux, {x} in reading.md) or illegible are holes."},
+   {"doc": "0608a", "label": "0608a, 20 April 1916: in the table's shared files", "transcription": "transcription.txt", "decryption": "decryption.txt", "reading": "reading.md", "translation": "translation.md", "language": "zh", "state": "read in part", "summary": "Telegram 0608a of 20 April 1916 (Shanghai (027) → Rosamonde (15/14 words) [Seventeenth]); its text is in the shared files with the other telegrams of the table.", "reading_review": {"grade": "B", "by": "Claude Opus 5.5 (PR review on merge)", "date": "2026-10-27", "note": "4 telegrams, 28 of 97 codes doubtful; 0601a and 0608a build sense (Shaanxi should wait; send funds), but 0591 and 0593 are mostly doubtful fragments ({鄂}{乳}{廹}; {姣}{宋}{瓀}{襾}{借}{碼}) and the translation of both is largely gaps."}, "read_share": 0.84, "note": "18 Nov 2026, sure codes only: 21 of 25 codes \"ok\" in decryption.txt (84.0%); codes marked doubtful (douteux, {x} in reading.md) or illegible are holes."}
   ],
   "key_file": "key.tsv"
  }
