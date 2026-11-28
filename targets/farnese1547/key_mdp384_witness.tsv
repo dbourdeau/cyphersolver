@@ -1,0 +1,80 @@
+# Witness-attested key of the ASF Mediceo del Principato 384 prefix-code cipher (Aug-Sept 1547).
+# Built strictly from the three bilingual/deciphered witnesses in the same filza:
+#   - c. 76r / c. 79r (French ambassador at Rome, 10 Aug 1547; extending Brice Dudout's frozen key_76r.tsv across L01-L18)
+#   - c. 77r top cipher / bottom cleartext (Giovan Battista Ricasoli, Bishop of Cortona, 23 Sept 1547)
+#   - c. 147r / c. 148r ("Adviso di Roma da persona degna di fede", on Bernardino Maffeo & Fieschi)
+# ZERO values in this file are derived from target c. 78r (catalogue 2339).
+# Target-inferred homophones and contextual hypotheses on c. 78r are kept strictly separate in key_78r_extensions.tsv.
+# Prefix-code rule: plain 6, 8, 9 are 1-digit vowels (e, o, a); digits 0, 1, 2, 3, 4, 5, 7 start 2-digit codes.
+# Diacritic override: a 2-digit group marked with an overbar (e.g. 68̄, 85̄, 55̄) or a dot on a 6/8/9 lead digit
+# (6^7 = Signor, 8^9 = Vescovo, 9^3 = Ambasciatore) forms a 2-digit nomenclator code overriding the 1-digit vowel rule.
+code	value	kind	witness_citations
+6	e	1d_vowel	c. 76r/79r, c. 77r, c. 147r/148r
+8	o	1d_vowel	c. 76r/79r, c. 77r, c. 147r/148r
+9	a	1d_vowel	c. 76r/79r, c. 77r, c. 147r/148r
+01	r	2d_letter	c. 76r/79r, c. 77r, c. 147r/148r
+02	u / v	2d_letter	c. 76r/79r L01/L12, c. 77r L01/L04, c. 147r/148r (fussino)
+03	l	2d_letter	c. 76r/79r, c. 77r, c. 147r/148r
+04	s	2d_letter	c. 76r/79r, c. 77r, c. 147r/148r
+05	n	2d_letter	c. 76r/79r, c. 77r, c. 147r/148r
+07	d	2d_letter	c. 76r/79r, c. 77r, c. 147r/148r
+10	b	2d_letter	c. 76r/79r L04/L11 (ben, possibile), c. 77r L02/L06/L08 (settembre, obligarsi, bastione), c. 147r/148r L07/L16/L19/L20
+12	l	2d_letter	c. 76r/79r (primary l), c. 77r L04/L06/L08
+14	p	2d_letter	c. 76r/79r L01/L02/L04/L15, c. 77r L01/L04/L10
+15	u / v	2d_letter	c. 76r/79r (primary u/v), c. 77r (primary u/v)
+17	m	2d_letter	c. 76r/79r, c. 147r/148r (primary m)
+20	h	2d_letter	c. 76r/79r L02/L08/L10/L13 (haver, chi, humori), c. 77r L03/L05/L06/L10 (ho, Horatio, havere, pochi), c. 147r/148r
+21	r	2d_letter	c. 76r/79r (primary r), c. 77r (mixed with 01)
+23	t	2d_letter	c. 76r/79r (primary t), c. 77r (mixed with 45/74), c. 147r/148r L05 (citta)
+24	et	2d_letter	c. 76r/79r (x10), c. 147r/148r L03 (et havendo)
+27	s	2d_letter	c. 76r/79r (x17), c. 77r L03/L04 (possuto, risolva), c. 147r/148r L04 (fussino)
+31	f	2d_letter	c. 77r L04 (offerendo = 8 31 47 6 21 6 05 07 8), c. 147r/148r L01/L03/L21 (maffeo = 17 9 47 31 6 8)
+32	i	2d_letter	c. 76r/79r L04/L09/L13 (di aquistar, intendere, chi in), c. 77r L01 (di uno)
+34	m	2d_letter	c. 76r/79r L02/L03/L06 (mostrandoli, mantener, molti), c. 77r (primary m: settembre, mane, molti, mirandola)
+35	q	2d_letter	c. 76r/79r L05/L10 (qualche), c. 77r L05 (qua), c. 147r/148r (quale, quelli, qui)
+37	n	2d_letter	c. 76r/79r L02/L05/L09/L13/L14/L17 (in, principio, fine, spingesse), c. 77r L01/L06/L08/L09 (inserto, faranno, indiretta)
+40	e / et	2d_letter	c. 76r/79r (x9), c. 77r L07-L10, c. 147r/148r (primary e/et)
+42	c	2d_letter	c. 76r/79r L07 (occasioni), c. 77r L05 (cosa)
+45	t	2d_letter	c. 77r (primary t, x28: costui, settembre, tutte), c. 147r/148r (primary t)
+47	f	2d_letter	c. 76r/79r (primary f), c. 77r, c. 147r/148r (primary f)
+50	c	2d_letter	c. 76r/79r, c. 77r, c. 147r/148r
+51	d	2d_letter	c. 76r/79r (primary d), c. 77r L01/L08
+52	g	2d_letter	c. 76r/79r, c. 77r, c. 147r/148r
+53	p	2d_letter	c. 76r/79r, c. 77r, c. 147r/148r (primary p)
+54	z	2d_letter	c. 76r/79r L16 (sforzo), c. 147r/148r L14 (palazo, mezo, forze)
+70	i	2d_letter	c. 76r/79r, c. 77r, c. 147r/148r
+7^2	i	2d_letter	c. 77r L03 start (7^2 03 = il; plain 72 is a clause delimiter)
+74	t / NULL	2d_letter	c. 76r/79r (t x9: discorsetto, passati, attendere, molti, mettere), c. 77r L01/L04 (settembre, tutte); clause delimiter on c. 147r
+7^5	s	2d_letter	c. 77r L01 (settembre = 7^5 6 7^4 45 6 34 10 21 6; plain 75 is an end delimiter)
+1^0	che	function_word	c. 76r/79r (x23), c. 77r L03/L04/L07, c. 147r/148r (x8)
+11^	per il quale	function_word	c. 77r L03 (il negotio [1 1^] costui corre; dot on second 1)
+1^2	non	function_word	c. 76r/79r L11 (di Francia non era), c. 77r L10 (credo non lo sappiano), c. 147r/148r L12/L16/L18 (x5)
+1^3	con / co	function_word	c. 76r/79r (x8), c. 77r L07, c. 147r/148r (x7: col quale, conferire, contenti, con S.S.ta)
+1^4	quanto / quanta	function_word	c. 77r L05 (tanta gran cosa [1^4] [1^7] sapra domandare)
+1^6	questo / questa / questi / queste	function_word	c. 76r/79r L02/L11/L13, c. 77r L04/L09, c. 147r/148r L12/L14/L16
+1^7	quello / quella / quelli / quelle / ella	function_word	c. 76r/79r L03/L07/L12, c. 77r L05, c. 147r/148r (x9)
+1^8	qui / cqui / giu	function_word	c. 76r/79r L04 (acquistar), L09 (giuditio)
+2^4	detto / detta	function_word	c. 76r/79r L09/L14/L15, c. 147r/148r L21 (casa di detto Maffeo)
+26	poi	function_word	c. 76r/79r L16 (poiche = 26 1^0; also dotted 2^6)
+2^7	piu	function_word	c. 76r/79r L17 (via piu facile o piu aperta), c. 147r/148r L20 (di piu bisognera)
+11	Sua Santita / Papa	nomenclator	c. 77r L04/L05/L07 (x4: il Papa, S.S.ta), c. 147r/148r L07/L12/L19/L20 (x4: del PP., con S.S.ta)
+33	Sua Maesta	nomenclator	c. 77r L08 (molti disegni di S.M.ta)
+44	Re	nomenclator	c. 76r/79r L10/L14 (che il Re, a detto Re), c. 147r/148r L12 (del Re di Francia)
+3^8	Re	nomenclator	c. 76r/79r L02 (al suo Re mostrandoli)
+4^2	Principe	nomenclator	c. 147r/148r L10/L13 (il Pric.e Doria, pigliaremo il Pric.e)
+5^9	Fiorenza	nomenclator	c. 147r/148r L10 (del Duca di Fiorenza = 07 6 03 77 07 70 5^9)
+6^7	Signor	nomenclator	c. 77r L05 (per il S.r Horatio), c. 147r/148r L05 (il S.r Hettor)
+77	Duca	nomenclator	c. 147r/148r L10 (del Duca di Fiorenza)
+8^9	Vescovo	nomenclator	c. 77r L01 (del Vescovo di Cortona = 07 6 03 8 9^ 51 70 50 8 01 23 8 05 9)
+9^3	Ambasciatore	nomenclator	c. 76r/79r L01/L09/L15 (L'Amb.re di Francia, detto Amb.re)
+53̄	Italia	nomenclator	c. 76r/79r L13 (li humori d'Italia et = 51 70 53̄ 40)
+55̄	Francia	nomenclator	c. 76r/79r L01 (di Francia per via) & L11 (grandi di Francia non)
+58̄	Inghilterra	nomenclator	c. 76r/79r L16 (unito con Inghilterra et)
+68̄	Ferrara	nomenclator	c. 77r L08 (lo stato di Ferrara et)
+70̄	Parma	nomenclator	c. 77r L04/L07, c. 147r/148r L11/L15 (x4)
+71̄	Piacenza	nomenclator	c. 77r L04 (in questo caso di Piacenza)
+85̄	Napoli	nomenclator	c. 147r/148r L09 (per le cose di Napoli et)
+71	NULL	delimiter	c. 147r L05 (x2), c. 76r L18 end (unbarred clause delimiter)
+72	NULL	delimiter	c. 147r L11/L12, c. 77r L01/L10 (72 8^ 4^), c. 76r L01/L15/L18
+73	NULL	delimiter	c. 147r L01/L08/L11/L19, c. 77r L10 close
+75	NULL	delimiter	c. 147r L21 close, c. 77r L10 close (message-end delimiter)
