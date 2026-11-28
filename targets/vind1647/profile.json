@@ -1,0 +1,256 @@
+{
+ "schema_version": 1,
+ "target": "vind1647",
+ "title": "Holger Vind, Copenhagen, 17 March 1647: a Danish letter in a reciprocal letter cipher answering a cipher puzzle, read in part",
+ "documents": [
+  {
+   "id": "rigsarkivet-tkua-chiffer-260610-126",
+   "read": "read in part",
+   "shelfmark": "Rigsarkivet (Copenhagen), TKUA Almindelig del 3 nr. 112 'Chiffer', Arkivalieronline unit 260610, image 126 right (api image 48691601)",
+   "date": "17 Mar 1647",
+   "year": 1647,
+   "country": "Denmark",
+   "places": {
+    "from": "Copenhagen",
+    "to": "unknown"
+   },
+   "language": "Danish",
+   "pages": 1,
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No decipherment on the leaf. The Latin close in clear says the cipher is the solution of the reader's 'Gordian knot'; it does not give the cipher's text."
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Arkivalieronline image 48691601 at full size; one frozen transcription before the solve, one blind transcription by a second AI agent, eight signs re-read after the solve (listed in transcription.txt)",
+    "corrections": 8,
+    "image_quality": "good"
+   },
+   "length": {
+    "tokens": 343,
+    "unit": "letters",
+    "measured": true,
+    "file": "transcription.txt"
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "monoalphabetic"
+  ],
+  "summary": "Simple substitution in ordinary letters with a reciprocal key of twelve pairs (a-x, b-y, c-z, d-h, e-p, f-o, g-n, i-m, k-l, q-r, t-u, s-w); the cipher w has a capital and a small form; word division and commas kept.",
+  "symbol_kind": "letters",
+  "distinct_symbols": 23,
+  "homophones": {
+   "used": false
+  },
+  "nomenclator": {
+   "present": false
+  },
+  "nulls": {
+   "present": false
+  },
+  "diacritics": {
+   "used": false
+  },
+  "key_order": "unknown",
+  "word_division": "kept"
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "unknown",
+   "where": "Listed, not deciphered, by Daniel Bourdeau in targets/biermann1675/keyhunt.md line 84 (27 Oct 2026). Not in catalogue.json or research/leads.json (25 Nov 2026; searched 'Holger Vind', 'Mitto tibi', 'navem sine'); two web searches on 26 Nov 2026 found no edition or decipherment. Danish printed sources were not searched, so a first break is not claimed.",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "images"
+  ],
+  "attack": "ciphertext-only",
+  "first_date": "2026-11-26",
+  "last_date": "2026-11-27",
+  "human_role": "Andrew Beling chose the Danish key file as a target, agreed on 25 Nov 2026 to the image use, in his recorded words \"I agree with your plans and the image use for item 2\" and set the rules (frozen plan, blind transcription, controls); AI agents transcribed, solved, checked and wrote up. No person has checked the reading.",
+  "models": [
+   "Claude Opus 5.5 (Anthropic), agents run by Andrew Beling"
+  ]
+ },
+ "solution": [
+  {
+   "date": "2026-11-26",
+   "kind": "access",
+   "technique": [
+    "other"
+   ],
+   "what": "Image 126 of unit 260610 fetched by plain GET with the whole unit (309 images) on 26 Nov 2026; the leaf was noticed while paging the unit for catalogue 2542.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-26",
+   "kind": "transcription",
+   "technique": [
+    "other"
+   ],
+   "what": "Cipher lines transcribed (74 words, 344 letters) and frozen with the plan before any solving (transcription_frozen.txt).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-26",
+   "kind": "solver",
+   "technique": [
+    "hill climbing",
+    "language-model scoring"
+   ],
+   "what": "Registered test (work/PLAN.md, frozen 01:23:11 UTC): simple-substitution solver on Latin letter 4-grams, key from lines 1-6 applied to lines 7-12: 9 of 33 held-out words in the Latin lexicon (27%, bar 80%); 0 of 1,000 shuffled keys at or above it. The plan assumed Latin.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-26",
+   "kind": "solver",
+   "technique": [
+    "hill climbing",
+    "language-model scoring"
+   ],
+   "what": "After the plan, right after the Latin miss (01:27 UTC by the local clock): the same held-out test with Danish and German models (work/runs/heldout_afterplan_da.txt, heldout_afterplan_de.txt). Danish: 12 of 33 held-out words in the modern Danish lexicon (36%), 0 of 1,000 shuffled keys at or above, German 13 of 33, with a decode close to the same Danish; the text was read as Danish from these decodes. The Danish key from lines 1-6 decodes 162 of 171 held-out letters as the final key does (work/runs/heldout_afterplan_da_agreement.txt). This replaced plan step 3 (homophones, then the file's keyword alphabets), which was not tried.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-26",
+   "kind": "control",
+   "technique": [
+    "hill climbing",
+    "language-model scoring"
+   ],
+   "what": "The plan's second control: the solver on 20 random permutations of the cipher letters (word lengths kept) scored -8.82 to -8.61 (Latin model) and -8.88 to -8.58 (Danish) per letter, against -7.75 and -7.39 for the true text.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-26",
+   "kind": "transcription",
+   "technique": [
+    "other"
+   ],
+   "what": "Blind second transcription by an AI helper agent of ours (Claude, model Opus, 01:29:56-01:34 UTC) from the image only: frozen and blind agree on 327 of 336 letters in words of equal length; after the re-readings 334 of 339.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-26",
+   "kind": "hypothesis",
+   "technique": [
+    "key-structure hypothesis",
+    "statistical test"
+   ],
+   "what": "After the solve: the key is reciprocal. Leaving out a, c, e and r (fixed by the pairing), 12 of 12 testable signs are reciprocal; random one-to-one keys over the same 17 signs reach at most 10 in 100,000.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-26",
+   "kind": "hypothesis",
+   "technique": [
+    "key-structure hypothesis",
+    "exhaustive search"
+   ],
+   "what": "After the solve: whether a keyword builds the reciprocal pairs. Every word of the repository's da, de and la lexicons (167,876 words), used as a keyword folded on itself or set in two rows: the best gives 9 of the 12 pairs (work/scripts/keyword_fold.py, work/runs/keyword_fold.txt). Keywords outside those lexicons and other constructions were not tried, so this does not rule a keyword out.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-26",
+   "kind": "reading",
+   "technique": [
+    "contextual inference"
+   ],
+   "what": "Final key set by hand from the whole text; Danish read word by word: 65 of 74 cipher words read, 9 holes (four writer's slips, two of them the d/h pair of the key; one supplied final e; two not settled; two words, broder and alle, whose sign was re-read after the solve on the sense alone). Revised after a cold review by an AI helper of ours (Claude Opus, 26 Nov 2026 02:20-02:27 UTC): exercer and bogstapfuer counted as holes, line 12 kept as e; broder and alle counted as holes on 27 Nov 2026 after an independent AI review of ours (Claude Opus 5.5, 27 Nov 2026).",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-26",
+   "kind": "solver",
+   "technique": [
+    "hill climbing",
+    "language-model scoring"
+   ],
+   "what": "Record only, made at 02:30 UTC after the cold review and after the key was set: the solver on the whole frozen text with Latin, Danish, German and Dutch models (seed 2, 12 restarts; work/scripts/whole_text.sh, work/runs/whole_text.txt). The Danish run gives readable Danish. It did not choose the language.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "class": "read in part",
+  "key": "recovered",
+  "method": "key recovered from ciphertext-only",
+  "method_basis": "Hill-climbing substitution solver on letter 4-grams from the repository lexicons, after a registered Latin test that missed; the language found from held-out runs with Danish and German models made right after that miss; the rare signs fixed by the reciprocal pairing and the sense.",
+  "contribution": [
+   "transcription",
+   "key recovered"
+  ],
+  "fraction_read": 0.878,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "count_words.py over transcription.txt and key.tsv: 65 of 74 cipher words read, 9 holes (each needs a changed or supplied letter, rests on a sign re-read after the solve on the sense alone, or is not understood); 64 of 74 if the first sign of line 7 is l.",
+  "verification": [
+   "matched control"
+  ],
+  "gaps": [
+   {
+    "item": "line 01, yqfhpq ('broder'), and line 11, xkkp ('alle')",
+    "blocker": "illegible",
+    "detail": "the second sign of each was re-read after the solve on the sense alone (frozen reading y and d, blind reading g and h); the image does not settle it"
+   },
+   {
+    "item": "line 06, hmlu ('dikt')",
+    "blocker": "illegible",
+    "detail": "third sign l or z on the microfilm image; neither gives a sure word ('dict' = dit is possible)"
+   },
+   {
+    "item": "line 12, mgofqh ('inford')",
+    "blocker": "illegible",
+    "detail": "fifth sign q or g; neither gives a sure word ('indført' is possible)"
+   },
+   {
+    "item": "lines 09-12, four writer's slips: grende (trende), ocd (och), staffueh (staffued), bogstapfuer (bogstaffuer)",
+    "blocker": "needs-physical-access",
+    "detail": "read from the sense and standing in both transcriptions; only the original or a colour image could show a correction the film loses"
+   },
+   {
+    "item": "line 04, exercer (exercere)",
+    "blocker": "illegible",
+    "detail": "no final e is written; a supplied letter makes it a hole"
+   }
+  ],
+  "credits": [
+   {
+    "who": "ajbeling",
+    "role": "new cipher with solution",
+    "note": "with AI agents: found in the Danish chancery key file, transcribed twice (one blind), key recovered from the cipher text, read in part, English translation",
+    "date": "2026-11-26",
+    "source": "pull request (this folder)"
+   },
+   {
+    "who": "bourdeau",
+    "role": "pointer",
+    "note": "listed this leaf (image 126 of TKUA Alm. del 3 nr. 112, 'Mitto tibi navem sine prora puppique', with a letter cipher) in targets/biermann1675/keyhunt.md line 84; a mention, not a decipherment",
+    "date": "2026-10-27",
+    "source": "https://github.com/dbourdeau/cyphersolver/blob/bb3b611ca91f633878a58934ac77125205a7efc2/targets/biermann1675/keyhunt.md#L84"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "rigsarkivet-tkua-chiffer-260610-126",
+    "label": "Holger Vind, Copenhagen, 17 March 1647, cipher lines 01-12",
+    "transcription": "transcription.txt",
+    "decryption": "decryption.txt",
+    "reading": "reading.md",
+    "translation": "translation.md",
+    "language": "da",
+    "state": "read in part",
+    "read_share": 0.878,
+    "floor_used": false,
+    "cipher_words": 74,
+    "holes": 9,
+    "summary": "Vind answers a cipher puzzle sent through his mother: it was too easy, though [three] chancery clerks had worked on it and had not [spelt] it right; the Latin close calls it the solution of the reader's Gordian knot. Words in square brackets rest on holes."
+   }
+  ],
+  "key_file": "key.tsv",
+  "provenance": "contributed"
+ }
+}
