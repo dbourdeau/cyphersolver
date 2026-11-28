@@ -1,0 +1,21 @@
+{
+ "schema_version": 1,
+ "target": "ljs51corpus",
+ "title": "LJS 51: second look at the unsettled (c) rows of errata.md, two concordant readings with the key's sign count (contribution)",
+ "credit": {
+  "name": "dudout",
+  "role": "transcription"
+ },
+ "solution": [
+  {
+   "date": "2026-11-28",
+   "kind": "observation",
+   "technique": [
+    "plaintext matching"
+   ],
+   "what": "15 of the 43 c rows of errata.md (Bourdeau) re-read from the Penn IIIF 2343 px images. Reader A was Claude Opus 5.5 (not blind), using crop + sign count and sign values from keys_eye. Reader B was Claude Opus (blind), with the crop only and shape options. A row is settled only if the two readings agree. Controls: 3/3 correct on rows already settled. Result: 8 rows to a, 6 to b, 1 still c; 28 not re-read. Rows 4 and 78 are fragile (reader B low confidence). Descriptive, not a validation.",
+   "result": "partial",
+   "by": "dudout"
+  }
+ ]
+}
