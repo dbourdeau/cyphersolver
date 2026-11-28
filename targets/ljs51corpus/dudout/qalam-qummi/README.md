@@ -63,6 +63,15 @@ The anneal was never shown the qummī key, yet it found ا↔و, ف→ي and ه�
 
 The manifests list the files under the local folder layout (`gel/`, `transcriptions/`, `donnees/`, `scripts/`). Here they sit under `verification/` with the same contents and hashes.
 
+## 3b. Test c3: the "Pahlavi" key of l.4 as a named negative control (frozen, `verification/c3/MANIFEST_c3_v1.sha256` 08eb2021…, posted on #1023 at 19:45:37Z)
+
+- Same 4-gram model, same lexicon and the same 200 random involutions as c2 (seed 20261129; the run checks that the qummī figures and the control maxima equal c2's: they do).
+- Decided before freezing: the frozen l.4 reads ضح, not ضج, so ح sits in two pairs. Three reciprocal readings are tested (emended ضج; frozen ضح with زح dropped; frozen زح with ضح dropped) and the criterion uses the best one. The tail «لا اقط» is left out of the key (its letters are all already paired); uncovered letters stay unchanged.
+- Prediction: best Pahlavi log-likelihood ≤ qummī − 39.0 (half the c2 gap to the best control) AND lexicon share ≤ qummī − 0.20 (≤ 6 of 23 words).
+- Result (one run, 2026-11-28T19:46:18Z, `verification/c3/RESULT_c3.json`): best Pahlavi LL −547.1 (rank 160/200, below the undecoded cant at −450.0), 0/23 words in the lexicon, no glossary word. qummī: −309.4, 11/23, اكش. **Prediction confirmed.** A key of the same type from the same page does not produce the c2 signal.
+- Lexicon words under the qummī key (point 4 of the review): ليله وضاع ييس ضاق با خلقي لا شي ولا ولا القي; content words only: 6 of 18.
+- Descriptive, after the run: attestation of the 23 decoded forms in *Lisān al-ʿArab* and *Tāj al-ʿarūs* (OpenITI), `verification/c3/ARGOT-ATTESTATIONS-c2.md`. اكش occurs in neither, which fits a cant word that the compiler glosses اكل. A form attested in Arabic says nothing of its sense in the cant.
+
 ## 4. The verses in print
 
 None of the 23 cant words occurs in Abū Dulaf's *Sāsāniyya* as al-Thaʿālibī quotes it in the *Yatīma*, whether in

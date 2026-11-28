@@ -1,0 +1,52 @@
+{
+ "piste": "ljs51-qummi (c3) : témoin négatif nommé. La clé du vers « pahlavi » de 38v l.4 (قد ضج زح…), appliquée à l'argot de 37v.12 exactement comme la clé qummī de l.6 l'a été en c2, fait-elle NETTEMENT moins bien que la clé qummī ?",
+ "date_utc": "2026-11-28",
+ "auteur": "agent ljs51-qummi-c3 (Opus), pour Brice Dudout",
+ "pourquoi": "En c2, la clé qummī donne LL rang 1/200 et 11/23 mots au lexique, et le décodage contient اكش, que le compilateur glose اكل (38r, dernière ligne ; revérifié par Daniel sur le maître, PR #1053). Un bon score pourrait venir de n'importe quelle clé réciproque « bien faite » tirée d'un vers-clé du même manuscrit. Le vers pahlavi est le témoin naturel : même type (paires de lettres successives d'un vers), même page, même main, mais le compilateur dit qu'il n'est PAS la clé de la pièce (38v l.3 : « le qalam qummī n'est pas le pahlavi »).",
+ "reprise_de_c2": {
+  "donnee": "donnees/cant_90.txt (90 lettres, 23 mots ; sha256 90252d93…), inchangée",
+  "modele_de_langue": "identique : qummi_lib.build_lm sur PREREG_c.json corpus_files (al-Ḥillī JK007639 + Ibn Nubāta JK007636), mêmes lambdas, même normalisation",
+  "lexique": "identique : qummi_lib.build_lexicon(train, PREREG_c.json lexicon_mincount = 2)",
+  "temoins": "les MÊMES 200 témoins que c2 : 200 involutions aléatoires (13 paires sur les 27 lettres sans ظ), générées par random.Random(20261129) avec exactement le code de scripts/measure_c2.py. Contrôle d'intégrité : max LL et max lexique des témoins doivent égaler RESULT_c2.json (−387.35810048942164 ; 0.30434782608695654) ; LL de la clé qummī recalculée = −309.39183818443325.",
+  "seed": 20261129
+ },
+ "lecture_l4_gelee": "transcriptions/ALPHABETS-38v.md (sha256 72ea7a66…, gel v1 14:24:39Z) : ق د ض ح ز ح و ش ك ا ث ه م ذ س خ ط ت غ ص ن ع ل ي ل ا ا ق ط (29 lettres).",
+ "decision_1_emendation_dh_dj": {
+  "constat": "Lue par paires successives, la chaîne gelée donne قد / ضح / زح / … : ح figure dans deux paires, ce n'est donc pas une involution. La lecture « ضج » (point du ج non vu) est une émendation faite APRÈS avoir regardé la structure (remarque 3 de Daniel sur #1053) ; elle n'est pas la lecture gelée.",
+  "decision": "On teste les trois façons de rendre la chaîne gelée réciproque, et le critère porte sur la MEILLEURE des trois pour chaque mesure (choix conservateur : il favorise le témoin pahlavi, donc rend la prédiction plus difficile à confirmer).",
+  "variantes_critere": {
+   "pahlavi_A_emende_dj": "قد ضج زح وش كا ثه مذ سخ طت غص نع لي (12 paires, 24 lettres ; lettres non couvertes ب ر ف ظ)",
+   "pahlavi_B1_gele_premiere_occurrence": "قد ضح وش كا ثه مذ سخ طت غص نع لي (11 paires ; زح écartée car ح déjà pris ; règle « première occurrence gagne » de qummi_lib.table_key ; non couvertes ب ج ر ز ف ظ)",
+   "pahlavi_B2_gele_seconde_occurrence": "قد زح وش كا ثه مذ سخ طت غص نع لي (11 paires ; ضح écartée ; non couvertes ب ج ر ض ف ظ)"
+  }
+ },
+ "decision_2_queue_la_aqt": {
+  "constat": "Après les 24 premières lettres, la queue « لا اقط » (ل ا ا ق ط) n'ajoute aucune lettre nouvelle : ل est déjà dans لي, ا dans كا, ق dans قد, ط dans طت. Toute paire tirée de la queue entrerait en conflit avec une paire déjà lue, et les lettres qui manquent à la clé (ب ر ف ظ) n'y figurent pas.",
+  "decision": "La queue est exclue de la clé (non résolue : remplissage, fin corrompue ou formule « لا … », non tranché). Les lettres non couvertes restent inchangées (identité), comme ص dans la clé qummī de c2. Aucune complétion arbitraire n'entre dans le critère.",
+  "descriptif_seulement": "Pour information, les 3 complétions possibles de A par deux paires sur {ب ر ف ظ} (بر+فظ, بف+رظ, بظ+رف) sont calculées et rapportées, NON décisives."
+ },
+ "prediction": {
+  "enonce": "La clé pahlavi fait NETTEMENT moins bien que la clé qummī sur l'argot.",
+  "reference_qummi": "clé qalqashandi_main de PREREG_c2 : LL = −309.39 ; lexique 11/23 = 0.478 (valeurs c2, recalculées dans la même exécution)",
+  "seuils": {
+   "ll": "max(LL pahlavi A, B1, B2) <= LL_qummi − 39.0 (soit <= −348.39). 39.0 = moitié de l'écart mesuré en c2 entre la clé qummī et le meilleur des 200 témoins (−309.39 contre −387.36, écart 77.97).",
+   "lexique": "max(lexique pahlavi A, B1, B2) <= lexique_qummi − 0.20 (soit <= 0.278, c'est-à-dire au plus 6 mots sur 23, contre 11 pour le qummī ; 0.278 est sous le meilleur témoin de c2, 0.304)."
+  },
+  "verdicts": {
+   "CONFIRMEE": "les deux seuils tenus : le témoin négatif nommé échoue nettement ; l'effet de c2 est propre à la clé qummī, pas au type « vers-clé réciproque »",
+   "INFIRMEE": "au moins un seuil franchi : le score de c2 ne distingue pas la clé qummī d'une autre clé-vers du même manuscrit ; c2 est affaibli",
+   "INVERSEE": "cas particulier d'INFIRMEE : une variante pahlavi a LL >= LL_qummi ou lexique >= lexique_qummi"
+  }
+ },
+ "rapporte_non_decisif": [
+  "rang de chaque variante pahlavi parmi les 200 témoins (LL, lexique)",
+  "LL de l'argot non décodé (référence ; Daniel : −450.0)",
+  "liste des mots au lexique pour la clé qummī et pour chaque variante pahlavi (remarque 4 de Daniel : 11/23 dont لا ولا ولا شي با)",
+  "part de mots pleins au lexique, mots-outils exclus ; liste fixée ici : لا ولا ما من في عن على الى ان او و يا با شي قد لم لن ثم بل مع هو هي",
+  "mots du glossaire du compilateur (donnees/glossaire_38r12_38v2.txt, dont اكش اكل de la dernière ligne de 38r, revérifié par Daniel) présents tels quels dans chaque décodage ; attendu : اكش pour le qummī, aucun pour le pahlavi",
+  "décodage intégral de chaque variante"
+ ],
+ "ne_prouve_pas": "Une prédiction confirmée ne valide pas la lecture qummī par le sens (Bosworth 1976 toujours requis) ; elle montre seulement qu'une clé du même type, nommée et voisine, ne produit pas le même signal. La rime n'est pas un indice (remarque 2 de Daniel) et n'entre pas dans le critère.",
+ "declaration": "Avant ce gel, l'agent c3 n'a appliqué la clé pahlavi à aucun mot de l'argot, ni de tête ni par calcul. Connu avant le gel : les résultats c et c2 (dont les 10 tables H2 de c, qui lisaient l.4 comme alphabet ordonné et non par paires, lexique <= 0.09) et les commentaires de Daniel sur #1053.",
+ "mesure_unique": "c3/measure_c3.py, une seule exécution, après confirmation par l'orchestrateur que le hash de MANIFEST_c3_v1.sha256 est posté sur #1023. Le script refuse de tourner si c3/RESULT_c3.json existe."
+}
