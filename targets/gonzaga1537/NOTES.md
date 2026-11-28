@@ -1,6 +1,6 @@
 # gonzaga1537: Federico II Gonzaga's Piedmont intelligence enclosure to Ferrante Gonzaga, 6 May 1537 (Modena, Biblioteca Estense Universitaria, Autografoteca Campori, Gonzaga Federico II, sfasc. II, cc. 12r-15v; catalogue 2162)
 
-Status: in progress (27 Nov 2026: not written up yet. Pieces of the 48 holes are workable from the online Estense scans: c. 13r L02/L03 `lizh` is `li3b` on the leaf, which the key decodes as `pio` (period form of *più*); c. 13r L04 `uiro e` may be clear Italian *uero è* in the plain hand rather than cipher; c. 13r L08-L24 and all of c. 13v have not been compared with the image. Next step: re-check the transcription of c. 13r L01-L30 against the IIIF canvases (`.../73bcd847-3cc8-46c4-89d8-572438763b8e` and `.../78a73966-7232-4e7a-af55-356d10d844de`), above all the 17 bracketed scribal slips, correct the transcription, re-run the decoder and the counts, then write up.)
+Status: written up 27 Nov 2026 (docs/gonzaga1537.html), deciphered in part, from the `recheck/` layer: the transcription of c. 13r and c. 13v was checked line by line against the full-size Estense IIIF canvases (images viewed by an AI model only, no person): 12 corrections, read share 0.820 -> 0.828 (219 -> 221 sure of 267 cipher words; 10 more words probable). Every unread piece has an outside blocker (open codes with no key sheet or same-key sibling online; writer's slips the image confirms). `outcome.texts` and `fraction_read` in profile.json follow the `recheck/` layer; the contributor's files are not edited.
 
 Earlier state: partial (`read_share = 0.820`, 219 sure cipher words and 48 holes of 267 cipher word tokens under `word_audit_2162.py` and `research/reading_audit/v10_relabel.py` with `clear_markup=⟨⟩`; key recovered based on adjacent plaintext — specifically the inline clear Italian passages on `c. 13r`, such as L04 `⟨considerando⟩` next to `ri34 = sia`, combined with ciphertext-side cryptanalysis of the directional `i`-digraph alphabet, with no surviving key sheet, sibling ciphertext, or contemporary decipherment). Coherent, historically anchored 16th-century Italian across both recto (`c. 13r`) and verso (`c. 13v`), produced by Gemini 4 Carbon (Google DeepMind, orchestrating Gemini 4 Neon and Hydrogen worker agents; compute and PRs via `@tttzqw`) with pre-PR adversarial verification via OpenAI Codex (`gpt-6.2-astra`).
 
@@ -58,6 +58,28 @@ Three checks document the key:
 - **Sentence check (`docs/_check_reading.py`):** Reports shape `reading` and `hole_rate = 0.141` (`10/22` clean sentences = `0.455`, lowered by authentic 1537 Mantuan forms absent from the modern/Tuscan lexicon such as `el`, `fa'`, `delo`, `bela`, `malla`, `cornache`, `cridaranno`, `drietro`, `Edim`, `Iovio`, and by keeping every numeric code explicitly bracketed).
 - **Adversarial review (19 Nov and 26 Nov 2026):** Pre-PR audit via OpenAI Codex (`gpt-6.2-astra`) against the public Estense IIIF manifest (tile comparison MAD < 1 RGB level against local scans) verified the break across both recto and verso, recommended `passati` (L18) and `fussi` (L12) over the disputed `ig = g` value, flagged L04-L06 (`vero è`, `natura`) and L19 surrender wording for brackets in both reading and translation, corrected the Hesdin date to 13-14 April 1537, identified the `rossi1537` synthetic-control extraction bug (`decryption_A.txt` -> `reading_A.md`), aligned `outcome.method` with the inline clear Italian passages, and corrected Bernardino Castellari's death date. Because the reading and translation were authored by this session and not independently re-read by a human maintainer, `reading_review` is recorded as non-independent (`grade: "B"`, `independent: false`), pending maintainer review.
 
+## Image re-check of the transcription (27 Nov 2026, `recheck/`)
+
+Done by an AI model (Claude, for the maintainers), not a person, and not blind (the filed transcription was in view).
+Both canvases fetched at full size as nine 1500-px regions each, one request at a time, stitched outside the
+repository; every line of c. 13r L01-L24 and c. 13v L25-L30 compared, with 2.5-3x crops of each of the 17 bracketed
+slips and the places flagged above. The contributor's files are not edited; the corrections are a separate layer:
+`recheck/corrections.tsv` (23 places), `recheck/transcription_13r_13v_recheck.txt`, `recheck/decryption_13r_13v_recheck.txt`
+(his decoder and key run unchanged, `recheck/decrypt_recheck.py`) and `recheck/reading_13r_13v_recheck.md`.
+
+- Corrected (12): L02 and L03 `lizh` -> `li3b` (pio); L04 `uiro e` -> clear `uero e` (vero è); L05 `fiirsibp 4` ->
+  `fiirsibpi4` (one word, still not natura); L10 `icrggifsie4sigi` -> `icr9gifsie4sigi` (demostrato); L11 `meiri4r` ->
+  `mtiri4r` (quele); L13 `drflirzogi` -> `érflirzogi` (respetto); L16 `+ &` -> `4&` (Al); L19 `ri,` -> `r,` (è, as in
+  L25 `r,`); L23 `rigrfiigi` -> `rigrfiicgi` (essendo: a sign left out); L27 `tirizxbér` -> `lirizxbér` (peggiore) and
+  `tibigir` -> `libigir` (still poss[i]e).
+- Confirmed as filed (the writer's slip or an unvalued shape on the leaf): L05 `igb`, L06 `iffi`, L08 `riliérla4é4`,
+  L09 `ir&`, L15 `ipirtiri4`, L19 `fix`, L23 `fi4ésir`, L28 `tiusixdigi`; L19 `&lli` is a &-shape, one l and two
+  minims (perhaps clear `dlli`). Noted, not counted: a struck sign between L20 `o4éo4` and `3a`.
+- Counts (README rule, `v10_relabel.py`, `clear_markup=⟨⟩`): **before 219 sure / 48 holes / 267 = 0.820; after 221
+  sure / 46 holes / 267 = 0.828**, of the 46 holes 10 probable (L02, L03 pio; L04 vero, è; L10 demostrato; L11 quele;
+  L13 respetto; L16 Al; L19 è; L27 peggiore), 22 open codes and 14 words the image confirms as written. Probable words
+  granted: 0.865; every non-code hole granted: 0.918, still under 95%. The short-text floor does not apply.
+
 ## Transcription doubts
 
 - `s4filaxagi` (c. 13r, L01) - read: `[?Fasgnino]`; checked: image, decode; heading addressee has a boundary-ambiguous parse (`|fanlnino/fasgnino|`) and uncertain initial `s4`/`ip4` (possible garbled *Cagnino* or agent name); kept bracketed as a hole.
@@ -91,7 +113,7 @@ Compared at the PR #1019 merge: `targets/mantua1524` (catalogue 2368, Federico I
 
 - **Open proper-noun nomenclators (13 occurrences across 6 codes):** `{L2}` (4×), `{L9}` (2×), `{L30}` (3×), `{L36}` (1×), `[46]` (2×), and `[82]` (1×) - blocker: needs-physical-access; open codes, the letter reads around them; identifying the referents needs an extant 1537 Mantuan key sheet or companion letters in ASMn *Archivio Gonzaga*, not online.
 - **Open two-digit codes and provisional candidate nulls (9 occurrences across 7 codes):** `[23]`, `[24]`, `[27]` (2×), `[28]`, `[29]` (`zg`), `[31]`, and `[53]` (2×, candidate *non*) - blocker: needs-physical-access; the same key sheet or a sibling letter in ASMn *Archivio Gonzaga* would settle them, and neither is online.
-- **Uncertain words and scribal slips (26 words):** L01 `[?Fasgnino]`, L03 `[?destimato]`, L04-L05 `[?vero] [?è]` / `[?natura]`, L19 `[?si] [?è] [resa]`, L21 `[?raccomandatione]` (`e4,s.{ar}`), L23 `[?parte]`, plus 17 crop-checked scribal slips/allographs catalogued in `holes_13r_13v.md` - blocker: illegible; the doubtful shapes were checked on the online Estense scans (about 3000 px), the best images there are, and stay doubtful there; another letter in the same 1537 Gonzaga key would settle them. (Changed at the PR #1019 merge from `no-key-material`: the scans are online at full size, so a further check of them is not an outside blocker.)
+- **Uncertain words and scribal slips (24 words after the 27 Nov image re-check):** 14 words where the full-size scan shows what the transcription has (L01 `s4filaxagi`, L03 `icrftb394gb`, L05 `igb`, L05 `fiirsibpi4`, L06 `iffi`, L08 `riliérla4é4`, L09 `ir&`, L15 `ipirtiri4`, L19 `&lli`, L19 `fix`, L21 `e4,s.{ar}`, L23 `fi4ésir`, L27 `libigir`, L28 `tiusixdigi`) and 10 probable words settled by an AI between look-alike signs (`recheck/corrections.tsv`) - blocker: illegible; the online Estense scans (about 3000 px) are the best images there are and were checked line by line on 27 Nov; the 14 are the writer's slips or unvalued shapes on the leaf, which only another letter in the same 1537 key would settle; the 10 probable words need a blind human sign check, not a new image.
 
 ## Escalation
 
@@ -101,3 +123,4 @@ Compared at the PR #1019 merge: `targets/mantua1524` (catalogue 2368, Federico I
 - [x] print: literature and edition searches for Federico II -> Ferrante Gonzaga (6 May 1537) and Piedmont *avvisi* negative; David Potter's 1537 Francis I edition (letter 55) and Treccani *Dizionario Biografico degli Italiani* (Bernardino Castellari, d. 27 June 1546) checked for historical corroboration.
 - [x] key-rebuild: directional `i`-digraph + homophonic key (`43` signs + `30=che`) rebuilt using inline clear passages plus ciphertext-side analysis, verified by recto-to-verso transfer and 200-shuffle controls (`validate_2162.py`).
 - [x] retry: pre-PR adversarial audits completed 19 Nov and 26 Nov 2026 (`gpt-6.2-astra`); `ig = g` removed, `passati` (L18) and `fussi` (L12) adopted, Hesdin dated to 13-14 April 1537, genuine `rossi1537/reading_A.md` synthetic control recorded (`207/212 = 97.6%`), method/counts/nulls/biography reconciled, and all 48 remaining holes bracketed in `reading_13r_13v.md` and `holes_13r_13v.md`.
+- [x] retry (27 Nov 2026): transcription re-checked line by line on the full-size Estense canvases (`recheck/`); 12 corrections, his decoder re-run unchanged on them; 2 holes become sure and 10 probable; nothing further workable from the online images.
