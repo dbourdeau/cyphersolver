@@ -2,7 +2,7 @@
 
 Catalogue 369 (« Robert de Boissiran, correspondance (dont plusieurs lettres chiffrées) », 1623–1732). Lead 1963 and archive request ar-147 are the same file (duplicates of 369).
 
-Source: Archives départementales de la Charente-Maritime (La Rochelle), fonds Boissiran, **4 J 1524**. Photographed in the reading room on 26 Nov 2026 by a volunteer of the **Cercle généalogique d'Aunis (CGAunis)**, [name if she agrees]. 23 photographs. **Private study only: no image, crop or derivative is included or linked here** until the volunteer and the AD17 agree. File names of the photographs are given so that the work can be checked against them later.
+Source: Archives départementales de la Charente-Maritime (La Rochelle), fonds Boissiran, **4 J 1524**. Photographed in the reading room on 26 Nov 2026 by a volunteer of the **Cercle Généalogique de l'Aunis (La Rochelle)**, who asked not to be named. 23 photographs. **Private study only: no image, crop or derivative is included or linked here** until the volunteer and the AD17 agree. File names of the photographs are given so that the work can be checked against them later.
 
 ## Prior art
 None found: catalogue 369 says « ciphertext not seen »; no DECODE record (Boissiran, 4 J 1524); no edition, no web hit (searches of 26 Nov 2026). Pencil glosses on letters B and C (« a Bordeaux le … aoust », « … juillet », a name « Anne Poussart ») decode only the place-and-date lines and the signature: they are contemporary or later clear notes, not a decipherment of the letters. First reading.
