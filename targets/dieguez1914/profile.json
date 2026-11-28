@@ -1,0 +1,319 @@
+{
+ "schema_version": 1,
+ "target": "dieguez1914",
+ "title": "Gral. M. M. Diéguez, Guadalajara, to the Governor of Chihuahua, July 1914 (catalogue 1462): a 211-group telegram read in part (19 of 33 cipher words) with a two-figure grid key rebuilt from a clear copy of the time; no held-out test",
+ "documents": [
+  {
+   "id": "CMXV.35.3433.1-2",
+   "read": "read in part",
+   "shelfmark": "Mexico City, CEHM-Carso (Centro de Estudios de Historia de México, Fundación Carlos Slim), Fondo CMXV (Archivo Federico González Garza), CMXV.35.3433.1-2 (record 13235)",
+   "date": "22 July 1914",
+   "year": 1914,
+   "country": "Mexico",
+   "route": "Gral. M. M. Diéguez, Guadalajara -> Gobernador del Estado [Fidel Ávila], Chihuahua",
+   "places": {
+    "from": "Guadalajara",
+    "to": "Chihuahua"
+   },
+   "language": "Spanish",
+   "pages": 2,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "separate folio"
+    ],
+    "source": "A clear manuscript copy of the time in the same folder, CMXV.35.3433.2-2 (Guadalajara, 22 July 1914, initialled M. M. D.), transcribed in transcription/clearcopy_CMXV.35.3433.2-2.txt. It is not word for word: it has Irapuato where the groups spell frag?a?o, and lacks 'a' before aprehender, 'que denuncian los como' and Salúdolo."
+   },
+   "length": {
+    "tokens": 211,
+    "distinct": 43,
+    "unit": "code groups",
+    "measured": true,
+    "file": "transcription_CMXV.35.3433.1-2.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "CEHM public viewer images, https://visor.cehm.org.mx/assets/docx/fondos/jzd/CMXV/35/3433/1-2/CMXV.35.3433.1-2.0001.jpg and .0002.jpg (record https://www.cehm.org.mx/Buscador/FichaBasica/13235?Tipo=A)",
+    "image_quality": "good",
+    "notes": "Pencil. First AI reader, two passes (210 of 211 agree, the difference settled on the image). Blind reader 2, given only the images: 209 of 211 agree. Blind reader 3, given only line crops and no key or reading: 209 of 211 agree. All Claude Opus 5.5 in separate sessions. No person has checked."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "homophonic",
+   "nomenclator"
+  ],
+  "summary": "Two-figure groups in a 3 x 10 grid read by the units figure, two tens figures per row (8/9 = a..j, 6/7 = k..r with ll and ñ, 4/5 = rr..z, each row right to left from units 0), the layout of Clave Extra 3 with another alphabet split and other tens figures, plus 121 = -ción.",
+  "symbol_kind": "digits",
+  "digit_groups": {
+   "width": "mixed",
+   "separation": "mixed"
+  },
+  "distinct_symbols": 61,
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": true,
+   "entries": 1,
+   "kinds": [
+    "word parts"
+   ],
+   "unread_groups": 0
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "alphabetical",
+  "word_division": "none",
+  "notes": "distinct_symbols counts the 60 grid cells and 121; 43 distinct groups occur, of which 10 and 16 are outside the grid and 50 is the empty tenth cell of its row. Groups are joined by hyphens; clear words stand between the runs."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "in archive",
+   "where": "The clear copy of the time CMXV.35.3433.2-2 (a separate sheet in the same folder); the CEHM record's subject ('Plan Irapuato promovido por el clero ...') follows it. No issue or pull request named CMXV.35.3433 before 26 Nov 2026, when the maintainers named it as the villa1914 follow-up (commit a64929ac6c, issue #845). Narváez 2019 (OCR of our photographs of the book) names neither Diéguez nor Irapuato; Narváez 2025 not read.",
+   "found": "before attempt",
+   "used": true
+  },
+  "inputs": [
+   "images",
+   "known plaintext"
+  ],
+  "attack": "known plaintext",
+  "human_role": "Andrew Beling set the task and the rules (a frozen plan before decoding, blind second and third readers, probable words counted as holes). AI agents fetched the images, transcribed, rebuilt the key, read and wrote. No person has read the groups, the copy or the reading against the images. Use of the CEHM-Carso images with AI readers: Andrew Beling's decision of 25 Nov 2026.",
+  "tools": [
+   "CEHM viewer images",
+   "scripts in this folder (decrypt.py, compare_readings.py)"
+  ],
+  "models": [
+   "claude-opus-5-5"
+  ],
+  "first_date": "2026-11-25",
+  "last_date": "2026-11-27"
+ },
+ "solution": [
+  {
+   "date": "2026-11-25",
+   "kind": "access",
+   "what": "CMXV.35.3433.1-2 and the clear copy 3433.2-2 (two images each) fetched from the CEHM image server, paced, with other telegrams of catalogue 1462.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-25",
+   "kind": "transcription",
+   "what": "Two passes by one AI agent, the second from fresh crops: 210 of 211 groups agree; the one difference settled on the image as 97 (17 not excluded). The clear copy transcribed once and checked once.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-25",
+   "kind": "control",
+   "what": "A plan frozen by SHA-256 at 19:18:47 EST (filed in targets/ornelas1914/plan/PLAN_2026-11-25.md) named nine existing keys to try on this telegram before any rebuild: Ashton Allen's 1914 key and a model of it, Clave No. 0 both ways, the CMXV.16.1557.1 grids and alphabets and the syllabary card. The plan declares that the clear copy had been opened and read before it was frozen. The order of plan, run and rebuild rests on local file times only; there is no external timestamp.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-25",
+   "kind": "sibling key",
+   "technique": [
+    "key matching"
+   ],
+   "what": "Frozen run at 19:28 EST: every named key gives agreement with the clear copy of 0.000-0.072; none fits.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-25",
+   "kind": "key from source",
+   "technique": [
+    "plaintext matching"
+   ],
+   "what": "The plan's own rebuild step (T1-R): a table from the copy-aligned runs found 13 groups given two or more letters, so no key was formed (plan_run_2026-11-25.txt in targets/ornelas1914/plan).",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-25",
+   "kind": "key from source",
+   "technique": [
+    "plaintext matching",
+    "key-structure hypothesis"
+   ],
+   "what": "After the plan: the coded runs laid against the clear copy; the values fall into a 3 x 10 grid read by the units figure with two tens figures per row (the Clave Extra 3 layout). Applied to the whole telegram: 16 of 31 words decode and match the copy.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-25",
+   "kind": "verification",
+   "technique": [
+    "plaintext matching",
+    "key-structure hypothesis"
+   ],
+   "what": "Blind second reader (Claude Opus 5.5, own session, 20:10-20:33 EST), given only the four images: 209 of 211 groups agree; it rebuilt the same grid on its own, with r/q where this key has rr/no value on 49/59 and 40/50, read the copy's name as Corrua, and found the cipher has f r a g ? a d o where the copy has Irapuato.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-27",
+   "kind": "verification",
+   "technique": [
+    "other"
+   ],
+   "what": "AI reading review: a fresh Claude Opus 5.5 agent (own session, 22:58-23:02 EST) given only 40 crops of the telegram's lines, told nothing of the key, the copy or any reading, read the marks: 209 of 211 groups agree with the settled transcription (97 read 17, 47 or 97 not excluded; a retraced 66 read 64). Every wrong group of the reading is confirmed as written; 95 (f) and 84 (g) of frag?a?o marked sure.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-27",
+   "kind": "reading",
+   "what": "Recount, cipher words only, probable words and words with any wrong group as holes: 19 of 33 read (0.576). Corrua, spelt only with 49 = rr, is a hole: the blind reader had r, and the copy has Corrua (rr) but contrarevolución (one r) at the other 49; 20 of 33 (0.606) if 49 = rr is accepted. Changes from 25 Nov: the copy reads Corrua (not Correa); fueros counted apart from the f u standing for y; 'a' and 'los', which the copy lacks, counted as read from the key.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-27",
+   "kind": "sibling key",
+   "technique": [
+    "key matching"
+   ],
+   "what": "Every targets/*/key*.tsv on origin/main compared with this key (scripts/compare_keys.py, origin/main 7d5fc3415d): none agrees on more than 3 shared groups (two synthetic control keys in targets/sp53, 3 of 58). Clave Extra 3 (murguia1914) has the same layout but another key: 0 of 28 shared groups agree. Allen's villa1914 key states (96 = A, 92 = E, 99 = C/CH, 69 = CH) contradict this telegram's copy-confirmed values, so it cannot fix villa1914's groups 33, 37, 69 or 99.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-27",
+   "kind": "verification",
+   "technique": [
+    "statistical test",
+    "language-model scoring"
+   ],
+   "what": "Statistical validation (docs/_validate.py): 208 tokens, 40 types, es-modern order 4: reading -2.668 per letter; random keys -6.658 (z 9.5); key annealed onto shuffled ciphertext best -3.347 (mean -3.39, z 18.6); annealer on the real text -2.851. Verdict: pass.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "validation": {
+   "date": "2026-11-27",
+   "model": "es-modern",
+   "file": "validation.tsv",
+   "tokens": 208,
+   "types": 40,
+   "tokens_per_type": 5.2,
+   "score": -2.668,
+   "nulls": {
+    "random keys": {
+     "n": 200,
+     "mean": -6.658,
+     "sd": 0.422,
+     "max": -5.507,
+     "z": 9.5,
+     "p": 0.005
+    },
+    "shuffled refit": {
+     "n": 6,
+     "mean": -3.39,
+     "sd": 0.039,
+     "max": -3.347,
+     "z": 18.6,
+     "p": 0.1429
+    }
+   },
+   "power": -2.851,
+   "verdict": "pass",
+   "notes": "claimed per-occurrence score -2.668; polyphony 0.0; 3 unread tokens left out; annealer on the real text from random keys reached -2.851"
+  },
+  "class": "read in part",
+  "key": "partial",
+  "method": "key recovered based on adjacent plaintext",
+  "method_basis": "The key was rebuilt from the clear copy of the time in the same folder (CMXV.35.3433.2-2) after nine existing keys named in a frozen plan missed. Words count as read when the key's output, unedited, spells the copy's word (17 words) or a Spanish word the copy lacks (2 words); Corrua, which needs 49 = rr, is a hole. It has not been tested on any other text; no other telegram in this key has been found.",
+  "contribution": [
+   "transcription",
+   "key recovered"
+  ],
+  "parts": [
+   {
+    "label": "CMXV.35.3433.1-2, 211 groups",
+    "method": "key recovered based on adjacent plaintext",
+    "extent": "partial",
+    "basis": "words_CMXV.35.3433.1-2.tsv (scripts/decrypt.py): 33 cipher words, 19 read, 14 holes (0.576); 20 (0.606) if 49 = rr is accepted."
+   }
+  ],
+  "fraction_read": 0.576,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "words_CMXV.35.3433.1-2.tsv and scripts/decrypt.py: cipher words only, 20 of 33; a word with any wrong or unvalued group, the code 121, or a word supplied from sense is a hole, and so is Corrua, which needs 49 = rr (not settled by the copy): 19 of 33. 20 of 33 (0.606) if 49 = rr is accepted.",
+  "codes_open": {
+   "open": 0,
+   "total": 1,
+   "tokens_open": 0
+  },
+  "verification": [
+   "statistical test"
+  ],
+  "texts": [
+   {
+    "doc": "CMXV.35.3433.1-2",
+    "label": "Diéguez to the Governor of Chihuahua, Guadalajara, July 1914",
+    "transcription": "transcription_CMXV.35.3433.1-2.txt",
+    "decryption": "decryption_CMXV.35.3433.1-2.txt",
+    "reading": "reading_CMXV.35.3433.1-2.md",
+    "translation": "translation_CMXV.35.3433.1-2.md",
+    "language": "es",
+    "state": "read in part",
+    "read_share": 0.576,
+    "cipher_words": 33,
+    "holes": 14,
+    "summary": "Diéguez reports a clerical plot for counter-revolution under the motto 'Religión y Fueros', discovered the day before: priests arrested, more than a hundred weapons and documents seized, the director, the priest Antonio Corrua, arrested. The copy calls it 'plan Irapuato'; the groups spell 'frag?a?o', most probably 'fraguado'."
+   }
+  ],
+  "key_file": "key.tsv",
+  "credits": [
+   {
+    "who": "ajbeling",
+    "role": "solution",
+    "note": "Andrew Beling, with AI agents: the telegram transcribed (two passes and two blind readings), the key rebuilt from the clear copy, the reading and count",
+    "date": "2026-11-25"
+   },
+   {
+    "who": "ajbeling",
+    "role": "transcription",
+    "note": "Andrew Beling, with AI agents: the 211 groups and the clear copy",
+    "date": "2026-11-25"
+   },
+   {
+    "who": "contemporary",
+    "role": "key or decipherment used",
+    "note": "the clear copy of the time, CEHM-Carso CMXV.35.3433.2-2 (Guadalajara, 22 July 1914), from which the key was rebuilt",
+    "date": "1914-07-22"
+   },
+   {
+    "who": "bourdeau",
+    "role": "pointer",
+    "note": "catalogue 1462, and this telegram named as the villa1914 follow-up (commit a64929ac6c, issue #845)",
+    "date": "2026-11-26"
+   }
+  ],
+  "gaps": [
+   {
+    "item": "descubriose, religión, procedido, aprehender, denuncian, Antonio (one wrong group each)",
+    "blocker": "no-key-material",
+    "detail": "three readers agree on the groups; the key is rebuilt, so the one-digit slip rule does not apply; no period key or other telegram in this key found"
+   },
+   {
+    "item": "contrarrevolución (twice), lema, movimiento, responsables, y",
+    "blocker": "no-key-material",
+    "detail": "two or more wrong or missing groups, or the code 121 (ción from the copy only); no key sheet found"
+   },
+   {
+    "item": "Corrua (98 64 49 56 90)",
+    "blocker": "no-key-material",
+    "detail": "49 is rr in this key and r to the blind reader; the copy supports each once (Corrua, contrarevolución); only another text in this key would settle it"
+   },
+   {
+    "item": "fraguado / Irapuato (95 61 90 84 50 80 97 74)",
+    "blocker": "illegible",
+    "detail": "50 has no value and 97 may be 17 or 47 on the image; the copy's word does not fit 95 or 84; no person has looked"
+   },
+   {
+    "item": "the key itself",
+    "blocker": "no-key-material",
+    "detail": "rebuilt from the copy of this one telegram and not tested on any other text"
+   }
+  ]
+ }
+}
