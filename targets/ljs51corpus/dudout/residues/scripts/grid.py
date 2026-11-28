@@ -1,8 +1,9 @@
+import os
 """grid.py <spec.json> <out.png> : vue compacte (signes seuls, 2x) des options puis des questions."""
 import sys, json
-sys.path.insert(0, '/Users/bdudout/Library/Python/3.9/lib/python/site-packages')
+pass  # local site-packages path removed
 from PIL import Image, ImageDraw
-IMG = '/Volumes/SPOF_2/Archives-Veille-cyber/dechiffrements-europe/ljs51/img/f%s_2343.jpg'
+IMG = os.environ.get('LJS51_IMG', 'img/f%s_2343.jpg')
 spec = json.load(open(sys.argv[1])); cache = {}
 def crop(ref):
     segfile, idx = ref.rsplit(':', 1)

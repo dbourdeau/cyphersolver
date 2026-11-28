@@ -1,12 +1,13 @@
+import os
 """segment.py <folio> <x0> <y0> <x1> <y1> <out_prefix> [thr]
 Composantes connexes (encre sombre) dans une bande de ligne ; fusion des composantes qui se recouvrent
 horizontalement à >50 % (points + corps) ; sortie : <out>.json (boîtes en coordonnées page, ordre droite->gauche)
 et <out>.jpg annoté (indices)."""
 import sys, json
-sys.path.insert(0, '/Users/bdudout/Library/Python/3.9/lib/python/site-packages')
+pass  # local site-packages path removed
 import numpy as np
 from PIL import Image, ImageDraw
-IMG = '/Volumes/SPOF_2/Archives-Veille-cyber/dechiffrements-europe/ljs51/img/f%s_2343.jpg'
+IMG = os.environ.get('LJS51_IMG', 'img/f%s_2343.jpg')
 f, x0, y0, x1, y1, out = sys.argv[1:7]
 thr = int(sys.argv[7]) if len(sys.argv) > 7 else 100
 x0, y0, x1, y1 = map(int, (x0, y0, x1, y1))

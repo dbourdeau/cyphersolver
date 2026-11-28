@@ -1,3 +1,4 @@
+import os
 """plate.py <spec.json> <out.png>
 Planche de formes : en haut les options (vignettes de formes, lettres A, B, C… ; aucun nom de lettre),
 puis une question par ligne : contexte (ligne autour du signe, UN seul signe encadré) + le signe seul à 3x.
@@ -5,9 +6,9 @@ spec = {"title": str, "segdir": str, "options": [{"id":"A","ref":"<segfile>:<idx
         "questions": [{"q": "Q1", "ref": "<segfile>:<idx>"}...]}
 <segfile> = préfixe de sortie de segment.py (sans extension), relatif à segdir ; idx peut être "i+j" (fusion)."""
 import sys, json
-sys.path.insert(0, '/Users/bdudout/Library/Python/3.9/lib/python/site-packages')
+pass  # local site-packages path removed
 from PIL import Image, ImageDraw
-IMG = '/Volumes/SPOF_2/Archives-Veille-cyber/dechiffrements-europe/ljs51/img/f%s_2343.jpg'
+IMG = os.environ.get('LJS51_IMG', 'img/f%s_2343.jpg')
 spec = json.load(open(sys.argv[1])); out = sys.argv[2]
 cache = {}
 def page(f):
