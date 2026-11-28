@@ -14,7 +14,7 @@ volume as one study of one manuscript, the compiler's casebook of solved ciphers
 one cipher each (46v.11+13r.1, 20r.8+47r.1). The two ciphers of the volume with pages of their own are not documents of
 this target: f. 106v (`targets/qaysarani1350/`) and ff. 48r-48v with 21r l.1-5 (`targets/ljs51f48r/`). On the user's
 decision of 27 Nov 2026 five open ciphers were promoted to the catalogue (commit 7c7edcbb50): 3938 (1r.2), 3939
-(12v.8), 3940 (12v.11), 3941 (3v.12), 3942 (98v.10); 30v.7 stays out of the catalogue.
+(12v.8), 3940 (12v.11), 3941 (3v.12), 3942 (98v.10). A subsequent request added 30v.7 as catalogue 3943.
 
 ## Goal (set 27 Nov 2026)
 
@@ -195,7 +195,7 @@ Nine whole-cipher batches using docs/_validate.py (ar-mamluk, order 4, full effo
 - 1r.2 (catalogue 3938; f. 1r l.2-8, about 79 signs) - blocker: illegible; plaintext lost to the damage of the first leaf, the red gloss faint (a few letters read)
 - 12v.8 (catalogue 3939; f. 12v l.8-10, 41 signs) - blocker: too-short; single-use alphabet, no plaintext ("he solved it and wrote nothing on it"); its 13r candidate belongs to 46v.11+13r.1
 - 12v.11 (catalogue 3940; f. 12v l.11-13, 33 signs) - blocker: too-short; its own pen, no plaintext, same situation as 12v.8
-- 30v.7 (open, not catalogued; f. 30v l.7-13, 81 signs) - blocker: too-short; single-use alphabet, no plaintext anywhere in the book (group-length search over all 1,034 passages: closest window differs in 9 of 20 lengths)
+- 30v.7 (catalogue 3943; f. 30v l.7-13, 81 signs) - blocker: too-short; single-use alphabet, no plaintext anywhere in the book (group-length search over all 1,034 passages: closest window differs in 9 of 20 lengths)
 - 3v.12 (catalogue 3941; ff. 3v-4r, 42 signs) - blocker: no-key-material; the written verses do not take the signs as a simple substitution (best 25 of 42, chance level), single-use alphabet
 - 88v.10 (f. 88v, 44 signs) - blocker: illegible; 43 of 44 signs have a value. A dotted cup occurs only at 88v l.12 position 9. The corresponding letter of ليلة الـ؟ـار falls in the hole at 89r l.2. The undotted cup writes ع, but the suggested غ is conjectural
 - 98v.10 (catalogue 3942; f. 98v, 51 signs) - blocker: no-key-material; the verse is given in a full and a shortened form and the cipher fits neither by group lengths; single-use alphabet
