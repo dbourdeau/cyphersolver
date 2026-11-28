@@ -1,0 +1,87 @@
+JUDGE NOTES - Gerlach, Occulta scripta chymica (Wellcome MS.309), pp.90-99, one decode, strict judge, one pass
+Files opened: BRIEF.txt, decode.txt only. Counting by script (python3 -I); script checks that the letters in each
+segmented reading equal the decoded letters of that line (249 lines, no mismatch at the final run).
+
+UNIT RULES
+- 1 unit = 1 decoded letter a-z, or 1 unknown sign '_'/'#' (always N). '?' dropped, letter judged. No { } clear text occurred.
+- Divider/hyphen marks (',' spaces, '=', ';', '.', ':') are not units. Words split across lines ('=' / '-') judged as the whole word.
+- S = letter in a word that reads as sense (16th-c. German or Latin; period spellings allowed: hot=hat, dorfet, uerterben,
+  drot, iha=ja, gelucg, procedir, geleichwol, zue, u/v and i/j interchange, y for i).
+- 'cg' is taken as the transcriber's rendering of ck (wercg, mercget, wenigcg, bestendigcg) and scored S.
+- A letter missing (gewich, fila, cra, penetran, einzugehe, dmit, sclagen, uollentem, leisigste) does not by itself make
+  the letters present wrong: the present letters are S. Only a wrong letter costs a unit.
+- E = one wrong letter inside an otherwise sensible word (substitution or one inserted letter, e.g. ala[n]s, spa[r]girum).
+- N = letters with no sense, or words needing two or more corrections at once.
+- Notation in judge.tsv: [x] = E letter, <x> = N letters, all other letters S.
+- Catchword 'ge' at foot of p.93 (followed by 'geleichwol' on p.94) scored S.
+
+N ITEMS (39 units)
+ p.90 L19 deewis (6); L20 elilbr (6), run (3)  = 15
+ p.91 L08 e in [l]eomen (1); L28 corelra (7)   = 8
+ p.94 L20-21 ie|sunque (2+6)                    = 8
+ p.95 L02 extra g in wergcl (1)                 = 1
+ p.96 L17 ihar: 'ha' transposed (2)             = 2
+ p.97 L03 ger (3); L20 '_' (1)                  = 4
+ p.98 L04 anpus: u (1)                          = 1
+ Sum: 15+8+8+1+2+4+1 = 39
+
+TOTALS (strict = S/(S+E+N); lenient (S+E)/units shown for reference only)
+page  S    E   N   units            strict
+p.90  451  6   15  451+6+15=472    451/472 = 0.9555 (95.6%)
+p.91  669  11  8   669+11+8=688    669/688 = 0.9724 (97.2%)
+p.92  649  15  0   649+15+0=664    649/664 = 0.9774 (97.7%)
+p.93  504  4   0   504+4+0=508     504/508 = 0.9921 (99.2%)
+p.94  499  7   8   499+7+8=514     499/514 = 0.9708 (97.1%)
+p.95  678  7   1   678+7+1=686     678/686 = 0.9883 (98.8%)
+p.96  682  15  2   682+15+2=699    682/699 = 0.9757 (97.6%)
+p.97  739  8   4   739+8+4=751     739/751 = 0.9840 (98.4%)
+p.98  750  12  1   750+12+1=763    750/763 = 0.9830 (98.3%)
+p.99  492  5   0   492+5+0=497     492/497 = 0.9899 (99.0%)
+ALL   S=451+669+649+504+499+678+682+739+750+492=6113
+      E=6+11+15+4+7+7+15+8+12+5=90
+      N=15+8+0+0+8+1+2+4+1+0=39
+      units=6113+90+39=6242
+      strict = 6113/6242 = 0.9793 (97.9%);  (S+E)/units = 6203/6242 = 0.9938
+Every page clears 95% strict; lowest p.90 (95.6%).
+
+RECURRING SLIPS (E letters by the decoded sign, 90 total)
+ l:23  g:21  n:12  b:7  a:4  p:3  i:3  u:3  e:2  c:2  m:2  r:2  d:1  o:1  t:1  w:1  h:1  z:1
+ - decoded 'l' where k is meant (leiner, lunst, belant, lan, lraft, lein, unglucl, -igleiten): systematic, looks like a key
+   confusion between the k and l signs, not random slips.
+ - decoded 'g' where k is meant (gunst, gan, gommen, uolgommen, zuergennen, gochunge, geschmeidiggeit) and where d is meant
+   (werg=werde, songern, hungrt): the g sign is doing duty for k and d.
+ - decoded 'n' for m/i/e/s/l (cinabriun, ruboren, oleun, nercke, wieunll, grenfen, gehnimnus, uane, souin).
+ - decoded 'b' for i/c (lbbros, sbdio, mbt, schwbmmen, radibe, probediren).
+ These clusters suggest a few key entries to re-check (k/l, k/g, d/g, m/n, i/b) before any second pass.
+
+GISTS (subject level only)
+p.90  Latin on the blackness that turns through many colours to whiteness, whitening as the foundation of the work.
+      German: keep the matter in putrefaction until the white appears fully.
+      Ends on the white elixir that turns imperfect bodies.
+p.91  The white tincture turns imperfect metals into fine, assay-proof silver ('luna filia').
+      The art is called easy but needing care.
+      The white medicine must first be made fit to enter the metals.
+p.92  Why the white tincture should not be used on its own, since the red follows from the same root (Arnold cited).
+      Latin: redness hidden in the whiteness.
+      Dry fire and calcination until it reddens like cinnabar.
+p.93  Latin: continue the coction to the red, which gives a lasting gold colour (Turba verses quoted).
+      German: carry on in the philosophers' fire.
+      Colour sequence white, citrine, then scarlet red.
+p.94  Let it stand further; a test on a glowing silver plate.
+      Praise for the true tincture for human bodies and imperfect metals.
+      Latin: the crowned king, the red lion.
+p.95  The 'ingressus' (means of entry) is needed before the medicine can tinge metals.
+      Few philosophers knew it.
+      A recipe for preparing the ingressus of the red medicine with calx of gold.
+p.96  Timing must not be missed.
+      Without the ingressus the medicine will not enter the metals but float like oil on water.
+      The secret of the ingressus.
+p.97  The medicine is so penetrating it passes through crucibles; the stone turns brittle like glass.
+      A recipe for projection onto base metals to give gold.
+      What to do if the gold comes out brittle.
+p.98  A test of malleability on the anvil; fire placement during projection.
+      Close of the process of the red and white medicine.
+      Closing blessing and doxology.
+p.99  Heading 'Multiplicatio philosophica'.
+      Few philosophers knew the multiplication because of the weight.
+      The weight needed for the ingressus and for multiplication.

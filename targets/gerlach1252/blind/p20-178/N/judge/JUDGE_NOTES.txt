@@ -1,0 +1,68 @@
+JUDGE NOTES: Gerlach, Occulta scripta chymica (Wellcome MS.309), pp.161-170, single decode (no edits)
+Strict judge, one pass, no second tries. Files opened: BRIEF.txt and decode.txt only.
+
+UNIT RULES
+- 1 unit = 1 decoded letter. '?' (doubtful mark) is not a unit; the letter before it is judged as written.
+- '#' or '_' = 1 unit, always N.
+- Text in { } (B A M D etc.) is clear script: excluded.
+- ';' '.' ',' ':' '=' and spaces are not units. ':' and '=' at line end are taken as word continuation; split words are judged as one word, each fragment's letters counted on its own line.
+- S = letter in a word that reads as sense in 16th-c. German (period spellings accepted: u for v, ck, tz, doubled consonants, syncopated g- for ge-, gfes, golt, lem, mol, holttz, achtt) or Latin chemical term.
+- E = wrong letter where the word is still clear with a one-letter slip. A needed letter that is missing is charged as E on the letter next to the gap. Extra inserted letter = E.
+- Strictness cap: a word gets S/E credit only if its slips are <=1 (words of 1-4 letters), <=2 (5-9 letters), <=3 (10+ letters). Above the cap, the whole word is N (e.g. coce/coren 'roren' 4 letters 2 slips = N; ferc 'feur' = N; nrc 'nur' = N; cerecbecir = N; walgnbrc|gisch = N).
+- Unreadable fragments (doc, gcg, gc, nen, zirgeuhs) = N.
+
+VERIFICATION
+Script checks that the letters of every segmented line equal the decode line with braces, '?' and punctuation removed: 0 mismatches across 204 rows (p.163 L01 is empty, 0 units).
+Per-line counts in judge.tsv; per-word marks shown in [ ] after any word not wholly S.
+
+TOTALS (code-summed from judge.tsv)
+p.161: S=374 E=18 N=10; S/(S+E+N) = 374/(374+18+10) = 374/402 = 93.0%
+p.162: S=390 E=24 N=20; S/(S+E+N) = 390/(390+24+20) = 390/434 = 89.9%
+p.163: S=0 E=0 N=0; S/(S+E+N) = 0/(0+0+0) = 0/0 = n/a (no cipher letters)
+p.164: S=426 E=30 N=26; S/(S+E+N) = 426/(426+30+26) = 426/482 = 88.4%
+p.165: S=424 E=16 N=19; S/(S+E+N) = 424/(424+16+19) = 424/459 = 92.4%
+p.166: S=449 E=41 N=19; S/(S+E+N) = 449/(449+41+19) = 449/509 = 88.2%
+p.167: S=401 E=32 N=15; S/(S+E+N) = 401/(401+32+15) = 401/448 = 89.5%
+p.168: S=421 E=33 N=0; S/(S+E+N) = 421/(421+33+0) = 421/454 = 92.7%
+p.169: S=356 E=38 N=20; S/(S+E+N) = 356/(356+38+20) = 356/414 = 86.0%
+p.170: S=431 E=31 N=17; S/(S+E+N) = 431/(431+31+17) = 431/479 = 90.0%
+OVERALL: S=3672 E=263 N=146; S/(S+E+N) = 3672/(3672+263+146) = 3672/4081 = 90.0%
+(lenient S+E share for reference: (3672+263)/4081 = 96.4%)
+
+RECURRING SLIPS (decoded letter in E positions, code tally, total 263)
+c 126, r 60, g 29, n 9, l 9, e 8, u 6, s 5, a 4, o/i/w/t/d/b/m 1 each.
+- c for r (126): the dominant slip, nearly always on a c marked '?': dec(n)=der(n), andecn=andern, gcad=grad, reuecbecir=reverberir, core/coce=rore, ferc=feur. Looks like one cipher sign assigned c that should be r. Fixing it alone would lift most E and much N.
+- r for u (60): arf=auf, mrs=mus, rmb=umb, zrndet=zundet, ars=aus, qrecksilber=quecksilber, trt=tut, nrn=nun. Second key-level confusion (u read as r).
+- g for d/k (29): gn/gm=den/dem, galck/golben/gonnet/gomnet=kalck/kolben/konnet/kommet, gein/glein=kein/klein. The g? sign is overloaded (g, d, k).
+- smaller: n for m (gomnet), l for u/g/k (daralf, lelet, lleinen), r for v (ron, rom, reuec... initial), e for p (seiritus, efen).
+Most N is caused by c/r and r/u slips stacking in short words (coce, ferc, nrc, arc, arr), not by unreadable stretches. Only two '#' units in the whole set (p.170 L02).
+
+GISTS (recipe level only)
+p.161: End of a recipe for gold calx (calcined gold) in a sealed vessel.
+  The vessel is moved through the grades of a reverberatory furnace in turn.
+  It is checked every few days so the calx does not melt.
+p.162: The gold calx is finished and called the 'ingressum'.
+  Start of a description of how to build the reverberatory furnace (B.A.M.D. mark).
+  Description of its lower tube, grate and ash fall.
+p.163: Blank in this decode (no cipher letters).
+p.164: Furnace construction continued: further tubes stacked above the first.
+  Flame path, fuel and ash openings, stoppers at the tube ends.
+  All joints sealed.
+p.165: Furnace finished: top vent and how the grades are arranged.
+  Start of the vessel for reverberating gold: a pair of unglazed earthen dishes.
+  One dish fits over the other.
+p.166: Placing the dishes and the gold in the furnace.
+  Firing the furnace continuously, with notes on the fuel.
+  Keeping watch day and night.
+p.167: Moving the vessel through the tubes; end of the furnace and its uses (gold, silver, antimony, sulphur) (B.A.M.D.).
+  New heading 'mercurius lunae'.
+  Start of a recipe for mercury of silver: a vinegar-based solvent prepared and filtered.
+p.168: Mercury of silver continued: the solvent is prepared with a potash salt.
+  Silver crystals and sublimated sal ammoniac are combined with it.
+  Vessel set in warm ash and then into a still.
+p.169: Mercury of silver ends: distillation and sublimation give quicksilver from silver; thanks to God (B.A.M.D.).
+  New heading 'spiritus vitrioli'.
+  Start of a recipe for spirit of vitriol: choosing and preparing the vitriol.
+p.170: Spirit of vitriol continued: a luted vessel in the vitriol furnace.
+  Distillation into a receiver.
+  Receiver changed when the distillate turns sour.

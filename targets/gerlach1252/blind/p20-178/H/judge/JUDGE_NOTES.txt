@@ -1,0 +1,74 @@
+JUDGE_NOTES  Gerlach, Occulta scripta chymica (Wellcome MS.309), pp.70-79, decode.txt (one decode, no edits)
+Strict judge, one pass, no second tries. Only BRIEF.txt and decode.txt were opened.
+
+UNIT RULES
+- 1 unit = 1 decoded letter a-z, or 1 unknown sign '_' / '#' (always N).
+- '?' after a letter is not a unit: the letter before it is judged like any other.
+- Dividers ; , . = and spaces are not units. No { } clear script occurs in this file (grep: 0), so nothing excluded.
+- S = letter belongs to a word reading as sense in 16th-c. German or Latin (u/v, i/j, y=ij, dropped e as in
+  'gburlich', 'ggen', 'gs-chicht', doubled letters as in 'weitter', 'herlichenn', 'einigett' accepted as period spelling).
+- E = wrong letter that is plausibly a one-letter slip (substitution or intrusion). Where a letter is missing
+  so the word no longer reads ('lut' for luft, 'alo' for also, 'd' for de, 'se?ra' for spera) one letter of the
+  word is marked E. Two slips in one word = two E ('inmerthalb', 'anfengcllich').
+- N = no sense: unknown signs '_' (3) and 'an' in p.75 L09 'durch an in die hohe' (2).
+- Each letter is checked by script: the letters of the segmented reading must equal the letters of the decode
+  line exactly (assert passed on all 218 lines). Counts are made by script from per-letter tags.
+
+TOTALS (strict share S/(S+E+N))
+p.70  lines 24  S 489 + E 11 + N 0 = 500   strict S/(S+E+N) = 489/500 = 97.80%   [alt, f-for-s counted S: 494/500 = 98.80%]
+p.71  lines  6  S 119 + E 6 + N 0 = 125   strict S/(S+E+N) = 119/125 = 95.20%   [alt, f-for-s counted S: 121/125 = 96.80%]
+p.72  lines 24  S 479 + E 12 + N 0 = 491   strict S/(S+E+N) = 479/491 = 97.56%   [alt, f-for-s counted S: 486/491 = 98.98%]
+p.73  lines 19  S 379 + E 10 + N 0 = 389   strict S/(S+E+N) = 379/389 = 97.43%   [alt, f-for-s counted S: 382/389 = 98.20%]
+p.74  lines 22  S 459 + E 7 + N 0 = 466   strict S/(S+E+N) = 459/466 = 98.50%   [alt, f-for-s counted S: 460/466 = 98.71%]
+p.75  lines 25  S 525 + E 10 + N 2 = 537   strict S/(S+E+N) = 525/537 = 97.77%   [alt, f-for-s counted S: 528/537 = 98.32%]
+p.76  lines 24  S 510 + E 16 + N 1 = 527   strict S/(S+E+N) = 510/527 = 96.77%   [alt, f-for-s counted S: 517/527 = 98.10%]
+p.77  lines 26  S 596 + E 9 + N 0 = 605   strict S/(S+E+N) = 596/605 = 98.51%   [alt, f-for-s counted S: 597/605 = 98.68%]
+p.78  lines 27  S 607 + E 19 + N 1 = 627   strict S/(S+E+N) = 607/627 = 96.81%   [alt, f-for-s counted S: 615/627 = 98.09%]
+p.79  lines 21  S 489 + E 15 + N 1 = 505   strict S/(S+E+N) = 489/505 = 96.83%   [alt, f-for-s counted S: 491/505 = 97.23%]
+ALL    lines 218  S 4652 + E 115 + N 5 = 4772   strict S/(S+E+N) = 4652/4772 = 97.49%   [alt: 4691/4772 = 98.30%]
+E by slip class: E=36, F=39, G=12, Q=21, X=7  (sum 115)
+
+Check: page totals 500+125+491+389+466+537+527+605+627+505 = 4772 = 4652+115+5.
+
+RECURRING SLIPS (all counted E in the strict figure)
+- F = 'f' where s/ss/sz is needed (wafer, daf, ef, muef, grofe, weife, auf=aus, cefaria, dimifio): 39. Initial f
+  is correct (feur, fit, fur, luft), so this looks like one sign (long-s / sz) mapped to f in the key, not 39
+  independent slips. Alternate figure with these counted S: 4691/4772 = 98.30%.
+- Q = 'p' (marked doubtful) where Latin q is needed (ap?ua, p?uod, cop?uendo, p?uia): 21.
+- X = 'l' where x is needed (el?, dil?erunt, aul?ilio, el?trac-): 7.
+- G = 'g' where d or k is needed (g?n=den, werg?n=werden, werg?ck=werck, mercgen, zircgl, ung=unde, g?r): 12.
+- Other E: 36 scattered (m for n: machmals, moch, mibus, matum, em?im; l for k: losten, l=kan, feuchtileit;
+  b for c: starb?k, nib?; d for k/g: mercd?, dleich; others singletons).
+- Judgement calls left S: 'uon mittels' (p.72 L08, likely for 'uermittels'), 'nach dennest' (p.78 L14).
+
+GISTS (3 lines per page, recipe level only)
+p.70  Opening of the work on the philosophers' mercury: the living mercury from which the whole work starts.
+      Treats the mercury of gold ('mercurius solis') as the matter to be brought to perfection.
+      Describes the kind of crystal glass vessel it is to be sealed in.
+p.71  Short page: sealing the glass with the Hermetic seal.
+      Setting the glass into its apparatus.
+      Leads into the philosophical fire (continues on p.72).
+p.72  The philosophical (vaporous) fire and its regulation.
+      The mercury of gold begins to dissolve into a philosophical water.
+      How the apparatus and its stand are to be prepared to hold the glass.
+p.73  Continued gentle heating until the mercury becomes a clear crystal-like water.
+      Latin maxim 'unica per totum aqua' (one water throughout, by cooking and recooking).
+      Warning not to open the glass before or after the solution.
+p.74  The glass stays in the apparatus under the same regimen of fire.
+      Latin sayings: one stone, one vessel, one fire for all the operations (distillation, sublimation, etc.).
+      The true solution: what dissolves becomes airy and rises.
+p.75  The rising matter settles like dew on the top of the glass.
+      This is the 'solutio remota' of the philosophers; the body dissolves, sublimes and revives itself (Turba).
+      Latin: our dissolution is done by digestion/putrefaction, not by hand.
+p.76  Putrefaction is necessary: Latin passage that nothing is born or dissolved without it.
+      Putrefaction effects the separation of the elements.
+      The elements are turned one into another (water to air, air to fire).
+p.77  Aristotle quotation on converting the elements to have the whole art.
+      The elements are changed, not truly parted; nature reunites them.
+      Body, soul and spirit are separated; the stone is of body, soul and spirit (Latin).
+p.78  By steady warmth or putrefaction the body becomes water ('unica tantum aqua').
+      Spirit and soul as bonds of each other; all must become water.
+      Latin: dissolve bodies into our quicksilver, the permanent water; comparison with the Creation.
+p.79  The matter rises and falls until the body is wholly dissolved into a clear crystalline water.
+      Latin: the whole operation is the extraction of water from earth and its return until the earth putrefies and is cleansed.
+      Our stone is a vapour that rises from the bodily mercury within the sphere of the glass.

@@ -1,0 +1,78 @@
+JUDGE NOTES: strict one-pass judgement of decode.txt (Gerlach, Occulta scripta chymica, Wellcome MS.309, pp.20-29)
+Files opened: BRIEF.txt, decode.txt only. Judgement written once; no second pass, no emendation of the decode.
+
+UNIT RULES
+- Unit = one decoded sign. Letters a-z count 1 each; '#' and '_' count 1 each and are always N.
+- '?' is a doubtful flag on the preceding letter: the letter is judged, the '?' itself is not counted.
+- Punctuation ( = ; . , ) and spaces are not counted. Nothing in { } occurs in this decode (0 units excluded).
+- Words broken over a line (with or without '=') are judged as the joined word; each fragment scored on its own line.
+- S: letter of a word that reads as 16th-c. German / Latin chemical sense, period spellings allowed
+  (u for v, ck, th, dt, nim, golt, hot = hat, schisen, kule, ampos, granalir, olitet, aquositet, semisch, gerederten = sieved).
+  Run-together words (undlas, nimobge, merckdas ...) are split and count S; dittographies (der der, mit mit) count S.
+- E: a letter that is wrong where the target word is clear: a single substitution (q for w, d for z ...),
+  or an inserted letter (uenedisch[n]em, grad[b], du[e], grad[a][s]). An omission has no letter to mark,
+  so one adjacent letter of the word is charged E (allerhoch[s]en, s[e]iget, ich[s], ha[s]u, dur[c], sub[i]le, [a]us);
+  two omissions charge two letters (hinder[s][e]lige, uiui[c][i]ret).
+- N: unknown signs, and every letter of a word whose target is not clear or which has 3+ defects:
+  !drnme (p.20 L07, 5), !uol (p.23 L15, 3), !dun?amen (p.24 L24, 7).
+- judge.tsv shows each line in markup: [x] = E letter, !word = all letters N, #/_ = N, all other letters S.
+  The script asserted that stripping the markup gives back exactly the signs of decode.txt on every one of 244 lines.
+
+TOTALS (counted by script from judge.tsv; strict share = S/(S+E+N))
+p.20: S=472 E=12 N=9 total=472+12+9=493 strict=472/493=95.74%
+p.21: S=460 E=15 N=1 total=460+15+1=476 strict=460/476=96.64%
+p.22: S=447 E=9 N=3 total=447+9+3=459 strict=447/459=97.39%
+p.23: S=457 E=8 N=3 total=457+8+3=468 strict=457/468=97.65%
+p.24: S=427 E=12 N=9 total=427+12+9=448 strict=427/448=95.31%
+p.25: S=420 E=18 N=3 total=420+18+3=441 strict=420/441=95.24%
+p.26: S=373 E=11 N=5 total=373+11+5=389 strict=373/389=95.89%
+p.27: S=467 E=11 N=0 total=467+11+0=478 strict=467/478=97.70%
+p.28: S=457 E=21 N=6 total=457+21+6=484 strict=457/484=94.42%
+p.29: S=489 E=13 N=2 total=489+13+2=504 strict=489/504=97.02%
+OVERALL: S=4469 E=130 N=41 total=4469+130+41=4640 strict=4469/4640=96.31%
+check: sum of per-page S = 472+460+447+457+427+420+373+467+457+489 = 4469
+E letters by decoded letter: q=65, d=35, s=6, l=5, r=3, e=3, m=2, u=2, c=2, i=2, a=2, f=1, n=1, b=1 (sum 130)
+
+RECURRING SLIPS (all charged E every time; none excused as spelling)
+- q for w: 65 of 130 E. Every w-word (wie, wen, wirt, werden, wasser, warm, wider ...) decodes with q. One sign is
+  being read as q where it must be w; also q for a once (n[q]turliche, h[q]lte, s[q]ndt, h[q]_t count here).
+- d for z: 35 of 130 E (setde = setze, deuch = zeuch, du/dum = zu/zum, abgedogne, saltd, uirtdig, etdlich, ortdu).
+  The z sign is decoded as d throughout. The first word 'qum' (zum) has q for z.
+- l/r confusion: l for r 3 times (mercu[l]ium, cu[l]io, ercu[l]ius); r for l twice (go[r]t, christal[r]en) plus
+  mercuri[r]m (r for u). Other l: th[l]e (l for u), da[l] (l for s). Totals by decoded letter: l=5, r=3.
+- Remaining E are omissions and singletons (s 6, e 3, m 2, u 2, c 2, i 2, a 2, f 1, n 1, b 1).
+- Fixing the two systematic signs alone (q->w, d->z: 100 units) would lift the overall share to
+  (4469+100)/4640 = 4569/4640 = 98.47%. This is noted only; the figure of record is the strict 96.31%.
+- N is 41 units: 26 '#'/'_' signs (counted in decode.txt by script) + 15 letters in the three N words (5+3+7) = 41.
+
+GISTS (recipe level only)
+p.20: Continues a gold work: a recipe for dissolving purified gold in aqua regis.
+      The solution is drawn down in a bath to an oily residue.
+      It is set somewhere cool and damp to grow yellow crystals.
+p.21: Continuation of the gold-crystal recipe.
+      The crystals are driven over in ashes to recover the spirits, and the dark residue is redissolved in aqua regis.
+      The dissolving and crystallising cycle is repeated.
+p.22: The crystallising cycle is to be done three times.
+      A recipe for sealing the gold crystals in a Venetian-glass vial with sal ammoniac sublimed through sal gemmae.
+      Weighing note relating the salt to the gold.
+p.23: Spirit of wine is poured on the gold crystals and salt; vessel sealed hermetically.
+      Putrefaction in a dew bath or horse dung, then distillation from a sand capel.
+      A recipe for raising the 'mercury of the sun' (mercurius solis) from the gold.
+p.24: The mercury of gold rises and settles; the non-volatile part forms an ash-coloured fatty deposit.
+      The living mercury is gathered with a goose feather into a glass dish.
+      The deposit is washed with wine vinegar and kept apart.
+p.25: The deposit is revived overnight: the gold body is said to be 'broken' by spagyric art and its quintessence drawn out.
+      A note on how much of the gold can be turned to mercury.
+      The remainder stays a white, clear body unlike fine silver, dissolved by aqua regis but not aqua fortis.
+p.26: The leftover residue and gold are washed out with water and redissolved to repeat the work.
+      Until no more mercury comes.
+      Heading: what this mercury of the sun is first good for.
+p.27: A recipe for drying and straining the mercury of gold through chamois leather into a small round glass.
+      The glass is sealed hermetically and warmed in ashes.
+      The fire is adjusted to the degree at which the mercury rises.
+p.28: The mercury climbs and settles as fine pearls; the glass is turned so the sublimate falls back.
+      Over time it forms a dark skin and then a fine red powder.
+      The fire is held at the same degree until all is red powder.
+p.29: A recipe for fixing the red precipitate of gold.
+      The glass is set in sifted sand and taken through four degrees of fire in turn.
+      The precipitate fixes into a red-brown powder (text continues).

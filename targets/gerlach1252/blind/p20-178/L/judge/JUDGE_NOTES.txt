@@ -1,0 +1,85 @@
+JUDGE NOTES: Gerlach, Occulta scripta chymica (Wellcome MS.309), pp.110-119, one decode, no edits
+Strict judge, one pass. Only BRIEF.txt and decode.txt were opened.
+
+UNIT RULES
+- One unit = one decoded letter. '_' or '#' = 1 unit, always N.
+- Not counted: '?' markers (the letter before it is judged), ',' ';' ':' '.' '=' and spaces, and anything in { } (clear script: p.114 L24 '{&}', p.118 L02 '{S:S:S:}').
+- S = letter in a word that reads as sense in 16th-c. German or Latin chemical terms. Period spellings accepted:
+  u for v (uol, uitril, puluer), hot (hat), seint (sind), domit (damit), tagck/dreisigck/gnugck/ewigck, nach (noch),
+  mol/moll (mal), iha (ja), leidt (liegt), uire (viere), machett, fulet/fullet, rosmist, mercury (gen.).
+- E = wrong letter where the intended word is clear (one-letter slip). Each wrong letter is marked separately,
+  so a word with two or three slips gets two or three E. Extra letters are E.
+- N = letter in a stretch with no recoverable sense.
+- Missing letters cannot be scored as units. They are listed below and NOT counted
+  (nac[h]lasen 113 L13, quecksilbe[r] 115 L03, walden[u]rgisch 116 L01, gere[i]nigetes 116 L07,
+  besch[u]t[t]e 118 L13/14 (the u is scored E as 'b'), durchfr[e]sen 119 L09).
+- Markup in judge.tsv segmented_reading: [x] = E letter, <...> = N stretch, everything else S.
+- Code check: for every row, the markup-stripped letters were asserted equal to the decode's letters, and S+E+N = letter count.
+
+TOTALS (computed by script, /tmp/jscr/judge.py; strict share = S/(S+E+N))
+p.110: S=427 E=12 N=11; 427/(427+12+11) = 427/450 = 94.89%
+p.111: S=484 E=4  N=0;  484/(484+4+0)   = 484/488 = 99.18%
+p.112: S=464 E=2  N=0;  464/(464+2+0)   = 464/466 = 99.57%
+p.113: S=453 E=6  N=0;  453/(453+6+0)   = 453/459 = 98.69%
+p.114: S=468 E=15 N=0;  468/(468+15+0)  = 468/483 = 96.89%
+p.115: S=207 E=2  N=0;  207/(207+2+0)   = 207/209 = 99.04%
+p.116: S=459 E=10 N=0;  459/(459+10+0)  = 459/469 = 97.87%
+p.117: S=460 E=5  N=6;  460/(460+5+6)   = 460/471 = 97.66%
+p.118: S=451 E=8  N=6;  451/(451+8+6)   = 451/465 = 96.99%
+p.119: S=451 E=6  N=0;  451/(451+6+0)   = 451/457 = 98.69%
+Column sums: S = 427+484+464+453+468+207+459+460+451+451 = 4324
+             E = 12+4+2+6+15+2+10+5+8+6 = 70
+             N = 11+0+0+0+0+0+0+6+6+0 = 23
+OVERALL strict: 4324/(4324+70+23) = 4324/4417 = 97.89%
+(Lenient, for reference only: (S+E)/total = 4394/4417 = 99.48%)
+227 rows in judge.tsv (all 227 decode lines).
+
+N STRETCHES (23 units)
+- p.110 L21 'wigr' (4) and L22 'gegcget' (7): context wants something like 'wird ... zugedecket', but too many letters wrong to call slips.
+- p.117 L07/L08 'er'+'lfer' (6): context 'reibet den zu einem pulver', letters do not fit.
+- p.118 L17 'dracf' (5): no sense found.
+- p.118 L20 '_' (1) in 'l_s' (= las).
+
+RECURRING SLIPS (E = 70)
+Counted by code, by the WRONG decoded letter in [ ] marks:
+  l 14 + d 10 + b 9 + r 9 + u 9 + g 7 + e 4 + n 4 + m 1 + s 1 + w 1 + c 1 = 70
+Examples by intended letter (groups below are illustrative, not counted):
+- d for z: entdundet, setden, itdunt, dardu, du(gleich), einsetden, schatd, duzu-, etdliche (decoded d is E 10 times; decoded l, 14, is the commonest wrong letter).
+- l for u (and l for k): lnter, zluor, nlgck, zl, duzl-, fel(u)r x2, sles, felr, tlt, extra l in ulleis.
+- b for i / c / u: nbcht, gleb ch, mbt x2, feb n, eb ne, wb e, mab(=machet), beschb(te).
+- g for k / d: gonnet, quecgsilber, ergalten, g(alt), ltigcgeit, duzldecgen, wilgn.
+- r for u: qre, philosophorrn, mercurirn, mercrrio, trm, nerem, srper.
+- u for f / c / l / r / o: ulleis, (u)l eis, meruurium, ualcinatum, (u)ege, tueuge, zigeu, furlage(o).
+- l for k in -igck: digcl, ewigcl. n for m: -orrn, -irn. Singletons: w for b (wleibet), m for n (mein),
+  e for t (rosmise), e for p (e=hilosophische), s for l (alse), r for g (dinre), r for v (raporosische), c for u (scper),
+  u for r (deu), n for s (hohenten), n for t (machen), extra e (alleeine, deicht).
+The slips cluster in a few sign pairs (d/z, l/u, b/i-c-u, g/k, r/u), which looks like a small number of key or
+transcription confusions rather than random noise. Not tested here: one pass, no edits.
+
+GISTS (recipe level only)
+p.110: Continuation of a horse-dung (Rossmist) heating method: a glass vessel is moved from one dung box to a second.
+       Explains when the dung has heated and how to seat the glass in fresh warm dung.
+       Two short stretches unread.
+p.111: Same method continued: replacing the spent dung in the first box with fresh horse dung.
+       The glass is moved back and forth between the two boxes on a fixed cycle.
+       No unread stretches.
+p.112: Same method: the cycle of a day and a half, refilling the boxes with fresh dung.
+       Advice to watch the heat and leave the glass longer while the dung stays hot.
+       No unread stretches.
+p.113: Same method: move the glass only when the heat starts to fall, and check often.
+       Several glasses can be set at once; the dung must be clean, without straw.
+p.114: Closes the dung-heat method, praising it as the true philosophical 'vaporous' fire in which putrefaction happens
+       and the philosophers' stone is made.
+       Ends with a prayer of thanks.
+p.115: Heading: how to make all metals as fluid as wax by means of quicksilver (Mercurius solis et lunae).
+       Opens with an invocation of the Trinity and the start of a recipe using calcined vitriol.
+p.116: A recipe for vitriol oil distilled over quicksilver, referring to a 'great book', giving a calcined mercury
+       ('mercurium calcinatum') that is kept for later use.
+p.117: A recipe for layering thin silver or gold sheet with calcined-mercury powder in a crucible
+       ('stratum super stratum'), with a note that it is written with three S signs.
+p.118: Same recipe: sealing the crucible and building a tile-and-charcoal fire around it, then heating until it glows.
+       One short stretch unread and one unknown sign.
+p.119: Same recipe: letting it cool, called cementing; the metal is found brittle and eaten through.
+       The layering and cementing are repeated until the metal flows like wax or oil.
+
+Files: /home/claude/gerlach_next/L/judge/judge.tsv, /home/claude/gerlach_next/L/judge/JUDGE_NOTES.txt
