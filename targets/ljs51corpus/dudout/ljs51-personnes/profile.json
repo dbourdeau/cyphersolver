@@ -1,0 +1,28 @@
+{
+ "schema_version": 1,
+ "target": "ljs51corpus",
+ "title": "Penn LJS 51: identification of secondary people named in the compiler's headings, and internal dating (partial profile, contribution only)",
+ "partial": true,
+ "credit": {
+  "by": "dudout",
+  "role": "identification"
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "partial",
+   "where": "targets/ljs51corpus/identity_ibn_durayhim.md (Daniel Bourdeau, origin/main d8ac608093): sections 2 and 4 list these people as 'not identified (not checked)'.",
+   "found": "found",
+   "used": true
+  },
+  "inputs": [
+   "images",
+   "printed biographical dictionaries (OpenITI texts)"
+  ],
+  "first_date": "2026-11-28",
+  "last_date": "2026-11-28",
+  "human_role": "Brice Dudout chose the task and set the rules (heading readings frozen by SHA-256 before any biographical search; identification criterion fixed in advance); an AI agent read the headings on the images, searched the sources and wrote up.",
+  "models": [
+   "Claude Opus 5.5 (Anthropic), agents run by Brice Dudout"
+  ]
+ }
+}
