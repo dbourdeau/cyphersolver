@@ -187,6 +187,10 @@ in full (2r.4, 4v.8, 7r.5, 7v.12, 10v.1, 11r.10, 12r.8). The decryption files fo
 the key files) for keyed chains, and the corrected chain record for the rest. The fraction read is not raised to "read":
 seven ciphers stay open, each blocked from outside (below). The 30v.7 test with the 30r.4 key (`keys_eye/30v.7.json`, key_test_30r4): nine shapes are shared, but the 30r.4 key does not read it.
 
+## Chance tests by starting folio
+
+Nine whole-cipher batches using docs/_validate.py (ar-mamluk, order 4, full effort, seed 1) covered all 13,838 aligned occurrences of 197 letter keys. All nine passed against both controls. The f. 63v branch rule was too short alone and passed pooled with ff. 61–72. The f. 14v undotted-class system falls outside the single-letter model; the pilot alignment triggers its polyphony cutoff. The companion ciphers at f. 48r (including f. 21r) and f. 106v passed separately. Batch verdicts apply to groups. See validation_batches.json for memberships, input hashes and scores. Reproduce with `python targets/ljs51corpus/validate_batches.py`.
+
 ## Remaining gaps
 - 1r.2 (catalogue 3938; f. 1r l.2-8, about 79 signs) - blocker: illegible; plaintext lost to the damage of the first leaf, the red gloss faint (a few letters read)
 - 12v.8 (catalogue 3939; f. 12v l.8-10, 41 signs) - blocker: too-short; single-use alphabet, no plaintext ("he solved it and wrote nothing on it"); its 13r candidate belongs to 46v.11+13r.1

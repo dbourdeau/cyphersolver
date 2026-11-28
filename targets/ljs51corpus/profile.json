@@ -6309,6 +6309,16 @@
    ],
    "what": "98v.10: independently recounted 51 signs and 12 ending dividers on the master. Two five-sign groups repeat exactly. Against the 50-letter shortened verse, trying every single surplus-sign position and assigning each shape its majority letter matches at most 24 letters. With identical fitting, 187 of 500 fixed-seed shuffles match or exceed this score. The full verse has 62 letters. No candidate in the recorded passages fits all 12 group lengths (keys_eye/98v.10.json).",
    "result": "failed"
+  },
+  {
+   "date": "2026-11-27",
+   "kind": "verification",
+   "technique": [
+    "statistical test",
+    "language-model scoring"
+   ],
+   "what": "Nine whole-cipher batches using docs/_validate.py (ar-mamluk, order 4, full effort, seed 1) covered all 13,838 aligned occurrences of 197 letter keys. All nine passed against both controls. The f. 63v branch rule was too short alone and passed pooled with ff. 61–72. The f. 14v undotted-class system falls outside the single-letter model; the pilot alignment triggers its polyphony cutoff. The companion ciphers at f. 48r (including f. 21r) and f. 106v passed separately. Batch verdicts apply to groups. See validation_batches.json for memberships, input hashes and scores.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -6340,7 +6350,7 @@
    },
    "power": -3.261,
    "verdict": "pass",
-   "notes": "claimed per-occurrence score -2.718; polyphony 0.009; 224 unread tokens left out; annealer on the real text from random keys reached -3.261"
+   "notes": "claimed per-occurrence score -2.718; polyphony 0.009; 224 unread tokens left out; annealer on the real text from random keys reached -3.261; this historical score and its nulls cover the first 5,000 aligned occurrences. The full-coverage batch results are in validation_batches.json."
   },
   "class": "read in part",
   "key": "partial",

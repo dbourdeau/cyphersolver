@@ -181,11 +181,30 @@ stands over a sign aligned with <span lang="ar" dir="rtl" translate="no">ي</spa
 On f. 87r, line 7, the gloss spells <span lang="ar" dir="rtl" translate="no">من</span> above black signs that give <span lang="ar" dir="rtl" translate="no">في</span>.
 On line 10 a red <span lang="ar" dir="rtl" translate="no">غ</span> stands over the same black sign that writes <span lang="ar" dir="rtl" translate="no">خ</span>
 in two other words. The tree-script comparison is reported separately below.</li>
-<li><strong>A test against chance.</strong> The validator took the most frequent letter for each sign from 13,838 aligned occurrences, keeping the cipher alphabets separate. The chance test used the first 5,000 occurrences, spanning 64 alphabets and ending on f. 40r, line 7, within the cipher that begins on f. 39v. The Arabic letter model scored the reconstructed keys at &minus;2.716 per letter. Random keys averaged &minus;4.853. Keys fitted to shuffled signs averaged &minus;3.231, with a best score of &minus;3.209. The validator returned <i>pass</i>. The compiler&rsquo;s plaintext was used to build the keys.</li>
 <li><strong>Eight ciphers have no key table.</strong> Four lack a usable plaintext. At 22v.9 the letter-shaped signs fit the written plaintext at 40%,
 and the fit at 3v.12 is at chance level (25 of 42). Neither written version at 98v.10 yields a substitution key.
 The ordinary Arabic letters at 102v.11 follow the <i>maqlūb</i> rule described above.</li>
 </ul>
+
+<h3 id="chance-test">How the keys score against chance</h3>
+<p>All nine folio groups passed the same Arabic language-model test. Together they cover all 13,838 aligned sign occurrences from the 197 letter keys. Each cipher stays in the group where it begins, including ciphers that continue on another leaf. Each verdict applies to the group as a whole.</p>
+<p>Within each cipher the key gives each sign its most frequent letter in the compiler&rsquo;s plaintext. The model scores sequences of four Arabic letters, stopping at gaps and cipher boundaries. Higher scores indicate a closer fit to the model. In each group, the validator compared the reconstructed keys with 200 random assignments of values and with keys fitted to six shuffled versions of the signs. The controls pool the ciphers in each group. The table shows the strongest of the six shuffled fits.</p>
+<div class="tw"><table class="ct"><caption>Chance tests grouped by starting folio. Scores are mean log probabilities per letter.</caption>
+<thead><tr><th scope="col">Folios</th><th scope="col">Ciphers</th><th scope="col">Aligned signs</th><th scope="col">Reconstructed keys</th><th scope="col">Random keys, mean</th><th scope="col">Shuffled signs, best fit</th></tr></thead>
+<tbody>
+<tr><th scope="row">1&ndash;12</th><td>24</td><td>1,624</td><td>&minus;2.677</td><td>&minus;4.754</td><td>&minus;3.007</td></tr>
+<tr><th scope="row">13&ndash;24</th><td>10</td><td>1,204</td><td>&minus;2.741</td><td>&minus;4.850</td><td>&minus;2.855</td></tr>
+<tr><th scope="row">25&ndash;36</th><td>24</td><td>1,698</td><td>&minus;2.660</td><td>&minus;4.798</td><td>&minus;3.070</td></tr>
+<tr><th scope="row">37&ndash;48</th><td>22</td><td>1,551</td><td>&minus;2.733</td><td>&minus;4.806</td><td>&minus;3.044</td></tr>
+<tr><th scope="row">49&ndash;60</th><td>24</td><td>1,332</td><td>&minus;2.735</td><td>&minus;4.749</td><td>&minus;3.007</td></tr>
+<tr><th scope="row">61&ndash;72</th><td>22</td><td>1,541</td><td>&minus;2.945</td><td>&minus;5.088</td><td>&minus;3.195</td></tr>
+<tr><th scope="row">73&ndash;84</th><td>24</td><td>1,708</td><td>&minus;2.762</td><td>&minus;4.904</td><td>&minus;3.051</td></tr>
+<tr><th scope="row">85&ndash;96</th><td>26</td><td>1,860</td><td>&minus;2.637</td><td>&minus;4.858</td><td>&minus;3.144</td></tr>
+<tr><th scope="row">97&ndash;106</th><td>21</td><td>1,320</td><td>&minus;2.752</td><td>&minus;4.824</td><td>&minus;3.000</td></tr>
+</tbody></table></div>
+<p>The branch counts of the 79 trees on f. 63v give too short a text for the validator on their own. Adding their rule-derived letters to the ff. 61&ndash;72 group gave a score of &minus;2.940, above the best shuffled fit of &minus;3.225. The pooled group passed. The same couplet also appears in that group in an ordinary sign alphabet. For the separate comparison with the manuscript&rsquo;s red letters, see <a href="#trees">the tree script</a>.</p>
+<p>At f. 14v one sign stands for a class of undotted letters. On the earlier pilot alignment, 26.4% of aligned letters differed from their sign cluster&rsquo;s most frequent letter, above the validator&rsquo;s 10% limit. In the separate check on the class table, 722 of 756 aligned signs match their undotted letter class.</p>
+<p>The two ciphers with their own pages also passed individually. Those runs covered all 290 signs of <a href="ljs51f48r.html">f. 48r with its f. 21r continuation</a>, and 89 aligned signs of <a href="qaysarani1350.html">f. 106v</a>. They are counted separately from the folio groups above. The <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/ljs51corpus/validation_batches.json">full results</a> give the cipher IDs, scores and controls for each run. The <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/ljs51corpus/validate_batches.py">batch script</a> reproduces the tests.</p>
 
 <h2 id="trees"><span class="num">05</span> The tree script</h2>
 <p>On f. 63v the compiler copies a couplet sent in a sign cipher, then writes: &ldquo;I solved it, and I have written it in the tree
@@ -1625,13 +1644,13 @@ full (99r l.2-3): حديث قديم زوى نشر اريج شذا مندل عا�
 <p class="muted">The chain records, transcriptions, by-eye keys, translations, identity and codicology notes are in the repository (<code translate="no">targets/ljs51corpus/</code>; the page pass in <code translate="no">research/ljs51_pass/</code>). Manuscript images: University of Pennsylvania Libraries, public domain, via OPenn.</p>
 <!-- cite:start -->
 <details class="cite" id="cite"><summary>Cite this page</summary>
-<p class="citetext">Daniel Bourdeau, “The cipher casebook, Penn LJS 51 (c. 1330–1361)”, Cyphersolver, posted 27 November 2026, repository commit 44d521b44a, https://cyphersolver.com/ljs51corpus.html.</p>
-<p class="citebtns"><button type="button" data-copy="Daniel Bourdeau, “The cipher casebook, Penn LJS 51 (c. 1330–1361)”, Cyphersolver, posted 27 November 2026, repository commit 44d521b44a, https://cyphersolver.com/ljs51corpus.html.">Copy citation</button><button type="button" data-copy="@misc{cyphersolver-ljs51corpus,
+<p class="citetext">Daniel Bourdeau, “The cipher casebook, Penn LJS 51 (c. 1330–1361)”, Cyphersolver, posted 27 November 2026, repository commit 98a07f3199, https://cyphersolver.com/ljs51corpus.html.</p>
+<p class="citebtns"><button type="button" data-copy="Daniel Bourdeau, “The cipher casebook, Penn LJS 51 (c. 1330–1361)”, Cyphersolver, posted 27 November 2026, repository commit 98a07f3199, https://cyphersolver.com/ljs51corpus.html.">Copy citation</button><button type="button" data-copy="@misc{cyphersolver-ljs51corpus,
   author = {Daniel Bourdeau},
   title = {The cipher casebook, Penn LJS 51 (c. 1330–1361)},
   year = {2026},
   howpublished = {Cyphersolver},
-  note = {posted 27 November 2026, repository commit 44d521b44a},
+  note = {posted 27 November 2026, repository commit 98a07f3199},
   url = {https://cyphersolver.com/ljs51corpus.html}
 }">Copy BibTeX</button></p>
 </details>
