@@ -1,0 +1,130 @@
+{
+ "piste": "ljs51-qummi (c2) : la clé réciproque du qalam qummī donnée par Ibn al-Durayhim (rapportée par al-Qalqashandī, Ṣubḥ al-aʿshā 9:230, OpenITI Shamela0009429, PageV09P230-231) transforme-t-elle l'« argot » de 37v.12 en vers arabe ordinaire ?",
+ "date_utc": "2026-11-28",
+ "source_cle": "Qalqashandī : ك<->م, ا<->و, د<->ر, س<->ع, ف<->ي (prose) ; exemples محمد=كطكر, علي=سهف, مسعود=كعسار (=> ح<->ط, ل<->ه) ; vers mnémonique (sarīʿ) « كم أو حط صلا له در سع في بز خش غض ثج تدفق ». LJS 51 f.38v l.6 donne le même vers (corrompu) comme « le qummī » et précise que ظ en est absent.",
+ "keys": {
+  "qalqashandi_main": [
+   [
+    "ك",
+    "م"
+   ],
+   [
+    "ا",
+    "و"
+   ],
+   [
+    "ح",
+    "ط"
+   ],
+   [
+    "ل",
+    "ه"
+   ],
+   [
+    "د",
+    "ر"
+   ],
+   [
+    "س",
+    "ع"
+   ],
+   [
+    "ف",
+    "ي"
+   ],
+   [
+    "ب",
+    "ز"
+   ],
+   [
+    "خ",
+    "ش"
+   ],
+   [
+    "غ",
+    "ض"
+   ],
+   [
+    "ث",
+    "ج"
+   ],
+   [
+    "ت",
+    "ذ"
+   ],
+   [
+    "ن",
+    "ق"
+   ],
+   [
+    "ص",
+    "ظ"
+   ]
+  ],
+  "variante_sans_nq": [
+   [
+    "ك",
+    "م"
+   ],
+   [
+    "ا",
+    "و"
+   ],
+   [
+    "ح",
+    "ط"
+   ],
+   [
+    "ل",
+    "ه"
+   ],
+   [
+    "د",
+    "ر"
+   ],
+   [
+    "س",
+    "ع"
+   ],
+   [
+    "ف",
+    "ي"
+   ],
+   [
+    "ب",
+    "ز"
+   ],
+   [
+    "خ",
+    "ش"
+   ],
+   [
+    "غ",
+    "ض"
+   ],
+   [
+    "ث",
+    "ج"
+   ],
+   [
+    "ت",
+    "ذ"
+   ]
+  ]
+ },
+ "main_key": "qalqashandi_main",
+ "lecture_des_paires": "le vers se lit par paires de lettres successives : كم او حط ص[ظ/لا] له در سع في بز خش غض ثج تذ نق ; « تدفق » lu تذ نق (LJS 38v l.6 : تذ + finale ق/نو) ; ص apparié à ظ (absent du qummī selon LJS) donc ص inchangé",
+ "controls": 200,
+ "controls_method": "200 involutions aléatoires (13 paires tirées au hasard sur les 27 lettres sans ظ) appliquées au même texte",
+ "seed": 20261129,
+ "criterion": {
+  "ll": ">= meilleur témoin",
+  "lexcov_min": 0.7,
+  "lexcov_vs_best_control": true,
+  "succes_complet": "en plus vers scandable (mètre nommé)",
+  "si_echec": "le décodage est rapporté tel quel : il peut donner l'argot sāsānī « en clair » (non arabe), à comparer aux mots du glossaire 38r l.12-38v l.2 (descriptif)"
+ },
+ "corpus_lexique": "identiques à PREREG_c.json (gel v1)",
+ "declaration": "Avant ce gel, l'agent a appliqué de tête la clé aux deux premiers mots seulement (ركشذ -> دمخت, زوهشوثول -> بالخاجاه) pour vérifier la lecture des paires ; rien d'autre n'a été calculé. Le test (c) v1 (recuit) reste gelé séparément et non mesuré.",
+ "mesure_unique": "scripts/measure_c2.py, après confirmation que le hash du MANIFEST_c2 est posté"
+}
