@@ -3,10 +3,10 @@ melanges (meme generateur que mesure.py) vs logP par symbole du clair (cle de Da
 usage: diag_temoins.py modele.bin lam chaine n_temoins"""
 import sys, random
 from multiprocessing import Pool
-sys.path.insert(0, "/Users/bdudout/Documents/Veille cyber/dechiffrements-europe/ljs51-aveugle/scripts")
+sys.path.insert(0, "../../blind-confirmation/scripts")
 import solve as S
 from sigparse import read_sig
-AV = "/Users/bdudout/Documents/Veille cyber/dechiffrements-europe/ljs51-aveugle/"
+AV = "../../blind-confirmation/"
 model, lam, cid, nw = sys.argv[1], float(sys.argv[2]), sys.argv[3], int(sys.argv[4])
 toks, K, labels = read_sig(AV + f"transcriptions/{cid}.sig")
 def job(i):

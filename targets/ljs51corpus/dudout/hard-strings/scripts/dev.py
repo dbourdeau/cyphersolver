@@ -1,11 +1,11 @@
 """Developpement (chaine de dev grillee) : salex sur une chaine, accord avec le decodage par la cle de Daniel.
 usage: dev.py chaine lm lex rho lam R IT seed"""
 import sys, subprocess, difflib
-sys.path.insert(0, "/Users/bdudout/Documents/Veille cyber/dechiffrements-europe/ljs51-aveugle/scripts")
+sys.path.insert(0, "../../blind-confirmation/scripts")
 from common import LETTERS
 from sigparse import read_sig
-B="/Users/bdudout/Documents/Veille cyber/dechiffrements-europe/ljs51-22r1-61r3/"
-AV="/Users/bdudout/Documents/Veille cyber/dechiffrements-europe/ljs51-aveugle/"
+B="./"
+AV="../../blind-confirmation/"
 cid,lm,lex,rho,lam,R,IT,seed=sys.argv[1:9]; mode=sys.argv[9] if len(sys.argv)>9 else '0'
 toks,K,labels=read_sig(AV+f"transcriptions/{cid}.sig")
 inp=f"{len(toks)}\n{' '.join(map(str,toks))}\n{K}\n"

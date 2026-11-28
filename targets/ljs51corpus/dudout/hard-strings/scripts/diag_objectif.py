@@ -3,11 +3,11 @@ sous l'objectif du solveur de ljs51-aveugle ? Si oui -> echec de RECHERCHE ; si 
 Lit les scripts/modele de ljs51-aveugle en lecture seule."""
 import sys, os, json, subprocess
 from array import array
-AV = "/Users/bdudout/Documents/Veille cyber/dechiffrements-europe/ljs51-aveugle"
+AV = "../ljs51-aveugle"
 sys.path.insert(0, AV + "/scripts")
 from common import LETTERS, IDX, norm
 from sigparse import read_sig
-C = "/Users/bdudout/Documents/Veille cyber/dechiffrements-europe/cyphersolver-pr/clone"
+C = "../cyphersolver-pr/clone"
 REF = "d8ac608093e1149f9456eaa2c99bb456ca0abc92"
 V = 29
 T = array('f'); T.frombytes(open(os.environ.get("LM", AV + "/modele/lm4_sp.bin"), "rb").read())

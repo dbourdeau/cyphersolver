@@ -2,7 +2,7 @@
 """Modele 4-grammes lettres, interpolation fixe (0.70/0.20/0.07/0.03) sur comptes add-0.01.
 Deux variantes : avec espaces (sp) et sans espaces (nosp). Ecrit des tables float32 29^4."""
 import sys, os, struct, math
-sys.path.insert(0, "/Users/bdudout/Documents/Veille cyber/dechiffrements-europe/ljs51-aveugle/scripts")
+sys.path.insert(0, "../../blind-confirmation/scripts")
 from common import *
 from array import array
 outdir = sys.argv[1]; TRAIN = sys.argv[2].split(",")

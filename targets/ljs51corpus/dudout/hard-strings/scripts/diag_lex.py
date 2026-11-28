@@ -1,9 +1,9 @@
 """Diagnostic exploratoire : couverture lexicale du decodage par la cle de Daniel vs du decodage aveugle
 (piste 2), et score mot = somme log((c+0.5)/N) avec OOV = log(0.5/N) - 3."""
 import sys, math
-sys.path.insert(0, "/Users/bdudout/Documents/Veille cyber/dechiffrements-europe/ljs51-aveugle/scripts")
-B = "/Users/bdudout/Documents/Veille cyber/dechiffrements-europe/ljs51-22r1-61r3/"
-AV = "/Users/bdudout/Documents/Veille cyber/dechiffrements-europe/ljs51-aveugle/"
+sys.path.insert(0, "../../blind-confirmation/scripts")
+B = "./"
+AV = "../../blind-confirmation/"
 lex = {}
 for l in open(B + "modele/lex.tsv"):
     w, c = l.rstrip('\n').split('\t'); lex[w] = int(c)
