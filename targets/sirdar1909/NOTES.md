@@ -1,5 +1,7 @@
 # sirdar1909: Sirdar (Wingate) to Herbert, Khartoum to Cairo, 9 Jan 1909 (catalogue 2907)
 
+Status: in progress. Read in part (5 of 10 cipher words sure, 0.50, by the short-text floor); the write-up page is not yet written and the Escalation `print` step is still open (set 28 Nov 2026 at the merge of PR #1025).
+
 Durham University Library, Abbas Hilmi II papers, HIL/64/400. Promoted by the wave 16 Durham sweep
 (research/sweep_2026-11-15_wave16_durham), which also listed the cipher/clear pairs of the same file used here.
 
