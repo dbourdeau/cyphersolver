@@ -1,0 +1,147 @@
+{
+ "_note": "Option mapping of the plate, derived from the private key file (opened after the answers). Crop boxes, crops and images stay private (Estense images, private study; rule a says the private key file is never put in a repository).",
+ "plate": "rossi1537-2511b",
+ "private_key_sha256": "6e74f59668d6f67bcbd10af801a37abc178264e43a6b38cc1e96a186cd0c98f6",
+ "rule_sha256": "37d00bd6ed862d2aacc4ef17ba4cdebf602b4743482588d4a1ac231e04a5070f",
+ "seed_question_order": 20261126,
+ "seed_option_order": 15371,
+ "built": "2026-11-25",
+ "examples": {
+  "S": "V05 u12",
+  "8": "V05 u14",
+  "l": "V04 u1",
+  "P": "V02 u15"
+ },
+ "questions": {
+  "q01": {
+   "code": "T4",
+   "place": "V05 u1",
+   "control": false,
+   "expected_if_control": null,
+   "options": {
+    "forme 1": "S",
+    "forme 2": "8"
+   }
+  },
+  "q02": {
+   "code": "K2 contrôle S",
+   "place": "V01 u13",
+   "control": true,
+   "expected_if_control": "forme 2",
+   "options": {
+    "forme 1": "8",
+    "forme 2": "S"
+   }
+  },
+  "q03": {
+   "code": "K1 contrôle 8",
+   "place": "V01 u17",
+   "control": true,
+   "expected_if_control": "forme 1",
+   "options": {
+    "forme 1": "8",
+    "forme 2": "S"
+   }
+  },
+  "q04": {
+   "code": "T7",
+   "place": "V13 u28",
+   "control": false,
+   "expected_if_control": null,
+   "options": {
+    "forme 1": "8",
+    "forme 2": "S"
+   }
+  },
+  "q05": {
+   "code": "T9",
+   "place": "V06 u36",
+   "control": false,
+   "expected_if_control": null,
+   "options": {
+    "forme 1": "l",
+    "forme 2": "P"
+   }
+  },
+  "q06": {
+   "code": "T6",
+   "place": "V07 u48",
+   "control": false,
+   "expected_if_control": null,
+   "options": {
+    "forme 1": "8",
+    "forme 2": "S"
+   }
+  },
+  "q07": {
+   "code": "T3",
+   "place": "V03 u42",
+   "control": false,
+   "expected_if_control": null,
+   "options": {
+    "forme 1": "S",
+    "forme 2": "8"
+   }
+  },
+  "q08": {
+   "code": "T5",
+   "place": "V06 u13",
+   "control": false,
+   "expected_if_control": null,
+   "options": {
+    "forme 1": "8",
+    "forme 2": "S"
+   }
+  },
+  "q09": {
+   "code": "T2",
+   "place": "V02 u48",
+   "control": false,
+   "expected_if_control": null,
+   "options": {
+    "forme 1": "8",
+    "forme 2": "S"
+   }
+  },
+  "q10": {
+   "code": "T10",
+   "place": "V09 u24",
+   "control": false,
+   "expected_if_control": null,
+   "options": {
+    "forme 1": "l",
+    "forme 2": "P"
+   }
+  },
+  "q11": {
+   "code": "T1",
+   "place": "V02 u12",
+   "control": false,
+   "expected_if_control": null,
+   "options": {
+    "forme 1": "8",
+    "forme 2": "S"
+   }
+  },
+  "q12": {
+   "code": "K3 contrôle l",
+   "place": "V02 u18",
+   "control": true,
+   "expected_if_control": "forme 1",
+   "options": {
+    "forme 1": "l",
+    "forme 2": "P"
+   }
+  },
+  "q13": {
+   "code": "T8",
+   "place": "V03 u24",
+   "control": false,
+   "expected_if_control": null,
+   "options": {
+    "forme 1": "l",
+    "forme 2": "P"
+   }
+  }
+ }
+}
