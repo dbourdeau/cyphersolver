@@ -1,0 +1,30 @@
+{
+ "schema_version": 1,
+ "target": "ljs51corpus",
+ "title": "Penn LJS 51: why two long divided chains defeat a blind character-level solver, and a word-level solver tested on 10 fresh chains",
+ "conditions": {
+  "prior_solution": {
+   "exists": "yes",
+   "where": "targets/ljs51corpus/keys_eye and keys.tsv (D. Bourdeau), keys from the compiler's plaintext; blind character-level run in targets/ljs51corpus/dudout/blind-confirmation (#1055)",
+   "found": "found",
+   "used": false
+  },
+  "inputs": ["transcription"],
+  "attack": "ciphertext only",
+  "first_date": "2026-11-28",
+  "last_date": "2026-11-28",
+  "human_role": "Brice Dudout set the rules (frozen protocol, hash posted on #1023 before the one measurement, 200 controls); an AI agent diagnosed the failures, wrote the solver, ran it and wrote up.",
+  "models": ["Claude Opus 5.5 (Anthropic), agent run by Brice Dudout"]
+ },
+ "solution": [
+  {
+   "date": "2026-11-28",
+   "kind": "verification",
+   "technique": ["simulated annealing", "language model", "dictionary"],
+   "what": "Diagnosis of 22r.1 and 61r.3 with the existing keys (model failure, not key, plaintext or search). Then one frozen paired run on 10 never-measured divided chains: word-level objective vs the character-level solver of #1055, 200 shuffled-ciphertext controls each; freeze 3674e420234eeef1ee8fd3366b85ac2fae9e729a8397f80ab006fcae530e5bca posted on #1023 before the run.",
+   "result": "word-level 8 of 10 pass (≥ 0.85 and ≥ best control + 0.30), character-level 6 of 10; pre-registered threshold (+2) met exactly; no chain lost",
+   "credit": "dudout",
+   "role": "verification"
+  }
+ ]
+}
