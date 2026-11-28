@@ -194,13 +194,20 @@
    "kind": "verification",
    "what": "Regional literature read in open copies (Ruppersberg 1910, pp. 110-152; Köllner 1841, pp. 326-349; Klageschrift of 2/12 Mar 1674 in Mitteilungen des Historischen Vereins für die Saargegend 9, 1909, pp. 271-279; ADB; NDB): the count was arrested by the brigadier de Pilloy on Rochefort's written order and taken directly to Metz (not by Nancy), released through Count Tott; Homburg had been handed to the Elector of Trier in 1671, which identifies the 'Churfürst von Coblenz aus' of the Hague letter. No prior key, decipherment or edition found; Ruppersberg used letters at Koblenz ('Nassau-Saarbrückische Kriegssachen IX 10'), perhaps the old shelfmark of this file (not checked).",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-28",
+   "kind": "verification",
+   "what": "Integration review of PR #1008 (AI agent, for the maintainers): outcome method changed from 'key recovered based on adjacent plaintext' to 'read from existing decipherment' and first_break set to false, since both texts have a decipherment of the time (interlinear on fol. 290; fol. 293 copies the glossed letter fol. 279r-281r); the key rebuild is kept as the work added. Counts of reading_290.md recounted: 246 sure of 285; target share on sure words (246 + 56) / (285 + 80) = 302/365 = 0.827. Reading reviews recorded for both texts. Images not seen.",
+   "result": "worked"
   }
  ],
  "outcome": {
   "class": "read in part",
   "key": "partial",
-  "method": "key recovered based on adjacent plaintext",
-  "method_basis": "The key of system A was rebuilt from the decipherments of the time written between the lines of the received letters and from the clear-text drafts of the outgoing ones, reduced to a 24-cell table, and tested on cipher blocks and glossed groups not used to build it; the key of the Hague letter was learnt from the glosses of its recto and tested on those of its verso.",
+  "method": "read from existing decipherment",
+  "first_break": false,
+  "method_basis": "Both texts were deciphered at the time: fol. 290r-v carries an interlinear decipherment, and fol. 293r-v is a number-for-number copy of the glossed letter fol. 279r-281r, whose gloss gives its text. The work added here is the key rebuild: the key of system A rebuilt from those decipherments and from the clear-text drafts of the outgoing letters, reduced to a 24-cell table and tested on cipher blocks and glossed groups not used to build it; the key of the Hague letter learnt from the glosses of its recto and tested on those of its verso. Nothing new was read.",
   "contribution": [
    "transcription",
    "key recovered"
@@ -208,6 +215,7 @@
   "fraction_read": 0.827,
   "fraction_read_method": "measured",
   "fraction_read_source": "Certain cipher words over all cipher words counted in the two texts: (246 + 56) / (285 + 80) = 0.827 (fol. 290r-v recounted on the edited text, 27 Nov 2026; fol. 293r-v l. 1-41 counted before it was found to copy fol. 279r-281r, not redone). On numbers with a letter value, decryption_290.txt gives 1,320 of 1,396 (0.946).",
+  "fraction_read_unit": "words",
   "verification": [
    "statistical test",
    "contemporary decipherment",
@@ -268,7 +276,13 @@
     "language": "de",
     "state": "read in part",
     "read_share": 0.863,
-    "summary": "From The Hague, a brother of the captive count reports that the Prince of Orange and the imperial minister will write to Bournonville to reinforce Homburg, or to have the Elector (of Trier, who had held Homburg since 1671) do it from Koblenz; he praises the captive's resolution, says all who hold fiefs of Metz are concerned, mocks the letter of Rochefort (on whose written order the brigadier de Pilloy had the count arrested) which confuses vassals and subjects, and expects peace with England within days (the Treaty of Westminster was signed on 19 Feb 1674)."
+    "summary": "From The Hague, a brother of the captive count reports that the Prince of Orange and the imperial minister will write to Bournonville to reinforce Homburg, or to have the Elector (of Trier, who had held Homburg since 1671) do it from Koblenz; he praises the captive's resolution, says all who hold fiefs of Metz are concerned, mocks the letter of Rochefort (on whose written order the brigadier de Pilloy had the count arrested) which confuses vassals and subjects, and expects peace with England within days (the Treaty of Westminster was signed on 19 Feb 1674).",
+    "reading_review": {
+     "grade": "A",
+     "by": "integration review of PR #1008 (AI agent, for the maintainers); not a person",
+     "date": "2026-11-28",
+     "note": "Counts recounted on reading_290.md: 246 sure of 285 (26 probable, 9 restored, 4 unresolved). Reading follows the cipher and agrees with the interlinear decipherment of the time; read as sentences."
+    }
    },
    {
     "doc": "lasaar-nsb2-4683-fol293-1674-01-23",
@@ -280,11 +294,17 @@
     "language": "de",
     "state": "read in part",
     "read_share": 0.7,
-    "summary": "A copy, number for number, of the letter fol. 279r-281r (Vienna, 14 Jan 1674, received 23 Jan 1674; the copy is dated 4 Jan, perhaps the same date in old style, a hypothesis), whose text is known from its decipherment of the time: the writer answers Johann Ludwig's order of 18 Dec 1673 on the 'godless proceedings' at Saarbrücken; all advise denouncing the arrest to the Empress and the Empire, silence would be the greater prejudice; the only stated cause is the revers that was refused; he weighs bringing the case before the arbitration (at the Cologne peace talks), where some members favour the Emperor's party."
+    "summary": "A copy, number for number, of the letter fol. 279r-281r (Vienna, 14 Jan 1674, received 23 Jan 1674; the copy is dated 4 Jan, perhaps the same date in old style, a hypothesis), whose text is known from its decipherment of the time: the writer answers Johann Ludwig's order of 18 Dec 1673 on the 'godless proceedings' at Saarbrücken; all advise denouncing the arrest to the Empress and the Empire, silence would be the greater prejudice; the only stated cause is the revers that was refused; he weighs bringing the case before the arbitration (at the Cologne peace talks), where some members favour the Emperor's party.",
+    "reading_review": {
+     "grade": "B",
+     "by": "integration review of PR #1008 (AI agent, for the maintainers); not a person",
+     "date": "2026-11-28",
+     "note": "Copy of fol. 279r-281r (41 of 54 runs identical, not pre-registered); text known from that letter's gloss; 56 of 80 sure, counted before the copy was found. B: images not seen by the reviewer."
+    }
    }
   ],
   "key_file": "key.tsv",
-  "notes": "Images: supplied by the Landesarchiv Saarland, which allows their online publication with the credit line \"Landesarchiv Saarland, Nassau-Saarbrücken II Nr. 4683, fol. ...\"; none is committed here, only their SHA-256 (frozen/IMAGES-SHA256SUMS.txt). The key is reusable (key.tsv) for the other letters of the file.",
+  "notes": "Images: supplied by the Landesarchiv Saarland, which allows their online publication with the credit line \"Landesarchiv Saarland, Nassau-Saarbrücken II Nr. 4683, fol. ...\"; none is committed here, only their SHA-256 (frozen/IMAGES-SHA256SUMS.txt). The key is reusable (key.tsv) for the other letters of the file. Outcome (integration of PR #1008, 28 Nov 2026): read from existing decipherment, not a new reading; first_break false (the decipherment of the time covers both texts); the key rebuild and the finding that fol. 293 copies fol. 279r-281r are the work added. No write-up (NOTES Status line).",
   "codes_open": {
    "open": 11,
    "total": 61,
