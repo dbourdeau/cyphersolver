@@ -1,6 +1,6 @@
 # anker1814: Carsten Anker (London) to Prince Christian Frederik, leaf of 28 June 1814 in the 1811 symbol cipher (Riksarkivet RA-EA-5938)
 
-Status: read (Brice Dudout, 9 Nov 2026; key of the 1811 symbol cipher rebuilt from its decipherment of the time and validated on a held-out part, 0.950 vs best of 200 shuffled keys 0.019; leaf of 28 June 1814 read at 98.8% of cipher signs, 3 logograms restored [D.K.H.], one word unclear). New decipherment: the leaf is not in the printed edition.
+Status: read in part (18 Nov 2026, recounted over cipher words, sure words only: 47 of 64, 73.4%). Was read (Brice Dudout, 9 Nov 2026; key of the 1811 symbol cipher rebuilt from its decipherment of the time and validated on a held-out part, 0.950 vs best of 200 shuffled keys 0.019; leaf of 28 June 1814 read at 98.8% of cipher signs, 3 logograms restored [D.K.H.], one word unclear). New decipherment: the leaf is not in the printed edition.
 
 Contributed by Brice Dudout (L'Europe chiffrée), with Claude Opus 5.5 agents. Sources: **Arkivverket / Riksarkivet (Oslo)**,
 RA-EA-5938 Christian Frederik, on Arkivportalen; **C. J. Anker (ed.)**, *Christian Frederik og Carsten Anker's Brevveksling 1814,
@@ -69,3 +69,16 @@ found in a quick search. What is new is Anker's own proposal of 28 June 1814, in
 - [x] print: C. J. Anker's edition searched in full text; the leaf is not printed
 - [n/a] key-rebuild: the leaf reads at 98.8% with the frozen key
 - [n/a] retry: only one word is unclear
+
+## Read share over cipher words only, sure words only (18 Nov 2026)
+
+Rule applied as written in PR #728 (owner's decision of 16 Nov 2026, README Conventions "The read share counts cipher words only"): the share is counted over the words written in cipher, sure words only; a word marked probable {x}, restored [x] or unresolved ‹x›, or carrying one such letter, is a hole; holes are counted by words.
+
+The reading marks the cipher in bold and the clear in italics, so the count is over the bold words of
+`reading_p59.md`: **64 cipher words, 47 sure, 17 holes**. Holes: 13 words whose value rests on a new shape marked
+probable (N4 = {u} in afbr{u}dt, N{u}, sm{u}k, absol{u}t, {U}d, h{u}n, b{u}nden, st{u}kket, p{u}bliceret, K{u}n;
+N11 = {O}ranien; N13 = Care{k}ter; barred θ = Parti{e}s), the three N12 logograms restored as [D.K.H.], and ‹felv›.
+**47 of 64 = 73.4%**: class **read -> read in part**. The old 98.8% counted signs (249 of 252) with the probable signs
+as read. Main cause: the values of the new shapes, above all N4 = u (11 occurrences), are set on this leaf and are not
+in the frozen 1811 key. If N4 = u were tested on another leaf and added to the key, ten words would become sure
+(57 of 64, 89.1%), still under the bar. One reviewer, no image re-read. `research/reading_audit/v10_relabel.py` (PR #728 branch) does not reproduce this count: it does not treat {x} or ‹x› as holes, and this reading declares no cipher or clear markup.

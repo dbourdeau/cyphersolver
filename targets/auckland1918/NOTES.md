@@ -1,6 +1,6 @@
 # Auckland 1918: Consul-General Winslow and the US Navy, cables on unknown wireless signals (catalogue 757)
 
-Status: read (Brice Dudout, 28 Oct 2026; every word of both cables read, counted in letters: outgoing cable 94 of 94 letters certain; reply 305 of 305 letters read in their sense, 297 certain, 8 restored from their word (6 transmission errors, 2 overstruck letters), 0 unresolved; the final "OK" and the number 17527 are not interpreted; Daniel Bourdeau's 95% rule).
+Status: read in part (18 Nov 2026, recounted over cipher words, sure words only: cable 1 16 of 16, cable 2 41 of 50, 82.0%). Was read (Brice Dudout, 28 Oct 2026; every word of both cables read, counted in letters: outgoing cable 94 of 94 letters certain; reply 305 of 305 letters read in their sense, 297 certain, 8 restored from their word (6 transmission errors, 2 overstruck letters), 0 unresolved; the final "OK" and the number 17527 are not interpreted; Daniel Bourdeau's 95% rule).
 
 Contributed by Brice Dudout (Europe chiffrée), 28 Oct 2026. Published write-up:
 https://bdudout.github.io/europe-chiffree/en/documents.html#auckland-1918
@@ -44,3 +44,15 @@ Files: `transcription.txt`, `decryption.txt` (key under each line, garble table)
 The catalogue says the reply "could not be read by its recipient". Winslow's despatch of 4 March says only that he did
 not know which office in Washington it came from ("I am at a loss to know from whence it came, further than it was sent
 from Washington, D.C."); the key is the one he used himself, so he could most likely read it.
+
+## Read share over cipher words only, sure words only (18 Nov 2026)
+
+Rule applied as written in PR #728 (owner's decision of 16 Nov 2026, README Conventions "The read share counts cipher words only"): the share is counted over the words written in cipher, sure words only; a word marked probable {x}, restored [x] or unresolved ‹x›, or carrying one such letter, is a hole; holes are counted by words.
+
+Both cables are wholly in cipher. Cable 1 (18 Feb 1918): **16 of 16 words sure**, stays read. Cable 2 (28 Feb 1918):
+**50 words, 41 sure, 9 holes**: the eight words with a letter restored over a transmission garble (wireles[s], w[h]ile,
+[p]eriod, febr[u]ary, [f]ollowing, fort[y], [a]nd, [t]housand; `decryption.txt`, "Garbles") and peri[o]d, where the
+encipherer left out an O. **41 of 50 = 82.0%**: cable 2 and the target go **read -> read in part**. The old figures
+counted letters (297 of 305 certain). The restored letters were listed only in the header of `reading.md`; they are now
+marked in its text. The one-digit slip rule of 14 Nov 2026 does not apply: it covers codes of a surviving period key,
+and here the key word was recovered in this project. One reviewer, no image re-read.

@@ -5,7 +5,7 @@
  "documents": [
   {
    "id": "ra-ea5938-1814-p59",
-   "read": "read",
+   "read": "read in part",
    "shelfmark": "Arkivverket / Riksarkivet (Oslo), RA-EA-5938 Christian Frederik, F/Fc/L0217/0002, PDF p. 59 (\"ad Anker C. 101a\")",
    "date": "28 Jun 1814",
    "year": 1814,
@@ -119,10 +119,11 @@
    "kind": "reading",
    "what": "Leaf of 28 June 1814 (PDF p. 59): applicability fixed in advance (share of signs with a 1811 value 0.937 vs Bergen 1814 alphabet 0.369); decoded with the frozen key: 252 cipher signs, 249 certain or probable (98.8%), 3 logograms restored [D.K.H.], one word (felv) of uncertain sense.",
    "result": "worked"
-  }
+  },
+  {"date": "2026-11-18", "kind": "verification", "what": "Read share recounted over cipher words only, sure words only (README rule of PR #728), on the bold cipher words of reading_p59.md: 47 of 64 sure (0.734); class read -> read in part.", "result": "partial"}
  ],
  "outcome": {
-  "class": "read",
+  "class": "read in part",
   "key": "recovered",
   "method": "key recovered based on plaintext from external sources",
   "method_basis": "The key was learnt from another letter in the same cipher (31 Dec 1811) and its decipherment of the time, validated on a held-out part of that letter, then applied to the leaf of 28 June 1814, which has no decipherment.",
@@ -140,9 +141,9 @@
    "file": "validation.txt",
    "notes": "Contributor's pre-registered held-out test (not docs/_validate.py): 0.950 of characters vs best of 200 shuffled keys 0.019 on the 1811 letter p. 10 left column; thresholds fixed in advance. Declared limit: printed letter no. 32 had been read before, so the held-out part was transcribed by shapes, not blind."
   },
-  "fraction_read": 0.988,
+  "fraction_read": 0.734,
   "fraction_read_method": "measured",
-  "fraction_read_source": "reading_p59.md: 249 of 252 cipher signs certain or probable; the 3 others are one logogram restored as [D.K.H.].",
+  "fraction_read_source": "Cipher words only, sure words only (18 Nov 2026): 47 of 64 bold (cipher) words of reading_p59.md; holes: 13 words whose new-shape value is probable {x}, 3 restored [D.K.H.], ‹felv›. Before: 249 of 252 cipher signs (0.988), probable signs counted as read.",
   "provenance": "contributed",
   "credits": [
    {
@@ -173,15 +174,16 @@
     "reading": "reading_p59.md",
     "translation": "translation_p59.md",
     "language": "da",
-    "state": "read",
-    "read_share": 0.988,
+    "state": "read in part",
+    "read_share": 0.734,
     "summary": "The match between Princess Charlotte of Wales and the Prince of Orange is broken off for ever; Anker revives his old idea of marrying Christian Frederik to her, though she may not leave England, if the prince is not bound and Norway's horizon clears; the prince's engraved portrait will be published within a fortnight; the prince must not commit himself; Hardenberg agrees.",
     "reading_review": {
      "grade": "B",
      "by": "Brice Dudout (with Claude)",
      "date": "2026-11-09",
      "note": "read as Danish sentences joining the clear passages; the logogram restored [D.K.H.] fits all three places and the clear 'D. K. H.s'; one word (felv) unclear; one reader, no second reader"
-    }
+    },
+    "note": "18 Nov 2026, cipher words only, sure words only: 47 of 64 cipher (bold) words sure (73.4%). Holes: 13 words with a new-shape value marked {x} (N4 = u in 10 words, N11 = o, N13 = k, barred theta = e), the 3 [D.K.H.] logograms restored, ‹felv›. Before 0.988, counted in signs with probable signs as read."
    }
   ],
   "notes": "New decipherment: the leaf is not in the printed edition and has no decipherment in the file. The marriage project it concerns is known from Christian Frederik's printed letters to Anker (24 June, 11 Oct, 12 Dec 1814); the leaf gives Anker's own proposal of 28 June. No image is included (Arkivverket gives no explicit reuse licence)."
