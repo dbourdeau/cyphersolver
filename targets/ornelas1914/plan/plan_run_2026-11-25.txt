@@ -1,0 +1,89 @@
+lexicon words: 30521
+== T1 CMXV.35.3433.1-2 (Dieguez), key tests against the clear copy 3433.2-2
+  run 0: 23 groups, "Ayer" .. "por": aligned [descubrioseplanirapuato]
+  run 1: 7 groups, "por" .. "favor": aligned [cleroen]
+  run 2: 37 groups, "favor" .. "habiendose": counts differ: 37 groups, 39 letters [contrarevolucionbajolemareligionyfueros]
+  run 3: 29 groups, "habiendose" .. "recogiendoseles mas de cien": counts differ: 29 groups, 28 letters [procedidoaprehenderaloscuras]
+  run 4: 10 groups, "como" .. "que": right anchor not in copy
+  run 5: 12 groups, "que" .. "como": left anchor not in copy
+  run 6: 13 groups, "como" .. "de la": counts differ: 13 groups, 26 letters [documentosconlospromotores]
+  run 7: 13 groups, "de la" .. "el director": counts differ: 13 groups, 16 letters [contrarevolucion]
+  run 8: 29 groups, "el director" .. "ha sido": aligned [delmovimientocuraantoniocoRRea]
+  run 9: 20 groups, "ha sido" .. "con": aligned [aprehendidocastigare]
+  run 10: 4 groups, "con" .. "energica": aligned [mano]
+  run 11: 14 groups, "energica" .. "None": counts differ: 14 groups, 15 letters [losresponsables]
+  aligned groups: 83
+  K-ALLEN    A=0.024 ctrl_max=0.157 -> miss
+  K-ALLEN-X  A=0.024 ctrl_max=0.193 -> miss
+  K-C0-RC    A=0.012 ctrl_max=0.120 -> miss
+  K-C0-CR    A=0.012 ctrl_max=0.157 -> miss
+  K-A1-RC    A=0.072 ctrl_max=0.145 -> miss
+  K-A1-CR    A=0.072 ctrl_max=0.157 -> miss
+  K-A2-RC    A=0.000 ctrl_max=0.120 -> miss
+  K-A2-CR    A=0.000 ctrl_max=0.169 -> miss
+  K-REY-RC   A=0.000 ctrl_max=0.157 -> miss
+  K-REY-CR   A=0.024 ctrl_max=0.133 -> miss
+  K-21I      A=0.000 ctrl_max=0.060 -> miss
+  K-21II     A=0.000 ctrl_max=0.096 -> miss
+  K-SYL-RC   A=0.000 ctrl_max=0.108 -> miss
+  K-SYL-CR   A=0.000 ctrl_max=0.108 -> miss
+== T1-R key from the clear copy (aligned runs only)
+  distinct groups 33, conflicts 13: [('46', {'u', 'c'}), ('61', {'r', 'u'}), ('64', {'o', 't', 'c'}), ('66', {'o', 'n', 'a'}), ('74', {'o', 'i'}), ('80', {'r', 'a'}), ('82', {'i', 'n'}), ('84', {'t', 'p'}), ('87', {'i', 'd'}), ('88', {'o', 'c'}), ('90', {'e', 'a'}), ('94', {'e', 'g'}), ('97', {'d', 't'})]
+  tens-digit rows: ['4', '5', '6', '7', '8', '9']; families from shared units: [('4',), ('5',), ('6', '7'), ('8', '9')]; contradictions [('4', '5', ['8'], ['7'])]
+  letters seen with more than one units digit: {'n': {'6', '7'}, 'o': {'8', '9'}}
+  form structure (no conflict, families consistent): False; family conflicts: []
+  table (projected over families): 41=v 47=n 48=s 49=o 50=u 56=rr 57=t 58=s 61=r 63=p 66=n 67=m 69=l 71=r 73=p 76=n 77=m 79=l 83=h 85=i 86=e 88=o 89=b 93=h 95=i 96=e 98=o 99=b
+== T2 CMXV.35.3492.2-3 (Ornelas)
+  groups 61
+  K-DIEG not formed (T1-R table lacks the form structure)
+  K-ALLEN          W=0.115 ctrl_max=0.328 undefined=27/61 -> miss | C ? N C L C N C ? P D P ? ? ? C S ? ni ? ? O ? S ? no C ? ? ? N ? G S ? ? ? C B ? ? C ? ? L H ? coi ? C N N ? ? ? I ?
+  K-ALLEN-X        W=0.106 ctrl_max=0.328 undefined=21/61 -> miss | C ? N C H L C N C ? Q D P ? ? F C H S ? ni K R R O ? S ? no C ? ? ? N ? G S ? B B C B ? ? C ? ? L H ? cho I ? C N N R R ? ? I ?
+  K-ALLEN-X+DDN-dec W=0.030 ctrl_max=0.292 undefined=29/61 -> miss | M ? X M R H M ? M ? W P L ? ? K M R ? ? ? of Z Z A ? ? ? ? A M ? ? ? ? ? B ? ? G G M G ? ? M ? ? H R ? M R A O ? M ? X Z Z ? ? O ?
+  K-ALLEN-X+DDN-enc W=0.045 ctrl_max=0.242 undefined=26/61 -> miss | W ? T W L P W ? W ? Y J D ? ? K W L V ? ? A F H H I ? V ? ? I W ? ? ? ? ? B V ? G G W G ? ? W ? ? P L ? W lia ? W ? T H H ? ? A ?
+  K-C0-RC          W=0.665 ctrl_max=0.891 undefined=3/61 -> miss | C H ya P ferro car R I L R in it V I O lentamente cabe C ill A O ? Y X ferro car R I lid X heridos V C ya V I D X ya I A ? H X G J I D muertos muerto si V Y all
+  K-C0-CR          W=0.660 ctrl_max=0.891 undefined=3/61 -> miss | H T N ferro car R I L G I pit V I O lentamente cabe C ill A ? F ? Q ferro car R I L C D she rid os J C Y aac D S ya I W O W S N C H C D muertos muerto si H T T 
+  K-A1-RC          W=0.098 ctrl_max=0.531 undefined=7/61 -> miss | K A P J gun U S R S ? ? ? Q J U Z Q L M Y D F U Z Q D U O ? V Q C N U Z F F U M A X K ? D G ? A J D L fue C Y Z C Z ?
+  K-A1-CR          W=0.169 ctrl_max=0.429 undefined=7/61 -> miss | llo N J P U P U S Q J ? ? ? L L J Y Z N B N Y D H Y Z N D U L ? Z N L K Y Z T tu llo O L L ? Z P ? O J D B H uea Y Z L V ?
+  K-A2-RC          W=0.226 ctrl_max=0.484 undefined=7/61 -> miss | O R C Z E E P es K S ? ? ? B Z O U W G D N R D O U W rel L ? Y W Q to U D den R F O ? he ? R Z R G de P X N U Q U ?
+  K-A2-CR          W=0.234 ctrl_max=0.381 undefined=7/61 -> miss | V S P Z C E ces B Z ? ? ? V Z lut I H N R L L lut R E G ? U T K J lui I E Y S L L V ? G C ? S Z R ill E P T N U K Y ?
+  K-REY-RC         W=0.180 ctrl_max=0.361 undefined=9/61 -> miss | T D M J K apa B R B Q ? H Z J T ? pin X net ? P N A U ? Y P V D T ? E E A X D F T ? W K H D J ni E A P M X ? V ? ?
+  K-REY-CR         W=0.148 ctrl_max=0.344 undefined=14/61 -> miss | F L P J cama B Z J ? ? ? O J E ? N ? W X N U E ? nna I Q ? N R K E ? ? ? A Y L U F ? R C ? L J N ? ua P N X ? R Y H
+  K-21I            W=0.000 ctrl_max=0.115 undefined=41/61 -> miss | ? ? ? ? ? ? L ? ? ? ? G A Q ? ? L L ? X ? V M ? 4 L L ? X ? ? ? ? ? X 0 C H L L ? ? ? ? ? ? R R ? ? ? ? ? ? ? ? ? 4 ? ? ? M ? 0 8 ?
+  K-21II           W=0.047 ctrl_max=0.141 undefined=39/61 -> miss | 5 M ? ? cho ? O L L ? ? ? ? ? ? ? ? ? ? ? ? ? P ? ? ? ? P O ? ? ? ? ? ? ? ? ? ? O R M ? 5 6 V C H 8 M ? P ? ? O ? 2 ? ? ? ? I
+  K-SYL-RC         W=0.969 ctrl_max=0.980 undefined=0/61 -> miss | se rum ora por aqui Y la prensa tambien lo dice que bien E aesta mi general bill asir ras ein formar me loque A ya de cierto
+  K-SYL-CR         W=0.793 ctrl_max=0.980 undefined=0/61 -> miss | ando por M able aua qui idos mi dana X M accio ni W I M cien C E cia accio ni wear E pre T W peda D accio ni D D A cio ndo si nan noe M able O D ome I M cia A y
+== T2-P pencil line as a crib
+  crib esciertoquevieneestamigeneralavila: consistent positions (no group with two letters): []
+  crib ezciertoquevieneestamigeneralavila: consistent positions (no group with two letters): []
+== T4 CMXV.18.1770.1-4 (to Bonilla), ten-digit runs as five two-digit groups
+  groups ['12', '60', '38', '13', '95', '69', '44', '97', '38', '61']
+  K-A2-RC          W=0.200 ctrl_max=0.818 undefined=1/10 -> miss | C ? B L R is G B O
+  K-A2-CR          W=0.500 ctrl_max=0.818 undefined=1/10 -> miss | E ? lo Z F sil V
+  K-A1-RC          W=0.500 ctrl_max=0.700 undefined=1/10 -> miss | P ? eya B S le K
+  K-A1-CR          W=0.000 ctrl_max=0.800 undefined=1/10 -> miss | G ? Y U B X S B Y L L
+  K-REY-RC         W=0.000 ctrl_max=0.700 undefined=2/10 -> miss | C ? Z E D ? B I Z T
+  K-REY-CR         W=0.000 ctrl_max=0.600 undefined=2/10 -> miss | K ? N T S F B ? N F
+  K-21I            W=0.000 ctrl_max=0.273 undefined=6/10 -> miss | B 5 ? C ? 9 ? ? ? ?
+  K-21II           W=0.000 ctrl_max=0.273 undefined=6/10 -> miss | ? ? K ? ? ? L L ? K 5
+  K-C0-RC          W=0.600 ctrl_max=1.000 undefined=0/10 -> miss | G Y E C J uez U the rid ose C H
+  K-C0-CR          W=0.684 ctrl_max=0.939 undefined=1/10 -> miss | R ? mi J uez Q the rid os M H
+  K-SYL-RC         W=0.900 ctrl_max=1.000 undefined=0/10 -> miss | able tras cha C cion la ste qui lo C H se
+  K-SYL-CR         W=0.792 ctrl_max=1.000 undefined=0/10 -> miss | O R ni un ben cia les qui I mun A N
+  K-ALLEN-X        W=0.000 ctrl_max=0.800 undefined=1/10 -> miss | E H W B G C H ? I W C
+== T5 CMXV.14.1354.1 (Luque)
+  K-C0-RC: 37/44 numbers have a value (0.84)
+    [122=que] [7=?] TIENEN [83=m] [129=so] [136=re] [37=d] [58=x] SU LINEA A LOS KILOMETROS EN LA PARTE [149=mo] [114=rancho] [150=mi] [13=c] [127=ta] Y PARA [37=d] [134=ro] [42=z] [5=?] [78=e] [7=?] PRECISAMENTE DARAN [84=k] [7=?] FUEGO SOBRE [13=c] [149=mo] [49=u] [44=t] [88=rebeldes] [7=?] [37=d] [83=m] [117=ente] [42=z] [88=rebeldes] [7=?] [109=avanzar] [129=so] [57=w] [14=a] ESPERO MOMENTO OPORTUNO EN QUE NO HALLA [1=?] [128=su] [99=ferrocarril] [77=d] [150=mi] [118=ción] DIGALE [78=e] [144=no]
+  K-C0-CR: 37/44 numbers have a value (0.84)
+    [122=que] [7=?] TIENEN [83=e] [129=so] [136=re] [37=c] [58=s] SU LINEA A LOS KILOMETROS EN LA PARTE [149=mo] [114=rancho] [150=mi] [13=i] [127=ta] Y PARA [37=c] [134=ro] [42=k] [5=?] [78=n] [7=?] PRECISAMENTE DARAN [84=x] [7=?] FUEGO SOBRE [13=i] [149=mo] [49=k] [44=t] [88=rebeldes] [7=?] [37=c] [83=e] [117=ente] [42=k] [88=rebeldes] [7=?] [109=avanzar] [129=so] [57=j] [14=ch] ESPERO MOMENTO OPORTUNO EN QUE NO HALLA [1=?] [128=su] [99=ferrocarril] [77=d] [150=mi] [118=ción] DIGALE [78=n] [144=no]
+  K-SYL-RC: 21/44 numbers have a value (0.48)
+    [122=?] [7=?] TIENEN [83=un] [129=?] [136=?] [37=con] [58=en] SU LINEA A LOS KILOMETROS EN LA PARTE [149=?] [114=?] [150=?] [13=accion] [127=?] Y PARA [37=con] [134=?] [42=pues] [5=?] [78=ido] [7=?] PRECISAMENTE DARAN [84=usted] [7=?] FUEGO SOBRE [13=accion] [149=?] [49=s] [44=qui] [88=ya] [7=?] [37=con] [83=un] [117=?] [42=pues] [88=ya] [7=?] [109=?] [129=?] [57=em] [14=ado] ESPERO MOMENTO OPORTUNO EN QUE NO HALLA [1=?] [128=?] [99=m] [77=i] [150=?] [118=?] DIGALE [78=ido] [144=?]
+  K-SYL-CR: 21/44 numbers have a value (0.48)
+    [122=?] [7=?] TIENEN [83=ch] [129=?] [136=?] [37=es] [58=w] SU LINEA A LOS KILOMETROS EN LA PARTE [149=?] [114=?] [150=?] [13=b] [127=?] Y PARA [37=es] [134=?] [42=oso] [5=?] [78=y] [7=?] PRECISAMENTE DARAN [84=rr] [7=?] FUEGO SOBRE [13=b] [149=?] [49=la] [44=qui] [88=ya] [7=?] [37=es] [83=ch] [117=?] [42=oso] [88=ya] [7=?] [109=?] [129=?] [57=f] [14=pro] ESPERO MOMENTO OPORTUNO EN QUE NO HALLA [1=?] [128=?] [99=m] [77=i] [150=?] [118=?] DIGALE [78=y] [144=?]
+== T6 CMXV.17.1648.2-3 (Gabriel)
+  coded runs (typed groups joined between clear words): ['hdylqgbfvlsgylnpvdhregblht', 'dnvdblegbgyrsl', 'aghlepqpblqgebyl', 'brhthlnfyrbtvrhrerbl']
+  K-GA       W=0.000 ctrl_max=0.000 -> miss | ? ? ? ? F ? ? ? X ? ? ? ? ? X ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? V ? ? ?
+  K-HM       W=0.316 ctrl_max=0.487 -> miss | Q ni T B plo G T D pit ya G N Q C N P L T Q en Y G N L T N P L P I C D T K P Q T naba L T B P N lit L C Q E Q T yo I cle G C Q C N C L T
+  K-HER      W=0.421 ctrl_max=0.434 -> miss | H D ya Q G B F V A O G ya E P V D H in G bah U de V D ban G B G yio alg han P Q P B A Q G N B ya B I H U ha E F Y I B U V I H in iba
+  K-P        W=0.000 ctrl_max=0.000 -> miss | ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ?
+  K-DDN-dec  W=0.000 ctrl_max=0.553 -> miss | R P Q H W B G K S H ? B Q H X L S P R Z U B G H R N P X S P G H U B G B Q Z ? H I B R H U L W L G H W B U G Q H G Z R N R H X K Q Z G N S Z R Z U Z G 
+  K-DDN-enc  W=0.000 ctrl_max=0.461 -> miss | L J X P Y B G K ? P V B X P T D ? J L H U B G P L Z J T ? J G P U B G B X H V P O B L P U D Y D G P Y B U G X P G H L Z L P T K X H G Z ? H L H U H G 

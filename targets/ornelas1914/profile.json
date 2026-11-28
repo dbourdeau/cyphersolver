@@ -1,0 +1,263 @@
+{
+ "schema_version": 1,
+ "target": "ornelas1914",
+ "title": "Gral. Tomás Ornelas, Jefe de las Armas, Ciudad Juárez, to Federico González Garza, Chihuahua, 24 August 1914 (catalogue 1462): a 61-group telegram read with the fonds' two-digit syllabary card (23 of 24 cipher words, read under the short-text floor), after a frozen test of the card and a held-out test both missed",
+ "documents": [
+  {
+   "id": "CMXV.35.3492.2-3",
+   "read": "read",
+   "shelfmark": "Mexico City, CEHM-Carso (Centro de Estudios de Historia de México, Fundación Carlos Slim), Fondo CMXV (Archivo Federico González Garza), CMXV.35.3492.2-3 (record 13262)",
+   "date": "24 August 1914",
+   "year": 1914,
+   "country": "Mexico",
+   "route": "Gral. Tomás Ornelas, Jefe de las Armas, Ciudad Juárez -> Lic. Federico González Garza, Palacio de Gobierno, Chihuahua",
+   "places": {
+    "from": "Ciudad Juárez",
+    "to": "Chihuahua"
+   },
+   "language": "Spanish",
+   "pages": 1,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No decipherment on the form. An ink line in another hand at the foot asks the same question in clear; its last word is read Avila by three AI readers (one of them given only the line and the image, 27 Nov 2026) and Villa by one, which read it after its own decode. Read with the syllabary card CMXV.16.1557.1 image 0003 of the same fonds."
+   },
+   "length": {
+    "tokens": 61,
+    "distinct": 37,
+    "unit": "code groups",
+    "measured": true,
+    "file": "transcription_CMXV.35.3492.2-3.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "CEHM public viewer image, http://visor.cehm.org.mx/assets/docx/fondos/jzd/CMXV/35/3492/2-3/CMXV.35.3492.2-3.0001.jpg (record https://www.cehm.org.mx/Buscador/FichaBasica/13262?Tipo=A)",
+    "image_quality": "good",
+    "notes": "Pencil, clear. Two passes by one AI agent (pass B from fresh crops without opening pass A): 61 of 61 groups agree. A blind pass by a second AI agent given only the telegram image and the card image: 61 of 61 agree. A cold reviewer (a third AI agent) read them again from the image before opening the folder and reported 61 of 61 in agreement (its transcription was not saved). No person has checked."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "syllabic",
+   "nomenclator"
+  ],
+  "summary": "A 10 x 10 card of single letters (red) and syllables or short words (violet): a, able, accion, ado, al ... ya, yo, z. Group = row digit (rows labelled 1 3 5 7 9 0 2 4 6 8) then column digit (1-0). No h, k, v, ll or plain q on the card, so the writer spells biene, Billa, aya.",
+  "symbol_kind": "digits",
+  "digit_groups": {
+   "width": "2",
+   "separation": "mixed"
+  },
+  "distinct_symbols": 100,
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": false
+  },
+  "nomenclator": {
+   "present": true,
+   "entries": 75,
+   "kinds": [
+    "common words",
+    "word parts"
+   ],
+   "unread_groups": 0
+  },
+  "nulls": {
+   "present": false
+  },
+  "key_order": "partly alphabetical",
+  "word_division": "none",
+  "notes": "distinct_symbols counts the card's 100 cells; 37 distinct groups occur in this telegram. The card's cells run in alphabetical order across the rows. Groups are joined by hyphens on the form."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "No decipherment on the form; the CEHM record gives only 'EN CLAVE'. No issue or pull request names CMXV.35.3492 (checked 25 Nov 2026). Daniel Jalkut tried the card on another telegram, CMXV.34.3344.1, on 20 Nov 2026 (no reading). The index of Narváez 2019 (from our photographs) does not name Tomás Ornelas; Narváez 2025 not read. The maintainers named this telegram as a follow-up of targets/villa1914 on 26 Nov 2026 (commit a64929ac6c; issue #845), after this work was done; Ashton Allen's key from villa1914 gave no reading on it in the frozen run (W 0.115, and 0.106 for a model built from it).",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "images",
+   "key from archive"
+  ],
+  "attack": "key from archive",
+  "human_role": "Andrew Beling set the task and the rules (plan frozen before decoding, a blind second reader). AI agents fetched the images, transcribed, ran the tests, read and wrote. No person has read the groups, the card or the reading against the images. Use of the CEHM-Carso images with AI readers: Andrew Beling's decision of 25 Nov 2026.",
+  "tools": [
+   "CEHM viewer images",
+   "scripts in this folder (decrypt.py, measures.py, heldout_test.py, after_plan_terrazas_key.py, run_plan.py with common.py)"
+  ],
+  "models": [
+   "claude-opus-5-5"
+  ],
+  "first_date": "2026-11-25",
+  "last_date": "2026-11-27"
+ },
+ "solution": [
+  {
+   "date": "2026-11-25",
+   "kind": "access",
+   "what": "CMXV.35.3492.2-3 (19:07 EST), the key sheets CMXV.16.1557.1 (31 images, the card at 19:08) and 3492.1-3 (19:13) fetched from the CEHM image server (plain http), paced.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-25",
+   "kind": "control",
+   "what": "Plan written after the images of the telegram and of the reply 3492.1-3 had been seen and the ink line glimpsed (all declared in the plan); frozen by SHA-256 at 19:18:47 EST (plan/PLAN_2026-11-25.md). Local file times only.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-25",
+   "kind": "transcription",
+   "what": "Two passes by one AI agent, the second from fresh crops without opening the first: 61 of 61 groups agree.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-25",
+   "kind": "statistics",
+   "what": "Frozen run at 19:28:06 EST: 16 key variants from the fonds' cards and Ashton Allen's 1914 key; fit rule lexicon coverage W >= 0.80 and above all 1,000 permuted keys. The syllabary card read row then column came closest, W 0.969 against a control maximum of 0.980: no key fits (plan/plan_run_2026-11-25.txt). The ink line as a letter crib gave no consistent position; the planned hill-climb was not run.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-25",
+   "kind": "reading",
+   "what": "After the plan: the syllabary card applied unchanged gives one grammatical message (a rumour that Villa is coming to Juárez; Ornelas asks what truth there is in it). 24 cipher words, 23 read, one wrong group (sírvase). A frequency-weighted score chosen after the run does not separate the card from permuted cards (2.765 against a maximum of 2.894); with a fresh control draw the plan's own measure puts the card just above every control (0.9691 against 0.9688).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-25",
+   "kind": "verification",
+   "what": "Blind second reading by a separate AI agent (Claude Opus 5.5, own session), given only the telegram image and the card image: 61 of 61 groups and 100 of 100 card cells agree; the same Spanish. It places the wrong group in sírvase at 45 rather than 46 and counts aya as a hole (22 of 24).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-25",
+   "kind": "control",
+   "what": "Held-out test planned and frozen at 20:36:45 EST (plan/PLAN_2026-11-26.md) on three 1914 telegrams of the fonds found in the CEHM catalogue before their images were opened. The one with a decipherment of the time, CMXV.33.3233.1 (Terrazas to Ávila, 11 May 1914), missed (A = -1.455; rule 0.80). CMXV.33.3231.2-2 is two-digit but has no period text (the card gives no Spanish); 31.3079.1 is in letters. After the plan: 3233.1 has one group per letter of its period text and a letter key rebuilt from it has no conflict, so it is probably another system. No other telegram has been found in this card.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-25",
+   "kind": "verification",
+   "what": "Cold review by a third AI agent (Claude Opus 5.5) that built none of this: it read the 61 groups and the card from the images before opening the folder (it reported 61 of 61 and 100 of 100; its transcription was not saved), reran the scripts twice (same figures) and listed corrections, which were made (class, held-out wording, blind-reader description, timings, hole mark).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-27",
+   "kind": "verification",
+   "technique": [
+    "other"
+   ],
+   "what": "The frozen run's script (scripts/run_plan.py, scripts/common.py) and its inputs (plan/frozen_run/) added; rerun twice, it reproduces plan/plan_run_2026-11-25.txt except the print order of Python set elements in two lines for another telegram (T1); every figure is the same. Ashton Allen's key file is read from ALLEN_JSON, not copied.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-27",
+   "kind": "verification",
+   "technique": [
+    "other"
+   ],
+   "what": "AI reading review of the ink line at the foot: a fresh Claude Opus 5.5 agent, own session, given only a crop of the line and the full image, not told the candidates or the decode, transcribed '¿Es cierto que viene ésta mi general Avila?' (last word probable, about 80 percent; alternatives Avilu, Anila, Arila, Aula; not Villa).",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "class": "read",
+  "key": "not applicable",
+  "method": "read after matching with key from external sources",
+  "method_basis": "An existing key not tied to this telegram was found to fit and applied: a typed syllabary card of the time with no heading, date or owner's name, filed among the key sheets of another legajo that the CEHM dates 1911 (CEHM-Carso CMXV.16.1557.1, image 0003). It was found by testing 16 key variants in a frozen plan, and is used unchanged in Daniel Jalkut's transcription (targets/duron1911/siblings/syl.py), which a blind AI reader's own transcription of the card matches on all 100 cells. No other telegram has been found in it. The frozen test of the card on this telegram missed (its measure does not separate a syllabary from permuted cards) and a held-out test on another 1914 telegram missed; the reading was made after the first run.",
+  "contribution": [
+   "transcription"
+  ],
+  "parts": [
+   {
+    "label": "CMXV.35.3492.2-3, 61 groups",
+    "method": "read after matching with key from external sources",
+    "extent": "complete",
+    "basis": "reading_CMXV.35.3492.2-3.md and words_CMXV.35.3492.2-3.md: 24 cipher words, 23 read from the card unchanged, 1 hole (sírvase: group 46 = ra where va is wanted). biene, Billa and aya are read as written (the card has no v, h or ll); with aya as a hole, 22 of 24. Read under the short-text floor (README Conventions, 19 Nov 2026): fewer than 40 cipher words, at most 2 holes."
+   }
+  ],
+  "fraction_read": 0.958,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "words_CMXV.35.3492.2-3.md and scripts/decrypt.py: cipher words only, 23 of 24; the one hole is sírvase. With aya also counted as a hole, 22 of 24 (0.917). Marked read under the short-text floor (README Conventions, 19 Nov 2026: a document of fewer than 40 cipher words is read with at most 2 holes); both planned tests missed and the card was found by testing 16 variants.",
+  "codes_open": {
+   "open": 0,
+   "total": 37,
+   "tokens_open": 0
+  },
+  "verification": [
+   "none"
+  ],
+  "provenance": "contributed",
+  "texts": [
+   {
+    "doc": "CMXV.35.3492.2-3",
+    "label": "Ornelas to González Garza, Ciudad Juárez, 24 Aug 1914",
+    "transcription": "transcription_CMXV.35.3492.2-3.txt",
+    "decryption": "decryption_CMXV.35.3492.2-3.txt",
+    "reading": "reading_CMXV.35.3492.2-3.md",
+    "translation": "translation_CMXV.35.3492.2-3.md",
+    "language": "es",
+    "state": "read",
+    "read_share": 0.958,
+    "cipher_words": 24,
+    "holes": 1,
+    "floor_used": true,
+    "summary": "Ornelas reports a rumour, also in the press, that General Villa is coming to Ciudad Juárez, and asks González Garza what truth there is in it."
+   }
+  ],
+  "key_file": "key.tsv",
+  "credits": [
+   {
+    "who": "ajbeling",
+    "role": "solution",
+    "note": "Andrew Beling, with AI agents: the telegram transcribed twice and read with the fonds' syllabary card after a frozen test of the card missed; a blind second reading; a held-out test on another 1914 telegram (missed)",
+    "date": "2026-11-25"
+   },
+   {
+    "who": "ajbeling",
+    "role": "transcription",
+    "note": "Andrew Beling, with AI agents: the 61 groups, two passes and a blind pass",
+    "date": "2026-11-25"
+   },
+   {
+    "who": "jalkut",
+    "role": "key or decipherment used",
+    "note": "his transcription of the syllabary card CMXV.16.1557.1 image 0003 (targets/duron1911/siblings/syl.py)",
+    "date": "2026-11-20"
+   },
+   {
+    "who": "contemporary",
+    "role": "key or decipherment used",
+    "note": "the syllabary card of the fonds, CEHM-Carso CMXV.16.1557.1 image 0003 (no heading or date)",
+    "date": "[1911-1914]"
+   },
+   {
+    "who": "bourdeau",
+    "role": "pointer",
+    "note": "catalogue 1462 (the telegram listed as undeciphered) and the key sheets CMXV.16.1557.1",
+    "date": "2026-10-28"
+   }
+  ],
+  "gaps": [
+   {
+    "item": "sírvase (63 45 46 61 = si r ra se)",
+    "blocker": "too-short",
+    "detail": "group 46 (ra) where va is wanted; the card has no va (b + a = 31 11); one occurrence, no other telegram in this card"
+   },
+   {
+    "item": "the ink line's last word (read Avila)",
+    "blocker": "illegible",
+    "detail": "not a cipher word. Read Avila by three AI readers and Villa by one (after its own decode); the fourth reader, a fresh Claude Opus 5.5 agent given only a crop of the line and the full image and not told any reading (27 Nov 2026, 22:54 EST), read Avila, probable, and did not list Villa among the readings it could not exclude. No person has read it on the image."
+   },
+   {
+    "item": "no measure separates the card from permuted cards",
+    "blocker": "too-short",
+    "detail": "61 groups of a syllabary: permuted syllables also join into dictionary words (W 0.969 against a frozen-run control maximum of 0.980, 0.9691 against 0.9688 on a fresh draw; S 2.765 against 2.894)"
+   }
+  ]
+ }
+}
