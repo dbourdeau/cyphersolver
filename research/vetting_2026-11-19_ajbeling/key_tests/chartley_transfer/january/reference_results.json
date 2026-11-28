@@ -1,0 +1,67 @@
+{
+  "status": "pass",
+  "source_positions": {
+    "A": 108,
+    "B": 108
+  },
+  "reference_lengths": {
+    "inclusive": 487
+  },
+  "slot_counts": {
+    "exact_tile": 92,
+    "different_values": 1,
+    "A_only_label": 6,
+    "B_only_label": 5,
+    "both_unlabelled": 2,
+    "A_only_center": 2,
+    "B_only_center": 2
+  },
+  "tracks": {
+    "high_exact": {
+      "slots": 110,
+      "covered": 71,
+      "adjacent_pairs": 48,
+      "stream": "· c o u r so · a h · d i d · o l o u · · · t a · i · g · so u · r e · a c y e · · c h u r c · · · · · · o · h i · · r e · u so · g c o · · e r e · c e u i t h c a t h o l i c · e a · · · t r e · · · t · g u i t h · · which h ·"
+    },
+    "any_exact": {
+      "slots": 110,
+      "covered": 86,
+      "adjacent_pairs": 69,
+      "stream": "the c o u r so · a h e d i d · o l o u · · · t a k i · g the so u you r e m a c y e · the c h u r c · · · · u you o · h i m · r e · u so · g c o · · e r e · c e u i t h c a t h o l i c k e a · and · t r e · · · t · g u i t h the queenofengland which h e"
+    },
+    "value_agreement": {
+      "slots": 110,
+      "covered": 86,
+      "adjacent_pairs": 69,
+      "stream": "the c o u r so · a h e d i d · o l o u · · · t a k i · g the so u you r e m a c y e · the c h u r c · · · · u you o · h i m · r e · u so · g c o · · e r e · c e u i t h c a t h o l i c k e a · and · t r e · · · t · g u i t h the queenofengland which h e"
+    },
+    "reader_A": {
+      "slots": 110,
+      "covered": 94,
+      "adjacent_pairs": 81,
+      "stream": "the c o u r so c a h e d i d · o l o u · · i t a k i · g the so u you r e m a c y e · the c h u r c · e · · u you o · h i m i r e · u so i g c o · · e r e · c e u i t h c a t h o l i c k e a · and i t r e · · a t i g u i t h the queenofengland which h e"
+    },
+    "reader_B": {
+      "slots": 110,
+      "covered": 93,
+      "adjacent_pairs": 79,
+      "stream": "the c o u r so e a h e d i d · o l o u · · · t a k i this g the so u you r e m a c y e · the c h u r c e · · · u you o this h i m · r e · u so · g c o this · e r e this c e u i t h c a t h o l i c k e a · and · t r e · a · t · g u i t h the queenofengland which h e"
+    }
+  },
+  "comparisons": [
+    {
+      "track": "value_agreement",
+      "reference": "inclusive",
+      "measure": "subruns",
+      "observed_characters": 49,
+      "maximum_of_1000": 15,
+      "equal_or_better": 0
+    }
+  ],
+  "criteria": {
+    "coverage": true,
+    "pairs": true,
+    "beats_shuffles": true,
+    "long_match": true
+  }
+}
