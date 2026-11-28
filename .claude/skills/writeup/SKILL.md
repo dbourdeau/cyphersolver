@@ -105,6 +105,13 @@ go back to the reading whenever a step turns something up:
   bracketing of the nomenclator, or LM context (Dandini, Balbases, Kauderbach, nunzio1718).
 - `retry`: run every unread group and doubtful reading again with the extended key, and regrade them.
 
+A key recovered from the ciphertext is tested on held-out text by `tools/holdout/` (README Conventions, "Held-out
+tests are frozen and published before they are measured"): freeze, publish the freeze, measure once, commit the result,
+and `python tools/holdout/check.py <folder>` prints `result: valid`. The page states the score, best control and
+verdict, and says how the order was shown (git, RFC 3161, issue comment) or that it rests on the contributor's record
+for a test made before 27 Nov 2026. A key extended after its test (`key-rebuild`) is not covered by that test: test it
+on a new passage or say so.
+
 Then record the result in the folder's `NOTES.md`, which the checker parses:
 
 ```
