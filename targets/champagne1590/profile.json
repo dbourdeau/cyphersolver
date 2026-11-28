@@ -317,7 +317,16 @@
    "technique": [
     "manual reconstruction"
    ],
-   "what": "Dudout: blind shape plates on the places where Brackx and Beling disagree (dudout/). One decisive sign per place, boxed, beside examples of each candidate shape from sure places of the same hand; no value shown; three hidden controls per plate; rule, boxes and integration rule hashed before any thumbnail. Plates a and b (26 Nov) each failed one control (both r controls had a look-alike) and are used only as a restriction; plate c (27 Nov) passed 3 of 3. Counted when a, b and c agree: no. 25 l. 34 sign under the bar = 9, 'du Roy' (Beling); Gonnesse, {Ruelle}, d'Auvergne, commerce, puissance (Beling). Cipher words, proposed: no. 25 20 -> 21 of 22 (0.955), all 40 -> 41 of 46 (0.891); profile figures left unchanged. Flagged, not applied: no. 24 l. 9 first digit 3 on all three plates (36 = b, 'Budouic', against both readers). Not counted: l. 8 flatteries/platines, l. 27 treuvons/croions (plate a not conclusive). No image or thumbnail included.",
+   "what": "Dudout: blind shape plates on the places where Brackx and Beling disagree (dudout/). One decisive sign per place, boxed, beside examples of each candidate shape from sure places of the same hand; no value shown; three hidden controls per plate; rule, boxes and integration rule hashed before any thumbnail. Plates a and b (26 Nov) each failed one control (both r controls had a look-alike) and are used only as a restriction; plate c (27 Nov) passed 3 of 3. Counted when a, b and c agree: no. 25 l. 34 sign under the bar = 9 (the box covers the last digit only; 'du Roy' (Beling) rests on the digit count in the image, five digits, bar over the last 9 only); Gonnesse, {Ruelle}, puissance (Beling); d'Auvergne, commerce (Beling, supported, not settled: no valid r control). Cipher words, proposed: no. 25 20 -> 21 of 22 (0.955), all 40 -> 41 of 46 (0.891); profile figures left unchanged. Flagged, not applied: no. 24 l. 9 first digit 3 on all three plates (36 = b, 'Budouic', against both readers). Not counted: l. 8 flatteries/platines, l. 27 treuvons/croions (plate a not conclusive). No image or thumbnail included.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-27",
+   "kind": "verification",
+   "technique": [
+    "manual reconstruction"
+   ],
+   "what": "Integration review of PR #1029: SHA256SUMS 21/21; plates a, b, c rescored from their revealed keys (a 2/3, b 2/3, both r controls failed; c 3/3), same as results.tsv. Gallica f85 at native resolution: 43 38 93 and a barred 9, bar over the last 9 only, no sixth digit (Beling). l. 34 closed on that digit count, the plate confirming the 9; T8 and T9 supported, not settled. Cipher words 40 -> 41 of 46 (0.87 -> 0.891); no. 25 20 -> 21 of 22 (0.909 -> 0.955). Plate c recorded in outcome.sign_check. Class unchanged. Later commits of the PR (plate d, open look on Paris, T3 as a 36-for-56 slip) not checked; their 42 of 46 not applied.",
    "result": "partial"
   }
  ],
@@ -342,9 +351,9 @@
    "key extended or corrected"
   ],
   "class": "read in part",
-  "fraction_read": 0.87,
+  "fraction_read": 0.891,
   "fraction_read_method": "measured",
-  "fraction_read_source": "research/reading_audit/v10_relabel.py share on the three reading files, pooled: texts/n25_reading.md (Brackx) 892 words, 72 holes: 0.925; texts/n24_reading.md (Beling) 761 words, 34 holes: 0.957; texts/n60_reading.md (Beling) 45 words, 3 holes: 0.938; together 1,698 words and 109 holes: 0.940. Bracketed abbreviation expansions, doubtful and supplied words all count as holes. No. 78 (one unread group in another code) is not in the figure. 16 Nov 2026 (read share over cipher words only, README Conventions): replaced by the cipher-word share over the three letters, 40 of 46 (no. 25 20 of 22, no. 24 18 of 21, no. 60 2 of 3, Launan counted not sure), counted by hand; the 0.940 above was measured over each reading with its clear text and is not the measure. No. 78 is not in the figure.",
+  "fraction_read_source": "research/reading_audit/v10_relabel.py share on the three reading files, pooled: texts/n25_reading.md (Brackx) 892 words, 72 holes: 0.925; texts/n24_reading.md (Beling) 761 words, 34 holes: 0.957; texts/n60_reading.md (Beling) 45 words, 3 holes: 0.938; together 1,698 words and 109 holes: 0.940. Bracketed abbreviation expansions, doubtful and supplied words all count as holes. No. 78 (one unread group in another code) is not in the figure. 16 Nov 2026 (read share over cipher words only, README Conventions): replaced by the cipher-word share over the three letters, 40 of 46 (no. 25 20 of 22, no. 24 18 of 21, no. 60 2 of 3, Launan counted not sure), counted by hand; the 0.940 above was measured over each reading with its clear text and is not the measure. No. 78 is not in the figure. 27 Nov 2026 (integration review of PR #1029, solution step of that date): 41 of 46 (no. 25 21 of 22 with the l. 34 run read 'du Roy' on the digit count in the Gallica image, confirmed by blind plate 2511c; no. 24 18 of 21, no. 60 2 of 3).",
   "key": "partial",
   "codes_open": {
    "open": 1,
@@ -358,7 +367,7 @@
    "statistical test",
    "independent verification"
   ],
-  "notes": "No. 25 read in part with Nevers key no. 25 (Brackx, issue #96), with a second reader (Beling) who differs in about 30 places, among them the end of the l. 34 run (Roy or La Noue); nos. 24 and 60 transcribed and deciphered by one reader (Beling, PR #422); no. 78 unread. The one figure without a value is the isolated 3 in no. 25. Split on 14 Oct 2026: no. 23 is bienvenut1590, the key no. 57 letters are lauriere1593.",
+  "notes": "No. 25 read in part with Nevers key no. 25 (Brackx, issue #96), with a second reader (Beling) who differs in about 30 places, among them the end of the l. 34 run (Roy or La Noue; Roy on the digit count in the image, 27 Nov 2026); nos. 24 and 60 transcribed and deciphered by one reader (Beling, PR #422); no. 78 unread. The one figure without a value is the isolated 3 in no. 25. Split on 14 Oct 2026: no. 23 is bienvenut1590, the key no. 57 letters are lauriere1593.",
   "gaps": [
    {
     "item": "No. 25: 72 holes in the reading (doubtful clear words, abbreviation expansions) and the isolated figure 3 in the Soissons run",
@@ -366,14 +375,14 @@
     "detail": "contrast-enhanced enlargements did not resolve them (Brackx); the second reader (Beling, 11 Nov 2026) agrees on 14 of the 37 marked words, reads 13 otherwise and leaves 10 doubtful for both; a reader of 16th-century French hands is needed"
    },
    {
-    "item": "No. 25 l. 34: the run ends 'du M. de La Noue' (barred 39, Brackx) or 'du [Roy]' (barred 9, Beling; the independent verifier's look at the Gallica image agrees with Beling)",
+    "item": "No. 25 l. 34: read 'du [Roy]' since 27 Nov 2026: five digits on the image, bar over the last 9 only (Beling; 12 Nov look and the review of PR #1029; plate 2511c confirms the 9); Brackx not yet asked",
     "blocker": "illegible",
-    "detail": "two readers disagree on the same strokes; Michael Brackx is to be asked to look again (not yet asked); both readings are shown until then"
+    "detail": "the two readers read the same strokes differently; Michael Brackx is to be asked to look again (issue #96); his reading 'du M. de La Noue' (barred 39) stays in his files"
    },
    {
-    "item": "Nos. 24 and 60: one reader (Beling, 11 Nov 2026); 15 doubtful places and one unread passage in no. 24, two doubtful words in no. 60; the barred 17 in no. 24 line 20 and 'au s[ieu]r de Launay' in no. 60 are single looks; who Ludouic and Launay were",
+    "item": "Nos. 24 and 60: one reader (Beling, 11 Nov 2026); 15 doubtful places and one unread passage in no. 24, two doubtful words in no. 60; the barred 17 in no. 24 line 20 and 'au s[ieu]r de Launay' in no. 60 are single looks; who Ludouic and Launay were; no. 24 l. 9, first digit of the fifth group answered 3 on three blind plates (Budouic, against both readers' 56)",
     "blocker": "illegible",
-    "detail": "a second reader of the clear text is the next step; the names are not found on the web (beling/names_check.md, four searches)"
+    "detail": "a second reader of the clear text is the next step; the names are not found on the web (beling/names_check.md, four searches); a third reader should look at no. 24 l. 9"
    },
    {
     "item": "No. 78 (f. 111r), one group of about six mixed signs",
@@ -421,7 +430,7 @@
    {
     "who": "dudout",
     "role": "verification",
-    "note": "blind shape plates (3 controls each; plate c 3 of 3) on ten places where the two readers of no. 25 disagree: the l. 34 run ends in a barred 9, 'du Roy' (Beling, not Brackx's barred 39); Gonnesse, {Ruelle}, d'Auvergne, commerce, puissance settled for Beling's reading; no. 24 'Budouic' flagged; Brice Dudout with Claude Opus 5.5 agents; dudout/",
+    "note": "blind shape plates (3 controls each; plate c 3 of 3) on ten places where the two readers of no. 25 disagree: the sign under the bar at the end of the l. 34 run confirmed as a 9 ('du Roy', Beling, which rests on the five digits in the image); Gonnesse, {Ruelle}, puissance for Beling's reading, d'Auvergne and commerce supported (no valid r control); no. 24 'Budouic' flagged; Brice Dudout with Claude Opus 5.5 agents; dudout/",
     "date": "2026-11-27"
    }
   ],
@@ -435,9 +444,9 @@
     "translation": "texts/n25_en.md",
     "language": "fr",
     "state": "read in part",
-    "read_share": 0.909,
+    "read_share": 0.955,
     "summary": "An unsigned newsletter to the duc de Nevers from the royal army, 5 June 1590: Paris pressed by famine and division, the legate and the Spanish ambassador at the end of their resources, the Pope awaiting the Holy Spirit, Mayenne gathering weak forces, Villeroy working for peace in vain; in cipher, the union, Chaseron's affairs, the League, and the comte de Soissons's distrust, of M. de La Noue in Michael Brackx's reading shown here, of the King in Andrew Beling's second reading.",
-    "note": "25 Oct 2026: Brackx's reading with Nevers key no. 25; 0.925 of words read as sense (v10); one cipher figure unread. 11 Nov 2026: a second reader (Beling, beling/transcription/n25_second_reading.md, compared in beling/results/n25_compare.md) differs in about 30 places; the text shown is Brackx's, unchanged. At l. 34 Beling reads 38 93 and a barred 9, 'du [Roy]', where Brackx has barred 39, 'du M. de La Noue'; the independent verifier's look at the image agrees with Beling. Beling's other alternatives, one reader each: 'elle demeura a Gonnesse' for 'd'ille derechef a Compiegne', 'd'Auvergne' for 'd'Arques', 'a la puissance' for 'a la misericorde'. The page has 58 in 'l'union'; 56 is an emendation of the encipherer. 16 Nov 2026, read share over cipher words only (README Conventions), by hand, sure words only, holes by words: the six cipher runs of brackx2026/n25_groups.md hold 22 words: l'union (1), de chaseron (2), seruice (1), la ligue (2), 'comte de Soissons [?] il se defie du M[onsieur] de la noue' (the unread figure 3 is one hole) and 'de la defiance du comte de Soissons' (7). 20 of 22 read, 0.909 (0.925 over the whole letter, clear included, not the measure). The end of the l. 34 run (barred 39, 'M. de la Noue', Brackx; barred 9, '[Roy]', Beling, with the independent verifier's look agreeing) is not sure, so it counts as one hole, the least number of words the competing readings show (an estimate); the 58 for 56 in l'union is read as the encipherer's slip against the surviving key sheet (one digit, the other groups of the word read), and the supplied [de] before it sits in clear text and is not counted. The tool v10_relabel.py cannot reproduce this figure: the reading file carries no cipher marks, so no declaration is added and the file is Brackx's, unchanged. Under 95%: read in part, as before.",
+    "note": "25 Oct 2026: Brackx's reading with Nevers key no. 25; 0.925 of words read as sense (v10); one cipher figure unread. 11 Nov 2026: a second reader (Beling, beling/transcription/n25_second_reading.md, compared in beling/results/n25_compare.md) differs in about 30 places; the text shown is Brackx's, unchanged. At l. 34 Beling reads 38 93 and a barred 9, 'du [Roy]', where Brackx has barred 39, 'du M. de La Noue'; the independent verifier's look at the image agrees with Beling. Beling's other alternatives, one reader each: 'elle demeura a Gonnesse' for 'd'ille derechef a Compiegne', 'd'Auvergne' for 'd'Arques', 'a la puissance' for 'a la misericorde'. The page has 58 in 'l'union'; 56 is an emendation of the encipherer. 16 Nov 2026, read share over cipher words only (README Conventions), by hand, sure words only, holes by words: the six cipher runs of brackx2026/n25_groups.md hold 22 words: l'union (1), de chaseron (2), seruice (1), la ligue (2), 'comte de Soissons [?] il se defie du M[onsieur] de la noue' (the unread figure 3 is one hole) and 'de la defiance du comte de Soissons' (7). 20 of 22 read, 0.909 (0.925 over the whole letter, clear included, not the measure). The end of the l. 34 run (barred 39, 'M. de la Noue', Brackx; barred 9, '[Roy]', Beling, with the independent verifier's look agreeing) is not sure, so it counts as one hole, the least number of words the competing readings show (an estimate); the 58 for 56 in l'union is read as the encipherer's slip against the surviving key sheet (one digit, the other groups of the word read), and the supplied [de] before it sits in clear text and is not counted. The tool v10_relabel.py cannot reproduce this figure: the reading file carries no cipher marks, so no declaration is added and the file is Brackx's, unchanged. Under 95%: read in part, as before. 27 Nov 2026 (integration review of PR #1029): read_share 0.909 -> 0.955 (21 of 22 cipher words), the l. 34 run read 'du Roy' on the digit count in the Gallica image (five digits, bar over the last 9 only), confirmed by blind plate 2511c; Brackx's barred 39 stays in his files; state unchanged.",
     "reading_review": {
      "grade": "B",
      "by": "Claude Opus 5.5",
@@ -513,6 +522,31 @@
    }
   ],
   "key_file": "texts/key25.md",
-  "provenance": "mixed"
+  "provenance": "mixed",
+  "sign_check": [
+   {
+    "date": "2026-11-27",
+    "checker": "Brice Dudout",
+    "checker_kind": "project",
+    "model_roles": [
+     "rule",
+     "thumbnails",
+     "sheet",
+     "scoring",
+     "remarks"
+    ],
+    "signs_checked": 9,
+    "controls": 3,
+    "controls_passed": 3,
+    "as_transcribed": 0,
+    "corrected": 6,
+    "unresolved": 0,
+    "not_counted": 0,
+    "rule": "dudout/sign_check_2511/plate_c/REGLE-SELECTION.md (27 Nov 2026, before the answers); summary in NOTES, 27 Nov 2026",
+    "rule_hash": "e2ad3768aa4ef2a9ecb1a791d59afa2aa5e09e9eacb33a7583837db81bfd6c09",
+    "sheet_faults": "plates a and b (26 Nov) each failed their r control (answers c and none) and are used only as a restriction; plate b K1 box sat between two figures (remark); plate c has no r control, so T8 (u/r) and T9 (c/r) are not controlled for the r confusion",
+    "note": "Plate 2511c, Gallica btv1b525245007 f85 (no. 25) and f83 (no. 24). Nine targets where Brackx and Beling disagree; all nine answers differ from Brackx's transcription (and T3 from both readers). Counted by the a/b/c agreement rule: T1 9 (l. 34; the box covers the last digit only, the digit count is from the image), T4 G (Gonnesse), T6 u ({Ruelle}, probable), T8 u (d'Auvergne), T9 c (commerce), T10 p (puissance). Not applied: T3 3 (Budouic, against both readers), T5 pl and T7 c (plate a not conclusive). Answers dudout/sign_check_2511/plate_c/reponses/ (sha256 fcd39648...); results dudout/sign_check_2511/results.tsv."
+   }
+  ]
  }
 }
