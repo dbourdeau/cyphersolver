@@ -171,3 +171,33 @@ Collision check 12 Nov 2026 (origin/main, live repository, open and recent PRs, 
   Dudout's v3 and v4 differ from v6 only by token additions (v6 is a superset), so no other known key of the series is left to try.
 - Images not compared: the ASF server reset every connection from the checking session. The reviewer's 150-sign spot check is the
   contributor's. No independent blind transcription exists (workable once the images are reachable): the target stays in progress.
+
+## 19 Nov 2026: the sign 2 is two signs (Brice Dudout, on WAINUT's transcription)
+
+The transcription and the reading are WAINUT's (lccompany). Our corrections bear on his transcription: we change no token.
+- On the ASF images, the `2` of the transcription is two signs: a looped ʒ (c + vowel; the bare 2 = o is also a ʒ) and a
+  flat 2 (b + vowel).
+- The shape of each of the 70 `2` is in `sign2_forms.tsv`. This is an AI survey: not blind, one observer.
+- Eight signs of 666 were checked by Brice Dudout on blind sheets with controls 2/2: campo, verificata, loco, -sco and the bare
+  2 of "quatro o" (X2), cosa v02 and pace v10 (x3), periculo bv08 (x4). All eight are ʒ, as expected.
+- The b side in 666 (Bufaloro, borgo, bastardo, bon, Binasco: flat 2) was seen only on sheet X, which does not count (one
+  control wrong). In 1514 it was confirmed on sheet x4.
+- With the proposal v6b (`../pandolfini1514/KEY_V6B_PROPOSAL.md`), six repairs of `reading_666.md` ({c/B}ufaloro ×2,
+  {co/bo}rgo, {c/b}astardo, {c/b}on, {ci/Bi}nasco) become direct readings. On our count of the reading (817 units),
+  certain alone goes from 74.3% to 75.0%, and read by sense stays 94.5%. This is measured on our copy: `reading_666.md`,
+  `decryption_666.txt` and `key.tsv` are not changed.
+- **The letter stays read in part.** Level: AI decipherment, human-checked on a sample of signs. Keys v6 and v6b have never
+  been measured.
+- No image or derivative is included (ASF MAP CXXXVII, doc. 666).
+- **Sign-check record (held here until #789).** The record was first filed as `outcome.human_check`; it is withdrawn from
+  `profile.json` because the schema defines `human_check` as a check without AI help, and these sheets were prepared by AI
+  agents. It will go into `outcome.sign_check` once #789 is merged; `sign_check_pending.json` holds the entries in that format
+  (no schema field refers to it yet). Checker Brice Dudout (project); a model wrote the rules, cut the thumbnails, built and
+  scored the sheets. X2: 5 signs, controls 2/2 (campo r05, bare 2 of "quatro o" r07, verificata r14, loco b04, -sco b06);
+  x3: 2 signs (cosa v02, pace v10) and x4: 1 sign (periculo bv08), on sheets shared with pandolfini1514 (controls 2/2 each).
+  All eight looped ʒ, as transcribed; no token changed.
+- **Under the floor.** #789 asks for at least 8 target signs per sheet. We apply the floor **per target, not per sheet**: only
+  the signs of pandolfini1515 count. X2 has 5, x3 has 2 (9 on the sheet with 7 of pandolfini1514) and x4 has 1 (16 on the sheet
+  with 15 of pandolfini1514), so none reaches it; sheets are not added together. The sign check of pandolfini1515 is under the floor: the eight signs agree with the
+  transcription, but they do not count as a sign check of this target.
+- The checker of every sheet is the author of the PR; the label claims nothing about the key.

@@ -4,10 +4,12 @@ Bare letter: no decipherment of the time found. Key: `key_v3.json` (frozen, part
 
 ## Status
 
-**Read in part: about 168 cipher words, about 77% read by sense (certain + probable)**, 0 restored. The counts are approximate (word boundaries are not written in the cipher):
-- block 1 (L1-L6): about 74 words: 41 certain, 27 probable, 0 restored, 6 unresolved = about 92%;
-- block 2 (L7-L8): about 24 words: 9 certain, 4 probable, 11 unresolved = about 54%;
-- block 3 (L9-L14): about 70 words: 30 certain, 18 probable, 22 unresolved = about 69%.
+**Read in part: 84 certain, 45 probable, 0 restored, 17 unresolved groups; at 3 words a group about 180 cipher words, 46.7% sure alone (rule #728).** With probable words, by sense (not the #728 rule): 129/180 = 71.7%. Counted from the marks below (recount of 19 Nov 2026, see NOTES.md); the counts are approximate (word boundaries are not written in the cipher):
+- block 1 (L1-L6): 46 certain, 22 probable, 0 restored, 5 unresolved groups = about 83 words, 55.4% sure alone (81.9% by sense);
+- block 2 (L7-L8): 7 certain, 4 probable, 3 unresolved groups = about 20 words, 35.0% sure alone (55.0% by sense);
+- block 3 (L9-L14): 31 certain, 19 probable, 9 unresolved groups = about 77 words, 40.3% sure alone (64.9% by sense).
+
+The first count (about 168 words: 80 certain, 49 probable, about 39 unresolved; blocks of about 74, 24 and 70 words, about 77% by sense) was approximate and is replaced by this one.
 
 Below the 95% rule. Two transcription defects are tolerated in the reading by sense and declared: a superscript shifted by one sign to its neighbour, and the confusion of the shapes δ/d (g/r).
 

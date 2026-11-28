@@ -18,3 +18,12 @@ sign it stands over (in this copy it is often shifted by one sign; the transcrip
 - `END` = the closing marks of a cipher block (`Θ . d .`, `. D d .`, `. 0 . d .`, and similar).
 - `/` = a slash written in the line. `{INS}` = the mark 0/10 in 674r r18, keyed to the line at the foot of the page (`r19ins`).
 - `?` after a token = doubtful shape; `?` alone = an unidentified shape.
+
+## Addendum, 19 Nov 2026 (Brice Dudout, on WAINUT's transcription)
+
+`2` covers two shapes that this transcription does not tell apart: the looped **ʒ** (the base runs down under the line, or
+runs long under the next sign) and the **flat 2** (a short base sitting on the line). The tokens are not changed. The
+shape of each of the 70 `2` of `transcription_666.txt` is listed in `sign2_forms.tsv`. Eight of them were checked by
+Brice Dudout on blind sheets (X2, x3, x4, each with controls 2/2), and all eight are ʒ in c-words or the bare 2.
+See `../pandolfini1514/KEY_V6B_PROPOSAL.md`.
+

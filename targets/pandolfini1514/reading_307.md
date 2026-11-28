@@ -4,7 +4,7 @@ ASF Mediceo avanti il Principato LXXII, doc. 307 (c. 369r, pos. 747): "Copia di 
 
 ## Status
 
-**Read in part: 291 cipher words, 205 certain, 57 probable, 0 restored, 29 unresolved = 90% read by sense.** By block (key v5a counts; v6 moved two words to certain and one to unresolved): block 1 about 92%, block 2 about 83%, block 3 (13 words) about 69%, block 4 about 96%, block 5 about 95%. Below the 95% rule.
+**Read in part: 291 cipher words, 205 certain, 57 probable, 0 restored, 29 unresolved = 205/291, 70.4% sure alone (rule #728; each unresolved place counted as one word, see NOTES.md).** With probable words, by sense (not the #728 rule): 262/291 = 90%. By block, by sense (key v5a counts; v6 moved two words to certain and one to unresolved): block 1 about 92%, block 2 about 83%, block 3 (13 words) about 69%, block 4 about 96%, block 5 about 95%. Below the 95% rule.
 
 ## Raw decoding, key v6 (unretouched, `frozen/decode_v6.py`)
 
