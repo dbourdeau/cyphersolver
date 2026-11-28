@@ -1,0 +1,232 @@
+{
+ "schema_version": 1,
+ "target": "auschwitz1944",
+ "title": "Clandestine message (gryps) of the Auschwitz camp resistance, 4 September 1944: Polish words written in numbers on the church version of the hymn 'Kto się w opiekę' (Psalm 91) (Auschwitz-Birkenau State Museum, via Google Arts & Culture), read in part (contributed by Brice Dudout)",
+ "documents": [
+  {
+   "id": "auschwitz-1944-09-04",
+   "read": "read in part",
+   "shelfmark": "Auschwitz-Birkenau State Museum, 'A fragment of a secret message sent from Auschwitz' (no shelfmark published); https://artsandculture.google.com/asset/a-fragment-of-a-secret-message-sent-from-auschwitz/CgGwLMf2NO_MsA",
+   "date": "4 September 1944 (museum description)",
+   "year": 1944,
+   "country": "Poland",
+   "route": "Prisoners of the camp resistance, Auschwitz -> helpers outside the camp (signature not read)",
+   "language": "Polish",
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "partial": false
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Screenshots of the Google Arts & Culture page, private study only: no image, crop or derivative distributed (museum rights)",
+    "image_quality": "fair",
+    "notes": "Two blind passes (agents without any key) and a blind arbiter; see blind/. Points 6 and 9 and the signature poorly legible on the reproduction."
+   },
+   "length": {
+    "tokens": 183,
+    "unit": "symbols",
+    "measured": true,
+    "file": "transcription.txt"
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "monoalphabetic"
+  ],
+  "summary": "Part of a Polish clear text (a few words in points 7 and 9, most of point 8) written as runs of numbers 1-30, one number per letter, comma-separated, words separated by dashes. Alphabet numbered on the church version of the hymn 'Kto się w opiekę poda Panu swemu' (Śpiewnik kościelny, Mioduszewski 1838: 'A całem sercem szczerze ufa jemu'): each distinct letter at its first appearance, 28-30 from stanza 2. Kochanowski's 1579 text does not give it. Kłodziński's instruction of 16 Jan 1943 (p=9, i=10, e=11) differs from this key except for 1-7.",
+  "symbol_kind": "digits",
+  "homophones": {
+   "used": false
+  },
+  "nomenclator": {
+   "present": false
+  },
+  "nulls": {
+   "present": false
+  },
+  "word_division": "kept",
+  "diacritics": {
+   "used": true
+  },
+  "key_order": "keyword-derived",
+  "distinct_symbols": 27
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "in print",
+   "where": "I. Paczyńska (ed.), Grypsy z Konzentrationslager Auschwitz Józefa Cyrankiewicza i Stanisława Kłodzińskiego (Kraków, WUJ, 2013), p. 439, prints this gryps decoded; L. Sadzikowska, Identität und Fremdheit (V&R unipress 2022, open access, DOI 10.14220/9783737015165), p. 120 and note 240, quotes point 8 in German with that reference. Pointed out by Daniel Bourdeau in the review of #1010, 27 Nov 2026. p. 439 not seen by us.",
+   "found": "after reading",
+   "used": false
+  },
+  "inputs": [
+   "images",
+   "cleartext context",
+   "published key"
+  ],
+  "attack": "ciphertext-only",
+  "human_role": "Brice Dudout set the protocol and approved each step; AI agents transcribed (two blind passes and a blind arbiter, none shown a key), wrote and hashed two pre-registrations, ran the measures and read; an independent hostile reader (agent) checked the transcription, key, reading and sources, and its corrections are applied; Brice Dudout then answered a blind digit-shape sheet on five doubtful numbers (rule hashed first, three hidden controls passed).",
+  "models": [
+   "Claude Opus 5.5 (Anthropic), agents run by Brice Dudout"
+  ],
+  "first_date": "2026-11-26",
+  "last_date": "2026-11-27"
+ },
+ "solution": [
+  {
+   "kind": "literature search",
+   "what": "Paszek 2025 (public PDF to p. 141): 1943 instruction p. 127 (Paczyńska pp. 33-34), Rajsko channel p. 135; §5.4 p. 170 (a decoded message) not available. Paczyńska 2013 (WUJ): free extract only. Piper 2019 (Dzieje Najnowsze) for the context. Hymn texts on Wikisource (Śpiewnik kościelny 1838; Kochanowski ed. 1919). No online reading of this message found.",
+   "result": "partial",
+   "technique": [
+    "other"
+   ]
+  },
+  {
+   "kind": "transcription",
+   "what": "Two blind passes by agents without any key, blind arbiter from the image only; frozen by SHA-256 (a83492f6...) before any test: 39 groups, 183 numbers.",
+   "result": "worked",
+   "technique": [
+    "other"
+   ]
+  },
+  {
+   "kind": "control",
+   "what": "PREREG 1: six keys (song read letter by letter in three versions, first-appearance numbering with 'całym', 'Komu w opiekę', offset); dev G1-G19, validation G20-G39, lexicon and 200 permuted controls. No key beat its controls (validation 0/18). Declared; G20-G39 burnt.",
+   "result": "failed",
+   "technique": [
+    "key-structure hypothesis",
+    "statistical test",
+    "language-model scoring"
+   ]
+  },
+  {
+   "kind": "hypothesis",
+   "what": "Exploration on the burnt groups only: kontakt (x2), materjały wybuchowe, przez, ogrodnika, prasę give the hymn's first-appearance order with 'A całem sercem szczerze ufa jemu' (church version 1838; PREREG-2 wrongly called it Kochanowski 1579). h28 and ó30, set from one burnt word each, later found at their rank in stanza 2 (łowczych, pióry).",
+   "result": "worked",
+   "technique": [
+    "key-structure hypothesis",
+    "repeat/pattern analysis",
+    "contextual inference"
+   ]
+  },
+  {
+   "kind": "control",
+   "what": "PREREG 2 (hashed before running): five variants listed in advance, chosen on the burnt groups; one measure on G1-G19 (88 numbers): bigram log-likelihood -2.766 vs best of 200 permuted controls -4.073 (p < 0.005); 10 of 16 groups clear Polish words (>= 50 % required). Weaknesses declared: small portion, and G1-G19 had been seen decoded under the wrong keys of PREREG 1 before PREREG 2. Controls are plain permutations (weak); measure script not hashed; timestamps local only.",
+   "result": "worked",
+   "technique": [
+    "statistical test",
+    "language-model scoring"
+   ]
+  },
+  {
+   "kind": "reading",
+   "what": "34 cipher words: 29 sure, 4 probable, 1 unread after a blind digit-shape sheet (was 26 / 7 / 1); joined groups at line ends listed in NOTES.md; corrections of an independent hostile reading applied (jaki for jak, Paprzycy sure).",
+   "result": "partial",
+   "technique": [
+    "contextual inference"
+   ]
+  },
+  {
+   "kind": "verification",
+   "what": "Stanza 2 of the church hymn gives h28 (łowczych), ź29 (zaraźliwem), ó30 (pióry): h and ó had been set from the burnt groups before stanza 2 was looked at.",
+   "result": "worked",
+   "technique": [
+    "key matching"
+   ]
+  },
+  {
+   "date": "2026-11-27",
+   "kind": "literature search",
+   "what": "After the reading: the print (Paczyńska 2013 p. 439, quoted by Sadzikowska 2022 p. 120 n. 240), pointed out by Daniel Bourdeau, gives TWL = Truppenwirtschaftslager for G6, Paprzyca as a surname (Ludwik Paprzyca, a released prisoner) and 'what contact can she have with you'. Not used for the reading; points 7 and 9 not compared (p. 439 not seen).",
+   "result": "worked",
+   "technique": [
+    "other"
+   ]
+  },
+  {
+   "date": "2026-11-27",
+   "kind": "reading",
+   "what": "G6 twl (2-7-22) decodes t-w-l with nothing supplied and is the abbreviation TWL (Truppenwirtschaftslager) of the print, so it counts as read. 34 cipher words: before 29 sure, 4 probable, 1 unread (5 holes, 0.853); after 30 sure, 4 probable, 0 unread (4 holes, 0.882). Under 40 cipher words, so the short-text floor applies (at most 2 holes): with 4 holes, read in part.",
+   "result": "partial",
+   "technique": [
+    "contextual inference"
+   ]
+  }
+ ],
+ "outcome": {
+  "validation": {
+   "date": "2026-11-27",
+   "verdict": "weak",
+   "notes": "PREREG 2 passed on G1-G19 (88 numbers; -2.766 vs best control -4.073), but the portion is small and had been seen decoded under wrong keys before PREREG 2; PREREG 1 failed and is reported."
+  },
+  "class": "read in part",
+  "key": "recovered",
+  "method": "key recovered from ciphertext-only",
+  "fraction_read": 0.882,
+  "fraction_read_method": "measured",
+  "fraction_read_unit": "words",
+  "fraction_read_source": "sure words over cipher words (30 of 34, after the blind digit-shape sheet and TWL); probable {x}, supplied [x] and unread [...] are holes (4). Short text (34 cipher words): the short-text floor allows at most 2 holes, so it is read in part under the floor. With probable words 1.0.",
+  "first_break": false,
+  "verification": [
+   "matched control",
+   "key confirms",
+   "historical consistency",
+   "statistical test"
+  ],
+  "provenance": "contributed",
+  "credits": [
+   {
+    "who": "dudout",
+    "role": "solution",
+    "note": "blind transcription, two pre-registrations (first failed), key from the church hymn, reading; made before the printed decoding (Paczyńska 2013 p. 439) was found, not used",
+    "date": "2026-11-27"
+   },
+   {
+    "who": "bourdeau",
+    "role": "pointer",
+    "note": "the print: Paczyńska 2013 p. 439, quoted by Sadzikowska 2022 p. 120 n. 240 (TWL, Paprzyca, the sense of 'jaki może mieć kontakt z wami')",
+    "date": "2026-11-27"
+   }
+  ],
+  "gaps": [
+   {
+    "item": "Comparison with the printed decoding of points 7 and 9",
+    "blocker": "needs-physical-access",
+    "detail": "Paczyńska 2013 p. 439 and Paszek 2025 §5.4 not seen"
+   },
+   {
+    "item": "Four probable words: większych, przesyłek, tamtejszego, mieć",
+    "blocker": "illegible",
+    "detail": "doubtful or overwritten digits on a low-resolution reproduction; ć has no number in the key"
+   },
+   {
+    "item": "Clear text of point 6, one word of point 9, signature",
+    "blocker": "illegible",
+    "detail": "low-resolution reproduction only; no human check on the image yet"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "auschwitz-1944-09-04",
+    "label": "Message of 4 September 1944, points 7-9",
+    "transcription": "transcription.txt",
+    "decryption": "decryption.txt",
+    "reading": "reading.md",
+    "language": "pl",
+    "state": "read in part",
+    "summary": "30 of 34 cipher words sure (0.882), 4 holes, read in part under the short-text floor (at most 2 holes); with probable words 1.0. The camp resistance asks about Paprzyca's route for larger consignments; whether Jasia of the TWL at Rajsko works in the service of the SS next to the Gärtnerei and has contact with the camp through Józek the gardener, and what contact she can have with them; it asks for the press and whether explosives are ready.",
+    "translation": "translation.md",
+    "cipher_markup": "**",
+    "read_share": 0.882,
+    "cipher_words": 34,
+    "holes": 4,
+    "floor_used": false,
+    "note": "Short text: 34 cipher words, 4 holes (four probable words); the short-text floor (fewer than 40 cipher words: at most 2 holes) does not hold, so read in part."
+   }
+  ],
+  "key_file": "key.tsv"
+ }
+}
