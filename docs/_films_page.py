@@ -16,6 +16,13 @@ from pathlib import Path
 HERE = Path(__file__).resolve().parent
 
 FILMS = [
+    dict(id='ljs51casebook', card='Can you read a tree?', title='Can you read a tree? The cipher casebook in Penn LJS 51',
+         src='ljs51casebook.mp4', vtt='ljs51casebook.vtt', poster='ljs51casebook-poster.jpg', secs=177,
+         about='Count the branches of a Mamluk cipher tree, compare a riddle with its plaintext on another leaf, '
+               'and hear a deciphered love poem in English and Arabic as the signs light up on the page.',
+         links=[('ljs51corpus.html', 'The casebook'), ('ljs51f48r.html', 'The riddle'), ('qaysarani1350.html', 'The poem')],
+         credit='Manuscript images: University of Pennsylvania Libraries, Kislak Center, LJS 51, via OPenn (public domain). '
+                '3D model and readings: Cyphersolver. Synthetic voices: Kokoro (English) and Piper (Arabic).'),
     dict(id='siena1496', card='The Emperor’s cipher', title='The Emperor’s Cipher: Maximilian I to Siena, 1496',
          src='siena1496.mp4?v=1', vtt='siena1496.vtt?v=1', poster='siena1496_poster.jpg', secs=190,
          about='Maximilian I, camped at Pisa in November 1496, puts his terms to Siena in a cipher of sixty invented signs. The key was '
