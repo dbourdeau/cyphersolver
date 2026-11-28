@@ -1,0 +1,25 @@
+# Statistical validation of ASF Mediceo del Principato 384, c. 78r (catalogue 2339)
+# Script: validate_c78r.py (seed=1547, n_ctrl=200)
+# Inputs: transcription_78r.txt (2,244 cipher digits) + key_mdp384_witness.tsv (69 witness-only entries; zero c. 78r-only entries)
+# Model: DenseLM order=5, early-Italian nospace trained on 361,421 chars of pre-1650 Italian targets (farnese1547 excluded); lexicon lang/lexicons/it.json.gz (no target boosts)
+# Note: Brice Dudout's frozen c. 76r held-out validation remains untouched in validation.txt.
+
+=== FULL c. 78r (L01-L27) ===
+tokens=1337 (mapped=1288/1337 = 96.3%), distinct_types=86, decoded_chars=1469
+LM/char vs 200 shuffled keys:    real=-2.4114 | mean=-4.3108 sd=0.2977 max=-3.5244 | z=+6.38 | >=real=0/200 (p=0.0050)
+Cov>=5  vs 200 shuffled keys:    real=0.5357 | mean=0.1837 sd=0.0397 max=0.2845 | z=+8.87 | >=real=0/200 (p=0.0050)
+LM/char vs 200 shuffled streams: real=-2.4114 | mean=-4.2988 sd=0.0507 max=-4.1628 | z=+37.19 | >=real=0/200 (p=0.0050)
+Cov>=5  vs 200 shuffled streams: real=0.5357 | mean=0.1166 sd=0.0133 max=0.1491 | z=+31.46 | >=real=0/200 (p=0.0050)
+Cov>=4: 0.6692
+sample: dunaleteradelaldatainalidlugliufperoferedeldiededelpresentesintendecheilprotonotariocarlomandatogalreasolebitaueiafabhlegadifensiuaconreeconlicontraqualuncheost
+
+=== SUBSET c. 78r (L12-L18, revisited) ===
+tokens=368 (mapped=352/368 = 95.7%), distinct_types=46, decoded_chars=408
+LM/char vs 200 shuffled keys:    real=-2.4484 | mean=-4.2215 sd=0.3049 max=-3.5050 | z=+5.81 | >=real=0/200 (p=0.0050)
+Cov>=5  vs 200 shuffled keys:    real=0.4412 | mean=0.1857 sd=0.0481 max=0.3103 | z=+5.32 | >=real=0/200 (p=0.0050)
+LM/char vs 200 shuffled streams: real=-2.4484 | mean=-4.2921 sd=0.0872 max=-4.0755 | z=+21.15 | >=real=0/200 (p=0.0050)
+Cov>=5  vs 200 shuffled streams: real=0.4412 | mean=0.1320 sd=0.0217 max=0.1912 | z=+14.24 | >=real=0/200 (p=0.0050)
+Cov>=4: 0.6471
+sample: dorichbestapiudunacosachedunaltramostuielbonanimosuouersoreconquelloeafetueseparolechelasaraiaremostrandolobligochetienearticularmentedelparentadoeoferhschhpron
+
+DECISION: PASS (all subsets satisfy z_lm >= 5.0 and p <= 0.01 against 200 class-preserving shuffled keys and 200 shuffled streams).

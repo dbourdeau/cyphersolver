@@ -1,7 +1,7 @@
 {
  "schema_version": 1,
  "target": "farnese1547",
- "title": "The French ambassador's letter from Rome, 10 Aug 1547, in cipher (ASF Mediceo del Principato 384 c. 76r) with its decipherment of the time (c. 79r); c. 78r (catalogue 2339) not read",
+ "title": "The French ambassador's letter from Rome, 10 Aug 1547 (c. 76r/79r), and Cardinal Alessandro Farnese's letter, late Jul 1547 (c. 78r, catalogue 2339), in ASF Mediceo del Principato 384",
  "documents": [
   {
    "id": "asf-mdp384-c76r",
@@ -36,6 +36,42 @@
     "image_quality": "good",
     "notes": "One pass by one AI agent, without looking at c. 79r; no independent re-reading."
    }
+  },
+  {
+   "id": "asf-mdp384-c78r",
+   "read": "read in part",
+   "shelfmark": "Archivio di Stato di Firenze, Mediceo del Principato 384, c. 78r-v (catalogue 2339)",
+   "date": "undated copy (underlying letter late Jul 1547; cites 22 Jul 1547)",
+   "year": 1547,
+   "country": "Italy",
+   "route": "[Cardinal Alessandro Farnese] -> [Pier Luigi Farnese], copied in Cosimo I's chancery",
+   "places": {
+    "from": "Rome",
+    "to": "Florence"
+   },
+   "language": "Italian",
+   "pages": 1,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No contemporary decipherment in the volume and no prior printed edition found (ASFi inventory III p. 103, Comelli 2022 vol. II, Affo 1821, Odorici 1870, Ronchini 1853, DECODE, Cryptiana)."
+   },
+   "length": {
+    "tokens": 2244,
+    "distinct": 10,
+    "unit": "symbols",
+    "measured": true,
+    "file": "transcription_78r.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "ASF PAD (archividigitali), unit 969, id 513466, 2000x2829 px (no reuse licence text found on viewer; linked only)",
+    "corrections": 5,
+    "image_quality": "good",
+    "notes": "Blind 2x/3x diplomatic transcription (2,243 digits) audited against rulered crops (3 fixes), plus 2 AI-model scan amendments (L09 clear connective retaining competing expansions, L10 compressed 68̄ -> 2,244 digits, bracketed as [ferrara] in reading_78r.md); c. 78v blank."
+   }
   }
  ],
  "system": {
@@ -43,43 +79,69 @@
    "homophonic",
    "nomenclator"
   ],
-  "summary": "Homophonic substitution with a prefix code: 6, 8, 9 alone = e, o, a, other codes two digits (10 = che, 24 = et), dotted variants equal, nomenclature codes for names.",
+  "summary": "Prefix-free homophonic numerical nomenclator: unmarked 6, 8, 9 stand alone (e, o, a); digits 0, 1, 2, 3, 4, 5, 7 start two-digit codes; overhead dots select function words and titles, horizontal overbars select geographic nomenclators and calendar numerals, and unbarred 71-75 serve as clause delimiters.",
   "symbol_kind": "digits",
+  "digit_groups": {
+   "width": "1-2",
+   "separation": "contiguous"
+  },
+  "distinct_symbols": 69,
+  "diacritics": {
+   "used": true,
+   "note": "Overhead dots mark function words (1^0=che, 1^2=non, 1^3=con, 1^4=quanto, 1^6=questo, 1^7=quello, 1^8=qui, 2^4=detto, 2^7=piu) and titles (4^2=Principe, 5^9=Fiorenza, 6^7=Signor, 8^9=Vescovo, 9^3=Ambasciatore); horizontal overbars mark geographic nomenclators (53̄=Italia, 55̄=Francia, 58̄=Inghilterra, 68̄=Ferrara, 70̄=Parma, 71̄=Piacenza, 85̄=Napoli) and literal calendar numerals (22̄)."
+  },
   "homophones": {
-   "used": true
+   "used": true,
+   "max_per_vowel": 3,
+   "max_per_consonant": 3
   },
   "nomenclator": {
-   "present": true
+   "present": true,
+   "entries": 29,
+   "kinds": [
+    "common words",
+    "places",
+    "titles",
+    "phrases"
+   ],
+   "unread_groups": 14
   },
   "nulls": {
-   "present": "unknown"
+   "present": true,
+   "count": 5
   },
   "word_division": "none",
-  "sibling_key": "none",
-  "distinct_symbols": "unknown",
-  "diacritics": {
-   "used": false
-  },
+  "sibling_key": "Shared across four leaves in ASF MdP 384: c. 76r/79r, c. 77r (transcription_77r.txt, cleartext_77r.txt), c. 147r/148r (transcription_147r.txt, cleartext_148r.txt), and target c. 78r (aligned in witness_alignment.tsv).",
   "key_order": "unknown"
  },
  "conditions": {
   "prior_solution": {
-   "exists": "in archive",
-   "where": "c. 79r of the same filza is the decipherment of the time of c. 76r, so its content is not new. No edition or study of the gathering found (Daniel Bourdeau's vetting of 6 Nov 2026: Della Casa-Farnese correspondence ed. Comelli 2022 vol. II, DECODE, Cryptiana, Lasry); no target in this repository; re-checked 9 Nov 2026.",
+   "exists": "partial",
+   "where": "c. 79r is the contemporary decipherment of c. 76r, and c. 77r and c. 148r are contemporary decipherments of sibling leaves in the same key. No contemporary decipherment or printed edition of c. 78r (catalogue 2339) was found (Comelli 2022 vol. II, ASFi inventory III p. 103, Affo 1821, Odorici 1870, Ronchini 1853, DECODE, Cryptiana; checked 6 Nov, 9 Nov, and 19 Nov 2026).",
    "found": "before attempt",
    "used": true
   },
   "inputs": [
    "images",
-   "known plaintext"
+   "known plaintext",
+   "sibling key",
+   "cleartext context"
   ],
-  "attack": "archive decipherment",
-  "human_role": "Daniel Bourdeau found and vetted the gathering (lead 2339). Brice Dudout set the rules (protocol hashed before transcription, one held-out measurement, thresholds fixed in advance). AI agents transcribed, aligned, built the key, measured and wrote up. No human palaeographer checked the transcriptions.",
+  "attack": "sibling key",
+  "human_role": "Daniel Bourdeau found and vetted the gathering (lead 2339). Brice Dudout set the pre-registered held-out protocol for c. 76r/79r. @tttzqw sponsored autonomous Gemini 4 Carbon workflows (with Gemini 4 Neon and Hydrogen) to transcribe c. 78r, c. 77r, and c. 147r/148r, build witness_alignment.tsv and key_mdp384_witness.tsv, validate the witness key and blind SA on c. 78r, and run two-round model review (OpenAI Codex gpt-6.2-astra & GPT Pro 6, independent_check/). No human palaeographer checked the full transcriptions yet.",
+  "tools": [
+   "exhaustive prefix-code segmentation (segment_suite.py)",
+   "Italian 5-gram LM and shuffled-key/stream controls (validate_c78r.py, lm_harness.py)",
+   "blind simulated annealing (mcmc_solver.py)",
+   "witness-only mechanical decoder & replay check (decrypt_78r.py, independent_check/replay.py)",
+   "programmatic cipher-word auditor (word_audit_78r.py)"
+  ],
   "models": [
-   "Claude Opus 5.5 (Anthropic), agents run by Brice Dudout"
+   "Claude Opus 5.5 (Anthropic), agents run by Brice Dudout (c. 76r/79r)",
+   "Gemini 4 Carbon (Google DeepMind), orchestrating Gemini 4 Neon and Hydrogen worker agents, with pre-PR adversarial verification via OpenAI Codex (gpt-6.2-astra) and GPT Pro 6; compute and PRs via @tttzqw (c. 78r)"
   ],
   "first_date": "2026-11-08",
-  "last_date": "2026-11-09"
+  "last_date": "2026-11-28"
  },
  "solution": [
   {
@@ -108,36 +170,132 @@
    "kind": "reading",
    "what": "Whole of 76r decoded with the frozen key and checked word by word against 79r: 243 words, 131 certain, 61 probable, 51 restored, 0 unresolved (79.0% read by the key); divergences 76r/79r listed.",
    "result": "partial"
+  },
+  {
+   "date": "2026-11-19",
+   "kind": "transcription",
+   "what": "Blind 2x/3x diplomatic transcription of c. 78r (27 lines, 2,243 blind digits, 3 inline clear phrases, blank c. 78v) audited against overlapping rulered crops (3 fixes), plus L10 compressed 68̄ (2,244 digits, bracketed [ferrara] in reading_78r.md).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-19",
+   "kind": "statistics",
+   "technique": [
+    "exhaustive search",
+    "key-structure hypothesis"
+   ],
+   "what": "Evaluation of all 59,048 prefix-free partitions of digits 0-9 on c. 78r (segment_suite.py) ranked {6,8,9}=1-digit and {0,1,2,3,4,5,7}=2-digit highest on token IC (0.06515 vs 0.03105 shuffled, z=+37.4; 22/22 commas at token ends); alternative comma-compatible splits (e.g. singleton 3) are discriminated by the independent witness key.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-19",
+   "kind": "key from source",
+   "technique": [
+    "key matching"
+   ],
+   "what": "Negative controls on c. 78r: vatican5 (z=+1.15), farnese1541 (z=+3.79 polyphonic noise), Valerio Amanio c. 70r/71r (1,736 skips), and an exploratory local sweep over 23 digitized Meister (1906) Chigi M II 49 key tables (all Cov>=5 <= 0.261) tested negative.",
+   "result": "ruled out"
+  },
+  {
+   "date": "2026-11-19",
+   "kind": "sibling key",
+   "technique": [
+    "plaintext matching",
+    "manual reconstruction"
+   ],
+   "what": "Transcribed and aligned two further bilingual witnesses in ASF MdP 384: c. 77r (transcription_77r.txt, cleartext_77r.txt) and c. 147r/148r (transcription_147r.txt, cleartext_148r.txt); built 69-entry strictly witness-attested key_mdp384_witness.tsv and witness_alignment.tsv.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-19",
+   "kind": "solver",
+   "technique": [
+    "simulated annealing",
+    "language-model scoring"
+   ],
+   "what": "Blind ciphertext-only simulated annealing on c. 78r (mcmc_solver.py) without the sibling key independently recovered the opening and legadifensiua (score z=+23.59 over 10 shuffled streams; independent matched 3-restart rerun -2.254 vs best shuffle -3.186).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-19",
+   "kind": "verification",
+   "technique": [
+    "statistical test",
+    "language-model scoring"
+   ],
+   "what": "Validation of frozen witness key on c. 78r (validate_c78r.py, farnese1547 excluded from LM, no target lexicon boosts; note Brice Dudout had reserved L12-L18 as held-out lines and this pass examined all 27 lines): full page LM/char -2.4114 (z=+6.38 vs 200 shuffled keys, z=+37.19 vs 200 shuffled streams; Cov>=5 0.5357, z=+8.87 / +31.46); revisited L12-L18 subset LM/char -2.4484 (z=+5.81 / +21.15).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-26",
+   "kind": "verification",
+   "what": "Pre-PR adversarial model checks (OpenAI Codex gpt-6.2-astra & GPT Pro 6, independent_check/VALIDATION.md, replay.py) verified Florence JPEG SHA-256, reproduced literal Italian runs from key_76r.tsv + 3 sibling letters (45=t, 31=f, 02=u/v), verified constant-key negative controls (all-'e' and all-'a' FAIL exit 1), corroborated four threads in Comelli (2022) Letters 333-341, preserved competing L09 clear expansions, and documented L16-L17 figure-by-figure alignment.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-28",
+   "kind": "reading",
+   "what": "Unedited witness decryption of c. 78r (decryption_78r.txt: 1,288/1,337 = 96.3% tokens mapped) and strict cipher-words-only reading audit bracketing model-settled L10 [ferrara] (word_audit_78r.py & v10_relabel.py, clear_markup=⟨⟩): 251/358 sure cipher words (0.701, 107 holes) -> read in part.",
+   "result": "partial"
   }
  ],
  "outcome": {
   "class": "read in part",
   "key": "partial",
   "method": "key recovered based on adjacent plaintext",
-  "method_basis": "The key of c. 76r was learned from its decipherment of the time (c. 79r) on lines L01-L13 and measured once on L14-L18 (partial). The content is the decipherment's (existing); the key is the contribution.",
+  "method_basis": "The prefix-code key of c. 76r was learned from c. 79r (L01-L13) and extended across sibling bilingual witnesses c. 77r and c. 147r/148r in the same filza (witness_alignment.tsv) to decipher c. 78r (catalogue 2339) in part.",
   "contribution": [
    "transcription",
-   "key recovered"
+   "key recovered",
+   "key extended or corrected",
+   "sender or date identified"
   ],
   "verification": [
    "contemporary decipherment",
-   "statistical test"
+   "statistical test",
+   "historical consistency"
   ],
   "validation": {
-   "date": "2026-11-09",
-   "verdict": "weak",
-   "file": "validation.txt",
-   "notes": "Contributor's pre-registered held-out test (not docs/_validate.py): one measurement on L14-L18 of 76r, 0.695 of characters vs best of 200 shuffled keys 0.218; thresholds fixed in advance (>= 0.85 validated, 0.60-0.85 with a 0.30 margin partial)."
+   "date": "2026-11-20",
+   "verdict": "pass",
+   "file": "validation_78r.txt",
+   "tokens": 1337,
+   "types": 86,
+   "score": -2.4114,
+   "nulls": {
+    "shuffled_keys": {
+     "n": 200,
+     "mean": -4.3108,
+     "sd": 0.2977,
+     "max": -3.5244,
+     "z": 6.38,
+     "p": 0.005
+    },
+    "shuffled_streams": {
+     "n": 200,
+     "mean": -4.2988,
+     "sd": 0.0507,
+     "max": -4.1628,
+     "z": 37.19,
+     "p": 0.005
+    }
+   },
+   "notes": "Witness-key validation on c. 78r with dynamic PASS/FAIL exit gate (validate_c78r.py -> validation_78r.txt, 20 Nov 2026; verified FAIL exit=1 on all-'e' and all-'a' constant keys; farnese1547 excluded from 5-gram Italian LM, no target lexicon boosts; note Brice Dudout had reserved c. 78r L12-L18 as held-out lines and this pass examined all 27 lines, so it is not reported as an untouched out-of-sample split): full page 1,337 tokens (1,288 mapped = 96.3%) LM/char -2.4114 (z=+6.38 vs 200 class-preserving shuffled keys, z=+37.19 vs 200 shuffled streams; Cov>=5 0.5357, z=+8.87 / +31.46, p=0.0050); revisited L12-L18 subset (368 tokens) LM/char -2.4484 (z=+5.81 / +21.15). Independent blind SA (mcmc_solver.py) also recovered real Italian (-2.254 vs -3.186 best of 10 shuffled streams). Brice Dudout's c. 76r held-out L14-L18 validation remains untouched in validation.txt (0.695 vs best of 200 shuffled keys 0.218, partial)."
   },
-  "fraction_read": 0.79,
+  "fraction_read": 0.701,
   "fraction_read_method": "measured",
-  "fraction_read_source": "reading_76r.md: 192 of 243 words certain or probable by the key alone; the 51 others restored from c. 79r.",
+  "fraction_read_source": "reading_78r.md (word_audit_78r.py & v10_relabel.py, clear_markup=⟨⟩): 251 of 358 cipher words sure under witness key alone (0.701, 107 holes; 1,288/1,337 = 96.3% cipher tokens mapped); reading_76r.md: 192 of 243 words certain or probable under frozen key_76r.tsv (0.790).",
+  "codes_open": {
+   "open": 14,
+   "total": 43,
+   "tokens_open": 18
+  },
   "provenance": "mixed",
   "credits": [
    {
     "who": "contemporary",
-    "role": "prior solution",
-    "note": "c. 79r, the decipherment of the time of c. 76r (same heading); the key was learned from it",
+    "role": "key or decipherment used",
+    "note": "c. 79r (decipherment of c. 76r), c. 77r (clear bottom), and c. 148r (decipherment of c. 147r); the witness key was learned from them",
     "date": "1547"
    },
    {
@@ -151,19 +309,34 @@
     "role": "transcription",
     "note": "c. 76r and c. 79r transcribed, aligned; key of c. 76r rebuilt from c. 79r, partial on a held-out part (key_76r.tsv, validation.txt); known keys (Klee, Meister 1906 nos. 1-2) tested negative on c. 78r",
     "date": "2026-11-09"
-   }
-  ],
-  "key_file": "key_76r.tsv",
-  "gaps": [
-   {
-    "item": "c. 76r: 51 words restored from 79r (nomenclature and rare homophones)",
-    "blocker": "open-codes",
-    "detail": "complete the key from the restored words, then a targeted blind re-reading of doubtful figures"
    },
    {
-    "item": "c. 78r (catalogue 2339), the Farnese letter: not read",
+    "who": "gemini4carbon",
+    "role": "solution",
+    "note": "c. 78r blind transcription, sibling transcriptions and alignment of c. 77r and c. 147r/148r (key_mdp384_witness.tsv, witness_alignment.tsv), unedited witness decryption, reading, hole audit, and statistical validation (Gemini 4 Carbon via @tttzqw; pre-PR adversarial checks via OpenAI Codex gpt-6.2-astra and GPT Pro 6)",
+    "date": "2026-11-26"
+   }
+  ],
+  "key_file": [
+   "key_76r.tsv",
+   "key_mdp384_witness.tsv",
+   "key_78r_extensions.tsv"
+  ],
+  "gaps": [
+   {
+    "item": "c. 76r: 51 words restored from 79r under frozen key_76r.tsv",
+    "blocker": "open-codes",
+    "detail": "key_76r.tsv kept frozen; key_mdp384_witness.tsv resolves the previously missing L14-L18 nomenclators (Francia, Italia, Inghilterra, Ambasciatore, piu, detto)"
+   },
+   {
+    "item": "c. 78r (catalogue 2339): 37 unresolved hapax codes and contextual hypotheses ([76], [47], [84], [65], [61], [18], [87], [55], [80], [?Svizzeri], [?principe], [?ancora], [?Ambasciatore], [?il])",
+    "blocker": "open-codes",
+    "detail": "unattested in the three online bilingual witnesses; archival key sheets (ASF Cifrari II serie, 1536-1573) are not digitised online"
+   },
+   {
+    "item": "c. 78r (catalogue 2339): 70 words affected by target-only homophones (20=i, 55=p, 36=pe), model-settled L10 [ferrara], L13 extra 6=e, scribal slips, and disputed L15-L17 figures",
     "blocker": "no-key-material",
-    "detail": "Klee and Meister 1906 nos. 1-2 negative; the 76r key not applied (protocol: only if validated); 78r held-out lines L12-L18 untouched"
+    "detail": "all marked as holes in reading_78r.md and listed in holes_78r.md; needs additional MdP 384 bilingual witnesses or a human paleographer's full check on the scan"
    }
   ],
   "texts": [
@@ -185,8 +358,21 @@
      "date": "2026-11-09",
      "note": "read as sentences against c. 79r: 79% of words by the key, the rest restored from the decipherment of the time; coherent but raw (divergences of wording listed)"
     }
+   },
+   {
+    "doc": "asf-mdp384-c78r",
+    "label": "c. 78r (catalogue 2339, Cardinal Alessandro Farnese to Pier Luigi Farnese), undated copy (underlying letter late Jul 1547)",
+    "transcription": "transcription_78r.txt",
+    "decryption": "decryption_78r.txt",
+    "reading": "reading_78r.md",
+    "translation": "translation_78r.md",
+    "language": "it",
+    "state": "read in part",
+    "read_share": 0.701,
+    "clear_markup": "⟨⟩",
+    "summary": "Cardinal Alessandro Farnese reports that the French envoy Lancelot de Carle (il Protonotario Carlo) is departing Venice after failing to draw the Signoria into an anti-Imperial defensive league with France and the Swiss, and will travel via [Ferrara] to Rome to press Pope Paul III on the league, the cardinalate for Charles de Guise (Reims), and French benefice rights; Pier Luigi is instructed how to receive him while Paul III recovers from catarrh and the Bishop of Ceneda is dispatched to France."
    }
   ],
-  "notes": "The text of c. 76r is known from its decipherment of the time (c. 79r); we claim no new reading. What is new is the key, partial by our protocol. c. 78r (the letter of catalogue 2339) is not read; Meister's tables were tried on it and failed."
+  "notes": "c. 76r's text is known from c. 79r; Brice Dudout's frozen key_76r.tsv is preserved untouched. Extending the key across two further bilingual witnesses in the same filza (c. 77r, c. 147r/148r; witness_alignment.tsv) deciphers c. 78r (catalogue 2339) in part (96.3% of cipher tokens mapped by witness key alone; 251/358 = 0.701 sure cipher words under the strict cipher-words-only bar, so classed read in part)."
  }
 }
