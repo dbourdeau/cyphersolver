@@ -159,6 +159,15 @@
    ],
    "what": "Integration check: key rebuilt from gloss57_pairs.txt (598 pairs, 79 values) agrees with key.tsv except the restored values and 45/47; decryption of 55-56 reproduced; 58: 140/144 groups valued. Riksarkivet IIIF images 55 and 57 fetched: 68 groups of image 55 compared, 67 agree (one S2/Sf doubt); glosses of image 57 lines 1-2 agree. Strict count 68/89 = 76.4%; gaps workable, target in progress.",
    "result": "partial"
+  },
+  {
+   "date": "2026-11-27",
+   "kind": "verification",
+   "technique": [
+    "manual reconstruction"
+   ],
+   "what": "Blind shape plate on the 4/7 figures (sign_check_2711/): Brice Dudout answered, AI agents built and scored; 7 targets + 3 controls, 3/3; 55 l.2 48→78, 56 l.3 24→27 and 49→79, 56 l.6 24→27 read as the open 7; sein stays 14 (probable), aber held restored (answer 4 with a remark), 57 gloss dem 73. Count 68 → 72 of 89 (0.764 → 0.809). Under 8 targets: no sign_check record.",
+   "result": "partial"
   }
  ],
  "outcome": {
@@ -205,12 +214,12 @@
   ],
   "gaps": [
    {
-    "item": "image 55: 6 cipher words (3 probable, 3 restored)",
+    "item": "image 55: 5 cipher words (2 probable, 3 restored)",
     "blocker": "not-attempted",
     "detail": "re-read the doubtful figures on the image; test the restored values on their other occurrences"
    },
    {
-    "item": "image 56: 15 cipher words (8 probable, 7 restored)",
+    "item": "image 56: 12 cipher words (5 probable, 7 restored)",
     "blocker": "not-attempted",
     "detail": "same"
    },
@@ -234,7 +243,7 @@
     "language": "de",
     "state": "read in part",
     "summary": "Chemnitz advises the king that the new troops at Nuremberg could harass the enemy's quarters but are too green to risk, and that the arms and guns stored at Ansbach should be seized by force before the enemy takes them, since asking the margrave's government would betray the plan to the enemy.",
-    "read_share": 0.764,
+    "read_share": 0.809,
     "reading_review": {
      "grade": "B",
      "by": "Claude Opus 5.5 (model), agent run by Brice Dudout",
@@ -245,8 +254,8 @@
   ],
   "key_file": "key.tsv",
   "notes": "Writer identified from the signature ('M. Chemnitz') and the literature: Martin Chemnitz (1596-1645), sent by Gustav II Adolf to Nuremberg in October 1631. The glossed letter of image 57 is itself already read (the gloss), so it is not claimed.",
-  "fraction_read": 0.764,
+  "fraction_read": 0.809,
   "fraction_read_method": "measured",
-  "fraction_read_source": "Integration check, 13 Nov 2026, README rule (probable and restored words are holes): image 55 34/40, image 56 34/49, 68/89 = 76.4%. The contributor's figure, counting probable words, is 79/89 = 88.8%."
+  "fraction_read_source": "image 55 35/40, image 56 37/49, 72/89 after the blind plate of 27 Nov; 68/89 before"
  }
 }

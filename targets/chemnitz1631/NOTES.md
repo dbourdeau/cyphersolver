@@ -1,10 +1,10 @@
 # chemnitz1631: notes
 
-Status: in progress (integration check, 13 Nov 2026: read in part, 68 of 89 cipher words sure = 76.4% by the README rule, probable and restored words counted as holes; the contributor's figure is 79/89 = 88.8% with probable words counted. The gaps below can still be worked from the images in hand, so no page yet. Catalogue lead 2570 stays open.)
+Status: in progress (integration review of PR #1028, 27 Nov 2026: read in part, 72 of 89 cipher words sure = 80.9% by the README rule after the blind shape plate of 27 Nov (was 68 = 76.4% at the integration check of 13 Nov), probable and restored words counted as holes; the contributor's figure, counting probable words, stays 79/89 = 88.8%. The gaps below can still be worked from the images in hand, so no page yet. Catalogue lead 2570 stays open.)
 
 **Contributor's status: partial reading** (the outcome class in profile.json says the same). 89 cipher words in the two bare passages of images 55
 and 56: 68 sure, 11 probable, 10 on values restored from the sense. Sure + probable = 79/89 = 88.8 %, under the
-95 % bar, so the entry is not marked "read". Image 55: 37/40 (92.5 %); image 56: 42/49 (85.7 %).
+95 % bar, so the entry is not marked "read". Image 55: 37/40 (92.5 %); image 56: 42/49 (85.7 %). (These are the 13 Nov figures; after the plate of 27 Nov: 72 sure, 7 probable, 10 restored.)
 
 ## Key and its test
 - The key (key.tsv, 79 values) comes only from the **contemporary interlinear decipherment** written at the time over
@@ -72,9 +72,39 @@ a decoder written for the check.
 - **Writer.** "Martin Chemnitz (1596-1645)" is the contributor's identification from the signature and the
   literature; not checked here.
 
+## Blind shape plate 27 Nov 2026 (sign_check_2711/, PR #1028)
+
+Integration review of PR #1028 (AI agent, for the maintainers). Brice Dudout answered the plate; AI agents built and
+scored it. Asked for in the reviews of PR #770 (17 and 18 Nov).
+
+- **Rule.** `sign_check_2711/REGLE-SELECTION.md`, sha256 a36cbe8c...3f43 on the raw blob, as stated; the answers file
+  hashes to a2ef09dd...e061, as stated. `REGLE-SELECTION.sha256` also lists `scripts/items.py` and
+  `scripts/planche_core.py`, which are not in the PR, so the question and option order could not be checked against
+  the seeds. The order of events inside one commit rests on the contributor's record.
+- **Controls 3/3**: the closed 4 (56 l.2), the open 7 of "88 7 68" (56 l.1), the 9 (56 l.2). Rescored here from
+  `key-revealed-cle-PRIVEE.json` and the answers: same as `results.tsv`.
+- **Four changes**, all to the open 7: 55 l.2 48 -> 78 (gewaltig), 56 l.3 24 -> 27 (wird) and 49 -> 79 (hinweck),
+  56 l.6 24 -> 27 (regierung). These four words move from probable to sure. transcription.txt decoded with key.tsv
+  gives decryption.txt letter for letter on both pages.
+- **T1 (55 l.2).** In the thread of #770 the maintainer saw a closed 4 here twice (at 2x and at 3-4x). The blind
+  answer is the open 7. Under the 25 Nov rule a blind call with passed controls stands over an open look, so the blind
+  answer is taken.
+- **T5 (56 l.4 'aber') held.** Answer 4 (24 = b), which by the frozen rule would make the word sure, but with the
+  remark "with a bar above". The word stays restored until the remark is settled. This is the safe direction.
+- **T6 (56 l.2 'sein') negative.** Answer 4 (14, "siin"), not 8: the word stays probable.
+- **T7 (57 l.11 gloss 'dem').** Open 7, 73 = m: the gloss no longer contradicts the key; no cipher word changes.
+- **Seven targets**, under the schema minimum of 8: no `outcome.sign_check` record. The plate is recorded here and in
+  a solution step only.
+- **Counts before and after**, README rule: image 55 34 -> 35 of 40; image 56 34 -> 37 of 49; together 68 -> 72 of 89
+  (76.4% -> 80.9%). Recounted from reading.md. Sure + probable stays 79/89. Small points in reading.md, image 55:
+  {den} is braced but counted as sure, and newe is unmarked but counted as restored; the total of 35 is right.
+- **The reader** is the author of #770, who argued for 7 in these places. The values were hidden and the controls
+  passed; the answers against the gain on T5 and T6 count for the plate. He knew which places were at issue.
+- **Not checked** in this review: the boxes against the Riksarkivet images.
+
 ## Remaining gaps
-- image 55: 6 cipher words (3 probable, 3 restored) - blocker: not-attempted; re-read the doubtful figures on the image and test the restored values on their other occurrences
-- image 56: 15 cipher words (8 probable, 7 restored) - blocker: not-attempted; same
+- image 55: 5 cipher words (2 probable, 3 restored; after the plate of 27 Nov) - blocker: not-attempted; re-read the doubtful figures on the image and test the restored values on their other occurrences
+- image 56: 12 cipher words (5 probable, 7 restored; after the plate of 27 Nov; aber held on the T5 remark) - blocker: not-attempted; same
 - further Chemnitz letters in SE/RA/2106/F/XI/1392 - blocker: needs-physical-access; not digitised
 
 ## Escalation
