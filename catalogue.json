@@ -26049,17 +26049,21 @@
    "shelfmark": "TNA CO 166/1/31",
    "folio_note": "pp. 194-202",
    "cls": "B",
-   "status": "Duplicate of a captured letter, partly deciphered by the British. Not digitised. Not on DECODE.",
+   "status": "Captured copy, partly deciphered by the British. DECODE R7680 is a later key for the same correspondents (BL Add MS 32263 f. 218, Dec 1779–Apr 1780). Its applicability to this July letter is untested.",
    "why": "Intelligence from the American war in the West Indies.",
    "importance": 3,
    "solvability": 3,
    "difficulty": 3,
    "score_note": "Scored from the archive description during the Oct 2026 UK archives sweep (research/uk_tna/); not viewed",
-   "verify": "Check CO 166/1 neighbours for a French key.",
+   "verify": "Compare CO 166/1/31 with R7680 and the Bouillé tables in targets/bouille1778 and targets/grassebouille1779 when an image becomes available.",
    "links": [
     {
      "label": "TNA Discovery record",
      "href": "https://discovery.nationalarchives.gov.uk/details/r/C9120273"
+    },
+    {
+     "label": "DECODE R7680 (candidate key)",
+     "href": "https://de-crypt.org/decrypt-web/RecordsView/7680"
     }
    ],
    "seen": "catalogue",
@@ -40242,7 +40246,7 @@
    "counted": true,
    "seen": "image",
    "source": "BNE/Hispana sweep",
-   "prior_art": "partly read: Tomokiyo 2025 (AlonsoSanchez.htm) and Kolosova Ko.2 cover Juan Manuel's 1521-22 letters; 1497 letter is repo catalogue 1014 (read)",
+   "prior_art": "Tomokiyo covers the RAH correspondence. The two 1496 BNE letters use Lasry’s no. 95 system. See targets/juanmanuel1496/NOTES.md for the seven-letter inventory.",
    "score_note": "Scored from the BNE catalogue description (via the Europeana record API) during the Oct 2026 BNE/Hispana sweep (research/bne_hispana/); not viewed",
    "decode_ids": [],
    "year": 1496,
@@ -40256,12 +40260,12 @@
    "shelfmark": "Madrid, Biblioteca Nacional de España, MSS/20212/61/1-7 (Gayangos); BDH bdh0000186690",
    "folio_note": "seven letters 1496-1522, 'parcialmente cifradas'",
    "cls": "B",
-   "status": "BNE catalogue: partly ciphered. Tomokiyo (2025, cryptiana AlonsoSanchez.htm) covers Juan Manuel's 1521-22 correspondence, so the 1520-22 letters may be known; the 1496-1519 ones are earlier and possibly open. Not on DECODE. Checked 28 Oct 2026: Overlaps: 1521-22 letters read by Tomokiyo/Kolosova; 1497 letter duplicates catalogue 1014. Only other-dated letters in the seven may be open.",
-   "why": "Possibly late-15th-century Spanish diplomatic cipher (1496-1500) if early letters carry cipher; would bear on the repo's oldest-cipher search.",
+   "status": "Letters 1 and 2 (Genoa, 1496) are partially decoded in targets/juanmanuel1496. Letters 5 and 7 use two further systems and remain open. No cipher was seen on the inspected pages of letters 3, 4 and 6.",
+   "why": "The two 1496 Genoa letters document Lasry’s no. 95 system. The collection also preserves two further cipher systems.",
    "importance": 4,
    "solvability": 3,
    "difficulty": 3,
-   "verify": "Date the seven letters on BDH and keep only those outside 1497 and 1521-22.",
+   "verify": "Examine the separate systems of letters 5 and 7. For letters 3, 4 and 6, the observation covers only the pages inspected.",
    "links": [
     {
      "label": "BDH viewer",
@@ -40299,7 +40303,7 @@
     },
     "key_check": "No key for this letter is known. Ferdinand-era keys in the repo (targets/ferdinand1473 key_1473/key_1474, MSS/20211) are for other correspondents and 20 years earlier; not tested here. 1522 Juan Manuel key (Tomokiyo, Sanchez) is a later, different system.",
     "key_held": "Related only: targets/ferdinand1473 homophonic keys and Tomokiyo's Juan Manuel 1522 table; none tested on the 1496 symbols.",
-    "duplicates": "known.py on 'Juan Manuel', 'Gayangos', '186690': only the lead itself, bne_hispana candidates, and catalogue 1049 (RAH 23 Jun 1497, Rome, a different letter). Lead text says '1497 letter is catalogue 1014': wrong, 1014 is a TNA SP 29 entry; it is 1049. Correct shelfmark: MSS/20212/61/1-7 (not 'Gayangos' alone).",
+    "duplicates": "None of the seven BNE letters is dated 1497. Catalogue 1049 covers a separate RAH letter.",
     "verdict": "open",
     "note": "Applies to letter 1 (Genoa 10 Nov 1496) only; a pre-1497 cipher, relevant to the oldest-cipher search. Treat letters 2-7 as unviewed."
    },
