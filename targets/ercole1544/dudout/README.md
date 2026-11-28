@@ -89,3 +89,50 @@ It applies cleanly to `main` at db211162a9 (the folder's files are unchanged sin
 `REGLE-SELECTION.sha256` checks the final version; the initial version is its first 4656 bytes,
 `head -c 4656 REGLE-SELECTION.md | shasum -a 256` gives 762d8bf4…6959; the answers `answers-2511-ercole.json`; their
 meaning in English, `results.tsv`), `SHA256SUMS` (hashes of these files and of this README).
+
+## c. 175r: two blind passes, an arbitration and a reading (Brice Dudout, with Claude, 27 Nov 2026)
+
+c. 175r (catalogue 1556) was "decoded, not read" (18% of words in clean sentences in NOTES.md), and NOTES.md named a
+fresh pass of it as the next step. This section adds that pass. None of LcCompany/WAINUT's files is changed; the key
+is theirs (`key.tsv`, validated on the July 1544 pairs and on c. 114r, PR #491), and no key was built here.
+
+**How.** All work by AI agents (Claude Opus 5.5), Brice Dudout reviewing. Images: the Estense IIIF leaf at 1900 px,
+used privately (CC BY-NC-SA); no image, crop or derivative is included.
+- Two transcriptions of the 26 lines, made separately by two agents from different crops (three overlapping pieces
+  per line at 3x; two halves at 2.4x). Each knew the table and the shape notes of NOTES.md, and neither opened any
+  transcription, decryption or reading of this folder, nor the other's work: blind to the transcriptions, not to
+  the table. Pass A: `transcription_0175r_passA.txt` (1,278 signs; it wrote the round s as f, an error of convention
+  corrected before comparison, 8 places). Pass B: `transcription_0175r_passB.txt` (1,271 signs).
+- A third agent arbitrated A, B and the folder's transcription (W) column by column on zooms of 5-9x, shape first,
+  sense only where shape did not decide (16 cases, logged, alternatives kept): `transcription_0175r_arb.txt`
+  (1,263 signs, 30 still `{x|y}`), `arbitrage_log.tsv`, `ARBITRAGE.md` (in French). A = B = W on 1,050 of 1,317
+  aligned columns. Edit distance to the arbitration: B 5.7%, A 8.5%, W 9.8%.
+- F08: the arbiter read `24` (null); the human plate of 25 Nov (q10, 3/3 controls) gave `2 q`, and that answer is
+  followed (logged as the last line of `arbitrage_log.tsv`).
+- Superscripts: F17 and F23 are `L^10` (papa), as W found on its superscript sheet; both blind passes had read
+  `L^o`. F07 (x about 1115) is an open v, read `L^r` with `L^o` as the alternative.
+- `decryption_0175r_arb.txt`: first choices (`transcription_0175r_arb_first.txt`) through `scripts/decode.py` and
+  `key.tsv`, unchanged.
+
+**Reading.** `reading_0175r.md` (Italian, with the marks and a justification for every non-sure word) and
+`translation_0175r.md`. 340 words: 293 sure (86.2%), 36 probable, 3 restored, 8 unresolved; **read by sense 97.6%**
+on about 1,450 letters, so c. 175r meets Daniel's rule (95%). Of the 36 probables, 4 are the context-only code
+`L^o` (imperatore) and 1 the code `55` (bene); most others are one-sign slips of the p/r, a/n, s/g kind. The page now
+reads: Farnese's plan for a marriage alliance, the Pope's design to get Milan for money with the king's consent and
+then the Emperor's, "li dissegni del papa", a copy of a letter of Pier Luigi Farnese's wife, and what is said in Rome
+of Ferrante's journey to England.
+
+**What this does not do.** It does not touch cc. 78r-79r, 174r-174v and 175v, which stay as NOTES.md gives them
+(read in part, 19-23% of words in clean sentences), so catalogue 1556 as a whole is not read by Daniel's rule. The
+transcription error rate of the arbitrated file is not measured against an outside reference.
+
+**Files** (in `c175r_2711/`): the two passes, the arbitration (transcription, first choices, log, French notes),
+the decryption, the reading and the translation. Hashes in `SHA256SUMS`.
+
+**Blind shape plate (27 Nov 2026, evening; `c175r_2711/sign_check_2711/`).** Eleven doubtful signs and three hidden
+controls went on a blind shape plate for Brice Dudout. The rule was hashed before any thumbnail existed, and no image
+or thumbnail is included. Controls 3/3. Nine signs are settled and applied in `transcription_0175r_plate2711.txt`
+(first choices and decryption beside it). F09 `{b|h}` stays open: the remark says the two options looked the same.
+F26 `{h|t}` also stays open, because its t and h examples were faulty.
+Four probables become sure: **297 of 340 sure (87.4%)**, read by sense unchanged at 97.6%. Details, with two plate
+defects noted, are at the end of `reading_0175r.md` and in `results.tsv`.
