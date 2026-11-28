@@ -1,0 +1,32 @@
+{
+ "schema_version": 1,
+ "target": "ljs51corpus",
+ "title": "Penn LJS 51: a typology of the 207 ciphers from Daniel Bourdeau's key files, set against Qalqashandi and the Miftah al-kunuz",
+ "credits": [
+  {
+   "who": "dudout",
+   "role": "analysis"
+  }
+ ],
+ "conditions": {
+  "inputs": [
+   "key files (targets/ljs51corpus at d8ac608093)",
+   "printed treatise text (OpenITI, Qalqashandi, Subh al-a'sha)"
+  ],
+  "first_date": "2026-11-28",
+  "last_date": "2026-11-28",
+  "human_role": "Brice Dudout chose the task and set the rules (coding grid frozen and its hash posted before the reliability measurement, blind double coding, no image work, no inference on the author); AI agents coded, measured and wrote up.",
+  "models": [
+   "Claude Opus 5.5 (Anthropic), agents run by Brice Dudout",
+   "Claude Sonnet (Anthropic), the two blind coders"
+  ]
+ },
+ "solution": [
+  {
+   "date": "2026-11-28",
+   "kind": "analysis",
+   "what": "Coding grid v1 (8 automatic, 7 hand-coded dimensions) frozen with tools/holdout/freeze.py (manifest sha256 b569138d5696373c0956db3865a1614d568209709f0e81a3f1bacabf7b3a1e6c); 207 documents coded; Cohen's kappa between two blind coders on 30 documents (seed 3030), criterion >= 0.80 per dimension.",
+   "result": "worked: kappa 0.91-1.00 on all seven hand-coded dimensions (criterion 0.80); the skeleton class is absent from the sample"
+  }
+ ]
+}
