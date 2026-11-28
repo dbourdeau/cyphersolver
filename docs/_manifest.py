@@ -519,6 +519,11 @@ PAGES = [
          blurb='Two copies of a royal letter to the ambassador in Rome in a syllabic cipher, with no decipherment filed with them (AHNOB Osuna, OSUNA,CT.2,D.32). Brice Dudout found the same cipher in a 1649 chapter of Luis de Haro enciphered for Albornoz whose plain copy was kept, rebuilt the key from it and tested it on held-out lines; the royal cipher of 1644&ndash;45, rebuilt from two other letters of the fonds, does not fit. 353 of the 359 groups give their value. The King insists that the nuncio at Madrid, Giulio Rospigliosi, the future Clement IX, be kept at his post. Contributed by Brice Dudout.',
          quote='&ldquo;no puede haver instrumento m&aacute;s a prop&oacute;sito, buelvo a encargaros continu&eacute;is y esforc&eacute;is con Su Beatitud las instancias&rdquo;',
          rights='Manuscript images: Archivo Hist&oacute;rico de la Nobleza (PARES); text and translation: Brice Dudout, CC BY 4.0'),
+    dict(slug='conde1651', footer_date='November 2026', label='Cond&eacute; to du Chambon 1651', year='1651', y=1651.65, place='Paris &rarr; Bordeaux', st='partial', stt='known key, in part',
+         title='Cond&eacute; to Armand du Lau du Chambon, August&ndash;September 1651',
+         blurb='Five letters of the prince de Cond&eacute; to his agent at Bordeaux during the Fronde, with long passages in a numbered nomenclator. General Arnaud de Brianson deciphered them in 1983; his typescript and key lie unpublished in the same bundle. Brice Dudout had the bundle photographed, tested Brianson&rsquo;s key on a held-out page and re-read the letters with it: 478 of 788 cipher words sure, and a list of places where the cipher differs from Brianson.',
+         quote='&ldquo;ie ne doute plus du dessein que l&rsquo;on a de me&hellip;&rdquo;',
+         rights='Text only: the photographs of AD Dordogne, 2 E 1841/18 by Catherine Schunck (SHAP) are not reproduced; transcription and reading contributed by Brice Dudout'),
     dict(slug='bagno1652', label='Guidi di Bagno 1652', year='1652', y=1652.01, place='Paris &rarr; Rome', st='solved', stt='ciphertext-only key recovery',
          title='Guidi di Bagno to the Secretariat of State, 5 January 1652',
          blurb='George Lasry recovered the key with GPT-6 Astra and Opus 5.5 from a CTTS ML-assisted transcription. All four cipher pages now have an edited Italian reading and full English translation, with residual gaps marked. The despatch reports threats against Mazarin and an appeal to the pope during the Fronde.',
@@ -3896,6 +3901,7 @@ IMAGES['neufville1779'] = ('neufville1779_p573.jpg', '&ldquo;Dunoyer&rdquo; to d
 IMAGES['lee1779'] = ('lee1779_letter4.jpg', 'Letter 4 in Arthur Lee&rsquo;s letter book: &ldquo;The 348,a,XXIV 108,a,IX continues still so lockt up&rdquo; (the Spanish court)', 'US National Archives, RG 360, Papers of the Continental Congress, M247 item 102 vol. 3, image 0041 (MS p. 27), via the National Archives Catalog')
 
 IMAGES['lopezmendez1819'] = None
+IMAGES['conde1651'] = None
 
 IMAGES['edmondes1594'] = ('edmondes1594_lead.jpg', 'P. 559 of the 1892 calendar: the opening of the letter, with the printed cipher letters and the person signs 55, the m-sign and the ho-sign', 'Historical Manuscripts Commission, Calendar of the Manuscripts of the Marquis of Salisbury, part IV (1892), p. 559, via the Internet Archive (item 11576077bsb)')
 IMAGES['humphreys1799'] = ('humphreys1799_lead.jpg', 'No. 188, 19 March 1799: the 56 code groups after &ldquo;This Gentleman&rdquo;', 'National Archives (NARA), RG 59, Despatches from U.S. Ministers to Spain, vol. 4, microfilm M31 roll 5, frame 0294, via the National Archives Catalog')
