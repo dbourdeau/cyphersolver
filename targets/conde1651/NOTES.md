@@ -1,15 +1,15 @@
 # conde1651 — Condé to Armand du Lau du Chambon, Aug–Sep 1651 (AD Dordogne 2 E 1841/18; catalogue 1213)
 
-Status: in progress — the reading is finished, the write-up is owed (27 Nov 2026). Catalogue 1213 is finished as a whole: the
+Status: written up 27 Nov 2026 (docs/conde1651.html, text only: no image of the letters or of Brianson's papers is shown). Catalogue 1213 is finished as a whole: the
 bundle 2 E 1841/18 was photographed in full (46 frames) and its only cipher is these five letters, already deciphered by
 Brianson (typescript and key in the bundle; read here with his key, outcome "read with known key"); the 1652 letters are in
 clear, and the Roman-numeral name table is another system with no ciphertext here, filed apart as research/leads.json 3937.
 This work adds something Brianson's unpublished typescript and 1983 summary do not give: the key validated on a held-out page,
 a sign-level transcription, English translations, and a list of places where the cipher reads differently from him (division,
-entretienne, Bordeaux for his ?/1, avec for his ?/9 ...), with new credits (Brice Dudout, Catherine Schunck). So it takes the
-`/writeup` route, not "no write-up" (that is for a target found solved with nothing added). Entry 1213 leaves catalogue.json
-with the write-up, listed under "Read or resolved here, and removed". Before the page: the reading_review of each letter, and
-the open question of the image conditions (section below: AI analysis of the photographs was not agreed by anyone).
+entretienne, Bordeaux for his ?/1, avec for his ?/9 ...), with new credits (Brice Dudout, Catherine Schunck). Entry 1213 left
+catalogue.json with the write-up and is listed under "Read or resolved here, and removed". Reading reviews of the five letters:
+integration review of 28 Nov 2026 (AI agent, for the maintainers; not a person), in profile.json. The image conditions below are
+still open: the page says the photographs are not reproduced and that the conditions of AI analysis were not stated in writing.
 
 Source: Archives départementales de la Dordogne, 2 E 1841/18 (du Lau du Chambon papers). Photographs taken in Nov 2026 for the project by the Société historique et archéologique du Périgord (Catherine Schunck, SHAP). Images are not distributed and no crop is included; cite « AD Dordogne, 2 E 1841/18 ». Frame numbers (P1370NNN) are the photographer's.
 
@@ -177,7 +177,7 @@ This list could be the name key for any 1651–1652 cipher letter from Condé's 
 Filed as a lead of its own by the maintainers at the integration of PR #937 (27 Nov 2026, one key per entry): research/leads.json 3937, from `research/dudout_leads_2026-11-27_conde1651/`. Not vetted and not in the catalogue.
 
 ## Not done
-No reading_review recorded (left to the reviewer). No image or crop in this folder. Brianson's papers at the SHD (GR 1KT 211 / 1 Kmi 62) not seen.
+Reading reviews are by an AI agent (integration review of 28 Nov 2026), not by a person. No image or crop in this folder. Brianson's papers at the SHD (GR 1KT 211 / 1 Kmi 62) not seen.
 
 ## Remaining gaps
 
