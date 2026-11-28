@@ -17,8 +17,8 @@ despatches of the Florentine secretariat to Montauti, 1689-1699, signed "Il gran
   on an interlined letter it had not seen: **76 of 92 groups (82.6%) agree; 200 shuffled keys reach at most 35.9%.**
 - **Cosimo's own cipher passages in Codex 533 are read for the first time, as far as we found.** They were transcribed
   twice (one pass blind), the 116 sign-level disagreements were checked on the image (112 settled, 4 left open), and the 35 runs were decoded:
-  by this package's count 15 read whole, 15 in part, 5 not at all (`readings/runs_533.tsv`). By words, 30 of Cosimo's 87
-  cipher words (34.5%) are sure, 42 of 87 (48.3%) with the two context-only values (`readings/words_533_strict.tsv`).
+  by this package's count 15 read whole, 15 in part, 5 not at all (`readings/runs_533.tsv`). By words, 29 of Cosimo's 87
+  cipher words (33.3%) are sure, 41 of 87 (47.1%) with the two context-only values (`readings/words_533_strict.tsv`).
 - **What the cipher hides is mostly his daughter's household.** Anna Maria Luisa de' Medici, Electress Palatine ("mia figlia",
   "mia figliola"), the Elector Palatine, Düsseldorf, the court and "toscani" there, a favourite lady of the bedchamber,
   and the Duke of Savoy.
@@ -147,7 +147,7 @@ the Italian as decoded with holes, normalized Italian, English, and the share re
 | f. 25r | "Firenze li [1?] di Lug./Ag.[?]" | costà; addit[a]ssi(?); two runs not read | mixed |
 | ff. 26r-27r | "Firenze li 11 d'Aprile 1693" (year probable) | servivi[..]; relation[e] del [eight code-like groups]; havrà [..] con l[..] | part |
 | ff. 28r-29v | "Firenze li 25 d'Ottobre" | [mia?] figliola; corte; toscani | most |
-| ff. 35r-35v | "Firenze li 14 [month?]" | fussi disgustat[o] del [..] della corte; per mezo della d[o]n[n]a(?) di camera favorita dell[a] [14]; mandarai(?) [..] | most |
+| ff. 35r-35v | "Firenze li 14 [month?]" | fussi disgustat[o] del [..] del[l]a corte; per mezo [d]ell[a] d[o]n[n]a(?) di camera favorita dell[a] [14]; mandarai(?) [..] | most |
 | ff. 36r-37r | "[Firen]ze li [1/16?] d'Agosto" | not read | none |
 | ff. 53r-55r | "Livorno li 13 di Marzo [1]693" | "il Spagna(?)", conjecture | part |
 | ff. 56r-57r | "Firenze li 19 d'Ottobre" | mia figlia; viaggio a Dusseldorf | whole |
@@ -160,11 +160,12 @@ part, 2 not read. The differences are calls on short runs with a code number (3r
 Measured bounds: 40.2% of Cosimo's 403 groups (162) lie in runs read whole; 79.3% of the 401 groups in
 `decode/decode_rec2_v3ctx.tsv` (318) take a letter value (78.9% if counted against 403); "about 60% read as
 Italian" lay between and was our estimate. Measured by words (15 Nov 2026, `readings/words_533_strict.tsv`, after Daniel
-Bourdeau's review of PR #665): 30 of 87 cipher words sure (34.5%), 42 of 87 (48.3%) with the context-only values
+Bourdeau's review of PR #665; recounted 27 Nov 2026): 29 of 87 cipher words sure (33.3%), 41 of 87 (47.1%) with the context-only values
 ww = o and 62 = q. A word is sure when every letter comes from frozen key v3, read on the signs as transcribed, with no
 context-only value, no letter supplied or replaced by sense, no doubt mark and no unread group. Daniel Bourdeau counts
-37 and 51 of 87; the difference is the seven words with a supplied or replaced letter (l'El[e]ttor[e], figl[i]a,
-d[i], relation[e], disgustat[o], [d]ell[a], dell[a]), which README Conventions counts as holes. The first letter
+37 and 51 of 87; the difference is the eight words with a supplied or replaced letter (l'El[e]ttor[e], figl[i]a,
+d[i], relation[e], disgustat[o], del[l]a, [d]ell[a], dell[a]), which README Conventions counts as holes. Before the
+recount of 27 Nov 2026 (below) the figures were 30 and 42, with seven such words. The first letter
 (1r-1v) is 9 of 16 sure (Daniel Bourdeau: 11 of 16) and L70 (agosto, on ww = o) 0 of 1; both are read in part.
 
 ## History and significance
@@ -229,9 +230,10 @@ maintainers did this; no person has checked the transcriptions or the readings.
 - **Word count.** The review of 15 Nov 2026 counted 37 sure words of 87 (51 with the context-only values) and 11 of
   16 in the first letter, admitting words with a supplied or replaced letter. README Conventions counts a letter
   supplied where the cipher has nothing as a hole, and the one-digit rule does not apply to a key rebuilt here, so the
-  contributor's recount stands: 30 of 87, 42 with the context-only values, 9 of 16 in the first letter
+  contributor's recount stands: 30 of 87, 42 with the context-only values, 9 of 16 in the first letter (29 and 41
+  after the recount of 27 Nov 2026, below)
   (`readings/words_533_strict.tsv`, recounted here). The entries of ff. 21v-22r and 35r-35v now carry the count from
-  that list (2 of 10, 6 of 15) in place of the estimate by groups. The shares of the four bare passages are still the
+  that list (2 of 10, 6 of 15; L35 is 5 of 15 after the recount of 27 Nov 2026) in place of the estimate by groups. The shares of the four bare passages are still the
   reading agent's estimates.
 - **Reading reviews, recorded by the reviewer.** Graded B: ff. 1r-1v, the clause of f. 22r, the two clauses of
   ff. 35r-35v, and bare passage P1. Graded A: bare passages P2, P3 and P4, each a whole sentence with only code
@@ -247,7 +249,7 @@ maintainers did this; no person has checked the transcriptions or the readings.
 
 ## Limits
 
-- By words, 30 of Cosimo's 87 cipher words are sure (34.5%), 42 with the context-only values (measured above).
+- By words, 29 of Cosimo's 87 cipher words are sure (33.3%), 41 with the context-only values (measured above).
 - **Runs not read:** six by the round-4 count, five by this package's (19r, 25r a, 25r b, 26r b, 36r).
 - **The block on 26r** ("relatione del" + 13 14 19 25 34 39 36 37) has no w-sign and only 1-3-9 digits: it looks like a
   different table (System A of Codex 531, or code numbers). Not read.
@@ -282,8 +284,23 @@ Nothing was changed in the key, the group files or the readings; `key/key_entrie
 - Re-cased, 12 clear words that stood in capitals: nine in `P1_it.txt` (il, le, al, da, di med.o, a, al, il), "durante la" in `P2_it.txt`, and the "de" of "deL [10]" in `P4_it.txt`.
 - Left without a mark in the text, 5 of the 14 places, because the departure is a decoded letter or group that is not printed and there is nothing to bracket: D'ACCASARE and S'OPPONGA (elided i), POLONIA (one of two o), LE S[UE] NOZZE (code group [22]), COSTÀ (second a); likewise the "ca" and e dropped before CASA E and the c dropped in D[O]N[N][A]. Each is stated in a header line of its file.
 - Header lines: a second comment line was added to `bare/P1-P4_it.txt` and `readings/L01, L21, L25, L26, L28, L35, L56, L63, L70_it.txt`, stating the marks, what "normalized" covers (consonants doubled without a mark, elided vowels) and, for the bare files, that the unedited output of the key is the `_decode.txt` file. No existing header line was changed.
-- `scripts/make_texts.py` and `scripts/make_bare_texts.py` write these files; a re-run would remove the marks and header lines unless the scripts are changed first. They were not run or changed.
+- `scripts/make_texts.py` and `scripts/make_bare_texts.py` write these files; a re-run would remove the marks and header lines unless the scripts are changed first. They were not run or changed then (`make_texts.py` was changed in the follow-up of 25 Nov, below).
 - `research/reading_audit/v2_score.py <file> it`, hole rate before and after: P1 0.287, 0.324; P2 0.069, 0.079; P4 0.038, 0.038; L01 0.215, 0.209; L21 0.333, 0.300; L26 0.333, 0.333; L28 0.182, 0.160; L35 0.353, 0.333; L56 0.273, 0.250; L63 0.333, 0.333; L70 0.400, 0.333. The falls in the L files are not real: the scorer splits a word at each `*` and so counts more words; it does not count a starred letter as a hole.
+
+**Follow-up, 25 Nov 2026** (Andrew Beling, with AI agents; no person has checked it):
+
+- `readings/runs_533.tsv`, L35 35r a: the letters column had five letters, "d e l l a", for the four groups 46 21 55 11 (found by the audit above). It now reads "d e l a", as the key gives; the reading keeps DEL[L]A. Because `make_texts.py` pairs groups and letters in order, the extra l had shifted the last six pairs of that run in `validation.tsv` (11 l, 44 a, 41 c, 64 o, 6w r, w4 t); they now read 11 a, 44 c, 41 o, 64 r, 6w t, w4 e. No other run has a letter count that differs from its group count. The recorded statistical validation (`outcome.validation`) was computed on the old pairs and was not rerun.
+- `scripts/make_texts.py` now writes a `readings/L*_it.txt` or `L*_en.txt` file only when it does not exist, so a re-run keeps the hole sizes of 14 Nov and the marks and header lines of 16 Nov. Run twice after the change: only `readings/L35_decode.txt` and `validation.tsv` changed, as above, and the second run changed nothing. `scripts/make_bare_texts.py` writes only the `bare/P*_groups.txt` and `P*_decode.txt` files, and a re-run leaves them as they are; it was not changed.
+- L19 19r a (groups 55 14) is left printed `? ?`: the run may be a plain number, as its row says, so no letter is given to 55 there.
+
+**Recount, 27 Nov 2026** (Andrew Beling, with AI agents; no person has checked it). The fix above shows that the four
+groups of "della" in L35 35r a give d e l a, so the second l is supplied. `readings/words_533_strict.tsv` still had the
+word as sure, against its own rule. It is now `supplied`:
+- Sure 29 of 87 (33.3%), was 30 (34.5%); sure or context-only value 41 of 87 (47.1%), was 42 (48.3%); Supplied 8, was 7.
+- `profile.json`: `fraction_read` 0.333, was 0.345; L35 `read_share` 0.333 (5 of 15), was 0.4 (6 of 15). The class
+  stays read in part.
+- The 35r line was checked on Penn's image by an AI agent of ours (Claude Opus 5.5, 27 Nov 2026): one 55 between 21
+  and 11, so d e l a is what the cipher gives. No person has checked it.
 
 ## Remaining gaps
 - Codex 533 runs 19r, 25r a, 25r b, 26r b, 36r - blocker: no-key-material; letters decode in part but form no word, and no interline or key covers Cosimo's hand

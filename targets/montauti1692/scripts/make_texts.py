@@ -53,9 +53,11 @@ for d, rr in docs.items():
                 val.append(f"{tok}\t{let if let != '?' else '?'}")
     (OUT / f'{d}_groups.txt').write_text('\n'.join(g) + '\n', encoding='utf-8')
     (OUT / f'{d}_decode.txt').write_text('\n'.join(dec) + '\n', encoding='utf-8')
-    if d != 'L01':
-        (OUT / f'{d}_it.txt').write_text('\n'.join(it) + '\n', encoding='utf-8')
-        (OUT / f'{d}_en.txt').write_text('\n'.join(en) + '\n', encoding='utf-8')
+    # The reading files were edited by hand after the first run (hole sizes, 14 Nov 2026; decrypt-audit marks and
+    # header lines, 16 Nov 2026), so an existing *_it.txt or *_en.txt is left as it is; only a missing one is written.
+    for f, lines in ((OUT / f'{d}_it.txt', it), (OUT / f'{d}_en.txt', en)):
+        if d != 'L01' and not f.exists():
+            f.write_text('\n'.join(lines) + '\n', encoding='utf-8')
 
 # bare passages: group tokens and their letters with key v3 + context; '+' joined signs split as the clerk shared them
 key = dict(k3); key.update(kc)
