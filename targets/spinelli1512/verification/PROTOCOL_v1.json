@@ -1,0 +1,16 @@
+{
+ "target": "catalogue 2865, AHPZ Coleccion Zurita C_CRAR/000001/0055 (letter A) and 0056 (letter B), Giovanni Battista Spinelli, Count of Cariati, to Pedro de Urrea, Venice, 16 Apr 1512",
+ "written_by": "lead AI agent (Claude Opus 5.5), 28 Nov 2026, local only; plan PLAN_v1.md and amendment PLAN_v2_amendment.md (FreeTSA 04:37:14 and 04:38:03 UTC)",
+ "key": "key_v1.json",
+ "key_built_from": "letter B only: its cipher (both readers) and the period glosses over it ('venendo lo S. Prospero', 'lo real tutto e venuto in mano de villani', 'sei milia', 'sono morti asai deli nostri principali', 'de sei milia io so de contrario voto', 'se acordaria con re de Francia', etc.). No value taken from letter A.",
+ "transcription": "transcription_v1.txt",
+ "transcription_note": "first blind reader (helper_2865) as the consensus; second blind reader (helper2_2865) agrees on 700 of 727 signs (0.963) after name mapping; disagreements not ruled by the lead. The first reader merges two b-x forms that the second reader separates (hx = s, bx = u/v); in the first reader's names the key gives that merged sign s.",
+ "secondary": "transcription_H2_v1.txt with key_v1_H2names.json (the same letter-B key in the second reader's names, with hx = s and bx = u); scored once with the same metric and controls; report only",
+ "heldout": "all glossed cipher lines of letter A, in four blocks (A1, A2top, A2mid, A2bot)",
+ "reference": "reference_v1.txt",
+ "metric": "matched letters (difflib) of the decode against the gloss letters, over the gloss letters; #1014 char form reported too",
+ "threshold": 0.60, "margin": 0.15, "controls": 200, "seed": 20261128,
+ "timestamp": {"rfc3161": "MANIFEST_v1.sha256.tsr", "tsa": "FreeTSA, https://freetsa.org/tsr"},
+ "manifest": "MANIFEST_v1.sha256",
+ "result": "RESULT_v1.json"
+}

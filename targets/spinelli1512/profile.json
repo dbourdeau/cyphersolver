@@ -1,0 +1,298 @@
+{
+ "schema_version": 1,
+ "target": "spinelli1512",
+ "title": "Giovanni Battista Spinelli, Count of Cariati, to Pedro de Urrea, Venice, 16 April 1512, two letters (catalogue 2865): news after Ravenna in a letter cipher with glosses of the time, read in part with a key rebuilt from one letter's glosses and tested on the other's",
+ "documents": [
+  {
+   "id": "C_CRAR-0055",
+   "read": "read in part",
+   "shelfmark": "Zaragoza, Archivo Histórico Provincial (Archivo del Reino de Aragón), Colección Zurita, C_CRAR/000001/0055",
+   "date": "16 April 1512",
+   "year": 1512,
+   "country": "Italy",
+   "route": "Giovanni Battista Spinelli, Count of Cariati, Venice -> Pedro de Urrea, Ferdinand's ambassador at the Imperial court",
+   "places": {
+    "from": "Venice",
+    "to": "unknown"
+   },
+   "language": "Italian",
+   "pages": 3,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "interlinear"
+    ],
+    "source": "Interlinear glosses of the time in a second hand over most cipher lines (glosses.md)."
+   },
+   "length": {
+    "tokens": 357,
+    "distinct": 35,
+    "unit": "symbols",
+    "measured": true,
+    "file": "ciphertext_reader1_A.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "DARA record https://dara.aragon.es/opac/app/item?i=1056745, PDF AHPZ_C_CRAR_000055.pdf",
+    "image_quality": "good",
+    "notes": "Two blind AI readers (Claude Opus 5.5 helper agents, 28 Nov 2026), own sign names, no values; 700 of 727 signs agree over both letters after name mapping (transcription/r.log). The first reader's text is used in the primary test; the second reader separates hx (s) from bx (u/v), which the first merges."
+   }
+  },
+  {
+   "id": "C_CRAR-0056",
+   "read": "read in part",
+   "shelfmark": "Zaragoza, Archivo Histórico Provincial (Archivo del Reino de Aragón), Colección Zurita, C_CRAR/000001/0056",
+   "date": "16 April 1512",
+   "year": 1512,
+   "country": "Italy",
+   "route": "Giovanni Battista Spinelli, Count of Cariati, Venice -> Pedro de Urrea, Ferdinand's ambassador at the Imperial court",
+   "places": {
+    "from": "Venice",
+    "to": "unknown"
+   },
+   "language": "Italian",
+   "pages": 3,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "interlinear"
+    ],
+    "source": "Interlinear glosses of the time in a second hand over most cipher lines (glosses.md)."
+   },
+   "length": {
+    "tokens": 364,
+    "distinct": 37,
+    "unit": "symbols",
+    "measured": true,
+    "file": "ciphertext_reader1_B.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "DARA record https://dara.aragon.es/opac/app/item?i=1056746, PDF AHPZ_C_CRAR_000056.pdf",
+    "image_quality": "good",
+    "notes": "Two blind AI readers (Claude Opus 5.5 helper agents, 28 Nov 2026), own sign names, no values; 700 of 727 signs agree over both letters after name mapping (transcription/r.log). The first reader's text is used in the primary test; the second reader separates hx (s) from bx (u/v), which the first merges."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "homophonic",
+   "nomenclator"
+  ],
+  "summary": "A homophonic letter substitution of about 40 signs (letter- and figure-like shapes, barred variants, dot signs) set inside clear Italian; 7 and a barred p bracket the runs; one code sign (Nplus) for '(lo) papa'.",
+  "symbol_kind": "letters and symbols",
+  "distinct_symbols": 40,
+  "diacritics": {
+   "used": true
+  },
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": true,
+   "entries": 1,
+   "kinds": [
+    "titles"
+   ],
+   "unread_groups": 1
+  },
+  "nulls": {
+   "present": true
+  },
+  "key_order": "unknown",
+  "word_division": "none",
+  "notes": "Nulls: 7, ptop and dot. The single code sign is read from the glosses only (no tested value)."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "partial",
+   "where": "Glosses of the time on both leaves (over most cipher lines, not letter for letter). No modern reading found (catalogue 2865 says no decipherment; web search 28 Nov 2026).",
+   "found": "before attempt",
+   "used": true
+  },
+  "inputs": [
+   "images",
+   "cleartext context"
+  ],
+  "attack": "archive decipherment",
+  "human_role": "Andrew Beling set the task and the rules (plan stamped before key work, two blind readers, a held-out test stamped by FreeTSA before it was run). AI agents fetched the images, transcribed, built the key, ran the test, read and wrote. No person has checked the transcription, the key or the reading against the images.",
+  "tools": [
+   "curl",
+   "Python (PIL crops; scripts/reconcile.py; scripts/shared_runs.py; verification/measure.py)",
+   "openssl ts and FreeTSA"
+  ],
+  "models": [
+   "claude-opus-5-5"
+  ],
+  "first_date": "2026-11-28",
+  "last_date": "2026-11-28"
+ },
+ "solution": [
+  {
+   "date": "2026-11-28",
+   "kind": "access",
+   "what": "Both DARA PDFs fetched by curl (04:11 UTC); page images extracted.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-28",
+   "kind": "transcription",
+   "what": "Two blind transcriptions by helper agents with their own sign names; 700 of 727 signs agree.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-28",
+   "kind": "statistics",
+   "technique": [
+    "repeat/pattern analysis"
+   ],
+   "what": "The two letters compared for shared cipher runs: none longer than six signs (scripts/shared_runs.py), so no crib from repetition.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-28",
+   "kind": "crib",
+   "technique": [
+    "crib testing",
+    "manual reconstruction"
+   ],
+   "what": "Key built by hand from letter B only, aligning its glosses (venendo lo S. Prospero, lo real tutto venuto in mano de villani, sei milia, sono morti asai deli nostri principali, se acordaria con re de francia ...). Plan amended first (roles of the letters swapped) because this started on the letter planned as held out.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-28",
+   "kind": "verification",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "Held-out test under the proposed rule #1014 on letter A's glossed lines: frozen in verification/MANIFEST_v1.sha256 (SHA-256 9ac2da72eba4a20f8c26ba25df68ab28cab527569aa1ff353d62841b27acbbdf), stamped by FreeTSA 04:47:00 UTC, measured once 04:47:04: 0.725 of gloss letters against a best of 0.323 for 200 shuffled keys (z 15.5). PASS.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-28",
+   "kind": "reading",
+   "technique": [
+    "contextual inference"
+   ],
+   "what": "Both letters decoded and read word by word (reading_words.tsv): first count A 64 of 82, B 71 of 81 cipher words sure; recounted in the cold check below. Values proposed after the test (hbar = s, fbar = r, Nplus = papa, o = b in A) are not covered by it.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-28",
+   "kind": "transcription",
+   "technique": [
+    "contextual inference"
+   ],
+   "what": "Cold check after the test, by a separate AI agent (Claude Opus 5.5) from about 05:00 UTC: one fresh helper agent, shown only the page images and the 25 places where the two readers differ (no key, no reading), ruled on each (05:05-05:18 UTC; 8 for the first reader, 10 for the second, 1 neither, 6 not told). The word count was then redone against the decode: A 62 of 83, B 70 of 81 cipher words sure. A third [papa] code (A2.10) was counted; e (A1.02), spagnioli (A2.08) and de (B1.02) rest on a disputed sign and are probable; lle and llo are written as the key gives them.",
+   "result": "partial"
+  }
+ ],
+ "outcome": {
+  "class": "read in part",
+  "key": "partial",
+  "method": "key recovered based on adjacent plaintext",
+  "method_basis": "The key was rebuilt from the glosses of the time on letter B and tested on letter A against letter A's glosses (held-out test passed). Every word counted as read is given by the key; in letter A (held out) the key was built without it, and the glosses there agree with most of it; in letter B the key was fitted to the glosses, so the glossed words of B are read from the gloss as well as the key. Where gloss and decode differ, the decode is given. No word is counted as read from a gloss alone.",
+  "contribution": [
+   "transcription",
+   "key recovered",
+   "catalogue correction",
+   "sender or date identified"
+  ],
+  "fraction_read": 0.805,
+  "fraction_read_method": "measured",
+  "fraction_read_unit": "words",
+  "fraction_read_source": "reading_words.tsv: cipher words only, 132 of 164 sure (A 62/83, B 70/81); one model reader, recounted by a cold-check AI agent on 28 Nov 2026 (a third [papa] counted, disputed signs made probable).",
+  "codes_open": {
+   "open": 1,
+   "total": 1,
+   "tokens_open": 3
+  },
+  "verification": [
+   "contemporary decipherment"
+  ],
+  "texts": [
+   {
+    "doc": "C_CRAR-0055",
+    "label": "Letter A, Venice, 16 Apr 1512",
+    "transcription": "transcription/reader2_transcription.txt",
+    "decryption": "decryption_reader2.txt",
+    "reading": "reading_A.md",
+    "language": "it",
+    "state": "read in part",
+    "read_share": 0.747,
+    "cipher_words": 83,
+    "holes": 21,
+    "summary": "After Ravenna: the Council of Ten met with the Giunta; Spinelli encouraged the Signoria to hearten the Pope; to treat with the Pope they would want the ten thousand Spanish foot made up with Italians and forty thousand ducats.",
+    "translation": "translation.md"
+   },
+   {
+    "doc": "C_CRAR-0056",
+    "label": "Letter B, Venice, 16 Apr 1512",
+    "transcription": "transcription/reader2_transcription.txt",
+    "decryption": "decryption_reader2.txt",
+    "reading": "reading_B.md",
+    "language": "it",
+    "state": "read in part",
+    "read_share": 0.864,
+    "cipher_words": 81,
+    "holes": 11,
+    "summary": "The Viceroy to go to Naples and bring the army back to the field; Prospero Colonna with three hundred men at arms; the royal train fell to peasants; many principal men dead; if the French took Milan and did not restore it to the Emperor, they would come to terms with France.",
+    "translation": "translation.md"
+   }
+  ],
+  "key_file": "key.tsv",
+  "credits": [
+   {
+    "who": "ajbeling",
+    "role": "solution",
+    "note": "Andrew Beling, with AI agents: key rebuilt from letter B's glosses, held-out test on letter A stamped by FreeTSA and passed, both letters read in part",
+    "date": "2026-11-28"
+   },
+   {
+    "who": "ajbeling",
+    "role": "transcription",
+    "note": "Andrew Beling, with AI agents: two blind transcriptions of both letters",
+    "date": "2026-11-28"
+   },
+   {
+    "who": "contemporary",
+    "role": "key or decipherment used",
+    "note": "the interlinear glosses on C_CRAR/000001/0055 and 0056",
+    "date": "1512"
+   },
+   {
+    "who": "bourdeau",
+    "role": "new cipher",
+    "note": "catalogue 2865 (DARA sweep, wave 9, 15 Nov 2026)",
+    "date": "2026-11-15"
+   }
+  ],
+  "gaps": [
+   {
+    "item": "sign o in letter A (dubito, dubitando, delibera)",
+    "blocker": "no-key-material",
+    "detail": "the key gives c (from letter B); b wanted: perhaps two shapes merged"
+   },
+   {
+    "item": "nostre, cossi, confortato, tutto",
+    "blocker": "no-key-material",
+    "detail": "signs hbar, fbar, lam/lamf without a tested value"
+   },
+   {
+    "item": "[papa] x3 (sign Nplus)",
+    "blocker": "open-codes",
+    "detail": "read only from the glosses"
+   },
+   {
+    "item": "A2.04-05 la S. ad dare; A2.07 milia; A2.09 le spagnoli; A2.10 la S.; A3.01 delibera; B1.01 presa; B1.04 che le; B3.01-04 contrario, al ..., stato, la restituire",
+    "blocker": "illegible",
+    "detail": "decode garbled over a few signs: doubtful bars, blots, reader disagreements"
+   },
+   {
+    "item": "A1.02 e, A2.08 spagnioli, B1.02 de",
+    "blocker": "illegible",
+    "detail": "a sign the two readers disagree on, ruled only by a model helper (cold check 28 Nov 2026): probable"
+   }
+  ]
+ }
+}
