@@ -1,0 +1,44 @@
+# Transcription doubts, pass 3 (written before the freeze; none is resolved by sense in the frozen files)
+## H1 re-read, f. 15r
+- L01, L02 `Oe^~` (pass 1-2: `Oei~`): the dot sits above the first bowl, under the bar; L05 has the dot inside a closed bowl (`Oei~`). Read by that contrast. The reader knew the clear copy has quae here.
+- L02 word 4, L03 last word, L04 word 6: pass 1 `Lm 1 Lb`; at native size one lambda (thin leg + thick hook) and one L-shape are seen, no third sign. `1` dropped.
+- L02 `Lm 5^ X_ Ea` (pass 1 `1 5_ X Ea`): dot above the 5, dot below the x.
+- L03 word 2 `6s 6 Oe Dl"_ Ab` (pass 1 `6s 6 Oe 6_ Dl Ea"`): delta with two dots above and one below, then the barred hook + delta sign.
+- L04 `6 7 D2 5 Xc`: second sign has a down-stroke only (seven-shape), pass 1 `Tk`. L04 `Lm_ Tq`, L08 `Cl Tq`, L12 `Bx_ Tq`: dash with a down-tick only (pass 1 `Tk`/`Tk`/`Tk`).
+- L05 `Pe^`: a dot stands well above the sign; kept from pass 1. L05 `2 6r`: six with a long rising stroke.
+- L05 `Xo`, L11 `Xo_`, L09/L12 `Xco_`: x joined to a six-like loop (leaf io / tio).
+- L07, L08, L12 `Dh`: delta with a tall hooked lead-in.
+- L08 word 3 `3 X^ Bx_ 6L`: kept from pass 1, not resolved at native size.
+- L09 word 1 last sign: delta inside a big loop, `Dl@` kept.
+- L09 last word: a mark above the last delta (`Dl^`, pass 1 `Dl_`); a dot on the line after it is taken as a stop, not transcribed.
+- L10 `Cs` (pass 1 `Cd`): blotted spiral.
+- L11 `1 Lm 2z`: bold upright, lambda, two-shape with a tail (leaf pt).
+- L12 last word ends in a double bar at the edge (`Eq`, pass 1 `Q3`); the word runs on to line 13, outside the passage.
+## H4, f. 25r
+- L01 word 2: a thin curved stroke stands between the lambda and the eight; taken as the eight's lead-in (no 4-shape).
+- L01 words 3 and 5: the last sign is one wide crossed x (`Xc`); a separate x before it cannot be ruled out.
+- L01 `Hkb`, L08 `Hkb`: hook-sign with a bar; L08 has no separate upright.
+- L02 last sign and L04 word 2: small marks not on the leaf (`?`).
+- L03 `Bx"`: two dots seen above the box (one dot in L05, L11).
+- L03 word 3 `5b`, L11 last word `5b`: five-shape with a flat top bar.
+- L04 word 4: the group after `4 6` is a round loop joined to an eight-like sign; not identified (`?`).
+- L04 last word: first sign blotted, a two-shape is likely.
+- L06 `Lm*` three times: a dot is seen inside the lambda's angle. L06 word 4 `6^`: a dot stands to the upper right of the six's head; recorded as a dot above by the label rules (an inner-dot reading would change the decode).
+- L07 word 1: the x has a curved lead-in stroke.
+- L08 word 6 `Ds~`: a bar above the second dash.
+- L09 word 1: first sign heavily inked (`6`), fifth sign a thick blot (`?`). L09 word 5 `X^`: a dot above the x. L09 last word: second sign has a top bar and two bowls, not identified (`?`).
+- L10 word 1 `Lm4`: thin leg, down-stroke and cross bar. L10 word 2: `5 6 Tk Dl^`, the six's top stroke runs into the tack.
+## Second pentacle series, ff. 52r-53r
+- S2-02 word 4: a three with a dot below, an x, a bar over both (`3_ X~`).
+- S2-03, S2-08, S2-11: a delta-or-x inside a big loop is labelled `Dl@` wherever the inner sign is not clearly an x; `X@` only in S2-02 and S2-09.
+- S2-04 word 3: the dot below stands under the looped six (`6L_`). Word 6 `Pe@`: two-shape + e-loop inside a big loop.
+- S2-05: three separate words in the rim; the first begins left of the top cross.
+- S2-06 word 4: the three has a lead-in loop that may be a second six.
+- S2-07 word 4, S2-10 word 9: an upper dot stands between the x and the six; put on the six (`6^`).
+- S2-08 `Lm*`: a dot between the lambda and the upright.
+- S2-09 word 3 and S2-11 word 1: first sign transcribed `5`. AFTER both rims had been written down the reader saw that a hook-sign `Hk` (leaf sc) would give scribe / inscribe; the frozen files keep `5`, because the change was prompted by sense.
+- S2-09 word 10 `As`: a four-like sign with a tail below the line (leaf ae); compare `Lm4` in H4 L10, labelled before this one.
+- S2-10 word 5 `Dls`: delta crossed by an upright stroke. Last word: one dot at the end of the unwrap and two at its start, read as one three-dot sign `D3`.
+- S2-11 last word: `Lm Dh 5 6_ Ds Bx`; the dot may stand under the five.
+- S2-12 word 2: sixth sign blotted (`Dh`); last word: signs 6-8 crowded.
+- Known weakness of rule C3, seen in pass 2's rims before this freeze (mirabalia, adirabale): where the x carries the inner dot but it cannot be seen, the fallback takes the lambda.

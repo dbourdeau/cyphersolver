@@ -1,0 +1,331 @@
+# TAGS_P4: this agent's tags (Claude Opus 5.5, after the decode, one tagger, no separate judge) for every pass-4 word that is not identical to the pass-2 decode at the same place. text, line, word index, S (sure) or H (hole), reason. The checks were done with AI tools and no person checked each record by hand.
+TRAIN f4r	L01	2	S	sure: hebraeorum
+TRAIN f4r	L03	5	H	slip (isaac)
+TRAIN f4r	L04	3	S	sure: rerum
+TRAIN f4r	L05	1	S	sure: creaturarum
+TRAIN f4r	L08	3	S	sure: secretorum
+TRAIN f4r	L10	2	H	no sense
+TRAIN f4r	L10	5	H	[?] in word
+TRAIN f4r	L11	6	S	sure: surgens
+TRAIN f4r	L12	3	H	no sense
+TRAIN f4r	L13	4	H	no sense
+TRAIN f4r	L13	7	S	sure: uidens
+TRAIN f4r	L14	5	S	sure: ruebant
+TRAIN f4r	L14	6	H	a lone line-end mark, no letters
+TRAIN f4r	L14	7	S	sure: una
+TRAIN f4r	L14	8	S	sure: die
+TRAIN f4r	L16	3	H	[?] in word
+TRAIN f4r	L17	6	H	no sense
+TRAIN f4r	L18	1	H	slip (confusiones)
+TRAIN f4r	L19	3	S	sure: fiebant
+TRAIN f4v	L02	0	H	no sense
+TRAIN f4v	L02	2	H	e missing (intelligens)
+TRAIN f4v	L04	4	S	sure: secretorum
+TRAIN f4v	L05	2	H	slip (magicarum)
+TRAIN f4v	L07	7	H	[?] in word
+TRAIN f4v	L08	0	H	no sense
+TRAIN f4v	L12	1	H	no sense
+TRAIN f4v	L15	3	S	sure: secretorum
+TRAIN f4v	L18	0	S	sure: futura
+TRAIN f4v	L21	0	H	no sense
+TRAIN f4v	L24	4	H	Dl@ not re-checked; sense wants sepelies
+H1r	L01	0	S	sure: et
+H1r	L01	1	S	sure: per
+H1r	L01	2	S	sure: omnia
+H1r	L01	3	S	sure: documenta
+H1r	L01	4	S	sure: quae~
+H1r	L01	5	S	sure: in
+H1r	L01	6	S	sure: fide
+H1r	L01	7	S	sure: christiana
+H1r	L01	8	S	sure: sunt
+H1r	L02	0	S	sure: instituta
+H1r	L02	1	S	sure: et
+H1r	L02	2	S	sure: per
+H1r	L02	3	H	n missing (sanctorum)
+H1r	L02	4	S	sure: agmina
+H1r	L02	5	S	sure: quae~
+H1r	L02	6	S	sure: agni
+H1r	L03	1	S	sure: sequuntur
+H1r	L03	2	S	sure: uestigia
+H1r	L03	3	S	sure: et
+H1r	L03	4	S	sure: per
+H1r	L03	5	S	sure: omnes
+H1r	L03	6	S	sure: sanctos
+H1r	L04	0	S	sure: quos
+H1r	L04	1	S	sure: deus
+H1r	L04	2	S	sure: elegit
+H1r	L04	3	S	sure: ante
+H1r	L04	4	S	sure: mundi
+H1r	L04	5	S	sure: iacta
+H1r	L04	6	S	sure: fundamenta
+H1r	L05	0	S	sure: et
+H1r	L05	1	H	no sense (per)
+H1r	L05	2	S	sure: eorum
+H1r	L05	3	S	sure: merita
+H1r	L05	4	S	sure: qui~
+H1r	L05	5	S	sure: in
+H1r	L05	6	S	sure: gaudio
+H1r	L05	7	S	sure: et
+H1r	L05	8	S	sure: gratia
+H1r	L06	0	S	sure: sunt
+H1r	L06	1	S	sure: apud
+H1r	L06	2	S	sure: deum
+H1r	L07	0	S	sure: alia
+H1r	L07	1	S	sure: coniuratio
+H1r	L08	0	S	sure: adiuro
+H1r	L08	1	S	sure: uos
+H1r	L08	2	H	slip (daemones)
+H1r	L08	3	S	sure: in
+H1r	L08	4	S	sure: quacunque
+H1r	L08	5	S	sure: parte
+H1r	L08	6	S	sure: mundi
+H1r	L09	0	H	slip, sense wants sitis
+H1r	L09	1	S	sure: per
+H1r	L09	2	S	sure: annunciationem
+H1r	L09	3	S	sure: ch~ri
+H1r	L09	4	S	sure: per
+H1r	L09	5	S	sure: aduentum
+H1r	L10	0	S	sure: ch~ri
+H1r	L10	1	S	sure: per
+H1r	L10	2	S	sure: natiuitatem
+H1r	L10	3	S	sure: ch~ri
+H1r	L10	4	S	sure: per
+H1r	L11	1	S	sure: et
+H1r	L11	2	H	m missing (baptismum)
+H1r	L11	3	S	sure: ch~ri
+H1r	L11	4	S	sure: per
+H1r	L11	5	S	sure: ieiunium
+H1r	L11	6	S	sure: et
+H1r	L11	7	S	sure: trans
+H1r	L12	0	S	sure: figurationem
+H1r	L12	1	S	sure: ch~ri
+H1r	L12	2	S	sure: in
+H1r	L12	3	S	sure: monte
+H1r	L12	4	S	sure: tabor
+H1r	L12	5	S	sure: per
+H1r	L12	6	H	word cut at the end of the passage
+H2	L01	5	S	sure: habens
+H2	L05	6	H	sign with no value
+H2	L11	5	H	no sense (librae)
+H2	L12	5	S	sure: bene
+H2	L15	2	H	sign with no value
+H4	L01	0	S	sure: post
+H4	L01	1	S	sure: hac
+H4	L01	2	H	r missing (surgit)
+H4	L01	3	S	sure: et
+H4	L01	4	S	sure: aperit
+H4	L01	5	S	sure: brachia
+H4	L01	6	S	sure: sua
+H4	L01	7	S	sure: ac
+H4	L01	8	S	sure: si
+H4	L02	0	S	sure: uellet
+H4	L02	1	S	sure: amplexari
+H4	L02	2	H	slip, sense wants aerem/aera
+H4	L02	3	S	sure: dicendo
+H4	L02	4	H	sign with no value
+H4	L03	0	S	sure: per
+H4	L03	1	H	slip (nomen)
+H4	L03	2	H	no sense
+H4	L03	3	S	sure: libri
+H4	L03	4	S	sure: et
+H4	L03	5	S	sure: per
+H4	L03	6	S	sure: omnes
+H4	L03	7	S	sure: eius
+H4	L04	1	H	sign with no value
+H4	L04	2	S	sure: tortuosi
+H4	L04	3	H	[?] in word
+H4	L04	4	S	sure: deformes
+H4	L04	5	S	sure: sed
+H4	L04	6	S	sure: in
+H4	L04	7	H	m missing (omni)
+H4	L05	1	S	sure: forma
+H4	L05	2	S	sure: ad
+H4	L05	3	S	sure: nos
+H4	L05	4	S	sure: ueniatis
+H4	L05	5	S	sure: et
+H4	L05	6	S	sure: per
+H4	L05	7	S	sure: nomen
+H4	L05	8	S	sure: et
+H4	L05	9	S	sure: in
+H4	L06	0	S	sure: nomine
+H4	L06	1	S	sure: adonai
+H4	L06	2	S	sure: sabaoth
+H4	L06	3	H	no sense
+H4	L06	4	S	sure: eloi
+H4	L06	5	S	sure: sadai
+H4	L07	0	S	sure: iod
+H4	L07	1	S	sure: he
+H4	L07	2	S	sure: uau
+H4	L07	3	S	sure: aleph
+H4	L07	4	S	sure: tetragrammaton
+H4	L07	5	H	slip (ineffabile)
+H4	L08	0	S	sure: eius
+H4	L08	1	H	h added (uidelicet)
+H4	L08	2	S	sure: qui
+H4	L08	3	S	sure: est
+H4	L08	4	S	sure: deus
+H4	L08	5	S	sure: uirtut~um
+H4	L08	6	S	sure: deus
+H4	L09	0	H	[?] in word
+H4	L09	1	S	sure: deus
+H4	L09	2	H	slip (uerus)
+H4	L09	3	H	no sense
+H4	L09	4	H	m added (israel)
+H4	L09	5	S	sure: qui
+H4	L09	6	S	sure: super
+H4	L10	1	H	no sense
+H4	L10	2	S	sure: habitat
+H4	L10	3	S	sure: et
+H4	L10	4	S	sure: in
+H4	L10	5	S	sure: coelo
+H4	L10	6	S	sure: sedes
+H4	L10	7	S	sure: eius
+H4	L11	0	S	sure: per
+H4	L11	1	S	sure: nomen
+H4	L11	2	S	sure: eius
+H4	L11	3	S	sure: qui
+H4	L11	4	S	sure: dixit
+H4	L11	5	S	sure: et
+H4	L11	6	S	sure: facta
+H4	L11	7	S	sure: sunt
+H4	L11	8	S	sure: et
+H4	L11	9	S	sure: stare
+H4	L12	0	S	sure: fecit
+H4	L12	1	S	sure: omnia
+H4	L12	2	S	sure: et
+H4	L12	3	S	sure: ipse
+H4	L12	4	S	sure: super
+H4	L12	5	S	sure: omnia
+H4	L12	6	S	sure: dominatur
+H4	L12	7	S	sure: et
+S1	S1-013	3	S	sure: obedient
+S1	S1-013	6	H	n placed after e by rule C2 and n missing (infernales)
+S1	S1-014	3	H	sign with no value
+S1	S1-014	4	S	sure: deum
+S1	S1-014	5	S	sure: timebit
+S1	S1-015	1	S	sure: obedient
+S1	S1-015	6	H	n placed after e by rule C2 (infernales)
+S1	S1-016	0	S	sure: obedient
+S1	S1-016	6	H	n placed after e by rule C2 (infernales)
+S1	S1-019	1	H	u doubled (sanguinis)
+S1	S1-027	6	S	sure: timebis
+S1	S1-028	4	S	sure: uideris
+S1	S1-028	6	S	sure: eris
+S1	S1-030	6	H	n placed after e by rule C2 (infernales)
+S1	S1-030	7	H	sign with no value
+S1	S1-031	8	S	sure: beneuolos
+S1	S1-033	7	H	n for m (timebis)
+S1	S1-070	1	S	sure: uenenum
+S1	S1-070	4	H	b for r (mortis)
+S1	S1-073	1	S	sure: mortis
+S1	S1-079	9	S	sure: cedent
+S1	S1-082	4	S	sure: beneuolentiam
+S1	S1-084	4	H	no sense
+S1	S1-085	0	S	sure: ecce
+S1	S1-085	3	S	sure: dominantis
+S1	S1-087	4	S	sure: timebis
+S1	S1-090	3	S	sure: eris
+S1	S1-095	2	H	slip (carta)
+S1	S1-096	3	S	sure: uenient
+S1	S1-096	6	S	sure: obedient
+S1	S1-099	3	S	sure: morte
+S1	S1-099	6	S	sure: peribis
+S1	S1-105	0	S	sure: ecce
+S1	S1-106	4	S	sure: uinculis
+S1	S1-107	4	S	sure: uenenum
+S2	S2-02	0	S	sure: hoc
+S2	S2-02	1	S	sure: signum
+S2	S2-02	2	S	sure: triumphatoris
+S2	S2-02	3	S	sure: dni~
+S2	S2-02	4	S	sure: nostri
+S2	S2-02	5	S	sure: iesu
+S2	S2-02	6	S	sure: ch~ri
+S2	S2-02	7	H	slip (mysteriosum)
+S2	S2-03	0	S	sure: cum
+S2	S2-03	1	S	sure: hoc
+S2	S2-03	2	S	sure: signo
+S2	S2-03	3	S	sure: eris
+S2	S2-03	4	S	sure: gratus
+S2	S2-03	5	S	sure: omnibus
+S2	S2-03	6	S	sure: et
+S2	S2-03	7	S	sure: fortunatus
+S2	S2-04	0	S	sure: iesus
+S2	S2-04	1	S	sure: autem
+S2	S2-04	2	H	n missing (transiens)
+S2	S2-04	3	S	sure: per
+S2	S2-04	4	S	sure: medium
+S2	S2-04	5	S	sure: ipsorum
+S2	S2-04	6	S	sure: abiit
+S2	S2-05	0	H	name not identified
+S2	S2-05	1	S	sure: amen
+S2	S2-05	2	H	name not identified
+S2	S2-06	0	S	sure: deposuit
+S2	S2-06	1	S	sure: potentes
+S2	S2-06	2	S	sure: de
+S2	S2-06	3	S	sure: sede
+S2	S2-06	4	S	sure: et
+S2	S2-06	5	S	sure: exaltauit
+S2	S2-06	6	S	sure: humiles
+S2	S2-07	0	S	sure: hoc
+S2	S2-07	1	S	sure: signum
+S2	S2-07	2	S	sure: reddit
+S2	S2-07	3	S	sure: hominem
+S2	S2-07	4	S	sure: uirtuosum
+S2	S2-07	5	S	sure: et
+S2	S2-07	6	S	sure: a
+S2	S2-07	7	S	sure: periculo
+S2	S2-07	8	S	sure: defendit
+S2	S2-08	0	S	sure: hoc
+S2	S2-08	1	S	sure: est
+S2	S2-08	2	H	slip (ineffabile)
+S2	S2-08	3	S	sure: nomen
+S2	S2-08	4	S	sure: dei
+S2	S2-08	5	S	sure: quo
+S2	S2-08	6	S	sure: aron
+S2	S2-08	7	S	sure: usus
+S2	S2-08	8	S	sure: est
+S2	S2-08	9	S	sure: in
+S2	S2-08	10	S	sure: periculis
+S2	S2-09	0	S	sure: ad
+S2	S2-09	1	S	sure: amorem
+S2	S2-09	2	H	slip (inscribe)
+S2	S2-09	3	S	sure: hos
+S2	S2-09	4	S	sure: caracteres
+S2	S2-09	5	S	sure: in
+S2	S2-09	6	S	sure: crusta
+S2	S2-09	7	S	sure: panis
+S2	S2-09	8	S	sure: et
+S2	S2-09	9	S	sure: praebe
+S2	S2-09	10	S	sure: ad
+S2	S2-09	11	H	m doubled (comedendum)
+S2	S2-10	0	S	sure: hoc
+S2	S2-10	1	S	sure: signum
+S2	S2-10	2	S	sure: in
+S2	S2-10	3	S	sure: sinu
+S2	S2-10	4	S	sure: aut
+S2	S2-10	5	S	sure: uestibus
+S2	S2-10	6	S	sure: portatum
+S2	S2-10	7	S	sure: auget
+S2	S2-10	8	S	sure: hominem
+S2	S2-10	9	S	sure: gratia
+S2	S2-10	10	H	slip (mirabili)
+S2	S2-11	0	H	slip (scribe)
+S2	S2-11	1	S	sure: hoc
+S2	S2-11	2	S	sure: cum
+S2	S2-11	3	S	sure: manu
+S2	S2-11	4	S	sure: sinistra
+S2	S2-11	5	S	sure: sanguine
+S2	S2-11	6	S	sure: digiti
+S2	S2-11	7	S	sure: tui
+S2	S2-11	8	S	sure: die
+S2	S2-11	9	S	sure: iouis
+S2	S2-11	10	S	sure: in
+S2	S2-11	11	H	r added (argento)
+S2	S2-12	0	S	sure: contra
+S2	S2-12	1	S	sure: ligaturam
+S2	S2-12	2	S	sure: positum
+S2	S2-12	3	S	sure: in
+S2	S2-12	4	S	sure: uestibus
+S2	S2-12	5	S	sure: ligati
+S2	S2-12	6	S	sure: statim
+S2	S2-12	7	H	slip (liberabitur)

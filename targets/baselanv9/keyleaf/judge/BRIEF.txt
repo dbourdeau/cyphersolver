@@ -1,0 +1,29 @@
+JUDGE BRIEF: baselanv9 pass 2 (one decode with the manuscript's own key leaf; no emendation)
+
+You are given judge/decode.txt: the decoded letters of an enciphered 17th-century magical manuscript (a copy of the
+Clavicula Salomonis), exactly as one mechanical pass produced them. Language expected: Latin. Sections:
+  TRAIN f4r, TRAIN f4v : two pages of conjuration text (lines L00...);
+  H1 : a passage of conjurations (12 lines); H2 : the seal of Jupiter, instructions and "virtues" (23 lines);
+  H3 : two rim inscriptions of pentacles (P3, P4);
+  PENT : rim inscriptions of pentacles, one line per pentacle (S1-011 ... S1-110). Pentacle inscriptions are short
+         sentences of protection or power ("whoever carries this sign ...", "against ...", psalm verses, names).
+Period spelling is not an error if the word is recognisable: e for ae, single for double consonants, c for t before i,
+i for y, u for v, n for m before a consonant and the reverse. "=" marks a word that runs on to the next line (join it).
+"~" is a Latin suspension mark left unexpanded (e.g. n~ can stand for non); you may read the word it marks as its usual
+expansion, but do not score the ~ itself. "[?]" is a sign with no value: do not score it; a word containing [?] is
+scored on the letters that are there: S if the word is still recognisable, N if not.
+
+Score EVERY decoded letter (a-z only) with one of:
+  S = the letter stands in a word that reads as sense in Latin (a Latin word, a known name, or a standard abbreviation)
+  E = the letter is a one-letter slip (one wrong, missing or added letter) in an otherwise readable word: score the
+      slip letter E and the rest of the word S
+  N = no sense; also every letter of a word with more than one slip
+Do not emend, do not re-divide words beyond the "=" joins and obvious run-together words, and do not consult any
+edition, the Clavicula literature, the internet or any other reading of this manuscript. Judge only from the decode.
+
+Output, as plain tab-separated text, one row per line of decode.txt:
+  section <TAB> line id <TAB> S <TAB> E <TAB> N <TAB> [?] count <TAB> the line's words, each followed by /S, /E or /N
+(for a word with a slip, mark it /E and give the intended word in brackets, e.g. tinebis/E(timebis)).
+Then totals per section (TRAIN f4r, TRAIN f4v, H1, H2, H3, PENT) and the overall total. Percentage read = S/(S+E+N).
+The project's line is 65% per section and per pentacle; say for each pentacle whether it is at or over 65%.
+Do the arithmetic in full; do not estimate.

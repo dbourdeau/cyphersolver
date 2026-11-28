@@ -1,0 +1,21 @@
+JUDGE BRIEF: baselANV9 (one decode, frozen key, no emendation)
+
+You are given judge/decode.txt: the decoded letters of three held-out passages of an enciphered magical manuscript,
+line by line, exactly as one mechanical pass produced them. Language expected: Latin of a 17th-century copy of the
+Clavicula Salomonis (conjurations, pentacles, planetary seals). Spellings such as "e" for "ae", single for double
+consonants, "c" for "t" before i, are period spelling, not errors, if the word is recognisable. "=" marks a word that
+runs on to the next line (join it). H1 = a passage of conjurations (12 lines); H2 = the seal of Jupiter, a page of
+instructions and "virtues"; H3 = two rim inscriptions of pentacles.
+
+Score EVERY decoded letter (a-z only) with one of:
+  S = the letter stands in a word that reads as sense in Latin
+  E = the letter is a one-letter slip in an otherwise readable word (score the slip letter E, the rest of the word S)
+  N = no sense
+Do not score '?' (a sign the key gives no value; count them separately). A word broken by '?' is scored on the letters
+that are there: S if the word is still recognisable, N if not.
+Do not emend, do not re-divide beyond the "=" joins and obvious run-together words, and do not consult any edition,
+the Clavicula literature, or any other reading of this manuscript. Judge only from the decode.
+
+Report: per line S/E/N counts; totals for H1, H2, H3; the total over all three; and the count of '?'.
+Percentage read = S / (S+E+N). The project's line is 65%.
+Letter counts for checking (a-z only): H1 367, H2 702, H3 69, total 1138. '?' marks: H1 5, H2 5, H3 0.
