@@ -1,0 +1,199 @@
+{
+ "schema_version": 1,
+ "target": "meyerfeldt1713",
+ "title": "J. A. Meyerfeldt, governor-general of Swedish Pomerania, to the King: cipher letter 143535 of Pommeranica vol. 149, read in part with the key of the time in the same volume (catalogue 451)",
+ "documents": [
+  {
+   "id": "143535",
+   "read": "read in part",
+   "shelfmark": "Riksarkivet, Pommeranica, Skrivelser till Kungl. Maj:t från myndigheter: Generalguvernörer, vol. 149 (SE/RA/2404/I A 2/149), sample view 20261113_143535",
+   "date": "15 January 1712 or 1714 (\"d. 15 Januarij\"; archivist's pencil \"1712 el. 1714?\")",
+   "year": 1713,
+   "country": "Sweden",
+   "route": "Johan August Meyerfeldt (probably) -> Charles XII",
+   "language": "German",
+   "pages": 1,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No gloss or decipherment of the time on the page; the key is on views 143346 and 143443 of the same volume.",
+    "partial": false
+   },
+   "length": {
+    "tokens": 326,
+    "unit": "letters",
+    "measured": true,
+    "file": "transcription/143535_block1.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Claude (Opus 5.5) for Brice Dudout, 24 Nov 2026, by eye on straightened copies enlarged 2-3x; k / l / m forms settled by Brice Dudout's blind sign sheet (sign_check/)",
+    "image_quality": "good",
+    "notes": "Not blind: the joined forms were identified with the key while a working reading went on (NOTES.md). Blots at L1-L2, L4, L8 and in block 2. 272 cipher letters in block 1 and 54 in block 2."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "monoalphabetic"
+  ],
+  "summary": "Joined script on a base line: each letter is a stroke or a loop above or below a continuous horizontal line; one form per letter; v and w share one sign; no word division.",
+  "symbol_kind": "symbols",
+  "distinct_symbols": 23,
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": false
+  },
+  "nomenclator": {
+   "present": false
+  },
+  "nulls": {
+   "present": false
+  },
+  "key_order": "alphabetical",
+  "word_division": "none",
+  "notes": "Key of the time in the same volume, in isolated (143443) and joined (143346) forms. The double loops k / l / m are told apart by the order and size of the two loops (sign_check/). One slanting-H sign (HP) and one small loop (XX) have no value."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "in archive",
+   "where": "The key of the time is on views 143346 and 143443 of the same volume; no decipherment of the letter is known (no gloss, not in the repository or DECODE; printed Swedish editions not searched).",
+   "found": "during attempt",
+   "used": true
+  },
+  "inputs": [
+   "images",
+   "key from archive"
+  ],
+  "attack": "key from archive",
+  "human_role": "Brice Dudout obtained the samples from the archive and read the blind sign sheet; Claude transcribed the key and the letter, decoded and read.",
+  "tools": [
+   "decode.py"
+  ],
+  "models": [
+   "Claude Opus 5.5 (Anthropic), agents run by Brice Dudout"
+  ],
+  "sessions": 2,
+  "first_date": "2026-11-24",
+  "last_date": "2026-11-24"
+ },
+ "solution": [
+  {
+   "date": "2026-11-24",
+   "kind": "access",
+   "what": "14 sample views of Pommeranica vol. 149 supplied by the Riksarkivet (J. Mispelaere); images private, none committed.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "key from source",
+   "what": "Key of the time found on views 143346 (joined form) and 143443 (isolated form) of the same volume; transcribed as shape codes and frozen by SHA-256 before decoding.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "transcription",
+   "what": "Letter 143535, both cipher blocks (326 cipher letters), as shape codes; not blind (declared).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "verification",
+   "technique": [
+    "manual reconstruction"
+   ],
+   "what": "Blind sign sheet 2411 (sign_check/): Brice Dudout chose the shape seen for 11 doubtful signs (3 controls, 3/3; rule hashed before the thumbnails, SHA-256 c88aedfe...). The double loop splits into k (two loops side by side), m (small then large loop) and l (large then small); g and t confirmed; a slanting H gets no value. Sure words 41 -> 47 of 68.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "reading",
+   "what": "Letter 143535: 68 cipher words, 47 sure, 5 probable, 3 restored, 13 unresolved (reading.md); continuous German on the Muscovite deserters sent to Sweden or put into the regiments.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "literature search",
+   "what": "Repository catalogue (entry 451, open), research/leads.json, targets/ and DECODE: no decipherment. Printed Swedish editions not searched.",
+   "result": "partial"
+  }
+ ],
+ "outcome": {
+  "method": "read with known key",
+  "method_basis": "Key of the time on views 143346 and 143443 of the same volume.",
+  "contribution": [
+   "transcription"
+  ],
+  "class": "read in part",
+  "fraction_read": 0.691,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "reading.md: 47 sure of 68 cipher words of letter 143535 (sure words only); with probable and restored words 55/68 = 0.81",
+  "key": "recovered",
+  "gaps": [
+   {
+    "item": "143535: 13 unresolved words (reading.md)",
+    "blocker": "illegible",
+    "detail": "ink blots at L1-L2, L4, L8 and in block 2; segmentation of joined signs uncertain in L3 (wengen, lehgen) and block 2 line 11"
+   },
+   {
+    "item": "143510 (22 Feb 1713) and 143523 (10 May 1712 or 1713)",
+    "blocker": "not-attempted",
+    "detail": "seen among the samples; 143523 line 1 decoded only, 143510 not transcribed (a more cursive hand)"
+   },
+   {
+    "item": "printed editions and the year of 143535",
+    "blocker": "not-attempted",
+    "detail": "Historiska handlingar and Karl XII's letters not searched; 1712 or 1714 not settled by the text read"
+   }
+  ],
+  "verification": [
+   "key confirms"
+  ],
+  "provenance": "contributed",
+  "notes": "Images: Riksarkivet, Pommeranica vol. 149, samples supplied by the archive (J. Mispelaere), 24 Nov 2026; no reuse licence asked or given, none committed. AI analysis was not raised with the archive; the project's method was not presented to it at the time. No held-out validation: a key of the time with no gloss to test against; block 1 (272 letters) is under the 300-letter portion.",
+  "sign_check": [
+   {"date": "2026-11-24", "checker": "Brice Dudout", "checker_kind": "project", "model_roles": ["rule", "thumbnails", "sheet", "scoring", "remarks"], "signs_checked": 11, "controls": 3, "controls_passed": 3, "as_transcribed": 5, "corrected": 5, "unresolved": 1, "not_counted": 0, "rule": "sign_check/sheet-2411-rule.md (24 Nov 2026, before the thumbnails and the answers)", "rule_hash": "c88aedfe4b1965c395a80e3b1fe1f5aa7fb48e19cfe57f70aaf675997155dd99", "sheet_faults": "one key example (the joined m of 143346) is struck through on the key sheet, noticed by the reader at q02", "note": "Letter 143535 (and one sign each of 143523 and 143510), images private. k / m / l: the double loop splits into DK = k, DM = m (a form not offered, described by the reader), LH = l; g and t confirmed; a slanting H (HP) gets no value. Sure words 41 -> 47 of 68 for 143535. Not a human_check: AI agents built and scored the sheet."}
+  ],
+  "texts": [
+   {
+    "doc": "143535",
+    "label": "Meyerfeldt to the King, \"d. 15 Januarij\" (1712 or 1714), Pommeranica vol. 149, view 143535",
+    "transcription": [
+     "transcription/143535_block1.txt",
+     "transcription/143535_block2.txt"
+    ],
+    "decryption": [
+     "decryption.txt"
+    ],
+    "language": "de",
+    "reading": "reading.md",
+    "translation": "reading.md",
+    "summary": "The Muscovite deserters, very few: some have been sent to Sweden, the others distributed among the regiments so that they do not eat the bread uselessly, until they can be sent safely to Sweden; then, in clear, letters from Stralsund from Major General Mevius.",
+    "state": "read in part",
+    "read_share": 0.691,
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude (Opus 5.5), contributor's own",
+     "date": "2026-11-24",
+     "note": "Key of the time; one reader for the transcription (not blind) and a blind sign sheet by Brice Dudout for the doubtful forms; read in part, 47 of 68 cipher words sure."
+    }
+   }
+  ],
+  "key_file": [
+   "key.tsv"
+  ],
+  "credits": [
+   {
+    "who": "dudout",
+    "role": "solution",
+    "note": "Samples obtained from the Riksarkivet, key of the time found in the volume and transcribed, letter 143535 transcribed, decoded and read in part (Claude for Brice Dudout); blind sign sheet by Brice Dudout. Images: Riksarkivet, samples supplied by the archive (J. Mispelaere), none committed.",
+    "date": "2026-11-24",
+    "source": "this folder"
+   }
+  ]
+ }
+}
