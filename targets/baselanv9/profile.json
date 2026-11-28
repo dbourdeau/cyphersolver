@@ -482,6 +482,15 @@
    ],
    "what": "Maintainers' integration of PR #957: the 12 words broken at a line end that the pass-5 scorer left out were added to the counts of H1r, H2 and H4 in outcome.texts, from the tags the contributor shows in reading_pass5.md: H1r 69/75 -> 71/77 (92.21%), H2 79/126 -> 81/133 (60.90%, 52 holes), H4 73/89 -> 75/92 (81.52%, 17 holes); the angle-bracket words were checked against those tags in reading_pass5.md (H1r immaculati, circumcisionem sure; H2 adhibenda, librum sure, five holes; H4 uirtutes, mansueta sure, t?rar a hole). The frozen SCORE_P5.tsv and WORDS_P5.tsv are not changed. No state changes. Done by an AI agent for the maintainers.",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-28",
+   "kind": "reading",
+   "technique": [
+    "manual reconstruction"
+   ],
+   "what": "Maintainers' integration of PR #957: reading reviews recorded on the 93 read or read-in-part entries of outcome.texts (none on the 7 decoded, not read). For each, the agent read that section of reading_pass5.md as Latin and the matching section of translation_pass5.md, recounted the count from pass5/WORDS_P5.tsv (all 100 entries agree), and wrote what it found in the review's note: 20 texts at 95% or more read as complete sentences; most floor-read rims are one sentence with one or two recognisable slips; several read-in-part texts give only a sentence frame (S1-032, S1-052, F54-D) and H2 reads only in its opening and closing lines; the six floor-read parts with half or more of their words holes (S2-05, S2i-07v, S2i-11, F54-A-in, F97r-lab, F97v-in) are not sentences and are kept read by the floor as the rule stands. Grade B on all (the decode is raw: no punctuation, abbreviation bars, u for v; the translation normalises). Not checked: the images, the transcription, the Latin by a person; no held-out test.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -530,7 +539,7 @@
     "label": "Passes 2-5: decoded with the volume's own key leaf f. 99r",
     "method": "read with known key",
     "extent": "partial",
-    "basis": "keyleaf/, pass3/, pass4/, pass5/: the leaf's table, corrected in pass 4 (Tk@ = ru); sure words per text in pass4/SCORE_P4.tsv and pass5/SCORE_P5.tsv; outcome.texts keeps pass 5, the latest pass for every passage, one entry per text, rim and part (100): 72 read (52 of them only by the short-text floor), 21 read in part, 7 decoded, not read (Dan Bourdeau's review of 27 Nov 2026 on PR #957, point 1). H1r 69/75, H2 79/126, H3 11/15, H4 73/89; first-series rims 385/474, 50 of 62 within the floor; second-series rims 85/96, 11 of 11; inside the circles of ff. 52r-53r 21/63, f. 54r 28/42, f. 97r-v 24/42. Readings and translations: reading_pass4.md, translation_pass4.md, reading_pass5.md, translation_pass5.md. No reading review recorded here."
+    "basis": "keyleaf/, pass3/, pass4/, pass5/: the leaf's table, corrected in pass 4 (Tk@ = ru); sure words per text in pass4/SCORE_P4.tsv and pass5/SCORE_P5.tsv; outcome.texts keeps pass 5, the latest pass for every passage, one entry per text, rim and part (100): 72 read (52 of them only by the short-text floor), 21 read in part, 7 decoded, not read (Dan Bourdeau's review of 27 Nov 2026 on PR #957, point 1). H1r 71/77, H2 81/133, H3 11/15, H4 75/92 (with the 12 words broken at a line end, set at the merge of PR #957; pass5/SCORE_P5.tsv gives 69/75, 79/126, 73/89); first-series rims 385/474, 50 of 62 within the floor; second-series rims 85/96, 11 of 11; inside the circles of ff. 52r-53r 21/63, f. 54r 28/42, f. 97r-v 24/42. Readings and translations: reading_pass4.md, translation_pass4.md, reading_pass5.md, translation_pass5.md. Reading reviews on the 93 read or read-in-part entries were recorded at the merge of PR #957 (28 Nov 2026) by an AI agent for the maintainers, not a person."
    }
   ],
   "contribution": [
@@ -637,7 +646,14 @@
     "cipher_words": 3,
     "holes": 2,
     "floor_used": true,
-    "note": "Pass 5, pass5/SCORE_P5.tsv: 1 of 3 cipher words sure (33.33%), 2 holes; one agent's tags, no separate judge, no person. Read only by the short-text floor (fewer than 40 cipher words, 2 holes, at most 2 allowed). Under our own 65% line: most of its words are holes."
+    "note": "Pass 5, pass5/SCORE_P5.tsv: 1 of 3 cipher words sure (33.33%), 2 holes; one agent's tags, no separate judge, no person. Read only by the short-text floor (fewer than 40 cipher words, 2 holes, at most 2 allowed). Under our own 65% line: most of its words are holes.",
+    "reading_review": {
+     "reader_kind": "model",
+     "grade": "B",
+     "by": "integration review of PR #957 (AI agent, for the maintainers); not a person",
+     "date": "2026-11-28",
+     "note": "Read section F54-A-in of reading_pass5.md as Latin and the same section of translation_pass5.md. Not a sentence: 'sanctus [?isiros] [?tetragramaton]', one sure word and two names in holes (ischyros, tetragrammaton as spellings); read only by the short-text floor (1 of 3 sure). State read; count 1/3 recounted from pass5/WORDS_P5.tsv. Not checked: the images, the transcription, the Latin by a person; no held-out test."
+    }
    },
    {
     "doc": "anv9",
@@ -653,7 +669,14 @@
     "cipher_words": 9,
     "holes": 1,
     "floor_used": true,
-    "note": "Pass 5, pass5/SCORE_P5.tsv: 8 of 9 cipher words sure (88.89%), 1 hole; one agent's tags, no separate judge, no person. Read only by the short-text floor (fewer than 40 cipher words, 1 hole, at most 2 allowed)."
+    "note": "Pass 5, pass5/SCORE_P5.tsv: 8 of 9 cipher words sure (88.89%), 1 hole; one agent's tags, no separate judge, no person. Read only by the short-text floor (fewer than 40 cipher words, 1 hole, at most 2 allowed).",
+    "reading_review": {
+     "reader_kind": "model",
+     "grade": "B",
+     "by": "integration review of PR #957 (AI agent, for the maintainers); not a person",
+     "date": "2026-11-28",
+     "note": "Read section F54-A-rim of reading_pass5.md as Latin and the same section of translation_pass5.md. An invocation that reads (the Trisagion): 'salua me deus athanatos sanctus et fortis sanctus [?]'; the last word is a hole. State read; count 8/9 recounted from pass5/WORDS_P5.tsv. Not checked: the images, the transcription, the Latin by a person; no held-out test."
+    }
    },
    {
     "doc": "anv9",
@@ -669,7 +692,14 @@
     "cipher_words": 1,
     "holes": 0,
     "floor_used": false,
-    "note": "Pass 5, pass5/SCORE_P5.tsv: 1 of 1 cipher words sure (100.00%), 0 holes; one agent's tags, no separate judge, no person."
+    "note": "Pass 5, pass5/SCORE_P5.tsv: 1 of 1 cipher words sure (100.00%), 0 holes; one agent's tags, no separate judge, no person.",
+    "reading_review": {
+     "reader_kind": "model",
+     "grade": "B",
+     "by": "integration review of PR #957 (AI agent, for the maintainers); not a person",
+     "date": "2026-11-28",
+     "note": "Read section F54-A-top of reading_pass5.md as Latin and the same section of translation_pass5.md. One word, sure: 'saluator'. State read; count 1/1 recounted from pass5/WORDS_P5.tsv. Not checked: the images, the transcription, the Latin by a person; no held-out test."
+    }
    },
    {
     "doc": "anv9",
@@ -701,7 +731,14 @@
     "cipher_words": 9,
     "holes": 4,
     "floor_used": false,
-    "note": "Pass 5, pass5/SCORE_P5.tsv: 5 of 9 cipher words sure (55.56%), 4 holes; one agent's tags, no separate judge, no person. Under 95% and not within the floor; the sure words build sentences with holes."
+    "note": "Pass 5, pass5/SCORE_P5.tsv: 5 of 9 cipher words sure (55.56%), 4 holes; one agent's tags, no separate judge, no person. Under 95% and not within the floor; the sure words build sentences with holes.",
+    "reading_review": {
+     "reader_kind": "model",
+     "grade": "B",
+     "by": "integration review of PR #957 (AI agent, for the maintainers); not a person",
+     "date": "2026-11-28",
+     "note": "Read section F54-B-rim of reading_pass5.md as Latin and the same section of translation_pass5.md. Reads in part: 'signum [?] [?] contra [?] [?] probatum et approbatum'; the frame and the closing formula are clear, four holes. State read in part; count 5/9 recounted from pass5/WORDS_P5.tsv. Not checked: the images, the transcription, the Latin by a person; no held-out test."
+    }
    },
    {
     "doc": "anv9",
@@ -717,7 +754,14 @@
     "cipher_words": 13,
     "holes": 3,
     "floor_used": false,
-    "note": "Pass 5, pass5/SCORE_P5.tsv: 10 of 13 cipher words sure (76.92%), 3 holes; one agent's tags, no separate judge, no person. Under 95% and not within the floor; the sure words build sentences with holes."
+    "note": "Pass 5, pass5/SCORE_P5.tsv: 10 of 13 cipher words sure (76.92%), 3 holes; one agent's tags, no separate judge, no person. Under 95% and not within the floor; the sure words build sentences with holes.",
+    "reading_review": {
+     "reader_kind": "model",
+     "grade": "B",
+     "by": "integration review of PR #957 (AI agent, for the maintainers); not a person",
+     "date": "2026-11-28",
+     "note": "Read section F54-C-rim of reading_pass5.md as Latin and the same section of translation_pass5.md. Reads in part: '[?gribe] hoc in tuis uestimentis [?] [?] noua nomina mulierum tactis uestibus ueniet'; three holes, the instruction is clear. State read in part; count 10/13 recounted from pass5/WORDS_P5.tsv. Not checked: the images, the transcription, the Latin by a person; no held-out test."
+    }
    },
    {
     "doc": "anv9",
@@ -733,7 +777,14 @@
     "cipher_words": 6,
     "holes": 3,
     "floor_used": false,
-    "note": "Pass 5, pass5/SCORE_P5.tsv: 3 of 6 cipher words sure (50.00%), 3 holes; one agent's tags, no separate judge, no person. Under 95% and not within the floor; the sure words build sentences with holes."
+    "note": "Pass 5, pass5/SCORE_P5.tsv: 3 of 6 cipher words sure (50.00%), 3 holes; one agent's tags, no separate judge, no person. Under 95% and not within the floor; the sure words build sentences with holes.",
+    "reading_review": {
+     "reader_kind": "model",
+     "grade": "B",
+     "by": "integration review of PR #957 (AI agent, for the maintainers); not a person",
+     "date": "2026-11-28",
+     "note": "Read section F54-D of reading_pass5.md as Latin and the same section of translation_pass5.md. Short and broken: 'rex uincit [?] [?] [?] est'; the first two words read, the rest is holes; at the low edge of read in part. State read in part; count 3/6 recounted from pass5/WORDS_P5.tsv. Not checked: the images, the transcription, the Latin by a person; no held-out test."
+    }
    },
    {
     "doc": "anv9",
@@ -765,7 +816,14 @@
     "cipher_words": 2,
     "holes": 1,
     "floor_used": true,
-    "note": "Pass 5, pass5/SCORE_P5.tsv: 1 of 2 cipher words sure (50.00%), 1 hole; one agent's tags, no separate judge, no person. Read only by the short-text floor (fewer than 40 cipher words, 1 hole, at most 2 allowed). Under our own 65% line: most of its words are holes."
+    "note": "Pass 5, pass5/SCORE_P5.tsv: 1 of 2 cipher words sure (50.00%), 1 hole; one agent's tags, no separate judge, no person. Read only by the short-text floor (fewer than 40 cipher words, 1 hole, at most 2 allowed). Under our own 65% line: most of its words are holes.",
+    "reading_review": {
+     "reader_kind": "model",
+     "grade": "B",
+     "by": "integration review of PR #957 (AI agent, for the maintainers); not a person",
+     "date": "2026-11-28",
+     "note": "Read section F97r-lab of reading_pass5.md as Latin and the same section of translation_pass5.md. Not a sentence: '[?facis] uersa', one sure word; read only by the short-text floor (1 of 2 sure). State read; count 1/2 recounted from pass5/WORDS_P5.tsv. Not checked: the images, the transcription, the Latin by a person; no held-out test."
+    }
    },
    {
     "doc": "anv9",
@@ -781,7 +839,14 @@
     "cipher_words": 11,
     "holes": 4,
     "floor_used": false,
-    "note": "Pass 5, pass5/SCORE_P5.tsv: 7 of 11 cipher words sure (63.64%), 4 holes; one agent's tags, no separate judge, no person. Under 95% and not within the floor; the sure words build sentences with holes."
+    "note": "Pass 5, pass5/SCORE_P5.tsv: 7 of 11 cipher words sure (63.64%), 4 holes; one agent's tags, no separate judge, no person. Under 95% and not within the floor; the sure words build sentences with holes.",
+    "reading_review": {
+     "reader_kind": "model",
+     "grade": "B",
+     "by": "integration review of PR #957 (AI agent, for the maintainers); not a person",
+     "date": "2026-11-28",
+     "note": "Read section F97r-out of reading_pass5.md as Latin and the same section of translation_pass5.md. Invocation that reads in part: 'sanctus sanctus sanctus [?adonaer] [?sembaoth] et [?] [?] ueritas uita lapis'; four holes, two of them names. State read in part; count 7/11 recounted from pass5/WORDS_P5.tsv. Not checked: the images, the transcription, the Latin by a person; no held-out test."
+    }
    },
    {
     "doc": "anv9",
@@ -797,7 +862,14 @@
     "cipher_words": 4,
     "holes": 1,
     "floor_used": true,
-    "note": "Pass 5, pass5/SCORE_P5.tsv: 3 of 4 cipher words sure (75.00%), 1 hole; one agent's tags, no separate judge, no person. Read only by the short-text floor (fewer than 40 cipher words, 1 hole, at most 2 allowed)."
+    "note": "Pass 5, pass5/SCORE_P5.tsv: 3 of 4 cipher words sure (75.00%), 1 hole; one agent's tags, no separate judge, no person. Read only by the short-text floor (fewer than 40 cipher words, 1 hole, at most 2 allowed).",
+    "reading_review": {
+     "reader_kind": "model",
+     "grade": "B",
+     "by": "integration review of PR #957 (AI agent, for the maintainers); not a person",
+     "date": "2026-11-28",
+     "note": "Read section F97r-sq of reading_pass5.md as Latin and the same section of translation_pass5.md. Four names, three sure: 'lucas [?iohans] mathias marcus' (iohannes as a hole). State read; count 3/4 recounted from pass5/WORDS_P5.tsv. Not checked: the images, the transcription, the Latin by a person; no held-out test."
+    }
    },
    {
     "doc": "anv9",
@@ -813,7 +885,14 @@
     "cipher_words": 4,
     "holes": 2,
     "floor_used": true,
-    "note": "Pass 5, pass5/SCORE_P5.tsv: 2 of 4 cipher words sure (50.00%), 2 holes; one agent's tags, no separate judge, no person. Read only by the short-text floor (fewer than 40 cipher words, 2 holes, at most 2 allowed). Under our own 65% line: most of its words are holes."
+    "note": "Pass 5, pass5/SCORE_P5.tsv: 2 of 4 cipher words sure (50.00%), 2 holes; one agent's tags, no separate judge, no person. Read only by the short-text floor (fewer than 40 cipher words, 2 holes, at most 2 allowed). Under our own 65% line: most of its words are holes.",
+    "reading_review": {
+     "reader_kind": "model",
+     "grade": "B",
+     "by": "integration review of PR #957 (AI agent, for the maintainers); not a person",
+     "date": "2026-11-28",
+     "note": "Read section F97v-in of reading_pass5.md as Latin and the same section of translation_pass5.md. Four names, two sure: '[?adonaer] [?mesias] sabaoth tetragrammaton'; read only by the short-text floor (2 of 4 sure). State read; count 2/4 recounted from pass5/WORDS_P5.tsv. Not checked: the images, the transcription, the Latin by a person; no held-out test."
+    }
    },
    {
     "doc": "anv9",
@@ -829,7 +908,14 @@
     "cipher_words": 13,
     "holes": 6,
     "floor_used": false,
-    "note": "Pass 5, pass5/SCORE_P5.tsv: 7 of 13 cipher words sure (53.85%), 6 holes; one agent's tags, no separate judge, no person. Under 95% and not within the floor; the sure words build sentences with holes."
+    "note": "Pass 5, pass5/SCORE_P5.tsv: 7 of 13 cipher words sure (53.85%), 6 holes; one agent's tags, no separate judge, no person. Under 95% and not within the floor; the sure words build sentences with holes.",
+    "reading_review": {
+     "reader_kind": "model",
+     "grade": "B",
+     "by": "integration review of PR #957 (AI agent, for the maintainers); not a person",
+     "date": "2026-11-28",
+     "note": "Read section F97v-out of reading_pass5.md as Latin and the same section of translation_pass5.md. A list of divine names that reads in its middle ('agla ... rex alpha et omega mediator sponsus'); six of thirteen words are holes, mostly names. State read in part; count 7/13 recounted from pass5/WORDS_P5.tsv. Not checked: the images, the transcription, the Latin by a person; no held-out test."
+    }
    },
    {
     "doc": "anv9",
@@ -845,7 +931,14 @@
     "cipher_words": 4,
     "holes": 0,
     "floor_used": false,
-    "note": "Pass 5, pass5/SCORE_P5.tsv: 4 of 4 cipher words sure (100.00%), 0 holes; one agent's tags, no separate judge, no person."
+    "note": "Pass 5, pass5/SCORE_P5.tsv: 4 of 4 cipher words sure (100.00%), 0 holes; one agent's tags, no separate judge, no person.",
+    "reading_review": {
+     "reader_kind": "model",
+     "grade": "B",
+     "by": "integration review of PR #957 (AI agent, for the maintainers); not a person",
+     "date": "2026-11-28",
+     "note": "Read section F97v-sq of reading_pass5.md as Latin and the same section of translation_pass5.md. Four names, all sure: 'michael gabriel raphael uriel'. State read; count 4/4 recounted from pass5/WORDS_P5.tsv. Not checked: the images, the transcription, the Latin by a person; no held-out test."
+    }
    },
    {
     "doc": "anv9",
@@ -862,7 +955,14 @@
     "holes": 6,
     "floor_used": false,
     "summary": "The end of one conjuration and the beginning of the next ('Alia coniuratio') in the Clavicula Salomonis: the spirits are adjured by the teachings of the faith, the saints, and the life of Christ (Annunciation, coming, Nativity, circumcision, fast, Transfiguration on Mount Tabor).",
-    "note": "Pass 5, 71 of 77 cipher words sure (92.21%), 6 holes, counted with the 2 words broken at a line end (immaculati, circumcisionem, both sure on the contributor's look after the decode) that the pass-5 scorer left out; the frozen pass5/SCORE_P5.tsv and WORDS_P5.tsv predate that fix and give 69 of 75 (92.00%). One agent's tags, no separate judge, no person. Under 95% and not within the floor; the sure words build sentences with holes. Count set to the contributor's side count at the merge of PR #957 (28 Nov 2026)."
+    "note": "Pass 5, 71 of 77 cipher words sure (92.21%), 6 holes, counted with the 2 words broken at a line end (immaculati, circumcisionem, both sure on the contributor's look after the decode) that the pass-5 scorer left out; the frozen pass5/SCORE_P5.tsv and WORDS_P5.tsv predate that fix and give 69 of 75 (92.00%). One agent's tags, no separate judge, no person. Under 95% and not within the floor; the sure words build sentences with holes. Count set to the contributor's side count at the merge of PR #957 (28 Nov 2026).",
+    "reading_review": {
+     "reader_kind": "model",
+     "grade": "B",
+     "by": "integration review of PR #957 (AI agent, for the maintainers); not a person",
+     "date": "2026-11-28",
+     "note": "Read section H1r of reading_pass5.md as Latin and the same section of translation_pass5.md. Two sentences of conjuration read through: 'et per omnia documenta ... sunt apud deum' and 'adiuro uos [?dimones] in quacunque parte mundi ... per annunciationem ch~ri ...'; the 6 holes are slips of words the frame gives (sactorum, dimones, baptisum) and the last word of the excerpt. Translation keeps them as [?]. State read in part; count 71/77 recounted from pass5/WORDS_P5.tsv plus the words broken at a line end, checked against their tags in reading_pass5.md. Not checked: the images, the transcription, the Latin by a person; no held-out test."
+    }
    },
    {
     "doc": "anv9",
@@ -879,7 +979,14 @@
     "holes": 52,
     "floor_used": false,
     "summary": "The instructions for the seal of Jupiter in the Septem sigilla planetarum: made of English tin, cast and stamped on a day of Jupiter, kept in a cloth; carried, it wins favour with all men, and its bearer obtains his wish and is free of fear.",
-    "note": "Pass 5, 81 of 133 cipher words sure (60.90%), 52 holes, counted with the 7 words broken at a line end (adhibenda and librum sure; iuupiten, iupitet, signillum, miratbilitet, negotius holes, on the contributor's look after the decode) that the pass-5 scorer left out; the frozen pass5/SCORE_P5.tsv and WORDS_P5.tsv predate that fix and give 79 of 126 (62.70%). One agent's tags, no separate judge, no person. Under 95% and not within the floor; the sure words build sentences with holes. Count set to the contributor's side count at the merge of PR #957 (28 Nov 2026)."
+    "note": "Pass 5, 81 of 133 cipher words sure (60.90%), 52 holes, counted with the 7 words broken at a line end (adhibenda and librum sure; iuupiten, iupitet, signillum, miratbilitet, negotius holes, on the contributor's look after the decode) that the pass-5 scorer left out; the frozen pass5/SCORE_P5.tsv and WORDS_P5.tsv predate that fix and give 79 of 126 (62.70%). One agent's tags, no separate judge, no person. Under 95% and not within the floor; the sure words build sentences with holes. Count set to the contributor's side count at the merge of PR #957 (28 Nov 2026).",
+    "reading_review": {
+     "reader_kind": "model",
+     "grade": "B",
+     "by": "integration review of PR #957 (AI agent, for the maintainers); not a person",
+     "date": "2026-11-28",
+     "note": "Read section H2 of reading_pass5.md as Latin and the same section of translation_pass5.md. Only part of it reads as sentences: the opening ('fit ex op~imi anglico stanno habens in') and the closing lines ('et fauorem conciliat apud omnes homines quocunque in loco repositum fuerit ... qui hoc signum portat secum ... uotum suum consequetur et metu uacabit') are clear Latin; the making instructions in between (lines 3-12, 16-20) have holes in most words and do not build sentences on their own. Read in part is the most this supports. State read in part; count 81/133 recounted from pass5/WORDS_P5.tsv plus the words broken at a line end, checked against their tags in reading_pass5.md. Not checked: the images, the transcription, the Latin by a person; no held-out test."
+    }
    },
    {
     "doc": "anv9",
@@ -896,7 +1003,14 @@
     "holes": 4,
     "floor_used": false,
     "summary": "The rim inscriptions of pentacles 3 and 4: the bearer will not fear the devil, and will not perish in arms.",
-    "note": "Pass 5, pass5/SCORE_P5.tsv: 11 of 15 cipher words sure (73.33%), 4 holes; one agent's tags, no separate judge, no person. Under 95% and not within the floor; the sure words build sentences with holes."
+    "note": "Pass 5, pass5/SCORE_P5.tsv: 11 of 15 cipher words sure (73.33%), 4 holes; one agent's tags, no separate judge, no person. Under 95% and not within the floor; the sure words build sentences with holes.",
+    "reading_review": {
+     "reader_kind": "model",
+     "grade": "B",
+     "by": "integration review of PR #957 (AI agent, for the maintainers); not a person",
+     "date": "2026-11-28",
+     "note": "Read section H3 of reading_pass5.md as Latin and the same section of translation_pass5.md. Pentacle 4 reads as a full sentence ('qui hoc signum portat n~ peribit in armis'); pentacle 3 gives only the frame 'non [?] diabolum nec ...' with three holes at the end. State read in part; count 11/15 recounted from pass5/WORDS_P5.tsv. Not checked: the images, the transcription, the Latin by a person; no held-out test."
+    }
    },
    {
     "doc": "anv9",
@@ -913,7 +1027,14 @@
     "holes": 17,
     "floor_used": false,
     "summary": "A conjuration: the operator opens his arms as if to embrace, and calls the spirits to come in gentle form by the divine names (Adonai Sabaoth, Eloi, Sadai, Tetragrammaton) and by him who spoke and all things were made.",
-    "note": "Pass 5, 75 of 92 cipher words sure (81.52%), 17 holes, counted with the 3 words broken at a line end (uirtutes and mansueta sure, t?rar a hole, on the contributor's look after the decode) that the pass-5 scorer left out; the frozen pass5/SCORE_P5.tsv and WORDS_P5.tsv predate that fix and give 73 of 89 (82.02%). One agent's tags, no separate judge, no person. Under 95% and not within the floor; the sure words build sentences with holes. Count set to the contributor's side count at the merge of PR #957 (28 Nov 2026)."
+    "note": "Pass 5, 75 of 92 cipher words sure (81.52%), 17 holes, counted with the 3 words broken at a line end (uirtutes and mansueta sure, t?rar a hole, on the contributor's look after the decode) that the pass-5 scorer left out; the frozen pass5/SCORE_P5.tsv and WORDS_P5.tsv predate that fix and give 73 of 89 (82.02%). One agent's tags, no separate judge, no person. Under 95% and not within the floor; the sure words build sentences with holes. Count set to the contributor's side count at the merge of PR #957 (28 Nov 2026).",
+    "reading_review": {
+     "reader_kind": "model",
+     "grade": "B",
+     "by": "integration review of PR #957 (AI agent, for the maintainers); not a person",
+     "date": "2026-11-28",
+     "note": "Read section H4 of reading_pass5.md as Latin and the same section of translation_pass5.md. Reads as a conjuration in sentences: the gesture, 'ad nos ueniatis', the divine names (adonai sabaoth, eloi sadai, iod he uau, tetragrammaton) and 'per nomen eius qui dixit et facta sunt ... dominatur'; holes cluster in lines 9-10 ('deus [?ueus] [?ter] [?imsrael] qui super ...'), recognisable as deus Israel but left holes. State read in part; count 75/92 recounted from pass5/WORDS_P5.tsv plus the words broken at a line end, checked against their tags in reading_pass5.md. Not checked: the images, the transcription, the Latin by a person; no held-out test."
+    }
    },
    {
     "doc": "anv9",
@@ -929,7 +1050,14 @@
     "cipher_words": 6,
     "holes": 0,
     "floor_used": false,
-    "note": "Pass 5, pass5/SCORE_P5.tsv: 6 of 6 cipher words sure (100.00%), 0 holes; one agent's tags, no separate judge, no person."
+    "note": "Pass 5, pass5/SCORE_P5.tsv: 6 of 6 cipher words sure (100.00%), 0 holes; one agent's tags, no separate judge, no person.",
+    "reading_review": {
+     "reader_kind": "model",
+     "grade": "B",
+     "by": "integration review of PR #957 (AI agent, for the maintainers); not a person",
+     "date": "2026-11-28",
+     "note": "Read section S1-011 of reading_pass5.md as Latin and the same section of translation_pass5.md. One complete sentence, no hole: 'portanti nullum uulnus lethale fieri potest'. State read; count 6/6 recounted from pass5/WORDS_P5.tsv. Not checked: the images, the transcription, the Latin by a person; no held-out test."
+    }
    },
    {
     "doc": "anv9",
@@ -945,7 +1073,14 @@
     "cipher_words": 7,
     "holes": 1,
     "floor_used": true,
-    "note": "Pass 5, pass5/SCORE_P5.tsv: 6 of 7 cipher words sure (85.71%), 1 hole; one agent's tags, no separate judge, no person. Read only by the short-text floor (fewer than 40 cipher words, 1 hole, at most 2 allowed)."
+    "note": "Pass 5, pass5/SCORE_P5.tsv: 6 of 7 cipher words sure (85.71%), 1 hole; one agent's tags, no separate judge, no person. Read only by the short-text floor (fewer than 40 cipher words, 1 hole, at most 2 allowed).",
+    "reading_review": {
+     "reader_kind": "model",
+     "grade": "B",
+     "by": "integration review of PR #957 (AI agent, for the maintainers); not a person",
+     "date": "2026-11-28",
+     "note": "Read section S1-012 of reading_pass5.md as Latin and the same section of translation_pass5.md. One sentence, 'dat bonam fortunam et [?] pericula tollit'; the hole (morbotus, the unresolved Dl@ word) does not break the sense. State read; count 6/7 recounted from pass5/WORDS_P5.tsv. Not checked: the images, the transcription, the Latin by a person; no held-out test."
+    }
    },
    {
     "doc": "anv9",
@@ -961,7 +1096,14 @@
     "cipher_words": 7,
     "holes": 2,
     "floor_used": true,
-    "note": "Pass 5, pass5/SCORE_P5.tsv: 5 of 7 cipher words sure (71.43%), 2 holes; one agent's tags, no separate judge, no person. Read only by the short-text floor (fewer than 40 cipher words, 2 holes, at most 2 allowed)."
+    "note": "Pass 5, pass5/SCORE_P5.tsv: 5 of 7 cipher words sure (71.43%), 2 holes; one agent's tags, no separate judge, no person. Read only by the short-text floor (fewer than 40 cipher words, 2 holes, at most 2 allowed).",
+    "reading_review": {
+     "reader_kind": "model",
+     "grade": "B",
+     "by": "integration review of PR #957 (AI agent, for the maintainers); not a person",
+     "date": "2026-11-28",
+     "note": "Read section S1-013 of reading_pass5.md as Latin and the same section of translation_pass5.md. One sentence, 'huic [?omns] furiae obedient atque potentiae [?ifenrales]'; both holes are recognisable slips (omnes, infernales). State read; count 5/7 recounted from pass5/WORDS_P5.tsv. Not checked: the images, the transcription, the Latin by a person; no held-out test."
+    }
    },
    {
     "doc": "anv9",
@@ -977,7 +1119,14 @@
     "cipher_words": 6,
     "holes": 3,
     "floor_used": false,
-    "note": "Pass 5, pass5/SCORE_P5.tsv: 3 of 6 cipher words sure (50.00%), 3 holes; one agent's tags, no separate judge, no person. Under 95% and not within the floor; the sure words build sentences with holes."
+    "note": "Pass 5, pass5/SCORE_P5.tsv: 3 of 6 cipher words sure (50.00%), 3 holes; one agent's tags, no separate judge, no person. Under 95% and not within the floor; the sure words build sentences with holes.",
+    "reading_review": {
+     "reader_kind": "model",
+     "grade": "B",
+     "by": "integration review of PR #957 (AI agent, for the maintainers); not a person",
+     "date": "2026-11-28",
+     "note": "Read section S1-014 of reading_pass5.md as Latin and the same section of translation_pass5.md. Sentence frame only: '[?neine] [?praetet] creatore [?] deum timebit'; the verb and object read, the subject is in holes (it may be nemo praeter creatorem, which the decode does not give). State read in part; count 3/6 recounted from pass5/WORDS_P5.tsv. Not checked: the images, the transcription, the Latin by a person; no held-out test."
+    }
    },
    {
     "doc": "anv9",
@@ -993,7 +1142,14 @@
     "cipher_words": 7,
     "holes": 1,
     "floor_used": true,
-    "note": "Pass 5, pass5/SCORE_P5.tsv: 6 of 7 cipher words sure (85.71%), 1 hole; one agent's tags, no separate judge, no person. Read only by the short-text floor (fewer than 40 cipher words, 1 hole, at most 2 allowed)."
+    "note": "Pass 5, pass5/SCORE_P5.tsv: 6 of 7 cipher words sure (85.71%), 1 hole; one agent's tags, no separate judge, no person. Read only by the short-text floor (fewer than 40 cipher words, 1 hole, at most 2 allowed).",
+    "reading_review": {
+     "reader_kind": "model",
+     "grade": "B",
+     "by": "integration review of PR #957 (AI agent, for the maintainers); not a person",
+     "date": "2026-11-28",
+     "note": "Read section S1-015 of reading_pass5.md as Latin and the same section of translation_pass5.md. One sentence, 'huic obedient omnes spiritus et potentiae [?infenrales]'; the hole is the C2 slip for infernales. State read; count 6/7 recounted from pass5/WORDS_P5.tsv. Not checked: the images, the transcription, the Latin by a person; no held-out test."
+    }
    },
    {
     "doc": "anv9",
@@ -1009,7 +1165,14 @@
     "cipher_words": 7,
     "holes": 3,
     "floor_used": false,
-    "note": "Pass 5, pass5/SCORE_P5.tsv: 4 of 7 cipher words sure (57.14%), 3 holes; one agent's tags, no separate judge, no person. Under 95% and not within the floor; the sure words build sentences with holes."
+    "note": "Pass 5, pass5/SCORE_P5.tsv: 4 of 7 cipher words sure (57.14%), 3 holes; one agent's tags, no separate judge, no person. Under 95% and not within the floor; the sure words build sentences with holes.",
+    "reading_review": {
+     "reader_kind": "model",
+     "grade": "B",
+     "by": "integration review of PR #957 (AI agent, for the maintainers); not a person",
+     "date": "2026-11-28",
+     "note": "Read section S1-016 of reading_pass5.md as Latin and the same section of translation_pass5.md. Sentence readable through its holes: 'obedient [?tibit] omnes [?creatuae] et potentiae [?infenrales]' (tibi, creaturae, infernales as slips); three of seven words are holes. State read in part; count 4/7 recounted from pass5/WORDS_P5.tsv. Not checked: the images, the transcription, the Latin by a person; no held-out test."
+    }
    },
    {
     "doc": "anv9",
@@ -1025,7 +1188,14 @@
     "cipher_words": 6,
     "holes": 1,
     "floor_used": true,
-    "note": "Pass 5, pass5/SCORE_P5.tsv: 5 of 6 cipher words sure (83.33%), 1 hole; one agent's tags, no separate judge, no person. Read only by the short-text floor (fewer than 40 cipher words, 1 hole, at most 2 allowed)."
+    "note": "Pass 5, pass5/SCORE_P5.tsv: 5 of 6 cipher words sure (83.33%), 1 hole; one agent's tags, no separate judge, no person. Read only by the short-text floor (fewer than 40 cipher words, 1 hole, at most 2 allowed).",
+    "reading_review": {
+     "reader_kind": "model",
+     "grade": "B",
+     "by": "integration review of PR #957 (AI agent, for the maintainers); not a person",
+     "date": "2026-11-28",
+     "note": "Read section S1-017 of reading_pass5.md as Latin and the same section of translation_pass5.md. One phrase, 'contra inimicos serpentes et [?] tutissimum'; one hole. State read; count 5/6 recounted from pass5/WORDS_P5.tsv. Not checked: the images, the transcription, the Latin by a person; no held-out test."
+    }
    },
    {
     "doc": "anv9",
@@ -1041,7 +1211,14 @@
     "cipher_words": 8,
     "holes": 0,
     "floor_used": false,
-    "note": "Pass 5, pass5/SCORE_P5.tsv: 8 of 8 cipher words sure (100.00%), 0 holes; one agent's tags, no separate judge, no person."
+    "note": "Pass 5, pass5/SCORE_P5.tsv: 8 of 8 cipher words sure (100.00%), 0 holes; one agent's tags, no separate judge, no person.",
+    "reading_review": {
+     "reader_kind": "model",
+     "grade": "B",
+     "by": "integration review of PR #957 (AI agent, for the maintainers); not a person",
+     "date": "2026-11-28",
+     "note": "Read section S1-018 of reading_pass5.md as Latin and the same section of translation_pass5.md. One complete sentence, no hole: 'hoc signum portauit adam in fronte contra pericula'. State read; count 8/8 recounted from pass5/WORDS_P5.tsv. Not checked: the images, the transcription, the Latin by a person; no held-out test."
+    }
    },
    {
     "doc": "anv9",
@@ -1057,7 +1234,14 @@
     "cipher_words": 6,
     "holes": 2,
     "floor_used": true,
-    "note": "Pass 5, pass5/SCORE_P5.tsv: 4 of 6 cipher words sure (66.67%), 2 holes; one agent's tags, no separate judge, no person. Read only by the short-text floor (fewer than 40 cipher words, 2 holes, at most 2 allowed)."
+    "note": "Pass 5, pass5/SCORE_P5.tsv: 4 of 6 cipher words sure (66.67%), 2 holes; one agent's tags, no separate judge, no person. Read only by the short-text floor (fewer than 40 cipher words, 2 holes, at most 2 allowed).",
+    "reading_review": {
+     "reader_kind": "model",
+     "grade": "B",
+     "by": "integration review of PR #957 (AI agent, for the maintainers); not a person",
+     "date": "2026-11-28",
+     "note": "Read section S1-019 of reading_pass5.md as Latin and the same section of translation_pass5.md. One phrase, 'ad [?sanguuinis] fluxum [?respringendum] optimum remedium'; both holes are recognisable slips (sanguinis, restringendum). State read; count 4/6 recounted from pass5/WORDS_P5.tsv. Not checked: the images, the transcription, the Latin by a person; no held-out test."
+    }
    },
    {
     "doc": "anv9",
@@ -1073,7 +1257,14 @@
     "cipher_words": 7,
     "holes": 0,
     "floor_used": false,
-    "note": "Pass 5, pass5/SCORE_P5.tsv: 7 of 7 cipher words sure (100.00%), 0 holes; one agent's tags, no separate judge, no person."
+    "note": "Pass 5, pass5/SCORE_P5.tsv: 7 of 7 cipher words sure (100.00%), 0 holes; one agent's tags, no separate judge, no person.",
+    "reading_review": {
+     "reader_kind": "model",
+     "grade": "B",
+     "by": "integration review of PR #957 (AI agent, for the maintainers); not a person",
+     "date": "2026-11-28",
+     "note": "Read section S1-020 of reading_pass5.md as Latin and the same section of translation_pass5.md. One complete sentence, no hole: 'furta reuelat conspirationes et secreta consilia hominum'. State read; count 7/7 recounted from pass5/WORDS_P5.tsv. Not checked: the images, the transcription, the Latin by a person; no held-out test."
+    }
    },
    {
     "doc": "anv9",
@@ -1089,7 +1280,14 @@
     "cipher_words": 6,
     "holes": 1,
     "floor_used": true,
-    "note": "Pass 5, pass5/SCORE_P5.tsv: 5 of 6 cipher words sure (83.33%), 1 hole; one agent's tags, no separate judge, no person. Read only by the short-text floor (fewer than 40 cipher words, 1 hole, at most 2 allowed)."
+    "note": "Pass 5, pass5/SCORE_P5.tsv: 5 of 6 cipher words sure (83.33%), 1 hole; one agent's tags, no separate judge, no person. Read only by the short-text floor (fewer than 40 cipher words, 1 hole, at most 2 allowed).",
+    "reading_review": {
+     "reader_kind": "model",
+     "grade": "B",
+     "by": "integration review of PR #957 (AI agent, for the maintainers); not a person",
+     "date": "2026-11-28",
+     "note": "Read section S1-021 of reading_pass5.md as Latin and the same section of translation_pass5.md. One sentence, '[?] confert et singularem fortunae gratiam'; the object before et is a hole. State read; count 5/6 recounted from pass5/WORDS_P5.tsv. Not checked: the images, the transcription, the Latin by a person; no held-out test."
+    }
    },
    {
     "doc": "anv9",
@@ -1105,7 +1303,14 @@
     "cipher_words": 7,
     "holes": 2,
     "floor_used": true,
-    "note": "Pass 5, pass5/SCORE_P5.tsv: 5 of 7 cipher words sure (71.43%), 2 holes; one agent's tags, no separate judge, no person. Read only by the short-text floor (fewer than 40 cipher words, 2 holes, at most 2 allowed)."
+    "note": "Pass 5, pass5/SCORE_P5.tsv: 5 of 7 cipher words sure (71.43%), 2 holes; one agent's tags, no separate judge, no person. Read only by the short-text floor (fewer than 40 cipher words, 2 holes, at most 2 allowed).",
+    "reading_review": {
+     "reader_kind": "model",
+     "grade": "B",
+     "by": "integration review of PR #957 (AI agent, for the maintainers); not a person",
+     "date": "2026-11-28",
+     "note": "Read section S1-022 of reading_pass5.md as Latin and the same section of translation_pass5.md. One sentence, '[?deuu] mihi adiutor quem [?tinebo] et uiuam' (deus, timebo as slips); a psalm-like verse that holds together. State read; count 5/7 recounted from pass5/WORDS_P5.tsv. Not checked: the images, the transcription, the Latin by a person; no held-out test."
+    }
    },
    {
     "doc": "anv9",
@@ -1137,7 +1342,14 @@
     "cipher_words": 8,
     "holes": 0,
     "floor_used": false,
-    "note": "Pass 5, pass5/SCORE_P5.tsv: 8 of 8 cipher words sure (100.00%), 0 holes; one agent's tags, no separate judge, no person."
+    "note": "Pass 5, pass5/SCORE_P5.tsv: 8 of 8 cipher words sure (100.00%), 0 holes; one agent's tags, no separate judge, no person.",
+    "reading_review": {
+     "reader_kind": "model",
+     "grade": "B",
+     "by": "integration review of PR #957 (AI agent, for the maintainers); not a person",
+     "date": "2026-11-28",
+     "note": "Read section S1-027 of reading_pass5.md as Latin and the same section of translation_pass5.md. One complete sentence, no hole: 'hoc signum tecum sit et n~ timebis aduersarios'. State read; count 8/8 recounted from pass5/WORDS_P5.tsv. Not checked: the images, the transcription, the Latin by a person; no held-out test."
+    }
    },
    {
     "doc": "anv9",
@@ -1153,7 +1365,14 @@
     "cipher_words": 9,
     "holes": 1,
     "floor_used": true,
-    "note": "Pass 5, pass5/SCORE_P5.tsv: 8 of 9 cipher words sure (88.89%), 1 hole; one agent's tags, no separate judge, no person. Read only by the short-text floor (fewer than 40 cipher words, 1 hole, at most 2 allowed)."
+    "note": "Pass 5, pass5/SCORE_P5.tsv: 8 of 9 cipher words sure (88.89%), 1 hole; one agent's tags, no separate judge, no person. Read only by the short-text floor (fewer than 40 cipher words, 1 hole, at most 2 allowed).",
+    "reading_review": {
+     "reader_kind": "model",
+     "grade": "B",
+     "by": "integration review of PR #957 (AI agent, for the maintainers); not a person",
+     "date": "2026-11-28",
+     "note": "Read section S1-028 of reading_pass5.md as Latin and the same section of translation_pass5.md. One sentence, 'quo die hoc signum uideris liber eris ab [?]'; the last word (impedimentis?) is a hole. State read; count 8/9 recounted from pass5/WORDS_P5.tsv. Not checked: the images, the transcription, the Latin by a person; no held-out test."
+    }
    },
    {
     "doc": "anv9",
@@ -1169,7 +1388,14 @@
     "cipher_words": 8,
     "holes": 3,
     "floor_used": false,
-    "note": "Pass 5, pass5/SCORE_P5.tsv: 5 of 8 cipher words sure (62.50%), 3 holes; one agent's tags, no separate judge, no person. Under 95% and not within the floor; the sure words build sentences with holes."
+    "note": "Pass 5, pass5/SCORE_P5.tsv: 5 of 8 cipher words sure (62.50%), 3 holes; one agent's tags, no separate judge, no person. Under 95% and not within the floor; the sure words build sentences with holes.",
+    "reading_review": {
+     "reader_kind": "model",
+     "grade": "B",
+     "by": "integration review of PR #957 (AI agent, for the maintainers); not a person",
+     "date": "2026-11-28",
+     "note": "Read section S1-030 of reading_pass5.md as Latin and the same section of translation_pass5.md. Sentence frame: 'per hoc nomen [?] omnes potestates [?infenrales] [?]'; the verb is a hole (treumnt, a swapped pair). State read in part; count 5/8 recounted from pass5/WORDS_P5.tsv. Not checked: the images, the transcription, the Latin by a person; no held-out test."
+    }
    },
    {
     "doc": "anv9",
@@ -1185,7 +1411,14 @@
     "cipher_words": 9,
     "holes": 0,
     "floor_used": false,
-    "note": "Pass 5, pass5/SCORE_P5.tsv: 9 of 9 cipher words sure (100.00%), 0 holes; one agent's tags, no separate judge, no person."
+    "note": "Pass 5, pass5/SCORE_P5.tsv: 9 of 9 cipher words sure (100.00%), 0 holes; one agent's tags, no separate judge, no person.",
+    "reading_review": {
+     "reader_kind": "model",
+     "grade": "B",
+     "by": "integration review of PR #957 (AI agent, for the maintainers); not a person",
+     "date": "2026-11-28",
+     "note": "Read section S1-031 of reading_pass5.md as Latin and the same section of translation_pass5.md. One complete sentence, no hole: 'hoc signum faciet omnes erga te mites et beneuolos'. State read; count 9/9 recounted from pass5/WORDS_P5.tsv. Not checked: the images, the transcription, the Latin by a person; no held-out test."
+    }
    },
    {
     "doc": "anv9",
@@ -1201,7 +1434,14 @@
     "cipher_words": 8,
     "holes": 4,
     "floor_used": false,
-    "note": "Pass 5, pass5/SCORE_P5.tsv: 4 of 8 cipher words sure (50.00%), 4 holes; one agent's tags, no separate judge, no person. Under 95% and not within the floor; the sure words build sentences with holes."
+    "note": "Pass 5, pass5/SCORE_P5.tsv: 4 of 8 cipher words sure (50.00%), 4 holes; one agent's tags, no separate judge, no person. Under 95% and not within the floor; the sure words build sentences with holes.",
+    "reading_review": {
+     "reader_kind": "model",
+     "grade": "B",
+     "by": "integration review of PR #957 (AI agent, for the maintainers); not a person",
+     "date": "2026-11-28",
+     "note": "Read section S1-032 of reading_pass5.md as Latin and the same section of translation_pass5.md. Frame only: 'huic signo se [?] omnes [?] [?] [?]'; half the words are holes and the sentence is carried by the frame, not by the sure words; at the low edge of read in part. State read in part; count 4/8 recounted from pass5/WORDS_P5.tsv. Not checked: the images, the transcription, the Latin by a person; no held-out test."
+    }
    },
    {
     "doc": "anv9",
@@ -1217,7 +1457,14 @@
     "cipher_words": 8,
     "holes": 2,
     "floor_used": true,
-    "note": "Pass 5, pass5/SCORE_P5.tsv: 6 of 8 cipher words sure (75.00%), 2 holes; one agent's tags, no separate judge, no person. Read only by the short-text floor (fewer than 40 cipher words, 2 holes, at most 2 allowed)."
+    "note": "Pass 5, pass5/SCORE_P5.tsv: 6 of 8 cipher words sure (75.00%), 2 holes; one agent's tags, no separate judge, no person. Read only by the short-text floor (fewer than 40 cipher words, 2 holes, at most 2 allowed).",
+    "reading_review": {
+     "reader_kind": "model",
+     "grade": "B",
+     "by": "integration review of PR #957 (AI agent, for the maintainers); not a person",
+     "date": "2026-11-28",
+     "note": "Read section S1-033 of reading_pass5.md as Latin and the same section of translation_pass5.md. One sentence, 'nec a gladio nec a [?subitania] morte [?tinebis]' (subitanea, timebis as slips). State read; count 6/8 recounted from pass5/WORDS_P5.tsv. Not checked: the images, the transcription, the Latin by a person; no held-out test."
+    }
    },
    {
     "doc": "anv9",
@@ -1233,7 +1480,14 @@
     "cipher_words": 8,
     "holes": 0,
     "floor_used": false,
-    "note": "Pass 5, pass5/SCORE_P5.tsv: 8 of 8 cipher words sure (100.00%), 0 holes; one agent's tags, no separate judge, no person."
+    "note": "Pass 5, pass5/SCORE_P5.tsv: 8 of 8 cipher words sure (100.00%), 0 holes; one agent's tags, no separate judge, no person.",
+    "reading_review": {
+     "reader_kind": "model",
+     "grade": "B",
+     "by": "integration review of PR #957 (AI agent, for the maintainers); not a person",
+     "date": "2026-11-28",
+     "note": "Read section S1-037 of reading_pass5.md as Latin and the same section of translation_pass5.md. One complete sentence, no hole: 'cum hoc signo n~ peribis ferro nec igne'. State read; count 8/8 recounted from pass5/WORDS_P5.tsv. Not checked: the images, the transcription, the Latin by a person; no held-out test."
+    }
    },
    {
     "doc": "anv9",
@@ -1249,7 +1503,14 @@
     "cipher_words": 6,
     "holes": 2,
     "floor_used": true,
-    "note": "Pass 5, pass5/SCORE_P5.tsv: 4 of 6 cipher words sure (66.67%), 2 holes; one agent's tags, no separate judge, no person. Read only by the short-text floor (fewer than 40 cipher words, 2 holes, at most 2 allowed)."
+    "note": "Pass 5, pass5/SCORE_P5.tsv: 4 of 6 cipher words sure (66.67%), 2 holes; one agent's tags, no separate judge, no person. Read only by the short-text floor (fewer than 40 cipher words, 2 holes, at most 2 allowed).",
+    "reading_review": {
+     "reader_kind": "model",
+     "grade": "B",
+     "by": "integration review of PR #957 (AI agent, for the maintainers); not a person",
+     "date": "2026-11-28",
+     "note": "Read section S1-038 of reading_pass5.md as Latin and the same section of translation_pass5.md. Phrase readable through its holes: '[?omne] timoris [?occasione] auerti et conuerti'; two of six words are holes. State read; count 4/6 recounted from pass5/WORDS_P5.tsv. Not checked: the images, the transcription, the Latin by a person; no held-out test."
+    }
    },
    {
     "doc": "anv9",
@@ -1265,7 +1526,14 @@
     "cipher_words": 6,
     "holes": 3,
     "floor_used": false,
-    "note": "Pass 5, pass5/SCORE_P5.tsv: 3 of 6 cipher words sure (50.00%), 3 holes; one agent's tags, no separate judge, no person. Under 95% and not within the floor; the sure words build sentences with holes."
+    "note": "Pass 5, pass5/SCORE_P5.tsv: 3 of 6 cipher words sure (50.00%), 3 holes; one agent's tags, no separate judge, no person. Under 95% and not within the floor; the sure words build sentences with holes.",
+    "reading_review": {
+     "reader_kind": "model",
+     "grade": "B",
+     "by": "integration review of PR #957 (AI agent, for the maintainers); not a person",
+     "date": "2026-11-28",
+     "note": "Read section S1-039 of reading_pass5.md as Latin and the same section of translation_pass5.md. Phrase frame: 'contra maleficia et [?] [?] [?]'; the second half is holes. State read in part; count 3/6 recounted from pass5/WORDS_P5.tsv. Not checked: the images, the transcription, the Latin by a person; no held-out test."
+    }
    },
    {
     "doc": "anv9",
@@ -1281,7 +1549,14 @@
     "cipher_words": 8,
     "holes": 2,
     "floor_used": true,
-    "note": "Pass 5, pass5/SCORE_P5.tsv: 6 of 8 cipher words sure (75.00%), 2 holes; one agent's tags, no separate judge, no person. Read only by the short-text floor (fewer than 40 cipher words, 2 holes, at most 2 allowed)."
+    "note": "Pass 5, pass5/SCORE_P5.tsv: 6 of 8 cipher words sure (75.00%), 2 holes; one agent's tags, no separate judge, no person. Read only by the short-text floor (fewer than 40 cipher words, 2 holes, at most 2 allowed).",
+    "reading_review": {
+     "reader_kind": "model",
+     "grade": "B",
+     "by": "integration review of PR #957 (AI agent, for the maintainers); not a person",
+     "date": "2026-11-28",
+     "note": "Read section S1-041 of reading_pass5.md as Latin and the same section of translation_pass5.md. One sentence, 'hoc signum facit contra [?] uim et [?]'; two holes inside it. State read; count 6/8 recounted from pass5/WORDS_P5.tsv. Not checked: the images, the transcription, the Latin by a person; no held-out test."
+    }
    },
    {
     "doc": "anv9",
@@ -1297,7 +1572,14 @@
     "cipher_words": 7,
     "holes": 1,
     "floor_used": true,
-    "note": "Pass 5, pass5/SCORE_P5.tsv: 6 of 7 cipher words sure (85.71%), 1 hole; one agent's tags, no separate judge, no person. Read only by the short-text floor (fewer than 40 cipher words, 1 hole, at most 2 allowed)."
+    "note": "Pass 5, pass5/SCORE_P5.tsv: 6 of 7 cipher words sure (85.71%), 1 hole; one agent's tags, no separate judge, no person. Read only by the short-text floor (fewer than 40 cipher words, 1 hole, at most 2 allowed).",
+    "reading_review": {
+     "reader_kind": "model",
+     "grade": "B",
+     "by": "integration review of PR #957 (AI agent, for the maintainers); not a person",
+     "date": "2026-11-28",
+     "note": "Read section S1-044 of reading_pass5.md as Latin and the same section of translation_pass5.md. One complete sentence with one hole: 'hoc signo sigilauit salomon [?da?mone] in puteo' (daemones). State read; count 6/7 recounted from pass5/WORDS_P5.tsv. Not checked: the images, the transcription, the Latin by a person; no held-out test."
+    }
    },
    {
     "doc": "anv9",
@@ -1313,7 +1595,14 @@
     "cipher_words": 8,
     "holes": 1,
     "floor_used": true,
-    "note": "Pass 5, pass5/SCORE_P5.tsv: 7 of 8 cipher words sure (87.50%), 1 hole; one agent's tags, no separate judge, no person. Read only by the short-text floor (fewer than 40 cipher words, 1 hole, at most 2 allowed)."
+    "note": "Pass 5, pass5/SCORE_P5.tsv: 7 of 8 cipher words sure (87.50%), 1 hole; one agent's tags, no separate judge, no person. Read only by the short-text floor (fewer than 40 cipher words, 1 hole, at most 2 allowed).",
+    "reading_review": {
+     "reader_kind": "model",
+     "grade": "B",
+     "by": "integration review of PR #957 (AI agent, for the maintainers); not a person",
+     "date": "2026-11-28",
+     "note": "Read section S1-045 of reading_pass5.md as Latin and the same section of translation_pass5.md. One sentence, 'contra metum et [?tiiore] hoc signum habet efficaciam'; one hole (timorem). State read; count 7/8 recounted from pass5/WORDS_P5.tsv. Not checked: the images, the transcription, the Latin by a person; no held-out test."
+    }
    },
    {
     "doc": "anv9",
@@ -1329,7 +1618,14 @@
     "cipher_words": 7,
     "holes": 1,
     "floor_used": true,
-    "note": "Pass 5, pass5/SCORE_P5.tsv: 6 of 7 cipher words sure (85.71%), 1 hole; one agent's tags, no separate judge, no person. Read only by the short-text floor (fewer than 40 cipher words, 1 hole, at most 2 allowed)."
+    "note": "Pass 5, pass5/SCORE_P5.tsv: 6 of 7 cipher words sure (85.71%), 1 hole; one agent's tags, no separate judge, no person. Read only by the short-text floor (fewer than 40 cipher words, 1 hole, at most 2 allowed).",
+    "reading_review": {
+     "reader_kind": "model",
+     "grade": "B",
+     "by": "integration review of PR #957 (AI agent, for the maintainers); not a person",
+     "date": "2026-11-28",
+     "note": "Read section S1-049 of reading_pass5.md as Latin and the same section of translation_pass5.md. One sentence, 'quicunque hoc signum portat [?diliget] ab omnibus'; the verb is a hole (diligetur). State read; count 6/7 recounted from pass5/WORDS_P5.tsv. Not checked: the images, the transcription, the Latin by a person; no held-out test."
+    }
    },
    {
     "doc": "anv9",
@@ -1345,7 +1641,14 @@
     "cipher_words": 8,
     "holes": 1,
     "floor_used": true,
-    "note": "Pass 5, pass5/SCORE_P5.tsv: 7 of 8 cipher words sure (87.50%), 1 hole; one agent's tags, no separate judge, no person. Read only by the short-text floor (fewer than 40 cipher words, 1 hole, at most 2 allowed)."
+    "note": "Pass 5, pass5/SCORE_P5.tsv: 7 of 8 cipher words sure (87.50%), 1 hole; one agent's tags, no separate judge, no person. Read only by the short-text floor (fewer than 40 cipher words, 1 hole, at most 2 allowed).",
+    "reading_review": {
+     "reader_kind": "model",
+     "grade": "B",
+     "by": "integration review of PR #957 (AI agent, for the maintainers); not a person",
+     "date": "2026-11-28",
+     "note": "Read section S1-051 of reading_pass5.md as Latin and the same section of translation_pass5.md. One sentence, 'amabile facit tanquam ipsum deum et odium [?diurumpit]'; one hole (dirumpit). State read; count 7/8 recounted from pass5/WORDS_P5.tsv. Not checked: the images, the transcription, the Latin by a person; no held-out test."
+    }
    },
    {
     "doc": "anv9",
@@ -1361,7 +1664,14 @@
     "cipher_words": 7,
     "holes": 3,
     "floor_used": false,
-    "note": "Pass 5, pass5/SCORE_P5.tsv: 4 of 7 cipher words sure (57.14%), 3 holes; one agent's tags, no separate judge, no person. Under 95% and not within the floor; the sure words build sentences with holes."
+    "note": "Pass 5, pass5/SCORE_P5.tsv: 4 of 7 cipher words sure (57.14%), 3 holes; one agent's tags, no separate judge, no person. Under 95% and not within the floor; the sure words build sentences with holes.",
+    "reading_review": {
+     "reader_kind": "model",
+     "grade": "B",
+     "by": "integration review of PR #957 (AI agent, for the maintainers); not a person",
+     "date": "2026-11-28",
+     "note": "Read section S1-052 of reading_pass5.md as Latin and the same section of translation_pass5.md. Frame only: 'pro [?] [?] [?] est hoc signum'; the predicate is in holes; at the low edge of read in part. State read in part; count 4/7 recounted from pass5/WORDS_P5.tsv. Not checked: the images, the transcription, the Latin by a person; no held-out test."
+    }
    },
    {
     "doc": "anv9",
@@ -1377,7 +1687,14 @@
     "cipher_words": 7,
     "holes": 0,
     "floor_used": false,
-    "note": "Pass 5, pass5/SCORE_P5.tsv: 7 of 7 cipher words sure (100.00%), 0 holes; one agent's tags, no separate judge, no person."
+    "note": "Pass 5, pass5/SCORE_P5.tsv: 7 of 7 cipher words sure (100.00%), 0 holes; one agent's tags, no separate judge, no person.",
+    "reading_review": {
+     "reader_kind": "model",
+     "grade": "B",
+     "by": "integration review of PR #957 (AI agent, for the maintainers); not a person",
+     "date": "2026-11-28",
+     "note": "Read section S1-055 of reading_pass5.md as Latin and the same section of translation_pass5.md. One complete sentence, no hole: 'pro auxilio impetrando hoc signum bonum est'. State read; count 7/7 recounted from pass5/WORDS_P5.tsv. Not checked: the images, the transcription, the Latin by a person; no held-out test."
+    }
    },
    {
     "doc": "anv9",
@@ -1393,7 +1710,14 @@
     "cipher_words": 7,
     "holes": 1,
     "floor_used": true,
-    "note": "Pass 5, pass5/SCORE_P5.tsv: 6 of 7 cipher words sure (85.71%), 1 hole; one agent's tags, no separate judge, no person. Read only by the short-text floor (fewer than 40 cipher words, 1 hole, at most 2 allowed)."
+    "note": "Pass 5, pass5/SCORE_P5.tsv: 6 of 7 cipher words sure (85.71%), 1 hole; one agent's tags, no separate judge, no person. Read only by the short-text floor (fewer than 40 cipher words, 1 hole, at most 2 allowed).",
+    "reading_review": {
+     "reader_kind": "model",
+     "grade": "B",
+     "by": "integration review of PR #957 (AI agent, for the maintainers); not a person",
+     "date": "2026-11-28",
+     "note": "Read section S1-057 of reading_pass5.md as Latin and the same section of translation_pass5.md. One sentence, 'a periculis [?liberabiit] qui hoc signum gestat'; the verb is a hole (liberabitur). State read; count 6/7 recounted from pass5/WORDS_P5.tsv. Not checked: the images, the transcription, the Latin by a person; no held-out test."
+    }
    },
    {
     "doc": "anv9",
@@ -1409,7 +1733,14 @@
     "cipher_words": 7,
     "holes": 1,
     "floor_used": true,
-    "note": "Pass 5, pass5/SCORE_P5.tsv: 6 of 7 cipher words sure (85.71%), 1 hole; one agent's tags, no separate judge, no person. Read only by the short-text floor (fewer than 40 cipher words, 1 hole, at most 2 allowed)."
+    "note": "Pass 5, pass5/SCORE_P5.tsv: 6 of 7 cipher words sure (85.71%), 1 hole; one agent's tags, no separate judge, no person. Read only by the short-text floor (fewer than 40 cipher words, 1 hole, at most 2 allowed).",
+    "reading_review": {
+     "reader_kind": "model",
+     "grade": "B",
+     "by": "integration review of PR #957 (AI agent, for the maintainers); not a person",
+     "date": "2026-11-28",
+     "note": "Read section S1-063 of reading_pass5.md as Latin and the same section of translation_pass5.md. One sentence, 'uulnera [?qque] dei sunt medicina mei amen'; one hole. State read; count 6/7 recounted from pass5/WORDS_P5.tsv. Not checked: the images, the transcription, the Latin by a person; no held-out test."
+    }
    },
    {
     "doc": "anv9",
@@ -1425,7 +1756,14 @@
     "cipher_words": 7,
     "holes": 1,
     "floor_used": true,
-    "note": "Pass 5, pass5/SCORE_P5.tsv: 6 of 7 cipher words sure (85.71%), 1 hole; one agent's tags, no separate judge, no person. Read only by the short-text floor (fewer than 40 cipher words, 1 hole, at most 2 allowed)."
+    "note": "Pass 5, pass5/SCORE_P5.tsv: 6 of 7 cipher words sure (85.71%), 1 hole; one agent's tags, no separate judge, no person. Read only by the short-text floor (fewer than 40 cipher words, 1 hole, at most 2 allowed).",
+    "reading_review": {
+     "reader_kind": "model",
+     "grade": "B",
+     "by": "integration review of PR #957 (AI agent, for the maintainers); not a person",
+     "date": "2026-11-28",
+     "note": "Read section S1-064 of reading_pass5.md as Latin and the same section of translation_pass5.md. Reads with a hole and a grammatical oddity the translation flags (deus in the nominative): 'timor deus et totius mundi sancta [?]'. State read; count 6/7 recounted from pass5/WORDS_P5.tsv. Not checked: the images, the transcription, the Latin by a person; no held-out test."
+    }
    },
    {
     "doc": "anv9",
@@ -1441,7 +1779,14 @@
     "cipher_words": 8,
     "holes": 2,
     "floor_used": true,
-    "note": "Pass 5, pass5/SCORE_P5.tsv: 6 of 8 cipher words sure (75.00%), 2 holes; one agent's tags, no separate judge, no person. Read only by the short-text floor (fewer than 40 cipher words, 2 holes, at most 2 allowed)."
+    "note": "Pass 5, pass5/SCORE_P5.tsv: 6 of 8 cipher words sure (75.00%), 2 holes; one agent's tags, no separate judge, no person. Read only by the short-text floor (fewer than 40 cipher words, 2 holes, at most 2 allowed).",
+    "reading_review": {
+     "reader_kind": "model",
+     "grade": "B",
+     "by": "integration review of PR #957 (AI agent, for the maintainers); not a person",
+     "date": "2026-11-28",
+     "note": "Read section S1-065 of reading_pass5.md as Latin and the same section of translation_pass5.md. One phrase, 'contra [?area] et hostes [?i] bello signum optimum'; two holes (arma?, in). State read; count 6/8 recounted from pass5/WORDS_P5.tsv. Not checked: the images, the transcription, the Latin by a person; no held-out test."
+    }
    },
    {
     "doc": "anv9",
@@ -1457,7 +1802,14 @@
     "cipher_words": 7,
     "holes": 2,
     "floor_used": true,
-    "note": "Pass 5, pass5/SCORE_P5.tsv: 5 of 7 cipher words sure (71.43%), 2 holes; one agent's tags, no separate judge, no person. Read only by the short-text floor (fewer than 40 cipher words, 2 holes, at most 2 allowed)."
+    "note": "Pass 5, pass5/SCORE_P5.tsv: 5 of 7 cipher words sure (71.43%), 2 holes; one agent's tags, no separate judge, no person. Read only by the short-text floor (fewer than 40 cipher words, 2 holes, at most 2 allowed).",
+    "reading_review": {
+     "reader_kind": "model",
+     "grade": "B",
+     "by": "integration review of PR #957 (AI agent, for the maintainers); not a person",
+     "date": "2026-11-28",
+     "note": "Read section S1-069 of reading_pass5.md as Latin and the same section of translation_pass5.md. One sentence, 'hoc signum bonum est [?ftra] dolore [?matricos]'; two holes (contra, matricis). State read; count 5/7 recounted from pass5/WORDS_P5.tsv. Not checked: the images, the transcription, the Latin by a person; no held-out test."
+    }
    },
    {
     "doc": "anv9",
@@ -1473,7 +1825,14 @@
     "cipher_words": 7,
     "holes": 2,
     "floor_used": true,
-    "note": "Pass 5, pass5/SCORE_P5.tsv: 5 of 7 cipher words sure (71.43%), 2 holes; one agent's tags, no separate judge, no person. Read only by the short-text floor (fewer than 40 cipher words, 2 holes, at most 2 allowed)."
+    "note": "Pass 5, pass5/SCORE_P5.tsv: 5 of 7 cipher words sure (71.43%), 2 holes; one agent's tags, no separate judge, no person. Read only by the short-text floor (fewer than 40 cipher words, 2 holes, at most 2 allowed).",
+    "reading_review": {
+     "reader_kind": "model",
+     "grade": "B",
+     "by": "integration review of PR #957 (AI agent, for the maintainers); not a person",
+     "date": "2026-11-28",
+     "note": "Read section S1-070 of reading_pass5.md as Latin and the same section of translation_pass5.md. One sentence, 'contra uenenum est et [?mobtis] [?incidenidia] remedium'; two holes (mortis, incidentia?). State read; count 5/7 recounted from pass5/WORDS_P5.tsv. Not checked: the images, the transcription, the Latin by a person; no held-out test."
+    }
    },
    {
     "doc": "anv9",
@@ -1489,7 +1848,14 @@
     "cipher_words": 6,
     "holes": 2,
     "floor_used": true,
-    "note": "Pass 5, pass5/SCORE_P5.tsv: 4 of 6 cipher words sure (66.67%), 2 holes; one agent's tags, no separate judge, no person. Read only by the short-text floor (fewer than 40 cipher words, 2 holes, at most 2 allowed)."
+    "note": "Pass 5, pass5/SCORE_P5.tsv: 4 of 6 cipher words sure (66.67%), 2 holes; one agent's tags, no separate judge, no person. Read only by the short-text floor (fewer than 40 cipher words, 2 holes, at most 2 allowed).",
+    "reading_review": {
+     "reader_kind": "model",
+     "grade": "B",
+     "by": "integration review of PR #957 (AI agent, for the maintainers); not a person",
+     "date": "2026-11-28",
+     "note": "Read section S1-071 of reading_pass5.md as Latin and the same section of translation_pass5.md. One phrase, 'portatum facit [?ftra] inimicos et [?insidiator]'; two holes (contra, insidiatores). State read; count 4/6 recounted from pass5/WORDS_P5.tsv. Not checked: the images, the transcription, the Latin by a person; no held-out test."
+    }
    },
    {
     "doc": "anv9",
@@ -1505,7 +1871,14 @@
     "cipher_words": 8,
     "holes": 0,
     "floor_used": false,
-    "note": "Pass 5, pass5/SCORE_P5.tsv: 8 of 8 cipher words sure (100.00%), 0 holes; one agent's tags, no separate judge, no person."
+    "note": "Pass 5, pass5/SCORE_P5.tsv: 8 of 8 cipher words sure (100.00%), 0 holes; one agent's tags, no separate judge, no person.",
+    "reading_review": {
+     "reader_kind": "model",
+     "grade": "B",
+     "by": "integration review of PR #957 (AI agent, for the maintainers); not a person",
+     "date": "2026-11-28",
+     "note": "Read section S1-072 of reading_pass5.md as Latin and the same section of translation_pass5.md. One complete sentence, no hole: 'cum hoc signo in carcere detineri n~ potes'. State read; count 8/8 recounted from pass5/WORDS_P5.tsv. Not checked: the images, the transcription, the Latin by a person; no held-out test."
+    }
    },
    {
     "doc": "anv9",
@@ -1521,7 +1894,14 @@
     "cipher_words": 6,
     "holes": 0,
     "floor_used": false,
-    "note": "Pass 5, pass5/SCORE_P5.tsv: 6 of 6 cipher words sure (100.00%), 0 holes; one agent's tags, no separate judge, no person."
+    "note": "Pass 5, pass5/SCORE_P5.tsv: 6 of 6 cipher words sure (100.00%), 0 holes; one agent's tags, no separate judge, no person.",
+    "reading_review": {
+     "reader_kind": "model",
+     "grade": "B",
+     "by": "integration review of PR #957 (AI agent, for the maintainers); not a person",
+     "date": "2026-11-28",
+     "note": "Read section S1-073 of reading_pass5.md as Latin and the same section of translation_pass5.md. One complete sentence, no hole: 'contra mortis repentinae periculum optimum est'. State read; count 6/6 recounted from pass5/WORDS_P5.tsv. Not checked: the images, the transcription, the Latin by a person; no held-out test."
+    }
    },
    {
     "doc": "anv9",
@@ -1537,7 +1917,14 @@
     "cipher_words": 8,
     "holes": 1,
     "floor_used": true,
-    "note": "Pass 5, pass5/SCORE_P5.tsv: 7 of 8 cipher words sure (87.50%), 1 hole; one agent's tags, no separate judge, no person. Read only by the short-text floor (fewer than 40 cipher words, 1 hole, at most 2 allowed)."
+    "note": "Pass 5, pass5/SCORE_P5.tsv: 7 of 8 cipher words sure (87.50%), 1 hole; one agent's tags, no separate judge, no person. Read only by the short-text floor (fewer than 40 cipher words, 1 hole, at most 2 allowed).",
+    "reading_review": {
+     "reader_kind": "model",
+     "grade": "B",
+     "by": "integration review of PR #957 (AI agent, for the maintainers); not a person",
+     "date": "2026-11-28",
+     "note": "Read section S1-074 of reading_pass5.md as Latin and the same section of translation_pass5.md. One sentence, 'hoc signum animum et animam confortat aduersus [?]'; the last word is a hole. State read; count 7/8 recounted from pass5/WORDS_P5.tsv. Not checked: the images, the transcription, the Latin by a person; no held-out test."
+    }
    },
    {
     "doc": "anv9",
@@ -1553,7 +1940,14 @@
     "cipher_words": 8,
     "holes": 0,
     "floor_used": false,
-    "note": "Pass 5, pass5/SCORE_P5.tsv: 8 of 8 cipher words sure (100.00%), 0 holes; one agent's tags, no separate judge, no person."
+    "note": "Pass 5, pass5/SCORE_P5.tsv: 8 of 8 cipher words sure (100.00%), 0 holes; one agent's tags, no separate judge, no person.",
+    "reading_review": {
+     "reader_kind": "model",
+     "grade": "B",
+     "by": "integration review of PR #957 (AI agent, for the maintainers); not a person",
+     "date": "2026-11-28",
+     "note": "Read section S1-078 of reading_pass5.md as Latin and the same section of translation_pass5.md. One complete sentence, no hole: 'mulier cum hoc signo n~ peribit in partu'. State read; count 8/8 recounted from pass5/WORDS_P5.tsv. Not checked: the images, the transcription, the Latin by a person; no held-out test."
+    }
    },
    {
     "doc": "anv9",
@@ -1569,7 +1963,14 @@
     "cipher_words": 10,
     "holes": 3,
     "floor_used": false,
-    "note": "Pass 5, pass5/SCORE_P5.tsv: 7 of 10 cipher words sure (70.00%), 3 holes; one agent's tags, no separate judge, no person. Under 95% and not within the floor; the sure words build sentences with holes."
+    "note": "Pass 5, pass5/SCORE_P5.tsv: 7 of 10 cipher words sure (70.00%), 3 holes; one agent's tags, no separate judge, no person. Under 95% and not within the floor; the sure words build sentences with holes.",
+    "reading_review": {
+     "reader_kind": "model",
+     "grade": "B",
+     "by": "integration review of PR #957 (AI agent, for the maintainers); not a person",
+     "date": "2026-11-28",
+     "note": "Read section S1-079 of reading_pass5.md as Latin and the same section of translation_pass5.md. Sentence with its middle in holes: 'porta tecum hoc signum et inimici [?] [?] [?] cedent'; the frame reads. State read in part; count 7/10 recounted from pass5/WORDS_P5.tsv. Not checked: the images, the transcription, the Latin by a person; no held-out test."
+    }
    },
    {
     "doc": "anv9",
@@ -1585,7 +1986,14 @@
     "cipher_words": 9,
     "holes": 0,
     "floor_used": false,
-    "note": "Pass 5, pass5/SCORE_P5.tsv: 9 of 9 cipher words sure (100.00%), 0 holes; one agent's tags, no separate judge, no person."
+    "note": "Pass 5, pass5/SCORE_P5.tsv: 9 of 9 cipher words sure (100.00%), 0 holes; one agent's tags, no separate judge, no person.",
+    "reading_review": {
+     "reader_kind": "model",
+     "grade": "B",
+     "by": "integration review of PR #957 (AI agent, for the maintainers); not a person",
+     "date": "2026-11-28",
+     "note": "Read section S1-080 of reading_pass5.md as Latin and the same section of translation_pass5.md. One complete sentence, no hole: 'qui hoc signum habet a nemine laedi potest amen'. State read; count 9/9 recounted from pass5/WORDS_P5.tsv. Not checked: the images, the transcription, the Latin by a person; no held-out test."
+    }
    },
    {
     "doc": "anv9",
@@ -1601,7 +2009,14 @@
     "cipher_words": 9,
     "holes": 4,
     "floor_used": false,
-    "note": "Pass 5, pass5/SCORE_P5.tsv: 5 of 9 cipher words sure (55.56%), 4 holes; one agent's tags, no separate judge, no person. Under 95% and not within the floor; the sure words build sentences with holes."
+    "note": "Pass 5, pass5/SCORE_P5.tsv: 5 of 9 cipher words sure (55.56%), 4 holes; one agent's tags, no separate judge, no person. Under 95% and not within the floor; the sure words build sentences with holes.",
+    "reading_review": {
+     "reader_kind": "model",
+     "grade": "B",
+     "by": "integration review of PR #957 (AI agent, for the maintainers); not a person",
+     "date": "2026-11-28",
+     "note": "Read section S1-081 of reading_pass5.md as Latin and the same section of translation_pass5.md. First half reads ('hoc [?sinum] est contra omnia phantasmata'), the end is three holes. State read in part; count 5/9 recounted from pass5/WORDS_P5.tsv. Not checked: the images, the transcription, the Latin by a person; no held-out test."
+    }
    },
    {
     "doc": "anv9",
@@ -1617,7 +2032,14 @@
     "cipher_words": 7,
     "holes": 3,
     "floor_used": false,
-    "note": "Pass 5, pass5/SCORE_P5.tsv: 4 of 7 cipher words sure (57.14%), 3 holes; one agent's tags, no separate judge, no person. Under 95% and not within the floor; the sure words build sentences with holes."
+    "note": "Pass 5, pass5/SCORE_P5.tsv: 4 of 7 cipher words sure (57.14%), 3 holes; one agent's tags, no separate judge, no person. Under 95% and not within the floor; the sure words build sentences with holes.",
+    "reading_review": {
+     "reader_kind": "model",
+     "grade": "B",
+     "by": "integration review of PR #957 (AI agent, for the maintainers); not a person",
+     "date": "2026-11-28",
+     "note": "Read section S1-082 of reading_pass5.md as Latin and the same section of translation_pass5.md. Readable through its holes: '[?incdo] [?cit] [?amore] et beneuolentiam apud omnes' (inducit amorem); three of seven words are holes. State read in part; count 4/7 recounted from pass5/WORDS_P5.tsv. Not checked: the images, the transcription, the Latin by a person; no held-out test."
+    }
    },
    {
     "doc": "anv9",
@@ -1633,7 +2055,14 @@
     "cipher_words": 7,
     "holes": 2,
     "floor_used": true,
-    "note": "Pass 5, pass5/SCORE_P5.tsv: 5 of 7 cipher words sure (71.43%), 2 holes; one agent's tags, no separate judge, no person. Read only by the short-text floor (fewer than 40 cipher words, 2 holes, at most 2 allowed)."
+    "note": "Pass 5, pass5/SCORE_P5.tsv: 5 of 7 cipher words sure (71.43%), 2 holes; one agent's tags, no separate judge, no person. Read only by the short-text floor (fewer than 40 cipher words, 2 holes, at most 2 allowed).",
+    "reading_review": {
+     "reader_kind": "model",
+     "grade": "B",
+     "by": "integration review of PR #957 (AI agent, for the maintainers); not a person",
+     "date": "2026-11-28",
+     "note": "Read section S1-084 of reading_pass5.md as Latin and the same section of translation_pass5.md. One sentence, '[?portante] ab aquae et [?mabris] periclo soluit'; two holes (portantem, maris). State read; count 5/7 recounted from pass5/WORDS_P5.tsv. Not checked: the images, the transcription, the Latin by a person; no held-out test."
+    }
    },
    {
     "doc": "anv9",
@@ -1649,7 +2078,14 @@
     "cipher_words": 7,
     "holes": 1,
     "floor_used": true,
-    "note": "Pass 5, pass5/SCORE_P5.tsv: 6 of 7 cipher words sure (85.71%), 1 hole; one agent's tags, no separate judge, no person. Read only by the short-text floor (fewer than 40 cipher words, 1 hole, at most 2 allowed)."
+    "note": "Pass 5, pass5/SCORE_P5.tsv: 6 of 7 cipher words sure (85.71%), 1 hole; one agent's tags, no separate judge, no person. Read only by the short-text floor (fewer than 40 cipher words, 1 hole, at most 2 allowed).",
+    "reading_review": {
+     "reader_kind": "model",
+     "grade": "B",
+     "by": "integration review of PR #957 (AI agent, for the maintainers); not a person",
+     "date": "2026-11-28",
+     "note": "Read section S1-085 of reading_pass5.md as Latin and the same section of translation_pass5.md. One sentence, 'ecce [?figua] agni dominantis super omnes potestates'; one hole (figura). State read; count 6/7 recounted from pass5/WORDS_P5.tsv. Not checked: the images, the transcription, the Latin by a person; no held-out test."
+    }
    },
    {
     "doc": "anv9",
@@ -1665,7 +2101,14 @@
     "cipher_words": 10,
     "holes": 1,
     "floor_used": true,
-    "note": "Pass 5, pass5/SCORE_P5.tsv: 9 of 10 cipher words sure (90.00%), 1 hole; one agent's tags, no separate judge, no person. Read only by the short-text floor (fewer than 40 cipher words, 1 hole, at most 2 allowed)."
+    "note": "Pass 5, pass5/SCORE_P5.tsv: 9 of 10 cipher words sure (90.00%), 1 hole; one agent's tags, no separate judge, no person. Read only by the short-text floor (fewer than 40 cipher words, 1 hole, at most 2 allowed).",
+    "reading_review": {
+     "reader_kind": "model",
+     "grade": "B",
+     "by": "integration review of PR #957 (AI agent, for the maintainers); not a person",
+     "date": "2026-11-28",
+     "note": "Read section S1-087 of reading_pass5.md as Latin and the same section of translation_pass5.md. One sentence, 'cum hoc signo n~ timebis inimicos nec maleficia nec [?da?mones]'; one hole (daemones). State read; count 9/10 recounted from pass5/WORDS_P5.tsv. Not checked: the images, the transcription, the Latin by a person; no held-out test."
+    }
    },
    {
     "doc": "anv9",
@@ -1681,7 +2124,14 @@
     "cipher_words": 7,
     "holes": 0,
     "floor_used": false,
-    "note": "Pass 5, pass5/SCORE_P5.tsv: 7 of 7 cipher words sure (100.00%), 0 holes; one agent's tags, no separate judge, no person."
+    "note": "Pass 5, pass5/SCORE_P5.tsv: 7 of 7 cipher words sure (100.00%), 0 holes; one agent's tags, no separate judge, no person.",
+    "reading_review": {
+     "reader_kind": "model",
+     "grade": "B",
+     "by": "integration review of PR #957 (AI agent, for the maintainers); not a person",
+     "date": "2026-11-28",
+     "note": "Read section S1-090 of reading_pass5.md as Latin and the same section of translation_pass5.md. One complete sentence, no hole: 'in bello securus eris cum hoc signo'. State read; count 7/7 recounted from pass5/WORDS_P5.tsv. Not checked: the images, the transcription, the Latin by a person; no held-out test."
+    }
    },
    {
     "doc": "anv9",
@@ -1697,7 +2147,14 @@
     "cipher_words": 7,
     "holes": 1,
     "floor_used": true,
-    "note": "Pass 5, pass5/SCORE_P5.tsv: 6 of 7 cipher words sure (85.71%), 1 hole; one agent's tags, no separate judge, no person. Read only by the short-text floor (fewer than 40 cipher words, 1 hole, at most 2 allowed)."
+    "note": "Pass 5, pass5/SCORE_P5.tsv: 6 of 7 cipher words sure (85.71%), 1 hole; one agent's tags, no separate judge, no person. Read only by the short-text floor (fewer than 40 cipher words, 1 hole, at most 2 allowed).",
+    "reading_review": {
+     "reader_kind": "model",
+     "grade": "B",
+     "by": "integration review of PR #957 (AI agent, for the maintainers); not a person",
+     "date": "2026-11-28",
+     "note": "Read section S1-091 of reading_pass5.md as Latin and the same section of translation_pass5.md. One sentence, 'ab [?inimicos] nos tutos reddit et inuincibiles'; one hole (inimicis). State read; count 6/7 recounted from pass5/WORDS_P5.tsv. Not checked: the images, the transcription, the Latin by a person; no held-out test."
+    }
    },
    {
     "doc": "anv9",
@@ -1713,7 +2170,14 @@
     "cipher_words": 9,
     "holes": 1,
     "floor_used": true,
-    "note": "Pass 5, pass5/SCORE_P5.tsv: 8 of 9 cipher words sure (88.89%), 1 hole; one agent's tags, no separate judge, no person. Read only by the short-text floor (fewer than 40 cipher words, 1 hole, at most 2 allowed)."
+    "note": "Pass 5, pass5/SCORE_P5.tsv: 8 of 9 cipher words sure (88.89%), 1 hole; one agent's tags, no separate judge, no person. Read only by the short-text floor (fewer than 40 cipher words, 1 hole, at most 2 allowed).",
+    "reading_review": {
+     "reader_kind": "model",
+     "grade": "B",
+     "by": "integration review of PR #957 (AI agent, for the maintainers); not a person",
+     "date": "2026-11-28",
+     "note": "Read section S1-092 of reading_pass5.md as Latin and the same section of translation_pass5.md. One sentence, 'in quocunque die hoc signum [?] a periculo liber'; the verb is a hole. State read; count 8/9 recounted from pass5/WORDS_P5.tsv. Not checked: the images, the transcription, the Latin by a person; no held-out test."
+    }
    },
    {
     "doc": "anv9",
@@ -1729,7 +2193,14 @@
     "cipher_words": 11,
     "holes": 3,
     "floor_used": false,
-    "note": "Pass 5, pass5/SCORE_P5.tsv: 8 of 11 cipher words sure (72.73%), 3 holes; one agent's tags, no separate judge, no person. Under 95% and not within the floor; the sure words build sentences with holes."
+    "note": "Pass 5, pass5/SCORE_P5.tsv: 8 of 11 cipher words sure (72.73%), 3 holes; one agent's tags, no separate judge, no person. Under 95% and not within the floor; the sure words build sentences with holes.",
+    "reading_review": {
+     "reader_kind": "model",
+     "grade": "B",
+     "by": "integration review of PR #957 (AI agent, for the maintainers); not a person",
+     "date": "2026-11-28",
+     "note": "Read section S1-095 of reading_pass5.md as Latin and the same section of translation_pass5.md. Reads in part: '[?] in [?] n~ nata et portatum manu leua indicit [?]'; the frame (written on unborn parchment, carried in the left hand) is clear, three holes. State read in part; count 8/11 recounted from pass5/WORDS_P5.tsv. Not checked: the images, the transcription, the Latin by a person; no held-out test."
+    }
    },
    {
     "doc": "anv9",
@@ -1745,7 +2216,14 @@
     "cipher_words": 8,
     "holes": 2,
     "floor_used": true,
-    "note": "Pass 5, pass5/SCORE_P5.tsv: 6 of 8 cipher words sure (75.00%), 2 holes; one agent's tags, no separate judge, no person. Read only by the short-text floor (fewer than 40 cipher words, 2 holes, at most 2 allowed)."
+    "note": "Pass 5, pass5/SCORE_P5.tsv: 6 of 8 cipher words sure (75.00%), 2 holes; one agent's tags, no separate judge, no person. Read only by the short-text floor (fewer than 40 cipher words, 2 holes, at most 2 allowed).",
+    "reading_review": {
+     "reader_kind": "model",
+     "grade": "B",
+     "by": "integration review of PR #957 (AI agent, for the maintainers); not a person",
+     "date": "2026-11-28",
+     "note": "Read section S1-096 of reading_pass5.md as Latin and the same section of translation_pass5.md. One sentence, 'ad [?honc] signum uenient [?spiritu] et obedient tibi'; two holes (hoc, spiritus). State read; count 6/8 recounted from pass5/WORDS_P5.tsv. Not checked: the images, the transcription, the Latin by a person; no held-out test."
+    }
    },
    {
     "doc": "anv9",
@@ -1761,7 +2239,14 @@
     "cipher_words": 10,
     "holes": 1,
     "floor_used": true,
-    "note": "Pass 5, pass5/SCORE_P5.tsv: 9 of 10 cipher words sure (90.00%), 1 hole; one agent's tags, no separate judge, no person. Read only by the short-text floor (fewer than 40 cipher words, 1 hole, at most 2 allowed)."
+    "note": "Pass 5, pass5/SCORE_P5.tsv: 9 of 10 cipher words sure (90.00%), 1 hole; one agent's tags, no separate judge, no person. Read only by the short-text floor (fewer than 40 cipher words, 1 hole, at most 2 allowed).",
+    "reading_review": {
+     "reader_kind": "model",
+     "grade": "B",
+     "by": "integration review of PR #957 (AI agent, for the maintainers); not a person",
+     "date": "2026-11-28",
+     "note": "Read section S1-097 of reading_pass5.md as Latin and the same section of translation_pass5.md. One sentence, 'hoc signum [?portabit] aron in fronte et liberat ab igne'; one hole (portauit). State read; count 9/10 recounted from pass5/WORDS_P5.tsv. Not checked: the images, the transcription, the Latin by a person; no held-out test."
+    }
    },
    {
     "doc": "anv9",
@@ -1777,7 +2262,14 @@
     "cipher_words": 7,
     "holes": 1,
     "floor_used": true,
-    "note": "Pass 5, pass5/SCORE_P5.tsv: 6 of 7 cipher words sure (85.71%), 1 hole; one agent's tags, no separate judge, no person. Read only by the short-text floor (fewer than 40 cipher words, 1 hole, at most 2 allowed)."
+    "note": "Pass 5, pass5/SCORE_P5.tsv: 6 of 7 cipher words sure (85.71%), 1 hole; one agent's tags, no separate judge, no person. Read only by the short-text floor (fewer than 40 cipher words, 1 hole, at most 2 allowed).",
+    "reading_review": {
+     "reader_kind": "model",
+     "grade": "B",
+     "by": "integration review of PR #957 (AI agent, for the maintainers); not a person",
+     "date": "2026-11-28",
+     "note": "Read section S1-098 of reading_pass5.md as Latin and the same section of translation_pass5.md. One sentence, 'contra [?morte] subitaneam hoc signum est accommodatum'; one hole (mortem). State read; count 6/7 recounted from pass5/WORDS_P5.tsv. Not checked: the images, the transcription, the Latin by a person; no held-out test."
+    }
    },
    {
     "doc": "anv9",
@@ -1793,7 +2285,14 @@
     "cipher_words": 7,
     "holes": 0,
     "floor_used": false,
-    "note": "Pass 5, pass5/SCORE_P5.tsv: 7 of 7 cipher words sure (100.00%), 0 holes; one agent's tags, no separate judge, no person."
+    "note": "Pass 5, pass5/SCORE_P5.tsv: 7 of 7 cipher words sure (100.00%), 0 holes; one agent's tags, no separate judge, no person.",
+    "reading_review": {
+     "reader_kind": "model",
+     "grade": "B",
+     "by": "integration review of PR #957 (AI agent, for the maintainers); not a person",
+     "date": "2026-11-28",
+     "note": "Read section S1-099 of reading_pass5.md as Latin and the same section of translation_pass5.md. One complete sentence, no hole: 'cum hoc signo morte subitanea n~ peribis'. State read; count 7/7 recounted from pass5/WORDS_P5.tsv. Not checked: the images, the transcription, the Latin by a person; no held-out test."
+    }
    },
    {
     "doc": "anv9",
@@ -1809,7 +2308,14 @@
     "cipher_words": 10,
     "holes": 2,
     "floor_used": true,
-    "note": "Pass 5, pass5/SCORE_P5.tsv: 8 of 10 cipher words sure (80.00%), 2 holes; one agent's tags, no separate judge, no person. Read only by the short-text floor (fewer than 40 cipher words, 2 holes, at most 2 allowed)."
+    "note": "Pass 5, pass5/SCORE_P5.tsv: 8 of 10 cipher words sure (80.00%), 2 holes; one agent's tags, no separate judge, no person. Read only by the short-text floor (fewer than 40 cipher words, 2 holes, at most 2 allowed).",
+    "reading_review": {
+     "reader_kind": "model",
+     "grade": "B",
+     "by": "integration review of PR #957 (AI agent, for the maintainers); not a person",
+     "date": "2026-11-28",
+     "note": "Read section S1-102 of reading_pass5.md as Latin and the same section of translation_pass5.md. The psalm verse (super aspidem et basiliscum ambulabis et conculcabis leonem et draconem) reads, the last two nouns are holes (leone, dracone). State read; count 8/10 recounted from pass5/WORDS_P5.tsv. Not checked: the images, the transcription, the Latin by a person; no held-out test."
+    }
    },
    {
     "doc": "anv9",
@@ -1825,7 +2331,14 @@
     "cipher_words": 9,
     "holes": 3,
     "floor_used": false,
-    "note": "Pass 5, pass5/SCORE_P5.tsv: 6 of 9 cipher words sure (66.67%), 3 holes; one agent's tags, no separate judge, no person. Under 95% and not within the floor; the sure words build sentences with holes."
+    "note": "Pass 5, pass5/SCORE_P5.tsv: 6 of 9 cipher words sure (66.67%), 3 holes; one agent's tags, no separate judge, no person. Under 95% and not within the floor; the sure words build sentences with holes.",
+    "reading_review": {
+     "reader_kind": "model",
+     "grade": "B",
+     "by": "integration review of PR #957 (AI agent, for the maintainers); not a person",
+     "date": "2026-11-28",
+     "note": "Read section S1-103 of reading_pass5.md as Latin and the same section of translation_pass5.md. Reads in part: '[?sacto] columbo sacrum est hoc signum et [?] [?]'; the main clause reads, the end is holes. State read in part; count 6/9 recounted from pass5/WORDS_P5.tsv. Not checked: the images, the transcription, the Latin by a person; no held-out test."
+    }
    },
    {
     "doc": "anv9",
@@ -1841,7 +2354,14 @@
     "cipher_words": 12,
     "holes": 2,
     "floor_used": true,
-    "note": "Pass 5, pass5/SCORE_P5.tsv: 10 of 12 cipher words sure (83.33%), 2 holes; one agent's tags, no separate judge, no person. Read only by the short-text floor (fewer than 40 cipher words, 2 holes, at most 2 allowed)."
+    "note": "Pass 5, pass5/SCORE_P5.tsv: 10 of 12 cipher words sure (83.33%), 2 holes; one agent's tags, no separate judge, no person. Read only by the short-text floor (fewer than 40 cipher words, 2 holes, at most 2 allowed).",
+    "reading_review": {
+     "reader_kind": "model",
+     "grade": "B",
+     "by": "integration review of PR #957 (AI agent, for the maintainers); not a person",
+     "date": "2026-11-28",
+     "note": "Read section S1-105 of reading_pass5.md as Latin and the same section of translation_pass5.md. One sentence, 'ecce [?figua] et facies per quod omnia facta sunt cui omnes [?]'; two holes. State read; count 10/12 recounted from pass5/WORDS_P5.tsv. Not checked: the images, the transcription, the Latin by a person; no held-out test."
+    }
    },
    {
     "doc": "anv9",
@@ -1857,7 +2377,14 @@
     "cipher_words": 9,
     "holes": 1,
     "floor_used": true,
-    "note": "Pass 5, pass5/SCORE_P5.tsv: 8 of 9 cipher words sure (88.89%), 1 hole; one agent's tags, no separate judge, no person. Read only by the short-text floor (fewer than 40 cipher words, 1 hole, at most 2 allowed)."
+    "note": "Pass 5, pass5/SCORE_P5.tsv: 8 of 9 cipher words sure (88.89%), 1 hole; one agent's tags, no separate judge, no person. Read only by the short-text floor (fewer than 40 cipher words, 1 hole, at most 2 allowed).",
+    "reading_review": {
+     "reader_kind": "model",
+     "grade": "B",
+     "by": "integration review of PR #957 (AI agent, for the maintainers); not a person",
+     "date": "2026-11-28",
+     "note": "Read section S1-106 of reading_pass5.md as Latin and the same section of translation_pass5.md. One sentence, 'cum hoc signo nec uinculis nec compedibus [?teri] potes'; one hole (teneri). State read; count 8/9 recounted from pass5/WORDS_P5.tsv. Not checked: the images, the transcription, the Latin by a person; no held-out test."
+    }
    },
    {
     "doc": "anv9",
@@ -1873,7 +2400,14 @@
     "cipher_words": 7,
     "holes": 1,
     "floor_used": true,
-    "note": "Pass 5, pass5/SCORE_P5.tsv: 6 of 7 cipher words sure (85.71%), 1 hole; one agent's tags, no separate judge, no person. Read only by the short-text floor (fewer than 40 cipher words, 1 hole, at most 2 allowed)."
+    "note": "Pass 5, pass5/SCORE_P5.tsv: 6 of 7 cipher words sure (85.71%), 1 hole; one agent's tags, no separate judge, no person. Read only by the short-text floor (fewer than 40 cipher words, 1 hole, at most 2 allowed).",
+    "reading_review": {
+     "reader_kind": "model",
+     "grade": "B",
+     "by": "integration review of PR #957 (AI agent, for the maintainers); not a person",
+     "date": "2026-11-28",
+     "note": "Read section S1-107 of reading_pass5.md as Latin and the same section of translation_pass5.md. One phrase, 'signum [?sacti] gregorii contra uenenum et maleficia'; one hole (sancti). State read; count 6/7 recounted from pass5/WORDS_P5.tsv. Not checked: the images, the transcription, the Latin by a person; no held-out test."
+    }
    },
    {
     "doc": "anv9",
@@ -1889,7 +2423,14 @@
     "cipher_words": 8,
     "holes": 1,
     "floor_used": true,
-    "note": "Pass 5, pass5/SCORE_P5.tsv: 7 of 8 cipher words sure (87.50%), 1 hole; one agent's tags, no separate judge, no person. Read only by the short-text floor (fewer than 40 cipher words, 1 hole, at most 2 allowed)."
+    "note": "Pass 5, pass5/SCORE_P5.tsv: 7 of 8 cipher words sure (87.50%), 1 hole; one agent's tags, no separate judge, no person. Read only by the short-text floor (fewer than 40 cipher words, 1 hole, at most 2 allowed).",
+    "reading_review": {
+     "reader_kind": "model",
+     "grade": "B",
+     "by": "integration review of PR #957 (AI agent, for the maintainers); not a person",
+     "date": "2026-11-28",
+     "note": "Read section S1-109 of reading_pass5.md as Latin and the same section of translation_pass5.md. One sentence, 'hoc signo sanguine [?perd?e] nemo potest tutum est'; the verb is a hole. State read; count 7/8 recounted from pass5/WORDS_P5.tsv. Not checked: the images, the transcription, the Latin by a person; no held-out test."
+    }
    },
    {
     "doc": "anv9",
@@ -1905,7 +2446,14 @@
     "cipher_words": 7,
     "holes": 0,
     "floor_used": false,
-    "note": "Pass 5, pass5/SCORE_P5.tsv: 7 of 7 cipher words sure (100.00%), 0 holes; one agent's tags, no separate judge, no person."
+    "note": "Pass 5, pass5/SCORE_P5.tsv: 7 of 7 cipher words sure (100.00%), 0 holes; one agent's tags, no separate judge, no person.",
+    "reading_review": {
+     "reader_kind": "model",
+     "grade": "B",
+     "by": "integration review of PR #957 (AI agent, for the maintainers); not a person",
+     "date": "2026-11-28",
+     "note": "Read section S1-110 of reading_pass5.md as Latin and the same section of translation_pass5.md. One complete sentence, no hole: 'qui hoc signum portauerit nulla pericula timebit'. State read; count 7/7 recounted from pass5/WORDS_P5.tsv. Not checked: the images, the transcription, the Latin by a person; no held-out test."
+    }
    },
    {
     "doc": "anv9",
@@ -1921,7 +2469,14 @@
     "cipher_words": 8,
     "holes": 1,
     "floor_used": true,
-    "note": "Pass 5, pass5/SCORE_P5.tsv: 7 of 8 cipher words sure (87.50%), 1 hole; one agent's tags, no separate judge, no person. Read only by the short-text floor (fewer than 40 cipher words, 1 hole, at most 2 allowed)."
+    "note": "Pass 5, pass5/SCORE_P5.tsv: 7 of 8 cipher words sure (87.50%), 1 hole; one agent's tags, no separate judge, no person. Read only by the short-text floor (fewer than 40 cipher words, 1 hole, at most 2 allowed).",
+    "reading_review": {
+     "reader_kind": "model",
+     "grade": "B",
+     "by": "integration review of PR #957 (AI agent, for the maintainers); not a person",
+     "date": "2026-11-28",
+     "note": "Read section S2-02 of reading_pass5.md as Latin and the same section of translation_pass5.md. One phrase, 'hoc signum triumphatoris dni~ nostri iesu ch~ri [?]'; the last word (mysteriosum) is a hole. State read; count 7/8 recounted from pass5/WORDS_P5.tsv. Not checked: the images, the transcription, the Latin by a person; no held-out test."
+    }
    },
    {
     "doc": "anv9",
@@ -1937,7 +2492,14 @@
     "cipher_words": 8,
     "holes": 0,
     "floor_used": false,
-    "note": "Pass 5, pass5/SCORE_P5.tsv: 8 of 8 cipher words sure (100.00%), 0 holes; one agent's tags, no separate judge, no person."
+    "note": "Pass 5, pass5/SCORE_P5.tsv: 8 of 8 cipher words sure (100.00%), 0 holes; one agent's tags, no separate judge, no person.",
+    "reading_review": {
+     "reader_kind": "model",
+     "grade": "B",
+     "by": "integration review of PR #957 (AI agent, for the maintainers); not a person",
+     "date": "2026-11-28",
+     "note": "Read section S2-03 of reading_pass5.md as Latin and the same section of translation_pass5.md. One complete sentence, no hole: 'cum hoc signo eris gratus omnibus et fortunatus'. State read; count 8/8 recounted from pass5/WORDS_P5.tsv. Not checked: the images, the transcription, the Latin by a person; no held-out test."
+    }
    },
    {
     "doc": "anv9",
@@ -1953,7 +2515,14 @@
     "cipher_words": 7,
     "holes": 1,
     "floor_used": true,
-    "note": "Pass 5, pass5/SCORE_P5.tsv: 6 of 7 cipher words sure (85.71%), 1 hole; one agent's tags, no separate judge, no person. Read only by the short-text floor (fewer than 40 cipher words, 1 hole, at most 2 allowed)."
+    "note": "Pass 5, pass5/SCORE_P5.tsv: 6 of 7 cipher words sure (85.71%), 1 hole; one agent's tags, no separate judge, no person. Read only by the short-text floor (fewer than 40 cipher words, 1 hole, at most 2 allowed).",
+    "reading_review": {
+     "reader_kind": "model",
+     "grade": "B",
+     "by": "integration review of PR #957 (AI agent, for the maintainers); not a person",
+     "date": "2026-11-28",
+     "note": "Read section S2-04 of reading_pass5.md as Latin and the same section of translation_pass5.md. The gospel verse (Luke 4:30) reads: 'iesus autem [?trasiens] per medium ipsorum abiit'; one hole (transiens). State read; count 6/7 recounted from pass5/WORDS_P5.tsv. Not checked: the images, the transcription, the Latin by a person; no held-out test."
+    }
    },
    {
     "doc": "anv9",
@@ -1969,7 +2538,14 @@
     "cipher_words": 3,
     "holes": 2,
     "floor_used": true,
-    "note": "Pass 5, pass5/SCORE_P5.tsv: 1 of 3 cipher words sure (33.33%), 2 holes; one agent's tags, no separate judge, no person. Read only by the short-text floor (fewer than 40 cipher words, 2 holes, at most 2 allowed). Under our own 65% line: most of its words are holes."
+    "note": "Pass 5, pass5/SCORE_P5.tsv: 1 of 3 cipher words sure (33.33%), 2 holes; one agent's tags, no separate judge, no person. Read only by the short-text floor (fewer than 40 cipher words, 2 holes, at most 2 allowed). Under our own 65% line: most of its words are holes.",
+    "reading_review": {
+     "reader_kind": "model",
+     "grade": "B",
+     "by": "integration review of PR #957 (AI agent, for the maintainers); not a person",
+     "date": "2026-11-28",
+     "note": "Read section S2-05 of reading_pass5.md as Latin and the same section of translation_pass5.md. Not a sentence: '[?caraton] amen [?mathoi]', two magical names in holes around one sure word; read only by the short-text floor (1 of 3 sure). State read; count 1/3 recounted from pass5/WORDS_P5.tsv. Not checked: the images, the transcription, the Latin by a person; no held-out test."
+    }
    },
    {
     "doc": "anv9",
@@ -1985,7 +2561,14 @@
     "cipher_words": 7,
     "holes": 0,
     "floor_used": false,
-    "note": "Pass 5, pass5/SCORE_P5.tsv: 7 of 7 cipher words sure (100.00%), 0 holes; one agent's tags, no separate judge, no person."
+    "note": "Pass 5, pass5/SCORE_P5.tsv: 7 of 7 cipher words sure (100.00%), 0 holes; one agent's tags, no separate judge, no person.",
+    "reading_review": {
+     "reader_kind": "model",
+     "grade": "B",
+     "by": "integration review of PR #957 (AI agent, for the maintainers); not a person",
+     "date": "2026-11-28",
+     "note": "Read section S2-06 of reading_pass5.md as Latin and the same section of translation_pass5.md. One complete sentence, no hole (the Magnificat verse): 'deposuit potentes de sede et exaltauit humiles'. State read; count 7/7 recounted from pass5/WORDS_P5.tsv. Not checked: the images, the transcription, the Latin by a person; no held-out test."
+    }
    },
    {
     "doc": "anv9",
@@ -2001,7 +2584,14 @@
     "cipher_words": 9,
     "holes": 0,
     "floor_used": false,
-    "note": "Pass 5, pass5/SCORE_P5.tsv: 9 of 9 cipher words sure (100.00%), 0 holes; one agent's tags, no separate judge, no person."
+    "note": "Pass 5, pass5/SCORE_P5.tsv: 9 of 9 cipher words sure (100.00%), 0 holes; one agent's tags, no separate judge, no person.",
+    "reading_review": {
+     "reader_kind": "model",
+     "grade": "B",
+     "by": "integration review of PR #957 (AI agent, for the maintainers); not a person",
+     "date": "2026-11-28",
+     "note": "Read section S2-07 of reading_pass5.md as Latin and the same section of translation_pass5.md. One complete sentence, no hole: 'hoc signum reddit hominem uirtuosum et a periculo defendit'. State read; count 9/9 recounted from pass5/WORDS_P5.tsv. Not checked: the images, the transcription, the Latin by a person; no held-out test."
+    }
    },
    {
     "doc": "anv9",
@@ -2017,7 +2607,14 @@
     "cipher_words": 11,
     "holes": 1,
     "floor_used": true,
-    "note": "Pass 5, pass5/SCORE_P5.tsv: 10 of 11 cipher words sure (90.91%), 1 hole; one agent's tags, no separate judge, no person. Read only by the short-text floor (fewer than 40 cipher words, 1 hole, at most 2 allowed)."
+    "note": "Pass 5, pass5/SCORE_P5.tsv: 10 of 11 cipher words sure (90.91%), 1 hole; one agent's tags, no separate judge, no person. Read only by the short-text floor (fewer than 40 cipher words, 1 hole, at most 2 allowed).",
+    "reading_review": {
+     "reader_kind": "model",
+     "grade": "B",
+     "by": "integration review of PR #957 (AI agent, for the maintainers); not a person",
+     "date": "2026-11-28",
+     "note": "Read section S2-08 of reading_pass5.md as Latin and the same section of translation_pass5.md. One sentence, 'hoc est [?ineffabale] nomen dei quo aron usus est in periculis'; one hole (ineffabile). State read; count 10/11 recounted from pass5/WORDS_P5.tsv. Not checked: the images, the transcription, the Latin by a person; no held-out test."
+    }
    },
    {
     "doc": "anv9",
@@ -2033,7 +2630,14 @@
     "cipher_words": 12,
     "holes": 2,
     "floor_used": true,
-    "note": "Pass 5, pass5/SCORE_P5.tsv: 10 of 12 cipher words sure (83.33%), 2 holes; one agent's tags, no separate judge, no person. Read only by the short-text floor (fewer than 40 cipher words, 2 holes, at most 2 allowed)."
+    "note": "Pass 5, pass5/SCORE_P5.tsv: 10 of 12 cipher words sure (83.33%), 2 holes; one agent's tags, no separate judge, no person. Read only by the short-text floor (fewer than 40 cipher words, 2 holes, at most 2 allowed).",
+    "reading_review": {
+     "reader_kind": "model",
+     "grade": "B",
+     "by": "integration review of PR #957 (AI agent, for the maintainers); not a person",
+     "date": "2026-11-28",
+     "note": "Read section S2-09 of reading_pass5.md as Latin and the same section of translation_pass5.md. One sentence, 'ad amorem [?ingribe] hos caracteres in crusta panis et praebe ad [?commedendum]'; two holes (inscribe, comedendum). State read; count 10/12 recounted from pass5/WORDS_P5.tsv. Not checked: the images, the transcription, the Latin by a person; no held-out test."
+    }
    },
    {
     "doc": "anv9",
@@ -2049,7 +2653,14 @@
     "cipher_words": 11,
     "holes": 1,
     "floor_used": true,
-    "note": "Pass 5, pass5/SCORE_P5.tsv: 10 of 11 cipher words sure (90.91%), 1 hole; one agent's tags, no separate judge, no person. Read only by the short-text floor (fewer than 40 cipher words, 1 hole, at most 2 allowed)."
+    "note": "Pass 5, pass5/SCORE_P5.tsv: 10 of 11 cipher words sure (90.91%), 1 hole; one agent's tags, no separate judge, no person. Read only by the short-text floor (fewer than 40 cipher words, 1 hole, at most 2 allowed).",
+    "reading_review": {
+     "reader_kind": "model",
+     "grade": "B",
+     "by": "integration review of PR #957 (AI agent, for the maintainers); not a person",
+     "date": "2026-11-28",
+     "note": "Read section S2-10 of reading_pass5.md as Latin and the same section of translation_pass5.md. One sentence, 'hoc signum in sinu aut uestibus portatum auget hominem gratia [?]'; one hole (mirabili). State read; count 10/11 recounted from pass5/WORDS_P5.tsv. Not checked: the images, the transcription, the Latin by a person; no held-out test."
+    }
    },
    {
     "doc": "anv9",
@@ -2065,7 +2676,14 @@
     "cipher_words": 12,
     "holes": 2,
     "floor_used": true,
-    "note": "Pass 5, pass5/SCORE_P5.tsv: 10 of 12 cipher words sure (83.33%), 2 holes; one agent's tags, no separate judge, no person. Read only by the short-text floor (fewer than 40 cipher words, 2 holes, at most 2 allowed)."
+    "note": "Pass 5, pass5/SCORE_P5.tsv: 10 of 12 cipher words sure (83.33%), 2 holes; one agent's tags, no separate judge, no person. Read only by the short-text floor (fewer than 40 cipher words, 2 holes, at most 2 allowed).",
+    "reading_review": {
+     "reader_kind": "model",
+     "grade": "B",
+     "by": "integration review of PR #957 (AI agent, for the maintainers); not a person",
+     "date": "2026-11-28",
+     "note": "Read section S2-11 of reading_pass5.md as Latin and the same section of translation_pass5.md. One sentence, '[?gribe] hoc cum manu sinistra sanguine digiti tui die iouis in [?aurgento]'; two holes (scribe, argento). State read; count 10/12 recounted from pass5/WORDS_P5.tsv. Not checked: the images, the transcription, the Latin by a person; no held-out test."
+    }
    },
    {
     "doc": "anv9",
@@ -2081,7 +2699,14 @@
     "cipher_words": 8,
     "holes": 1,
     "floor_used": true,
-    "note": "Pass 5, pass5/SCORE_P5.tsv: 7 of 8 cipher words sure (87.50%), 1 hole; one agent's tags, no separate judge, no person. Read only by the short-text floor (fewer than 40 cipher words, 1 hole, at most 2 allowed)."
+    "note": "Pass 5, pass5/SCORE_P5.tsv: 7 of 8 cipher words sure (87.50%), 1 hole; one agent's tags, no separate judge, no person. Read only by the short-text floor (fewer than 40 cipher words, 1 hole, at most 2 allowed).",
+    "reading_review": {
+     "reader_kind": "model",
+     "grade": "B",
+     "by": "integration review of PR #957 (AI agent, for the maintainers); not a person",
+     "date": "2026-11-28",
+     "note": "Read section S2-12 of reading_pass5.md as Latin and the same section of translation_pass5.md. One sentence, 'contra ligaturam positum in uestibus ligati statim [?]'; one hole (liberabitur). State read; count 7/8 recounted from pass5/WORDS_P5.tsv. Not checked: the images, the transcription, the Latin by a person; no held-out test."
+    }
    },
    {
     "doc": "anv9",
@@ -2097,7 +2722,14 @@
     "cipher_words": 7,
     "holes": 3,
     "floor_used": false,
-    "note": "Pass 5, pass5/SCORE_P5.tsv: 4 of 7 cipher words sure (57.14%), 3 holes; one agent's tags, no separate judge, no person. Under 95% and not within the floor; the sure words build sentences with holes."
+    "note": "Pass 5, pass5/SCORE_P5.tsv: 4 of 7 cipher words sure (57.14%), 3 holes; one agent's tags, no separate judge, no person. Under 95% and not within the floor; the sure words build sentences with holes.",
+    "reading_review": {
+     "reader_kind": "model",
+     "grade": "B",
+     "by": "integration review of PR #957 (AI agent, for the maintainers); not a person",
+     "date": "2026-11-28",
+     "note": "Read section S2i-03 of reading_pass5.md as Latin and the same section of translation_pass5.md. A string of invocations rather than a sentence: 'sancta [?] honor dei [?] liberationem [?]'; three holes in seven words. State read in part; count 4/7 recounted from pass5/WORDS_P5.tsv. Not checked: the images, the transcription, the Latin by a person; no held-out test."
+    }
    },
    {
     "doc": "anv9",
@@ -2113,7 +2745,14 @@
     "cipher_words": 3,
     "holes": 0,
     "floor_used": false,
-    "note": "Pass 5, pass5/SCORE_P5.tsv: 3 of 3 cipher words sure (100.00%), 0 holes; one agent's tags, no separate judge, no person."
+    "note": "Pass 5, pass5/SCORE_P5.tsv: 3 of 3 cipher words sure (100.00%), 0 holes; one agent's tags, no separate judge, no person.",
+    "reading_review": {
+     "reader_kind": "model",
+     "grade": "B",
+     "by": "integration review of PR #957 (AI agent, for the maintainers); not a person",
+     "date": "2026-11-28",
+     "note": "Read section S2i-04 of reading_pass5.md as Latin and the same section of translation_pass5.md. Three words, all sure, a complete imperative: 'sinite hunc abire'. State read; count 3/3 recounted from pass5/WORDS_P5.tsv. Not checked: the images, the transcription, the Latin by a person; no held-out test."
+    }
    },
    {
     "doc": "anv9",
@@ -2145,7 +2784,14 @@
     "cipher_words": 3,
     "holes": 1,
     "floor_used": true,
-    "note": "Pass 5, pass5/SCORE_P5.tsv: 2 of 3 cipher words sure (66.67%), 1 hole; one agent's tags, no separate judge, no person. Read only by the short-text floor (fewer than 40 cipher words, 1 hole, at most 2 allowed)."
+    "note": "Pass 5, pass5/SCORE_P5.tsv: 2 of 3 cipher words sure (66.67%), 1 hole; one agent's tags, no separate judge, no person. Read only by the short-text floor (fewer than 40 cipher words, 1 hole, at most 2 allowed).",
+    "reading_review": {
+     "reader_kind": "model",
+     "grade": "B",
+     "by": "integration review of PR #957 (AI agent, for the maintainers); not a person",
+     "date": "2026-11-28",
+     "note": "Read section S2i-07h of reading_pass5.md as Latin and the same section of translation_pass5.md. Three-word invocation, 'fortis [?iuse] deus'; one hole. State read; count 2/3 recounted from pass5/WORDS_P5.tsv. Not checked: the images, the transcription, the Latin by a person; no held-out test."
+    }
    },
    {
     "doc": "anv9",
@@ -2161,7 +2807,14 @@
     "cipher_words": 2,
     "holes": 1,
     "floor_used": true,
-    "note": "Pass 5, pass5/SCORE_P5.tsv: 1 of 2 cipher words sure (50.00%), 1 hole; one agent's tags, no separate judge, no person. Read only by the short-text floor (fewer than 40 cipher words, 1 hole, at most 2 allowed). Under our own 65% line: most of its words are holes."
+    "note": "Pass 5, pass5/SCORE_P5.tsv: 1 of 2 cipher words sure (50.00%), 1 hole; one agent's tags, no separate judge, no person. Read only by the short-text floor (fewer than 40 cipher words, 1 hole, at most 2 allowed). Under our own 65% line: most of its words are holes.",
+    "reading_review": {
+     "reader_kind": "model",
+     "grade": "B",
+     "by": "integration review of PR #957 (AI agent, for the maintainers); not a person",
+     "date": "2026-11-28",
+     "note": "Read section S2i-07v of reading_pass5.md as Latin and the same section of translation_pass5.md. Not a sentence: 'homo [?usimsion]', one sure word and a name in a hole; read only by the short-text floor (1 of 2 sure). State read; count 1/2 recounted from pass5/WORDS_P5.tsv. Not checked: the images, the transcription, the Latin by a person; no held-out test."
+    }
    },
    {
     "doc": "anv9",
@@ -2209,7 +2862,14 @@
     "cipher_words": 2,
     "holes": 1,
     "floor_used": true,
-    "note": "Pass 5, pass5/SCORE_P5.tsv: 1 of 2 cipher words sure (50.00%), 1 hole; one agent's tags, no separate judge, no person. Read only by the short-text floor (fewer than 40 cipher words, 1 hole, at most 2 allowed). Under our own 65% line: most of its words are holes."
+    "note": "Pass 5, pass5/SCORE_P5.tsv: 1 of 2 cipher words sure (50.00%), 1 hole; one agent's tags, no separate judge, no person. Read only by the short-text floor (fewer than 40 cipher words, 1 hole, at most 2 allowed). Under our own 65% line: most of its words are holes.",
+    "reading_review": {
+     "reader_kind": "model",
+     "grade": "B",
+     "by": "integration review of PR #957 (AI agent, for the maintainers); not a person",
+     "date": "2026-11-28",
+     "note": "Read section S2i-11 of reading_pass5.md as Latin and the same section of translation_pass5.md. Not a sentence: 'ad [?a~oren]', one sure word; read only by the short-text floor (1 of 2 sure). State read; count 1/2 recounted from pass5/WORDS_P5.tsv. Not checked: the images, the transcription, the Latin by a person; no held-out test."
+    }
    },
    {
     "doc": "anv9",
