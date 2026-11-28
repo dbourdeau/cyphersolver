@@ -1,0 +1,66 @@
+JUDGE_NOTES.txt  Strict judge of decode.txt (Gerlach, Occulta scripta chymica, Wellcome MS.309, pp.80-89). One pass, no second tries.
+Files opened: BRIEF.txt, decode.txt only. Counting by script (letter sequence of every judged line verified identical to decode.txt: 0 mismatches over 244 lines).
+
+UNIT RULES
+- Unit = one decoded letter. '?' markers are not units (the letter before it is judged). '_' and '#' = 1 unit each, always N. '=', ';', '.', ',' and spaces are not units. No { } clear-script text occurs in decode.txt, so nothing excluded.
+- Words split at line ends (x= / y) judged as one word; each fragment counted on its own line.
+- S = letter of a word that reads as sense in 16th-c. German or Latin, period spellings allowed (u/v, single/double consonants: waser, ese, asiduus, eficitur, apfell, woll, abermall; -gck/-ck spellings: wenigck, magck, tagck, langcksam; uary; noch=nach; bodem; seint).
+- E = wrong letter in an otherwise identified word, plausibly a one-letter slip (substitution or insertion). An omitted letter is charged as E to the letter after the gap (arg|[n]ti, ag|[n]s, umbsch|we[f], gl|[l]b) or the last letter if word-final (ig[n], gscribi[r]). At most 2 E per word; a word needing more (or unidentifiable) is all N.
+- The cipher letter decoded 'g' standing for 'de/d' (gn=den, gr=der, gm=dem, angrs=anders) or for 'k' (gopf, gompt, gunde) is a one-sign slip: that 'g' is E, the rest S. Strict: it is counted E every time, not S.
+- N = no sense (artifeel, manif|estur, frigidas, alleintzlich, treu|gs, the 'in' after weil__, all '_' and '#').
+- judge.tsv markup: [x] = E letter; *word = all N; _ / # = N unit; plain = S.
+
+TOTALS (script output)
+p.80: lines 28; S=672 E=30 N=9; S/(S+E+N) = 672/(672+30+9) = 672/711 = 94.51%  (S+E share 702/711 = 98.73%)
+p.81: lines 26; S=619 E=24 N=0; S/(S+E+N) = 619/(619+24+0) = 619/643 = 96.27%  (S+E share 643/643 = 100.00%)
+p.82: lines 21; S=482 E=16 N=0; S/(S+E+N) = 482/(482+16+0) = 482/498 = 96.79%  (S+E share 498/498 = 100.00%)
+p.83: lines 28; S=610 E=32 N=10; S/(S+E+N) = 610/(610+32+10) = 610/652 = 93.56%  (S+E share 642/652 = 98.47%)
+p.84: lines 26; S=614 E=16 N=0; S/(S+E+N) = 614/(614+16+0) = 614/630 = 97.46%  (S+E share 630/630 = 100.00%)
+p.85: lines 27; S=605 E=18 N=10; S/(S+E+N) = 605/(605+18+10) = 605/633 = 95.58%  (S+E share 623/633 = 98.42%)
+p.86: lines 20; S=448 E=18 N=12; S/(S+E+N) = 448/(448+18+12) = 448/478 = 93.72%  (S+E share 466/478 = 97.49%)
+p.87: lines 21; S=498 E=10 N=0; S/(S+E+N) = 498/(498+10+0) = 498/508 = 98.03%  (S+E share 508/508 = 100.00%)
+p.88: lines 26; S=612 E=15 N=0; S/(S+E+N) = 612/(612+15+0) = 612/627 = 97.61%  (S+E share 627/627 = 100.00%)
+p.89: lines 21; S=483 E=7 N=10; S/(S+E+N) = 483/(483+7+10) = 483/500 = 96.60%  (S+E share 490/500 = 98.00%)
+OVERALL: S=5643 E=186 N=51; S/(S+E+N) = 5643/(5643+186+51) = 5643/5880 = 95.97%  (S+E share 5829/5880 = 99.13%)
+Check sums: S = 672+619+482+610+614+605+448+498+612+483 = 5643; E = 30+24+16+32+16+18+18+10+15+7 = 186; N = 9+0+0+10+0+10+12+0+0+10 = 51
+
+RECURRING SLIPS (E letters by decoded letter, script count: g 104, l 15, d 13, a 9, n 8, b 6, i 5, e 4, m 4, w 3, u 3, q 2, s 2, t 2, r 2, p 1, o 1, c 1, f 1; sum 186)
+- 'g' for de/d (and occasionally k, be, ke, ge, do): 104 of 186 E. This is one key-level fault, not random slips: the sign read 'g' carries 'de' (den, der, dem, anders, werden, wider, sondern, derhalben, debet, lapidem, deinde, demonstriret, destructionem, decoctionem). Fixing that one sign would move about 104 units from E to S (p.80-89 strict figure would rise to about 97.7%; not part of the record).
+- 'l' for k (lunst, leine, cirlels, truc|lnem) and for x (elteriora x4, fil, commiltio, elilbr).
+- 'd' for g (coadulare/coadulatio family x9, bedinnet, dantze) and for f/s/c.
+- 'a' for d/e/i (aer=der x2, dar=der x3, nacht, una=und, quoalibet, qua).
+- 'n' for m/i (nus, pernanens, iterunque, quan, geschwnnde); 'w' for i (coctwon, twnctura).
+
+RESIDUAL N (51 units): p.80 artifeel (8) + '_' (1); p.83 manif|estur (10); p.85 frigidas (8) + '#' x2; p.86 alleintzlich (12); p.89 '_' x2 + 'in' (2) + treu|gs (6). Arithmetic: 9+10+10+12+10 = 51.
+
+GISTS (3 lines per page; recipe level only)
+p.80: Emerald-Tablet passage (it rises and descends, gains the force of upper and lower things).
+      Long cooking with steady warmth thickens the matter until the bodily becomes spiritual.
+      States the art is nothing but dissolving and coagulating the stone, done by putrefaction.
+p.81: Latin doctrine: the work is perfect solution and coagulation; dissolve body, coagulate spirit.
+      Gold and silver dissolve in their own radical moisture, the 'permanent water'.
+      German: solution and coagulation are one operation by warmth; water and earth shown, air and fire hidden in them.
+p.82: When the matter stops rising, the philosophical conjunction has begun; elements, soul and spirit unite.
+      It becomes the true incombustible oil; a heated silver plate dipped in it is said to turn to gold.
+      Warns not to open the glass then, if the work is to be completed.
+p.83: This oil keeps its parts; gold is a fixed, proportioned oil that fire cannot harm.
+      Its extracted fatness is a tincture belonging to the soul, drawn out slowly.
+      A citrine-brown oil in the glass shows its fiery, sulphurous nature; the hidden made manifest.
+p.84: Latin: the exteriors of gold are the interiors of the philosophers' mercury and vice versa.
+      Hidden heat and dryness against manifest cold and moisture, citing the Turba.
+      They must be brought into proportion so neither flies from the fire.
+p.85: The moist and cold must take up the hidden heat and dryness to become one substance.
+      The author cuts short the theory to come to the matter itself.
+      Instruction to keep a steady vaporous fire at its proper degree, renewed periodically (a firing regime).
+p.86: Furnace to be described later; the citrine-brown oil grows thin skins that sink.
+      Continues until it all turns to powder, grey then darker.
+      Finally fully black: the raven's head appears.
+p.87: Turba citation: bodies dissolved by putrefaction become black earth, 'caput corui'.
+      Exhortation to patient steady decoction until a black tincture shows on the water.
+      Blackness means the body is liquefied; keep a gentle fire.
+p.88: Blackness is destruction and corruption, and one thing's corruption is another's generation.
+      Heat makes moist things black and dry things white (calor agens...).
+      After solution, oil and black earth, continued warmth brings on whiteness.
+p.89: Colours appear in the glass like little stars before true whiteness.
+      Latin: 'our water' mortifies, illuminates, cleanses, quickens; many colours before whitening.
+      The end is whiteness: the 'son' is born, called elixir; Hermes' dragon.

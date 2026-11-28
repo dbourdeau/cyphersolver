@@ -1,0 +1,50 @@
+JUDGE NOTES: Gerlach, Occulta scripta chymica (Wellcome MS.309), pp.120-123, one decode, strict single pass
+Judged 28 Nov 2026. Files opened: BRIEF.txt and decode.txt only. Nothing else consulted.
+
+UNIT RULES
+- One unit = one decoded letter a-z, or one unknown sign '#'/'_' (always N).
+- '?' after a letter is not a unit: the letter itself is judged.
+- Punctuation (';' '.' '=' ',') and spaces are not units. No clear-script { } text occurs on these pages.
+- S = letter belongs to a word that reads as sense in 16th-c. German (period spellings and Latin chemical terms allowed:
+  uiola, uol, uirten, uon, tzwe, ligen, schirben, krentzlein, circkel, -gck/-igck as in uirtzigck/genugck, mercurium solis,
+  spiritum uini, putrefaction, sigillum hermetis).
+- E = the single wrong letter in an otherwise readable word (each wrong letter is one E; a word with two wrong letters gets two E).
+- N = unknown sign, or letter in no-sense material. Every word here was readable, so the only N units are the 5 '#' signs.
+- Omitted letters are not units and are not penalised (albalde for alsbalde, nich for nicht, uiol for uiola); noted only.
+- Words split by line breaks are judged as whole words; units are counted on the line where they stand.
+- Check: a script verified that the letters in every judged reading match the decode line letter for letter (no mismatch).
+- In judge.tsv, segmented_reading shows lowercase = S, UPPERCASE = E, '#' = N, '-' = word continues on the next/previous line.
+
+TOTALS (script count of judge.tsv)
+p.120: S=457 E=20 N=1; S+E+N=457+20+1=478; strict S/(S+E+N)=457/478=95.61%
+p.121: S=444 E=15 N=0; S+E+N=444+15+0=459; strict S/(S+E+N)=444/459=96.73%
+p.122: S=452 E=12 N=1; S+E+N=452+12+1=465; strict S/(S+E+N)=452/465=97.20%
+p.123: S=504 E=15 N=3; S+E+N=504+15+3=522; strict S/(S+E+N)=504/522=96.55%
+overall: S=457+444+452+504=1857; E=20+15+12+15=62; N=1+0+1+3=5; total=1857+62+5=1924
+         strict = 1857/1924 = 96.52%; lenient (S+E)/total = (1857+62)/1924 = 1919/1924 = 99.74%
+
+RECURRING SLIPS (62 E in all; tally by decoded letter: R 33, E 9, G 7, B 3, D 2, L 2, U 2, A 1, N 1, O 1, P 1; 33+9+7+3+2+2+2+1+1+1+1 = 62)
+1. r for u: 32 (trt, rir, rom, seiritr, mrst, nrr, anfrllen, rtrificiren, rber, riolen, sigillrm, riola, ertrefaction x2,
+   zrsetzen, zrschmeltzen, nrn x2, drrch, arf, frncke, strlpet, zrgeschmeltzten, zrschmelzet, larfe, nrgck, zrgeschmelzet,
+   zrschmelzen, zr, lrne, spiritrm, mercurirm). The dominant fault: the u sign is often read as r. One more r stands for t (airr = wirt).
+2. e for p: 8 (seiritu, ertrificiren, seringen, ertrefaction x2, seitze=spitze, strleet=stulpet, eutrefaction). The p sign
+   reads as e every time p is expected: likely a key-table error, not scattered slips.
+3. g for k / l / d: 7 (ledigcg x2, galt=kalt; lochgein=lochlein, alges=alles; oger=oder, og=od[er]).
+4. b for i: 3 (mbt x2, dombt = mit/domit).
+5. Singles: d for a (herdus), d for t (sduben), l for u (eler, flelst), u for f (uleis=fleis), u for l (woulet=wollet),
+   n for m (hernetis), o for d (ooer), a for w (airr), p for e (odpr), extra e (mereet=mehret).
+Unknown signs: 5 '#', all where a double s is expected (geflo#enen, mu#et, la#et x2, gi#et): probably one unassigned 'ss' sign.
+
+GISTS (recipe level only)
+p.120: Close of a recipe for preparing an oil or wax in a viol (glass vessel) with a sharpened tartar spirit.
+       A general caution on how full the viols may be filled for this work.
+       The rule is restated so that most of the vessel stays empty.
+p.121: Opens a recipe titled "sigillum hermetis": how to seal a viol hermetically before putrefaction.
+       Describes setting the vessel up and heating its neck with a ring of fire.
+       Ends as the neck begins to melt and is closed with a heated tool.
+p.122: Continues the hermetic sealing: finishing and cooling the sealed neck.
+       Explains what "sealing a glass with the seal of Hermes" means.
+       A test for whether the seal is sound.
+p.123: Continues to the putrefaction of the sealed viol in dung.
+       Says silver or gold oil or wax turns to living quicksilver, called mercurius solis or lunae, mercurius philosophorum.
+       Begins the recovery of the product from the opened vessel.

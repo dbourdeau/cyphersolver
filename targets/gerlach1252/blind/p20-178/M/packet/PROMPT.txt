@@ -1,0 +1,37 @@
+BLIND TRANSCRIPTION: Gerlach, Occulta scripta chymica (Wellcome MS.309), 4 pages (batch M)
+
+You are given 4 page images (scan0113.jpg, scan0114.jpg, scan0115.jpg, scan0116.jpg) and SHEET.md, a sheet of sign labels with shape descriptions,
+all in /home/claude/gerlach_next/M/packet/. The sheet deliberately gives no letter values. Do not look anything up,
+do not open any other file or folder, and do not try to decipher, guess words or "correct" signs to make sense.
+Write what is on the page, sign by sign. You may make zoomed crops of the images for yourself (e.g. with Python PIL)
+in /tmp/blind_M_scratch/, and delete them when done.
+
+TASK
+Transcribe every cipher line on every page into one tab-separated file, BLIND.tsv, using only the labels in
+SHEET.md and the conventions in its "How to write them" section.
+
+BLIND.tsv FORMAT (UTF-8, tab-separated, one manuscript line per row, header row first)
+page	line	tokens	clear_before	notes
+- page: the scribe's page number as written at the top corner of the page. Some pages carry a small letter after the
+  number (e.g. "148a"): copy it exactly, with the letter.
+- line: L01, L02 ... counted from the top of the written block on that page; count each written line, including
+  short or partly blank ones.
+- tokens: the labels for that line, separated by single spaces; word divider written " , "; "=" at line end for a
+  run-on word; "?" after a doubtful label; "#" for a sign not on the sheet; "[...]" for illegible or damaged parts.
+- clear_before: any ordinary-script (Latin-letter) word, initials or number the scribe wrote just before or beside
+  this line (headings, margin numbers or notes, initials), copied exactly as written; empty if none.
+  Clear text inside the line goes in tokens within { }.
+- notes: optional; describe any "#" sign, damage, larger-hand headings, or a line you are unsure belongs to the block.
+  Ignore writing that shows through from the facing page at the image edges.
+
+Example row (made-up labels, not from these pages):
+20	L01	SQ DOT , 4R? LAM PHI , FL =	{1}	heading in larger hand
+
+RULES
+- Work page by page, line by line; do not skip a line. If a page is short or has no cipher, say so in notes.
+- Zoom in on the figure-4 signs, the s-like signs (S3 / MM) and the o-with-tail signs (SIG, ARW, OAR); they are easily
+  confused. Use the "Look-alike sets" section of SHEET.md.
+- Do not edit BLIND.tsv after you hand it over. Corrections, if any, go in a separate file, listed one by one.
+- Return BLIND.tsv and nothing else (plus a one-line note of anything you could not do).
+
+Write BLIND.tsv as /home/claude/gerlach_next/M/BLIND.tsv. Report its md5.

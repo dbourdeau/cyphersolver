@@ -1,0 +1,75 @@
+JUDGE NOTES: strict one-pass judgement of decode.txt (Gerlach, Occulta scripta chymica, Wellcome MS.309, pp.40-49)
+Files opened: BRIEF.txt, decode.txt only. Files written: judge.tsv, this file. No web, no other files.
+
+UNIT RULES
+1. Unit = one decoded letter. '?' marks dropped and the letter judged as it stands. '_' and '#' = 1 unit each, always N.
+   '=' (line-break hyphen) and the dividers ; . , are not units. Text in { } excluded (Practicam, Sol, Leo).
+2. Each decoded token was given one intended reading (period German or Latin), then aligned letter by letter
+   (Levenshtein, by script):
+   matched letter = S; substituted letter = E; inserted (surplus) letter = N. Letters the reading needs but the
+   decode lacks cost nothing (units are decoded letters only).
+3. Strictness cap: if a token's E+N exceeds half its units, the whole token is N (so "p?ri" for qui, "arf" for aus,
+   "p?rotp?re" for quodque are N; "rnd" for und, "p?ria" for quia stay at 1 or 2 E).
+4. A token with no defensible reading = all N: wegcg (40/21), af?m (41/03), farf?t (43/01), pl (45/25), file (46/04).
+5. Accepted as sense: period spellings (dieweill, domit, vill, werdenn, verstandenn, denn, gebirende, oleitet),
+   the abbreviation bne (bene), parca (real Latin; pauca probably meant), gafen (gaffen).
+6. Readings marked [unverified] because no source could be opened: iximidrus (Turba speaker, 40/24), de massa solis
+   (45/08), directa (45/20), filium (49/10), stucken (41/19), kulen keller (48/10-11). Judged as if right.
+7. judge.tsv: segmented reading shows the intended word, then <decoded letters> where any letter is not S;
+   [letters:N] = whole token N.
+
+TOTALS (script output; strict share = S/(S+E+N))
+p.40: S=468 E=45 N=15 -> 468/(468+45+15) = 468/528 = 88.6%
+p.41: S=481 E=64 N=3  -> 481/(481+64+3)  = 481/548 = 87.8%
+p.42: S=457 E=48 N=15 -> 457/(457+48+15) = 457/520 = 87.9%
+p.43: S=454 E=40 N=9  -> 454/(454+40+9)  = 454/503 = 90.3%
+p.44: S=372 E=39 N=10 -> 372/(372+39+10) = 372/421 = 88.4%
+p.45: S=462 E=56 N=9  -> 462/(462+56+9)  = 462/527 = 87.7%
+p.46: S=460 E=47 N=11 -> 460/(460+47+11) = 460/518 = 88.8%
+p.47: S=146 E=9  N=0  -> 146/(146+9+0)   = 146/155 = 94.2%
+p.48: S=440 E=46 N=3  -> 440/(440+46+3)  = 440/489 = 90.0%
+p.49: S=197 E=26 N=4  -> 197/(197+26+4)  = 197/227 = 86.8%
+ALL : S=3937 E=420 N=79 -> 3937/(3937+420+79) = 3937/4436 = 88.8%
+Check sums: S 468+481+457+454+372+462+460+146+440+197 = 3937; E 45+64+48+40+39+56+47+9+46+26 = 420;
+N 15+3+15+9+10+9+11+0+3+4 = 79. E share 420/4436 = 9.5%; N share 79/4436 = 1.8%.
+Every page is under 95%, so no page meets a 95% read bar on this strict count.
+
+RECURRING SLIPS (letter substitutions/insertions inside tokens kept under rule 3; script tally)
+r for u: 259 | r for v: 41 | f for s (long s): 40 | p for q (qu = "p?r"): 19 | g for k (in "cg" = ck): 7 |
+l for x (el, eltraneam, complel, malimrs): 6 | o for e: 5 | a for i: 5 | d for k (drnnst, dommen): 4 |
+t for d: 3 | surplus "cg" after g-words (ingcg, gehorigcg, rorstendigcg, f?leif?igcg, mag?cg): about 9 N units.
+r->u/v alone = 300 of 420 E (71%). These are systematic key mergers, not one-off slips: the key appears to give
+one value (r) to the sign for u/v, (f) to long s, (p) to q, (l) to x, (d) to k. For information only, NOT the strict
+figure: if r=u/v were accepted, S would be 3937+300 = 4237, 4237/4436 = 95.5%.
+
+GISTS (3 lines per page, content level only)
+p.40 Preface: the author sets out to explain the practice of the philosophers' stone and the parables of the
+     philosophers, as a warning so the reader keeps to the ground of truth. All true philosophers describe one way
+     to the end of the art. Cites the Turba philosophorum.
+p.41 Latin sentences (Turba / Diomedes / Geber): nature is amended only by its own nature; add nothing foreign.
+     German: do not chase many materials or switch from one to another against the philosophers' meaning.
+     The art does not consist in a multitude of things; the stone is one thing.
+p.42 One medicine in which the whole mastery stands; nothing foreign is added except in its preparation.
+     Read the philosophers by agreement of their sense, not the bare letter; their circumlocutions keep the
+     unworthy out. Persevere diligently in their writings.
+p.43 With practice the reader will see the writers agree and their many names mean one thing.
+     The names come not from the matter but from the changes in the work from beginning to end.
+     What the true matter of the stone is stands in all the philosophers' books, though many do not understand it.
+p.44 Consider human generation: like begets like, you reap what you sow (Latin tags).
+     So too a medium to purify or change the metals; the word Sol is explained.
+     Sol is "above all shining", the perfect body, to be kept in view.
+p.45 A small error at the start becomes a large one at the end (Latin tag).
+     The nature of Sol from a libellus "de massa solis": gold is the perfect body, lord of stones, not
+     corrupted by earth or fire, of tempered complexion with nothing superfluous or lacking.
+p.46 Gold's substance described (quicksilver with a little pure red sulphur).
+     The philosophers' stone, being tempered and perfect, removes impurities from human bodies and metals.
+     Therefore the stone must be made materially from the body of gold: every tincture proceeds from its like.
+p.47 This needs suitable means: the body of gold must be broken to bring out its tincture.
+     Announces the procedure that follows (heading Leo).
+p.48 A recipe for preparing a philosophical mercury from refined gold (via aqua regis, crystals, putrefaction and
+     sublimation). Said to break the body of gold for the first time and bring it near the prima materia.
+p.49 Latin principles: everything resolves into what it came from; all metals can be reduced to mercury.
+     Conversion of the metals' ash into spirit, making it volatile, i.e. the philosophers' mercury.
+
+Check tool: none for this judging task (only BRIEF.txt and decode.txt were permitted); counts were produced by
+script (Levenshtein alignment per token) and the sums re-added above.

@@ -1,0 +1,78 @@
+JUDGE NOTES: strict one-pass judgement of decode.txt (Gerlach, Occulta scripta chymica, Wellcome MS.309, pp.171-178)
+Files read: BRIEF.txt, decode.txt only. Output: judge.tsv (207 rows, one per decode.txt row, same order), this file.
+
+UNIT RULES
+- One unit = one decoded letter. '#' or '_' = one unit, always N.
+- '?' after a letter: the letter is judged; '?' itself is not a unit.
+- Not units: spaces, ',', ';', '.', ':', '=' (line-break hyphen), and anything in { } (clear script BAMD signatures; 6 rows carry them).
+- Words broken across lines ('sp=' / 'iritus') are judged as the whole word; each fragment's letters are counted on its own row.
+- S = letter in a word that reads as sense in 16th-c. German (period spellings, dialect vowels such as hot/domit/molen, doubled
+  consonants, Latin chemical terms such as spiritibus, balneum marie, caput mortuum, putrefaction, oleum vitrioli allowed).
+- E = letter that is wrong against the evident word but plausibly a one-letter slip (e.g. 'gommen' for kommen: g = E).
+  Two swapped letters = 2 E (uire for vier). An extra letter that is not a period spelling = E (komptt, furr, entt).
+- N = letter with no sense (only the two unknown '#' signs).
+- Dropped letters cannot be marked (no letter present); the letters present were judged S. Listed below so the
+  reader can see what was let through: flesig (fleissig), wei (weis), renen x2 (reinen), auh (auch), besamen (beisamen),
+  zippele (zipperle), wasersuct (wassersucht), gebrauhen (gebrauchen), g=machten (gemachten), ode (oder), draf (drauf),
+  gle=nen (kleinen: g = E, missing i not counted), filtra= at the foot of p.175 run 1 (verb ending not on the page).
+- Page 175 appears twice (scribe's numbering). judge.tsv keeps both runs in decode.txt order; totals below call the
+  second run 'p.175(2nd)' (decode.txt rows 136-158, after p.174a).
+- Every row's annotated letters were checked by code to equal the decode letters exactly (assert passed for all 207 rows).
+  Segmented reading column: word|MARKS gives per-letter marks for any word that is not all S.
+
+TOTALS (computed by script; strict share = S/(S+E+N))
+p.171:      S=449 E=18 N=0   449/(449+18+0) = 449/467 = 96.15%
+p.172:      S=390 E=7  N=1   390/(390+7+1)  = 390/398 = 97.99%
+p.173:      S=449 E=7  N=0   449/(449+7+0)  = 449/456 = 98.46%
+p.174:      S=397 E=6  N=0   397/(397+6+0)  = 397/403 = 98.51%
+p.175:      S=424 E=14 N=0   424/(424+14+0) = 424/438 = 96.80%
+p.174a:     S=400 E=9  N=0   400/(400+9+0)  = 400/409 = 97.80%
+p.175(2nd): S=430 E=12 N=0   430/(430+12+0) = 430/442 = 97.29%
+p.176:      S=443 E=15 N=0   443/(443+15+0) = 443/458 = 96.72%
+p.177:      S=303 E=7  N=1   303/(303+7+1)  = 303/311 = 97.43%
+p.178:      S=148 E=3  N=0   148/(148+3+0)  = 148/151 = 98.01%
+Check sums: S 449+390+449+397+424+400+430+443+303+148 = 3833; E 18+7+7+6+14+9+12+15+7+3 = 98; N 0+1+0+0+0+0+0+0+1+0 = 2.
+OVERALL:    S=3833 E=98 N=2  3833/(3833+98+2) = 3833/3933 = 97.46%
+Rows with at least one E or N: 75 of 207.
+
+RECURRING SLIPS (E letters by decoded letter, counted by script: g 22, u 18, r 15, b 14, a 10, l 6, e 6, t 3, m/o/h/n 1 each = 98)
+1. g for k (22): gommen, geine, greftigsten, golben/gouben, gan, glein, glebn, begomet, ger(der), goll, and the cg-for-ck
+   endings wegcg, schlagcg, dicg, truc-genen, kran-cg-heiten. Could be the writer's East Central German g/k lenition;
+   judged E here because the brief is strict. If accepted as dialect the shares rise noticeably.
+2. u for l (about 17): wou, aules, kouben, heum, baun(eum), distiuliret, bueibet, sautz, uigen, rmeustein, krelter (l for u
+   the other way), u(osen). A consistent l/u confusion in one cipher sign or its reading.
+3. l and r for u (about 14): nln, zl lnd, rlret, trt (x5), drrch (x2), rnd, sres, sre, prtrefaction.
+4. b for i/e/c (14): br, bn (x3), dbe, dreb, eb (x3), materb, fbn, glebn, glebnst, zurbben, sb(hwartze).
+5. a for i/o (10): uitral, spa(ritum), sparitum, filtra(rten), filtraret, carellen (x3, 2 E each with e for a), zwea.
+6. Singles: m for n (memet), r for m (rer = mer), o for w (schoeren), h for v (hor), r for v (daron), t for s (welchet),
+   n for t (gisen), u for r (odeu), transposition uire, extra letters komptt, furr, entt.
+
+GISTS (recipe level only)
+p.171: End of a recipe for vitriol oil (oleum vitrioli) by distillation into successive receivers.
+       Covers changing receivers, sealing the joints and rectifying the collected spirits in a water bath.
+       Closes with keeping the oil that remains.
+p.172: Close of that recipe, then 'another way' to make oleum vitrioli.
+       Again a distillation of vitriol with the first watery drops kept apart from the true spirits.
+       Ends at the point the sour taste shows the spirits are coming.
+p.173: Continuation of the second vitriol-oil recipe.
+       Discards the worthless middle run, collects a third fraction, rectifies it in a water bath.
+       Combines the dry and the moist spirits of vitriol in one glass.
+p.174: Explains which spirits come first and last and that the remainder is worthless; signed BAMD.
+       Then a recipe for making the sour vitriol oil sweet.
+       The oil is sealed in a vial and digested (putrefaction in horse dung) until sweet.
+p.175 (run 1): Ends the sweetening recipe with praise of its virtues against several named ailments; signed BAMD.
+       Then a recipe for vitriol salt from the residue (caput mortuum) left in the vitriol-oil furnace.
+       Begins dissolving that residue in distilled water and filtering it.
+p.174a: Completes the vitriol salt recipe: filter, evaporate, repeat the solution and evaporation; signed BAMD.
+       Ends with a good vitriol salt in the pot.
+       Heading: to make an oil from vitriol salt.
+p.175 (run 2): Recipe for an oil of vitriol salt, distilled with an earth from a retort, then rectified; signed BAMD.
+       Then a recipe for dissolving pearls and corals.
+       Begins grinding the pearls or corals fine.
+p.176: Three ways to dissolve pearls or corals, each by digestion in a sealed vial and each signed BAMD.
+       First in the vitriol-salt oil, second in fresh lemon juice.
+       Third in spirit of wine first made sweet by putrefaction.
+p.177: Note on digesting oils made with 'the instrument' and separating oil from water in a glass drawn on the page.
+       Then a recipe for making a juice (extract) from all herbs.
+       Begins with crushing the herbs and adding water in a flask.
+p.178: Completes the herb-juice recipe: sealed flask in a water bath, then pressing and thickening; signed BAMD.

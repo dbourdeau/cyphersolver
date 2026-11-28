@@ -1,0 +1,82 @@
+JUDGE NOTES: strict judge, one pass, decode.txt (Gerlach, Wellcome MS.309, pp.50-57, 68, 69)
+Judged 2026-11-28. Files opened: BRIEF.txt and decode.txt only. Counting by script (Python), not by hand.
+
+UNIT RULES
+- Unit = one decoded letter; '_' or '#' = one unit, always N (per brief).
+- '?' after a letter is dropped and the letter itself is judged.
+- '=' (line-end hyphen), ',' -> space, ';' and '.' are dividers only: not counted.
+- Text in { } (clear script) excluded: only p.52 L05 '{)}'.
+- Words split over a line break are judged as the whole word; each fragment's letters are counted on their own line.
+- Notation in judge.tsv column 3: plain letters = S; [x] = E (the decoded letter x is wrong, a plausible one-letter slip);
+  <xyz> = N (no sense). A recognisable word with two wrong letters gets two E (e.g. [l]r[d]nckheit = kranckheit).
+- Period spellings allowed as S: u for v (uon, uolkomenen), final -k for -g (anfank, wenik), doubled consonants
+  (weill, teill, mall, bekommett), single for double (difi-, eficatiam, imposibile), herauser, bede, nichten, sol (= gold).
+- Strict calls (E, not S): medial k for g (rekis, kot-lichen, wekes, uulki, krosen, keschwink); l for x (radil, filum, filen,
+  el); m for n (murr, ertzmei, zureimigen, haftem, micht, aschem); 'gck'/'cg' clusters for ck or g (one E each:
+  festigckli, gnugck, wergck x2, angck, dingck, dencgen, gedencg, tigcleit); 'kr' for der (one E each, 4 times);
+  'allerrenigste' (one letter short) let stand as S, no wrong letter to mark.
+- Check: for every line, the letters of my segmented reading (marks stripped) equal the letters of decode.txt
+  (braces, ?, =, ; and . stripped). Script result: mismatches 0, 220/220 lines.
+
+TOTALS (letters; strict share = S/(S+E+N))
+p.50: S=441 E=12 N=0; 441+12+0 = 453; 441/453 = 97.35%
+p.51: S=361 E=7  N=0; 361+7+0  = 368; 361/368 = 98.10%
+p.52: S=433 E=5  N=2; 433+5+2  = 440; 433/440 = 98.41%
+p.53: S=517 E=6  N=1; 517+6+1  = 524; 517/524 = 98.66%
+p.54: S=471 E=12 N=8; 471+12+8 = 491; 471/491 = 95.93%
+p.55: S=518 E=11 N=0; 518+11+0 = 529; 518/529 = 97.92%
+p.56: S=514 E=3  N=0; 514+3+0  = 517; 514/517 = 99.42%
+p.57: S=506 E=5  N=0; 506+5+0  = 511; 506/511 = 99.02%
+p.68: S=467 E=1  N=20; 467+1+20 = 488; 467/488 = 95.70%
+p.69: S=256 E=3  N=0; 256+3+0  = 259; 256/259 = 98.84%
+OVERALL:
+  S = 441+361+433+517+471+518+514+506+467+256 = 4484
+  E = 12+7+5+6+12+11+3+5+1+3 = 65
+  N = 0+0+2+1+8+0+0+0+20+0 = 31
+  S+E+N = 4484+65+31 = 4580
+  strict S/(S+E+N) = 4484/4580 = 97.90%   (lenient S+E share = 4549/4580 = 99.32%, for reference only)
+
+N ITEMS (31 units)
+p.52 L19 'ks' (2); p.53 L20 '_' (1); p.54 L02 '___' (3) and 'beano' (5); p.68 L08 'linari' (6);
+p.68 L21 'uill' (4); p.68 L22-23 'trub gene gn' (4+4+2 = 10). Check: 2+1+3+5+6+4+10 = 31.
+
+RECURRING SLIPS (E letters by decoded letter, 65 in all)
+k 17 (mostly for g; also for d: balk, enk, erkn, kr x4, okr); l 11 (for x: radil, filum x2, filen x2, el; for k: lunst,
+leine, lr-, tigcleit); g 9 (gck/cg clusters, and g for d: werg-en, gehengm); m 6 (for n); d 4 (for a: bd-lde, minerdl-,
+lrdnck-; db-s); b 4 (for c: cronibis, difibilis, desb-; b for a in dbs); n 2; h 2; c 2; i 2; one each w s f a e q.
+Check: 17+11+9+6+4+4+2+2+2+2+1+1+1+1+1+1 = 65.
+The k/g, l/x and m/n pairs recur too often to be random slips: they look like sign pairs confused in the key or the
+transcription, worth a check against the images before any re-run.
+
+GISTS (3 lines a page, recipe level only)
+p.50: Theoretical opening on philosophical mercury as root and mother of all metals.
+      Claims it serves both to cure human bodies and to transmute and cleanse metals.
+      Cites the philosophers: "est in mercurio quidquid quaerunt sapientes"; not common mercury.
+p.51: Says the mercury is to be drawn from the perfect metallic body (gold), "mercurius solis".
+      Latin aside: mercury is the root of the art of chemistry, all metals come from it.
+      Promises a medicine to renew and restore the human body against nearly all sickness.
+p.52: Continues the medicine claim, excepting illness sent by God as punishment for sin.
+      Gold as a tempered body that some physicians give raw in medicine, e.g. for chronic disease and leprosy.
+      Argues raw gold does little; it must be made into something else.
+p.53: Gold must be brought into a spiritual body that penetrates and cleanses the blood.
+      Clean blood drives out the disease; the medicine suits man as he too is made of earth like the metals.
+      A mineral cure is a specific remedy because it shares the metals' properties.
+p.54: Latin: people know gold is hard to destroy but not how hard; "easier to make gold than destroy it".
+      Exhorts the reader to value the philosophers' mercury as a gift of God.
+      Warns that the work cannot be hurried and needs proper means and diligence.
+p.55: Patience: "festinatio ex parte diaboli est"; haste is the worker's fault, not the art's.
+      Promises to describe the work from start to finish.
+      Introduces how the philosophers proceeded; the first operation is next.
+p.56: The first operation is sublimation, which is destruction by putrefaction of a dead-seeming body.
+      From it comes a nobler thing fit for the tincture, called philosophers' mercury, a spiritual earth.
+      Defines sublimating as subtilising, making a thing finer.
+p.57: Sublimation separates the dross and the unfixed from the fixed so they are then joined and fixed together.
+      Quotes Hermes ("make the fixed volatile and the volatile fixed") and Geber on sublimation.
+      Latin list of operations held to be contained within sublimation begins.
+p.68: Latin list continues (distillation, ascension, descension, congelation, putrefaction, calcination,
+      inceration, white and red tincture) in one furnace, one vessel, one way; then putrefaction to a spiritual body.
+      Practical recipe begins: a recipe for preparing the solar mercury in a glass dish (passage partly unread).
+p.69: Same recipe continues: cleaning the material and sublimation, via the "arcana philosophorum" said to be
+      hidden in wine.
+      Recipe-level only; no further detail given here.
+      Page ends mid-sentence.

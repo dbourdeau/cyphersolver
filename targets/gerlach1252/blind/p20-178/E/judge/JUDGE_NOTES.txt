@@ -1,0 +1,69 @@
+JUDGE NOTES: Gerlach, Occulta scripta chymica (Wellcome MS.309), pp.30-39, one decode, strict single pass
+Files opened: BRIEF.txt and decode.txt only. Output: judge.tsv (per line: page, line, segmented reading, S, E, N) and this file.
+
+UNIT RULES
+- Unit = one decoded letter. A letter with '?' is judged as the letter shown; the '?' is not counted.
+- '#' and '_' = unknown sign, 1 unit, always N (7 '#' in total, all at section ends or one at p.34 L21).
+- Text in { } (the clear-script recipe sign on p.36 L19) is excluded. Punctuation (= . ; :) is not counted.
+- Words are segmented across line breaks ('-' in judge.tsv marks a word continued on the next or previous line).
+- S: letter belongs to a word that reads as sense in 16th-c. German or Latin (period spellings allowed: u for v, tz,
+  ck, p for b, single/double consonants, Latinised drug and chemical names).
+- E: wrong letter that is plausibly a one-letter slip (substitution, a single inserted letter, or the letter next
+  to a single omission). Words with at most 2 such slips keep their other letters as S.
+- N: letters of a word with no recoverable sense, or a stray / dittographed group not explained as a single slip.
+- In judge.tsv: [x] = E letter, <x> = N letters, # = unknown sign (N), unmarked letters = S.
+- Mechanical control: the counting script strips the markup and checks that the judged letters equal the decode's
+  letters, line by line: 202 rows, 0 mismatches.
+
+TOTALS (per page, strict share S/(S+E+N))
+p.30: S=450, E=5,  N=0;  450+5+0  = 455; strict = 450/455 = 98.90%
+p.31: S=448, E=4,  N=1;  448+4+1  = 453; strict = 448/453 = 98.90%
+p.32: S=442, E=12, N=2;  442+12+2 = 456; strict = 442/456 = 96.93%
+p.33: S=429, E=11, N=1;  429+11+1 = 441; strict = 429/441 = 97.28%
+p.34: S=428, E=6,  N=1;  428+6+1  = 435; strict = 428/435 = 98.39%
+p.35: S=421, E=11, N=0;  421+11+0 = 432; strict = 421/432 = 97.45%
+p.36: S=378, E=11, N=2;  378+11+2 = 391; strict = 378/391 = 96.68%
+p.37: S=415, E=11, N=16; 415+11+16 = 442; strict = 415/442 = 93.89%
+p.38: S=235, E=5,  N=5;  235+5+5  = 245; strict = 235/245 = 95.92%
+p.39: no decoded text (row p.39 L01 is empty): 0 units, share n/a.
+Page sums: S 450+448+442+429+428+421+378+415+235 = 3646; E 5+4+12+11+6+11+11+11+5 = 76; N 0+1+2+1+1+0+2+16+5 = 28.
+OVERALL: S+E+N = 3646+76+28 = 3750; strict = 3646/3750 = 97.23%
+Sensitivity only (not the figure of record): the 7 '#' signs look like section-end marks; without them
+N = 28-7 = 21, total = 3743, strict = 3646/3743 = 97.41%.
+
+RECURRING SLIPS (enumerated from the E/N markup by script: 76 E letters = r 47, m 9, c 4, w 4, o 3, t 2, f 1, d 1,
+h 1, l 1, a 1, y 1, x 1)
+1. 'r?' where z is meant (zu, zehen, setzen, gantze, ertznei, schmeltzen, untzia, viertzig ...): 45 of the 47 r-E's.
+   The other two r-E's: mut[r]er (t meant) and ophiri[r]i (c meant). The same sign reads correctly as r in 'gerne'
+   (p.35 L17), so the key maps two signs (or one ambiguous sign) to r.
+2. 'm' where i or y is meant in the Latin recipe (chemri, ocmmi, chariophmllati, charmophilorum, mmrxhe, amoratm).
+3. 'w' where a or t is meant (multiplicwtion, muscwte, hetwest, winGIRET for tingiret).
+4. Single omissions: darfsu (darfstu), philosophisce, gebrauhen, nac, margaritarm.
+5. Stray 't?' before a word (t?gelbe, t?auri), counted as E (single insertion).
+N groups: amoratm (7; perhaps amaraci, 3 slips, not credited), tarnabadm (9; drug name not identified),
+'mo' in momore, 'le' in flelegmate, stray 'm' in 'in m leibes' (p.38 L09), plus 7 '#'.
+
+GISTS (recipe level only)
+p.30: Ends a preparation and says how to test it on a hot silver plate; names it the true aurum potabile against
+      all human illness. Gives the dosing schedule for the precipitate when the illness does not yield.
+      All S except the r-for-z slips.
+p.31: Says not to exceed the dose and that the precipitate cures even severe illness in three goes. A recipe for a
+      red wine coloured with the gold precipitate, said to protect the body from poison and illness.
+p.32: Calls it the philosophical aurum potabile, used once a month. A recipe for tinging metals (silver or crude
+      mercury, set with lead) to gold with the precipitate. Begins a recipe for 'augmenting' (multiplying) the precipitate.
+p.33: Continues the augmentation with mercurius solis. States that each augmented
+      precipitate tinges more base metal than at first; the multiplication can be repeated.
+p.34: An alternative augmentation using purged crude mercury instead of mercurius solis. The same procedure,
+      repeatable for second to seventh rounds.
+p.35: The proportions rule for each later round of crude mercury. A recipe to reduce some of the augment back to
+      metal by melting with borax, then topping the work up again.
+p.36: Describes the augment as never-ending, harvestable repeatedly. Warns that once crude mercury is used it
+      no longer tinges and is not for medicine. Starts the Latin 'Elixir hystericum Phaedronis' (flower list).
+p.37: Latin ingredient list for the hysteric elixir (herbs, roots, spices, gums, pearls, corals, gold leaf) and its
+      digestion and distillation in a bath. Two drug names left unread (N).
+p.38: Ends the elixir: further steeping and separation of the oil from the phlegm. A dose in malmsey, said to act
+      on the womb ('die mutter'), praised as unequalled.
+p.39: No decoded text supplied.
+
+Check tool: none named in the brief for this task; the control used is the script's letter-for-letter match of
+judged rows against decode.txt (202 rows, 0 mismatches).

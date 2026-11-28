@@ -1,0 +1,57 @@
+JUDGE NOTES: strict one-pass judgement of decode.txt (Gerlach, 'Occulta scripta chymica', Wellcome MS.309, pp.100-109)
+Judge: isolated agent; opened only BRIEF.txt and decode.txt. One pass, no second tries. Judged 28 Nov 2026.
+
+UNIT RULES
+- Unit = one decoded letter (a-z) on the line where it stands. '_' and '#' = 1 unit each, always N.
+- '?' after a letter: the letter itself is judged; the '?' is not a unit.
+- Punctuation and dividers (= ; . ,) are not units. No { } clear-script text occurs in this decode, so nothing was excluded on that ground.
+- Word breaks were re-segmented by the judge; words split over a line end are shown with '-' in judge.tsv and judged as the whole word, each letter counted on its own line.
+- S = letter in a word that reads as sense in 16th-c. German (period spellings accepted: hot=hat, gemelt, uil, souill, gstalt, gbracht, zue, lan=lassen, tzwen, bodem, wisenheit, magnalys) or in a Latin/chemical term (ingresum/ingresu, arcanum, sigillo, oleum incombustibile, caput corui, luna fixa, spagirum, the Latin quotation on p.104, Prov. quotation on p.106).
+- E = wrong letter where one substitution (or one extra letter) restores the word. Omissions (e.g. philsophis, almechtigeit) cost nothing because there is no letter to mark.
+- N = letters that make no sense and are not a one-letter slip: the stray 'cg' / 'cl' pairs tacked on to complete words, plus '_' and '#'.
+- Where a 'cg' stands for 'ck' (dicger, glucglichen, gedancget, dancg), c is S and g is E.
+- Notation in judge.tsv: ^x = letter x judged E; ~x = letter x judged N; all other letters S.
+- Integrity check run by script: for all 210 lines, the letters in the segmented reading (markers and spaces stripped) equal the letters of decode.txt for that line. Assertion passed on all 210 lines.
+
+TOTALS (counted by script judge.py from the annotations; arithmetic shown)
+p.100   19 lines  S=466 E=7  N=2   466/(466+7+2)  = 466/475  = 98.11%
+p.100a  14 lines  S=322 E=4  N=0   322/(322+4+0)  = 322/326  = 98.77%
+p.102   12 lines  S=286 E=4  N=0   286/(286+4+0)  = 286/290  = 98.62%
+p.103   22 lines  S=507 E=12 N=2   507/(507+12+2) = 507/521  = 97.31%
+p.104   21 lines  S=512 E=9  N=2   512/(512+9+2)  = 512/523  = 97.90%
+p.105   30 lines  S=744 E=9  N=4   744/(744+9+4)  = 744/757  = 98.28%
+p.106   30 lines  S=716 E=16 N=1   716/(716+16+1) = 716/733  = 97.68%
+p.107   21 lines  S=330 E=7  N=0   330/(330+7+0)  = 330/337  = 97.92%
+p.108   13 lines  S=241 E=11 N=0   241/(241+11+0) = 241/252  = 95.63%
+p.109   28 lines  S=490 E=8  N=1   490/(490+8+1)  = 490/499  = 98.20%
+ALL    210 lines  S=4614 E=87 N=12  4614/(4614+87+12) = 4614/4713 = 97.90%
+Check S: 466+322+286+507+512+744+716+330+241+490 = 4614
+Check E: 7+4+4+12+9+9+16+7+11+8 = 87
+Check N: 2+0+0+2+2+4+1+0+0+1 = 12
+Lenient share (S+E)/(S+E+N) = (4614+87)/4713 = 4701/4713 = 99.75% (for reference only; the strict figure is the one above).
+
+RECURRING SLIPS (E letters counted by script over judge.tsv: total 87)
+- g where k (or d, x, l) is wanted: 20. k-words: ergent/ergentnus/ergent (erkent), unuolgommene x2, uolgommentliche, dicger, glucglichen, gedancget, dancg; d-words: gn x3 (den), gr x2 (der); x-words: fixa, elixir (eligir), rex (reg); samg, samgt.
+- l where k (or u) is wanted: 12. lonnen, lommen, erlennet x2, lan x2 (kan), l=einern (keinern), uollomlich, unuollommene, druclen, lnd (und), eler (euer).
+- r where l / u / z / h is wanted: 13 (incl. the transposed r in preseuerans). forget, arhir (alhir), ruuor (zuuor), holtre, setret, harse, dararf, drnne, rill, tzren, raset, gescheren.
+- u where l / x / n / r / h is wanted: 9. weiu, auso, gueich, gemouet, elixir (eliuir), prouimum, reiue, keuet, scuwartze.
+- n where m is wanted: 8 (mostly). nultiplication x2, widerunb x2, ingresun, nangk (langk), plus einern, drnten.
+- t: 5 (sublimitet, reinet, extra t in nachtt / gbrachtt / uolgommentliche).
+- w where i is wanted: 5 (phwlosophorum, gerewniget, hermetws, dwsen, gehewmnus).
+- z where q (or w) is wanted: 4 (zuantitet, zuod, ipsumzue, zuuorzundern).
+- remaining: e 3, b 2, m 2, k 1, d 1, s 1, a 1.
+- Tally by script over judge.tsv: g20 + r13 + l12 + u9 + n8 + w5 + t5 + z4 + e3 + b2 + m2 + k1 + d1 + s1 + a1 = 87 (matches E total).
+- N units (12): stray pairs anfang-cg, mag-cl, uirtzig-cl, genug-cg-sam, wenig-cg (10 letters), '_' in so_dern (1), '#' on p.109 M01 (1).
+Pattern: the slips cluster in a few letter pairs (k/l, k/g, i/w, q/z, m/n, l/u/r), which looks like a small number of confusable cipher signs rather than random noise. The stray cg/cl pairs after -g words suggest one sign that is being read as two letters.
+
+GISTS (level of 'a recipe for X' only)
+p.100: Continuation of the preparation of the high medicine (the philosophers' stone). It is joined with a further prepared mercury of gold, sealed and returned to its vessel and fire. It dissolves into a clear crystalline water.
+p.100a: The stages of the work over successive forty-day periods. An oil appears, then an ash-coloured earth. The black stage ('raven', 'caput corvi') is reached.
+p.102: The 'peacock' stage of many colours follows. After it comes the white stage. The white philosophers' elixir is produced.
+p.103: The white elixir is said to turn base metals into fine silver ('luna fixa'). Yellow colours and then red follow. The perfect red stage is described as shining by night and day.
+p.104: A Latin quotation praising the red stone. Instructions for 'ingress' and the first multiplication of the medicine with gold calx. The medicine is said to turn base metals into gold.
+p.105: Further multiplications of the medicine, each said to increase its strength. Praise of God's wonders. Many philosophers had the stone, few knew the ingress or multiplication.
+p.106: An exhortation to keep the secret, citing Solomon and Proverbs. Why the philosophers hid the knowledge from the unwise. Thanks and praise to God; end of the section.
+p.107: New section 'in the name of Jesus Christ': an explanation of putrefaction, the chief step of the art. A recipe for building a divided oak box. The box is split into two compartments.
+p.108: The two compartments described. Preparing fresh horse dung. Filling the boxes with it.
+p.109: Heaping the dung so it heats strongly. Setting the glass vessel into the hot dung. Repeating with the second compartment; a margin note on the third day.
