@@ -16,6 +16,7 @@ def find_drop(al, letter, word):
         if r[2] is None and r[3] == letter and r[4] == word: return i
     raise KeyError((letter, word))
 LOG = collections.defaultdict(list)
+PROBABLE = []
 def ed(c, al, line, pos, shape=None, letter=None, why=''):
     i = find(al, line, pos); old = list(al[i])
     if shape is not None: al[i][2] = shape
@@ -34,9 +35,8 @@ def edits(c, al):
         al[i] = [None, None, None, 'م', 14]
     if c == '33r.4':
         ed(c, al, '33r07', 11, shape='S18', why='planche 33r4_triangle-yabarree Q21 : meme forme que le ت de وافيت (S18), distincte du triangle de الدر')
-        ed(c, al, '33r09', 6, shape='S11', why='planche 33r4_coupes Q10 : coupe a dent (forme B, = ي de بين/وافيت)')
-        ed(c, al, '33r10', 8, shape='S11', letter='ي', why='planche 33r4_coupes Q13 : coupe a dent (forme B) = ي ; ر de الحاجري non ecrit')
-        al[find_drop(al, 'ي', 18)][3] = 'ر'
+        # Q10, Q13 (coupe a dent) : lecteur A = B, lecteur B aveugle = indecis -> {probable}, NON compte (Daniel garde)
+        PROBABLE.append(('33r.4', '33r09 pos6 et 33r10 pos8 : coupe a dent = ي (S11)', 'lecteur B indecis'))
         i = find(al, '33r10', 3)
         al.insert(i + 1, ['33r10', 3.5, 'S8', 'ل', 18]); LOG[c].append({'row': ['(absent)'], 'new': al[i + 1], 'why': 'planche 33r4_divers Q18 : sablier non compte par Daniel entre la 1re coupe et le ya-barree'})
         ed(c, al, '33r10', 4, letter='ح', why='decalage apres insertion du sablier (lecture provisoire {ح})')
@@ -44,8 +44,9 @@ def edits(c, al):
         j = find_drop(al, 'م', 20); al[j] = ['33r11', 3.5, 'S1', 'م', 20]
         LOG[c].append({'row': ['(م non ecrit)'], 'new': al[j], 'why': 'planche 33r4_triangle-yabarree Q23 : ya-barree apres le separateur de la l.11, non compte par Daniel ; منكور complet'})
     if c == '103v.2':
-        for p in (5, 6):
-            ed(c, al, '103v_l06', p, shape='?', why='planche 103v2_S19 Q2/Q3 : signe gratte, forme non lisible a 3x ; retire de la classe I')
+        ed(c, al, '103v_l06', 5, shape='?', why='planche 103v2_S19 Q2 : signe gratte ; lecteurs A et B : ni A ni autre forme -> illisible')
+        # Q3 : lecteur A illisible, lecteur B 'A probable' -> discordant, Daniel garde
+        PROBABLE.append(('103v.2', '103v_l06 pos6 : illisible (A) / forme I probable (B)', 'discordant'))
     if c == '101r.2':
         for r in al:
             if r[2] == 'S9':
@@ -79,4 +80,5 @@ tb = tA = 0; ob = oA = 0
 for r in rows:
     b, a = r['before'], r['after']; tb += b[1]; tA += a[1]; ob += b[0]; oA += a[0]
     print(f"{r['chain']:7s} avant {b[0]}/{b[1]} = {b[0]/b[1]:.3f}  apres {a[0]}/{a[1]} = {a[0]/a[1]:.3f}  signes {r['signs_before']}->{r['signs_after']}  lignes non visees modifiees: {r['non_target_rows_changed']}  ruptures apres: {json.dumps(r['breaks_after'], ensure_ascii=False)}")
+json.dump(PROBABLE, open(f'{OUT}/probables_non_comptes.json', 'w'), ensure_ascii=False, indent=1)
 print(f'TOTAL avant {ob}/{tb} = {ob/tb:.4f}  apres {oA}/{tA} = {oA/tA:.4f}  controle non-vises OK = {ok_all}')
