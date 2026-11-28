@@ -7,6 +7,9 @@ and deciphered by Beling (PR #422), one reader; no. 78 is unread. See "25 Oct 20
 alphabet rebuilt from a few letters glossed over the figures and from the alphabetical order of its values (63 of 104
 figures, to 23 Oct 2026). No. 78 (1591), one group of about six mixed signs in another code, is listed here unread, with
 no claim that it shares the key.
+27 Nov 2026 (integration review of PR #1029): the l. 34 run of no. 25 is read "du Roy" (Beling) on the digit count in the
+Gallica image, confirmed by a blind shape plate; cipher words 41 of 46 (0.891, was 40), no. 25 21 of 22. Still read in
+part. See "Integration review of PR #1029" at the end.
 
 Split on 14 Oct 2026 under the one-key rule (George Lasry, 14 Oct 2026). Until then this target also held two other
 ciphers, each now with its own folder and page (a different cipher, with its own page):
@@ -272,9 +275,9 @@ expansions of abbreviations included. Recounted by hand, sure words only, holes 
 ## Remaining gaps
 
 - No. 25: 72 holes in the reading (doubtful clear words such as [?poix] [?doigt], [?Lamour], [?balliages] [?de] [?flandre], the besieged town in K, and the bracketed expansions) and the isolated figure 3 in the Soissons run - blocker: illegible; contrast-enhanced enlargements of the native scan did not resolve them (Brackx); the second reader (Beling, 11 Nov 2026) agrees on 14 of the 37 marked words, reads 13 otherwise and leaves 10 doubtful for both; a reader of 16th-century French hands is needed
-- No. 25 l. 34: the run ends 'du M. de La Noue' (barred 39, Brackx) or 'du [Roy]' (barred 9, Beling; the independent verifier's look at the Gallica image agrees with Beling) - blocker: illegible; two readers disagree on the same strokes; Michael Brackx is to be asked to look again (not yet asked, see the integration check); both readings are shown until then
+- No. 25 l. 34: read 'du [Roy]' since 27 Nov 2026: five digits on the image, bar over the last 9 only (Beling; 12 Nov look and the review of PR #1029; plate 2511c confirms the 9); Brackx not yet asked - blocker: illegible; the two readers read the same strokes differently, and Michael Brackx is to be asked to look again (issue #96); his reading 'du M. de La Noue' (barred 39) stays in his files
 - No. 60: Launan against the gloss Launay, three cipher words in all (2 of 3, 0.667) - blocker: too-short; too few words for a share that decides a class
-- Nos. 24 and 60: one reader (Beling, 11 Nov 2026); 15 doubtful places and one unread passage in no. 24, two doubtful words in no. 60; the barred 17 in no. 24 line 20 and 'au s[ieu]r de Launay' in no. 60 are single looks; who Ludouic and Launay were - blocker: illegible; a second reader of the clear text is the next step; the names are not found on the web (beling/names_check.md, four searches)
+- Nos. 24 and 60: one reader (Beling, 11 Nov 2026); 15 doubtful places and one unread passage in no. 24, two doubtful words in no. 60; the barred 17 in no. 24 line 20 and 'au s[ieu]r de Launay' in no. 60 are single looks; who Ludouic and Launay were; no. 24 l. 9, first digit of the fifth group answered 3 on three blind plates (Budouic, against both readers' 56) - blocker: illegible; a third reader should look at l. 9; a second reader of the clear text is the next step; the names are not found on the web (beling/names_check.md, four searches)
 - No. 78 (f. 111r), one group of about six mixed signs - blocker: too-short; a single group, probably a name, in a different mixed code
 
 Not a gap in the reading, and not done: the 'Mots' and 'Dames' blocks of the key no. 25 sheet (fr. 3995 f. 51r) are not
@@ -293,3 +296,49 @@ words, cities and provinces has had no second reader.
 ## 23 Oct 2026: no document reads (translation wave)
 - Nos. 24, 25, 60: the repository holds a table of 10 short cipher runs, 6 of them with codes that have no key value or unread; no. 78: its one cipher group is unread. Both entries are **decoded, not read**; class not read, method not solved, fraction 0.
 - Remaining gap: the code groups with no key value - blocker: no-key-material.
+
+## 27 Nov 2026: blind shape plates on the disputed places (Brice Dudout, `dudout/`)
+
+Ten places where Brackx and Beling disagree, each decided by one sign, went on blind shape plates for Brice Dudout
+(three plates, three hidden controls each; rule, boxes and integration rule hashed before any thumbnail; no image
+included). Plates a and b each failed one control (both r controls had a look-alike in this hand) and serve only as a
+restriction; plate c passed 3 of 3. Where a, b and c agree: the sign under the bar at the end of the l. 34 run of
+no. 25 is a 9 (the box covers the last digit only, so this does not test a barred 39 against a barred 9; see the
+integration review below); in the clear text Gonnesse, {Ruelle} and puissance (Beling), and d'Auvergne and commerce
+(Beling, supported, not settled: the r controls failed on plates a and b, and plate c has no r control). Proposed count over cipher words: no. 25 21 of 22 (0.955), all 41 of 46 (0.891); the figures above are
+left unchanged. Flagged and not applied: no. 24 l. 9, the first digit of "36/56" was answered 3 on all three plates,
+which gives "Budouic" against both readers; a third reader should look. Still open: flatteries/platines (l. 8) and
+treuvons/croions (l. 27). Details: `dudout/README.md`, `dudout/sign_check_2511/results.tsv`, and the reading with the
+six places applied, `dudout/n25_reading_plate2511.md`.
+
+## Integration review of PR #1029 (27 Nov 2026)
+
+Integration review of PR #1029 (AI agent, for the maintainers); it checked the head 2dc3520303.
+
+- **Reproduced.** `dudout/SHA256SUMS` 21/21 on the raw blobs; the plate c rule (e2ad3768...) and boxes, and its answers
+  (fcd39648..., checked from `plate_c/`). The three plates rescored from their revealed keys: a 2/3 (the r control
+  answered c), b 2/3 (the r control answered none), c 3/3. Targets on a/b/c as in `results.tsv`. By the plate c rule,
+  written before its answers, T1, T4, T6, T8, T9 and T10 count; T3 is flagged; T5 and T7 are out. Plate c (9 targets,
+  3/3 controls) is recorded in `outcome.sign_check`.
+- **T1, l. 34.** The plate c box covers the last 9 only, with the 3 before it outside the box, so the answer is 9
+  under either reading. What settles the line is the image: Gallica f85 at native resolution (region 2600,2950,600,260,
+  openapi.bnf.fr IIIF) shows 43 38 93 and a barred 9, the bar starting after the 3 of 93 and covering the 9 only, no
+  sixth digit. Five digits on the image, bar over the last 9 only: this agrees with Beling and with the look of 12 Nov.
+  The plate confirms that the sign is a 9. Brackx's barred 39 needs a sixth digit that is not there.
+- **T8 and T9** (u against r, c against r): the r control failed on plates a and b (once answered c, which is T9's
+  alternative), and plate c has no r control. d'Auvergne and commerce are supported, not settled. Both are clear text
+  and do not change the count.
+- **Plate c is not independent of a and b.** The reader had seen each target twice; the a/b/c agreement rule limits
+  this. The order of events inside one commit rests on the contributor's record.
+- **Counts before and after**, cipher words, sure only: no. 25 20 -> 21 of 22 (0.909 -> 0.955); no. 24 18 of 21 and
+  no. 60 2 of 3, unchanged; all 40 -> 41 of 46 (0.87 -> 0.891). The class stays read in part: a sign check never
+  changes a class. No. 25 has 22 cipher words, so the short-text floor already applied on main; that class question is
+  for the owner and is not reopened here.
+- **Not checked.** T3 on f83 (3 or 5 could not be settled at the crop size; the box may cut off the top stroke, and a
+  gloss sits above the group). T4, T6, T8, T9 and T10 against the image. make_planche.py of plate b and the
+  pre-amendment boxes are not in the PR.
+- **Added to the PR after this review, not checked.** Two later commits (da47884cf2, b3e35fd505) add a plate d on
+  [?Paris] in no. 24 (it failed one control and is not used by its own rule), an open look by Brice Dudout reading v
+  there (Paris), and T3 answered 3 on plate d as well, read by him as an encipherer's slip (36 written for 56,
+  "Ludouic" kept). `dudout/README.md` proposes 42 of 46 with the open look. That figure is not applied here: the
+  count of record stays 41 of 46.

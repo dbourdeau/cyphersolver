@@ -2203,7 +2203,7 @@ PAGES = [
          rights='Biblioth&egrave;que nationale de France'),
     dict(slug='champagne1590', label='Champagne 1590', year='1590', y=1590.45, place='Champagne &rarr; Nevers', st='partial', stt='read in part',
          title='Champagne news letters to the duc de Nevers, June 1590',
-         blurb='Three news-letters of June 1590 (BnF fr. 3623 nos. 24, 25, 60) in a short two-digit homophonic alphabet, recovered from a few interlinear glosses and the alphabetical order of its values, then found as Nevers key no. 25 among the Duke&rsquo;s cipher tables (Michael Brackx). The letter of 5 June reads in part (Brackx); Andrew Beling transcribed and deciphered the letter of 15 June and the slip of 7 June and checked the key on unused glosses (13 of 14). One run is disputed: Soissons distrusts La Noue, or the King.',
+         blurb='Three news-letters of June 1590 (BnF fr. 3623 nos. 24, 25, 60) in a short two-digit homophonic alphabet, recovered from a few interlinear glosses and the alphabetical order of its values, then found as Nevers key no. 25 among the Duke&rsquo;s cipher tables (Michael Brackx). The letter of 5 June reads in part (Brackx); Andrew Beling transcribed and deciphered the letter of 15 June and the slip of 7 June and checked the key on unused glosses (13 of 14). One disputed run reads &ldquo;du Roy&rdquo; on the digits of the image, which a blind shape test by Brice Dudout supports: Soissons distrusts the King.',
          quote='la rupture de l&rsquo;edict [de] l&rsquo;union &middot; contre la ligue',
          rights='Biblioth&egrave;que nationale de France'),
     dict(slug='bienvenut1590', label='Bienvenut 1590', year='1590', y=1590.16, place='Paris &rarr; Savoy?', st='solved', stt='known key applied',
