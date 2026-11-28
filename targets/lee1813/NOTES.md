@@ -123,7 +123,7 @@ F6-01).
 |---|---|---|---|---|---|---|---|
 | 1 Feb | `reading_1813-02-01.md` | 19 | 0 | 0 | 0.994 | 1.000 | read |
 | 2 Feb | `reading_1813-02-02.md` | 216 | 44 | 1 | 0.896 | 0.792 | read in part |
-| 6 Feb | `reading_1813-02-06.md` | 293 | 52 | 6 (see below) | 0.929 | 0.805 | read in part |
+| 6 Feb | `reading_1813-02-06.md` | 293 | 49 | 6 (see below) | 0.932 | 0.816 | read in part |
 
 Table corrected on 12 Nov 2026 (integration of the follow-up): 2 Feb has 44 words with a supplied or dropped letter, not
 42 (44 + 1 = 45 holes, 171 of 216 = 0.792). The 6 Feb whole-reading share is 0.929 after the F6-40 correction (799 words,
@@ -131,7 +131,12 @@ Table corrected on 12 Nov 2026 (integration of the follow-up): 2 Feb has 44 word
 (236 of 293), and were already one over before this change (53 and 6 against 0.802). A mechanical recount on integration
 (a word with a square or angle bracket is repaired; `[?word]`, `[...]` and `(?)` are guessed or unread) gives 52 and 3 for
 6 Feb, 238 of 293, and 428 of 528 (0.811) over the three letters; the contributor's count, which is the stricter one and
-the one published, is 236 and **426 of 528 (0.807)**. The two-word difference is a counting convention inside 6 Feb.
+the one published, is 236 and 426 of 528 (0.807). The two-word difference is a counting convention inside 6 Feb.
+
+Updated on 26 Nov 2026 (planche lee1813-2511, section 13): three numerals of 6 Feb corrected on a blind human
+reading, so "exhausted", "of" and "made" lose their supplied letter. 6 Feb: 49 words with a supplied letter, whole-reading
+share 0.932 (802 words, 57 holes, 1 doubtful), 239 of 293 cipher words (0.816). Over the three letters,
+**429 of 528 (0.812)**, on the contributor's convention (426 + 3).
 
 The "repo measure" is `research/reading_audit/v10_relabel.py` `share()` on the `## Reading` section, which includes
 Lee's clear text. The cipher-only share counts every word with a supplied or dropped letter as a hole, as the README
@@ -216,8 +221,8 @@ the numerals; they do not prove what Lee did. Across the three letters it finds:
   dots at all, is not counted: the transcription already divides it 9 23 1. Lee's dots are irregular, so this kind of mistake is easy to
   make and easy for a reader to miss. It is why the clerk failed at J and at the opening of 6 Feb.
 - **Single wrong figures**: off by one place (22), a tens figure added or lost, e.g. 17 for 7 (6), look-alike figures
-  that may be our misreading (7), and 52 others.
-- **The keyword's first letter, W.** 26 of the single wrong figures fall under W, 8.4% of the 310 figures enciphered with
+  that may be our misreading (4 since the planche of 26 Nov 2026; 7 before), and 52 others.
+- **The keyword's first letter, W.** 25 of the single wrong figures fall under W (26 before the planche of 26 Nov 2026), 8.1% of the 310 figures enciphered with
   it, against 0.4-2.4% for I, N, H, E, S and R (C 6.4%, T 5.6%). Most fall where the keyword comes round to W again:
   13 at figure 11 of a stretch, 3 at figure 21, 5 at figure 1. In five of them (2 Feb D, V, X; 6 Feb F6-13, F6-29)
   Lee wrote the letter's place in the plain alphabet (E as 5, B as 2, I as 9, S as 18), as if he did not apply the key
@@ -444,3 +449,24 @@ are counted as holes in the measure (section 6).
 - [x] print: *Papers of James Monroe* 6 (2 Feb only); Weber 1979 and Masked Dispatches; Cryptiana; this repository; web. Mann (1958), searched in full 11 Nov 2026
 - [x] key-rebuild: the key is complete; Lee's slips are modelled per stretch by the phase-slip decoder (one rule, fixed penalty, controls) over all 123 stretches
 - [x] retry: J under all ten offsets and the decoder, then read on 11 Nov 2026 with the key run on from I; four cancellation branches of L at all offsets (6 Nov 2026); the doubtful numerals of 1 and 6 Feb re-read at zoom where a word depended on them
+
+## 13. Human check of numerals (planche lee1813-2511, 26 Nov 2026)
+
+A blind form board of 13 questions on frames 0109 and 0110 (6 Feb), answered by Brice Dudout without the decipherment
+or the clerk's pencil in view. The selection rule (`dudout/planche-2511/REGLE-SELECTION.md`) was hashed before any
+vignette was made, an addendum (`AVENANT-1.md`) narrowed the strips so the pencil stayed out of view, and the answers
+(`reponses-lee1813-2511.json`) are kept as received with their sha256. Options were single figures shown by examples
+from the same hand; their order was balanced and three questions were hidden controls on figures already sure.
+- **Controls:** 3 of 3 right (F6-35 numeral 20 = 10, F6-69 numeral 16 = 13, F6-52 numeral 20 = 17, all sure places).
+- **Corrected (3):** F6-21 numeral 20 is 10, not 16 ("exh[a]usted" -> "exhausted"); F6-35 numeral 11 is 10, not 16
+  ("o[f]" -> "of"); F6-69 numeral 13 is 18, not 13 ("mad[e]" -> "made"). Each is marked `human_check` in the
+  transcription and noted in the decryption.
+- **Confirmed as transcribed (6):** F6-01 numerals 29-30 (1·2), F6-02 numeral 5 (11), F6-47 numerals 18-19 (2·3),
+  2 Feb J numeral 6 (17), F6-37 numeral 7 (17), F6-25 numeral 26 (16). The figures are what Lee (or the 2 Feb copyist)
+  wrote, so the proposals "I established" (F6-01), "a [c]ipher, a copy" (F6-02) and "but on" (F6-47) get no support
+  from the figures; "indem[ni]ties", "Vicero[y]" and "Swartzenb[o]urg" keep their supplied letter as Lee's slips.
+- **Not concluded (1):** F6-65 numeral 9 (1 or 17 on the second reading): no option chosen, remark "11, not just 1".
+  11 was not an option and gives no word (P, "DALBPRG"); left as transcribed.
+- **Effect:** 6 Feb 0.929 -> 0.932 (whole reading), 0.805 -> 0.816 (cipher words); document 426 -> 429 of 528 (0.812).
+  `errors.py`: look-alikes 7 -> 4, W 25 of 310 = 0.081. `decode.py` ok on 123 stretches. The 95% bar is not reached:
+  most holes are Lee's own slips, which no re-reading removes.

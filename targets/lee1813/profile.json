@@ -109,9 +109,9 @@
       "transcription": {
         "by": "llm from images",
         "source": "NARA T164 roll 3 frames 0108-0110",
-        "corrections": 4,
+        "corrections": 7,
         "image_quality": "good",
-        "notes": "74 stretches, 1,456 numerals, read 10 Nov 2026; F6-01 to F6-42 read with the clerk's pencil in view. Four numerals changed at 2x zoom (F6-11, F6-14, F6-20, F6-65), each marked. F6-43 to F6-74 re-read blind by a second agent: 588 of its 589 numerals agree (F6-65 numeral 9: 1 or 17); it skipped F6-51 numerals 20-33."
+        "notes": "74 stretches, 1,456 numerals, read 10 Nov 2026; F6-01 to F6-42 read with the clerk's pencil in view. Four numerals changed at 2x zoom (F6-11, F6-14, F6-20, F6-65), each marked; three more on a blind human check, planche lee1813-2511, 26 Nov 2026 (F6-21 n20 and F6-35 n11 16 -> 10, F6-69 n13 13 -> 18), marked human_check. F6-43 to F6-74 re-read blind by a second agent: 588 of its 589 numerals agree (F6-65 numeral 9: 1 or 17); it skipped F6-51 numerals 20-33."
       }
     }
   ],
@@ -281,6 +281,12 @@
       "kind": "verification",
       "what": "Integration of the follow-up (PR #413) after an independent verification: decode.py ok on 123 stretches, errors.py W 26/310 = 0.084 and error_accounts.txt regenerated identically, second-reading hash matches, 837 of 853 numerals agree on a separate comparison. F6-40 numeral 11 seen on frame 0109: 8 is the better reading, not certain; 'have entered Berl[i]n' accepted. The second reading had the clerk's pencil in view and its freeze before comparison is the contributor's record. Corrected: CHECKS.txt regenerated, NOTES section 6 table, _check_reading 6 Feb 0.813, 6 Feb read_share 0.929. Cipher-word measure kept at the contributor's 426 of 528 (0.807); a mechanical recount gives 428 (0.811). The Bassagne citations (Coquelle 1904, Bayreuther Zeitung) were not opened.",
       "result": "worked"
+    },
+    {
+      "date": "2026-11-26",
+      "kind": "verification",
+      "what": "Blind human check of 6 Feb (and one 2 Feb) numerals, planche lee1813-2511 (dudout/planche-2511/): 13 questions answered by Brice Dudout on single-figure options shown by examples of the same hand, selection rule hashed before the vignettes, clerk's pencil kept out of view, 3 hidden controls. Controls 3 of 3 right. Corrected: F6-21 n20 and F6-35 n11 16 -> 10, F6-69 n13 13 -> 18 ('exhausted', 'of', 'made'). Confirmed as transcribed: F6-01 n29-30, F6-02 n5, F6-47 n18-19, 2 Feb J n6, F6-37 n7, F6-25 n26 (the F6-01/02 and F6-47 proposals get no support from the figures). Not concluded: F6-65 n9 (remark '11', not an option, gives no word). 6 Feb read_share 0.929 -> 0.932, cipher words 426 -> 429 of 528; decode.py ok, error_accounts.txt regenerated (look-alikes 7 -> 4).",
+      "result": "worked"
     }
   ],
   "outcome": {
@@ -315,12 +321,12 @@
         "label": "6 Feb 1813 (74 stretches, 1,456 numerals), clerk's pencil to F6-42 only",
         "method": "key recovered based on adjacent plaintext",
         "extent": "partial",
-        "basis": "reading_1813-02-06.md: the 32 stretches with no decipherment on this copy (603 numerals) deciphered; F6-26 and F6-01/02 proposals, F6-47 tail unread; read_share 0.929 whole reading, 0.805 over cipher words with supplied letters as holes"
+        "basis": "reading_1813-02-06.md: the 32 stretches with no decipherment on this copy (603 numerals) deciphered; F6-26 and F6-01/02 proposals, F6-47 tail unread; read_share 0.932 whole reading, 0.816 over cipher words with supplied letters as holes"
       }
     ],
-    "fraction_read": 0.807,
+    "fraction_read": 0.812,
     "fraction_read_method": "measured",
-    "fraction_read_source": "Cipher words of the three readings (528): 426 with no supplied, dropped, guessed or unread letter. Every word in which a letter Lee mis-enciphered is supplied counts as a hole (README read bar).",
+    "fraction_read_source": "Cipher words of the three readings (528): 429 with no supplied, dropped, guessed or unread letter. Every word in which a letter Lee mis-enciphered is supplied counts as a hole (README read bar). 426 before the planche of 26 Nov 2026 (NOTES section 13).",
     "fraction_coherent": 0.987,
     "verification": [
       "contemporary decipherment",
@@ -360,6 +366,12 @@
         "role": "prior solution",
         "note": "the clerk's partial decipherments of 1813: 2 Feb on frames 0104-0105 (printed in The Papers of James Monroe vol. 6, MONR-01-06-02-0283) and 6 Feb pages 1-3 interlined in pencil; used for comparison after our decode",
         "date": "1813"
+      },
+      {
+        "who": "dudout",
+        "role": "verification",
+        "note": "Brice Dudout, with Claude: blind human check of 13 numerals on a form board (planche lee1813-2511), three 6 Feb numerals corrected",
+        "date": "2026-11-26"
       }
     ],
     "gaps": [
@@ -428,7 +440,7 @@
         "reading": "reading_1813-02-06.md",
         "language": "en",
         "state": "read in part",
-        "read_share": 0.929,
+        "read_share": 0.932,
         "summary": "France after the Russian disaster: the Grand Army destroyed, discontent, conscription and forced donations as the last effort of the nation, Austria's armed neutrality and possible mediation, Prussia's king fleeing the Russians, terms of peace offered to England if she abandons Russia, and Napoleon's hopes resting on the coming campaign. The last 32 stretches carry no decipherment on this copy, and none was found.",
         "reading_review": {
           "grade": "A",
