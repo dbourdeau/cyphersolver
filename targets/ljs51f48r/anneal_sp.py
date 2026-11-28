@@ -3,7 +3,7 @@ import sys, os, random, math, json
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..', '..'))
 from lang import lm
 here = os.path.dirname(os.path.abspath(__file__))
-lines = [l.split()[1:] for l in open(os.path.join(here,'transcription.txt'),encoding='utf8') if not l.startswith('#')]
+lines = [l.split()[1:] for l in open(os.path.join(here,'transcription.txt'),encoding='utf8') if l.startswith(('48r','48v'))]
 null = sys.argv[2] if len(sys.argv)>2 else None
 toks=[]
 for l in lines:

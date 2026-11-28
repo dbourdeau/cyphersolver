@@ -1,0 +1,889 @@
+{
+ "chain_id": "38v.10",
+ "label": "by-eye key from the compiler's plaintext, not independently confirmed",
+ "signs": 89,
+ "letters": 89,
+ "plaintext": "ايا سايلي عن سيد وابن سيد ومن قد حباه الله حل المترجم ومن قد كساه الله حسنا وبهجه هو الحبر تاج الدين نجل الدريهم",
+ "plaintext_words": [
+  "ايا",
+  "سايلي",
+  "عن",
+  "سيد",
+  "وابن",
+  "سيد",
+  "ومن",
+  "قد",
+  "حباه",
+  "الله",
+  "حل",
+  "المترجم",
+  "ومن",
+  "قد",
+  "كساه",
+  "الله",
+  "حسنا",
+  "وبهجه",
+  "هو",
+  "الحبر",
+  "تاج",
+  "الدين",
+  "نجل",
+  "الدريهم"
+ ],
+ "cipher_lines": {
+  "38v10": "S1 S2 S1 | S3 S1 S2 S4 S2 | S5 S6 |",
+  "38v11": "S3 S2 S7 | S8 S1 S9 S6 | S3 S2 S7",
+  "38v12": "| S8 S10 S6 | S11 S7 | S12 S9 S1 S13",
+  "38v13": "| S1 S4 S4 S13 | S12 S4 | S1 S4",
+  "39r01": "S10 S14 S15 S16 S10 | S8 S10 S6 | S11 S7 |",
+  "39r02": "S11 S3 S1 S13 | S1 S4 S4 S13 | S12 S3 S6 S1",
+  "39r03": "| S8 S9 S13 S16 S13 | S13 S8 | S1 S4 S12 S9",
+  "39r04": "S15 | S14 S1 S16 | S1 S4 S7 S2 S6 | S6",
+  "39r05": "S16 S4 | S1 S4 S7 S15 S2 S13 S10 |"
+ },
+ "shapes": [
+  {
+   "label": "S1",
+   "description": "bar hooked down at the right, with a stem from its middle [mnemonic Hs]",
+   "crop": "output/ljs51/crops/eye_38v.10/l1_1.png"
+  },
+  {
+   "label": "S2",
+   "description": "hourglass ⧗, with or without a dot each side (not separable: dotted for ي and for the first word) [mnemonic Hg]",
+   "crop": "output/ljs51/crops/eye_38v.10/l1_1.png; output/ljs51/crops/eye_38v.10/l8_2.png"
+  },
+  {
+   "label": "S3",
+   "description": "open bracket ⊏ (short, or with a long base) [mnemonic Bk]",
+   "crop": "output/ljs51/crops/eye_38v.10/cmp_l.png panels sayli_s, sayyid_s, sayyid_s2"
+  },
+  {
+   "label": "S4",
+   "description": "top bar over a C-curve with a tail to the right (ح-like), sometimes notched into ε (Ꜫ); one shape with a continuum [mnemonic Lc]",
+   "crop": "output/ljs51/crops/eye_38v.10/cmp_l2.png"
+  },
+  {
+   "label": "S5",
+   "description": "Λ-figure with a crossbar on two legs [mnemonic Fl]",
+   "crop": "output/ljs51/crops/eye_38v.10/l1_2.png"
+  },
+  {
+   "label": "S6",
+   "description": "4-ayn: ع-head on a stem (٤ع) [mnemonic Ay]",
+   "crop": "output/ljs51/crops/eye_38v.10/l1_2.png; output/ljs51/crops/eye_38v.10/l8_2.png"
+  },
+  {
+   "label": "S7",
+   "description": "horned bowl on two legs (Ʊ / ψ on legs) [mnemonic Dl]",
+   "crop": "output/ljs51/crops/eye_38v.10/l2_1.png; output/ljs51/crops/eye_38v.10/l9_1.png"
+  },
+  {
+   "label": "S8",
+   "description": "zeta-hook ʓ (3-like zigzag) [mnemonic Zt]",
+   "crop": "output/ljs51/crops/eye_38v.10/l2_1.png; output/ljs51/crops/eye_38v.10/l7_1.png"
+  },
+  {
+   "label": "S9",
+   "description": "double slash with a dot above and below (÷) [mnemonic Ds]",
+   "crop": "output/ljs51/crops/eye_38v.10/l2_2.png; output/ljs51/crops/eye_38v.10/l7_1.png"
+  },
+  {
+   "label": "S10",
+   "description": "U-bowl with curled-in ends [mnemonic Mw]",
+   "crop": "output/ljs51/crops/eye_38v.10/l3_1.png; output/ljs51/crops/eye_38v.10/l9_2.png"
+  },
+  {
+   "label": "S11",
+   "description": "comb ш on a stem with a tail (ﺶ) [mnemonic Qk]",
+   "crop": "output/ljs51/crops/eye_38v.10/cmp_q.png panels qad1, qad2, kasah"
+  },
+  {
+   "label": "S12",
+   "description": "ط with a looped stem (loop on top of an upright, base to the right) [mnemonic Tl]",
+   "crop": "output/ljs51/crops/eye_38v.10/l3_2.png; output/ljs51/crops/eye_38v.10/l6_2.png"
+  },
+  {
+   "label": "S13",
+   "description": "epsilon ε / ع-shape with a tail [mnemonic Ep]",
+   "crop": "output/ljs51/crops/eye_38v.10/l3_2.png; output/ljs51/crops/eye_38v.10/l7_1.png"
+  },
+  {
+   "label": "S14",
+   "description": "s-curl / zigzag (Ƨ) [mnemonic Sc]",
+   "crop": "output/ljs51/crops/eye_38v.10/l5_1.png; output/ljs51/crops/eye_38v.10/l8_1.png"
+  },
+  {
+   "label": "S15",
+   "description": "loop on a long tail (lying 6 / ڡ) [mnemonic Rt]",
+   "crop": "output/ljs51/crops/eye_38v.10/l5_1.png; output/ljs51/crops/eye_38v.10/l8_1.png"
+  },
+  {
+   "label": "S16",
+   "description": "tall hook into a sin-cup (ﻟس) [mnemonic Jm]",
+   "crop": "output/ljs51/crops/eye_38v.10/cmp_q.png panels mutarjim_j, bahja_j, najl_j"
+  }
+ ],
+ "alignment": [
+  [
+   "38v10",
+   1,
+   "S1",
+   "ا",
+   1
+  ],
+  [
+   "38v10",
+   2,
+   "S2",
+   "ي",
+   1
+  ],
+  [
+   "38v10",
+   3,
+   "S1",
+   "ا",
+   1
+  ],
+  [
+   "38v10",
+   4,
+   "S3",
+   "س",
+   2
+  ],
+  [
+   "38v10",
+   5,
+   "S1",
+   "ا",
+   2
+  ],
+  [
+   "38v10",
+   6,
+   "S2",
+   "ي",
+   2
+  ],
+  [
+   "38v10",
+   7,
+   "S4",
+   "ل",
+   2
+  ],
+  [
+   "38v10",
+   8,
+   "S2",
+   "ي",
+   2
+  ],
+  [
+   "38v10",
+   9,
+   "S5",
+   "ع",
+   3
+  ],
+  [
+   "38v10",
+   10,
+   "S6",
+   "ن",
+   3
+  ],
+  [
+   "38v11",
+   1,
+   "S3",
+   "س",
+   4
+  ],
+  [
+   "38v11",
+   2,
+   "S2",
+   "ي",
+   4
+  ],
+  [
+   "38v11",
+   3,
+   "S7",
+   "د",
+   4
+  ],
+  [
+   "38v11",
+   4,
+   "S8",
+   "و",
+   5
+  ],
+  [
+   "38v11",
+   5,
+   "S1",
+   "ا",
+   5
+  ],
+  [
+   "38v11",
+   6,
+   "S9",
+   "ب",
+   5
+  ],
+  [
+   "38v11",
+   7,
+   "S6",
+   "ن",
+   5
+  ],
+  [
+   "38v11",
+   8,
+   "S3",
+   "س",
+   6
+  ],
+  [
+   "38v11",
+   9,
+   "S2",
+   "ي",
+   6
+  ],
+  [
+   "38v11",
+   10,
+   "S7",
+   "د",
+   6
+  ],
+  [
+   "38v12",
+   1,
+   "S8",
+   "و",
+   7
+  ],
+  [
+   "38v12",
+   2,
+   "S10",
+   "م",
+   7
+  ],
+  [
+   "38v12",
+   3,
+   "S6",
+   "ن",
+   7
+  ],
+  [
+   "38v12",
+   4,
+   "S11",
+   "ق",
+   8
+  ],
+  [
+   "38v12",
+   5,
+   "S7",
+   "د",
+   8
+  ],
+  [
+   "38v12",
+   6,
+   "S12",
+   "ح",
+   9
+  ],
+  [
+   "38v12",
+   7,
+   "S9",
+   "ب",
+   9
+  ],
+  [
+   "38v12",
+   8,
+   "S1",
+   "ا",
+   9
+  ],
+  [
+   "38v12",
+   9,
+   "S13",
+   "ه",
+   9
+  ],
+  [
+   "38v13",
+   1,
+   "S1",
+   "ا",
+   10
+  ],
+  [
+   "38v13",
+   2,
+   "S4",
+   "ل",
+   10
+  ],
+  [
+   "38v13",
+   3,
+   "S4",
+   "ل",
+   10
+  ],
+  [
+   "38v13",
+   4,
+   "S13",
+   "ه",
+   10
+  ],
+  [
+   "38v13",
+   5,
+   "S12",
+   "ح",
+   11
+  ],
+  [
+   "38v13",
+   6,
+   "S4",
+   "ل",
+   11
+  ],
+  [
+   "38v13",
+   7,
+   "S1",
+   "ا",
+   12
+  ],
+  [
+   "38v13",
+   8,
+   "S4",
+   "ل",
+   12
+  ],
+  [
+   "39r01",
+   1,
+   "S10",
+   "م",
+   12
+  ],
+  [
+   "39r01",
+   2,
+   "S14",
+   "ت",
+   12
+  ],
+  [
+   "39r01",
+   3,
+   "S15",
+   "ر",
+   12
+  ],
+  [
+   "39r01",
+   4,
+   "S16",
+   "ج",
+   12
+  ],
+  [
+   "39r01",
+   5,
+   "S10",
+   "م",
+   12
+  ],
+  [
+   "39r01",
+   6,
+   "S8",
+   "و",
+   13
+  ],
+  [
+   "39r01",
+   7,
+   "S10",
+   "م",
+   13
+  ],
+  [
+   "39r01",
+   8,
+   "S6",
+   "ن",
+   13
+  ],
+  [
+   "39r01",
+   9,
+   "S11",
+   "ق",
+   14
+  ],
+  [
+   "39r01",
+   10,
+   "S7",
+   "د",
+   14
+  ],
+  [
+   "39r02",
+   1,
+   "S11",
+   "ك",
+   15
+  ],
+  [
+   "39r02",
+   2,
+   "S3",
+   "س",
+   15
+  ],
+  [
+   "39r02",
+   3,
+   "S1",
+   "ا",
+   15
+  ],
+  [
+   "39r02",
+   4,
+   "S13",
+   "ه",
+   15
+  ],
+  [
+   "39r02",
+   5,
+   "S1",
+   "ا",
+   16
+  ],
+  [
+   "39r02",
+   6,
+   "S4",
+   "ل",
+   16
+  ],
+  [
+   "39r02",
+   7,
+   "S4",
+   "ل",
+   16
+  ],
+  [
+   "39r02",
+   8,
+   "S13",
+   "ه",
+   16
+  ],
+  [
+   "39r02",
+   9,
+   "S12",
+   "ح",
+   17
+  ],
+  [
+   "39r02",
+   10,
+   "S3",
+   "س",
+   17
+  ],
+  [
+   "39r02",
+   11,
+   "S6",
+   "ن",
+   17
+  ],
+  [
+   "39r02",
+   12,
+   "S1",
+   "ا",
+   17
+  ],
+  [
+   "39r03",
+   1,
+   "S8",
+   "و",
+   18
+  ],
+  [
+   "39r03",
+   2,
+   "S9",
+   "ب",
+   18
+  ],
+  [
+   "39r03",
+   3,
+   "S13",
+   "ه",
+   18
+  ],
+  [
+   "39r03",
+   4,
+   "S16",
+   "ج",
+   18
+  ],
+  [
+   "39r03",
+   5,
+   "S13",
+   "ه",
+   18
+  ],
+  [
+   "39r03",
+   6,
+   "S13",
+   "ه",
+   19
+  ],
+  [
+   "39r03",
+   7,
+   "S8",
+   "و",
+   19
+  ],
+  [
+   "39r03",
+   8,
+   "S1",
+   "ا",
+   20
+  ],
+  [
+   "39r03",
+   9,
+   "S4",
+   "ل",
+   20
+  ],
+  [
+   "39r03",
+   10,
+   "S12",
+   "ح",
+   20
+  ],
+  [
+   "39r03",
+   11,
+   "S9",
+   "ب",
+   20
+  ],
+  [
+   "39r04",
+   1,
+   "S15",
+   "ر",
+   20
+  ],
+  [
+   "39r04",
+   2,
+   "S14",
+   "ت",
+   21
+  ],
+  [
+   "39r04",
+   3,
+   "S1",
+   "ا",
+   21
+  ],
+  [
+   "39r04",
+   4,
+   "S16",
+   "ج",
+   21
+  ],
+  [
+   "39r04",
+   5,
+   "S1",
+   "ا",
+   22
+  ],
+  [
+   "39r04",
+   6,
+   "S4",
+   "ل",
+   22
+  ],
+  [
+   "39r04",
+   7,
+   "S7",
+   "د",
+   22
+  ],
+  [
+   "39r04",
+   8,
+   "S2",
+   "ي",
+   22
+  ],
+  [
+   "39r04",
+   9,
+   "S6",
+   "ن",
+   22
+  ],
+  [
+   "39r04",
+   10,
+   "S6",
+   "ن",
+   23
+  ],
+  [
+   "39r05",
+   1,
+   "S16",
+   "ج",
+   23
+  ],
+  [
+   "39r05",
+   2,
+   "S4",
+   "ل",
+   23
+  ],
+  [
+   "39r05",
+   3,
+   "S1",
+   "ا",
+   24
+  ],
+  [
+   "39r05",
+   4,
+   "S4",
+   "ل",
+   24
+  ],
+  [
+   "39r05",
+   5,
+   "S7",
+   "د",
+   24
+  ],
+  [
+   "39r05",
+   6,
+   "S15",
+   "ر",
+   24
+  ],
+  [
+   "39r05",
+   7,
+   "S2",
+   "ي",
+   24
+  ],
+  [
+   "39r05",
+   8,
+   "S13",
+   "ه",
+   24
+  ],
+  [
+   "39r05",
+   9,
+   "S10",
+   "م",
+   24
+  ]
+ ],
+ "key": {
+  "S1": {
+   "ا": 14
+  },
+  "S4": {
+   "ل": 11
+  },
+  "S13": {
+   "ه": 8
+  },
+  "S2": {
+   "ي": 7
+  },
+  "S6": {
+   "ن": 7
+  },
+  "S7": {
+   "د": 6
+  },
+  "S3": {
+   "س": 5
+  },
+  "S8": {
+   "و": 5
+  },
+  "S10": {
+   "م": 5
+  },
+  "S9": {
+   "ب": 4
+  },
+  "S12": {
+   "ح": 4
+  },
+  "S16": {
+   "ج": 4
+  },
+  "S11": {
+   "ق": 2,
+   "ك": 1
+  },
+  "S15": {
+   "ر": 3
+  },
+  "S14": {
+   "ت": 2
+  },
+  "S5": {
+   "ع": 1
+  }
+ },
+ "measures": {
+  "signs_total": 89,
+  "letters_total": 89,
+  "words": 24,
+  "groups": 24,
+  "aligned_pairs": 89,
+  "surplus_signs": 0,
+  "dropped_letters": 0,
+  "shapes": 16,
+  "singleton_shapes": 1,
+  "singletons": [
+   "S5"
+  ],
+  "repeated_occurrences": 88,
+  "consistency_letter": 0.989,
+  "consistency_skeleton": 0.989,
+  "letters_with_two_or_more_shapes": {}
+ },
+ "surplus_signs": [],
+ "dropped_letters": [],
+ "mismatches": [
+  [
+   "39r02",
+   1,
+   "S11",
+   "ك",
+   15
+  ]
+ ],
+ "dividers_not_at_word_end": [
+  "39r05"
+ ],
+ "word_ends_without_divider": 0,
+ "red_check": "n/a: no red gloss on this chain",
+ "verdict": "consistent: 89 signs = 89 letters, 24 groups = 24 words; 16 shapes, 15 take one letter; the ш-comb writes ق twice (قد, قد) and ك once (كساه). Letter 98.9%, skeleton 98.9%. First word as enciphered ايا: the hourglass is ي in all its other six uses, so the cipher has ايا ('O'), not the page's ابا.",
+ "notes": [
+  "Counts by eye 10, 10, 9, 8, 10, 12, 11, 10, 9 = 89, as the record; 38v l.12, l.13 and 39r l.3 open with a divider; 38v l.13 has an erased patch before it (no signs).",
+  "The ل sign is drawn as an open ح-curve (سايلي, الله on 38v, الدين) and with a notch (Ꜫ: حل, المترجم, الله on 39r, الحبر, الدريهم, نجل); the forms grade into each other and are taken as one shape.",
+  "The record's ابا is ايا in the cipher (record note: ايا fits the sense). Fit against the record's wording (ابا): letter 97.7%. الدريهم confirmed (7 signs)."
+ ],
+ "mnemonic_to_label": {
+  "Hs": "S1",
+  "Hg": "S2",
+  "Bk": "S3",
+  "Lc": "S4",
+  "Fl": "S5",
+  "Ay": "S6",
+  "Dl": "S7",
+  "Zt": "S8",
+  "Ds": "S9",
+  "Mw": "S10",
+  "Qk": "S11",
+  "Tl": "S12",
+  "Ep": "S13",
+  "Sc": "S14",
+  "Rt": "S15",
+  "Jm": "S16"
+ },
+ "signs_per_line_by_eye": {
+  "38v10": 10,
+  "38v11": 10,
+  "38v12": 9,
+  "38v13": 8,
+  "39r01": 10,
+  "39r02": 12,
+  "39r03": 11,
+  "39r04": 10,
+  "39r05": 9
+ },
+ "fit_against_record_wording": {
+  "signs_total": 89,
+  "letters_total": 89,
+  "words": 24,
+  "groups": 24,
+  "aligned_pairs": 89,
+  "surplus_signs": 0,
+  "dropped_letters": 0,
+  "shapes": 16,
+  "singleton_shapes": 1,
+  "singletons": [
+   "S5"
+  ],
+  "repeated_occurrences": 88,
+  "consistency_letter": 0.977,
+  "consistency_skeleton": 0.989,
+  "letters_with_two_or_more_shapes": {}
+ }
+}

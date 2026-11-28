@@ -114,7 +114,7 @@ open 47r l.1-3 and 5.
 ### 21r l.1-5: the end of 48r.8, not part of 20r.8
 
 The five rows on 21r l.1-5 (62 signs, 16 groups) are in the 48r.8 sign set (٧, 4-ayn, triangle-over-bars, Λ, X-man, long kaf ...)
-and read with the 48r key (`solve_48r/key_48r_v2.json`) unchanged, as the last third of the f. 21r rhymed prose, from exactly
+and continue the f. 48r cipher. Its 27-label key directly supplies 59 of these values. The continuation also uses W2 for alif and EK for two letters (see `targets/ljs51f48r/reading.md`). The five lines give the close of the f. 21r rhymed prose, from exactly
 where 48r.8 stops (after ربها جملته):
 
 وان زادها رفعته فاذكر اسم ربك حين تاوي اليها واشكر نعمه ربك اذا استويت عليها
@@ -271,3 +271,183 @@ as ا would give rhyme words of the shape الا--اف/ال-ا-ا-); not tested 
 - 35v.8: the plaintext is اي من لطراز ملك مصر حلا كم رمز مترجم اتاه حلا / تشريفك لي لمر عيشي حلا ما حل بان تذكرني ما حلا
   (record: يا ... كم [?] من ... ما حل بازدكرن ملحلا); the small 4 on l.9 is an inserted ا and counts (71 signs).
 - 36r.11: غ of غيرك not written in the cipher (record text otherwise confirmed).
+
+## ff. 37r-48v
+
+By-eye key from the compiler's plaintext, not independently confirmed. The signs were counted in reading order on line crops of the master. The percentages use repeated-shape occurrences only.
+
+| chain | signs | letters | aligned pairs | shapes | singletons | consistency letter / skeleton | red agreement | verdict |
+|---|---|---|---|---|---|---|---|---|
+| 37r.1 | 49 | 49 | 49 | 17 | 6 | 90.7% / 93.0% (43 occ.) | 48/49 (skeleton 49/49) | consistent with two two-letter signs (V = ا/د, hook = ب/ي) as the style note says; فقبل confirmed |
+| 37r.11 | 88 | 87 | 87 | 24 | 7 | 96.3% / 100.0% (81 occ.) | n/a | consistent; one surplus sign in ابث; ٦١ is one sign (ه) |
+| 37v.12 | 92 | 90 | 90 | 22 | 3 | 94.3% / 95.4% (87 occ.) | n/a | partly consistent (cant): breaks only inside cant words where page and cipher differ; طخفخف, وبيذ اهو |
+| 38v.10 | 89 | 89 | 89 | 16 | 1 | 98.9% / 98.9% (88 occ.) | n/a | consistent; first word ايا in the cipher (record ابا); ق and ك share one sign |
+| 39r.10 | 87 | 87 | 87 | 25 | 9 | 100.0% / 100.0% (78 occ.) | n/a | consistent, one letter per shape; record text confirmed |
+| 39v.12 | 101 | 100 | 100 | 22 | 7 | 98.9% / 98.9% (93 occ.) | n/a | consistent; one surplus sign and one break, both in the group for عن (40r l.7-8); س two shapes; 40v l.1 belongs |
+| 40v.5 | 72 | 73 | 72 | 19 | 6 | 100.0% / 100.0% (66 occ.) | n/a | consistent, one letter per shape, no homophones; الله written with one ل |
+| 41r.3 | 60 | 60 | 60 | 20 | 4 | 100.0% / 100.0% (56 occ.) | n/a | consistent; the cipher divides خد / يه; ي two shapes; needs بحره for the record's حمرة |
+| 41v.8 | 42 | 42 | 42 | 15 | 4 | 100.0% / 100.0% (38 occ.) | n/a | consistent, one letter per shape; record text confirmed |
+| 42r.2 | 104 | 104 | 104 | 21 | 6 | 98.0% / 99.0% (98 occ.) | n/a | consistent; one break (the ρ sign writes س and the ك of اتبكي); ك three shapes, ح two |
+| 42v.3 | 79 | 79 | 79 | 27 | 11 | 95.6% / 97.1% (68 occ.) | n/a | consistent with lam-alif as one sign; three breaks (ط of خطا, ه of صبابة, ث of ثكلان); قصت in the cipher, not قصب |
+| 43r.1 | 37 | 37 | 37 | 15 | 5 | 100.0% / 100.0% (32 occ.) | n/a | consistent: one letter per shape, one shape per letter; record transcription confirmed |
+| 43r.6 | 35 | 34 | 34 | 17 | 9 | 100.0% / 100.0% (25 occ.) | n/a | consistent; one surplus sign (ن doubled in زمانا); third word بيك in the cipher (∇ = ي), not بفك |
+| 43r.11 | 42 | 42 | 42 | 13 | 4 | 100.0% / 100.0% (38 occ.) | n/a | consistent: one letter per shape, one shape per letter; سقوني repeats sign for sign; record confirmed |
+| 43v.11 | 89 | 89 | 89 | 23 | 6 | 98.8% / 100.0% (83 occ.) | n/a | consistent; 89 signs (margin < on 43v l.11 counts); الغمائم (record الغمام) and خبت (record جبت [?]); الاناعم, وادقه confirmed |
+| 44r.10 | 84 | 84 | 84 | 19 | 5 | 100.0% / 100.0% (79 occ.) | n/a | consistent: one letter per shape, one shape per letter; the cipher has واين ذاك الواحد (record وان, its guess وانت) |
+| 44v.9 | 42 | 42 | 42 | 13 | 4 | 100.0% / 100.0% (38 occ.) | n/a | consistent: one letter per shape, one shape per letter; فوا / عجبا two groups; ومسي without hamza |
+| 45r.2 | 60 | 60 | 60 | 21 | 8 | 100.0% / 100.0% (52 occ.) | n/a | consistent; ي two shapes (cup, hooked P in ارقني); all six ر one shape (no ر homophone); ورقا without hamza |
+| 45r.11 | 82 | 82 | 82 | 21 | 6 | 98.7% / 98.7% (76 occ.) | n/a | consistent; الاولى as on the master (record's الاوايل not enciphered; 82 = 82 with الاولى); one break (٣-loop writes ح x4 and ض once); و two shapes |
+| 45v.13 | 67 | 67 | 67 | 19 | 3 | 100.0% / 100.0% (64 occ.) | n/a | consistent: one letter per shape, one shape per letter; record transcription confirmed |
+| 46r.11 | 78 | 79 | 78 | 20 | 4 | 100.0% / 100.0% (74 occ.) | n/a | consistent; the cipher has لان الي وزارة شام (لأن ألي), not لانال; سامها written in 4 signs |
+
+## ff. 49r-60v
+
+By-eye key from the compiler's plaintext, not independently confirmed. The signs were counted in reading order on line crops of the master. The percentages use repeated-shape occurrences only.
+
+| chain | signs | letters | aligned pairs | shapes | singletons | consistency letter / skeleton | red agreement | verdict |
+|---|---|---|---|---|---|---|---|---|
+| 49r.1 | 42 | 42 | 42 | 18 | 7 | 100.0% / 100.0% (35 occ.) | n/a | consistent: 42 = 42, 12 groups = 12 words; ي three shapes, د two; record transcription confirmed (its Q/Q2 one shape) |
+| 49v.2 | 86 | 85 | 85 | 23 | 6 | 100.0% / 100.0% (79 occ.) | n/a | consistent once read from the cipher: verse 2 ends من ابن دنينير او ابن دريهم (the 50r dispute), not وان ذكرهم; also حرك, قطرة (ق inserted), اوحدا, فانحل; 1 surplus margin mark |
+| 50v.1 | 85 | 85 | 85 | 21 | 4 | 100.0% / 100.0% (81 occ.) | n/a | consistent: 85 = 85 (the text has 85 letters, not 86), 19 groups = 19 words; ج two shapes (جزازة, تجودوا), the compiler's slip; erased patch l.6 not counted |
+| 51r.5 | 38 | 38 | 38 | 21 | 12 | 96.2% / 96.2% (26 occ.) | n/a | partly consistent: 38 = 38 and 12 groups = 12 words with جاد لي منك (record omits لي; the reply 51v.9 has it); breaks in the Ч-shapes (right-long Ч = ب twice and ل once; ل has three shapes) |
+| 51r.10 | 68 | 68 | 68 | 19 | 5 | 100.0% / 100.0% (63 occ.) | n/a | consistent: 68 = 68 (the two itlaq alifs not enciphered; record 70), 19 groups = 19 words, one letter per shape; ا / و near twins told apart by the cap |
+| 51v.9 | 48 | 48 | 48 | 21 | 7 | 100.0% / 100.0% (41 occ.) | 48/48 | consistent: 48 = 48 = 48 red, 15 groups = 15 words; ر two shapes (Rm x5, Tr x2), ك two (Kj, Ll), ي two; the two red ف are drawn like خ |
+| 52v.4 | 51 | 51 | 51 | 20 | 5 | 100.0% / 100.0% (46 occ.) | 51/51 | consistent: 51 = 51 = 51 red, 14 words (قابل over the line end); one letter per shape; س two shapes; letter-shaped signs with other values (خ-shape = ب, ٮ = س, ط-shape = ت) |
+| 53r.3 | 33 | 33 | 33 | 12 | 4 | 100.0% / 100.0% (29 occ.) | 33/33 | consistent: 33 = 33 = 33 red, 10 groups = 10 words; 12 shapes for the 12 letters the compiler counts, one to one |
+| 53v.6 | 34 | 34 | 34 | 16 | 8 | 96.2% / 96.2% (26 occ.) | n/a | partly consistent: 34 = 34, 10 groups = 10 words; breaks only in the Π-form (ا in داب, ما; ه in منه); ا also has an H-form; ي (٣ with a loop) and ل (plain ٣) differ |
+| 54r.2 | 39 | 39 | 39 | 17 | 7 | 100.0% / 100.0% (32 occ.) | n/a | consistent: 39 = 39, 9 groups = 9 words (three words over line ends); one letter per shape, one shape per letter |
+| 54v.1 | 44 | 44 | 44 | 15 | 4 | 97.5% / 100.0% (40 occ.) | 44/44 | consistent: 44 = 44 = 44 red, 13 groups = 13 words; one sign writes ذ (ذو) and د (مدحه), the only break; 7 ج all the H-sign, 3 alifs |
+| 54v.9 | 50 | 50 | 50 | 17 | 5 | 100.0% / 100.0% (45 occ.) | 50/50 | consistent: 50 = 50 = 50 red, 13 words (two over line ends); one letter per shape, one shape per letter; ف / ت near-twin signs kept apart by bowl size (and by the red dots) |
+| 55r.7 | 74 | 74 | 74 | 20 | 7 | 97.0% / 100.0% (67 occ.) | n/a | consistent: 74 = 74 (record 75), 18 groups = 18 words; the Ω-arch writes ف (6) and ق (2), one skeleton; ر and ه two shapes each |
+| 55v.5 | 80 | 80 | 80 | 20 | 4 | 97.4% / 97.4% (76 occ.) | n/a | partly consistent: 80 signs = 80 letters, 23 groups = 23 words once read from the cipher (يدري ما به حكما; يقضي في ما علما); 97.4% / 97.4% over 76 repeated occurrences; the only breaks are in ك: the abraded ك of وحاكم is drawn like the ل cup, the ك of ضميرك like the ص U-hook, and the ك of حكما has a shape of its own A second by-eye pass distinguishes the two kaf forms by the double tooth and gives 76/76. Both passes agree on every letter. |
+| 56r.4 | 75 | 75 | 75 | 17 | 3 | 100.0% / 100.0% (72 occ.) | n/a | consistent: 75 signs = 75 letters, 19 groups = 19 words once read from the cipher (ولا حسن الا سماع حديثكم ..., and فانقلي); one letter per shape, one shape per letter; the numerals are a plain substitution (١ ي, ٢ م, ٤ ل, ٥ و, ٧ ف, ٨ ع); ١٤٨ is على, ١٤٨ H عليك The line-6 shaft may instead belong to the preceding lam, yielding 74 signs and فانقل as in the clear copy. |
+| 56r.13 | 32 | 32 | 32 | 16 | 6 | 100.0% / 100.0% (26 occ.) | n/a | consistent: one letter per shape, one shape per letter; 32 signs (two erased signs on 56r l.13 not counted); record confirmed |
+| 56v.8 | 31 | 31 | 31 | 18 | 9 | 100.0% / 100.0% (22 occ.) | n/a | consistent: one letter per shape, one shape per letter; 31 signs; same sign family as 56r.13, different alphabet |
+| 57r.2 | 38 | 38 | 38 | 20 | 12 | 100.0% / 100.0% (26 occ.) | n/a | consistent; ش two shapes (the compiler's admitted slip), ي two; 38 signs; record confirmed (يطمين) |
+| 58r.11 | 77 | 77 | 77 | 22 | 7 | 98.6% / 100.0% (70 occ.) | n/a | consistent; the curled T writes ب x2 and ن once (one skeleton); وثباته وثباته, عداته وعداته, both وكفت repeat sign for sign |
+| 59r.2 | 49 | 49 | 49 | 15 | 2 | 100.0% / 100.0% (47 occ.) | n/a | consistent with verse 2 as enciphered (كنا ▱شا رشده فما نشا كما نشا); against the written كانشاء ... انشا 4 signs break; ▱ seen once, unread |
+| 59v.7 | 29 | 29 | 29 | 7 | 0 | 100.0% / 100.0% (29 occ.) | 29/29 (skeleton 29/29) | consistent: 7 shapes for the 7 letters, one to one; red 29/29; record confirmed |
+| 60r.5 | 72 | 72 | 72 | 19 | 3 | 100.0% / 100.0% (69 occ.) | n/a | consistent: one letter per shape; ع two shapes; 72 = 72 with اه / وا / شوقا as enciphered; record confirmed |
+| 60v.2 | 78 | 78 | 78 | 22 | 8 | 100.0% / 100.0% (70 occ.) | n/a | consistent: one letter per shape, one shape per letter; لا يخطر in the cipher (record لا تخطر); 78 signs |
+
+## ff. 61r-72v
+
+By-eye key from the compiler's plaintext, not independently confirmed. The signs were counted in reading order on line crops of the master. The percentages use repeated-shape occurrences only.
+
+| chain | signs | letters | aligned pairs | shapes | singletons | consistency letter / skeleton | red agreement | verdict |
+|---|---|---|---|---|---|---|---|---|
+| 61r.3 | 113 | 113 | 113 | 24 | 3 | 99.1% / 100.0% (110 occ.) | n/a | partly consistent: the marginal correction supplies a second rāʾ; the pendant sign takes both sīn and shīn in the recorded words. |
+| 62r.3 | 32 | 32 | 32 | 18 | 9 | 100.0% / 100.0% (23 occ.) | n/a | consistent once the opening group is read: 32 signs = 32 letters, 7 groups = 7 words (5,4,6,4,6,4,3), one letter per shape (23/23 repeated); the cipher has a five-sign word يخوتا before شحطت (probably يا اخوتا, "O my brothers", written as one word: the "word of two words in Mushaf spelling" beginning with يا of the solving story), and دياركم as one group; tentative |
+| 62v.10 | 36 | 36 | 36 | 19 | 12 | 100.0% / 100.0% (24 occ.) | n/a | consistent: 36 signs = 36 letters, 10 groups = 10 words; one letter per shape; ذ has two shapes (heart loop in اذا, φ-loop in العذال) |
+| 64r.3 | 76 | 76 | 76 | 25 | 10 | 98.5% / 98.5% (66 occ.) | n/a | consistent once read from the cipher: 76 signs = 76 letters (with two composite signs), 20 groups = 20 words; one letter per shape except the 4-flag (ف x4 and ث in مكلثم); the text as enciphered has يعض (record بعض), مشفق (record مشفو) and يمص (record مص); و two shapes (2-hook, box), as the compiler says |
+| 65r.5 | 64 | 58 | 58 | 24 | 5 | 100.0% / 100.0% (53 occ.) | n/a | consistent on the text as enciphered (tentative where marked): 64 signs including the 5 margin signs, 58 aligned to 58 letters, 53/53 repeated-shape occurrences on their letter; هن (not هيف), لي (not بي), صلب (not صلت); ناعم عريض completed from the l.7 margin through the arc (insertion) mark; the l.8 arc word (record حزين) not read |
+| 65v.2 | 90 | 90 | 90 | 22 | 7 | 98.8% / 98.8% (83 occ.) | n/a | consistent once read from the cipher: 90 signs = 90 letters, 18 groups = 18 words; one letter per shape except the closed-head ε (د x3, ز in حازوا); the cipher reads تخرج ويخرج ويسعوا ... ترجع ويرجع ... تحاسبه مثلما يقعد يحاسبها (q-loop ت for her, d-loop ي for him) |
+| 65v.13 | 77 | 76 | 76 | 18 | 5 | 100.0% / 100.0% (71 occ.) | n/a | consistent: 77 signs (one surplus) for 76 letters, 20 groups = 20 words, one letter per shape (71/71 repeated); لوقفني is لوقفتي in the cipher (triple arch = ت); ي of متيم not enciphered; ف has two shapes (فتى, لوقفتي) |
+| 66r.10 | 72 | 72 | 72 | 22 | 6 | 100.0% / 100.0% (66 occ.) | n/a | consistent: 72 signs = 72 letters, 19 groups = 19 words, one letter per shape and one shape per letter (66/66 repeated); the record's doubtful اندبلت is enciphered ت ذ ب ل ت (تذبلت, i.e. the verb ذبل "to languish"); امتص confirmed |
+| 66v.11 | 75 | 75 | 75 | 22 | 7 | 97.1% / 97.1% (68 occ.) | n/a | partly consistent: 75 signs = 75 letters, 19 groups = 19 words; breaks in the hook Hk (ق in قولك, القهوة; ل in هل) and the plain e-loop Ep (ف in فيمن, د in دنياه); ت has two shapes (ᔕ in ظفرت, ayn-hook in يغتنم) |
+| 67r.8 | 72 | 72 | 72 | 20 | 4 | 100.0% / 100.0% (68 occ.) | n/a | consistent once read from the cipher: 72 signs = 72 letters, 19 groups = 19 words, one letter per shape (68/68 repeated); the first verse is من تحرز كافات الشتا كفاه مع حسن عطيته بمن ينشاه (the "kafs of winter" the compiler's comment names), not من خمر زكا فاق الشتا ... عفته ... انشاه; ن has two shapes (ዋ, Π), ت two (Δ-stem once) |
+| 67v.9 | 78 | 78 | 78 | 18 | 2 | 100.0% / 100.0% (76 occ.) | n/a | consistent once read from the cipher: 78 signs = 78 letters, 25 groups = 25 words, one letter per shape and one shape per letter (76/76 repeated); the cipher has فيه where the record has به (the Ω-hook is ف as in يعرف, the middle sign the ي form); ا and ي are told apart by one tooth vs two under the ayn-head |
+| 68r.6 | 55 | 55 | 55 | 20 | 5 | 100.0% / 100.0% (50 occ.) | n/a | consistent: 55 signs = 55 letters, 14 groups = 14 words, one letter per shape and one shape per letter (50/50 repeated); record confirmed; على has 3 signs (ع ل ي), not 2; the ن of من is under the worm track |
+| 68v.2 | 79 | 77 | 77 | 25 | 6 | 100.0% / 100.0% (71 occ.) | n/a | consistent on the text as enciphered: 79 signs (2 under the stain) for 77 letters, 18 groups = 18 words, one letter per shape (71/71 repeated); the cipher reads يا هادمي ها دمي ... وخلصني اخير مما تعذبني وتمغصني تصل وترجع بهجرانك تنغصني بسي عسل وزنا بيسه ت..; ي has two shapes (initial L-hook, cup-hook); tentative in the singletons and the end |
+| 68v.13 | 81 | 81 | 81 | 12 | 4 | 90.9% / 100.0% (77 occ.) | n/a | consistent at skeleton level: 81 signs = 81 letters, 20 groups = 20 words; 12 shapes for the 13 dotted letters, one letter per shape except ٣, which writes both ت and ث (77/77 at skeleton level, 70/77 at letter level: ت 9, ث 7); no undotted letter, as the compiler says; the cipher has بجنبي, تجنبتني and the pattern ـيبي (غيبي, جيبي, خيبي, شيبي) where the record reads نخبي, تجنبني, غبي, جبي, خبي, شبيي; the first word has ن where the record has ق (ثقبت) |
+| 69r.12 | 68 | 68 | 68 | 23 | 9 | 100.0% / 100.0% (59 occ.) | n/a | consistent: all recurring signs retain their values, and two different signs represent jīm as the compiler records. |
+| 69v.11 | 73 | 73 | 73 | 20 | 6 | 100.0% / 100.0% (67 occ.) | n/a | consistent once read from the cipher: 73 signs = 73 letters, 16 groups = 16 words; one letter per shape and one shape per letter (67/67); record ادمعي is مدمعي (cipher H = م, and the clear text on 70r l.9 has مدمعي), بهذا is فهذا in the cipher |
+| 70r.11 | 82 | 82 | 82 | 24 | 8 | 100.0% / 100.0% (74 occ.) | n/a | consistent: the word division gives زر حي سعدى, and the repeated zāy supports فاز. |
+| 70v.11 | 62 | 62 | 62 | 22 | 8 | 98.1% / 100.0% (54 occ.) | n/a | partly consistent: the repeated signs recover خيامهم and فيها رشا; the toothed-curve family covers both ʿayn and ghayn. |
+| 71r.10 | 48 | 48 | 48 | 19 | 7 | 100.0% / 100.0% (41 occ.) | n/a | consistent: the exceptional opening and every subsequent word align, 48 signs in 13 groups. |
+| 72r.12 | 67 | 67 | 67 | 24 | 10 | 100.0% / 100.0% (57 occ.) | n/a | consistent: the shorter cipher wording is ما فهت به لافظا. |
+| 72v.9 | 72 | 71 | 71 | 21 | 3 | 100.0% / 100.0% (68 occ.) | n/a | consistent: 72 signs (one surplus) for 71 letters as enciphered, one letter per shape and one shape per letter (68/68); the third word is همي (همى, "poured"), not مني; واحيا is enciphered و ح ي ي; a lone ن-sign at the end of l.9 is surplus |
+
+## ff. 73r-84v
+
+By-eye key from the compiler's plaintext, not independently confirmed. The signs were counted in reading order on line crops of the master. The percentages use repeated-shape occurrences only.
+
+| chain | signs | letters | aligned pairs | shapes | singletons | consistency letter / skeleton | red agreement | verdict |
+|---|---|---|---|---|---|---|---|---|
+| 73r.5 | 82 | 82 | 82 | 23 | 7 | 98.7% / 98.7% (75 occ.) | n/a | partly consistent: one shape has ن three times and ز once in عز. The other repeated shapes take one letter. |
+| 73v.8 | 69 | 69 | 69 | 20 | 5 | 100.0% / 100.0% (64 occ.) | n/a | consistent: each repeated shape takes one letter. |
+| 74r.3 | 76 | 76 | 76 | 19 | 3 | 100.0% / 100.0% (73 occ.) | n/a | consistent: each repeated shape takes one letter. |
+| 75r.1 | 44 | 44 | 44 | 19 | 7 | 100.0% / 100.0% (37 occ.) | n/a | consistent: each repeated shape takes one letter. |
+| 76r.4 | 71 | 71 | 71 | 20 | 7 | 100.0% / 100.0% (64 occ.) | n/a | consistent: each repeated shape takes one letter. |
+| 76v.6 | 38 | 38 | 38 | 16 | 6 | 96.9% / 100.0% (32 occ.) | n/a | partly consistent: consistent at skeleton level: the small zig takes ظ twice and ط in بخط. Later ظ is written with an open loop on a sloping foot. |
+| 77r.3 | 38 | 38 | 38 | 15 | 5 | 97.0% / 100.0% (33 occ.) | n/a | partly consistent: consistent at skeleton level: the small circle is ظ throughout except in بخط where it is ط. |
+| 77r.10 | 85 | 85 | 85 | 22 | 4 | 98.8% / 98.8% (81 occ.) | n/a | partly consistent: the upright-bowl label takes م three times and ك in بذلك. Two figure-eight variants write ب. |
+| 77v.9 | 94 | 94 | 94 | 21 | 8 | 100.0% / 100.0% (86 occ.) | n/a | consistent: each repeated shape takes one letter. |
+| 78r.12 | 88 | 88 | 88 | 33 | 20 | 100.0% / 100.0% (68 occ.) | n/a | consistent: each repeated shape takes one letter. |
+| 78v.13 | 39 | 39 | 39 | 17 | 8 | 96.8% / 96.8% (31 occ.) | n/a | partly consistent: the squared H with a closed foot is read ث in الثم and ل in اقبل; an additional stacked box also takes ل. |
+| 79r.5 | 83 | 83 | 83 | 22 | 8 | 100.0% / 100.0% (75 occ.) | n/a | consistent: each repeated shape takes one letter. |
+| 79v.1 | 82 | 82 | 82 | 25 | 9 | 100.0% / 100.0% (73 occ.) | n/a | consistent: each repeated shape takes one letter. |
+| 79v.10 | 81 | 81 | 81 | 24 | 10 | 98.6% / 100.0% (71 occ.) | n/a | partly consistent: the dotted crescent gives ت five times and ب once. Other repeated shapes have one value each. |
+| 80r.9 | 82 | 82 | 82 | 24 | 8 | 100.0% / 100.0% (74 occ.) | n/a | consistent: each repeated shape takes one letter. |
+| 80v.9 | 73 | 73 | 73 | 22 | 5 | 98.5% / 100.0% (68 occ.) | n/a | partly consistent: the open crossed loop covers ي and ت, which share a skeleton. Other repeated shapes remain consistent. |
+| 81r.5 | 73 | 74 | 73 | 27 | 11 | 98.4% / 100.0% (62 occ.) | n/a | partly consistent: one short group and its repeated table-shape leave فلقد unresolved. Remaining word alignments use a consistent substitution. |
+| 81v.6 | 68 | 68 | 68 | 19 | 6 | 100.0% / 100.0% (62 occ.) | n/a | consistent: each repeated shape takes one letter. |
+| 82r.9 | 85 | 85 | 85 | 19 | 5 | 97.5% / 98.8% (80 occ.) | n/a | partly consistent: two shapes have multiple values: the tall hook ع/غ shares a skeleton, and the dotted stem-bowl ز/م does not. |
+| 82v.7 | 42 | 42 | 42 | 20 | 9 | 100.0% / 100.0% (33 occ.) | n/a | consistent: each repeated shape takes one letter. |
+| 83r.1 | 48 | 48 | 48 | 12 | 6 | 97.6% / 97.6% (42 occ.) | n/a | partly consistent: the four-like sign appears both for و and for ن in the final word. Other repeated shapes take a single value. |
+| 83r.13 | 100 | 100 | 100 | 23 | 9 | 100.0% / 100.0% (91 occ.) | n/a | consistent: each repeated shape takes one letter. |
+| 83v.12 | 74 | 74 | 74 | 18 | 6 | 100.0% / 100.0% (68 occ.) | n/a | consistent: each repeated shape takes one letter. |
+| 84r.12 | 93 | 93 | 93 | 24 | 5 | 97.7% / 97.7% (88 occ.) | n/a | partly consistent: two letter assignments in اني conflict with otherwise regular shape values; all other groups have a consistent reading. |
+
+## ff. 85r-96v
+
+By-eye key from the compiler's plaintext, not independently confirmed. The signs were counted in reading order on line crops of the master. The percentages use repeated-shape occurrences only.
+
+| chain | signs | letters | aligned pairs | shapes | singletons | consistency letter / skeleton | red agreement | verdict |
+|---|---|---|---|---|---|---|---|---|
+| 85r.5 | 30 | 30 | 30 | 16 | 9 | 100.0% / 100.0% (21 occ.) | n/a | consistent: all repeated signs keep one value. Two related shapes write ي. |
+| 85r.10 | 79 | 79 | 79 | 16 | 3 | 96.1% / 97.4% (76 occ.) | n/a | consistent with shared signs for ت/ض and ب/ي and two distinct forms for ع. |
+| 85v.8 | 70 | 70 | 70 | 22 | 9 | 100.0% / 100.0% (61 occ.) | n/a | consistent: the signs support يعتريها continuously, with the capped coil of ر and the bent foot of ي, as in الشريف. |
+| 86r.4 | 26 | 26 | 26 | 12 | 3 | 100.0% / 100.0% (23 occ.) | n/a | consistent: the repeated five-sign group at each line end is تراكم. |
+| 86r.9 | 89 | 89 | 89 | 23 | 6 | 98.8% / 98.8% (83 occ.) | n/a | consistent apart from the anchor-shaped sign for ص in تصيح and ن elsewhere. Opposite-facing brackets distinguish د and ذ. |
+| 86v.9 | 41 | 41 | 41 | 19 | 9 | 100.0% / 100.0% (32 occ.) | n/a | consistent on the visible main-line signs; an arc over the ن-shape in الدنيا has no independently established value. |
+| 87r.3 | 117 | 117 | 117 | 24 | 5 | 100.0% / 100.0% (112 occ.) | 114/117 | consistent: all repeated black signs keep their letter, including خ in الخلق; the red gloss differs at three positions. |
+| 87v.8 | 130 | 130 | 130 | 22 | 1 | 99.2% / 99.2% (129 occ.) | 130/130 | consistent apart from the looped-cross sign for و and the first د of دليل. The marginal ر restores كثرت. |
+| 88r.12 | 66 | 66 | 66 | 19 | 6 | 100.0% / 100.0% (60 occ.) | n/a | consistent: every repeated sign takes the same letter. |
+| 88v.10 | 44 | 43 | 43 | 16 | 6 | 100.0% / 100.0% (38 occ.) | n/a | partly consistent: all repeated signs keep one value; the dotted cup in the final word has no second example. The damaged line gives ليلة الـ؟ـار. |
+| 89r.4 | 81 | 81 | 81 | 21 | 5 | 100.0% / 100.0% (76 occ.) | n/a | consistent: the corrected reading supplies a distinct shape for each represented letter. |
+| 89v.4 | 85 | 85 | 85 | 24 | 9 | 100.0% / 100.0% (76 occ.) | 85/85 | consistent: each recurring form keeps the same aligned letter. |
+| 90r.4 | 79 | 79 | 79 | 23 | 8 | 100.0% / 100.0% (71 occ.) | 79/79 | consistent: the recurring signs resolve the damaged or lightly dotted wording at the end. |
+| 90v.1 | 72 | 72 | 72 | 20 | 4 | 100.0% / 100.0% (68 occ.) | 72/72 | consistent: the recurring invocations and individual signs agree throughout. |
+| 90v.12 | 72 | 72 | 72 | 20 | 6 | 100.0% / 100.0% (66 occ.) | 72/72 | consistent: 72 signs give 72 letters, including the shorter opening of the second verse. |
+| 91r.12 | 85 | 85 | 85 | 19 | 3 | 100.0% / 100.0% (82 occ.) | n/a | consistent: short and extended four-like signs distinguish yāʾ and wāw in all eleven comparisons. |
+| 91v.10 | 84 | 84 | 84 | 21 | 4 | 100.0% / 100.0% (80 occ.) | n/a | consistent: all repeated shapes keep one value. |
+| 92r.10 | 64 | 64 | 64 | 17 | 3 | 100.0% / 100.0% (61 occ.) | n/a | partly consistent: the group after مدنف reads كييب by recurrent shapes, against كيف in the verse. |
+| 92v.9 | 77 | 77 | 77 | 22 | 9 | 100.0% / 100.0% (68 occ.) | n/a | partly consistent: the signs resolve قرن تيممه and the final ـده of فيقتصده; a few singleton values depend on the verse. |
+| 93v.1 | 36 | 36 | 36 | 15 | 6 | 100.0% / 100.0% (30 occ.) | n/a | consistent: all recurring forms retain one value. |
+| 93v.7 | 38 | 38 | 38 | 16 | 7 | 100.0% / 100.0% (31 occ.) | 36/36 | consistent: 38 black signs match the 38 letters in the reconstructed verse. |
+| 94r.3 | 89 | 89 | 89 | 22 | 4 | 100.0% / 100.0% (85 occ.) | n/a | consistent: repeated fāʾ, wāw and tāʾ support جفوته where the record prints حقوقه. |
+| 94v.5 | 60 | 60 | 60 | 19 | 7 | 100.0% / 100.0% (53 occ.) | n/a | consistent: the first group gives يمين, with four shapes independently assigned in the remainder. |
+| 95r.10 | 79 | 79 | 79 | 21 | 7 | 100.0% / 100.0% (72 occ.) | n/a | consistent: the second verse gives بالدما and فلهذين. |
+| 95v.10 | 40 | 40 | 40 | 16 | 7 | 100.0% / 100.0% (33 occ.) | 40/40 | consistent: the raised lām after wāw in فلولا matches the inline lām in ولولا. |
+| 96r.2 | 128 | 128 | 128 | 22 | 3 | 100.0% / 100.0% (125 occ.) | n/a | consistent: repeated groups resolve در بحر and the blessing احياكم; اتنقاكم is retained in its written sign order. |
+
+## ff. 97r-106v
+
+By-eye key from the compiler's plaintext, not independently confirmed. The signs were counted in reading order on line crops of the master. The percentages use repeated-shape occurrences only.
+
+| chain | signs | letters | aligned pairs | shapes | singletons | consistency letter / skeleton | red agreement | verdict |
+|---|---|---|---|---|---|---|---|---|
+| 97r.1 | 76 | 76 | 76 | 20 | 8 | 100.0% / 100.0% (68 occ.) | 76/76 | consistent: all recurring sign values agree with the verse and the red glosses. |
+| 97v.2 | 43 | 43 | 43 | 14 | 2 | 100.0% / 100.0% (41 occ.) | 43/43 | consistent: 43 black signs agree with 43 gloss letters. |
+| 97v.9 | 34 | 34 | 34 | 15 | 9 | 100.0% / 100.0% (25 occ.) | 34/34 | consistent: the three ذهاب groups repeat their letters in the same order. |
+| 98r.2 | 76 | 76 | 76 | 20 | 5 | 100.0% / 100.0% (71 occ.) | n/a | consistent: the two matching forked forms in بمسمن are the mīm of من and دايما. |
+| 98r.13 | 69 | 70 | 69 | 16 | 5 | 100.0% / 100.0% (64 occ.) | n/a | consistent: 69 signs align to 70 letters, identifying the absent mīm of أبوكم. |
+| 98v.10 | 51 | 50 shortened / 62 full | 0 | 17 | 5 | — | n/a | not keyed: the two written forms on f. 99r do not fit the observed groups under ordinary letter substitution. Catalogue 3942 remains open. |
+| 99r.10 | 86 | 86 | 86 | 22 | 6 | 100.0% / 100.0% (80 occ.) | n/a | consistent: dāl and dhāl differ by the internal dot in the angle. |
+| 99v.13 | 26 | 26 | 26 | 13 | 6 | 100.0% / 100.0% (20 occ.) | n/a | consistent: 26 signs when the sublinear insertion is counted. |
+| 100r.8 | 47 | 47 | 47 | 17 | 6 | 97.6% / 97.6% (41 occ.) | n/a | partly consistent: the tailed left-loop family has readings bāʾ and ʿayn if treated as one form. |
+| 100v.6 | 52 | 52 | 52 | 16 | 2 | 98.0% / 98.0% (50 occ.) | n/a | partly consistent: one pronged sign reads ب in three places and س once; the other repeated shapes give a single letter. |
+| 101r.2 | 74 | 74 | 74 | 21 | 9 | 95.4% / 95.4% (65 occ.) | n/a | partly consistent: the open crossed shape appears equally often for ه and ح. Other repeated forms keep a single value. |
+| 101v.2 | 61 | 61 | 61 | 16 | 3 | 100.0% / 100.0% (58 occ.) | n/a | consistent: each repeated shape takes one letter. |
+| 102r.1 | 72 | 72 | 72 | 24 | 8 | 98.4% / 98.4% (64 occ.) | n/a | partly consistent: و in قويقا and س in جالسا share the same looped form. Other repeated shapes remain consistent. |
+| 102r.12 | 41 | 41 | 41 | 18 | 11 | 100.0% / 100.0% (30 occ.) | n/a | consistent: each repeated shape takes one letter. |
+| 102v.11 | 73 | 72 | — | — | — | — | n/a | Maqlub. Within each word, copy the even positions in order, then the odd positions in reverse. Ignore the spaces in the resulting text. The rule record lists the copy's exceptions. |
+| 103r.4 | 83 | 83 | 83 | 20 | 4 | 100.0% / 100.0% (79 occ.) | n/a | consistent: each repeated shape takes one letter. |
+| 103v.2 | 57 | 57 | 57 | 19 | 7 | 96.0% / 96.0% (50 occ.) | n/a | partly consistent: the damaged three-sign group provisionally aligned to هنا repeats the same apparent form. Other repeated forms have consistent values. |
+| 103v.11 | 63 | 65 | 63 | 21 | 7 | 100.0% / 100.0% (56 occ.) | n/a | consistent: each repeated shape takes one letter. |
+| 104v.2 | 90 | 90 | 90 | 19 | 5 | 100.0% / 100.0% (85 occ.) | n/a | consistent: the three occurrences of اذا and both هي groups repeat identically. |
+| 105r.1 | 47 | 47 | 47 | 17 | 6 | 100.0% / 100.0% (41 occ.) | n/a | consistent: 47 signs; the first and sixth words differ from the earlier copy at 100r.8. |
+| 105r.11 | 52 | 52 | 52 | 15 | 4 | 100.0% / 100.0% (48 occ.) | n/a | consistent: each of the four فقلت groups uses the same crescent, V, flag and short hook. |
+| 105v.6 | 130 | 131 | 129 | 28 | 6 | 100.0% / 100.0% (124 occ.) | n/a | partly consistent: the enciphered opening and all following groups can be read; one isolated mark at the end of the heading is unassigned. |
+| 106r.11 | 42 | 42 | 42 | 12 | 1 | 100.0% / 100.0% (41 occ.) | n/a | consistent: the left- and right-pointing double lobes distinguish tāʾ and jīm throughout. |

@@ -3,12 +3,12 @@
 Status: read in part
 Outcome: read from existing decipherment (the compiler's own solutions, transcribed from the masters), with keys
 recovered from that adjacent plaintext for the keyed chains (`keys_eye/`, `keys.tsv`) and the tree script decoded.
-Written up 28 Nov 2026 on the user's instruction ("write up now with the keys we have"), which ends the earlier hold;
+Written up 27 Nov 2026 on the user's instruction ("write up now with the keys we have"), which ends the earlier hold;
 page `docs/ljs51corpus.html`. Counts in `texts/stats.json` (built by `build_texts.py`).
 
-## One key, one entry (decision of 28 Nov 2026)
+## One key, one entry (decision of 27 Nov 2026)
 
-Every cipher in the volume has its own alphabet (`keys_eye/REPORT.md`, "Shared alphabets?"). The write-up presents the
+The sign ciphers compared across pieces use distinct alphabets (`keys_eye/REPORT.md`, "Shared alphabets?"). The write-up presents the
 volume as one study of one manuscript, the compiler's casebook of solved ciphers, and lists the keys per cipher
 (`keys.tsv`, one block per chain); no two ciphers are merged into one key. Two ciphers that a misbound quire split are
 one cipher each (46v.11+13r.1, 20r.8+47r.1). The two ciphers of the volume with pages of their own are not documents of
@@ -45,14 +45,14 @@ measured fit, a corpus table for the paper with George Lasry, and (after review)
    dating (checked against biographical sources), the compiler's method and his stated rules.
 6. Outputs and review: corpus table, key tables, a report to Daniel; only then a write-up.
 
-## Work state (27-28 Nov 2026)
+## Work state (27 Nov 2026)
 
 - Segmenter v1 (`segment.py`, `evaluate.py`): 90% of reference lines within one sign; known faults listed in README.md;
   a fix (v2, sign crops in `output/ljs51/signs_v2/`) is in progress, tuned on the by-eye counts of the chain records.
 - Key tool `rekey.py` + `pilot_report.md`: tashifi key rebuilt from scratch; short chains need by-eye or joint keys.
 - Chain records from the masters: `chains_0006_0029`, `0030_0053`, `0054_0077`, `0078_0101` done (89 chains, ff. 1r-48v);
   `0102_0125` in progress; images 126-217 still to do.
-- English translations (done by a fork session, handed back 28 Nov): `translation_0006_0053.md`, `translation_0054_0077.md`,
+- English translations (done by a fork session, handed back 27 Nov): `translation_0006_0053.md`, `translation_0054_0077.md`,
   `translation_0078_0101.md`; each ends with "Suspected Arabic errors" to check on the masters (about 50 items).
 - `keys_fork/`: restricted provisional rebuild (control reproduced; 6v.11 partial; 20r.8 at chance, probably two alphabets
   split at 21r l.1; 62 chains skipped for segmentation). `keys_eye/BRIEF.md`: by-eye key pilot brief, not started.
@@ -86,11 +86,11 @@ LJS 51 matches:
 - 60r.5: "Kamāl al-Dīn, son of the qāḍī Jamāl al-Dīn, son of al-Shihāb Maḥmūd" brings the compiler a cipher. Al-Shihāb
   Maḥmūd is the chancery head of Ṣafadī's anecdote (Shihāb al-Dīn Maḥmūd b. Salmān al-Ḥalabī, d. 725/1325, my
   identification, not checked in a source here). So a grandson of that man is in the compiler's circle.
-- 38v.10: a verse praising Tāj al-Dīn Ibn al-Durayhim (d. 762/1361) for حل المترجم. (Correction 28 Nov: the GTTAD
+- 38v.10: a verse praising Tāj al-Dīn Ibn al-Durayhim (d. 762/1361) for حل المترجم. (Correction 27 Nov: the GTTAD
   article does not quote this verse; its Table 1 only lists Ibn al-Durayhim. The verse is al-Jawlānī's, sent in cipher
   to the compiler.)
 
-## Compiler: probably Ibn al-Durayhim (28 Nov 2026; `identity_ibn_durayhim.md`)
+## Compiler: very probably Ibn al-Durayhim (27 Nov 2026; `identity_ibn_durayhim.md`)
 
 Verdict of the sourced check: supported, not proven. For: f. 102v "my book Miftāḥ al-kunūz fī ḥall al-marmūz", chapter
 al-maqlūb (Ṣafadī's list of his works, A'yān 3:525, has a Miftāḥ fī ḥall al-rumūz; his surviving treatise is
@@ -111,13 +111,13 @@ Open (hypothesis, not checked): "al-maqarr al-sharīf al-makhdūmī al-ʿAlāʾ�
 al-Mutarjim's move to Cairo after 745. Test against the book's place names (65r.5 says the compiler wrote "in Aleppo") and
 the ʿAlāʾī's titles. Also still to check: Ibn Ḥajar, *al-Durar al-kāmina* (Aḥmad b. ʿAbd Allāh), for a death date.
 
-## f. 48r l.8 - 48v l.13 deciphered (28 Nov 2026; `solve_48r/REPORT.md`)
+## f. 48r l.8 - 48v l.13 deciphered (27 Nov 2026; `solve_48r/REPORT.md`)
 
 Blind annealing (ar-mamluk, word spaces) read it as the f. 21r rhymed-prose riddle (plaintext of 20r.8); aligned,
 218/229 signs (95.2%), after a 2x re-read 220/228 (96.5%), take a one-to-one key, covering 232 of the riddle's 293 letters (to جملته). Not an open lead any
 more. The cipher corrects the 20r.8 record: ترميها (not توهمها), يحمد منها (not وخمد).
 
-## Identity passages and codicology checked on the masters (28 Nov 2026; `identity_readings.md`)
+## Identity passages and codicology checked on the masters (27 Nov 2026; `identity_readings.md`)
 
 - 102v l.6-10: «في كتابي مفتاح الكنوز في حل المرموز من باب المقلوب», first person, حل (not ايضاح), the compiler's own narrative.
 - 50r l.6-7 (new reading): in defending «ابن دريهم» in his own cipher verse he writes «الاول ان لقب الجد الاعلى الدريهم مصغرا»:
@@ -131,10 +131,11 @@ more. The cipher corrects the 20r.8 record: ترميها (not توهمها), ي�
   Penn's irregular q6-q7 collation is owed.
 - Key wave ff. 13r-24v (keys_eye/REPORT.md): 20r.8 + 47r.1 is one cipher (336 signs, 98.8% consistent; plaintext =
   riddle verses 1-8, cipher readings differ from the clear riddle in five places). 21r l.1-5 (62 signs) is the END of the
-  48r.8 cipher (read with the 48r key unchanged: the last third of the 21r prose), so f. 21r once followed f. 48v and
+  48r.8 cipher. The f. 48r key directly supplies 59 of the 62 continuation values. The continuation records an alif variant
+  and a horned sign used for two letters (see `targets/ljs51f48r/reading.md`). The textual join places f. 21r after f. 48v and
   quire 4 (ff. 21-28) probably also stood after f. 48; the joins 12v→? and 28v→49r are still to check.
 
-## Unanswered chains after the recheck (28 Nov 2026; `chains_missed.jsonl`, `recheck_unanswered.jsonl`)
+## Unanswered chains after the recheck (27 Nov 2026; `chains_missed.jsonl`, `recheck_unanswered.jsonl`)
 
 - 48r.8: answered by the 21r-21v rhymed prose (the plaintext of 20r.8: the same text enciphered again, 'ورابعها'), found
   independently twice: by group-length search (43/49 groups) and by blind annealing above. Leaf probably lost after f. 48.
@@ -145,16 +146,29 @@ more. The cipher corrects the 20r.8 record: ترميها (not توهمها), ي�
 - 30v.7 (81 signs, 20 groups): still unanswered after reading ff. 30r-31v and a group-length search over all 1,034
   passages (best 9/20 lengths wrong). Next: rebuild 30r.4's key and test it here.
 - 1r.2: plaintext lost (page damage); red gloss unread.
-Record edits owed (not yet applied): merge 46v.11+13r.1; clear 13r candidates from 12v.8/12v.11; 48r.8 plaintext = 21r,
-heading ورابعها; and the 32 category-(a) readings in `errata.json`.
+The published texts apply the two cross-quire joins and assign the riddle on f. 21r to 48r.8. The early master-image
+corrections are listed in `errata.json`. Later by-eye comparisons are recorded under each chain in
+`keys_eye/REPORT.md` and in its JSON alignment. The chain files preserve the earlier transcriptions for comparison.
 
-## f. 63v tree script and prior art (28 Nov 2026)
+### Corrections from comparison with the signs
 
-f. 63v (28 Nov, keys_eye/63v.trees.json, 63v.1.json): the tree script is a branch-count code on the abjad words:
+- 42v.3: the final sign in the doubtful قصب gives قصت. The key report leaves the unexpected wording in place.
+- 43v.11: the cipher has الغمائم and خبت where the record has الغمام and a doubtful جبت.
+- 45r.11: the six-sign group gives الاولى. The record's الاوايل has an additional letter.
+- 49v.2: the record already names Ibn Dunaynir. The ending من ابن دنينير او ابن دريهم supplies the second name and explains the discussion on f. 50r.
+- 51r.5: لي belongs in جاد لي منك, as in the reply at 51v.9. In 51r.10 the two final alifs of the written verse do not have corresponding signs.
+- 69v.11: the sign for م and the clear copy on f. 70r support مدمعي. The cipher has فهذا where the record has بهذا.
+- 87r.3: line 3 repeats قوي in both black signs and red letters. The chain record counted that group once. On line 7 the red من lies above black في. On line 10, position 12, the red غ lies above the sign that writes خ in خليج and خفي.
+- 87v.8: the outer margin of line 12 supplies the ر of كثرت. An insertion mark places it inside the word, and the marginal sign carries its own red ر.
+- 98v.10: the four cipher lines have 4, 3, 2 and 3 dividers, including the closing one. The earlier record counted 11. Groups 4 and 12 are identical and group 7 differs from them only at its first sign. Neither written form repeats a word.
+
+## f. 63v tree script and prior art (27 Nov 2026)
+
+f. 63v (27 Nov, keys_eye/63v.trees.json, 63v.1.json): the tree script is a branch-count code on the abjad words:
 right-side branches = abjad word (1 ابجد ... 8 ضظغ), left-side branches = place in the word; 78/79 trees fit (3.15 torn);
 Eastern order except ص = 1/5. The record's plaintext is wrong in four words: read ايري ... لا يجوز ... يجوز فنكته (both
 ciphers and the red letters agree; chains_0126_0149.jsonl and translation_0126_0149.md not yet corrected). Prior art
-(`prior_art_2.md`, 28 Nov): the same rule is in Ibn al-Durayhim's Miftāḥ al-kunūz fī īḍāḥ al-marmūz (Mrayati et al.,
+(`prior_art_2.md`, 27 Nov): the same rule is in Ibn al-Durayhim's Miftāḥ al-kunūz fī īḍāḥ al-marmūz (Mrayati et al.,
 Arabic vol. 1, Damascus 1987, p. 335: «القلم المشجر، وهو مبني على كلمات (ابجد)», right branches = abjad word, left =
 place; alif a Y fork), the only treatise author to describe it per the editors (p. 185); a tree alphabet without a stated
 rule is also in Shawq al-mustahām (Hammer 1806, Arabic p. 38). Qalqashandī (Ṣubḥ 9:229-232) omits it. So the method is
@@ -162,13 +176,13 @@ known; its use in LJS 51 and the 63v decipherment are not reported anywhere read
 المقلوب» followed by ibdāl, as f. 102v assumes; the title «مفتاح الكنوز في حل الرموز» is attested in the codex's contents
 leaf and in Ṣafadī (editors' note p. 309). Penn/Christie's/Schoenberg descriptions name no compiler.
 
-## Write-up state (28 Nov 2026)
+## Write-up state (27 Nov 2026)
 
 Counts at the write-up (`texts/stats.json`, from `chains_all.json` and `keys_eye/` as copied at the final build): 207
-ciphers (211 chain records, less the two merges and the two ciphers with pages of their own), 15,200 signs by eye; the
-compiler answers 200 in full (14,829 signs, 97.6%), 3 in part, 4 not at all. Sign counts come from the key files where
+ciphers (211 chain records, less the two merges and the two ciphers with pages of their own), 15,203 signs in the current count. The
+compiler answers 200 in full (14,832 signs, 97.6%), 3 in part, 4 not at all. Sign counts come from the key files where
 a chain is keyed (most record totals were segmenter counts), and 30v.7 is the recheck's 81. A chain that the record
-called answered in part but whose by-eye key aligns at least 95% of its signs with the plaintext is counted as answered
+called answered in part but whose by-eye key aligns at least 95% of its signs with the plaintext and leaves no explicitly unresolved position is counted as answered
 in full (2r.4, 4v.8, 7r.5, 7v.12, 10v.1, 11r.10, 12r.8). The decryption files follow the plaintext as enciphered (from
 the key files) for keyed chains, and the corrected chain record for the rest. The fraction read is not raised to "read":
 seven ciphers stay open, each blocked from outside (below). The 30v.7 test with the 30r.4 key (`keys_eye/30v.7.json`, key_test_30r4): nine shapes are shared, but the 30r.4 key does not read it.
@@ -177,20 +191,21 @@ seven ciphers stay open, each blocked from outside (below). The 30v.7 test with 
 - 1r.2 (catalogue 3938; f. 1r l.2-8, about 79 signs) - blocker: illegible; plaintext lost to the damage of the first leaf, the red gloss faint (a few letters read)
 - 12v.8 (catalogue 3939; f. 12v l.8-10, 41 signs) - blocker: too-short; single-use alphabet, no plaintext ("he solved it and wrote nothing on it"); its 13r candidate belongs to 46v.11+13r.1
 - 12v.11 (catalogue 3940; f. 12v l.11-13, 33 signs) - blocker: too-short; its own pen, no plaintext, same situation as 12v.8
-- 30v.7 (open, not catalogued; f. 30v l.7-13, 81 signs) - blocker: too-short; single-use alphabet, no plaintext anywhere in the book (group-length search over all 1,034 passages: best 9 of 20)
+- 30v.7 (open, not catalogued; f. 30v l.7-13, 81 signs) - blocker: too-short; single-use alphabet, no plaintext anywhere in the book (group-length search over all 1,034 passages: closest window differs in 9 of 20 lengths)
 - 3v.12 (catalogue 3941; ff. 3v-4r, 42 signs) - blocker: no-key-material; the written verses do not take the signs as a simple substitution (best 25 of 42, chance level), single-use alphabet
-- 88v.10 (f. 88v, 44 signs) - blocker: illegible; the second line of its plaintext (89r l.2) is lost in a hole in the paper
+- 88v.10 (f. 88v, 44 signs) - blocker: illegible; 43 of 44 signs have a value. A dotted cup occurs only at 88v l.12 position 9. The corresponding letter of ليلة الـ؟ـار falls in the hole at 89r l.2. The undotted cup writes ع, but the suggested غ is conjectural
 - 98v.10 (catalogue 3942; f. 98v, 51 signs) - blocker: no-key-material; the verse is given in a full and a shortened form and the cipher fits neither by group lengths; single-use alphabet
 
 ## Escalation
 - [x] siblings: the whole volume searched for each open cipher's plaintext (page pass, gap checks, recheck; the 1,034-passage group-length search for 30v.7); the misbound quire found 46v.11+13r.1, 20r.8+47r.1, 48r.8 and 49r.1
 - [x] clear-pages: every clear passage of ff. 1r-106v read on the masters for the chain records; the open ciphers have none that fits
-- [x] known-keys: no two ciphers share an alphabet (keys_eye/REPORT.md); the 47r key tried on 48r.8 (no), the 30r.4 key tried on 30v.7 (nine shared shapes, does not read it)
+- [x] known-keys: the cross-cipher tests found no shared alphabet between distinct pieces (keys_eye/REPORT.md); the 47r key tried on 48r.8 (no), the 30r.4 key tried on 30v.7 (nine shared shapes, does not read it)
 - [x] print: Mrayati et al. vols. 1-2, Mir 'Alam 2018, Qalqashandi, Safadi, Penn/Schoenberg/Digital Scriptorium (prior_art_2.md): no edition or decipherment of LJS 51
-- [x] key-rebuild: by-eye keys from the compiler's plaintext for 63 ciphers; 3v.12 tested as a simple substitution (chance level)
+- [x] key-rebuild: 199 tables in keys.tsv, including the taṣḥīfī classes and the tree rule. The sign-alphabet keys come from the compiler's plaintext and await independent confirmation. 21 sign alphabets have 1,291 agreements in 1,296 red-letter comparisons. The test of 3v.12 as a simple substitution gave a chance-level fit.
 - [x] retry: the unanswered chains rechecked on the masters (recheck_unanswered.jsonl, chains_missed.jsonl): 46v.11, 48r.8 and 49r.1 answered, 12v.8/12v.11 lost their candidates
 
 ## Transcription doubts
+- 105v.6 heading mark - read: unresolved; checked: image, decode. The verse runs left to right. Its signs restore كم قد حللت من الالغاز معجمة at the damaged opening of the clear copy. The isolated pointed mark on the heading line could be a heading device or a prefix before كم. All 129 signs from line 6 onward align with the verse; the heading mark has no established value.
 - tree 3.15 (f. 63v, row 3, tree 15) - read: ل; checked: image, decode, transcription (the sign cipher 63v.1 and the red letter); crown torn, L3 R4 at face value would be م, the couplet and the red letter give ل
 - S6 (13r.11, f. 13r) - read: ب and once ي; checked: image, decode; one shape for both letters (a skeleton spelling), kept as written
 - W4 (18r.11, f. 18r) - read: ر (8 times), م once; checked: image, decode; the one م is a look-alike, kept with the key's majority

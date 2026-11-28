@@ -1,52 +1,32 @@
-# Penn LJS 51, f. 48r l.8 - 48v l.13: an enciphered copy of al-Jawlānī's rhymed-prose riddle
+# Penn LJS 51, f. 48r l.8 - 48v l.13 and 21r l.1–5: the fourth cipher riddle
 
 Status: read
-Outcome: key recovered from ciphertext-only (blind annealing; the plaintext match came after), 27 Nov 2026. The block
-enciphers the first 232 of the 293 letters of the riddle written in clear on f. 21r l.7 - 21v l.2; aligned, 220 of its
-228 signs (96.5%) take the key; the rest are scribal slips or
-places where the project's record misread the clear copy (re-read on the f. 21r image, see below). Every sign has a value.
-Scope (after Brice Dudout's review, 27 Nov 2026): the witness is probably a 15th-century copy; the compiler broke the
-riddle's other copy (20r.8) himself and wrote its plaintext on f. 21r, so this is not the first break of the text.
+Outcome: key recovered from ciphertext-only, 27 Nov 2026. Blind annealing on ff. 48r–48v yielded recognizable words. Alignment with the clear riddle refined the key. A later comparison identified five more cipher lines on f. 21r. Together the two portions give the complete riddle. The compiler wrote his own solution on f. 21r l.7 – 21v l.2.
 
-Source folder: the corpus work in the main checkout, `targets/ljs51corpus/` (`solve_48r/`, chain records 48r.8, 47r.1
-and 20r.8, `translation_0006_0053.md` section 20r.8, `NOTES.md`). Copied here: `REPORT.md` (the result and method),
-`recheck_2x.md` (the 2x re-read), `ruleout.txt` (the rule-out against 206 plaintexts), `transcription.txt`
-(= `solve_48r/transcription_v2.txt`), `anneal_sp.py`, `verify_v2.py` (run from `solve_48r/`; paths are relative to it).
-New here: `key.json`, `decode.py`, `reading.md`, `translation_en.md`, `validation.tsv`.
-
-One key, one entry: this block has its own key. The same volume's f. 106v cipher (`targets/qaysarani1350/`) and the f. 47r
-block (chain 47r.1) use other keys; the riddle's other encipherment, chain 20r.8 (f. 20r l.8 - 21r l.5), is not read here
-(the corpus attempt on it scored at chance) and its signs were not compared with these.
+The original break, its transcription history and controls are preserved in ../ljs51corpus/solve_48r/, REPORT.md, recheck_2x.md and ruleout.txt. The continuation is transcribed in ../ljs51corpus/keys_eye/20r.8+47r.1.json under block_21r_1_5. The f. 47r verse riddle and the f. 106v cipher use different keys.
 
 ## The document
 
 - University of Pennsylvania, Kislak Center, LJS 51, f. 48r l.8 - 48v l.13 (OPenn master images 0084_0100 and 0084_0101,
-  `https://openn.library.upenn.edu/Data/0001/ljs51/data/master/0084_0100.tif`). 19 lines of invented signs, groups of
+  `https://openn.library.upenn.edu/Data/0001/ljs51/data/master/0084_0100.tif`). The initial 19 lines of invented signs, groups of
   2-8 signs between dotted-stem dividers.
 - Heading on 48r l.7: one word, first read وابعها [?] (chain record 48r.8: ورابعها "and the fourth of them" or واتبعها
-  "and he followed it with" possible); the corpus recheck of 27 Nov 2026 gives ورابعها ("and the fourth of them"). No
-  plaintext stands after the block, and the sender is not named. The corpus notes think a leaf was probably lost after
-  f. 48 (not checked here).
+  "and he followed it with" possible); the corpus recheck of 27 Nov 2026 gives ورابعها ("and the fourth of them"). The continuation is on f. 21r (master 0084_0046); the sender is unnamed.
 - The remark on 49r that a cipher "was not solved except after much toil" belongs to the short block 49r l.1-4 (chain
   49r.1, answered by the verses on 49r l.6-7), per the corpus recheck of 27 Nov 2026; not to this block.
 - Dating: the corpus notes put the correspondence of the volume c. 1325-1360 (al-Mutarjim active in Damascus before
   725/1325 and still there in 745/1344-45; Ibn al-Durayhim, d. 762/1361, praised in it). Penn's record: "Possibly written in Syria, in the 15th century", date "14--"
   (`ljs51corpus/prior_art_2.md`). So the ciphertext read here is probably in a 15th-century copy; the swapped, dropped and
-  doubled signs fit a copyist (Dudout). As a document it is not clearly older than Siena 1413. The compiler may be Ibn
-  al-Durayhim (`ljs51corpus/identity_ibn_durayhim.md`: supported, not proven); against: Penn names no one, the volume lacks
-  beginning and end, and he is praised in it. The page says "a secretary of Ibn al-Durayhim's Damascus circle" is safer.
+  doubled signs fit a copyist (Dudout). As a document it is not clearly older than Siena 1413. The compiler is very probably Tāj al-Dīn Ibn al-Durayhim. The attribution rests on the compiler’s first-person references to his works; Penn’s record names no author (corpus NOTES.md and identity_ibn_durayhim.md).
 
 ## The plaintext
 
-The compiler gives the riddle in clear on f. 21r l.7 - 21v l.2, after chain 20r.8, which the translation notes call
-"the third of al-Jawlānī's test pieces". 20r l.7 introduces that block as "the third of the ciphered pieces"; 21r l.6
-"I solved it quickly because of its ease"; 21v l.3-4 "its answer is mentioned in Sūrat al-Wāqiʿa" (the raised couches,
-furush marfūʿa). 293 letters, 64 words (chain record 20r.8).
+The compiler says at f. 21r l.6 that he worked the cipher out quickly because it was easy. He copies the clear riddle immediately afterwards and gives its answer on f. 21v, the raised couches of Sūrat al-Wāqiʿa. The clear copy has 293 letters (chain record 20r.8).
 
 ## The system
 
 Simple substitution of invented signs for Arabic letters, right to left, a dotted stem between words (words may run
-over a line end). Same sign family as the f. 47r block, different key. 228 signs, 27 sign labels (measured,
+over a line end). Same sign family as the f. 47r block, different key. On ff. 48r–48v: 228 signs, 27 sign labels (measured,
 `_check_profile.py --measure --drop-first`), 47 dividers. 25 letters have a sign; ي has two labels (AY, O8) and ل two
 (X, XN, one occurrence); whether these are true homophones or variant shapes of one sign was not checked. The
 three-pronged OM sign is ق in both its places (recheck_2x.md); `solve_48r/key_48r_v2.json` still carries ع for it,
@@ -62,7 +42,7 @@ because the alignment scored the clear copy's العسي, so `key.json` here set
    (`anneal_sp.py`, 6 restarts x 40,000 steps, no plaintext given). Restart 1 reached -2.51 per character and read
    "... اهل اصلاح تثور اذا ب ن الليل وترحل عند الصفاح ترميها ... وهي معدوده من نعيم اهل الجنه ..."; other restarts scored
    -2.64 to -3.24 with partial words.
-4. That text was recognised as the f. 21r riddle (plaintext of 20r.8). DP alignment with the key re-learned from it
+4. That text was recognised as the f. 21r riddle (originally recorded under 20r.8). DP alignment with the key re-learned from it
    (`verify.py`, then `verify_v2.py`): v1 218 of 229 signs (95.2%); after the 2x re-read 220 of 228 (96.5%), 3 surplus
    signs, 7 dropped letters; the block covers 232 of the riddle's 293 letters and stops at جملته.
 5. 2x-3x re-read of every flagged position on the masters (`recheck_2x.md`): five transcription errors, six misplaced
@@ -113,7 +93,7 @@ translation of 20r.8, cut to the enciphered part, with the three places the ciph
 
 ## Prior work
 
-The compiler's own break: he solved the riddle's other encipherment (20r.8) "quickly because of its ease" (21r l.6) and
+The compiler's own break: he solved this cipher "quickly because of its ease" (21r l.6) and
 wrote the plaintext on f. 21r; Penn's record says the letters are "accompanied by transcriptions". So the plaintext of this
 block was never lost, and `first_break` is "unpublished prior". Medieval worked solutions of the same type: Ibn
 al-Durayhim's Miftāḥ al-kunūz, two ciphers of devised symbols solved from frequencies (Mrayati, Meer Alam, al-Tayyan,
@@ -133,13 +113,11 @@ DECODE, Tomokiyo, Lasry's list, web). DECODE has no record of the manuscript.
   the codex said in the summary; attribution softened; Transformation of Knowledge cited; dates fixed (28 -> 27 Nov).
 - Statistics: the _validate shuffled-refit null had n = 6 and started one restart from the final key. Rerun blind vs
   blind (`null_blind.json`, same annealer as _validate.py, all restarts from random keys): real best of 20 -2.658;
-  shuffled n = 60 (best of 2 each) mean -2.992, sd 0.075, max -2.856; z 4.5, p = 1/61.
+  shuffled n = 60 (best of 2 each) mean -2.992, sd 0.075, max -2.856; descriptive z 4.5; 0 of 60 shuffle maxima reached the real maximum. The unequal restart budgets preclude a permutation p-value.
 - Still owed: an Arabist's reading (Alan Elbaum asked for f. 106v); Brice offered to rerun nulls or check f. 21r.
 
 ## Remaining gaps
 - reader: no Arabist has checked the transcription, the reading or the f. 21r re-read; the A grade is a model's.
-- the heading ورابعها "the fourth of them" against 20r l.7 "the third of the ciphered pieces": two runs, or read
-  واتبعها; not settled.
 - للراكبان (dual -ān after li-) in both copies; جملته (21v l.1 جمّلها ربها جملته وازادها نعمته) left untranslated.
 - none for the block: every sign has a value; the 8 signs that do not take the letter of the clear copy as recorded are
   scribal slips or places where the record misread the clear copy (ترميها, تحمد/يحمد, القسي undotted).
@@ -150,7 +128,7 @@ DECODE, Tomokiyo, Lasry's list, web). DECODE has no record of the manuscript.
 - [x] clear-pages: the clear riddle on f. 21r l.7 - 21v l.2 is the plaintext
 - [x] known-keys: 47r.1 key tried
 - [n/a] print: no edition or study of the ciphers of LJS 51 found (Transformation of Knowledge 2006 p. 43 not reachable)
-- [n/a] key-rebuild: the key is complete; all 228 signs have a value
+- [n/a] key-rebuild: the original key covers ff. 48r–48v; the two additional f. 21r labels are recorded in key.json
 - [x] retry: every flagged position re-read at 2-3x (recheck_2x.md)
 
 ## Correction from the corpus work (27 Nov 2026; `targets/ljs51corpus/`, keys_eye/REPORT.md)
@@ -158,8 +136,4 @@ DECODE, Tomokiyo, Lasry's list, web). DECODE has no record of the manuscript.
 The volume's write-up (`docs/ljs51corpus.html`) found that quire 3 (ff. 13-20) is bound out of place. Consequences here:
 the cipher on ff. 20r-20v (chain 20r.8) is not another copy of this riddle but the first five verses of al-Jawlani's
 eight-verse riddle, continued on f. 47r (one cipher, keys_eye/20r.8+47r.1.json); and the five cipher lines at the top of
-f. 21r (62 signs) are the END of this block, read with this key unchanged (62 signs = 62 letters, 58 of 59 repeated-shape
-occurrences on one letter; keys_eye/20r.8+47r.1.json, block_21r_1_5). So f. 21r once followed f. 48v, and the clear prose
-on 21r l.7 ff. is this block's own solution. The 21r lines are not added to this folder's transcription, key or counts.
-The page (sections 02 and 04, glance) says so; "the third of al-Jawlani's test pieces" is dropped from the summary.
-
+f. 21r continue the prose after جملته. The full transcription has 24 lines, 290 signs, 29 labels and 63 dividers. The original key gives 59 of the 62 letters in the continuation. Two added labels account for the rest: W2 gives ا and EK gives ح in حين and ش in واشكر. A positional comparison against the clear prose found 44 matches at its ending and at most 11 elsewhere. The physical order of the quires still needs inspection. The alignment, blind trials, statistical tests and Dudout's independent check refer to ff. 48r–48v alone.

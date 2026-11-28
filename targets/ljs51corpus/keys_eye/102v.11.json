@@ -1,0 +1,28 @@
+{
+ "chain_id": "102v.11",
+ "label": "Maqlub transposition rule from the compiler’s example in ordinary Arabic letters",
+ "source": "chains_0198_0217.jsonl, 102v.11, transcription of the master TIFFs for ff. 102v–103r",
+ "rule": "Each plaintext word is written with its even-position letters first, in order (2nd, 4th, ...), then its odd-position letters in reverse order (... 3rd, 1st). E.g. دامت (d1 a2 m3 t4) -> ا ت م د = اتمد; لك -> كل; النعما (hamza dropped) -> ل ع ا + م ن ا = لعامنا; سابغة -> ا غ + ة ب س = اعهبس; وبقيت -> ب ي + ت ق و = بيتقو; ما -> ام; طرد -> ردط; الدجى -> لج + ى د ا (ى written ا) = لجادا; الفجر -> لج + ر ف ا = لجرفا (written لحبر فا, with one extra tooth); يا -> اى; من -> نم; اذا -> ذاا; ذكرت -> كترذ; مناقبه -> نقه + بام = نقهبام; رقص -> قصر; الزمان -> لمن + ازا = لمنازا; وصفق -> صق + فو = صقفو (written صفقو); الدهر -> له + ردا = لهردا. The words are then run together and re-spaced arbitrarily, so it looks like a substitution text.",
+ "cipher_text": "اتمدكل لعامنا اعهبس بيتقوام ردط لجا دالحبر فا / ان نم ذا اكترذ نقهبام قصر لمنازا صفقولهر دا",
+ "plaintext": "دامت لك النعماء سابغة وبقيت طرد الدجى الفجر / يا من اذا ذكرت مناقبه رقص الزمان وصفق الدهر",
+ "signs": 73,
+ "letters": 72,
+ "key": {},
+ "verdict": "Word-by-word transposition, with the exceptions recorded in the comparison.",
+ "notes": [
+  "fits: 73 cipher letters vs 72 (as the cipher has it, 37 + 35; the page's plaintext has 70 + hamza). The cipher's form differs from the written plaintext in one word: the cipher has ما after وبقيت (بيتقو + ام: وبقيت ما طرد), which the page omits (وبقيت طرد); the hamza of النعماء is not enciphered; one extra tooth in لحبر (copying slip). Second hemistich letter for letter.",
+  "l.11: اتمدكل لعامنا اعهبس بيتقوام ردط لجا دالحبر فا ; l.12: اى نم ذاا كترذ نقهبام قصر لمنازا صفقو لهردا (word spacing as on the page: ان|نم ذا اكثر ذنقهبام قصر لمنازا صفقولهر دا). Doubtful: the first word of l.12 (اى or ان), the tooth after ي in بيتقوام, the extra tooth in لحبر, the order ف/ق in صفقو.",
+  "The clear copy has 71 written letters, including hamza. Inserting ما and dropping that hamza gives 72 letters for the rule. The transcribed cipher has 73. Its extra tooth and doubtful readings remain in the transcription."
+ ],
+ "measures": {
+  "written_cipher_letters_by_line": [
+   38,
+   35
+  ],
+  "written_plaintext_letters_by_line": [
+   36,
+   35
+  ],
+  "letters_used_by_rule": 72
+ }
+}

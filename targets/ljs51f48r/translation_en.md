@@ -1,7 +1,6 @@
-# Translation: Penn LJS 51, f. 48r l.8 - 48v l.13
+# Translation: Penn LJS 51, f. 48r l.8 - 48v l.13, continued on f. 21r l.1–5
 
-The project's translation of the clear riddle (chain 20r.8, `targets/ljs51corpus/translation_0006_0053.md`), cut to the
-part this block enciphers. Three places are changed to follow the cipher, marked †; those renderings are made here and
+The project's translation of the clear riddle (chain 20r.8, `targets/ljs51corpus/translation_0006_0053.md`), with the f. 21r continuation translated from the cipher. Three places are changed to follow the cipher, marked †; those renderings are made here and
 are not in the 20r.8 translation. Rhymed prose, not verse.
 
 > And [one] soft of sides, wide of flanks, and its good things are permitted, though the people of righteousness shun
@@ -10,6 +9,7 @@ are not in the 20r.8 translation. Rhymed prose, not verse.
 > covered by the backs (or: by appearing, bi-l-ẓuhūr), and spreading it out (iftirāshuhā) is by a permitted contract,
 > not forbidden; of it is praised (yuḥmad) † what is blamed in the schools of law. Its back is the most trodden
 > [awṭaʾ] back [ẓahr] for the two riders; its Lord adorned it (jammalahā, جمّلها) ... (جملته, not translated).
+> And if he increases it, it raises him. So mention the name of your Lord when you retire to it, and give thanks for the blessings of your Lord when you settle upon it.
 
 † ترميها القسي and يحمد are the cipher's readings; the 20r.8 record of the clear copy has توهمها العسى[?] ("[People]
 imagine it [al-ʿasā [?]: not translated]") and وخمد[?] (not translated). The 20r.8 translation marks awṭaʾ, ẓahr and

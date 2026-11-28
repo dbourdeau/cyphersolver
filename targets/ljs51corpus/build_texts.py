@@ -10,6 +10,7 @@ translation_*.md files; writes
     keys.tsv                    one row per sign of every keyed chain: chain, sign label, letter(s), count
     validation.tsv              cipher token (chain:sign) TAB letter, from the keyed chains' alignments
     texts/stats.json            counts used by profile.json and the write-up
+    texts/record_comparisons.md count and wording differences in the new by-eye waves
 and replaces documents, outcome.texts and the measured shares in profile.json.
 
 Corrections that the chain records do not yet carry are applied here and said in the files:
@@ -19,7 +20,7 @@ Corrections that the chain records do not yet carry are applied here and said in
   - 48r.8 (with 21r l.1-5) has its own page (targets/ljs51f48r) and 106v.6 has its own page (targets/qaysarani1350):
     one key, one entry, so they are not documents here.
 """
-import json, glob, os, re, collections
+import json, glob, os, re, collections, unicodedata
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 os.chdir(HERE)
@@ -52,13 +53,13 @@ def keystate(cid):
     """'letter' (a by-eye key, letter-level), 'class' (tashifi), 'tree' (63v), 'partial', or None."""
     d = keys.get(cid)
     if not d or not d.get('key'): return None
-    v = str(d.get('verdict') or '').lower()
+    v = str(d.get('verdict') or '').lower().removeprefix('key ')
     if cid == '14v.7': return 'class'
     if cid == '63v.trees': return 'tree'
     if v.startswith('inconsistent') or v.startswith('not keyed') or v.startswith('no plaintext'): return None
-    if v.startswith('key partly') or v.startswith('partly'): return 'partial'
-    if 'consistent' in v: return 'letter'
-    return None
+    if v.startswith('partly'): return 'partial'
+    if v.startswith('consistent'): return 'letter'
+    raise ValueError(f'{cid}: key table has no recognized verdict: {v}')
 
 
 # documents: one per cipher (merged records count once), without the two ciphers that have their own pages
@@ -74,8 +75,8 @@ for r in recs:
     rr = [byid[p] for p in parts]
     kd = keys.get(did) or (keys.get(cid) if did == cid else None)
     ks = keystate(did)
-    if kd and kd.get('signs') and did not in ('14v.7',):
-        signs, how = int(kd['signs']), f'by-eye key file keys_eye/{did}.json'
+    if kd and kd.get('signs') and did not in ('14v.7', '102v.11'):
+        signs, how = int(kd['signs']), f'by-eye record keys_eye/{did}.json'
     else:
         signs, how = sum(int(x['signs_total']) for x in rr), 'chain record (by-eye count on the master)'
     if did == '30v.7': signs, how = 81, 'by-eye recount in recheck_unanswered.jsonl (the record total 95 was the segmenter count)'
@@ -88,7 +89,8 @@ for r in recs:
     # in full, whatever the record's first fit check said (2r.4, 7r.5, 7v.12, 10v.1, 12r.8 ...)
     meas = (kd or {}).get('measures') or {}
     upgraded = False
-    if state == 'read in part' and ks in ('letter', 'partial') and isinstance(meas.get('aligned_pairs'), int)             and meas['aligned_pairs'] >= 0.95 * signs:
+    if (state == 'read in part' and ks in ('letter', 'partial') and not kd.get('unresolved_positions')
+            and isinstance(meas.get('aligned_pairs'), int) and meas['aligned_pairs'] >= 0.95 * signs):
         state, upgraded = 'read', True
     folios = []
     for x in rr:
@@ -104,10 +106,20 @@ def plaintext(d):
         return keys[did]['plaintext'], 'as enciphered (keys_eye/%s.json); the clear copy differs in a few words, see that file' % did
     r = d['recs'][0]
     kd = keys.get(did)
-    if d['key'] in ('letter', 'partial') and kd:
-        kt = kd.get('plaintext') if isinstance(kd.get('plaintext'), str) else None
+    if d['key'] in ('letter', 'partial', 'tree') and kd:
+        kt = kd.get('plaintext_cipher_form') or kd.get('plaintext_used') or kd.get('plaintext')
+        if not isinstance(kt, str):
+            kt = None
         if not kt and isinstance(kd.get('plaintext_words'), list): kt = ' '.join(kd['plaintext_words'])
-        if kt: return kt, 'as enciphered, from the by-eye key keys_eye/%s.json (where the cipher differs from the written copy, the differences are listed there); written copy %s' % (did, r['plaintext'].get('folio_lines') or '')
+        if kt and '!' in kt:
+            # These alignments prefix an omitted plaintext letter with !.
+            marked = re.findall(r'!([\u0621-\u064a])', kt)
+            if marked != [row[0] for row in kd['dropped_letters']]:
+                raise ValueError(f'{did}: check omitted-letter notation')
+            kt = re.sub(r'![\u0621-\u064a]', '', kt)
+        if kt:
+            method = 'tree-script rule' if d['key'] == 'tree' else 'by-eye key'
+            return kt, f"as enciphered, from the {method} in keys_eye/{did}.json; written copy {r['plaintext'].get('folio_lines') or ''}"
     t = r['plaintext'].get('text') or ''
     if t in ('not read', 'not found') or not t.strip(): return None, r['plaintext'].get('folio_lines') or ''
     return t, '%s; certainty %s' % (r['plaintext'].get('folio_lines') or '', r['plaintext'].get('certainty') or '')
@@ -132,6 +144,45 @@ def lines_of(kd):
 
 
 os.makedirs('texts', exist_ok=True)
+def comparison_words(text):
+    text = unicodedata.normalize('NFKC', text).translate(str.maketrans('أإآٱةى', 'ااااهي'))
+    text = ''.join(ch for ch in text if unicodedata.category(ch) != 'Mn' and ch != 'ـ')
+    return re.findall(r'[ء-ي]+', text)
+
+
+comparison = ['# Penn LJS 51, differences between chain records and by-eye keys from f. 37r onwards', '',
+              'The record gives the earlier transcription. The key form follows the signs where they could be aligned. '
+              'The cipher sometimes covers only part of a verse. Elsewhere a difference can reflect the spelling in the cipher, '
+              'an omitted letter, or a correction to the earlier reading. '
+              'Each linked key gives its evidence and uncertainties. The comparison ignores vowels, verse separators, '
+              'uncertainty marks, alif variants, final ta marbuta versus ha, and alif maqsura versus ya. Word breaks are retained.', '']
+for d in docs:
+    if d['image'] < 78 or d['key'] not in ('letter', 'partial') or len(d['recs']) != 1:
+        continue
+    r = d['recs'][0]
+    pt, _ = plaintext(d)
+    original = r['plaintext'].get('text') or ''
+    count_changed = int(r['signs_total']) != d['signs']
+    text_changed = bool(original and pt and comparison_words(original) != comparison_words(pt))
+    if not count_changed and not text_changed:
+        continue
+    cid = d['id']
+    comparison.extend([f"## [{cid}](../keys_eye/{cid}.json)", ''])
+    if count_changed:
+        comparison.append(f"Sign count in the record: {r['signs_total']}. By-eye recount: {d['signs']}.")
+    if text_changed:
+        if count_changed:
+            comparison.append('')
+        comparison.extend(['Record: ' + original, '', 'Key form: ' + pt])
+    recheck = keys[cid].get('shape_recheck') or {}
+    if isinstance(recheck.get('alternative'), str):
+        comparison.extend(['', 'Alternative reading: ' + recheck['alternative']])
+    elif recheck.get('interpretation'):
+        comparison.extend(['', recheck['interpretation']])
+    comparison.append('')
+with open('texts/record_comparisons.md', 'w', encoding='utf-8', newline='\n') as f:
+    f.write('\n'.join(comparison))
+
 tr_files = {f'{a:04d}_{b:04d}': f'translation_{a:04d}_{b:04d}.md' for a, b in RANGES}
 groups = collections.OrderedDict((f'{a:04d}_{b:04d}', []) for a, b in RANGES)
 for d in docs: groups[d['range']].append(d)
@@ -141,7 +192,7 @@ for g, ds in groups.items():
     C = [f'# Penn LJS 51, images {a}-{b}: the ciphers as transcribed', '',
          'Model transcription from the OPenn master TIFFs (2339 x 2959 px), checked by eye; no human has checked it.',
          'Per cipher: where it stands, the sign count per line (by eye), the word groups, the sign inventory as described,',
-         'and, where a by-eye key was built (keys_eye/), the signs line by line as labels (right to left; | = word divider).',
+         'and, where a by-eye key was built (keys_eye/), the signs line by line in reading order (usually right to left; | = word divider).',
          'Labels are names for shapes within one cipher only: S3 in one cipher is not S3 in another.', '']
     A = [f'# Penn LJS 51, images {a}-{b}: the compiler\'s decipherments', '',
          'The plaintext the compiler writes after each cipher (his own solution, or the solution of the patron or the',
@@ -154,12 +205,26 @@ for g, ds in groups.items():
         C.append('')
         C.append(f"- Where: {where}")
         C.append(f"- Signs: {d['signs']} ({d['count_how']})" + ('' if len(d['recs']) == 1 else '; records ' + ', '.join(d['parts'])))
+        kd = keys.get(d['id'])
+        by_line = collections.Counter(row[0] for row in (kd or {}).get('alignment', [])
+                                      if row[0] is not None and row[2] not in (None, '-', '+', ''))
+        has_recount = bool(by_line) and sum(by_line.values()) == d['signs']
+        if has_recount:
+            C.append('- Signs per line in the by-eye record: ' + ', '.join(f'{line}: {n}' for line, n in by_line.items()))
+            groups_seen = kd.get('measures', {}).get('groups')
+            if isinstance(groups_seen, int):
+                C.append(f'- Word groups in the by-eye record: {groups_seen}')
         for x in d['recs']:
             spl = x.get('signs_per_line')
-            if spl: C.append(f"- Signs per line ({x['chain_id']}): {', '.join(map(str, spl))}" + (f"; word groups {x['word_groups']}" if x.get('word_groups') else ''))
+            if spl and not has_recount:
+                C.append(f"- Earlier chain record, signs per line ({x['chain_id']}): {', '.join(map(str, spl))}" + (f"; word groups {x['word_groups']}" if x.get('word_groups') else ''))
+            elif has_recount and x.get('word_groups') and not isinstance(groups_seen, int):
+                C.append(f"- Word groups reported in the earlier record ({x['chain_id']}): {x['word_groups']}")
             C.append(f"- Sign inventory ({x['chain_id']}): {x.get('style') or 'not described'}")
+            if x.get('rule') and x.get('cipher_text'):
+                C.extend(['- Cipher as written: ' + x['cipher_text'], '- Rule: ' + x['rule'],
+                          '- Comparison with the clear copy: ' + x['fit_check']])
             if x.get('red_gloss'): C.append(f"- Red gloss ({x['chain_id']}): yes" + (f" - {gl(x['gloss_letters'])}" if x.get('gloss_letters') else ''))
-        kd = keys.get(d['id'])
         if d['id'] == '63v.trees' and kd:
             C.append('- Trees (row.position: left/right branch counts = letter by the rule):')
             C.append('')
@@ -175,7 +240,8 @@ for g, ds in groups.items():
         if pt:
             A.append(pt)
             A.append('')
-            A.append(f"({src}; " + {'read': 'answered in full', 'read in part': 'answered in part: ' + (r0.get('fit_check') or '')[:300], 'not read': ''}[d['state']] + ')')
+            fit = (kd or {}).get('verdict') or r0.get('fit_check') or ''
+            A.append(f"({src}; " + {'read': 'answered in full', 'read in part': 'answered in part: ' + fit[:300], 'not read': ''}[d['state']] + ')')
         else:
             A.append('[no plaintext: ' + (r0.get('fit_check') or r0.get('notes') or '')[:300] + ']')
         A.append('')
@@ -200,13 +266,18 @@ for d in keyed:
         continue
     for s, v in kd['key'].items():
         if isinstance(v, dict):
-            K.append(f"{d['id']}\t{s}\t" + ', '.join(f'{l} ({n})' for l, n in v.items()) + f"\t{d['key']}")
+            values = ', '.join(f'{l} ({n})' for l, n in v.items()) or 'unassigned'
+            K.append(f"{d['id']}\t{s}\t{values}\t{d['key']}")
     if kd.get('alignment'):
         V.append('?\t?')
         for row in kd['alignment']:
-            s, l = str(row[2]), str(row[3])
-            if not l or l in ('-', '+', '?') or len(l) != 1: continue
-            V.append(f"{d['id']}:{s}\t{l}")
+            s, letter = row[2:4]
+            if s in (None, '-', '?', '+', ''):
+                continue  # A letter dropped from the cipher has no sign to score.
+            if s not in kd['key'] or letter not in kd['key'][s] or letter in (None, '-', '+', '?', ''):
+                V.append('?\t?')
+            else:
+                V.append(f"{d['id']}:{s}\t{letter}")
 open('keys.tsv', 'w', encoding='utf-8', newline='\n').write('\n'.join(K) + '\n')
 open('validation.tsv', 'w', encoding='utf-8', newline='\n').write('\n'.join(V) + '\n')
 
@@ -215,10 +286,16 @@ tot = sum(d['signs'] for d in docs)
 read = sum(d['signs'] for d in docs if d['state'] == 'read')
 red = [(k, v.get('red_check')) for k, v in keys.items() if isinstance(v.get('red_check'), dict)]
 agree = glossed = 0
+red_agree_chains = []
 for k, rc in red:
-    n = rc.get('glossed_signs', rc.get('red_read'))
-    if isinstance(n, int) and isinstance(rc.get('agree'), int):
-        glossed += n; agree += rc['agree']
+    n = rc.get('compared', rc.get('red_read', rc.get('glossed_signs')))
+    matches = rc.get('agree_letter', rc.get('agree'))
+    if isinstance(n, int) and isinstance(matches, int):
+        if not 0 <= matches <= n:
+            raise ValueError(f'{k}: invalid red-letter agreement {matches}/{n}')
+        glossed += n
+        agree += matches
+        red_agree_chains.append(k)
 st = dict(documents=len(docs), signs=tot, signs_read=read, fraction=round(read / tot, 4),
           by_state=dict(collections.Counter(d['state'] for d in docs)),
           signs_by_state={s: sum(d['signs'] for d in docs if d['state'] == s) for s in ('read', 'read in part', 'not read')},
@@ -226,7 +303,7 @@ st = dict(documents=len(docs), signs=tot, signs_read=read, fraction=round(read /
           keyed_ids=[d['id'] for d in keyed], key_files=len(keys),
           not_keyed_files=[k for k in keys if k not in {d['id'] for d in keyed}],
           red_gloss_docs=sum(1 for d in docs if d['red']), red_agree=agree, red_glossed=glossed,
-          red_agree_chains=[k for k, rc in red if isinstance(rc.get('agree'), int)],
+          red_agree_chains=red_agree_chains,
           groups={g: dict(docs=len(ds), signs=sum(d['signs'] for d in ds), read=sum(d['signs'] for d in ds if d['state'] == 'read'))
                   for g, ds in groups.items()},
           open=[(d['id'], d['state'], d['signs']) for d in docs if d['state'] != 'read'])
