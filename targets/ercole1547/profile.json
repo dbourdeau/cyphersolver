@@ -1,0 +1,393 @@
+{
+ "schema_version": 1,
+ "target": "ercole1547",
+ "title": "Ercole II d'Este to his secretary Claudio Ariosti, Ferrara, 8 Jan 1547, on the rising at Genoa (Biblioteca Estense, Autografoteca Campori, Ercole II, c. 16v; catalogue 2160): key recovered from the ciphertext alone, eight cipher lines read in part (contributed by Malcolm McBratney with Claude)",
+ "documents": [
+  {
+   "id": "c16v",
+   "read": "read in part",
+   "shelfmark": "Biblioteca Estense Universitaria, Modena, Autografoteca Campori, Ercole II d'Este, sfasc. I, cc. 16-17; cipher on c. 16v, 8 lines (IIIF manifest 89e1bdc6-a46d-4627-9770-efbd17e544fb)",
+   "date": "Ferrara, 8 January 1547 (date line 'Ferrariae viij Jan. 1547' on c. 16v)",
+   "year": 1547,
+   "country": "Italy",
+   "language": "Italian (Ferrara chancery)",
+   "pages": 1,
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No key, decipherment, interlinear or printed reading found (PRIOR_ART.md). The clear lines of the letter (10 above, 2 below the cipher) are the letter itself, not a decipherment."
+   },
+   "length": {
+    "tokens": 276,
+    "unit": "symbols",
+    "measured": true,
+    "file": "transcription_c16v.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Estense IIIF, native-resolution crops of c. 16v (FETCH_LOG.txt)",
+    "corrections": 0,
+    "image_quality": "good",
+    "notes": "Length: _check_profile.py --measure transcription_c16v.txt --drop-first gives 290 whitespace tokens = 276 signs (each with its raised mark; 160 marks) + 13 dots + 1 punctuation {:}; 276 counted here. decode_once.py gives 435 letters (validation.tsv). One reader (Claude Fable 5.2), one pass, blind to any key; 12 doubtful tokens marked ?. Frozen with the split before any solving (FREEZE_TX.txt). S09 mixes two signs (figure 6 and a b/f-like sign) that were not separated. Not checked by a person."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "monoalphabetic",
+   "nomenclator"
+  ],
+  "summary": "Signs of Latin shape for consonants; the vowel after a consonant is given by a raised figure (4 a, 5 e, 6 i, 7 o, 8 u) or, on a second class of consonant signs, by a stroke (/ a, \\ e, upright o); figures on the line are vowels; a bar over a consonant doubles it; d with a cross after c = 'he' (che); dots on the line are nulls; one code sign for a person (S01^4s).",
+  "symbol_kind": "letters and symbols",
+  "distinct_symbols": 25,
+  "diacritics": {
+   "used": true
+  },
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": true
+  },
+  "nulls": {
+   "present": true
+  },
+  "key_order": "partly alphabetical",
+  "word_division": "none",
+  "doubled_letters": "bar over the sign",
+  "notes": "25 sign shapes and 15 raised marks (SIGNS.md). Same family as ariosto1559 (catalogue 2159: sign plus raised vowel figure) but a different table: other sign shapes, other figure values, a bar not a ring for doubling. Weak values: raised 9 and 2 (o), S10 under a bar (ni), S02^^ (ri); no value for S12^- and the code sign S01^4s (KEY.tsv)."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "None found: the pages, the Estense record, Cyphersolver catalogue 2160 and targets/ (Brice Dudout's attempt in targets/ariosto1559/NOTES.md, 'Not solved'), DECODE public search, web searches, the ASMo Ambasciatori Germania inventory (first half), filodiritto.com on Este ciphers (PRIOR_ART.md). Not checked: ASMo Cancelleria, Cifrario; Cremonini 2019; HathiTrust and Google Books full text; DECODE records behind login.",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "images",
+   "cleartext context"
+  ],
+  "attack": "ciphertext-only",
+  "human_role": "Malcolm McBratney directed the work and set its rules (prior art first, transcription and key frozen before one decode, held-out lines, a separate strict judge, first pass as the figure of record, shuffle controls). Claude sessions did the transcription, key recovery, decode, judging, reading and translation. No reading by a person without AI.",
+  "tools": [
+   "work/solver.py, work/solver2.py: annealing on five structural models, scored with a local Italian 5-gram model (work/build_lm.py)",
+   "decode_once.py (one decode)",
+   "shuffle.py: 5,000 shuffled keys at two seeds",
+   "judge/count.py (re-adds the judge's scores)"
+  ],
+  "models": [
+   "Claude Fable 5.2 (Anthropic): the solver session (transcription, key recovery, decode, controls) [stated by the contributor]",
+   "Claude Opus 5.5 (Anthropic): the strict judge, and the session that assembled this folder, reading.md and translation.md"
+  ],
+  "first_date": "2026-11-24",
+  "last_date": "2026-11-24"
+ },
+ "solution": [
+  {
+   "date": "2026-11-24",
+   "kind": "literature search",
+   "what": "Prior art before transcription: the pages, Estense record, catalogue 2160, Cyphersolver targets (Brice Dudout's 5 Nov 2026 attempt on this letter, 'Not solved', in targets/ariosto1559/NOTES.md), DECODE public search, web, ASMo inventory (PRIOR_ART.md). No key, decipherment or reading found.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "access",
+   "what": "Estense IIIF images of cc. 16r, 16v, 17r, 17v and native-resolution crops of the cipher on 16v (FETCH_LOG.txt). Full-size requests refused (HTTP 422); crops served.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "transcription",
+   "what": "8 cipher lines transcribed by sign shape, blind to any key: 276 signs, 160 raised marks, 13 dots; 25 sign shapes, 15 marks; 12 doubtful tokens marked. Frozen with the split BUILD = lines 1-6 (216 signs), HELD-OUT = lines 7-8 (60 signs) (FREEZE_TX.txt).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "sibling key",
+   "technique": [
+    "key matching"
+   ],
+   "what": "ariosto1559 (2159) key and image compared, and ercole1559, ercole1544, capilupi1545, capilupi1546, bresegno1548, francescoeste1546: other tables (PRIOR_ART.md).",
+   "result": "ruled out"
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "statistics",
+   "technique": [
+    "repeat/pattern analysis",
+    "frequency analysis"
+   ],
+   "what": "Counts of signs and marks by sign (SOLVE_LOG 1): two classes of consonant signs (raised figures against strokes); S05^X always after S03; bars come with a dot.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "solver",
+   "technique": [
+    "simulated annealing",
+    "language-model scoring"
+   ],
+   "what": "Model A, marks ignored, 3 seeds then 4 seeds with a frequency term: collapsed or no words (SOLVE_LOG 2-3).",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "solver",
+   "technique": [
+    "simulated annealing",
+    "language-model scoring"
+   ],
+   "what": "Model B (raised figure = vowel, free), 4 seeds x 250k: not converged, but raised 5 = e, 6 = i, 7 = o in 4 of 4 runs, 4 = a in 3 of 4 (SOLVE_LOG 4).",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "solver",
+   "technique": [
+    "simulated annealing",
+    "language-model scoring"
+   ],
+   "what": "Models B2 (strokes ignored), B3 (every mark a letter), C (every sign+mark its own letter), 4 seeds each: no agreement (SOLVE_LOG 5-7).",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "hypothesis",
+   "technique": [
+    "key-structure hypothesis"
+   ],
+   "what": "Raised figures 4 5 6 7 8 = a e i o u (kept); barred signs with dots as name codes (wrong: they are doubled consonants) (SOLVE_LOG 8-9).",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "solver",
+   "technique": [
+    "simulated annealing",
+    "language-model scoring"
+   ],
+   "what": "Model B5 (vowels fixed), 5 seeds: seed 2 reads 'intenderete', 'opera per intendere', 'potrete', 'e da credere'; other seeds fail. Variants with S04 merged into S03 fail; with vowels free one seed partial (SOLVE_LOG 10, 10b, 10c).",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "crib",
+   "technique": [
+    "repeat/pattern analysis",
+    "contextual inference",
+    "manual reconstruction"
+   ],
+   "what": "Pattern word in the cipher (lines 1 and 3) = 'intendere', 'intenderete'; it also stands in the clear lines of the letter. Then 'per' x10 and the rest of the key by sense from lines 1-6 only; first idea 'meglio' wrong, 'quello/quella/quale/questo' fits (SOLVE_LOG 11-12).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "reading",
+   "what": "Key frozen (FREEZE_KEY.txt), then one decode of all 8 lines, held-out lines 7-8 included, no emendation (decode_once.py, DECODE.txt).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "verification",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "Separate strict judge (Claude Opus 5.5), given only the brief and the decode, scored each letter S/E/N: build lines 1-6 307/343 = 89.5%, held-out lines 7-8 81/92 = 88.0%, page 388/435 = 89.2% (S 388, E 11, N 36).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "control",
+   "technique": [
+    "statistical test",
+    "language-model scoring"
+   ],
+   "what": "5,000 shuffled keys at seeds 20261112 and 7: 0 of 5,000 reach the real key on held-out (z 6.4, 6.3), build (z 7.9) and whole page (z 8.1) (shuffle_out.txt).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "reading",
+   "what": "reading.md and translation.md made from the decode, nothing emended: 98 words, 10 holes (8 no-sense words, 2 code signs) and 11 one-letter slip words; read share 77/98 = 0.786 counting slips as holes (88/98 = 0.898 without). Line 4 end to line 5 start unread.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "verification",
+   "technique": [
+    "statistical test",
+    "language-model scoring"
+   ],
+   "what": "Statistical validation (docs/_validate.py): 286 tokens, 74 types, it-cinquecento order 4: reading -1.985 per letter; random keys -3.253 (z 10.6); key annealed onto shuffled ciphertext best -2.309 (mean -2.327, z 33.2); annealer on the real text -2.271. Verdict: pass.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-27",
+   "kind": "reading",
+   "what": "Reading review withdrawn: outcome.texts[0].reading_review was signed by the contributor's own session (Claude Opus 5.5, grade B, independent false). A contributor does not sign the reading review; the maintainer records it at merge (Dan Bourdeau, review of PR #997). Our error, the same as on fenian1885letter2, caught by our own audit. Class, read share (0.786) and figures unchanged.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-28",
+   "kind": "transcription",
+   "technique": [
+    "other",
+    "key-structure hypothesis",
+    "crib testing"
+   ],
+   "what": "Image check of the 12 transcription doubts, the line 4-5 stretch, 'icciate', 'arirui' and S09 (Dan Bourdeau's review of PR #933, 27 Nov 2026). The ten native-resolution Estense IIIF crops of FETCH_LOG.txt fetched again (one plain GET each, 2026-11-27T23:16Z; all md5 match the log), cropped and read by Claude Opus 5.5 (a model that had seen the decode; not blind). Settled with no change of value: 5 doubts (l.2 ^/, l.3 S06, l.4 ^/ and the dot, l.6 S17^-). Kept as doubtful: 6. Changes found: l.2 crossed 6 = S09^- ('facciate'); l.4 L without its raised mark ('prosuntione'); l.4 and l.5 the 7 stands over the y, S17 S11^7 ('questo', 'sto'); l.7 S18? is an n joined to the pi (S02, 'estraordinaria'). The peaked A/Λ sign of l.2 and l.7 is one sign (probably c/z), kept under its first-pass labels. S09 is one sign in two lengths; the crossed 6 is separate. 'del Flisco' tried: the image gives s + y-with-7 (s-to), not s-co; not applied. Dotted-bar rule tried as a rule test: the 12 dotted bars are all doubles; the undotted bars read consonant + i in 4 of 4 checkable uses (ogni x2, italia, diligentia) and give no sense at the line 4 end; not applied (key change). Details in NOTES.md, Transcription doubts.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-28",
+   "kind": "reading",
+   "technique": [
+    "other"
+   ],
+   "what": "Second pass: TRANSCRIPTION_v2.tsv (the 5 image-supported changes, 7 tokens) frozen in FREEZE_v2.txt (md5 a33f4c97d0b2c5a0ca361b6290051eba, 2026-11-27T23:23:36Z) and decoded once with the first-pass key KEY.tsv, unchanged (sha256 6fb733eb...), by decode_v2.py -> DECODE_v2.txt; reading_v2.md. House count (scripts/house_count.py): 80 of 97 cipher words read, 17 holes, 0.825 (79/97 = 0.814 without 'prosuntione'). The first pass stays the figure of record (76/97 = 0.784). Still read in part.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-28",
+   "kind": "reading",
+   "what": "reading.md corrected after Dan Bourdeau's review of PR #933: 'sia anco' -> 'si anco' (the decode gives 'si anco'); 'per che [?arirui]' -> 'per [?chearirui]' ('che' is part of the hole word chiarirvi, not a sure word). Read share recounted by scripts/house_count.py: 76/97 = 0.784 (was 77/98 = 0.786, our error); cipher_words 97 and holes 21 added to outcome.texts[0].",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "validation": {
+   "date": "2026-11-24",
+   "model": "it-cinquecento",
+   "file": "validation.tsv",
+   "tokens": 286,
+   "types": 74,
+   "tokens_per_type": 3.86,
+   "score": -1.985,
+   "nulls": {
+    "random keys": {
+     "n": 200,
+     "mean": -3.253,
+     "sd": 0.12,
+     "max": -2.984,
+     "z": 10.6,
+     "p": 0.005
+    },
+    "shuffled refit": {
+     "n": 6,
+     "mean": -2.327,
+     "sd": 0.01,
+     "max": -2.309,
+     "z": 33.2,
+     "p": 0.1429
+    }
+   },
+   "power": -2.271,
+   "verdict": "pass",
+   "notes": "claimed per-occurrence score -1.985; polyphony 0.0; 3 unread tokens left out; annealer on the real text from random keys reached -2.271"
+  },
+  "class": "read in part",
+  "key": "partial",
+  "method": "key recovered from ciphertext-only",
+  "method_basis": "The key was recovered from cipher lines 1-6 alone (annealing fixed the vowel figures; a pattern word in the cipher, 'intendere', opened the consonants), frozen, and then decoded the held-out lines 7-8 to Italian on the first pass. Caveat: 'intendere' also stands in the clear lines of the same letter, which the solver could see.",
+  "contribution": [
+   "transcription",
+   "key recovered",
+   "catalogue correction"
+  ],
+  "fraction_read": 0.784,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "reading.md, counted by scripts/house_count.py: 76 of 97 cipher words read as sense (21 holes: the 8 no-sense words, the 2 code signs and the 11 one-letter slip words), first pass of record. Corrected 28 Nov 2026 from 77/98 after Dan Bourdeau's review of PR #933 ('che' in 'per che [?arirui]' is part of the hole word chiarirvi; 'si anco', not 'sia anco'). Second pass (TRANSCRIPTION_v2.tsv, same key, reading_v2.md): 80/97 = 0.825, not the figure of record. Strict judge by letters, first pass: 388/435 = 0.892 (judge/judge.tsv).",
+  "verification": [
+   "statistical test"
+  ],
+  "first_break": true,
+  "provenance": "contributed",
+  "credits": [
+   {
+    "who": "mcbratney",
+    "role": "solution",
+    "note": "catalogue 2160: key recovered from cipher lines 1-6, frozen, one decode, strict judge and shuffle controls, with Claude (Anthropic: Fable 5.2 solver, Opus 5.5 judge and assembly)",
+    "date": "2026-11-24"
+   },
+   {
+    "who": "mcbratney",
+    "role": "transcription",
+    "note": "c. 16v, 8 cipher lines, from the Estense IIIF images, with Claude (Anthropic)",
+    "date": "2026-11-24"
+   },
+   {
+    "who": "dudout",
+    "role": "pointer",
+    "note": "earlier attempt on this letter, 5 Nov 2026 (targets/ariosto1559/NOTES.md): transcribed blind, applied the 2159 and neighbouring keys, annealing did not converge, declared not solved",
+    "date": "2026-11-05"
+   }
+  ],
+  "gaps": [
+   {
+    "item": "Line 4 end to line 5 start: first pass 'de quesot delill sot ? rit diare'; second pass 'de questo [?delill] [?sto] [?] [?rit] [?diare]'",
+    "blocker": "no-key-material",
+    "detail": "every sign re-checked on the image on 28 Nov 2026 and legible; with the frozen key the signs give no sense; 'del Flisco' and the dotted-bar rule were tried and do not give it (the syllable is drawn s + y-with-7, s-to, not s-co); S12^- and S02^^ have one use each"
+   },
+   {
+    "item": "Code sign S01^4s, twice (a person; the Emperor fits the sense)",
+    "blocker": "open-codes",
+    "detail": "two uses only, no key material; the original key may survive in ASMo, Cancelleria, Cifrario"
+   },
+   {
+    "item": "S12^- (h with a cross-stroke), once in line 5",
+    "blocker": "no-key-material",
+    "detail": "one use; 'et' or 'da' would fit"
+   },
+   {
+    "item": "'arirui' (l.8), the hole word [?chearirui] (the sense wants chiarirvi)",
+    "blocker": "no-key-material",
+    "detail": "signs clear on the image and as transcribed; the d's cross is drawn upright here, unlike the other seven 'che', and may be a separate mark ('chi'); one use"
+   },
+   {
+    "item": "One-letter slips left as decoded: essre, impertanza, circo, essende, italla, rancesi, oi, le, dillgentia (perosuntione and estraoodinaria were transcription errors, set right in the second pass; 'icciate' reads 'facciate' in the second pass)",
+    "blocker": "no-key-material",
+    "detail": "the image shows the transcribed signs; 'italla' and 'dillgentia' would read 'italia', 'diligentia' under the dotted-bar rule (bar without a dot = consonant + i, 4 of 4 checkable uses), a key change not applied"
+   },
+   {
+    "item": "'de i rancesi' (l.7), where the sense wants 'de Francesi'",
+    "blocker": "no-key-material",
+    "detail": "the image shows the plain 6/b sign S09, which reads i elsewhere; S09 is one sign drawn in two lengths, not two signs; the crossed 6 (S09^-) is a separate sign, 'fa'; no sign in the passage gives F"
+   },
+   {
+    "item": "Weak key values: raised 9 (o or a), raised 2 (o, one use), S02^^ (ri, one use), S10 under a bar (ni)",
+    "blocker": "too-short",
+    "detail": "one or two uses each in 276 signs"
+   },
+   {
+    "item": "ASMo, Cancelleria ducale, Cifrario; Ambasciatori Germania busta 7 (Claudio Ariosti, Nov 1546 to Aug 1547); P. Cremonini, Segrete scritture estensi (2019)",
+    "blocker": "needs-physical-access",
+    "detail": "the original key or more text in the same table may survive there; not searched"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "c16v",
+    "label": "c. 16v, cipher lines 1-8",
+    "transcription": [
+     "transcription_c16v.txt",
+     "TRANSCRIPTION.tsv"
+    ],
+    "decryption": "DECODE.txt",
+    "reading": "reading.md",
+    "translation": "translation.md",
+    "language": "it",
+    "state": "read in part",
+    "read_share": 0.784,
+    "summary": "Ercole II tells Claudio that, since he will hear what has newly happened at Genoa, he is to learn all he can about the causes of the rising and how a person in code (probably the Emperor) means to punish it and settle the city, which, being Spain's ladder into Italy, he will not let fall to the French; he is to use extraordinary diligence.",
+    "note": "No reading review is recorded by the contributor; the maintainer records it at merge. A reading_review signed by our own assembling session (Claude Opus 5.5, grade B, independent false, 24 Nov 2026) was withdrawn on 27 Nov 2026 (our error, the same as on PR #997, caught by our own audit). Its content stays in NOTES.md under \"Reader's notes\". The checks were done with AI tools and no person checked each record by hand. Read share 76/97 = 0.784 (scripts/house_count.py; corrected 28 Nov 2026 from 77/98, our error). Second pass, 28 Nov 2026: doubts re-checked on the image, TRANSCRIPTION_v2.tsv frozen (FREEZE_v2.txt) and decoded once with the same KEY.tsv (DECODE_v2.txt, reading_v2.md): 80/97 = 0.825, recorded beside the first pass, which stays the figure of record.",
+    "cipher_words": 97,
+    "holes": 21
+   }
+  ],
+  "key_file": "KEY.tsv",
+  "notes": "Held-out design: lines 7-8 (60 of 276 signs, 21.7%) were not used to recover the key. Transcription by one model reader in one pass; no person has checked it. The gist's link to the Fieschi rising at Genoa (early January 1547) is from general knowledge, not checked in a source."
+ }
+}
