@@ -1,10 +1,11 @@
-# jefferson1793: Jefferson's Code No. 15 (Jefferson and Thomas Pinckney, London, January-April 1793)
+# jefferson1793: Jefferson's Code No. 15 (Jefferson and Thomas Pinckney, London, January-April 1793), with Code No. 14 (Thomas Barclay, Cadiz, 27 Dec 1792)
 
 AI agents (Claude Opus 5.5) did all of this work on 27-28 Nov 2026 for Andrew Beling. No person has checked the
 transcription, the alignment or the key against the images. A fresh AI agent of ours (Claude Opus 5.5, its own
 context, given file paths only) cold-checked the folder on 28 Nov 2026; what it found and what was changed is under
 "Cold check" below. Times are EST. The order of plan, key and test rests on local file times, except the freeze,
-which carries a FreeTSA timestamp.
+which carries a FreeTSA timestamp. Code No. 14 was added on 28 Nov 2026 in `code14/` (section "Code No. 14" below);
+`profile.json` covers Code No. 15 only.
 
 ## Result
 
@@ -118,6 +119,57 @@ what was done:
 
 The other points are folded into this file. Key v3 has not been tested again: no fresh text in this code is online.
 
+## Code No. 14 (Thomas Barclay, Cadiz, 27 Dec 1792): `code14/`
+
+AI agents (Claude Opus 5.5), 28 Nov 2026 about 05:00-06:17 EST; one AI cold check; no person has checked the
+transcription, the alignment or the key.
+
+**What it is.** The PTJ editors (vol. 26, note to Pinckney, 20 Jun 1793) give the name Code No. 14 to "the cipher used
+for the first time" in Barclay's letter of 27 Dec 1792. Barclay calls it "the Cypher I received from London" (PTJ
+24:791). It is probably the cipher Jefferson sent on 1 Jun 1792 with his Algiers instructions to John Paul Jones ("You
+will recieve herewith a cypher", PTJ 24:3-10; the enclosure is not found), which Pinckney carried to London and which
+reached Barclay after Jones's death; that is our inference from these letters, not a statement in them. The only text
+in it we found is Barclay's paragraph (Founders Online searches, 28 Nov; Humphreys's coded sentence of 29 May 1793 is
+in Code No. 8). A code of words, syllables and letters, values 1 to about 1,600, not the Code No. 15 table (1562 is
+"be" here and "no" there).
+
+**Copies.** NARA microfilm T186 (Despatches from U.S. Consuls in Cadiz) roll 1: frame 0038, the receiver's copy,
+signed, 162 groups on 17 lines, lead digits of lines 2-17 lost in the gutter; frame 0058, the duplicate, whole, with
+struck repeats and corrections; frame 0037, the first 50 groups then "990, 944" (perhaps the draft that PTJ lists in
+Barclay's hand). The words: George Taylor, Jr.'s decipherment of 1793 (RG 59, Miscellaneous Letters; not on this
+film), printed in PTJ 24:791-2. Reading the paragraph with Taylor's decipherment is not an independent solution.
+
+**Transcription.** A helper agent read the three frames blind; agent 1 read 0058 against 0038 after the helper's short
+report (which named its doubtful groups). They differ at group 28 only (984 against 98[41]); group 110 is 651 or 657
+(cold check: 651); group 135 is 1452 on 0038 with 1482 written above, and unclear on 0058 (1452 or 1482); group 151 is
+1492 on 0058 (0038 has "?2"). The cold checker read all of 0038 and found the working sequence
+(`code14/transcription/code14_groups.tsv`, frozen) right. Its note at 135 ("Dupl 1482") goes further than the image.
+
+**Freeze and test (rule #1014).** Held out: the last 30 groups (133-162); key from groups 1-132
+(`code14/key/code14_key_v1.tsv`, 87 groups: 35 sure, 45 unsure, 7 conflicting). Order of events: protocol first
+written about 05:55-05:56 EST (agent's statement; the file was last written at 06:00:10 when its addendum was added,
+and the addendum's own label "about 06:02" is wrong); key built 05:59:40; manifest of 10 files stamped by FreeTSA
+28 Nov 2026 11:00:21 GMT (06:00:21 EST), `openssl ts -verify` OK with https://freetsa.org/files/cacert.pem (SHA-256
+2151b61137ffa86bf664691ba67e7da0b19f98c758e3d228d5d8ebf27e044438) and https://freetsa.org/files/tsa.crt (SHA-256
+8bfb0305bb64e2571ca507552ef3245cb1c2fee8728e0ff8689225081ea13467); run once at 06:00:24.
+**Registered result: pass, 16 of 18 keyed groups** right (precision 0.889; coverage 16/30; shuffled keys mean 4.1,
+best 7 of 1,000; p = 0.001). What the 16 is made of: one (545 = "s" inside "Lisbon", pos 147) rests on a split these
+notes reject, and without it the count is 15 of 18 (0.833); five are the repeated "Gibraltar", known before the freeze;
+three (pos, sible, and that s) come from training choices made with the held-out part in view, as the protocol's
+addendum says; one ("n" of soon) is a coincidence of a split; seven (to, as, as, from, to, the, business) are clean
+repeats of whole-word values. The test shows the key is consistent; it is not a blind test.
+
+**What the key rests on.** Only 1509 = l, 1022 = ta and 872 = r are backed group by group by a witness of the time
+(Taylor's printed note on the second "Gibraltar": "Gi war l ta r / 107. 1452. 1509 1022. 872."). 1072 = gi rests on the
+image (the print has "107"); 1482 = bra is inferred. Every other value is our split of Taylor's prose. "Sure" in the
+key means the group certainly lies inside that word, not that the split inside the word is attested.
+
+**What the page adds.** Taylor's "Giwarltar" comes from the clerk's 1452 in the second "Gibraltar", with 1482 written
+above it on 0038; the first "Gibraltar" has 1482. The page has 1072 where PTJ prints "107".
+
+**Open.** 545 after "Lisbon" (994 545 and 944 545) is not "s" there; it may be an end sign or a null. 1568 1057 stand
+at both "where" and "and". "exert every nerve" (nine groups) and "finish" (716 1344) are not split. New words: none.
+
 ## Open points (not findings)
 
 1. **10 Apr 1793, "will be again allotted"** has four groups, 1257 583 956 1198x. Taylor first wrote "will again
@@ -131,6 +183,8 @@ The other points are folded into this file. Key v3 has not been tested again: no
 
 ## Remaining gaps
 
+- Code No. 14: one known text only, so no blind test is possible; the code table (Jones's copy, or the two ciphers
+  Humphreys took from Barclay's papers in Feb 1793) is not found; 45 values rest on an uncertain split.
 - None in the text: every passage reads in full from its decipherment of the time.
 - In the key: 97 values rest on an uncertain split and 2 conflict. A second held-out test needs fresh text in this code.
   The only known copies are at NARA College Park (Duplicate Despatches: the 5 and 27 Apr duplicates and Morris's extract
@@ -159,6 +213,10 @@ Two readers each, blind (agent 1 and a helper agent, both Claude Opus 5.5); then
 
 ## Not checked
 
+- Code No. 14: no person has read its images or checked its alignment; Taylor's decipherment sheet of 1793 (RG 59,
+  Miscellaneous Letters) and the code table itself were not seen; Pinckney's letters to Barclay (South Carolina
+  Historical Society) were not searched.
+
 - No person has read the groups, the alignment or the key against the images.
 - The PTJ editors' unpublished partial reconstruction of Code No. 15 (Jefferson Editorial Files) was not seen; this key
   may agree or disagree with it.
@@ -167,10 +225,17 @@ Two readers each, blind (agent 1 and a helper agent, both Claude Opus 5.5); then
 ## Access and conditions
 
 All images are public scans: NARA catalog (M30 roll 2, RG 59) and the Library of Congress (Thomas Jefferson Papers).
-They are not committed; the frame numbers are given above. Raw copies with SHA-256 sums were kept locally.
+They are not committed; the frame numbers are given above. Code No. 14: NARA microfilm T186 roll 1 frames 0037, 0038,
+0058 (public, from catalog.archives.gov). Raw copies with SHA-256 sums were kept locally.
 
 ## Files
 
+- `code14/` (Code No. 14): `ct/barclay_17921227.txt` (groups as read, one line per manuscript line); `transcription/`
+  (both readings and the frozen working sequence); `plaintext/taylor_decipherment.txt`; `key/` (hand alignment of
+  groups 1-132 and key v1); `plan/` (protocol, manifest, FreeTSA query and reply); `test/` (the single run);
+  `scripts/` (`build_key.py`, `heldout_test.py`, `code14lib.py`). Run the scripts from `targets/jefferson1793/code14/`
+  with `python3 -I scripts/build_key.py` and `python3 -I scripts/heldout_test.py`; their frozen docstrings name the
+  local folder they were written in (`output/code14_2026-11-28`), which is not in this repository.
 - `ct/<id>.txt`, `texts/<id>_decryption.txt`, `validation.tsv`: built by `scripts/make_texts.py` from
   `transcription/code15_groups_v3.tsv`, `key.tsv` and `key/hand_alignment_v3.txt`. `texts/<id>_reading.txt`: written
   by hand from the decipherments of the time.
@@ -186,6 +251,9 @@ They are not committed; the frame numbers are given above. Raw copies with SHA-2
   model's corpus was fetched.
 
 ## Credits
+
+Code No. 14: the words are George Taylor Jr.'s decipherment of 1793, as printed by the editors of The Papers of Thomas
+Jefferson (vol. 24, 1990), who also named the code (vol. 26, 1995).
 
 The words are those of the decipherments of the time, by George Taylor Jr. and Thomas Jefferson at the State
 Department, and of the clear file copy of Jefferson's letter, as printed by the editors of The Papers of Thomas
