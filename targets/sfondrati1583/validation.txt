@@ -1,0 +1,40 @@
+# Zero-Leakage, Zero-Boost Statistical Validation — Terranova -> Sfondrati (Cat. #2077 & Cat. #2518)
+# Script: validate.py (seeds=1583, 2518; n_ctrl=200)
+# Key: key.tsv (k-sfondrati1583-cg12, Philip II General Cipher Cg.12 1582)
+# Model: cyphersolver built-in DenseLM 'es-golden-age-nospace' + unboosted lang/lexicons/es.json.gz (ZERO custom boosts; clm.norm j->i, v->u)
+# Note: Cyphersolver standard order-4 refitting test (docs/_validate.py) separately returns PASS on #2077 (-2.074 vs -2.385) and UNDERDETERMINED on short #2518 (-2.178 vs -1.980).
+
+=== Cat. #2077 v2 (BYU Vault MSS 771, transcript_2077_v2.txt — revised joint key.tsv) ===
+tokens=3116, mapped=2874/3116 (92.23%), decoded_chars=6196
+REAL: LM/ch=-2.1567 | WordHit=0.9444 | Len3Hit=0.9244 | Cov4=0.5077 | Cov5=0.3773
+  Shuf-Key  (n=200) LM/ch: real=-2.1567 vs null=-4.5663+/-0.2640 (max=-3.8823) | z= +9.13 | >=real=0/200 (p=0.0050)
+  Shuf-Key  (n=200) Cov4 : real= 0.5077 vs null= 0.1592+/-0.0409 (max= 0.2582) | z= +8.53 | >=real=0/200 (p=0.0050)
+  Shuf-Key  (n=200) Cov5 : real= 0.3773 vs null= 0.0781+/-0.0361 (max= 0.1709) | z= +8.30 | >=real=0/200 (p=0.0050)
+  Shuf-Strm (n=200) LM/ch: real=-2.1567 vs null=-3.3114+/-0.0216 (max=-3.2643) | z=+53.42 | >=real=0/200 (p=0.0050)
+  Shuf-Strm (n=200) Cov4 : real= 0.5077 vs null= 0.2123+/-0.0098 (max= 0.2347) | z=+30.26 | >=real=0/200 (p=0.0050)
+  Shuf-Strm (n=200) Cov5 : real= 0.3773 vs null= 0.0830+/-0.0075 (max= 0.1017) | z=+39.23 | >=real=0/200 (p=0.0050)
+  SUBSET_VERDICT: PASS
+
+=== Cat. #2518 PRE-REVISION TRANSFER (BYU Vault MSS 518, without 14|.=tam, 96.=cum, 31.=gro) ===
+tokens=323, mapped=286/323 (88.54%), decoded_chars=632
+REAL: LM/ch=-2.2090 | WordHit=0.9330 | Len3Hit=0.9160 | Cov4=0.5047 | Cov5=0.3718
+  Shuf-Key  (n=200) LM/ch: real=-2.2090 vs null=-4.5010+/-0.2683 (max=-3.8301) | z= +8.54 | >=real=0/200 (p=0.0050)
+  Shuf-Key  (n=200) Cov4 : real= 0.5047 vs null= 0.1614+/-0.0498 (max= 0.3606) | z= +6.90 | >=real=0/200 (p=0.0050)
+  Shuf-Key  (n=200) Cov5 : real= 0.3718 vs null= 0.0776+/-0.0452 (max= 0.2366) | z= +6.52 | >=real=0/200 (p=0.0050)
+  Shuf-Strm (n=200) LM/ch: real=-2.2090 vs null=-3.3211+/-0.0652 (max=-3.1060) | z=+17.05 | >=real=0/200 (p=0.0050)
+  Shuf-Strm (n=200) Cov4 : real= 0.5047 vs null= 0.2038+/-0.0296 (max= 0.2848) | z=+10.16 | >=real=0/200 (p=0.0050)
+  Shuf-Strm (n=200) Cov5 : real= 0.3718 vs null= 0.0885+/-0.0219 (max= 0.1487) | z=+12.96 | >=real=0/200 (p=0.0050)
+  SUBSET_VERDICT: PASS
+
+=== Cat. #2518 REVISED JOINT KEY (BYU Vault MSS 518, key.tsv incl. 14|.=tam, 96.=cum) ===
+tokens=323, mapped=288/323 (89.16%), decoded_chars=638
+REAL: LM/ch=-2.2203 | WordHit=0.9333 | Len3Hit=0.9167 | Cov4=0.5047 | Cov5=0.3793
+  Shuf-Key  (n=200) LM/ch: real=-2.2203 vs null=-4.5014+/-0.2670 (max=-3.8508) | z= +8.54 | >=real=0/200 (p=0.0050)
+  Shuf-Key  (n=200) Cov4 : real= 0.5047 vs null= 0.1612+/-0.0466 (max= 0.2920) | z= +7.37 | >=real=0/200 (p=0.0050)
+  Shuf-Key  (n=200) Cov5 : real= 0.3793 vs null= 0.0807+/-0.0414 (max= 0.2382) | z= +7.22 | >=real=0/200 (p=0.0050)
+  Shuf-Strm (n=200) LM/ch: real=-2.2203 vs null=-3.3397+/-0.0645 (max=-3.1565) | z=+17.36 | >=real=0/200 (p=0.0050)
+  Shuf-Strm (n=200) Cov4 : real= 0.5047 vs null= 0.1999+/-0.0289 (max= 0.2649) | z=+10.56 | >=real=0/200 (p=0.0050)
+  Shuf-Strm (n=200) Cov5 : real= 0.3793 vs null= 0.0880+/-0.0212 (max= 0.1442) | z=+13.73 | >=real=0/200 (p=0.0050)
+  SUBSET_VERDICT: PASS
+
+DECISION: PASS (runtime 22.9s; #2077 v2, pre-revision #2518 transfer, and revised joint #2518 all satisfy z_LM >= 5.0, z_Cov4 >= 5.0, p <= 0.01, WordHit >= 0.85).
