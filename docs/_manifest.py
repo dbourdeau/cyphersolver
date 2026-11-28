@@ -2426,6 +2426,11 @@ PAGES = [
          quote='&ldquo;se abocase conmigo en dicha Ciudad el once&rdquo;',
          author='Brice Dudout',
          rights='Archivo Hist&oacute;rico Nacional, Madrid, DIVERSOS-COLECCIONES,195,N.14 (PARES); no image reproduced'),
+    dict(slug='gonzaga1537', label='Federico II Gonzaga to Ferrante 1537', year='1537', y=1537.35, place='Mantua &rarr; Ferrante Gonzaga', st='partial', stt='key from adjacent plaintext',
+         title='Federico II Gonzaga to Ferrante Gonzaga: a cipher enclosure of news from Piedmont, 6 May 1537',
+         blurb='A two-page enclosure of news from Piedmont, in a cipher whose letter i turns other signs into new letters, sent by the duke of Mantua to his brother, the viceroy of Sicily. A contributor recovered the key from the clear Italian words written among the cipher. In the layer re-checked on the scans, 221 of 267 cipher words are sure (82.8%) and 10 more probable; 22 code groups have no key.',
+         quote='&ldquo;Me l&rsquo;ha detto il vescovo dela Barba in secreto&rdquo; (the Bishop della Barba told me so in secret)',
+         rights='Biblioteca Estense Universitaria, Modena, Autografoteca Campori (Lodovico Media Library, CC BY-NC-SA)'),
     dict(slug='rossi1537', footer_date='November 2026', label='Rossi to Ferrante Gonzaga 1537', year='1537', y=1537.85, place='San Secondo &rarr; Ferrante Gonzaga', st='partial', stt='key from the ciphertext',
          title='Pier Maria Rossi di San Secondo to Ferrante Gonzaga, 4 and 8 November 1537',
          blurb='Two jocular letters of a count, written almost wholly in a symbol cipher, mocking an Imperial commander&rsquo;s retreat before the French in Piedmont. Malcolm McBratney recovered the key from the ciphertext alone with an annealer and a transcription frozen before decoding. 0.934 of the words read by the site&rsquo;s rule, under the 95% bar: one sign stands for both d and t, 73 units are unread, and the persons are not identified.',
@@ -3833,6 +3838,7 @@ IMAGES['vanhalen1840'] = None
 IMAGES['mauborgne1915'] = None
 IMAGES['hofkriegsrat1629'] = ('hofkriegsrat1629_lead.jpg', 'The clear heading and the first cipher lines of p. 1461, from the 1964 halftone plate', 'Donath Regina, Magyar K&ouml;nyvszemle 80 (1964) no. 1, p. 57, plate of ELTE G. 4 Fol. Tom. V p. 1461, via EPA (epa.oszk.hu)')
 IMAGES['goulart1946'] = ('goulart1946_lead.jpg', 'The text strips of the telegram; VIVILA is boxed in ink', 'CPDOC/FGV, Arquivo Get&uacute;lio Vargas, GV c 1946.03.09/2 (CorrespGV3, page 521), via the CPDOC DocReader')
+IMAGES['gonzaga1537'] = ('gonzaga1537_lead.jpg', 'The opening of the enclosure, c. 13r lines 2-4: clear Italian, then cipher words run on with clear ones', 'Biblioteca Estense Universitaria, Modena, Autografoteca Campori, Lettera G, Gonzaga, Federico II, duca di Mantova, sfasc. II, c. 13r (lines 2-4), via the Lodovico Media Library (CC BY-NC-SA)')
 IMAGES['rossi1537'] = ('rossi1537_lead.jpg', 'Letter B, 8 November 1537: the first four of the 17 cipher lines of c. 33r', 'Biblioteca Estense Universitaria, Modena, Autografoteca Campori, Lettera R, Rossi (conte di San Secondo), c. 33r, via the Lodovico Media Library (CC BY-NC-SA)')
 IMAGES['muzio1550'] = ('muzio1550_lead.jpg', 'Muzio to Ferrante Gonzaga, 11 January 1550: the first four cipher lines of c. 3r', 'Biblioteca Estense Universitaria, Modena, Autografoteca Campori, Lettera M, Muzio, Girolamo, c. 3r, via the Lodovico Media Library (CC BY-NC-SA)')
 IMAGES['augustoni1612'] = ('augustoni1612_lead.jpg', 'The first lines of c. 1r: cipher words among the clear text, 9 October 1612', 'Biblioteca Estense Universitaria, Modena, Autografoteca Campori, Lettera A, Augustoni, Girolamo, c. 1r, via the Lodovico Media Library (CC BY-NC-SA)')

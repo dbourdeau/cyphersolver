@@ -34,9 +34,9 @@
    "transcription": {
     "by": "llm from images",
     "source": "Estense IIIF manifest 22b3126b-3b70-4ede-a33b-1adf4a4491f6 (cc. 12r-15v stitched at native 2976-3094 x 4088-4128 px)",
-    "corrections": 0,
+    "corrections": 12,
     "image_quality": "good",
-    "notes": "Blind high-resolution diplomatic and clean transcription of c. 12r, c. 13r-13v (30 lines: 265 non-clear word/code tokens; 1,459 glyph chars excluding punctuation/braces, 1,509 raw non-space chars), and c. 15v; c. 14r gutter overlap verified. Unedited blind transcription preserved in transcription_13r_13v.txt; scribal slips and doubts noted in reading_13r_13v.md and NOTES.md."
+    "notes": "Blind high-resolution diplomatic and clean transcription of c. 12r, c. 13r-13v (30 lines: 265 non-clear word/code tokens; 1,459 glyph chars excluding punctuation/braces, 1,509 raw non-space chars), and c. 15v; c. 14r gutter overlap verified. Unedited blind transcription preserved in transcription_13r_13v.txt; scribal slips and doubts noted in reading_13r_13v.md and NOTES.md. Re-checked line by line against the full-size Estense canvases on 27 Nov 2026 by an AI model (not blind, no person): 12 corrections, applied in recheck/transcription_13r_13v_recheck.txt; the contributor's file is not edited."
    }
   }
  ],
@@ -92,7 +92,7 @@
    "cleartext context"
   ],
   "attack": "crib",
-  "human_role": "WAINUT found the lead in the Biblioteca Estense sweep (3 Nov 2026). On 19-26 Nov 2026, Gemini 4 Carbon (via @tttzqw) stitched the native IIIF scans, transcribed cc. 12r-15v blindly, recovered the directional i-digraph cipher using inline clear passages together with ciphertext-side analysis, ran 200-shuffle controls, and applied pre-PR adversarial audit fixes from OpenAI Codex (gpt-6.2-astra). No human palaeographer has checked the full transcription yet.",
+  "human_role": "WAINUT found the lead in the Biblioteca Estense sweep (3 Nov 2026). On 19-26 Nov 2026, Gemini 4 Carbon (via @tttzqw) stitched the native IIIF scans, transcribed cc. 12r-15v blindly, recovered the directional i-digraph cipher using inline clear passages together with ciphertext-side analysis, ran 200-shuffle controls, and applied pre-PR adversarial audit fixes from OpenAI Codex (gpt-6.2-astra). No human palaeographer has checked the full transcription yet. On 27 Nov 2026 an AI model (Claude, for the maintainers) re-checked the transcription against the full-size scans as a separate layer (recheck/); no person has checked the corrected places.",
   "tools": [
    "native IIIF tile stitcher",
    "mechanical full-coverage digraph decoder (decrypt_13r_13v.py)",
@@ -104,7 +104,7 @@
    "OpenAI Codex (gpt-6.2-astra, pre-PR adversarial verification)"
   ],
   "first_date": "2026-11-19",
-  "last_date": "2026-11-26"
+  "last_date": "2026-11-27"
  },
  "solution": [
   {
@@ -190,6 +190,12 @@
    ],
    "what": "Image re-check (AI model, Claude, for the maintainers; not blind, no person): c. 13r L01-L24 and c. 13v L25-L30 compared line by line with the full-size Estense IIIF canvases (nine 1500-px regions each, stitched), with close crops of the 17 bracketed slips and the flagged places. 12 corrections written as a separate layer (recheck/corrections.tsv, recheck/transcription_13r_13v_recheck.txt; the contributor's files unchanged): L02/L03 lizh->li3b (pio), L04 uiro e->clear uero e, L05 fiirsibp 4->fiirsibpi4, L10 gg->9 (demostrato), L11 ei->ti (quele), L13 d->é (respetto), L16 +->4 (Al), L19 ri,->r, (è), L23 omitted c restored (essendo), L27 t->l twice (peggiore; posse still a hole). His decoder and key re-run unchanged (recheck/decryption_13r_13v_recheck.txt). Read share by the README rule (v10_relabel, clear_markup ⟨⟩): before 219 sure / 48 holes / 267 = 0.820; after 221 sure / 46 holes / 267 = 0.828, with 10 of the holes probable (AI-settled look-alike signs; 0.865 if granted). The other 14 doubtful words show on the scan as transcribed (writer's slips or unvalued shapes), and the 22 open codes have no key sheet or sibling online.",
    "result": "partial"
+  },
+  {
+   "date": "2026-11-27",
+   "kind": "reading",
+   "what": "Written up from the re-check layer: outcome.texts and fraction_read switched to recheck/ (221/267 = 0.828 sure, 10 probable, 22 open codes, 14 words as written); reading re-read on that layer, grade B kept; page docs/gonzaga1537.html with a crop of c. 13r lines 2-4.",
+   "result": "partial"
   }
  ],
  "outcome": {
@@ -233,9 +239,9 @@
    },
    "notes": "Strict zero-choice 1-value key test on the fitted key with dynamic PASS/FAIL exit gate on transcription_13r_13v.txt (validate_2162.py -> validation.txt; verified FAIL exit=1 on both all-'e' and all-'a' constant keys; zero silent drops, zero target lexicon boosts, ig=g removed, gonzaga1537 and rossi1537 excluded from 5-gram Italian LM): 230 letter-words (964 sign tokens) LM/char -2.1500 (z=+9.37 vs 200 shuffled keys, z=+43.14 vs 200 shuffled streams, p=0.0050; IT_WORDS hit 182/230 = 79.1%, len>=4 86/121 = 71.1%). Also includes zero-lexicon recto-to-verso transfer (11 retrospectively selected recto words -> 28 signs -> verso L25-L30) and a leak-free synthetic control on 212 genuine segmented Italian prose words from targets/rossi1537/reading_A.md (207/212 = 97.6% exact words, 965/979 = 98.6% chars; earlier blind solver audit corrected original 94.9% to 141/214 = 65.9% without leakage/boosts, documented in NOTES.md)."
   },
-  "fraction_read": 0.82,
+  "fraction_read": 0.828,
   "fraction_read_method": "measured",
-  "fraction_read_source": "reading_13r_13v.md (word_audit_2162.py & v10_relabel.py, clear_markup=⟨⟩): 219 of 267 cipher word tokens sure under key_gonzaga1537.tsv (0.820, 48 holes: 13 open proper-noun nomenclators, 9 open numeric codes/provisional candidate nulls, 9 contextual/uncertain words, 17 scribal slips).",
+  "fraction_read_source": "recheck/reading_13r_13v_recheck.md, the image re-check layer of 27 Nov 2026 (v10_relabel.py, clear_markup=⟨⟩): 221 of 267 cipher word tokens sure under key_gonzaga1537.tsv run unchanged on recheck/transcription_13r_13v_recheck.txt (0.828; 46 holes: 22 open codes, 14 words the scan shows as written, 10 probable words settled by an AI model between look-alike signs). The contributor's filed reading (reading_13r_13v.md, not edited) measures 219/267 = 0.820.",
   "codes_open": {
    "open": 13,
    "total": 14,
@@ -277,26 +283,26 @@
   "texts": [
    {
     "doc": "beu-campori-gonzaga-1537-c13",
-    "label": "c. 13r-13v (catalogue 2162, Piedmont intelligence enclosure in Federico II Gonzaga's letter of 6 May 1537)",
-    "transcription": "transcription_13r_13v.txt",
-    "decryption": "decryption_13r_13v.txt",
-    "reading": "reading_13r_13v.md",
+    "label": "c. 13r-13v (catalogue 2162, Piedmont intelligence enclosure in Federico II Gonzaga's letter of 6 May 1537), re-check layer of 27 Nov 2026",
+    "transcription": "recheck/transcription_13r_13v_recheck.txt",
+    "decryption": "recheck/decryption_13r_13v_recheck.txt",
+    "reading": "recheck/reading_13r_13v_recheck.md",
     "translation": "translation_13r_13v.md",
     "language": "it",
     "state": "read in part",
-    "read_share": 0.82,
+    "read_share": 0.828,
     "clear_markup": "⟨⟩",
-    "summary": "A two-section secret Piedmont intelligence sheet copied in Mantua and enclosed in Federico II Gonzaga's 6 May 1537 letter to Ferrante Gonzaga: Section 1 criticises an unnamed figure [46] for reckless, vain conduct and notes that the Bishop of Casale (contextually Bernardino Castellari, called della Barba) is held under suspicion through Speciano (contextually Giovanni Battista Speciano); Section 2 reports troops passing over to {L2?} with banners unfurled, the surrender of the fortress of Hesdin (Edim, 13-14 April 1537), Giovio's (contextually Paolo Giovio's) warning to {L30?}, and public opinion in Milan that {L30?} stands in the worst possible credit.",
+    "summary": "A two-section secret Piedmont intelligence sheet copied in Mantua and enclosed in Federico II Gonzaga's 6 May 1537 letter to Ferrante Gonzaga: Section 1 criticises an unnamed figure [46] for reckless, vain conduct and notes that the Bishop of Casale (contextually Bernardino Castellari, called della Barba) is held under suspicion through Speciano (contextually Giovanni Battista Speciano); Section 2 reports troops passing over to {L2?} with banners unfurled, the surrender of the fortress of Hesdin (Edim, 13-14 April 1537), Giovio's (contextually Paolo Giovio's) warning to {L30?}, and public opinion in Milan that {L30?} stands in the worst possible credit. Shown here in the re-check layer (27 Nov 2026): the contributor's transcription with 12 corrections from the Estense scans, viewed by an AI model only; no person has checked the corrected places. The English translation is the contributor's, made from his filed reading.",
     "reading_review": {
      "grade": "B",
      "by": "integration review of PR #1019 (AI agent, for the maintainers); not a person",
      "reader_kind": "model",
      "independent": true,
      "date": "2026-11-27",
-     "note": "Decryption reproduced from key_gonzaga1537.tsv on the transcription (30/30 lines, 43 ambiguous parses resolved to the only Italian word or bracketed); 219/267 sure cipher words (0.820), read in part; c. 13r L01-L07 compared with the Estense IIIF image, one shape difference (lizh/li3b, bracketed in the reading)."
+     "note": "Decryption reproduced from key_gonzaga1537.tsv on the transcription (30/30 lines, 43 ambiguous parses resolved to the only Italian word or bracketed); 219/267 sure cipher words (0.820), read in part; c. 13r L01-L07 compared with the Estense IIIF image, one shape difference (lizh/li3b, bracketed in the reading). Re-read on 27 Nov 2026 on the re-check layer (recheck/reading_13r_13v_recheck.md, AI agent, for the maintainers; not a person): the 12 corrections change sign labels, not the sentences (più -> pio, rispetto -> respetto, essendo and resa now sure, ten words marked probable), so the sentences reviewed are the same and grade B is kept."
     }
    }
   ],
-  "notes": "Substantially deciphered using inline clear Italian passages plus ciphertext-side cryptanalysis (43 signs + 30=che; 219/267 = 82.0% sure cipher words under key_gonzaga1537.tsv, clear_markup=⟨⟩, 48 holes -> partial extent under the 95% threshold). No surviving key sheet or contemporary decipherment."
+  "notes": "Substantially deciphered using inline clear Italian passages plus ciphertext-side cryptanalysis (43 signs + 30=che). Re-check layer of 27 Nov 2026 (images viewed by an AI model only): 221/267 = 82.8% sure cipher words (10 more probable), 46 holes -> partial extent under the 95% threshold; contributor's filed reading 219/267 = 82.0%. No surviving key sheet or contemporary decipherment."
  }
 }
