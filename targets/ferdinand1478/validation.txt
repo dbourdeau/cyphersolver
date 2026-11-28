@@ -1,0 +1,22 @@
+# Zero-Leakage, Zero-Boost Statistical Validation — Zaragoza AHPZ C_CRAR/000001/0024 (Cat. 2854, Seville 9 Jun 1478)
+# Script: validate.py (seed=1478, n_ctrl=200)
+# Inputs: transcript_2854.txt (1915 tokens, 126 distinct types) + key_ferdinand1478.tsv (1914/1915 = 99.95% mapped)
+# Model: cyphersolver built-in DenseLM 'es-golden-age-nospace' + unboosted lang/lexicons/es.json.gz (+ ca.json.gz x0.1, ZERO custom boosts)
+
+=== 1. STRICT ZERO-CHOICE DETERMINISTIC KEY EVALUATION ===
+tokens=1915, mapped=1914/1915 (99.95%), decoded_chars=3323, viterbi_words=894
+REAL: LM/ch=-2.1317 | WordHit=0.9452 | Len3Hit=0.9270 | Cov4=0.5429 | Cov5=0.4550
+
+=== 2. 200 SHUFFLED-KEY & 200 SHUFFLED-STREAM NULL CONTROLS ===
+  Shuf-Key  (n=200) LM/ch  : real=-2.1317 vs null=-4.0639+/-0.2469 (max=-3.3823) | z= +7.82 | >=real=0/200 (p=0.0050)
+  Shuf-Key  (n=200) WordHit: real= 0.9452 vs null= 0.7365+/-0.0348 (max= 0.8231) | z= +5.99 | >=real=0/200 (p=0.0050)
+  Shuf-Key  (n=200) Len3Hit: real= 0.9270 vs null= 0.6330+/-0.0430 (max= 0.7466) | z= +6.84 | >=real=0/200 (p=0.0050)
+  Shuf-Key  (n=200) Cov4   : real= 0.5429 vs null= 0.2579+/-0.0532 (max= 0.4265) | z= +5.36 | >=real=0/200 (p=0.0050)
+  Shuf-Key  (n=200) Cov5   : real= 0.4550 vs null= 0.1535+/-0.0554 (max= 0.3479) | z= +5.44 | >=real=0/200 (p=0.0050)
+  Shuf-Strm (n=200) LM/ch  : real=-2.1317 vs null=-3.6751+/-0.0340 (max=-3.5759) | z=+45.38 | >=real=0/200 (p=0.0050)
+  Shuf-Strm (n=200) WordHit: real= 0.9452 vs null= 0.8168+/-0.0093 (max= 0.8421) | z=+13.78 | >=real=0/200 (p=0.0050)
+  Shuf-Strm (n=200) Len3Hit: real= 0.9270 vs null= 0.7162+/-0.0136 (max= 0.7578) | z=+15.53 | >=real=0/200 (p=0.0050)
+  Shuf-Strm (n=200) Cov4   : real= 0.5429 vs null= 0.2383+/-0.0115 (max= 0.2696) | z=+26.47 | >=real=0/200 (p=0.0050)
+  Shuf-Strm (n=200) Cov5   : real= 0.4550 vs null= 0.1249+/-0.0082 (max= 0.1469) | z=+40.11 | >=real=0/200 (p=0.0050)
+
+DECISION: PASS (runtime 8.3s; both 200-shuffle LM controls satisfy z_lm >= 5.0 and p <= 0.01).

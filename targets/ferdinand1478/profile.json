@@ -1,0 +1,287 @@
+{
+ "schema_version": 1,
+ "target": "ferdinand1478",
+ "title": "King Ferdinand II of Aragon's royal cipher dispatch to King John II of Aragon, Seville, 9 June 1478 (Zaragoza, AHPZ Colección Zurita, C_CRAR/000001/0024; catalogue 2854), rebuilt from sibling C_CRAR/000001/0022 (15 August 1477)",
+ "documents": [
+  {
+   "id": "ahpz-crar-1-24",
+   "read": "read in part",
+   "shelfmark": "Archivo Histórico Provincial de Zaragoza (Archivo del Reino de Aragón), Colección Zurita, C_CRAR/000001/0024 (catalogue 2854)",
+   "date": "9 Jun 1478",
+   "year": 1478,
+   "country": "Spain",
+   "route": "King Ferdinand II of Aragon (Seville) -> King John II of Aragon",
+   "places": {
+    "from": "Seville",
+    "to": "Aragon"
+   },
+   "language": "Spanish",
+   "pages": 3,
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "interlinear",
+     "unrelated source"
+    ],
+    "partial": false,
+    "source": "Mikel García Larragan published a full online decipherment of AHPZ C_CRAR/000001/0024 on 16 July 2026 (El blog de García Larragan y Cía, Criptografía CCCLXXXIV). On the manuscript itself, C_CRAR/000001/0024 bears a single 1-word contemporary interlinear gloss ('y su bi vn gia' above L21 tokens 9-15), while sibling AHPZ C_CRAR/000001/0022 (15 Aug 1477) in the same file carries a complete contemporary interlinear decipherment."
+   },
+   "length": {
+    "tokens": 1915,
+    "distinct": 126,
+    "unit": "mixed",
+    "measured": true,
+    "file": "transcript_2854.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "DARA Aragón PDF AHPZ_C_CRAR_000024.pdf (https://opacaraimagenes.aragon.es/7a/9e/AHPZ_C_CRAR_000024.pdf; native 160-dpi embedded JPEGs upscaled up to 300 dpi for inspection)",
+    "corrections": 4,
+    "image_quality": "good",
+    "notes": "63 solid cipher lines across f. 1r (L01-L31), f. 1v (L32-L60), and f. 2r (L61-L63): 1,915 space-separated tokens across 126 distinct types (IC=0.01867); audited across strips and enlarged crops by AI models only (no human check yet), with 4 model-settled scan amendments bracketed in reading_2854.md (L45 tok 13: 91 -> gi, L01 tok 20: 20 -> 10, L03 tok 17: 44 -> 45 = pi, L62 tok 17: 20 -> 10 = ci); clear framing and L21 gloss isolated in diplomatic_2854.txt."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "homophonic",
+   "syllabic",
+   "nomenclator"
+  ],
+  "summary": "Four-tier Castilian-Aragonese royal cipher (key family published in Larragan 2026, Tomokiyo 2018 §2.4, and Bertomeu pp. 212-213; rebuilt here from sibling AHPZ C_CRAR/000001/0022) combining a sequential 75-slot CV-syllabary (3-77 across 15 consonants x 5 vowels, with stemless Aragonese 5, open-top ribbon gam=8, dotted ii=11), homophonic single-letter symbols, two-letter function-word codes (de/di/do/du, fa/fi/fo/fu, q_d, p_bar), and royal/territorial nomenclators (gi=Vuestra Alteza, gam2=Rey, gam4=Conde, gam6=Reyno, 95=Sicilia, 96=Cerdenya, 99=Francia).",
+  "symbol_kind": "digits and symbols",
+  "digit_groups": {
+   "width": "1-2",
+   "separation": "spaces"
+  },
+  "distinct_symbols": 126,
+  "diacritics": {
+   "used": true,
+   "note": "Overbars, crossbars, double bars, and dot pairs distinguish homophones and letter variants (q_bar/q_dbl, tt/tt_dot, ct/ct_dot, b_bar/b_bar_dot/b_dbl, e_tail/e_dot, gt/gt_dot, d_bar/d_bar_dot, L_dot, k_bar)."
+  },
+  "homophones": {
+   "used": true,
+   "max_per_vowel": 4,
+   "max_per_consonant": 3
+  },
+  "nomenclator": {
+   "present": true,
+   "entries": 17,
+   "kinds": [
+    "common words",
+    "names",
+    "places",
+    "titles"
+   ],
+   "unread_groups": 1
+  },
+  "nulls": {
+   "present": false
+  },
+  "word_division": "none",
+  "doubled_letters": "written twice",
+  "sibling_key": "The key family was already published from BNE witnesses by Satoshi Tomokiyo (2018, §2.4) and Mikel García Larragan (incl. his 16 July 2026 decipherment of this letter). Here the key was rebuilt from same-secretary sibling AHPZ C_CRAR/000001/0022 in the same file (Medina del Campo, 15 Aug 1477, J. Arinyo secr., Ansorena 2017 lot 503 item 22; 24 physical cipher lines with contemporary interlinear decipherment; 95=Sicilia on L02/L06/L19 checked on crops by AI models only, not a person). AHPZ C_CRAR/000001/0020 (#2856) was reported in issue #1016 as not a cipher.",
+  "key_order": "partly alphabetical"
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "online",
+   "where": "Mikel García Larragan published a full decipherment and nomenclator of AHPZ C_CRAR/000001/0024 (9 June 1478) on 16 July 2026 in El blog de García Larragan y Cía (Criptografía CCCLXXXIV, https://mikelgarcialarragan.blogspot.com/2026/07/criptografia-ccclxxxiv-carta-cifrada-de.html; syndicated at https://larragan1.rssing.com/chan-20265021/latest.php) using the key family published in Larragan and Tomokiyo (2018, §2.4); found on 26 Nov 2026 after completion of our 20 Nov reading from sibling 0022 (not used).",
+   "found": "after reading",
+   "used": false
+  },
+  "inputs": [
+   "images",
+   "sibling key",
+   "cleartext context"
+  ],
+  "attack": "sibling key",
+  "human_role": "Project wave-8 vetting located catalogue 2854, 2855, and 2856 on DARA Aragón (15 Nov 2026). @tttzqw sponsored autonomous Gemini 4 Carbon workflows (with Gemini 4 Neon and Hydrogen) to download PDFs, report #2856 as not a cipher in issue #1016, sweep 16 neighboring AHPZ C_CRAR folders to locate sibling C_CRAR/000001/0022, transcribe #2854, rebuild the key from 0022, and validate statistically, followed on 26 Nov 2026 by a pre-PR audit via OpenAI Codex (gpt-6.2-astra). All crop checks (including 95=Sicilia on 0022) were done by AI models, not by a human person.",
+  "tools": [
+   "DARA Aragón PDF renderer and strip cropper",
+   "mechanical unedited key decoder (decrypt.py)",
+   "zero-leakage, zero-boost 200-shuffle dynamic validator with negative-control gate (validate.py)",
+   "held-out 1473 Castilian synthetic control (synthetic_control_1478.py)",
+   "programmatic cipher-word auditor (word_audit.py)"
+  ],
+  "models": [
+   "Gemini 4 Carbon (Google DeepMind)",
+   "Gemini 4 Neon (Google DeepMind)",
+   "Gemini 4 Hydrogen (Google DeepMind)",
+   "GPT-6.2-Astra (OpenAI Codex, pre-PR adversarial audit)"
+  ],
+  "first_date": "2026-11-20",
+  "last_date": "2026-11-28"
+ },
+ "solution": [
+  {
+   "date": "2026-11-20",
+   "kind": "literature search",
+   "what": "Downloaded scans of #2854, #2855, and #2856 plus 16 neighboring AHPZ C_CRAR/000001/ PDFs (0010, 0015-0032); verified #2856 (0020) shows no cipher passage (reported in issue #1016), #2855 (0026) is an unrelated glossed Catalan cipher, and #2854 (0024) spans 63 bare cipher lines across 2.1 pages.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-20",
+   "kind": "sibling key",
+   "technique": [
+    "plaintext matching",
+    "manual reconstruction"
+   ],
+   "what": "Located same-secretary witness AHPZ C_CRAR/000001/0022 (Medina del Campo, 15 Aug 1477, J. Arinyo secr., 24 physical cipher lines with contemporary interlinear decipherment) in the same file; rebuilt 92 direct WITNESS_CRAR22 mappings + 6 calligraphic allographs plus regular 3..77 CV-syllabary grid slots.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-20",
+   "kind": "transcription",
+   "what": "Transcribed all 63 cipher lines of #2854 (1,915 space-separated tokens, IC=0.01867) across f. 1r-2r, with 4 AI-model crop amendments subsequently bracketed as probable in reading_2854.md.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-20",
+   "kind": "control",
+   "what": "Validated leak-free Golden Age Spanish LM (es-golden-age-nospace) on held-out targets/ferdinand1473 synthetic control (743 chars, 38 unspaced homophonic tokens, zero overlap): 0-crib blind SA recovered 734/743 = 98.79% char accuracy (z=+46.05 vs 6 blind SA nulls, z=+21.52/+34.30 vs 200 shuffles, p=0.0050; DummyAllE=FAIL).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-20",
+   "kind": "solver",
+   "technique": [
+    "key-structure hypothesis",
+    "language-model scoring",
+    "manual reconstruction"
+   ],
+   "what": "Resolved 1477->1478 shifted values (b_bar=s, gam2=rey), matched 95=Sicilia against CRAR_22 L02/L06/L19 on enlarged crops (AI model check only), used target L21 gloss (y su bi vn gia) for 20=gi and n_br=y, and proposed target-inferred codes (fa, fi, fo, 96, 99; bracketed in reading_2854.md), leaving 1 token {oo?} unresolved.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-26",
+   "kind": "verification",
+   "technique": [
+    "statistical test",
+    "language-model scoring",
+    "plaintext matching"
+   ],
+   "what": "Located Mikel García Larragan's 16 July 2026 full online decipherment of #2854 alongside Tomokiyo (2018 §2.4), Bertomeu (pp. 212-213), and Ansorena (2017 lot 503), setting outcome.method='read from existing decipherment' and first_break=false; verified decrypt.py (1,914/1,915 = 99.95% across 126 types) and validate.py (LM/ch=-2.1317, z=+7.82 keys / +45.38 streams, p=0.0050, PASS; all-'e' and all-'a' negative controls FAIL exit 1).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-28",
+   "kind": "reading",
+   "what": "Bracketed the 4 model-settled scan-amendment words (L03 [supiera], L45 [uuestra] [alteza], L62 [seruicio]) and all 15 words from codes inferred on #2854 alone (fa, fi, fo, 96, 99) in reading_2854.md and translation_2854.md: word_audit.py & v10_relabel.py measure 656/770 sure cipher words (read_share = 0.852, 114 explicit holes) -> read in part (Status: no write-up).",
+   "result": "partial"
+  }
+ ],
+ "outcome": {
+  "class": "read in part",
+  "key": "partial",
+  "method": "read from existing decipherment",
+  "first_break": false,
+  "method_basis": "Mikel García Larragan published a full online decipherment of this letter on 16 July 2026 using a key family already published in Larragan and Satoshi Tomokiyo (2018, §2.4); our key and partial reading here were independently rebuilt from the contemporary interlinear decipherment of sibling letter AHPZ C_CRAR/000001/0022 in the same archival file.",
+  "contribution": [
+   "transcription",
+   "key extended or corrected",
+   "catalogue correction"
+  ],
+  "verification": [
+   "contemporary decipherment",
+   "matched control",
+   "statistical test",
+   "historical consistency"
+  ],
+  "validation": {
+   "date": "2026-11-26",
+   "verdict": "pass",
+   "file": "validation.txt",
+   "tokens": 1915,
+   "types": 126,
+   "score": -2.1317,
+   "nulls": {
+    "shuffled_keys": {
+     "n": 200,
+     "mean": -4.0639,
+     "sd": 0.2469,
+     "max": -3.3823,
+     "z": 7.82,
+     "p": 0.005
+    },
+    "shuffled_streams": {
+     "n": 200,
+     "mean": -3.6751,
+     "sd": 0.034,
+     "max": -3.5759,
+     "z": 45.38,
+     "p": 0.005
+    }
+   },
+   "notes": "Zero-leakage, zero-boost 200-shuffle controls with dynamic PASS/FAIL exit gate in packaged validate.py (built-in es-golden-age-nospace DenseLM + unboosted lang/lexicons/es.json.gz and ca.json.gz; verified FAIL exit=1 on both all-'e' and all-'a'): 1,914/1,915 mapped (99.95%, 3,323 chars, 894 Viterbi words), LM/ch -2.1317 (z=+7.82 keys / +45.38 streams, 0/200 p=0.0050), WordHit 0.9452, Cov>=4 0.5429, Cov>=5 0.4550. Scope caveat: target-inferred types (NEW_IN_2854, SINGLETON) are evaluated in-sample on #2854 and bracketed as holes in reading_2854.md."
+  },
+  "fraction_read": 0.852,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "reading_2854.md (word_audit.py & v10_relabel.py, clear_markup=⟨⟩): 656 of 770 cipher words sure (0.852, 114 explicit holes: 1x {oo?}, 5x [?...] corrupt/smudged spans, 4x model-settled scan amendments, 15x words from target-inferred codes fa/fi/fo/96/99, 3x target-only singletons, and 86 scribal slips or secondary polyvalent values).",
+  "codes_open": {
+   "open": 6,
+   "total": 17,
+   "tokens_open": 16
+  },
+  "provenance": "contributed",
+  "credits": [
+   {
+    "who": "bourdeau",
+    "role": "new cipher",
+    "note": "vetted and promoted DARA Aragón wave-8 leads 2854, 2855, and 2856",
+    "date": "2026-11-15"
+   },
+   {
+    "who": "contemporary",
+    "role": "key or decipherment used",
+    "note": "King John II's chancery contemporary interlinear decipherment on sibling AHPZ C_CRAR/000001/0022 (15 Aug 1477), used to rebuild the witness key",
+    "date": "1477"
+   },
+   {
+    "who": "larragan",
+    "role": "prior solution",
+    "note": "published earlier full online decipherment of AHPZ C_CRAR/000001/0024 (Criptografía CCCLXXXIV) in a previously published key family; located after this session's reading and not used",
+    "date": "2026-07-16",
+    "source": "https://mikelgarcialarragan.blogspot.com/2026/07/criptografia-ccclxxxiv-carta-cifrada-de.html",
+    "published": true
+   },
+   {
+    "who": "gemini4carbon",
+    "role": "solution",
+    "note": "63-line transcription, witness alignment and key rebuilt from sibling C_CRAR/000001/0022 in the same file (95=Sicilia checked by AI model on crops, L46 mossen Pachs y Micer Uilanoua, L21 y subiungia, L54 reyno), and statistical validation; compute and PRs via @tttzqw",
+    "date": "2026-11-26"
+   }
+  ],
+  "key_file": "key_ferdinand1478.tsv",
+  "gaps": [
+   {
+    "item": "Unresolved nomenclator ({oo?}, L40, 1 token) and 15 words from five codes inferred on #2854 alone (fa, fi, fo, 96, 99)",
+    "blocker": "open-codes",
+    "detail": "L40 {oo?} (where García Larragan reads aquí) and target-inferred [quanto], [qual], [quel]/[aquel], [cerdenya], and [francia] lack direct glosses on C_CRAR/000001/0022 and are bracketed as holes."
+   },
+   {
+    "item": "5 corrupt or ink-smudged spans (L11-12, L41, L60, L61), 4 model-settled scan amendments (L03, L45, L62), 3 target-only singletons, and 86 scribal slips (98 words)",
+    "blocker": "illegible",
+    "detail": "Bracketed in reading_2854.md and catalogued in holes.md (note: 95=Sicilia on CRAR_22 L02/L06/L19 was also checked on enlarged crops by AI models only, not by a human person)."
+   }
+  ],
+  "texts": [
+   {
+    "doc": "ahpz-crar-1-24",
+    "label": "AHPZ C_CRAR/000001/0024 (catalogue 2854, King Ferdinand II -> King John II, Seville, 9 June 1478)",
+    "transcription": "transcript_2854.txt",
+    "decryption": "decryption_2854.txt",
+    "reading": "reading_2854.md",
+    "translation": "translation_2854.md",
+    "language": "es",
+    "state": "read in part",
+    "read_share": 0.852,
+    "cipher_words": 770,
+    "holes": 114,
+    "clear_markup": "⟨⟩",
+    "summary": "In a 63-line royal cipher dispatch from Seville on 9 June 1478 (21 days before Prince Juan's birth), King Ferdinand II reports to his 79-year-old father King John II on King Ferrante I of Naples's proposal to hold French-occupied Roussillon and Cerdagne in escrow while auditing Louis XI's debt claims (while Ferdinand pursues parallel direct talks with France), endorses the Infante's lieutenancy, questions John II's recall of the Count of Cardona from Sardinia to Sicily, and warns that Viceroy Nicolás Carroz de Arborea is secretly negotiating to marry his daughter to rebel Marquis Leonardo de Alagón's eldest son so that the two would remain lords of Sardinia."
+   }
+  ],
+  "notes": "Recorded as outcome.method='read from existing decipherment' and Status: no write-up because Mikel García Larragan published a full online decipherment of this letter on 16 July 2026 in a key family already published by Larragan and Tomokiyo (2018, §2.4). Our key (key_ferdinand1478.tsv) was independently rebuilt from sibling AHPZ C_CRAR/000001/0022 in the same file; strict v10 read_share = 656/770 = 0.852 (114 holes, read in part). Catalogue 2856 (C_CRAR/000001/0020) is reported separately in issue #1016."
+ }
+}
