@@ -1,0 +1,447 @@
+# Written by word_audit.py; rule: 'Only sure words count' (cf. targets/edmondes1594/scripts/sure_words.tsv).
+# Lexicon filter: lang/lexicons/it.json.gz entries with count >= 10 (u/v and j/i folded).
+# Cat. 2574 (239 cipher words): sure 101/239 (0.423) [monophonic 50, unique polyphonic 51]; key, by sense 40; unbracketed departures 3; explicit holes 95 (v10 plain-word share 144/239 = 0.603).
+# Cat. 2559 (202 cipher words): sure 112/202 (0.554) [monophonic 49, unique polyphonic 63]; key, by sense 46; unbracketed departures 0; explicit holes 44 (v10 plain-word share 158/202 = 0.782).
+# Combined (441 cipher words): sure 213/441 (0.483); key, by sense 86; departures 3; explicit holes 139 (v10 plain-word share 302/441 = 0.685).
+doc	segment_or_line	word	status	detail	cipher_slots
+2574	L05	Et	key, by sense	ed/et	L05:5:4=e L05:6:sig=t/d
+2574	L05	crediatemi	sure	polyphonic_unique	L05:7:rev_c=c L05:8:c_plus=r L05:9:9=e/l L05:10:eps=d L05:11:7=i L05:13:c=a L05:14:sig=t/d L05:15:m=e L05:16:theta=m L05:17:6=i
+2574	L05	che	sure	monophonic	L05:18:1=c L05:19:p=h L05:20:4=e
+2574	L05	mentre	sure	polyphonic_unique	L05:22:o=m L05:23:9=e/l L05:24:d_bar=n L05:25:pi=t/b L05:26:c_plus=r L05:27:4=e
+2574	L05	che	sure	polyphonic_unique	L05:28:d=c/g L05:29:y=h L05:30:m=e
+2574	S01	[?vuole]	hole	contextual_or_uncertain	
+2574	S01	[?chi]	hole	contextual_or_uncertain	
+2574	S01	[?l]	hole	contextual_or_uncertain	
+2574	S01	[?ora]	hole	contextual_or_uncertain	
+2574	S01	[godere]	hole	grade2_or_scribal_slip	
+2574	L05	et	key, by sense	ed/et	L05:53:9=e/l L05:54:sig=t/d
+2574	S01	[amicitia]	hole	grade2_or_scribal_slip	
+2574	S01	[et]	hole	grade2_or_scribal_slip	
+2574	L06	del	sure	monophonic	L06:2:3=d L06:3:m=e L06:4:5=l
+2574	S01	[bisogno]	hole	grade2_or_scribal_slip	
+2574	S01	[?tanti]	hole	contextual_or_uncertain	
+2574	S01	[pensieri]	hole	grade2_or_scribal_slip	
+2574	L06	a	key, by sense	a/o	L06:27:II=a/o
+2574	L06	andargli	sure	polyphonic_unique	L06:28:c=a L06:29:p_bar=n L06:30:sig=t/d L06:31:II=a/o L06:32:e=r L06:33:u=g L06:34:9=e/l L06:35:6=i
+2574	L06	molto	key, by sense	molta/molto	L06:36:o=m L06:37:xi=o L06:38:5=l L06:39:sig=t/d L06:40:II=a/o
+2574	L06	aversi	sure	monophonic	L06:41:c=a L06:42:n=u L06:43:4=e L06:44:c_plus=r L06:45:o_plus=s L06:46:8=i
+2574	L06	et	key, by sense	ed/et	L06:48:9=e/l L06:49:sig=t/d
+2574	L06	di	sure	monophonic	L06:50:3=d L06:51:6=i
+2574	L06	lei	key, by sense	lei/lli	L06:52:g=l L06:53:9=e/l L06:54:7=i
+2574	L06	non	sure	monophonic	L06:55:f=n L06:56:xi=o L06:57:d_bar=n
+2574	L07	sarà	key, by sense	sara/saro	L07:2:w_bar=s L07:3:c=a L07:4:c_plus=r L07:5:II=a/o
+2574	L07	mai	sure	monophonic	L07:6:theta=m L07:7:o_base=a L07:8:6=i
+2574	S01	[?buono]	hole	contextual_or_uncertain	
+2574	S01	[?servito]	hole	contextual_or_uncertain	
+2574	L07	se	sure	monophonic	L07:14:o_plus=s L07:15:m=e
+2574	L07	non	sure	polyphonic_unique	L07:23:p_bar=n L07:24:II=a/o L07:25:f=n
+2574	L07	quando	sure	polyphonic_unique	L07:27:o_dot=q L07:28:n=u L07:29:II=a/o L07:30:d_bar=n L07:31:3=d L07:32:xi=o
+2574	L07	harò	key, by sense	hara/haro	L07:33:y=h L07:34:c=a L07:35:e=r L07:36:II=a/o
+2574	S01	[bisogno]	hole	grade2_or_scribal_slip	
+2574	L07	del	sure	monophonic	L07:44:eps=d L07:45:4=e L07:46:g=l
+2574	S01	[compagno]	hole	grade2_or_scribal_slip	
+2574	L07	al	sure	monophonic	L07:57:c=a L07:58:g=l
+2574	L07	presente	sure	polyphonic_unique	L07:59:a=p L07:60:e=r L07:61:9=e/l L07:62:o_plus=s L07:63:4=e L07:64:f=n L08:1:pi=t/b L08:2:m=e
+2574	L08	gli	key, by sense	cli/gli	L08:3:d=c/g L08:4:g=l L08:5:7=i
+2574	L08	pare	key, by sense	pare/parl	L08:7:bar_dot=p L08:8:c=a L08:9:c_plus=r L08:10:9=e/l
+2574	L08	che	sure	monophonic	L08:11:1=c L08:12:eq=h L08:13:4=e
+2574	S01	[?tutto]	hole	contextual_or_uncertain	
+2574	S01	[m]	hole	grade2_or_scribal_slip	
+2574	S01	[habi]	hole	grade2_or_scribal_slip	
+2574	S01	[bisogno]	hole	grade2_or_scribal_slip	
+2574	L08	di	sure	monophonic	L08:32:3=d L08:33:7=i
+2574	L08	lui	sure	monophonic	L08:34:5=l L08:35:n=u L08:36:6=i
+2574	L08	et	key, by sense	ed/et	L08:38:m=e L08:39:sig=t/d
+2574	L08	però	key, by sense	pera/pero	L08:40:bar_dot=p L08:41:4=e L08:42:e=r L08:43:II=a/o
+2574	L08	ogni	sure	polyphonic_unique	L08:44:xi=o L08:45:d=c/g L08:46:d_bar=n L08:47:8=i
+2574	L08	amicitia	sure	polyphonic_unique	L08:48:o_base=a L08:49:o=m L08:50:7=i L08:51:1=c L08:52:6=i L08:53:sig=t/d L08:54:8=i L08:55:c=a
+2574	S01	[gli]	hole	grade2_or_scribal_slip	
+2574	L08	inparerà	sure	polyphonic_unique	L08:59:t=i L08:60:f=n L08:61:bar_dot=p L08:62:II=a/o L08:63:e=r L08:64:9=e/l L09:4:e=r L09:5:c=a
+2574	S01	[?ragionevole]	hole	contextual_or_uncertain	
+2574	L09	che	sure	polyphonic_unique	L09:15:d=c/g L09:16:p=h L09:17:9=e/l
+2574	S01	[debia]	hole	grade2_or_scribal_slip	
+2574	L09	esere	sure	polyphonic_unique	L09:24:4=e L09:25:T=s L09:26:9=e/l L09:27:c_plus=r L09:28:m=e
+2574	L09	prima	key, by sense	prima/primo	L09:35:a=p L09:36:e=r L09:37:7=i L09:38:theta=m L09:39:II=a/o
+2574	S01	[di]	hole	grade2_or_scribal_slip	
+2574	L09	sua	sure	monophonic	L09:41:o_plus=s L09:42:n=u L09:43:o_base=a
+2574	S01	[utilità]	hole	grade2_or_scribal_slip	
+2574	L09	et	key, by sense	ed/et	L09:45:9=e/l L09:48:sig=t/d
+2574	L10	comodo	sure	polyphonic_unique	L10:2:rev_c=c L10:4:xi=o L10:5:Hx=m L10:6:II=a/o L10:7:3=d L10:8:xi=o
+2574	L10	et	sure	polyphonic_unique	L10:9:9=e/l L10:10:pi=t/b
+2574	L10	poi	key, by sense	pai/poi	L10:11:bar_dot=p L10:12:II=a/o L10:13:7=i
+2574	S01	[che]	hole	grade2_or_scribal_slip	
+2574	L10	qui	sure	monophonic	L10:20:o_dot=q L10:21:n=u L10:22:8=i
+2574	L10	sono	key, by sense	sona/sono	L10:26:o_plus=s L10:27:xi=o L10:28:p_bar=n L10:29:II=a/o
+2574	L10	non	sure	polyphonic_unique	L10:28:p_bar=n L10:29:II=a/o L10:30:f=n
+2574	L10	ho	key, by sense	ha/ho	L10:33:eq=h L10:34:II=a/o
+2574	L10	mai	sure	monophonic	L10:35:o=m L10:36:c=a L10:37:8=i
+2574	S01	[visto]	hole	grade2_or_scribal_slip	
+2574	L10	il	sure	monophonic	L10:43:7=i L10:44:q_dbl=l
+2574	S01	[?costume]	hole	contextual_or_uncertain	
+2574	L10	non	sure	polyphonic_unique	L10:60:d_bar=n L10:61:II=a/o L10:62:f=n
+2574	S01	[?adurale]	hole	contextual_or_uncertain	
+2574	S01	[buona]	hole	grade2_or_scribal_slip	
+2574	L11	dispositione	sure	polyphonic_unique	L11:17:eps=d L11:18:7=i L11:19:o_plus=s L11:20:a=p L11:21:II=a/o L11:22:w_bar=s L11:23:6=i L11:24:sig=t/d L11:25:7=i L11:26:xi=o L11:27:f=n L11:29:4=e
+2574	L11	et	key, by sense	ed/et	L11:30:m=e L11:31:sig=t/d
+2574	L11	se	sure	polyphonic_unique	L11:32:o_plus=s L11:33:9=e/l
+2574	L11	cosa	sure	monophonic	L11:34:1=c L11:35:xi=o L11:36:w_bar=s L11:37:c=a
+2574	L11	alchuna	sure	polyphonic_unique	L11:38:II=a/o L11:39:5=l L11:40:d=c/g L11:41:y=h L11:42:n=u L11:43:p_bar=n L11:46:c=a
+2574	S01	[?glielo]	hole	contextual_or_uncertain	
+2574	S01	[dicono]	hole	grade2_or_scribal_slip	
+2574	L11	è	sure	monophonic	L11:60:m=e
+2574	L11	solo	key, by sense	salo/solo	L11:62:w_bar=s L11:63:II=a/o L12:1:g=l L12:2:xi=o
+2574	L12	per	sure	polyphonic_unique	L12:3:a=p L12:4:9=e/l L12:5:c_plus=r
+2574	L12	venire	sure	monophonic	L12:6:n=u L12:7:4=e L12:8:f=n L12:9:8=i L12:10:e=r L12:11:m=e
+2574	L12	a	key, by sense	a/o	L12:15:II=a/o
+2574	S01	[qualche]	hole	grade2_or_scribal_slip	
+2574	L12	loro	key, by sense	laro/loro	L12:24:9=e/l L12:25:II=a/o L12:26:e=r L12:27:xi=o
+2574	S01	[desiderio]	hole	grade2_or_scribal_slip	
+2574	S01	[?non]	hole	contextual_or_uncertain	
+2574	S01	[?stato]	hole	contextual_or_uncertain	
+2574	S01	[?colmo]	hole	contextual_or_uncertain	
+2574	S01	[?molte]	hole	contextual_or_uncertain	
+2574	L13	buone	sure	polyphonic_unique	L13:3:2=b L13:4:n=u L13:5:II=a/o L13:6:f=n L13:7:4=e
+2574	L13	parole	sure	polyphonic_unique	L13:10:bar_dot=p L13:11:c=a L13:12:e=r L13:13:xi=o L13:14:g=l L13:16:9=e/l
+2574	L13	del	sure	monophonic	L13:21:eps=d L13:22:m=e L13:23:q_dbl=l
+2574	L13	animo	sure	monophonic	L13:25:c=a L13:26:p_bar=n L13:27:6=i L13:28:o=m L13:29:xi=o
+2574	S01	[?alcuno]	hole	contextual_or_uncertain	
+2574	L13	et	sure	polyphonic_unique	L13:33:4=e L13:34:pi=t/b
+2574	L13	dispositione	sure	polyphonic_unique	L13:35:3=d L13:36:8=i L13:37:o_plus=s L13:38:a=p L13:39:xi=o L13:40:w_bar=s L13:41:7=i L13:42:sig=t/d L13:43:6=i L13:44:II=a/o L13:45:d_bar=n L13:46:9=e/l
+2574	L13	d	sure	polyphonic_unique	L13:42:sig=t/d
+2574	L13	altra	key, by sense	altra/oltra	L13:50:II=a/o L13:52:9=e/l L13:53:pi=t/b L13:54:c_plus=r L13:55:c=a
+2574	S01	[?ugualmente]	hole	contextual_or_uncertain	
+2574	L14	nel	sure	polyphonic_unique	L14:7:f=n L14:8:9=e/l L14:9:5=l
+2574	L14	caso	key, by sense	casa/caso	L14:10:d=c/g L14:11:o_base=a L14:12:o_plus=s L14:13:II=a/o
+2574	S01	[di]	hole	grade2_or_scribal_slip	
+2574	S01	[faenza]	hole	grade2_or_scribal_slip	
+2574	S02	[?fare]	hole	contextual_or_uncertain	
+2574	S03	[disperata]	hole	grade2_or_scribal_slip	
+2574	L15	ma	sure	polyphonic_unique	L15:10:theta=m L15:11:II=a/o
+2574	L15	tenendo	sure	polyphonic_unique	L15:12:pi=t/b L15:13:4=e L15:14:d_bar=n L15:15:9=e/l L15:16:f=n L15:17:3=d L15:18:xi=o
+2574	S03	{oo?}	hole	open_nomenclator	
+2574	L15	in	sure	monophonic	L15:21:7=i L15:22:p_bar=n
+2574	L15	speranza	sure	polyphonic_unique	L15:23:w_bar=s L15:24:bar_dot=p L15:25:m=e L15:26:e=r L15:27:c=a L15:28:f=n L15:29:f_dbl=z L15:30:II=a/o
+2574	L16	di	sure	monophonic	L16:1:3=d L16:2:8=i
+2574	L16	Faenza	sure	polyphonic_unique	L16:3:SL2=f L16:4:c=a L16:5:4=e L16:6:f=n L16:7:f_dbl=z L16:8:II=a/o
+2574	L16	potrebe	sure	polyphonic_unique	L16:9:a=p L16:10:xi=o L16:11:pi=t/b L16:12:c_plus=r L16:13:m=e L16:14:nab=b L16:15:9=e/l
+2574	L16	esere	sure	polyphonic_unique	L16:16:m=e L16:17:T=s L16:18:4=e L16:19:e=r L16:20:9=e/l
+2574	L16	di	sure	monophonic	L16:21:eps=d L16:22:6=i
+2574	L16	mese	sure	monophonic	L16:23:o=m L16:24:m=e L16:25:T=s L16:26:4=e
+2574	S04	[?recati]	hole	contextual_or_uncertain	
+2574	S04	[?a]	hole	contextual_or_uncertain	
+2574	S04	[?ciò]	hole	contextual_or_uncertain	
+2574	L17	come	key, by sense	came/come	L17:1:rev_c=c L17:2:II=a/o L17:3:theta=m L17:4:4=e
+2574	L17	si	sure	monophonic	L17:6:w_bar=s L17:7:8=i
+2574	S05	[vedrà]	hole	grade2_or_scribal_slip	
+2574	S05	[escluso]	hole	grade2_or_scribal_slip	
+2574	L17	del	key, by sense	dee/del/dle/tel	L17:20:sig=t/d L17:21:9=e/l L17:22:9=e/l
+2574	S05	[desiderio]	hole	grade2_or_scribal_slip	
+2574	S05	[che]	hole	grade2_or_scribal_slip	
+2574	L18	ha	sure	monophonic	L18:6:p=h L18:7:c=a
+2574	L18	subito	sure	polyphonic_unique	L18:8:o_plus=s L18:9:n=u L18:10:2=b L18:11:6=i L18:12:sig=t/d L18:13:xi=o
+2574	L18	penserà	sure	monophonic	L18:14:bar_dot=p L18:15:4=e L18:16:f=n L18:17:o_plus=s L18:18:m=e L18:19:e=r L18:20:c=a
+2574	L18	a	sure	monophonic	L18:20:c=a
+2574	L18	cose	key, by sense	case/cose	L18:22:b=c L18:23:II=a/o L18:24:w_bar=s L18:25:4=e
+2574	S05	[nuove]	hole	grade2_or_scribal_slip	
+2574	L18	perché	sure	monophonic	L18:33:a=p L18:34:m=e L18:35:c_plus=r L18:36:1=c L18:37:eq=h L18:38:m=e
+2574	L18	ogni	sure	polyphonic_unique	L18:39:II=a/o L18:40:d=c/g L18:41:f=n L18:42:6=i
+2574	S05	[suo]	hole	grade2_or_scribal_slip	
+2574	L18	disegno	key, by sense	disegna/disegno	L18:46:3=d L18:47:8=i L18:48:o_plus=s L18:49:m=e L18:50:u=g L18:51:d_bar=n L18:52:II=a/o
+2574	S05	[et]	hole	grade2_or_scribal_slip	
+2574	L19	pensiero	sure	polyphonic_unique	L19:2:bar_dot=p L19:3:4=e L19:4:f=n L19:5:w_bar=s L19:6:6=i L19:7:9=e/l L19:8:e=r L19:9:xi=o
+2574	L19	è	sure	polyphonic_unique	L19:7:9=e/l
+2574	L19	volto	key, by sense	uolta/uolto	L19:11:n=u L19:12:II=a/o L19:13:g=l L19:14:sig=t/d L19:15:II=a/o
+2574	L19	a	key, by sense	a/o	L19:12:II=a/o
+2574	S05	[faenza]	hole	grade2_or_scribal_slip	
+2574	L19	che	sure	monophonic	L19:24:rev_c=c L19:25:p=h L19:26:m=e
+2574	L19	non	sure	monophonic	L19:27:f=n L19:28:xi=o L19:29:d_bar=n
+2574	L19	vede	sure	monophonic	L19:30:n=u L19:31:m=e L19:32:3=d L19:33:4=e
+2574	L19	potere	key, by sense	podere/potere	L19:34:a=p L19:35:xi=o L19:36:sig=t/d L19:37:m=e L19:38:e=r L19:39:9=e/l
+2574	L19	stare	sure	polyphonic_unique	L19:40:o_plus=s L19:41:sig=t/d L19:42:II=a/o L19:43:c_plus=r L19:44:4=e
+2574	S06	[?con]	hole	contextual_or_uncertain	
+2574	S06	[?loro]	hole	contextual_or_uncertain	
+2574	L20	ma	sure	polyphonic_unique	L20:8:o=m L20:9:II=a/o
+2574	S06	[riposato]	hole	grade2_or_scribal_slip	
+2574	L20	in	sure	monophonic	L20:18:6=i L20:19:f=n
+2574	S06	[?Roma]	hole	contextual_or_uncertain	
+2574	S06	{?ocusa}	hole	open_latin_cover	
+2574	L20	tenendo	sure	polyphonic_unique	L20:23:sig=t/d L20:24:m=e L20:25:p_bar=n L20:26:4=e L20:27:f=n L20:28:3=d L20:29:xi=o
+2574	S06	[...]	hole	open_nomenclator	
+2574	S06	[faenza]	hole	grade2_or_scribal_slip	
+2574	S06	{?grandis}	hole	open_latin_cover	
+2574	S07	{invT?}	hole	open_nomenclator	
+2574	L24	e	sure	monophonic	L24:3:4=e
+2574	S08	[mi]	hole	grade2_or_scribal_slip	
+2574	S08	[credono]	hole	grade2_or_scribal_slip	
+2574	L24	ch	sure	polyphonic_unique	L24:12:d=c/g L24:13:p=h
+2574	L24	arebe	sure	polyphonic_unique	L24:14:c=a L24:15:c_plus=r L24:16:9=e/l L24:17:nab=b L24:18:9=e/l
+2574	S08	[per]	hole	grade2_or_scribal_slip	
+2574	L24	male	sure	monophonic	L24:22:o=m L24:23:c=a L24:24:g=l L24:25:m=e
+2574	S08	[che]	hole	grade2_or_scribal_slip	
+2574	S08	{?grandes}	hole	open_latin_cover	
+2574	S09	[?l]	hole	contextual_or_uncertain	
+2574	S09	[?armi]	hole	contextual_or_uncertain	
+2574	L24	de	sure	monophonic	L24:37:3=d L24:38:m=e
+2574	S09	{B?}	hole	open_nomenclator	
+2574	L25	per	sure	monophonic	L25:4:a=p L25:5:m=e L25:6:c_plus=r
+2574	L25	havere	sure	polyphonic_unique	L25:7:p=h L25:8:II=a/o L25:9:n=u L25:10:m=e L25:11:e=r L25:12:4=e
+2574	S09	[iusta]	hole	grade2_or_scribal_slip	
+2574	L25	causa	key, by sense	causa/causo	L25:21:d=c/g L25:22:o_base=a L25:23:n=u L25:24:w_bar=s L25:25:II=a/o
+2574	L25	di	sure	monophonic	L25:26:eps=d L25:27:8=i
+2574	S09	[richiedere]	hole	grade2_or_scribal_slip	
+2574	L25	la	key, by sense	la/lo	L25:38:9=e/l L25:39:II=a/o
+2574	L25	lega	sure	monophonic	L25:40:5=l L25:41:4=e L25:42:u=g L25:43:o_base=a
+2574	L25	a	key, by sense	a/o	L25:39:II=a/o
+2574	S09	[?ogni]	hole	contextual_or_uncertain	
+2574	S09	[?cosa]	hole	contextual_or_uncertain	
+2574	L25	in	sure	monophonic	L25:47:7=i L25:48:f=n
+2574	L25	quelo	departure	departure:qelo	L25:49:o_dot=q L25:50:9=e/l L25:51:q_dbl=l L25:52:xi=o
+2574	S10	[che]	hole	grade2_or_scribal_slip	
+2574	L26	quel	sure	monophonic	L26:6:o_dot=q L26:7:n=u L26:8:m=e L26:9:q_dbl=l
+2574	L26	stato	sure	polyphonic_unique	L26:10:o_plus=s L26:11:sig=t/d L26:12:c=a L26:13:pi=t/b L26:14:xi=o
+2574	L26	non	sure	polyphonic_unique	L26:15:p_bar=n L26:16:II=a/o L26:17:d_bar=n
+2574	L26	è	sure	polyphonic_unique	L26:20:9=e/l
+2574	L26	forte	sure	polyphonic_unique	L26:22:SL2=f L26:23:xi=o L26:24:c_plus=r L26:25:sig=t/d L26:26:9=e/l
+2574	L26	come	key, by sense	came/come	L26:27:d=c/g L26:28:II=a/o L26:29:o=m L26:30:m=e
+2574	L26	et	sure	polyphonic_unique	L26:31:4=e L26:32:pi=t/b
+2574	S11	[che]	hole	grade2_or_scribal_slip	
+2574	S11	{invT?}	hole	open_nomenclator	
+2574	S11	{B?}	hole	open_nomenclator	
+2574	S11	[?vuol]	hole	contextual_or_uncertain	
+2574	L26	quelo	departure	departure:qo	L26:52:o_dot=q L26:53:xi=o
+2574	L28	et	sure	polyphonic_unique	L28:3:4=e L28:4:pi=t/b
+2574	L28	niente	sure	polyphonic_unique	L28:5:f=n L28:6:8=i L28:7:m=e L28:8:d_bar=n L28:9:sig=t/d L28:10:4=e
+2574	S12	[di]	hole	grade2_or_scribal_slip	
+2574	L28	meno	key, by sense	mena/meno	L28:13:o=m L28:14:9=e/l L28:15:p_bar=n L28:16:II=a/o
+2574	L28	per	sure	monophonic	L28:17:a=p L28:18:m=e L28:19:e=r
+2574	L28	quelo	key, by sense	quela/quelo	L28:20:dot_bar=q L28:21:n=u L28:22:4=e L28:23:q_dbl=l L28:24:II=a/o
+2574	S12	[conosco]	hole	grade2_or_scribal_slip	
+2574	L28	non	sure	monophonic	L28:33:p_bar=n L28:34:xi=o L28:35:d_bar=n
+2574	L28	credo	key, by sense	creda/credo	L28:36:rev_c=c L28:37:e=r L28:38:m=e L28:39:3=d L28:40:II=a/o
+2574	L28	sia	sure	monophonic	L28:41:w_bar=s L28:42:6=i L28:43:c=a
+2574	S12	[da]	hole	grade2_or_scribal_slip	
+2574	S12	[fare]	hole	grade2_or_scribal_slip	
+2574	S12	[fondamento]	hole	grade2_or_scribal_slip	
+2574	L29	in	sure	monophonic	L29:11:7=i L29:12:f=n
+2574	L29	lui	key, by sense	eui/lui	L29:13:9=e/l L29:14:n=u L29:15:7=i
+2574	L29	ma	sure	monophonic	L29:19:o=m L29:20:c=a
+2574	S12	[temporigiare]	hole	grade2_or_scribal_slip	
+2574	L29	mentre	sure	polyphonic_unique	L29:32:o=m L29:33:m=e L29:34:p_bar=n L29:35:sig=t/d L29:36:e=r L29:37:4=e
+2574	S12	[che]	hole	grade2_or_scribal_slip	
+2574	S12	[?le]	hole	contextual_or_uncertain	
+2574	S12	[?cose]	hole	contextual_or_uncertain	
+2574	S12	[?e]	hole	contextual_or_uncertain	
+2574	S12	[?l]	hole	contextual_or_uncertain	
+2574	S12	[?amicitia]	hole	contextual_or_uncertain	
+2574	L30	sia	departure	departure:sea	L30:4:w_bar=s L30:5:9=e/l L30:6:c=a
+2574	S12	[?salda]	hole	contextual_or_uncertain	
+2574	L30	per	sure	monophonic	L30:14:bar_dot=p L30:16:m=e L30:17:e=r
+2574	S12	[?operarne]	hole	contextual_or_uncertain	
+2574	L30	non	sure	polyphonic_unique	L30:27:f=n L30:28:II=a/o L30:29:d_bar=n
+2574	L30	si	sure	monophonic	L30:30:o_plus=s L30:31:7=i
+2574	S13	[?habbi]	hole	contextual_or_uncertain	
+2574	L31	a	key, by sense	a/o	L31:2:II=a/o
+2574	L31	fare	key, by sense	fare/fore	L31:11:SL2=f L31:12:II=a/o L31:14:e=r L31:15:4=e
+2574	L31	male	sure	monophonic	L31:18:o=m L31:19:c=a L31:21:g=l L31:22:m=e
+2559	L01	Parmi	sure	monophonic	L01:3:bar_dot=p L01:4:o_base=a L01:5:e=r L01:6:theta=m L01:7:6=i
+2559	L01	che	sure	polyphonic_unique	L01:8:d=c/g L01:9:p=h L01:10:m=e
+2559	S01	[del]	hole	grade2_or_scribal_slip	
+2559	S01	{oo?}	hole	open_nomenclator	
+2559	L01	paia	sure	polyphonic_unique	L01:15:a=p L01:16:II=a/o L01:17:7=i L01:18:c=a
+2559	S01	[esere]	hole	grade2_or_scribal_slip	
+2559	L01	in	sure	monophonic	L01:24:8=i L01:25:f=n
+2559	L01	grado	sure	polyphonic_unique	L01:26:d=c/g L01:27:e=r L01:28:c=a L01:29:3=d L01:30:II=a/o
+2559	L01	con	sure	monophonic	L01:31:b=c L01:32:xi=o L01:33:p_bar=n
+2559	S01	{B?}	hole	open_nomenclator	
+2559	S01	[ché]	hole	grade2_or_scribal_slip	
+2559	L01	per	sure	polyphonic_unique	L01:38:bar_dot=p L01:39:9=e/l L01:40:e=r
+2559	L01	ora	key, by sense	ara/aro/ora/oro	L01:41:II=a/o L01:42:c_plus=r L01:43:II=a/o
+2559	L01	non	sure	monophonic	L01:44:p_bar=n L01:45:xi=o L01:46:f=n
+2559	S01	[?arebe]	hole	contextual_or_uncertain	
+2559	S01	[?sì]	hole	contextual_or_uncertain	
+2559	S01	[?pratico]	hole	contextual_or_uncertain	
+2559	L01	sì	sure	monophonic	L01:53:o_plus=s L01:54:8=i
+2559	L02	con	key, by sense	can/con	L02:4:rev_c=c L02:5:II=a/o L02:6:f=n
+2559	L02	loro	key, by sense	lora/loro	L02:7:5=l L02:8:xi=o L02:9:c_plus=r L02:10:II=a/o
+2559	L02	et	key, by sense	ed/et	L02:13:9=e/l L02:14:sig=t/d
+2559	L02	quando	sure	polyphonic_unique	L02:15:o_dot=q L02:16:n=u L02:17:II=a/o L02:18:f=n L02:19:3=d L02:20:II=a/o
+2559	L02	per	sure	polyphonic_unique	L02:21:a=p L02:22:9=e/l L02:23:e=r
+2559	S01	[?eso]	hole	contextual_or_uncertain	
+2559	S01	[?ve]	hole	contextual_or_uncertain	
+2559	L02	sia	key, by sense	sia/sio	L02:29:T=s L02:30:7=i L02:31:II=a/o
+2559	L02	fare	sure	monophonic	L02:32:SL2=f L02:33:c=a L02:34:e=r L02:35:m=e
+2559	S01	[?sarebe]	hole	contextual_or_uncertain	
+2559	L02	esere	sure	polyphonic_unique	L02:43:4=e L02:44:T=s L02:45:m=e L02:46:c_plus=r L02:47:9=e/l
+2559	L02	lui	sure	monophonic	L02:48:g=l L02:49:n=u L02:50:6=i
+2559	L02	quelo	key, by sense	quela/quelo	L02:51:dot_bar=q L02:52:n=u L02:53:m=e L02:54:q_dbl=l L02:55:II=a/o
+2559	L03	avesi	sure	polyphonic_unique	L03:1:II=a/o L03:2:n=u L03:3:m=e L03:4:T=s L03:5:6=i
+2559	L03	a	key, by sense	a/o	L03:1:II=a/o
+2559	L03	praticare	sure	polyphonic_unique	L03:7:bar_dot=p L03:8:c_plus=r L03:9:o_base=a L03:10:sig=t/d L03:11:8=i L03:12:rev_c=c L03:13:c=a L03:14:e=r L03:15:m=e
+2559	S01	[perché]	hole	grade2_or_scribal_slip	
+2559	L03	né	sure	monophonic	L03:23:d_bar=n L03:24:m=e
+2559	L03	di	sure	monophonic	L03:25:eps=d L03:26:8=i
+2559	L03	voi	key, by sense	uai/uoi	L03:27:n=u L03:28:II=a/o L03:29:7=i
+2559	L03	né	sure	monophonic	L03:31:f=n L03:32:4=e
+2559	L03	degli	sure	polyphonic_unique	L03:33:3=d L03:34:9=e/l L03:35:d=c/g L03:36:5=l L03:37:6=i
+2559	L03	altri	sure	polyphonic_unique	L03:38:II=a/o L03:39:g=l L03:40:sig=t/d L03:41:e=r L03:42:8=i
+2559	L03	non	sure	polyphonic_unique	L03:44:p_bar=n L03:45:II=a/o L03:46:f=n
+2559	L03	credo	key, by sense	credo/creto	L03:47:rev_c=c L03:48:e=r L03:49:m=e L03:50:sig=t/d L03:51:xi=o
+2559	S01	[pigliasi]	hole	grade2_or_scribal_slip	
+2559	S01	[tropa]	hole	grade2_or_scribal_slip	
+2559	L04	fede	sure	polyphonic_unique	L04:8:SL2=f L04:9:9=e/l L04:10:3=d L04:11:m=e
+2559	L04	in	sure	monophonic	L04:12:8=i L04:13:f=n
+2559	L04	simile	sure	monophonic	L04:14:o_plus=s L04:15:6=i L04:16:o=m L04:17:7=i L04:18:5=l L04:19:m=e
+2559	L04	cosa	key, by sense	casa/cosa	L04:20:d=c/g L04:21:II=a/o L04:22:o_plus=s L04:23:c=a
+2559	L04	et	key, by sense	ed/et	L04:26:m=e L04:28:sig=t/d
+2559	L04	è	sure	monophonic	L04:26:m=e
+2559	L04	la	key, by sense	la/lo	L04:30:q_dbl=l L04:31:II=a/o
+2559	L04	natura	sure	polyphonic_unique	L04:32:p_bar=n L04:33:c=a L04:34:sig=t/d L04:35:n=u L04:36:e=r L04:37:II=a/o
+2559	S01	[?che]	hole	contextual_or_uncertain	
+2559	L04	sapete	sure	polyphonic_unique	L04:40:w_bar=s L04:41:II=a/o L04:42:bar_dot=p L04:43:4=e L04:44:sig=t/d L04:45:9=e/l
+2559	L04	et	key, by sense	ed/et	L04:43:4=e L04:44:sig=t/d
+2559	L05	con	key, by sense	can/con	L05:1:rev_c=c L05:2:II=a/o L05:3:d_bar=n
+2559	L05	lui	key, by sense	eui/lui	L05:4:9=e/l L05:5:n=u L05:6:7=i
+2559	L05	poco	key, by sense	paco/poco	L05:7:bar_dot=p L05:8:II=a/o L05:9:rev_c=c L05:10:xi=o
+2559	L05	posono	sure	polyphonic_unique	L05:11:a=p L05:12:II=a/o L05:13:T=s L05:14:xi=o L05:15:p_bar=n L05:16:II=a/o
+2559	L05	e	sure	polyphonic_unique	L05:17:9=e/l
+2559	L05	è	sure	polyphonic_unique	L05:17:9=e/l
+2559	S01	[ragione]	hole	grade2_or_scribal_slip	
+2559	L05	Non	sure	polyphonic_unique	L05:28:f=n L05:29:II=a/o L05:30:p_bar=n
+2559	L05	so	sure	monophonic	L05:31:o_plus=s L05:32:xi=o
+2559	L05	che	sure	monophonic	L05:33:1=c L05:34:eq=h L05:35:m=e
+2559	L05	risposta	key, by sense	risposta/risposto	L05:36:e=r L05:37:7=i L05:38:o_plus=s L05:39:bar_dot=p L05:40:II=a/o L05:41:w_bar=s L05:42:pi=t/b L05:43:II=a/o
+2559	L05	l	sure	polyphonic_unique	L05:44:9=e/l
+2559	L05	arete	sure	polyphonic_unique	L05:45:II=a/o L05:46:e=r L05:47:9=e/l L05:48:sig=t/d L05:49:m=e
+2559	L05	da	sure	polyphonic_unique	L05:50:eps=d L05:51:II=a/o
+2559	S01	[ferara]	hole	grade2_or_scribal_slip	
+2559	S01	[et]	hole	grade2_or_scribal_slip	
+2559	S01	[da]	hole	grade2_or_scribal_slip	
+2559	S01	[milano]	hole	grade2_or_scribal_slip	
+2559	L06	io	sure	monophonic	L06:20:7=i L06:21:xi=o
+2559	L06	con	key, by sense	can/con	L06:22:rev_c=c L06:23:II=a/o L06:24:f=n
+2559	L06	fede	sure	polyphonic_unique	L06:25:SL2=f L06:26:m=e L06:27:3=d L06:28:9=e/l
+2559	L06	vi	sure	monophonic	L06:29:n=u L06:30:8=i
+2559	S01	[ricordo]	hole	grade2_or_scribal_slip	
+2559	L06	che	sure	monophonic	L06:37:1=c L06:38:y=h L06:39:m=e
+2559	L06	contro	sure	polyphonic_unique	L06:40:b=c L06:41:xi=o L06:42:p_bar=n L06:43:pi=t/b L06:44:c_plus=r L06:45:xi=o
+2559	L06	al	sure	monophonic	L06:46:c=a L06:47:g=l
+2559	L06	parere	sure	polyphonic_unique	L06:48:bar_dot=p L06:49:II=a/o L06:50:e=r L06:51:m=e L06:52:c_plus=r L06:53:9=e/l
+2559	L06	di	sure	monophonic	L06:54:eps=d L06:55:7=i
+2559	L06	costui	sure	polyphonic_unique	L06:56:rev_c=c L06:57:II=a/o L07:1:o_plus=s L07:2:sig=t/d L07:3:n=u L07:4:6=i
+2559	L07	cioè	sure	polyphonic_unique	L07:5:d=c/g L07:6:6=i L07:7:II=a/o L07:8:9=e/l
+2559	S01	[?di]	hole	contextual_or_uncertain	
+2559	S01	[?sì]	hole	contextual_or_uncertain	
+2559	L07	per	sure	monophonic	L07:12:bar_dot=p L07:13:m=e L07:14:e=r
+2559	L07	hora	key, by sense	hara/haro/hora	L07:15:eq=h L07:16:II=a/o L07:17:e=r L07:18:II=a/o
+2559	L07	non	sure	polyphonic_unique	L07:19:p_bar=n L07:20:II=a/o L07:21:d_bar=n
+2559	L07	lodi	key, by sense	lati/lodi	L07:22:9=e/l L07:23:II=a/o L07:24:sig=t/d L07:25:6=i
+2559	L07	né	sure	polyphonic_unique	L07:21:d_bar=n L07:22:9=e/l
+2559	L07	ancora	sure	polyphonic_unique	L07:30:II=a/o L07:31:d_bar=n L07:32:rev_c=c L07:33:II=a/o L07:34:e=r L07:35:c=a
+2559	L07	consiglierei	sure	polyphonic_unique	L07:36:b=c L07:37:II=a/o L07:38:f=n L07:39:o_plus=s L07:40:8=i L07:41:u=g L07:42:5=l L07:43:6=i L07:44:4=e L07:45:e=r L07:46:m=e L07:47:8=i
+2559	L07	che	sure	monophonic	L07:48:b=c L07:49:p=h L07:50:4=e
+2559	L08	si	sure	monophonic	L08:1:o_plus=s L08:2:7=i
+2559	S01	[tagliasi]	hole	grade2_or_scribal_slip	
+2559	L08	la	key, by sense	la/lo	L08:6:g=l L08:7:II=a/o
+2559	S01	[praticha]	hole	grade2_or_scribal_slip	
+2559	L08	potrebesi	sure	polyphonic_unique	L08:22:a=p L08:23:II=a/o L08:24:sig=t/d L08:25:e=r L08:26:9=e/l L08:27:nab=b L08:28:m=e L08:29:o_plus=s L08:30:8=i
+2559	L08	rispondere	sure	polyphonic_unique	L08:31:c_plus=r L08:32:7=i L08:33:o_plus=s L08:34:bar_dot=p L08:35:II=a/o L08:36:p_bar=n L08:37:3=d L08:38:m=e L08:39:e=r L08:40:4=e
+2559	S01	[che]	hole	grade2_or_scribal_slip	
+2559	L08	già	key, by sense	gia/gio	L08:44:u=g L08:45:7=i L08:46:II=a/o
+2559	L09	ugni	sure	monophonic	L09:1:n=u L09:2:u=g L09:3:f=n L09:4:6=i
+2559	S01	[?dì]	hole	contextual_or_uncertain	
+2559	L09	desidera	sure	monophonic	L09:5:3=d L09:6:m=e L09:7:o_plus=s L09:8:7=i L09:9:eps=d L09:10:m=e L09:11:e=r L09:12:c=a
+2559	L09	andare	sure	polyphonic_unique	L09:13:o_base=a L09:14:p_bar=n L09:15:sig=t/d L09:16:II=a/o L09:17:e=r L09:18:9=e/l
+2559	L09	ma	sure	polyphonic_unique	L09:20:o=m L09:21:II=a/o
+2559	S01	[impedito]	hole	grade2_or_scribal_slip	
+2559	L09	da	sure	polyphonic_unique	L09:33:3=d L09:34:II=a/o
+2559	S01	[ocupazione]	hole	grade2_or_scribal_slip	
+2559	L09	o	key, by sense	a/o	L09:39:II=a/o
+2559	L09	per	sure	monophonic	L09:48:bar_dot=p L09:49:m=e L09:50:e=r
+2559	L09	non	sure	monophonic	L09:51:p_bar=n L09:52:xi=o L09:53:d_bar=n
+2559	L10	sentirsi	sure	polyphonic_unique	L10:1:w_bar=s L10:2:9=e/l L10:3:f=n L10:4:pi=t/b L10:5:7=i L10:6:c_plus=r L10:7:o_plus=s L10:8:8=i
+2559	L10	bene	key, by sense	bene/tene	L10:9:pi=t/b L10:10:m=e L10:11:f=n L10:12:4=e
+2559	L10	così	key, by sense	casi/cosi	L10:15:rev_c=c L10:16:II=a/o L10:17:o_plus=s L10:18:7=i
+2559	L10	di	sure	monophonic	L10:19:eps=d L10:20:8=i
+2559	L10	presente	sure	polyphonic_unique	L10:21:bar_dot=p L10:22:e=r L10:23:m=e L10:24:w_bar=s L10:25:m=e L10:26:p_bar=n L10:27:sig=t/d L10:28:4=e
+2559	L10	non	sure	monophonic	L10:30:f=n L10:31:xi=o L10:32:d_bar=n
+2559	L10	può	sure	monophonic	L10:33:bar_dot=p L10:34:n=u L10:35:xi=o
+2559	L10	ire	sure	monophonic	L10:36:8=i L10:37:e=r L10:38:m=e
+2559	S01	[?tr]	hole	contextual_or_uncertain	
+2559	L10	et	sure	monophonic	L10:38:m=e L10:41:V=t
+2559	L11	tenere	sure	polyphonic_unique	L11:3:sig=t/d L11:4:m=e L11:5:f=n L11:6:4=e L11:7:e=r L11:8:9=e/l
+2559	L11	la	key, by sense	la/lo	L11:9:9=e/l L11:10:II=a/o
+2559	L11	cosa	key, by sense	casa/cosa	L11:11:rev_c=c L11:12:II=a/o L11:13:o_plus=s L11:14:c=a
+2559	S01	[apicata]	hole	grade2_or_scribal_slip	
+2559	L11	et	key, by sense	ed/et	L11:23:9=e/l L11:24:sig=t/d
+2559	L11	con	key, by sense	can/con	L11:25:rev_c=c L11:26:II=a/o L11:27:f=n
+2559	L11	una	key, by sense	una/uno	L11:28:n=u L11:29:p_bar=n L11:30:II=a/o
+2559	S01	[pocha]	hole	grade2_or_scribal_slip	
+2559	L11	di	sure	monophonic	L11:36:3=d L11:37:6=i
+2559	L11	tempo	sure	polyphonic_unique	L11:38:sig=t/d L11:39:m=e L11:40:o=m L11:41:bar_dot=p L11:42:xi=o
+2559	L11	si	sure	monophonic	L11:43:w_bar=s L11:44:7=i
+2559	L11	potrebe	sure	polyphonic_unique	L11:45:a=p L11:46:II=a/o L11:47:pi=t/b L11:48:e=r L11:49:m=e L11:50:nab=b L11:51:4=e
+2559	L12	forse	key, by sense	farse/forse	L12:1:SL2=f L12:2:II=a/o L12:3:e=r L12:4:w_bar=s L12:5:4=e
+2559	L12	persuadere	sure	polyphonic_unique	L12:6:a=p L12:7:m=e L12:8:e=r L12:9:w_bar=s L12:10:n=u L12:11:II=a/o L12:12:3=d L12:13:4=e L12:14:c_plus=r L12:15:4=e
+2559	L12	al	sure	polyphonic_unique	L12:16:c=a L12:17:9=e/l
+2559	S01	{oo?}	hole	open_nomenclator	
+2559	L12	quelo	sure	monophonic	L12:20:dot_bar=q L12:21:n=u L12:22:m=e L12:23:q_dbl=l L12:24:xi=o
+2559	L12	che	sure	polyphonic_unique	L12:25:d=c/g L12:26:p=h L12:27:4=e
+2559	L12	hora	key, by sense	hara/haro/hora	L12:28:eq=h L12:29:II=a/o L12:30:e=r L12:31:II=a/o
+2559	L12	non	sure	polyphonic_unique	L12:32:d_bar=n L12:33:II=a/o L12:34:p_bar=n
+2559	L12	gli	key, by sense	cli/gli	L12:35:d=c/g L12:36:5=l L12:37:6=i
+2559	L12	è	sure	monophonic	L12:39:4=e
+2559	L12	capace	sure	polyphonic_unique	L12:41:rev_c=c L12:42:II=a/o L12:43:bar_dot=p L12:44:c=a L12:45:rev_c=c L12:46:9=e/l
+2559	L13	Questo	key, by sense	questa/questo	L13:1:dot_bar=q L13:2:n=u L13:3:m=e L13:4:w_bar=s L13:5:sig=t/d L13:6:II=a/o
+2559	S01	[amorevolmente]	hole	grade2_or_scribal_slip	
+2559	S01	[vi]	hole	grade2_or_scribal_slip	
+2559	L13	ricordo	key, by sense	ricardo/ricordo	L13:23:e=r L13:24:6=i L13:25:rev_c=c L13:26:II=a/o L13:27:e=r L13:28:3=d L13:29:xi=o
+2559	L13	perché	sure	monophonic	L13:31:bar_dot=p L13:32:m=e L13:33:e=r L13:34:1=c L13:35:eq=h L13:36:4=e
+2559	L13	se	sure	monophonic	L13:37:w_bar=s L13:38:m=e
+2559	L13	a	key, by sense	a/o	L13:39:II=a/o
+2559	L13	ogni	sure	polyphonic_unique	L13:39:II=a/o L13:40:d=c/g L13:41:f=n L13:42:7=i
+2559	L13	cosa	key, by sense	casa/caso/cosa/coso	L13:43:d=c/g L13:44:II=a/o L13:45:o_plus=s L13:46:II=a/o
+2559	L13	sarà	key, by sense	sara/sora	L13:47:w_bar=s L13:48:II=a/o L13:49:e=r L13:50:c=a
+2559	S01	[?da]	hole	contextual_or_uncertain	
+2559	L14	fare	sure	polyphonic_unique	L14:2:SL2=f L14:3:o_base=a L14:4:c_plus=r L14:5:9=e/l
+2559	L14	a	sure	monophonic	L14:3:o_base=a
+2559	L14	modo	key, by sense	moda/modo	L14:7:o=m L14:8:xi=o L14:9:3=d L14:10:II=a/o
+2559	L14	di	key, by sense	di/ti	L14:11:sig=t/d L14:12:8=i
+2559	L14	costui	sure	polyphonic_unique	L14:13:rev_c=c L14:14:II=a/o L14:15:w_bar=s L14:16:sig=t/d L14:17:n=u L14:18:6=i
+2559	L14	si	sure	monophonic	L14:20:w_bar=s L14:21:6=i
+2559	L14	potrebe	sure	polyphonic_unique	L14:22:bar_dot=p L14:23:II=a/o L14:24:pi=t/b L14:25:e=r L14:26:m=e L14:27:nab=b L14:28:9=e/l
+2559	L14	pure	sure	monophonic	L14:29:a=p L14:30:n=u L14:31:e=r L14:32:m=e
+2559	L14	erare	key, by sense	erare/erore	L14:33:m=e L14:34:Q=r L14:35:II=a/o L14:36:e=r L14:37:4=e
+2559	L14	In	sure	monophonic	L14:40:6=i L14:41:f=n
+2559	L14	questo	key, by sense	questa/questo	L14:42:o_dot=q L14:43:n=u L14:44:m=e L14:45:w_bar=s L15:1:sig=t/d L15:2:II=a/o
+2559	L15	mezo	sure	polyphonic_unique	L15:3:theta=m L15:4:9=e/l L15:5:f_dbl=z L15:6:xi=o
+2559	L15	si	sure	monophonic	L15:7:o_plus=s L15:8:6=i
+2559	L15	doverebe	sure	polyphonic_unique	L15:9:3=d L15:10:II=a/o L15:11:n=u L15:12:m=e L15:13:Q=r L15:14:4=e L15:15:nab=b L15:16:9=e/l
+2559	L15	publicare	sure	polyphonic_unique	L15:17:a=p L15:18:n=u L15:19:pi=t/b L15:20:5=l L15:21:6=i L15:22:1=c L15:23:c=a L15:24:e=r L15:25:m=e
+2559	S01	[questa]	hole	grade2_or_scribal_slip	
+2559	S01	[benedeta]	hole	grade2_or_scribal_slip	
+2559	L15	bola	sure	polyphonic_unique	L15:40:pi=t/b L15:41:II=a/o L15:42:q_dbl=l L15:43:c=a
+2559	L15	contro	sure	polyphonic_unique	L15:44:rev_c=c L15:45:II=a/o L15:46:f=n L15:47:pi=t/b L15:48:e=r L15:49:xi=o
+2559	L15	a	key, by sense	a/o	L15:45:II=a/o
+2559	S01	{B?}	hole	open_nomenclator	
+2559	L16	che	sure	monophonic	L16:2:b=c L16:3:eq=h L16:4:m=e
+2559	S01	[darebe]	hole	grade2_or_scribal_slip	
+2559	S01	[a']	hole	grade2_or_scribal_slip	
+2559	L16	coligati	sure	polyphonic_unique	L16:12:rev_c=c L16:13:xi=o L16:14:q_dbl=l L16:15:6=i L16:16:d=c/g L16:17:II=a/o L16:18:sig=t/d L16:19:8=i
+2559	L16	più	sure	monophonic	L16:20:a=p L16:21:6=i L16:22:n=u
+2559	L16	sicurtà	sure	polyphonic_unique	L16:23:o_plus=s L16:24:7=i L16:25:rev_c=c L16:26:n=u L16:27:e=r L16:28:sig=t/d L16:29:c=a
+2559	L16	et	sure	polyphonic_unique	L16:30:9=e/l L16:31:pi=t/b
+2559	L16	maiore	sure	polyphonic_unique	L16:32:theta=m L16:33:c=a L16:34:trid=i L16:35:II=a/o L16:36:e=r L16:37:9=e/l
+2559	L16	fermezza	sure	monophonic	L16:38:SL2=f L16:39:4=e L16:40:e=r L16:41:o=m L16:42:4=e L16:43:f_dbl=z L16:44:f_dbl=z L16:45:c=a
+2559	L16	delo	sure	monophonic	L16:46:3=d L16:47:m=e L16:48:q_dbl=l L16:49:xi=o
+2559	L16	animo	sure	monophonic	L16:50:o_base=a L16:51:f=n L16:52:7=i L17:1:o=m L17:2:xi=o
+2559	L17	di	key, by sense	di/ti	L17:3:sig=t/d L17:4:6=i
+2559	L17	costoro	sure	polyphonic_unique	L17:5:rev_c=c L17:6:II=a/o L17:7:w_bar=s L17:8:sig=t/d L17:9:xi=o L17:10:c_plus=r L17:11:II=a/o
+2559	L17	et	key, by sense	ed/et	L17:13:9=e/l L17:14:sig=t/d
+2559	L17	disporebe	sure	polyphonic_unique	L17:15:sig=t/d L17:16:7=i L17:17:w_bar=s L17:18:bar_dot=p L17:19:II=a/o L17:20:Q=r L17:21:4=e L17:22:nab=b L17:23:9=e/l
+2559	L17	ancora	sure	polyphonic_unique	L17:24:II=a/o L17:25:p_bar=n L17:26:rev_c=c L17:27:II=a/o L17:28:e=r L17:29:c=a
+2559	L17	più	sure	monophonic	L17:30:bar_dot=p L17:31:6=i L17:32:n=u
+2559	S01	{B?}	hole	open_nomenclator	
+2559	S01	[a]	hole	grade2_or_scribal_slip	
+2559	L17	pratiche	sure	polyphonic_unique	L17:35:bar_dot=p L17:36:e=r L17:37:II=a/o L17:38:sig=t/d L17:39:6=i L17:40:1=c L17:41:y=h L17:42:9=e/l
+2559	L17	di	key, by sense	di/ti	L17:38:sig=t/d L17:39:6=i
+2559	S01	{Hcr?}	hole	open_nomenclator	

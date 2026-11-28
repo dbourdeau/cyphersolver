@@ -1,0 +1,26 @@
+# Zero-Leakage Statistical Validation — Pierfilippo Pandolfini -> Lorenzo de' Medici (Cat. Nos. 2574 & 2559)
+# Script: validate.py (seed=14820, n_ctrl=200)
+# Inputs: transcript_2574.txt (1,114 tokens) + transcript_2559.txt (863 tokens) + key_pandolfini1482.tsv (75 types)
+# Model: DenseLM order=5, early-Italian nospace trained on 1,368,968 chars (pandolfini1482, rucellai1482, mazzinghi1478, toledo1479 excluded); lexicon lang/lexicons/it.json.gz (ZERO target boosts)
+
+=== 1. REAL SCORES ===
+M1 (Strict 0-choice Mono) | Unified (1820 chars): LM/ch=-2.9150 Cov4=0.5527 Cov5=0.3527
+M1 #2574 only             | (992 chars):         LM/ch=-3.0358 Cov4=0.5444 Cov5=0.3427
+M1 #2559 only             | (828 chars):         LM/ch=-2.7704 Cov4=0.5628 Cov5=0.3647
+P5 (5-Poly beam=8)        | Unified (1820 chars): LM/ch=-2.5123 Cov4=0.5885 Cov5=0.3929
+P5 #2574 only             | (992 chars):         LM/ch=-2.6851 Cov4=0.5827 Cov5=0.3730
+P5 #2559 only             | (828 chars):         LM/ch=-2.3051 Cov4=0.5954 Cov5=0.4167
+
+=== 2. 200 SHUFFLE CONTROLS: STRICT MONOPHONIC M1 (ZERO BEAM CHOICE) ===
+  M1 Shuf-Key    LM/ch: real=-2.9150 vs ctrl=-6.4021+/-0.4242 (max=-5.2982) -> z=+8.22, p=0.0050
+  M1 Shuf-Key    Cov5 : real=0.3527 vs ctrl=0.0160+/-0.0099 (max=0.0493) -> z=+33.92, p=0.0050
+  M1 Shuf-Stream LM/ch: real=-2.9150 vs ctrl=-5.2049+/-0.0558 (max=-5.0458) -> z=+41.06, p=0.0050
+  M1 Shuf-Stream Cov5 : real=0.3527 vs ctrl=0.0459+/-0.0099 (max=0.0725) -> z=+31.00, p=0.0050
+
+=== 3. 200 SHUFFLE CONTROLS: 5-POLYPHONIC BEAM P5 (IDENTICAL BEAM=8 ON ALL CONTROLS) ===
+  P5 Shuf-Key    LM/ch: real=-2.5123 vs ctrl=-6.2878+/-0.4005 (max=-5.3664) -> z=+9.43, p=0.0050
+  P5 Shuf-Key    Cov5 : real=0.3929 vs ctrl=0.0179+/-0.0109 (max=0.0643) -> z=+34.43, p=0.0050
+  P5 Shuf-Stream LM/ch: real=-2.5123 vs ctrl=-4.9144+/-0.0537 (max=-4.7949) -> z=+44.73, p=0.0050
+  P5 Shuf-Stream Cov5 : real=0.3929 vs ctrl=0.0548+/-0.0119 (max=0.0967) -> z=+28.48, p=0.0050
+
+DECISION: PASS (runtime 40.0s; min_z=+8.22, max_p=0.0050; threshold: all 4 LM/ch controls z >= 5.0 and p <= 0.01).
