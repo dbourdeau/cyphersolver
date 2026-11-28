@@ -1,0 +1,195 @@
+{
+ "schema_version": 1,
+ "target": "hab123blank",
+ "title": "Ciphered recipes on the last leaf of a Wolfenbüttel recipe book, HAB Cod. Guelf. 123 Blank., f. 59v (catalogue 3807): a metallurgical recipe (silver, lead, antimony, cupels) in Latin and German, read in part; key not validated on the held-out portion (contributed by Brice Dudout)",
+ "documents": [
+  {
+   "id": "f. 59v",
+   "read": "read in part",
+   "shelfmark": "Herzog August Bibliothek Wolfenbüttel, Cod. Guelf. 123 Blank., f. 59v (scan 00120)",
+   "date": "mid-16th century (manuscript after 1529)",
+   "year": 1550,
+   "country": "unknown",
+   "route": "unknown (recipe book; writer or compiler unidentified)",
+   "language": "Latin and German",
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "Butzmann, Die Blankenburger Handschriften, p. 131, notes the cipher without a reading; no decipherment found (catalogue 3807 vetting, 23 Nov 2026; DECODE, Tomokiyo, Lasry checked)."
+   },
+   "length": {
+    "tokens": 171,
+    "distinct": 131,
+    "unit": "letters",
+    "measured": true,
+    "file": "ciphertext.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "HAB digital library, diglib.hab.de/mss/123-blank (full-resolution files; licence not confirmed, no image in this folder)",
+    "corrections": 38,
+    "image_quality": "good",
+    "notes": "Two blind passes (blind/PASS-A.txt, PASS-B.txt) and a blind arbiter who had not seen the key on 38 discrepancies (prereg/frozen/transcription/ARBITREE.txt). 171 cipher words, about 930 signs; tokens counted are words."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "monoalphabetic"
+  ],
+  "summary": "Simple substitution: vowels shifted one place (a>b e>f i>k o>p u>x), consonants b-m written as their rank 1-9 (b=1 c=2 d=3 f=4 g=5 h=6 k=7 l=8 m=9), n>o, p>cross-t, r>tau-t, s>d, t>c; words divided, cipher interspersed with clear Latin and German.",
+  "symbol_kind": "digits and letters",
+  "distinct_symbols": 25,
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": false
+  },
+  "nulls": {
+   "present": false
+  },
+  "word_division": "kept",
+  "key_order": "alphabetical"
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "Butzmann's catalogue reports cipher on f. 59v without a reading; catalogue 3807 vetting (Codex, 23 Nov 2026) found no decipherment and tested no mapping.",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "images",
+   "cleartext context"
+  ],
+  "attack": "ciphertext-only",
+  "human_role": "Brice Dudout set the protocol and the order of work; AI agents transcribed (two blind passes and a blind arbiter), built the key, ran the pre-registered measure and read.",
+  "models": [
+   "Claude Opus 5.5 (Anthropic), agents run by Brice Dudout"
+  ],
+  "first_date": "2026-11-27",
+  "last_date": "2026-11-27"
+ },
+ "solution": [
+  {
+   "kind": "literature search",
+   "what": "Catalogue, leads, open pull requests and issues, our own folders, DECODE/Tomokiyo/Lasry (via the catalogue vetting): no earlier reading or reservation.",
+   "result": "worked"
+  },
+  {
+   "kind": "access",
+   "what": "HAB full-resolution scans of 00119-00120 fetched for study (not distributed).",
+   "result": "worked"
+  },
+  {
+   "kind": "transcription",
+   "what": "Two blind passes by separate agents with no key hypothesis, then a blind arbiter on 38 discrepancies; raw agreement 0.654 by letters.",
+   "result": "worked"
+  },
+  {
+   "kind": "hypothesis",
+   "technique": [
+    "repeat/pattern analysis",
+    "contextual inference",
+    "key-structure hypothesis"
+   ],
+   "what": "Pattern words (bob = ana, opo = non) and alchemical vocabulary (luna, saturnus, venus, sigillum, capella) gave vowels shifted one place and consonants numbered by rank; key K1 built on lines L01-L18 only.",
+   "result": "worked"
+  },
+  {
+   "kind": "verification",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "Pre-registered held-out test on L19-L46, freeze posted on #1023 before the measure: lexicon agreement 0.406 vs best of 200 permuted-key controls 0.035; criterion >= 0.503 (0.85 x calibration 0.592 on the key portion) and >= control + 0.30 not met. Found after the measure: the frozen groups.py also parsed the arbitration table, double-counting groups (315 letters instead of 272, below the 300 required); body only, post hoc, 0.452 vs 0.040.",
+   "result": "failed"
+  },
+  {
+   "kind": "reading",
+   "technique": [
+    "contextual inference"
+   ],
+   "what": "Whole page read by sense with K1 after the measure (reading.md, reading.tsv): 125 of 171 cipher words sure, 21 probable, 9 restored, 16 unresolved. The held-out lines read as Latin and German (pro centenario viginti octo librae; treibscherben lavare; vitri), a post hoc observation, not a validation.",
+   "result": "partial"
+  }
+ ],
+ "outcome": {
+  "validation": {
+   "date": "2026-11-27",
+   "verdict": "fail",
+   "notes": "Pre-registered held-out test (freeze be7b18a1, issue #1023): 0.406 < 0.503, best control 0.035. Groups double-counted by a bug in the frozen groups.py (declared after the measure). Portion burnt; key not validated."
+  },
+  "class": "read in part",
+  "key": "recovered",
+  "method": "key recovered from ciphertext-only",
+  "method_basis": "Key rebuilt from the cipher of the page itself, with the clear Latin and German around it as context; no key, gloss or clear copy found.",
+  "contribution": [
+   "transcription",
+   "key recovered"
+  ],
+  "fraction_read": 0.731,
+  "fraction_read_method": "measured",
+  "fraction_read_unit": "words",
+  "fraction_read_source": "reading.tsv: 125 sure of 171 cipher words; with probables 146 (0.854), with restorations 155 (0.906). Weight sigils and clear cursive words not counted.",
+  "first_break": true,
+  "verification": [
+   "historical consistency"
+  ],
+  "provenance": "contributed",
+  "credits": [
+   {
+    "who": "dudout",
+    "role": "solution",
+    "note": "Two blind transcriptions and a blind arbiter; key recovered; held-out test failed; page read in part",
+    "date": "2026-11-27"
+   }
+  ],
+  "gaps": [
+   {
+    "item": "validation",
+    "blocker": "not-attempted",
+    "detail": "No fresh held-out portion: Butzmann reports cipher in earlier recipes of the volume, not yet located on the scans; a new freeze with a corrected groups.py and an enriched lexicon would be needed."
+   },
+   {
+    "item": "16 unresolved cipher words",
+    "blocker": "illegible",
+    "detail": "dpecf9, d+p8kbdbfe, bcfrff, kxbf, tf_, 2pH, 6fe, tf3xxk, tkk, d268k25c, qxt, cf, +br, fer, 8+, 8kof: no word with K1, probably single misread signs; a blind sign sheet (q / 4-shaped q / z / 2) could settle some."
+   },
+   {
+    "item": "images",
+    "blocker": "not-attempted",
+    "detail": "HAB licence (CC BY-SA badge on the scan) not confirmed on a HAB page; no image or derivative included."
+   }
+  ],
+  "texts": [
+   {
+    "doc": "f. 59v",
+    "label": "f. 59v, ciphered recipe (silver, lead, antimony, cupels)",
+    "transcription": "transcription.txt",
+    "decryption": "decryption.txt",
+    "reading": "reading.md",
+    "translation": "translation.md",
+    "language": "la",
+    "state": "read in part",
+    "read_share": 0.731,
+    "cipher_words": 171,
+    "holes": 46,
+    "summary": "A metallurgical recipe: silver (luna) refined with lead (saturnus), antimony, copper and iron scale, cupels and cupellation shards (Treibscherben), litharge and glass; a yield per hundredweight (twenty-eight pounds and four lot); wash only the shards and keep the slag. 125 of 171 cipher words sure.",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude Opus 5.5 agent for Brice Dudout (project); not a person",
+     "reader_kind": "model",
+     "date": "2026-11-27",
+     "note": "Decryption made from key.tsv and the arbitrated transcription; read as sentences in reading.md and translation.md. Latin with German words, consistent vocabulary across the page (saturnus 9, luna 9, anthimonium 6, rex 6). Grade B: read in part, several abbreviations and 16 unresolved words; the key failed the pre-registered held-out bar (0.406 < 0.503). Not checked by a person."
+    }
+   }
+  ],
+  "key_file": "key.tsv"
+ }
+}
