@@ -1,0 +1,47 @@
+# python3 -I scripts/test_key_1597.py <vol. 6 OCR> --anneal ; then the same with --shape. 28 Nov 2026.
+# vol. 6 OCR text sha256 204906c76677ba3a5186e87dc4cd713015c8536d8edfe433a6b8ce6c33125574
+model: letter trigrams from 19704 lines of vol. 6 (CVI, CVII and the table of contents left out)
+Test 0: the alphabet in order at each of ten starting figures, all passages (155 figures)
+  a =  1  -2.753 per figure
+  a =  2  -3.128 per figure
+  a =  3  -2.809 per figure
+  a =  4  -2.955 per figure
+  a =  5  -2.871 per figure
+  a =  6  -3.105 per figure
+  a =  7  -2.222 per figure   <- the key
+  a =  8  -2.957 per figure
+  a =  9  -3.002 per figure
+  a = 10  -3.033 per figure
+Test 1: held-out passages C2, C3, C4, C7, 110 figures; the 12 letters of the two names fixed, the other 10 by rule or at random
+  rule key         -2.224 per figure
+  2000 random keys -2.678 mean, 0.208 sd, best -2.238
+  rule key beats 2000 of 2000; z = 2.2
+Test 2: annealing from random keys on all passages, no cribs (12 runs, 6000 steps, 1-4 letters per figure)
+  rule key -2.222 per figure
+  run 10  -2.188  agrees with the rule key on 11 of 17 attested letters
+  run 12  -2.211  agrees with the rule key on  1 of 17 attested letters
+  run  5  -2.220  agrees with the rule key on  2 of 17 attested letters
+  run 11  -2.241  agrees with the rule key on  1 of 17 attested letters
+  run  7  -2.251  agrees with the rule key on  2 of 17 attested letters
+  run  8  -2.271  agrees with the rule key on  4 of 17 attested letters
+  run  6  -2.283  agrees with the rule key on  4 of 17 attested letters
+  run  4  -2.295  agrees with the rule key on  1 of 17 attested letters
+  run  3  -2.300  agrees with the rule key on  1 of 17 attested letters
+  run  2  -2.335  agrees with the rule key on  1 of 17 attested letters
+  run  9  -2.338  agrees with the rule key on  1 of 17 attested letters
+  run  1  -2.338  agrees with the rule key on  6 of 17 attested letters
+
+Test 2: annealing from random keys on all passages, no cribs (12 runs, 6000 steps, 2-3 letters per figure)
+  rule key -2.222 per figure
+  run  4  -2.205  agrees with the rule key on  2 of 17 attested letters
+  run  7  -2.209  agrees with the rule key on  4 of 17 attested letters
+  run  8  -2.285  agrees with the rule key on  4 of 17 attested letters
+  run  2  -2.288  agrees with the rule key on  0 of 17 attested letters
+  run  6  -2.288  agrees with the rule key on  1 of 17 attested letters
+  run  5  -2.296  agrees with the rule key on  1 of 17 attested letters
+  run  9  -2.299  agrees with the rule key on  2 of 17 attested letters
+  run  3  -2.310  agrees with the rule key on  2 of 17 attested letters
+  run 10  -2.326  agrees with the rule key on  5 of 17 attested letters
+  run 12  -2.330  agrees with the rule key on  3 of 17 attested letters
+  run 11  -2.340  agrees with the rule key on  2 of 17 attested letters
+  run  1  -2.430  agrees with the rule key on  2 of 17 attested letters

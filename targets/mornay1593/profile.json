@@ -94,7 +94,7 @@
   },
   {
    "id": "Duplessis-1597-01",
-   "read": "not read",
+   "read": "read in part",
    "shelfmark": "Mémoires et correspondance vol. 7 pp. 124-126; original not located",
    "date": "18-19 Jan 1597",
    "year": 1597,
@@ -340,7 +340,7 @@
   ],
   "sessions": 2,
   "first_date": "2026-10-25",
-  "last_date": "2026-11-27"
+  "last_date": "2026-11-28"
  },
  "solution": [
   {
@@ -555,6 +555,33 @@
    "kind": "control",
    "what": "The same split and key on Duplessis's figures of Jan 1597 (duplessis1597.txt): no words, three bare 0 figures, too many 5s. Looked at, not scored. The key is Loménie's, not Duplessis's.",
    "result": "ruled out"
+  },
+  {
+   "date": "2026-11-28",
+   "kind": "hypothesis",
+   "technique": [
+    "key-structure hypothesis",
+    "exhaustive search",
+    "language-model scoring"
+   ],
+   "what": "Shawn Grening (grening/README_1597.md): Duplessis to Cargroy, 19 Jan 1597 (C1-C8). Hypothesis after the Loménie key: the same method (one figure 1-10 per letter, two letters per group) with the alphabet in order, which leaves ten tables. With a = 7 (a 7, b 8, c 9, d 10, e 1 ...) six of the eight passages encode exactly to the printed figures (132 of 155 figures): C2 'un prisonnier de qualite', C3 'pour signal une eguillete bleue au pourpoint ou a la mandille', C4 'vos gens de Poitou dient', C6 'Courbejoliere', C7 'ruine sur sa maison', C8 'Monbarot'. An odd number of letters is filled with a final e (last group 11). C1 reads 'du part.. contrai' with 11 where 'parti' wants 5; C5 (eight figures) is not read. f, h, x, y, z inferred. No crib; both names occur in clear elsewhere in vol. 7. The transcription is the repo's, compared with the page images of pp. 124-126.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-28",
+   "kind": "verification",
+   "technique": [
+    "statistical test",
+    "language-model scoring"
+   ],
+   "what": "grening/scripts/test_key_1597.py, written after the reading (not pre-registered); letter trigrams from the vol. 6 OCR. Ten rotations on all passages: a = 7 scores -2.222 per figure, the other nine -2.753 to -3.128. Held-out: with the twelve letters of Courbejoliere and Monbarot fixed, the alphabetical rule beats 2,000 of 2,000 random fillings of the other ten letters on C2, C3, C4 and C7 (z = 2.2). Annealing from random keys with no cribs: 5 of 24 runs score a little above the key with other tables, so a letter model alone does not single it out among all tables; among the ten of the hypothesis it does. docs/_validate.py does not apply (polyphonic).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-28",
+   "kind": "control",
+   "what": "The letter to his wife of the same days (W1-W3: 40, 80, 132, letters printed among the figures) is another system; neither ten-figure table was fitted to it. Loménie's folded table and its ten shifts give no words on C1-C8.",
+   "result": "ruled out"
   }
  ],
  "outcome": {
@@ -584,9 +611,14 @@
     "detail": "The name figures are a separate list the letter key says nothing about. f, x and z do not occur; their values are inferred from the pattern."
    },
    {
-    "item": "Duplessis's own figures 1595-99 (about 240 groups)",
+    "item": "Duplessis to Cargroy Jan 1597, C1 (119 where 'parti' wants 5; 'contrai' without ending) and C5 (75 87 95 66)",
+    "blocker": "needs-physical-access",
+    "detail": "C1 reads 'du part.. contrai'; the group is a clear 119 in the print. C5, eight figures, gives no word with the key (a/m/y i/u b/n/z a/m/y c/o i/u l/x l/x). The manuscript would show whether the print's figures are right."
+   },
+   {
+    "item": "Duplessis's figures to his wife, Jan 1597 (W1-W3) and Sep 1597-1599 (about 130 groups)",
     "blocker": "no-key-material",
-    "detail": "To his wife and to Cargroy; name codes 81 63, 153 63, 33; few x10 codes, probably not Lomenie's table. Structure only (12 Nov 2026). 27 Nov 2026: Loménie's letter key gives no words on the Jan 1597 figures (looked at, not scored)."
+    "detail": "Another system (40, 80, 132, letters printed among the figures; name codes 81 63, 153 63, 33). Neither ten-figure letter table was fitted to them; the Sep 1597-1599 figures were not tried."
    },
    {
     "item": "Rohan 1597 figures",
@@ -609,8 +641,8 @@
     "detail": "44 occurs only at the end of P1 and P2; values probable."
    }
   ],
-  "notes": "1593 part read via Dudout's key; 1595-98 open. 11-12 Nov 2026 (Andrew Beling, beling/): vols. 7-12 searched and their figures transcribed (six new documents); the Rohan 1594 key fits Mme de Rohan's 1597 letters but not her 1611-12 ones; Dudout's folded key does not fit 1595-97; the 1595-99 Duplessis/Lomenie figures stay unread. 12 Nov 2026 integration check: all tests re-run and reproduced (corpus hash matches); strict read share 0.182 (contributor's 0.247 counts name-code letters and inferred values); the Rohan 1594 key 'fits' Rohan 1597 on a small sample where only 'le roy' and 'Madame' read without inference. 27 Nov 2026 (Shawn Grening, grening/): Lomenie 1595 read in part with a ten-figure folded letter key built from Beling's two cribs; 13 of 15 passages exact.",
-  "method_basis": "1593 Du Maurier/Serviez figures (93 groups) read with the key Brice Dudout published for them (27 Oct 2026), applied to this project's transcription; Loménie's letter of 1595 read in part (27 Nov 2026) with a ten-figure letter key built from two cribs taken from the clear text beside it and the king's letter of the same day; Duplessis's own 1595-99 figures remain not read.",
+  "notes": "1593 part read via Dudout's key; 1595-98 open. 11-12 Nov 2026 (Andrew Beling, beling/): vols. 7-12 searched and their figures transcribed (six new documents); the Rohan 1594 key fits Mme de Rohan's 1597 letters but not her 1611-12 ones; Dudout's folded key does not fit 1595-97; the 1595-99 Duplessis/Lomenie figures stay unread. 12 Nov 2026 integration check: all tests re-run and reproduced (corpus hash matches); strict read share 0.182 (contributor's 0.247 counts name-code letters and inferred values); the Rohan 1594 key 'fits' Rohan 1597 on a small sample where only 'le roy' and 'Madame' read without inference. 27 Nov 2026 (Shawn Grening, grening/): Lomenie 1595 read in part with a ten-figure folded letter key built from Beling's two cribs; 13 of 15 passages exact. 28 Nov 2026 (Shawn Grening): Duplessis to Cargroy, 19 Jan 1597, read in part with the alphabet in order on ten figures (a = 7); 6 of 8 passages exact.",
+  "method_basis": "1593 Du Maurier/Serviez figures (93 groups) read with the key Brice Dudout published for them (27 Oct 2026), applied to this project's transcription; Loménie's letter of 1595 read in part (27 Nov 2026) with a ten-figure letter key built from two cribs taken from the clear text beside it and the king's letter of the same day; Duplessis's letter to Cargroy of Jan 1597 read in part (28 Nov 2026) with a second ten-figure letter key found from the ciphertext under the hypothesis of an alphabet in order; his figures to his wife remain not read.",
   "credits": [
    {
     "who": "dudout",
@@ -629,7 +661,7 @@
     "who": "grening",
     "role": "solution",
     "date": "2026-11-27",
-    "note": "Loménie 24 Feb 1595: ten-figure folded letter key from Beling's two cribs; 13 of 15 passages exact (grening/)."
+    "note": "Loménie 24 Feb 1595: ten-figure folded letter key from Beling's two cribs; 13 of 15 passages exact. Duplessis to Cargroy 19 Jan 1597: alphabet-in-order ten-figure key (a = 7); 6 of 8 passages exact (grening/)."
    },
    {
     "who": "ajbeling",
@@ -639,7 +671,7 @@
     "source": "https://github.com/dbourdeau/cyphersolver/pull/449"
    }
   ],
-  "fraction_read": 0.354,
+  "fraction_read": 0.481,
   "texts": [
    {
     "doc": "DuMaurier-1593-06",
@@ -705,13 +737,19 @@
    },
    {
     "doc": "Duplessis-1597-01",
-    "label": "Duplessis-Mornay to Cargroy and to his wife, 18-19 Jan 1597: cipher runs C1 onward",
+    "label": "Duplessis-Mornay to Cargroy, Saumur 19 Jan 1597: cipher runs C1-C8 (the W runs, to his wife, vol. 7 LXVII, are not read)",
     "transcription": "duplessis1597.txt",
-    "decryption": "beling/results/mechanical.txt",
+    "decryption": "grening/duplessis1597_decryption.txt",
+    "reading": "grening/duplessis1597_reading.md",
+    "translation": "grening/duplessis1597_reading.md",
     "language": "fr",
-    "state": "decoded, not read",
-    "summary": "Not read. Figures inside clear letters about a friend who is to bring Cargroy by the king's command; the clear words around each run are in the transcription.",
-    "note": "The decryption is the pre-registered mechanical test, not a reading: lines C of sections T1_folded_on_A and extra_rohan_on_A of beling/results/mechanical.txt. Neither key gives words (C1 'tc td [24] fe eu [42] dc'). Blocker: no key material."
+    "state": "read in part",
+    "cipher_markup": "**",
+    "read_share": 0.9,
+    "cipher_words": 30,
+    "holes": 3,
+    "summary": "Duplessis-Mornay tells Cargroy that a friend, with a few men, will bring him a prisoner of quality to be taken on to Saumur by the king's express command, and gives the sign by which the man will be known: a blue lace on his doublet or coat. He also reports pressing for the upkeep of Cargroy's troop, suggests he take over the one granted to Courbejolière, who gave it up so as not to bring ruin on his house, and says he was glad to have met M. de Montbarot.",
+    "note": "Key grening/key_duplessis1597.tsv (28 Nov 2026, Shawn Grening): the alphabet in order on figures 1-10 starting at a = 7. 27 of 30 cipher words by the contributor's count of the bold words; the holes are [?parti] and [?contraire] in C1 (the print has 11 where 'parti' wants 5, and no ending) and the unread C5, counted as one word, an estimate. Each figure stands for two or three letters; the decryption file lists the letters each figure allows. The reading holds the French and the English in one file. No reading_review yet. The W runs of duplessis1597.txt (letter LXVII, to his wife) are another system and are not read."
    },
    {
     "doc": "Duplessis-1597-1598",
@@ -758,6 +796,6 @@
    }
   ],
   "fraction_read_method": "measured",
-  "fraction_read_source": "12 Nov 2026 integration recount, strict (README read bar: guessed, inferred and name-code letter values are holes): 534 code groups in all (1593: 93; Lomenie 1595: 95; Duplessis Jan 1597: 90; Rohan 1597: 50; Duplessis 1597-98: 79; Duplessis 1599: 30; Rohan 1599: 4; Rohan 1611-12: 84; unsigned 1612: 9). Read as sense: the 93 groups of 1593 (Dudout's key) and 4 of the 50 Rohan 1597 groups, the key's own values with no inference (10 = le roy in R10, R13, R15; 11 = Madame in R12); 97/534 = 0.182. The other Rohan 1597 groups that take a value are letters of names that read only with the inferred values 672, 134, 160, 38 (R2, R7, R19), the word-code half of 'le [672]' (R5, R8), or single figures that Beling's own table says are name codes (R3, R4, R6, R11, R14, R16, R17, R18). The contributor's own figure, 0.247 (132/534: every group that takes a value, 39 of the 50 Rohan 1597 groups), is not a read share. Before: 93/278 = 0.335, before vols. 7-12 were transcribed. 27 Nov 2026 (grening/): Lomenie 1595 adds 92 of its 95 groups (not the last group of L8, nor 100 and 76 of L15): 189/534 = 0.354, the contributor's count, to be recounted at integration."
+  "fraction_read_source": "12 Nov 2026 integration recount, strict (README read bar: guessed, inferred and name-code letter values are holes): 534 code groups in all (1593: 93; Lomenie 1595: 95; Duplessis Jan 1597: 90; Rohan 1597: 50; Duplessis 1597-98: 79; Duplessis 1599: 30; Rohan 1599: 4; Rohan 1611-12: 84; unsigned 1612: 9). Read as sense: the 93 groups of 1593 (Dudout's key) and 4 of the 50 Rohan 1597 groups, the key's own values with no inference (10 = le roy in R10, R13, R15; 11 = Madame in R12); 97/534 = 0.182. The other Rohan 1597 groups that take a value are letters of names that read only with the inferred values 672, 134, 160, 38 (R2, R7, R19), the word-code half of 'le [672]' (R5, R8), or single figures that Beling's own table says are name codes (R3, R4, R6, R11, R14, R16, R17, R18). The contributor's own figure, 0.247 (132/534: every group that takes a value, 39 of the 50 Rohan 1597 groups), is not a read share. Before: 93/278 = 0.335, before vols. 7-12 were transcribed. 27 Nov 2026 (grening/): Lomenie 1595 adds 92 of its 95 groups (not the last group of L8, nor 100 and 76 of L15): 189/534 = 0.354, the contributor's count, to be recounted at integration. 28 Nov 2026 (grening/): Duplessis to Cargroy Jan 1597 adds the 68 groups of C2, C3, C4, C6, C7 and C8: 257/534 = 0.481, the contributor's count, to be recounted at integration."
  }
 }
