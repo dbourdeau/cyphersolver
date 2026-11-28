@@ -1,0 +1,36 @@
+{
+ "schema_version": 1,
+ "target": "ljs51corpus",
+ "title": "LJS 51 f. 22v.9: shape-class re-transcription and frozen held-out key test (contribution)",
+ "credit": {"name": "dudout", "role": "transcription"},
+ "documents": [
+  {
+   "id": "22v.9",
+   "shelfmark": "University of Pennsylvania, Kislak Center, LJS 51, f. 22v l.9-13, f. 23r l.1 (Penn IIIF canvases 50-51)",
+   "length": {"tokens": 81, "unit": "symbols", "measured": true, "file": "arbitrage.txt"},
+   "transcription": {
+    "by": "llm from images",
+    "source": "Penn IIIF, 2343 px",
+    "image_quality": "good",
+    "notes": "Two blind shape-class transcriptions (A 81 signs/25 classes, B 80/22), strict agreement 74/81, arbitrated to 81 signs / 22 classes; arbiter not blind to the plaintext."
+   }
+  }
+ ],
+ "solution": [
+  {
+   "date": "2026-11-28",
+   "kind": "control",
+   "technique": ["plaintext matching"],
+   "what": "Frozen held-out test (MANIFEST_v1 3541c57c..., hash on #1023 before measuring): key learned on signs 1-40 by gapped hard-EM alignment, decoded on 41-81: 0.692 characters vs best of 200 shuffled controls 0.359 (mean 0.231); declared inverse 0.488 vs 0.350. Criterion 0.85 and +0.30 not met.",
+   "result": "partial",
+   "by": "dudout"
+  },
+  {
+   "date": "2026-11-28",
+   "kind": "observation",
+   "what": "Exploratory, after the measurement, not validated: shape class S1 falls on every hamza (أثبتك, أعتذر, الشآم and both first words, where the compiler has ل); ذلك enciphered twice as ذالك (extra alif) - candidate for the compiler's 'he erred in it'.",
+   "result": "partial",
+   "by": "dudout"
+  }
+ ]
+}
