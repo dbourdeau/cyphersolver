@@ -1,0 +1,204 @@
+# Reconstructed Philip II General Cipher Cg.12 (1582) Key — k-sfondrati1583-cg12
+# Targets: Cat. #2077 (BYU Vault MSS 771, Aug-Sep 1583, 3,116 tokens) & Out-of-Sample Cat. #2518 (BYU Vault MSS 518 f. 3 item 2, 5 Oct 1583, 323 tokens)
+# Architecture: Factored syllabary (base consonant + 5 right-attached vowel marks |,e,+,.,@ + 4 coda marks ',^,,,: + gemination * + literal-numeral ~) + f=e substitute letter + inflected stem 60=auis- + unglossed nomenclators (kept open as ?).
+section	token	value	occurrences_2077	occurrences_2518	grade	notes
+VOWEL_MARK	|	a	-	-	G1_confirmed	Right-attached upright stroke (often looks like 1 in 1-digit bases: 2|=21=da, 3|=31=fa, 4|=41=ha, 6|=61=ga, 9|=91=ca)
+VOWEL_MARK	e	e	-	-	G1_confirmed	Right-attached cursive e-hook (2e=de, 9e=ce, 12e=pe, 19e=se, 20e=que, 22e=me)
+VOWEL_MARK	+	i	-	-	G1_confirmed	Right-attached 4-shaped cross (3+=fi, 9+=ci, 13+=ri, 18+=vi, 19+=si, 22+=mi)
+VOWEL_MARK	.	o	-	-	G1_confirmed	Right baseline dot (2.=do, 9.=co, 10.=lo, 11.=no, 14.=to, 22.=mo; on vowels 8.=am, 7.=em, 96.=cum)
+VOWEL_MARK	@	u	-	-	G1_confirmed	Right-attached 6-loop (10@=lu, 12@=pu, 14@=tu, 19@=su, 22@=mu; on 1-digit bases 16=bu, 26=du, 36=fu, 46=hu, 56=ju, 66=gu, 96=cu)
+CODA_MARK	'	n	-	-	G1_confirmed	Acute tick above: coda -n (con, en, in, on, den)
+CODA_MARK	^	s	-	-	G1_confirmed	Caret above: coda -s (los, las, es, vis, dos)
+CODA_MARK	,	r	-	-	G1_confirmed	Subscript comma: coda -r (por, ver, cer, par, yr)
+CODA_MARK	:	l	-	-	G1_confirmed	Dot directly above: coda -l (del, el, al, ul, mil)
+CODA_MARK	*	*	-	-	G1_confirmed	Small cross above: consonant gemination (mechanically emits ll, rr, ss, ff; zero nn emitted mechanically)
+CODA_MARK	~		-	-	G1_confirmed	Horizontal overbar: literal-numeral marker (11~, 100~, 2~, 3~, 5~, 10~)
+CODA_MARK	°		-	-	G1_confirmed	Small circle above: scribal cancellation or special-sign mark
+BASE_CONSONANT	1	b	-	-	G1_confirmed	Consonant base b (1e=be, 1.=bo; 1@=16=bu)
+BASE_CONSONANT	2	d	-	-	G1_confirmed	Consonant base d (2e=de, 2.=do; 2|=21=da, 2+=24=di, 2@=26=du)
+BASE_CONSONANT	3	f	-	-	G1_confirmed	Consonant base f (3e=fe, 3+=fi, 3.=fo; 3|=31=fa, 3@=36=fu)
+BASE_CONSONANT	4	b	-	-	G2_homophonic	In 4+=bi (recibido, billete) and 4e/4./41/46=h- in EXACT_CORE
+BASE_CONSONANT	5	p	-	-	G2_sparse	Rare syllable onset; bare 5=i, 5_m=im, 5.=jo, 56=ju in EXACT_CORE
+BASE_CONSONANT	6	g	-	-	G1_confirmed	Consonant base g (6e=ge, 6+=gi, 6.=go; 6|=61=ga, 6@=66=gu)
+BASE_CONSONANT	9	c	-	-	G1_confirmed	Consonant base c (9e=ce, 9+=ci, 9.=co; 9|=91=ca, 9@=96=cu)
+BASE_CONSONANT	10	l	-	-	G1_confirmed	Consonant base l (la/le/li/lo/lu; with * -> ll)
+BASE_CONSONANT	11	n	-	-	G1_confirmed	Consonant base n (11e=ne, 11.=no; cursive 11|/11+ merges visually into 14|/14+)
+BASE_CONSONANT	12	p	-	-	G1_confirmed	Consonant base p (pa/pe/pi/po/pu)
+BASE_CONSONANT	13	r	-	-	G1_confirmed	Consonant base r (ra/re/ri/ro/ru; with * -> rr)
+BASE_CONSONANT	14	t	-	-	G1_confirmed	Consonant base t (ta/te/ti/to/tu; absorbs cursive 11|/11+=na/ni)
+BASE_CONSONANT	15	x	-	-	G1_confirmed	Consonant base x (15|=xa dexar/embaxador, 15e=xe, bare 15=x)
+BASE_CONSONANT	16	c	-	-	G1_confirmed	Consonant base z/ç (16|=za, 16e=ce, 16+=ci, 16.=zo; bare 16=z; collides with 1@=bu)
+BASE_CONSONANT	17	y	-	-	G1_confirmed	Consonant base y (17|=ya, 17e=ye, 17.=yo, 17@=yu; bare 17=y, 17,=yr)
+BASE_CONSONANT	18	u	-	-	G1_confirmed	Consonant/vowel base u/v (18|=va, 18e=ve, 18+=vi, 18.=vo; bare 18=u)
+BASE_CONSONANT	19	s	-	-	G1_confirmed	Consonant base s (sa/se/si/so/su; with * -> ss)
+BASE_CONSONANT	20	qu	-	-	G1_confirmed	Consonant base qu (20|=qua, 20e=que, 20+=qui)
+BASE_CONSONANT	22	m	-	-	G1_confirmed	Consonant base m (ma/me/mi/mo/mu; 22,=mar)
+BASE_CONSONANT	23	bl	-	-	G1_confirmed	Cluster base bl (23e=ble posible/imposible)
+BASE_CONSONANT	24	br	-	-	G1_confirmed	Cluster base br (24|=bra, 24e=bre; collides with 2+=di)
+BASE_CONSONANT	26	cr	-	-	G1_confirmed	Cluster base cr (26e=cre, 26+=cri; collides with 2@=du)
+BASE_CONSONANT	27	dr	-	-	G1_confirmed	Cluster base dr (27|=dra, 27e=dre, 27+=dri, 27.=dro)
+BASE_CONSONANT	28	tu	-	-	G3_singleton	Cluster slot fl/tu? (1x 28@ in Item 6 p2 L10)
+BASE_CONSONANT	29	fr	-	-	G1_confirmed	Cluster base fr (29e=fre ofrece/offrecido, 29|=fra fragata in #2518)
+BASE_CONSONANT	30	c	-	-	G3_singleton	Cluster slot gl/c? (1x 30+ in Item 21 PS03 oficio)
+BASE_CONSONANT	31	gr	-	-	G2_polyvalent	Cluster base gr (31.=gro peligro); bare 31=fa and 31:=fal resolved explicitly in EXACT_CORE
+BASE_CONSONANT	32	pl	-	-	G1_confirmed	Cluster base pl (32|=pla plazo, 32@=plu pluma; 32+=pli vs bare 34 is a scan doubt on #2518 L08/L15 & I21 PS07)
+BASE_CONSONANT	33	pr	-	-	G1_confirmed	Cluster base pr (33+=pri, 33e=pre, 33.=pro, 33@=pru)
+BASE_CONSONANT	34	tr	-	-	G1_confirmed	Cluster base tr (34|=tra, 34e=tre, 34+=tri, 34.=tro, 34@=tru; bare 34 kept open, scan doubt vs 32+=pli)
+BASE_CONSONANT	35	y	-	-	G2_sparse	Variant of 17=y (35|=ya in haya)
+BASE_CONSONANT	36	tr	-	-	G3_singleton	1x scribal slip 36@=tru in I19_P1_L05; bare 36=fu in EXACT_CORE
+BASE_CONSONANT	42	d	-	-	G2_sparse	Rare ligature base (split to 24 2. where visually separate in v2)
+BASE_CONSONANT	60	auis	-	-	G1_confirmed	Inflected stem auis- (60|=auisa, 60|,=auisar, 60e=auise; confirmed OOS in #2518)
+BASE_CONSONANT	D	ch	-	-	G1_confirmed	Consonant base ch (Di=cha, D+=chi, D.=cho; confirmed OOS in #2518 mucha)
+EXACT_CORE	4e	he	11	1	G1_confirmed	h+e (he, hecho)
+EXACT_CORE	4.	ho	0	1	G3_singleton	h+o (4.=ho, 4.'=hon honrado)
+EXACT_CORE	41	ha	53	6	G1_confirmed	Graphic 4|=ha (havia, hasta, haga)
+EXACT_CORE	46	hu	4	2	G1_confirmed	Graphic 4@=hu (huviese, huviera; Item 6 p1 L06 uncertain)
+EXACT_CORE	56	ju	1	0	G1_confirmed	Graphic 5@=ju (junto, justo, Juan)
+EXACT_CORE	61	ga	9	2	G1_confirmed	Graphic 6|=ga (venga, haga, fragata)
+EXACT_CORE	66	gu	4	1	G1_confirmed	Graphic 6@=gu (gusto, alguna)
+EXACT_CORE	91	ca	21	3	G1_confirmed	Graphic 9|=ca (carta, caso, cauallero)
+EXACT_CORE	96	cu	14	3	G1_confirmed	Graphic 9@=cu (cuydado, procure)
+EXACT_CORE	96.	cum	0	1	G2_confirmed_oos	Vowel+m under-dot on 9@ (cumplimiento in #2518 L15)
+EXACT_CORE	14|.	tam	1	1	G2_confirmed_oos	Vowel+m dot on 14| (tampoco in #2518 L06; tambien)
+EXACT_CORE	5_m	im	3	0	G1_confirmed	Under-dotted 5 = im (imposible, importa)
+EXACT_CORE	5.	jo	4	0	G1_confirmed	Right-dotted 5 = jo (Joyosa, consejo, jornada, hijo)
+EXACT_CORE	7.	em	9	3	G1_confirmed	Dotted 7 = em (embiar, empero, embaxador)
+EXACT_CORE	8.	am	1	0	G1_confirmed	Dotted 8 = am (ambos)
+EXACT_CORE	24	di	56	3	G1_confirmed	Graphic 2+=di (dicho, diligencia, dice; collides with 24=br)
+EXACT_CORE	17	y	28	1	G1_confirmed	Bare 17 = y (28x across #2077 & #2518; note also 17,=yr)
+EXACT_CORE	17,	yr	3	0	G1_confirmed	17 + coda r = yr (yr sembrando, yrse)
+EXACT_CORE	36	fu	9	1	G1_confirmed	Graphic 3@=fu (fue, fuera, fundamento)
+EXACT_CORE	f	e	73	6	G1_confirmed	Next-letter substitute for e (cf. Tomokiyo https://cryptiana.web.fc2.com/code/spanish3.htm, Cp.30 / Cg.12)
+EXACT_CORE	f.	e	1	0	G3_singleton	Dotted variant of f=e (embiar)
+EXACT_CORE	7	e	6	1	G1_confirmed	Primary vowel sign e (7^=es, 7'=en, 7:=el)
+EXACT_CORE	8	a	87	9	G1_confirmed	Primary vowel sign a (8^=as, 8'=an, 8:=al)
+EXACT_CORE	21	o	54	7	G1_confirmed	Primary vowel sign o (collides with graphic 2|=da)
+EXACT_CORE	21e	oe	2	0	G2_sparse	2x vowel digraph oe
+EXACT_CORE	5	i	0	0	G1_confirmed	Primary vowel sign i (5'=in)
+EXACT_CORE	6	en	4	0	G2_sparse	4x bare 6 = en
+EXACT_CORE	{	y	53	5	G1_confirmed	Bare brace sign = y (57x)
+EXACT_CORE	{.	yo	1	1	G3_singleton	1x variant of 17.=yo (suyo in #2518 L08)
+EXACT_CORE	{e	ye	0	0	G2_sparse	2x variant of 17e=ye
+EXACT_CORE	Δ	a	47	3	G1_confirmed	Triangle homophone of a (havia, circunstancias, embiar)
+EXACT_CORE	19	s	26	0	G1_confirmed	Bare consonant s
+EXACT_CORE	14	t	6	0	G1_confirmed	Bare consonant t
+EXACT_CORE	15	x	1	0	G1_confirmed	Bare consonant x (experiencia, execucion)
+EXACT_CORE	16	z	9	0	G1_confirmed	Bare consonant z (luz, plazo; collides with 1@=bu)
+EXACT_CORE	18	u	7	1	G1_confirmed	Bare vowel u (uno, ultimo)
+EXACT_CORE	2	d	1	0	G1_confirmed	Bare consonant d
+EXACT_CORE	4	v	4	0	G2_sparse	Bare consonant v/u
+EXACT_CORE	9	p	5	1	G2_sparse	5x bare 9 = p/c (escripto)
+EXACT_CORE	26	a	4	0	G2_sparse	Rare bare 26 before 24e (abreviando); collides with 2@=du
+EXACT_CORE	E	no	3	0	G2_sparse	3x negative/disjunctive particle (no / o)
+EXACT_CORE	X	la	0	0	G2_sparse	2x special sign X° = la
+EXACT_CORE	a	a	1	0	G3_singleton	1x clear letter a
+EXACT_CORE	c	s	0	0	G3_singleton	1x special sign c° = s
+EXACT_CORE	e	d	1	3	G3_singleton	1x scribal variant e = d (aduertir)
+EXACT_CORE	Di	cha	3	1	G1_confirmed	Graphic D|=cha (sospecha, dicha, mucha in #2518)
+EXACT_CORE	31	fa	2	0	G1_confirmed	Graphic 3|=fa (satisfacerle); resolves 31 vs 31.=gro collision
+EXACT_CORE	31:	fal	1	0	G1_confirmed	Graphic 3|: = fal (falso); resolves 31 vs 31.=gro collision
+EXACT_CORE	31.	gro	1	0	G3_singleton	Cluster 31.=gro (Item 21 p1 L19 peligro); cleanly separated from 31=fa
+EXACT_CORE	60|	auisa	1	0	G1_confirmed	Inflected stem 60|=auisa (auisado; 60|,=auisar)
+EXACT_CORE	60e	auise	1	0	G1_confirmed	Inflected stem 60e=auise
+SHORT_NOM	56'	jun	5	0	G1_confirmed	5@+n = jun (junto, juntamente)
+SHORT_NOM	56^	jus	2	0	G1_confirmed	5@+s = jus (justo, justa)
+SHORT_NOM	23=	cosa	4	0	G1_confirmed	Tier-A structural nomenclator: cosa
+SHORT_NOM	23=^	cosas	1	1	G1_confirmed	Tier-A structural nomenclator: cosas (confirmed OOS in #2518)
+SHORT_NOM	xe	manera	3	0	G1_confirmed	Tier-A structural nomenclator: manera
+SHORT_NOM	quol	qual	2	0	G2_sparse	Tier-A structural nomenclator: qual
+SHORT_NOM	79	carta	2	0	G1_confirmed	Tier-A structural nomenclator: carta
+SHORT_NOM	79^	cartas	1	0	G1_confirmed	Tier-A structural nomenclator: cartas
+SHORT_NOM	224	mi	4	0	G1_confirmed	Graphic 22+ = mi (mi, pensamientos)
+SHORT_NOM	224^	mis	1	0	G1_confirmed	Graphic 22+^ = mis
+SHORT_NOM	12°		1	0	G3_singleton	Cancelled scribal slip (pro[12°]prio)
+OPEN_NOM	sim	?	36	3	G3_open	Tier-B contextual candidate: V. S. (Vuestra Senoria, Baron Paolo Sfondrati)
+OPEN_NOM	hom	?	18	4	G3_open	Tier-B contextual candidate: S. A. (Duke Charles Emmanuel I of Savoy in #2077; S. A. / S. M. referent ambiguous in #2518)
+OPEN_NOM	sa	?	14	3	G3_open	Tier-A contextual candidate: mas (de mas = demas, tanto mas)
+OPEN_NOM	ful	?	11	1	G3_open	Tier-A contextual candidate: para
+OPEN_NOM	95	?	10	2	G3_open	Tier-A contextual candidate: como
+OPEN_NOM	Si	?	11	0	G3_open	Tier-A contextual candidate: -mente adverbial suffix
+OPEN_NOM	him	?	7	1	G3_open	Tier-B contextual candidate: S. M. (King Philip II)
+OPEN_NOM	xol	?	6	1	G3_open	Tier-A contextual candidate: lo que / quanto
+OPEN_NOM	hol	?	5	2	G3_open	Tier-B contextual candidate: persona
+OPEN_NOM	58=	?	5	0	G3_open	Tier-B contextual candidate: Duque
+OPEN_NOM	Co	?	5	0	G3_open	Tier-B contextual candidate: gente / compania
+OPEN_NOM	51	?	5	0	G3_open	Literal numeral (~) or unglossed Cg.12 nomenclator / cancelled mark (kept open)
+OPEN_NOM	vul	?	5	0	G3_open	Tier-B contextual candidate: respuesta / resolucion
+OPEN_NOM	vil	?	3	1	G3_open	Tier-B contextual candidate: resolucion / orden
+OPEN_NOM	34	?	2	2	G3_open	Literal numeral (~) or unglossed Cg.12 nomenclator / cancelled mark (kept open)
+OPEN_NOM	xa	?	2	2	G3_open	Tier-A contextual candidate: muy / tan
+OPEN_NOM	21=	?	2	2	G3_open	Tier-B contextual candidate: correo / despacho
+OPEN_NOM	cem	?	3	0	G3_open	Tier-B contextual candidate: Senor
+OPEN_NOM	62	?	3	0	G3_open	Literal numeral (~) or unglossed Cg.12 nomenclator / cancelled mark (kept open)
+OPEN_NOM	40	?	3	0	G3_open	Literal numeral (~) or unglossed Cg.12 nomenclator / cancelled mark (kept open)
+OPEN_NOM	1	?	2	1	G3_open	Literal numeral (~) or unglossed Cg.12 nomenclator / cancelled mark (kept open)
+OPEN_NOM	qui	?	3	0	G3_open	Literal numeral (~) or unglossed Cg.12 nomenclator / cancelled mark (kept open)
+OPEN_NOM	com	?	2	1	G3_open	Tier-B contextual candidate: servicio
+OPEN_NOM	gil	?	3	0	G3_open	Tier-B contextual candidate: platica
+OPEN_NOM	40=	?	3	0	G3_open	Literal numeral (~) or unglossed Cg.12 nomenclator / cancelled mark (kept open)
+OPEN_NOM	11~	?	2	0	G3_open	Literal numeral (~) or unglossed Cg.12 nomenclator / cancelled mark (kept open)
+OPEN_NOM	yul	?	2	0	G3_open	Literal numeral (~) or unglossed Cg.12 nomenclator / cancelled mark (kept open)
+OPEN_NOM	he	?	1	1	G3_open	Literal numeral (~) or unglossed Cg.12 nomenclator / cancelled mark (kept open)
+OPEN_NOM	98e=^	?	2	0	G3_open	Unglossed underlined numeral code (2x in Item 6; franceses is an unverified contextual hypothesis)
+OPEN_NOM	22,	?	2	0	G3_open	Literal numeral (~) or unglossed Cg.12 nomenclator / cancelled mark (kept open)
+OPEN_NOM	cem^	?	2	0	G3_open	Tier-B contextual candidate: Senores
+OPEN_NOM	gil'	?	2	0	G3_open	Literal numeral (~) or unglossed Cg.12 nomenclator / cancelled mark (kept open)
+OPEN_NOM	gil^	?	2	0	G3_open	Tier-B contextual candidate: platicas
+OPEN_NOM	pim	?	2	0	G3_open	Literal numeral (~) or unglossed Cg.12 nomenclator / cancelled mark (kept open)
+OPEN_NOM	3~	?	2	0	G3_open	Literal numeral (~) or unglossed Cg.12 nomenclator / cancelled mark (kept open)
+OPEN_NOM	71=^	?	1	1	G3_open	Tier-B contextual candidate: escudos / ducados (after 3~ mil and 5~ mil)
+OPEN_NOM	48=	?	2	0	G3_open	Tier-B contextual candidate: dinero / cambio
+OPEN_NOM	yu	?	2	0	G3_open	Literal numeral (~) or unglossed Cg.12 nomenclator / cancelled mark (kept open)
+OPEN_NOM	lim	?	1	1	G3_open	Literal numeral (~) or unglossed Cg.12 nomenclator / cancelled mark (kept open)
+OPEN_NOM	2~	?	2	0	G3_open	Literal numeral (~) or unglossed Cg.12 nomenclator / cancelled mark (kept open)
+OPEN_NOM	gel	?	1	1	G3_open	Literal numeral (~) or unglossed Cg.12 nomenclator / cancelled mark (kept open)
+OPEN_NOM	90	?	1	0	G3_open	Literal numeral (~) or unglossed Cg.12 nomenclator / cancelled mark (kept open)
+OPEN_NOM	73	?	1	0	G3_open	Literal numeral (~) or unglossed Cg.12 nomenclator / cancelled mark (kept open)
+OPEN_NOM	59=	?	1	0	G3_open	Literal numeral (~) or unglossed Cg.12 nomenclator / cancelled mark (kept open)
+OPEN_NOM	64	?	1	0	G3_open	Literal numeral (~) or unglossed Cg.12 nomenclator / cancelled mark (kept open)
+OPEN_NOM	8~	?	1	0	G3_open	Literal numeral (~) or unglossed Cg.12 nomenclator / cancelled mark (kept open)
+OPEN_NOM	xel	?	1	0	G3_open	Literal numeral (~) or unglossed Cg.12 nomenclator / cancelled mark (kept open)
+OPEN_NOM	gel^	?	1	0	G3_open	Literal numeral (~) or unglossed Cg.12 nomenclator / cancelled mark (kept open)
+OPEN_NOM	dem	?	1	0	G3_open	Literal numeral (~) or unglossed Cg.12 nomenclator / cancelled mark (kept open)
+OPEN_NOM	ff	?	1	0	G3_open	Literal numeral (~) or unglossed Cg.12 nomenclator / cancelled mark (kept open)
+OPEN_NOM	95,	?	1	0	G3_open	Literal numeral (~) or unglossed Cg.12 nomenclator / cancelled mark (kept open)
+OPEN_NOM	val	?	1	0	G3_open	Literal numeral (~) or unglossed Cg.12 nomenclator / cancelled mark (kept open)
+OPEN_NOM	12	?	1	0	G3_open	Literal numeral (~) or unglossed Cg.12 nomenclator / cancelled mark (kept open)
+OPEN_NOM	cel,	?	1	0	G3_open	Literal numeral (~) or unglossed Cg.12 nomenclator / cancelled mark (kept open)
+OPEN_NOM	4~	?	1	0	G3_open	Literal numeral (~) or unglossed Cg.12 nomenclator / cancelled mark (kept open)
+OPEN_NOM	Si^	?	1	0	G3_open	Literal numeral (~) or unglossed Cg.12 nomenclator / cancelled mark (kept open)
+OPEN_NOM	Si'	?	1	0	G3_open	Literal numeral (~) or unglossed Cg.12 nomenclator / cancelled mark (kept open)
+OPEN_NOM	fa	?	1	0	G3_open	Literal numeral (~) or unglossed Cg.12 nomenclator / cancelled mark (kept open)
+OPEN_NOM	que^	?	1	0	G3_open	Literal numeral (~) or unglossed Cg.12 nomenclator / cancelled mark (kept open)
+OPEN_NOM	Si:	?	1	0	G3_open	Literal numeral (~) or unglossed Cg.12 nomenclator / cancelled mark (kept open)
+OPEN_NOM	gal	?	1	0	G3_open	Literal numeral (~) or unglossed Cg.12 nomenclator / cancelled mark (kept open)
+OPEN_NOM	100~	?	1	0	G3_open	Literal numeral (~) or unglossed Cg.12 nomenclator / cancelled mark (kept open)
+OPEN_NOM	19|.	?	1	0	G3_open	Literal numeral (~) or unglossed Cg.12 nomenclator / cancelled mark (kept open)
+OPEN_NOM	8+^	?	1	0	G3_open	Literal numeral (~) or unglossed Cg.12 nomenclator / cancelled mark (kept open)
+OPEN_NOM	fil	?	1	0	G3_open	Literal numeral (~) or unglossed Cg.12 nomenclator / cancelled mark (kept open)
+OPEN_NOM	22'	?	1	0	G3_open	Literal numeral (~) or unglossed Cg.12 nomenclator / cancelled mark (kept open)
+OPEN_NOM	62.	?	1	0	G3_open	Literal numeral (~) or unglossed Cg.12 nomenclator / cancelled mark (kept open)
+OPEN_NOM	2e~	?	1	0	G3_open	Literal numeral (~) or unglossed Cg.12 nomenclator / cancelled mark (kept open)
+OPEN_NOM	15~	?	1	0	G3_open	Literal numeral (~) or unglossed Cg.12 nomenclator / cancelled mark (kept open)
+OPEN_NOM	yoe^	?	1	0	G3_open	Literal numeral (~) or unglossed Cg.12 nomenclator / cancelled mark (kept open)
+OPEN_NOM	quole^	?	1	0	G3_open	Literal numeral (~) or unglossed Cg.12 nomenclator / cancelled mark (kept open)
+OPEN_NOM	ta	?	1	0	G3_open	Literal numeral (~) or unglossed Cg.12 nomenclator / cancelled mark (kept open)
+OPEN_NOM	8e	?	1	0	G3_open	Literal numeral (~) or unglossed Cg.12 nomenclator / cancelled mark (kept open)
+OPEN_NOM	ca^	?	1	0	G3_open	Literal numeral (~) or unglossed Cg.12 nomenclator / cancelled mark (kept open)
+OPEN_NOM	nul	?	1	0	G3_open	Tier-B contextual candidate: Principe (Gian Andrea Doria)
+OPEN_NOM	cel	?	1	0	G3_open	Literal numeral (~) or unglossed Cg.12 nomenclator / cancelled mark (kept open)
+OPEN_NOM	38=|	?	1	0	G3_open	Literal numeral (~) or unglossed Cg.12 nomenclator / cancelled mark (kept open)
+OPEN_NOM	dul	?	1	0	G3_open	Literal numeral (~) or unglossed Cg.12 nomenclator / cancelled mark (kept open)
+OPEN_NOM	yi^	?	1	0	G3_open	Literal numeral (~) or unglossed Cg.12 nomenclator / cancelled mark (kept open)
+OPEN_NOM	yi	?	1	0	G3_open	Literal numeral (~) or unglossed Cg.12 nomenclator / cancelled mark (kept open)
+OPEN_NOM	tu	?	1	0	G3_open	Literal numeral (~) or unglossed Cg.12 nomenclator / cancelled mark (kept open)
+OPEN_NOM	55	?	1	0	G3_open	Tier-B contextual candidate: Don (Pedro de Aragon)
+OPEN_NOM	ful,	?	1	0	G3_open	Literal numeral (~) or unglossed Cg.12 nomenclator / cancelled mark (kept open)
+OPEN_NOM	quil^	?	1	0	G3_open	Literal numeral (~) or unglossed Cg.12 nomenclator / cancelled mark (kept open)
+OPEN_NOM	57	?	1	0	G3_open	Literal numeral (~) or unglossed Cg.12 nomenclator / cancelled mark (kept open)
+OPEN_NOM	3°	?	1	0	G3_open	Literal numeral (~) or unglossed Cg.12 nomenclator / cancelled mark (kept open)
+OPEN_NOM	5~	?	0	1	G3_open	Literal numeral (~) or unglossed Cg.12 nomenclator / cancelled mark (kept open)
+OPEN_NOM	10~	?	0	1	G3_open	Literal numeral (~) or unglossed Cg.12 nomenclator / cancelled mark (kept open)
+OPEN_NOM	38=|,	?	0	1	G3_open	Literal numeral (~) or unglossed Cg.12 nomenclator / cancelled mark (kept open)
+OPEN_NOM	38=	?	0	1	G3_open	Tier-B contextual candidate: correo / despachar
+OPEN_NOM	fo	?	0	1	G3_open	Literal numeral (~) or unglossed Cg.12 nomenclator / cancelled mark (kept open)
