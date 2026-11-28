@@ -1,0 +1,105 @@
+{
+  "schema_version": 1,
+  "target": "dhofari-kmd",
+  "title": "Dhofari cave panel KMD 28–31",
+  "documents": [
+    {
+      "id": "KMD 28–31",
+      "shelfmark": "Dhofar Epigraphic Project, site D2, KMD 28–31",
+      "year": "unknown",
+      "country": "Oman",
+      "language": "unknown",
+      "cleartext_in_document": "mostly clear",
+      "plaintext": {
+        "location": [
+          "printed edition"
+        ],
+        "source": "Al-Jallad and Prioletta (2026), Appendix 1; OCIANA 46218.",
+        "partial": true
+      },
+      "length": {
+        "tokens": 38,
+        "unit": "symbols",
+        "measured": false
+      },
+      "transcription": {
+        "by": "published",
+        "source": "OCIANA 46218 and Al-Shaḥrī and King, fig. 26.",
+        "notes": "Physical column order. KMD 31 retains the catalogue question mark."
+      }
+    }
+  ],
+  "system": {
+    "types": [
+      "not a cipher"
+    ],
+    "summary": "An alphabet exercise in Dhofari 1a with a fourth column of uncertain function.",
+    "symbol_kind": "letters",
+    "distinct_symbols": "unknown",
+    "diacritics": {
+      "used": "unknown"
+    },
+    "homophones": {
+      "used": false
+    },
+    "nomenclator": {
+      "present": false
+    },
+    "nulls": {
+      "present": false
+    },
+    "key_order": "not applicable"
+  },
+  "conditions": {
+    "prior_solution": {
+      "exists": "partial",
+      "where": "Al-Jallad (2025), Al-Jallad and Prioletta (2026), and OCIANA 46218.",
+      "found": "before attempt",
+      "used": true
+    },
+    "inputs": [
+      "images",
+      "transcription",
+      "published reading"
+    ],
+    "attack": "none",
+    "human_role": "Identified the panel and supplied the 2025 study.",
+    "models": [
+      "GPT-6"
+    ]
+  },
+  "solution": [
+    {
+      "kind": "literature search",
+      "what": "Located the revised KMD 30 edition based on clearer photographs.",
+      "result": "worked"
+    },
+    {
+      "kind": "hypothesis",
+      "technique": [
+        "contextual inference"
+      ],
+      "what": "Compared KMD 31 sign 3 with KMD 28 sign 4, KMG 10 and KMD 191. The comparisons support a provisional ṣ if Script 1a values apply.",
+      "result": "partial"
+    },
+    {
+      "kind": "control",
+      "what": "Tested whether alphabetic wraparound distinguishes the missing sign. Three candidates require the same two omissions.",
+      "result": "failed"
+    }
+  ],
+  "outcome": {
+    "class": "not a cipher",
+    "key": "not applicable",
+    "method": "not applicable",
+    "verification": [
+      "none"
+    ],
+    "texts": [
+      {
+        "doc": "all",
+        "transcription": "transcription.tsv"
+      }
+    ]
+  }
+}
