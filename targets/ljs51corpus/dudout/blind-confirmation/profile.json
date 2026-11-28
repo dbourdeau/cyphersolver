@@ -1,0 +1,30 @@
+{
+ "schema_version": 1,
+ "target": "ljs51corpus",
+ "title": "Penn LJS 51: blind (ciphertext-only) confirmation of 18 by-eye keys and a first measurement of Ibn ʿAdlān's length rule",
+ "conditions": {
+  "prior_solution": {
+   "exists": "yes",
+   "where": "targets/ljs51corpus/keys_eye and keys.tsv (D. Bourdeau), keys from the compiler's plaintext; the compiler's own decipherments in the volume",
+   "found": "found",
+   "used": false
+  },
+  "inputs": ["transcription"],
+  "attack": "ciphertext only",
+  "first_date": "2026-11-28",
+  "last_date": "2026-11-28",
+  "human_role": "Brice Dudout set the rules (frozen protocol, hash posted before the one measurement, 200 controls); an AI agent wrote the solver, ran it and wrote up.",
+  "models": ["Claude Opus 5.5 (Anthropic), agent run by Brice Dudout"]
+ },
+ "solution": [
+  {
+   "date": "2026-11-28",
+   "kind": "verification",
+   "technique": ["simulated annealing", "language model"],
+   "what": "Blind re-solve of 18 chains from cipher_lines only; character agreement with the compiler's plaintext against 200 shuffled-ciphertext controls; freeze f2e53f5726ff25bcaef7f6a4c84dc8a43fc0387073a19d20ecba66cc2662eb6d posted on #1023 before the run.",
+   "result": "6 of 16 blind chains pass (≥ 0.85 and ≥ best control + 0.30), 5 more rank first of 201 below 0.85, 5 at chance; 2 declared non-blind chains pass",
+   "credit": "dudout",
+   "role": "verification"
+  }
+ ]
+}
