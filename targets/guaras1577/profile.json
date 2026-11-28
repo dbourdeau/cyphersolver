@@ -1,0 +1,287 @@
+{
+ "schema_version": 1,
+ "target": "guaras1577",
+ "title": "Antonio de Guaras to Don John of Austria, London, 15 February 1577 (TNA SP 70/143 f. 93): the 1574 Guaras key does not apply; a key rebuilt from the printed decipherment passed a held-out test (0.843 against 0.372); one of Kervyn's three gaps read as libertad (probable)",
+ "documents": [
+  {
+   "id": "SP70-143-f93",
+   "read": "read in part",
+   "shelfmark": "The National Archives, Kew, SP 70/143 f. 93 (Calendar of State Papers Foreign 1575-77 no. 1264); Gale State Papers Online MC4311981270, images 94-96",
+   "date": "15 February 1577",
+   "year": 1577,
+   "country": "England",
+   "route": "Antonio de Guaras, London -> Don John of Austria (intercepted)",
+   "places": {
+    "from": "London",
+    "to": "Low Countries"
+   },
+   "language": "Spanish",
+   "pages": 2,
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "printed edition"
+    ],
+    "source": "Kervyn de Lettenhove, Relations politiques des Pays-Bas et de l'Angleterre IX (1886) no. 3359 pp. 200-201, from this Record Office copy (Marnix's decipherment of 1577), with three gaps and ten words in brackets; a French translation of the time in vol. X no. 3640 pp. 69-70 (not used)."
+   },
+   "length": {
+    "tokens": 2289,
+    "distinct": 56,
+    "unit": "symbols",
+    "measured": true,
+    "file": "transcription/transcription_final_v2.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Gale State Papers Online (subscription), document MC4311981270, images 94-96; no images in this folder",
+    "image_quality": "good",
+    "notes": "Two blind AI readers (Claude Opus 5.5) agreed on 1,910 of 2,263 aligned tokens; a third AI reader settled the 259 disagreement blocks on the image, blind to values; uy and the small cross were split by shape rules applied blind (see NOTES). Token count from the loader in scripts/build_key.py (TSPLIT=1): 2,289 tokens including 19 dotted code numbers; _check_profile --measure counts the gap marks and line labels as well. No person has checked."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "homophonic",
+   "nomenclator"
+  ],
+  "summary": "About 40 letter signs (letter-like shapes, digits, a u-like double or triple minim, tall strokes with a crossbar or loop, a small cross) with homophones, 8 = qu, and code numbers written between dots for words and titles.",
+  "symbol_kind": "letters and symbols",
+  "distinct_symbols": 56,
+  "diacritics": {
+   "used": "unknown"
+  },
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": true,
+   "entries": 15,
+   "kinds": [
+    "common words",
+    "names",
+    "titles"
+   ],
+   "unread_groups": 1
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "not applicable",
+  "word_division": "none",
+  "notes": "Visible gaps between groups of signs are not word divisions. entries counts the distinct dotted numbers in this letter. Several signs carry two values in the alignment (t, t2, T, y, Z): either homophones shared between letters or shapes not yet told apart."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "in print",
+   "where": "Kervyn de Lettenhove IX (1886) no. 3359 pp. 200-201 (Marnix's decipherment, with three gaps); named in Brice Dudout's pull request #1007, row 3. DECODE record 340 (SP 106/1 f. 116) is Escobedo's 1577 key, a different cipher (checked 28 Nov 2026).",
+   "found": "before attempt",
+   "used": true
+  },
+  "inputs": [
+   "images",
+   "published reading",
+   "cleartext context"
+  ],
+  "attack": "known plaintext",
+  "human_role": "Andrew Beling set the task and the rules (blind transcription, plans frozen before decoding, held-out passage fixed before key work and stamped before measuring). AI agents fetched the images, transcribed, built the key, ran the tests and wrote. No person has checked the transcription, the key or the readings against the images.",
+  "tools": [
+   "Gale State Papers Online",
+   "scripts in this folder (build_key.py, tune_key.py, measure_heldout.py, word_count.py)",
+   "openssl and FreeTSA (RFC 3161)"
+  ],
+  "models": [
+   "claude-opus-5-5"
+  ],
+  "first_date": "2026-11-27",
+  "last_date": "2026-11-28"
+ },
+ "solution": [
+  {
+   "date": "2026-11-27",
+   "kind": "access",
+   "what": "SP 70/143 f. 93 saved from Gale State Papers Online (images 94-96), 23:09 EST.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-27",
+   "kind": "transcription",
+   "what": "Two blind AI readers in a shape-only notation; 1,910 of 2,263 aligned tokens agree.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-27",
+   "kind": "control",
+   "what": "Plan frozen by hash at 23:27:57 EST (plan/PLAN.md) before any decoding; local file times only.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-27",
+   "kind": "sibling key",
+   "technique": [
+    "key matching"
+   ],
+   "what": "Andrew Beling's 1574 Guaras key (catalogue 1001) applied unchanged: 40-44% coverage, trigram score far below Spanish, does not beat all 200 shuffled keys.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-27",
+   "kind": "control",
+   "what": "Held-out passage (f. 93v lines 1-7, 321 tokens) fixed by hash at 23:29:34 EST, before any key work.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-27",
+   "kind": "literature search",
+   "what": "Looked for the key Davison sent on 5 Apr 1578 (SP 83/6 f. 9) and Wilson's enclosures of 10 Mar 1577 (SP 70/144) on State Papers Online: no key sheet.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-28",
+   "kind": "transcription",
+   "what": "259 disagreement blocks settled on the image by a third AI reader, blind to values.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-28",
+   "kind": "crib",
+   "technique": [
+    "EM alignment"
+   ],
+   "what": "Key built by Viterbi alignment of the build lines with Kervyn's printed text (held-out lines never read); in-sample per-sign agreement 0.68.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-28",
+   "kind": "transcription",
+   "what": "Shapes of uy and the small cross compared blind on unlabelled groups from build lines; uy split by minim count (27 of 30), cross by bar (23 of 30); applied to all lines by shape.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-28",
+   "kind": "crib",
+   "technique": [
+    "EM alignment"
+   ],
+   "what": "Key rebuilt on the split transcription and values tuned on build lines; in-sample 0.762.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-28",
+   "kind": "verification",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "Held-out test frozen (verification/MANIFEST_v1.sha256), manifest hash stamped by FreeTSA at 05:46:25 UTC, measured once: 268 of 318 scored signs, 0.843, best of 200 controls 0.372, z 15.9.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-28",
+   "kind": "reading",
+   "what": "Gaps and bracketed words compared with the decode: code 66 occurs at Kervyn's [carcel] and at his gap after 'puesto en'; libertad fits both (probable). Gap 1 probable title plus Sussex; gap 2 unread.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-28",
+   "kind": "sibling key",
+   "technique": [
+    "key matching"
+   ],
+   "what": "DECODE record 340, the 1577 Escobedo key (TNA SP 106/1 f. 116, 'Cyphra Escovedi'), fetched from State Papers Online, transcribed by one blind AI helper and applied unchanged to the held-out lines after the test (not frozen): 80 of 165 (0.485), at the mean of 200 shuffled keys (0.481); 12 of 181 held-out tokens share a value with the rebuilt key. A different cipher.",
+   "result": "ruled out"
+  }
+ ],
+ "outcome": {
+  "class": "read in part",
+  "key": "partial",
+  "method": "key recovered based on plaintext from external sources",
+  "method_basis": "The key was rebuilt by aligning the cipher with the decipherment printed by Kervyn de Lettenhove (1886); the text of the letter itself comes from that print. Our additions are the key, its held-out test, and the readings at Kervyn's gaps.",
+  "contribution": [
+   "key recovered",
+   "transcription"
+  ],
+  "parts": [
+   {
+    "label": "SP 70/143 f. 93, 47 cipher lines",
+    "method": "key recovered based on plaintext from external sources",
+    "extent": "partial",
+    "basis": "scripts/word_count.py: printed words the decode gives letter for letter, with nothing supplied, 251 of 509 (held-out lines 42 of 79); Kervyn's bracketed words and gaps (16) are holes, 251 of 525; held-out per-sign score 0.843 (verification/RESULT_v1.json), 0.826 without the OCR classes (scripts/heldout_rescore.py)."
+   }
+  ],
+  "fraction_read": 0.478,
+  "fraction_read_method": "measured",
+  "fraction_read_unit": "words",
+  "fraction_read_source": "scripts/word_count.py: 251 of 525 cipher words sure (the decode gives the printed word letter for letter: build lines 178/371 and 31/59, held-out 42/79); Kervyn's 13 bracketed words and his 3 gaps (one word each) are holes. The rest of the text is read only through the print.",
+  "codes_open": {
+   "open": 8,
+   "total": 15,
+   "tokens_open": 9
+  },
+  "verification": [
+   "contemporary decipherment"
+  ],
+  "provenance": "contributed",
+  "texts": [
+   {
+    "doc": "SP70-143-f93",
+    "label": "Guaras to Don John, London, 15 Feb 1577",
+    "transcription": "transcription/transcription_final_v2.txt",
+    "language": "es",
+    "state": "read in part",
+    "read_share": 0.478,
+    "cipher_words": 525,
+    "holes": 274,
+    "summary": "Guaras reports the Queen's and Council's wavering over sending forces to the States, England's unreadiness, the worry over the Queen of Scots, and warns Don John of a suspected agent sent by Leicester through Antwerp.",
+    "decryption": "decryption_SP70-143-f93.txt"
+   }
+  ],
+  "key_file": "verification/key_1577_v1.json",
+  "credits": [
+   {
+    "who": "ajbeling",
+    "role": "solution",
+    "note": "Andrew Beling, with AI agents: the 1574 key ruled out, the 1577 key rebuilt from the print and tested on held-out lines, code 66 read at Kervyn's gap",
+    "date": "2026-11-28"
+   },
+   {
+    "who": "ajbeling",
+    "role": "transcription",
+    "note": "Andrew Beling, with AI agents: two blind readings and an adjudication on the image",
+    "date": "2026-11-28"
+   },
+   {
+    "who": "dudout",
+    "role": "pointer",
+    "note": "Brice Dudout's printed-editions sweep, pull request #1007, row 3",
+    "date": "2026-11-25"
+   },
+   {
+    "who": "contemporary",
+    "role": "key or decipherment used",
+    "note": "Marnix's decipherment of 1577 as printed by Kervyn de Lettenhove, Relations politiques IX (1886) no. 3359",
+    "date": "1577"
+   }
+  ],
+  "gaps": [
+   {
+    "item": "Kervyn's gap 2 (P1L30), decodes 'relo', unread",
+    "blocker": "no-key-material"
+   },
+   {
+    "item": "Kervyn's gap 1 (P1L05), probable title plus Sussex only",
+    "blocker": "no-key-material"
+   },
+   {
+    "item": "Code 59 unread",
+    "blocker": "open-codes"
+   },
+   {
+    "item": "Codes 21, 22, 34, 36, 39, 43 rest on the print alone",
+    "blocker": "open-codes"
+   },
+   {
+    "item": "Signs t, t2, T, y, Z carry two values in the alignment",
+    "blocker": "no-key-material"
+   }
+  ]
+ }
+}

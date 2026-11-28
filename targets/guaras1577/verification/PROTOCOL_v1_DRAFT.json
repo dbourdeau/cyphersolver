@@ -1,0 +1,13 @@
+{
+ "status": "DRAFT, not frozen, not measured. Written 27 Nov 2026 at 23:29 EST by an AI agent (Claude Opus 5.5); no person has checked it. The held-out passage is fixed now, before any key work. The key does not exist yet: if Andrew decides to build one, this draft is completed (key file named, hashes added), frozen into MANIFEST_v1.sha256, stamped by FreeTSA (RFC 3161) and only then measured once.",
+ "target": "Antonio de Guaras to Don John of Austria, London, 15 Feb 1577, TNA SP 70/143 f. 93 (CSP Foreign 1575-77 no. 1264); images Gale State Papers Online MC4311981270, images 94-96",
+ "key": "not yet built; would be rebuilt from cipher lines P1L01-P1L33 and P2L08-P2L14 only, aligned with the plain text printed by Kervyn de Lettenhove (method: key recovered from external plaintext)",
+ "heldout_passage": "cipher lines P2L01-P2L07 (f. 93v lines 1-7): 321 reconciled tokens (353 in reader A, 362 in reader B). Files heldout_passage_P2L01-07_*.txt",
+ "transcription": "../reconciled.txt (A and B agree on 1910 of 2263 aligned tokens; disagreements are ?), with ../transcription_A.txt and ../transcription_B.txt",
+ "reference": {"text": "Kervyn de Lettenhove, Relations politiques des Pays-Bas et de l'Angleterre IX (1886) no. 3359 pp. 200-201, Internet Archive relationspolitiq09nethuoft, OCR text", "local_file": "sources/raw/sweep_calendar_2026-11-13/ocr/kervyn_relations/relationspolitiq09nethuoft.txt", "sha256": "fc0a16f0fd7011eef8b45d777d8444a0956e795f132e8e0730960d38af7c74e3", "note": "the reference letters for the held-out lines are found by aligning the decoded stream with the printed text after the freeze; words the print gives in brackets or leaves blank are not scored"},
+ "metric": "per-sign: share of held-out cipher tokens (excluding ?, dotted numbers and tokens aligned to a printed gap or bracketed word) whose decoded letter equals the aligned letter of the print, after the normalisation of ../PLAN.md 2.2",
+ "controls": "200 keys made by shuffling the plain values of the frozen key among its signs, random.Random(1577)",
+ "threshold": "pass if score >= 0.70 and score - best control >= 0.20",
+ "timestamp_service": "FreeTSA, https://freetsa.org/tsr (RFC 3161), hash of MANIFEST_v1.sha256 only",
+ "result_file": "RESULT_v1.json"
+}
