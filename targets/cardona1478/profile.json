@@ -1,0 +1,245 @@
+{
+ "schema_version": 1,
+ "target": "cardona1478",
+ "title": "The Count of Cardona to John II of Aragon, Trapani, 16 July 1478 (catalogue 2855): a Catalan letter with cipher runs and partial glosses of the time, read in part with a key rebuilt from the glosses (held-out test passed)",
+ "documents": [
+  {
+   "id": "C_CRAR-0026",
+   "read": "read in part",
+   "shelfmark": "Zaragoza, Archivo Histórico Provincial (Archivo del Reino de Aragón), Colección Zurita, C_CRAR/000001/0026",
+   "date": "16 July 1478",
+   "year": 1478,
+   "country": "Spain",
+   "route": "the Count of Cardona, Trapani -> John II of Aragon",
+   "places": {
+    "from": "Trapani",
+    "to": "unknown"
+   },
+   "language": "Catalan",
+   "pages": 1,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "interlinear"
+    ],
+    "source": "Partial glosses of the time in a second hand over or under some cipher runs, and two lines at the head of the page giving the sense of the first four cipher lines (glosses.md)."
+   },
+   "length": {
+    "tokens": 405,
+    "distinct": 45,
+    "unit": "symbols",
+    "measured": true,
+    "file": "ciphertext_reader1.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "DARA record https://dara.aragon.es/opac/app/item?i=1055722, PDF AHPZ_C_CRAR_000026.pdf, page 1",
+    "image_quality": "good",
+    "notes": "Two blind AI readers (Claude Opus 5.5 helper agents, 28 Nov 2026), each with its own sign names and no values; 387 of 406 signs agree after name mapping (transcription/r.log). The first reader's text is used; the disagreements were not ruled on."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "homophonic"
+  ],
+  "summary": "A homophonic letter substitution of about 45 signs (letter-like shapes, barred and dotted variants, two-dot and three-dot signs) written inside clear Catalan; the two-dot sign is i, Rp is g.",
+  "symbol_kind": "letters and symbols",
+  "distinct_symbols": 45,
+  "diacritics": {
+   "used": true
+  },
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": false
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "unknown",
+  "word_division": "none",
+  "notes": "Dots and bars make separate signs (dot2 = i, dot3 = p). Whether b/b6 and 7/7bar are one sign each is open."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "partial",
+   "where": "Glosses of the time on the leaf itself (partial). No modern reading found: García Larragan's post of 16 July 2026 covers catalogue 2854 only; web search 28 Nov 2026 found nothing. The sweep by Gemini 4 Carbon (via @tttzqw) (PR #1021) noted the glosses, without a reading.",
+   "found": "before attempt",
+   "used": true
+  },
+  "inputs": [
+   "images",
+   "cleartext context"
+  ],
+  "attack": "archive decipherment",
+  "human_role": "Andrew Beling set the task and the rules (plan stamped before key work, two blind readers, a held-out test stamped by FreeTSA before it was run). AI agents fetched the images, transcribed, built the key, ran the test, read and wrote. No person has checked the transcription, the key or the reading against the images.",
+  "tools": [
+   "curl",
+   "Python (PIL crops; scripts/reconcile.py; verification/measure.py)",
+   "openssl ts and FreeTSA"
+  ],
+  "models": [
+   "claude-opus-5-5"
+  ],
+  "first_date": "2026-11-28",
+  "last_date": "2026-11-28"
+ },
+ "solution": [
+  {
+   "date": "2026-11-28",
+   "kind": "access",
+   "what": "DARA PDF fetched by curl (04:11 UTC); page images extracted.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-28",
+   "kind": "transcription",
+   "what": "Two blind transcriptions by helper agents with their own sign names; reconciled by name mapping (387 of 406 signs agree).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-28",
+   "kind": "sibling key",
+   "technique": [
+    "key matching"
+   ],
+   "what": "Sign shapes compared with the upstream Aragonese keys of 1470-1520 (ferdinand1473 1473 and 1474 tables, ferdinand1478, juanmanuel1497, claver1497, garcilaso1498, toledo1479): at most 4 of the 15 commonest signs have a counterpart, under the plan's gate of half, so none was decoded.",
+   "result": "ruled out"
+  },
+  {
+   "date": "2026-11-28",
+   "kind": "crib",
+   "technique": [
+    "crib testing",
+    "manual reconstruction",
+    "contextual inference"
+   ],
+   "what": "Key built by hand from lines L10-L17 only: the run in L12, L14, L17 under the gloss 'senyor de Camarasa', then 'al don Gismundo', 'la gran justicia que', 'reportaria com per esser' and the clear Catalan.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-28",
+   "kind": "verification",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "Held-out test under the proposed rule #1014: key, transcription and the glosses over L01-L09 frozen in verification/MANIFEST_v1.sha256 (SHA-256 1093d388d5fb6965c7ee9207684eede68be9439b15e2cbdbf296cfe4b28311db), stamped by FreeTSA 04:45:50 UTC, measured once 04:45:55: 0.859 of gloss letters against a best of 0.479 for 200 shuffled keys (z 7.6). PASS.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-28",
+   "kind": "reading",
+   "technique": [
+    "contextual inference"
+   ],
+   "what": "All 17 lines decoded and read word by word (reading_words.tsv): first count 78 of 104 cipher words sure, 7 probable, 19 holes; recounted in the cold check below. Five values proposed after the test (m_ = f, fbar = v, gx = e, qbar = b, 2 = h), not covered by it.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-28",
+   "kind": "transcription",
+   "technique": [
+    "contextual inference"
+   ],
+   "what": "Cold check after the test, by a separate AI agent (Claude Opus 5.5) from about 05:00 UTC: one fresh helper agent, shown only the page image and the 15 places where the two readers differ (no key, no reading), ruled on each (05:05-05:18 UTC; 9 for the first reader, 5 for the second, 1 not told). The word count was then redone against the decode: 67 of 103 cipher words sure, 15 probable, 21 holes. Words the key gives only with a supplied letter (ferli, stat, fet, fer, ha, hauer), words on a disputed sign (el twice, dels, e) and one word read twice from the same sign (L07 a) were taken off the sure count.",
+   "result": "partial"
+  }
+ ],
+ "outcome": {
+  "class": "read in part",
+  "key": "partial",
+  "method": "key recovered based on adjacent plaintext",
+  "method_basis": "The key was rebuilt from the partial glosses of the time on lines L10-L17 and the clear Catalan around them, then tested on lines L01-L09 against the glosses there (held-out test passed). Every word counted as read is given by the key; 31 of the 67 also stand under a gloss of the time (4 of them only under the head gloss read after the test), 36 are given by the key where no gloss word stands. No word is counted as read from a gloss alone.",
+  "contribution": [
+   "transcription",
+   "key recovered",
+   "catalogue correction"
+  ],
+  "fraction_read": 0.65,
+  "fraction_read_method": "measured",
+  "fraction_read_unit": "words",
+  "fraction_read_source": "reading_words.tsv: cipher words only, 67 of 103 sure (82 with the 15 probable words); one model reader, recounted by a cold-check AI agent on 28 Nov 2026 (supplied letters and disputed signs made probable).",
+  "codes_open": {
+   "open": 0,
+   "total": 0,
+   "tokens_open": 0
+  },
+  "verification": [
+   "contemporary decipherment"
+  ],
+  "texts": [
+   {
+    "doc": "C_CRAR-0026",
+    "label": "Cardona to John II, Trapani, 16 Jul 1478",
+    "transcription": "transcription/reader1_transcription.txt",
+    "decryption": "decryption_reader1.txt",
+    "reading": "reading.md",
+    "language": "ca",
+    "state": "read in part",
+    "read_share": 0.65,
+    "cipher_words": 103,
+    "holes": 36,
+    "summary": "Cardona writes of a man (the son of the baron of Castellví?) who was tortured and named others, of Don Gismundo's office and his poverty, of the lord of Camarasa (three thousand florins), and of the king's 'gran justicia'.",
+    "translation": "translation.md"
+   }
+  ],
+  "key_file": "key.tsv",
+  "credits": [
+   {
+    "who": "ajbeling",
+    "role": "solution",
+    "note": "Andrew Beling, with AI agents: key rebuilt from the glosses of the time, held-out test stamped by FreeTSA and passed, letter read in part",
+    "date": "2026-11-28"
+   },
+   {
+    "who": "ajbeling",
+    "role": "transcription",
+    "note": "Andrew Beling, with AI agents: two blind transcriptions of the cipher",
+    "date": "2026-11-28"
+   },
+   {
+    "who": "contemporary",
+    "role": "key or decipherment used",
+    "note": "the partial glosses on the leaf (C_CRAR/000001/0026 f. 1r)",
+    "date": "1478"
+   },
+   {
+    "who": "bourdeau",
+    "role": "new cipher",
+    "note": "catalogue 2855 (DARA sweep, wave 8, 15 Nov 2026)",
+    "date": "2026-11-15"
+   },
+   {
+    "who": "gemini4carbon",
+    "role": "pointer",
+    "note": "noted the partial Catalan glosses of the time and that the cipher is not 2854's (PR #1021, not merged)",
+    "date": "2026-11-26",
+    "source": "https://github.com/dbourdeau/cyphersolver/pull/1021"
+   }
+  ],
+  "gaps": [
+   {
+    "item": "L01-L04: castelvi, tran?o, stat, sab, acor..n, sat, torgar, e, alguns, turmentat; probable: fil, ferli, e, ha, fet, fer, el (x2), ha, dels",
+    "blocker": "no-key-material",
+    "detail": "signs with no tested value (m_, fbar, qbar, 2, 8, pdd, dl, o), one illegible sign (L02 #5), and reader disagreements ruled only by a model helper (L01 #4, L03 #8 and #25, L04 #28)"
+   },
+   {
+    "item": "L06-L09: son, offici, gran, carrec, hauer, pagat, camarasa, florins, aure",
+    "blocker": "no-key-material",
+    "detail": "signs b, b6, 2, 7, mx give values that do not fit; perhaps signs the readers merged"
+   },
+   {
+    "item": "L10 and L15 first sign (tloop); end of L15",
+    "blocker": "no-key-material",
+    "detail": "no value; three signs at the end of L15 unread"
+   },
+   {
+    "item": "L16 e (and)",
+    "blocker": "illegible",
+    "detail": "the second reader has no sign here; a model helper saw the sign z (cold check 28 Nov 2026): probable"
+   }
+  ]
+ }
+}
