@@ -1,7 +1,7 @@
 # The two control telegrams and the sibling lines (numbers and plain words only; images are private and not in the repository)
 
 CEHM DLI.39.7677.1 (record 118140), 15 July 1909, handwritten plaintext beside the cipher:
-- 79 | 1 26 3 41 20 8 11 = [Sr. Presidente?] | e-n-e-m-i-g-o (our reading; not in the contributor's strict count)
+- 79 | 1 26 3 41 20 8 11 = Sr. Presidente | e-n-e-m-i-g-o (our reading; not in the contributor's strict count). The cipher line begins with 79, then these seven groups, then the clear word "declarado"; the pencilled plain text below the signature begins "Sr. Presidente enemigo declarado", so 79 is the only group where "Sr. Presidente" stands (public CEHM image, read 21 Nov 2026).
 - 15 48 31 17 7 16 = aplaza
 - 2 54 47 1 38 3 54 = esperes
 Plain words around them: "declarado ... aclaración. Ruégote ... carta mía".
