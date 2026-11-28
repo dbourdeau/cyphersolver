@@ -1,6 +1,6 @@
 # Willem Lodewijk of Nassau to his brother Johann VII, cipher letters of spring 1620 (HHStAW Abt. 171 Nr. S 995) — catalogue no. 566
 
-Status: read in part (16 Nov 2026, recounted over sure cipher words: 1,184 of 1,430, 82.8%, all four pieces under 95%; the contributor's figures that follow count probable words as read and leave the nomenclator signs out; Brice Dudout, 4 Nov 2026; letters 1 and 5 and the postscript of fol. 53r read, 97.2% or more; letter 3 read in part, 92.6% certain + probable, 96.3% with restored; all four pieces: 1388 cipher words, 1184 certain, 154 probable, 25 restored, 25 unresolved; 96.4% certain + probable, 98.2% with restored; nomenclator signs unresolved, in brackets; prior-work checks still open, see below).
+Status: read in part (16 Nov 2026, recounted over sure cipher words: 1,184 of 1,430, 82.8%; 19 Nov 2026, after blind sign sheet D on letter 3: 1,193 of 1,430, 83.4%; all four pieces under 95%; the contributor's figures that follow count probable words as read and leave the nomenclator signs out; Brice Dudout, 4 Nov 2026; letters 1 and 5 and the postscript of fol. 53r read, 97.2% or more; letter 3 read in part, 92.6% certain + probable, 96.3% with restored; all four pieces (19 Nov 2026): 1388 cipher words, 1193 certain, 145 probable, 25 restored, 25 unresolved; 96.4% certain + probable, 98.2% with restored; nomenclator signs unresolved, in brackets; prior-work checks still open, see below).
 
 Contributed by Brice Dudout (Europe chiffrée), with Claude Opus 5.5 agents. Catalogue entry no. 566 (your Archivportal-D sweep).
 To be published on: https://bdudout.github.io/europe-chiffree/en/documents.html#nassau-1620
@@ -29,10 +29,10 @@ grid H. Validation (`validation.txt`): 0.860 on 11 glossed words vs 0.185 for th
 | piece | words | certain | probable | restored | unresolved | certain + probable | with restored |
 |---|---|---|---|---|---|---|---|
 | Letter 1, fols. 20r-21v | 722 | 636 | 72 | 8 | 6 | 98.1% | 99.2% |
-| Letter 3, fols. 41r-41v | 430 | 348 | 50 | 16 | 16 | 92.6% | 96.3% |
+| Letter 3, fols. 41r-41v | 430 | 357 | 41 | 16 | 16 | 92.6% | 96.3% |
 | Letter 5, fols. 44r-44v (cipher part) | 165 | 141 | 22 | 1 | 1 | 98.8% | 99.4% |
 | Postscript, fol. 53r | 71 | 59 | 10 | 0 | 2 | 97.2% | 97.2% |
-| **All** | **1388** | **1184** | **154** | **25** | **25** | **96.4%** | **98.2%** |
+| **All** | **1388** | **1193** | **145** | **25** | **25** | **96.4%** | **98.2%** |
 
 Unit = cipher word; nomenclator signs are not counted; "E. L." = 2 words. The count is made by a script on the published text (the
 `*_reading.md` files). Every piece passes 95% with the restored words; letter 3 is at 92.6% without them (its unresolved words sit in
@@ -56,10 +56,10 @@ reading, outside the count), so nothing had to be separated. Counted from the ta
 | piece | words (contributor) | nomenclator signs | certain | read share, was -> now | class |
 |---|---|---|---|---|---|
 | Letter 1, fols. 20r-21v | 722 | 25 | 636 | 0.981 -> **0.851** (636 of 747) | read -> read in part |
-| Letter 3, fols. 41r-41v | 430 | 9 | 348 | 0.926 -> **0.793** (348 of 439) | read in part |
+| Letter 3, fols. 41r-41v | 430 | 9 | 357 | 0.926 -> 0.793 -> **0.813** (357 of 439, 19 Nov 2026) | read in part |
 | Letter 5, fols. 44r-44v | 165 | 7 | 141 | 0.988 -> **0.820** (141 of 172) | read -> read in part |
 | Postscript, fol. 53r | 71 | 1 | 59 | 0.972 -> **0.819** (59 of 72) | read -> read in part |
-| **All** | 1,388 | 42 | 1,184 | 0.964 -> **0.828** (1,184 of 1,430) | read in part |
+| **All** | 1,388 | 42 | 1,193 | 0.964 -> 0.828 -> **0.834** (1,193 of 1,430, 19 Nov 2026) | read in part |
 
 The old figures were the contributor's (certain plus probable, nomenclator signs not counted), and stay his; the
 separators `[3] [ℰ] [ω] [⁘]` are not words, and `[3ℰ]` in the postscript is two separators. The key is a period key (the
@@ -93,7 +93,7 @@ Method: (1) the key was not reconstructed: it is written in the family key book 
 - Nomenclator capitals and symbols ([A], [B], [Q], [M], [O], [⊙], [∇], [V], [W] ...); the list of capitals in C 667 images 20-54 has not been seen - blocker: no-key-material; the key book's list was not among the images used, and no copy of it is in hand.
 - Ciphered dates ("Datum [D] den [W]/[W] [S]. [y x° w]"): number signs unresolved, so the letters are dated only by context - blocker: open-codes; the signs occur once per letter and nothing in the text narrows them.
 - Postscript fol. 53r, line 16, runs to the edge of the leaf; its continuation has not been seen - blocker: needs-physical-access; verso or a neighbouring leaf not imaged in the digitisation used.
-- 154 probable words ({x}), 25 restored and 25 unresolved words, now counted as holes - blocker: needs-physical-access; the HHStAW scans were used for research only and are not in the repository, and the probable shapes were re-read blind for letter 3 only (21 of 22 confirmed)
+- 145 probable words ({x}), 25 restored and 25 unresolved words, now counted as holes - blocker: needs-physical-access; the HHStAW scans were used for research only and are not in the repository, and the probable shapes were re-read blind for letter 3 only (21 of 22 confirmed; then sheet D, 19 Nov 2026: 9 more made certain)
 - Prior work in print not seen: K. Wolf (1937), L. Paul (1966), W. Hahlweg (1973), and the origin of the pencil slip on fol. 1 - blocker: needs-physical-access; print copies and an enquiry to the Hessisches Hauptstaatsarchiv.
 
 (Letter 1 fol. 21v lines 23-24, not re-transcribed at high magnification, is a doubt inside read text and is kept under Limits.)
@@ -105,4 +105,39 @@ Method: (1) the key was not reconstructed: it is written in the family key book 
 - [x] known-keys: the second grid of C 667 img 55 (0.185) and 20 permuted grids (best 0.442) tried against the upper grid (0.860)
 - [x] print: Groen van Prinsterer, Briefe und Akten, editions of Willem Lodewijk's correspondence and the online finding aids searched: no edition of these letters; Wolf, Paul and Hahlweg unseen (see gaps)
 - [n/a] key-rebuild: the key is written in the key book; only the nomenclator is missing, and its list was not seen
-- [x] retry: letter 3's 22 doubtful shapes re-read blind (21 confirmed, 1 became unresolved); the other pieces had no such re-reading
+- [x] retry: letter 3's 22 doubtful shapes re-read blind (21 confirmed, 1 became unresolved); then blind sign sheet D, 19 Nov 2026 (10 signs, controls 2 of 2, 9 probable words made certain); the other pieces had no such re-reading
+
+## Sign check D, 19 Nov 2026 (letter 3)
+
+Level sought: "AI decipherment, human-checked on a sample of signs" (`outcome.sign_check`, held in `sign_check_pending.json` until PR #789 adds the field to the schema; files in `sign_check/`). It checks
+how signs are written, not the key or the reading, and it changes neither the class nor the state.
+
+**Who did what.** The checker is Brice Dudout, the contributor of this reading (a project member, not an independent reader).
+He answered blind: one boxed sign per question, two to three cell shapes cut from sure words of the same hand (fol. 41r), with
+"none / other shape", "illegible" and "not a sign"; no value, gloss, word or place was shown. An AI model (Claude Opus 5.5) wrote
+the rule, chose the signs by it, cut the thumbnails, built the sheet and scored the answers. The answer key (which option is which
+shape, the thumbnail boxes) stays private; its content for each question is in `sign_check/sheet-D-results.tsv`. No image or
+thumbnail is committed: the HHStAW scans are for research use only.
+
+**Rule.** `sign_check/sheet-D-rule.md` (in French, as written), SHA-256
+9f0c8dec2629fc9ebfb51b2db22c220bb6105b4037cd80f07f3e3c5b08d6d7c6, written and hashed on 19 Nov 2026 before any thumbnail was cut
+and before any answer. One sign per word, only in probable words whose status rests on that one sign; words with two or more doubtful
+signs, a sign too many or missing, an ink blot, an alignment not checked by eye, or a sign already tested on the earlier re-reading
+are left out. Ten targets, two controls in sure words. Application: the shape that gives the word makes it certain; any other shape
+leaves it as it was or unresolved, decided mechanically after the answers. The rule was applied as written, with no change.
+
+**Answers.** `sign_check/sheet-D-answers.json`, exported 2026-11-19T22:26:55Z (SHA-256
+54708031c1fe9e41480fa646f20445c7a814f14daccd3f9b28b3d3cafb525a4a). Controls 2 of 2 (the ⌈· of "sich", 41v line 13; the ⊓ of
+"nicht", 41v line 31). Ten target signs: nine gave the shape of the reading's word (6 corrected against the transcription, 3 doubts
+removed), so gelegt, verschiedenen, will, so (41r) and westphalische, leger, ahnmahnung, letz, werde (41v) become certain. One
+(the last sign of {vbereilet}, 41v line 31) is ⌋· as transcribed, the k of "vbereilek": a slip of the encipherer, so the word stays
+probable, read from the sense. No free-text remark; no faulty thumbnail found.
+
+**Effect.** `letter3_reading.md` carries the nine words as certain; `letter3_transcription.txt` and `letter3_decryption.txt` stay
+frozen and are not recoded, as for the earlier re-reading of 22 shapes. Letter 3: 357 certain, 41 probable, 16 restored, 16
+unresolved of 430 cipher words (contributor's count 80.9% -> 83.0% certain; certain + probable unchanged, 92.6%); over cipher words
+with the nomenclator signs as holes, 348 -> 357 of 439 (0.793 -> 0.813). All four pieces: 1,184 -> 1,193 of 1,430 (0.828 -> 0.834;
+contributor's count 85.3% -> 86.0% of 1,388). Still read in part.
+
+**Limits.** One checker, inside the project. Two controls show little on their own. The signs were chosen because they were
+doubtful: a diagnostic, not a sample of the text. No person has audited the model's part. This is not a `human_check`.
