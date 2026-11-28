@@ -8,12 +8,14 @@
 # supplied = a letter supplied where the cipher has nothing, or replaced by sense (README: a hole);
 # context+supplied = both; doubtful = marked (?) or conjecture; hole N = unread, guessed or code number, N words (default 1).
 # Words are as in the italian column of runs_533.tsv; "l'Elettore" is one word.
-# Totals: 87 words. Sure 30 of 87 (34.5%). Sure or context-only value 42 of 87 (48.3%).
-# Supplied 7, context+supplied 3, doubtful 7, holes 28.
-# Daniel Bourdeau's count (review of PR #665): 37 of 87 sure, 51 of 87 with the context-only values. The 7-word
-# difference is the seven 'supplied' words, which his count admits and README Conventions counts as holes; with them
+# Totals: 87 words. Sure 29 of 87 (33.3%). Sure or context-only value 41 of 87 (47.1%).
+# Supplied 8, context+supplied 3, doubtful 7, holes 28.
+# Recount of 27 Nov 2026: L35 35r a "della" moved from sure to supplied, by this file's own rule (its four groups give
+# d e l a, so the second l is supplied); before it, Sure 30 of 87 (34.5%), 42 of 87 (48.3%), Supplied 7.
+# Daniel Bourdeau's count (review of PR #665): 37 of 87 sure, 51 of 87 with the context-only values. The 8-word
+# difference is the eight 'supplied' words, which his count admits and README Conventions counts as holes; with them
 # the two figures are 37 and 51 (the 51 adds permission[e] and sodisfatt[i]; ult[i]mo(?) stays out as doubtful).
-# Per letter, sure of all: L01 9 of 16; L03 2 of 5; L19 0 of 1; L21 2 of 10; L25 0 of 4; L26 4 of 18; L28 1 of 5; L35 6 of 15; L36 0 of 1; L53 0 of 2; L56 3 of 3; L63 3 of 6; L70 0 of 1
+# Per letter, sure of all: L01 9 of 16; L03 2 of 5; L19 0 of 1; L21 2 of 10; L25 0 of 4; L26 4 of 18; L28 1 of 5; L35 5 of 15; L36 0 of 1; L53 0 of 2; L56 3 of 3; L63 3 of 6; L70 0 of 1
 doc	run	word	status	note
 L01	1r a	l'El[e]ttor[e]	supplied	one e not written; the final e rests on reading the second 64 as w4
 L01	1r a	Palatino	context	final o on ww = o
@@ -71,7 +73,7 @@ L35	35r a	fussi	sure
 L35	35r a	disgustat[o]	supplied	final o not written
 L35	35r a	del	sure	
 L35	35r a	[..]	hole	
-L35	35r a	della	sure	
+L35	35r a	del[l]a	supplied	the four groups 46 21 55 11 give d e l a; the second l is supplied (recount of 27 Nov 2026)
 L35	35r a	corte	sure	
 L35	35v a	[d]ell[a]	supplied	
 L35	35v a	d[o]n[n]a(?)	doubtful	conjecture

@@ -787,6 +787,15 @@
    ],
    "what": "Write-up check by the integration round of 24 Nov 2026 (AI agent, for the maintainers): skill section 0a gate applied to NOTES. Measured share 30 of 87 Cosimo cipher words sure (34.5%), 42 of 87 with context-only values. Most gaps carry an outside blocker, but about 50 pages of bare System B in Codex 534 ff. 1-113 are online and marked not-attempted, readable with key v3. Gap workable from online material, so no page: folder stays in progress. Next step: decode the bare 534 passages listed in bare/bare_passages.md with key v3 and see whether they add values for the unread 533 runs and codes.",
    "result": "partial"
+  },
+  {
+   "date": "2026-11-27",
+   "kind": "verification",
+   "technique": [
+    "other"
+   ],
+   "what": "Follow-ups to the decrypt audit (Andrew Beling, with AI agents; no person has checked): L35 35r a letters corrected to d e l a for the groups 46 21 55 11, which realigned six validation.tsv pairs; make_texts.py now keeps existing reading files, so a re-run leaves the audit's marks (run twice, no change); della in 35r a recounted as supplied in readings/words_533_strict.tsv: 29 of 87 sure (0.333), L35 5 of 15. docs/_validate.py not rerun.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -951,11 +960,11 @@
     "decryption": "readings/L35_decode.txt",
     "state": "read in part",
     "language": "it",
-    "summary": "'fussi disgustato del [..] della corte'; 'per mezo della donna(?) di camera favorita della [14]': through the favourite lady of the bedchamber.",
+    "summary": "'fussi disgustat[o] del [..] del[l]a corte'; 'per mezo [d]ell[a] d[o]n[n]a(?) di camera favorita dell[a] [14]': through the favourite lady of the bedchamber.",
     "reading": "readings/L35_it.txt",
     "translation": "readings/L35_en.txt",
-    "read_share": 0.4,
-    "note": "Sure words only, from the contributor's readings/words_533_strict.tsv: 6 of 15. The contributor's figure was 0.73: Share of cipher groups in runs that read as Italian words; an estimate from readings/runs_533.tsv.",
+    "read_share": 0.333,
+    "note": "Sure words only, from the contributor's readings/words_533_strict.tsv: 5 of 15 (6 of 15 before the recount of 27 Nov 2026, which moved della in 35r a from sure to supplied). The contributor's figure was 0.73: Share of cipher groups in runs that read as Italian words; an estimate from readings/runs_533.tsv.",
     "reading_review": {
      "grade": "B",
      "by": "integration review of PR #665 (AI agent, for the maintainers); not a person",
@@ -1096,9 +1105,9 @@
     }
    }
   ],
-  "fraction_read": 0.345,
+  "fraction_read": 0.333,
   "fraction_read_method": "measured",
-  "fraction_read_source": "Cosimo's 35 runs only (Codex 533), counted by words (README Conventions): 30 of 87 words sure (34.5%), every letter from frozen key v3 with no context-only value, no letter supplied or replaced by sense, no doubt mark and no unread group; 42 of 87 (48.3%) with the context-only values ww = o and 62 = q. Word list and rule: readings/words_533_strict.tsv. Daniel Bourdeau's review counts 37 of 87 and 51 of 87; the difference is the seven words with a supplied or replaced letter, which his count admits. By groups: 40.2% of the 403 groups lie in runs read whole and 318 of the 401 groups in decode/decode_rec2_v3ctx.tsv (79.3%) take a letter value. Our earlier figure, about 60% of groups read as Italian, was our estimate between those two. The bare 1694 passages are not included.",
+  "fraction_read_source": "Cosimo's 35 runs only (Codex 533), counted by words (README Conventions): 29 of 87 words sure (33.3%), every letter from frozen key v3 with no context-only value, no letter supplied or replaced by sense, no doubt mark and no unread group; 41 of 87 (47.1%) with the context-only values ww = o and 62 = q. Word list and rule: readings/words_533_strict.tsv. Daniel Bourdeau's review counts 37 of 87 and 51 of 87; the difference is the eight words with a supplied or replaced letter, which his count admits. By groups: 40.2% of the 403 groups lie in runs read whole and 318 of the 401 groups in decode/decode_rec2_v3ctx.tsv (79.3%) take a letter value. Our earlier figure, about 60% of groups read as Italian, was our estimate between those two. The bare 1694 passages are not included. Recount of 27 Nov 2026: L35 35r a della moved from sure to supplied (its four groups give d e l a); before it, 30 and 42 of 87 (0.345).",
   "codes_open": {
    "open": 13,
    "total": "unknown",
