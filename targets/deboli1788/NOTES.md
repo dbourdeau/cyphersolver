@@ -1,5 +1,5 @@
 # Deboli → Stanisław August, St Petersburg cipher despatches, 1788 (Unsolved Catalogue 417)
-Status: read in part, written up (4 Nov 2026). Contributor's status: read in part (Brice Dudout, 28 Oct 2026; no. 038 of 13 May 1788, 911 of 943 groups with a key value, about 0.86 read as sense on a held-out pair).
+Status: read in part, written up (4 Nov 2026). Contributor's status: read in part (Brice Dudout, 18 Nov 2026; no. 038 of 13 May 1788, 328 of 485 words sure or probable as measured on our copy after the decrypt audit; the key reads 0.862 of groups as sense on a held-out pair, a measure of the key, not of this despatch).
 
 Contributed by Brice Dudout (Europe chiffrée, https://bdudout.github.io/europe-chiffree/), with Claude Opus 5.5 agents.
 The key is Daniel Bourdeau's 1789 key (`targets/deboli1789/key_pass.tsv`), completed on 1788 pairs.
@@ -66,8 +66,9 @@ alternatives) equals the aligned stretch of clear text, up to two letters of end
 
 K3 gives 0.859 on the same pair, and 0.836 on 8 Aug 1788 (also held out). The score plateaus near 0.86 even on learning
 pairs (0.83-0.84): part of the gap is the alignment itself, part is that the code writes stems and syllables and the
-cabinet supplied endings from the sense. So the true share of 038 that is read is nearer 0.86 than the **96.6% of groups
-with a key value** that `read.py` counts (911 of 943). Hence "read in part".
+cabinet supplied endings from the sense. These figures measure the key on a held-out pair, not the share of 038 that is
+read: the 96.6% of groups with a key value that `read.py` counts (911 of 943) overstates it, and the decrypt audit of
+18 Nov 2026 (below) gives the share measured on the marked reading. Hence "read in part".
 
 ## Files
 
@@ -97,6 +98,8 @@ December 1789), so under the one-key-one-entry rule it belongs in its own entry,
 ## Remaining gaps
 
 - 13 May 1788 no. 038: 32 groups without a value in K4, and 11 groups with unsettled alternatives (e.g. 637 list|ła, 360 ie|nie) - blocker: open-codes; each occurs too few times in the learning pairs and no context narrows them.
+- 13 May 1788 no. 038: 12 lettered groups missing from K4 (1317a, 2083a, 695a, 1449c, 782a, 1160a, 1337b, 2082a, 94a, 789c, 1221b, 1300c), read as guesses and marked - blocker: open-codes.
+- 13 May 1788 no. 038: the second digit of `1886^` at k.74v.10/8 and k.74v.27/2 (0 or 8) - blocker: illegible; a new check needs a clean "0" as reference.
 
 ## Escalation
 
@@ -107,3 +110,61 @@ December 1789), so under the one-key-one-entry rule it belongs in its own entry,
 - [x] key-rebuild: K4 = the 1789 key plus three frozen extension stages learned only on 1788 pairs (12 values and 3 nulls, 6 values attested at least twice, 11 automatic alternatives)
 - [x] retry: no. 038 was decoded with the final K4 after the third stage; the 32 groups without a value stay open
 
+## Decrypt audit and blind check (Brice Dudout, 18 Nov 2026)
+
+Daniel Bourdeau's decrypt audit (`research/decrypt_audit/audit.py`, PR #710 at f8c51fa) found 86 of 426 compared words of
+the reading departing from the key without a mark. Reproduced with the same script and sorted one by one:
+
+| cause | words |
+|---|---|
+| a digit possibly misread in the transcription (tested below) | 9 |
+| a lettered group (e.g. 1317a, 695a, 1449c) absent from `key_K4.tsv`, read with the plain group's value | 12 |
+| a key value abbreviated, cut short, missing or doubtful (wkmc, minist, wz, konferen, wewnetrzna cut at 10 letters...) | 24 |
+| the reader's choice: endings, letters or words supplied | 37 |
+| alignment artefacts of the audit (chcąc, pisma, ia, tylko) | 4 |
+
+The lettered groups are guesses: in the 1789 key, 339 of 373 lettered groups have a value different from their plain group.
+
+**Blind check (planche D).** Brice Dudout compared 10 doubtful digits and 2 known-answer controls on the AGAD images by
+forced choice between sign shapes, without the expected answers. Controls 2/2.
+- 7 digits are written as transcribed (2065 at k.75r.28/5 and k.74r.10/7, 1048, 365, 1693, 2082, 1385): those departures
+  are the reader's emendations, now marked.
+- 1 transcription error: k.75v.08/6 is **2085** (cy), not 2065. Corrected in the transcription.
+- 2 stay open: the second digit of `1086^` at k.74v.10/8 and k.74v.27/2 is a wide lying loop (∞), read by Brice Dudout as an
+  elongated 8. The transcription now gives `1886^` with the doubt mark kept; 1886 = al (17 of 21 in the pairs) gives
+  "uśmiechał się" and "Odpowiedział", which make sense, while 1086 = p does not. Both words stay **probable** (`{...}`).
+- Fault of the sheet: the reference vignette for the "closed 0" was cut from `1001^` at k.74v.28/4, which is itself
+  ambiguous, so the 0/8 question for those two groups was not fairly put. A new check needs a clean 0 as reference.
+- The entry `2065 = baw` of `key_K4.tsv` is unchanged (one occurrence; no pair supports another value).
+
+**Limits.** One reviewer; one faulty reference sample; the check confirms or corrects transcribed digits, and adds no sure
+word to the reading.
+
+**The reading after the audit.** Every departure that the audit finds is now marked in `reading/c038_1788-05-13.txt`:
+letters supplied or changed by the reader in `[ ]` inside the word, key letters dropped by the reader as `{-x}`, the 12
+lettered groups as guesses in `[ ]`. Only the 4 alignment artefacts are left unmarked; `audit.py` then finds 4 of 412
+words departing. The decoding file follows the corrected transcription.
+
+Count measured on our copy (the owner recounts on the repository): 485 words, 322 sure, 6 probable (`{word}`, or followed by
+`[?]`), 109 with supplied or dropped letters, 48 unread (`{group}`, `[...]`). Sure and probable: 328 of 485 (67.6%).
+`outcome.fraction_read` and `read_share` now carry this share; the key's held-out measure (0.862 of groups read as sense on
+11 Nov 1788) stays in `outcome.validation`, as a measure of the key, not of this despatch.
+
+**Possible effect on 1789.** If 1886 = al is right here, the two occurrences counted as "p" for 1886 in the 1789 pairs
+(`key_K4.tsv`: 1886 al 17/21, p:2) need a look. The 1789 targets are not changed by this entry.
+
+**Sign check, 23 Nov 2026 (sheet N).** A second forced-choice sheet, built to a rule written and hashed before any thumbnail
+was cut (`sign_check/planche-N-rule.md`, SHA-256 007e5abf…0808b36). Brice Dudout answered 7 questions: 3 known-answer controls
+(695 3rd digit = 5, 786 3rd digit = 6, 2154 4th digit = 4) and 4 targets, each a digit that is shaped between two readings;
+the clean reference shapes were cut from groups whose digits are settled by the key. Controls 3/3. The four targets, by the
+integration clause as written:
+- k.74v.13/3 `1116` -> **`1110`** (0): 1110 = pro (49/52); the word is "proiekt", as in k.74v.29 (same run 1110 360 460 1426).
+- k.75v.28/8 `1167` -> **`1117`** (1): 1117 = przy (102/106); "przystąpili".
+- k.75v.30/5 `293` -> **`295`** (5): 295 = hetmana (3/8 in the pairs).
+- k.74v.23/5 `2044` -> **`2004`** (0): 2004 = bedzie (31/75).
+These four groups are marked `!` in the transcription (read at the sheet). Each word is now fully given by the key and
+counted sure: proiekt, przystąpili (which absorbs the former `{1167}` and `stąpili`), hetmana, będzie. Count on our copy:
+483 words (two merged), 325 sure, 6 probable, 108 with supplied or dropped letters, 44 unread; sure and probable 331 of 483
+(68.5%, was 328 of 485). `outcome.fraction_read` and `read_share` carry 0.685. The class stays **read in part**; the lying loop
+(1886^, 1001^) was not asked again (same homograph as on sheet D). One reviewer. Answers, results and rule are in `sign_check/`;
+no image is committed. The entry `sign_check_pending.json` follows the convention of the other targets (the schema has no field yet).
