@@ -1,0 +1,11 @@
+# Translation: The Hague, 2/12 February 1674 (fol. 290r-v)
+
+Holes as in reading_290.md. The writer signs "X X" and calls the captive count "our brother" ("unserm Brudern") and the house of Nassau "our house": he is a brother of Gustav Adolf and of the addressee. Who he is, is not established (see NOTES.md).
+
+The Hague, 2/12 February 1674.
+
+I received Your Excellency's letter of 16/26 January the day before yesterday and see from it that you have news about the fortress of Homburg. I spoke of it at once with the Prince of Orange, who promised me to write today by the post to the Lord (Herrn?, in clear) Duc de Bourneuille, that he should throw in a few hundred men as soon as possible, or that the Elector should do it from Koblenz in his name. But since the present commandant there will admit no others without an order from [his] Elector, I have just come from the imperial minister here, who promised me to write about it at once, not only to the Duc de Bourneuille but also to [273], to recommend this matter as well as possible; since not only we [...] but also [160] and [170] are concerned in it, I do not doubt that Your Excellency's request will soon be carried out.
+
+The resolution that our [brother] has [taken] is generous, honourable and upright; God will no doubt stand by him and help him back to his own with honour and glory. [...] suffered a long time rather than do anything prejudicial to his house and his family.
+
+Nor is our house alone concerned in this, but all who hold fiefs of Metz (the cipher writes Maz, probable); and the letter of the Marquis de Rochefort shows the subjection plainly enough, although it shows that he is a poor jurist who does not well know the difference between a vassal and a subject; but he is to be forgiven, for in France all, from the highest to the lowest, are slaves except the King alone. I ask Your Excellency to assure our brother, when you have a safe opportunity, that his misfortune grieves me deeply and that I think highly of him for keeping to the just intention of doing nothing prejudicial to himself and his house. The French dominion shall not last long. Yesterday we received here by an express from England such letters that there is no doubt we shall have peace with England within a few days; then it should go well with the others too. Adieu pour cette fois. X X
