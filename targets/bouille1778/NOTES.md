@@ -1,6 +1,6 @@
 # Bouillé 1778: the governor of the Windward Islands to the minister of the Navy, Martinique, 17 Sept and 5 Dec 1778
 
-Status: read (Brice Dudout, 28 Oct 2026; two letters and both attached returns, 455 of 458 words read in their sense, 437 certain, 11 probable, 7 restored, 3 unresolved; Daniel Bourdeau's 95% rule).
+Status: read in part (18 Nov 2026, recounted over cipher words, sure words only: no. 238 109 of 116, 94.0%; no. 259 and returns 288 of 301, 95.7%). Was read (Brice Dudout, 28 Oct 2026; two letters and both attached returns, 455 of 458 words read in their sense, 437 certain, 11 probable, 7 restored, 3 unresolved; Daniel Bourdeau's 95% rule).
 
 Contributed by Brice Dudout (Europe chiffrée), 28 Oct 2026. Not in the catalogue. Published write-up:
 https://bdudout.github.io/europe-chiffree/en/documents.html#bouille-1778
@@ -38,3 +38,17 @@ Files: `transcription.txt`, `decryption.txt`, `reading.md`, `translation.md`, `k
 - Words restored [x], with justification. [ministre]: “le 495.re de la guerre m’a annoncées”; the only possible reading. [sans]: 481, not attested; “ne pouvant y mettre une garnison 481 dégarnir la Martinique”; 431 = sans is glossed, 481 would be a homophone. [fin]: “approchent de leur 678”. [Gens]: “701 de couleur”. [gt-trois], [cent]: words left out by the encipherer, given by the totals (above).
 - Nulls and unresolved numbers. 163, 586 and 257 are nulls: they always fall where the sense is complete without them (“163 congédiés”, “dé·586·sertés”, “163 total 586”, “Martinique 257: 197”; in letter no. 415: “l’état 163 586 de la situation”). Unresolved: ‹Mote› (309.398, heading of the block “… during the previous month”, probably “movements” or “losses”); ‹366› (in “sick sent 366 to France”); ‹vise› (331.305, in the note “un ‹vise› dans l’artillerie et un gentilhomme renvoyé”).
 - Prior work and the period key. The documents are marked “not decrypted” by the inventory; no decipherment on the images or the neighbouring leaves; nothing in Daniel Bourdeau’s repository (28 October 2026). An archivist’s pencil note on C8 A 78 fol. 3 says the 1779 letters were deciphered “thanks to the key at the beginning of register Marine B4 195” (Archives nationales): this period table has not yet been consulted.
+
+## Read share over cipher words only, sure words only (18 Nov 2026)
+
+Rule applied as written in PR #728 (owner's decision of 16 Nov 2026, README Conventions "The read share counts cipher words only"): the share is counted over the words written in cipher, sure words only; a word marked probable {x}, restored [x] or unresolved ‹x›, or carrying one such letter, is a hole; holes are counted by words.
+
+Counted per letter on `reading.md`, elisions as two words (d'impatience = 2), the clear marked ‹clear: …› left out:
+- **no. 238, 17 Sept 1778 (f. 88): 116 cipher words, 109 sure, 7 holes** ({impatience}, {vuide}, {effectifs},
+  {incessamment}, {réglées}, [ministre], [sans]): **94.0%**, under the bar -> **read in part**;
+- **no. 259 with its two returns (f. 101): 301 cipher words, 288 sure, 13 holes: 95.7%**, stays read.
+
+The target goes **read -> read in part** because no. 238 is under the bar. The reading's own total (437 certain of 458
+words, 95.4%) is not split by letter, and its 458 differs from the 417 counted here (the reading's unit is not stated);
+on either count no. 238 alone is under 95%. One reviewer, counted by a script and checked by eye; no image re-read.
+`research/reading_audit/v10_relabel.py` (PR #728 branch) does not reproduce this count: it does not treat {x} or ‹x› as holes, and this reading declares no cipher or clear markup.

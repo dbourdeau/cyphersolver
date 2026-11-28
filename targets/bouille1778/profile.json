@@ -5,7 +5,7 @@
  "documents": [
   {
    "id": "anom-c8a-77-f88",
-   "read": "read",
+   "read": "read in part",
    "shelfmark": "ANOM, COL C8 A 77, fol. 88 (no. 238)",
    "date": "17 September 1778",
    "year": 1778,
@@ -157,10 +157,11 @@
    ],
    "what": "Letters nos. 238 and 259 and both returns read; returns checked by their sums (1,072 and 4,057 men).",
    "result": "worked"
-  }
+  },
+  {"date": "2026-11-18", "kind": "verification", "what": "Read share recounted over cipher words only, sure words only (README rule of PR #728), per letter: f. 88 109/116 (0.940, read in part), f. 101 with the returns 288/301 (0.957, read); class read -> read in part.", "result": "partial"}
  ],
  "outcome": {
-  "class": "read",
+  "class": "read in part",
   "key": "recovered",
   "method": "read with known key",
   "method_basis": "Key rebuilt from pencil glosses of sibling letters (1779), validated on a held-out glossed letter.",
@@ -168,9 +169,9 @@
    "transcription",
    "key recovered"
   ],
-  "fraction_read": 0.993,
+  "fraction_read": 0.952,
   "fraction_read_method": "measured",
-  "fraction_read_source": "455/458 words read in their sense (437 certain, 11 probable, 7 restored, 3 unresolved).",
+  "fraction_read_source": "Cipher words only, sure words only (18 Nov 2026), counted per letter on reading.md (elisions as two words, the clear marked ‹clear: …› left out): no. 238 (f. 88) 109 of 116; no. 259 with its two returns (f. 101) 288 of 301; 397 of 417 in all. The reading's own total, 437 certain of 458 (0.954), is not split by letter. Before: 455 of 458 (0.993), probable and restored counted as read.",
   "first_break": true,
   "verification": [
    "statistical test",
@@ -197,14 +198,16 @@
     "reading": "reading.md",
     "translation": "translation.md",
     "language": "fr",
-    "state": "read",
+    "state": "read in part",
     "summary": "Short of 817 men, Bouillé cannot attack other British islands after taking Dominica.",
     "reading_review": {
      "grade": "A",
      "by": "Claude Opus 5.5 (for Brice Dudout)",
      "date": "2026-10-31",
      "note": "Read as sentences 31 Oct 2026: letter no. 238 is one coherent paragraph (recruits, the 817-man gap, Dominica garrison); a few {probable} words, one restored, no hole."
-    }
+    },
+    "read_share": 0.94,
+    "note": "18 Nov 2026, cipher words only, sure words only: 109 of 116 cipher words sure (94.0%; elisions counted as two words, the clear opening and closing left out); 5 probable and 2 restored words are holes."
    },
    {
     "doc": "anom-c8a-77-f101",
@@ -221,7 +224,9 @@
      "by": "Claude Opus 5.5 (for Brice Dudout)",
      "date": "2026-10-31",
      "note": "Read as sentences 31 Oct 2026: letter no. 259 (two coherent sentences) and its two returns, written out in words; the returns check against their own row and column sums. Two unresolved words in the column heads and note (Mote, vise)."
-    }
+    },
+    "read_share": 0.957,
+    "note": "18 Nov 2026, cipher words only, sure words only: letter no. 259 and its two returns, 288 of 301 cipher words sure (95.7%); stays read."
    }
   ],
   "key_file": "key.tsv",

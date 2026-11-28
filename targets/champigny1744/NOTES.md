@@ -1,6 +1,6 @@
 # Champigny 1744: cipher copy of Commodore Knowles's neutrality notice to the inhabitants of Dominica (ANOM C8 A 56 fols. 57-57v)
 
-Status: read (Brice Dudout, 28 Oct 2026; 154 of 155 words read in their sense, 142 certain, 7 probable, 5 restored, 1 unresolved; Daniel Bourdeau's 95% rule).
+Status: read in part (18 Nov 2026, recounted over cipher words, sure words only: 142 of 155, 91.6%). Was read (Brice Dudout, 28 Oct 2026; 154 of 155 words read in their sense, 142 certain, 7 probable, 5 restored, 1 unresolved; Daniel Bourdeau's 95% rule).
 
 Contributed by Brice Dudout (Europe chiffrée), 28 Oct 2026. Write-up (to be published when the account is restored):
 https://bdudout.github.io/europe-chiffree/en/documents.html#champigny-1744
@@ -47,3 +47,10 @@ Files: `transcription.txt`, `decryption.txt`, `reading.md`, `translation.md`, `k
 - Unresolved. “s’ils ‹320›issent comme il demande”: agissent (act) or obéissent (obey); 320 occurs in none of the seven glossed letters examined.
 - Identifications and sources. Sender: Jacques-Charles Bochart, marquis de Champigny, governor general of the Windward Islands 1728–1748 (M. Vergé-Franceschi, Les Officiers généraux de la Marine royale 1715–1774, 1990, p. 2097 ff.; Wikipédia, “Jacques-Charles Bochart de Champigny”). Recipient: Jean-Frédéric Phélypeaux, comte de Maurepas, secretary of state for the Navy 1723–1749 (É. Taillemite, Dictionnaire des marins français, 2002, p. 362; J.-P. Zanco, Dictionnaire des ministres de la Marine, 2011). Knowles: Charles Knowles (1704–1777), second in command on the Jamaica station under Chaloner Ogle 1743–1745, active at Antigua, commodore’s broad pennant in the Superb (Naval Chronicle 1, 1799, pp. 100–112; Dictionary of National Biography 31, 1892, pp. 292–294); his presence at Dominica in August 1744 with the Superbe is attested by Champigny’s glossed letter itself (fol. 54).
 - Prior work. The ANOM inventory notes the undecrypted part; Daniel Bourdeau’s repository (28 October 2026) holds neither this piece nor this code; no edition known.
+
+## Read share over cipher words only, sure words only (18 Nov 2026)
+
+Rule applied as written in PR #728 (owner's decision of 16 Nov 2026, README Conventions "The read share counts cipher words only"): the share is counted over the words written in cipher, sure words only; a word marked probable {x}, restored [x] or unresolved ‹x›, or carrying one such letter, is a hole; holes are counted by words.
+
+From the reading's own count over the 155 cipher words: 142 certain, 7 probable {x}, 5 restored [x], 1 unresolved.
+Sure words only: **142 of 155 = 91.6%**: class **read -> read in part** (was 99.4%). No image re-read. `research/reading_audit/v10_relabel.py` (PR #728 branch) does not reproduce this count: it does not treat {x} or ‹x› as holes, and this reading declares no cipher or clear markup.

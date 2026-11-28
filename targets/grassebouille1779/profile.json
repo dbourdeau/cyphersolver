@@ -5,7 +5,7 @@
  "documents": [
   {
    "id": "anom-c8a-76-f196",
-   "read": "read",
+   "read": "read in part",
    "shelfmark": "ANOM, COL C8 A 76, fol. 196 (images 0309-0317)",
    "date": "4 August 1779",
    "year": 1779,
@@ -124,10 +124,11 @@
    ],
    "what": "Tables read and checked by their sums; seven gaps of the text restored from the isologue C8 A 76 f. 191 (same memorandum, 31 Mar 1779, other cipher).",
    "result": "worked"
-  }
+  },
+  {"date": "2026-11-18", "kind": "verification", "what": "Read share recounted over cipher words only, sure words only (README rule of PR #728), from the reading's own count for fol. 196: 1,194 of 1,266 (0.943); class read -> read in part.", "result": "partial"}
  ],
  "outcome": {
-  "class": "read",
+  "class": "read in part",
   "key": "recovered",
   "method": "read with known key",
   "method_basis": "Bouillé's key rebuilt from glossed sibling letters and contemporary cipher/plain pairs, validated on a held-out pair.",
@@ -135,9 +136,9 @@
    "transcription",
    "key recovered"
   ],
-  "fraction_read": 0.989,
+  "fraction_read": 0.943,
   "fraction_read_method": "measured",
-  "fraction_read_source": "1,252/1,266 words read in their sense (1,194 certain, 12 probable, 46 restored, 14 unresolved; unresolved groups counted one word per number). Text and tables; table totals check.",
+  "fraction_read_source": "Cipher words only, sure words only (18 Nov 2026): fol. 196, 1,194 of 1,266 cipher words certain (the reading's own count; text 759 of 794, tables 435 of 472); 12 probable, 46 restored and 14 unresolved are holes. Before: 1,252 of 1,266 (0.989).",
   "first_break": true,
   "verification": [
    "statistical test",
@@ -164,14 +165,16 @@
     "reading": "reading.md",
     "translation": "translation.md",
     "language": "fr",
-    "state": "read",
+    "state": "read in part",
     "summary": "A small mobile squadron (8 ships, 2,500 men) based at Martinique to guard the islands in winter and strike the British elsewhere, from Florida to Newfoundland; Bouillé to command on land, Grasse at sea.",
     "reading_review": {
      "grade": "B",
      "by": "Claude Opus 5.5 (for Brice Dudout)",
      "date": "2026-11-02",
      "note": "Read as sentences: fol. 196 (Bouillé's code of 25 Apr 1778, key K7) 1,252 of 1,266 words read in their sense (98.9%; 14 unresolved), the four enciphered tables checked by their sums; fol. 191 (cipher of 1777, code M, key K6) 1,299 of 1,326 words (98.0%). K7 validated on a held-out page (words 0.825, characters 0.889; controls at most 0.149); K6 validated with caveats stated in NOTES.md. Grade B rather than A because the word score of K7 on the held-out page is below 0.85."
-    }
+    },
+    "read_share": 0.943,
+    "note": "18 Nov 2026, cipher words only, sure words only: fol. 196 text and tables, 1,194 of 1,266 words certain (94.3%; text 759/794 = 95.6%, tables 435/472 = 92.2%). Before 0.989."
    }
   ],
   "key_file": "key.tsv",
