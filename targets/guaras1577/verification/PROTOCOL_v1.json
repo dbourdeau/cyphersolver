@@ -1,0 +1,19 @@
+{
+ "written": "28 Nov 2026 by an AI agent (Claude Opus 5.5); no person has checked it. Completes verification_draft/PROTOCOL_v1_DRAFT.json (passage fixed 27 Nov 23:29:34 EST, before any key work).",
+ "target": "Antonio de Guaras to Don John of Austria, London, 15 Feb 1577, TNA SP 70/143 f. 93 (CSP Foreign 1575-77 no. 1264); Gale State Papers Online MC4311981270, images 94-96",
+ "key": "verification/key_1577_v1.json: rebuilt by aligning cipher lines P1L01-P1L33 and P2L08-P2L14 with Kervyn IX no. 3359 (scripts/build_key.py with TSPLIT=1, then scripts/tune_key.py). The held-out lines were never read by either script.",
+ "transcription": "transcription_final_v2.txt (two blind readers, 259 disagreements settled on the image by a third, blind; the u-y cluster split into uy / uy2 by minim count, blind shape rule) with work_D/class_t.tsv (cross t split into t / t2 by whether the bar crosses the upright, blind shape sort).",
+ "heldout_passage": "lines P2L01-P2L07 of transcription_final_v2.txt, copied in verification/heldout_passage_P2L01-07_v2.txt",
+ "reference": "Kervyn de Lettenhove, Relations politiques IX (1886) no. 3359, Internet Archive relationspolitiq09nethuoft OCR, local file sources/raw/sweep_calendar_2026-11-13/ocr/kervyn_relations/relationspolitiq09nethuoft.txt, units from scripts/kervyn_units.py",
+ "reference_units": [1646, 1981],
+ "reference_units_note": "the stretch of the print between the end of the part-1 alignment and the start of the part-2 alignment, both fixed by the build on build lines only",
+ "metric": "per-sign (scripts/measure_lib.py): held-out tokens decoded with the key; decoded letters aligned with the reference letters by edit distance; a token is right when all its letters fall on equal reference letters. Not scored: ?, dotted numbers, tokens with no key value, tokens aligned into a bracketed word or a gap. Normalisation: PLAN.md 2.2 (lower case, accents off, v=u, j=i, y=i, f=s) plus two OCR classes c=e and l=t, chosen before measuring because the OCR of the print confuses them (for example 'lienen' for 'tienen', 'rcyna' for 'reyna').",
+ "controls": "200 keys made by shuffling the key's values among its signs, random.Random(1577)",
+ "threshold": 0.70,
+ "margin": 0.20,
+ "pass_rule": "score >= 0.70 and score - best control >= 0.20",
+ "in_sample_before_freeze": "0.762 on the build lines (not a test)",
+ "timestamp_service": "FreeTSA, https://freetsa.org/tsr (RFC 3161), SHA-256 of MANIFEST_v1.sha256 only; .tsq and .tsr kept in verification/",
+ "result_file": "verification/RESULT_v1.json",
+ "measure_script": "scripts/measure_heldout.py (refuses if a result exists, a frozen file changed, or the token does not verify)"
+}
